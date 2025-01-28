@@ -1,5 +1,5 @@
 {
-  "name": "@blue-repository-js/source",
+  "name": "@blue-repository/monorepo",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {},
@@ -16,6 +16,6 @@
     "typescript": "~5.7.2"
   },
   "workspaces": [
-    "packages/*"
+    "libs/*"
   ]
 }
