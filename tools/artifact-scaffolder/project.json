@@ -1,0 +1,24 @@
+{
+  "targets": {
+    "execute": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx build artifact-scaffolder",
+          "node {projectRoot}/dist/generate.js"
+        ],
+        "parallel": false
+      }
+    },
+    "execute2": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx build artifact-scaffolder",
+          "node {projectRoot}/dist/index.js data {projectRoot}/src/generated"
+        ],
+        "parallel": false
+      }
+    }
+  }
+}
