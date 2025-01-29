@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "./tools/artifact-scaffolder"
+    },
+    {
+      "path": "./tools/nx-plugin"
     }
   ]
 }

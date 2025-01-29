@@ -1,0 +1,11 @@
+{
+  "generators": {
+    "library": {
+      "factory": "./src/generators/library/library",
+      "schema": "./src/generators/library/schema.json",
+      "aliases": ["lib"],
+      "x-type": "library",
+      "description": "Create a library"
+    }
+  }
+}
