@@ -2,7 +2,9 @@
   "name": "@blue-repository/monorepo",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "artifact-scaffolder": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/index.ts data data/generated"
+  },
   "private": true,
   "devDependencies": {
     "@eslint/js": "^9.8.0",
@@ -26,6 +28,7 @@
     "jsdom": "~22.1.0",
     "nx": "20.4.0",
     "prettier": "^2.6.2",
+    "tsconfig-paths": "^4.2.0",
     "tslib": "^2.3.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.19.0",
