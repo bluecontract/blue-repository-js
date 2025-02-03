@@ -6,6 +6,16 @@
       "aliases": ["lib"],
       "x-type": "library",
       "description": "Create a library"
+    },
+    "sync-code": {
+      "factory": "./src/generators/sync-code/sync-code",
+      "schema": "./src/generators/sync-code/schema.json",
+      "description": "Synchronize code from the yaml file to the library"
+    },
+    "blue-ids": {
+      "factory": "./src/generators/blue-ids/blue-ids",
+      "schema": "./src/generators/blue-ids/schema.json",
+      "description": "Generate blue-ids.ts file"
     }
   }
 }

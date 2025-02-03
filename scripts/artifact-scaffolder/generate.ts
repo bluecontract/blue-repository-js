@@ -47,9 +47,8 @@ function transformToPackageName(dirName: string): string {
 /**
  * Generates an NX library for the given YAML file
  */
-async function generateLibrary(file: string, inputDir: string) {
-  const relativePath = path.relative(inputDir, file);
-  const parentDir = path.dirname(relativePath);
+async function generateLibrary(file: string) {
+  const parentDir = path.dirname(file);
 
   // Skip if it's the root blue-ids.yaml
   if (parentDir === '.') {
@@ -58,15 +57,32 @@ async function generateLibrary(file: string, inputDir: string) {
 
   const lastDir = path.basename(parentDir);
   const packageName = transformToPackageName(lastDir);
+  const importPath = `@blue-repository/${packageName}`;
 
   try {
     console.log(`Generating library: ${packageName}`);
+    // TODO: Probably we should also add an option to pass importPath or use packageName as an actual name for nx project.
     execSync(`nx g @blue-repository/nx-plugin:library ${packageName}`, {
       stdio: 'inherit',
     });
+
     console.log(`Successfully generated library: ${packageName}`);
   } catch (error) {
     console.error(`Error generating library ${packageName}:`, error);
+  }
+
+  try {
+    console.log(`Syncing code for ${packageName}`);
+    execSync(
+      `nx g @blue-repository/nx-plugin:sync-code --inputPath="${parentDir}" --libraryName="${importPath}"`,
+      {
+        stdio: 'inherit',
+      }
+    );
+
+    console.log(`Successfully synced code for ${packageName}`);
+  } catch (error) {
+    console.error(`Error syncing code for ${packageName}:`, error);
   }
 }
 
@@ -98,7 +114,7 @@ async function main() {
 
   // Process each file and generate libraries
   for (const file of files) {
-    await generateLibrary(file, inputDir);
+    await generateLibrary(file);
   }
 }
 

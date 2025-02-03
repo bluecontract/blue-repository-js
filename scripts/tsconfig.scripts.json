@@ -3,6 +3,7 @@
   "compilerOptions": {
     "outDir": "../scripts/tools-out",
     "module": "nodenext",
+    "moduleResolution": "nodenext",
     "types": ["node"]
   },
   "include": ["**/*.ts"],

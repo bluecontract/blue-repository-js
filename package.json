@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "artifact-scaffolder": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/index.ts data data/generated",
-    "artifact-scaffolder:generate": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/generate.ts data data/generated"
+    "artifact-scaffolder:generate": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/generate.ts data"
   },
   "private": true,
   "devDependencies": {
