@@ -1,0 +1,23 @@
+name: Process Blue Artifacts
+
+on:
+  repository_dispatch:
+    types: [blue-preprocessor-completed]
+
+jobs:
+  ProcessArtifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact from first workflow
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          github_token: ${{ secrets.WORKFLOW_PAT }}
+          workflow: blue-preprocessor.yml
+          run_id: ${{ github.event.client_payload.run_id }}
+          name: blue-preprocessed
+          repo: bluecontract/blue-repository
+          
+      - name: Display content of blue-ids.yaml
+        run: |
+          echo "Content of blue-ids.yaml:"
+          cat blue-preprocessed/blue-ids.yaml
