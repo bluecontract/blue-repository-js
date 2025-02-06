@@ -22,3 +22,8 @@ jobs:
         run: |
           echo "Content of blue-ids.yaml:"
           cat blue-preprocessed/blue-ids.yaml
+
+      - name: Display changed packages
+        run: |
+          echo "Changed packages folders:"
+          cat blue-preprocessed/changed_packages.txt
