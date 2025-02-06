@@ -6,7 +6,7 @@ import {
 } from '@nx/devkit';
 import { SyncCodeGeneratorSchema } from './schema';
 import { blueIdsGenerator } from '../blue-ids/blue-ids';
-
+import { zodSchemasGenerator } from '../zod-schemas/zod-schemas';
 const normalizeOptions = (options: SyncCodeGeneratorSchema) => {
   return {
     ...options,
@@ -21,6 +21,15 @@ export default async function (tree: Tree, schema: SyncCodeGeneratorSchema) {
 
   if (options.generateBlueIds) {
     const callback = await blueIdsGenerator(tree, {
+      inputPath: options.inputPath,
+      libraryName: options.libraryName,
+      skipFormat: true,
+    });
+    tasks.push(callback);
+  }
+
+  if (options.generateSchemas) {
+    const callback = await zodSchemasGenerator(tree, {
       inputPath: options.inputPath,
       libraryName: options.libraryName,
       skipFormat: true,

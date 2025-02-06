@@ -38,7 +38,7 @@ export async function libraryGenerator(
     name: options.name,
     directory,
     bundler: 'vite',
-    unitTestRunner: 'none',
+    unitTestRunner: 'vitest',
     linter: 'eslint',
     importPath,
     skipFormat: true,
@@ -47,6 +47,7 @@ export async function libraryGenerator(
   });
 
   tree.delete(`${projectRoot}/src/lib/${options.name}.ts`);
+  tree.delete(`${projectRoot}/src/lib/${options.name}.spec.ts`);
 
   updateTsconfigFiles(tree, projectRoot, 'tsconfig.lib.json', {
     module: 'ESNext',

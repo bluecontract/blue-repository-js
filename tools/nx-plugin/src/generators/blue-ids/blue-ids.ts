@@ -5,12 +5,27 @@ import { Tree, formatFiles, readProjectConfiguration } from '@nx/devkit';
 import { BlueIdsGeneratorSchema } from './schema';
 
 /**
- * Transform YAML content to a JS module
+ * Transform YAML content to a JS module with camelCase keys
  */
 function transformToModule(content: string): string {
-  const data = yaml.load(content);
-  const jsonString = JSON.stringify(data, null, 2);
-  return `export default ${jsonString} as const;\n`;
+  const data = yaml.load(content) as Record<string, unknown>;
+
+  // Transform the keys to camelCase
+  const transformedData = Object.fromEntries(
+    Object.entries(data).map(([key, value]) => [
+      // Split by spaces, capitalize first letter of each word except first, then join
+      key
+        .split(' ')
+        .map((word, index) =>
+          index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+        )
+        .join(''),
+      value,
+    ])
+  );
+
+  const jsonString = JSON.stringify(transformedData, null, 2);
+  return `export const blueIds = ${jsonString} as const;\n`;
 }
 
 export async function blueIdsGenerator(

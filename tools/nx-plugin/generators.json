@@ -16,6 +16,16 @@
       "factory": "./src/generators/blue-ids/blue-ids",
       "schema": "./src/generators/blue-ids/schema.json",
       "description": "Generate blue-ids.ts file"
+    },
+    "zod-schemas": {
+      "factory": "./src/generators/zod-schemas/zod-schemas",
+      "schema": "./src/generators/zod-schemas/schema.json",
+      "description": "Generate zod schemas from a yaml files"
+    },
+    "sync-deps": {
+      "factory": "./src/generators/sync-deps/sync-deps",
+      "schema": "./src/generators/sync-deps/schema.json",
+      "description": "sync-deps generator"
     }
   }
 }

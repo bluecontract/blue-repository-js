@@ -1,2 +1,2 @@
 export * from './schema';
-export { default as blueIds } from './blue-ids';
+export { blueIds } from './blue-ids';
