@@ -16,6 +16,7 @@ jobs:
           run_id: ${{ github.event.client_payload.run_id }}
           name: blue-preprocessed
           repo: bluecontract/blue-repository
+          path: blue-preprocessed
           
       - name: Display content of blue-ids.yaml
         run: |
