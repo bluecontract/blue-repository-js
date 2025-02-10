@@ -14,6 +14,9 @@ jobs:
   ProcessArtifacts:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout main repository
+        uses: actions/checkout@v4
+
       - name: Sparse checkout repository
         uses: actions/checkout@v4
         with:
@@ -44,7 +47,14 @@ jobs:
           echo "Content of blue-ids.yaml:"
           cat data/blue-preprocessed/blue-ids.yaml
 
-      - name: Display changed packages
-        run: |
-          echo "Changed packages folders:"
-          cat data/blue-preprocessed/changed_packages.txt
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run script
+        run: npm run artifact-scaffolder:generate
