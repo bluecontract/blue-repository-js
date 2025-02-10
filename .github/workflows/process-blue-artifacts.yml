@@ -8,6 +8,21 @@ jobs:
   ProcessArtifacts:
     runs-on: ubuntu-latest
     steps:
+      - name: Sparse checkout repository
+        uses: actions/checkout@v4
+        with:
+          repository: bluecontract/blue-repository
+          token: ${{ secrets.WORKFLOW_PAT }}
+          path: data/blue-repository
+          sparse-checkout: |
+            /*
+            !/.github
+            !/.gitignore
+            !/.git
+            !/.vscode
+            !/.idea
+          sparse-checkout-cone-mode: false
+
       - name: Download artifact from first workflow
         uses: dawidd6/action-download-artifact@v2
         with:
@@ -16,14 +31,14 @@ jobs:
           run_id: ${{ github.event.client_payload.run_id }}
           name: blue-preprocessed
           repo: bluecontract/blue-repository
-          path: blue-preprocessed
-          
+          path: data/blue-preprocessed
+
       - name: Display content of blue-ids.yaml
         run: |
           echo "Content of blue-ids.yaml:"
-          cat blue-preprocessed/blue-ids.yaml
+          cat data/blue-preprocessed/blue-ids.yaml
 
       - name: Display changed packages
         run: |
           echo "Changed packages folders:"
-          cat blue-preprocessed/changed_packages.txt
+          cat data/blue-preprocessed/changed_packages.txt
