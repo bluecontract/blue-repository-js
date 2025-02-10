@@ -72,7 +72,7 @@ export async function syncDepsGenerator(
       return acc;
     }
 
-    acc[dependency.name] = dependency.version;
+    acc[dependency.name] = workspaceDependency ?? dependency.version;
     return acc;
   }, {} as Record<string, string>);
 

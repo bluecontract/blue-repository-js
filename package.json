@@ -43,6 +43,7 @@
     "tools/*"
   ],
   "dependencies": {
+    "@blue-company/language": "^1.9.0",
     "@nx/devkit": "20.4.0",
     "zod": "^3.23.8"
   },
