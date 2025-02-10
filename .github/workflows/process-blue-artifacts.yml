@@ -3,6 +3,12 @@ name: Process Blue Artifacts
 on:
   repository_dispatch:
     types: [blue-preprocessor-completed]
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'Run ID of the blue-preprocessor workflow'
+        required: true
+        type: string
 
 jobs:
   ProcessArtifacts:
@@ -28,7 +34,7 @@ jobs:
         with:
           github_token: ${{ secrets.WORKFLOW_PAT }}
           workflow: blue-preprocessor.yml
-          run_id: ${{ github.event.client_payload.run_id }}
+          run_id: ${{ github.event.client_payload.run_id || inputs.run_id }}
           name: blue-preprocessed
           repo: bluecontract/blue-repository
           path: data/blue-preprocessed
