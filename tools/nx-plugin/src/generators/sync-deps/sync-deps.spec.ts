@@ -6,7 +6,9 @@ import { SyncDepsGeneratorSchema } from './schema';
 
 describe('sync-deps generator', () => {
   let tree: Tree;
-  const options: SyncDepsGeneratorSchema = { name: 'test' };
+  const options: SyncDepsGeneratorSchema = {
+    libraryName: 'test',
+  };
 
   beforeEach(() => {
     tree = createTreeWithEmptyWorkspace();

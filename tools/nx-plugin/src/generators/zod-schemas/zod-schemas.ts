@@ -3,7 +3,8 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as yaml from 'js-yaml';
 import { ZodSchemasGeneratorOptions } from './schema';
-
+import { transformToPackageName } from '../../utils/transformToPackageName';
+import { pascal } from '../../utils/pascal';
 interface BlueField {
   type: { blueId: string };
   description?: string;
@@ -60,22 +61,6 @@ function getModulePath(baseDir: string, moduleName: string): string {
   return path.join(baseDir, '..', moduleName);
 }
 
-/**
- * Transforms a directory name into a valid package name
- */
-function transformToPackageName(dirName: string): string {
-  // Remove version suffix if exists (e.g., "v0.4")
-  const nameWithoutVersion = dirName.replace(/\sv[\d.]+$/i, '');
-
-  return nameWithoutVersion
-    .toLowerCase() // Convert to lowercase
-    .replace(/\s+/g, '-') // Replace spaces with hyphens
-    .replace(/[^a-z0-9-]/g, '') // Remove any characters that aren't letters, numbers, or hyphens
-    .replace(/(\d+)/g, '-$1') // Add hyphen before numbers
-    .replace(/-+/g, '-') // Replace multiple hyphens with single hyphen
-    .replace(/^-|-$/g, ''); // Remove leading/trailing hyphens
-}
-
 function getAllBlueIds(
   modulePath: string,
   processedModules = new Set<string>()
@@ -125,7 +110,7 @@ function generateImportPath(
   typeInfo: BlueIdInfo
 ): string {
   if (typeInfo.moduleName === currentModule) {
-    return `./${typeInfo.typeName.replace(/\s+/g, '')}`;
+    return `./${pascal(typeInfo.typeName)}`;
   }
   return `@blue-repository/${transformToPackageName(typeInfo.moduleName)}`;
 }
@@ -149,7 +134,7 @@ function generateZodType(
         } else {
           const itemTypeInfo = getTypeNameFromBlueId(blueIds, itemTypeId);
           if (itemTypeInfo) {
-            const schemaName = itemTypeInfo.typeName.replace(/\s+/g, '');
+            const schemaName = pascal(itemTypeInfo.typeName);
             const importPath = generateImportPath(currentModule, itemTypeInfo);
             imports.set(schemaName, importPath);
             zodType = `z.array(${schemaName}Schema)`;
@@ -170,7 +155,7 @@ function generateZodType(
         } else {
           const keyTypeInfo = getTypeNameFromBlueId(blueIds, keyTypeId);
           if (keyTypeInfo) {
-            const schemaName = keyTypeInfo.typeName.replace(/\s+/g, '');
+            const schemaName = pascal(keyTypeInfo.typeName);
             const importPath = generateImportPath(currentModule, keyTypeInfo);
             imports.set(schemaName, importPath);
             keyZodType = `${schemaName}Schema`;
@@ -187,7 +172,7 @@ function generateZodType(
         } else {
           const valueTypeInfo = getTypeNameFromBlueId(blueIds, valueTypeId);
           if (valueTypeInfo) {
-            const schemaName = valueTypeInfo.typeName.replace(/\s+/g, '');
+            const schemaName = pascal(valueTypeInfo.typeName);
             const importPath = generateImportPath(currentModule, valueTypeInfo);
             imports.set(schemaName, importPath);
             valueZodType = `${schemaName}Schema`;
@@ -202,7 +187,7 @@ function generateZodType(
   } else {
     const typeInfo = getTypeNameFromBlueId(blueIds, typeId);
     if (typeInfo) {
-      const schemaName = typeInfo.typeName.replace(/\s+/g, '');
+      const schemaName = pascal(typeInfo.typeName);
       const importPath = generateImportPath(currentModule, typeInfo);
       imports.set(schemaName, importPath);
       zodType = `${schemaName}Schema`;
@@ -367,7 +352,7 @@ function generateZodSchema(
   const imports = new Map<string, string>();
   const fields = processFields(type, blueIds, imports, 1, currentModule);
 
-  const schemaName = type.name.replace(/\s+/g, '');
+  const schemaName = pascal(type.name);
   const schemaContent = `import { z } from 'zod';\n`;
 
   // Add withTypeBlueId import
@@ -397,13 +382,7 @@ function generateZodSchema(
     })
   );
 
-  // Get camelCase version of the type name for blueIds reference
-  const blueIdKey = type.name
-    .split(' ')
-    .map((word, index) =>
-      index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
-    )
-    .join('');
+  const blueIdKey = pascal(type.name);
 
   return {
     schemaContent: `${schemaContent}${importStatements.join(
@@ -451,7 +430,7 @@ export async function zodSchemasGenerator(
     if (file === 'package.blue') continue;
 
     const type = readYamlFile(path.join(options.inputPath, file)) as BlueType;
-    const schemaName = type.name.replace(/\s+/g, '');
+    const schemaName = pascal(type.name);
     const { schemaContent, imports } = generateZodSchema(
       type,
       blueIds,

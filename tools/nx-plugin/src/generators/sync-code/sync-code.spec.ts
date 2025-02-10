@@ -6,7 +6,10 @@ import { SyncCodeGeneratorSchema } from './schema';
 
 describe('sync-code generator', () => {
   let tree: Tree;
-  const options: SyncCodeGeneratorSchema = { name: 'test' };
+  const options: SyncCodeGeneratorSchema = {
+    inputPath: 'data/blue-preprocessed',
+    libraryName: 'test',
+  };
 
   beforeEach(() => {
     tree = createTreeWithEmptyWorkspace();

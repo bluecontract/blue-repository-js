@@ -48,10 +48,10 @@ const mapToDependency = (
   return null;
 };
 
-export async function syncDepsGenerator(
+export const syncDepsGenerator = async (
   tree: Tree,
   options: SyncDepsGeneratorSchema
-): Promise<GeneratorCallback> {
+): Promise<GeneratorCallback> => {
   const tasks: GeneratorCallback[] = [];
 
   const projectGraph = readCachedProjectGraph();
@@ -90,6 +90,6 @@ export async function syncDepsGenerator(
   }
 
   return runTasksInSerial(...tasks);
-}
+};
 
 export default syncDepsGenerator;

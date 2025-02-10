@@ -7,6 +7,7 @@ import {
 import { SyncCodeGeneratorSchema } from './schema';
 import { blueIdsGenerator } from '../blue-ids/blue-ids';
 import { zodSchemasGenerator } from '../zod-schemas/zod-schemas';
+
 const normalizeOptions = (options: SyncCodeGeneratorSchema) => {
   return {
     ...options,
@@ -15,7 +16,10 @@ const normalizeOptions = (options: SyncCodeGeneratorSchema) => {
   };
 };
 
-export default async function (tree: Tree, schema: SyncCodeGeneratorSchema) {
+export const syncCodeGenerator = async (
+  tree: Tree,
+  schema: SyncCodeGeneratorSchema
+) => {
   const tasks: GeneratorCallback[] = [];
   const options = normalizeOptions(schema);
 
@@ -37,8 +41,9 @@ export default async function (tree: Tree, schema: SyncCodeGeneratorSchema) {
     tasks.push(callback);
   }
 
-  // Format generated files
   await formatFiles(tree);
 
   return runTasksInSerial(...tasks);
-}
+};
+
+export default syncCodeGenerator;

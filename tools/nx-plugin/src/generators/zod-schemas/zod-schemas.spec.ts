@@ -6,7 +6,10 @@ import { ZodSchemasGeneratorOptions } from './schema';
 
 describe('zod schemas generator', () => {
   let tree: Tree;
-  const options: ZodSchemasGeneratorOptions = { name: 'test' };
+  const options: ZodSchemasGeneratorOptions = {
+    inputPath: 'data/blue-preprocessed',
+    libraryName: 'test',
+  };
 
   beforeEach(() => {
     tree = createTreeWithEmptyWorkspace();

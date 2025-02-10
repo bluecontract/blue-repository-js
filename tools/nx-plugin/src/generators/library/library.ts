@@ -10,10 +10,10 @@ import { libraryGenerator as jsLibraryGenerator } from '@nx/js';
 import { determineProjectNameAndRootOptions } from '@nx/devkit/src/generators/project-name-and-root-utils';
 import { updateTsconfigFiles } from '@nx/js/src/utils/typescript/ts-solution-setup';
 
-export async function libraryGenerator(
+export const libraryGenerator = async (
   tree: Tree,
   options: LibraryGeneratorSchema
-) {
+) => {
   const directory = `libs/${options.name}`;
   const importPath = `@blue-repository/${options.name}`;
 
@@ -57,6 +57,6 @@ export async function libraryGenerator(
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
 
   await formatFiles(tree);
-}
+};
 
 export default libraryGenerator;

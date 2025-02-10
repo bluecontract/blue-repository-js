@@ -3,6 +3,7 @@ import * as path from 'path';
 import * as yaml from 'js-yaml';
 import { Tree, formatFiles, readProjectConfiguration } from '@nx/devkit';
 import { BlueIdsGeneratorSchema } from './schema';
+import { pascal } from '../../utils/pascal';
 
 /**
  * Transform YAML content to a JS module with camelCase keys
@@ -12,16 +13,7 @@ function transformToModule(content: string): string {
 
   // Transform the keys to camelCase
   const transformedData = Object.fromEntries(
-    Object.entries(data).map(([key, value]) => [
-      // Split by spaces, capitalize first letter of each word except first, then join
-      key
-        .split(' ')
-        .map((word, index) =>
-          index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
-        )
-        .join(''),
-      value,
-    ])
+    Object.entries(data).map(([key, value]) => [pascal(key), value])
   );
 
   const jsonString = JSON.stringify(transformedData, null, 2);
