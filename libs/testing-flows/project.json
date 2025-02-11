@@ -1,0 +1,9 @@
+{
+  "name": "@blue-repository/testing-flows",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/testing-flows/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project @blue-repository/testing-flows --web",
+  "targets": {}
+}

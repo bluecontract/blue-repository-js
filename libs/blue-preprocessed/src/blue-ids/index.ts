@@ -1,0 +1,17 @@
+export const blueIds = {
+  Chess: '7yr28o3yPvp3seWXKt9LKJ2Tk4abyhAndVdKYytuuLjq',
+  TestingFlows: '2L5jUKZuULTAs5AE2XMPEAYZ7UTWTZVmToTvnwuzsM6m',
+  TimelineBlue: '4hhWuXQ3kqbG7BE28Ndh7hksYwjCr22v6tFapFerTpmp',
+  BlueContractsV04: '917qiHtncu1TvEJAV4ykYP4CsuL4pPsGomcEs7MjYzx8',
+  Simulator: 'BQ7FrXXZPvDjjJzLS8pnnWYcWHEULo1gvLH7cvN9sXEh',
+  Basic2: '3zLa5eHq6qAMuwtBpK4DBmQEim5m2nymCcNtdN44bbZX',
+  Basic1: 'E5FP9S1X6j8nC8nFg86uM5CbREb68PcgQeUMxmFE81Pc',
+  TestingJs: '71o1gFvDcFgZrUmY24SJVUcQaCzozKSvN2fBedETTQr9',
+  TestingDelegations: 'C4nvZvaB38eACSjBwkZurbDKsZejXBz3Z18QsrDTZPp8',
+  TestingConditions: '5KTFPnnGTnNyxCgXqSxg71fRAZCWhCUqi8nJe4QozvVy',
+  Blink: 'AayQFHQ8iNej8io8NKZeVKCk6tBj3yUwsyzFUsN39kji',
+  TestingLocalSubscriptions: '9KPF9Npttwro1V8pfQL3xWpqD3PXmdMLe5vCkkqK5aeB',
+  Restaurant: '8UHzCDnFWE9C4cN65uhKHuhb5KN7oRjEGKS3KJMMVQSJ',
+  TestingEvents: '89arRQzoaiUwTuuXYWEPxbERKziZ7FPsQ199LZcKhake',
+  TestingLocalContracts: '6ri55CFAVWqKSiNzQk1Xts7nxgBdyKzsvUq8ymrcsXiz',
+} as const;
