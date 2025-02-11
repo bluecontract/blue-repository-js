@@ -9,6 +9,7 @@ import { LibraryGeneratorSchema } from './schema';
 import { libraryGenerator as jsLibraryGenerator } from '@nx/js';
 import { determineProjectNameAndRootOptions } from '@nx/devkit/src/generators/project-name-and-root-utils';
 import { updateTsconfigFiles } from '@nx/js/src/utils/typescript/ts-solution-setup';
+import { updateViteConfig } from './utils/updateViteConfig';
 
 export const libraryGenerator = async (
   tree: Tree,
@@ -53,6 +54,11 @@ export const libraryGenerator = async (
     module: 'ESNext',
     moduleResolution: 'bundler',
   });
+
+  const viteConfigPath = `${projectRoot}/vite.config.ts`;
+  if (tree.exists(viteConfigPath)) {
+    updateViteConfig(tree, viteConfigPath);
+  }
 
   generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
 
