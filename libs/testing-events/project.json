@@ -1,0 +1,9 @@
+{
+  "name": "@blue-repository/testing-events",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/testing-events/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project @blue-repository/testing-events --web",
+  "targets": {}
+}
