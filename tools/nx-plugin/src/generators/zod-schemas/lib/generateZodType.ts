@@ -9,8 +9,42 @@ import { generateImportPath } from './generateImportPath';
 import { pascal } from '../../../utils/pascal';
 
 /**
- * Given a BlueField and known blueIds, produce a Zod expression (as a string).
- * Also track which imports are needed (via the imports map).
+ * A helper so we don't repeat "parse sub type" logic everywhere.
+ */
+function getSubZodType(
+  subFieldRef: { blueId: string } | undefined,
+  currentModule: string,
+  blueIds: ModuleBlueIds,
+  imports: Map<string, string>
+): string {
+  if (!subFieldRef) return 'z.unknown()';
+
+  const subId = subFieldRef.blueId;
+  const primitive = PRIMITIVE_TYPE_MAP[subId];
+  if (primitive) {
+    // if it's array or record at the sub-level, fallback to unknown
+    // (You could nest further if you prefer.)
+    if (primitive === 'array' || primitive === 'record') {
+      return 'z.unknown()';
+    }
+    // string, number, boolean
+    return `z.${primitive}()`;
+  } else {
+    // custom type
+    const typeInfo = getTypeNameFromBlueId(blueIds, subId);
+    if (!typeInfo) {
+      return 'z.unknown()';
+    }
+    const schemaName = pascal(typeInfo.typeName);
+    const importPath = generateImportPath(currentModule, typeInfo);
+    imports.set(schemaName, importPath);
+    return `${schemaName}Schema`;
+  }
+}
+
+/**
+ * Main entry point: produce a single Zod type snippet
+ * for a top-level BlueField. e.g. z.string().optional()
  */
 export function generateZodType(
   field: BlueField,
@@ -19,70 +53,42 @@ export function generateZodType(
   currentModule: string
 ): string {
   const typeId = field.type.blueId;
-  let zodType = 'z.unknown()';
+  let zodType = 'z.unknown()'; // fallback
 
-  if (PRIMITIVE_TYPE_MAP[typeId]) {
-    const primitive = PRIMITIVE_TYPE_MAP[typeId];
+  // If typeId is known as a primitive:
+  const primitive = PRIMITIVE_TYPE_MAP[typeId];
 
+  if (primitive) {
     if (primitive === 'array') {
-      // If array, see if we have an itemType
-      if (field.itemType) {
-        const itemTypeId = field.itemType.blueId;
-        if (PRIMITIVE_TYPE_MAP[itemTypeId]) {
-          zodType = `z.array(z.${PRIMITIVE_TYPE_MAP[itemTypeId]}())`;
-        } else {
-          const itemTypeInfo = getTypeNameFromBlueId(blueIds, itemTypeId);
-          if (itemTypeInfo) {
-            const schemaName = pascal(itemTypeInfo.typeName);
-            const importPath = generateImportPath(currentModule, itemTypeInfo);
-            imports.set(schemaName, importPath);
-            zodType = `z.array(${schemaName}Schema)`;
-          } else {
-            zodType = 'z.array(z.unknown())';
-          }
-        }
-      } else {
-        zodType = 'z.array(z.unknown())';
-      }
+      // For array, check itemType
+      const itemZod = getSubZodType(
+        field.itemType,
+        currentModule,
+        blueIds,
+        imports
+      );
+      zodType = `z.array(${itemZod})`;
     } else if (primitive === 'record') {
-      // dictionary, handle keyType + valueType
-      let keyZod = 'z.string()';
-      if (field.keyType) {
-        const keyId = field.keyType.blueId;
-        if (PRIMITIVE_TYPE_MAP[keyId]) {
-          keyZod = `z.${PRIMITIVE_TYPE_MAP[keyId]}()`;
-        } else {
-          const keyInfo = getTypeNameFromBlueId(blueIds, keyId);
-          if (keyInfo) {
-            const schemaName = pascal(keyInfo.typeName);
-            const importPath = generateImportPath(currentModule, keyInfo);
-            imports.set(schemaName, importPath);
-            keyZod = `${schemaName}Schema`;
-          }
-        }
-      }
-      let valueZod = 'z.unknown()';
-      if (field.valueType) {
-        const valId = field.valueType.blueId;
-        if (PRIMITIVE_TYPE_MAP[valId]) {
-          valueZod = `z.${PRIMITIVE_TYPE_MAP[valId]}()`;
-        } else {
-          const valInfo = getTypeNameFromBlueId(blueIds, valId);
-          if (valInfo) {
-            const schemaName = pascal(valInfo.typeName);
-            const importPath = generateImportPath(currentModule, valInfo);
-            imports.set(schemaName, importPath);
-            valueZod = `${schemaName}Schema`;
-          }
-        }
-      }
+      // For record, check keyType & valueType
+      const keyZod = getSubZodType(
+        field.keyType,
+        currentModule,
+        blueIds,
+        imports
+      );
+      const valueZod = getSubZodType(
+        field.valueType,
+        currentModule,
+        blueIds,
+        imports
+      );
       zodType = `z.record(${keyZod}, ${valueZod})`;
     } else {
-      // string, number, boolean
+      // string/number/boolean
       zodType = `z.${primitive}()`;
     }
   } else {
-    // It's a custom type
+    // Maybe it's a custom type
     const typeInfo = getTypeNameFromBlueId(blueIds, typeId);
     if (typeInfo) {
       const schemaName = pascal(typeInfo.typeName);
@@ -92,6 +98,6 @@ export function generateZodType(
     }
   }
 
-  // Each field is optional by default (can remove if you prefer)
-  return zodType + '.optional()';
+  // Optionally, all fields are .optional() by default
+  return `${zodType}.optional()`;
 }
