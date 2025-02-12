@@ -25,6 +25,14 @@ function getAllFiles(dir: string): string[] {
 }
 
 /**
+ * Checks if a library already exists
+ */
+function libraryExists(name: string): boolean {
+  const projectPath = `libs/${name}/project.json`;
+  return fs.existsSync(projectPath);
+}
+
+/**
  * Transforms a directory name into a valid package name
  * Examples:
  * - "basic1" -> "basic-1"
@@ -67,7 +75,7 @@ type LibraryConfig = {
  * Generates an NX library for the given YAML file
  */
 async function generateLibrary(libraryConfig: LibraryConfig) {
-  const { parentDir, name, importPackageName } = libraryConfig;
+  const { parentDir, name } = libraryConfig;
 
   // Skip if it's the root blue-ids.yaml
   if (parentDir === '.') {
@@ -83,6 +91,15 @@ async function generateLibrary(libraryConfig: LibraryConfig) {
     console.log(`Successfully generated library: ${name}`);
   } catch (error) {
     console.error(`Error generating library ${name}:`, error);
+  }
+}
+
+async function syncCode(libraryConfig: LibraryConfig) {
+  const { parentDir, name, importPackageName } = libraryConfig;
+
+  // Skip if it's the root blue-ids.yaml
+  if (parentDir === '.') {
+    return;
   }
 
   try {
@@ -177,22 +194,30 @@ async function main() {
 
   console.log('Found files:', files);
 
-  const libraryConfigs = files.map((file) => {
-    const parentDir = path.dirname(file);
-    const lastDir = path.basename(parentDir);
-    const packageName = transformToPackageName(lastDir);
-    const importPath = `@blue-repository/${packageName}`;
+  const libraryConfigs = files
+    .filter((v) => v !== 'data/blue-preprocessed/blue-ids.yaml')
+    .map((file) => {
+      const parentDir = path.dirname(file);
+      const lastDir = path.basename(parentDir);
+      const packageName = transformToPackageName(lastDir);
+      const importPath = `@blue-repository/${packageName}`;
 
-    return {
-      blueIdsYamlFile: file,
-      parentDir,
-      name: packageName,
-      importPackageName: importPath,
-    };
-  });
+      return {
+        blueIdsYamlFile: file,
+        parentDir,
+        name: packageName,
+        importPackageName: importPath,
+      };
+    });
 
   for (const libraryConfig of libraryConfigs) {
-    await generateLibrary(libraryConfig);
+    if (!libraryExists(libraryConfig.name)) {
+      await generateLibrary(libraryConfig);
+    } else {
+      console.log(`Library ${libraryConfig.name} already exists, skipping...`);
+    }
+
+    await syncCode(libraryConfig);
   }
 
   await nxReset();
