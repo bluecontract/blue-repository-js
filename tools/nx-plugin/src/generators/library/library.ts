@@ -16,7 +16,7 @@ export const libraryGenerator = async (
   options: LibraryGeneratorSchema
 ) => {
   const directory = `libs/${options.name}`;
-  const importPath = `@blue-repository/${options.name}`;
+  const packageName = `@blue-repository/${options.name}`;
 
   const { projectName, projectRoot } = await determineProjectNameAndRootOptions(
     tree,
@@ -24,7 +24,7 @@ export const libraryGenerator = async (
       name: options.name,
       projectType: 'library',
       directory,
-      importPath,
+      importPath: packageName,
     }
   );
   const projectConfigFile = joinPathFragments(projectRoot, 'project.json');
@@ -41,7 +41,7 @@ export const libraryGenerator = async (
     bundler: 'vite',
     unitTestRunner: 'vitest',
     linter: 'eslint',
-    importPath,
+    importPath: packageName,
     skipFormat: true,
     publishable: true,
     strict: true,
@@ -60,7 +60,24 @@ export const libraryGenerator = async (
     updateViteConfig(tree, viteConfigPath);
   }
 
-  generateFiles(tree, path.join(__dirname, 'files'), projectRoot, options);
+  generateFiles(tree, path.join(__dirname, 'files'), projectRoot, {
+    ...options,
+    packageName,
+    projectRoot,
+    tmpl: '',
+  });
+
+  generateFiles(
+    tree,
+    path.join(__dirname, '../../templates/readme'),
+    projectRoot,
+    {
+      ...options,
+      packageName,
+      projectRoot,
+      tmpl: '',
+    }
+  );
 
   await formatFiles(tree);
 };

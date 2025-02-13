@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 import { BlueIds, ModuleBlueIds } from './utils/blueTypes';
-import { readYamlFile } from './utils/readYamlFile';
+import { readYamlFile } from '../../../utils/readYamlFile';
 import { readExtendsFile } from './utils/readExtendsFile';
 import { getModulePath } from './utils/getModulePath';
 

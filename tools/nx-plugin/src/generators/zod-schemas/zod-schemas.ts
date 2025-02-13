@@ -11,7 +11,7 @@ import * as path from 'path';
 import { ZodSchemasGeneratorOptions } from './schema';
 import { BlueType } from './lib/utils/blueTypes';
 import { getAllBlueIds } from './lib/getAllBlueIds';
-import { readYamlFile } from './lib/utils/readYamlFile';
+import { readYamlFile } from '../../utils/readYamlFile';
 import { generateZodSchemaData } from './lib/generateZodSchemaData';
 import { ensureDirectoryExists } from './lib/utils/ensureDirectoryExists';
 
