@@ -69,6 +69,9 @@ jobs:
       - name: Run script
         run: npm run artifact-scaffolder
 
+      - name: Update dependencies and package-lock.json
+        run: npm install
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
