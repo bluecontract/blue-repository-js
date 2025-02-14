@@ -11,7 +11,7 @@ on:
         type: string
 
 env:
-  BASE_BRANCH: develop
+  BASE_BRANCH: testing
 
 jobs:
   ProcessArtifacts:
