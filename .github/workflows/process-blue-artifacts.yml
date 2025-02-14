@@ -15,6 +15,7 @@ env:
 
 jobs:
   ProcessArtifacts:
+    name: Process Blue Artifacts
     runs-on: ubuntu-latest
     permissions:
       contents: write
