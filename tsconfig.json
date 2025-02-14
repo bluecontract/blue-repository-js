@@ -5,6 +5,51 @@
   "references": [
     {
       "path": "./tools/nx-plugin"
+    },
+    {
+      "path": "./libs/blink"
+    },
+    {
+      "path": "./libs/blue-contracts"
+    },
+    {
+      "path": "./libs/chess"
+    },
+    {
+      "path": "./libs/restaurant"
+    },
+    {
+      "path": "./libs/testing-conditions"
+    },
+    {
+      "path": "./libs/testing-delegations"
+    },
+    {
+      "path": "./libs/testing-events"
+    },
+    {
+      "path": "./libs/testing-flows"
+    },
+    {
+      "path": "./libs/testing-js"
+    },
+    {
+      "path": "./libs/testing-local-contracts"
+    },
+    {
+      "path": "./libs/testing-local-subscriptions"
+    },
+    {
+      "path": "./libs/timeline-blue"
+    },
+    {
+      "path": "./libs/basic-1"
+    },
+    {
+      "path": "./libs/basic-2"
+    },
+    {
+      "path": "./libs/simulator"
     }
   ]
 }
