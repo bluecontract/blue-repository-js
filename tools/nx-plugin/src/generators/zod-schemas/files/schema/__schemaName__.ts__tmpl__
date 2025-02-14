@@ -1,0 +1,26 @@
+<% /* __schemaName__.ts__tmpl__ */ %>
+import { z } from 'zod';
+import { withTypeBlueId } from '@blue-company/language';
+import { blueIds } from '../blue-ids';
+<% if (importsByPath) { -%>
+<% Object.entries(importsByPath).forEach(([importPath, typeNames]) => { -%>
+<% const sortedNames = Array.from(typeNames).sort(); -%>
+<% if (sortedNames.length === 1) { -%>
+import { <%= sortedNames[0] %>Schema } from '<%= importPath %>';
+<% } else { -%>
+import {
+  <%= sortedNames.map(n => n + 'Schema').join(',\n  ') %>,
+} from '<%= importPath %>';
+<% } -%>
+<% }); -%>
+<% } -%>
+
+export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)(
+  z.object({
+<% fields.forEach((fieldLine) => { -%>
+    <%- fieldLine %>,
+<% }) -%>
+  })
+);
+
+export type <%= schemaName %> = z.infer<typeof <%= schemaName %>Schema>;

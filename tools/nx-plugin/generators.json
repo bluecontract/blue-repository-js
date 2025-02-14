@@ -1,0 +1,31 @@
+{
+  "generators": {
+    "library": {
+      "factory": "./src/generators/library/library",
+      "schema": "./src/generators/library/schema.json",
+      "aliases": ["lib"],
+      "x-type": "library",
+      "description": "Create a library"
+    },
+    "sync-code": {
+      "factory": "./src/generators/sync-code/sync-code",
+      "schema": "./src/generators/sync-code/schema.json",
+      "description": "Synchronize code from the yaml file to the library"
+    },
+    "blue-ids": {
+      "factory": "./src/generators/blue-ids/blue-ids",
+      "schema": "./src/generators/blue-ids/schema.json",
+      "description": "Generate blue-ids.ts file"
+    },
+    "zod-schemas": {
+      "factory": "./src/generators/zod-schemas/zod-schemas",
+      "schema": "./src/generators/zod-schemas/schema.json",
+      "description": "Generate zod schemas from a yaml files"
+    },
+    "sync-deps": {
+      "factory": "./src/generators/sync-deps/sync-deps",
+      "schema": "./src/generators/sync-deps/schema.json",
+      "description": "sync-deps generator"
+    }
+  }
+}
