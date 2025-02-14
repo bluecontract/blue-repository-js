@@ -168,19 +168,6 @@ async function updateDependencies(libraryConfig: LibraryConfig) {
   }
 }
 
-async function fixNxTargetDefaultsTestDependsOn() {
-  try {
-    console.log(`Fixing nx target defaults test dependsOn`);
-    const nxJson = JSON.parse(fs.readFileSync('nx.json', 'utf8'));
-    nxJson.targetDefaults.test.dependsOn = ['^build'];
-    fs.writeFileSync('nx.json', JSON.stringify(nxJson, null, 2));
-
-    console.log(`Successfully fixed nx target defaults test dependsOn`);
-  } catch (error) {
-    console.error(`Error fixing nx target defaults test dependsOn:`, error);
-  }
-}
-
 /**
  * Main function to process blue-ids.yaml files and generate NX libraries
  */
@@ -239,8 +226,6 @@ async function main() {
   for (const libraryConfig of libraryConfigs) {
     await updateDependencies(libraryConfig);
   }
-
-  await fixNxTargetDefaultsTestDependsOn();
 }
 
 main().catch((error) => {

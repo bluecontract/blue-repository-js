@@ -3,6 +3,9 @@ import {
   generateFiles,
   joinPathFragments,
   Tree,
+  updateNxJson,
+  NxJsonConfiguration,
+  readNxJson,
 } from '@nx/devkit';
 import * as path from 'path';
 import { LibraryGeneratorSchema } from './schema';
@@ -10,6 +13,23 @@ import { libraryGenerator as jsLibraryGenerator } from '@nx/js';
 import { determineProjectNameAndRootOptions } from '@nx/devkit/src/generators/project-name-and-root-utils';
 import { updateTsconfigFiles } from '@nx/js/src/utils/typescript/ts-solution-setup';
 import { updateViteConfig } from './utils/updateViteConfig';
+
+const ensureTargetDefaultsTestDependsOnOneBuild = (
+  nxJson: NxJsonConfiguration
+) => {
+  if (
+    !nxJson.targetDefaults?.test?.dependsOn ||
+    nxJson.targetDefaults?.test?.dependsOn?.length === 1
+  ) {
+    return;
+  }
+
+  const filteredDependsOn = nxJson.targetDefaults?.test?.dependsOn?.filter(
+    (d) => d !== '^build'
+  );
+
+  nxJson.targetDefaults.test.dependsOn = [...filteredDependsOn, '^build'];
+};
 
 export const libraryGenerator = async (
   tree: Tree,
@@ -80,6 +100,12 @@ export const libraryGenerator = async (
       typeModuleBlueId: false,
     }
   );
+
+  const nxJson = readNxJson(tree);
+  if (nxJson) {
+    ensureTargetDefaultsTestDependsOnOneBuild(nxJson);
+    updateNxJson(tree, nxJson);
+  }
 
   await formatFiles(tree);
 };
