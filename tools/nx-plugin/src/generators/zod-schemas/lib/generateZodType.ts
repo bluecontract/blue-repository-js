@@ -1,4 +1,3 @@
-// generateZodType.ts
 import {
   BlueField,
   ModuleBlueIds,
@@ -9,95 +8,109 @@ import { generateImportPath } from './generateImportPath';
 import { pascal } from '../../../utils/pascal';
 
 /**
- * A helper so we don't repeat "parse sub type" logic everywhere.
+ * Generates a Zod type definition for a nested field reference.
+ * Handles primitive types, arrays, records, and custom types.
+ * Falls back to z.unknown() for unsupported or unresolved types.
+ *
+ * @param fieldReference - The field reference containing a Blue ID, or undefined
+ * @param moduleIdentifier - The identifier of the current module
+ * @param blueIds - Collection of Blue IDs from the current module and its parents
+ * @param schemaImportMap - Map to track required schema imports
+ * @returns A string representing the Zod type definition
  */
-function getSubZodType(
-  subFieldRef: { blueId: string } | undefined,
-  currentModule: string,
+function generateSubZodType(
+  fieldReference: { blueId: string } | undefined,
+  moduleIdentifier: string,
   blueIds: ModuleBlueIds,
-  imports: Map<string, string>
+  schemaImportMap: Map<string, string>
 ): string {
-  if (!subFieldRef) return 'z.unknown()';
-
-  const subId = subFieldRef.blueId;
-  const primitive = PRIMITIVE_TYPE_MAP[subId];
-  if (primitive) {
-    // if it's array or record at the sub-level, fallback to unknown
-    // (You could nest further if you prefer.)
-    if (primitive === 'array' || primitive === 'record') {
-      return 'z.unknown()';
-    }
-    // string, number, boolean
-    return `z.${primitive}()`;
-  } else {
-    // custom type
-    const typeInfo = getTypeNameFromBlueId(blueIds, subId);
-    if (!typeInfo) {
-      return 'z.unknown()';
-    }
-    const schemaName = pascal(typeInfo.typeName);
-    const importPath = generateImportPath(currentModule, typeInfo);
-    imports.set(schemaName, importPath);
-    return `${schemaName}Schema`;
+  if (!fieldReference) {
+    return 'z.unknown()';
   }
+
+  const subTypeId = fieldReference.blueId;
+  const primitiveType = PRIMITIVE_TYPE_MAP[subTypeId];
+
+  if (primitiveType) {
+    const isComplexPrimitive =
+      primitiveType === 'array' || primitiveType === 'record';
+    if (isComplexPrimitive) {
+      return 'z.unknown()';
+    }
+    return `z.${primitiveType}()`;
+  }
+
+  const customTypeInfo = getTypeNameFromBlueId(blueIds, subTypeId);
+  if (!customTypeInfo) {
+    return 'z.unknown()';
+  }
+
+  const schemaName = pascal(customTypeInfo.typeName);
+  const importPath = generateImportPath(moduleIdentifier, customTypeInfo);
+  schemaImportMap.set(schemaName, importPath);
+
+  return `${schemaName}Schema`;
 }
 
 /**
- * Main entry point: produce a single Zod type snippet
- * for a top-level BlueField. e.g. z.string().optional()
+ * Generates a complete Zod type definition for a Blue field.
+ * Supports primitive types (string, number, boolean), arrays, records, and custom types.
+ * All generated fields are optional by default.
+ *
+ * @param field - The Blue field definition to convert
+ * @param blueIds - Collection of Blue IDs from the current module and its parents
+ * @param schemaImportMap - Map to track required schema imports
+ * @param moduleIdentifier - The identifier of the current module
+ * @returns A string representing the complete Zod type definition with optional modifier
  */
 export function generateZodType(
   field: BlueField,
   blueIds: ModuleBlueIds,
-  imports: Map<string, string>,
-  currentModule: string
+  schemaImportMap: Map<string, string>,
+  moduleIdentifier: string
 ): string {
   const typeId = field.type.blueId;
-  let zodType = 'z.unknown()'; // fallback
+  const primitiveType = PRIMITIVE_TYPE_MAP[typeId];
 
-  // If typeId is known as a primitive:
-  const primitive = PRIMITIVE_TYPE_MAP[typeId];
+  let zodTypeDefinition: string;
 
-  if (primitive) {
-    if (primitive === 'array') {
-      // For array, check itemType
-      const itemZod = getSubZodType(
+  if (primitiveType) {
+    if (primitiveType === 'array') {
+      const itemTypeDefinition = generateSubZodType(
         field.itemType,
-        currentModule,
+        moduleIdentifier,
         blueIds,
-        imports
+        schemaImportMap
       );
-      zodType = `z.array(${itemZod})`;
-    } else if (primitive === 'record') {
-      // For record, check keyType & valueType
-      const keyZod = getSubZodType(
+      zodTypeDefinition = `z.array(${itemTypeDefinition})`;
+    } else if (primitiveType === 'record') {
+      const keyTypeDefinition = generateSubZodType(
         field.keyType,
-        currentModule,
+        moduleIdentifier,
         blueIds,
-        imports
+        schemaImportMap
       );
-      const valueZod = getSubZodType(
+      const valueTypeDefinition = generateSubZodType(
         field.valueType,
-        currentModule,
+        moduleIdentifier,
         blueIds,
-        imports
+        schemaImportMap
       );
-      zodType = `z.record(${keyZod}, ${valueZod})`;
+      zodTypeDefinition = `z.record(${keyTypeDefinition}, ${valueTypeDefinition})`;
     } else {
-      // string/number/boolean
-      zodType = `z.${primitive}()`;
+      zodTypeDefinition = `z.${primitiveType}()`;
     }
   } else {
-    // Maybe it's a custom type
-    const typeInfo = getTypeNameFromBlueId(blueIds, typeId);
-    if (typeInfo) {
-      const schemaName = pascal(typeInfo.typeName);
-      const importPath = generateImportPath(currentModule, typeInfo);
-      imports.set(schemaName, importPath);
-      zodType = `${schemaName}Schema`;
+    const customTypeInfo = getTypeNameFromBlueId(blueIds, typeId);
+    if (customTypeInfo) {
+      const schemaName = pascal(customTypeInfo.typeName);
+      const importPath = generateImportPath(moduleIdentifier, customTypeInfo);
+      schemaImportMap.set(schemaName, importPath);
+      zodTypeDefinition = `${schemaName}Schema`;
+    } else {
+      zodTypeDefinition = 'z.unknown()';
     }
   }
 
-  // Optionally, all fields are .optional() by default
-  return `${zodType}.optional()`;
+  return `${zodTypeDefinition}.optional()`;
 }

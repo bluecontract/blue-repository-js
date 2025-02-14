@@ -1,54 +1,66 @@
-// generateZodSchemaData.ts
 import { processFields } from './processFields';
 import { BlueType, ModuleBlueIds } from './utils/blueTypes';
 import { pascal } from '../../../utils/pascal';
 
 /**
- * This interface describes the data our EJS template needs
- * to generate one .ts file for a single schema.
+ * Represents the data structure required by the EJS template to generate
+ * a TypeScript file containing a single Zod schema.
  */
 export interface GeneratedSchemaData {
+  /** The PascalCase name of the schema */
   schemaName: string;
-  fields: string[]; // lines for z.object({ ... })
+  /** Array of field definitions for the z.object constructor */
+  fields: string[];
+  /** Map of import paths to sets of imported type names */
   importsByPath: Record<string, Set<string>>;
 }
 
 /**
- * Convert a Map<string, string> (like schemaName -> importPath)
- * into a plain object of { [importPath]: Set<schemaName> } so EJS can iterate.
+ * Transforms a schema name to import path mapping into a grouped import path structure.
+ *
+ * @param schemaImportMap - Map where key is schema name and value is its import path
+ * @returns Object where key is import path and value is set of schema names to import from that path
  */
-function convertImportsMap(importsMap: Map<string, string>) {
-  const result: Record<string, Set<string>> = {};
-  importsMap.forEach((importPath, importedName) => {
-    if (!result[importPath]) {
-      result[importPath] = new Set<string>();
+function convertImportsMap(
+  schemaImportMap: Map<string, string>
+): Record<string, Set<string>> {
+  const groupedImports: Record<string, Set<string>> = {};
+
+  schemaImportMap.forEach((importPath, schemaName) => {
+    if (!groupedImports[importPath]) {
+      groupedImports[importPath] = new Set<string>();
     }
-    result[importPath].add(importedName);
+    groupedImports[importPath].add(schemaName);
   });
-  return result;
+
+  return groupedImports;
 }
 
 /**
- * Gather the minimal data the EJS template needs to produce
- * a single Zod schema file for a .blue definition.
+ * Generates the necessary data for creating a Zod schema file from a Blue type definition.
+ *
+ * @param typeDefinition - The Blue type definition to convert to a Zod schema
+ * @param blueIds - Collection of Blue IDs from the current module and its parents
+ * @param moduleIdentifier - The identifier of the current module
+ * @returns Data structure containing all information needed to generate the schema file
  */
 export function generateZodSchemaData(
-  typeDef: BlueType,
+  typeDefinition: BlueType,
   blueIds: ModuleBlueIds,
-  currentModule: string
+  moduleIdentifier: string
 ): GeneratedSchemaData {
-  const schemaName = pascal(typeDef.name);
-  const imports = new Map<string, string>(); // e.g. MyType -> './MyType'
-  // Build the array of lines for the fields
+  const schemaName = pascal(typeDefinition.name);
+  const schemaImportMap = new Map<string, string>();
+
   const fields = processFields(
-    typeDef as Record<string, unknown>,
+    typeDefinition as Record<string, unknown>,
     blueIds,
-    imports,
+    schemaImportMap,
     1,
-    currentModule
+    moduleIdentifier
   );
 
-  const importsByPath = convertImportsMap(imports);
+  const importsByPath = convertImportsMap(schemaImportMap);
 
   return {
     schemaName,

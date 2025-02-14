@@ -1,147 +1,164 @@
-// processFields.ts
 import { BlueField, ModuleBlueIds } from './utils/blueTypes';
 import { isNumericKeysObject } from './utils/isNumericKeysObject';
 import { generateZodType } from './generateZodType';
 
 /**
- * If a key has spaces or special chars, wrap in ['key'].
+ * Formats a field key for use in a Zod schema object.
+ * If the key contains spaces or special characters, it will be wrapped in square brackets.
+ *
+ * @param fieldKey - The field key to format
+ * @returns The formatted field key, wrapped in quotes and brackets if necessary
+ * @example
+ * formatFieldKey('normal') // returns 'normal'
+ * formatFieldKey('special key') // returns '['special key']'
  */
-function formatFieldKey(key: string): string {
-  return key.includes(' ') ? `['${key}']` : key;
+function formatFieldKey(fieldKey: string): string {
+  return fieldKey.includes(' ') ? `['${fieldKey}']` : fieldKey;
 }
 
 /**
- * Process a "tuple" object that has numeric keys, returning something like: z.tuple([ ... ])
+ * Processes a tuple-like object with numeric keys into a Zod tuple schema.
+ * Handles both direct field definitions and nested objects within the tuple.
+ *
+ * @param tupleItems - Object with numeric keys representing tuple elements
+ * @param blueIds - Collection of Blue IDs from the current module and its parents
+ * @param schemaImportMap - Map to track required schema imports
+ * @param indentationLevel - Current indentation level for code formatting
+ * @param moduleIdentifier - The identifier of the current module
+ * @returns A string representing the Zod tuple schema definition
  */
 function processTupleItems(
-  items: Record<string, unknown>,
+  tupleItems: Record<string, unknown>,
   blueIds: ModuleBlueIds,
-  imports: Map<string, string>,
-  indent: number,
-  currentModule: string
+  schemaImportMap: Map<string, string>,
+  indentationLevel: number,
+  moduleIdentifier: string
 ): string {
-  const indentation = '  '.repeat(indent);
-  const tupleItems: string[] = [];
+  const indentation = '  '.repeat(indentationLevel);
+  const processedItems: string[] = [];
 
-  const sortedKeys = Object.keys(items)
+  const orderedKeys = Object.keys(tupleItems)
     .map(Number)
     .sort((a, b) => a - b);
 
-  for (const key of sortedKeys) {
-    const value = items[key.toString()];
-    if (
-      typeof value === 'object' &&
-      value !== null &&
-      'type' in value &&
-      (value.type as Record<string, unknown>).blueId
-    ) {
-      // direct field
+  for (const key of orderedKeys) {
+    const tupleElement = tupleItems[key.toString()];
+    const isBlueFieldType =
+      typeof tupleElement === 'object' &&
+      tupleElement !== null &&
+      'type' in tupleElement &&
+      (tupleElement.type as Record<string, unknown>).blueId;
+
+    if (isBlueFieldType) {
       const zodType = generateZodType(
-        value as BlueField,
+        tupleElement as BlueField,
         blueIds,
-        imports,
-        currentModule
+        schemaImportMap,
+        moduleIdentifier
       );
-      // Tuple items typically are not optional
-      tupleItems.push(zodType.replace('.optional()', ''));
+      processedItems.push(zodType.replace('.optional()', ''));
     } else {
-      // nested object
       const nestedFields = processFields(
-        value as Record<string, unknown>,
+        tupleElement as Record<string, unknown>,
         blueIds,
-        imports,
-        indent + 1,
-        currentModule
+        schemaImportMap,
+        indentationLevel + 1,
+        moduleIdentifier
       );
-      if (nestedFields.length > 0) {
-        tupleItems.push(
-          `z.object({\n${nestedFields.join(',\n')}\n${indentation}})`
-        );
-      } else {
-        tupleItems.push('z.unknown()');
-      }
+
+      processedItems.push(
+        nestedFields.length > 0
+          ? `z.object({\n${nestedFields.join(',\n')}\n${indentation}})`
+          : 'z.unknown()'
+      );
     }
   }
 
-  return `z.tuple([${tupleItems.join(', ')}])`;
+  return `z.tuple([${processedItems.join(', ')}])`;
 }
 
 /**
- * Recursively walks the object structure to produce lines for z.object.
+ * Recursively processes an object structure to generate Zod schema field definitions.
+ * Handles special fields (name, description), tuple fields, direct field definitions,
+ * and nested objects.
+ *
+ * @param objectToProcess - The object structure to process
+ * @param blueIds - Collection of Blue IDs from the current module and its parents
+ * @param schemaImportMap - Map to track required schema imports
+ * @param indentationLevel - Current indentation level for code formatting (default: 1)
+ * @param moduleIdentifier - The identifier of the current module
+ * @returns Array of strings representing Zod field definitions
  */
 export function processFields(
-  obj: Record<string, unknown>,
+  objectToProcess: Record<string, unknown>,
   blueIds: ModuleBlueIds,
-  imports: Map<string, string>,
-  indent = 1,
-  currentModule: string
+  schemaImportMap: Map<string, string>,
+  indentationLevel = 1,
+  moduleIdentifier: string
 ): string[] {
-  const fields: string[] = [];
-  const indentation = '  '.repeat(indent);
+  const processedFields: string[] = [];
+  const indentation = '  '.repeat(indentationLevel);
 
-  // If "name" or "description" exist as strings, treat them
-  if (typeof obj.name === 'string') {
-    fields.push(`${indentation}name: z.string().optional()`);
+  // Process special string fields
+  if (typeof objectToProcess.name === 'string') {
+    processedFields.push(`${indentation}name: z.string().optional()`);
   }
-  if (typeof obj.description === 'string') {
-    fields.push(`${indentation}description: z.string().optional()`);
+  if (typeof objectToProcess.description === 'string') {
+    processedFields.push(`${indentation}description: z.string().optional()`);
   }
 
-  // Now check everything else
-  for (const [key, value] of Object.entries(obj)) {
-    // skip name/description since we handled them above
-    if (key === 'name' || key === 'description') {
+  // Process remaining fields
+  for (const [fieldKey, fieldValue] of Object.entries(objectToProcess)) {
+    if (fieldKey === 'name' || fieldKey === 'description') {
       continue;
     }
 
-    if (typeof value === 'object' && value !== null) {
-      const valObj = value as Record<string, unknown>;
+    if (typeof fieldValue === 'object' && fieldValue !== null) {
+      const fieldObject = fieldValue as Record<string, unknown>;
+      const isTupleField =
+        Object.keys(fieldObject).length === 1 &&
+        'items' in fieldObject &&
+        isNumericKeysObject(fieldObject.items);
 
-      // If the object has exactly one key: "items", and that is numeric-keys => treat as tuple
-      if (
-        Object.keys(valObj).length === 1 &&
-        'items' in valObj &&
-        isNumericKeysObject(valObj.items)
-      ) {
+      if (isTupleField) {
         const tupleType = processTupleItems(
-          valObj.items as Record<string, unknown>,
+          fieldObject.items as Record<string, unknown>,
           blueIds,
-          imports,
-          indent,
-          currentModule
+          schemaImportMap,
+          indentationLevel,
+          moduleIdentifier
         );
-        fields.push(
-          `${indentation}${formatFieldKey(key)}: ${tupleType}.optional()`
+        processedFields.push(
+          `${indentation}${formatFieldKey(fieldKey)}: ${tupleType}.optional()`
         );
-      }
-      // If it looks like a direct field definition (value.type.blueId)
-      else if (
-        'type' in valObj &&
-        valObj.type &&
-        typeof valObj.type === 'object' &&
-        (valObj.type as Record<string, unknown>).blueId
+      } else if (
+        'type' in fieldObject &&
+        fieldObject.type &&
+        typeof fieldObject.type === 'object' &&
+        (fieldObject.type as Record<string, unknown>).blueId
       ) {
         const zodType = generateZodType(
-          value as BlueField,
+          fieldValue as BlueField,
           blueIds,
-          imports,
-          currentModule
+          schemaImportMap,
+          moduleIdentifier
         );
-        fields.push(`${indentation}${formatFieldKey(key)}: ${zodType}`);
-      }
-      // Otherwise, treat as a nested object
-      else {
+        processedFields.push(
+          `${indentation}${formatFieldKey(fieldKey)}: ${zodType}`
+        );
+      } else {
         const nestedFields = processFields(
-          valObj,
+          fieldObject,
           blueIds,
-          imports,
-          indent + 1,
-          currentModule
+          schemaImportMap,
+          indentationLevel + 1,
+          moduleIdentifier
         );
+
         if (nestedFields.length > 0) {
-          fields.push(
+          processedFields.push(
             `${indentation}${formatFieldKey(
-              key
+              fieldKey
             )}: z.object({\n${nestedFields.join(
               ',\n'
             )}\n${indentation}}).optional()`
@@ -151,5 +168,5 @@ export function processFields(
     }
   }
 
-  return fields;
+  return processedFields;
 }

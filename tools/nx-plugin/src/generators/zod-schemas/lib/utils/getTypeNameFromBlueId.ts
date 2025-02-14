@@ -1,4 +1,3 @@
-// getTypeNameFromBlueId.ts
 import { BlueIdInfo, ModuleBlueIds } from './blueTypes';
 
 export function getTypeNameFromBlueId(

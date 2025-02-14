@@ -1,5 +1,3 @@
-// blueTypes.ts
-
 export interface BlueField {
   type: { blueId: string };
   description?: string;

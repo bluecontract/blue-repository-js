@@ -1,4 +1,3 @@
-// isNumericKeysObject.ts
 export function isNumericKeysObject(obj: unknown): boolean {
   if (typeof obj !== 'object' || obj === null) return false;
   const keys = Object.keys(obj);

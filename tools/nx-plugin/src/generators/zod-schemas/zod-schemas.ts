@@ -1,4 +1,3 @@
-// zodSchemasGenerator.ts
 import {
   formatFiles,
   readProjectConfiguration,
@@ -15,68 +14,62 @@ import { readYamlFile } from '../../utils/readYamlFile';
 import { generateZodSchemaData } from './lib/generateZodSchemaData';
 import { ensureDirectoryExists } from './lib/utils/ensureDirectoryExists';
 
+/**
+ * Generates Zod schemas from Blue type definitions.
+ * This generator creates TypeScript files containing Zod schemas based on Blue type definitions.
+ * The schemas are generated in the project's src/schema directory.
+ *
+ * @param tree - The Nx file system tree
+ * @param options - Configuration options for the generator
+ * @returns A function that logs completion message
+ */
 export async function zodSchemasGenerator(
   tree: Tree,
   options: ZodSchemasGeneratorOptions
-) {
-  // 1) Find the Nx project
+): Promise<() => void> {
   const projectConfig = readProjectConfiguration(tree, options.libraryName);
-  // We'll generate .ts files under: <project root>/src/schema
-  const schemasDir = path.join(projectConfig.root, 'src/schema');
+  const schemasOutputDirectory = path.join(projectConfig.root, 'src/schema');
 
-  // Make sure the schema directory exists
-  ensureDirectoryExists(tree, schemasDir);
+  ensureDirectoryExists(tree, schemasOutputDirectory);
 
-  // 2) Collect all blueIds from the current module & any parents
   const blueIds = getAllBlueIds(options.inputPath);
-  const currentModule = path.basename(options.inputPath);
+  const moduleIdentifier = path.basename(options.inputPath);
 
-  // 3) Read all .blue files
-  const blueFiles = fs
+  const blueTypeFiles = fs
     .readdirSync(options.inputPath)
-    .filter((file) => file.endsWith('.blue'));
+    .filter((file) => file.endsWith('.blue'))
+    .filter((file) => file !== 'package.blue');
 
-  // We'll store a list of schema names to build an index
-  const schemaExports: string[] = [];
+  const generatedSchemaNames: string[] = [];
 
-  // 4) For each .blue file, generate a schema .ts
-  for (const file of blueFiles) {
-    if (file === 'package.blue') continue; // skip special .blue
+  for (const blueTypeFile of blueTypeFiles) {
+    const blueTypeDefinition = readYamlFile<BlueType>(
+      path.join(options.inputPath, blueTypeFile)
+    );
 
-    // Parse the .blue file as a BlueType
-    const blueType = readYamlFile<BlueType>(path.join(options.inputPath, file));
-
-    // Produce the data needed for EJS
     const { schemaName, fields, importsByPath } = generateZodSchemaData(
-      blueType,
+      blueTypeDefinition,
       blueIds,
-      currentModule
+      moduleIdentifier
     );
 
-    // 5) Use Nx generateFiles to create the .ts file from EJS
-    generateFiles(
-      tree,
-      path.join(__dirname, './files/schema'), // folder with our EJS templates
-      schemasDir, // destination
-      {
-        tmpl: '', // Nx trick to remove `__tmpl__` from filenames
-        schemaName, // rename __schemaName__.ts__tmpl__ => e.g. User.ts
-        fields,
-        importsByPath,
-      }
-    );
+    const templateDirectory = path.join(__dirname, './files/schema');
+    generateFiles(tree, templateDirectory, schemasOutputDirectory, {
+      tmpl: '',
+      schemaName,
+      fields,
+      importsByPath,
+    });
 
-    // Add to our export list
-    schemaExports.push(schemaName);
+    generatedSchemaNames.push(schemaName);
   }
 
-  // 6) Generate the index.ts using index.ts__tmpl__
-  generateFiles(tree, path.join(__dirname, './files/schemaIndex'), schemasDir, {
+  const indexTemplateDirectory = path.join(__dirname, './files/schemaIndex');
+  generateFiles(tree, indexTemplateDirectory, schemasOutputDirectory, {
     tmpl: '',
-    schemaExports,
+    schemaExports: generatedSchemaNames,
   });
 
-  // 7) Optionally format
   if (!options.skipFormat) {
     await formatFiles(tree);
   }

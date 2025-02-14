@@ -74,8 +74,10 @@ export const libraryGenerator = async (
     {
       ...options,
       packageName,
-      projectRoot,
+      packageRoot: projectRoot,
       tmpl: '',
+      typeModuleName: false,
+      typeModuleBlueId: false,
     }
   );
 
