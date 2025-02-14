@@ -1,9 +1,9 @@
 name: Release Packages
 
 on:
-  push:
-    tags:
-      - '*@*.*.*' # Matches tags like packageName@1.2.3
+  release:
+    types:
+      - created
 
 jobs:
   release:
@@ -36,8 +36,8 @@ jobs:
       - name: Extract package name from tag
         id: extract-package
         run: |
-          TAG=${{ github.ref_name }}
-          PACKAGE_NAME=${TAG%@*}
+          RELEASE_TAG=${{ github.event.release.tag_name }}
+          PACKAGE_NAME=${RELEASE_TAG%@*}
           echo "Package to publish: $PACKAGE_NAME"
           echo "package=$PACKAGE_NAME" >> $GITHUB_OUTPUT
         shell: bash
