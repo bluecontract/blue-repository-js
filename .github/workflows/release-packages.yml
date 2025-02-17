@@ -49,7 +49,7 @@ jobs:
         shell: bash
 
       - name: Build package
-        run: npx nx build --projects=${{ steps.extract-package.outputs.package }}
+        run: npx nx build ${{ steps.extract-package.outputs.package }}
         shell: bash
 
       - name: Publish package
@@ -58,3 +58,18 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
+
+      - name: Extract moduleBlueId and tag package
+        run: |
+          PACKAGE_NAME=${{ steps.extract-package.outputs.package }}
+          MODULE_BLUE_ID=$(node -p "require('./libs/${PACKAGE_NAME}/package.json').blueType.moduleBlueId")
+          if [ ! -z "$MODULE_BLUE_ID" ]; then
+            echo "Tagging package with moduleBlueId: $MODULE_BLUE_ID"
+            echo "[DRY-RUN] Would execute: npm dist-tag add @blue-repository/${PACKAGE_NAME}@$(node -p "require('./libs/${PACKAGE_NAME}/package.json').version") $MODULE_BLUE_ID"
+          else
+            echo "No moduleBlueId found in package.json"
+            exit 1
+          fi
+        shell: bash
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
