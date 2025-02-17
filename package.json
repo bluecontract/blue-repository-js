@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
-    "artifact-scaffolder": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/index.ts data"
+    "artifact-scaffolder": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/index.ts data",
+    "tag-with-blue-id": "ts-node -P scripts/tsconfig.scripts.json scripts/tag-with-blue-id/index.ts"
   },
   "private": true,
   "devDependencies": {

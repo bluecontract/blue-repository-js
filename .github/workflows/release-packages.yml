@@ -49,7 +49,7 @@ jobs:
         shell: bash
 
       - name: Build package
-        run: npx nx build --projects=${{ steps.extract-package.outputs.package }}
+        run: npx nx build ${{ steps.extract-package.outputs.package }}
         shell: bash
 
       - name: Publish package
@@ -58,3 +58,10 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
+
+      - name: Tag package with moduleBlueId
+        run: npm run tag-with-blue-id ${{ steps.extract-package.outputs.package }}
+        shell: bash
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          DRY_RUN: 'true'
