@@ -49,7 +49,7 @@ jobs:
         shell: bash
 
       - name: Build package
-        run: npx nx build --projects=${{ steps.extract-package.outputs.package }}
+        run: npx nx build ${{ steps.extract-package.outputs.package }}
         shell: bash
 
       - name: Publish package
