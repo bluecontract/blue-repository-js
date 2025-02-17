@@ -48,6 +48,10 @@ jobs:
           echo "package=$PACKAGE_NAME" >> $GITHUB_OUTPUT
         shell: bash
 
+      - name: Build package
+        run: npx nx build --projects=${{ steps.extract-package.outputs.package }}
+        shell: bash
+
       - name: Publish package
         run: npx nx release publish --projects=${{ steps.extract-package.outputs.package }} --dry-run
         shell: bash
