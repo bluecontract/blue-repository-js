@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/chess",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -19,8 +19,8 @@
   ],
   "dependencies": {
     "@blue-company/language": "1.9.0",
-    "@blue-repository/blue-contracts": "0.0.1",
-    "@blue-repository/simulator": "0.0.1",
+    "@blue-repository/blue-contracts": "0.1.0",
+    "@blue-repository/simulator": "0.1.0",
     "zod": "3.23.8"
   },
   "blueType": {
