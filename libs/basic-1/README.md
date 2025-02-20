@@ -7,7 +7,7 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 ## Type Module Information
 
 - Module name: **basic1**
-- Version: **E5FP9S1X6j8nC8nFg86uM5CbREb68PcgQeUMxmFE81Pc**
+- Version: **GRVFT5zKVeAxHi6jbCj2PN6KDRqvgtTP4k2iyEgtEJ76**
 
 ## Installation
 
