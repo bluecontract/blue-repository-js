@@ -68,14 +68,16 @@ async function main() {
     };
   });
 
-  const librariesNeedingUpdate = libraryConfigs.filter((libraryConfig) => {
-    return (
-      !libraryConfig.exists ||
-      libraryConfig.currentBlueId !== libraryConfig.newBlueId
-    );
-  });
+  const librariesNeedingCodeGeneration = libraryConfigs.filter(
+    (libraryConfig) => {
+      return (
+        !libraryConfig.exists ||
+        libraryConfig.currentBlueId !== libraryConfig.newBlueId
+      );
+    }
+  );
 
-  for (const libraryConfig of librariesNeedingUpdate) {
+  for (const libraryConfig of librariesNeedingCodeGeneration) {
     if (!libraryConfig.exists) {
       await generateLibrary(libraryConfig);
     }
@@ -83,15 +85,15 @@ async function main() {
     await syncCode(libraryConfig);
   }
 
-  if (librariesNeedingUpdate.length > 0) {
-    await nxReset();
-    await nxSync();
+  if (librariesNeedingCodeGeneration.length === 0) {
+    console.log('No libraries needed code generation');
+  }
 
-    for (const libraryConfig of librariesNeedingUpdate) {
-      await updateDependencies(libraryConfig);
-    }
-  } else {
-    console.log('No libraries need updating.');
+  await nxReset();
+  await nxSync();
+
+  for (const libraryConfig of libraryConfigs) {
+    await updateDependencies(libraryConfig);
   }
 }
 

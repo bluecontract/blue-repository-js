@@ -3,7 +3,7 @@ import { LibraryConfig } from '../types';
 
 export async function updateDependencies(libraryConfig: LibraryConfig) {
   try {
-    console.log(`Updating dependencies for ${libraryConfig.name}`);
+    console.log(`Start updating dependencies for ${libraryConfig.name}`);
     execSync(
       `nx g @blue-repository/nx-plugin:sync-deps --libraryName="${libraryConfig.importPackageName}"`,
       {
