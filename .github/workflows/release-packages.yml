@@ -64,3 +64,4 @@ jobs:
         shell: bash
         env:
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
+          API_KEY: ${{ secrets.API_KEY }}

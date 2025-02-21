@@ -4,6 +4,12 @@ import axios from 'axios';
 import { PackageJson } from './types';
 
 const API_BASE_URL = process.env.API_BASE_URL || 'https://api.repo.blue';
+const API_KEY = process.env.API_KEY;
+
+if (!API_KEY) {
+  console.error('API_KEY environment variable is required');
+  process.exit(1);
+}
 
 async function notifyRelease(fullPackageName: string) {
   try {
@@ -33,6 +39,11 @@ async function notifyRelease(fullPackageName: string) {
         type: 'js',
         package: fullPackageName,
         version: packageJson.version,
+      },
+      {
+        headers: {
+          'x-api-key': API_KEY,
+        },
       }
     );
 
