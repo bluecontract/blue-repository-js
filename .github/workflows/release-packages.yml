@@ -58,3 +58,9 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
+
+      - name: Notify API about release
+        run: npm run notify-release ${{ steps.extract-package.outputs.package }}
+        shell: bash
+        env:
+          API_BASE_URL: ${{ secrets.API_BASE_URL }}
