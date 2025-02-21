@@ -39,8 +39,7 @@ const updateRollupExternal = (content: string) => {
   return tsquery.replace(
     content,
     `PropertyAssignment:has(Identifier[name=build]) PropertyAssignment:has(Identifier[name=rollupOptions]) PropertyAssignment:has(Identifier[name=external])`,
-    (node) => {
-      console.log(node.getText());
+    () => {
       return `external: (id: string) => {
   const dependencies = Object.keys(packageJson.dependencies);
   return dependencies.some(dependency => id === dependency);
