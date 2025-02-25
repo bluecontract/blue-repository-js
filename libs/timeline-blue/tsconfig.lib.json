@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "out-tsc/timeline-blue",
+    "tsBuildInfoFile": "out-tsc/timeline-blue/tsconfig.lib.tsbuildinfo",
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "vite/client"]
+  },
+  "include": ["src/**/*.ts"],
+  "references": [],
+  "exclude": [
+    "out-tsc",
+    "dist",
+    "vite.config.ts",
+    "vite.config.mts",
+    "vitest.config.ts",
+    "vitest.config.mts",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.tsx",
+    "src/**/*.test.js",
+    "src/**/*.spec.js",
+    "src/**/*.test.jsx",
+    "src/**/*.spec.jsx"
+  ]
+}
