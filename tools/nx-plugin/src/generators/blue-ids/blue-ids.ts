@@ -6,6 +6,7 @@ import {
   formatFiles,
   generateFiles,
   readProjectConfiguration,
+  updateJson,
 } from '@nx/devkit';
 import { BlueIdsGeneratorSchema } from './schema';
 import { pascal } from '../../utils/pascal';
@@ -70,6 +71,14 @@ export async function blueIdsGenerator(
       typeModuleBlueId,
     }
   );
+
+  updateJson(tree, path.join(projectRoot, 'package.json'), (json) => {
+    json.blueType = {
+      moduleName: typeModuleName,
+      moduleBlueId: typeModuleBlueId,
+    };
+    return json;
+  });
 
   if (!options.skipFormat) {
     await formatFiles(tree);
