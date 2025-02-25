@@ -86,9 +86,9 @@ jobs:
           commit-message: 'feat: update generated Blue artifacts'
           labels: automated-pr, blue-artifacts
 
-      - name: Enable Pull Request Automerge
-        if: steps.cpr.outputs.pull-request-operation == 'created'
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.WORKFLOW_PAT }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+      # - name: Enable Pull Request Automerge
+      #   if: steps.cpr.outputs.pull-request-operation == 'created'
+      #   uses: peter-evans/enable-pull-request-automerge@v3
+      #   with:
+      #     token: ${{ secrets.WORKFLOW_PAT }}
+      #     pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
