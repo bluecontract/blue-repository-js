@@ -53,7 +53,7 @@ jobs:
         shell: bash
 
       - name: Publish package
-        run: npx nx release publish --projects=${{ steps.extract-package.outputs.package }} --dry-run
+        run: npx nx release publish --projects=${{ steps.extract-package.outputs.package }}
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
