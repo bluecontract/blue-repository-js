@@ -6,6 +6,7 @@ import {
   updateNxJson,
   NxJsonConfiguration,
   readNxJson,
+  updateJson,
 } from '@nx/devkit';
 import * as path from 'path';
 import { LibraryGeneratorSchema } from './schema';
@@ -100,6 +101,32 @@ export const libraryGenerator = async (
       typeModuleBlueId: false,
     }
   );
+
+  updateJson(tree, path.join(projectRoot, 'package.json'), (json) => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { type, ...rest } = json;
+
+    return {
+      ...rest,
+      module: './dist/index.mjs',
+      exports: {
+        ...rest?.exports,
+        '.': {
+          types: './dist/index.d.ts',
+          import: './dist/index.mjs',
+          require: './dist/index.js',
+        },
+      },
+      license: 'MIT',
+      publishConfig: {
+        access: 'public',
+      },
+      repository: {
+        type: 'git',
+        url: 'https://github.com/bluecontract/blue-repository-js.git',
+      },
+    };
+  });
 
   const nxJson = readNxJson(tree);
   if (nxJson) {
