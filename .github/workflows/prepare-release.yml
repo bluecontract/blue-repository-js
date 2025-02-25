@@ -10,7 +10,7 @@ on:
         type: string
   push:
     branches:
-      - testing
+      - main
 
 env:
   # NX release needs to have a GH token in env.GITHUB_TOKEN
