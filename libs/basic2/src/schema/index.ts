@@ -7,3 +7,5 @@ export * from './TicketB';
 export * from './TicketC';
 
 export * from './TicketD';
+
+export * from './TicketE';
