@@ -31,8 +31,9 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - run: npm ci --legacy-peer-deps
-      - uses: nrwl/nx-set-shas@v4
+      - run: npm install
+
+      - uses: nrwl/nx-set-shas@v4.2.1
 
       # Prepend any command with "nx-cloud record --" to record its logs to Nx Cloud
       # - run: npx nx-cloud record -- echo Hello World

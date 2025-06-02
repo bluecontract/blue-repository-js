@@ -5,7 +5,7 @@ import {
 } from './utils/blueTypes';
 import { getTypeNameFromBlueId } from './utils/getTypeNameFromBlueId';
 import { generateImportPath } from './generateImportPath';
-import { pascal } from '../../../utils/pascal';
+import { getSchemaName } from './utils/getSchemaName';
 
 /**
  * Generates a Zod type definition for a nested field reference.
@@ -45,11 +45,11 @@ function generateSubZodType(
     return 'z.unknown()';
   }
 
-  const schemaName = pascal(customTypeInfo.typeName);
+  const schemaName = getSchemaName(customTypeInfo.typeName);
   const importPath = generateImportPath(moduleIdentifier, customTypeInfo);
   schemaImportMap.set(schemaName, importPath);
 
-  return `${schemaName}Schema`;
+  return schemaName;
 }
 
 /**
@@ -103,10 +103,10 @@ export function generateZodType(
   } else {
     const customTypeInfo = getTypeNameFromBlueId(blueIds, typeId);
     if (customTypeInfo) {
-      const schemaName = pascal(customTypeInfo.typeName);
+      const schemaName = getSchemaName(customTypeInfo.typeName);
       const importPath = generateImportPath(moduleIdentifier, customTypeInfo);
       schemaImportMap.set(schemaName, importPath);
-      zodTypeDefinition = `${schemaName}Schema`;
+      zodTypeDefinition = schemaName;
     } else {
       zodTypeDefinition = 'z.unknown()';
     }

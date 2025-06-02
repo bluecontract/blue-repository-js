@@ -9,6 +9,11 @@ on:
         description: 'Run ID of the blue-preprocessor workflow'
         required: true
         type: string
+      force_all_libraries:
+        description: 'Force code generation for all libraries (bypass filtering)'
+        required: false
+        type: boolean
+        default: false
 
 env:
   BASE_BRANCH: main
@@ -67,7 +72,12 @@ jobs:
         run: npm ci --legacy-peer-deps
 
       - name: Run script
-        run: npm run artifact-scaffolder
+        run: |
+          if [ "${{ inputs.force_all_libraries }}" = "true" ]; then
+            npm run artifact-scaffolder -- --force-all
+          else
+            npm run artifact-scaffolder
+          fi
 
       - name: Update dependencies and package-lock.json
         run: npm install

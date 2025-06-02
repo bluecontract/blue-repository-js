@@ -77,6 +77,12 @@ function processTupleItems(
   return `z.tuple([${processedItems.join(', ')}])`;
 }
 
+const hasOnlySpecialFields = (objectToProcess: Record<string, unknown>) => {
+  return Object.keys(objectToProcess).every(
+    (key) => key === 'name' || key === 'description'
+  );
+};
+
 /**
  * Recursively processes an object structure to generate Zod schema field definitions.
  * Handles special fields (name, description), tuple fields, direct field definitions,
@@ -119,6 +125,16 @@ export function processFields(
         Object.keys(fieldObject).length === 1 &&
         'items' in fieldObject &&
         isNumericKeysObject(fieldObject.items);
+
+      if (hasOnlySpecialFields(fieldObject)) {
+        processedFields.push(
+          `${indentation}${formatFieldKey(
+            fieldKey
+          )}: blueNodeField().optional()`
+        );
+        schemaImportMap.set('blueNodeField', '@blue-company/language');
+        continue;
+      }
 
       if (isTupleField) {
         const tupleType = processTupleItems(

@@ -1,6 +1,9 @@
 import { processFields } from './processFields';
-import { BlueType, ModuleBlueIds } from './utils/blueTypes';
+import { BlueType, ModuleBlueIds, PRIMITIVE_TYPE_MAP } from './utils/blueTypes';
 import { pascal } from '../../../utils/pascal';
+import { getTypeNameFromBlueId } from './utils/getTypeNameFromBlueId';
+import { generateImportPath } from './generateImportPath';
+import { getSchemaName } from './utils/getSchemaName';
 
 /**
  * Represents the data structure required by the EJS template to generate
@@ -13,6 +16,11 @@ export interface GeneratedSchemaData {
   fields: string[];
   /** Map of import paths to sets of imported type names */
   importsByPath: Record<string, Set<string>>;
+  /** Information about the extended type, if any */
+  extendedType?: {
+    schemaName: string;
+    importPath: string;
+  };
 }
 
 /**
@@ -37,6 +45,52 @@ function convertImportsMap(
 }
 
 /**
+ * Determines if a type extends another type and returns the extended type information.
+ *
+ * @param typeDefinition - The Blue type definition to check for extension
+ * @param blueIds - Collection of Blue IDs from the current module and its parents
+ * @param moduleIdentifier - The identifier of the current module
+ * @param schemaImportMap - Map to store schema imports (will be modified if extended type is found)
+ * @returns Extended type information if the type extends another type, undefined otherwise
+ */
+function getExtendedType(
+  typeDefinition: BlueType,
+  blueIds: ModuleBlueIds,
+  moduleIdentifier: string,
+  schemaImportMap: Map<string, string>
+): GeneratedSchemaData['extendedType'] {
+  if (!typeDefinition.type?.blueId) {
+    return undefined;
+  }
+
+  const extendedTypeId = typeDefinition.type.blueId;
+
+  // Only extend if it's not a primitive type
+  if (PRIMITIVE_TYPE_MAP[extendedTypeId]) {
+    return undefined;
+  }
+
+  const extendedTypeInfo = getTypeNameFromBlueId(blueIds, extendedTypeId);
+  if (!extendedTypeInfo) {
+    return undefined;
+  }
+
+  const extendedSchemaName = getSchemaName(extendedTypeInfo.typeName);
+  const extendedImportPath = generateImportPath(
+    moduleIdentifier,
+    extendedTypeInfo
+  );
+
+  // Add to import map
+  schemaImportMap.set(extendedSchemaName, extendedImportPath);
+
+  return {
+    schemaName: extendedSchemaName,
+    importPath: extendedImportPath,
+  };
+}
+
+/**
  * Generates the necessary data for creating a Zod schema file from a Blue type definition.
  *
  * @param typeDefinition - The Blue type definition to convert to a Zod schema
@@ -50,7 +104,19 @@ export function generateZodSchemaData(
   moduleIdentifier: string
 ): GeneratedSchemaData {
   const schemaName = pascal(typeDefinition.name);
-  const schemaImportMap = new Map<string, string>();
+
+  // Default imports from @blue-company/language
+  const schemaImportMap = new Map<string, string>([
+    ['withTypeBlueId', '@blue-company/language'],
+  ]);
+
+  // Check if this type extends another type
+  const extendedType = getExtendedType(
+    typeDefinition,
+    blueIds,
+    moduleIdentifier,
+    schemaImportMap
+  );
 
   const fields = processFields(
     typeDefinition as Record<string, unknown>,
@@ -66,5 +132,6 @@ export function generateZodSchemaData(
     schemaName,
     fields,
     importsByPath,
+    extendedType,
   };
 }
