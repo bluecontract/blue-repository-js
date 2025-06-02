@@ -54,5 +54,5 @@ jobs:
         shell: bash
 
       - name: Prepare Release
-        run: npx nx release --skip-publish
+        run: npx nx release --first-release --skip-publish
         shell: bash
