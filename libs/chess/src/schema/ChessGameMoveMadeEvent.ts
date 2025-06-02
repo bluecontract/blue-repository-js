@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const ChessGameMoveMadeEventSchema = withTypeBlueId(
   blueIds.ChessGameMoveMadeEvent
@@ -12,6 +12,8 @@ export const ChessGameMoveMadeEventSchema = withTypeBlueId(
     chessboardAfterMove: z.string().optional(),
     from: z.string().optional(),
     to: z.string().optional(),
+    draw: blueNodeField().optional(),
+    gameOver: blueNodeField().optional(),
   })
 );
 

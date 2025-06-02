@@ -1,18 +1,15 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
+import { WorkflowStepSchema } from './WorkflowStep';
 
 export const InitializeLocalContractStepSchema = withTypeBlueId(
   blueIds.InitializeLocalContractStep
 )(
-  z.object({
+  WorkflowStepSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
-    contract: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    contract: blueNodeField().optional(),
   })
 );
 

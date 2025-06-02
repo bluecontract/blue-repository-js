@@ -1,13 +1,14 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
+  ContractSchema,
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
 export const InitializationSchema = withTypeBlueId(blueIds.Initialization)(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     properties: z
       .object({

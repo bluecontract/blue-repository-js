@@ -1,11 +1,14 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
-import { UpdateStepSchema } from '@blue-repository/blue-contracts';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
+import {
+  ContractSchema,
+  UpdateStepSchema,
+} from '@blue-repository/blue-contracts';
 import { SimulatorTimelineEntrySchema } from '@blue-repository/simulator';
 
 export const TempSampleSchema = withTypeBlueId(blueIds.TempSample)(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     workflows: z
       .tuple([
@@ -29,16 +32,8 @@ export const TempSampleSchema = withTypeBlueId(blueIds.TempSample)(
       .object({
         participants: z
           .object({
-            Bob: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
-            Alice: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
+            Bob: blueNodeField().optional(),
+            Alice: blueNodeField().optional(),
           })
           .optional(),
       })

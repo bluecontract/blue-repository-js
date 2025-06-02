@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const ApiRequestSchema = withTypeBlueId(blueIds.ApiRequest)(
   z.object({
@@ -9,11 +9,7 @@ export const ApiRequestSchema = withTypeBlueId(blueIds.ApiRequest)(
     headers: z.record(z.string(), z.string()).optional(),
     method: z.string().optional(),
     queryParams: z.record(z.string(), z.unknown()).optional(),
-    body: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    body: blueNodeField().optional(),
     url: z.string().optional(),
     timeout: z.number().optional(),
   })

@@ -1,8 +1,9 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
+  ContractSchema,
   JavascriptCodeStepSchema,
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
@@ -10,7 +11,7 @@ import {
 export const JsEngineTestContractSchema = withTypeBlueId(
   blueIds.JsEngineTestContract
 )(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     workflows: z
       .tuple([

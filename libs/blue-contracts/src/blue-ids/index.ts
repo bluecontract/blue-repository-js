@@ -1,7 +1,7 @@
 export const blueIds = {
   WorkflowInstance: 'HX3J23DpxGanyzSHZtY1VGNno4qapcHUkGW2Ha2WYf92',
-  InitiateContractAction: 'EmyutwPX7UgfUayYoZqFAxjNY6DYoNoj67Hqg36GACym',
   ExternalContract: 'A5wPMJi6naaUtbmo5iPqUVG5Q8Wg5r68WERCarJctSoK',
+  InitiateContractAction: 'EmyutwPX7UgfUayYoZqFAxjNY6DYoNoj67Hqg36GACym',
   FatalErrorEvent: '4cSr9TtEebEMxghBQD9ybAW6Tf6TUGGLG45fZxkxJQaP',
   AllEventsExternalContractSubscription:
     'JCUV8S58BvgAr8LzsHxPRtm72PsxPvgzZGLiqgwRM6xS',
@@ -10,9 +10,9 @@ export const blueIds = {
   PerformContractAction: '4H8MC7tvfQR5MnuRimNqScZ1RWjwDrZza7uuHWUmMVQj',
   AssistantTaskReadyEvent: 'CUKPAHgXTYtEUwyT172ejy694PR41rsy5VG1n5Wfsu2p',
   WorkflowFunction: '66oteHvnKcpRvS1ty6qND1keob9PJVakKxjTQPQY8YFA',
-  InitialTimelineMessage: '7rhXztX94ehngtETBBsq4pY3e1siDPjd7xrV1y6rrtye',
   InitiateContractProcessingAction:
     'E64ZQaX4sFUD3CsVpb7bWZwBznbNDsJCJtRxux4FdWGm',
+  InitialTimelineMessage: '7rhXztX94ehngtETBBsq4pY3e1siDPjd7xrV1y6rrtye',
   ContractProcessingEvent: 'CzZuis9rsRZdmS5nzdgp9RtTknQbs8Jxxp95djCmbAW1',
   WorkflowFunctionStep: 'EZjDfHEnvvwhP14FXdzLSBXBW9BcanYefW9mRfZNLh7D',
   ContractSubscription: 'BnzvPoTRbeT8JmH6rDn3Sh9f2gfCNBTm58WVxdUcorXr',
@@ -30,9 +30,9 @@ export const blueIds = {
   ContractUpdateAction: '94birjcTV223qXtC1aq4xZRWfvxrzh9a1dF99YV5wWwr',
   UpdateStep: 'DpdjTNXQdgWGxDyB1LLUNFvxSNNM9L9qGMoKZxzYMDoB',
   ContractInstance: 'WtsCXffC75An6E8EMfR4VMZvJ9bXzCPDAsD5hncpZ97',
-  ExpectEventStep: '3UXhfjDZ8EMopVJrDxS8Gf2USfLZvzFGpzyzconyzAkm',
   InitializeLocalContractStep: 'FF88BRKtRXQ2cCCBR28cFUB5mHdPsWjj8gVBgz4VmQm7',
-  LocalContract: 'Cwqs1QterdmwBAARMViJsepJAdYLGdhLHHg1u7awytAN',
+  ExpectEventStep: '3UXhfjDZ8EMopVJrDxS8Gf2USfLZvzFGpzyzconyzAkm',
   ContractUpdateEvent: '2bsu7Nx1vCXquU24RUXcc5b8tHrNgve26MXia4vUBuvN',
+  LocalContract: 'Cwqs1QterdmwBAARMViJsepJAdYLGdhLHHg1u7awytAN',
   Contract: '6j4rVp2aAm35U7dvbYPQsdi82JUpRPb1kTfkYrhHxvqE',
 } as const;

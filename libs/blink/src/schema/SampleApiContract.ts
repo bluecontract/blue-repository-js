@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
   ExpectEventStepSchema,
@@ -35,22 +35,14 @@ export const SampleApiContractSchema = withTypeBlueId(
       .optional(),
     properties: z
       .object({
-        result: z
-          .object({
-            description: z.string().optional(),
-          })
-          .optional(),
+        result: blueNodeField().optional(),
       })
       .optional(),
     messaging: z
       .object({
         participants: z
           .object({
-            Assistant: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
+            Assistant: blueNodeField().optional(),
           })
           .optional(),
       })

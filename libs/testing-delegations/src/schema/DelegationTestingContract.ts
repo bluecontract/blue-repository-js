@@ -1,7 +1,8 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
+  ContractSchema,
   JavascriptCodeStepSchema,
   TimelineEntrySchema,
   TriggerEventStepSchema,
@@ -11,7 +12,7 @@ import {
 export const DelegationTestingContractSchema = withTypeBlueId(
   blueIds.DelegationTestingContract
 )(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     workflows: z
       .tuple([
@@ -46,16 +47,8 @@ export const DelegationTestingContractSchema = withTypeBlueId(
       .object({
         participants: z
           .object({
-            Bob: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
-            Alice: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
+            Bob: blueNodeField().optional(),
+            Alice: blueNodeField().optional(),
           })
           .optional(),
       })

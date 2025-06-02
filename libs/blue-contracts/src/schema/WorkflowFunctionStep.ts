@@ -1,11 +1,12 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
+import { WorkflowStepSchema } from './WorkflowStep';
 
 export const WorkflowFunctionStepSchema = withTypeBlueId(
   blueIds.WorkflowFunctionStep
 )(
-  z.object({
+  WorkflowStepSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
   })

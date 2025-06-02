@@ -1,8 +1,9 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
+  ContractSchema,
   ExternalContractSchema,
   JavascriptCodeStepSchema,
   TimelineEntrySchema,
@@ -14,7 +15,7 @@ import { ChessMoveSchema } from './ChessMove';
 export const ChessAssistedTwoPlayersSchema = withTypeBlueId(
   blueIds.ChessAssistedTwoPlayers
 )(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     workflows: z
       .tuple([
@@ -68,11 +69,7 @@ export const ChessAssistedTwoPlayersSchema = withTypeBlueId(
       .object({
         winner: z.string().optional(),
         movesHistory: z.array(ChessMoveSchema).optional(),
-        playerToMove: z
-          .object({
-            description: z.string().optional(),
-          })
-          .optional(),
+        playerToMove: blueNodeField().optional(),
         draw: z.boolean().optional(),
         chessboard: z.string().optional(),
         gameOver: z.boolean().optional(),
@@ -82,16 +79,8 @@ export const ChessAssistedTwoPlayersSchema = withTypeBlueId(
       .object({
         participants: z
           .object({
-            ['Player White']: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
-            ['Player Black']: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
+            ['Player White']: blueNodeField().optional(),
+            ['Player Black']: blueNodeField().optional(),
           })
           .optional(),
       })

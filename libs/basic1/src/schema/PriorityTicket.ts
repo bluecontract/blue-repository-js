@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
 import { FatalErrorEventSchema } from '@blue-repository/blue-contracts';
 
 export const PriorityTicketSchema = withTypeBlueId(blueIds.PriorityTicket)(

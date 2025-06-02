@@ -4,6 +4,9 @@
   "include": [],
   "references": [
     {
+      "path": "../blue-contracts"
+    },
+    {
       "path": "./tsconfig.lib.json"
     },
     {

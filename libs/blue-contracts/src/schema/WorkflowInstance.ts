@@ -1,23 +1,15 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const WorkflowInstanceSchema = withTypeBlueId(blueIds.WorkflowInstance)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),
-    stepResults: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    stepResults: blueNodeField().optional(),
     finished: z.boolean().optional(),
     id: z.number().optional(),
-    workflow: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    workflow: blueNodeField().optional(),
     currentStepName: z.string().optional(),
   })
 );

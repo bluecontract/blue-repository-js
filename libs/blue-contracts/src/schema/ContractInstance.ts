@@ -1,27 +1,15 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const ContractInstanceSchema = withTypeBlueId(blueIds.ContractInstance)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),
-    workflowInstances: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    workflowInstances: blueNodeField().optional(),
     startedLocalContractCount: z.number().optional(),
-    localContractInstances: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
-    contract: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    localContractInstances: blueNodeField().optional(),
+    contract: blueNodeField().optional(),
     id: z.number().optional(),
     startedWorkflowCount: z.number().optional(),
   })

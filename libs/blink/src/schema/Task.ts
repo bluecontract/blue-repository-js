@@ -1,7 +1,8 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
+  ContractSchema,
   ExpectEventStepSchema,
   InitializeLocalContractStepSchema,
   LocalContractSchema,
@@ -13,7 +14,7 @@ import {
 import { ConversationEntrySchema } from './ConversationEntry';
 
 export const TaskSchema = withTypeBlueId(blueIds.Task)(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     subscriptions: z.tuple([LocalContractSubscriptionSchema]).optional(),
     workflows: z
@@ -85,16 +86,8 @@ export const TaskSchema = withTypeBlueId(blueIds.Task)(
       .object({
         participants: z
           .object({
-            Assistant: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
-            User: z
-              .object({
-                description: z.string().optional(),
-              })
-              .optional(),
+            Assistant: blueNodeField().optional(),
+            User: blueNodeField().optional(),
           })
           .optional(),
       })

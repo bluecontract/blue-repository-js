@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "@blue-company/language": "1.10.0",
+    "@blue-repository/blue-contracts": "0.1.0",
     "zod": "3.23.8"
   },
   "license": "MIT",

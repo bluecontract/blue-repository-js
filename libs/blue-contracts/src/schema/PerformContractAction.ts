@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { TimelineEntrySchema } from './TimelineEntry';
 
 export const PerformContractActionSchema = withTypeBlueId(
@@ -10,11 +10,7 @@ export const PerformContractActionSchema = withTypeBlueId(
     name: z.string().optional(),
     description: z.string().optional(),
     workflowInstance: z.number().optional(),
-    action: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    action: blueNodeField().optional(),
     initiateContractEntry: TimelineEntrySchema.optional(),
     workflowName: z
       .object({

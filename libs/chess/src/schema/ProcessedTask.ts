@@ -1,8 +1,9 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
 import {
   AllEventsExternalContractSubscriptionSchema,
+  ContractSchema,
   ExpectEventStepSchema,
   ExternalContractSchema,
   TriggerEventStepSchema,
@@ -11,7 +12,7 @@ import {
 import { ChessGameMoveMadeEventSchema } from './ChessGameMoveMadeEvent';
 
 export const ProcessedTaskSchema = withTypeBlueId(blueIds.ProcessedTask)(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
     subscriptions: z
