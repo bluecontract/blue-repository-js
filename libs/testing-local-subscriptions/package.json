@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/testing-local-subscriptions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "@blue-company/language": "1.10.0",
-    "@blue-repository/blue-contracts": "0.1.0",
+    "@blue-repository/blue-contracts": "0.2.0",
     "zod": "3.23.8"
   },
   "license": "MIT",
