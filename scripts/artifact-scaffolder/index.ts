@@ -24,6 +24,11 @@ async function main() {
   }
 
   const inputDir = args[0];
+  const forceAll = args.includes('--force-all');
+
+  if (forceAll) {
+    console.log('🚀 Force mode enabled: generating code for ALL libraries');
+  }
 
   if (!fs.existsSync(inputDir)) {
     console.error(`Input directory does not exist: ${inputDir}`);
@@ -68,14 +73,24 @@ async function main() {
     };
   });
 
-  const librariesNeedingCodeGeneration = libraryConfigs.filter(
-    (libraryConfig) => {
-      return (
-        !libraryConfig.exists ||
-        libraryConfig.currentBlueId !== libraryConfig.newBlueId
-      );
-    }
-  );
+  const librariesNeedingCodeGeneration = forceAll
+    ? libraryConfigs
+    : libraryConfigs.filter((libraryConfig) => {
+        return (
+          !libraryConfig.exists ||
+          libraryConfig.currentBlueId !== libraryConfig.newBlueId
+        );
+      });
+
+  if (librariesNeedingCodeGeneration.length === 0) {
+    console.log('No libraries needed code generation');
+  } else {
+    console.log(
+      `Processing ${librariesNeedingCodeGeneration.length} libraries${
+        forceAll ? ' (force mode)' : ''
+      }`
+    );
+  }
 
   for (const libraryConfig of librariesNeedingCodeGeneration) {
     if (!libraryConfig.exists) {
@@ -83,10 +98,6 @@ async function main() {
     }
 
     await syncCode(libraryConfig);
-  }
-
-  if (librariesNeedingCodeGeneration.length === 0) {
-    console.log('No libraries needed code generation');
   }
 
   await nxReset();

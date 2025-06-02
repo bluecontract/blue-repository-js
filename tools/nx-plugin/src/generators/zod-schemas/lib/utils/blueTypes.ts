@@ -9,6 +9,7 @@ export interface BlueField {
 export interface BlueType {
   name: string;
   description?: string;
+  type?: { blueId: string }; // For type inheritance/extension
   [key: string]: unknown; // allow arbitrary nested fields
 }
 

@@ -1,20 +1,28 @@
 <% /* __schemaName__.ts__tmpl__ */ %>
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
 <% if (importsByPath) { -%>
 <% Object.entries(importsByPath).forEach(([importPath, typeNames]) => { -%>
 <% const sortedNames = Array.from(typeNames).sort(); -%>
 <% if (sortedNames.length === 1) { -%>
-import { <%= sortedNames[0] %>Schema } from '<%= importPath %>';
+import { <%= sortedNames[0] %> } from '<%= importPath %>';
 <% } else { -%>
 import {
-  <%= sortedNames.map(n => n + 'Schema').join(',\n  ') %>,
+  <%= sortedNames.join(',\n  ') %>,
 } from '<%= importPath %>';
 <% } -%>
 <% }); -%>
 <% } -%>
 
+<% if (extendedType) { -%>
+export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)(
+  <%= extendedType.schemaName %>.extend({
+<% fields.forEach((fieldLine) => { -%>
+    <%- fieldLine %>,
+<% }) -%>
+  })
+);
+<% } else { -%>
 export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)(
   z.object({
 <% fields.forEach((fieldLine) => { -%>
@@ -22,5 +30,6 @@ export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)
 <% }) -%>
   })
 );
+<% } -%>
 
 export type <%= schemaName %> = z.infer<typeof <%= schemaName %>Schema>;
