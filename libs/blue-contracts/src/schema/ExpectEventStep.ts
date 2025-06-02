@@ -1,16 +1,13 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
+import { WorkflowStepSchema } from './WorkflowStep';
 
 export const ExpectEventStepSchema = withTypeBlueId(blueIds.ExpectEventStep)(
-  z.object({
+  WorkflowStepSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
-    event: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    event: blueNodeField().optional(),
   })
 );
 

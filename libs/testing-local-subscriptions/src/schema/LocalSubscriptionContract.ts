@@ -1,8 +1,9 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
+  ContractSchema,
   InitializeLocalContractStepSchema,
   LocalContractSubscriptionSchema,
   UpdateStepSchema,
@@ -11,7 +12,7 @@ import {
 export const LocalSubscriptionContractSchema = withTypeBlueId(
   blueIds.LocalSubscriptionContract
 )(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     subscriptions: z.tuple([LocalContractSubscriptionSchema]).optional(),
     workflows: z

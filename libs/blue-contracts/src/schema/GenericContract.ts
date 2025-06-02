@@ -1,9 +1,10 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
+import { ContractSchema } from './Contract';
 
 export const GenericContractSchema = withTypeBlueId(blueIds.GenericContract)(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
   })

@@ -1,20 +1,12 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const AssistantTaskSchema = withTypeBlueId(blueIds.AssistantTask)(
   z.object({
     name: z.string().optional(),
-    request: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
-    response: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    request: blueNodeField().optional(),
+    response: blueNodeField().optional(),
   })
 );
 

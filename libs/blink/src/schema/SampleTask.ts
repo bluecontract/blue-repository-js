@@ -1,23 +1,20 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
+  ContractSchema,
   ExpectEventStepSchema,
   TriggerEventStepSchema,
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
 export const SampleTaskSchema = withTypeBlueId(blueIds.SampleTask)(
-  z.object({
+  ContractSchema.extend({
     name: z.string().optional(),
     properties: z
       .object({
-        result: z
-          .object({
-            description: z.string().optional(),
-          })
-          .optional(),
+        result: blueNodeField().optional(),
         fen: z.string().optional(),
       })
       .optional(),

@@ -1,15 +1,11 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const ParticipantSchema = withTypeBlueId(blueIds.Participant)(
   z.object({
     name: z.string().optional(),
-    timeline: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    timeline: blueNodeField().optional(),
   })
 );
 

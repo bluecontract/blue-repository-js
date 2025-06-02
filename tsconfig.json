@@ -50,6 +50,9 @@
     },
     {
       "path": "./libs/simulator"
+    },
+    {
+      "path": "./libs/core-dev"
     }
   ]
 }

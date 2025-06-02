@@ -1,11 +1,12 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
+import { TimelineEntrySchema } from '@blue-repository/blue-contracts';
 
 export const SimulatorTimelineEntrySchema = withTypeBlueId(
   blueIds.SimulatorTimelineEntry
 )(
-  z.object({
+  TimelineEntrySchema.extend({
     name: z.string().optional(),
     tickSequence: z.number().optional(),
   })

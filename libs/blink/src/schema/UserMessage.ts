@@ -1,9 +1,10 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
+import { ConversationEntrySchema } from './ConversationEntry';
 
 export const UserMessageSchema = withTypeBlueId(blueIds.UserMessage)(
-  z.object({
+  ConversationEntrySchema.extend({
     name: z.string().optional(),
     relevantContractTypes: z.array(z.string()).optional(),
     relevantAssistantTypes: z.array(z.string()).optional(),

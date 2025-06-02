@@ -9,7 +9,11 @@
     "types": ["node", "vite/client"]
   },
   "include": ["src/**/*.ts"],
-  "references": [],
+  "references": [
+    {
+      "path": "../blue-contracts/tsconfig.lib.json"
+    }
+  ],
   "exclude": [
     "out-tsc",
     "dist",

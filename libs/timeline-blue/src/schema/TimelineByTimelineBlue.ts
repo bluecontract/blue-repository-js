@@ -1,12 +1,13 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
+import { InitialTimelineMessageSchema } from '@blue-repository/blue-contracts';
 import { SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1Schema } from './SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1';
 
 export const TimelineByTimelineBlueSchema = withTypeBlueId(
   blueIds.TimelineByTimelineBlue
 )(
-  z.object({
+  InitialTimelineMessageSchema.extend({
     name: z.string().optional(),
     timelineAlias: z.string().optional(),
     website: z.string().optional(),

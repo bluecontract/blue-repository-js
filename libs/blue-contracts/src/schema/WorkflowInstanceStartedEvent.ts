@@ -1,22 +1,14 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const WorkflowInstanceStartedEventSchema = withTypeBlueId(
   blueIds.WorkflowInstanceStartedEvent
 )(
   z.object({
     name: z.string().optional(),
-    initiateContractEntry: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
-    initiateContractProcessingEntry: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    initiateContractEntry: blueNodeField().optional(),
+    initiateContractProcessingEntry: blueNodeField().optional(),
     currentStepName: z.string().optional(),
     contractInstanceId: z.number().optional(),
     workflowInstanceId: z.number().optional(),

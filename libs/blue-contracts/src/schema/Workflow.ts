@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { withTypeBlueId } from '@blue-company/language';
 import { blueIds } from '../blue-ids';
+import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { WorkflowStepSchema } from './WorkflowStep';
 
 export const WorkflowSchema = withTypeBlueId(blueIds.Workflow)(
@@ -8,11 +8,7 @@ export const WorkflowSchema = withTypeBlueId(blueIds.Workflow)(
     name: z.string().optional(),
     description: z.string().optional(),
     steps: z.array(WorkflowStepSchema).optional(),
-    trigger: z
-      .object({
-        description: z.string().optional(),
-      })
-      .optional(),
+    trigger: blueNodeField().optional(),
   })
 );
 

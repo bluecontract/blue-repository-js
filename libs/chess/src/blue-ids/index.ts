@@ -1,6 +1,6 @@
 export const blueIds = {
-  Chess: 'HbtaSKMq4rEPVv4LbzbniLp5VKBtyn7wcBBa6Z7HtqzA',
   ChessAssisted: 'Huc83h7n7pZnBMk4GBad3TSi8dHnNGhDLg1uz3h4FCkx',
+  Chess: 'HbtaSKMq4rEPVv4LbzbniLp5VKBtyn7wcBBa6Z7HtqzA',
   ChessGameStartedEvent: 'H6u17c2fXJnmshciJVjqxoHVH48YirQYVbFXCTk8ZSym',
   MakeChessMoveTask: '58URWFP2Z9W9RgqwxoXJDtv6LfoKDSHvSeWWjpDkz9BU',
   ProcessedTask: '28zqhvDUrrYkjodDBRuCc63SrQD8hTDKqwS353E4DNsS',
