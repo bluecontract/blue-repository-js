@@ -1,6 +1,6 @@
-export * from './Abcde';
+export * from './ABCDE';
 
-export * from './MyContractXyz';
+export * from './MyContractXYZ';
 
 export * from './TicketB';
 

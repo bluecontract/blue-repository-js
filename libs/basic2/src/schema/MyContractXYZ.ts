@@ -6,14 +6,14 @@ import {
   ContractSchema,
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
-import { AbcdeSchema } from './Abcde';
+import { ABCDESchema } from './ABCDE';
 
-export const MyContractXyzSchema = withTypeBlueId(blueIds.MyContractXyz)(
+export const MyContractXYZSchema = withTypeBlueId(blueIds.MyContractXYZ)(
   ContractSchema.extend({
     name: z.string().optional(),
     properties: z
       .object({
-        ticket: AbcdeSchema.optional(),
+        ticket: ABCDESchema.optional(),
         x: z.number().optional(),
       })
       .optional(),
@@ -32,4 +32,4 @@ export const MyContractXyzSchema = withTypeBlueId(blueIds.MyContractXyz)(
   })
 );
 
-export type MyContractXyz = z.infer<typeof MyContractXyzSchema>;
+export type MyContractXYZ = z.infer<typeof MyContractXYZSchema>;

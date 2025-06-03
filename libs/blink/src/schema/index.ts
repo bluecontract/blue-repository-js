@@ -1,14 +1,14 @@
-export * from './ApiRequest';
+export * from './APIRequest';
 
-export * from './ApiResponse';
+export * from './APIResponse';
 
 export * from './AssistantMessage';
 
 export * from './ConversationEntry';
 
-export * from './LlmRequest';
+export * from './LLMRequest';
 
-export * from './LlmResponse';
+export * from './LLMResponse';
 
 export * from './MainChatMessage';
 
@@ -16,7 +16,7 @@ export * from './ProcessedConversationPair';
 
 export * from './RecommendedUserActionMessage';
 
-export * from './SampleApiContract';
+export * from './SampleAPIContract';
 
 export * from './SampleTask';
 

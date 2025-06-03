@@ -4,12 +4,12 @@ import { withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
   ContractSchema,
-  JavascriptCodeStepSchema,
+  JavaScriptCodeStepSchema,
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
-export const JsCompleteContractSchema = withTypeBlueId(
-  blueIds.JsCompleteContract
+export const JSCompleteContractSchema = withTypeBlueId(
+  blueIds.JSCompleteContract
 )(
   ContractSchema.extend({
     name: z.string().optional(),
@@ -19,7 +19,7 @@ export const JsCompleteContractSchema = withTypeBlueId(
           steps: z
             .tuple([
               UpdateStepSchema,
-              JavascriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
               UpdateStepSchema,
             ])
             .optional(),
@@ -52,4 +52,4 @@ export const JsCompleteContractSchema = withTypeBlueId(
   })
 );
 
-export type JsCompleteContract = z.infer<typeof JsCompleteContractSchema>;
+export type JSCompleteContract = z.infer<typeof JSCompleteContractSchema>;

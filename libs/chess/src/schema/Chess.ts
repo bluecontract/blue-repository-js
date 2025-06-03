@@ -4,7 +4,7 @@ import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
   ContractSchema,
-  JavascriptCodeStepSchema,
+  JavaScriptCodeStepSchema,
   TimelineEntrySchema,
   TriggerEventStepSchema,
   UpdateStepSchema,
@@ -29,8 +29,8 @@ export const ChessSchema = withTypeBlueId(blueIds.Chess)(
           name: z.string().optional(),
           steps: z
             .tuple([
-              JavascriptCodeStepSchema,
-              JavascriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
               TriggerEventStepSchema,
               UpdateStepSchema,
             ])

@@ -3,8 +3,8 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 import { WorkflowStepSchema } from './WorkflowStep';
 
-export const JavascriptCodeStepSchema = withTypeBlueId(
-  blueIds.JavascriptCodeStep
+export const JavaScriptCodeStepSchema = withTypeBlueId(
+  blueIds.JavaScriptCodeStep
 )(
   WorkflowStepSchema.extend({
     name: z.string().optional(),
@@ -13,4 +13,4 @@ export const JavascriptCodeStepSchema = withTypeBlueId(
   })
 );
 
-export type JavascriptCodeStep = z.infer<typeof JavascriptCodeStepSchema>;
+export type JavaScriptCodeStep = z.infer<typeof JavaScriptCodeStepSchema>;

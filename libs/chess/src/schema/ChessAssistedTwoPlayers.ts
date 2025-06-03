@@ -5,7 +5,7 @@ import {
   ContractInitializationEventSchema,
   ContractSchema,
   ExternalContractSchema,
-  JavascriptCodeStepSchema,
+  JavaScriptCodeStepSchema,
   TimelineEntrySchema,
   TriggerEventStepSchema,
   UpdateStepSchema,
@@ -31,8 +31,8 @@ export const ChessAssistedTwoPlayersSchema = withTypeBlueId(
           name: z.string().optional(),
           steps: z
             .tuple([
-              JavascriptCodeStepSchema,
-              JavascriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
               TriggerEventStepSchema,
               UpdateStepSchema,
             ])

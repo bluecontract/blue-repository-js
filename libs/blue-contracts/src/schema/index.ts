@@ -36,7 +36,7 @@ export * from './InitiateContractAction';
 
 export * from './InitiateContractProcessingAction';
 
-export * from './JavascriptCodeStep';
+export * from './JavaScriptCodeStep';
 
 export * from './JsonPatchEntry';
 

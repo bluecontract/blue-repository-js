@@ -1,1 +1,1 @@
-export * from './JsCompleteContract';
+export * from './JSCompleteContract';

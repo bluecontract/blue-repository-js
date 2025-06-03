@@ -2,17 +2,17 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
-export const ApiRequestSchema = withTypeBlueId(blueIds.ApiRequest)(
+export const APIResponseSchema = withTypeBlueId(blueIds.APIResponse)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),
     headers: z.record(z.string(), z.string()).optional(),
-    method: z.string().optional(),
-    queryParams: z.record(z.string(), z.unknown()).optional(),
+    responseTime: z.number().optional(),
     body: blueNodeField().optional(),
-    url: z.string().optional(),
-    timeout: z.number().optional(),
+    error: z.string().optional(),
+    contentType: z.string().optional(),
+    statusCode: z.number().optional(),
   })
 );
 
-export type ApiRequest = z.infer<typeof ApiRequestSchema>;
+export type APIResponse = z.infer<typeof APIResponseSchema>;

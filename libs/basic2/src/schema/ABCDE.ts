@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { ContractSchema } from '@blue-repository/blue-contracts';
 import { TicketSchema } from '@blue-repository/basic1';
 
-export const AbcdeSchema = withTypeBlueId(blueIds.Abcde)(
+export const ABCDESchema = withTypeBlueId(blueIds.ABCDE)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),
@@ -13,4 +13,4 @@ export const AbcdeSchema = withTypeBlueId(blueIds.Abcde)(
   })
 );
 
-export type Abcde = z.infer<typeof AbcdeSchema>;
+export type ABCDE = z.infer<typeof ABCDESchema>;
