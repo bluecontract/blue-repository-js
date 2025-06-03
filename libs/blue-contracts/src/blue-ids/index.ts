@@ -24,7 +24,7 @@ export const blueIds = {
   ContractInitializationEvent: '3uzSCGkrdX4hTFGuLbyZES7NQmiuFskCpUy572GxNQuC',
   JsonPatchEntry: 'EnUQeMiMa2wHFW3JbeSPvdgfpL6qZYCR29m3SfeHsKSY',
   TriggerEventStep: '6sdEGwtrVJhdto5CsDzm81YrJtHTZrdsenZkyCWJLniU',
-  JavascriptCodeStep: 'CFKAD5Up8XpNyPHwRBEwiwSUdfFUoGqVVsW29k6te88p',
+  JavaScriptCodeStep: 'CFKAD5Up8XpNyPHwRBEwiwSUdfFUoGqVVsW29k6te88p',
   TimelineEntry: '5BDj3UbH6nUPh6bUQ9vfEchjV2vGLMwhd1FJ5UYaRcos',
   Participant: 'ATbZ8UAASUy2PaooqZx6CE9giEfKcvrs3nQPcK5jTmBJ',
   ContractUpdateAction: '94birjcTV223qXtC1aq4xZRWfvxrzh9a1dF99YV5wWwr',

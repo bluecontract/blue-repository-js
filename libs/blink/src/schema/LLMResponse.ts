@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
-export const LlmResponseSchema = withTypeBlueId(blueIds.LlmResponse)(
+export const LLMResponseSchema = withTypeBlueId(blueIds.LLMResponse)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),
@@ -11,4 +11,4 @@ export const LlmResponseSchema = withTypeBlueId(blueIds.LlmResponse)(
   })
 );
 
-export type LlmResponse = z.infer<typeof LlmResponseSchema>;
+export type LLMResponse = z.infer<typeof LLMResponseSchema>;

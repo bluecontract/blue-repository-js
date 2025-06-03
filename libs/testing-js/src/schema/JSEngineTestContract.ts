@@ -4,12 +4,12 @@ import { withTypeBlueId } from '@blue-company/language';
 import {
   ContractInitializationEventSchema,
   ContractSchema,
-  JavascriptCodeStepSchema,
+  JavaScriptCodeStepSchema,
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
-export const JsEngineTestContractSchema = withTypeBlueId(
-  blueIds.JsEngineTestContract
+export const JSEngineTestContractSchema = withTypeBlueId(
+  blueIds.JSEngineTestContract
 )(
   ContractSchema.extend({
     name: z.string().optional(),
@@ -20,7 +20,7 @@ export const JsEngineTestContractSchema = withTypeBlueId(
           steps: z
             .tuple([
               UpdateStepSchema,
-              JavascriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
               UpdateStepSchema,
             ])
             .optional(),
@@ -34,10 +34,10 @@ export const JsEngineTestContractSchema = withTypeBlueId(
           name: z.string().optional(),
           steps: z
             .tuple([
-              JavascriptCodeStepSchema,
-              JavascriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
               UpdateStepSchema,
-              JavascriptCodeStepSchema,
+              JavaScriptCodeStepSchema,
               UpdateStepSchema,
             ])
             .optional(),
@@ -75,4 +75,4 @@ export const JsEngineTestContractSchema = withTypeBlueId(
   })
 );
 
-export type JsEngineTestContract = z.infer<typeof JsEngineTestContractSchema>;
+export type JSEngineTestContract = z.infer<typeof JSEngineTestContractSchema>;

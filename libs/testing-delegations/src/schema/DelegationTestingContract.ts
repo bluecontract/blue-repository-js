@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import {
   ContractSchema,
-  JavascriptCodeStepSchema,
+  JavaScriptCodeStepSchema,
   TimelineEntrySchema,
   TriggerEventStepSchema,
   UpdateStepSchema,
@@ -19,7 +19,7 @@ export const DelegationTestingContractSchema = withTypeBlueId(
         z.object({
           name: z.string().optional(),
           steps: z
-            .tuple([JavascriptCodeStepSchema, UpdateStepSchema])
+            .tuple([JavaScriptCodeStepSchema, UpdateStepSchema])
             .optional(),
           trigger: z
             .object({

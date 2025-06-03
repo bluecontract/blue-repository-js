@@ -8,8 +8,8 @@ import {
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
-export const SampleApiContractSchema = withTypeBlueId(
-  blueIds.SampleApiContract
+export const SampleAPIContractSchema = withTypeBlueId(
+  blueIds.SampleAPIContract
 )(
   z.object({
     name: z.string().optional(),
@@ -50,4 +50,4 @@ export const SampleApiContractSchema = withTypeBlueId(
   })
 );
 
-export type SampleApiContract = z.infer<typeof SampleApiContractSchema>;
+export type SampleAPIContract = z.infer<typeof SampleAPIContractSchema>;
