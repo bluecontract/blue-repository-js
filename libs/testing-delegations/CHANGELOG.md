@@ -1,3 +1,13 @@
+## 0.3.0 (2025-06-03)
+
+### 🚀 Features
+
+- update blueIds and schemas for ABCDE and MyContractXYZ ([d489c33](https://github.com/bluecontract/blue-repository-js/commit/d489c33))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/blue-contracts to 0.3.0
+
 ## 0.2.0 (2025-06-02)
 
 ### 🚀 Features

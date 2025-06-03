@@ -1,3 +1,9 @@
+## 0.2.1 (2025-06-03)
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/blue-contracts to 0.3.0
+
 ## 0.2.0 (2025-06-02)
 
 ### 🚀 Features
