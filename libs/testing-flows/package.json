@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/testing-flows",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-repository/blue-contracts": "0.4.0"
+    "@blue-repository/blue-contracts": "0.5.0"
   },
   "license": "MIT",
   "publishConfig": {
