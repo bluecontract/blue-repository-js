@@ -1,3 +1,9 @@
+## 0.2.0 (2025-06-05)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([2bedfbe](https://github.com/bluecontract/blue-repository-js/commit/2bedfbe))
+
 ## 0.1.0 (2025-06-05)
 
 ### 🚀 Features
