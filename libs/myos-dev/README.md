@@ -1,4 +1,4 @@
-# @blue-repository/core-dev
+# @blue-repository/myos-dev
 
 This library was generated with @blue-repository/nx-plugin.
 
@@ -6,22 +6,22 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **CoreDev**
-- Version: **9riry6AcPLMM2ZTc4Axi68kfRs3r7jQ2YH9PNb9dqR1k**
+- Module name: **MyOSDev**
+- Version: **APYtDVmD1nHPX1hzNo4xSbLgWJ6fQ94QaYMLa5w7HwRK**
 
 ## Installation
 
 To install the library, use npm or yarn:
 
 ```bash
-npm install @blue-repository/core-dev
+npm install @blue-repository/myos-dev
 # or
-yarn add @blue-repository/core-dev
+yarn add @blue-repository/myos-dev
 ```
 
 ## Changelog
 
-The [Changelog](https://github.com/bluecontract/blue-repository-js/blob/main/libs/core-dev/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
+The [Changelog](https://github.com/bluecontract/blue-repository-js/blob/main/libs/myos-dev/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
 
 ## License
 

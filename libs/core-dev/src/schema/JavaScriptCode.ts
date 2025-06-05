@@ -1,0 +1,12 @@
+import { z } from 'zod';
+import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-company/language';
+
+export const JavaScriptCodeSchema = withTypeBlueId(blueIds.JavaScriptCode)(
+  z.object({
+    name: z.string().optional(),
+    code: z.string().optional(),
+  })
+);
+
+export type JavaScriptCode = z.infer<typeof JavaScriptCodeSchema>;

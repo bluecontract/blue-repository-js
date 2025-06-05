@@ -53,6 +53,9 @@
     },
     {
       "path": "./libs/core-dev"
+    },
+    {
+      "path": "./libs/myos-dev"
     }
   ]
 }
