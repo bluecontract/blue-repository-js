@@ -7,7 +7,7 @@ import {
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
-export const InitializationSchema = withTypeBlueId(blueIds.Initialization)(
+export const InitializationSchema = withTypeBlueId(blueIds['Initialization'])(
   ContractSchema.extend({
     name: z.string().optional(),
     properties: z

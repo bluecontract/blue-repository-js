@@ -3,7 +3,9 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 import { ConversationEntrySchema } from './ConversationEntry';
 
-export const AssistantMessageSchema = withTypeBlueId(blueIds.AssistantMessage)(
+export const AssistantMessageSchema = withTypeBlueId(
+  blueIds['Assistant Message']
+)(
   ConversationEntrySchema.extend({
     name: z.string().optional(),
     relevantContractTypes: z.array(z.string()).optional(),

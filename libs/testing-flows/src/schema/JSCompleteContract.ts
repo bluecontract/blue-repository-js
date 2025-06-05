@@ -9,7 +9,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const JSCompleteContractSchema = withTypeBlueId(
-  blueIds.JSCompleteContract
+  blueIds['JS Complete Contract']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

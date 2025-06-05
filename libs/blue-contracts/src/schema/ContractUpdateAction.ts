@@ -4,7 +4,7 @@ import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { TimelineEntrySchema } from './TimelineEntry';
 
 export const ContractUpdateActionSchema = withTypeBlueId(
-  blueIds.ContractUpdateAction
+  blueIds['Contract Update Action']
 )(
   z.object({
     name: z.string().optional(),

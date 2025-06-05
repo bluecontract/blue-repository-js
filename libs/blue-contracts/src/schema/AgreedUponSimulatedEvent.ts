@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const AgreedUponSimulatedEventSchema = withTypeBlueId(
-  blueIds.AgreedUponSimulatedEvent
+  blueIds['Agreed Upon Simulated Event']
 )(
   z.object({
     name: z.string().optional(),

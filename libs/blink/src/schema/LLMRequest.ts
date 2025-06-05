@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
-export const LLMRequestSchema = withTypeBlueId(blueIds.LLMRequest)(
+export const LLMRequestSchema = withTypeBlueId(blueIds['LLM Request'])(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

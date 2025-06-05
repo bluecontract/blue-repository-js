@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { RestaurantMenuDishSchema } from './RestaurantMenuDish';
 
 export const RestaurantMenuCategorySchema = withTypeBlueId(
-  blueIds.RestaurantMenuCategory
+  blueIds['Restaurant Menu Category']
 )(
   z.object({
     name: z.string().optional(),

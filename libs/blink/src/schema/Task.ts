@@ -13,7 +13,7 @@ import {
 } from '@blue-repository/blue-contracts';
 import { ConversationEntrySchema } from './ConversationEntry';
 
-export const TaskSchema = withTypeBlueId(blueIds.Task)(
+export const TaskSchema = withTypeBlueId(blueIds['Task'])(
   ContractSchema.extend({
     name: z.string().optional(),
     subscriptions: z.tuple([LocalContractSubscriptionSchema]).optional(),

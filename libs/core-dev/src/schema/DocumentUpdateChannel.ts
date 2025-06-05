@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { ChannelSchema } from './Channel';
 
 export const DocumentUpdateChannelSchema = withTypeBlueId(
-  blueIds.DocumentUpdateChannel
+  blueIds['Document Update Channel']
 )(
   ChannelSchema.extend({
     name: z.string().optional(),

@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const ContractProcessingEventSchema = withTypeBlueId(
-  blueIds.ContractProcessingEvent
+  blueIds['Contract Processing Event']
 )(
   z.object({
     name: z.string().optional(),

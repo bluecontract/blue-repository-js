@@ -11,7 +11,7 @@ import {
 } from '@blue-repository/blue-contracts';
 import { ChessGameMoveMadeEventSchema } from './ChessGameMoveMadeEvent';
 
-export const ProcessedTaskSchema = withTypeBlueId(blueIds.ProcessedTask)(
+export const ProcessedTaskSchema = withTypeBlueId(blueIds['Processed Task'])(
   ContractSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),

@@ -5,7 +5,7 @@ import { UserMessageSchema } from './UserMessage';
 import { ConversationEntrySchema } from './ConversationEntry';
 
 export const ProcessedConversationPairSchema = withTypeBlueId(
-  blueIds.ProcessedConversationPair
+  blueIds['Processed Conversation Pair']
 )(
   z.object({
     name: z.string().optional(),

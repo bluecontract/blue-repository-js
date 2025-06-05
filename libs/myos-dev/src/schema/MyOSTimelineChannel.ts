@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { TimelineChannelSchema } from '@blue-repository/core-dev';
 
 export const MyOSTimelineChannelSchema = withTypeBlueId(
-  blueIds.MyOSTimelineChannel
+  blueIds['MyOS Timeline Channel']
 )(
   TimelineChannelSchema.extend({
     name: z.string().optional(),

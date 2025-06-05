@@ -9,7 +9,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const JSEngineTestContractSchema = withTypeBlueId(
-  blueIds.JSEngineTestContract
+  blueIds['JS Engine Test Contract']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

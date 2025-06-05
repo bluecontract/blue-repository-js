@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 
 export const SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1Schema =
   withTypeBlueId(
-    blueIds.SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1
+    blueIds['Schnorr Signature Algorithm Over the Elliptic Curve Secp256k1']
   )(
     z.object({
       name: z.string().optional(),

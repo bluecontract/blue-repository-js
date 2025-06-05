@@ -8,7 +8,7 @@ import {
 } from '@blue-repository/blue-contracts';
 import { TicketSchema } from './Ticket';
 
-export const MyContractSchema = withTypeBlueId(blueIds.MyContract)(
+export const MyContractSchema = withTypeBlueId(blueIds['My Contract'])(
   ContractSchema.extend({
     name: z.string().optional(),
     properties: z

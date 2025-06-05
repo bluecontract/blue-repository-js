@@ -10,7 +10,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const LocalContractsContractSchema = withTypeBlueId(
-  blueIds.LocalContractsContract
+  blueIds['Local Contracts Contract']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

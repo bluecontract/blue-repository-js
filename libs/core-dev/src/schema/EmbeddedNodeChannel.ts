@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { ChannelSchema } from './Channel';
 
 export const EmbeddedNodeChannelSchema = withTypeBlueId(
-  blueIds.EmbeddedNodeChannel
+  blueIds['Embedded Node Channel']
 )(
   ChannelSchema.extend({
     name: z.string().optional(),

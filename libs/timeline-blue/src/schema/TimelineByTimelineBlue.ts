@@ -5,7 +5,7 @@ import { InitialTimelineMessageSchema } from '@blue-repository/blue-contracts';
 import { SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1Schema } from './SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1';
 
 export const TimelineByTimelineBlueSchema = withTypeBlueId(
-  blueIds.TimelineByTimelineBlue
+  blueIds['Timeline by Timeline.blue']
 )(
   InitialTimelineMessageSchema.extend({
     name: z.string().optional(),

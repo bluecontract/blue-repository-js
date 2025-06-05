@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const ChessGameMoveMadeEventSchema = withTypeBlueId(
-  blueIds.ChessGameMoveMadeEvent
+  blueIds['Chess Game Move Made Event']
 )(
   z.object({
     name: z.string().optional(),

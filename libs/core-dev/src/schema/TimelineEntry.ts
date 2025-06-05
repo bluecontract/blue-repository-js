@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
-export const TimelineEntrySchema = withTypeBlueId(blueIds.TimelineEntry)(
+export const TimelineEntrySchema = withTypeBlueId(blueIds['Timeline Entry'])(
   z.object({
     name: z.string().optional(),
     threadPrev: blueNodeField().optional(),

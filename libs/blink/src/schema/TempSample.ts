@@ -7,7 +7,7 @@ import {
 } from '@blue-repository/blue-contracts';
 import { SimulatorTimelineEntrySchema } from '@blue-repository/simulator';
 
-export const TempSampleSchema = withTypeBlueId(blueIds.TempSample)(
+export const TempSampleSchema = withTypeBlueId(blueIds['Temp Sample'])(
   ContractSchema.extend({
     name: z.string().optional(),
     workflows: z

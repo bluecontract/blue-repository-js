@@ -8,7 +8,7 @@ import {
 } from '@blue-repository/blue-contracts';
 import { ABCDESchema } from './ABCDE';
 
-export const MyContractXYZSchema = withTypeBlueId(blueIds.MyContractXYZ)(
+export const MyContractXYZSchema = withTypeBlueId(blueIds['My Contract XYZ'])(
   ContractSchema.extend({
     name: z.string().optional(),
     properties: z

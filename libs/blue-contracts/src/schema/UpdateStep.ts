@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { WorkflowStepSchema } from './WorkflowStep';
 import { JsonPatchEntrySchema } from './JsonPatchEntry';
 
-export const UpdateStepSchema = withTypeBlueId(blueIds.UpdateStep)(
+export const UpdateStepSchema = withTypeBlueId(blueIds['Update Step'])(
   WorkflowStepSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),

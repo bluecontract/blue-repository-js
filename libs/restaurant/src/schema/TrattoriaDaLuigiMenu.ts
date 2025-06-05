@@ -5,7 +5,7 @@ import { CategorizedRestaurantMenuSchema } from './CategorizedRestaurantMenu';
 import { RestaurantMenuCategorySchema } from './RestaurantMenuCategory';
 
 export const TrattoriaDaLuigiMenuSchema = withTypeBlueId(
-  blueIds.TrattoriaDaLuigiMenu
+  blueIds['Trattoria da Luigi - Menu']
 )(
   CategorizedRestaurantMenuSchema.extend({
     name: z.string().optional(),

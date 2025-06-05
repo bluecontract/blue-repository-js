@@ -11,7 +11,7 @@ import {
 } from '@blue-repository/blue-contracts';
 import { ChessMoveSchema } from './ChessMove';
 
-export const ChessSchema = withTypeBlueId(blueIds.Chess)(
+export const ChessSchema = withTypeBlueId(blueIds['Chess'])(
   ContractSchema.extend({
     name: z.string().optional(),
     workflows: z

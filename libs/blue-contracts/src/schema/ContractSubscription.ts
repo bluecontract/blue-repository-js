@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const ContractSubscriptionSchema = withTypeBlueId(
-  blueIds.ContractSubscription
+  blueIds['Contract Subscription']
 )(
   z.object({
     name: z.string().optional(),

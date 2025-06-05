@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { TimelineEntrySchema } from '@blue-repository/core-dev';
 
 export const MyOSTimelineEntrySchema = withTypeBlueId(
-  blueIds.MyOSTimelineEntry
+  blueIds['MyOS Timeline Entry']
 )(
   TimelineEntrySchema.extend({
     name: z.string().optional(),

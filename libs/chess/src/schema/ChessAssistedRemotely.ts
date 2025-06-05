@@ -13,7 +13,7 @@ import {
 import { ChessMoveSchema } from './ChessMove';
 
 export const ChessAssistedRemotelySchema = withTypeBlueId(
-  blueIds.ChessAssistedRemotely
+  blueIds['Chess Assisted Remotely']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

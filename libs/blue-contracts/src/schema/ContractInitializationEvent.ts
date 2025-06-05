@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const ContractInitializationEventSchema = withTypeBlueId(
-  blueIds.ContractInitializationEvent
+  blueIds['Contract Initialization Event']
 )(
   z.object({
     name: z.string().optional(),

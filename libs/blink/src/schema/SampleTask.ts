@@ -9,7 +9,7 @@ import {
   UpdateStepSchema,
 } from '@blue-repository/blue-contracts';
 
-export const SampleTaskSchema = withTypeBlueId(blueIds.SampleTask)(
+export const SampleTaskSchema = withTypeBlueId(blueIds['Sample Task'])(
   ContractSchema.extend({
     name: z.string().optional(),
     properties: z

@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { ContractSchema } from './Contract';
 
 export const InitiateContractActionSchema = withTypeBlueId(
-  blueIds.InitiateContractAction
+  blueIds['Initiate Contract Action']
 )(
   z.object({
     name: z.string().optional(),

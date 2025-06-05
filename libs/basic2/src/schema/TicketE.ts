@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
-export const TicketESchema = withTypeBlueId(blueIds.TicketE)(
+export const TicketESchema = withTypeBlueId(blueIds['Ticket E'])(
   z.object({
     name: z.string().optional(),
     e: z.number().optional(),
