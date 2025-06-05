@@ -17,9 +17,7 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-company/language": "1.10.0",
-    "@blue-repository/core-dev": "0.3.0",
-    "zod": "3.23.8"
+    "@blue-repository/core-dev": "0.3.0"
   },
   "license": "MIT",
   "publishConfig": {
@@ -33,5 +31,8 @@
     "moduleName": "MyOSDevV0.2",
     "moduleBlueId": "Agcdrx7ucbeP2huPF9Tz1L6S2fgdJ27FTAbY92acPeux"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "@blue-company/language": "^1.18.0",
+    "zod": "^3.23.8"
+  }
 }

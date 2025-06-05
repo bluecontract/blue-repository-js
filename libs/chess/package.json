@@ -17,10 +17,8 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-company/language": "1.10.0",
     "@blue-repository/blue-contracts": "0.4.0",
-    "@blue-repository/simulator": "0.3.0",
-    "zod": "3.23.8"
+    "@blue-repository/simulator": "0.3.0"
   },
   "license": "MIT",
   "publishConfig": {
@@ -34,5 +32,8 @@
     "moduleName": "Chess",
     "moduleBlueId": "7yr28o3yPvp3seWXKt9LKJ2Tk4abyhAndVdKYytuuLjq"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "@blue-company/language": "^1.18.0",
+    "zod": "^3.23.8"
+  }
 }
