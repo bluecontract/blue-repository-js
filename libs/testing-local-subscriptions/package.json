@@ -17,9 +17,7 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-company/language": "1.10.0",
-    "@blue-repository/blue-contracts": "0.4.0",
-    "zod": "3.23.8"
+    "@blue-repository/blue-contracts": "0.4.0"
   },
   "license": "MIT",
   "publishConfig": {
@@ -33,5 +31,8 @@
     "moduleName": "TestingLocalSubscriptions",
     "moduleBlueId": "9KPF9Npttwro1V8pfQL3xWpqD3PXmdMLe5vCkkqK5aeB"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "@blue-company/language": "^1.18.0",
+    "zod": "^3.23.8"
+  }
 }

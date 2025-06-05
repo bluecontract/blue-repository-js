@@ -16,10 +16,7 @@
     "dist",
     "!**/*.tsbuildinfo"
   ],
-  "dependencies": {
-    "@blue-company/language": "1.10.0",
-    "zod": "3.23.8"
-  },
+  "dependencies": {},
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -32,5 +29,8 @@
     "moduleName": "CoreDev",
     "moduleBlueId": "9riry6AcPLMM2ZTc4Axi68kfRs3r7jQ2YH9PNb9dqR1k"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "@blue-company/language": "^1.18.0",
+    "zod": "^3.23.8"
+  }
 }

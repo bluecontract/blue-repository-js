@@ -16,10 +16,7 @@
     "dist",
     "!**/*.tsbuildinfo"
   ],
-  "dependencies": {
-    "@blue-company/language": "1.10.0",
-    "zod": "3.23.8"
-  },
+  "dependencies": {},
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -32,5 +29,8 @@
     "moduleName": "BlueContractsV0.4",
     "moduleBlueId": "917qiHtncu1TvEJAV4ykYP4CsuL4pPsGomcEs7MjYzx8"
   },
-  "devDependencies": {}
+  "peerDependencies": {
+    "@blue-company/language": "^1.18.0",
+    "zod": "^3.23.8"
+  }
 }
