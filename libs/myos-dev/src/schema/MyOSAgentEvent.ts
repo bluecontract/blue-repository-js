@@ -7,19 +7,9 @@ export const MyOSAgentEventSchema = withTypeBlueId(blueIds.MyOSAgentEvent)(
     name: z.string().optional(),
     description: z.string().optional(),
     agentId: z.string().optional(),
-    id: z
-      .object({
-        description: z.string().optional(),
-        type: z.string().optional(),
-      })
-      .optional(),
+    id: z.number().optional(),
     event: blueNodeField().optional(),
-    timestamp: z
-      .object({
-        description: z.string().optional(),
-        type: z.string().optional(),
-      })
-      .optional(),
+    timestamp: z.number().optional(),
   })
 );
 
