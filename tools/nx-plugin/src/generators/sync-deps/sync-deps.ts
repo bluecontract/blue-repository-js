@@ -1,17 +1,15 @@
 import {
   formatFiles,
-  GeneratorCallback,
   ProjectGraph,
   readCachedProjectGraph,
   Tree,
   readJson,
-  addDependenciesToPackageJson,
   DependencyType,
   ProjectGraphDependency,
-  runTasksInSerial,
 } from '@nx/devkit';
 import { SyncDepsGeneratorSchema } from './schema';
 import { PackageJson } from 'nx/src/utils/package-json';
+import { setDependenciesToPackageJson } from './utils/setDependenciesToPackageJson';
 
 const mapToDependency = (
   dep: ProjectGraphDependency,
@@ -48,12 +46,12 @@ const mapToDependency = (
   return null;
 };
 
+const peerDependenciesNames = ['@blue-company/language', 'zod'];
+
 export const syncDepsGenerator = async (
   tree: Tree,
   options: SyncDepsGeneratorSchema
-): Promise<GeneratorCallback> => {
-  const tasks: GeneratorCallback[] = [];
-
+) => {
   const projectGraph = readCachedProjectGraph();
   const workspacePackageJson = readJson<PackageJson>(tree, 'package.json');
 
@@ -72,24 +70,26 @@ export const syncDepsGenerator = async (
       return acc;
     }
 
-    acc[dependency.name] = workspaceDependency ?? dependency.version;
+    acc.push([dependency.name, workspaceDependency ?? dependency.version]);
     return acc;
-  }, {} as Record<string, string>);
+  }, [] as [string, string][]);
 
-  const callback = addDependenciesToPackageJson(
-    tree,
-    dependencies,
-    {},
-    `${projectNode.data.root}/package.json`
+  const peerDependenciesToAdd = Object.fromEntries(
+    dependencies.filter(([name]) => peerDependenciesNames.includes(name))
   );
 
-  tasks.push(callback);
+  const dependenciesToAdd = Object.fromEntries(
+    dependencies.filter(([name]) => !peerDependenciesNames.includes(name))
+  );
+
+  setDependenciesToPackageJson(tree, projectNode.data.root, {
+    dependencies: dependenciesToAdd,
+    peerDependencies: peerDependenciesToAdd,
+  });
 
   if (!options.skipFormat) {
     await formatFiles(tree);
   }
-
-  return runTasksInSerial(...tasks);
 };
 
 export default syncDepsGenerator;
