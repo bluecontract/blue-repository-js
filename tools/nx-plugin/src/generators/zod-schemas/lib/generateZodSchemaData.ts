@@ -12,6 +12,8 @@ import { getSchemaName } from './utils/getSchemaName';
 export interface GeneratedSchemaData {
   /** The PascalCase name of the schema */
   schemaName: string;
+  /** The name of the type */
+  typeName: string;
   /** Array of field definitions for the z.object constructor */
   fields: string[];
   /** Map of import paths to sets of imported type names */
@@ -104,6 +106,7 @@ export function generateZodSchemaData(
   moduleIdentifier: string
 ): GeneratedSchemaData {
   const schemaName = pascal(typeDefinition.name);
+  const typeName = typeDefinition.name;
 
   // Default imports from @blue-company/language
   const schemaImportMap = new Map<string, string>([
@@ -130,6 +133,7 @@ export function generateZodSchemaData(
 
   return {
     schemaName,
+    typeName,
     fields,
     importsByPath,
     extendedType,

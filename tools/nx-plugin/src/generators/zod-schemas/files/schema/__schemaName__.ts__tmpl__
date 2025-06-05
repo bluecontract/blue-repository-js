@@ -15,7 +15,7 @@ import {
 <% } -%>
 
 <% if (extendedType) { -%>
-export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)(
+export const <%= schemaName %>Schema = withTypeBlueId(blueIds['<%= typeName %>'])(
   <%= extendedType.schemaName %>.extend({
 <% fields.forEach((fieldLine) => { -%>
     <%- fieldLine %>,
@@ -23,7 +23,7 @@ export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)
   })
 );
 <% } else { -%>
-export const <%= schemaName %>Schema = withTypeBlueId(blueIds.<%= schemaName %>)(
+export const <%= schemaName %>Schema = withTypeBlueId(blueIds['<%= typeName %>'])(
   z.object({
 <% fields.forEach((fieldLine) => { -%>
     <%- fieldLine %>,
