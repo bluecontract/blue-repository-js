@@ -47,13 +47,14 @@ export async function zodSchemasGenerator(
       path.join(options.inputPath, blueTypeFile)
     );
 
-    const { schemaName, fields, importsByPath, extendedType } =
+    const { schemaName, typeName, fields, importsByPath, extendedType } =
       generateZodSchemaData(blueTypeDefinition, blueIds, moduleIdentifier);
 
     const templateDirectory = path.join(__dirname, './files/schema');
     generateFiles(tree, templateDirectory, schemasOutputDirectory, {
       tmpl: '',
       schemaName,
+      typeName,
       fields,
       importsByPath,
       extendedType,

@@ -9,7 +9,6 @@ import {
   updateJson,
 } from '@nx/devkit';
 import { BlueIdsGeneratorSchema } from './schema';
-import { pascal } from '../../utils/pascal';
 import { getTypeModuleInformations } from './utils/typeModule';
 
 /**
@@ -18,12 +17,7 @@ import { getTypeModuleInformations } from './utils/typeModule';
 function transformToModule(content: string): string {
   const data = yaml.load(content) as Record<string, unknown>;
 
-  // Transform the keys to camelCase
-  const transformedData = Object.fromEntries(
-    Object.entries(data).map(([key, value]) => [pascal(key), value])
-  );
-
-  const jsonString = JSON.stringify(transformedData, null, 2);
+  const jsonString = JSON.stringify(data, null, 2);
   return `export const blueIds = ${jsonString} as const;\n`;
 }
 
