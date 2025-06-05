@@ -5,7 +5,7 @@ import { ContractSubscriptionSchema } from './ContractSubscription';
 import { WorkflowSchema } from './Workflow';
 import { ParticipantSchema } from './Participant';
 
-export const ContractSchema = withTypeBlueId(blueIds.Contract)(
+export const ContractSchema = withTypeBlueId(blueIds['Contract'])(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

@@ -5,7 +5,7 @@ import { TimelineEntrySchema } from './TimelineEntry';
 import { ContractSchema } from './Contract';
 
 export const InitiateContractProcessingActionSchema = withTypeBlueId(
-  blueIds.InitiateContractProcessingAction
+  blueIds['Initiate Contract Processing Action']
 )(
   z.object({
     name: z.string().optional(),

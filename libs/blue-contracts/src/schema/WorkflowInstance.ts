@@ -2,7 +2,9 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
-export const WorkflowInstanceSchema = withTypeBlueId(blueIds.WorkflowInstance)(
+export const WorkflowInstanceSchema = withTypeBlueId(
+  blueIds['Workflow Instance']
+)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

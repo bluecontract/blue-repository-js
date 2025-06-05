@@ -10,7 +10,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const ConditionsContractSchema = withTypeBlueId(
-  blueIds.ConditionsContract
+  blueIds['Conditions Contract']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

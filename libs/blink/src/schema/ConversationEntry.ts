@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const ConversationEntrySchema = withTypeBlueId(
-  blueIds.ConversationEntry
+  blueIds['Conversation Entry']
 )(
   z.object({
     name: z.string().optional(),

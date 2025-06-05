@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { AssistantTaskSchema } from './AssistantTask';
 
 export const AssistantTaskReadyEventSchema = withTypeBlueId(
-  blueIds.AssistantTaskReadyEvent
+  blueIds['Assistant Task Ready Event']
 )(
   z.object({
     name: z.string().optional(),

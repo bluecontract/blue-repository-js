@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 import { ConversationEntrySchema } from './ConversationEntry';
 
-export const UserMessageSchema = withTypeBlueId(blueIds.UserMessage)(
+export const UserMessageSchema = withTypeBlueId(blueIds['User Message'])(
   ConversationEntrySchema.extend({
     name: z.string().optional(),
     relevantContractTypes: z.array(z.string()).optional(),

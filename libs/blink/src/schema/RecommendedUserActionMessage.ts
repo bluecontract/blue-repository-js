@@ -4,7 +4,7 @@ import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { ConversationEntrySchema } from './ConversationEntry';
 
 export const RecommendedUserActionMessageSchema = withTypeBlueId(
-  blueIds.RecommendedUserActionMessage
+  blueIds['Recommended User Action Message']
 )(
   ConversationEntrySchema.extend({
     name: z.string().optional(),

@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { WorkflowStepSchema } from './WorkflowStep';
 
 export const WorkflowFunctionStepSchema = withTypeBlueId(
-  blueIds.WorkflowFunctionStep
+  blueIds['Workflow Function Step']
 )(
   WorkflowStepSchema.extend({
     name: z.string().optional(),

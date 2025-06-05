@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const InitiateTimelineActionSchema = withTypeBlueId(
-  blueIds.InitiateTimelineAction
+  blueIds['Initiate Timeline Action']
 )(
   z.object({
     name: z.string().optional(),

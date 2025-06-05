@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
-export const APIRequestSchema = withTypeBlueId(blueIds.APIRequest)(
+export const APIRequestSchema = withTypeBlueId(blueIds['API Request'])(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

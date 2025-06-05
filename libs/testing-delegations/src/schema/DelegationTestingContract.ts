@@ -10,7 +10,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const DelegationTestingContractSchema = withTypeBlueId(
-  blueIds.DelegationTestingContract
+  blueIds['Delegation Testing Contract']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

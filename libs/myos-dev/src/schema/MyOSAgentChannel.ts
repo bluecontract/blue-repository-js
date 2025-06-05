@@ -3,7 +3,9 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { MyOSAgentSchema } from './MyOSAgent';
 
-export const MyOSAgentChannelSchema = withTypeBlueId(blueIds.MyOSAgentChannel)(
+export const MyOSAgentChannelSchema = withTypeBlueId(
+  blueIds['MyOS Agent Channel']
+)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

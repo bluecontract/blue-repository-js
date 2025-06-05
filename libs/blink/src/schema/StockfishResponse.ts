@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const StockfishResponseSchema = withTypeBlueId(
-  blueIds.StockfishResponse
+  blueIds['Stockfish Response']
 )(
   z.object({
     name: z.string().optional(),

@@ -12,7 +12,7 @@ import {
 import { SimulatorTimelineEntrySchema } from '@blue-repository/simulator';
 import { ChessMoveSchema } from './ChessMove';
 
-export const ChessAssistedSchema = withTypeBlueId(blueIds.ChessAssisted)(
+export const ChessAssistedSchema = withTypeBlueId(blueIds['Chess Assisted'])(
   ContractSchema.extend({
     name: z.string().optional(),
     workflows: z

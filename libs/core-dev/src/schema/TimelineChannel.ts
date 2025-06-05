@@ -3,7 +3,9 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 import { ChannelSchema } from './Channel';
 
-export const TimelineChannelSchema = withTypeBlueId(blueIds.TimelineChannel)(
+export const TimelineChannelSchema = withTypeBlueId(
+  blueIds['Timeline Channel']
+)(
   ChannelSchema.extend({
     name: z.string().optional(),
     timelineId: z.string().optional(),

@@ -3,7 +3,9 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { WorkflowStepSchema } from './WorkflowStep';
 
-export const ExpectEventStepSchema = withTypeBlueId(blueIds.ExpectEventStep)(
+export const ExpectEventStepSchema = withTypeBlueId(
+  blueIds['Expect Event Step']
+)(
   WorkflowStepSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),

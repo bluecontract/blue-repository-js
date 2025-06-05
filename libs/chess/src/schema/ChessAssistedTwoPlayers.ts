@@ -13,7 +13,7 @@ import {
 import { ChessMoveSchema } from './ChessMove';
 
 export const ChessAssistedTwoPlayersSchema = withTypeBlueId(
-  blueIds.ChessAssistedTwoPlayers
+  blueIds['Chess Assisted Two Players']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

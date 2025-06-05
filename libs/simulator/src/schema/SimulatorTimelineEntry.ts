@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { TimelineEntrySchema } from '@blue-repository/blue-contracts';
 
 export const SimulatorTimelineEntrySchema = withTypeBlueId(
-  blueIds.SimulatorTimelineEntry
+  blueIds['Simulator Timeline Entry']
 )(
   TimelineEntrySchema.extend({
     name: z.string().optional(),

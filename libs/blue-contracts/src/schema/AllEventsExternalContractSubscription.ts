@@ -5,7 +5,7 @@ import { ContractSubscriptionSchema } from './ContractSubscription';
 import { TimelineEntrySchema } from './TimelineEntry';
 
 export const AllEventsExternalContractSubscriptionSchema = withTypeBlueId(
-  blueIds.AllEventsExternalContractSubscription
+  blueIds['All Events External Contract Subscription']
 )(
   ContractSubscriptionSchema.extend({
     name: z.string().optional(),

@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const SequentialWorkflowStepSchema = withTypeBlueId(
-  blueIds.SequentialWorkflowStep
+  blueIds['Sequential Workflow Step']
 )(
   z.object({
     name: z.string().optional(),

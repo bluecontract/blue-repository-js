@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
-export const AssistantTaskSchema = withTypeBlueId(blueIds.AssistantTask)(
+export const AssistantTaskSchema = withTypeBlueId(blueIds['Assistant Task'])(
   z.object({
     name: z.string().optional(),
     request: blueNodeField().optional(),

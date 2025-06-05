@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 import { FatalErrorEventSchema } from '@blue-repository/blue-contracts';
 
-export const PriorityTicketSchema = withTypeBlueId(blueIds.PriorityTicket)(
+export const PriorityTicketSchema = withTypeBlueId(blueIds['Priority Ticket'])(
   z.object({
     name: z.string().optional(),
     error: FatalErrorEventSchema.optional(),

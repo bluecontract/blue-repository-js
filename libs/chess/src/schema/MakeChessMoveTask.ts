@@ -8,7 +8,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const MakeChessMoveTaskSchema = withTypeBlueId(
-  blueIds.MakeChessMoveTask
+  blueIds['Make Chess Move Task']
 )(
   ContractSchema.extend({
     name: z.string().optional(),

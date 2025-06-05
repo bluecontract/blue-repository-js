@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
-export const MyOSAgentSchema = withTypeBlueId(blueIds.MyOSAgent)(
+export const MyOSAgentSchema = withTypeBlueId(blueIds['MyOS Agent'])(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

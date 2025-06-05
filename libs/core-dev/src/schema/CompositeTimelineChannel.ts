@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-company/language';
 import { ChannelSchema } from './Channel';
 
 export const CompositeTimelineChannelSchema = withTypeBlueId(
-  blueIds.CompositeTimelineChannel
+  blueIds['Composite Timeline Channel']
 )(
   ChannelSchema.extend({
     name: z.string().optional(),

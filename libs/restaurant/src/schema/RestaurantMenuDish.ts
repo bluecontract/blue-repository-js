@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
 export const RestaurantMenuDishSchema = withTypeBlueId(
-  blueIds.RestaurantMenuDish
+  blueIds['Restaurant Menu Dish']
 )(
   z.object({
     name: z.string().optional(),

@@ -2,7 +2,9 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
-export const ExternalContractSchema = withTypeBlueId(blueIds.ExternalContract)(
+export const ExternalContractSchema = withTypeBlueId(
+  blueIds['External Contract']
+)(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),

@@ -5,7 +5,7 @@ import { ConversationEntrySchema } from './ConversationEntry';
 import { RecommendedUserActionMessageSchema } from './RecommendedUserActionMessage';
 
 export const TaskDefiningMessageSchema = withTypeBlueId(
-  blueIds.TaskDefiningMessage
+  blueIds['Task Defining Message']
 )(
   ConversationEntrySchema.extend({
     name: z.string().optional(),

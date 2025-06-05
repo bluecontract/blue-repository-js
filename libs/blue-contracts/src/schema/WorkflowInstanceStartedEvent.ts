@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 
 export const WorkflowInstanceStartedEventSchema = withTypeBlueId(
-  blueIds.WorkflowInstanceStartedEvent
+  blueIds['Workflow Instance Started Event']
 )(
   z.object({
     name: z.string().optional(),

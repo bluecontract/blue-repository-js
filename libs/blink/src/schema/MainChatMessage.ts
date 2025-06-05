@@ -2,7 +2,9 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-company/language';
 
-export const MainChatMessageSchema = withTypeBlueId(blueIds.MainChatMessage)(
+export const MainChatMessageSchema = withTypeBlueId(
+  blueIds['Main Chat Message']
+)(
   z.object({
     name: z.string().optional(),
     userInputDetails: z.string().optional(),

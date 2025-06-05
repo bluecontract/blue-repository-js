@@ -4,7 +4,7 @@ import { blueNodeField, withTypeBlueId } from '@blue-company/language';
 import { ContractSubscriptionSchema } from './ContractSubscription';
 
 export const LocalContractSubscriptionSchema = withTypeBlueId(
-  blueIds.LocalContractSubscription
+  blueIds['Local Contract Subscription']
 )(
   ContractSubscriptionSchema.extend({
     name: z.string().optional(),

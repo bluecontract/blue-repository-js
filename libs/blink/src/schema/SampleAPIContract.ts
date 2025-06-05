@@ -9,7 +9,7 @@ import {
 } from '@blue-repository/blue-contracts';
 
 export const SampleAPIContractSchema = withTypeBlueId(
-  blueIds.SampleAPIContract
+  blueIds['Sample API Contract']
 )(
   z.object({
     name: z.string().optional(),
