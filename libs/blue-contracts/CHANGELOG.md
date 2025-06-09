@@ -1,3 +1,9 @@
+## 0.7.1 (2025-06-09)
+
+### 🩹 Fixes
+
+- enhance external package handling in Vite config ([a6d5400](https://github.com/bluecontract/blue-repository-js/commit/a6d5400))
+
 ## 0.7.0 (2025-06-09)
 
 ### 🚀 Features
