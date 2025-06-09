@@ -10,7 +10,13 @@ export * from './JavaScriptCode';
 
 export * from './JsonPatchEntry';
 
+export * from './OperationRequest';
+
+export * from './Operation';
+
 export * from './ProcessEmbedded';
+
+export * from './SequentialWorkflowOperation';
 
 export * from './SequentialWorkflowStep';
 
