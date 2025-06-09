@@ -1,3 +1,9 @@
+## 0.5.0 (2025-06-09)
+
+### 🚀 Features
+
+- update @blue-company/language to @blue-labs/language ([80c7019](https://github.com/bluecontract/blue-repository-js/commit/80c7019))
+
 ## 0.4.0 (2025-06-05)
 
 ### 🚀 Features
