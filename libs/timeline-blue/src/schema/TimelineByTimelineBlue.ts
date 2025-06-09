@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-company/language';
+import { withTypeBlueId } from '@blue-labs/language';
 import { InitialTimelineMessageSchema } from '@blue-repository/blue-contracts';
 import { SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1Schema } from './SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1';
 

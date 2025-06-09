@@ -108,9 +108,9 @@ export function generateZodSchemaData(
   const schemaName = pascal(typeDefinition.name);
   const typeName = typeDefinition.name;
 
-  // Default imports from @blue-company/language
+  // Default imports from @blue-labs/language
   const schemaImportMap = new Map<string, string>([
-    ['withTypeBlueId', '@blue-company/language'],
+    ['withTypeBlueId', '@blue-labs/language'],
   ]);
 
   // Check if this type extends another type
