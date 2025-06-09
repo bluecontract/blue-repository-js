@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-company/language';
+import { withTypeBlueId } from '@blue-labs/language';
 
 export const SchnorrSignatureAlgorithmOverTheEllipticCurveSecp256k1Schema =
   withTypeBlueId(

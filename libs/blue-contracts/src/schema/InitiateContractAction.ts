@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-company/language';
+import { withTypeBlueId } from '@blue-labs/language';
 import { ContractSchema } from './Contract';
 
 export const InitiateContractActionSchema = withTypeBlueId(

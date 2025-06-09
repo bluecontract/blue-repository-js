@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-company/language';
+import { withTypeBlueId } from '@blue-labs/language';
 import { ChannelSchema } from './Channel';
 
 export const TimelineChannelSchema = withTypeBlueId(
