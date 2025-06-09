@@ -132,7 +132,7 @@ export function processFields(
             fieldKey
           )}: blueNodeField().optional()`
         );
-        schemaImportMap.set('blueNodeField', '@blue-company/language');
+        schemaImportMap.set('blueNodeField', '@blue-labs/language');
         continue;
       }
 
