@@ -1,3 +1,5 @@
+export * from './ChannelEventCheckpoint';
+
 export * from './Channel';
 
 export * from './CompositeTimelineChannel';

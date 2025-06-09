@@ -1,5 +1,6 @@
 export const blueIds = {
   'Trigger Event': 'EANpif23QFiiLQvJCDAWSTM9ddrWd6dsVNP3VvwEmFe7',
+  'Channel Event Checkpoint': 'GWGpN9tAX5i3MUic8NhrfRtKDh9mz6dxBys8NXyPYXZf',
   'Document Update Channel': 'ACyaz51YGg73NBZ1LFDw1vnZjzRCbPWgL7Y1XRKjXLKV',
   Channel: '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY',
   'Process Embedded': '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE',
