@@ -38,7 +38,11 @@ export default defineConfig({
       // External packages that should not be bundled into your library.
       external: (id: string) => {
         const dependencies = Object.keys(packageJson.dependencies);
-        return dependencies.some((dependency) => id === dependency);
+        const peerDependencies = Object.keys(packageJson.peerDependencies);
+        return (
+          dependencies.some((dependency) => id === dependency) ||
+          peerDependencies.some((dependency) => id === dependency)
+        );
       },
     },
   },
