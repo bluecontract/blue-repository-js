@@ -46,7 +46,7 @@ const mapToDependency = (
   return null;
 };
 
-const peerDependenciesNames = ['@blue-company/language', 'zod'];
+const peerDependenciesNames = ['@blue-labs/language', 'zod'];
 
 export const syncDepsGenerator = async (
   tree: Tree,
