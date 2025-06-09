@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { blueNodeField, withTypeBlueId } from '@blue-company/language';
+import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 
 export const ContractInstanceSchema = withTypeBlueId(
   blueIds['Contract Instance']
