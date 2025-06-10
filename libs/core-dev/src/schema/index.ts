@@ -28,6 +28,8 @@ export * from './TimelineChannel';
 
 export * from './TimelineEntry';
 
+export * from './Timeline';
+
 export * from './TriggerEvent';
 
 export * from './UpdateDocument';

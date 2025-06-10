@@ -7,3 +7,5 @@ export * from './MyOSAgent';
 export * from './MyOSTimelineChannel';
 
 export * from './MyOSTimelineEntry';
+
+export * from './MyOSTimeline';
