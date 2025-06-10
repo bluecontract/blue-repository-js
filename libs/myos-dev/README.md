@@ -6,8 +6,8 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **MyOSDevV0.2**
-- Version: **3YDbQ6r7sDr8hvqzeGnTs1sMCQi4zTyHXPUUSXaV57Ew**
+- Module name: **MyOSDevV0.3**
+- Version: **4q9qRdgwrGEGhs7mrqgPfjrif5GxF2wxQxTgqUNXMMyP**
 
 ## Installation
 
