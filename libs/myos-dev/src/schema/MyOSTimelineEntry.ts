@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimelineEntrySchema } from '@blue-repository/core-dev';
+import { MyOSTimelineSchema } from './MyOSTimeline';
 
 export const MyOSTimelineEntrySchema = withTypeBlueId(
   blueIds['MyOS Timeline Entry']
@@ -9,8 +10,10 @@ export const MyOSTimelineEntrySchema = withTypeBlueId(
   TimelineEntrySchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
+    timeline: MyOSTimelineSchema.optional(),
     account: z.string().optional(),
     email: z.string().optional(),
+    timestamp: z.number().optional(),
   })
 );
 
