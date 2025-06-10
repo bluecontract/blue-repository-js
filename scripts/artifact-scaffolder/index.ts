@@ -67,15 +67,23 @@ async function main() {
       exists: libraryExists(packageName),
       currentBlueId: getLibraryBlueId(packageName),
       newBlueId:
-        Object.entries(mainBlueIds).find(
-          ([name]) => transformToPackageName(name) === packageName
-        )?.[1] ?? null,
+        Object.entries(mainBlueIds).find(([name]) => name === lastDir)?.[1] ??
+        null,
     };
   });
 
+  const uniqueLibraryConfigs = libraryConfigs
+    // Sort by parent directory name in descending order to process libraries with greater version numbers first
+    .sort((a, b) => b.parentDir.localeCompare(a.parentDir))
+    // Filter out duplicate library configs by name to avoid processing the same library with different version numbers multiple times
+    .filter(
+      (libraryConfig, index, self) =>
+        index === self.findIndex((t) => t.name === libraryConfig.name)
+    );
+
   const librariesNeedingCodeGeneration = forceAll
-    ? libraryConfigs
-    : libraryConfigs.filter((libraryConfig) => {
+    ? uniqueLibraryConfigs
+    : uniqueLibraryConfigs.filter((libraryConfig) => {
         return (
           !libraryConfig.exists ||
           libraryConfig.currentBlueId !== libraryConfig.newBlueId
