@@ -28,8 +28,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "MyOSDevV0.3",
-    "moduleBlueId": "4q9qRdgwrGEGhs7mrqgPfjrif5GxF2wxQxTgqUNXMMyP"
+    "moduleName": "MyOSDevV0.4",
+    "moduleBlueId": "6vaaUJM3KTfdqYfLpdzqPQpWqaCYdXNSQsXqZqZzSwj5"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.21.0",
