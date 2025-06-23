@@ -8,9 +8,15 @@ export * from './DocumentUpdateChannel';
 
 export * from './EmbeddedNodeChannel';
 
+export * from './InitializedMarker';
+
 export * from './JavaScriptCode';
 
 export * from './JsonPatchEntry';
+
+export * from './LifecycleEventChannel';
+
+export * from './Marker';
 
 export * from './OperationRequest';
 
