@@ -1,8 +1,11 @@
 export const blueIds = {
   'Channel Event Checkpoint': 'GWGpN9tAX5i3MUic8NhrfRtKDh9mz6dxBys8NXyPYXZf',
+  'Lifecycle Event Channel': '3pjhMs7CnYrsz5xQni3PJ8z94L6CVMVGwEaLom5MZRaG',
   'Trigger Event': 'EANpif23QFiiLQvJCDAWSTM9ddrWd6dsVNP3VvwEmFe7',
   'Document Update Channel': 'ACyaz51YGg73NBZ1LFDw1vnZjzRCbPWgL7Y1XRKjXLKV',
   Channel: '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY',
+  'Initialized Marker': '9Wgpr1kx18MaV1C6QraNbS2mYeapUhHh5SDAuNFTCHcf',
+  Marker: '3gJb4roGCuJQ1gibFXex6HoNjuTeiPvYRCquujAvg83t',
   Operation: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
   'Process Embedded': '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE',
   'Embedded Node Channel': '9FT814paTzhSQ3sRPUWoj7Qv5EeWGhXvhU5ebNpbkv2S',
