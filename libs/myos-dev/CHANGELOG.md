@@ -1,3 +1,13 @@
+## 0.12.0 (2025-06-30)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([fea4ca6](https://github.com/bluecontract/blue-repository-js/commit/fea4ca6))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/core-dev to 0.11.0
+
 ## 0.11.0 (2025-06-23)
 
 ### 🚀 Features
