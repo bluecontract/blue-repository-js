@@ -6,8 +6,8 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **CoreDevV0.2**
-- Version: **5bAS1NRmQnV4KhMJRRrJS1yXPMwsMVPde8Qk6KxNygKU**
+- Module name: **CoreDevV0.3**
+- Version: **CdGosDyVunmkYWtx652dPWwCdLess74uZ2F8PdSMZz3M**
 
 ## Installation
 
