@@ -1,6 +1,6 @@
 export const blueIds = {
   'Lifecycle Event Channel': '3pjhMs7CnYrsz5xQni3PJ8z94L6CVMVGwEaLom5MZRaG',
-  'Trigger Event': 'EANpif23QFiiLQvJCDAWSTM9ddrWd6dsVNP3VvwEmFe7',
+  'Trigger Event': 'BWBJFxM7DtorfwMewvrfn3938VBCa3seKXTkkfpCwrQ1',
   'Channel Event Checkpoint': 'GWGpN9tAX5i3MUic8NhrfRtKDh9mz6dxBys8NXyPYXZf',
   'Document Update Channel': 'ACyaz51YGg73NBZ1LFDw1vnZjzRCbPWgL7Y1XRKjXLKV',
   Channel: '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY',
@@ -15,11 +15,11 @@ export const blueIds = {
   'Composite Timeline Channel': 'ABs3rYy5bpfHAF8DYi9tmcWPauhnLwfSAJvgmjG4av14',
   'Sequential Workflow': 'AQYxXnq4Yr9kRhfQnvneuyHRyMzDHFiewF27EeqVy6du',
   Timeline: 'C7TsyShrDryZ121B2EJMKD9ui1ozmvTfGUkquRKkSvAP',
-  'Update Document': 'DvJAyytREPi6gWecvZ9UE4Xau18WcY3EQ58XdTHaVmmS',
+  'Update Document': 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',
   'Timeline Entry': '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL',
-  'State Change': 'GQaTktn9DC9fV1P6PLCJxiLmyrEfQCFT3eNTiQgtrS1b',
+  'State Change': '72FVXL9FrCRACfAYzY43BzRhQ8gBDAhzWV7MSHvuZz5M',
   'Timeline Channel': 'xyBvDpt4fv9uqLMEvpJz4u6NDM9cpuanrmk1VsY7Z6V',
   'Operation Request': 'QQiMca4DR3UwxGceNoECDcKkeQQuF7Y8Noh2DDQTUFv',
-  'JavaScript Code': '9fJLGyUgqcTXTSsPZm1J3Wi67AwgjFtEnmWc3TvagCWi',
+  'JavaScript Code': 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
   'Sequential Workflow Step': 'CvfSAWwJ4ZAMDNfum11cEcs54ECL8oszspkPKrMMY7xt',
 } as const;
