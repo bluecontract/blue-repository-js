@@ -30,6 +30,8 @@ export * from './SequentialWorkflowStep';
 
 export * from './SequentialWorkflow';
 
+export * from './StateChange';
+
 export * from './TimelineChannel';
 
 export * from './TimelineEntry';
