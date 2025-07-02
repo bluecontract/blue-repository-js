@@ -26,8 +26,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "CoreDevV0.3",
-    "moduleBlueId": "CdGosDyVunmkYWtx652dPWwCdLess74uZ2F8PdSMZz3M"
+    "moduleName": "CoreDevV0.4",
+    "moduleBlueId": "5q1zS3My75JQpnBhK6Umj6RrUx4L475axNQZxtiBNabP"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.21.0",
