@@ -2,11 +2,15 @@ export * from './ChannelEventCheckpoint';
 
 export * from './Channel';
 
+export * from './ChatMessage';
+
 export * from './CompositeTimelineChannel';
 
 export * from './DocumentUpdateChannel';
 
 export * from './EmbeddedNodeChannel';
+
+export * from './InformUserAboutPendingAction';
 
 export * from './InitializedMarker';
 
