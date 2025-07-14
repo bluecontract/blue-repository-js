@@ -6,9 +6,15 @@ export * from './ChatMessage';
 
 export * from './CompositeTimelineChannel';
 
+export * from './DocumentProcessingInitiated';
+
 export * from './DocumentUpdateChannel';
 
+export * from './DocumentUpdate';
+
 export * from './EmbeddedNodeChannel';
+
+export * from './Event';
 
 export * from './InformUserAboutPendingAction';
 
@@ -19,6 +25,8 @@ export * from './JavaScriptCode';
 export * from './JsonPatchEntry';
 
 export * from './LifecycleEventChannel';
+
+export * from './LifecycleEvent';
 
 export * from './Marker';
 
