@@ -27,7 +27,7 @@
   },
   "blueType": {
     "moduleName": "CoreDevV0.4",
-    "moduleBlueId": "5q1zS3My75JQpnBhK6Umj6RrUx4L475axNQZxtiBNabP"
+    "moduleBlueId": "CNhfmwg6nnpARrAJpLUtH5repp52BKE4Z8k1wMifTaBD"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.21.0",
