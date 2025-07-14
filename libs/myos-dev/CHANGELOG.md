@@ -1,3 +1,13 @@
+## 0.15.0 (2025-07-14)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([eefe5c7](https://github.com/bluecontract/blue-repository-js/commit/eefe5c7))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/core-dev to 0.14.0
+
 ## 0.14.0 (2025-07-02)
 
 ### 🚀 Features
