@@ -1,0 +1,38 @@
+{
+  "name": "@blue-repository/payment",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo"
+  ],
+  "dependencies": {
+    "@blue-repository/core-dev": "0.14.0"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluecontract/blue-repository-js.git"
+  },
+  "blueType": {
+    "moduleName": "Payment",
+    "moduleBlueId": "AohRTi5rJkCU36vzM7Q3m8H4C2qcU4EDpqXURcRmNGs"
+  },
+  "peerDependencies": {
+    "@blue-labs/language": "^1.21.0",
+    "zod": "^3.23.8"
+  }
+}
