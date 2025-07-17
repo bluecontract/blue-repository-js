@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/testing-local-contracts",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-repository/blue-contracts": "0.7.1"
+    "@blue-repository/blue-contracts": "0.8.0"
   },
   "license": "MIT",
   "publishConfig": {

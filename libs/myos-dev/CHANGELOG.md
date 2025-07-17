@@ -1,3 +1,13 @@
+## 0.16.0 (2025-07-17)
+
+### 🚀 Features
+
+- add contents generator for .blue files ([a6ff8c0](https://github.com/bluecontract/blue-repository-js/commit/a6ff8c0))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/core-dev to 0.15.0
+
 ## 0.15.0 (2025-07-14)
 
 ### 🚀 Features
