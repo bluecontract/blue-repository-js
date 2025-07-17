@@ -10,4 +10,7 @@ export interface SyncCodeGeneratorSchema {
 
   /** Generate blue IDs */
   generateBlueIds?: boolean;
+
+  /** Generate contents */
+  generateContents?: boolean;
 }
