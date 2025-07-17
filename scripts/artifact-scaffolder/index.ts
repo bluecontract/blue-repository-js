@@ -8,6 +8,7 @@ import { generateLibrary } from './commands/generateLibrary';
 import { syncCode } from './commands/syncCode';
 import { nxReset } from './commands/nxReset';
 import { nxSync } from './commands/nxSync';
+import { updateAllRootIndexFiles } from './commands/updateRootIndexFiles';
 import { getAllBlueIdsFilesPaths } from './utils/getAllBlueIdsFilesPaths';
 import { transformToPackageName } from './utils/transformToPackageName';
 import { libraryExists } from './utils/libraryExists';
@@ -15,6 +16,10 @@ import { getLibraryBlueId } from './utils/getLibraryBlueId';
 
 /**
  * Main function to process blue-ids.yaml files and generate NX libraries
+ *
+ * Flags:
+ * --force-all: Force code generation for all libraries (bypass filtering)
+ * --migration <name>: Run specific migration (e.g., "root-index-contents")
  */
 async function main() {
   const args = process.argv.slice(2);
@@ -25,6 +30,13 @@ async function main() {
 
   const inputDir = args[0];
   const forceAll = args.includes('--force-all');
+
+  // Extract migration parameter
+  const migrationIndex = args.indexOf('--migration');
+  const migration =
+    migrationIndex !== -1 && migrationIndex + 1 < args.length
+      ? args[migrationIndex + 1]
+      : null;
 
   if (forceAll) {
     console.log('🚀 Force mode enabled: generating code for ALL libraries');
@@ -113,6 +125,33 @@ async function main() {
 
   for (const libraryConfig of libraryConfigs) {
     await updateDependencies(libraryConfig);
+  }
+
+  // Run migrations if explicitly requested
+  if (migration) {
+    if (!forceAll) {
+      console.error(
+        '❌ Migration can only be run in force mode. Please use --force-all flag.'
+      );
+      process.exit(1);
+    }
+
+    console.log(`🔄 Running migration: ${migration}`);
+
+    switch (migration) {
+      case 'root-index-contents':
+        await updateAllRootIndexFiles(libraryConfigs);
+        break;
+      default:
+        console.error(`❌ Unknown migration: ${migration}`);
+        console.log('Available migrations:');
+        console.log(
+          '  - root-index-contents: Add contents export to root index.ts files'
+        );
+        process.exit(1);
+    }
+  } else {
+    console.log('⏭️  No migration specified, skipping migration step');
   }
 }
 

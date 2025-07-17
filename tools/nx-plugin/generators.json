@@ -22,6 +22,11 @@
       "schema": "./src/generators/zod-schemas/schema.json",
       "description": "Generate zod schemas from a yaml files"
     },
+    "contents": {
+      "factory": "./src/generators/contents/contents",
+      "schema": "./src/generators/contents/schema.json",
+      "description": "Generate contents from blue files"
+    },
     "sync-deps": {
       "factory": "./src/generators/sync-deps/sync-deps",
       "schema": "./src/generators/sync-deps/schema.json",

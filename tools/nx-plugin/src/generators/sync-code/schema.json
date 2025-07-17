@@ -29,6 +29,11 @@
       "type": "boolean",
       "description": "Generate blue IDs",
       "default": true
+    },
+    "generateContents": {
+      "type": "boolean",
+      "description": "Generate contents",
+      "default": true
     }
   },
   "required": ["inputPath", "libraryName"]

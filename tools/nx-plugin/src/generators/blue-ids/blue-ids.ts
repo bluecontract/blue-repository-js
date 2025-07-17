@@ -17,7 +17,15 @@ import { getTypeModuleInformations } from './utils/typeModule';
 function transformToModule(content: string): string {
   const data = yaml.load(content) as Record<string, unknown>;
 
-  const jsonString = JSON.stringify(data, null, 2);
+  // Sort keys to ensure consistent ordering
+  const sortedData = Object.keys(data)
+    .sort()
+    .reduce((acc, key) => {
+      acc[key] = data[key];
+      return acc;
+    }, {} as Record<string, unknown>);
+
+  const jsonString = JSON.stringify(sortedData, null, 2);
   return `export const blueIds = ${jsonString} as const;\n`;
 }
 
