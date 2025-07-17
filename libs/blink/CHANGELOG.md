@@ -1,3 +1,14 @@
+## 0.9.0 (2025-07-17)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([c0b628f](https://github.com/bluecontract/blue-repository-js/commit/c0b628f))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/blue-contracts to 0.9.0
+- Updated @blue-repository/simulator to 0.8.0
+
 ## 0.8.0 (2025-07-17)
 
 ### 🚀 Features
