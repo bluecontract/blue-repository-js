@@ -1,9 +1,9 @@
 import { money } from './Money';
 import { transferAuthorizationApprovedByBank } from './TransferAuthorizationApprovedByBank';
 import { transferCancellationApprovedByBank } from './TransferCancellationApprovedByBank';
-import { smartTransfer } from './SmartTransfer';
 import { transferCaptureApprovedByBank } from './TransferCaptureApprovedByBank';
 import { transferAuthorizationRequested } from './TransferAuthorizationRequested';
+import { smartTransfer } from './SmartTransfer';
 import { transferCaptureRequested } from './TransferCaptureRequested';
 import { payeeAccountNumberChangeRequested } from './PayeeAccountNumberChangeRequested';
 import { transferCancellationRequested } from './TransferCancellationRequested';
@@ -15,9 +15,9 @@ export const contents = {
     transferAuthorizationApprovedByBank,
   '76RNmYLf2tz6urNmZTFmx8SMdYoxUdRaGJTDNbfkDYcr':
     transferCancellationApprovedByBank,
-  '98zcwMnFPHM7N18N1rCyWGZLah4ZSEyvpeQwhKscC61i': smartTransfer,
   '9VxFD2G57RLHBfAuKTpXTdr3GDV5TVXuje6ZPUsYJfHV': transferCaptureApprovedByBank,
   D5KcP1MYfjbBRQd192SYZK9DxFNU3WrGp8VmZJjombEv: transferAuthorizationRequested,
+  EZKc5W1s5RpfL11djSghgMU8LNKzjubcawzR6GNPN5at: smartTransfer,
   FZBYRqmomC7WX2BwAfcrcWjdE5LoQSRYYKnoww2mpcLz: transferCaptureRequested,
   GnGGfevYaNgUSv1qPtWDUhV5ReAFE7oFdGZ6FLD6Lf5L:
     payeeAccountNumberChangeRequested,
