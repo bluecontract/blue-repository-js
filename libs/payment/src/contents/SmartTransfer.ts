@@ -55,7 +55,7 @@ export const smartTransfer = {
                     type: {
                       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
                     },
-                    value: '${event.value}',
+                    value: '${event.message.request}',
                   },
                   op: {
                     type: {
@@ -75,18 +75,14 @@ export const smartTransfer = {
           },
           {
             type: {
-              blueId: 'BWBJFxM7DtorfwMewvrfn3938VBCa3seKXTkkfpCwrQ1',
+              blueId: 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
             },
-            event: {
+            code: {
               type: {
-                blueId: '49ThQrHgJdJGs2FgyKrTe1cf98VV6xXe9r6wZJtjAiyE',
+                blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
               },
-              transferValue: {
-                type: {
-                  blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-                },
-                value: '${event.value}',
-              },
+              value:
+                'const transferValue = event.message.request;\nconst type = "Transfer Authorization Approved by Bank";\nreturn { "events": [{ "type": type, "transferValue": transferValue }] };\n',
             },
           },
         ],
@@ -220,7 +216,7 @@ export const smartTransfer = {
                     type: {
                       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
                     },
-                    value: '${event.value}',
+                    value: '${event.message.request}',
                   },
                   op: {
                     type: {
@@ -240,18 +236,14 @@ export const smartTransfer = {
           },
           {
             type: {
-              blueId: 'BWBJFxM7DtorfwMewvrfn3938VBCa3seKXTkkfpCwrQ1',
+              blueId: 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
             },
-            event: {
+            code: {
               type: {
-                blueId: 'Yrpy3UA4KhfW5axU2E5rCoejQnHDaTjaZBLKUgcVb1d',
+                blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
               },
-              payeeAccountNumber: {
-                type: {
-                  blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-                },
-                value: '${event.value}',
-              },
+              value:
+                'const payeeAccountNumber = event.message.request;\nconst type = "Payee Account Number Change Approved by Bank";\nreturn { "events": [{ "type": type, "payeeAccountNumber": payeeAccountNumber }] };\n',
             },
           },
         ],

@@ -4,7 +4,7 @@ export const blueIds = {
     'Yrpy3UA4KhfW5axU2E5rCoejQnHDaTjaZBLKUgcVb1d',
   'Payee Account Number Change Requested':
     'GnGGfevYaNgUSv1qPtWDUhV5ReAFE7oFdGZ6FLD6Lf5L',
-  'Smart Transfer': '98zcwMnFPHM7N18N1rCyWGZLah4ZSEyvpeQwhKscC61i',
+  'Smart Transfer': 'EZKc5W1s5RpfL11djSghgMU8LNKzjubcawzR6GNPN5at',
   'Transfer Authorization Approved by Bank':
     '49ThQrHgJdJGs2FgyKrTe1cf98VV6xXe9r6wZJtjAiyE',
   'Transfer Authorization Requested':

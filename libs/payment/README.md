@@ -6,8 +6,8 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **Payment**
-- Version: **AohRTi5rJkCU36vzM7Q3m8H4C2qcU4EDpqXURcRmNGs**
+- Module name: **PaymentV0.2**
+- Version: **7VGWNcyG3CGVfVnsUPy89niJeR4avW6MvUeXSoGYTxGG**
 
 ## Installation
 
