@@ -37,22 +37,17 @@ jobs:
           fetch-depth: 0 # Fetch all history
           ref: ${{ env.BASE_BRANCH }} # Checkout the base branch directly
 
-      - name: Sparse checkout repository
-        uses: actions/checkout@v4
+      - name: Download blue-repository artifact
+        uses: dawidd6/action-download-artifact@v2
         with:
-          repository: bluecontract/blue-repository
-          token: ${{ secrets.WORKFLOW_PAT }}
+          github_token: ${{ secrets.WORKFLOW_PAT }}
+          workflow: blue-preprocessor.yml
+          run_id: ${{ github.event.client_payload.run_id || inputs.run_id }}
+          name: blue-repository
+          repo: bluecontract/blue-repository
           path: data/blue-repository
-          sparse-checkout: |
-            /*
-            !/.github
-            !/.gitignore
-            !/.git
-            !/.vscode
-            !/.idea
-          sparse-checkout-cone-mode: false
 
-      - name: Download artifact from first workflow
+      - name: Download blue-preprocessed artifact
         uses: dawidd6/action-download-artifact@v2
         with:
           github_token: ${{ secrets.WORKFLOW_PAT }}
