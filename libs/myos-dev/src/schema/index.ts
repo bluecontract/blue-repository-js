@@ -1,3 +1,5 @@
+export * from './DocumentSessionBootstrap';
+
 export * from './MyOSAgentChannel';
 
 export * from './MyOSAgentEvent';
