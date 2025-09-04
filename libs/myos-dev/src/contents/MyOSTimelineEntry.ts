@@ -7,7 +7,7 @@ export const myOSTimelineEntry = {
   },
   timeline: {
     type: {
-      blueId: 'CzXt6pmkmKUk1fNpMpNRGKdYc84K35K8iLvsKCCu6o9M',
+      blueId: '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog',
     },
   },
   timestamp: {

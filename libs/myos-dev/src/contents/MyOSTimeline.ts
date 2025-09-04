@@ -7,9 +7,9 @@ export const myOSTimeline = {
   },
   accountId: {
     description:
-      'Numeric identifier for the MyOS account associated with this timeline',
+      'Identifier for the MyOS account associated with this timeline',
     type: {
-      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
+      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
 } as const;

@@ -7,7 +7,7 @@ export const MyOSAgentEventSchema = withTypeBlueId(blueIds['MyOS Agent Event'])(
     name: z.string().optional(),
     description: z.string().optional(),
     agentId: z.string().optional(),
-    id: z.number().optional(),
+    id: z.string().optional(),
     event: blueNodeField().optional(),
     timestamp: z.number().optional(),
   })

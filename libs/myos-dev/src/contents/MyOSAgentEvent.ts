@@ -11,7 +11,7 @@ export const myOSAgentEvent = {
   id: {
     description: 'Optional event ID',
     type: {
-      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
+      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
   event: {
