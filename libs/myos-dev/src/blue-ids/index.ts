@@ -2,8 +2,8 @@ export const blueIds = {
   'Document Session Bootstrap': 'DAoKNn16QQNyTjdrjXoW4vkVgBgJmoLc43YSUV1jKb24',
   'MyOS Agent': '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN',
   'MyOS Agent Channel': 'GvLXrz3siPPmmSLz1gHrQ4PCpDvjESdEfWSWUNwKrhf1',
-  'MyOS Agent Event': 'Es7jKGJovgLQdi5Ek35p13tks7Q9cvs52Xoo4zJu3i7k',
-  'MyOS Timeline': 'CzXt6pmkmKUk1fNpMpNRGKdYc84K35K8iLvsKCCu6o9M',
+  'MyOS Agent Event': 'C99Sgq7uyEjz4YH7L27Aj1aahV2tJMAoCVct3ZiZp8av',
+  'MyOS Timeline': '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog',
   'MyOS Timeline Channel': 'Bx3dgXf5uFkGf9KxkUTFWQhbEw9QBc9cTgz1KP1Qtgh6',
-  'MyOS Timeline Entry': 'D5UptqkNyFqmnniLRFP5vNqeXhcECq8MHtyraUsSYMDx',
+  'MyOS Timeline Entry': 'FW2R85SUhYpoCVrzyr3DYWXK9TJNAuw5HLAmzdUnW6M3',
 } as const;
