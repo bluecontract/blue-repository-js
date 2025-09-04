@@ -1,5 +1,5 @@
 export const blueIds = {
-  'Document Session Bootstrap': 'DAoKNn16QQNyTjdrjXoW4vkVgBgJmoLc43YSUV1jKb24',
+  'Document Session Bootstrap': 'BsbZvBQA4aLXJTFPRmP4S7Ud7b2MxU7rP95agd38xoTE',
   'MyOS Agent': '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN',
   'MyOS Agent Channel': 'GvLXrz3siPPmmSLz1gHrQ4PCpDvjESdEfWSWUNwKrhf1',
   'MyOS Agent Event': 'C99Sgq7uyEjz4YH7L27Aj1aahV2tJMAoCVct3ZiZp8av',

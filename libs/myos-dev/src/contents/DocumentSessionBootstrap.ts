@@ -46,7 +46,7 @@ export const documentSessionBootstrap = {
               type: {
                 blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
               },
-              value: 'return { events: event };',
+              value: 'return { events: event.message.request };',
             },
           },
         ],
