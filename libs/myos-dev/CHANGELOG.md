@@ -1,3 +1,9 @@
+## 0.21.0 (2025-09-16)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([ca22985](https://github.com/bluecontract/blue-repository-js/commit/ca22985))
+
 ## 0.20.1 (2025-09-16)
 
 ### 🧱 Updated Dependencies
