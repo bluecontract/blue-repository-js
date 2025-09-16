@@ -90,11 +90,13 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.WORKFLOW_PAT }}
-          title: 'feat: update generated Blue artifacts'
+          branch: 'blue-artifacts/run-${{ github.event.client_payload.run_id || inputs.run_id }}'
+          title: 'feat: update generated Blue artifacts (run ${{ github.event.client_payload.run_id || inputs.run_id }})'
           body: |
             This PR contains automatically generated Blue artifacts.
 
             ## Configuration
+            - Run ID: ${{ github.event.client_payload.run_id || inputs.run_id }}
             - Force all libraries: ${{ inputs.force_all_libraries }}
             - Migration: ${{ inputs.migration || 'none' }}
 
