@@ -13,6 +13,7 @@ import { getAllBlueIdsFilesPaths } from './utils/getAllBlueIdsFilesPaths';
 import { transformToPackageName } from './utils/transformToPackageName';
 import { libraryExists } from './utils/libraryExists';
 import { getLibraryBlueId } from './utils/getLibraryBlueId';
+import { compareLibraryConfigByVersionDesc } from './utils/compareLibraryConfigByVersion';
 
 /**
  * Main function to process blue-ids.yaml files and generate NX libraries
@@ -85,8 +86,9 @@ async function main() {
   });
 
   const uniqueLibraryConfigs = libraryConfigs
-    // Sort by parent directory name in descending order to process libraries with greater version numbers first
-    .sort((a, b) => b.parentDir.localeCompare(a.parentDir))
+    // Sort by semantic version embedded in the last directory name (e.g., MyOSDevV0.10 > MyOSDevV0.9).
+    // Fallback to descending parentDir comparison for different bases or equal versions.
+    .sort(compareLibraryConfigByVersionDesc)
     // Filter out duplicate library configs by name to avoid processing the same library with different version numbers multiple times
     .filter(
       (libraryConfig, index, self) =>
