@@ -1,5 +1,4 @@
 import { channel } from './Channel';
-import { sequentialWorkflowOperation } from './SequentialWorkflowOperation';
 import { processEmbedded } from './ProcessEmbedded';
 import { timelineEntry } from './TimelineEntry';
 import { marker } from './Marker';
@@ -7,12 +6,13 @@ import { event } from './Event';
 import { lifecycleEvent } from './LifecycleEvent';
 import { lifecycleEventChannel } from './LifecycleEventChannel';
 import { chatMessage } from './ChatMessage';
+import { operation } from './Operation';
 import { documentProcessingInitiated } from './DocumentProcessingInitiated';
+import { sequentialWorkflowOperation } from './SequentialWorkflowOperation';
 import { embeddedNodeChannel } from './EmbeddedNodeChannel';
 import { initializedMarker } from './InitializedMarker';
 import { compositeTimelineChannel } from './CompositeTimelineChannel';
 import { documentUpdateChannel } from './DocumentUpdateChannel';
-import { operation } from './Operation';
 import { sequentialWorkflow } from './SequentialWorkflow';
 import { stateChange } from './StateChange';
 import { updateDocument } from './UpdateDocument';
@@ -29,7 +29,6 @@ import { timelineChannel } from './TimelineChannel';
 
 export const contents = {
   '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY': channel,
-  '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF': sequentialWorkflowOperation,
   '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE': processEmbedded,
   '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL': timelineEntry,
   '3gJb4roGCuJQ1gibFXex6HoNjuTeiPvYRCquujAvg83t': marker,
@@ -37,12 +36,13 @@ export const contents = {
   '3nViyQeU3RwjHJ7wtCoef7dwe7JPqYEvZUKEx4FohuP5': lifecycleEvent,
   '3pjhMs7CnYrsz5xQni3PJ8z94L6CVMVGwEaLom5MZRaG': lifecycleEventChannel,
   '51RV2uUTrvMb1P1u9pno6r4Ujbns9kBJRFbZrq45C6WS': chatMessage,
+  '6tJThrkAEzwjt5oUVh4Puc5xvLjEkDPH8HZqKEqFL115': operation,
   '75eYxjwaABUcTCuKCeg1Pf1jjwDarLnFLXtxERehWFCv': documentProcessingInitiated,
+  '8Ryr45Yg1hajwTaQYTzbUawLLhqiRExEvPs8suaWRi4n': sequentialWorkflowOperation,
   '9FT814paTzhSQ3sRPUWoj7Qv5EeWGhXvhU5ebNpbkv2S': embeddedNodeChannel,
   '9Wgpr1kx18MaV1C6QraNbS2mYeapUhHh5SDAuNFTCHcf': initializedMarker,
   ABs3rYy5bpfHAF8DYi9tmcWPauhnLwfSAJvgmjG4av14: compositeTimelineChannel,
   ACyaz51YGg73NBZ1LFDw1vnZjzRCbPWgL7Y1XRKjXLKV: documentUpdateChannel,
-  APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C: operation,
   AQYxXnq4Yr9kRhfQnvneuyHRyMzDHFiewF27EeqVy6du: sequentialWorkflow,
   Ayf4DPoE8H7JWxE8CDM73T7GJdjey4jo4mUEDnenwzkN: stateChange,
   Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ: updateDocument,

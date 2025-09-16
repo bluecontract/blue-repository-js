@@ -6,7 +6,6 @@ export const OperationSchema = withTypeBlueId(blueIds['Operation'])(
   z.object({
     name: z.string().optional(),
     description: z.string().optional(),
-    channel: z.string().optional(),
     request: blueNodeField().optional(),
   })
 );

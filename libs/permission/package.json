@@ -1,6 +1,6 @@
 {
-  "name": "@blue-repository/core-dev",
-  "version": "0.16.0",
+  "name": "@blue-repository/permission",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -16,7 +16,10 @@
     "dist",
     "!**/*.tsbuildinfo"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@blue-repository/core-dev": "0.16.0",
+    "@blue-repository/myos-dev": "0.20.0"
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -26,8 +29,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "CoreDevV0.5",
-    "moduleBlueId": "5sZHgVPoFXaS4CnhpQnZ96rW3Z9P8bMKPwBLWTJzw5fb"
+    "moduleName": "Permission",
+    "moduleBlueId": "6sx8UoN47j8DsQKxkvZLRVtfwfjxomK6Po1WwKzfxX1S"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",
