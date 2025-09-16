@@ -30,6 +30,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
+    env:
+      TRIGGER_LABEL: ${{ github.event_name == 'repository_dispatch' && 'blue-preprocessor (auto)' || github.event_name == 'workflow_dispatch' && 'manual (developer)' || github.event_name }}
     steps:
       - name: Checkout main repository
         uses: actions/checkout@v4
@@ -90,12 +92,13 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.WORKFLOW_PAT }}
-          branch: 'blue-artifacts/run-${{ github.event.client_payload.run_id || inputs.run_id }}'
-          title: 'feat: update generated Blue artifacts (run ${{ github.event.client_payload.run_id || inputs.run_id }})'
+          branch: 'blue-artifacts/${{ github.event_name }}/run-${{ github.event.client_payload.run_id || inputs.run_id }}'
+          title: 'feat: update generated Blue artifacts (run ${{ github.event.client_payload.run_id || inputs.run_id }}, trigger: ${{ env.TRIGGER_LABEL }})'
           body: |
             This PR contains automatically generated Blue artifacts.
 
             ## Configuration
+            - Trigger: ${{ env.TRIGGER_LABEL }}
             - Run ID: ${{ github.event.client_payload.run_id || inputs.run_id }}
             - Force all libraries: ${{ inputs.force_all_libraries }}
             - Migration: ${{ inputs.migration || 'none' }}
