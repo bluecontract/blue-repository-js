@@ -8,6 +8,8 @@ export * from './CompositeTimelineChannel';
 
 export * from './DocumentProcessingInitiated';
 
+export * from './DocumentStatus';
+
 export * from './DocumentUpdateChannel';
 
 export * from './DocumentUpdate';
@@ -43,6 +45,16 @@ export * from './SequentialWorkflowStep';
 export * from './SequentialWorkflow';
 
 export * from './StateChange';
+
+export * from './StatusChange';
+
+export * from './StatusCompleted';
+
+export * from './StatusFailed';
+
+export * from './StatusInProgress';
+
+export * from './StatusPending';
 
 export * from './TimelineChannel';
 
