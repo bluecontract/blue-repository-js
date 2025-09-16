@@ -1,5 +1,7 @@
 export * from './DocumentSessionBootstrap';
 
+export * from './MyOSAdminBase';
+
 export * from './MyOSAgentChannel';
 
 export * from './MyOSAgentEvent';

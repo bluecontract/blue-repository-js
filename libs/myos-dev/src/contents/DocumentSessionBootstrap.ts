@@ -27,7 +27,7 @@ export const documentSessionBootstrap = {
     myOsAdminUpdateImpl: {
       description: 'Implementation that re-emits the provided events',
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '8Ryr45Yg1hajwTaQYTzbUawLLhqiRExEvPs8suaWRi4n',
       },
       operation: {
         type: {
@@ -56,7 +56,7 @@ export const documentSessionBootstrap = {
       description:
         'Operation for MyOS Admin to emit progress events during bootstrap process',
       type: {
-        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+        blueId: '6tJThrkAEzwjt5oUVh4Puc5xvLjEkDPH8HZqKEqFL115',
       },
       channel: {
         type: {
