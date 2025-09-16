@@ -5,6 +5,13 @@ export const sequentialWorkflowOperation = {
   type: {
     blueId: 'AQYxXnq4Yr9kRhfQnvneuyHRyMzDHFiewF27EeqVy6du',
   },
+  channel: {
+    description:
+      'Specifies the channel through which Operation Request events are sent to invoke this operation implementation on the document.',
+    type: {
+      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+    },
+  },
   operation: {
     description:
       'References the name of the operation definition that this implementation serves. Links this workflow to a specific Operation contract.',

@@ -1,4 +1,4 @@
-# @blue-repository/core-dev
+# @blue-repository/permission
 
 This library was generated with @blue-repository/nx-plugin.
 
@@ -6,22 +6,22 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **CoreDevV0.5**
-- Version: **5sZHgVPoFXaS4CnhpQnZ96rW3Z9P8bMKPwBLWTJzw5fb**
+- Module name: **Permission**
+- Version: **6sx8UoN47j8DsQKxkvZLRVtfwfjxomK6Po1WwKzfxX1S**
 
 ## Installation
 
 To install the library, use npm or yarn:
 
 ```bash
-npm install @blue-repository/core-dev
+npm install @blue-repository/permission
 # or
-yarn add @blue-repository/core-dev
+yarn add @blue-repository/permission
 ```
 
 ## Changelog
 
-The [Changelog](https://github.com/bluecontract/blue-repository-js/blob/main/libs/core-dev/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
+The [Changelog](https://github.com/bluecontract/blue-repository-js/blob/main/libs/permission/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
 
 ## License
 

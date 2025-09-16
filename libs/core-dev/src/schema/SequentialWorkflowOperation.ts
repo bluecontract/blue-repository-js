@@ -9,6 +9,7 @@ export const SequentialWorkflowOperationSchema = withTypeBlueId(
   SequentialWorkflowSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
+    channel: z.string().optional(),
     operation: z.string().optional(),
   })
 );
