@@ -1,3 +1,9 @@
+## 0.4.2 (2025-09-17)
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/core-dev to 0.18.0
+
 ## 0.4.1 (2025-09-16)
 
 ### 🧱 Updated Dependencies

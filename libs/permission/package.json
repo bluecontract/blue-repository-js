@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/permission",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,8 +17,8 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-repository/core-dev": "0.17.0",
-    "@blue-repository/myos-dev": "0.21.0"
+    "@blue-repository/core-dev": "0.18.0",
+    "@blue-repository/myos-dev": "0.22.0"
   },
   "license": "MIT",
   "publishConfig": {
