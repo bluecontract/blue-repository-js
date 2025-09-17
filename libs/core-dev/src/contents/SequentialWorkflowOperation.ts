@@ -3,7 +3,7 @@ export const sequentialWorkflowOperation = {
   description:
     'The most common approach for implementing operations. Links to an operation definition and defines processing steps that execute sequentially when the operation is called.',
   type: {
-    blueId: 'AQYxXnq4Yr9kRhfQnvneuyHRyMzDHFiewF27EeqVy6du',
+    blueId: '9VFwowb9bZ2hnEFqo4UW66VMbx7R5GhCZRr3PLibkK4m',
   },
   operation: {
     description:

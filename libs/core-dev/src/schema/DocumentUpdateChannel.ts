@@ -1,13 +1,14 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ChannelSchema } from './Channel';
+import { InternalEventsChannelSchema } from './InternalEventsChannel';
 
 export const DocumentUpdateChannelSchema = withTypeBlueId(
   blueIds['Document Update Channel']
 )(
-  ChannelSchema.extend({
+  InternalEventsChannelSchema.extend({
     name: z.string().optional(),
+    description: z.string().optional(),
     path: z.string().optional(),
   })
 );

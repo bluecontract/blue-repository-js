@@ -12,7 +12,7 @@ export const myOSAdminBase = {
     myOsAdminUpdateImpl: {
       description: 'Implementation that re-emits the provided events',
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '6M1tnxrXT4hgfTEZnkGsPSJZTiwZbtwnGsyGXA5wRpYx',
       },
       operation: {
         type: {

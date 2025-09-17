@@ -1,7 +1,7 @@
 export const singleDocumentPermissionGrantToDocument = {
   name: 'Single Document Permission Grant To Document',
   type: {
-    blueId: '6iJpfzCGhn6LUYXFE5ZMeVZNwoTanY1ewVf1iNB7psY8',
+    blueId: '72xPJmYUhgYEddUuUcDu8QYKrR3bc4wJC5uE5tPQwFAn',
   },
   granteeDocumentId: {
     description:
@@ -44,7 +44,7 @@ export const singleDocumentPermissionGrantToDocument = {
     },
     revokeImplGranter: {
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '6M1tnxrXT4hgfTEZnkGsPSJZTiwZbtwnGsyGXA5wRpYx',
       },
       operation: {
         type: {
@@ -72,7 +72,7 @@ export const singleDocumentPermissionGrantToDocument = {
     },
     initLifecycleChannel: {
       type: {
-        blueId: '3pjhMs7CnYrsz5xQni3PJ8z94L6CVMVGwEaLom5MZRaG',
+        blueId: '4HbxXHSnBvSPUbhYkwiZYLDTNvEmaFQbxn5BAV9atHc2',
       },
       event: {
         type: {
@@ -82,7 +82,7 @@ export const singleDocumentPermissionGrantToDocument = {
     },
     validateOnInit: {
       type: {
-        blueId: 'AQYxXnq4Yr9kRhfQnvneuyHRyMzDHFiewF27EeqVy6du',
+        blueId: '9VFwowb9bZ2hnEFqo4UW66VMbx7R5GhCZRr3PLibkK4m',
       },
       channel: {
         type: {

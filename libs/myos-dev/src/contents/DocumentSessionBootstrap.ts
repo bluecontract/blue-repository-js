@@ -3,7 +3,7 @@ export const documentSessionBootstrap = {
   description:
     'MyOS-specific document for bootstrapping document sessions and tracking bootstrap progress',
   type: {
-    blueId: '6iJpfzCGhn6LUYXFE5ZMeVZNwoTanY1ewVf1iNB7psY8',
+    blueId: '72xPJmYUhgYEddUuUcDu8QYKrR3bc4wJC5uE5tPQwFAn',
   },
   capabilities: {
     description:

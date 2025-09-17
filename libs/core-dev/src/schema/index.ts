@@ -22,6 +22,8 @@ export * from './InformUserAboutPendingAction';
 
 export * from './InitializedMarker';
 
+export * from './InternalEventsChannel';
+
 export * from './JavaScriptCode';
 
 export * from './JsonPatchEntry';

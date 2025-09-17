@@ -2,7 +2,6 @@ import { singleDocumentPermissionGrantToDocument } from './SingleDocumentPermiss
 import { singleDocumentPermissionRejected } from './SingleDocumentPermissionRejected';
 import { singleDocumentPermissionGranted } from './SingleDocumentPermissionGranted';
 import { singleDocumentPermissionSet } from './SingleDocumentPermissionSet';
-import { singleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
 import { singleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
 import { singleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
 import { singleDocumentPermissionValidated } from './SingleDocumentPermissionValidated';
@@ -11,17 +10,16 @@ import { singleDocumentPermissionRevoked } from './SingleDocumentPermissionRevok
 import { singleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
 import { singleDocumentPermissionRevokeRequested } from './SingleDocumentPermissionRevokeRequested';
 import { singleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
+import { singleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
 
 export const contents = {
-  '2v6cKxF7gTbrd4AqMoThn5eoZYRoqC1mhmKjFyhjLpZG':
+  '2WwhRXaw4HcjkzvzpNqefkrKM5nAeKNVeEFcUkPAvFGE':
     singleDocumentPermissionGrantToDocument,
   '6dzRFbNGRsc9ouzDZQ8FnQfpnKm1ynFx5f4SLTVrj4m3':
     singleDocumentPermissionRejected,
   '7LsM1JW5fHsoBxi5W5Af2k19URaPdper6wX8wfnjcqU1':
     singleDocumentPermissionGranted,
   '7TCdQstz98WJ8RXqizemdpdg723HeqTZHHiRXCnso7b4': singleDocumentPermissionSet,
-  CZGcnSf9c8AuLUt4Ym2NVZmTAHTzvEZNj4DsPTXRZm8N:
-    singleDocumentPermissionGrantToAccount,
   DMcb6BKQWapmR6TerSoiYmoKZ5UdE3r36Jy242Qo5Cwh: singleDocumentPermissionInvalid,
   EdoPE6wJ1V1EUtKgjYjME5Vxc5BZ4SwQrmjXsXvFdhAJ:
     singleDocumentPermissionGrantingInProgress,
@@ -36,4 +34,6 @@ export const contents = {
     singleDocumentPermissionRevokeRequested,
   GVzWzr9pkRpeBbQ8tjBJJzG34gzaC7Wcr31sw22bKZAP:
     singleDocumentPermissionRevokingInProgress,
+  HheErBCb1aFoDUFicFnZ34unFcrNbqbUnKJDt3XoQzYF:
+    singleDocumentPermissionGrantToAccount,
 } as const;

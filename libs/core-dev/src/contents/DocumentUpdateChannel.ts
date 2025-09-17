@@ -1,7 +1,9 @@
 export const documentUpdateChannel = {
   name: 'Document Update Channel',
+  description:
+    'An internal channel that listens for updates in the document. Contracts can\nsubscribe to this channel to react to document changes.\n',
   type: {
-    blueId: '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY',
+    blueId: 'x5WchTDpMcuQXtZWodiepDNmKWdQB48nyvU4VAisnmd',
   },
   path: {
     type: {
