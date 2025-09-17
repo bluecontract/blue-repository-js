@@ -24,7 +24,6 @@ export const SingleDocumentPermissionGrantToAccountSchema = withTypeBlueId(
         granterChannel: MyOSTimelineChannelSchema.optional(),
         revokeImplGranter: SequentialWorkflowOperationSchema.optional(),
         initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        revokeImplGrantee: SequentialWorkflowOperationSchema.optional(),
         revoke: OperationSchema.optional(),
         granteeChannel: MyOSTimelineChannelSchema.optional(),
         validateOnInit: SequentialWorkflowSchema.optional(),

@@ -10,14 +10,9 @@ export const myOSAdminBase = {
       },
     },
     myOsAdminUpdateImpl: {
+      description: 'Implementation that re-emits the provided events',
       type: {
-        blueId: '8Ryr45Yg1hajwTaQYTzbUawLLhqiRExEvPs8suaWRi4n',
-      },
-      channel: {
-        type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-        },
-        value: 'myOsAdminChannel',
+        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
       },
       operation: {
         type: {
@@ -46,7 +41,13 @@ export const myOSAdminBase = {
       description:
         'The standard, required operation for MyOS Admin to deliver events.',
       type: {
-        blueId: '6tJThrkAEzwjt5oUVh4Puc5xvLjEkDPH8HZqKEqFL115',
+        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+      },
+      channel: {
+        type: {
+          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+        },
+        value: 'myOsAdminChannel',
       },
       request: {
         type: {

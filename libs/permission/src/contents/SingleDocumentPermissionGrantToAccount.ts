@@ -1,7 +1,7 @@
 export const singleDocumentPermissionGrantToAccount = {
   name: 'Single Document Permission Grant To Account',
   type: {
-    blueId: 'DiKtcqbeAASVoY6CaLY7MJPiUEpcJ69TxK7SD6t1FJQJ',
+    blueId: '6iJpfzCGhn6LUYXFE5ZMeVZNwoTanY1ewVf1iNB7psY8',
   },
   granterDocumentSessionId: {
     description:
@@ -19,13 +19,7 @@ export const singleDocumentPermissionGrantToAccount = {
     },
     revokeImplGranter: {
       type: {
-        blueId: '8Ryr45Yg1hajwTaQYTzbUawLLhqiRExEvPs8suaWRi4n',
-      },
-      channel: {
-        type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-        },
-        value: 'granterChannel',
+        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
       },
       operation: {
         type: {
@@ -61,46 +55,17 @@ export const singleDocumentPermissionGrantToAccount = {
         },
       },
     },
-    revokeImplGrantee: {
-      description: 'Emit a revoke request event',
+    revoke: {
+      description:
+        'Granter or grantee indicates the grant should be revoked (MyOS Admin will handle)',
       type: {
-        blueId: '8Ryr45Yg1hajwTaQYTzbUawLLhqiRExEvPs8suaWRi4n',
+        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
       },
       channel: {
         type: {
           blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
         },
-        value: 'granteeChannel',
-      },
-      operation: {
-        type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-        },
-        value: 'revoke',
-      },
-      steps: {
-        items: [
-          {
-            name: 'EmitRevokeRequested',
-            type: {
-              blueId: 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
-            },
-            code: {
-              type: {
-                blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-              },
-              value:
-                'return {\n  events: [\n    {\n      type: "Single Document Permission Revoke Requested",\n      reason: event.message.request\n    }\n  ]\n};\n',
-            },
-          },
-        ],
-      },
-    },
-    revoke: {
-      description:
-        'Granter or grantee indicates the grant should be revoked (MyOS Admin will handle)',
-      type: {
-        blueId: '6tJThrkAEzwjt5oUVh4Puc5xvLjEkDPH8HZqKEqFL115',
+        value: 'granterChannel',
       },
       request: {
         description: 'Optional human-readable reason',

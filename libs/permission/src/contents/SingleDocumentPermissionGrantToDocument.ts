@@ -1,7 +1,7 @@
 export const singleDocumentPermissionGrantToDocument = {
   name: 'Single Document Permission Grant To Document',
   type: {
-    blueId: 'DiKtcqbeAASVoY6CaLY7MJPiUEpcJ69TxK7SD6t1FJQJ',
+    blueId: '6iJpfzCGhn6LUYXFE5ZMeVZNwoTanY1ewVf1iNB7psY8',
   },
   granteeDocumentId: {
     description:
@@ -27,7 +27,13 @@ export const singleDocumentPermissionGrantToDocument = {
     revoke: {
       description: 'Granter requests revocation (handled by MyOS Admin)',
       type: {
-        blueId: '6tJThrkAEzwjt5oUVh4Puc5xvLjEkDPH8HZqKEqFL115',
+        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+      },
+      channel: {
+        type: {
+          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+        },
+        value: 'granterChannel',
       },
       request: {
         description: 'Optional human-readable reason',
@@ -38,13 +44,7 @@ export const singleDocumentPermissionGrantToDocument = {
     },
     revokeImplGranter: {
       type: {
-        blueId: '8Ryr45Yg1hajwTaQYTzbUawLLhqiRExEvPs8suaWRi4n',
-      },
-      channel: {
-        type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-        },
-        value: 'granterChannel',
+        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
       },
       operation: {
         type: {

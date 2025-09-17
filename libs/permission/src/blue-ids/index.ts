@@ -4,9 +4,9 @@ export const blueIds = {
   'Single Document Permission Grant Responded':
     'FkCoPPvv4dwcTZWHwPXJWuJZXixneLFoDeLEpB9WSGg7',
   'Single Document Permission Grant To Account':
-    '4CoUfM9Xjtep1JyAcAhJVfNqaRoV93YRfSxDW9CZTx6k',
+    'CZGcnSf9c8AuLUt4Ym2NVZmTAHTzvEZNj4DsPTXRZm8N',
   'Single Document Permission Grant To Document':
-    'CJFQR9T68qgztRbu2tzv9kYshbRgMTpqoAJQ1RT8gY8M',
+    '2v6cKxF7gTbrd4AqMoThn5eoZYRoqC1mhmKjFyhjLpZG',
   'Single Document Permission Granted':
     '7LsM1JW5fHsoBxi5W5Af2k19URaPdper6wX8wfnjcqU1',
   'Single Document Permission Granting in Progress':
