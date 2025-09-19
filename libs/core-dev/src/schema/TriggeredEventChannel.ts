@@ -3,14 +3,13 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ChannelSchema } from './Channel';
 
-export const DocumentUpdateChannelSchema = withTypeBlueId(
-  blueIds['Document Update Channel']
+export const TriggeredEventChannelSchema = withTypeBlueId(
+  blueIds['Triggered Event Channel']
 )(
   ChannelSchema.extend({
     name: z.string().optional(),
     description: z.string().optional(),
-    path: z.string().optional(),
   })
 );
 
-export type DocumentUpdateChannel = z.infer<typeof DocumentUpdateChannelSchema>;
+export type TriggeredEventChannel = z.infer<typeof TriggeredEventChannelSchema>;

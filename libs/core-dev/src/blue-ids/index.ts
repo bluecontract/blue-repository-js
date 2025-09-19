@@ -7,7 +7,7 @@ export const blueIds = {
     '75eYxjwaABUcTCuKCeg1Pf1jjwDarLnFLXtxERehWFCv',
   'Document Status': 'HsnCTdM4Rxjp28V7yq4ezQHyRh7MJixqDKtzm3tiLbcN',
   'Document Update': 'EetjknS9cKPHHZuK93nvqNDFjJDsPLM7qsbyxLzuur7N',
-  'Document Update Channel': 'ACyaz51YGg73NBZ1LFDw1vnZjzRCbPWgL7Y1XRKjXLKV',
+  'Document Update Channel': '5emTmQdhCatJU4jGWQbb14A4NTrhKggd4e6ToV6ySHtn',
   'Embedded Node Channel': '9FT814paTzhSQ3sRPUWoj7Qv5EeWGhXvhU5ebNpbkv2S',
   Event: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   'Inform User About Pending Action':
@@ -16,14 +16,14 @@ export const blueIds = {
   'JavaScript Code': 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
   'Json Patch Entry': 'HdRLN3dEgUJH9Yp3HVH2gDPjG7hsYEAVfWoFuStGrvuu',
   'Lifecycle Event': '3nViyQeU3RwjHJ7wtCoef7dwe7JPqYEvZUKEx4FohuP5',
-  'Lifecycle Event Channel': '3pjhMs7CnYrsz5xQni3PJ8z94L6CVMVGwEaLom5MZRaG',
+  'Lifecycle Event Channel': '8XrM27vz8BEC7vDT6Yn41fRwucLeLFXsvqLt7JCvkG4c',
   Marker: '3gJb4roGCuJQ1gibFXex6HoNjuTeiPvYRCquujAvg83t',
   Operation: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
   'Operation Request': 'QQiMca4DR3UwxGceNoECDcKkeQQuF7Y8Noh2DDQTUFv',
   'Process Embedded': '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE',
-  'Sequential Workflow': 'AQYxXnq4Yr9kRhfQnvneuyHRyMzDHFiewF27EeqVy6du',
+  'Sequential Workflow': 'rjhSMnLxw45PaS3KLfjKgS2JoosfX4QYTHpWGwzpY4Y',
   'Sequential Workflow Operation':
-    '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+    '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
   'Sequential Workflow Step': 'CvfSAWwJ4ZAMDNfum11cEcs54ECL8oszspkPKrMMY7xt',
   'State Change': 'Ayf4DPoE8H7JWxE8CDM73T7GJdjey4jo4mUEDnenwzkN',
   'Status Change': '7gvd9dkoEmTAkcuQwanuNsqV9YSMMeXSazWfVoCYe2s9',
@@ -35,5 +35,6 @@ export const blueIds = {
   'Timeline Channel': 'xyBvDpt4fv9uqLMEvpJz4u6NDM9cpuanrmk1VsY7Z6V',
   'Timeline Entry': '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL',
   'Trigger Event': 'BWBJFxM7DtorfwMewvrfn3938VBCa3seKXTkkfpCwrQ1',
+  'Triggered Event Channel': 'CXk6kCQ4S28Ee7piJ5a96fXAdgxW7VsuzG4cyJpTgsNL',
   'Update Document': 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',
 } as const;

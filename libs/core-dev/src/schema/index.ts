@@ -64,4 +64,6 @@ export * from './Timeline';
 
 export * from './TriggerEvent';
 
+export * from './TriggeredEventChannel';
+
 export * from './UpdateDocument';

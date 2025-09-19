@@ -1,8 +1,8 @@
-import { singleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
 import { singleDocumentPermissionRejected } from './SingleDocumentPermissionRejected';
+import { singleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
+import { singleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
 import { singleDocumentPermissionGranted } from './SingleDocumentPermissionGranted';
 import { singleDocumentPermissionSet } from './SingleDocumentPermissionSet';
-import { singleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
 import { singleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
 import { singleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
 import { singleDocumentPermissionValidated } from './SingleDocumentPermissionValidated';
@@ -13,15 +13,15 @@ import { singleDocumentPermissionRevokeRequested } from './SingleDocumentPermiss
 import { singleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
 
 export const contents = {
-  '2v6cKxF7gTbrd4AqMoThn5eoZYRoqC1mhmKjFyhjLpZG':
-    singleDocumentPermissionGrantToDocument,
   '6dzRFbNGRsc9ouzDZQ8FnQfpnKm1ynFx5f4SLTVrj4m3':
     singleDocumentPermissionRejected,
+  '74nodFN64SDtxggTdR7tURN1h3R6tWxGSymG1DYqnyEY':
+    singleDocumentPermissionGrantToDocument,
+  '7EZLtHdG8ZLnz8puyTtKVW93Fy93qPQLoTEZHho9tZ9c':
+    singleDocumentPermissionGrantToAccount,
   '7LsM1JW5fHsoBxi5W5Af2k19URaPdper6wX8wfnjcqU1':
     singleDocumentPermissionGranted,
   '7TCdQstz98WJ8RXqizemdpdg723HeqTZHHiRXCnso7b4': singleDocumentPermissionSet,
-  CZGcnSf9c8AuLUt4Ym2NVZmTAHTzvEZNj4DsPTXRZm8N:
-    singleDocumentPermissionGrantToAccount,
   DMcb6BKQWapmR6TerSoiYmoKZ5UdE3r36Jy242Qo5Cwh: singleDocumentPermissionInvalid,
   EdoPE6wJ1V1EUtKgjYjME5Vxc5BZ4SwQrmjXsXvFdhAJ:
     singleDocumentPermissionGrantingInProgress,

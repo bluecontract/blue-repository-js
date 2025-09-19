@@ -1,14 +1,16 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId } from '@blue-labs/language';
 import { ChannelSchema } from './Channel';
+import { LifecycleEventSchema } from './LifecycleEvent';
 
 export const LifecycleEventChannelSchema = withTypeBlueId(
   blueIds['Lifecycle Event Channel']
 )(
   ChannelSchema.extend({
     name: z.string().optional(),
-    event: blueNodeField().optional(),
+    description: z.string().optional(),
+    event: LifecycleEventSchema.optional(),
   })
 );
 
