@@ -1,14 +1,14 @@
 import { removingParticipantRequested } from './RemovingParticipantRequested';
 import { myOSWorkerAgency } from './MyOSWorkerAgency';
-import { myOSAdminBase } from './MyOSAdminBase';
+import { documentSessionBootstrap } from './DocumentSessionBootstrap';
 import { myOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
 import { participantActivated } from './ParticipantActivated';
 import { participantActivationState } from './ParticipantActivationState';
 import { myOSTimeline } from './MyOSTimeline';
 import { bootstrapFailed } from './BootstrapFailed';
 import { participantResolved } from './ParticipantResolved';
-import { documentSessionBootstrap } from './DocumentSessionBootstrap';
 import { myOSAgent } from './MyOSAgent';
+import { myOSAdminBase } from './MyOSAdminBase';
 import { participant } from './Participant';
 import { removingParticipantResponded } from './RemovingParticipantResponded';
 import { myOSTimelineChannel } from './MyOSTimelineChannel';
@@ -24,15 +24,15 @@ import { addingParticipantRequested } from './AddingParticipantRequested';
 export const contents = {
   '2gnwi1cAknCcEdUoACnoSjfWD8oJRAhMyxmWnYD2595T': removingParticipantRequested,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': myOSWorkerAgency,
-  '6iJpfzCGhn6LUYXFE5ZMeVZNwoTanY1ewVf1iNB7psY8': myOSAdminBase,
+  '59JfECYVQbmK6yQ3NdcpGivHqujJH6XQpK48s8szPH73': documentSessionBootstrap,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU': myOSParticipantsOrchestration,
   '6Zztm3YUuFwM5FoJ5Se9rsghP1BgQa3rLHoR8BhdNsTM': participantActivated,
   '77dKAvJLiqw5WXwyjHNRXfkh3ep8sHw7Q4gQyJEfoadJ': participantActivationState,
   '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog': myOSTimeline,
   '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx': bootstrapFailed,
   '8wwU4rYswgfNnVYgEEBeLEdaPwXMzLzNs6do7bawa7xD': participantResolved,
-  '9BEyFpDjJLRGPM5Nd2gcfpZuDTgLtgtaQDS1WhciEYnT': documentSessionBootstrap,
   '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN': myOSAgent,
+  '9NExoTity2JU7poKAYairyjHsxDSH5jv5XyokoFE4VR2': myOSAdminBase,
   B1W38RbaLYqkaPVP6upwrF6Z8G95LA7yPMPPXPvWvuRW: participant,
   BUufbPHWkFYjUUHXKaJVTErb4EVhCSfaubj5KECNhNXa: removingParticipantResponded,
   Bx3dgXf5uFkGf9KxkUTFWQhbEw9QBc9cTgz1KP1Qtgh6: myOSTimelineChannel,

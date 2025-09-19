@@ -34,7 +34,7 @@ export const smartTransfer = {
   contracts: {
     authorizeTransferImpl: {
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
       },
       operation: {
         type: {
@@ -107,7 +107,7 @@ export const smartTransfer = {
     },
     captureTransferImpl: {
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
       },
       operation: {
         type: {
@@ -195,7 +195,7 @@ export const smartTransfer = {
     },
     specifyPayeeAccountNumberImpl: {
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
       },
       operation: {
         type: {
@@ -251,7 +251,7 @@ export const smartTransfer = {
     },
     cancelTransferImpl: {
       type: {
-        blueId: '25oL2pyz4VZKCzA4CeRNjv2ixAL4EpMsDaJj4UyEW2gF',
+        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
       },
       operation: {
         type: {

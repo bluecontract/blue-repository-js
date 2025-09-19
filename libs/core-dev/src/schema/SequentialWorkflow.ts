@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
 
 export const SequentialWorkflowSchema = withTypeBlueId(
@@ -10,6 +10,7 @@ export const SequentialWorkflowSchema = withTypeBlueId(
     name: z.string().optional(),
     description: z.string().optional(),
     channel: z.string().optional(),
+    event: blueNodeField().optional(),
     steps: z.array(SequentialWorkflowStepSchema).optional(),
   })
 );
