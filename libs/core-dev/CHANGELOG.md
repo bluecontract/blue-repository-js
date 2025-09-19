@@ -1,3 +1,9 @@
+## 0.19.0 (2025-09-19)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([07c48af](https://github.com/bluecontract/blue-repository-js/commit/07c48af))
+
 ## 0.18.0 (2025-09-17)
 
 ### 🚀 Features
