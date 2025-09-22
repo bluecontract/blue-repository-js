@@ -6,7 +6,19 @@ export * from './AllParticipantsReady';
 
 export * from './BootstrapFailed';
 
+export * from './DocumentAnchor';
+
+export * from './DocumentAnchors';
+
+export * from './DocumentLink';
+
+export * from './DocumentLinks';
+
 export * from './DocumentSessionBootstrap';
+
+export * from './DocumentTypeLink';
+
+export * from './Link';
 
 export * from './MyOSAdminBase';
 
@@ -19,6 +31,8 @@ export * from './MyOSAgent';
 export * from './MyOSParticipantsOrchestration';
 
 export * from './MyOSSessionInteraction';
+
+export * from './MyOSSessionLink';
 
 export * from './MyOSTimelineChannel';
 

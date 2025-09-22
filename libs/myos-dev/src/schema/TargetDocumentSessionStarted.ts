@@ -8,7 +8,7 @@ export const TargetDocumentSessionStartedSchema = withTypeBlueId(
   z.object({
     name: z.string().optional(),
     document: blueNodeField().optional(),
-    initiatorSessionId: z.string().optional(),
+    initiatorSessionIds: z.array(z.string()).optional(),
   })
 );
 

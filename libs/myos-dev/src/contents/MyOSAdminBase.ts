@@ -49,14 +49,6 @@ export const myOSAdminBase = {
         },
         value: 'myOsAdminChannel',
       },
-      request: {
-        type: {
-          blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
-        },
-        itemType: {
-          blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
-        },
-      },
     },
   },
 } as const;
