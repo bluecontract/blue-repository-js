@@ -5,14 +5,21 @@ export const blueIds = {
     'H556UWC5XU8vj53PqHaXQQwXrGia9uHHkkdQpExJXJYT',
   'All Participants Ready': 'Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC',
   'Bootstrap Failed': '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx',
-  'Document Session Bootstrap': '59JfECYVQbmK6yQ3NdcpGivHqujJH6XQpK48s8szPH73',
-  'MyOS Admin Base': '9NExoTity2JU7poKAYairyjHsxDSH5jv5XyokoFE4VR2',
+  'Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
+  'Document Anchors': 'FShRzTCfHGi2Bdaxu8chuQRhkqTGVQeu5yr84E53VkKA',
+  'Document Link': 'J5Unpa15THsEj3JBdn9MzTNwN5e3s6tcVLfrvH8hx1YB',
+  'Document Links': 'HkGmUTA6PSntCVc8tYmBM14zcw6nJzyhALQoL4utrBXQ',
+  'Document Session Bootstrap': '7yy7A6EEeYS1F8rdN3DZHvDytzuk436suVoc8dqBpiRu',
+  'Document Type Link': 'CYkqfj8i3GfLimntXLGiVrhUndEfGXhoSepyK286V2jF',
+  Link: 'GmD5hRiYhRVGSSQi5ArqffecvoJTd1SvxAZ3usDRs6gT',
+  'MyOS Admin Base': '3j4HzyLzg2PeY3Bo3jqDPzXMAe8axXTHwBHUX4EKcaZz',
   'MyOS Agent': '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN',
   'MyOS Agent Channel': 'GvLXrz3siPPmmSLz1gHrQ4PCpDvjESdEfWSWUNwKrhf1',
   'MyOS Agent Event': 'C99Sgq7uyEjz4YH7L27Aj1aahV2tJMAoCVct3ZiZp8av',
   'MyOS Participants Orchestration':
     '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
   'MyOS Session Interaction': 'CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H',
+  'MyOS Session Link': '7KrNKQKRudzrkicnys3gSoD89vTztEcqLjZaXt28kumD',
   'MyOS Timeline': '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog',
   'MyOS Timeline Channel': 'Bx3dgXf5uFkGf9KxkUTFWQhbEw9QBc9cTgz1KP1Qtgh6',
   'MyOS Timeline Entry': 'FW2R85SUhYpoCVrzyr3DYWXK9TJNAuw5HLAmzdUnW6M3',
@@ -27,5 +34,5 @@ export const blueIds = {
   'Removing Participant Responded':
     'BUufbPHWkFYjUUHXKaJVTErb4EVhCSfaubj5KECNhNXa',
   'Target Document Session Started':
-    'EKDNdfFrKyQqa6ifz1oqPBZqhz3xvv7GB914CJPCumXF',
+    'GMcNBF1gqzRK4JmMoxjspfdUzXLSknoszawm8qAjfDv7',
 } as const;

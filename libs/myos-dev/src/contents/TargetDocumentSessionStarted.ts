@@ -4,9 +4,12 @@ export const targetDocumentSessionStarted = {
     description:
       'The final, canonicalized document state with all timelineIds filled in.',
   },
-  initiatorSessionId: {
-    description: 'Session ID created for the bootstrap initiator (caller)',
+  initiatorSessionIds: {
+    description: 'Session IDs created for the bootstrap initiator (caller)',
     type: {
+      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+    },
+    itemType: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
