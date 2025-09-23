@@ -9,7 +9,7 @@ export const blueIds = {
   'Document Anchors': 'FShRzTCfHGi2Bdaxu8chuQRhkqTGVQeu5yr84E53VkKA',
   'Document Link': 'J5Unpa15THsEj3JBdn9MzTNwN5e3s6tcVLfrvH8hx1YB',
   'Document Links': 'HkGmUTA6PSntCVc8tYmBM14zcw6nJzyhALQoL4utrBXQ',
-  'Document Session Bootstrap': '7yy7A6EEeYS1F8rdN3DZHvDytzuk436suVoc8dqBpiRu',
+  'Document Session Bootstrap': 'Emv8BWVCPuBntPd3jtfKDXsr16xn9tnUtF1oyUvM2K7b',
   'Document Type Link': 'CYkqfj8i3GfLimntXLGiVrhUndEfGXhoSepyK286V2jF',
   Link: 'GmD5hRiYhRVGSSQi5ArqffecvoJTd1SvxAZ3usDRs6gT',
   'MyOS Admin Base': '3j4HzyLzg2PeY3Bo3jqDPzXMAe8axXTHwBHUX4EKcaZz',

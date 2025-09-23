@@ -5,7 +5,6 @@ import { myOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
 import { participantActivated } from './ParticipantActivated';
 import { participantActivationState } from './ParticipantActivationState';
 import { myOSSessionLink } from './MyOSSessionLink';
-import { documentSessionBootstrap } from './DocumentSessionBootstrap';
 import { myOSTimeline } from './MyOSTimeline';
 import { bootstrapFailed } from './BootstrapFailed';
 import { participantResolved } from './ParticipantResolved';
@@ -16,6 +15,7 @@ import { myOSTimelineChannel } from './MyOSTimelineChannel';
 import { myOSAgentEvent } from './MyOSAgentEvent';
 import { myOSSessionInteraction } from './MyOSSessionInteraction';
 import { documentTypeLink } from './DocumentTypeLink';
+import { documentSessionBootstrap } from './DocumentSessionBootstrap';
 import { allParticipantsReady } from './AllParticipantsReady';
 import { documentAnchors } from './DocumentAnchors';
 import { myOSTimelineEntry } from './MyOSTimelineEntry';
@@ -36,7 +36,6 @@ export const contents = {
   '6Zztm3YUuFwM5FoJ5Se9rsghP1BgQa3rLHoR8BhdNsTM': participantActivated,
   '77dKAvJLiqw5WXwyjHNRXfkh3ep8sHw7Q4gQyJEfoadJ': participantActivationState,
   '7KrNKQKRudzrkicnys3gSoD89vTztEcqLjZaXt28kumD': myOSSessionLink,
-  '7yy7A6EEeYS1F8rdN3DZHvDytzuk436suVoc8dqBpiRu': documentSessionBootstrap,
   '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog': myOSTimeline,
   '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx': bootstrapFailed,
   '8wwU4rYswgfNnVYgEEBeLEdaPwXMzLzNs6do7bawa7xD': participantResolved,
@@ -47,6 +46,7 @@ export const contents = {
   C99Sgq7uyEjz4YH7L27Aj1aahV2tJMAoCVct3ZiZp8av: myOSAgentEvent,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: myOSSessionInteraction,
   CYkqfj8i3GfLimntXLGiVrhUndEfGXhoSepyK286V2jF: documentTypeLink,
+  Emv8BWVCPuBntPd3jtfKDXsr16xn9tnUtF1oyUvM2K7b: documentSessionBootstrap,
   Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: allParticipantsReady,
   FShRzTCfHGi2Bdaxu8chuQRhkqTGVQeu5yr84E53VkKA: documentAnchors,
   FW2R85SUhYpoCVrzyr3DYWXK9TJNAuw5HLAmzdUnW6M3: myOSTimelineEntry,
