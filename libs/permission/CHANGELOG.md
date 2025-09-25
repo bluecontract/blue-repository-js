@@ -1,3 +1,9 @@
+## 0.4.1 (2025-09-25)
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/myos-dev to 0.25.0
+
 ## 0.4.0 (2025-09-22)
 
 ### 🚀 Features
