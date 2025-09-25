@@ -5,7 +5,6 @@ import { myOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
 import { participantActivated } from './ParticipantActivated';
 import { participantActivationState } from './ParticipantActivationState';
 import { myOSSessionLink } from './MyOSSessionLink';
-import { documentSessionBootstrap } from './DocumentSessionBootstrap';
 import { myOSTimeline } from './MyOSTimeline';
 import { bootstrapFailed } from './BootstrapFailed';
 import { participantResolved } from './ParticipantResolved';
@@ -27,6 +26,7 @@ import { documentLinks } from './DocumentLinks';
 import { documentAnchor } from './DocumentAnchor';
 import { addingParticipantRequested } from './AddingParticipantRequested';
 import { documentLink } from './DocumentLink';
+import { documentSessionBootstrap } from './DocumentSessionBootstrap';
 
 export const contents = {
   '2gnwi1cAknCcEdUoACnoSjfWD8oJRAhMyxmWnYD2595T': removingParticipantRequested,
@@ -36,7 +36,6 @@ export const contents = {
   '6Zztm3YUuFwM5FoJ5Se9rsghP1BgQa3rLHoR8BhdNsTM': participantActivated,
   '77dKAvJLiqw5WXwyjHNRXfkh3ep8sHw7Q4gQyJEfoadJ': participantActivationState,
   '7KrNKQKRudzrkicnys3gSoD89vTztEcqLjZaXt28kumD': myOSSessionLink,
-  '7yy7A6EEeYS1F8rdN3DZHvDytzuk436suVoc8dqBpiRu': documentSessionBootstrap,
   '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog': myOSTimeline,
   '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx': bootstrapFailed,
   '8wwU4rYswgfNnVYgEEBeLEdaPwXMzLzNs6do7bawa7xD': participantResolved,
@@ -58,4 +57,5 @@ export const contents = {
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: documentAnchor,
   HxcK5S9Lz2q5cqtER8kKgLQzDARZGiUAxWuhtBi2ev3a: addingParticipantRequested,
   J5Unpa15THsEj3JBdn9MzTNwN5e3s6tcVLfrvH8hx1YB: documentLink,
+  JD8xaCg4iVZAqDD7beAEBgjgEf7Cgfw9P6vqMd5VofEG: documentSessionBootstrap,
 } as const;
