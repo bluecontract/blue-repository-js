@@ -1,10 +1,12 @@
 import { removingParticipantRequested } from './RemovingParticipantRequested';
 import { myOSAdminBase } from './MyOSAdminBase';
 import { myOSWorkerAgency } from './MyOSWorkerAgency';
+import { informUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
 import { myOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
 import { participantActivated } from './ParticipantActivated';
 import { participantActivationState } from './ParticipantActivationState';
 import { myOSSessionLink } from './MyOSSessionLink';
+import { chatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 import { myOSTimeline } from './MyOSTimeline';
 import { bootstrapFailed } from './BootstrapFailed';
 import { participantResolved } from './ParticipantResolved';
@@ -32,10 +34,13 @@ export const contents = {
   '2gnwi1cAknCcEdUoACnoSjfWD8oJRAhMyxmWnYD2595T': removingParticipantRequested,
   '3j4HzyLzg2PeY3Bo3jqDPzXMAe8axXTHwBHUX4EKcaZz': myOSAdminBase,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': myOSWorkerAgency,
+  '54RDTowhXawimtVXZ7hSWSwsmVJuPzjLmZVEYRe9Anvi':
+    informUserToInstallMyOSPackage,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU': myOSParticipantsOrchestration,
   '6Zztm3YUuFwM5FoJ5Se9rsghP1BgQa3rLHoR8BhdNsTM': participantActivated,
   '77dKAvJLiqw5WXwyjHNRXfkh3ep8sHw7Q4gQyJEfoadJ': participantActivationState,
   '7KrNKQKRudzrkicnys3gSoD89vTztEcqLjZaXt28kumD': myOSSessionLink,
+  '7n4zUUn3tmbGkcEGhnrx2x4LyhWy86N8QxNT2H6NvQg5': chatGPTConnectorAgent,
   '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog': myOSTimeline,
   '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx': bootstrapFailed,
   '8wwU4rYswgfNnVYgEEBeLEdaPwXMzLzNs6do7bawa7xD': participantResolved,

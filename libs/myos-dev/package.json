@@ -29,7 +29,7 @@
   },
   "blueType": {
     "moduleName": "MyOSDevV0.14",
-    "moduleBlueId": "VUGzPnRbbMwMVXsQnA5BQ4RLVdc2eiBYZ8QyJKRkYJi"
+    "moduleBlueId": "FeJMLAH87PR9NhBqYwo3WJJsK68qT7nSTnDeUgTkbJXd"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",

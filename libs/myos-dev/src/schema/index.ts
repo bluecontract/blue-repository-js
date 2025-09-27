@@ -6,6 +6,8 @@ export * from './AllParticipantsReady';
 
 export * from './BootstrapFailed';
 
+export * from './ChatGPTConnectorAgent';
+
 export * from './DocumentAnchor';
 
 export * from './DocumentAnchors';
@@ -17,6 +19,8 @@ export * from './DocumentLinks';
 export * from './DocumentSessionBootstrap';
 
 export * from './DocumentTypeLink';
+
+export * from './InformUserToInstallMyOSPackage';
 
 export * from './Link';
 
