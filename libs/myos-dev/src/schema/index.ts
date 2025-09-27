@@ -2,9 +2,13 @@ export * from './AddingParticipantRequested';
 
 export * from './AddingParticipantResponded';
 
+export * from './Agent';
+
 export * from './AllParticipantsReady';
 
 export * from './BootstrapFailed';
+
+export * from './ChatGPTConnectorAgent';
 
 export * from './DocumentAnchor';
 
@@ -18,6 +22,8 @@ export * from './DocumentSessionBootstrap';
 
 export * from './DocumentTypeLink';
 
+export * from './InformUserToInstallMyOSPackage';
+
 export * from './Link';
 
 export * from './MyOSAdminBase';
@@ -27,6 +33,8 @@ export * from './MyOSAgentChannel';
 export * from './MyOSAgentEvent';
 
 export * from './MyOSAgent';
+
+export * from './MyOSPackage';
 
 export * from './MyOSParticipantsOrchestration';
 
