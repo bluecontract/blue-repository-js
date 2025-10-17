@@ -29,8 +29,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "PermissionV0.4",
-    "moduleBlueId": "CaAXz3wR5HfFohN17PDCAfQE6VcYmKCrKdq4Cjk5QcLg"
+    "moduleName": "PermissionV0.5",
+    "moduleBlueId": "sY4BamYBkfRQxWSXvoK7Rcod1nvUayNQFKGe5afMpEa"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",
