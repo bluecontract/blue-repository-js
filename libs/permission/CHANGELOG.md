@@ -1,3 +1,13 @@
+## 0.5.0 (2025-10-17)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([3b5fa68](https://github.com/bluecontract/blue-repository-js/commit/3b5fa68))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/myos-dev to 0.27.0
+
 ## 0.4.2 (2025-09-30)
 
 ### 🧱 Updated Dependencies
