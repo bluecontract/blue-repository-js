@@ -8,6 +8,12 @@ export * from './AllParticipantsReady';
 
 export * from './BootstrapFailed';
 
+export * from './CallOperationAccepted';
+
+export * from './CallOperationFailed';
+
+export * from './CallOperationRequested';
+
 export * from './ChatGPTConnectorAgent';
 
 export * from './DocumentAnchor';
@@ -62,4 +68,18 @@ export * from './RemovingParticipantRequested';
 
 export * from './RemovingParticipantResponded';
 
+export * from './SessionEpochAdvanced';
+
+export * from './StartWorkerSessionRequested';
+
+export * from './SubscribeToSessionRequested';
+
+export * from './SubscriptionToSessionFailed';
+
+export * from './SubscriptionToSessionInitiated';
+
+export * from './SubscriptionToSessionRevoked';
+
 export * from './TargetDocumentSessionStarted';
+
+export * from './WorkerSessionStarting';

@@ -5,7 +5,7 @@ import {
   MyOSAdminBaseSchema,
   MyOSTimelineChannelSchema,
 } from '@blue-repository/myos-dev';
-import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
+import { WorkerAgencyPermissionSchema } from './WorkerAgencyPermission';
 import {
   LifecycleEventChannelSchema,
   OperationSchema,
@@ -13,16 +13,15 @@ import {
   SequentialWorkflowSchema,
 } from '@blue-repository/core-dev';
 
-export const SingleDocumentPermissionGrantToDocumentSchema = withTypeBlueId(
-  blueIds['Single Document Permission Grant To Document']
+export const WorkerAgencyPermissionGrantSchema = withTypeBlueId(
+  blueIds['Worker Agency Permission Grant']
 )(
   MyOSAdminBaseSchema.extend({
     name: z.string().optional(),
-    skipValidation: z.boolean().optional(),
-    granterDocumentSessionId: z.string().optional(),
-    targetSessionId: z.string().optional(),
-    permissions: SingleDocumentPermissionSetSchema.optional(),
     granteeDocumentId: z.string().optional(),
+    allowedWorkerAgencyPermissions: z
+      .array(WorkerAgencyPermissionSchema)
+      .optional(),
     contracts: z
       .object({
         granterChannel: MyOSTimelineChannelSchema.optional(),
@@ -35,6 +34,6 @@ export const SingleDocumentPermissionGrantToDocumentSchema = withTypeBlueId(
   })
 );
 
-export type SingleDocumentPermissionGrantToDocument = z.infer<
-  typeof SingleDocumentPermissionGrantToDocumentSchema
+export type WorkerAgencyPermissionGrant = z.infer<
+  typeof WorkerAgencyPermissionGrantSchema
 >;

@@ -23,3 +23,25 @@ export * from './SingleDocumentPermissionRevokingInProgress';
 export * from './SingleDocumentPermissionSet';
 
 export * from './SingleDocumentPermissionValidated';
+
+export * from './WorkerAgencyPermissionGrantRequested';
+
+export * from './WorkerAgencyPermissionGrant';
+
+export * from './WorkerAgencyPermissionGranted';
+
+export * from './WorkerAgencyPermissionGrantingInProgress';
+
+export * from './WorkerAgencyPermissionInvalid';
+
+export * from './WorkerAgencyPermissionRejected';
+
+export * from './WorkerAgencyPermissionRevokeRequested';
+
+export * from './WorkerAgencyPermissionRevoked';
+
+export * from './WorkerAgencyPermissionRevokingInProgress';
+
+export * from './WorkerAgencyPermissionValidated';
+
+export * from './WorkerAgencyPermission';
