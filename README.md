@@ -1,89 +1,108 @@
-# BlueRepositoryJs
+# Blue Repository JS
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+## Pull Blue Repository
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
+Copies a Blue repository into `data/blue-repository` for local processing. Accepts absolute or relative paths.
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+### Defaults
 
-## Finish your CI setup
+- **source**: `../blue-repository`
+- **destination**: `./data/blue-repository`
+- **cleaning**: destination is cleaned by default; use `--no-clean` to skip
+- **excludes**: skips `.github`, `blue-repository`, `blue-preprocessed`, and dot-directories (e.g., `.git`)
 
-[Click here to finish setting up your workspace!](https://cloud.nx.app/connect/ZSMBjg90fF)
+### Usage
 
-## Generate a library
+- **NPM script** (recommended):
 
-```sh
-npx nx g @nx/js:lib libs/pkg1 --publishable --importPath=@blue-repository/pkg1
+```bash
+npm run pull:blue-repository
 ```
 
-## Run tasks
+- **With arguments**:
 
-To build the library use:
-
-```sh
-npx nx build pkg1
+```bash
+npm run pull:blue-repository -- [src] [dest] [--no-clean] [--exclude=name1,name2]
 ```
 
-To run any task with Nx use:
+- **Direct (ts-node)**:
 
-```sh
-npx nx <target> <project-name>
+```bash
+ts-node -P scripts/tsconfig.scripts.json scripts/pull-blue-repository.ts [src] [dest] [--no-clean] [--exclude=name1,name2]
 ```
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+### Examples
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- **Default copy (cleans destination):**
 
-## Versioning and releasing
-
-To version and release the library use
-
-```
-npx nx release
+```bash
+npm run pull:blue-repository
 ```
 
-Pass `--dry-run` to see what would happen without actually releasing the library.
+- **Custom source and destination:**
 
-[Learn more about Nx release &raquo;](hhttps://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Keep TypeScript project references up to date
-
-Nx automatically updates TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in `tsconfig.json` files to ensure they remain accurate based on your project dependencies (`import` or `require` statements). This sync is automatically done when running tasks such as `build` or `typecheck`, which require updated references to function correctly.
-
-To manually trigger the process to sync the project graph dependencies information to the TypeScript project references, run the following command:
-
-```sh
-npx nx sync
+```bash
+npm run pull:blue-repository -- /abs/path/to/blue-repository ./data/blue-repository
 ```
 
-You can enforce that the TypeScript project references are always in the correct state when running in CI by adding a step to your CI job configuration that runs the following command:
+- **Skip cleaning destination:**
 
-```sh
-npx nx sync:check
+```bash
+npm run pull:blue-repository -- --no-clean
 ```
 
-[Learn more about nx sync](https://nx.dev/reference/nx-commands#sync)
+- **Add extra excludes:**
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+```bash
+npm run pull:blue-repository -- --exclude=.git,dist,tmp
+```
 
-## Install Nx Console
+## Run Blue Preprocessor
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+Runs the Java Blue Preprocessor over the repository and writes preprocessed artifacts to `data/blue-preprocessed`.
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### Defaults
 
-## Useful links
+- **jar**: `../blue-preprocessor.jar`
+- **source**: `./data/blue-repository`
+- **output**: `./data/blue-preprocessed`
 
-Learn more:
+### Usage
 
-- [Learn more about this workspace setup](https://nx.dev/nx-api/js?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- **NPM script** (recommended):
 
-And join the Nx community:
+```bash
+npm run run:blue-preprocessor
+```
 
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+- **With arguments**:
+
+```bash
+npm run run:blue-preprocessor -- --jar=../blue-preprocessor.jar --src=./data/blue-repository
+```
+
+- **Direct (ts-node)**:
+
+```bash
+ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts [<path-to-jar>] [path-to-blue-repository]
+```
+
+### Examples
+
+- **Use defaults:**
+
+```bash
+npm run run:blue-preprocessor
+```
+
+- **Custom JAR, default repository path:**
+
+```bash
+npm run run:blue-preprocessor -- --jar=../other/blue-preprocessor.jar
+```
+
+- **Custom JAR and repository path:**
+
+```bash
+npm run run:blue-preprocessor -- --jar=../blue-preprocessor.jar --src=../blue-repository
+```

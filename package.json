@@ -5,7 +5,9 @@
   "scripts": {
     "artifact-scaffolder": "ts-node -P scripts/tsconfig.scripts.json scripts/artifact-scaffolder/index.ts data",
     "notify-release": "ts-node -P scripts/tsconfig.scripts.json scripts/notify-release.ts",
-    "artifact-scaffolder:test": "npx vitest -c scripts/vitest.config.ts run"
+    "artifact-scaffolder:test": "npx vitest -c scripts/vitest.config.ts run",
+    "pull:blue-repository": "ts-node -P scripts/tsconfig.scripts.json scripts/pull-blue-repository.ts",
+    "run:blue-preprocessor": "ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts"
   },
   "private": true,
   "devDependencies": {
