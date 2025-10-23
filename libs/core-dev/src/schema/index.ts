@@ -38,6 +38,10 @@ export * from './Operation';
 
 export * from './ProcessEmbedded';
 
+export * from './Request';
+
+export * from './Response';
+
 export * from './SequentialWorkflowOperation';
 
 export * from './SequentialWorkflowStep';

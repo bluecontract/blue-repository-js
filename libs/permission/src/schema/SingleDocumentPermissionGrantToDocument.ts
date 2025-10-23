@@ -5,24 +5,21 @@ import {
   MyOSAdminBaseSchema,
   MyOSTimelineChannelSchema,
 } from '@blue-repository/myos-dev';
-import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 import {
   LifecycleEventChannelSchema,
   OperationSchema,
   SequentialWorkflowOperationSchema,
   SequentialWorkflowSchema,
 } from '@blue-repository/core-dev';
+import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 
 export const SingleDocumentPermissionGrantToDocumentSchema = withTypeBlueId(
   blueIds['Single Document Permission Grant To Document']
 )(
   MyOSAdminBaseSchema.extend({
     name: z.string().optional(),
-    skipValidation: z.boolean().optional(),
-    granterDocumentSessionId: z.string().optional(),
-    targetSessionId: z.string().optional(),
-    permissions: SingleDocumentPermissionSetSchema.optional(),
     granteeDocumentId: z.string().optional(),
+    granterDocumentSessionId: z.string().optional(),
     contracts: z
       .object({
         granterChannel: MyOSTimelineChannelSchema.optional(),
@@ -32,6 +29,8 @@ export const SingleDocumentPermissionGrantToDocumentSchema = withTypeBlueId(
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),
+    targetSessionId: z.string().optional(),
+    permissions: SingleDocumentPermissionSetSchema.optional(),
   })
 );
 

@@ -6,9 +6,6 @@ export const blueIds = {
   Agent: '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc',
   'All Participants Ready': 'Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC',
   'Bootstrap Failed': '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx',
-  'Call Operation Accepted': '6UB61y8bWPgf6bqXTQmXV2tkKWDS3VGRrrzd5y9sbGZ5',
-  'Call Operation Failed': '3sPGBse9mbRUw2ZSjfjH9GNyu9PvTTeWXy8Uyw2bmUkV',
-  'Call Operation Requested': 'AkrotF7YFUX8kGpZbT27WCB7ELyCzNeZbTu5x1xYJJwF',
   'Chat GPT Connector Agent': 'BBoePW4ddkkvj9zSbR7MsbB13BQAh5CoKQAC24rJNNbj',
   'Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
   'Document Anchors': 'FShRzTCfHGi2Bdaxu8chuQRhkqTGVQeu5yr84E53VkKA',
@@ -41,18 +38,6 @@ export const blueIds = {
     '2gnwi1cAknCcEdUoACnoSjfWD8oJRAhMyxmWnYD2595T',
   'Removing Participant Responded':
     'BUufbPHWkFYjUUHXKaJVTErb4EVhCSfaubj5KECNhNXa',
-  'Session Epoch Advanced': '3L48HcQqFz7WUo2Meig6b3vnX648ZJCd7hLrQ4gGhHFK',
-  'Start Worker Session Requested':
-    'AW8wxSUhdEwUA1LVRQhhQE3JYhEdeoafmjAeJxYtowGr',
-  'Subscribe to Session Requested':
-    'BSy9feM6SEmcsbeyaUMe9G6KfJaNVGyLvkXaoMRwo5om',
-  'Subscription to Session Failed':
-    'kFo9C1oS5gsH5XThMSkmXZHVTLdQ8nRqcytBVkorTKK',
-  'Subscription to Session Initiated':
-    'Gyhay9oX6y6VE5xjPQ7jYbeU7AhYtm38A8R81o5ScT1F',
-  'Subscription to Session Revoked':
-    'FtRQqoqPPruF2uMi4UJmd3oCu2HGbWFgNPhxKVuhoMB6',
   'Target Document Session Started':
     'GMcNBF1gqzRK4JmMoxjspfdUzXLSknoszawm8qAjfDv7',
-  'Worker Session Starting': 'AXWFLUyrMeVzMkRifHDkqrUXs5vaFLN6wqwxHgwitJpg',
 } as const;

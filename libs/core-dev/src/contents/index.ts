@@ -2,6 +2,7 @@ import { channel } from './Channel';
 import { sequentialWorkflowOperation } from './SequentialWorkflowOperation';
 import { processEmbedded } from './ProcessEmbedded';
 import { timelineEntry } from './TimelineEntry';
+import { response } from './Response';
 import { marker } from './Marker';
 import { event } from './Event';
 import { lifecycleEvent } from './LifecycleEvent';
@@ -12,6 +13,7 @@ import { statusCompleted } from './StatusCompleted';
 import { statusFailed } from './StatusFailed';
 import { documentProcessingInitiated } from './DocumentProcessingInitiated';
 import { statusChange } from './StatusChange';
+import { request } from './Request';
 import { lifecycleEventChannel } from './LifecycleEventChannel';
 import { embeddedNodeChannel } from './EmbeddedNodeChannel';
 import { initializedMarker } from './InitializedMarker';
@@ -39,6 +41,7 @@ export const contents = {
   '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465': sequentialWorkflowOperation,
   '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE': processEmbedded,
   '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL': timelineEntry,
+  '3Dcy3LEaQW8pEFy2diJ9YZk1KDoDyu3i4huKhWXpN5BG': response,
   '3gJb4roGCuJQ1gibFXex6HoNjuTeiPvYRCquujAvg83t': marker,
   '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar': event,
   '3nViyQeU3RwjHJ7wtCoef7dwe7JPqYEvZUKEx4FohuP5': lifecycleEvent,
@@ -49,6 +52,7 @@ export const contents = {
   '6SRyW1uayPmzCUmWsSiXcNH6jRTLUnm3oBvd1NzLdEwc': statusFailed,
   '75eYxjwaABUcTCuKCeg1Pf1jjwDarLnFLXtxERehWFCv': documentProcessingInitiated,
   '7gvd9dkoEmTAkcuQwanuNsqV9YSMMeXSazWfVoCYe2s9': statusChange,
+  '8HQh6LoN8aJ344qodmL6fR5eA7e83ri2CTAshHqU5pLk': request,
   '8XrM27vz8BEC7vDT6Yn41fRwucLeLFXsvqLt7JCvkG4c': lifecycleEventChannel,
   '9FT814paTzhSQ3sRPUWoj7Qv5EeWGhXvhU5ebNpbkv2S': embeddedNodeChannel,
   '9Wgpr1kx18MaV1C6QraNbS2mYeapUhHh5SDAuNFTCHcf': initializedMarker,

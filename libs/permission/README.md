@@ -6,8 +6,8 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **PermissionV0.5**
-- Version: **sY4BamYBkfRQxWSXvoK7Rcod1nvUayNQFKGe5afMpEa**
+- Module name: **PermissionV0.4**
+- Version: **51KCp5AXkPKLfxC4P4etA6MjjSgmA3q85eusH2y3SbnW**
 
 ## Installation
 
