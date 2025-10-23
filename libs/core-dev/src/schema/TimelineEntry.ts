@@ -5,13 +5,13 @@ import { TimelineSchema } from './Timeline';
 
 export const TimelineEntrySchema = withTypeBlueId(blueIds['Timeline Entry'])(
   z.object({
-    name: z.string().optional(),
-    threadPrev: blueNodeField().optional(),
-    signature: z.string().optional(),
-    timeline: TimelineSchema.optional(),
-    thread: blueNodeField().optional(),
-    timelinePrev: blueNodeField().optional(),
     message: blueNodeField().optional(),
+    name: z.string().optional(),
+    signature: z.string().optional(),
+    thread: blueNodeField().optional(),
+    threadPrev: blueNodeField().optional(),
+    timeline: TimelineSchema.optional(),
+    timelinePrev: blueNodeField().optional(),
   })
 );
 

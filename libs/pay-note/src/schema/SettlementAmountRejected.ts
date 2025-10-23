@@ -7,8 +7,8 @@ export const SettlementAmountRejectedSchema = withTypeBlueId(
   blueIds['Settlement Amount Rejected']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     reason: z.string().optional(),
   })
 );

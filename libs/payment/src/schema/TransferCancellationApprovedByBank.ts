@@ -6,8 +6,8 @@ export const TransferCancellationApprovedByBankSchema = withTypeBlueId(
   blueIds['Transfer Cancellation Approved by Bank']
 )(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

@@ -4,11 +4,11 @@ import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 
 export const JsonPatchEntrySchema = withTypeBlueId(blueIds['Json Patch Entry'])(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
-    val: blueNodeField().optional(),
+    name: z.string().optional(),
     op: z.string().optional(),
     path: z.string().optional(),
+    val: blueNodeField().optional(),
   })
 );
 

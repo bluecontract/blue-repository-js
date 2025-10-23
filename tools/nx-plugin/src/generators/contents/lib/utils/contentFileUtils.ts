@@ -3,6 +3,28 @@ import { Tree } from '@nx/devkit';
 import { readYamlFile } from '../../../../utils/readYamlFile';
 
 /**
+ * Deeply sorts object keys to produce a canonical JSON structure.
+ * - Objects: keys sorted A→Z
+ * - Arrays: order preserved, elements canonicalized
+ * - Primitives: returned as-is
+ */
+function canonicalizeValue(value: unknown): unknown {
+  if (Array.isArray(value)) {
+    return value.map((item) => canonicalizeValue(item));
+  }
+  if (value && typeof value === 'object') {
+    const obj = value as Record<string, unknown>;
+    const sortedKeys = Object.keys(obj).sort((a, b) => a.localeCompare(b));
+    const result: Record<string, unknown> = {};
+    for (const key of sortedKeys) {
+      result[key] = canonicalizeValue(obj[key]);
+    }
+    return result;
+  }
+  return value;
+}
+
+/**
  * Interface for content file data
  */
 export interface ContentFileData {
@@ -61,8 +83,9 @@ export function createContentFile(
   variableName: string,
   content: unknown
 ): void {
+  const canonicalContent = canonicalizeValue(content);
   const contentFileContent = `export const ${variableName} = ${JSON.stringify(
-    content,
+    canonicalContent,
     null,
     2
   )} as const;\n`;

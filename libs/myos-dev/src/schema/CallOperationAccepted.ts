@@ -7,8 +7,8 @@ export const CallOperationAcceptedSchema = withTypeBlueId(
   blueIds['Call Operation Accepted']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     operation: z.string().optional(),
     targetSessionId: z.string().optional(),
   })

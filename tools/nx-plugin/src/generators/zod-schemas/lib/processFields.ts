@@ -105,17 +105,22 @@ export function processFields(
   const processedFields: string[] = [];
   const indentation = '  '.repeat(indentationLevel);
 
-  // Process special string fields
-  if (typeof objectToProcess.name === 'string') {
-    processedFields.push(`${indentation}name: z.string().optional()`);
-  }
-  if (typeof objectToProcess.description === 'string') {
-    processedFields.push(`${indentation}description: z.string().optional()`);
-  }
+  // Sort keys alphabetically for deterministic output
+  const sortedKeys = Object.keys(objectToProcess).sort((a, b) =>
+    a.localeCompare(b)
+  );
 
-  // Process remaining fields
-  for (const [fieldKey, fieldValue] of Object.entries(objectToProcess)) {
-    if (fieldKey === 'name' || fieldKey === 'description') {
+  for (const fieldKey of sortedKeys) {
+    const fieldValue =
+      objectToProcess[fieldKey as keyof typeof objectToProcess];
+
+    // Handle primitive special fields deterministically within sorted order
+    if (fieldKey === 'name' && typeof fieldValue === 'string') {
+      processedFields.push(`${indentation}name: z.string().optional()`);
+      continue;
+    }
+    if (fieldKey === 'description' && typeof fieldValue === 'string') {
+      processedFields.push(`${indentation}description: z.string().optional()`);
       continue;
     }
 

@@ -1,10 +1,7 @@
 export const subscriptionToSessionFailed = {
-  name: 'Subscription to Session Failed',
   description:
     'Indicates MyOS Admin rejected the subscription request before activation.',
-  type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
-  },
+  name: 'Subscription to Session Failed',
   reason: {
     description: 'Explanation why the subscription could not be established.',
     type: {
@@ -16,5 +13,8 @@ export const subscriptionToSessionFailed = {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
+  },
+  type: {
+    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   },
 } as const;

@@ -5,9 +5,9 @@ import { TimelineSchema } from '@blue-repository/core-dev';
 
 export const MyOSTimelineSchema = withTypeBlueId(blueIds['MyOS Timeline'])(
   TimelineSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     accountId: z.string().optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

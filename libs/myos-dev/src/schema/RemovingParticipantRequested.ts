@@ -6,8 +6,8 @@ export const RemovingParticipantRequestedSchema = withTypeBlueId(
   blueIds['Removing Participant Requested']
 )(
   z.object({
-    name: z.string().optional(),
     channelName: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

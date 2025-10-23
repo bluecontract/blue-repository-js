@@ -7,8 +7,8 @@ export const TransferAuthorizationApprovedByBankSchema = withTypeBlueId(
   blueIds['Transfer Authorization Approved by Bank']
 )(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     transferValue: MoneySchema.optional(),
   })
 );

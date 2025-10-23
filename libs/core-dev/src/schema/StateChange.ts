@@ -4,8 +4,8 @@ import { withTypeBlueId } from '@blue-labs/language';
 
 export const StateChangeSchema = withTypeBlueId(blueIds['State Change'])(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     state: z.string().optional(),
   })
 );

@@ -7,8 +7,8 @@ export const InitializedMarkerSchema = withTypeBlueId(
   blueIds['Initialized Marker']
 )(
   MarkerSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

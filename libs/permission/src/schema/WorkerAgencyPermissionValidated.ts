@@ -7,8 +7,8 @@ export const WorkerAgencyPermissionValidatedSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Validated']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

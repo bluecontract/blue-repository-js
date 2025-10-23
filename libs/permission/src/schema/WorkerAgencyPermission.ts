@@ -8,8 +8,8 @@ export const WorkerAgencyPermissionSchema = withTypeBlueId(
 )(
   z.object({
     name: z.string().optional(),
-    workerType: blueNodeField().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
+    workerType: blueNodeField().optional(),
   })
 );
 

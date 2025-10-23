@@ -5,8 +5,8 @@ import { EventSchema } from './Event';
 
 export const RequestSchema = withTypeBlueId(blueIds['Request'])(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     requestId: z.string().optional(),
   })
 );

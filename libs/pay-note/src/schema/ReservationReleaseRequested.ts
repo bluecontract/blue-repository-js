@@ -7,9 +7,9 @@ export const ReservationReleaseRequestedSchema = withTypeBlueId(
   blueIds['Reservation Release Requested']
 )(
   RequestSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     amount: z.number().optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

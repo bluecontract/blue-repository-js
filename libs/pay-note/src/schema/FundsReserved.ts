@@ -5,9 +5,9 @@ import { ResponseSchema } from '@blue-repository/core-dev';
 
 export const FundsReservedSchema = withTypeBlueId(blueIds['Funds Reserved'])(
   ResponseSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     amountReserved: z.number().optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

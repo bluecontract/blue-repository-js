@@ -1,6 +1,6 @@
 export const timeline = {
-  name: 'Timeline',
   description: 'Represents a sequence of authenticated, hash-chained events.',
+  name: 'Timeline',
   timelineId: {
     description: 'Unique identifier for the timeline',
     type: {

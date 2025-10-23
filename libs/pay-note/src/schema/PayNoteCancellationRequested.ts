@@ -7,9 +7,9 @@ export const PayNoteCancellationRequestedSchema = withTypeBlueId(
   blueIds['PayNote Cancellation Requested']
 )(
   RequestSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     childPayNote: blueNodeField().optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

@@ -7,10 +7,10 @@ export const MyOSAgentChannelSchema = withTypeBlueId(
   blueIds['MyOS Agent Channel']
 )(
   z.object({
-    name: z.string().optional(),
+    agent: MyOSAgentSchema.optional(),
     description: z.string().optional(),
     event: blueNodeField().optional(),
-    agent: MyOSAgentSchema.optional(),
+    name: z.string().optional(),
   })
 );
 

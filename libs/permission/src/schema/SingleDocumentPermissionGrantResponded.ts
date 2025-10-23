@@ -8,12 +8,12 @@ export const SingleDocumentPermissionGrantRespondedSchema = withTypeBlueId(
   blueIds['Single Document Permission Grant Responded']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
-    reason: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
+    reason: z.string().optional(),
     status: z.string().optional(),
+    targetSessionId: z.string().optional(),
   })
 );
 

@@ -64,9 +64,12 @@ export async function zodSchemasGenerator(
   }
 
   const indexTemplateDirectory = path.join(__dirname, './files/schemaIndex');
+  const sortedSchemaNames = [...generatedSchemaNames].sort((a, b) =>
+    a.localeCompare(b)
+  );
   generateFiles(tree, indexTemplateDirectory, schemasOutputDirectory, {
     tmpl: '',
-    schemaExports: generatedSchemaNames,
+    schemaExports: sortedSchemaNames,
   });
 
   if (!options.skipFormat) {

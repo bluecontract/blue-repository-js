@@ -7,9 +7,9 @@ export const DocumentTypeLinkSchema = withTypeBlueId(
   blueIds['Document Type Link']
 )(
   LinkSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     documentType: blueNodeField().optional(),
+    name: z.string().optional(),
   })
 );
 

@@ -7,8 +7,8 @@ export const SubscriptionToSessionFailedSchema = withTypeBlueId(
   blueIds['Subscription to Session Failed']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     reason: z.string().optional(),
     targetSessionId: z.string().optional(),
   })

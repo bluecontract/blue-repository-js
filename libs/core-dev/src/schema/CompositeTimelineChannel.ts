@@ -7,8 +7,8 @@ export const CompositeTimelineChannelSchema = withTypeBlueId(
   blueIds['Composite Timeline Channel']
 )(
   ChannelSchema.extend({
-    name: z.string().optional(),
     channels: z.array(z.string()).optional(),
+    name: z.string().optional(),
   })
 );
 

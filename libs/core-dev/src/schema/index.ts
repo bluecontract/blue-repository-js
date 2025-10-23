@@ -1,6 +1,6 @@
-export * from './ChannelEventCheckpoint';
-
 export * from './Channel';
+
+export * from './ChannelEventCheckpoint';
 
 export * from './ChatMessage';
 
@@ -10,9 +10,9 @@ export * from './DocumentProcessingInitiated';
 
 export * from './DocumentStatus';
 
-export * from './DocumentUpdateChannel';
-
 export * from './DocumentUpdate';
+
+export * from './DocumentUpdateChannel';
 
 export * from './EmbeddedNodeChannel';
 
@@ -26,15 +26,15 @@ export * from './JavaScriptCode';
 
 export * from './JsonPatchEntry';
 
-export * from './LifecycleEventChannel';
-
 export * from './LifecycleEvent';
+
+export * from './LifecycleEventChannel';
 
 export * from './Marker';
 
-export * from './OperationRequest';
-
 export * from './Operation';
+
+export * from './OperationRequest';
 
 export * from './ProcessEmbedded';
 
@@ -42,11 +42,11 @@ export * from './Request';
 
 export * from './Response';
 
+export * from './SequentialWorkflow';
+
 export * from './SequentialWorkflowOperation';
 
 export * from './SequentialWorkflowStep';
-
-export * from './SequentialWorkflow';
 
 export * from './StateChange';
 
@@ -60,14 +60,14 @@ export * from './StatusInProgress';
 
 export * from './StatusPending';
 
+export * from './Timeline';
+
 export * from './TimelineChannel';
 
 export * from './TimelineEntry';
 
-export * from './Timeline';
+export * from './TriggeredEventChannel';
 
 export * from './TriggerEvent';
-
-export * from './TriggeredEventChannel';
 
 export * from './UpdateDocument';

@@ -7,10 +7,10 @@ export const SequentialWorkflowSchema = withTypeBlueId(
   blueIds['Sequential Workflow']
 )(
   z.object({
-    name: z.string().optional(),
-    description: z.string().optional(),
     channel: z.string().optional(),
+    description: z.string().optional(),
     event: blueNodeField().optional(),
+    name: z.string().optional(),
     steps: z.array(SequentialWorkflowStepSchema).optional(),
   })
 );

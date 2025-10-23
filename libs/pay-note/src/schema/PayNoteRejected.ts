@@ -7,8 +7,8 @@ export const PayNoteRejectedSchema = withTypeBlueId(
   blueIds['PayNote Rejected']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     reason: z.string().optional(),
   })
 );

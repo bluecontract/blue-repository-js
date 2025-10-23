@@ -1,5 +1,4 @@
 export const documentStatus = {
-  name: 'Document Status',
   description: 'The base type for all document status indicators.',
   mode: {
     description:
@@ -8,4 +7,5 @@ export const documentStatus = {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
+  name: 'Document Status',
 } as const;

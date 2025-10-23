@@ -7,9 +7,9 @@ export const StatusCompletedSchema = withTypeBlueId(
   blueIds['Status Completed']
 )(
   DocumentStatusSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     mode: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

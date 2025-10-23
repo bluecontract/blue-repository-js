@@ -1,4 +1,4 @@
 export const marker = {
-  name: 'Marker',
   description: 'Generic marker',
+  name: 'Marker',
 } as const;

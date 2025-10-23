@@ -6,10 +6,10 @@ export const ParticipantActivationStateSchema = withTypeBlueId(
   blueIds['Participant Activation State']
 )(
   z.object({
-    name: z.string().optional(),
-    description: z.string().optional(),
     accountStatus: z.string().optional(),
+    description: z.string().optional(),
     errorMessage: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

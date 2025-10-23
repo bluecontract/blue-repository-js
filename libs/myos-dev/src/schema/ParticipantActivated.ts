@@ -7,8 +7,8 @@ export const ParticipantActivatedSchema = withTypeBlueId(
   blueIds['Participant Activated']
 )(
   z.object({
-    name: z.string().optional(),
     channelName: z.string().optional(),
+    name: z.string().optional(),
     participant: ParticipantSchema.optional(),
   })
 );

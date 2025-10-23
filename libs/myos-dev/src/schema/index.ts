@@ -34,11 +34,11 @@ export * from './Link';
 
 export * from './MyOSAdminBase';
 
+export * from './MyOSAgent';
+
 export * from './MyOSAgentChannel';
 
 export * from './MyOSAgentEvent';
-
-export * from './MyOSAgent';
 
 export * from './MyOSPackage';
 
@@ -48,21 +48,21 @@ export * from './MyOSSessionInteraction';
 
 export * from './MyOSSessionLink';
 
+export * from './MyOSTimeline';
+
 export * from './MyOSTimelineChannel';
 
 export * from './MyOSTimelineEntry';
 
-export * from './MyOSTimeline';
-
 export * from './MyOSWorkerAgency';
+
+export * from './Participant';
 
 export * from './ParticipantActivated';
 
 export * from './ParticipantActivationState';
 
 export * from './ParticipantResolved';
-
-export * from './Participant';
 
 export * from './RemovingParticipantRequested';
 

@@ -17,20 +17,20 @@ export const WorkerAgencyPermissionGrantSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Grant']
 )(
   MyOSAdminBaseSchema.extend({
-    name: z.string().optional(),
-    granteeDocumentId: z.string().optional(),
     allowedWorkerAgencyPermissions: z
       .array(WorkerAgencyPermissionSchema)
       .optional(),
     contracts: z
       .object({
         granterChannel: MyOSTimelineChannelSchema.optional(),
+        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
         revoke: OperationSchema.optional(),
         revokeImplGranter: SequentialWorkflowOperationSchema.optional(),
-        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),
+    granteeDocumentId: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

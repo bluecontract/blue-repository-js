@@ -1,12 +1,14 @@
 export const myOSAgentEvent = {
-  name: 'MyOS Agent Event',
-  description:
-    'MyOS-specific agent event with agent ID, timestamp, and event data',
   agentId: {
     description: 'Optional agent identifier',
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
+  },
+  description:
+    'MyOS-specific agent event with agent ID, timestamp, and event data',
+  event: {
+    description: 'Optional event node reference',
   },
   id: {
     description: 'Optional event ID',
@@ -14,9 +16,7 @@ export const myOSAgentEvent = {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
-  event: {
-    description: 'Optional event node reference',
-  },
+  name: 'MyOS Agent Event',
   timestamp: {
     description: 'Optional timestamp for the event',
     type: {

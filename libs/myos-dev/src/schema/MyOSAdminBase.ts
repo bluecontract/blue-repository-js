@@ -9,15 +9,15 @@ import {
 
 export const MyOSAdminBaseSchema = withTypeBlueId(blueIds['MyOS Admin Base'])(
   z.object({
-    name: z.string().optional(),
-    description: z.string().optional(),
     contracts: z
       .object({
         myOsAdminChannel: MyOSTimelineChannelSchema.optional(),
-        myOsAdminUpdateImpl: SequentialWorkflowOperationSchema.optional(),
         myOsAdminUpdate: OperationSchema.optional(),
+        myOsAdminUpdateImpl: SequentialWorkflowOperationSchema.optional(),
       })
       .optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

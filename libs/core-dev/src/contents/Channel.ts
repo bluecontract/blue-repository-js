@@ -1,4 +1,4 @@
 export const channel = {
-  name: 'Channel',
   description: 'Generic channel',
+  name: 'Channel',
 } as const;

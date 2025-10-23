@@ -8,9 +8,9 @@ export const LifecycleEventChannelSchema = withTypeBlueId(
   blueIds['Lifecycle Event Channel']
 )(
   ChannelSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     event: LifecycleEventSchema.optional(),
+    name: z.string().optional(),
   })
 );
 

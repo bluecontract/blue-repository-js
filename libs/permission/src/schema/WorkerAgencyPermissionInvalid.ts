@@ -7,9 +7,9 @@ export const WorkerAgencyPermissionInvalidSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Invalid']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     issues: z.array(z.string()).optional(),
+    name: z.string().optional(),
   })
 );
 

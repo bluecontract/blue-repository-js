@@ -7,8 +7,8 @@ export const DocumentUpdateChannelSchema = withTypeBlueId(
   blueIds['Document Update Channel']
 )(
   ChannelSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     path: z.string().optional(),
   })
 );

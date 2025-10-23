@@ -5,9 +5,9 @@ import { DocumentStatusSchema } from './DocumentStatus';
 
 export const StatusPendingSchema = withTypeBlueId(blueIds['Status Pending'])(
   DocumentStatusSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     mode: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

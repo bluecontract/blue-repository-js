@@ -7,8 +7,8 @@ export const ReservationReleaseDeclinedSchema = withTypeBlueId(
   blueIds['Reservation Release Declined']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     reason: z.string().optional(),
   })
 );

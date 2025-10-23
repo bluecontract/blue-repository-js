@@ -7,8 +7,8 @@ export const PayNoteCancelledSchema = withTypeBlueId(
   blueIds['PayNote Cancelled']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 
