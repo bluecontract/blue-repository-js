@@ -1,4 +1,4 @@
-# @blue-repository/payment
+# @blue-repository/pay-note
 
 This library was generated with @blue-repository/nx-plugin.
 
@@ -6,22 +6,22 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **PaymentV0.3**
-- Version: **FBBgiLJup3vbGTixZmAVmoMY3hgVkUrSoUvo3LhGYQJ6**
+- Module name: **PayNote**
+- Version: **AmJLUqfytFUnh921M1SXP8QG7u2a9imcakrCnBBumx4t**
 
 ## Installation
 
 To install the library, use npm or yarn:
 
 ```bash
-npm install @blue-repository/payment
+npm install @blue-repository/pay-note
 # or
-yarn add @blue-repository/payment
+yarn add @blue-repository/pay-note
 ```
 
 ## Changelog
 
-The [Changelog](https://github.com/bluecontract/blue-repository-js/blob/main/libs/payment/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
+The [Changelog](https://github.com/bluecontract/blue-repository-js/blob/main/libs/pay-note/CHANGELOG.md) is regularly updated to reflect what's changed in each new release.
 
 ## License
 
