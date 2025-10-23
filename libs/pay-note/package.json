@@ -1,6 +1,6 @@
 {
-  "name": "@blue-repository/payment",
-  "version": "0.5.0",
+  "name": "@blue-repository/pay-note",
+  "version": "0.0.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -28,8 +28,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "PaymentV0.3",
-    "moduleBlueId": "FBBgiLJup3vbGTixZmAVmoMY3hgVkUrSoUvo3LhGYQJ6"
+    "moduleName": "PayNote",
+    "moduleBlueId": "AmJLUqfytFUnh921M1SXP8QG7u2a9imcakrCnBBumx4t"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",

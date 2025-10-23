@@ -62,6 +62,9 @@
     },
     {
       "path": "./libs/permission"
+    },
+    {
+      "path": "./libs/pay-note"
     }
   ]
 }

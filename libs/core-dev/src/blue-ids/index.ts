@@ -21,6 +21,8 @@ export const blueIds = {
   Operation: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
   'Operation Request': 'QQiMca4DR3UwxGceNoECDcKkeQQuF7Y8Noh2DDQTUFv',
   'Process Embedded': '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE',
+  Request: '8HQh6LoN8aJ344qodmL6fR5eA7e83ri2CTAshHqU5pLk',
+  Response: '3Dcy3LEaQW8pEFy2diJ9YZk1KDoDyu3i4huKhWXpN5BG',
   'Sequential Workflow': 'rjhSMnLxw45PaS3KLfjKgS2JoosfX4QYTHpWGwzpY4Y',
   'Sequential Workflow Operation':
     '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
