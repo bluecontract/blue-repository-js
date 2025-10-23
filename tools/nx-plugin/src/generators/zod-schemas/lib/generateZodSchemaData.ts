@@ -43,6 +43,12 @@ function convertImportsMap(
     groupedImports[importPath].add(schemaName);
   });
 
+  // Sort schema names within each path for deterministic import order
+  for (const [pathKey, namesSet] of Object.entries(groupedImports)) {
+    const sorted = Array.from(namesSet).sort((a, b) => a.localeCompare(b));
+    groupedImports[pathKey] = new Set(sorted);
+  }
+
   return groupedImports;
 }
 
