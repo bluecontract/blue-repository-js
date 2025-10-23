@@ -7,13 +7,14 @@ import { execSync } from 'node:child_process';
 type CliOptions = {
   jar?: string;
   src?: string;
+  noClean?: boolean;
 };
 
 function printUsage() {
   console.log(`Run Blue Preprocessor
 
 Usage:
-  ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts [<path-to-jar>] [path-to-blue-repository]
+  ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts [<path-to-jar>] [path-to-blue-repository] [--no-clean]
 
 Examples:
   # Default jar: ../blue-preprocessor.jar
@@ -22,6 +23,9 @@ Examples:
 
   # Custom repository path
   ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts ./relative/jars/blue-preprocessor.jar ./data/blue-repository
+
+  # Skip cleaning the output directory before running
+  ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts --no-clean
 `);
 }
 
@@ -33,6 +37,10 @@ function parseArgs(argv: string[]): CliOptions {
     if (arg === '--help' || arg === '-h') {
       printUsage();
       process.exit(0);
+    }
+    if (arg === '--no-clean') {
+      options.noClean = true;
+      continue;
     }
     if (arg.startsWith('--jar=')) {
       options.jar = arg.slice('--jar='.length);
@@ -66,6 +74,14 @@ function parseArgs(argv: string[]): CliOptions {
 
 function ensureDirectory(directoryPath: string) {
   fs.mkdirSync(directoryPath, { recursive: true });
+}
+
+function cleanDirectory(directoryPath: string) {
+  if (!fs.existsSync(directoryPath)) return;
+  for (const entry of fs.readdirSync(directoryPath)) {
+    const full = path.join(directoryPath, entry);
+    fs.rmSync(full, { recursive: true, force: true });
+  }
 }
 
 function main() {
@@ -106,6 +122,13 @@ function main() {
   }
 
   ensureDirectory(outDir);
+  const shouldClean = args.noClean ? false : true;
+  if (shouldClean) {
+    console.log(`Cleaning destination: ${outDir}`);
+    cleanDirectory(outDir);
+  } else {
+    console.log(`Skipping clean of destination: ${outDir}`);
+  }
 
   console.log('Running preprocessor with:');
   console.log(`  JAR:  ${jarPath}`);
