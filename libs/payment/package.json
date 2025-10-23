@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/payment",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-repository/core-dev": "0.19.0"
+    "@blue-repository/core-dev": "0.20.0"
   },
   "license": "MIT",
   "publishConfig": {
