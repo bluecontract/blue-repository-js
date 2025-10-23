@@ -7,7 +7,8 @@
     "notify-release": "ts-node -P scripts/tsconfig.scripts.json scripts/notify-release.ts",
     "artifact-scaffolder:test": "npx vitest -c scripts/vitest.config.ts run",
     "pull:blue-repository": "ts-node -P scripts/tsconfig.scripts.json scripts/pull-blue-repository.ts",
-    "run:blue-preprocessor": "ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts"
+    "run:blue-preprocessor": "ts-node -P scripts/tsconfig.scripts.json scripts/run-blue-preprocessor.ts",
+    "yalc:publish": "ts-node -P scripts/tsconfig.scripts.json scripts/yalc-publish.ts"
   },
   "private": true,
   "devDependencies": {
@@ -40,7 +41,8 @@
     "verdaccio": "^5.0.4",
     "vite": "^5.0.0",
     "vite-plugin-dts": "~3.8.1",
-    "vitest": "^1.3.1"
+    "vitest": "^1.3.1",
+    "yalc": "^1.0.0-pre.53"
   },
   "workspaces": [
     "libs/*",

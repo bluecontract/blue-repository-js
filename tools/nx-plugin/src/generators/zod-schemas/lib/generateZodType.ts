@@ -23,9 +23,9 @@ function generateSubZodType(
   moduleIdentifier: string,
   blueIds: ModuleBlueIds,
   schemaImportMap: Map<string, string>
-): string {
+): string | null {
   if (!fieldReference) {
-    return 'z.unknown()';
+    return null;
   }
 
   const subTypeId = fieldReference.blueId;
@@ -35,14 +35,14 @@ function generateSubZodType(
     const isComplexPrimitive =
       primitiveType === 'array' || primitiveType === 'record';
     if (isComplexPrimitive) {
-      return 'z.unknown()';
+      return null;
     }
     return `z.${primitiveType}()`;
   }
 
   const customTypeInfo = getTypeNameFromBlueId(blueIds, subTypeId);
   if (!customTypeInfo) {
-    return 'z.unknown()';
+    return null;
   }
 
   const schemaName = getSchemaName(customTypeInfo.typeName);
@@ -82,7 +82,7 @@ export function generateZodType(
         blueIds,
         schemaImportMap
       );
-      zodTypeDefinition = `z.array(${itemTypeDefinition})`;
+      zodTypeDefinition = `z.array(${itemTypeDefinition ?? 'z.unknown()'})`;
     } else if (primitiveType === 'record') {
       const keyTypeDefinition = generateSubZodType(
         field.keyType,
@@ -96,7 +96,13 @@ export function generateZodType(
         blueIds,
         schemaImportMap
       );
-      zodTypeDefinition = `z.record(${keyTypeDefinition}, ${valueTypeDefinition})`;
+      if (!valueTypeDefinition) {
+        schemaImportMap.set('blueNodeField', '@blue-labs/language');
+      }
+
+      zodTypeDefinition = `z.record(${keyTypeDefinition ?? 'z.string()'}, ${
+        valueTypeDefinition ?? 'blueNodeField()'
+      })`;
     } else {
       zodTypeDefinition = `z.${primitiveType}()`;
     }
