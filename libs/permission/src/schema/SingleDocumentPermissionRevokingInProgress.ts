@@ -8,11 +8,11 @@ export const SingleDocumentPermissionRevokingInProgressSchema = withTypeBlueId(
   blueIds['Single Document Permission Revoking in Progress']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     note: z.string().optional(),
-    targetSessionId: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
+    targetSessionId: z.string().optional(),
   })
 );
 

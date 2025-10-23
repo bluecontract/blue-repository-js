@@ -4,8 +4,8 @@ import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 
 export const DocumentAnchorSchema = withTypeBlueId(blueIds['Document Anchor'])(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     template: blueNodeField().optional(),
   })
 );

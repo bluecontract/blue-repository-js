@@ -5,11 +5,11 @@ import { ParticipantActivationStateSchema } from './ParticipantActivationState';
 
 export const ParticipantSchema = withTypeBlueId(blueIds['Participant'])(
   z.object({
-    name: z.string().optional(),
-    timelineId: z.string().optional(),
     accountId: z.string().optional(),
     email: z.string().optional(),
+    name: z.string().optional(),
     status: ParticipantActivationStateSchema.optional(),
+    timelineId: z.string().optional(),
   })
 );
 

@@ -7,8 +7,8 @@ export const SingleDocumentPermissionValidatedSchema = withTypeBlueId(
   blueIds['Single Document Permission Validated']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

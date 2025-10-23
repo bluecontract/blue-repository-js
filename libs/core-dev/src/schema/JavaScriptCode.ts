@@ -5,9 +5,9 @@ import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
 
 export const JavaScriptCodeSchema = withTypeBlueId(blueIds['JavaScript Code'])(
   SequentialWorkflowStepSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     code: z.string().optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

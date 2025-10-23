@@ -1,6 +1,4 @@
 export const money = {
-  name: 'Money',
-  description: 'Monetary amount with currency specification',
   amount: {
     description: 'ISO 4217 integer value compliant with minor units',
     type: {
@@ -13,4 +11,6 @@ export const money = {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
+  description: 'Monetary amount with currency specification',
+  name: 'Money',
 } as const;

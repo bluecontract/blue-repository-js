@@ -8,13 +8,13 @@ export const WorkerAgencyPermissionGrantingInProgressSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Granting in Progress']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
-    note: z.string().optional(),
-    granteeDocumentId: z.string().optional(),
     allowedWorkerAgencyPermissions: z
       .array(WorkerAgencyPermissionSchema)
       .optional(),
+    description: z.string().optional(),
+    granteeDocumentId: z.string().optional(),
+    name: z.string().optional(),
+    note: z.string().optional(),
   })
 );
 

@@ -1,18 +1,15 @@
 export const callOperationFailed = {
-  name: 'Call Operation Failed',
   description: 'MyOS Admin could not invoke the requested operation.',
-  type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
-  },
-  reason: {
-    description:
-      'Failure reason code (permission_denied, execution_error, invalid_request, target_not_found).',
+  name: 'Call Operation Failed',
+  operation: {
+    description: 'Operation name that was attempted.',
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
-  operation: {
-    description: 'Operation name that was attempted.',
+  reason: {
+    description:
+      'Failure reason code (permission_denied, execution_error, invalid_request, target_not_found).',
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
@@ -22,5 +19,8 @@ export const callOperationFailed = {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
+  },
+  type: {
+    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   },
 } as const;

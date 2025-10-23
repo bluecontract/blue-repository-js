@@ -14,6 +14,8 @@ export * from './FundsReserved';
 
 export * from './IssueChildPayNoteRequested';
 
+export * from './PayeeAssignmentRequested';
+
 export * from './PayNoteApproved';
 
 export * from './PayNoteCancellationRejected';
@@ -24,19 +26,17 @@ export * from './PayNoteCancelled';
 
 export * from './PayNoteRejected';
 
-export * from './PayeeAssignmentRequested';
-
 export * from './ReservationDeclined';
+
+export * from './ReservationReleased';
 
 export * from './ReservationReleaseDeclined';
 
 export * from './ReservationReleaseRequested';
 
-export * from './ReservationReleased';
+export * from './ReserveFundsAndCaptureImmediatelyRequested';
 
 export * from './ReserveFundsRequested';
-
-export * from './ReserveFundsAndCaptureImmediatelyRequested';
 
 export * from './SettlementAmountRejected';
 

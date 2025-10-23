@@ -5,20 +5,20 @@ import { EventSchema } from './Event';
 
 export const ResponseSchema = withTypeBlueId(blueIds['Response'])(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     inResponseTo: z
       .object({
         type: z
           .object({
-            name: z.string().optional(),
             description: z.string().optional(),
-            requestId: z.string().optional(),
             incomingEvent: blueNodeField().optional(),
+            name: z.string().optional(),
+            requestId: z.string().optional(),
           })
           .optional(),
       })
       .optional(),
+    name: z.string().optional(),
   })
 );
 

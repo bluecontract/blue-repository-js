@@ -7,8 +7,8 @@ export const TriggeredEventChannelSchema = withTypeBlueId(
   blueIds['Triggered Event Channel']
 )(
   ChannelSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

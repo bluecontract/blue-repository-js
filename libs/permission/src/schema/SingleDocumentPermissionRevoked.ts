@@ -7,8 +7,8 @@ export const SingleDocumentPermissionRevokedSchema = withTypeBlueId(
   blueIds['Single Document Permission Revoked']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

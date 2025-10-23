@@ -6,13 +6,13 @@ export const InformUserAboutPendingActionSchema = withTypeBlueId(
   blueIds['Inform User About Pending Action']
 )(
   z.object({
-    name: z.string().optional(),
-    description: z.string().optional(),
     channel: z.string().optional(),
+    description: z.string().optional(),
     expectedRequest: blueNodeField().optional(),
-    title: z.string().optional(),
     message: z.string().optional(),
+    name: z.string().optional(),
     operation: z.string().optional(),
+    title: z.string().optional(),
   })
 );
 

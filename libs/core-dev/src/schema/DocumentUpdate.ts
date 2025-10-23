@@ -5,12 +5,12 @@ import { EventSchema } from './Event';
 
 export const DocumentUpdateSchema = withTypeBlueId(blueIds['Document Update'])(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
-    val: blueNodeField().optional(),
+    from: z.string().optional(),
+    name: z.string().optional(),
     op: z.string().optional(),
     path: z.string().optional(),
-    from: z.string().optional(),
+    val: blueNodeField().optional(),
   })
 );
 

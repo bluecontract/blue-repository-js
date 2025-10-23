@@ -8,11 +8,11 @@ export const WorkerAgencyPermissionGrantRequestedSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Grant Requested']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     allowedWorkerAgencyPermissions: z
       .array(WorkerAgencyPermissionSchema)
       .optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
     onBehalfOf: z.string().optional(),
   })
 );

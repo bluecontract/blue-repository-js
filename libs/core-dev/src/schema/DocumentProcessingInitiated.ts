@@ -7,8 +7,8 @@ export const DocumentProcessingInitiatedSchema = withTypeBlueId(
   blueIds['Document Processing Initiated']
 )(
   LifecycleEventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

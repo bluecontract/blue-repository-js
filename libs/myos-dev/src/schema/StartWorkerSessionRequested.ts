@@ -7,19 +7,19 @@ export const StartWorkerSessionRequestedSchema = withTypeBlueId(
   blueIds['Start Worker Session Requested']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
-    onBehalfOf: z.string().optional(),
     capabilities: z.record(z.string(), z.boolean()).optional(),
     channelBindings: z.record(z.string(), ChannelSchema).optional(),
+    description: z.string().optional(),
     document: blueNodeField().optional(),
     initialMessages: z
       .object({
-        description: z.string().optional(),
         defaultMessage: z.string().optional(),
+        description: z.string().optional(),
         perChannel: z.record(z.string(), z.string()).optional(),
       })
       .optional(),
+    name: z.string().optional(),
+    onBehalfOf: z.string().optional(),
   })
 );
 

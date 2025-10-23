@@ -1,8 +1,10 @@
 export const singleDocumentPermissionRejected = {
-  name: 'Single Document Permission Rejected',
   description: 'Grant could not be applied.',
-  type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
+  name: 'Single Document Permission Rejected',
+  permissions: {
+    type: {
+      blueId: '7TCdQstz98WJ8RXqizemdpdg723HeqTZHHiRXCnso7b4',
+    },
   },
   reason: {
     type: {
@@ -14,9 +16,7 @@ export const singleDocumentPermissionRejected = {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
-  permissions: {
-    type: {
-      blueId: '7TCdQstz98WJ8RXqizemdpdg723HeqTZHHiRXCnso7b4',
-    },
+  type: {
+    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   },
 } as const;

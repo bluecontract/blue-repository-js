@@ -17,20 +17,20 @@ export const SingleDocumentPermissionGrantToAccountSchema = withTypeBlueId(
   blueIds['Single Document Permission Grant To Account']
 )(
   MyOSAdminBaseSchema.extend({
-    name: z.string().optional(),
-    granterDocumentSessionId: z.string().optional(),
     contracts: z
       .object({
+        granteeChannel: MyOSTimelineChannelSchema.optional(),
         granterChannel: MyOSTimelineChannelSchema.optional(),
-        revokeImplGranter: SequentialWorkflowOperationSchema.optional(),
         initLifecycleChannel: LifecycleEventChannelSchema.optional(),
         revoke: OperationSchema.optional(),
-        granteeChannel: MyOSTimelineChannelSchema.optional(),
+        revokeImplGranter: SequentialWorkflowOperationSchema.optional(),
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),
-    targetSessionId: z.string().optional(),
+    granterDocumentSessionId: z.string().optional(),
+    name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
+    targetSessionId: z.string().optional(),
   })
 );
 

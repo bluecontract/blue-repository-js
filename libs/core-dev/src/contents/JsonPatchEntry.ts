@@ -1,10 +1,7 @@
 export const jsonPatchEntry = {
-  name: 'Json Patch Entry',
   description:
     'Represents a single operation in a Json Patch, defining a specific change to be applied to a JSON document.',
-  val: {
-    description: 'The value to be used in the operation',
-  },
+  name: 'Json Patch Entry',
   op: {
     description: 'The operation to be performed on the target JSON document.',
     type: {
@@ -17,5 +14,8 @@ export const jsonPatchEntry = {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
+  },
+  val: {
+    description: 'The value to be used in the operation',
   },
 } as const;

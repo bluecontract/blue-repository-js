@@ -7,9 +7,9 @@ export const SettlementAmountSpecifiedSchema = withTypeBlueId(
   blueIds['Settlement Amount Specified']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     finalAmount: z.number().optional(),
+    name: z.string().optional(),
   })
 );
 

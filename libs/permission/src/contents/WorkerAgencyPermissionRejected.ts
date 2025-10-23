@@ -1,25 +1,25 @@
 export const workerAgencyPermissionRejected = {
-  name: 'Worker Agency Permission Rejected',
-  description: 'Grant could not be applied.',
-  type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
-  },
-  reason: {
+  allowedWorkerAgencyPermissions: {
+    itemType: {
+      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
+    },
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
     },
   },
+  description: 'Grant could not be applied.',
   granteeDocumentId: {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
-  allowedWorkerAgencyPermissions: {
+  name: 'Worker Agency Permission Rejected',
+  reason: {
     type: {
-      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
-    itemType: {
-      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
-    },
+  },
+  type: {
+    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   },
 } as const;

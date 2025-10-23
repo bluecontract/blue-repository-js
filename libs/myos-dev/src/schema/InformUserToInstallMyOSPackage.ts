@@ -7,11 +7,11 @@ export const InformUserToInstallMyOSPackageSchema = withTypeBlueId(
   blueIds['Inform User To Install MyOS Package']
 )(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    message: z.string().optional(),
+    name: z.string().optional(),
     package: MyOSPackageSchema.optional(),
     title: z.string().optional(),
-    message: z.string().optional(),
   })
 );
 

@@ -8,8 +8,8 @@ export const MyOSTimelineEntrySchema = withTypeBlueId(
   blueIds['MyOS Timeline Entry']
 )(
   TimelineEntrySchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     timeline: MyOSTimelineSchema.optional(),
     timestamp: z.number().optional(),
   })

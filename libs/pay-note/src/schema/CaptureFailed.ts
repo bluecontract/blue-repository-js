@@ -5,8 +5,8 @@ import { ResponseSchema } from '@blue-repository/core-dev';
 
 export const CaptureFailedSchema = withTypeBlueId(blueIds['Capture Failed'])(
   ResponseSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     reason: z.string().optional(),
   })
 );

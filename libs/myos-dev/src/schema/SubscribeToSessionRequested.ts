@@ -7,10 +7,10 @@ export const SubscribeToSessionRequestedSchema = withTypeBlueId(
   blueIds['Subscribe to Session Requested']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
-    targetSessionId: z.string().optional(),
     events: z.array(z.string()).optional(),
+    name: z.string().optional(),
+    targetSessionId: z.string().optional(),
   })
 );
 

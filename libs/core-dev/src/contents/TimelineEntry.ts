@@ -1,12 +1,18 @@
 export const timelineEntry = {
-  name: 'Timeline Entry',
-  threadPrev: {
-    description: 'Previous entry in the thread',
+  message: {
+    description: 'Message',
   },
+  name: 'Timeline Entry',
   signature: {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
+  },
+  thread: {
+    description: 'Optional thread',
+  },
+  threadPrev: {
+    description: 'Previous entry in the thread',
   },
   timeline: {
     description: 'Timeline this entry belongs to',
@@ -14,13 +20,7 @@ export const timelineEntry = {
       blueId: 'C7TsyShrDryZ121B2EJMKD9ui1ozmvTfGUkquRKkSvAP',
     },
   },
-  thread: {
-    description: 'Optional thread',
-  },
   timelinePrev: {
     description: 'Previous entry',
-  },
-  message: {
-    description: 'Message',
   },
 } as const;

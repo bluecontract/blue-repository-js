@@ -6,8 +6,8 @@ export const TransferCancellationRequestedSchema = withTypeBlueId(
   blueIds['Transfer Cancellation Requested']
 )(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

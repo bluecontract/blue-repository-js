@@ -8,10 +8,10 @@ export const SingleDocumentPermissionGrantedSchema = withTypeBlueId(
   blueIds['Single Document Permission Granted']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
+    targetSessionId: z.string().optional(),
   })
 );
 

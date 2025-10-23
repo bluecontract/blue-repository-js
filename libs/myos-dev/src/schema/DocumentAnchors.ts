@@ -6,8 +6,8 @@ export const DocumentAnchorsSchema = withTypeBlueId(
   blueIds['Document Anchors']
 )(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

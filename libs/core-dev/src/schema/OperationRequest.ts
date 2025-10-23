@@ -6,12 +6,12 @@ export const OperationRequestSchema = withTypeBlueId(
   blueIds['Operation Request']
 )(
   z.object({
-    name: z.string().optional(),
-    description: z.string().optional(),
-    request: blueNodeField().optional(),
-    operation: z.string().optional(),
-    document: blueNodeField().optional(),
     allowNewerVersion: z.boolean().optional(),
+    description: z.string().optional(),
+    document: blueNodeField().optional(),
+    name: z.string().optional(),
+    operation: z.string().optional(),
+    request: blueNodeField().optional(),
   })
 );
 

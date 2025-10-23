@@ -6,9 +6,9 @@ import { JsonPatchEntrySchema } from './JsonPatchEntry';
 
 export const UpdateDocumentSchema = withTypeBlueId(blueIds['Update Document'])(
   SequentialWorkflowStepSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     changeset: z.array(JsonPatchEntrySchema).optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

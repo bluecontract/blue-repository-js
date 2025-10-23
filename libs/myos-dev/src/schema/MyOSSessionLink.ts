@@ -7,8 +7,8 @@ export const MyOSSessionLinkSchema = withTypeBlueId(
   blueIds['MyOS Session Link']
 )(
   LinkSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     sessionId: z.string().optional(),
   })
 );

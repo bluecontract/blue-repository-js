@@ -1,10 +1,7 @@
 export const subscriptionToSessionRevoked = {
-  name: 'Subscription to Session Revoked',
   description:
     'Indicates MyOS Admin stopped forwarding updates for the subscription.',
-  type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
-  },
+  name: 'Subscription to Session Revoked',
   reason: {
     description: 'Optional explanation for the revocation.',
     type: {
@@ -16,5 +13,8 @@ export const subscriptionToSessionRevoked = {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
+  },
+  type: {
+    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   },
 } as const;

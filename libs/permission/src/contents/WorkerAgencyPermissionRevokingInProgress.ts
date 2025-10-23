@@ -1,25 +1,25 @@
 export const workerAgencyPermissionRevokingInProgress = {
-  name: 'Worker Agency Permission Revoking in Progress',
-  description: 'MyOS Admin is retracting rights granted by this WAG.',
-  type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
-  },
-  note: {
+  allowedWorkerAgencyPermissions: {
+    itemType: {
+      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
+    },
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
     },
   },
+  description: 'MyOS Admin is retracting rights granted by this WAG.',
   granteeDocumentId: {
     type: {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
-  allowedWorkerAgencyPermissions: {
+  name: 'Worker Agency Permission Revoking in Progress',
+  note: {
     type: {
-      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
-    itemType: {
-      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
-    },
+  },
+  type: {
+    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
   },
 } as const;

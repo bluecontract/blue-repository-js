@@ -7,9 +7,9 @@ export const ChildPayNoteIssuedSchema = withTypeBlueId(
   blueIds['Child PayNote Issued']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
-    description: z.string().optional(),
     childPayNote: blueNodeField().optional(),
+    description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

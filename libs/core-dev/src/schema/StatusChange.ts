@@ -6,8 +6,8 @@ import { DocumentStatusSchema } from './DocumentStatus';
 
 export const StatusChangeSchema = withTypeBlueId(blueIds['Status Change'])(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     status: DocumentStatusSchema.optional(),
   })
 );

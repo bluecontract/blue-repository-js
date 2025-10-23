@@ -4,8 +4,8 @@ import { withTypeBlueId } from '@blue-labs/language';
 
 export const AgentSchema = withTypeBlueId(blueIds['Agent'])(
   z.object({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
   })
 );
 

@@ -5,9 +5,9 @@ import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
 
 export const TriggerEventSchema = withTypeBlueId(blueIds['Trigger Event'])(
   SequentialWorkflowStepSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     event: blueNodeField().optional(),
+    name: z.string().optional(),
   })
 );
 

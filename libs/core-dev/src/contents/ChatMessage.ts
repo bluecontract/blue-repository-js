@@ -1,5 +1,4 @@
 export const chatMessage = {
-  name: 'Chat Message',
   description:
     'Represents a single chat message exchanged between participants.',
   message: {
@@ -8,4 +7,5 @@ export const chatMessage = {
       blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
     },
   },
+  name: 'Chat Message',
 } as const;

@@ -7,11 +7,11 @@ export const CallOperationRequestedSchema = withTypeBlueId(
   blueIds['Call Operation Requested']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     onBehalfOf: z.string().optional(),
-    request: blueNodeField().optional(),
     operation: z.string().optional(),
+    request: blueNodeField().optional(),
     targetSessionId: z.string().optional(),
   })
 );

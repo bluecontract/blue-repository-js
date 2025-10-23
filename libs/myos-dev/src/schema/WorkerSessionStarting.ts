@@ -7,9 +7,9 @@ export const WorkerSessionStartingSchema = withTypeBlueId(
   blueIds['Worker Session Starting']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
     granteeDocumentId: z.string().optional(),
+    name: z.string().optional(),
     targetDocumentType: z.string().optional(),
   })
 );

@@ -7,13 +7,13 @@ export const SessionEpochAdvancedSchema = withTypeBlueId(
   blueIds['Session Epoch Advanced']
 )(
   EventSchema.extend({
-    name: z.string().optional(),
     description: z.string().optional(),
+    name: z.string().optional(),
     update: z
       .object({
         description: z.string().optional(),
-        targetSessionId: z.string().optional(),
         document: blueNodeField().optional(),
+        targetSessionId: z.string().optional(),
         timestamp: z.string().optional(),
       })
       .optional(),
