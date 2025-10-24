@@ -39,10 +39,10 @@ export interface ModuleBlueIds {
  *  e.g. string, number, boolean, array, record, etc.
  */
 export const PRIMITIVE_TYPE_MAP: Record<string, string> = {
-  F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP: 'string', // TEXT
-  '68ryJtnmui4j5rCZWUnkZ3DChtmEb7Z9F8atn1mBSM3L': 'number', // DOUBLE
-  DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8: 'number', // INTEGER
-  EL6AjrbJsxTWRTPzY8WR8Y2zAMXRbydQj83PcZwuAHbo: 'boolean', // BOOLEAN
-  G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB: 'array', // LIST
-  '294NBTj2mFRL3RB4kDRUSckwGg7Kzj6T8CTAFeR1kcSA': 'record', // DICTIONARY
+  DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K: 'string', // TEXT
+  '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y': 'number', // DOUBLE
+  '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1': 'number', // INTEGER
+  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u': 'boolean', // BOOLEAN
+  '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY': 'array', // LIST
+  G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj: 'record', // DICTIONARY
 };
