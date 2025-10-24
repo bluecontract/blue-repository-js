@@ -29,7 +29,7 @@
   },
   "blueType": {
     "moduleName": "PayNote",
-    "moduleBlueId": "AmJLUqfytFUnh921M1SXP8QG7u2a9imcakrCnBBumx4t"
+    "moduleBlueId": "41RbAN4p2j5X5jxdnac7Q8hxWJ9Ay6G3CrntqE65nTwg"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",
