@@ -4,6 +4,7 @@ import { settlementAmountRejected } from './SettlementAmountRejected';
 import { payNoteCancellationRequested } from './PayNoteCancellationRequested';
 import { payNoteApproved } from './PayNoteApproved';
 import { captureFundsRequested } from './CaptureFundsRequested';
+import { payNote } from './PayNote';
 import { reserveFundsAndCaptureImmediatelyRequested } from './ReserveFundsAndCaptureImmediatelyRequested';
 import { reservationReleaseDeclined } from './ReservationReleaseDeclined';
 import { childPayNoteIssued } from './ChildPayNoteIssued';
@@ -28,6 +29,7 @@ export const contents = {
   '3NEYPUnq7MpehoSLU7L3PQVwTSG755MGQCKkagGps6Xw': payNoteCancellationRequested,
   '6rUUK1FshkYaquowa59ENc2BS6Ua4G6mDhDzmtzytNZH': payNoteApproved,
   '7DvvtJgq7F2rLQd56SaSzy5qRtdNoEmDx3m486ip3hUW': captureFundsRequested,
+  '8ckiLyxLCyvFbFKvK9oZpYqxCxtKtFpnnnn24bynCWLa': payNote,
   '8gELiMueXzubWytSnFAvHitbLvjzTAvGxJyqPptTmoip':
     reserveFundsAndCaptureImmediatelyRequested,
   '8tVCt8s2vWY7fz1K9ygm6qQAd1LmxsGFACmL4pc6rrg9': reservationReleaseDeclined,

@@ -16,6 +16,8 @@ export * from './IssueChildPayNoteRequested';
 
 export * from './PayeeAssignmentRequested';
 
+export * from './PayNote';
+
 export * from './PayNoteApproved';
 
 export * from './PayNoteCancellationRejected';

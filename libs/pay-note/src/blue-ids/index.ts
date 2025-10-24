@@ -9,6 +9,7 @@ export const blueIds = {
   'Funds Reserved': 'uDrjv9EtBXEohm7teXEULfeHVqnKMdyfbezHKBoRUmT',
   'Issue Child PayNote Requested':
     'AwRe1pQnpSJsjjWszV9bJCgEkCrwxrm3ZYWhsgzK2YxM',
+  PayNote: '8ckiLyxLCyvFbFKvK9oZpYqxCxtKtFpnnnn24bynCWLa',
   'PayNote Approved': '6rUUK1FshkYaquowa59ENc2BS6Ua4G6mDhDzmtzytNZH',
   'PayNote Cancellation Rejected':
     '3h1WzesH4E4P9Wt9UDKt7dvA65CpZHBgRyNEn7e3m4DE',
