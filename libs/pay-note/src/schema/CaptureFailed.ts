@@ -7,7 +7,7 @@ export const CaptureFailedSchema = withTypeBlueId(blueIds['Capture Failed'])(
   ResponseSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    reason: z.string().optional(),
+    reason: z.unknown().optional(),
   })
 );
 

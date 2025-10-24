@@ -5,13 +5,13 @@ export const callOperationAccepted = {
   operation: {
     description: 'Operation name that was invoked.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   targetSessionId: {
     description: 'Target document session that received the request.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

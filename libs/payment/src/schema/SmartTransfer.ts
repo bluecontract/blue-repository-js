@@ -10,8 +10,8 @@ import { MoneySchema } from './Money';
 
 export const SmartTransferSchema = withTypeBlueId(blueIds['Smart Transfer'])(
   z.object({
-    cancelled: z.boolean().optional(),
-    captured: z.boolean().optional(),
+    cancelled: z.unknown().optional(),
+    captured: z.unknown().optional(),
     contracts: z
       .object({
         authorizeTransfer: OperationSchema.optional(),
@@ -28,8 +28,8 @@ export const SmartTransferSchema = withTypeBlueId(blueIds['Smart Transfer'])(
       .optional(),
     description: z.string().optional(),
     name: z.string().optional(),
-    payeeAccountNumber: z.string().optional(),
-    payerAccountNumber: z.string().optional(),
+    payeeAccountNumber: z.unknown().optional(),
+    payerAccountNumber: z.unknown().optional(),
     transferValue: MoneySchema.optional(),
   })
 );

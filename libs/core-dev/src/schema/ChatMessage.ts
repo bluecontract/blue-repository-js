@@ -5,7 +5,7 @@ import { withTypeBlueId } from '@blue-labs/language';
 export const ChatMessageSchema = withTypeBlueId(blueIds['Chat Message'])(
   z.object({
     description: z.string().optional(),
-    message: z.string().optional(),
+    message: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

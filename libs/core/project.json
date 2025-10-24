@@ -1,0 +1,9 @@
+{
+  "name": "@blue-repository/core",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project @blue-repository/core --web",
+  "targets": {}
+}

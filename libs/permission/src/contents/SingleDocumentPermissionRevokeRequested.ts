@@ -3,7 +3,7 @@ export const singleDocumentPermissionRevokeRequested = {
   name: 'Single Document Permission Revoke Requested',
   reason: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

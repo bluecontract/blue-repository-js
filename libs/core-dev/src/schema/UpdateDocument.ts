@@ -2,11 +2,10 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
-import { JsonPatchEntrySchema } from './JsonPatchEntry';
 
 export const UpdateDocumentSchema = withTypeBlueId(blueIds['Update Document'])(
   SequentialWorkflowStepSchema.extend({
-    changeset: z.array(JsonPatchEntrySchema).optional(),
+    changeset: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

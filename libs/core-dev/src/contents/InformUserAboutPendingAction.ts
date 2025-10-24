@@ -3,7 +3,7 @@ export const informUserAboutPendingAction = {
     description:
       'The channel defined in the document from which a timeline entry is expected, and which will trigger the required operation.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description:
@@ -16,7 +16,7 @@ export const informUserAboutPendingAction = {
     description:
       'A detailed message explaining what action is needed and any relevant context for the user.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'Inform User About Pending Action',
@@ -24,14 +24,14 @@ export const informUserAboutPendingAction = {
     description:
       'The name of the operation defined in the document that the user is required to run to fulfill the pending action.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   title: {
     description:
       'A short, user-facing title describing the required action (e.g., "Payment Setup Required", "Agreement Required").',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
 } as const;

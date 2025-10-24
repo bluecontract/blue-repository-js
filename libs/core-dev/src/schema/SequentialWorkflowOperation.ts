@@ -9,7 +9,7 @@ export const SequentialWorkflowOperationSchema = withTypeBlueId(
   SequentialWorkflowSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    operation: z.string().optional(),
+    operation: z.unknown().optional(),
   })
 );
 

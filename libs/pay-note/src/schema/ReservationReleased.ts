@@ -7,7 +7,7 @@ export const ReservationReleasedSchema = withTypeBlueId(
   blueIds['Reservation Released']
 )(
   ResponseSchema.extend({
-    amountReleased: z.number().optional(),
+    amountReleased: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

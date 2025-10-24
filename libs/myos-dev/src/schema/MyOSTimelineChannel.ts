@@ -7,9 +7,9 @@ export const MyOSTimelineChannelSchema = withTypeBlueId(
   blueIds['MyOS Timeline Channel']
 )(
   TimelineChannelSchema.extend({
-    accountId: z.string().optional(),
+    accountId: z.unknown().optional(),
     description: z.string().optional(),
-    email: z.string().optional(),
+    email: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

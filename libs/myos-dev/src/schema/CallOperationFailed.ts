@@ -9,9 +9,9 @@ export const CallOperationFailedSchema = withTypeBlueId(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    operation: z.string().optional(),
-    reason: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    operation: z.unknown().optional(),
+    reason: z.unknown().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

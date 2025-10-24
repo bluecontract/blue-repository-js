@@ -8,7 +8,7 @@ export const EmbeddedNodeChannelSchema = withTypeBlueId(
 )(
   ChannelSchema.extend({
     name: z.string().optional(),
-    path: z.string().optional(),
+    path: z.unknown().optional(),
   })
 );
 

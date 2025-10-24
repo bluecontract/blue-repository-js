@@ -6,7 +6,7 @@ import { DocumentStatusSchema } from './DocumentStatus';
 export const StatusFailedSchema = withTypeBlueId(blueIds['Status Failed'])(
   DocumentStatusSchema.extend({
     description: z.string().optional(),
-    mode: z.string().optional(),
+    mode: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

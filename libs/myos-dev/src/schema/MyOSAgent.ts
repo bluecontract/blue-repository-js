@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-labs/language';
 
 export const MyOSAgentSchema = withTypeBlueId(blueIds['MyOS Agent'])(
   z.object({
-    agentId: z.string().optional(),
+    agentId: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

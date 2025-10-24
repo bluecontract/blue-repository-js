@@ -5,13 +5,13 @@ export const callOperationRequested = {
   onBehalfOf: {
     description: 'Channel whose binding provides the requester account.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   operation: {
     description: 'Operation name to invoke.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   request: {
@@ -20,7 +20,7 @@ export const callOperationRequested = {
   targetSessionId: {
     description: 'Target document session to invoke.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

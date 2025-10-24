@@ -9,8 +9,8 @@ export const SubscriptionToSessionRevokedSchema = withTypeBlueId(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    reason: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    reason: z.unknown().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

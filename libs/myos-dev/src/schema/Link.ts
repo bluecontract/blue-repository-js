@@ -4,7 +4,7 @@ import { withTypeBlueId } from '@blue-labs/language';
 
 export const LinkSchema = withTypeBlueId(blueIds['Link'])(
   z.object({
-    anchor: z.string().optional(),
+    anchor: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

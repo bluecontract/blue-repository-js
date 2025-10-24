@@ -13,7 +13,7 @@ export const ResponseSchema = withTypeBlueId(blueIds['Response'])(
             description: z.string().optional(),
             incomingEvent: blueNodeField().optional(),
             name: z.string().optional(),
-            requestId: z.string().optional(),
+            requestId: z.unknown().optional(),
           })
           .optional(),
       })

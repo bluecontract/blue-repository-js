@@ -5,7 +5,6 @@ import {
   MyOSAdminBaseSchema,
   MyOSTimelineChannelSchema,
 } from '@blue-repository/myos-dev';
-import { WorkerAgencyPermissionSchema } from './WorkerAgencyPermission';
 import {
   LifecycleEventChannelSchema,
   OperationSchema,
@@ -17,9 +16,7 @@ export const WorkerAgencyPermissionGrantSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Grant']
 )(
   MyOSAdminBaseSchema.extend({
-    allowedWorkerAgencyPermissions: z
-      .array(WorkerAgencyPermissionSchema)
-      .optional(),
+    allowedWorkerAgencyPermissions: z.unknown().optional(),
     contracts: z
       .object({
         granterChannel: MyOSTimelineChannelSchema.optional(),
@@ -29,7 +26,7 @@ export const WorkerAgencyPermissionGrantSchema = withTypeBlueId(
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),
-    granteeDocumentId: z.string().optional(),
+    granteeDocumentId: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

@@ -5,7 +5,7 @@ import { ActorSchema } from '@blue-repository/core-dev';
 
 export const PrincipalActorSchema = withTypeBlueId(blueIds['Principal Actor'])(
   ActorSchema.extend({
-    accountId: z.string().optional(),
+    accountId: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

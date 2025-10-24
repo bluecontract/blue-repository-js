@@ -26,12 +26,12 @@ export const SingleDocumentPermissionGrantToDocumentSchema = withTypeBlueId(
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),
-    granteeDocumentId: z.string().optional(),
-    granterDocumentSessionId: z.string().optional(),
+    granteeDocumentId: z.unknown().optional(),
+    granterDocumentSessionId: z.unknown().optional(),
     name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
-    skipValidation: z.boolean().optional(),
-    targetSessionId: z.string().optional(),
+    skipValidation: z.unknown().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

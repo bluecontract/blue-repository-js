@@ -4,12 +4,12 @@ import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 
 export const MyOSAgentEventSchema = withTypeBlueId(blueIds['MyOS Agent Event'])(
   z.object({
-    agentId: z.string().optional(),
+    agentId: z.unknown().optional(),
     description: z.string().optional(),
     event: blueNodeField().optional(),
-    id: z.string().optional(),
+    id: z.unknown().optional(),
     name: z.string().optional(),
-    timestamp: z.number().optional(),
+    timestamp: z.unknown().optional(),
   })
 );
 

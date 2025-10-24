@@ -4,27 +4,27 @@ export const myOSAdminBase = {
       description:
         'MyOS Admin (accountId=0) — posts operational progress/decisions via myOsAdminUpdate',
       type: {
-        blueId: 'Bx3dgXf5uFkGf9KxkUTFWQhbEw9QBc9cTgz1KP1Qtgh6',
+        blueId: 'E3CgW5s3sUA1U4Y2Zy7MqYFRqTPmo4UDCKVKB1nTQbhz',
       },
     },
     myOsAdminUpdate: {
       channel: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'myOsAdminChannel',
       },
       description:
         'The standard, required operation for MyOS Admin to deliver events.',
       type: {
-        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+        blueId: 'H3KTSmqjT48Fjdoj5vY8EE98Sbp2FeNqBHGmUExRmrGk',
       },
     },
     myOsAdminUpdateImpl: {
       description: 'Implementation that re-emits the provided events',
       operation: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'myOsAdminUpdate',
       },
@@ -33,19 +33,19 @@ export const myOSAdminBase = {
           {
             code: {
               type: {
-                blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
               value: 'return { events: event.message.request };\n',
             },
             name: 'EmitAdminEvents',
             type: {
-              blueId: 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
+              blueId: 'Hz1LwvihraqVw1xEhSG6eeKnnFnytPNTXKMZgG8wtWtR',
             },
           },
         ],
       },
       type: {
-        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
+        blueId: 'JAaLYym23FbqTJkan4NfmNpKxMHbXLHm71oxPqmFB2Sq',
       },
     },
   },

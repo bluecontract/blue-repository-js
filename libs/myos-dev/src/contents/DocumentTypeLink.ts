@@ -6,6 +6,6 @@ export const documentTypeLink = {
   },
   name: 'Document Type Link',
   type: {
-    blueId: 'GmD5hRiYhRVGSSQi5ArqffecvoJTd1SvxAZ3usDRs6gT',
+    blueId: 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
   },
 } as const;

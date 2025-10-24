@@ -7,7 +7,7 @@ export const RequestSchema = withTypeBlueId(blueIds['Request'])(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    requestId: z.string().optional(),
+    requestId: z.unknown().optional(),
   })
 );
 

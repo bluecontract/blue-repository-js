@@ -4,7 +4,7 @@ import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 
 export const OperationSchema = withTypeBlueId(blueIds['Operation'])(
   z.object({
-    channel: z.string().optional(),
+    channel: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     request: blueNodeField().optional(),

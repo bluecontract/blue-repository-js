@@ -4,10 +4,10 @@ export const myOSTimelineEntry = {
   name: 'MyOS Timeline Entry',
   timeline: {
     type: {
-      blueId: '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog',
+      blueId: '8jGY1N9oUvyitz3c5uhfsxz8kzQzimgEfWAA9RAci4MY',
     },
   },
   type: {
-    blueId: '8LwdRpwMCKH3wSs7yzD4zLEYvjN9RZDSJSKoxkjVxhyr',
+    blueId: 'E4dUvFyEqoVDNVeyy6nZxqHeuNUJhHz8DTLxZpEA7P7t',
   },
 } as const;

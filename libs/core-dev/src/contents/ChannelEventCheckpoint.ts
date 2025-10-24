@@ -5,10 +5,10 @@ export const channelEventCheckpoint = {
     description:
       "Maps channel names to their last processed event information. Each channel tracks the BlueId of the most recent event that has been successfully processed from that channel's timeline.",
     keyType: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
     type: {
-      blueId: '294NBTj2mFRL3RB4kDRUSckwGg7Kzj6T8CTAFeR1kcSA',
+      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
     },
   },
   name: 'Channel Event Checkpoint',

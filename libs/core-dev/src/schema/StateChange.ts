@@ -6,7 +6,7 @@ export const StateChangeSchema = withTypeBlueId(blueIds['State Change'])(
   z.object({
     description: z.string().optional(),
     name: z.string().optional(),
-    state: z.string().optional(),
+    state: z.unknown().optional(),
   })
 );
 

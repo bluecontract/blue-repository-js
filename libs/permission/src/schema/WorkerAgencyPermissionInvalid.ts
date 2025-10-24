@@ -8,7 +8,7 @@ export const WorkerAgencyPermissionInvalidSchema = withTypeBlueId(
 )(
   EventSchema.extend({
     description: z.string().optional(),
-    issues: z.array(z.string()).optional(),
+    issues: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

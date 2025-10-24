@@ -11,7 +11,7 @@ export const SingleDocumentPermissionGrantedSchema = withTypeBlueId(
     description: z.string().optional(),
     name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

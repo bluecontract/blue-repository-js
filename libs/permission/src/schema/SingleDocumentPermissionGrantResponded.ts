@@ -11,9 +11,9 @@ export const SingleDocumentPermissionGrantRespondedSchema = withTypeBlueId(
     description: z.string().optional(),
     name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
-    reason: z.string().optional(),
-    status: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    reason: z.unknown().optional(),
+    status: z.unknown().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

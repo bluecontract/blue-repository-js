@@ -8,10 +8,10 @@ export const InformUserToInstallMyOSPackageSchema = withTypeBlueId(
 )(
   z.object({
     description: z.string().optional(),
-    message: z.string().optional(),
+    message: z.unknown().optional(),
     name: z.string().optional(),
     package: MyOSPackageSchema.optional(),
-    title: z.string().optional(),
+    title: z.unknown().optional(),
   })
 );
 

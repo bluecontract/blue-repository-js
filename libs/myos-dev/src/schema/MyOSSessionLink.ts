@@ -9,7 +9,7 @@ export const MyOSSessionLinkSchema = withTypeBlueId(
   LinkSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    sessionId: z.string().optional(),
+    sessionId: z.unknown().optional(),
   })
 );
 

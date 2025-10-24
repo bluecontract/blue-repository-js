@@ -7,10 +7,10 @@ export const PayNoteSchema = withTypeBlueId(blueIds['PayNote'])(
   z.object({
     amount: z
       .object({
-        captured: z.number().optional(),
+        captured: z.unknown().optional(),
         description: z.string().optional(),
-        reserved: z.number().optional(),
-        total: z.number().optional(),
+        reserved: z.unknown().optional(),
+        total: z.unknown().optional(),
       })
       .optional(),
     contracts: z
@@ -20,16 +20,16 @@ export const PayNoteSchema = withTypeBlueId(blueIds['PayNote'])(
         payerChannel: TimelineChannelSchema.optional(),
       })
       .optional(),
-    currency: z.string().optional(),
+    currency: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     payNoteInitialStateDescription: z
       .object({
-        details: z.string().optional(),
-        summary: z.string().optional(),
+        details: z.unknown().optional(),
+        summary: z.unknown().optional(),
       })
       .optional(),
-    status: z.string().optional(),
+    status: z.unknown().optional(),
   })
 );
 

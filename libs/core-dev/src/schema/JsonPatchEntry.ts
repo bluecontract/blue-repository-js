@@ -6,8 +6,8 @@ export const JsonPatchEntrySchema = withTypeBlueId(blueIds['Json Patch Entry'])(
   z.object({
     description: z.string().optional(),
     name: z.string().optional(),
-    op: z.string().optional(),
-    path: z.string().optional(),
+    op: z.unknown().optional(),
+    path: z.unknown().optional(),
     val: blueNodeField().optional(),
   })
 );

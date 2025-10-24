@@ -9,7 +9,7 @@ export const DocumentUpdateChannelSchema = withTypeBlueId(
   ChannelSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    path: z.string().optional(),
+    path: z.unknown().optional(),
   })
 );
 

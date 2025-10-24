@@ -7,7 +7,7 @@ export const ReserveFundsRequestedSchema = withTypeBlueId(
   blueIds['Reserve Funds Requested']
 )(
   RequestSchema.extend({
-    amount: z.number().optional(),
+    amount: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

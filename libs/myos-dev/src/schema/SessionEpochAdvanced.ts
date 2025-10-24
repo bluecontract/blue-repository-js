@@ -13,8 +13,8 @@ export const SessionEpochAdvancedSchema = withTypeBlueId(
       .object({
         description: z.string().optional(),
         document: blueNodeField().optional(),
-        targetSessionId: z.string().optional(),
-        timestamp: z.string().optional(),
+        targetSessionId: z.unknown().optional(),
+        timestamp: z.unknown().optional(),
       })
       .optional(),
   })

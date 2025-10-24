@@ -2,18 +2,18 @@ export const myOSTimelineChannel = {
   accountId: {
     description: 'Account identifier for the MyOS timeline',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description: 'MyOS-specific Timeline Channel',
   email: {
     description: 'Email address associated with the MyOS timeline',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'MyOS Timeline Channel',
   type: {
-    blueId: 'xyBvDpt4fv9uqLMEvpJz4u6NDM9cpuanrmk1VsY7Z6V',
+    blueId: '64NmLPmy8DBzocUccDrwmwNus3pKg7r1Xd8vewQ8cLHo',
   },
 } as const;

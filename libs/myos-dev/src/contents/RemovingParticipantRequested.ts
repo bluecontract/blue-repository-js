@@ -2,7 +2,7 @@ export const removingParticipantRequested = {
   channelName: {
     description: 'The abstract channel name of the participant to be removed.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'Removing Participant Requested',

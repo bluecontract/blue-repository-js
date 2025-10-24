@@ -1,22 +1,22 @@
 export const workerAgencyPermissionRevokingInProgress = {
   allowedWorkerAgencyPermissions: {
     itemType: {
-      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
+      blueId: '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
     },
     type: {
-      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
     },
   },
   description: 'MyOS Admin is retracting rights granted by this WAG.',
   granteeDocumentId: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'Worker Agency Permission Revoking in Progress',
   note: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

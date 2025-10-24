@@ -9,10 +9,10 @@ export const CallOperationRequestedSchema = withTypeBlueId(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    onBehalfOf: z.string().optional(),
-    operation: z.string().optional(),
+    onBehalfOf: z.unknown().optional(),
+    operation: z.unknown().optional(),
     request: blueNodeField().optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

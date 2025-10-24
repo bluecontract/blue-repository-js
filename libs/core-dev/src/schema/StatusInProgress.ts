@@ -8,7 +8,7 @@ export const StatusInProgressSchema = withTypeBlueId(
 )(
   DocumentStatusSchema.extend({
     description: z.string().optional(),
-    mode: z.string().optional(),
+    mode: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

@@ -3,22 +3,20 @@ import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import {
-  ChannelSchema,
   DocumentStatusSchema,
   LifecycleEventChannelSchema,
   SequentialWorkflowSchema,
   TriggeredEventChannelSchema,
 } from '@blue-repository/core-dev';
-import { ParticipantActivationStateSchema } from './ParticipantActivationState';
 
 export const DocumentSessionBootstrapSchema = withTypeBlueId(
   blueIds['Document Session Bootstrap']
 )(
   MyOSAdminBaseSchema.extend({
-    bootstrapError: z.string().optional(),
+    bootstrapError: z.unknown().optional(),
     bootstrapStatus: DocumentStatusSchema.optional(),
-    capabilities: z.record(z.string(), z.boolean()).optional(),
-    channelBindings: z.record(z.string(), ChannelSchema).optional(),
+    capabilities: z.unknown().optional(),
+    channelBindings: z.unknown().optional(),
     contracts: z
       .object({
         handleBootstrapFailed: SequentialWorkflowSchema.optional(),
@@ -34,16 +32,14 @@ export const DocumentSessionBootstrapSchema = withTypeBlueId(
     document: blueNodeField().optional(),
     initialMessages: z
       .object({
-        defaultMessage: z.string().optional(),
+        defaultMessage: z.unknown().optional(),
         description: z.string().optional(),
-        perChannel: z.record(z.string(), z.string()).optional(),
+        perChannel: z.unknown().optional(),
       })
       .optional(),
-    initiatorSessionIds: z.array(z.string()).optional(),
+    initiatorSessionIds: z.unknown().optional(),
     name: z.string().optional(),
-    participantsState: z
-      .record(z.string(), ParticipantActivationStateSchema)
-      .optional(),
+    participantsState: z.unknown().optional(),
   })
 );
 

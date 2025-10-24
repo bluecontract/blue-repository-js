@@ -6,7 +6,7 @@ export const TimelineSchema = withTypeBlueId(blueIds['Timeline'])(
   z.object({
     description: z.string().optional(),
     name: z.string().optional(),
-    timelineId: z.string().optional(),
+    timelineId: z.unknown().optional(),
   })
 );
 

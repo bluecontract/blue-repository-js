@@ -10,9 +10,9 @@ export const SingleDocumentPermissionGrantingInProgressSchema = withTypeBlueId(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    note: z.string().optional(),
+    note: z.unknown().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

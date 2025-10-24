@@ -8,7 +8,7 @@ export const SettlementAmountSpecifiedSchema = withTypeBlueId(
 )(
   ResponseSchema.extend({
     description: z.string().optional(),
-    finalAmount: z.number().optional(),
+    finalAmount: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

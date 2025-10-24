@@ -7,7 +7,7 @@ export const ProcessEmbeddedSchema = withTypeBlueId(
 )(
   z.object({
     name: z.string().optional(),
-    paths: z.array(z.string()).optional(),
+    paths: z.unknown().optional(),
   })
 );
 

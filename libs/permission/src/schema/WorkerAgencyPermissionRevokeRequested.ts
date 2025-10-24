@@ -9,7 +9,7 @@ export const WorkerAgencyPermissionRevokeRequestedSchema = withTypeBlueId(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    reason: z.string().optional(),
+    reason: z.unknown().optional(),
   })
 );
 

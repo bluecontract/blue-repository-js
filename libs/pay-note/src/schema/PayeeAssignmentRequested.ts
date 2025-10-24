@@ -9,7 +9,7 @@ export const PayeeAssignmentRequestedSchema = withTypeBlueId(
   RequestSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    payeeEmail: z.string().optional(),
+    payeeEmail: z.unknown().optional(),
   })
 );
 

@@ -1,14 +1,14 @@
 export const blueIds = {
-  Money: '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69',
+  Money: '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj',
   'Payee Account Number Change Approved by Bank':
-    'Yrpy3UA4KhfW5axU2E5rCoejQnHDaTjaZBLKUgcVb1d',
+    '6ff9c62j4af59tyxfhUw6GRooCEnFnynj1KMFxVUS8AC',
   'Payee Account Number Change Requested':
-    'GnGGfevYaNgUSv1qPtWDUhV5ReAFE7oFdGZ6FLD6Lf5L',
-  'Smart Transfer': 'B9a3hUCGe5vPGJcM7giQh553bNSxN1znCNS6eXUJZ8Q1',
+    '8N5ncnno6UCuhvKsG9NrR6xCJKmeUn38NFeoQvoht5yj',
+  'Smart Transfer': 'T52FwxVeRJypWoC17rW2viKr8SxFEcE9qt8T1BMkfwQ',
   'Transfer Authorization Approved by Bank':
-    '49ThQrHgJdJGs2FgyKrTe1cf98VV6xXe9r6wZJtjAiyE',
+    '8MyPATUAGkkUPXn7Hw8fj4WqbnZyfKVvwNexjSfUkJri',
   'Transfer Authorization Requested':
-    'D5KcP1MYfjbBRQd192SYZK9DxFNU3WrGp8VmZJjombEv',
+    'AosAMMyKZcGsEQS2jeH6pVinaCkzwHb8b1mLJWtNf8qF',
   'Transfer Cancellation Approved by Bank':
     '76RNmYLf2tz6urNmZTFmx8SMdYoxUdRaGJTDNbfkDYcr',
   'Transfer Cancellation Requested':

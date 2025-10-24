@@ -5,7 +5,7 @@ import { ResponseSchema } from '@blue-repository/core-dev';
 
 export const FundsCapturedSchema = withTypeBlueId(blueIds['Funds Captured'])(
   ResponseSchema.extend({
-    amountCaptured: z.number().optional(),
+    amountCaptured: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

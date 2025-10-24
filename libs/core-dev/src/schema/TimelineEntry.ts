@@ -12,7 +12,7 @@ export const TimelineEntrySchema = withTypeBlueId(blueIds['Timeline Entry'])(
     name: z.string().optional(),
     prevEntry: blueNodeField().optional(),
     timeline: TimelineSchema.optional(),
-    timestamp: z.number().optional(),
+    timestamp: z.unknown().optional(),
   })
 );
 

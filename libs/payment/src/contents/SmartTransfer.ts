@@ -2,37 +2,37 @@ export const smartTransfer = {
   cancelled: {
     description: 'Whether transfer has been cancelled',
     type: {
-      blueId: 'EL6AjrbJsxTWRTPzY8WR8Y2zAMXRbydQj83PcZwuAHbo',
+      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
     },
   },
   captured: {
     description: 'Whether transfer has been executed',
     type: {
-      blueId: 'EL6AjrbJsxTWRTPzY8WR8Y2zAMXRbydQj83PcZwuAHbo',
+      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
     },
   },
   contracts: {
     authorizeTransfer: {
       channel: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'bankChannel',
       },
       request: {
         description: 'Amount to authorize for transfer',
         type: {
-          blueId: '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69',
+          blueId: '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj',
         },
       },
       type: {
-        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+        blueId: 'H3KTSmqjT48Fjdoj5vY8EE98Sbp2FeNqBHGmUExRmrGk',
       },
     },
     authorizeTransferImpl: {
       operation: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'authorizeTransfer',
       },
@@ -44,19 +44,19 @@ export const smartTransfer = {
                 {
                   op: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: '/transferValue',
                   },
                   val: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: '${event.message.request}',
                   },
@@ -64,53 +64,53 @@ export const smartTransfer = {
               ],
             },
             type: {
-              blueId: 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',
+              blueId: '54tUHQY9L5Nu1YL3d86RfGPpNH5kzbxntssaS8yGmTXm',
             },
           },
           {
             code: {
               type: {
-                blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
               value:
                 'const transferValue = event.message.request;\nconst type = "Transfer Authorization Approved by Bank";\nreturn { "events": [{ "type": type, "transferValue": transferValue }] };\n',
             },
             type: {
-              blueId: 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
+              blueId: 'Hz1LwvihraqVw1xEhSG6eeKnnFnytPNTXKMZgG8wtWtR',
             },
           },
         ],
       },
       type: {
-        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
+        blueId: 'JAaLYym23FbqTJkan4NfmNpKxMHbXLHm71oxPqmFB2Sq',
       },
     },
     bankChannel: {
       type: {
-        blueId: 'xyBvDpt4fv9uqLMEvpJz4u6NDM9cpuanrmk1VsY7Z6V',
+        blueId: '64NmLPmy8DBzocUccDrwmwNus3pKg7r1Xd8vewQ8cLHo',
       },
     },
     cancelTransfer: {
       channel: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'bankChannel',
       },
       request: {
         description: 'Cancel the pending transfer',
         type: {
-          blueId: '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69',
+          blueId: '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj',
         },
       },
       type: {
-        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+        blueId: 'H3KTSmqjT48Fjdoj5vY8EE98Sbp2FeNqBHGmUExRmrGk',
       },
     },
     cancelTransferImpl: {
       operation: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'cancelTransfer',
       },
@@ -122,19 +122,19 @@ export const smartTransfer = {
                 {
                   op: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: '/cancelled',
                   },
                   val: {
                     type: {
-                      blueId: 'EL6AjrbJsxTWRTPzY8WR8Y2zAMXRbydQj83PcZwuAHbo',
+                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
                     },
                     value: true,
                   },
@@ -142,7 +142,7 @@ export const smartTransfer = {
               ],
             },
             type: {
-              blueId: 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',
+              blueId: '54tUHQY9L5Nu1YL3d86RfGPpNH5kzbxntssaS8yGmTXm',
             },
           },
           {
@@ -158,30 +158,30 @@ export const smartTransfer = {
         ],
       },
       type: {
-        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
+        blueId: 'JAaLYym23FbqTJkan4NfmNpKxMHbXLHm71oxPqmFB2Sq',
       },
     },
     captureTransfer: {
       channel: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'bankChannel',
       },
       request: {
         description: 'Execute the authorized transfer',
         type: {
-          blueId: '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69',
+          blueId: '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj',
         },
       },
       type: {
-        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+        blueId: 'H3KTSmqjT48Fjdoj5vY8EE98Sbp2FeNqBHGmUExRmrGk',
       },
     },
     captureTransferImpl: {
       operation: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'captureTransfer',
       },
@@ -193,19 +193,19 @@ export const smartTransfer = {
                 {
                   op: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: '/captured',
                   },
                   val: {
                     type: {
-                      blueId: 'EL6AjrbJsxTWRTPzY8WR8Y2zAMXRbydQj83PcZwuAHbo',
+                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
                     },
                     value: true,
                   },
@@ -213,7 +213,7 @@ export const smartTransfer = {
               ],
             },
             type: {
-              blueId: 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',
+              blueId: '54tUHQY9L5Nu1YL3d86RfGPpNH5kzbxntssaS8yGmTXm',
             },
           },
           {
@@ -229,30 +229,30 @@ export const smartTransfer = {
         ],
       },
       type: {
-        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
+        blueId: 'JAaLYym23FbqTJkan4NfmNpKxMHbXLHm71oxPqmFB2Sq',
       },
     },
     specifyPayeeAccountNumber: {
       channel: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'bankChannel',
       },
       request: {
         description: 'Account number where funds should be sent',
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
       },
       type: {
-        blueId: 'APkQmnhBWzQzpZAPHgyHeVm9QK8geARgVFg6418oFH1C',
+        blueId: 'H3KTSmqjT48Fjdoj5vY8EE98Sbp2FeNqBHGmUExRmrGk',
       },
     },
     specifyPayeeAccountNumberImpl: {
       operation: {
         type: {
-          blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
         value: 'specifyPayeeAccountNumber',
       },
@@ -264,19 +264,19 @@ export const smartTransfer = {
                 {
                   op: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: '/payeeAccountNumber',
                   },
                   val: {
                     type: {
-                      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
                     value: '${event.message.request}',
                   },
@@ -284,25 +284,25 @@ export const smartTransfer = {
               ],
             },
             type: {
-              blueId: 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',
+              blueId: '54tUHQY9L5Nu1YL3d86RfGPpNH5kzbxntssaS8yGmTXm',
             },
           },
           {
             code: {
               type: {
-                blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
               value:
                 'const payeeAccountNumber = event.message.request;\nconst type = "Payee Account Number Change Approved by Bank";\nreturn { "events": [{ "type": type, "payeeAccountNumber": payeeAccountNumber }] };\n',
             },
             type: {
-              blueId: 'CbkaaimMgTw2L5AP6bVWVKVArHkkrKuJxu6Uo4o6Piwr',
+              blueId: 'Hz1LwvihraqVw1xEhSG6eeKnnFnytPNTXKMZgG8wtWtR',
             },
           },
         ],
       },
       type: {
-        blueId: '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465',
+        blueId: 'JAaLYym23FbqTJkan4NfmNpKxMHbXLHm71oxPqmFB2Sq',
       },
     },
   },
@@ -311,19 +311,19 @@ export const smartTransfer = {
   payeeAccountNumber: {
     description: 'Destination account for the transfer',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   payerAccountNumber: {
     description: 'Source account for the transfer',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   transferValue: {
     description: 'Amount to be transferred',
     type: {
-      blueId: '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69',
+      blueId: '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj',
     },
   },
 } as const;

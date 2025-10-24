@@ -9,7 +9,7 @@ export const AddingParticipantRespondedSchema = withTypeBlueId(
   z.object({
     name: z.string().optional(),
     request: AddingParticipantRequestedSchema.optional(),
-    status: z.string().optional(),
+    status: z.unknown().optional(),
   })
 );
 

@@ -7,7 +7,7 @@ export const BootstrapFailedSchema = withTypeBlueId(
 )(
   z.object({
     name: z.string().optional(),
-    reason: z.string().optional(),
+    reason: z.unknown().optional(),
   })
 );
 

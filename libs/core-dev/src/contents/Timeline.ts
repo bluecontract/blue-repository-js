@@ -4,7 +4,7 @@ export const timeline = {
   timelineId: {
     description: 'Unique identifier for the timeline',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
 } as const;

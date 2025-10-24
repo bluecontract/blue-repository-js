@@ -10,9 +10,9 @@ export const SingleDocumentPermissionGrantRequestedSchema = withTypeBlueId(
   EventSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    onBehalfOf: z.string().optional(),
+    onBehalfOf: z.unknown().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

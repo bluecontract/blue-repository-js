@@ -9,7 +9,7 @@ export const AgentActorSchema = withTypeBlueId(blueIds['Agent Actor'])(
     agentRef: MyOSDocumentSessionReferenceSchema.optional(),
     delegation: MyOSDocumentSessionReferenceSchema.optional(),
     name: z.string().optional(),
-    onBehalfOf: z.string().optional(),
+    onBehalfOf: z.unknown().optional(),
   })
 );
 

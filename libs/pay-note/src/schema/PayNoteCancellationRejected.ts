@@ -9,7 +9,7 @@ export const PayNoteCancellationRejectedSchema = withTypeBlueId(
   ResponseSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    reason: z.string().optional(),
+    reason: z.unknown().optional(),
   })
 );
 

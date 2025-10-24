@@ -1,10 +1,10 @@
 export const updateDocument = {
   changeset: {
     itemType: {
-      blueId: 'HdRLN3dEgUJH9Yp3HVH2gDPjG7hsYEAVfWoFuStGrvuu',
+      blueId: 'GgvWdp9xdcmwWCMTVKgy2GCrP6Pbim5FQTrjMPH8yPoL',
     },
     type: {
-      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
     },
   },
   description: 'Updates the document with the changeset.',

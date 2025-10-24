@@ -1,7 +1,7 @@
 export const javaScriptCode = {
   code: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description: 'A workflow step that executes a JavaScript code.',

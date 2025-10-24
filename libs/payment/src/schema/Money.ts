@@ -4,8 +4,8 @@ import { withTypeBlueId } from '@blue-labs/language';
 
 export const MoneySchema = withTypeBlueId(blueIds['Money'])(
   z.object({
-    amount: z.number().optional(),
-    currency: z.string().optional(),
+    amount: z.unknown().optional(),
+    currency: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

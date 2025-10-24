@@ -27,10 +27,10 @@ export const SingleDocumentPermissionGrantToAccountSchema = withTypeBlueId(
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),
-    granterDocumentSessionId: z.string().optional(),
+    granterDocumentSessionId: z.unknown().optional(),
     name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

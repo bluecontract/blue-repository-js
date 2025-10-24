@@ -6,7 +6,7 @@ import { LinkSchema } from './Link';
 export const DocumentLinkSchema = withTypeBlueId(blueIds['Document Link'])(
   LinkSchema.extend({
     description: z.string().optional(),
-    documentId: z.string().optional(),
+    documentId: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

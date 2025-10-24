@@ -8,9 +8,9 @@ export const SubscribeToSessionRequestedSchema = withTypeBlueId(
 )(
   EventSchema.extend({
     description: z.string().optional(),
-    events: z.array(z.string()).optional(),
+    events: z.unknown().optional(),
     name: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: z.unknown().optional(),
   })
 );
 

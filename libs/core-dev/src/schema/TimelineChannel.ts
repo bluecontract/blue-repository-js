@@ -8,7 +8,7 @@ export const TimelineChannelSchema = withTypeBlueId(
 )(
   ChannelSchema.extend({
     name: z.string().optional(),
-    timelineId: z.string().optional(),
+    timelineId: z.unknown().optional(),
   })
 );
 

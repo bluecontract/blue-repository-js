@@ -6,12 +6,12 @@ export const SingleDocumentPermissionSetSchema = withTypeBlueId(
   blueIds['Single Document Permission Set']
 )(
   z.object({
-    allOps: z.boolean().optional(),
+    allOps: z.unknown().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
-    read: z.boolean().optional(),
-    share: z.boolean().optional(),
-    singleOps: z.array(z.string()).optional(),
+    read: z.unknown().optional(),
+    share: z.unknown().optional(),
+    singleOps: z.unknown().optional(),
   })
 );
 

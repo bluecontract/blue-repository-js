@@ -8,7 +8,7 @@ export const PayeeAccountNumberChangeRequestedSchema = withTypeBlueId(
   z.object({
     description: z.string().optional(),
     name: z.string().optional(),
-    payeeAccountNumber: z.string().optional(),
+    payeeAccountNumber: z.unknown().optional(),
   })
 );
 

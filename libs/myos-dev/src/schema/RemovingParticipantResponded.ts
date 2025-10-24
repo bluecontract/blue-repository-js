@@ -9,7 +9,7 @@ export const RemovingParticipantRespondedSchema = withTypeBlueId(
   z.object({
     name: z.string().optional(),
     request: RemovingParticipantRequestedSchema.optional(),
-    status: z.string().optional(),
+    status: z.unknown().optional(),
   })
 );
 

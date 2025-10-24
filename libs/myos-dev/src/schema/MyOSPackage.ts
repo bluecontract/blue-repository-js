@@ -2,29 +2,28 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
 import { AgentSchema } from './Agent';
-import { ChannelSchema } from '@blue-repository/core-dev';
 
 export const MyOSPackageSchema = withTypeBlueId(blueIds['MyOS Package'])(
   AgentSchema.extend({
-    agentStoreDescription: z.string().optional(),
+    agentStoreDescription: z.unknown().optional(),
     automationTemplate: z
       .object({
         description: z.string().optional(),
-        type: z.string().optional(),
+        type: z.unknown().optional(),
       })
       .optional(),
-    capabilities: z.record(z.string(), z.boolean()).optional(),
-    channelBindings: z.record(z.string(), ChannelSchema).optional(),
+    capabilities: z.unknown().optional(),
+    channelBindings: z.unknown().optional(),
     description: z.string().optional(),
     document: blueNodeField().optional(),
     initialMessages: z
       .object({
-        defaultMessage: z.string().optional(),
+        defaultMessage: z.unknown().optional(),
         description: z.string().optional(),
-        perChannel: z.record(z.string(), z.string()).optional(),
+        perChannel: z.unknown().optional(),
       })
       .optional(),
-    installerChannel: z.string().optional(),
+    installerChannel: z.unknown().optional(),
     name: z.string().optional(),
   })
 );

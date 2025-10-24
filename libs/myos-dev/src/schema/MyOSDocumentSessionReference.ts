@@ -7,9 +7,9 @@ export const MyOSDocumentSessionReferenceSchema = withTypeBlueId(
 )(
   z.object({
     description: z.string().optional(),
-    documentId: z.string().optional(),
+    documentId: z.unknown().optional(),
     name: z.string().optional(),
-    sessionId: z.string().optional(),
+    sessionId: z.unknown().optional(),
   })
 );
 

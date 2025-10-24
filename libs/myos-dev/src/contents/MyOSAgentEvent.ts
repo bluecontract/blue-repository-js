@@ -2,7 +2,7 @@ export const myOSAgentEvent = {
   agentId: {
     description: 'Optional agent identifier',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description:
@@ -13,14 +13,14 @@ export const myOSAgentEvent = {
   id: {
     description: 'Optional event ID',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'MyOS Agent Event',
   timestamp: {
     description: 'Optional timestamp for the event',
     type: {
-      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
+      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
     },
   },
 } as const;
