@@ -1,0 +1,36 @@
+{
+  "name": "@blue-repository/core",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo"
+  ],
+  "dependencies": {},
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluecontract/blue-repository-js.git"
+  },
+  "blueType": {
+    "moduleName": "Core",
+    "moduleBlueId": "F93sv2TiUggdPfRhm7R5syMyMXbfEGZiGXNtkPTRT5oD"
+  },
+  "peerDependencies": {
+    "@blue-labs/language": "^1.26.0",
+    "zod": "^3.23.8"
+  }
+}

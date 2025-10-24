@@ -5,14 +5,14 @@ export const jsonPatchEntry = {
   op: {
     description: 'The operation to be performed on the target JSON document.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   path: {
     description:
       'A JSON Pointer string indicating the location in the document where the operation should be applied. Must start with a forward slash (/).',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   val: {

@@ -3,6 +3,6 @@ export const payNoteCancelled = {
     'The Guarantor confirms PayNote cancellation requested by Payer.',
   name: 'PayNote Cancelled',
   type: {
-    blueId: '3Dcy3LEaQW8pEFy2diJ9YZk1KDoDyu3i4huKhWXpN5BG',
+    blueId: '49hRz5BXg1uHcQT5z3FGUFUqBSXxCXzqKuFy588zN3EA',
   },
 } as const;

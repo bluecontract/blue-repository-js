@@ -2,12 +2,12 @@ export const removingParticipantResponded = {
   name: 'Removing Participant Responded',
   request: {
     type: {
-      blueId: '2gnwi1cAknCcEdUoACnoSjfWD8oJRAhMyxmWnYD2595T',
+      blueId: 'FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C',
     },
   },
   status: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
 } as const;

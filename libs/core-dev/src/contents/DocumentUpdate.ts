@@ -4,7 +4,7 @@ export const documentUpdate = {
     description:
       'A JSON Pointer string referencing the location in the source document to move or copy from. Required for "move" and "copy" ops.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'Document Update',
@@ -12,14 +12,14 @@ export const documentUpdate = {
     description:
       'The operation to perform. One of: "add", "remove", "replace", "move", "copy".',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   path: {
     description:
       'A JSON Pointer string that references a location within the target document.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

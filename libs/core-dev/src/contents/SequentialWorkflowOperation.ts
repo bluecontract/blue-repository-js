@@ -6,10 +6,10 @@ export const sequentialWorkflowOperation = {
     description:
       'References the name of the operation definition that this implementation serves. Links this workflow to a specific Operation contract.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {
-    blueId: 'rjhSMnLxw45PaS3KLfjKgS2JoosfX4QYTHpWGwzpY4Y',
+    blueId: 'HFRNoa2joz3hzwNNTDMP2pWo1LafW3qmwmc5yZK5b6ky',
   },
 } as const;

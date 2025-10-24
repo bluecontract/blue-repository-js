@@ -6,7 +6,7 @@ export const request = {
     description:
       'A caller-generated ID for this specific request. This ID is used by the recipient to correlate their response.\n',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

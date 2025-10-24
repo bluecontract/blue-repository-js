@@ -3,6 +3,6 @@ export const payNoteApproved = {
     'The Guarantor confirms the PayNote is valid and ready for further action.',
   name: 'PayNote Approved',
   type: {
-    blueId: '3Dcy3LEaQW8pEFy2diJ9YZk1KDoDyu3i4huKhWXpN5BG',
+    blueId: '49hRz5BXg1uHcQT5z3FGUFUqBSXxCXzqKuFy588zN3EA',
   },
 } as const;

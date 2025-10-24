@@ -1,16 +1,16 @@
 export const workerAgencyPermissionGranted = {
   allowedWorkerAgencyPermissions: {
     itemType: {
-      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
+      blueId: '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
     },
     type: {
-      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
     },
   },
   description: 'DB rows written; rights are effective.',
   granteeDocumentId: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'Worker Agency Permission Granted',

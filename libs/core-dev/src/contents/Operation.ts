@@ -3,7 +3,7 @@ export const operation = {
     description:
       'Specifies the channel through which Operation Request events are sent to invoke this operation on the document.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description:

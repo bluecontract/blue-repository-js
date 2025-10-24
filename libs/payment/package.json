@@ -29,7 +29,7 @@
   },
   "blueType": {
     "moduleName": "PaymentV0.4",
-    "moduleBlueId": "6PhFehuBWQ5gNGjxRDtWajecycY5pApDPg7r4RQ7esVL"
+    "moduleBlueId": "6hEhikxx9ZGZz34vPJLh8oPmVxxCRDTh5DyH4ULg19Rk"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",

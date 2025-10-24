@@ -5,7 +5,7 @@ export const statusChange = {
   status: {
     description: 'The new status of the document.',
     type: {
-      blueId: 'HsnCTdM4Rxjp28V7yq4ezQHyRh7MJixqDKtzm3tiLbcN',
+      blueId: 'CewvMvGaShax8xhe9TuJmWbkpbpDwqyMcGTMwGft4pE5',
     },
   },
   type: {

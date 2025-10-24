@@ -3,10 +3,10 @@ export const payeeAssignmentRequested = {
   name: 'Payee Assignment Requested',
   payeeEmail: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {
-    blueId: '8HQh6LoN8aJ344qodmL6fR5eA7e83ri2CTAshHqU5pLk',
+    blueId: '3n91zvNzZkMN4mdBNMA3ez9ccJQDzkNcv67BtYnMW8Hn',
   },
 } as const;

@@ -1,10 +1,10 @@
 export const workerAgencyPermissionGrantRequested = {
   allowedWorkerAgencyPermissions: {
     itemType: {
-      blueId: 'AUJTbCkZXXz526NmpoQPQSnRoty3c9meouC3EU76GuRs',
+      blueId: '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
     },
     type: {
-      blueId: 'G8wmfjEqugPEEXByMYWJXiEdbLToPRWNQEekNxrxfQWB',
+      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
     },
   },
   description:
@@ -12,7 +12,7 @@ export const workerAgencyPermissionGrantRequested = {
   name: 'Worker Agency Permission Grant Requested',
   onBehalfOf: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

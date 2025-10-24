@@ -3,12 +3,12 @@ export const statusPending = {
     'A generic initial state. The document is waiting for an initial action\nor condition to be met before it becomes active.',
   mode: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
     value: 'pending',
   },
   name: 'Status Pending',
   type: {
-    blueId: 'HsnCTdM4Rxjp28V7yq4ezQHyRh7MJixqDKtzm3tiLbcN',
+    blueId: 'CewvMvGaShax8xhe9TuJmWbkpbpDwqyMcGTMwGft4pE5',
   },
 } as const;

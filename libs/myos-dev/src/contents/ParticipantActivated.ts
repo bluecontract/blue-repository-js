@@ -1,13 +1,13 @@
 export const participantActivated = {
   channelName: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   name: 'Participant Activated',
   participant: {
     type: {
-      blueId: 'B1W38RbaLYqkaPVP6upwrF6Z8G95LA7yPMPPXPvWvuRW',
+      blueId: 'phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ',
     },
   },
 } as const;

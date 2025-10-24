@@ -16,13 +16,13 @@ export const timelineEntry = {
   timeline: {
     description: 'Timeline this entry belongs to',
     type: {
-      blueId: 'C7TsyShrDryZ121B2EJMKD9ui1ozmvTfGUkquRKkSvAP',
+      blueId: 'HNd6PnN85yyLgR9cwEK3syx37QCqh7n9GeQwFPjj1TnN',
     },
   },
   timestamp: {
     description: 'Timestamp of the timeline entry',
     type: {
-      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
+      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
     },
   },
 } as const;

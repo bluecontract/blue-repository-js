@@ -30,7 +30,7 @@
   },
   "blueType": {
     "moduleName": "PermissionV0.6",
-    "moduleBlueId": "CiGviugKFNo5zGpxAGvNVRRpHS1AEDWTuwfYPdqHdjuf"
+    "moduleBlueId": "6qJmiiSGzaSmh89C5DHVtDcAEDGYr4DoKJVTG7mr43K1"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",
