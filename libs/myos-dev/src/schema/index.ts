@@ -4,6 +4,8 @@ export * from './AddingParticipantResponded';
 
 export * from './Agent';
 
+export * from './AgentActor';
+
 export * from './AllParticipantsReady';
 
 export * from './BootstrapFailed';
@@ -40,6 +42,8 @@ export * from './MyOSAgentChannel';
 
 export * from './MyOSAgentEvent';
 
+export * from './MyOSDocumentSessionReference';
+
 export * from './MyOSPackage';
 
 export * from './MyOSParticipantsOrchestration';
@@ -63,6 +67,8 @@ export * from './ParticipantActivated';
 export * from './ParticipantActivationState';
 
 export * from './ParticipantResolved';
+
+export * from './PrincipalActor';
 
 export * from './RemovingParticipantRequested';
 

@@ -11,7 +11,6 @@ export const MyOSTimelineEntrySchema = withTypeBlueId(
     description: z.string().optional(),
     name: z.string().optional(),
     timeline: MyOSTimelineSchema.optional(),
-    timestamp: z.number().optional(),
   })
 );
 

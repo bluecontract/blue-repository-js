@@ -9,12 +9,15 @@ import { callOperationAccepted } from './CallOperationAccepted';
 import { participantActivated } from './ParticipantActivated';
 import { participantActivationState } from './ParticipantActivationState';
 import { myOSSessionLink } from './MyOSSessionLink';
+import { myOSTimelineEntry } from './MyOSTimelineEntry';
 import { myOSTimeline } from './MyOSTimeline';
 import { agent } from './Agent';
 import { bootstrapFailed } from './BootstrapFailed';
 import { participantResolved } from './ParticipantResolved';
 import { myOSAgent } from './MyOSAgent';
+import { myOSDocumentSessionReference } from './MyOSDocumentSessionReference';
 import { callOperationRequested } from './CallOperationRequested';
+import { principalActor } from './PrincipalActor';
 import { startWorkerSessionRequested } from './StartWorkerSessionRequested';
 import { workerSessionStarting } from './WorkerSessionStarting';
 import { participant } from './Participant';
@@ -25,11 +28,11 @@ import { myOSTimelineChannel } from './MyOSTimelineChannel';
 import { myOSAgentEvent } from './MyOSAgentEvent';
 import { myOSSessionInteraction } from './MyOSSessionInteraction';
 import { documentTypeLink } from './DocumentTypeLink';
+import { agentActor } from './AgentActor';
 import { informUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
 import { allParticipantsReady } from './AllParticipantsReady';
 import { documentAnchors } from './DocumentAnchors';
 import { subscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
-import { myOSTimelineEntry } from './MyOSTimelineEntry';
 import { targetDocumentSessionStarted } from './TargetDocumentSessionStarted';
 import { link } from './Link';
 import { myOSAgentChannel } from './MyOSAgentChannel';
@@ -54,12 +57,15 @@ export const contents = {
   '6Zztm3YUuFwM5FoJ5Se9rsghP1BgQa3rLHoR8BhdNsTM': participantActivated,
   '77dKAvJLiqw5WXwyjHNRXfkh3ep8sHw7Q4gQyJEfoadJ': participantActivationState,
   '7KrNKQKRudzrkicnys3gSoD89vTztEcqLjZaXt28kumD': myOSSessionLink,
+  '7vkapo6WvxN59j6jg466561fUa9QnTLiJgejfFn3JuME': myOSTimelineEntry,
   '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog': myOSTimeline,
   '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc': agent,
   '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx': bootstrapFailed,
   '8wwU4rYswgfNnVYgEEBeLEdaPwXMzLzNs6do7bawa7xD': participantResolved,
   '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN': myOSAgent,
+  AEACcwsUfmNSemtyrbauz4P42wkYvb6xVjxLjxt83c7q: myOSDocumentSessionReference,
   AkrotF7YFUX8kGpZbT27WCB7ELyCzNeZbTu5x1xYJJwF: callOperationRequested,
+  AS4wD5UjhUkw4R15SAikr9GE2zMn4nTV5rPDpNcN6L1X: principalActor,
   AW8wxSUhdEwUA1LVRQhhQE3JYhEdeoafmjAeJxYtowGr: startWorkerSessionRequested,
   AXWFLUyrMeVzMkRifHDkqrUXs5vaFLN6wqwxHgwitJpg: workerSessionStarting,
   B1W38RbaLYqkaPVP6upwrF6Z8G95LA7yPMPPXPvWvuRW: participant,
@@ -70,11 +76,11 @@ export const contents = {
   C99Sgq7uyEjz4YH7L27Aj1aahV2tJMAoCVct3ZiZp8av: myOSAgentEvent,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: myOSSessionInteraction,
   CYkqfj8i3GfLimntXLGiVrhUndEfGXhoSepyK286V2jF: documentTypeLink,
+  EfGPDTC21M2BVhmmbXiRzZk6wzbpSZLVjwG7nBqbofPw: agentActor,
   EgpxBT3LpGnPuyFigEHoNkdu5gLcvLjWTzvZU8Q9VnWk: informUserToInstallMyOSPackage,
   Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: allParticipantsReady,
   FShRzTCfHGi2Bdaxu8chuQRhkqTGVQeu5yr84E53VkKA: documentAnchors,
   FtRQqoqPPruF2uMi4UJmd3oCu2HGbWFgNPhxKVuhoMB6: subscriptionToSessionRevoked,
-  FW2R85SUhYpoCVrzyr3DYWXK9TJNAuw5HLAmzdUnW6M3: myOSTimelineEntry,
   GMcNBF1gqzRK4JmMoxjspfdUzXLSknoszawm8qAjfDv7: targetDocumentSessionStarted,
   GmD5hRiYhRVGSSQi5ArqffecvoJTd1SvxAZ3usDRs6gT: link,
   GvLXrz3siPPmmSLz1gHrQ4PCpDvjESdEfWSWUNwKrhf1: myOSAgentChannel,

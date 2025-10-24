@@ -1,18 +1,17 @@
 export const timelineEntry = {
+  actor: {
+    description: 'Who created this entry',
+    type: {
+      blueId: '3HHc1g5hMLhddtHvxyHCAFJxtruwGCc951GKEoUiY7W4',
+    },
+  },
+  description: 'Represents a single entry in a timeline.',
   message: {
     description: 'Message',
   },
   name: 'Timeline Entry',
-  signature: {
-    type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
-    },
-  },
-  thread: {
-    description: 'Optional thread',
-  },
-  threadPrev: {
-    description: 'Previous entry in the thread',
+  prevEntry: {
+    description: 'Previous entry',
   },
   timeline: {
     description: 'Timeline this entry belongs to',
@@ -20,7 +19,10 @@ export const timelineEntry = {
       blueId: 'C7TsyShrDryZ121B2EJMKD9ui1ozmvTfGUkquRKkSvAP',
     },
   },
-  timelinePrev: {
-    description: 'Previous entry',
+  timestamp: {
+    description: 'Timestamp of the timeline entry',
+    type: {
+      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
+    },
   },
 } as const;

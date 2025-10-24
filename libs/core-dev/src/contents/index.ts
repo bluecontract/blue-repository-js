@@ -1,10 +1,10 @@
 import { channel } from './Channel';
 import { sequentialWorkflowOperation } from './SequentialWorkflowOperation';
 import { processEmbedded } from './ProcessEmbedded';
-import { timelineEntry } from './TimelineEntry';
 import { response } from './Response';
 import { marker } from './Marker';
 import { event } from './Event';
+import { actor } from './Actor';
 import { lifecycleEvent } from './LifecycleEvent';
 import { chatMessage } from './ChatMessage';
 import { documentUpdateChannel } from './DocumentUpdateChannel';
@@ -14,6 +14,7 @@ import { statusFailed } from './StatusFailed';
 import { documentProcessingInitiated } from './DocumentProcessingInitiated';
 import { statusChange } from './StatusChange';
 import { request } from './Request';
+import { timelineEntry } from './TimelineEntry';
 import { lifecycleEventChannel } from './LifecycleEventChannel';
 import { embeddedNodeChannel } from './EmbeddedNodeChannel';
 import { initializedMarker } from './InitializedMarker';
@@ -40,10 +41,10 @@ export const contents = {
   '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY': channel,
   '27JYkbWuBwyPYUZCjP67K6hxXQ7gndzdwgU8yrau2465': sequentialWorkflowOperation,
   '2eAkQahk1Ce5qC9Rzwkmc5eU1yYG3asRS21gBYePb4KE': processEmbedded,
-  '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL': timelineEntry,
   '3Dcy3LEaQW8pEFy2diJ9YZk1KDoDyu3i4huKhWXpN5BG': response,
   '3gJb4roGCuJQ1gibFXex6HoNjuTeiPvYRCquujAvg83t': marker,
   '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar': event,
+  '3HHc1g5hMLhddtHvxyHCAFJxtruwGCc951GKEoUiY7W4': actor,
   '3nViyQeU3RwjHJ7wtCoef7dwe7JPqYEvZUKEx4FohuP5': lifecycleEvent,
   '51RV2uUTrvMb1P1u9pno6r4Ujbns9kBJRFbZrq45C6WS': chatMessage,
   '5emTmQdhCatJU4jGWQbb14A4NTrhKggd4e6ToV6ySHtn': documentUpdateChannel,
@@ -53,6 +54,7 @@ export const contents = {
   '75eYxjwaABUcTCuKCeg1Pf1jjwDarLnFLXtxERehWFCv': documentProcessingInitiated,
   '7gvd9dkoEmTAkcuQwanuNsqV9YSMMeXSazWfVoCYe2s9': statusChange,
   '8HQh6LoN8aJ344qodmL6fR5eA7e83ri2CTAshHqU5pLk': request,
+  '8LwdRpwMCKH3wSs7yzD4zLEYvjN9RZDSJSKoxkjVxhyr': timelineEntry,
   '8XrM27vz8BEC7vDT6Yn41fRwucLeLFXsvqLt7JCvkG4c': lifecycleEventChannel,
   '9FT814paTzhSQ3sRPUWoj7Qv5EeWGhXvhU5ebNpbkv2S': embeddedNodeChannel,
   '9Wgpr1kx18MaV1C6QraNbS2mYeapUhHh5SDAuNFTCHcf': initializedMarker,
