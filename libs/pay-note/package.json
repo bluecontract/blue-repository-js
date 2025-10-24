@@ -28,8 +28,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "PayNote",
-    "moduleBlueId": "41RbAN4p2j5X5jxdnac7Q8hxWJ9Ay6G3CrntqE65nTwg"
+    "moduleName": "PayNoteV0.2",
+    "moduleBlueId": "5tPZEBEdJXBdYWpz7qSKVd3ExuXBRgHE9k3BbH7YzE32"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",

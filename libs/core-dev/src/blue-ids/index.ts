@@ -1,4 +1,5 @@
 export const blueIds = {
+  Actor: '3HHc1g5hMLhddtHvxyHCAFJxtruwGCc951GKEoUiY7W4',
   Channel: '23ZWQ6WWqFcyuoBDV9P8XaLk2oEwJtoQaPrkFFayZVqY',
   'Channel Event Checkpoint': 'GWGpN9tAX5i3MUic8NhrfRtKDh9mz6dxBys8NXyPYXZf',
   'Chat Message': '51RV2uUTrvMb1P1u9pno6r4Ujbns9kBJRFbZrq45C6WS',
@@ -35,7 +36,7 @@ export const blueIds = {
   'Status Pending': '5RD2v96BsZLWijdSyrjG6qFXHqqdS2mSzQoqX9B5ooN3',
   Timeline: 'C7TsyShrDryZ121B2EJMKD9ui1ozmvTfGUkquRKkSvAP',
   'Timeline Channel': 'xyBvDpt4fv9uqLMEvpJz4u6NDM9cpuanrmk1VsY7Z6V',
-  'Timeline Entry': '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL',
+  'Timeline Entry': '8LwdRpwMCKH3wSs7yzD4zLEYvjN9RZDSJSKoxkjVxhyr',
   'Trigger Event': 'BWBJFxM7DtorfwMewvrfn3938VBCa3seKXTkkfpCwrQ1',
   'Triggered Event Channel': 'CXk6kCQ4S28Ee7piJ5a96fXAdgxW7VsuzG4cyJpTgsNL',
   'Update Document': 'Bf61yTzodeWXWCTaiZqNNPf5Zbpet1ZUczvuewiL3rSZ',

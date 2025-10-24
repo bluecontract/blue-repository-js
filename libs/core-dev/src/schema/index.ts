@@ -1,3 +1,5 @@
+export * from './Actor';
+
 export * from './Channel';
 
 export * from './ChannelEventCheckpoint';

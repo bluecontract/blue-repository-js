@@ -28,8 +28,8 @@
     "url": "https://github.com/bluecontract/blue-repository-js.git"
   },
   "blueType": {
-    "moduleName": "PaymentV0.3",
-    "moduleBlueId": "FBBgiLJup3vbGTixZmAVmoMY3hgVkUrSoUvo3LhGYQJ6"
+    "moduleName": "PaymentV0.4",
+    "moduleBlueId": "6PhFehuBWQ5gNGjxRDtWajecycY5pApDPg7r4RQ7esVL"
   },
   "peerDependencies": {
     "@blue-labs/language": "^1.26.0",

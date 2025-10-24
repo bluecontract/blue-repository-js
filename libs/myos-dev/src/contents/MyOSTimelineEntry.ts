@@ -7,13 +7,7 @@ export const myOSTimelineEntry = {
       blueId: '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog',
     },
   },
-  timestamp: {
-    description: 'Timestamp of the MyOS timeline entry',
-    type: {
-      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
-    },
-  },
   type: {
-    blueId: '3BfN3pzCyuWfyksE6P467WJEtYqAvUeC9LybJA6iXVtL',
+    blueId: '8LwdRpwMCKH3wSs7yzD4zLEYvjN9RZDSJSKoxkjVxhyr',
   },
 } as const;

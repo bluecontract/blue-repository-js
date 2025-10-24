@@ -4,6 +4,7 @@ export const blueIds = {
   'Adding Participant Responded':
     'H556UWC5XU8vj53PqHaXQQwXrGia9uHHkkdQpExJXJYT',
   Agent: '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc',
+  'Agent Actor': 'EfGPDTC21M2BVhmmbXiRzZk6wzbpSZLVjwG7nBqbofPw',
   'All Participants Ready': 'Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC',
   'Bootstrap Failed': '8WpUtXczWTnk5cc38GNVH59ZBEwh5B9WEwjK9RGmSjqx',
   'Call Operation Accepted': '6UB61y8bWPgf6bqXTQmXV2tkKWDS3VGRrrzd5y9sbGZ5',
@@ -23,6 +24,8 @@ export const blueIds = {
   'MyOS Agent': '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN',
   'MyOS Agent Channel': 'GvLXrz3siPPmmSLz1gHrQ4PCpDvjESdEfWSWUNwKrhf1',
   'MyOS Agent Event': 'C99Sgq7uyEjz4YH7L27Aj1aahV2tJMAoCVct3ZiZp8av',
+  'MyOS Document Session Reference':
+    'AEACcwsUfmNSemtyrbauz4P42wkYvb6xVjxLjxt83c7q',
   'MyOS Package': '2yuq1Cpoe5cGoWuJAFUNuzdR5aFEqd7e4XxDBcQ8He49',
   'MyOS Participants Orchestration':
     '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
@@ -30,13 +33,14 @@ export const blueIds = {
   'MyOS Session Link': '7KrNKQKRudzrkicnys3gSoD89vTztEcqLjZaXt28kumD',
   'MyOS Timeline': '8cyT2HqPHGFBNjLnZzqsb4qN3CqZxMQEWo3h7KLVCfog',
   'MyOS Timeline Channel': 'Bx3dgXf5uFkGf9KxkUTFWQhbEw9QBc9cTgz1KP1Qtgh6',
-  'MyOS Timeline Entry': 'FW2R85SUhYpoCVrzyr3DYWXK9TJNAuw5HLAmzdUnW6M3',
+  'MyOS Timeline Entry': '7vkapo6WvxN59j6jg466561fUa9QnTLiJgejfFn3JuME',
   'MyOS Worker Agency': '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1',
   Participant: 'B1W38RbaLYqkaPVP6upwrF6Z8G95LA7yPMPPXPvWvuRW',
   'Participant Activated': '6Zztm3YUuFwM5FoJ5Se9rsghP1BgQa3rLHoR8BhdNsTM',
   'Participant Activation State':
     '77dKAvJLiqw5WXwyjHNRXfkh3ep8sHw7Q4gQyJEfoadJ',
   'Participant Resolved': '8wwU4rYswgfNnVYgEEBeLEdaPwXMzLzNs6do7bawa7xD',
+  'Principal Actor': 'AS4wD5UjhUkw4R15SAikr9GE2zMn4nTV5rPDpNcN6L1X',
   'Removing Participant Requested':
     '2gnwi1cAknCcEdUoACnoSjfWD8oJRAhMyxmWnYD2595T',
   'Removing Participant Responded':
