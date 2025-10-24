@@ -1,13 +1,13 @@
 export const captureFundsRequested = {
   amount: {
     type: {
-      blueId: 'DHmxTkFbXePZHCHCYmQr2dSzcNLcryFVjXVHkdQrrZr8',
+      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
     },
   },
   description:
     'A participant (usually the Payee) requests the final transfer of funds.',
   name: 'Capture Funds Requested',
   type: {
-    blueId: '8HQh6LoN8aJ344qodmL6fR5eA7e83ri2CTAshHqU5pLk',
+    blueId: '3n91zvNzZkMN4mdBNMA3ez9ccJQDzkNcv67BtYnMW8Hn',
   },
 } as const;

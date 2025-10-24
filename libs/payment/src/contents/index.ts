@@ -1,27 +1,27 @@
 import { money } from './Money';
-import { transferAuthorizationApprovedByBank } from './TransferAuthorizationApprovedByBank';
+import { payeeAccountNumberChangeApprovedByBank } from './PayeeAccountNumberChangeApprovedByBank';
 import { transferCancellationApprovedByBank } from './TransferCancellationApprovedByBank';
+import { transferAuthorizationApprovedByBank } from './TransferAuthorizationApprovedByBank';
+import { payeeAccountNumberChangeRequested } from './PayeeAccountNumberChangeRequested';
 import { transferCaptureApprovedByBank } from './TransferCaptureApprovedByBank';
-import { smartTransfer } from './SmartTransfer';
 import { transferAuthorizationRequested } from './TransferAuthorizationRequested';
 import { transferCaptureRequested } from './TransferCaptureRequested';
-import { payeeAccountNumberChangeRequested } from './PayeeAccountNumberChangeRequested';
 import { transferCancellationRequested } from './TransferCancellationRequested';
-import { payeeAccountNumberChangeApprovedByBank } from './PayeeAccountNumberChangeApprovedByBank';
+import { smartTransfer } from './SmartTransfer';
 
 export const contents = {
-  '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69': money,
-  '49ThQrHgJdJGs2FgyKrTe1cf98VV6xXe9r6wZJtjAiyE':
-    transferAuthorizationApprovedByBank,
+  '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj': money,
+  '6ff9c62j4af59tyxfhUw6GRooCEnFnynj1KMFxVUS8AC':
+    payeeAccountNumberChangeApprovedByBank,
   '76RNmYLf2tz6urNmZTFmx8SMdYoxUdRaGJTDNbfkDYcr':
     transferCancellationApprovedByBank,
-  '9VxFD2G57RLHBfAuKTpXTdr3GDV5TVXuje6ZPUsYJfHV': transferCaptureApprovedByBank,
-  B9a3hUCGe5vPGJcM7giQh553bNSxN1znCNS6eXUJZ8Q1: smartTransfer,
-  D5KcP1MYfjbBRQd192SYZK9DxFNU3WrGp8VmZJjombEv: transferAuthorizationRequested,
-  FZBYRqmomC7WX2BwAfcrcWjdE5LoQSRYYKnoww2mpcLz: transferCaptureRequested,
-  GnGGfevYaNgUSv1qPtWDUhV5ReAFE7oFdGZ6FLD6Lf5L:
+  '8MyPATUAGkkUPXn7Hw8fj4WqbnZyfKVvwNexjSfUkJri':
+    transferAuthorizationApprovedByBank,
+  '8N5ncnno6UCuhvKsG9NrR6xCJKmeUn38NFeoQvoht5yj':
     payeeAccountNumberChangeRequested,
+  '9VxFD2G57RLHBfAuKTpXTdr3GDV5TVXuje6ZPUsYJfHV': transferCaptureApprovedByBank,
+  AosAMMyKZcGsEQS2jeH6pVinaCkzwHb8b1mLJWtNf8qF: transferAuthorizationRequested,
+  FZBYRqmomC7WX2BwAfcrcWjdE5LoQSRYYKnoww2mpcLz: transferCaptureRequested,
   HjToW1puNScEFcsKAvSvJ85y9xBXGw4LAoVcqnt9DDAd: transferCancellationRequested,
-  Yrpy3UA4KhfW5axU2E5rCoejQnHDaTjaZBLKUgcVb1d:
-    payeeAccountNumberChangeApprovedByBank,
+  T52FwxVeRJypWoC17rW2viKr8SxFEcE9qt8T1BMkfwQ: smartTransfer,
 } as const;

@@ -3,7 +3,7 @@ export const payeeAccountNumberChangeApprovedByBank = {
   name: 'Payee Account Number Change Approved by Bank',
   payeeAccountNumber: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
 } as const;

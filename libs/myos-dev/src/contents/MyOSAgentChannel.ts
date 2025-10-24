@@ -2,7 +2,7 @@ export const myOSAgentChannel = {
   agent: {
     description: 'Optional MyOS agent associated with this channel',
     type: {
-      blueId: '9dvBsvQ5tGUZmR3bQkRy8nfwzAkSuM4NA8e4Fmy9eJtN',
+      blueId: '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
     },
   },
   description:

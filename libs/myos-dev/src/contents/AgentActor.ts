@@ -2,20 +2,20 @@ export const agentActor = {
   agentRef: {
     description: 'Which Worker acted',
     type: {
-      blueId: 'AEACcwsUfmNSemtyrbauz4P42wkYvb6xVjxLjxt83c7q',
+      blueId: '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9',
     },
   },
   delegation: {
     description: 'The grant document/session used',
     type: {
-      blueId: 'AEACcwsUfmNSemtyrbauz4P42wkYvb6xVjxLjxt83c7q',
+      blueId: '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9',
     },
   },
   name: 'Agent Actor',
   onBehalfOf: {
     description: "The principal's accountId",
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

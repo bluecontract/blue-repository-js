@@ -3,10 +3,10 @@ export const childPayNoteIssuanceDeclined = {
   name: 'Child PayNote Issuance Declined',
   reason: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {
-    blueId: '3Dcy3LEaQW8pEFy2diJ9YZk1KDoDyu3i4huKhWXpN5BG',
+    blueId: '49hRz5BXg1uHcQT5z3FGUFUqBSXxCXzqKuFy588zN3EA',
   },
 } as const;

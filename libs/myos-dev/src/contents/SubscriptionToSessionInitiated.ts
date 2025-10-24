@@ -2,7 +2,7 @@ export const subscriptionToSessionInitiated = {
   at: {
     description: 'ISO 8601 timestamp when the subscription became active.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description:
@@ -11,7 +11,7 @@ export const subscriptionToSessionInitiated = {
   targetSessionId: {
     description: 'Session being observed.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

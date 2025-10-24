@@ -2,12 +2,12 @@ export const addingParticipantResponded = {
   name: 'Adding Participant Responded',
   request: {
     type: {
-      blueId: 'HxcK5S9Lz2q5cqtER8kKgLQzDARZGiUAxWuhtBi2ev3a',
+      blueId: 'A3nxy96fKtp3bPnCYP14uhrnYCJoigDLJNvdbGnjdXg6',
     },
   },
   status: {
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
 } as const;

@@ -6,7 +6,7 @@ export const stateChange = {
     description:
       'Indicates the new state of the document (e.g., "cancelled", "approved", "pending") when a state change occurs during workflow execution.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
 } as const;

@@ -2,7 +2,7 @@ export const principalActor = {
   accountId: {
     description: 'MyOS account ID of the principal.',
     type: {
-      blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description: 'The base type for a direct action by the account owner.',

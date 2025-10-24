@@ -13,13 +13,13 @@ export const sessionEpochAdvanced = {
     targetSessionId: {
       description: 'Session whose state advanced.',
       type: {
-        blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
       },
     },
     timestamp: {
       description: 'ISO 8601 timestamp for the emission.',
       type: {
-        blueId: 'F92yo19rCcbBoBSpUA5LRxpfDejJDAaP1PRxxbWAraVP',
+        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
       },
     },
   },

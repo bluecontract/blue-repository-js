@@ -3,7 +3,7 @@ export const transferAuthorizationRequested = {
   name: 'Transfer Authorization Requested',
   transferValue: {
     type: {
-      blueId: '2j7UPYByyy4QPwUcegt1kpp7u7xT2qkKvUQsahzqzS69',
+      blueId: '3MmBpnHfzcm8JLwMZx5nBXo6S1eyjf5Gz17Js4N4Wvfj',
     },
   },
 } as const;

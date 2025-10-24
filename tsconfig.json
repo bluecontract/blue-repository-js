@@ -20,6 +20,9 @@
     },
     {
       "path": "./libs/pay-note"
+    },
+    {
+      "path": "./libs/core"
     }
   ]
 }
