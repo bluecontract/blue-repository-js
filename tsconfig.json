@@ -13,12 +13,6 @@
       "path": "./libs/myos-dev"
     },
     {
-      "path": "./libs/payment"
-    },
-    {
-      "path": "./libs/permission"
-    },
-    {
       "path": "./libs/pay-note"
     },
     {
