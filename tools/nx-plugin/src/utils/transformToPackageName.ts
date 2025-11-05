@@ -6,7 +6,7 @@ type Options = {
 export function transformToPackageName(
   raw: string,
   {
-    keepTogether = ['myos'],
+    keepTogether = ['myos', 'paynote'],
     // Removed “https” – it was falsely matching the “HttpS” in “HttpServer”
     // and producing “http-s-erver”. The standard camel-case logic still
     // gives us the correct “https-…” boundary when the string really *is*
