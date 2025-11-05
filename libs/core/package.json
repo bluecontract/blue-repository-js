@@ -30,7 +30,7 @@
     "moduleBlueId": "F93sv2TiUggdPfRhm7R5syMyMXbfEGZiGXNtkPTRT5oD"
   },
   "peerDependencies": {
-    "@blue-labs/language": "^1.26.0",
+    "@blue-labs/language": "^1.26.0 || ^2.0.0-0",
     "zod": "^3.23.8"
   }
 }
