@@ -20,6 +20,12 @@
     },
     {
       "path": "./libs/conversation"
+    },
+    {
+      "path": "./libs/paynote"
+    },
+    {
+      "path": "./libs/myos"
     }
   ]
 }
