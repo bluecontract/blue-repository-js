@@ -47,7 +47,7 @@ export const chatGPTConnectorAgent = {
                 type: {
                   blueId: 'GS5aDM715CBXJv8tChoGYgiLWyEiyS4qRm6yBQPaLN32',
                 },
-                value: '${event.message.request.package}',
+                value: '${event.request.package}',
               },
               title: {
                 type: {
