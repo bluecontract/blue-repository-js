@@ -10,6 +10,7 @@ export const SubscriptionToSessionInitiatedSchema = withTypeBlueId(
     at: z.string().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
+    subscriptionId: z.string().optional(),
     targetSessionId: z.string().optional(),
   })
 );

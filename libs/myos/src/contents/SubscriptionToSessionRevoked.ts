@@ -8,6 +8,12 @@ export const subscriptionToSessionRevoked = {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
+  subscriptionId: {
+    description: 'The subscription id that was revoked.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   targetSessionId: {
     description: 'Session that is no longer being forwarded.',
     type: {

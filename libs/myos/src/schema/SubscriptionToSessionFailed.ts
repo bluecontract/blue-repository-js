@@ -10,6 +10,7 @@ export const SubscriptionToSessionFailedSchema = withTypeBlueId(
     description: z.string().optional(),
     name: z.string().optional(),
     reason: z.string().optional(),
+    subscriptionId: z.string().optional(),
     targetSessionId: z.string().optional(),
   })
 );

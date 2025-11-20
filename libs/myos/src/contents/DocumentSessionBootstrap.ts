@@ -388,6 +388,6 @@ export const documentSessionBootstrap = {
     },
   },
   type: {
-    blueId: 'A1tMXCeRAYcvysLdBvZkfztu16kYi5yecpvxs5cTuneh',
+    blueId: '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd',
   },
 } as const;

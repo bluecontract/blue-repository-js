@@ -1,0 +1,38 @@
+{
+  "name": "@blue-repository/myos-de",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo"
+  ],
+  "dependencies": {
+    "@blue-repository/core-dev": "0.22.1"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluecontract/blue-repository-js.git"
+  },
+  "blueType": {
+    "moduleName": "MyOSDev0.2",
+    "moduleBlueId": "DVz1o53aLwyzsw46dRgxJeGqy5Fk9AdcyQpWryG8gpEE"
+  },
+  "peerDependencies": {
+    "@blue-labs/language": "^1.26.0 || ^2.0.0-0",
+    "zod": "^3.23.8"
+  }
+}
