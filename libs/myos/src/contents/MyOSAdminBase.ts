@@ -35,7 +35,7 @@ export const myOSAdminBase = {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value: 'return { events: event.request };\n',
+              value: 'return { events: event.message.request };\n',
             },
             name: 'EmitAdminEvents',
             type: {

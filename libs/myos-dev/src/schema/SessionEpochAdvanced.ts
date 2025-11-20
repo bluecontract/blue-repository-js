@@ -8,15 +8,11 @@ export const SessionEpochAdvancedSchema = withTypeBlueId(
 )(
   EventSchema.extend({
     description: z.string().optional(),
+    document: blueNodeField().optional(),
+    epoch: z.number().optional(),
     name: z.string().optional(),
-    update: z
-      .object({
-        description: z.string().optional(),
-        document: blueNodeField().optional(),
-        targetSessionId: z.string().optional(),
-        timestamp: z.string().optional(),
-      })
-      .optional(),
+    sessionId: z.string().optional(),
+    timestamp: z.string().optional(),
   })
 );
 

@@ -8,6 +8,12 @@ export const subscriptionToSessionInitiated = {
   description:
     'Confirms that MyOS Admin accepted the subscription request and will start forwarding updates.',
   name: 'Subscription to Session Initiated',
+  subscriptionId: {
+    description: 'The subscription id that was initiated.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   targetSessionId: {
     description: 'Session being observed.',
     type: {
