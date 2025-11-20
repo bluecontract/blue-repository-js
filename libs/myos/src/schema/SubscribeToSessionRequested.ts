@@ -8,8 +8,13 @@ export const SubscribeToSessionRequestedSchema = withTypeBlueId(
 )(
   EventSchema.extend({
     description: z.string().optional(),
-    events: z.array(z.string()).optional(),
     name: z.string().optional(),
+    subscription: z
+      .object({
+        events: z.array(z.unknown()).optional(),
+        id: z.string().optional(),
+      })
+      .optional(),
     targetSessionId: z.string().optional(),
   })
 );

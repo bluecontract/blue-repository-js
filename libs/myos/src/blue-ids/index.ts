@@ -10,17 +10,17 @@ export const blueIds = {
   'Call Operation Accepted': '4cSMHJgNNbuDfaQ3uVH6QB9YX5hfXizBtNogUbjdm9Wr',
   'Call Operation Failed': 'FyQ3hgd4NJ6vYSqDfb7ZfppE3UnD4T7ZPfMoFb4ESYen',
   'Call Operation Requested': '9vfHam16jGYuX3VUAkbYcUAVFn4xyaDeyQzD1BvYWiAs',
-  'Chat GPT Connector Agent': 'A8hFjEveHT52xrRowXPCQD1qn3LxmjXKpwcRNVh7DiKt',
+  'Chat GPT Connector Agent': '3rcnPHdWfDobpcCj6NaL7vgR7DFezZBBYkbMh2Xg2HgN',
   'Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
   'Document Anchors': '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH',
   'Document Link': 'BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk',
   'Document Links': '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5',
-  'Document Session Bootstrap': '8MRQqsAK6DhVcKxTRdBR2caa2Erdg7caX4QmsXvXU2Gh',
+  'Document Session Bootstrap': 'AR3MXbFFDXoFT8Rqh1m47KkoX9sq41LWRKb77ZSRMc7i',
   'Document Type Link': 'D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX',
   'Inform User To Install MyOS Package':
     'GxDVADfu61G5PnUDJNyjjyZKoXpvCojxpbKHvBUFDa9s',
   Link: 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
-  'MyOS Admin Base': 'A1tMXCeRAYcvysLdBvZkfztu16kYi5yecpvxs5cTuneh',
+  'MyOS Admin Base': '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd',
   'MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
   'MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
   'MyOS Agent Event': 'GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR',
@@ -45,15 +45,15 @@ export const blueIds = {
     'FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C',
   'Removing Participant Responded':
     'Fu7pgwV2VKNs1KqGcpoVewhYNeL2TE7nhaxDwEAs2iZx',
-  'Session Epoch Advanced': 'DkA1ZugLp92uydf8w4fZ9MrAYGPWDjor7ZXqbKHXjh4F',
+  'Session Epoch Advanced': '9CvxqAMJhqcFoLr5nXSEdWDZUMD383xhJtyFwXsCqD9E',
   'Single Document Permission Grant Requested':
     'HxMSh1JhD42UC2QGgoaCQozMTW3rsS8ENejasZtt7oXA',
   'Single Document Permission Grant Responded':
     '3FS3vHTB9XMw2RbwatfUTCSgoh647XduUBjYcz6Bdkwh',
   'Single Document Permission Grant To Account':
-    '4iixjuPAaXiQezr5HByqBwviygeffqdF3ztpMFCiGU6P',
+    '4oeEooxTvCZvwkT4vCSwVq4mwuYhtNBiRTLWVSVoQu3B',
   'Single Document Permission Grant To Document':
-    '5TELmJdqh3rs1vcfvKsWhEhTSBvimb1cb8Tjgkij3oyk',
+    '6TEuQyJvyCLU5WvnKQ2TrWE147t15CKzDr9f3ywQg1QF',
   'Single Document Permission Granted':
     'EkZN2mSyrJpF4DQmBsdW5NYzw626N6jhSzYYsibpB1MW',
   'Single Document Permission Granting in Progress':
@@ -75,18 +75,19 @@ export const blueIds = {
   'Start Worker Session Requested':
     '2HpXN4xt6hNmMYrAtC8nawU62nLnH1HutHFhWKaNZ2bR',
   'Subscribe to Session Requested':
-    '9s82NT5TsrC3BShzLpXTyz4sEvfAEj219c7sTviTQWYJ',
+    'CohDM1yrnMV32VE73JiRbnmT3h8TgVqryd2Eb8K5Tmzc',
+  'Subscription Update': '2gc8djtKGGRPjGfMQzvJZMviaXm4ytM1nA4DVbfyjkrW',
   'Subscription to Session Failed':
-    'FUcxovpiKhJh6kQEDHPywcBuP2JL2THYn7io96cJghng',
+    'vGfiWWkit85t2cg1YCn9MDGBp573F15YgGMkfx5D3Et',
   'Subscription to Session Initiated':
-    '9e6FJRcQdT7XoJrG9EK1SHYCyzPVH3grFrUPfQqE4Yxx',
+    'EdrM9LnMKjfpYPpKNSm9hK61ywFCv8xwhd4nqUTv7Sy5',
   'Subscription to Session Revoked':
-    'HSucVVU3aXq4ugbcREes6Ym7QEZKVmCRBUmxLMKvcbaE',
+    'CF47wMy4XsVYMiFLmkvgYvXN8TBhfSTh1vnt8xvcFaE1',
   'Target Document Session Started':
     'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
   'Worker Agency Permission': '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
   'Worker Agency Permission Grant':
-    '2Cu7oUK3jhfssYSFuw3HiNo79THMNE14QPsfyDGiW2zd',
+    'EkePKCdkvxvDYvKCG3xGM4jf7yCvLeVGH3bTvJiTwbkN',
   'Worker Agency Permission Grant Requested':
     '2533GSBC4sXbbhDNdB6hKnRoySzQDziUb9u7bK3sa7tD',
   'Worker Agency Permission Granted':

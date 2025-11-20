@@ -8,6 +8,12 @@ export const subscriptionToSessionFailed = {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
+  subscriptionId: {
+    description: 'The subscription id that failed.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   targetSessionId: {
     description: 'Session that was requested, if known.',
     type: {

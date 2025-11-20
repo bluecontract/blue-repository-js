@@ -49,7 +49,7 @@ export const singleDocumentPermissionGrantToDocument = {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
               value:
-                'return {\n  events: [\n    {\n      type: "Single Document Permission Revoke Requested",\n      reason: event.request\n    }\n  ]\n};\n',
+                'return {\n  events: [\n    {\n      type: "Single Document Permission Revoke Requested",\n      reason: event.message.request\n    }\n  ]\n};\n',
             },
             name: 'EmitRevokeRequested',
             type: {
@@ -127,6 +127,6 @@ export const singleDocumentPermissionGrantToDocument = {
     },
   },
   type: {
-    blueId: 'A1tMXCeRAYcvysLdBvZkfztu16kYi5yecpvxs5cTuneh',
+    blueId: '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd',
   },
 } as const;

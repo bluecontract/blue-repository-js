@@ -45,7 +45,7 @@ export const blueIds = {
     'FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C',
   'Removing Participant Responded':
     'Fu7pgwV2VKNs1KqGcpoVewhYNeL2TE7nhaxDwEAs2iZx',
-  'Session Epoch Advanced': '7NoP59E1EbmygQXizFqDhRtaF85DBDfBtV6Ym3uvtT7s',
+  'Session Epoch Advanced': 'AJTHHxe2Xg3n3j2sm82UKHTvW3G9aUKKXgiuupFEGDAX',
   'Single Document Permission Grant Requested':
     'nhTgUejxan53exhUTqEvNtEkvo5aLnJLuiYg5fcvkxK',
   'Single Document Permission Grant Responded':
@@ -75,13 +75,14 @@ export const blueIds = {
   'Start Worker Session Requested':
     '7cVNmxdkeEHkx9JdonT97gAMEUP9v8QFfUzaAwCh5Hqm',
   'Subscribe to Session Requested':
-    '7tpQkVKJ4YNM9mz3kks9JDQ6QorCbqudNurPzrjwQxoy',
+    'DxiFztKK3By3QEaswmJD4RSupnTvEKyKRmm42sCf9me2',
+  'Subscription Update': '75p9SS6Lah9EvWqjsNrJChtTqakBonJn8Zb5JytFv73T',
   'Subscription to Session Failed':
-    'Fh7dNPhoXxeA6vVJ8YK7u13VbNuhTfMptTH1ecukkkkV',
+    'DNJtWjAscAsqbgvFZJDYKBzE1EJz3bAEDXdbVaiZPnoT',
   'Subscription to Session Initiated':
-    'EWTcGiAWqFSMkJgdtqi1MKLjgaMJ5f8KHX3PQpntnzh1',
+    '7H8igM9xqMmTfhAJKNHFgskN1AXPzDhty74fLJbwUX5j',
   'Subscription to Session Revoked':
-    'H6izGWryMRo3BKB7EGCN9C7xWhxfm615k6KdXnFQdADM',
+    '3g681P6coakcHDcDhhmywjh2zTaemsaGwagjeBYSn9AU',
   'Target Document Session Started':
     'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
   'Worker Agency Permission': '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',

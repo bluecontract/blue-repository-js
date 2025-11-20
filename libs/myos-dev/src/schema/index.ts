@@ -112,6 +112,8 @@ export * from './SubscriptionToSessionInitiated';
 
 export * from './SubscriptionToSessionRevoked';
 
+export * from './SubscriptionUpdate';
+
 export * from './TargetDocumentSessionStarted';
 
 export * from './WorkerAgencyPermission';
