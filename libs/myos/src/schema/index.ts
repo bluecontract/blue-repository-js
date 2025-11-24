@@ -16,6 +16,8 @@ export * from './CallOperationFailed';
 
 export * from './CallOperationRequested';
 
+export * from './CallOperationResponded';
+
 export * from './ChatGPTConnectorAgent';
 
 export * from './DocumentAnchor';

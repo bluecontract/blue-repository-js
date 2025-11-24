@@ -4,12 +4,12 @@ import { myOSTimeline } from './MyOSTimeline';
 import { startWorkerSessionRequested } from './StartWorkerSessionRequested';
 import { singleDocumentPermissionRejected } from './SingleDocumentPermissionRejected';
 import { singleDocumentPermissionGrantResponded } from './SingleDocumentPermissionGrantResponded';
+import { callOperationResponded } from './CallOperationResponded';
 import { chatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 import { agentActor } from './AgentActor';
 import { myOSAdminBase } from './MyOSAdminBase';
 import { documentLinks } from './DocumentLinks';
 import { workerAgencyPermissionRevokeRequested } from './WorkerAgencyPermissionRevokeRequested';
-import { callOperationAccepted } from './CallOperationAccepted';
 import { myOSAgentChannel } from './MyOSAgentChannel';
 import { myOSWorkerAgency } from './MyOSWorkerAgency';
 import { singleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
@@ -32,9 +32,9 @@ import { bootstrapFailed } from './BootstrapFailed';
 import { singleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
 import { workerAgencyPermissionGrantingInProgress } from './WorkerAgencyPermissionGrantingInProgress';
 import { singleDocumentPermissionValidated } from './SingleDocumentPermissionValidated';
-import { callOperationRequested } from './CallOperationRequested';
 import { addingParticipantRequested } from './AddingParticipantRequested';
 import { documentSessionBootstrap } from './DocumentSessionBootstrap';
+import { callOperationFailed } from './CallOperationFailed';
 import { documentLink } from './DocumentLink';
 import { singleDocumentPermissionRevoked } from './SingleDocumentPermissionRevoked';
 import { workerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected';
@@ -46,6 +46,7 @@ import { subscribeToSessionRequested } from './SubscribeToSessionRequested';
 import { myOSSessionLink } from './MyOSSessionLink';
 import { link } from './Link';
 import { documentTypeLink } from './DocumentTypeLink';
+import { callOperationAccepted } from './CallOperationAccepted';
 import { singleDocumentPermissionSet } from './SingleDocumentPermissionSet';
 import { subscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 import { workerAgencyPermissionGrant } from './WorkerAgencyPermissionGrant';
@@ -53,13 +54,13 @@ import { singleDocumentPermissionGranted } from './SingleDocumentPermissionGrant
 import { participantActivated } from './ParticipantActivated';
 import { participantResolved } from './ParticipantResolved';
 import { workerAgencyPermissionGranted } from './WorkerAgencyPermissionGranted';
+import { callOperationRequested } from './CallOperationRequested';
 import { allParticipantsReady } from './AllParticipantsReady';
 import { targetDocumentSessionStarted } from './TargetDocumentSessionStarted';
 import { removingParticipantRequested } from './RemovingParticipantRequested';
 import { removingParticipantResponded } from './RemovingParticipantResponded';
 import { myOSTimelineEntry } from './MyOSTimelineEntry';
 import { workerSessionStarting } from './WorkerSessionStarting';
-import { callOperationFailed } from './CallOperationFailed';
 import { myOSAgentEvent } from './MyOSAgentEvent';
 import { myOSPackage } from './MyOSPackage';
 import { informUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
@@ -80,13 +81,13 @@ export const contents = {
     singleDocumentPermissionRejected,
   '3FS3vHTB9XMw2RbwatfUTCSgoh647XduUBjYcz6Bdkwh':
     singleDocumentPermissionGrantResponded,
+  '3P4vsTx8Ky2pucXxKgkn8MouveP2DBRjkwZckCG5b9Lb': callOperationResponded,
   '3rcnPHdWfDobpcCj6NaL7vgR7DFezZBBYkbMh2Xg2HgN': chatGPTConnectorAgent,
   '3SJK2XGFHJgqXyCK4sjZ6tmAk3VjyuX6imGBJmV2LgQZ': agentActor,
   '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd': myOSAdminBase,
   '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5': documentLinks,
   '4cPqgXEsF6NHdAGhhAaHBPGZ6RNi5Dnr7YWp2vQd8HYk':
     workerAgencyPermissionRevokeRequested,
-  '4cSMHJgNNbuDfaQ3uVH6QB9YX5hfXizBtNogUbjdm9Wr': callOperationAccepted,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': myOSAgentChannel,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': myOSWorkerAgency,
   '4oeEooxTvCZvwkT4vCSwVq4mwuYhtNBiRTLWVSVoQu3B':
@@ -117,9 +118,9 @@ export const contents = {
     workerAgencyPermissionGrantingInProgress,
   '9T3AsCqKkpoxHs6K9dTeCHRCXYGHPMthjaNcZxLdckgi':
     singleDocumentPermissionValidated,
-  '9vfHam16jGYuX3VUAkbYcUAVFn4xyaDeyQzD1BvYWiAs': callOperationRequested,
   A3nxy96fKtp3bPnCYP14uhrnYCJoigDLJNvdbGnjdXg6: addingParticipantRequested,
   AR3MXbFFDXoFT8Rqh1m47KkoX9sq41LWRKb77ZSRMc7i: documentSessionBootstrap,
+  BaNmvStTGdsBsSHiHbqdhrrC7vfwiQdDK6NYiyRbJowx: callOperationFailed,
   BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk: documentLink,
   BmmvGcvB1yAe1fb3bsxpajwo9WuCNVAYQN8CGuMivUkT: singleDocumentPermissionRevoked,
   CB4YQq9GGVb3i3enmWnxx1zbV2Ks7nNHYdBhcCuJ8iht: workerAgencyPermissionRejected,
@@ -131,6 +132,7 @@ export const contents = {
   d1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB: myOSSessionLink,
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: link,
   D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX: documentTypeLink,
+  Dd53JjiBGUnASZXjhiHBqCSnruN2XmLtcW2vNQB7Sm34: callOperationAccepted,
   DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54: singleDocumentPermissionSet,
   EdrM9LnMKjfpYPpKNSm9hK61ywFCv8xwhd4nqUTv7Sy5: subscriptionToSessionInitiated,
   EkePKCdkvxvDYvKCG3xGM4jf7yCvLeVGH3bTvJiTwbkN: workerAgencyPermissionGrant,
@@ -138,13 +140,13 @@ export const contents = {
   EQhLKv5EAcFriegGYEP7ykwbjeyzFoaTxeizzuTd8VDq: participantActivated,
   EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz: participantResolved,
   ESCifdJpDaKviHDVPzCAuaUeroYJTuQTNAUW6ikQHHWd: workerAgencyPermissionGranted,
+  EVX6nBdHdVEBH9Gbthpd2eqpxaxS4bb9wM55QNdZmcBy: callOperationRequested,
   Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: allParticipantsReady,
   FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p: targetDocumentSessionStarted,
   FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C: removingParticipantRequested,
   Fu7pgwV2VKNs1KqGcpoVewhYNeL2TE7nhaxDwEAs2iZx: removingParticipantResponded,
   Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ: myOSTimelineEntry,
   FYMd1LAezBcUXp9gh4bEjEwWKqZfgWStwHQ4Q7juTc8F: workerSessionStarting,
-  FyQ3hgd4NJ6vYSqDfb7ZfppE3UnD4T7ZPfMoFb4ESYen: callOperationFailed,
   GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR: myOSAgentEvent,
   GS5aDM715CBXJv8tChoGYgiLWyEiyS4qRm6yBQPaLN32: myOSPackage,
   GxDVADfu61G5PnUDJNyjjyZKoXpvCojxpbKHvBUFDa9s: informUserToInstallMyOSPackage,

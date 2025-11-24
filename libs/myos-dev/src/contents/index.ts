@@ -1,5 +1,6 @@
 import { workerAgencyPermissionGrant } from './WorkerAgencyPermissionGrant';
 import { singleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
+import { callOperationFailed } from './CallOperationFailed';
 import { subscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 import { singleDocumentPermissionGrantResponded } from './SingleDocumentPermissionGrantResponded';
 import { documentLinks } from './DocumentLinks';
@@ -11,6 +12,7 @@ import { workerAgencyPermissionRevokeRequested } from './WorkerAgencyPermissionR
 import { workerAgencyPermission } from './WorkerAgencyPermission';
 import { singleDocumentPermissionRevokeRequested } from './SingleDocumentPermissionRevokeRequested';
 import { workerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissionRevokingInProgress';
+import { callOperationRequested } from './CallOperationRequested';
 import { chatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 import { singleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
 import { myOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
@@ -19,8 +21,8 @@ import { subscriptionUpdate } from './SubscriptionUpdate';
 import { startWorkerSessionRequested } from './StartWorkerSessionRequested';
 import { subscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 import { workerAgencyPermissionValidated } from './WorkerAgencyPermissionValidated';
-import { callOperationAccepted } from './CallOperationAccepted';
 import { documentAnchors } from './DocumentAnchors';
+import { callOperationAccepted } from './CallOperationAccepted';
 import { myOSAgent } from './MyOSAgent';
 import { myOSDocumentSessionReference } from './MyOSDocumentSessionReference';
 import { myOSTimeline } from './MyOSTimeline';
@@ -33,7 +35,6 @@ import { sessionEpochAdvanced } from './SessionEpochAdvanced';
 import { informUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
 import { singleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
 import { documentLink } from './DocumentLink';
-import { callOperationRequested } from './CallOperationRequested';
 import { myOSTimelineEntry } from './MyOSTimelineEntry';
 import { addingParticipantResponded } from './AddingParticipantResponded';
 import { myOSSessionInteraction } from './MyOSSessionInteraction';
@@ -45,7 +46,6 @@ import { singleDocumentPermissionInvalid } from './SingleDocumentPermissionInval
 import { myOSSessionLink } from './MyOSSessionLink';
 import { link } from './Link';
 import { documentTypeLink } from './DocumentTypeLink';
-import { callOperationFailed } from './CallOperationFailed';
 import { subscriptionToSessionFailed } from './SubscriptionToSessionFailed';
 import { singleDocumentPermissionSet } from './SingleDocumentPermissionSet';
 import { subscribeToSessionRequested } from './SubscribeToSessionRequested';
@@ -65,6 +65,7 @@ import { myOSAgentEvent } from './MyOSAgentEvent';
 import { singleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
 import { principalActor } from './PrincipalActor';
 import { documentAnchor } from './DocumentAnchor';
+import { callOperationResponded } from './CallOperationResponded';
 import { workerAgencyPermissionGrantingInProgress } from './WorkerAgencyPermissionGrantingInProgress';
 import { singleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
 import { workerAgencyPermissionInvalid } from './WorkerAgencyPermissionInvalid';
@@ -74,6 +75,7 @@ export const contents = {
   '149x1v7Rhh124Me9eiFydMZSNSVrSwTiAA4hEuz2bAvb': workerAgencyPermissionGrant,
   '2i3BWWMye7xEd53J5Ce1vnQddnYVqmkJ9YDQPVx1Lv7v':
     singleDocumentPermissionRevokingInProgress,
+  '2yfQbhujphL3dmYjsLVGnAUSLPDGsggkDYfsTpmMbeKe': callOperationFailed,
   '3g681P6coakcHDcDhhmywjh2zTaemsaGwagjeBYSn9AU': subscriptionToSessionRevoked,
   '3Zh87GvAjzhgSCZ5d9qEGY7aniCCw6z8pGwdLnvExtoo':
     singleDocumentPermissionGrantResponded,
@@ -90,6 +92,7 @@ export const contents = {
     singleDocumentPermissionRevokeRequested,
   '6793c6P7XP49s26XXpzp3Cp9GQcKyiNCunhHbo9fYNj4':
     workerAgencyPermissionRevokingInProgress,
+  '67x1dBrkqmP5JW7SNJPrzAYHgn9fvi9rMKPFCkQjTzJX': callOperationRequested,
   '6bJuihDKoSGyuSgk7V9YHvxUUGptdjRptCjQ2CH9BvWa': chatGPTConnectorAgent,
   '6iyWVjbEE7FCD4StjN96qAJhbHERrvdbjV8Hk1boeHQs':
     singleDocumentPermissionGrantToAccount,
@@ -101,8 +104,8 @@ export const contents = {
     subscriptionToSessionInitiated,
   '7sDYfwnYJBYvESFaw8A88i9XzPUUn4tptTeMQZmVmeSQ':
     workerAgencyPermissionValidated,
-  '7ufHM37BmyqkkfReNuGyrCcs9SF1LTTUKWDD5WXUysUw': callOperationAccepted,
   '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH': documentAnchors,
+  '8b8uWErgXfo2YrahBnKNzRtqr9V4FLG5FQRHw923AQ2F': callOperationAccepted,
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': myOSAgent,
   '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9': myOSDocumentSessionReference,
   '8jGY1N9oUvyitz3c5uhfsxz8kzQzimgEfWAA9RAci4MY': myOSTimeline,
@@ -117,7 +120,6 @@ export const contents = {
   B9VRRRZwVpxY91uTqM58QqgC15784g9jCkGTTgvUqsrD:
     singleDocumentPermissionGrantingInProgress,
   BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk: documentLink,
-  BrPtfdqM5eiy3gJCg1N8pQBLpstAYmUGA9hYn5VYCWFu: callOperationRequested,
   C9JEzzG54zyHpUGyUj1g5Hk4n7sKRd4gRRiHjyPtefPP: myOSTimelineEntry,
   CbcVNTgCj7hnq4nKBDdgWAcymuRqTTmCzxY1LUuK3ze6: addingParticipantResponded,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: myOSSessionInteraction,
@@ -130,7 +132,6 @@ export const contents = {
   d1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB: myOSSessionLink,
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: link,
   D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX: documentTypeLink,
-  DHjp99qDBqvNy6GiDUTXAJ59Kzk2sMJqdQEFn9jMFSeF: callOperationFailed,
   DNJtWjAscAsqbgvFZJDYKBzE1EJz3bAEDXdbVaiZPnoT: subscriptionToSessionFailed,
   DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54: singleDocumentPermissionSet,
   DxiFztKK3By3QEaswmJD4RSupnTvEKyKRmm42sCf9me2: subscribeToSessionRequested,
@@ -153,6 +154,7 @@ export const contents = {
     singleDocumentPermissionGrantToDocument,
   HQhkvaGUMTYA4ErvoPT5i3aL8SRxiimRLUpVnTc2F7aJ: principalActor,
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: documentAnchor,
+  HzG3bk6Zfj8hBnypK9XBGH7nvohkqR4JRRJiMqvTnnMR: callOperationResponded,
   Kjui7g1RsaL4Lw3DJDt14hRAZJDizMkYVXrqtKo7eCC:
     workerAgencyPermissionGrantingInProgress,
   nhTgUejxan53exhUTqEvNtEkvo5aLnJLuiYg5fcvkxK:
