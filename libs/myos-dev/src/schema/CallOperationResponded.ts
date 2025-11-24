@@ -3,16 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '@blue-repository/core-dev';
 
-export const CallOperationFailedSchema = withTypeBlueId(
-  blueIds['Call Operation Failed']
+export const CallOperationRespondedSchema = withTypeBlueId(
+  blueIds['Call Operation Responded']
 )(
   ResponseSchema.extend({
     description: z.string().optional(),
+    events: z.array(ResponseSchema).optional(),
     name: z.string().optional(),
-    operation: z.string().optional(),
-    reason: z.string().optional(),
-    targetSessionId: z.string().optional(),
   })
 );
 
-export type CallOperationFailed = z.infer<typeof CallOperationFailedSchema>;
+export type CallOperationResponded = z.infer<
+  typeof CallOperationRespondedSchema
+>;
