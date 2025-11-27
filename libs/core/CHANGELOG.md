@@ -1,3 +1,9 @@
+## 0.2.0 (2025-11-27)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([edf16eb](https://github.com/bluecontract/blue-repository-js/commit/edf16eb))
+
 ## 0.1.1 (2025-11-05)
 
 ### 🩹 Fixes

@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/conversation",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -17,7 +17,7 @@
     "!**/*.tsbuildinfo"
   ],
   "dependencies": {
-    "@blue-repository/core": "0.1.1"
+    "@blue-repository/core": "0.2.0"
   },
   "license": "MIT",
   "publishConfig": {

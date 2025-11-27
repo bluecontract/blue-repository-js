@@ -1,3 +1,14 @@
+## 0.5.0 (2025-11-27)
+
+### 🚀 Features
+
+- update generated Blue artifacts ([edf16eb](https://github.com/bluecontract/blue-repository-js/commit/edf16eb))
+
+### 🧱 Updated Dependencies
+
+- Updated @blue-repository/conversation to 0.2.0
+- Updated @blue-repository/core to 0.2.0
+
 ## 0.4.0 (2025-11-24)
 
 ### 🚀 Features
