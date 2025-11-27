@@ -11,7 +11,7 @@ export const workerAgencyPermissionGrant = {
     granterChannel: {
       description: 'Granter/owner’s timeline (actor allowed to request revoke)',
       type: {
-        blueId: '6Q4xykCNJQkiuekMJojj2fxNgu2LwQdf5sAG4F3g49ou',
+        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
     },
     initLifecycleChannel: {
@@ -21,7 +21,7 @@ export const workerAgencyPermissionGrant = {
         },
       },
       type: {
-        blueId: 'Er9zZ7Yoii7D5j8PdvMYouH2TTVnHmcukFWVqJTam3To',
+        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
       },
     },
     revoke: {
@@ -61,7 +61,7 @@ export const workerAgencyPermissionGrant = {
             },
             name: 'EmitRevokeRequested',
             type: {
-              blueId: 'DMrw2BSxyuQZai4UvitEY4YUp13ebP4prXyY8ZrZbM4Q',
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
             },
           },
         ],
@@ -89,7 +89,7 @@ export const workerAgencyPermissionGrant = {
             },
             name: 'ValidateBasicShape',
             type: {
-              blueId: 'DMrw2BSxyuQZai4UvitEY4YUp13ebP4prXyY8ZrZbM4Q',
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
             },
           },
         ],
@@ -106,6 +106,6 @@ export const workerAgencyPermissionGrant = {
   },
   name: 'Worker Agency Permission Grant',
   type: {
-    blueId: '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd',
+    blueId: 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
   },
 } as const;

@@ -9,6 +9,6 @@ export const timelineChannel = {
     },
   },
   type: {
-    blueId: 'EF9xc9RMMXusRaumQebVUUhwtp1Do6QBYYo6URRhg2yv',
+    blueId: 'DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr',
   },
 } as const;

@@ -2,7 +2,7 @@ export const chatGPTConnectorAgent = {
   contracts: {
     ownerChannel: {
       type: {
-        blueId: '6Q4xykCNJQkiuekMJojj2fxNgu2LwQdf5sAG4F3g49ou',
+        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
     },
     startWorker: {
@@ -17,7 +17,7 @@ export const chatGPTConnectorAgent = {
         package: {
           description: 'MyOS Package',
           type: {
-            blueId: 'GS5aDM715CBXJv8tChoGYgiLWyEiyS4qRm6yBQPaLN32',
+            blueId: 'H6ZhHkdNnC9fLmkeDpWWaS1MSUE6iixmB7uKHa6HcVia',
           },
         },
       },
@@ -45,7 +45,7 @@ export const chatGPTConnectorAgent = {
               },
               package: {
                 type: {
-                  blueId: 'GS5aDM715CBXJv8tChoGYgiLWyEiyS4qRm6yBQPaLN32',
+                  blueId: 'H6ZhHkdNnC9fLmkeDpWWaS1MSUE6iixmB7uKHa6HcVia',
                 },
                 value: '${event.message.request.package}',
               },
@@ -56,7 +56,7 @@ export const chatGPTConnectorAgent = {
                 value: 'ChatGPT is requesting permission to launch a new agent',
               },
               type: {
-                blueId: 'GxDVADfu61G5PnUDJNyjjyZKoXpvCojxpbKHvBUFDa9s',
+                blueId: 'FwUJef8CZCv4W2wurn6csNVQJfvV8HadBjzhJn8xqB7P',
               },
             },
             name: 'Emit Install Prompt',

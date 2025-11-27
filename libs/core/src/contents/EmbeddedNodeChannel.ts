@@ -9,6 +9,6 @@ export const embeddedNodeChannel = {
     "Core type of Blue Language v1.0 (see https://language.blue).\nBridges a child scope's emissions (including lifecycle nodes) into the parent\nafter the child finishes.\n",
   name: 'Embedded Node Channel',
   type: {
-    blueId: 'EF9xc9RMMXusRaumQebVUUhwtp1Do6QBYYo6URRhg2yv',
+    blueId: 'DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr',
   },
 } as const;

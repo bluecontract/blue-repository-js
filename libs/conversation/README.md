@@ -6,8 +6,8 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **Conversation**
-- Version: **GFfVVZmu68JvhSesfn74NBnr9isDrsJKapKTLmutvABZ**
+- Module name: **ConversationV0.2**
+- Version: **A1aMQa2c1qaGGB1MNWasPua84WuhbPHLTiBbgW89cUyv**
 
 ## Installation
 

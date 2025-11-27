@@ -14,6 +14,6 @@ export const myOSTimelineChannel = {
   },
   name: 'MyOS Timeline Channel',
   type: {
-    blueId: 'AAhZviH8oyst6aKJKUNJS99Q9MnMqtb9DuNRfqv4yFQN',
+    blueId: 'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
   },
 } as const;
