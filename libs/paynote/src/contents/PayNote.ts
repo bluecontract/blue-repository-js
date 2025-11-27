@@ -25,17 +25,17 @@ export const payNote = {
   contracts: {
     guarantorChannel: {
       type: {
-        blueId: 'AAhZviH8oyst6aKJKUNJS99Q9MnMqtb9DuNRfqv4yFQN',
+        blueId: 'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
       },
     },
     payeeChannel: {
       type: {
-        blueId: 'AAhZviH8oyst6aKJKUNJS99Q9MnMqtb9DuNRfqv4yFQN',
+        blueId: 'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
       },
     },
     payerChannel: {
       type: {
-        blueId: 'AAhZviH8oyst6aKJKUNJS99Q9MnMqtb9DuNRfqv4yFQN',
+        blueId: 'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
       },
     },
   },

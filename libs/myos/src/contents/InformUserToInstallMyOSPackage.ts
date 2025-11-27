@@ -10,7 +10,7 @@ export const informUserToInstallMyOSPackage = {
   package: {
     description: 'The complete package to be bootstrapped',
     type: {
-      blueId: 'GS5aDM715CBXJv8tChoGYgiLWyEiyS4qRm6yBQPaLN32',
+      blueId: 'H6ZhHkdNnC9fLmkeDpWWaS1MSUE6iixmB7uKHa6HcVia',
     },
   },
   title: {

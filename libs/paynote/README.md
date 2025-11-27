@@ -6,8 +6,8 @@ Contains Zod schemas and Blue IDs of Blue Types defined in [@bluecontract/blue-r
 
 ## Type Module Information
 
-- Module name: **PayNote**
-- Version: **J8xtcQkfwNqwXu3WtkTpsAYabMR8ftQxNkwqL2vM7mqj**
+- Module name: **PayNoteV0.2**
+- Version: **5cuZbisbQ24nQtA6VDVWgcWj76jtiEeKPGL7V73sAxq3**
 
 ## Installation
 

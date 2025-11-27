@@ -33,7 +33,7 @@ export const documentSessionBootstrap = {
       blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
     },
     valueType: {
-      blueId: 'EF9xc9RMMXusRaumQebVUUhwtp1Do6QBYYo6URRhg2yv',
+      blueId: 'DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr',
     },
   },
   contracts: {
@@ -91,7 +91,7 @@ export const documentSessionBootstrap = {
             },
             name: 'Emit Failure Event',
             type: {
-              blueId: 'DMrw2BSxyuQZai4UvitEY4YUp13ebP4prXyY8ZrZbM4Q',
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
             },
           },
         ],
@@ -124,7 +124,7 @@ export const documentSessionBootstrap = {
             },
             name: 'Prepare Participant State',
             type: {
-              blueId: 'DMrw2BSxyuQZai4UvitEY4YUp13ebP4prXyY8ZrZbM4Q',
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
             },
           },
           {
@@ -269,7 +269,7 @@ export const documentSessionBootstrap = {
             },
             name: 'Emit Completion Event',
             type: {
-              blueId: 'DMrw2BSxyuQZai4UvitEY4YUp13ebP4prXyY8ZrZbM4Q',
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
             },
           },
         ],
@@ -329,12 +329,12 @@ export const documentSessionBootstrap = {
         },
       },
       type: {
-        blueId: 'Er9zZ7Yoii7D5j8PdvMYouH2TTVnHmcukFWVqJTam3To',
+        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
       },
     },
     triggeredEventsChannel: {
       type: {
-        blueId: '716Uk7KPeunnc9PK48hNBDfRb9qsKrFCAZEcU92R169m',
+        blueId: 'C77W4kVGcxL7Mkx9WL9QESPEFFL2GzWAe647s1Efprt',
       },
     },
   },
@@ -388,6 +388,6 @@ export const documentSessionBootstrap = {
     },
   },
   type: {
-    blueId: '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd',
+    blueId: 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
   },
 } as const;

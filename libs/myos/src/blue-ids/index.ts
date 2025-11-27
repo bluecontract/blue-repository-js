@@ -11,29 +11,29 @@ export const blueIds = {
   'Call Operation Failed': 'BaNmvStTGdsBsSHiHbqdhrrC7vfwiQdDK6NYiyRbJowx',
   'Call Operation Requested': 'EVX6nBdHdVEBH9Gbthpd2eqpxaxS4bb9wM55QNdZmcBy',
   'Call Operation Responded': '3P4vsTx8Ky2pucXxKgkn8MouveP2DBRjkwZckCG5b9Lb',
-  'Chat GPT Connector Agent': '3rcnPHdWfDobpcCj6NaL7vgR7DFezZBBYkbMh2Xg2HgN',
+  'Chat GPT Connector Agent': 'BDAH24odqA3afZkt1vioModb36mrae7ksUCTm5uYiGmk',
   'Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
   'Document Anchors': '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH',
   'Document Link': 'BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk',
   'Document Links': '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5',
-  'Document Session Bootstrap': 'AR3MXbFFDXoFT8Rqh1m47KkoX9sq41LWRKb77ZSRMc7i',
+  'Document Session Bootstrap': '2K3rW6d4KychEQDerQpigPzQp8wHTJzbmueJaDXfGZqg',
   'Document Type Link': 'D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX',
   'Inform User To Install MyOS Package':
-    'GxDVADfu61G5PnUDJNyjjyZKoXpvCojxpbKHvBUFDa9s',
+    'FwUJef8CZCv4W2wurn6csNVQJfvV8HadBjzhJn8xqB7P',
   Link: 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
-  'MyOS Admin Base': '3vUWpGHb6Yj2V5e7tdYyQcKjx9hZudLf1ahhxGMMrDYd',
+  'MyOS Admin Base': 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
   'MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
   'MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
   'MyOS Agent Event': 'GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR',
   'MyOS Document Session Reference':
     '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9',
-  'MyOS Package': 'GS5aDM715CBXJv8tChoGYgiLWyEiyS4qRm6yBQPaLN32',
+  'MyOS Package': 'H6ZhHkdNnC9fLmkeDpWWaS1MSUE6iixmB7uKHa6HcVia',
   'MyOS Participants Orchestration':
     '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
   'MyOS Session Interaction': 'CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H',
   'MyOS Session Link': 'd1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB',
   'MyOS Timeline': '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk',
-  'MyOS Timeline Channel': '6Q4xykCNJQkiuekMJojj2fxNgu2LwQdf5sAG4F3g49ou',
+  'MyOS Timeline Channel': 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
   'MyOS Timeline Entry': 'Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ',
   'MyOS Worker Agency': '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1',
   Participant: 'phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ',
@@ -52,9 +52,9 @@ export const blueIds = {
   'Single Document Permission Grant Responded':
     '3FS3vHTB9XMw2RbwatfUTCSgoh647XduUBjYcz6Bdkwh',
   'Single Document Permission Grant To Account':
-    '4oeEooxTvCZvwkT4vCSwVq4mwuYhtNBiRTLWVSVoQu3B',
+    '12mpxZY5TyYPNYtCAVJqkPpZLQpgzdJNTBEEdCKPV777',
   'Single Document Permission Grant To Document':
-    '6TEuQyJvyCLU5WvnKQ2TrWE147t15CKzDr9f3ywQg1QF',
+    '5Sf4eLup5bMEeCCMtM7c8z7ntSr2FeVeSPcnffJSmCnG',
   'Single Document Permission Granted':
     'EkZN2mSyrJpF4DQmBsdW5NYzw626N6jhSzYYsibpB1MW',
   'Single Document Permission Granting in Progress':
@@ -74,7 +74,7 @@ export const blueIds = {
   'Single Document Permission Validated':
     '9T3AsCqKkpoxHs6K9dTeCHRCXYGHPMthjaNcZxLdckgi',
   'Start Worker Session Requested':
-    '2HpXN4xt6hNmMYrAtC8nawU62nLnH1HutHFhWKaNZ2bR',
+    'C9Fyy28LCQACfDootHHWRB4eEm1xCiSnaH7FYTSdZmwQ',
   'Subscribe to Session Requested':
     'CohDM1yrnMV32VE73JiRbnmT3h8TgVqryd2Eb8K5Tmzc',
   'Subscription Update': '2gc8djtKGGRPjGfMQzvJZMviaXm4ytM1nA4DVbfyjkrW',
@@ -88,7 +88,7 @@ export const blueIds = {
     'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
   'Worker Agency Permission': '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
   'Worker Agency Permission Grant':
-    'EkePKCdkvxvDYvKCG3xGM4jf7yCvLeVGH3bTvJiTwbkN',
+    'EcGEhn1WF2UiPuzddAHhPdWWXiYTjoffk7H3qAo6qB5w',
   'Worker Agency Permission Grant Requested':
     '2533GSBC4sXbbhDNdB6hKnRoySzQDziUb9u7bK3sa7tD',
   'Worker Agency Permission Granted':

@@ -4,7 +4,7 @@ export const myOSAdminBase = {
       description:
         'MyOS Admin (accountId=0) — posts operational progress/decisions via myOsAdminUpdate',
       type: {
-        blueId: '6Q4xykCNJQkiuekMJojj2fxNgu2LwQdf5sAG4F3g49ou',
+        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
     },
     myOsAdminUpdate: {
@@ -39,7 +39,7 @@ export const myOSAdminBase = {
             },
             name: 'EmitAdminEvents',
             type: {
-              blueId: 'DMrw2BSxyuQZai4UvitEY4YUp13ebP4prXyY8ZrZbM4Q',
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
             },
           },
         ],

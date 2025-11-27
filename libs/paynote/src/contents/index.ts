@@ -6,11 +6,11 @@ import { reservationDeclined } from './ReservationDeclined';
 import { issueChildPayNoteRequested } from './IssueChildPayNoteRequested';
 import { reservationReleaseDeclined } from './ReservationReleaseDeclined';
 import { payNoteCancelled } from './PayNoteCancelled';
-import { payNote } from './PayNote';
 import { payNoteRejected } from './PayNoteRejected';
 import { fundsReserved } from './FundsReserved';
 import { fundsCaptured } from './FundsCaptured';
 import { payeeAssignmentRequested } from './PayeeAssignmentRequested';
+import { payNote } from './PayNote';
 import { reservationReleased } from './ReservationReleased';
 import { childPayNoteIssuanceDeclined } from './ChildPayNoteIssuanceDeclined';
 import { payNoteCancellationRequested } from './PayNoteCancellationRequested';
@@ -32,11 +32,11 @@ export const contents = {
   '53Dir2sGy1NHuCQXF6suGoDMxYacNhbcy23AKD89SghD': issueChildPayNoteRequested,
   '653sCbbRH3RiKhGjmVxh6wFVs4rn54wJRKDXRMKBZtjA': reservationReleaseDeclined,
   '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y': payNoteCancelled,
-  '9qHSL1Fy6FjhZp9L3SQJ82K9JtZeeJQ7BU78gsHsieBw': payNote,
   AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: payNoteRejected,
   AopfdGqnwcxsw4mJzXbmjDMnASRtkce9BZB1n6QSRNXX: fundsReserved,
   BJvjorbC5ed5KTV7SxoV3CvrJXjrFPcFxY9QT4jHBbXi: fundsCaptured,
   BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE: payeeAssignmentRequested,
+  CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT: payNote,
   CFqiZigjKE5JatANkaAkWw2NbgvEmb2BVEVPf3ckUrWg: reservationReleased,
   DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m: childPayNoteIssuanceDeclined,
   DqiwzsNLbHCh6PaDF6wy6ZqBSF5JV5nAQSKFKTPRTbGB: payNoteCancellationRequested,
