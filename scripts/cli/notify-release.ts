@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import axios from 'axios';
-import { PackageJson } from './types';
+import { PackageJson } from '../lib/types.js';
 
 const API_BASE_URL = process.env.API_BASE_URL || 'https://api.repo.blue';
 const API_KEY = process.env.API_KEY;

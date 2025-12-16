@@ -6,19 +6,14 @@ on:
   workflow_dispatch:
     inputs:
       run_id:
-        description: 'Run ID of the blue-preprocessor workflow'
+        description: 'Run ID of the workflow that produced the BlueRepository.blue artifact'
         required: true
         type: string
-      force_all_libraries:
-        description: 'Force code generation for all libraries (bypass filtering)'
-        required: false
-        type: boolean
-        default: false
-      migration:
-        description: 'Migration to run (e.g., "root-index-contents", leave empty for no migration)'
+      source_workflow:
+        description: 'Workflow file in bluecontract/blue-repository to fetch artifacts from'
         required: false
         type: string
-        default: ''
+        default: 'blue-preprocessor.yml'
 
 env:
   BASE_BRANCH: main
@@ -31,7 +26,9 @@ jobs:
       contents: write
       pull-requests: write
     env:
-      TRIGGER_LABEL: ${{ github.event_name == 'repository_dispatch' && 'blue-preprocessor (auto)' || github.event_name == 'workflow_dispatch' && 'manual (developer)' || github.event_name }}
+      TRIGGER_LABEL: ${{ github.event_name == 'repository_dispatch' && format('repository_dispatch ({0})', github.event.action) || github.event_name == 'workflow_dispatch' && 'workflow_dispatch (manual)' || github.event_name }}
+      SOURCE_WORKFLOW: ${{ github.event.client_payload.workflow || inputs.source_workflow || 'blue-preprocessor.yml' }}
+      ARTIFACT_NAME: blue-repository-definition
     steps:
       - name: Checkout main repository
         uses: actions/checkout@v4
@@ -39,30 +36,27 @@ jobs:
           fetch-depth: 0 # Fetch all history
           ref: ${{ env.BASE_BRANCH }} # Checkout the base branch directly
 
-      - name: Download blue-repository artifact
+      - name: Download BlueRepository.blue artifact
         uses: dawidd6/action-download-artifact@v2
         with:
           github_token: ${{ secrets.WORKFLOW_PAT }}
-          workflow: blue-preprocessor.yml
+          workflow: ${{ env.SOURCE_WORKFLOW }}
           run_id: ${{ github.event.client_payload.run_id || inputs.run_id }}
-          name: blue-repository
+          name: ${{ env.ARTIFACT_NAME }}
           repo: bluecontract/blue-repository
-          path: data/blue-repository
+          path: data/${{ env.ARTIFACT_NAME }}
 
-      - name: Download blue-preprocessed artifact
-        uses: dawidd6/action-download-artifact@v2
-        with:
-          github_token: ${{ secrets.WORKFLOW_PAT }}
-          workflow: blue-preprocessor.yml
-          run_id: ${{ github.event.client_payload.run_id || inputs.run_id }}
-          name: blue-preprocessed
-          repo: bluecontract/blue-repository
-          path: data/blue-preprocessed
-
-      - name: Display content of blue-ids.yaml
+      - name: Replace repository definition (BlueRepository.blue)
+        shell: bash
         run: |
-          echo "Content of blue-ids.yaml:"
-          cat data/blue-preprocessed/blue-ids.yaml
+          set -euo pipefail
+          SRC="$(find "data/${{ env.ARTIFACT_NAME }}" -maxdepth 2 -name 'BlueRepository.blue' -print -quit)"
+          if [ -z "${SRC}" ]; then
+            echo "Could not find BlueRepository.blue in downloaded artifact."
+            find "data/${{ env.ARTIFACT_NAME }}" -maxdepth 3 -type f -print
+            exit 1
+          fi
+          cp "${SRC}" "BlueRepository.blue"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -70,53 +64,42 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install dependencies and update package-lock.json
         run: npm install
 
-      - name: Run script
-        run: |
-          ARGS=""
-          if [ "${{ inputs.force_all_libraries }}" = "true" ]; then
-            ARGS="$ARGS --force-all"
-          fi
-          if [ "${{ inputs.migration }}" != "" ]; then
-            ARGS="$ARGS --migration ${{ inputs.migration }}"
-          fi
-          npm run artifact-scaffolder -- $ARGS
+      - name: Generate types sources from BlueRepository.blue
+        run: npm run generate:types
 
-      - name: Update dependencies and package-lock.json
-        run: npm install
+      - name: Build types dist
+        run: npm run build:types
+
+      - name: Typecheck scripts
+        run: npx nx typecheck-scripts
+
+      - name: Run script tests
+        run: npm run test:scripts
 
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.WORKFLOW_PAT }}
-          branch: 'blue-artifacts/${{ github.event_name }}/run-${{ github.event.client_payload.run_id || inputs.run_id }}'
-          title: 'feat: update generated Blue artifacts (run ${{ github.event.client_payload.run_id || inputs.run_id }}, trigger: ${{ env.TRIGGER_LABEL }})'
+          branch: 'blue-repository-definition/${{ github.event_name }}/run-${{ github.event.client_payload.run_id || inputs.run_id }}'
+          title: 'feat: update BlueRepository.blue + regenerate types (run ${{ github.event.client_payload.run_id || inputs.run_id }}, trigger: ${{ env.TRIGGER_LABEL }})'
           body: |
-            This PR contains automatically generated Blue artifacts.
+            This PR contains an updated repository definition (BlueRepository.blue) and regenerated @blue-repository/types sources.
 
             ## Configuration
             - Trigger: ${{ env.TRIGGER_LABEL }}
             - Run ID: ${{ github.event.client_payload.run_id || inputs.run_id }}
-            - Force all libraries: ${{ inputs.force_all_libraries }}
-            - Migration: ${{ inputs.migration || 'none' }}
+            - Source workflow: ${{ env.SOURCE_WORKFLOW }}
+            - Artifact: ${{ env.ARTIFACT_NAME }}
 
             ## Changes
-            - Updated blue-ids exports
-            - Updated zod schemas  
-            - Updated contents exports
-            ${{ inputs.migration && format('- Ran migration: {0}', inputs.migration) || '' }}
+            - Updated BlueRepository.blue
+            - Regenerated libs/types/src (contents, schemas, blue-ids, package exports)
 
             Generated by the process-blue-artifacts workflow.
           base: ${{ env.BASE_BRANCH }}
-          commit-message: 'feat: update generated Blue artifacts'
-          labels: automated-pr, blue-artifacts
-
-      # - name: Enable Pull Request Automerge
-      #   if: steps.cpr.outputs.pull-request-operation == 'created'
-      #   uses: peter-evans/enable-pull-request-automerge@v3
-      #   with:
-      #     token: ${{ secrets.WORKFLOW_PAT }}
-      #     pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          commit-message: 'feat: update BlueRepository.blue and regenerate types'
+          labels: automated-pr, blue-repository-definition
