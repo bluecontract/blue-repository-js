@@ -21,6 +21,7 @@ export interface CompileValueSchemasResult {
 
 export interface TypeInfo {
   packageName: PackageName;
+  packageDisplayName: string;
   typeName: string;
   blueId: BlueId;
   content: Record<string, unknown>;

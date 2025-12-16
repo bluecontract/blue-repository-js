@@ -33,6 +33,7 @@ export function buildRepoContext(
     Object.entries(pkg.typesMeta).forEach(([blueId, meta]) => {
       typeIndex.set(blueId, {
         packageName: pkgName as PackageName,
+        packageDisplayName: pkg.name,
         typeName: meta.name,
         blueId,
         content: pkg.contents[blueId] as Record<string, unknown>,

@@ -2,7 +2,7 @@ name: Blue Repository Fixture
 repositoryVersions:
   - R0
 packages:
-  - name: core
+  - name: Core
     types:
       - status: stable
         content:
@@ -11,7 +11,7 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: core-marker-v0
             attributesAdded: []
-  - name: conversation
+  - name: Conversation
     types:
       - status: stable
         content:
@@ -36,7 +36,7 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: conversation-composite-timeline-channel-v0
             attributesAdded: []
-  - name: myos
+  - name: MyOS
     types:
       - status: stable
         content:
@@ -52,4 +52,16 @@ packages:
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: myos-document-session-bootstrap-v0
+            attributesAdded: []
+  - name: Super Cool Package
+    types:
+      - status: stable
+        content:
+          name: Super Cool Type
+          message:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: super-cool-package-super-cool-type-v0
             attributesAdded: []

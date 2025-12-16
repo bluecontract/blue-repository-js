@@ -7,7 +7,7 @@ import type {
 } from './repositoryTypesBuilder/index.js';
 import { buildRepositoryArtifacts } from './repositoryTypesBuilder/index.js';
 import { compileValueSchemasFromRepository } from './zodSchemaCompiler/index.js';
-import { toIdentifier } from './identifier.js';
+import { toIdentifier, toPackageIdentifier } from './identifier.js';
 import packageJson from '../../libs/types/package.json' with { type: 'json' };
 
 export interface GenerateTypesArtifactsOptions {
@@ -63,13 +63,14 @@ function generateBlueIds(
   outDir: string,
   packageName: string,
   pkg: {
+    name: string;
     typesMeta: Record<string, { name: string }>;
     aliases?: Record<string, string>;
   },
 ) {
   const blueIds: Record<string, string> = { ...(pkg.aliases || {}) };
   Object.entries(pkg.typesMeta).forEach(([currentBlueId, meta]) => {
-    const alias = `${packageName}/${meta.name}`;
+    const alias = `${pkg.name}/${meta.name}`;
     blueIds[alias] = currentBlueId;
   });
 
@@ -146,23 +147,36 @@ function generatePackageArtifacts(
 }
 
 function generateRepository(outDir: string, packageNames: string[]) {
-  const imports = packageNames
-    .map((name) => `import ${name} from './packages/${name}/index';`)
+  const packages = packageNames.map((slug) => ({
+    slug,
+    identifier: toPackageIdentifier(slug),
+  }));
+
+  const imports = packages
+    .map(
+      ({ slug, identifier }) =>
+        `import ${identifier} from './packages/${slug}/index';`,
+    )
+    .join('\n');
+
+  const packageEntries = packages
+    .map(({ slug, identifier }) => `    '${slug}': ${identifier},`)
     .join('\n');
 
   const repositoryContent =
     `${imports}\n` +
     `import { name, repositoryVersions } from './meta';\n` +
     `export const repository = {\n` +
-    `  name,\n  repositoryVersions,\n  packages: { ${packageNames.join(
-      ', ',
-    )} },\n} as const;\n` +
+    `  name,\n  repositoryVersions,\n  packages: {\n${packageEntries}\n  },\n} as const;\n` +
     `export default repository;\n`;
   writeFile(outDir, 'repository.ts', repositoryContent);
 
   const packagesIndex =
-    packageNames
-      .map((name) => `export { default as ${name} } from './${name}/index';`)
+    packages
+      .map(
+        ({ slug, identifier }) =>
+          `export { default as ${identifier} } from './${slug}/index';`,
+      )
       .join('\n') + '\n';
   writeFile(outDir, 'packages/index.ts', packagesIndex);
 }

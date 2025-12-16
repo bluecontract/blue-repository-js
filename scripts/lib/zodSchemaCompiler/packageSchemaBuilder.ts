@@ -527,7 +527,7 @@ export class PackageSchemaBuilder {
   }
 
   private aliasFor(info: TypeInfo): string {
-    return `${info.packageName}/${info.typeName}`;
+    return `${info.packageDisplayName}/${info.typeName}`;
   }
 
   private normalizeBlueId(blueId: string): string {

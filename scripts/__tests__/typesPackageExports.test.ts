@@ -29,6 +29,8 @@ describe('@blue-repository/types package layout', () => {
     expect(exportsMap['./packages/conversation/contents/*']).toBeTruthy();
     expect(exportsMap['./packages/*/schemas']).toBeTruthy();
     expect(exportsMap['./packages/conversation/schemas/*']).toBeTruthy();
+    expect(exportsMap['./packages/super-cool-package/contents/*']).toBeTruthy();
+    expect(exportsMap['./packages/super-cool-package/schemas/*']).toBeTruthy();
   });
 
   it('exposes meta without contents or schemas', async () => {
@@ -95,7 +97,7 @@ describe('@blue-repository/types package layout', () => {
       message: 'hello',
     };
     expect(() => (ChatMessage as any).ChatMessageSchema.parse(sample)).not.toThrow();
-    expect(blueIds['conversation/Chat Message']).toBeDefined();
+    expect(blueIds['Conversation/Chat Message']).toBeDefined();
   });
 
   it('allows importing a single contents path', async () => {

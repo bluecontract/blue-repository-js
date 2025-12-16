@@ -10,7 +10,7 @@ const sampleDocument: BlueRepositoryDocument = {
   repositoryVersions: ['R0', 'R1', 'R2'],
   packages: [
     {
-      name: 'core',
+      name: 'Core',
       types: [
         {
           status: 'stable',
@@ -60,9 +60,9 @@ describe('repositoryTypesBuilder', () => {
     const { packages } = buildRepositoryArtifacts(sampleDocument);
 
     const core = packages.core;
-    expect(core.aliases['core/Text']).toEqual('text-v0');
-    expect(core.aliases['core/Rule']).toEqual('rule-v2');
-    expect(core.aliases['core/Draft']).toEqual('draft-dev');
+    expect(core.aliases['Core/Text']).toEqual('text-v0');
+    expect(core.aliases['Core/Rule']).toEqual('rule-v2');
+    expect(core.aliases['Core/Draft']).toEqual('draft-dev');
 
     expect(core.contents['rule-v2']).toEqual({ name: 'Rule', severity: {} });
   });
@@ -70,7 +70,7 @@ describe('repositoryTypesBuilder', () => {
   it('builds repository object', () => {
     const repository = buildRepository(sampleDocument);
     expect(repository.repositoryVersions).toEqual(['R0', 'R1', 'R2']);
-    expect(repository.packages.core.aliases['core/Text']).toEqual('text-v0');
+    expect(repository.packages.core.aliases['Core/Text']).toEqual('text-v0');
   });
 
   it('sorts versions and keeps latest current blueId', () => {

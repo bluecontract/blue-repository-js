@@ -1,11 +1,7 @@
 import { RESERVED_KEYS } from './constants.js';
 
 export function normalizeAliasString(ref: string): string {
-  const [pkg, ...rest] = ref.split('/');
-  if (!rest.length) {
-    return ref;
-  }
-  return `${pkg.toLowerCase()}/${rest.join('/')}`;
+  return ref.toLowerCase();
 }
 
 export function getRefBlueId(node: any): string | undefined {
