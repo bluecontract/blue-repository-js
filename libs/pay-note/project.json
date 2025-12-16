@@ -1,9 +1,0 @@
-{
-  "name": "@blue-repository/pay-note",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/pay-note/src",
-  "projectType": "library",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project @blue-repository/pay-note --web",
-  "targets": {}
-}
