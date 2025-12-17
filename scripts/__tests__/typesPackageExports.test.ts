@@ -33,6 +33,15 @@ describe('@blue-repository/types package layout', () => {
     expect(exportsMap['./packages/super-cool-package/schemas/*']).toBeTruthy();
   });
 
+  it('writes package README with repository info', () => {
+    const readme = fs.readFileSync(
+      path.join(fixture.typesRoot, 'README.md'),
+      'utf-8'
+    );
+    expect(readme).toContain('# @blue-repository/types');
+    expect(readme).toContain('RepoBlueId: **R0**');
+  });
+
   it('exposes meta without contents or schemas', async () => {
     const meta = await fixture.importFromTypesPackage('@blue-repository/types/meta');
     expect(meta.name).toBeDefined();

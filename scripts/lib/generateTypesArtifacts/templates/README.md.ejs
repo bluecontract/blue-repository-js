@@ -1,0 +1,30 @@
+<% /* README.md.ejs */ %>
+# <%= packageName %>
+
+This package is generated from `BlueRepository.blue` (source-of-truth: [@bluecontract/blue-repository](https://github.com/bluecontract/blue-repository)).
+
+It contains:
+- Repository meta + package registry (`<%= packageName %>/meta`, `<%= packageName %>/repository`)
+- Per-package Blue IDs (`<%= packageName %>/packages/*/blue-ids`)
+- Per-type contents (`<%= packageName %>/packages/*/contents/*`)
+- Per-type Zod schemas (`<%= packageName %>/packages/*/schemas/*`)
+
+<% if (typeModuleName && typeModuleBlueId) { %>
+## Repository Information
+
+- Repository name: **<%= typeModuleName %>**
+- RepoBlueId: **<%= typeModuleBlueId %>**
+<% } %>
+
+## Installation
+
+```bash
+npm install <%= packageName %>
+# or
+yarn add <%= packageName %>
+```
+
+## Notes
+
+- This package is generated; do not edit `libs/types/src` manually.
+- In this repo, regenerate with `npm run generate:types` (and build with `npm run build:types`).

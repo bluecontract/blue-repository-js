@@ -10,6 +10,11 @@ import {
   normalizeAliasString,
   pathToString,
 } from './helpers.js';
+import {
+  renderSchemaFile,
+  renderSchemasBarrelFile,
+  renderSchemasIndexFile,
+} from './templateRenderer.js';
 import type { RepoContext, TypeInfo } from './types.js';
 import { UnknownTypeReferenceError } from './types.js';
 
@@ -58,9 +63,7 @@ export class PackageSchemaBuilder {
     }
 
     const schemaIndexTs = this.emitIndexFile();
-    const schemasTs =
-      `export * from './schemas/index';\n` +
-      `export { schemas } from './schemas/index';\n`;
+    const schemasTs = renderSchemasBarrelFile();
 
     return {
       perTypeFiles: this.perTypeFiles,
@@ -77,13 +80,17 @@ export class PackageSchemaBuilder {
 
     const fieldResults = this.compileFields(info.content, depImports, []);
     const schema = this.buildRootSchema(info, base, depImports, fieldResults);
-
-    const importLines = this.buildTypeFileImports(depImports, schema.usesBlueNode);
     const baseSchemaExpression = schema.needsZodObjectCast
       ? `${schema.baseSchema} as unknown as z.ZodObject<any>`
       : schema.baseSchema;
 
-    return this.renderTypeFile(info, safeName, importLines, baseSchemaExpression);
+    return renderSchemaFile({
+      schemaName: safeName,
+      blueIdsKey: this.aliasFor(info),
+      usesBlueNode: schema.usesBlueNode,
+      schemaImports: this.groupSchemaImports(depImports),
+      schemaExpressionIndented: indentBlock(baseSchemaExpression, 2),
+    });
   }
 
   private addBaseSchemaImport(imports: Set<string>, base: ResolvedBase) {
@@ -190,50 +197,50 @@ export class PackageSchemaBuilder {
       : this.blueNodeFallback();
   }
 
-  private buildTypeFileImports(
-    depImports: Set<string>,
-    usesBlueNode: boolean,
-  ): string[] {
-    const importLines: string[] = [];
-    importLines.push(`import { z } from 'zod';`);
-    importLines.push(`import { blueIds } from '../blue-ids';`);
-    importLines.push(
-      usesBlueNode
-        ? `import { withTypeBlueId, blueNodeField } from '@blue-labs/language';`
-        : `import { withTypeBlueId } from '@blue-labs/language';`,
-    );
-    importLines.push(...[...depImports].sort());
-    return importLines;
-  }
+  private groupSchemaImports(
+    depImports: ReadonlySet<string>,
+  ): Array<{ importPath: string; typeNames: string[] }> {
+    const byPath = new Map<string, Set<string>>();
+    for (const statement of depImports) {
+      const match = statement
+        .trim()
+        .match(/^import\s+\{\s*([^}]+?)\s*\}\s+from\s+['"]([^'"]+)['"];\s*$/);
+      if (!match) {
+        throw new Error(`Unsupported schema import format: ${statement}`);
+      }
+      const rawNames = match[1] ?? '';
+      const importPath = match[2] ?? '';
+      const names = rawNames
+        .split(',')
+        .map((name) => name.trim())
+        .filter(Boolean);
 
-  private renderTypeFile(
-    info: TypeInfo,
-    safeName: string,
-    importLines: string[],
-    baseSchemaExpression: string,
-  ): string {
-    return (
-      `${importLines.join('\n')}\n\n` +
-      `export const ${safeName}Schema = withTypeBlueId(blueIds['${this.aliasFor(
-        info,
-      )}'])(\n${indentBlock(baseSchemaExpression, 2)}\n);\n\n` +
-      `export type ${safeName} = z.infer<typeof ${safeName}Schema>;\n`
-    );
+      const existing = byPath.get(importPath) ?? new Set<string>();
+      for (const name of names) {
+        existing.add(name);
+      }
+      byPath.set(importPath, existing);
+    }
+
+    return [...byPath.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([importPath, names]) => ({
+        importPath,
+        typeNames: [...names].sort((a, b) => a.localeCompare(b)),
+      }));
   }
 
   private emitIndexFile(): string {
-    const importsBlock = this.schemaImports.join('\n');
-    const exportsBlock = this.types
-      .map((t) => {
-        const safeName = toIdentifier(t.typeName, t.blueId);
-        return `export { ${safeName}Schema } from './${safeName}';`;
-      })
-      .join('\n');
+    const schemaExports = this.types.map((t) => {
+      const safeName = toIdentifier(t.typeName, t.blueId);
+      return `export { ${safeName}Schema } from './${safeName}';`;
+    });
 
-    const schemaMapEntries = this.schemaEntries.map((entry) => `  ${entry},`).join('\n');
-    const schemaMap = `export const schemas = {\n${schemaMapEntries}\n} as const;\n`;
-
-    return `${importsBlock}\n\n${exportsBlock}\n\n${schemaMap}`;
+    return renderSchemasIndexFile({
+      schemaImports: this.schemaImports,
+      schemaExports,
+      schemaEntries: this.schemaEntries,
+    });
   }
 
   private compileFields(
@@ -247,7 +254,21 @@ export class PackageSchemaBuilder {
     let usesBlueNode = false;
     let fieldCount = 0;
 
-    for (const [key, value] of Object.entries(content || {})) {
+    const sortedKeys = Object.keys(content || {}).sort((a, b) => a.localeCompare(b));
+    for (const key of sortedKeys) {
+      const value = (content as any)[key];
+      if (key === 'name' && typeof value === 'string') {
+        entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
+        usesZ = true;
+        continue;
+      }
+
+      if (key === 'description' && typeof value === 'string') {
+        entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
+        usesZ = true;
+        continue;
+      }
+
       if (RESERVED_KEYS.has(key)) {
         continue;
       }
@@ -261,7 +282,7 @@ export class PackageSchemaBuilder {
       usesZ = usesZ || fieldSchema.usesZ;
       usesBlueNode = usesBlueNode || fieldSchema.usesBlueNode;
       fieldCount++;
-      entries.push(`${JSON.stringify(key)}: ${fieldSchema.expr}`);
+      entries.push(`${this.formatObjectKey(key)}: ${fieldSchema.expr}`);
     }
 
     const pad = ' '.repeat(indent);
@@ -273,18 +294,21 @@ export class PackageSchemaBuilder {
     return { shape, usesZ, usesBlueNode, fieldCount };
   }
 
+  private formatObjectKey(key: string): string {
+    // Prefer unquoted keys for readability when they are valid identifiers.
+    // Fall back to a quoted literal for keys that contain spaces/symbols.
+    return /^[A-Za-z_$][A-Za-z0-9_$]*$/.test(key) ? key : JSON.stringify(key);
+  }
+
   private compileProperty(
     def: Record<string, unknown>,
     imports: Set<string>,
     path: string[],
     indent: number,
   ): CompiledSchema {
-    this.validateSchemaKeys(def, path);
-    const schemaObj = def?.schema as Record<string, unknown> | undefined;
-    const required = schemaObj?.['required'] === true;
     const compiled = this.compileFieldValue(def, imports, path, indent);
     return {
-      expr: required ? compiled.expr : `${compiled.expr}.optional()`,
+      expr: `${compiled.expr}.optional()`,
       usesZ: compiled.usesZ,
       usesBlueNode: compiled.usesBlueNode,
     };
@@ -444,7 +468,7 @@ export class PackageSchemaBuilder {
       case 'text':
         return 'z.string()';
       case 'integer':
-        return 'z.number().int()';
+        return 'z.number()';
       case 'double':
         return 'z.number()';
       case 'boolean':
@@ -462,22 +486,6 @@ export class PackageSchemaBuilder {
       atPath: pathToString(path),
       ref,
     });
-  }
-
-  private validateSchemaKeys(def: Record<string, unknown>, path: string[]) {
-    if (def && typeof def === 'object' && 'schema' in def) {
-      const schemaObj = (def as any).schema;
-      if (schemaObj && typeof schemaObj === 'object') {
-        const unsupported = Object.keys(schemaObj).filter((k) => k !== 'required');
-        if (unsupported.length > 0) {
-          throw new Error(
-            `Unsupported schema keys [${unsupported.join(', ')}] at ${path.join(
-              '.',
-            )}. Only 'required' is supported.`,
-          );
-        }
-      }
-    }
   }
 
   private resolveBase(

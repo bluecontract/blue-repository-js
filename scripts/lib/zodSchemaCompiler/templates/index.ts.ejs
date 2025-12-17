@@ -1,0 +1,10 @@
+<% /* index.ts.ejs */ %>
+<%- schemaImports.join('\n') %>
+
+<%- schemaExports.join('\n') %>
+
+export const schemas = {
+<% schemaEntries.forEach((entry) => { -%>
+  <%- entry %>,
+<% }); -%>
+} as const;

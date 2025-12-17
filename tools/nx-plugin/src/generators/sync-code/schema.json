@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "id": "sync-code",
+  "type": "object",
+  "properties": {
+    "sourcePath": {
+      "type": "string",
+      "description": "Path to BlueRepository.blue (relative to workspace root)",
+      "default": "BlueRepository.blue"
+    },
+    "skipFormat": {
+      "type": "boolean",
+      "description": "Skip formatting generated files.",
+      "default": false
+    }
+  },
+  "required": []
+}

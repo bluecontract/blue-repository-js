@@ -1,0 +1,5 @@
+<% /* packages-index.ts.ejs */ %>
+<% packages.forEach(({ slug, identifier }) => { -%>
+export { default as <%= identifier %> } from './<%= slug %>/index';
+<% }); -%>
+

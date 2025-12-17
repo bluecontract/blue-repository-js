@@ -1,0 +1,23 @@
+<% /* schema.ts.ejs */ %>
+import { z } from 'zod';
+import { blueIds } from '../blue-ids';
+<% if (usesBlueNode) { -%>
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
+<% } else { -%>
+import { withTypeBlueId } from '@blue-labs/language';
+<% } -%>
+<% schemaImports.forEach(({ importPath, typeNames }) => { -%>
+<% if (typeNames.length === 1) { -%>
+import { <%= typeNames[0] %> } from '<%= importPath %>';
+<% } else { -%>
+import {
+  <%= typeNames.join(',\n  ') %>,
+} from '<%= importPath %>';
+<% } -%>
+<% }); -%>
+
+export const <%= schemaName %>Schema = withTypeBlueId(blueIds['<%= blueIdsKey %>'])(
+<%- schemaExpressionIndented %>
+);
+
+export type <%= schemaName %> = z.infer<typeof <%= schemaName %>Schema>;

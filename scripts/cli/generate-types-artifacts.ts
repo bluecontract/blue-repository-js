@@ -1,6 +1,9 @@
 import * as path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { generateTypesArtifacts } from '../lib/generateTypesArtifacts.js';
+import {
+  formatGeneratedTypesArtifacts,
+  generateTypesArtifacts,
+} from '../lib/generateTypesArtifacts.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,3 +14,8 @@ const sourcePath =
 
 generateTypesArtifacts({ repoRoot, sourcePath });
 
+const skipFormat =
+  process.argv.includes('--skipFormat') || process.argv.includes('--skip-format');
+if (!skipFormat) {
+  formatGeneratedTypesArtifacts(repoRoot);
+}

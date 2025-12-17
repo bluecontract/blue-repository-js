@@ -3,7 +3,7 @@ import * as path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { pathToFileURL } from 'node:url';
-import { generateTypesArtifacts } from '../lib/generateTypesArtifacts';
+import { generateTypesArtifacts } from '../lib/generateTypesArtifacts.js';
 import { rewriteDistRelativeImportsToJsExtensions } from '../lib/rewriteDistRelativeImports';
 
 export const repoRoot = path.resolve(__dirname, '..', '..');

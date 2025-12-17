@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "sync-code": {
+      "factory": "./src/generators/sync-code/sync-code",
+      "schema": "./src/generators/sync-code/schema.json",
+      "description": "Generate @blue-repository/types from BlueRepository.blue"
+    }
+  }
+}

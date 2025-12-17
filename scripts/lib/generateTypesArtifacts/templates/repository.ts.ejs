@@ -1,0 +1,18 @@
+<% /* repository.ts.ejs */ %>
+<% packages.forEach(({ slug, identifier }) => { -%>
+import <%= identifier %> from './packages/<%= slug %>/index';
+<% }); -%>
+import { name, repositoryVersions } from './meta';
+
+export const repository = {
+  name,
+  repositoryVersions,
+  packages: {
+<% packages.forEach(({ slug, identifier }) => { -%>
+    '<%= slug %>': <%= identifier %>,
+<% }); -%>
+  },
+} as const;
+
+export default repository;
+
