@@ -12,6 +12,6 @@ export const singleDocumentPermissionGranted = {
     },
   },
   type: {
-    blueId: '3gtD3i9bgfhDat3VB53vrQpchWFn1McYe2ngSc3YLjar',
+    blueId: '49hRz5BXg1uHcQT5z3FGUFUqBSXxCXzqKuFy588zN3EA',
   },
 } as const;

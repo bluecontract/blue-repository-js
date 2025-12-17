@@ -1,12 +1,13 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
+import { ResponseSchema } from '@blue-repository/conversation';
 import { AddingParticipantRequestedSchema } from './AddingParticipantRequested';
 
 export const AddingParticipantRespondedSchema = withTypeBlueId(
   blueIds['Adding Participant Responded']
 )(
-  z.object({
+  ResponseSchema.extend({
     name: z.string().optional(),
     request: AddingParticipantRequestedSchema.optional(),
     status: z.string().optional(),

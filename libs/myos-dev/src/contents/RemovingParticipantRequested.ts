@@ -6,4 +6,7 @@ export const removingParticipantRequested = {
     },
   },
   name: 'Removing Participant Requested',
+  type: {
+    blueId: '3n91zvNzZkMN4mdBNMA3ez9ccJQDzkNcv67BtYnMW8Hn',
+  },
 } as const;
