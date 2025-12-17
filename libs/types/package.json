@@ -1,10 +1,6 @@
 {
   "name": "@blue-repository/types",
   "version": "0.0.0",
-  "blueType": {
-    "moduleName": "Blue Repository",
-    "moduleBlueId": "68oz2neMJqcQyzRBaesJfuwxUJMhXkoHV5YYjUjNf24C"
-  },
   "type": "module",
   "sideEffects": false,
   "repository": {
@@ -16,75 +12,7 @@
     "access": "public"
   },
   "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    },
-    "./meta": {
-      "types": "./dist/meta.d.ts",
-      "default": "./dist/meta.js"
-    },
-    "./repository": {
-      "types": "./dist/repository.d.ts",
-      "default": "./dist/repository.js"
-    },
-    "./packages": {
-      "types": "./dist/packages/index.d.ts",
-      "default": "./dist/packages/index.js"
-    },
-    "./packages/*": {
-      "types": "./dist/packages/*/index.d.ts",
-      "default": "./dist/packages/*/index.js"
-    },
-    "./packages/*/schemas": {
-      "types": "./dist/packages/*/schemas.d.ts",
-      "default": "./dist/packages/*/schemas.js"
-    },
-    "./packages/*/contents": {
-      "types": "./dist/packages/*/contents.d.ts",
-      "default": "./dist/packages/*/contents.js"
-    },
-    "./packages/*/blue-ids": {
-      "types": "./dist/packages/*/blue-ids.d.ts",
-      "default": "./dist/packages/*/blue-ids.js"
-    },
-    "./packages/*/meta": {
-      "types": "./dist/packages/*/meta.d.ts",
-      "default": "./dist/packages/*/meta.js"
-    },
-    "./packages/conversation/schemas/*": {
-      "types": "./dist/packages/conversation/schemas/*.d.ts",
-      "default": "./dist/packages/conversation/schemas/*.js"
-    },
-    "./packages/conversation/contents/*": {
-      "types": "./dist/packages/conversation/contents/*.d.ts",
-      "default": "./dist/packages/conversation/contents/*.js"
-    },
-    "./packages/core/schemas/*": {
-      "types": "./dist/packages/core/schemas/*.d.ts",
-      "default": "./dist/packages/core/schemas/*.js"
-    },
-    "./packages/core/contents/*": {
-      "types": "./dist/packages/core/contents/*.d.ts",
-      "default": "./dist/packages/core/contents/*.js"
-    },
-    "./packages/myos/schemas/*": {
-      "types": "./dist/packages/myos/schemas/*.d.ts",
-      "default": "./dist/packages/myos/schemas/*.js"
-    },
-    "./packages/myos/contents/*": {
-      "types": "./dist/packages/myos/contents/*.d.ts",
-      "default": "./dist/packages/myos/contents/*.js"
-    },
-    "./packages/paynote/schemas/*": {
-      "types": "./dist/packages/paynote/schemas/*.d.ts",
-      "default": "./dist/packages/paynote/schemas/*.js"
-    },
-    "./packages/paynote/contents/*": {
-      "types": "./dist/packages/paynote/contents/*.d.ts",
-      "default": "./dist/packages/paynote/contents/*.js"
-    }
+    "./package.json": "./package.json"
   },
   "files": [
     "dist",
