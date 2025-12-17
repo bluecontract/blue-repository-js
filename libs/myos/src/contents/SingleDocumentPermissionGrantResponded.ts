@@ -22,6 +22,6 @@ export const singleDocumentPermissionGrantResponded = {
     },
   },
   type: {
-    blueId: '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
+    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
   },
 } as const;

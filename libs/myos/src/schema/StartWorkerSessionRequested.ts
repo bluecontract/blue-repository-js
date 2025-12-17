@@ -1,13 +1,13 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { blueNodeField, withTypeBlueId } from '@blue-labs/language';
-import { EventSchema } from '@blue-repository/conversation';
+import { RequestSchema } from '@blue-repository/conversation';
 import { ChannelSchema } from '@blue-repository/core';
 
 export const StartWorkerSessionRequestedSchema = withTypeBlueId(
   blueIds['Start Worker Session Requested']
 )(
-  EventSchema.extend({
+  RequestSchema.extend({
     capabilities: z.record(z.string(), z.boolean()).optional(),
     channelBindings: z.record(z.string(), ChannelSchema).optional(),
     description: z.string().optional(),

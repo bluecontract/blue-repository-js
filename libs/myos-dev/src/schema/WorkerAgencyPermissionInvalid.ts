@@ -1,12 +1,12 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { EventSchema } from '@blue-repository/core-dev';
+import { ResponseSchema } from '@blue-repository/core-dev';
 
 export const WorkerAgencyPermissionInvalidSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Invalid']
 )(
-  EventSchema.extend({
+  ResponseSchema.extend({
     description: z.string().optional(),
     issues: z.array(z.string()).optional(),
     name: z.string().optional(),

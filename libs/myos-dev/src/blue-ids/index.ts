@@ -1,8 +1,8 @@
 export const blueIds = {
   'Adding Participant Requested':
-    'A3nxy96fKtp3bPnCYP14uhrnYCJoigDLJNvdbGnjdXg6',
+    '3eawdQwTksQgDSr7wMc1tjjSAGdMRCiMnNfQ1U17sqCp',
   'Adding Participant Responded':
-    'CbcVNTgCj7hnq4nKBDdgWAcymuRqTTmCzxY1LUuK3ze6',
+    '8YyRowEQvqjvV9fSiti8E9ahWQ7GQ9mybMZqzSBXj1WG',
   Agent: '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc',
   'Agent Actor': '8oDiwe4tAML37zuxu3Sc5LVegFxiPBRMPJydTauXZjHg',
   'All Participants Ready': 'Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC',
@@ -43,69 +43,69 @@ export const blueIds = {
   'Participant Resolved': 'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
   'Principal Actor': 'HQhkvaGUMTYA4ErvoPT5i3aL8SRxiimRLUpVnTc2F7aJ',
   'Removing Participant Requested':
-    'FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C',
+    'GZAYcXDctDigY1kxnfpgwDAE5vUzcisWJenh1b2JbzJx',
   'Removing Participant Responded':
-    'Fu7pgwV2VKNs1KqGcpoVewhYNeL2TE7nhaxDwEAs2iZx',
+    'H1MKRALtiGm2UqryaLabLgtNdNzj9TtsUP1JozjV8oHg',
   'Session Epoch Advanced': 'AJTHHxe2Xg3n3j2sm82UKHTvW3G9aUKKXgiuupFEGDAX',
   'Single Document Permission Grant Requested':
-    'nhTgUejxan53exhUTqEvNtEkvo5aLnJLuiYg5fcvkxK',
+    'Cfp9Hr34GkwGZb9zfA23wQ7VynTkZn5N6f9PTUUwKEEk',
   'Single Document Permission Grant Responded':
-    '3Zh87GvAjzhgSCZ5d9qEGY7aniCCw6z8pGwdLnvExtoo',
+    '4cBixUpkwB52W7t4xGNaeb52aAAyrVm38ZyBiPrfWNMF',
   'Single Document Permission Grant To Account':
     '6iyWVjbEE7FCD4StjN96qAJhbHERrvdbjV8Hk1boeHQs',
   'Single Document Permission Grant To Document':
     'HbtTvZfpZonpqSftPwu5J63CA9BA3iuQReu4RgRMxU9N',
   'Single Document Permission Granted':
-    '9nB2Cvdy8xW63EFq8qAu4iv4n7AYKR4kpBQxoyMUQfo5',
+    'DRP6eAHw5QtyDEodrpzHKr9tv2VQajdRhmvK1457dfqm',
   'Single Document Permission Granting in Progress':
-    'B9VRRRZwVpxY91uTqM58QqgC15784g9jCkGTTgvUqsrD',
+    '3UovB6AGd4Nfq4VEs6kG6M9UgAcrs6jN4jsm8ak1jugq',
   'Single Document Permission Invalid':
     'D1aJnFQKk9wjbDk96Jkz7V1XpETh7wSoWVLea8bG68py',
   'Single Document Permission Rejected':
-    'FC27WB5vXeCWm1xApHepUTuNzNCoqAZZv3jte6rBjsta',
+    'QzDARvGa47UhrwbjXz59kGENKY1F3CkAgJFf7pi4FYa',
   'Single Document Permission Revoke Requested':
-    '5J4KEF6WPosRRuVmyjs6s3VPmQSoM4y7yKaMZge7at5H',
+    'KCXZiKTBuKRyqj63cyWDQ66HEuoQyLyyJPR84D7CaVj',
   'Single Document Permission Revoked':
-    'FTvWJeG1xB4EJ8NphzvQS6rJzWySm7o8PSXEGEijW1Be',
+    '8XdMfFgTFR3ubczhni1kHuxo8sp3qdaEGjs9XKV5SyuT',
   'Single Document Permission Revoking in Progress':
-    '2i3BWWMye7xEd53J5Ce1vnQddnYVqmkJ9YDQPVx1Lv7v',
+    '5FWEUAVAiKfkbtUU3mzQSCwMYdLLKd2qzZJ3CyCEdzBM',
   'Single Document Permission Set':
     'DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54',
   'Single Document Permission Validated':
-    'EXG3ai2f6qh3ywXhg3qi8wRSCG47g3mvgHwzEvC3ihDJ',
+    '3wtdjBENmkBRTyviNAwx9MAankdG2pexSEpAWQxCmhXg',
   'Start Worker Session Requested':
-    '7cVNmxdkeEHkx9JdonT97gAMEUP9v8QFfUzaAwCh5Hqm',
+    'EWFp4eNQgTGauHoDpvCfSFqkLz8EX5zqdqSWWAe7G6wW',
   'Subscribe to Session Requested':
-    'DxiFztKK3By3QEaswmJD4RSupnTvEKyKRmm42sCf9me2',
+    'HKLMRLYs5JnVjbYJ5PuDNsx7r1Cr9wnwHqDL5Uqjwqrx',
   'Subscription Update': '75p9SS6Lah9EvWqjsNrJChtTqakBonJn8Zb5JytFv73T',
   'Subscription to Session Failed':
-    'DNJtWjAscAsqbgvFZJDYKBzE1EJz3bAEDXdbVaiZPnoT',
+    '4nkdvyoxLafnxbEpbMd7iBcMdCaavCP8MYFQYDYXJ2mC',
   'Subscription to Session Initiated':
-    '7H8igM9xqMmTfhAJKNHFgskN1AXPzDhty74fLJbwUX5j',
+    '6mc2V5QW988fDPyKoJVbxpH3cX1vtzwT1w7jQeKoK73D',
   'Subscription to Session Revoked':
-    '3g681P6coakcHDcDhhmywjh2zTaemsaGwagjeBYSn9AU',
+    '53QNZuKbk3C1LzDMAn8UDDAkY1S1kMdVtaUVQoWGUW64',
   'Target Document Session Started':
     'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
   'Worker Agency Permission': '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
   'Worker Agency Permission Grant':
     '149x1v7Rhh124Me9eiFydMZSNSVrSwTiAA4hEuz2bAvb',
   'Worker Agency Permission Grant Requested':
-    'CRYfhJpYyrKfzQ2argJDjsphUQ3qqC7CQvGH2jZv3ZYY',
+    'BEzXZozTnJQd5oFBaau7FYRQA9pYHaWedi7J1XVFfaqK',
   'Worker Agency Permission Granted':
-    '6ZfnZaFmr3x1rDvphdT4PyFft6EGEnf8jrbjpJxhyBTP',
+    'EVvATnjqmqKaJL7UNoSLwCYREkfAv7Z9oUjf71UkBq5u',
   'Worker Agency Permission Granting in Progress':
-    'Kjui7g1RsaL4Lw3DJDt14hRAZJDizMkYVXrqtKo7eCC',
+    'UhMrdsB274XztPttSSWCzVHHrFcfiaXPCxsYMwPp46Z',
   'Worker Agency Permission Invalid':
-    'oxWNVreGCQunAWzBUa8CFdyjyUeWbQs8sCV4cpxc9hL',
+    'EAcm8GV84EKfo4F9uQ8izMzbmzekdipcpHqHKf4wBXRP',
   'Worker Agency Permission Rejected':
-    '4MwUW3fin5Aq5fY61Bd8d6Aoe8TMAoN4z5WaLALwUW8C',
+    '2pK4Uok7eKX7jtPou8KEz3Y23E257QhphqgjonGwhty2',
   'Worker Agency Permission Revoke Requested':
-    '4RdwAsfBU1RYSg3yVvzPWQ1Wo3A8iqmpTHLbFM7xAio2',
+    '7L8dhDJz29aBybQ3R1DcNoPeyySTtAzV5BqJn62U6HKt',
   'Worker Agency Permission Revoked':
-    'EjFRzRz5S3XnEoYr1DCdPep9ZYjMzvZFdkfJb8qARMdV',
+    'FNepR7Bqg7MXhKmJFMP4gAS36W5j4XBvR1xqkUstxX5p',
   'Worker Agency Permission Revoking in Progress':
-    '6793c6P7XP49s26XXpzp3Cp9GQcKyiNCunhHbo9fYNj4',
+    'E7zUiizgnVd8P7EdgzsVziFYXHTVLGLEu94deZx2ztqd',
   'Worker Agency Permission Validated':
-    '7sDYfwnYJBYvESFaw8A88i9XzPUUn4tptTeMQZmVmeSQ',
-  'Worker Session Starting': 'FyEB5UGCKZUX3PGiC5ivUgCj1wksFnHJwcagpaGPiyan',
+    '8qAxHato2kEym8nQMRtGgAT2v2Rmxm4xMDzrsR2L25hG',
+  'Worker Session Starting': '3W1zahEMaPUqBNBS9cf6AhXf4YAU7PhHSem2LXEx6PU9',
 } as const;

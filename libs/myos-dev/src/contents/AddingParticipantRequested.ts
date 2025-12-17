@@ -19,4 +19,7 @@ export const addingParticipantRequested = {
       },
     },
   },
+  type: {
+    blueId: '3n91zvNzZkMN4mdBNMA3ez9ccJQDzkNcv67BtYnMW8Hn',
+  },
 } as const;

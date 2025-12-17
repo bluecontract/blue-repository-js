@@ -1,11 +1,12 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
+import { RequestSchema } from '@blue-repository/conversation';
 
 export const RemovingParticipantRequestedSchema = withTypeBlueId(
   blueIds['Removing Participant Requested']
 )(
-  z.object({
+  RequestSchema.extend({
     channelName: z.string().optional(),
     name: z.string().optional(),
   })

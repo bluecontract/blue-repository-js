@@ -1,13 +1,13 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { EventSchema } from '@blue-repository/conversation';
+import { ResponseSchema } from '@blue-repository/conversation';
 import { WorkerAgencyPermissionSchema } from './WorkerAgencyPermission';
 
 export const WorkerAgencyPermissionRevokingInProgressSchema = withTypeBlueId(
   blueIds['Worker Agency Permission Revoking in Progress']
 )(
-  EventSchema.extend({
+  ResponseSchema.extend({
     allowedWorkerAgencyPermissions: z
       .array(WorkerAgencyPermissionSchema)
       .optional(),
