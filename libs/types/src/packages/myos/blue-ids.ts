@@ -1,0 +1,123 @@
+export const blueIds = {
+  'MyOS/Adding Participant Requested':
+    'A3nxy96fKtp3bPnCYP14uhrnYCJoigDLJNvdbGnjdXg6',
+  'MyOS/Adding Participant Responded':
+    'CbcVNTgCj7hnq4nKBDdgWAcymuRqTTmCzxY1LUuK3ze6',
+  'MyOS/Agent': 'AjfPDYhjp31oYmraTy7PYFrSUGQKxtfQnHdBr8o7mt3g',
+  'MyOS/Agent Actor': '3SJK2XGFHJgqXyCK4sjZ6tmAk3VjyuX6imGBJmV2LgQZ',
+  'MyOS/Agent LLM': 'D7eJffANsyfVjzxBRkehE7jb2F942Yxbeut3PzSLjVsP',
+  'MyOS/All Participants Ready': 'Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC',
+  'MyOS/Anchor Automation Template':
+    '8JHhvprgxVUFZCQpyeEJfMFF8vuVEAnjqojftJ6B2E6S',
+  'MyOS/Bootstrap Failed': '9iEADVdqxqgacF3GAZVMFZu4m5ywuNpsGzButLUNkPWo',
+  'MyOS/Call Operation Accepted':
+    'Dd53JjiBGUnASZXjhiHBqCSnruN2XmLtcW2vNQB7Sm34',
+  'MyOS/Call Operation Failed': 'BaNmvStTGdsBsSHiHbqdhrrC7vfwiQdDK6NYiyRbJowx',
+  'MyOS/Call Operation Requested':
+    'EVX6nBdHdVEBH9Gbthpd2eqpxaxS4bb9wM55QNdZmcBy',
+  'MyOS/Call Operation Responded':
+    '3P4vsTx8Ky2pucXxKgkn8MouveP2DBRjkwZckCG5b9Lb',
+  'MyOS/Chat GPT Connector Agent':
+    'HDPFJzL5j6aPq2zb6nuZSpcNwqcuHbeaohUxDMKxLfa',
+  'MyOS/Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
+  'MyOS/Document Anchors': '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH',
+  'MyOS/Document Link': 'BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk',
+  'MyOS/Document Links': '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5',
+  'MyOS/Document Session Bootstrap':
+    '2K3rW6d4KychEQDerQpigPzQp8wHTJzbmueJaDXfGZqg',
+  'MyOS/Document Type Link': 'D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX',
+  'MyOS/Inform User To Install MyOS Package':
+    '3wH1r5RQVidCMcu4cJ4ZweVHZwt1mMu78RA3uXayTqeq',
+  'MyOS/Link': 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
+  'MyOS/MyOS Admin Base': 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
+  'MyOS/MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
+  'MyOS/MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
+  'MyOS/MyOS Agent Event': 'GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR',
+  'MyOS/MyOS Document Session Reference':
+    '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9',
+  'MyOS/MyOS Package': 'GmeLRydVPtUsPZaPpgiaaPWPBBNXnRJZsgi3fvQ4qe33',
+  'MyOS/MyOS Participants Orchestration':
+    '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
+  'MyOS/MyOS Session Interaction':
+    'CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H',
+  'MyOS/MyOS Session Link': 'd1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB',
+  'MyOS/MyOS Timeline': '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk',
+  'MyOS/MyOS Timeline Channel': 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+  'MyOS/MyOS Timeline Entry': 'Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ',
+  'MyOS/MyOS Worker Agency': '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1',
+  'MyOS/Participant': 'phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ',
+  'MyOS/Participant Activated': 'EQhLKv5EAcFriegGYEP7ykwbjeyzFoaTxeizzuTd8VDq',
+  'MyOS/Participant Activation State':
+    'CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB',
+  'MyOS/Participant Resolved': 'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
+  'MyOS/Principal Actor': '5GB8C22LsZGR3kkEmP5j5Zye7SR173ojzzUK99tUcoP',
+  'MyOS/Removing Participant Requested':
+    'FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C',
+  'MyOS/Removing Participant Responded':
+    'Fu7pgwV2VKNs1KqGcpoVewhYNeL2TE7nhaxDwEAs2iZx',
+  'MyOS/Session Epoch Advanced': '9CvxqAMJhqcFoLr5nXSEdWDZUMD383xhJtyFwXsCqD9E',
+  'MyOS/Single Document Permission Grant Requested':
+    'HxMSh1JhD42UC2QGgoaCQozMTW3rsS8ENejasZtt7oXA',
+  'MyOS/Single Document Permission Grant Responded':
+    '3FS3vHTB9XMw2RbwatfUTCSgoh647XduUBjYcz6Bdkwh',
+  'MyOS/Single Document Permission Grant To Account':
+    'wbPRcT52TR5chSx4WjQ48BQsbma8uiPdbVrxKvPJUap',
+  'MyOS/Single Document Permission Grant To Document':
+    'AgkFLMmzZKt9iExpz2UcVZubPZ7vsCJRXJfgLReMkjW9',
+  'MyOS/Single Document Permission Granted':
+    'EkZN2mSyrJpF4DQmBsdW5NYzw626N6jhSzYYsibpB1MW',
+  'MyOS/Single Document Permission Granting in Progress':
+    '9iu6bai3dWkJwdQtYRsUf85uqpRBRnC7SH8JFWgJBoWs',
+  'MyOS/Single Document Permission Invalid':
+    '567voUMtKJQoqru6ZVPYb4EGwdeV99rUSAqsnod7gqfd',
+  'MyOS/Single Document Permission Rejected':
+    '387NGsN9DZNttQbjZHZksVSyHjb5SSZdhxKtCmMu36yo',
+  'MyOS/Single Document Permission Revoke Requested':
+    'H1tETZ1YKndAuEBKu54ZDq3U1myncW3wj26QohP58y7X',
+  'MyOS/Single Document Permission Revoked':
+    'BmmvGcvB1yAe1fb3bsxpajwo9WuCNVAYQN8CGuMivUkT',
+  'MyOS/Single Document Permission Revoking in Progress':
+    '6h9TRB22W218Bkjo11TD3zyCfuatFY8Ack4GBeW7vF69',
+  'MyOS/Single Document Permission Set':
+    'DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54',
+  'MyOS/Single Document Permission Validated':
+    '9T3AsCqKkpoxHs6K9dTeCHRCXYGHPMthjaNcZxLdckgi',
+  'MyOS/Start Worker Session Requested':
+    'C9Fyy28LCQACfDootHHWRB4eEm1xCiSnaH7FYTSdZmwQ',
+  'MyOS/Subscribe to Session Requested':
+    'CohDM1yrnMV32VE73JiRbnmT3h8TgVqryd2Eb8K5Tmzc',
+  'MyOS/Subscription to Session Failed':
+    'vGfiWWkit85t2cg1YCn9MDGBp573F15YgGMkfx5D3Et',
+  'MyOS/Subscription to Session Initiated':
+    'EdrM9LnMKjfpYPpKNSm9hK61ywFCv8xwhd4nqUTv7Sy5',
+  'MyOS/Subscription to Session Revoked':
+    'CF47wMy4XsVYMiFLmkvgYvXN8TBhfSTh1vnt8xvcFaE1',
+  'MyOS/Subscription Update': '2gc8djtKGGRPjGfMQzvJZMviaXm4ytM1nA4DVbfyjkrW',
+  'MyOS/Target Document Session Started':
+    'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
+  'MyOS/Worker Agency Permission':
+    '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
+  'MyOS/Worker Agency Permission Grant':
+    '3Wb5cwcZ3P6bSjTJAVrXPBzaAvoccBauUNVud1pqpEM2',
+  'MyOS/Worker Agency Permission Grant Requested':
+    '2533GSBC4sXbbhDNdB6hKnRoySzQDziUb9u7bK3sa7tD',
+  'MyOS/Worker Agency Permission Granted':
+    'ESCifdJpDaKviHDVPzCAuaUeroYJTuQTNAUW6ikQHHWd',
+  'MyOS/Worker Agency Permission Granting in Progress':
+    '9Q2Kdb1FzRVZrbQHv1JZ9Emo14NavVqD32jnF5u6FUmj',
+  'MyOS/Worker Agency Permission Invalid':
+    '63kEoiNgJnYPGd2fnJw4Km2MD6zuCBBTn9v9qVPWx2Nz',
+  'MyOS/Worker Agency Permission Rejected':
+    'CB4YQq9GGVb3i3enmWnxx1zbV2Ks7nNHYdBhcCuJ8iht',
+  'MyOS/Worker Agency Permission Revoke Requested':
+    '4cPqgXEsF6NHdAGhhAaHBPGZ6RNi5Dnr7YWp2vQd8HYk',
+  'MyOS/Worker Agency Permission Revoked':
+    '6nYAWfizha9PvKi9scLLCReYimYaupRLoyZTCgB8zUpR',
+  'MyOS/Worker Agency Permission Revoking in Progress':
+    '5sX6PjLHydkuj1BrvCM5QoUd4e3GCtCyc8KsNqpV2e9j',
+  'MyOS/Worker Agency Permission Validated':
+    'HUeeqt75YxUmP5mBdhchJEtXDXqhhT1EbwkrGSmbpNJf',
+  'MyOS/Worker Session Starting':
+    'FYMd1LAezBcUXp9gh4bEjEwWKqZfgWStwHQ4Q7juTc8F',
+} as const;
+export default blueIds;
