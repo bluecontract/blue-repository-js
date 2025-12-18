@@ -41,6 +41,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
         run: npm install
@@ -69,7 +70,7 @@ jobs:
         shell: bash
 
       - name: Publish RC packages
-        run: npx nx release publish --tag next --first-release
+        run: npx nx release publish --tag next --first-release --verbose
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
