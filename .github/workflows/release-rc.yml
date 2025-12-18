@@ -62,7 +62,7 @@ jobs:
         shell: bash
 
       - name: Release RC
-        run: npx nx release --preid=rc --verbose
+        run: npx nx release --preid=rc --verbose --yes
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
