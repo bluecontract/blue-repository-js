@@ -1,4 +1,4 @@
-import { parsePointer } from '@blue-labs/repository-contract';
+import { parsePointer } from '../repository-contract/src';
 import type { BlueTypeVersion } from './types.js';
 
 export function validateAttributesIntegrity(

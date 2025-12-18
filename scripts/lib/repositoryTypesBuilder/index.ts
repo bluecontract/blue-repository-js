@@ -1,7 +1,7 @@
 import {
   validateNoCycles,
   validateStableDoesNotDependOnDev,
-} from '@blue-labs/repository-contract';
+} from '../repository-contract/src';
 import { buildMeta } from './meta.js';
 import { buildPackages } from './packages.js';
 import type {
