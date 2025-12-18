@@ -1,3 +1,9 @@
+## 1.0.0-rc.4 (2025-12-18)
+
+### 🚀 Features
+
+- release new types and fix deps ([1ebe309](https://github.com/bluecontract/blue-repository-js/commit/1ebe309))
+
 ## 1.0.0-rc.3 (2025-12-18)
 
 ### 🚀 Features
