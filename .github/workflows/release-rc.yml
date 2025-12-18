@@ -24,6 +24,9 @@ jobs:
   release:
     name: Release RC
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # needed for npm provenance
     timeout-minutes: 10
     steps:
       - name: Checkout repository
@@ -62,9 +65,12 @@ jobs:
         shell: bash
 
       - name: Release RC
-        run: npx nx release --preid=rc --verbose --yes
+        run: npx nx release --preid=rc --skip-publish --verbose
+        shell: bash
+
+      - name: Publish RC packages
+        run: npx nx release publish --tag next
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: true
-
