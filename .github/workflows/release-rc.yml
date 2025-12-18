@@ -69,7 +69,7 @@ jobs:
         shell: bash
 
       - name: Publish RC packages
-        run: npx nx release publish --tag next
+        run: npx nx release publish --tag next --first-release
         shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
