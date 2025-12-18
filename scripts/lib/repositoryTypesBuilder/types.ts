@@ -5,7 +5,7 @@ import type {
   BlueRepositoryPackage as ContractBlueRepositoryPackage,
   BlueTypeMetadata as ContractBlueTypeMetadata,
   BlueTypeVersion as ContractBlueTypeVersion,
-} from '../repository-contract/src';
+} from '@blue-labs/repository-contract';
 
 export type BlueTypeVersion = ContractBlueTypeVersion;
 export type BlueTypeMetadata = ContractBlueTypeMetadata<Record<string, unknown>>;

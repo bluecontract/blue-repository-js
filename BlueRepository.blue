@@ -379,28 +379,6 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH
             attributesAdded: []
-      - status: dev
-        content:
-          name: Timeline Channel V2
-          type:
-            blueId: DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr
-          description: |
-            Conversation channel.
-            Delivers events that belong to a specific Timeline
-          timelineId:
-            type:
-              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
-            description: The `timelineId` whose entries this channel delivers.
-          note:
-            type:
-              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
-          test:
-            type:
-              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
-        versions:
-          - repositoryVersionIndex: 0
-            typeBlueId: CU6mBTGTySYMMEPYBQZQSSrP54wehrZoRQytgG28Cd2g
-            attributesAdded: []
       - status: stable
         content:
           name: Timeline Entry
@@ -781,6 +759,8 @@ packages:
       - status: stable
         content:
           name: Adding Participant Requested
+          type:
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           channelName:
             description: The abstract channel name for the new participant.
             type:
@@ -795,36 +775,31 @@ packages:
                 blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: A3nxy96fKtp3bPnCYP14uhrnYCJoigDLJNvdbGnjdXg6
+            typeBlueId: 98JmkF189jZpQRyzaiQxLbc2rRUqnRy2o6bH2qCRaBg3
             attributesAdded: []
       - status: stable
         content:
           name: Adding Participant Responded
+          type:
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           request:
             type:
-              blueId: A3nxy96fKtp3bPnCYP14uhrnYCJoigDLJNvdbGnjdXg6
+              blueId: 98JmkF189jZpQRyzaiQxLbc2rRUqnRy2o6bH2qCRaBg3
           status:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: CbcVNTgCj7hnq4nKBDdgWAcymuRqTTmCzxY1LUuK3ze6
+            typeBlueId: BQMtWzcdbYUdaJQADyy6bkscxQGfhQHT4BgFhXQAgKfz
             attributesAdded: []
       - status: stable
         content:
           name: Agent
           description: Marker type for a specialized Blue document that MyOS treats as an Agent, enabling richer UI and behaviors while remaining a standard Blue document.
-          llmEnabled:
-            type:
-              blueId: 4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: 8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc
             attributesAdded: []
-          - repositoryVersionIndex: 1
-            typeBlueId: AjfPDYhjp31oYmraTy7PYFrSUGQKxtfQnHdBr8o7mt3g
-            attributesAdded:
-              - /llmEnabled
       - status: stable
         content:
           name: Agent Actor
@@ -846,20 +821,6 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: 3SJK2XGFHJgqXyCK4sjZ6tmAk3VjyuX6imGBJmV2LgQZ
             attributesAdded: []
-      - status: dev
-        content:
-          name: Agent LLM
-          type:
-            blueId: AjfPDYhjp31oYmraTy7PYFrSUGQKxtfQnHdBr8o7mt3g
-          description: Marker type for a specialized Blue document that MyOS treats as an LLM enabled Agent, enabling richer UI and behaviors while remaining a standard Blue document.
-          llmEnabled:
-            value: true
-            type:
-              blueId: 4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u
-        versions:
-          - repositoryVersionIndex: 1
-            typeBlueId: D7eJffANsyfVjzxBRkehE7jb2F942Yxbeut3PzSLjVsP
-            attributesAdded: []
       - status: stable
         content:
           name: All Participants Ready
@@ -870,10 +831,11 @@ packages:
       - status: stable
         content:
           name: Anchor Automation Template
-          description: Placeholder for automation template referenced by MyOS Package.
+          description: |
+            Template payload that can be included in a MyOS package to optionally start an automation after the Agent session is created.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 8JHhvprgxVUFZCQpyeEJfMFF8vuVEAnjqojftJ6B2E6S
+            typeBlueId: 8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga
             attributesAdded: []
       - status: stable
         content:
@@ -969,7 +931,7 @@ packages:
         content:
           name: Chat GPT Connector Agent
           type:
-            blueId: AjfPDYhjp31oYmraTy7PYFrSUGQKxtfQnHdBr8o7mt3g
+            blueId: 8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc
           description: Lets the owner prompt installation of a provided MyOS Package.
           contracts:
             ownerChannel:
@@ -986,7 +948,7 @@ packages:
               request:
                 package:
                   type:
-                    blueId: GmeLRydVPtUsPZaPpgiaaPWPBBNXnRJZsgi3fvQ4qe33
+                    blueId: 5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr
                   description: MyOS Package
             startWorkerImpl:
               type:
@@ -1002,7 +964,7 @@ packages:
                       blueId: GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU
                     event:
                       type:
-                        blueId: 3wH1r5RQVidCMcu4cJ4ZweVHZwt1mMu78RA3uXayTqeq
+                        blueId: CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3
                       title:
                         value: ChatGPT is requesting permission to launch a new agent
                         type:
@@ -1013,14 +975,11 @@ packages:
                           blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                       package:
                         type:
-                          blueId: GmeLRydVPtUsPZaPpgiaaPWPBBNXnRJZsgi3fvQ4qe33
+                          blueId: 5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr
                         value: ${event.message.request.package}
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 22eeH11CVeJAHBedzJ4mZQkRxBU54GNykgYbkdHXj2gS
-            attributesAdded: []
-          - repositoryVersionIndex: 1
-            typeBlueId: HDPFJzL5j6aPq2zb6nuZSpcNwqcuHbeaohUxDMKxLfa
+            typeBlueId: GH3Lqn1Vd4G36VjXu2j81SGfNqRUn82tkKiSSguhRp8J
             attributesAdded: []
       - status: stable
         content:
@@ -1248,7 +1207,7 @@ packages:
                       blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
                     code:
                       value: |
-                        return { events: [ { type: 'Status Change', status: { type: 'Status Completed' } } ] };
+                        return { events: [ { type: 'Conversation/Status Change', status: { type: 'Conversation/Status Completed' } } ] };
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             handleBootstrapFailed:
@@ -1285,7 +1244,7 @@ packages:
                       blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
                     code:
                       value: |
-                        return { events: [ { type: 'Status Change', status: { type: 'Status Failed' } } ] };
+                        return { events: [ { type: 'Conversation/Status Change', status: { type: 'Conversation/Status Failed' } } ] };
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             handleStatusChange:
@@ -1319,7 +1278,7 @@ packages:
                               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 2K3rW6d4KychEQDerQpigPzQp8wHTJzbmueJaDXfGZqg
+            typeBlueId: 84xMEnEYr3DPBuYZL3JtcsZBBTtRH9fEEJiPnk7ASj1o
             attributesAdded: []
       - status: stable
         content:
@@ -1347,14 +1306,11 @@ packages:
             description: Context for the user (e.g., who suggested it, what it does)
           package:
             type:
-              blueId: GmeLRydVPtUsPZaPpgiaaPWPBBNXnRJZsgi3fvQ4qe33
+              blueId: 5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr
             description: The complete package to be bootstrapped
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: EZUH4HyJzMdH8oYRmTnQNZHEcgmR4AX51DSfp8diZNhQ
-            attributesAdded: []
-          - repositoryVersionIndex: 1
-            typeBlueId: 3wH1r5RQVidCMcu4cJ4ZweVHZwt1mMu78RA3uXayTqeq
+            typeBlueId: CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3
             attributesAdded: []
       - status: stable
         content:
@@ -1475,7 +1431,7 @@ packages:
         content:
           name: MyOS Package
           type:
-            blueId: AjfPDYhjp31oYmraTy7PYFrSUGQKxtfQnHdBr8o7mt3g
+            blueId: 8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc
           description: |
             A distributable blueprint for a new Agent session, which can include pre-configured automations that start on installation.
           document:
@@ -1520,14 +1476,11 @@ packages:
             description: Optional MyOS Admin capability contracts to attach (participantsOrchestration, sessionInteraction, workerAgency)
           automationTemplate:
             type:
-              blueId: 8JHhvprgxVUFZCQpyeEJfMFF8vuVEAnjqojftJ6B2E6S
+              blueId: 8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga
             description: Optional automation template to start post-creation
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 4kzDrFuoU4PmvVxh5JAcFpDWGHYw7r7EaQw6Nufp3wX4
-            attributesAdded: []
-          - repositoryVersionIndex: 1
-            typeBlueId: GmeLRydVPtUsPZaPpgiaaPWPBBNXnRJZsgi3fvQ4qe33
+            typeBlueId: 5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr
             attributesAdded: []
       - status: stable
         content:
@@ -1688,26 +1641,30 @@ packages:
       - status: stable
         content:
           name: Removing Participant Requested
+          type:
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           channelName:
             description: The abstract channel name of the participant to be removed.
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C
+            typeBlueId: 8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD
             attributesAdded: []
       - status: stable
         content:
           name: Removing Participant Responded
+          type:
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           request:
             type:
-              blueId: FsQKJihteQLatQio6mU8c15opBb9i2C2X882xGRKn46C
+              blueId: 8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD
           status:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: Fu7pgwV2VKNs1KqGcpoVewhYNeL2TE7nhaxDwEAs2iZx
+            typeBlueId: 6efzqM67y1po3YWbsbYSkKW8L41Tx8THeMv1q1TksAmr
             attributesAdded: []
       - status: stable
         content:
@@ -1737,7 +1694,7 @@ packages:
         content:
           name: Single Document Permission Grant Requested
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           description: Ask MyOS Admin to grant permisison to document (event emitter) for a concrete target session.
           onBehalfOf:
             type:
@@ -1750,13 +1707,13 @@ packages:
               blueId: DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: HxMSh1JhD42UC2QGgoaCQozMTW3rsS8ENejasZtt7oXA
+            typeBlueId: Ef7EvcR5He11JtgBFtswYTHEfUKnTHmFysMTo3ZsoQby
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Grant Responded
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Whatever granter confirmed or rejected the request.
           status:
             type:
@@ -1772,7 +1729,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 3FS3vHTB9XMw2RbwatfUTCSgoh647XduUBjYcz6Bdkwh
+            typeBlueId: 5jtNV7xpaim18pUQp4uvron8uHfTjPSi6kUZQdCMGsKa
             attributesAdded: []
       - status: stable
         content:
@@ -1885,13 +1842,13 @@ packages:
                           }
                         }
 
-                        if (issues.length > 0) return { events: [ { type: "Single Document Permission Invalid", issues } ] };
-                        return { events: [ { type: "Single Document Permission Validated" } ] };
+                        if (issues.length > 0) return { events: [ { type: "MyOS/Single Document Permission Invalid", issues } ] };
+                        return { events: [ { type: "MyOS/Single Document Permission Validated" } ] };
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: wbPRcT52TR5chSx4WjQ48BQsbma8uiPdbVrxKvPJUap
+            typeBlueId: EVkAZAwJkgjQfTkA3RXpdEX2VgYJtMREmkQEFrojAQ1j
             attributesAdded: []
       - status: stable
         content:
@@ -2013,19 +1970,19 @@ packages:
                           }
                         }
 
-                        if (issues.length > 0) return { events: [ { type: "Single Document Permission Invalid", issues } ] };
-                        return { events: [ { type: "Single Document Permission Validated" } ] };
+                        if (issues.length > 0) return { events: [ { type: "MyOS/Single Document Permission Invalid", issues } ] };
+                        return { events: [ { type: "MyOS/Single Document Permission Validated" } ] };
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: AgkFLMmzZKt9iExpz2UcVZubPZ7vsCJRXJfgLReMkjW9
+            typeBlueId: AQyDRNKEkDan8VGNcvBdJCz95HKcwcAurhccHnCgV1j9
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Granted
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: DB rows written; rights are effective.
           targetSessionId:
             type:
@@ -2035,13 +1992,13 @@ packages:
               blueId: DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: EkZN2mSyrJpF4DQmBsdW5NYzw626N6jhSzYYsibpB1MW
+            typeBlueId: 8XYzJ3BrgB5uoAWU5HvZ7Gej9RXNG5r52ccneLZxMAQd
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Granting in Progress
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Admin has started applying the grant for this PGD.
           targetSessionId:
             type:
@@ -2054,7 +2011,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 9iu6bai3dWkJwdQtYRsUf85uqpRBRnC7SH8JFWgJBoWs
+            typeBlueId: 5dYUepkS2uQHtzhVYoHEtR4x8vaMRtNuHyiqqTvRrKGY
             attributesAdded: []
       - status: stable
         content:
@@ -2075,7 +2032,7 @@ packages:
         content:
           name: Single Document Permission Rejected
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Grant could not be applied.
           targetSessionId:
             type:
@@ -2088,36 +2045,36 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 387NGsN9DZNttQbjZHZksVSyHjb5SSZdhxKtCmMu36yo
+            typeBlueId: kHtVfa88aG4NMwCcBgJH9mq7EBqLQUrJVEr92porG5j
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Revoke Requested
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           description: Emitted by revoke operation
           reason:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: H1tETZ1YKndAuEBKu54ZDq3U1myncW3wj26QohP58y7X
+            typeBlueId: E4R5PmrxAtCHsQtUKtwxMjXgE5qNJWuuziArDMATudfb
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Revoked
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Rights granted by this PGD have been retracted.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: BmmvGcvB1yAe1fb3bsxpajwo9WuCNVAYQN8CGuMivUkT
+            typeBlueId: 29JSV8DwY6x3zfvAqiM7xNc96i46sKcunFYgfywBkF2f
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Revoking in Progress
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: MyOS Admin is retracting rights granted by this PGD.
           targetSessionId:
             type:
@@ -2130,7 +2087,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 6h9TRB22W218Bkjo11TD3zyCfuatFY8Ack4GBeW7vF69
+            typeBlueId: Cyr8aNNYedFse1EZ74dy9uXJ59gLH5LhTRyVeLiSMkg8
             attributesAdded: []
       - status: stable
         content:
@@ -2159,17 +2116,17 @@ packages:
         content:
           name: Single Document Permission Validated
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Emitted on initialise when local shape checks pass.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 9T3AsCqKkpoxHs6K9dTeCHRCXYGHPMthjaNcZxLdckgi
+            typeBlueId: AG6fiGy88gX5eKoUcHS2BV17EfMssiYZj99kx9RcpKEX
             attributesAdded: []
       - status: stable
         content:
           name: Start Worker Session Requested
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           description: Parent worker requests from MyOS Admin to start a new child session. Parent worker requires to have Worker Agency Permission Grant.
           onBehalfOf:
             type:
@@ -2208,13 +2165,13 @@ packages:
             description: Optional MyOS Admin capability contracts to attach (participantsOrchestration, sessionInteraction, workerAgency)
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: C9Fyy28LCQACfDootHHWRB4eEm1xCiSnaH7FYTSdZmwQ
+            typeBlueId: 3f9PA4RUDBxs6DsqGEYjna2RNf8XhCDHjQGDjLyNZyRh
             attributesAdded: []
       - status: stable
         content:
           name: Subscribe to Session Requested
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           description: Document asks MyOS Admin to mediate a subscription to a target session it can READ.
           targetSessionId:
             type:
@@ -2231,13 +2188,13 @@ packages:
               description: Optional allow-list of emitted event patterns to forward.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: CohDM1yrnMV32VE73JiRbnmT3h8TgVqryd2Eb8K5Tmzc
+            typeBlueId: BnrAcFrEHzoARE2yqKmRv7jrPWCbJsVBqSoXwWCaTtrk
             attributesAdded: []
       - status: stable
         content:
           name: Subscription to Session Failed
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Indicates MyOS Admin rejected the subscription request before activation.
           subscriptionId:
             type:
@@ -2253,13 +2210,13 @@ packages:
             description: Explanation why the subscription could not be established.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: vGfiWWkit85t2cg1YCn9MDGBp573F15YgGMkfx5D3Et
+            typeBlueId: S1gzGs6z9uy5inkcJu5wr6i5ESKDmZy9XhgLHMZKrdV
             attributesAdded: []
       - status: stable
         content:
           name: Subscription to Session Initiated
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Confirms that MyOS Admin accepted the subscription request and will start forwarding updates.
           subscriptionId:
             type:
@@ -2275,13 +2232,13 @@ packages:
             description: ISO 8601 timestamp when the subscription became active.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: EdrM9LnMKjfpYPpKNSm9hK61ywFCv8xwhd4nqUTv7Sy5
+            typeBlueId: GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj
             attributesAdded: []
       - status: stable
         content:
           name: Subscription to Session Revoked
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Indicates MyOS Admin stopped forwarding updates for the subscription.
           subscriptionId:
             type:
@@ -2297,7 +2254,7 @@ packages:
             description: Optional explanation for the revocation.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: CF47wMy4XsVYMiFLmkvgYvXN8TBhfSTh1vnt8xvcFaE1
+            typeBlueId: GcotFgiqo3GMHp4xKrArDJi7AqciJGgYKvHodoAJwcWp
             attributesAdded: []
       - status: stable
         content:
@@ -2585,21 +2542,21 @@ packages:
                           });
                         }
                         if (issues.length > 0) {
-                          return { events: [ { type: "Worker Agency Permission Invalid", issues } ] };
+                          return { events: [ { type: "MyOS/Worker Agency Permission Invalid", issues } ] };
                         } else {
-                          return { events: [ { type: "Worker Agency Permission Validated" } ] };
+                          return { events: [ { type: "MyOS/Worker Agency Permission Validated" } ] };
                         }
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 3Wb5cwcZ3P6bSjTJAVrXPBzaAvoccBauUNVud1pqpEM2
+            typeBlueId: 2NN4VerhNHSyBcyoJpgtcuURkss2QRMmGkocQobJ8JYP
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Grant Requested
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           description: Parent worker requests authority to start specific sub-worker types and receive per-instance SDPGs.
           onBehalfOf:
             type:
@@ -2611,13 +2568,13 @@ packages:
               blueId: 5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 2533GSBC4sXbbhDNdB6hKnRoySzQDziUb9u7bK3sa7tD
+            typeBlueId: HF5aRJZqvHn7sDFbwfDGQjkWmTSW9Lee7c9dUBtcdNtK
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Granted
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: DB rows written; rights are effective.
           granteeDocumentId:
             type:
@@ -2629,13 +2586,13 @@ packages:
               blueId: 5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: ESCifdJpDaKviHDVPzCAuaUeroYJTuQTNAUW6ikQHHWd
+            typeBlueId: 8GNc7HmPKXmURG12ZBY8iXYEP7CTfBLsfXvpLcQ6EMwS
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Granting in Progress
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Admin has started applying the grant for this WAG.
           granteeDocumentId:
             type:
@@ -2650,13 +2607,13 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 9Q2Kdb1FzRVZrbQHv1JZ9Emo14NavVqD32jnF5u6FUmj
+            typeBlueId: HzQyVKvSQ2cienAkjW5R8HgTcStPe13p8eoB4vXr7dAc
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Invalid
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Emitted on initialise when local shape checks fail.
           issues:
             type:
@@ -2665,13 +2622,13 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 63kEoiNgJnYPGd2fnJw4Km2MD6zuCBBTn9v9qVPWx2Nz
+            typeBlueId: 29zvV2MA4XAwLoGoNLLhLMa61mEgGceFnDvMznfQauYY
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Rejected
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Grant could not be applied.
           granteeDocumentId:
             type:
@@ -2686,36 +2643,36 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: CB4YQq9GGVb3i3enmWnxx1zbV2Ks7nNHYdBhcCuJ8iht
+            typeBlueId: G1cW5kjZdJrmCwfrwiHXQcJfYfFAY5jEFZNA7u7pFdtY
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Revoke Requested
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
           description: Emitted by revoke operation
           reason:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 4cPqgXEsF6NHdAGhhAaHBPGZ6RNi5Dnr7YWp2vQd8HYk
+            typeBlueId: ABJ7njZbfTXNP173SCoMytQtVfMXCEwPdFhSJ7F3Vbx9
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Revoked
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Rights granted by this WAG have been retracted.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 6nYAWfizha9PvKi9scLLCReYimYaupRLoyZTCgB8zUpR
+            typeBlueId: AMNPp7uGYBgygbnmMS649m6Gf5bNULaEK8aSQ3b4xdrf
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Revoking in Progress
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: MyOS Admin is retracting rights granted by this WAG.
           granteeDocumentId:
             type:
@@ -2730,23 +2687,23 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 5sX6PjLHydkuj1BrvCM5QoUd4e3GCtCyc8KsNqpV2e9j
+            typeBlueId: 5zNb9H63xeG2RjZ1gzJwyGxvTVzWdyNBb2Te6g8UXd72
             attributesAdded: []
       - status: stable
         content:
           name: Worker Agency Permission Validated
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Emitted on initialise when local shape checks pass.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: HUeeqt75YxUmP5mBdhchJEtXDXqhhT1EbwkrGSmbpNJf
+            typeBlueId: GMDw72G9CRTJU12Rce9BDWGw8f715RJrWvPL78RYDWH4
             attributesAdded: []
       - status: stable
         content:
           name: Worker Session Starting
           type:
-            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Worker session is starting.
           granteeDocumentId:
             type:
@@ -2756,7 +2713,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: FYMd1LAezBcUXp9gh4bEjEwWKqZfgWStwHQ4Q7juTc8F
+            typeBlueId: 3B7ErHwZ9NHiW4e6msFDt57U8sTvFXZQBEwHzcdNCjmf
             attributesAdded: []
   - name: PayNote
     types:
@@ -3101,5 +3058,4 @@ packages:
             typeBlueId: 4pVAdZo93FHRRkAkshqCZW4pUvvV1ccczJZ2Lu4jkD1D
             attributesAdded: []
 repositoryVersions:
-  - 68oz2neMJqcQyzRBaesJfuwxUJMhXkoHV5YYjUjNf24C
-  - J1TeTbpUViGxKgNLnL9h5Mqyrch9xLc24sdL3Mp2Ruth
+  - 7Mh4CgtBu1xUyk64hVrF5HPbD9K8DvhGCecD2q74dMsi

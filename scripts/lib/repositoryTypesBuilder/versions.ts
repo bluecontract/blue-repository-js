@@ -1,4 +1,4 @@
-import { validateAttributesAddedPointer } from '../repository-contract/src/';
+import { validateAttributesAddedPointer } from '@blue-labs/repository-contract';
 import type { BlueTypeMetadata, BlueTypeVersion } from './types.js';
 
 export function resolveCurrentBlueId(type: BlueTypeMetadata): string {
