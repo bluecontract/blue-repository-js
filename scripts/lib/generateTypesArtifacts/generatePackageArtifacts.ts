@@ -18,7 +18,6 @@ export function generatePackageArtifacts(
   const metaContent = renderPackageMetaFile({
     metaJson: formatObject({
       name: pkg.name,
-      aliases: pkg.aliases,
       typesMeta: pkg.typesMeta,
     }),
   });
