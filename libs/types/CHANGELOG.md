@@ -1,3 +1,9 @@
+## 0.2.0 (2025-12-23)
+
+### 🚀 Features
+
+- update BlueRepository.blue and regenerate types ([#96](https://github.com/bluecontract/blue-repository-js/pull/96))
+
 ## 0.1.0 (2025-12-23)
 
 This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
