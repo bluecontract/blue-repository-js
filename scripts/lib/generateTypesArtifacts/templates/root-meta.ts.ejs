@@ -1,0 +1,5 @@
+<% /* root-meta.ts.ejs */ %>
+export const name = <%- nameJson %> as const;
+export const repositoryVersions = <%- repositoryVersionsJson %> as const;
+export default { name, repositoryVersions } as const;
+

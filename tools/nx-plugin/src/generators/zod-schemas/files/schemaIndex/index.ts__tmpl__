@@ -1,6 +1,0 @@
-<% /* index.ts__tmpl__ */ %>
-<% if (schemaExports && schemaExports.length) { %>
-<% schemaExports.forEach((schemaName) => { %>
-export * from './<%= schemaName %>';
-<% }) %>
-<% } %>

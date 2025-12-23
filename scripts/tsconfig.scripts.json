@@ -2,12 +2,13 @@
   "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../scripts/tools-out",
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "types": ["node"]
+    "tsBuildInfoFile": "./tools-out/tsconfig.scripts.tsbuildinfo",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "rootDir": ".."
   },
-  "include": ["**/*.ts"],
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  }
+  "include": [
+    "**/*.ts"
+  ]
 }

@@ -1,0 +1,67 @@
+name: Blue Repository Fixture
+repositoryVersions:
+  - R0
+packages:
+  - name: Core
+    types:
+      - status: stable
+        content:
+          name: Marker
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: core-marker-v0
+            attributesAdded: []
+  - name: Conversation
+    types:
+      - status: stable
+        content:
+          name: Chat Message
+          message:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: conversation-chat-message-v0
+            attributesAdded: []
+      - status: stable
+        content:
+          name: Composite Timeline Channel
+          channels:
+            type:
+              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
+            itemType:
+              type:
+                blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: conversation-composite-timeline-channel-v0
+            attributesAdded: []
+  - name: MyOS
+    types:
+      - status: stable
+        content:
+          name: Document Session Bootstrap
+          capabilities:
+            schema:
+              required: true
+            type:
+              blueId: G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj
+            valueType:
+              type:
+                blueId: 4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: myos-document-session-bootstrap-v0
+            attributesAdded: []
+  - name: Super Cool Package
+    types:
+      - status: stable
+        content:
+          name: Super Cool Type
+          message:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: super-cool-package-super-cool-type-v0
+            attributesAdded: []

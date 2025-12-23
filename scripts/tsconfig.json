@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.scripts.json",
+  "references": [
+    {
+      "path": "../tools/nx-plugin"
+    }
+  ]
+}

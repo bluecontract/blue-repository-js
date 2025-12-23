@@ -1,60 +1,63 @@
 import {
   GeneratorCallback,
-  Tree,
-  formatFiles,
-  runTasksInSerial,
 } from '@nx/devkit';
 import { SyncCodeGeneratorSchema } from './schema';
-import { blueIdsGenerator } from '../blue-ids/blue-ids';
-import { zodSchemasGenerator } from '../zod-schemas/zod-schemas';
-import { contentsGenerator } from '../contents/contents';
+import * as path from 'node:path';
+import * as fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 
 const normalizeOptions = (options: SyncCodeGeneratorSchema) => {
   return {
-    ...options,
-    generateSchemas: options.generateSchemas ?? true,
-    generateBlueIds: options.generateBlueIds ?? true,
-    generateContents: options.generateContents ?? true,
+    sourcePath: options.sourcePath ?? 'BlueRepository.blue',
+    skipFormat: options.skipFormat ?? false,
   };
 };
 
 export const syncCodeGenerator = async (
-  tree: Tree,
+  _tree: unknown,
   schema: SyncCodeGeneratorSchema
 ) => {
-  const tasks: GeneratorCallback[] = [];
   const options = normalizeOptions(schema);
 
-  if (options.generateBlueIds) {
-    const callback = await blueIdsGenerator(tree, {
-      inputPath: options.inputPath,
-      libraryName: options.libraryName,
-      skipFormat: true,
-    });
-    tasks.push(callback);
+  const workspaceRoot = process.cwd();
+  const sourcePath = path.isAbsolute(options.sourcePath)
+    ? options.sourcePath
+    : path.join(workspaceRoot, options.sourcePath);
+
+  if (!fs.existsSync(sourcePath)) {
+    throw new Error(`BlueRepository.blue not found at ${sourcePath}`);
   }
 
-  if (options.generateSchemas) {
-    const callback = await zodSchemasGenerator(tree, {
-      inputPath: options.inputPath,
-      libraryName: options.libraryName,
-      skipFormat: true,
-    });
-    tasks.push(callback);
+  const tsxCli = require.resolve('tsx/dist/cli.mjs');
+  const generateScript = path.join(
+    workspaceRoot,
+    'scripts',
+    'cli',
+    'generate-types-artifacts.ts'
+  );
+
+  const args = [tsxCli, generateScript];
+  if (options.skipFormat) {
+    args.push('--skipFormat');
   }
 
-  if (options.generateContents) {
-    const callback = await contentsGenerator(tree, {
-      inputPath: options.inputPath,
-      libraryName: options.libraryName,
-      skipFormat: true,
-    });
-    tasks.push(callback);
-  }
+  execFileSync(process.execPath, args, {
+    cwd: workspaceRoot,
+    env: {
+      ...process.env,
+      BLUE_REPOSITORY_SOURCE: sourcePath,
+    },
+    stdio: 'inherit',
+  });
 
-  await formatFiles(tree);
-
-  return runTasksInSerial(...tasks);
+  return (() => {
+    console.log(
+      `sync-code completed (generated @blue-repository/types from ${path.relative(
+        workspaceRoot,
+        sourcePath
+      )})`
+    );
+  }) satisfies GeneratorCallback;
 };
 
 export default syncCodeGenerator;

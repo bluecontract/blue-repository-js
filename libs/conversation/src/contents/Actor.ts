@@ -1,5 +1,0 @@
-export const actor = {
-  description:
-    'Conversation type for attributing timeline entries to a person, service, or system. Intended solely for display/attribution; carries no runtime behavior.\n',
-  name: 'Actor',
-} as const;

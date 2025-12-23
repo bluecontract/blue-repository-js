@@ -10,7 +10,7 @@
     "emitDeclarationOnly": false,
     "types": ["node"]
   },
-  "include": ["src/**/*.ts", "src/**/*.ts.template"],
+  "include": ["src/**/*.ts"],
   "references": [],
   "exclude": [
     "vite.config.ts",

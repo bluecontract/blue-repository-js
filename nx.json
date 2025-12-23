@@ -61,10 +61,12 @@
   "release": {
     "version": {
       "preVersionCommand": "npx nx run-many -t build",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "fallbackCurrentVersionResolver": "disk"
     },
     "projectsRelationship": "independent",
     "changelog": {
+      "automaticFromRef": true,
       "projectChangelogs": {
         "createRelease": "github",
         "renderOptions": {
@@ -72,6 +74,8 @@
         }
       }
     },
-    "releaseTagPattern": "{projectName}@{version}"
+    "releaseTag": {
+      "pattern": "{projectName}@{version}"
+    }
   }
 }

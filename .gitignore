@@ -48,3 +48,7 @@ vitest.config.*.timestamp*
 # yalc
 .yalc
 yalc.lock
+
+# TypeScript incremental artifacts
+*.tsbuildinfo
+scripts/tools-out/

@@ -7,25 +7,7 @@
       "path": "./tools/nx-plugin"
     },
     {
-      "path": "./libs/core-dev"
-    },
-    {
-      "path": "./libs/myos-dev"
-    },
-    {
-      "path": "./libs/pay-note"
-    },
-    {
-      "path": "./libs/core"
-    },
-    {
-      "path": "./libs/conversation"
-    },
-    {
-      "path": "./libs/paynote"
-    },
-    {
-      "path": "./libs/myos"
+      "path": "./scripts"
     }
   ]
 }

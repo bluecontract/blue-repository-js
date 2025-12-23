@@ -1,4 +1,9 @@
 import { defineConfig } from 'vitest/config';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 export default defineConfig({
   root: __dirname,
@@ -14,8 +19,7 @@ export default defineConfig({
   test: {
     environment: 'node',
     include: [
-      'artifact-scaffolder/**/*.test.ts',
-      'artifact-scaffolder/**/*.spec.ts',
+      '__tests__/**/*.{test,spec}.ts',
     ],
     globals: true,
     reporters: 'default',

@@ -4,37 +4,16 @@
   "id": "sync-code",
   "type": "object",
   "properties": {
-    "inputPath": {
+    "sourcePath": {
       "type": "string",
-      "description": "Path to the YAML files directory f.e. data/blue-preprocessed/basic1",
-      "$default": {
-        "$source": "argv",
-        "index": 0
-      }
+      "description": "Path to BlueRepository.blue (relative to workspace root)",
+      "default": "BlueRepository.blue"
     },
-    "libraryName": {
-      "type": "string",
-      "description": "Name of the library to sync the code for",
-      "$default": {
-        "$source": "argv",
-        "index": 1
-      }
-    },
-    "generateSchemas": {
+    "skipFormat": {
       "type": "boolean",
-      "description": "Generate schemas",
-      "default": true
-    },
-    "generateBlueIds": {
-      "type": "boolean",
-      "description": "Generate blue IDs",
-      "default": true
-    },
-    "generateContents": {
-      "type": "boolean",
-      "description": "Generate contents",
-      "default": true
+      "description": "Skip formatting generated files.",
+      "default": false
     }
   },
-  "required": ["inputPath", "libraryName"]
+  "required": []
 }

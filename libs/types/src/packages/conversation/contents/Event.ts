@@ -1,0 +1,5 @@
+export const Event = {
+  description:
+    'Conversation package type. Abstract base for domain events (payload nodes delivered via channels). Not a contract; carries no runtime behavior by itself.\n',
+  name: 'Event',
+} as const;
