@@ -1,0 +1,5 @@
+import meta from './meta';
+import { contents } from './contents';
+import { schemas } from './schemas';
+export default { ...meta, contents, schemas } as const;
+export { meta, contents, schemas };
