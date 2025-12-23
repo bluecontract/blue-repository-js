@@ -1,3 +1,7 @@
+## 1.0.0-rc.6 (2025-12-23)
+
+This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
+
 ## 1.0.0-rc.5 (2025-12-21)
 
 This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
