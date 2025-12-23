@@ -18,6 +18,7 @@ import { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
 import { DocumentTypeLinkSchema } from './DocumentTypeLink';
 import { InformUserToInstallMyOSPackageSchema } from './InformUserToInstallMyOSPackage';
 import { LinkSchema } from './Link';
+import { LLMAgentSchema } from './LLMAgent';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSAgentSchema } from './MyOSAgent';
 import { MyOSAgentChannelSchema } from './MyOSAgentChannel';
@@ -92,6 +93,7 @@ export { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
 export { DocumentTypeLinkSchema } from './DocumentTypeLink';
 export { InformUserToInstallMyOSPackageSchema } from './InformUserToInstallMyOSPackage';
 export { LinkSchema } from './Link';
+export { LLMAgentSchema } from './LLMAgent';
 export { MyOSAdminBaseSchema } from './MyOSAdminBase';
 export { MyOSAgentSchema } from './MyOSAgent';
 export { MyOSAgentChannelSchema } from './MyOSAgentChannel';
@@ -172,6 +174,7 @@ export const schemas = {
   CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3:
     InformUserToInstallMyOSPackageSchema,
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: LinkSchema,
+  DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
   FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o: MyOSAdminBaseSchema,
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': MyOSAgentSchema,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': MyOSAgentChannelSchema,

@@ -47,6 +47,7 @@ import { MyOSSessionLink } from './MyOSSessionLink';
 import { Link } from './Link';
 import { DocumentTypeLink } from './DocumentTypeLink';
 import { CallOperationAccepted } from './CallOperationAccepted';
+import { LLMAgent } from './LLMAgent';
 import { SingleDocumentPermissionSet } from './SingleDocumentPermissionSet';
 import { SingleDocumentPermissionRevokeRequested } from './SingleDocumentPermissionRevokeRequested';
 import { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
@@ -121,6 +122,7 @@ export { MyOSSessionLink } from './MyOSSessionLink';
 export { Link } from './Link';
 export { DocumentTypeLink } from './DocumentTypeLink';
 export { CallOperationAccepted } from './CallOperationAccepted';
+export { LLMAgent } from './LLMAgent';
 export { SingleDocumentPermissionSet } from './SingleDocumentPermissionSet';
 export { SingleDocumentPermissionRevokeRequested } from './SingleDocumentPermissionRevokeRequested';
 export { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
@@ -206,6 +208,7 @@ export const contents = {
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: Link,
   D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX: DocumentTypeLink,
   Dd53JjiBGUnASZXjhiHBqCSnruN2XmLtcW2vNQB7Sm34: CallOperationAccepted,
+  DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgent,
   DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54: SingleDocumentPermissionSet,
   E4R5PmrxAtCHsQtUKtwxMjXgE5qNJWuuziArDMATudfb:
     SingleDocumentPermissionRevokeRequested,

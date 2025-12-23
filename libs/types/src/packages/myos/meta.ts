@@ -223,6 +223,17 @@ const meta = {
         },
       ],
     },
+    DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: {
+      status: 'dev',
+      name: 'LLM Agent',
+      versions: [
+        {
+          repositoryVersionIndex: 1,
+          typeBlueId: 'DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf',
+          attributesAdded: [],
+        },
+      ],
+    },
     FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o: {
       status: 'stable',
       name: 'MyOS Admin Base',
