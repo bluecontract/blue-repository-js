@@ -1,3 +1,9 @@
+## 1.0.0-rc.7 (2025-12-23)
+
+### 🚀 Features
+
+- generated types lib - initial push ([6bf20be](https://github.com/bluecontract/blue-repository-js/commit/6bf20be))
+
 ## 1.0.0-rc.6 (2025-12-23)
 
 This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
