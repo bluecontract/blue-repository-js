@@ -32,12 +32,10 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: npm install
-        shell: bash
+        run: npm ci
 
       - name: Print Environment Info
         run: npx nx report
-        shell: bash
 
       - name: Extract package name from tag
         id: extract-package
@@ -52,17 +50,16 @@ jobs:
         run: npx nx build ${{ steps.extract-package.outputs.package }}
         shell: bash
 
-      # TODO: Uncomment when blue repository publishes BlueRepository.blue artfiacts
-      # - name: Publish package
-      #   run: npx nx release publish --projects=${{ steps.extract-package.outputs.package }}
-      #   shell: bash
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
-      #     NPM_CONFIG_PROVENANCE: true
+      - name: Publish package
+        run: npx nx release publish --projects=${{ steps.extract-package.outputs.package }}
+        shell: bash
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
 
-      # - name: Notify API about release
-      #   run: npm run notify-release ${{ steps.extract-package.outputs.package }}
-      #   shell: bash
-      #   env:
-      #     API_BASE_URL: ${{ secrets.API_BASE_URL }}
-      #     API_KEY: ${{ secrets.API_KEY }}
+      - name: Notify API about release
+        run: npm run notify-release ${{ steps.extract-package.outputs.package }}
+        shell: bash
+        env:
+          API_BASE_URL: ${{ secrets.API_BASE_URL }}
+          API_KEY: ${{ secrets.API_KEY }}

@@ -45,33 +45,26 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        shell: bash
 
       - name: Print Environment Info
         run: npx nx report
-        shell: bash
 
       - name: Generate types
         run: npm run generate:types
-        shell: bash
 
       - name: Build types
         run: npm run build:types
-        shell: bash
 
       - name: Configure Git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-        shell: bash
 
       - name: Release RC
         run: npx nx release --preid=rc --skip-publish --verbose
-        shell: bash
 
       - name: Publish RC packages
         run: npx nx release publish --tag next --first-release --verbose
-        shell: bash
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: true

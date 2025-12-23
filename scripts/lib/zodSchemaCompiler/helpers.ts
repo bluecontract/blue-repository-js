@@ -4,32 +4,33 @@ export function normalizeAliasString(ref: string): string {
   return ref.toLowerCase();
 }
 
-export function getRefBlueId(node: any): string | undefined {
-  if (!node || typeof node !== 'object') {
+export function getRefBlueId(node: unknown): string | undefined {
+  if (!isRecord(node)) {
     return undefined;
   }
   if (typeof node.blueId === 'string') {
     return node.blueId;
   }
-  if (typeof node?.type?.blueId === 'string') {
-    return node.type.blueId;
+  const typeValue = node.type;
+  if (isRecord(typeValue) && typeof typeValue.blueId === 'string') {
+    return typeValue.blueId;
   }
-  if (typeof node?.type === 'string') {
-    return node.type;
+  if (typeof typeValue === 'string') {
+    return typeValue;
   }
   return undefined;
 }
 
-export function getItemTypeNode(def: any): any | undefined {
-  return def?.itemType;
+export function getItemTypeNode(def: unknown): unknown | undefined {
+  return isRecord(def) ? def.itemType : undefined;
 }
 
-export function getValueTypeNode(def: any): any | undefined {
-  return def?.valueType;
+export function getValueTypeNode(def: unknown): unknown | undefined {
+  return isRecord(def) ? def.valueType : undefined;
 }
 
-export function hasInlineShape(def: any): boolean {
-  if (!def || typeof def !== 'object') {
+export function hasInlineShape(def: unknown): boolean {
+  if (!isRecord(def)) {
     return false;
   }
   return Object.keys(def).some((k) => !RESERVED_KEYS.has(k));
@@ -45,4 +46,8 @@ export function indentBlock(value: string, spaces: number): string {
     .split('\n')
     .map((line) => (line.length > 0 ? `${pad}${line}` : pad))
     .join('\n');
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
 }

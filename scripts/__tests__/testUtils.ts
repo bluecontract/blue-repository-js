@@ -13,7 +13,7 @@ export interface FixtureTypesPackage {
   repoRoot: string;
   typesRoot: string;
   typesDistRoot: string;
-  importFromTypesPackage: (specifier: string) => Promise<any>;
+  importFromTypesPackage: (specifier: string) => Promise<unknown>;
   readTypesSource: (relativePath: string) => string;
 }
 
@@ -39,6 +39,10 @@ async function buildFixtureTypesPackage(): Promise<FixtureTypesPackage> {
   const fixtureTypesRoot = path.join(fixtureRepoRoot, 'libs', 'types');
   fs.mkdirSync(fixtureTypesRoot, { recursive: true });
 
+  fs.copyFileSync(
+    path.join(repoRoot, 'libs', 'types', 'package.json'),
+    path.join(fixtureTypesRoot, 'package.json'),
+  );
   fs.copyFileSync(
     path.join(repoRoot, 'tsconfig.base.json'),
     path.join(fixtureRepoRoot, 'tsconfig.base.json'),

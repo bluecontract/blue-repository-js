@@ -1,6 +1,7 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import * as path from 'node:path';
 import * as fs from 'node:fs';
+import type { ZodTypeAny } from 'zod';
 import {
   getFixtureTypesPackage,
 } from './testUtils';
@@ -18,7 +19,7 @@ describe('generated value schemas', () => {
     const chatMessage = await fixture.importFromTypesPackage(
       '@blue-repository/types/packages/conversation/schemas/ChatMessage'
     );
-    const schema = (chatMessage as any).ChatMessageSchema;
+    const schema = (chatMessage as { ChatMessageSchema: ZodTypeAny }).ChatMessageSchema;
     expect(() => schema.parse({ message: 'hello' })).not.toThrow();
     expect(() => schema.parse({ message: 123 })).toThrow();
   });
@@ -27,7 +28,8 @@ describe('generated value schemas', () => {
     const composite = await fixture.importFromTypesPackage(
       '@blue-repository/types/packages/conversation/schemas/CompositeTimelineChannel'
     );
-    const schema = (composite as any).CompositeTimelineChannelSchema;
+    const schema = (composite as { CompositeTimelineChannelSchema: ZodTypeAny })
+      .CompositeTimelineChannelSchema;
     expect(() => schema.parse({ channels: ['alpha', 'beta'] })).not.toThrow();
     expect(() => schema.parse({ channels: [{}, {}] })).toThrow();
   });
@@ -36,7 +38,8 @@ describe('generated value schemas', () => {
     const bootstrap = await fixture.importFromTypesPackage(
       '@blue-repository/types/packages/myos/schemas/DocumentSessionBootstrap'
     );
-    const schema = (bootstrap as any).DocumentSessionBootstrapSchema;
+    const schema = (bootstrap as { DocumentSessionBootstrapSchema: ZodTypeAny })
+      .DocumentSessionBootstrapSchema;
     expect(() =>
       schema.parse({ capabilities: { orchestration: true, interaction: false } })
     ).not.toThrow();

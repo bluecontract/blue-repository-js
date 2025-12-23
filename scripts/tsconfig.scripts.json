@@ -9,7 +9,6 @@
     "rootDir": ".."
   },
   "include": [
-    "**/*.ts",
-    "../libs/types/package.json"
-  ],
+    "**/*.ts"
+  ]
 }

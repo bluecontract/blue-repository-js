@@ -2,7 +2,19 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { createRequire } from 'node:module';
 
-type PrettierModule = typeof import('prettier');
+type PrettierModule = {
+  format: (source: string, options: Record<string, unknown>) => string;
+  resolveConfigFile: { sync: (path: string) => string | null };
+  resolveConfig: {
+    sync: (path: string, options: Record<string, unknown>) => Record<string, unknown> | null;
+  };
+  getFileInfo: {
+    sync: (
+      path: string,
+      options: Record<string, unknown>,
+    ) => { ignored: boolean; inferredParser: string | null };
+  };
+};
 
 const require = createRequire(import.meta.url);
 
@@ -85,4 +97,3 @@ export function formatGeneratedTypesArtifacts(repoRoot: string) {
     }
   }
 }
-

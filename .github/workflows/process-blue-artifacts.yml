@@ -70,14 +70,8 @@ jobs:
       - name: Generate types sources from BlueRepository.blue
         run: npm run generate:types
 
-      - name: Build types dist
+      - name: Build types
         run: npm run build:types
-
-      - name: Typecheck scripts
-        run: npx nx typecheck-scripts
-
-      - name: Run script tests
-        run: npm run test:scripts
 
       - name: Create Pull Request
         id: cpr

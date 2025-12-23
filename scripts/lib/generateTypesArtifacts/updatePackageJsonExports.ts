@@ -1,21 +1,21 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import packageJson from '../../../libs/types/package.json' with { type: 'json' };
 
 export function updatePackageJsonExports(
   repoRoot: string,
   packageNames: string[],
   meta: { name: string; repositoryVersions: readonly string[]; version?: string },
+  basePackageJson: Record<string, unknown>,
 ) {
   const pkgPath = path.join(repoRoot, 'libs/types/package.json');
-  const pkg: Record<string, any> = structuredClone(packageJson) as any;
+  const pkg = structuredClone(basePackageJson) as TypesPackageJson;
   const moduleBlueId = meta.version ?? meta.repositoryVersions.at(-1) ?? '';
   pkg.blueType = {
     moduleName: meta.name,
     moduleBlueId,
   };
 
-  const baseExports: Record<string, any> = {
+  const baseExports: ExportMap = {
     './package.json': './package.json',
     '.': { types: './dist/index.d.ts', default: './dist/index.js' },
     './meta': { types: './dist/meta.d.ts', default: './dist/meta.js' },
@@ -33,7 +33,7 @@ export function updatePackageJsonExports(
     },
   };
 
-  const wildcardExports: Record<string, any> = {
+  const wildcardExports: ExportMap = {
     './packages/*/schemas': {
       types: './dist/packages/*/schemas.d.ts',
       default: './dist/packages/*/schemas.js',
@@ -52,7 +52,7 @@ export function updatePackageJsonExports(
     },
   };
 
-  const perPackage: Record<string, any> = {};
+  const perPackage: ExportMap = {};
   for (const name of packageNames) {
     perPackage[`./packages/${name}/schemas/*`] = {
       types: `./dist/packages/${name}/schemas/*.d.ts`,
@@ -68,3 +68,13 @@ export function updatePackageJsonExports(
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
 }
 
+type ExportEntry = string | { types: string; default: string };
+type ExportMap = Record<string, ExportEntry>;
+
+type TypesPackageJson = Record<string, unknown> & {
+  exports?: ExportMap;
+  blueType?: {
+    moduleName: string;
+    moduleBlueId: string;
+  };
+};

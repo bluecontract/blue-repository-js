@@ -5,11 +5,12 @@ import { formatObject } from './formatObject.js';
 import { generateBlueIds } from './generateBlueIds.js';
 import { writeFile } from './writeFile.js';
 import { renderPackageIndexFile, renderPackageMetaFile } from './templateRenderer.js';
+import type { BlueRepositoryPackage } from '../repositoryTypesBuilder/types.js';
 
 export function generatePackageArtifacts(
   outDir: string,
   packageName: string,
-  pkg: any,
+  pkg: BlueRepositoryPackage,
   schemaFiles: Record<string, string>,
   schemaIndexTs: string,
   schemasTs: string,

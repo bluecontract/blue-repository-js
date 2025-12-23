@@ -30,10 +30,11 @@ export function validateVersions(
   packageName: string,
   currentBlueId: string,
 ) {
+  const typeName = resolveTypeName(type.content);
   if (type.status === 'dev') {
     if (type.versions && type.versions.length > 1) {
       throw new Error(
-        `Dev type ${packageName}/${type.content?.name} (${currentBlueId}) must not declare multiple versions`,
+        `Dev type ${packageName}/${typeName} (${currentBlueId}) must not declare multiple versions`,
       );
     }
     if (
@@ -45,7 +46,7 @@ export function validateVersions(
       )
     ) {
       throw new Error(
-        `Dev type ${packageName}/${type.content?.name} (${currentBlueId}) has invalid repositoryVersionIndex`,
+        `Dev type ${packageName}/${typeName} (${currentBlueId}) has invalid repositoryVersionIndex`,
       );
     }
     return;
@@ -53,7 +54,7 @@ export function validateVersions(
 
   if (!type.versions || type.versions.length === 0) {
     throw new Error(
-      `Stable type ${packageName}/${type.content?.name} (${currentBlueId}) must have at least one version entry`,
+      `Stable type ${packageName}/${typeName} (${currentBlueId}) must have at least one version entry`,
     );
   }
 
@@ -68,12 +69,12 @@ export function validateVersions(
       version.repositoryVersionIndex >= repoVersionCount
     ) {
       throw new Error(
-        `Stable type ${packageName}/${type.content?.name} (${currentBlueId}) has invalid repositoryVersionIndex ${version.repositoryVersionIndex}`,
+        `Stable type ${packageName}/${typeName} (${currentBlueId}) has invalid repositoryVersionIndex ${version.repositoryVersionIndex}`,
       );
     }
     if (seen.has(version.repositoryVersionIndex)) {
       throw new Error(
-        `Stable type ${packageName}/${type.content?.name} (${currentBlueId}) has duplicate repositoryVersionIndex ${version.repositoryVersionIndex}`,
+        `Stable type ${packageName}/${typeName} (${currentBlueId}) has duplicate repositoryVersionIndex ${version.repositoryVersionIndex}`,
       );
     }
     seen.add(version.repositoryVersionIndex);
@@ -87,6 +88,16 @@ export function validateVersions(
       );
     }
   });
+}
+
+function resolveTypeName(content: BlueTypeMetadata['content']): string {
+  if (content && typeof content === 'object' && !Array.isArray(content)) {
+    const name = (content as { name?: unknown }).name;
+    if (typeof name === 'string' && name.trim()) {
+      return name;
+    }
+  }
+  return 'unknown';
 }
 
 function validateAttributesAddedPointerWithContext(

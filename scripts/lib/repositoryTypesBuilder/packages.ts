@@ -52,8 +52,8 @@ export function buildPackages(
     const safeNameIndex = new Map<string, { typeName: string; blueId: string }>();
 
     for (const type of pkg.types || []) {
-      const rawName = (type.content as any)?.name;
-      if (typeof rawName !== 'string') {
+      const rawName = resolveTypeName(type.content);
+      if (!rawName) {
         throw new Error(
           `Invalid type in package '${packageDisplayName}': content.name must be a string`,
         );
@@ -122,4 +122,14 @@ export function buildPackages(
   }
 
   return result;
+}
+
+function resolveTypeName(content: unknown): string | null {
+  if (content && typeof content === 'object' && !Array.isArray(content)) {
+    const name = (content as { name?: unknown }).name;
+    if (typeof name === 'string' && name.trim()) {
+      return name;
+    }
+  }
+  return null;
 }

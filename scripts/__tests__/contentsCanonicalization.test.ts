@@ -14,6 +14,10 @@ describe('generated contents canonicalization', () => {
     fs.mkdirSync(fixtureTypesRoot, { recursive: true });
 
     fs.copyFileSync(
+      path.join(repoRoot, 'libs', 'types', 'package.json'),
+      path.join(fixtureTypesRoot, 'package.json'),
+    );
+    fs.copyFileSync(
       path.join(repoRoot, 'tsconfig.base.json'),
       path.join(fixtureRepoRoot, 'tsconfig.base.json'),
     );

@@ -256,7 +256,7 @@ export class PackageSchemaBuilder {
 
     const sortedKeys = Object.keys(content || {}).sort((a, b) => a.localeCompare(b));
     for (const key of sortedKeys) {
-      const value = (content as any)[key];
+      const value = content[key];
       if (key === 'name' && typeof value === 'string') {
         entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
         usesZ = true;
@@ -491,7 +491,7 @@ export class PackageSchemaBuilder {
   private resolveBase(
     info: TypeInfo,
   ): ResolvedBase {
-    const rawRef = getRefBlueId((info.content as any)?.type);
+    const rawRef = getRefBlueId(info.content.type);
     if (!rawRef) {
       return null;
     }
@@ -539,9 +539,6 @@ export class PackageSchemaBuilder {
   }
 
   private normalizeBlueId(blueId: string): string {
-    if (this.ctx.toCurrent.has(blueId)) {
-      return this.ctx.toCurrent.get(blueId)!;
-    }
-    return blueId;
+    return this.ctx.toCurrent.get(blueId) ?? blueId;
   }
 }

@@ -40,9 +40,12 @@ describe('schema compiler special fields', () => {
 
     const { perPackage } = compileValueSchemasFromRepository(meta, packages);
     const schemaFiles = perPackage.sample.perTypeFiles;
-    const [onlyPath] = Object.keys(schemaFiles);
+    const onlyPath = Object.keys(schemaFiles)[0];
     expect(onlyPath).toBeTruthy();
-    const source = schemaFiles[onlyPath!];
+    if (!onlyPath) {
+      throw new Error('Expected schema output for Sample/Root');
+    }
+    const source = schemaFiles[onlyPath];
 
     expect(source).toContain('name: z.string().optional()');
     expect(source).toContain('description: z.string().optional()');
@@ -81,9 +84,12 @@ describe('schema compiler special fields', () => {
 
     const { perPackage } = compileValueSchemasFromRepository(meta, packages);
     const schemaFiles = perPackage.sample.perTypeFiles;
-    const [onlyPath] = Object.keys(schemaFiles);
+    const onlyPath = Object.keys(schemaFiles)[0];
     expect(onlyPath).toBeTruthy();
-    const source = schemaFiles[onlyPath!];
+    if (!onlyPath) {
+      throw new Error('Expected schema output for Sample/Root');
+    }
+    const source = schemaFiles[onlyPath];
 
     expect(source).toContain('count: z.number().optional()');
   });

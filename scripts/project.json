@@ -1,0 +1,29 @@
+{
+  "name": "scripts",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "scripts",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx eslint -c scripts/eslint.config.mjs scripts",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc -p scripts/tsconfig.scripts.json --noEmit",
+        "cwd": "{workspaceRoot}"
+      }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "npx vitest -c scripts/vitest.config.ts run",
+        "cwd": "{workspaceRoot}"
+      }
+    }
+  }
+}

@@ -5,8 +5,6 @@
   "type": "module",
   "scripts": {
     "notify-release": "node --loader ts-node/esm scripts/cli/notify-release.ts",
-    "test:scripts": "npx vitest -c scripts/vitest.config.ts run",
-    "typecheck:scripts": "npx nx typecheck-scripts",
     "generate:types": "tsx scripts/cli/generate-types-artifacts.ts",
     "build:types": "tsc -p libs/types/tsconfig.lib.json && tsx scripts/cli/rewrite-dist-relative-imports.ts libs/types/dist",
     "yalc:publish": "tsx scripts/cli/yalc-publish.ts"

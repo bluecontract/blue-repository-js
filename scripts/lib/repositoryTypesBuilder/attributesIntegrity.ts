@@ -142,10 +142,10 @@ function assertPointerExists(
   segments: string[],
   content: unknown,
 ) {
-  let cursor: any = content;
+  let cursor: unknown = content;
   for (let i = 0; i < segments.length; i++) {
     const segment = segments[i];
-    if (cursor === null || typeof cursor !== 'object') {
+    if (!isRecord(cursor)) {
       throw pointerError(
         repoName,
         packageName,
@@ -167,8 +167,9 @@ function assertPointerExists(
         `Segment '${segment}' does not exist`,
       );
     }
+    const record = cursor as Record<string, unknown>;
     if (i === segments.length - 1) {
-      const leaf = cursor[segment];
+      const leaf = record[segment];
       if (isBreakingLeaf(leaf)) {
         throw pointerError(
           repoName,
@@ -182,7 +183,7 @@ function assertPointerExists(
       }
       return;
     }
-    cursor = cursor[segment];
+    cursor = record[segment];
   }
 }
 
@@ -251,4 +252,8 @@ function containsPayloadKeys(node: unknown): boolean {
     }
   }
   return false;
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
 }

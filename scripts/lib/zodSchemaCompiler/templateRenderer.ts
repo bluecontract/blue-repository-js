@@ -4,7 +4,11 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 
 type EjsModule = {
-  render: (template: string, data: Record<string, unknown>, options?: any) => string;
+  render: (
+    template: string,
+    data: Record<string, unknown>,
+    options?: { filename?: string },
+  ) => string;
 };
 
 const require = createRequire(import.meta.url);
@@ -39,7 +43,7 @@ export function renderSchemaFile(data: {
   if (!schemaTemplateCache) {
     schemaTemplateCache = loadTemplate(schemaTemplatePath, schemaTemplateCache);
   }
-  return ejs.render(schemaTemplateCache, data as any, {
+  return ejs.render(schemaTemplateCache, data, {
     filename: schemaTemplatePath,
   });
 }
@@ -52,7 +56,7 @@ export function renderSchemasIndexFile(data: {
   if (!indexTemplateCache) {
     indexTemplateCache = loadTemplate(indexTemplatePath, indexTemplateCache);
   }
-  return ejs.render(indexTemplateCache, data as any, {
+  return ejs.render(indexTemplateCache, data, {
     filename: indexTemplatePath,
   });
 }
@@ -61,5 +65,5 @@ export function renderSchemasBarrelFile(): string {
   if (!schemasTemplateCache) {
     schemasTemplateCache = loadTemplate(schemasTemplatePath, schemasTemplateCache);
   }
-  return ejs.render(schemasTemplateCache, {} as any, { filename: schemasTemplatePath });
+  return ejs.render(schemasTemplateCache, {}, { filename: schemasTemplatePath });
 }

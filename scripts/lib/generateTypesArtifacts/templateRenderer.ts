@@ -4,7 +4,11 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 
 type EjsModule = {
-  render: (template: string, data: Record<string, unknown>, options?: any) => string;
+  render: (
+    template: string,
+    data: Record<string, unknown>,
+    options?: { filename?: string },
+  ) => string;
 };
 
 const require = createRequire(import.meta.url);
@@ -29,14 +33,14 @@ function loadTemplate(templateFileName: string): { template: string; filename: s
 
 function render(templateFileName: string, data: Record<string, unknown>): string {
   const { template, filename } = loadTemplate(templateFileName);
-  return ejs.render(template, data as any, { filename });
+  return ejs.render(template, data, { filename });
 }
 
 export function renderRootMetaFile(data: {
   nameJson: string;
   repositoryVersionsJson: string;
 }): string {
-  return render('root-meta.ts.ejs', data as any);
+  return render('root-meta.ts.ejs', data);
 }
 
 export function renderRootIndexFile(): string {
@@ -46,17 +50,17 @@ export function renderRootIndexFile(): string {
 export function renderRepositoryFile(data: {
   packages: Array<{ slug: string; identifier: string }>;
 }): string {
-  return render('repository.ts.ejs', data as any);
+  return render('repository.ts.ejs', data);
 }
 
 export function renderPackagesIndexFile(data: {
   packages: Array<{ slug: string; identifier: string }>;
 }): string {
-  return render('packages-index.ts.ejs', data as any);
+  return render('packages-index.ts.ejs', data);
 }
 
 export function renderPackageMetaFile(data: { metaJson: string }): string {
-  return render('package-meta.ts.ejs', data as any);
+  return render('package-meta.ts.ejs', data);
 }
 
 export function renderPackageIndexFile(): string {
@@ -64,6 +68,5 @@ export function renderPackageIndexFile(): string {
 }
 
 export function renderBlueIdsFile(data: { blueIdsJson: string }): string {
-  return render('blue-ids.ts.ejs', data as any);
+  return render('blue-ids.ts.ejs', data);
 }
-

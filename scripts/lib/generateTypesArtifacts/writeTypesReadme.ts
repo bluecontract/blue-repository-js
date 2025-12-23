@@ -4,7 +4,11 @@ import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 
 type EjsModule = {
-  render: (template: string, data: Record<string, unknown>, options?: any) => string;
+  render: (
+    template: string,
+    data: Record<string, unknown>,
+    options?: { filename?: string },
+  ) => string;
 };
 
 const require = createRequire(import.meta.url);
@@ -28,9 +32,8 @@ export function writeTypesReadme(
   repoRoot: string,
   data: { packageName: string; typeModuleName: string; typeModuleBlueId: string },
 ) {
-  const readme = ejs.render(loadTemplate(), data as any, { filename: templatePath });
+  const readme = ejs.render(loadTemplate(), data, { filename: templatePath });
   const readmePath = path.join(repoRoot, 'libs', 'types', 'README.md');
   fs.mkdirSync(path.dirname(readmePath), { recursive: true });
   fs.writeFileSync(readmePath, readme);
 }
-
