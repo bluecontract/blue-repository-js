@@ -28,6 +28,7 @@ export const blueIds = {
   'MyOS/Inform User To Install MyOS Package':
     'CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3',
   'MyOS/Link': 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
+  'MyOS/LLM Agent': 'DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf',
   'MyOS/MyOS Admin Base': 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
   'MyOS/MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
   'MyOS/MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
