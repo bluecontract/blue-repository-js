@@ -1,4 +1,9 @@
-import { parsePointer } from '@blue-labs/repository-contract';
+import {
+  OBJECT_CONTRACTS,
+  OBJECT_MERGE_POLICY,
+  OBJECT_SCHEMA,
+  parsePointer,
+} from '@blue-labs/repository-contract';
 import type { BlueTypeVersion } from './types.js';
 
 export function validateAttributesIntegrity(
@@ -196,7 +201,11 @@ function pointerError(
 }
 
 const PAYLOAD_KEYS = new Set(['value', 'items']);
-const SKIP_SUBTREES = new Set(['schema', 'mergePolicy', 'contracts']);
+const SKIP_SUBTREES = new Set([
+  OBJECT_SCHEMA,
+  OBJECT_MERGE_POLICY,
+  OBJECT_CONTRACTS,
+]);
 
 function isBreakingLeaf(value: unknown): boolean {
   if (value === null || value === undefined) {
@@ -210,10 +219,11 @@ function isBreakingLeaf(value: unknown): boolean {
   }
 
   const obj = value as Record<string, unknown>;
+  const schema = obj[OBJECT_SCHEMA];
   if (
-    obj.schema &&
-    typeof obj.schema === 'object' &&
-    (obj.schema as any).required === true
+    schema &&
+    typeof schema === 'object' &&
+    (schema as { required?: unknown }).required === true
   ) {
     return true;
   }

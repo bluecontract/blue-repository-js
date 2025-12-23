@@ -1,9 +1,10 @@
 <% /* package-meta.ts.ejs */ %>
 import blueIds from './blue-ids';
 
-const meta = {
-  ...<%- metaJson %>,
+const meta = <%- metaJson %> as const;
+const metaWithAliases = {
+  ...meta,
   aliases: blueIds,
 } as const;
 
-export default meta;
+export default metaWithAliases;
