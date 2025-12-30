@@ -18,6 +18,18 @@ import { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
 import { DocumentTypeLinkSchema } from './DocumentTypeLink';
 import { InformUserToInstallMyOSPackageSchema } from './InformUserToInstallMyOSPackage';
 import { LinkSchema } from './Link';
+import { LinkedDocumentsPermissionGrantRequestedSchema } from './LinkedDocumentsPermissionGrantRequested';
+import { LinkedDocumentsPermissionGrantToAccountSchema } from './LinkedDocumentsPermissionGrantToAccount';
+import { LinkedDocumentsPermissionGrantToDocumentSchema } from './LinkedDocumentsPermissionGrantToDocument';
+import { LinkedDocumentsPermissionGrantedSchema } from './LinkedDocumentsPermissionGranted';
+import { LinkedDocumentsPermissionGrantingInProgressSchema } from './LinkedDocumentsPermissionGrantingInProgress';
+import { LinkedDocumentsPermissionInvalidSchema } from './LinkedDocumentsPermissionInvalid';
+import { LinkedDocumentsPermissionRejectedSchema } from './LinkedDocumentsPermissionRejected';
+import { LinkedDocumentsPermissionRevokeRequestedSchema } from './LinkedDocumentsPermissionRevokeRequested';
+import { LinkedDocumentsPermissionRevokedSchema } from './LinkedDocumentsPermissionRevoked';
+import { LinkedDocumentsPermissionRevokingInProgressSchema } from './LinkedDocumentsPermissionRevokingInProgress';
+import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
+import { LinkedDocumentsPermissionValidatedSchema } from './LinkedDocumentsPermissionValidated';
 import { LLMAgentSchema } from './LLMAgent';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSAgentSchema } from './MyOSAgent';
@@ -93,6 +105,18 @@ export { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
 export { DocumentTypeLinkSchema } from './DocumentTypeLink';
 export { InformUserToInstallMyOSPackageSchema } from './InformUserToInstallMyOSPackage';
 export { LinkSchema } from './Link';
+export { LinkedDocumentsPermissionGrantRequestedSchema } from './LinkedDocumentsPermissionGrantRequested';
+export { LinkedDocumentsPermissionGrantToAccountSchema } from './LinkedDocumentsPermissionGrantToAccount';
+export { LinkedDocumentsPermissionGrantToDocumentSchema } from './LinkedDocumentsPermissionGrantToDocument';
+export { LinkedDocumentsPermissionGrantedSchema } from './LinkedDocumentsPermissionGranted';
+export { LinkedDocumentsPermissionGrantingInProgressSchema } from './LinkedDocumentsPermissionGrantingInProgress';
+export { LinkedDocumentsPermissionInvalidSchema } from './LinkedDocumentsPermissionInvalid';
+export { LinkedDocumentsPermissionRejectedSchema } from './LinkedDocumentsPermissionRejected';
+export { LinkedDocumentsPermissionRevokeRequestedSchema } from './LinkedDocumentsPermissionRevokeRequested';
+export { LinkedDocumentsPermissionRevokedSchema } from './LinkedDocumentsPermissionRevoked';
+export { LinkedDocumentsPermissionRevokingInProgressSchema } from './LinkedDocumentsPermissionRevokingInProgress';
+export { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
+export { LinkedDocumentsPermissionValidatedSchema } from './LinkedDocumentsPermissionValidated';
 export { LLMAgentSchema } from './LLMAgent';
 export { MyOSAdminBaseSchema } from './MyOSAdminBase';
 export { MyOSAgentSchema } from './MyOSAgent';
@@ -174,6 +198,30 @@ export const schemas = {
   CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3:
     InformUserToInstallMyOSPackageSchema,
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: LinkSchema,
+  DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS:
+    LinkedDocumentsPermissionGrantRequestedSchema,
+  '3nHZjceYBWLD6nWXo354UhdU5vZWy26rUTL8aRj3xEmd':
+    LinkedDocumentsPermissionGrantToAccountSchema,
+  '488CnQXrxMyNAgCVgL85SyHxUK5rZzWzd81eo4JkVHRD':
+    LinkedDocumentsPermissionGrantToDocumentSchema,
+  BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N:
+    LinkedDocumentsPermissionGrantedSchema,
+  '8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK':
+    LinkedDocumentsPermissionGrantingInProgressSchema,
+  ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU:
+    LinkedDocumentsPermissionInvalidSchema,
+  Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi:
+    LinkedDocumentsPermissionRejectedSchema,
+  '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7':
+    LinkedDocumentsPermissionRevokeRequestedSchema,
+  '9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h':
+    LinkedDocumentsPermissionRevokedSchema,
+  HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH:
+    LinkedDocumentsPermissionRevokingInProgressSchema,
+  '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5':
+    LinkedDocumentsPermissionSetSchema,
+  DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe:
+    LinkedDocumentsPermissionValidatedSchema,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
   FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o: MyOSAdminBaseSchema,
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': MyOSAgentSchema,

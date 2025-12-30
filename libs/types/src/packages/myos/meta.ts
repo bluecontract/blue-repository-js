@@ -223,6 +223,138 @@ const meta = {
         },
       ],
     },
+    DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS: {
+      status: 'dev',
+      name: 'Linked Documents Permission Grant Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '3nHZjceYBWLD6nWXo354UhdU5vZWy26rUTL8aRj3xEmd': {
+      status: 'dev',
+      name: 'Linked Documents Permission Grant To Account',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '3nHZjceYBWLD6nWXo354UhdU5vZWy26rUTL8aRj3xEmd',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '488CnQXrxMyNAgCVgL85SyHxUK5rZzWzd81eo4JkVHRD': {
+      status: 'dev',
+      name: 'Linked Documents Permission Grant To Document',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '488CnQXrxMyNAgCVgL85SyHxUK5rZzWzd81eo4JkVHRD',
+          attributesAdded: [],
+        },
+      ],
+    },
+    BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N: {
+      status: 'dev',
+      name: 'Linked Documents Permission Granted',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK': {
+      status: 'dev',
+      name: 'Linked Documents Permission Granting in Progress',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK',
+          attributesAdded: [],
+        },
+      ],
+    },
+    ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU: {
+      status: 'dev',
+      name: 'Linked Documents Permission Invalid',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU',
+          attributesAdded: [],
+        },
+      ],
+    },
+    Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi: {
+      status: 'dev',
+      name: 'Linked Documents Permission Rejected',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7': {
+      status: 'dev',
+      name: 'Linked Documents Permission Revoke Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h': {
+      status: 'dev',
+      name: 'Linked Documents Permission Revoked',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h',
+          attributesAdded: [],
+        },
+      ],
+    },
+    HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH: {
+      status: 'dev',
+      name: 'Linked Documents Permission Revoking in Progress',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5': {
+      status: 'dev',
+      name: 'Linked Documents Permission Set',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5',
+          attributesAdded: [],
+        },
+      ],
+    },
+    DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe: {
+      status: 'dev',
+      name: 'Linked Documents Permission Validated',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe',
+          attributesAdded: [],
+        },
+      ],
+    },
     DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: {
       status: 'dev',
       name: 'LLM Agent',

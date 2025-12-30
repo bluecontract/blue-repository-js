@@ -28,6 +28,30 @@ export const blueIds = {
   'MyOS/Inform User To Install MyOS Package':
     'CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3',
   'MyOS/Link': 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
+  'MyOS/Linked Documents Permission Grant Requested':
+    'DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS',
+  'MyOS/Linked Documents Permission Grant To Account':
+    '3nHZjceYBWLD6nWXo354UhdU5vZWy26rUTL8aRj3xEmd',
+  'MyOS/Linked Documents Permission Grant To Document':
+    '488CnQXrxMyNAgCVgL85SyHxUK5rZzWzd81eo4JkVHRD',
+  'MyOS/Linked Documents Permission Granted':
+    'BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N',
+  'MyOS/Linked Documents Permission Granting in Progress':
+    '8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK',
+  'MyOS/Linked Documents Permission Invalid':
+    'ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU',
+  'MyOS/Linked Documents Permission Rejected':
+    'Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi',
+  'MyOS/Linked Documents Permission Revoke Requested':
+    '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7',
+  'MyOS/Linked Documents Permission Revoked':
+    '9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h',
+  'MyOS/Linked Documents Permission Revoking in Progress':
+    'HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH',
+  'MyOS/Linked Documents Permission Set':
+    '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5',
+  'MyOS/Linked Documents Permission Validated':
+    'DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe',
   'MyOS/LLM Agent': 'DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf',
   'MyOS/MyOS Admin Base': 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
   'MyOS/MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
