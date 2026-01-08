@@ -7,6 +7,7 @@ import { generateMeta } from './generateTypesArtifacts/generateMeta.js';
 import { generatePackageArtifacts } from './generateTypesArtifacts/generatePackageArtifacts.js';
 import { generateRepository } from './generateTypesArtifacts/generateRepository.js';
 import { generateRootIndex } from './generateTypesArtifacts/generateRootIndex.js';
+import { generateTypeAliases } from './generateTypesArtifacts/generateTypeAliases.js';
 import { updatePackageJsonExports } from './generateTypesArtifacts/updatePackageJsonExports.js';
 import { writeTypesReadme } from './generateTypesArtifacts/writeTypesReadme.js';
 export { formatGeneratedTypesArtifacts } from './generateTypesArtifacts/formatGeneratedTypesArtifacts.js';
@@ -51,6 +52,7 @@ export function generateTypesArtifacts(options: GenerateTypesArtifactsOptions) {
         })(),
     ),
   );
+  generateTypeAliases(outDir, packageNames);
   generateRepository(outDir, packageNames);
   generateRootIndex(outDir);
   updatePackageJsonExports(options.repoRoot, packageNames, meta, typesPackageJson);

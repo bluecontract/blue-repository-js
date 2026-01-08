@@ -1,0 +1,28 @@
+<% /* type-aliases.ts.ejs */ %>
+import { Properties } from '@blue-labs/language';
+<% packages.forEach((pkg) => { %>
+import <%= pkg.identifier %>BlueIds from './packages/<%= pkg.slug %>/blue-ids';
+<% }); %>
+
+const repositoryTypeAliases = {
+  ...Properties.CORE_TYPE_NAME_TO_BLUE_ID_MAP,
+<% packages.forEach((pkg) => { %>
+  ...<%= pkg.identifier %>BlueIds,
+<% }); %>
+} as const;
+
+export const typeAliasesByBlueId: Record<string, string> = Object.fromEntries(
+  Object.entries(repositoryTypeAliases).map(([alias, blueId]) => [
+    blueId,
+    alias,
+  ]),
+);
+
+export const getTypeAliasByBlueId = (
+  blueId: string | null | undefined,
+): string | undefined => {
+  if (!blueId) {
+    return undefined;
+  }
+  return typeAliasesByBlueId[blueId];
+};
