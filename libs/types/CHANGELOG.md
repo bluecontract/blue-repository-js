@@ -1,3 +1,9 @@
+## 0.4.0 (2026-01-08)
+
+### 🚀 Features
+
+- expose type aliases helpers ([e32b278](https://github.com/bluecontract/blue-repository-js/commit/e32b278))
+
 ## 0.3.0 (2025-12-30)
 
 ### 🚀 Features
