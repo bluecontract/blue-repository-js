@@ -1,3 +1,4 @@
 export { repository } from './repository';
 export { name, repositoryVersions } from './meta';
+export { getTypeAliasByBlueId, typeAliasesByBlueId } from './type-aliases';
 export { default } from './repository';

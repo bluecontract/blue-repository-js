@@ -47,6 +47,12 @@ export function renderRootIndexFile(): string {
   return render('root-index.ts.ejs', {});
 }
 
+export function renderTypeAliasesFile(data: {
+  packages: Array<{ slug: string; identifier: string }>;
+}): string {
+  return render('type-aliases.ts.ejs', data);
+}
+
 export function renderRepositoryFile(data: {
   packages: Array<{ slug: string; identifier: string }>;
 }): string {
