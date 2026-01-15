@@ -1,8 +1,19 @@
 export const blueIds = {
+  'Conversation/Accept Change Operation':
+    'APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv',
+  'Conversation/Accept Change Workflow':
+    '4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR',
   'Conversation/Actor': 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
+  'Conversation/Change Operation':
+    '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD',
+  'Conversation/Change Request': 'Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5',
+  'Conversation/Change Workflow':
+    '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW',
   'Conversation/Chat Message': 'AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD',
   'Conversation/Composite Timeline Channel':
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
+  'Conversation/Document Section':
+    'jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp',
   'Conversation/Document Status':
     '58B8orsFkxxy7bWqjLXJmtBs2b5rwnNQNbeoAbGhPkJc',
   'Conversation/Event': '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
@@ -15,6 +26,16 @@ export const blueIds = {
   'Conversation/Operation': 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
   'Conversation/Operation Request':
     'HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq',
+  'Conversation/Propose Change Operation':
+    'D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g',
+  'Conversation/Propose Change Workflow':
+    '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v',
+  'Conversation/Proposed Change Invalid':
+    'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
+  'Conversation/Reject Change Operation':
+    '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6',
+  'Conversation/Reject Change Workflow':
+    'DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc',
   'Conversation/Request': '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
   'Conversation/Response': '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
   'Conversation/Sequential Workflow':
