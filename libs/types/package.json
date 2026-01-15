@@ -49,6 +49,14 @@
       "types": "./dist/packages/*/meta.d.ts",
       "default": "./dist/packages/*/meta.js"
     },
+    "./packages/common/schemas/*": {
+      "types": "./dist/packages/common/schemas/*.d.ts",
+      "default": "./dist/packages/common/schemas/*.js"
+    },
+    "./packages/common/contents/*": {
+      "types": "./dist/packages/common/contents/*.d.ts",
+      "default": "./dist/packages/common/contents/*.js"
+    },
     "./packages/conversation/schemas/*": {
       "types": "./dist/packages/conversation/schemas/*.d.ts",
       "default": "./dist/packages/conversation/schemas/*.js"
@@ -92,6 +100,6 @@
   },
   "blueType": {
     "moduleName": "Blue Repository",
-    "moduleBlueId": "GenpwaWZPgCUuDBd8DDAa5Kes2ojV1oP4eVt6ayBKy6e"
+    "moduleBlueId": "EbEJF1ttddLLVTPtGjxo8TnjxdZsQvtfmanjgUheQuvp"
   }
 }

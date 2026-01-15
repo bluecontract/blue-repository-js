@@ -1,0 +1,8 @@
+export const Timestamp = {
+  description:
+    'ISO 8601 timestamp with timezone offset (for example, 2025-01-10T09:30:00Z, 2025-01-10T10:30:00+01:00, or 2025-01-10T09:30:00.123456Z).',
+  name: 'Timestamp',
+  type: {
+    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+  },
+} as const;

@@ -36,6 +36,17 @@ const meta = {
         },
       ],
     },
+    GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT: {
+      status: 'dev',
+      name: 'Card Transaction Details',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+          attributesAdded: [],
+        },
+      ],
+    },
     DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m: {
       status: 'stable',
       name: 'Child PayNote Issuance Declined',
@@ -113,6 +124,17 @@ const meta = {
         },
       ],
     },
+    '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3': {
+      status: 'dev',
+      name: 'PayNote Accepted By Client',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3',
+          attributesAdded: [],
+        },
+      ],
+    },
     HQTUxErobqhSuhWo9DAC1WwaG9oYdjfmdKprGtV4TeEK: {
       status: 'stable',
       name: 'PayNote Approved',
@@ -157,6 +179,50 @@ const meta = {
         },
       ],
     },
+    Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j: {
+      status: 'dev',
+      name: 'PayNote Client Decision Discarded',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
+          attributesAdded: [],
+        },
+      ],
+    },
+    F55Gk1KTHsAfWVjfP4LH7bB558tJ5DL6FUu4as3g5mY1: {
+      status: 'dev',
+      name: 'PayNote Delivery',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'F55Gk1KTHsAfWVjfP4LH7bB558tJ5DL6FUu4as3g5mY1',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '5dMaJQ2nrVQLFB6VT3RGRHJC1nKxzj89cji86TJo7YMr': {
+      status: 'dev',
+      name: 'PayNote Delivery Bootstrap Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '5dMaJQ2nrVQLFB6VT3RGRHJC1nKxzj89cji86TJo7YMr',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: {
+      status: 'dev',
+      name: 'PayNote Delivery Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
+          attributesAdded: [],
+        },
+      ],
+    },
     AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: {
       status: 'stable',
       name: 'PayNote Rejected',
@@ -164,6 +230,17 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',
+          attributesAdded: [],
+        },
+      ],
+    },
+    EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: {
+      status: 'dev',
+      name: 'PayNote Rejected By Client',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G',
           attributesAdded: [],
         },
       ],
@@ -252,6 +329,28 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '4pVAdZo93FHRRkAkshqCZW4pUvvV1ccczJZ2Lu4jkD1D',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC: {
+      status: 'dev',
+      name: 'Transaction Identification Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V': {
+      status: 'dev',
+      name: 'Transaction Identified',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V',
           attributesAdded: [],
         },
       ],
