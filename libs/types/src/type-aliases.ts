@@ -1,5 +1,7 @@
 import { Properties } from '@blue-labs/language';
 
+import commonBlueIds from './packages/common/blue-ids';
+
 import conversationBlueIds from './packages/conversation/blue-ids';
 
 import coreBlueIds from './packages/core/blue-ids';
@@ -10,6 +12,8 @@ import paynoteBlueIds from './packages/paynote/blue-ids';
 
 const repositoryTypeAliases = {
   ...Properties.CORE_TYPE_NAME_TO_BLUE_ID_MAP,
+
+  ...commonBlueIds,
 
   ...conversationBlueIds,
 

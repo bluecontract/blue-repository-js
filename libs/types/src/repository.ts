@@ -1,3 +1,4 @@
+import common from './packages/common/index';
 import conversation from './packages/conversation/index';
 import core from './packages/core/index';
 import myos from './packages/myos/index';
@@ -9,6 +10,7 @@ export const repository = {
   name,
   repositoryVersions,
   packages: {
+    common: common,
     conversation: conversation,
     core: core,
     myos: myos,
