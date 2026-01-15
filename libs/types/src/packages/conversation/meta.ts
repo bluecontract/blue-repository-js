@@ -3,6 +3,28 @@ import blueIds from './blue-ids';
 const meta = {
   name: 'Conversation',
   typesMeta: {
+    APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv: {
+      status: 'dev',
+      name: 'Accept Change Operation',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: 'APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR': {
+      status: 'dev',
+      name: 'Accept Change Workflow',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: '4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR',
+          attributesAdded: [],
+        },
+      ],
+    },
     CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ: {
       status: 'stable',
       name: 'Actor',
@@ -10,6 +32,39 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD': {
+      status: 'dev',
+      name: 'Change Operation',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD',
+          attributesAdded: [],
+        },
+      ],
+    },
+    Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5: {
+      status: 'dev',
+      name: 'Change Request',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: 'Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW': {
+      status: 'dev',
+      name: 'Change Workflow',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW',
           attributesAdded: [],
         },
       ],
@@ -32,6 +87,17 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
+          attributesAdded: [],
+        },
+      ],
+    },
+    jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp: {
+      status: 'dev',
+      name: 'Document Section',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: 'jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp',
           attributesAdded: [],
         },
       ],
@@ -109,6 +175,61 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq',
+          attributesAdded: [],
+        },
+      ],
+    },
+    D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g: {
+      status: 'dev',
+      name: 'Propose Change Operation',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: 'D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v': {
+      status: 'dev',
+      name: 'Propose Change Workflow',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v',
+          attributesAdded: [],
+        },
+      ],
+    },
+    EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M: {
+      status: 'dev',
+      name: 'Proposed Change Invalid',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: 'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6': {
+      status: 'dev',
+      name: 'Reject Change Operation',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6',
+          attributesAdded: [],
+        },
+      ],
+    },
+    DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc: {
+      status: 'dev',
+      name: 'Reject Change Workflow',
+      versions: [
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: 'DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc',
           attributesAdded: [],
         },
       ],
