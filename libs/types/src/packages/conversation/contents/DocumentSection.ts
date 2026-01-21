@@ -1,10 +1,10 @@
 export const DocumentSection = {
   description:
-    'Declarative marker used to document a logical section of a document and link it to relevant fields and contracts. No runtime behavior.\n',
+    'Declarative marker that documents a logical section of a document and links it to relevant fields and contracts. Used as the section anchor for sectionChanges.\n',
   name: 'Document Section',
   relatedContracts: {
     description:
-      'Contract keys in the same scope that implement/affect the section.',
+      'Contract keys in the same scope that implement or affect the section.',
     itemType: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
@@ -14,12 +14,25 @@ export const DocumentSection = {
   },
   relatedFields: {
     description:
-      'Absolute JSON Pointer paths of fields that belong to this section.',
+      'Absolute JSON Pointer paths of fields covered by this section.',
     itemType: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
     type: {
       blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+    },
+  },
+  summary: {
+    description:
+      "Brief functional summary of the section's purpose and behavior.",
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
+  title: {
+    description: 'Short, human-readable title shown in UI summaries.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   type: {

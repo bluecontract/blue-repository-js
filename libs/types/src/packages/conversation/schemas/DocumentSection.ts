@@ -11,6 +11,8 @@ export const DocumentSectionSchema = withTypeBlueId(
     name: z.string().optional(),
     relatedContracts: z.array(z.string()).optional(),
     relatedFields: z.array(z.string()).optional(),
+    summary: z.string().optional(),
+    title: z.string().optional(),
   })
 );
 

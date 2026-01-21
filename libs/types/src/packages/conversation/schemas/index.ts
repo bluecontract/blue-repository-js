@@ -6,11 +6,14 @@ import { ChangeRequestSchema } from './ChangeRequest';
 import { ChangeWorkflowSchema } from './ChangeWorkflow';
 import { ChatMessageSchema } from './ChatMessage';
 import { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
+import { ContractsChangePolicySchema } from './ContractsChangePolicy';
 import { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 import { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 import { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
 import { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
 import { DocumentSectionSchema } from './DocumentSection';
+import { DocumentSectionChangeEntrySchema } from './DocumentSectionChangeEntry';
+import { DocumentSectionChangesSchema } from './DocumentSectionChanges';
 import { DocumentStatusSchema } from './DocumentStatus';
 import { EventSchema } from './Event';
 import { InformUserAboutPendingActionSchema } from './InformUserAboutPendingAction';
@@ -47,11 +50,14 @@ export { ChangeRequestSchema } from './ChangeRequest';
 export { ChangeWorkflowSchema } from './ChangeWorkflow';
 export { ChatMessageSchema } from './ChatMessage';
 export { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
+export { ContractsChangePolicySchema } from './ContractsChangePolicy';
 export { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 export { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 export { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
 export { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
 export { DocumentSectionSchema } from './DocumentSection';
+export { DocumentSectionChangeEntrySchema } from './DocumentSectionChangeEntry';
+export { DocumentSectionChangesSchema } from './DocumentSectionChanges';
 export { DocumentStatusSchema } from './DocumentStatus';
 export { EventSchema } from './Event';
 export { InformUserAboutPendingActionSchema } from './InformUserAboutPendingAction';
@@ -82,13 +88,14 @@ export { UpdateDocumentSchema } from './UpdateDocument';
 
 export const schemas = {
   APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv: AcceptChangeOperationSchema,
-  AwN4iZfsqtGnU1b4dKTFkZipLTKhT4Fu815sEDR1Uw2V: AcceptChangeWorkflowSchema,
+  G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG: AcceptChangeWorkflowSchema,
   CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ: ActorSchema,
-  '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD': ChangeOperationSchema,
-  Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5: ChangeRequestSchema,
-  '8dEMWKPqzV6E9nEecrNZgAx9VULdhXdoxWg4yT2qzWM7': ChangeWorkflowSchema,
+  BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB: ChangeOperationSchema,
+  '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw': ChangeRequestSchema,
+  AZ7kV2EzGpRMzUBCi5cYKd17gngvGDF9PVAdqaKRDqno: ChangeWorkflowSchema,
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessageSchema,
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannelSchema,
+  '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicySchema,
   HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
     DocumentBootstrapCompletedSchema,
   B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH: DocumentBootstrapFailedSchema,
@@ -96,7 +103,10 @@ export const schemas = {
     DocumentBootstrapRequestedSchema,
   '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv':
     DocumentBootstrapRespondedSchema,
-  jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp: DocumentSectionSchema,
+  JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm: DocumentSectionSchema,
+  '9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs':
+    DocumentSectionChangeEntrySchema,
+  DEmFwGa1sWm2BKhrN98LREKiB8j8B8kFAo7KBkkaojnN: DocumentSectionChangesSchema,
   '58B8orsFkxxy7bWqjLXJmtBs2b5rwnNQNbeoAbGhPkJc': DocumentStatusSchema,
   '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we': EventSchema,
   '8Akr9sdTkxBqMYWSGh8gHgoXQQeYEPfhV4s8fXeKTd9W':
@@ -105,11 +115,11 @@ export const schemas = {
   '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn': LifecycleEventSchema,
   BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC: OperationSchema,
   HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq: OperationRequestSchema,
-  D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g: ProposeChangeOperationSchema,
-  HBKMi42NAbj1yntTYCWxF1TrymXxjxxHvuEbeGfZYaEu: ProposeChangeWorkflowSchema,
+  '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx': ProposeChangeOperationSchema,
+  HWJfFpYwwYTs88XKXrShRdKy3yCUcTKTFTAkv1zLrSEp: ProposeChangeWorkflowSchema,
   EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M: ProposedChangeInvalidSchema,
   '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6': RejectChangeOperationSchema,
-  '45v49NERDirLBd4eTZ2HVAxwnwuu15rZ5USWsZPgw1X7': RejectChangeWorkflowSchema,
+  GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ: RejectChangeWorkflowSchema,
   '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n': RequestSchema,
   '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp': ResponseSchema,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflowSchema,

@@ -17,7 +17,7 @@ export const RejectChangeWorkflow = {
             blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
           },
           value:
-            "const postfix = currentContract.postfix ?? ''\nconst path = '/proposedChange' + postfix\n\nconst proposedChange = document(path)\nif (proposedChange) {\n  return {\n    changeset: [{ op: 'remove', path }]\n  }\n}\n\nreturn {\n  changeset: [],\n  events: [\n    {\n      type: \"Conversation/Proposed Change Invalid\",\n      reason: \"Proposed change does not exist at \" + path\n    }\n  ]\n};\n",
+            "const postfix = currentContract.postfix || ''\nconst path = '/proposedChange' + postfix\n\nconst proposedChange = document(path)\nif (proposedChange) {\n  return {\n    changeset: [{ op: 'remove', path }]\n  }\n}\n\nreturn {\n  changeset: [],\n  events: [\n    {\n      type: \"Conversation/Proposed Change Invalid\",\n      reason: \"Proposed change does not exist at \" + path\n    }\n  ]\n};\n",
         },
         name: 'Prepare',
         type: {

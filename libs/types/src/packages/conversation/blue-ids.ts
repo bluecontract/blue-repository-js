@@ -2,16 +2,18 @@ export const blueIds = {
   'Conversation/Accept Change Operation':
     'APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv',
   'Conversation/Accept Change Workflow':
-    'AwN4iZfsqtGnU1b4dKTFkZipLTKhT4Fu815sEDR1Uw2V',
+    'G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG',
   'Conversation/Actor': 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
   'Conversation/Change Operation':
-    '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD',
-  'Conversation/Change Request': 'Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5',
+    'BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB',
+  'Conversation/Change Request': '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw',
   'Conversation/Change Workflow':
-    '8dEMWKPqzV6E9nEecrNZgAx9VULdhXdoxWg4yT2qzWM7',
+    'AZ7kV2EzGpRMzUBCi5cYKd17gngvGDF9PVAdqaKRDqno',
   'Conversation/Chat Message': 'AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD',
   'Conversation/Composite Timeline Channel':
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
+  'Conversation/Contracts Change Policy':
+    '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U',
   'Conversation/Document Bootstrap Completed':
     'HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg',
   'Conversation/Document Bootstrap Failed':
@@ -21,7 +23,11 @@ export const blueIds = {
   'Conversation/Document Bootstrap Responded':
     '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv',
   'Conversation/Document Section':
-    'jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp',
+    'JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm',
+  'Conversation/Document Section Change Entry':
+    '9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs',
+  'Conversation/Document Section Changes':
+    'DEmFwGa1sWm2BKhrN98LREKiB8j8B8kFAo7KBkkaojnN',
   'Conversation/Document Status':
     '58B8orsFkxxy7bWqjLXJmtBs2b5rwnNQNbeoAbGhPkJc',
   'Conversation/Event': '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
@@ -35,15 +41,15 @@ export const blueIds = {
   'Conversation/Operation Request':
     'HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq',
   'Conversation/Propose Change Operation':
-    'D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g',
+    '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx',
   'Conversation/Propose Change Workflow':
-    'HBKMi42NAbj1yntTYCWxF1TrymXxjxxHvuEbeGfZYaEu',
+    'HWJfFpYwwYTs88XKXrShRdKy3yCUcTKTFTAkv1zLrSEp',
   'Conversation/Proposed Change Invalid':
     'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
   'Conversation/Reject Change Operation':
     '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6',
   'Conversation/Reject Change Workflow':
-    '45v49NERDirLBd4eTZ2HVAxwnwuu15rZ5USWsZPgw1X7',
+    'GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ',
   'Conversation/Request': '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
   'Conversation/Response': '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
   'Conversation/Sequential Workflow':
