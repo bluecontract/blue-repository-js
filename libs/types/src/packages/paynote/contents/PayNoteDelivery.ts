@@ -63,7 +63,7 @@ export const PayNoteDelivery = {
             },
             name: 'Capture Acceptance Timestamp',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
           {
@@ -157,7 +157,7 @@ export const PayNoteDelivery = {
             },
             name: 'Apply Acceptance Update',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -261,7 +261,7 @@ export const PayNoteDelivery = {
             },
             name: 'Initialize Delivery State',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -343,7 +343,7 @@ export const PayNoteDelivery = {
             },
             name: 'Capture Rejection Reason',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
           {
@@ -437,7 +437,7 @@ export const PayNoteDelivery = {
             },
             name: 'Apply Rejection Update',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -482,7 +482,7 @@ export const PayNoteDelivery = {
             },
             name: 'Capture Delivery Failure Reason',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
           {
@@ -531,7 +531,7 @@ export const PayNoteDelivery = {
             },
             name: 'Apply Delivery Failure',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -576,7 +576,7 @@ export const PayNoteDelivery = {
             },
             name: 'Classify Identification Result',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
           {
@@ -649,7 +649,7 @@ export const PayNoteDelivery = {
             },
             name: 'Apply Identification Update',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],

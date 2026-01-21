@@ -39,7 +39,7 @@ export const MyOSAdminBase = {
             },
             name: 'EmitAdminEvents',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
         ],

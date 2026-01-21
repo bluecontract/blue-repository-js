@@ -60,7 +60,7 @@ export const LinkedDocumentsPermissionGrantToAccount = {
             },
             name: 'EmitRevokeRequested',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
         ],
@@ -88,7 +88,7 @@ export const LinkedDocumentsPermissionGrantToAccount = {
             },
             name: 'ValidateBasicShape',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
         ],
@@ -121,6 +121,6 @@ export const LinkedDocumentsPermissionGrantToAccount = {
     },
   },
   type: {
-    blueId: 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
+    blueId: 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
   },
 } as const;

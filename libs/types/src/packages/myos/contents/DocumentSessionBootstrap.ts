@@ -78,7 +78,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Error Message',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
           {
@@ -91,7 +91,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Emit Failure Event',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
         ],
@@ -124,7 +124,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Prepare Participant State',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
           {
@@ -156,7 +156,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Participants State',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -206,7 +206,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Bootstrap Status',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -256,7 +256,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Initiator Session',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
           {
@@ -269,7 +269,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Emit Completion Event',
             type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
             },
           },
         ],
@@ -313,7 +313,7 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Initialize Bootstrap Status',
             type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
             },
           },
         ],
@@ -388,6 +388,6 @@ export const DocumentSessionBootstrap = {
     },
   },
   type: {
-    blueId: 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
+    blueId: 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
   },
 } as const;

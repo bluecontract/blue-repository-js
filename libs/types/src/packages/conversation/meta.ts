@@ -8,19 +8,19 @@ const meta = {
       name: 'Accept Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: 'APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv',
           attributesAdded: [],
         },
       ],
     },
-    '4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR': {
+    AwN4iZfsqtGnU1b4dKTFkZipLTKhT4Fu815sEDR1Uw2V: {
       status: 'dev',
       name: 'Accept Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 4,
-          typeBlueId: '4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'AwN4iZfsqtGnU1b4dKTFkZipLTKhT4Fu815sEDR1Uw2V',
           attributesAdded: [],
         },
       ],
@@ -41,7 +41,7 @@ const meta = {
       name: 'Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD',
           attributesAdded: [],
         },
@@ -52,19 +52,19 @@ const meta = {
       name: 'Change Request',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5',
           attributesAdded: [],
         },
       ],
     },
-    '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW': {
+    '8dEMWKPqzV6E9nEecrNZgAx9VULdhXdoxWg4yT2qzWM7': {
       status: 'dev',
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 4,
-          typeBlueId: '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW',
+          repositoryVersionIndex: 0,
+          typeBlueId: '8dEMWKPqzV6E9nEecrNZgAx9VULdhXdoxWg4yT2qzWM7',
           attributesAdded: [],
         },
       ],
@@ -96,7 +96,7 @@ const meta = {
       name: 'Document Bootstrap Completed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg',
           attributesAdded: [],
         },
@@ -107,7 +107,7 @@ const meta = {
       name: 'Document Bootstrap Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH',
           attributesAdded: [],
         },
@@ -118,7 +118,7 @@ const meta = {
       name: 'Document Bootstrap Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
           attributesAdded: [],
         },
@@ -129,7 +129,7 @@ const meta = {
       name: 'Document Bootstrap Responded',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv',
           attributesAdded: [],
         },
@@ -140,7 +140,7 @@ const meta = {
       name: 'Document Section',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: 'jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp',
           attributesAdded: [],
         },
@@ -179,13 +179,13 @@ const meta = {
         },
       ],
     },
-    '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK': {
+    ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS: {
       status: 'stable',
       name: 'JavaScript Code',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+          typeBlueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
           attributesAdded: [],
         },
       ],
@@ -228,19 +228,19 @@ const meta = {
       name: 'Propose Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: 'D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g',
           attributesAdded: [],
         },
       ],
     },
-    '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v': {
+    HBKMi42NAbj1yntTYCWxF1TrymXxjxxHvuEbeGfZYaEu: {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 4,
-          typeBlueId: '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'HBKMi42NAbj1yntTYCWxF1TrymXxjxxHvuEbeGfZYaEu',
           attributesAdded: [],
         },
       ],
@@ -250,7 +250,7 @@ const meta = {
       name: 'Proposed Change Invalid',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
           attributesAdded: [],
         },
@@ -261,19 +261,19 @@ const meta = {
       name: 'Reject Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 4,
+          repositoryVersionIndex: 0,
           typeBlueId: '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6',
           attributesAdded: [],
         },
       ],
     },
-    DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc: {
+    '45v49NERDirLBd4eTZ2HVAxwnwuu15rZ5USWsZPgw1X7': {
       status: 'dev',
       name: 'Reject Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 4,
-          typeBlueId: 'DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc',
+          repositoryVersionIndex: 0,
+          typeBlueId: '45v49NERDirLBd4eTZ2HVAxwnwuu15rZ5USWsZPgw1X7',
           attributesAdded: [],
         },
       ],
@@ -421,24 +421,24 @@ const meta = {
         },
       ],
     },
-    GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU: {
+    '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2': {
       status: 'stable',
       name: 'Trigger Event',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU',
+          typeBlueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
           attributesAdded: [],
         },
       ],
     },
-    BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM: {
+    FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa: {
       status: 'stable',
       name: 'Update Document',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+          typeBlueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
           attributesAdded: [],
         },
       ],

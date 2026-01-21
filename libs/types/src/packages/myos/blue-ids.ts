@@ -17,13 +17,13 @@ export const blueIds = {
   'MyOS/Call Operation Responded':
     '3P4vsTx8Ky2pucXxKgkn8MouveP2DBRjkwZckCG5b9Lb',
   'MyOS/Chat GPT Connector Agent':
-    'GH3Lqn1Vd4G36VjXu2j81SGfNqRUn82tkKiSSguhRp8J',
+    '3SULZSU6Yvi6rVuhGsRX7znRuyt6oWnx1Hdyu6QhdhFj',
   'MyOS/Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
   'MyOS/Document Anchors': '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH',
   'MyOS/Document Link': 'BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk',
   'MyOS/Document Links': '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5',
   'MyOS/Document Session Bootstrap':
-    '84xMEnEYr3DPBuYZL3JtcsZBBTtRH9fEEJiPnk7ASj1o',
+    '6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ',
   'MyOS/Document Type Link': 'D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX',
   'MyOS/Inform User To Install MyOS Package':
     'CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3',
@@ -31,9 +31,9 @@ export const blueIds = {
   'MyOS/Linked Documents Permission Grant Requested':
     'DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS',
   'MyOS/Linked Documents Permission Grant To Account':
-    '3nHZjceYBWLD6nWXo354UhdU5vZWy26rUTL8aRj3xEmd',
+    'AFX9ct4gYywCbqPUJWaTz4JXS74RxxNPUMNzBMzNGD8c',
   'MyOS/Linked Documents Permission Grant To Document':
-    '488CnQXrxMyNAgCVgL85SyHxUK5rZzWzd81eo4JkVHRD',
+    'A2dveyQFp6dYJgigdRuZW3dsbdeiG2HzHnjaobAHJCvY',
   'MyOS/Linked Documents Permission Granted':
     'BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N',
   'MyOS/Linked Documents Permission Granting in Progress':
@@ -53,7 +53,7 @@ export const blueIds = {
   'MyOS/Linked Documents Permission Validated':
     'DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe',
   'MyOS/LLM Agent': 'DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf',
-  'MyOS/MyOS Admin Base': 'FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o',
+  'MyOS/MyOS Admin Base': 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
   'MyOS/MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
   'MyOS/MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
   'MyOS/MyOS Agent Event': 'GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR',
@@ -85,9 +85,9 @@ export const blueIds = {
   'MyOS/Single Document Permission Grant Responded':
     '5jtNV7xpaim18pUQp4uvron8uHfTjPSi6kUZQdCMGsKa',
   'MyOS/Single Document Permission Grant To Account':
-    'EVkAZAwJkgjQfTkA3RXpdEX2VgYJtMREmkQEFrojAQ1j',
+    'FZLsSeuoLTki2FpqYTr5nmqnAtKgTnmi18qNaTnRGBs6',
   'MyOS/Single Document Permission Grant To Document':
-    'AQyDRNKEkDan8VGNcvBdJCz95HKcwcAurhccHnCgV1j9',
+    '6fEj6jD4eEVJwjH9Z2aQ9HsqdaCzbppfsYL2mFLx32YP',
   'MyOS/Single Document Permission Granted':
     '8XYzJ3BrgB5uoAWU5HvZ7Gej9RXNG5r52ccneLZxMAQd',
   'MyOS/Single Document Permission Granting in Progress':
@@ -122,7 +122,7 @@ export const blueIds = {
   'MyOS/Worker Agency Permission':
     '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
   'MyOS/Worker Agency Permission Grant':
-    '2NN4VerhNHSyBcyoJpgtcuURkss2QRMmGkocQobJ8JYP',
+    'A73AVDR9GWAshFUC2Me2qXNns2HECzbadtsgp5zxCjGx',
   'MyOS/Worker Agency Permission Grant Requested':
     'HF5aRJZqvHn7sDFbwfDGQjkWmTSW9Lee7c9dUBtcdNtK',
   'MyOS/Worker Agency Permission Granted':

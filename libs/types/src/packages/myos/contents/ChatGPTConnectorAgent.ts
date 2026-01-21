@@ -61,7 +61,7 @@ export const ChatGPTConnectorAgent = {
             },
             name: 'Emit Install Prompt',
             type: {
-              blueId: 'GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU',
+              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
             },
           },
         ],
