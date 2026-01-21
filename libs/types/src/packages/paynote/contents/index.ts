@@ -32,8 +32,8 @@ import { PayNoteDeliveryFailed } from './PayNoteDeliveryFailed';
 import { ReservationReleaseRequested } from './ReservationReleaseRequested';
 import { TransactionIdentificationFailed } from './TransactionIdentificationFailed';
 import { CardTransactionDetails } from './CardTransactionDetails';
-import { PayNoteDelivery } from './PayNoteDelivery';
 import { PayNoteApproved } from './PayNoteApproved';
+import { PayNoteDelivery } from './PayNoteDelivery';
 
 export { CardTransactionCaptureLockChangeFailed } from './CardTransactionCaptureLockChangeFailed';
 export { SettlementAmountRejected } from './SettlementAmountRejected';
@@ -69,8 +69,8 @@ export { PayNoteDeliveryFailed } from './PayNoteDeliveryFailed';
 export { ReservationReleaseRequested } from './ReservationReleaseRequested';
 export { TransactionIdentificationFailed } from './TransactionIdentificationFailed';
 export { CardTransactionDetails } from './CardTransactionDetails';
-export { PayNoteDelivery } from './PayNoteDelivery';
 export { PayNoteApproved } from './PayNoteApproved';
+export { PayNoteDelivery } from './PayNoteDelivery';
 
 export const contents = {
   '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH':
@@ -111,6 +111,6 @@ export const contents = {
   GU8nkSnUuMs6632rHQyBndRtjDcMB9ZSbgwkGYcfGt97: ReservationReleaseRequested,
   GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC: TransactionIdentificationFailed,
   GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT: CardTransactionDetails,
-  HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS: PayNoteDelivery,
   HQTUxErobqhSuhWo9DAC1WwaG9oYdjfmdKprGtV4TeEK: PayNoteApproved,
+  J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t: PayNoteDelivery,
 } as const;

@@ -9,7 +9,7 @@ packages:
             blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
           description: ISO 8601 timestamp with timezone offset (for example, 2025-01-10T09:30:00Z, 2025-01-10T10:30:00+01:00, or 2025-01-10T09:30:00.123456Z).
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
             attributesAdded: []
   - name: Conversation
@@ -21,7 +21,7 @@ packages:
             blueId: BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC
           description: Operation to accept a previously proposed change.
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv
             attributesAdded: []
       - status: dev
@@ -38,7 +38,7 @@ packages:
             items:
               - name: Prepare
                 type:
-                  blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                  blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                 code:
                   value: |
                     const postfix = currentContract.postfix ?? ''
@@ -65,14 +65,14 @@ packages:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
               - name: Apply
                 type:
-                  blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                  blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                 changeset:
                   value: ${steps.Prepare.changeset}
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 4
-            typeBlueId: 4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR
+          - repositoryVersionIndex: 0
+            typeBlueId: AwN4iZfsqtGnU1b4dKTFkZipLTKhT4Fu815sEDR1Uw2V
             attributesAdded: []
       - status: stable
         content:
@@ -93,7 +93,7 @@ packages:
             type:
               blueId: Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: 3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD
             attributesAdded: []
       - status: dev
@@ -111,7 +111,7 @@ packages:
               blueId: Bz49DbfqKC1yJeCfv5RYPZUKTfb7rtZnmreCaz4RsXn5
             description: RFC 6902-compatible patch entries to apply.
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5
             attributesAdded: []
       - status: dev
@@ -128,7 +128,7 @@ packages:
             items:
               - name: Prepare
                 type:
-                  blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                  blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                 code:
                   value: |
                     const issues = [];
@@ -159,14 +159,14 @@ packages:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
               - name: Apply
                 type:
-                  blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                  blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                 changeset:
                   value: ${steps.Prepare.changeset}
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 4
-            typeBlueId: 66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW
+          - repositoryVersionIndex: 0
+            typeBlueId: 8dEMWKPqzV6E9nEecrNZgAx9VULdhXdoxWg4yT2qzWM7
             attributesAdded: []
       - status: stable
         content:
@@ -215,7 +215,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Document ID of the bootstrapped document.
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg
             attributesAdded: []
       - status: dev
@@ -229,7 +229,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Failure reason.
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH
             attributesAdded: []
       - status: dev
@@ -267,7 +267,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Channel name of a participant in the requesting document which is asked to bootstrap the requested document
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: 7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg
             attributesAdded: []
       - status: dev
@@ -285,7 +285,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Details when rejected or additional context.
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: 1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv
             attributesAdded: []
       - status: dev
@@ -308,7 +308,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Contract keys in the same scope that implement/affect the section.
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp
             attributesAdded: []
       - status: stable
@@ -373,9 +373,17 @@ packages:
             blueId: HYsLiqsqk7t98d5fK6YxKEQGeqBaHNVjM4rRNdxK4yUW
           description: |
             Conversation workflow step that executes provided JavaScript source as part of a sequential workflow.
-            - Gas accounting (when & what is charged):
-                - Base step charge (once per run of this step): 100 + ceil(bytes(code)/100)
-                  where bytes(code) is the UTF-8 length of the JavaScript source.
+            - Deterministic JavaScript runtime (QuickJS in Wasm):
+                - Only deterministic APIs are available. Date, Math.random, eval/Function,
+                  Promise/async, RegExp, Proxy, ArrayBuffer/typed arrays, WebAssembly,
+                  console, JSON.parse/stringify, and Array.prototype.sort are disabled.
+                - Values passed into and returned from the VM must be DV-compatible
+                  (null, boolean, number, string, array, object with string keys).
+            - Gas accounting (when and what is charged):
+                - JavaScript execution is metered by the QuickJS VM. The VM reports wasm
+                  fuel used; the processor converts it to host gas with:
+                    hostGas = ceil(wasmFuel / 1700)
+                  (calibration factor currently 1700 fuel per host gas unit).
                 - Document snapshot reads (via document(<pointer>) inside the code):
                   8 + depth(pointer) + ceil(snapshotBytes/100) per call, where:
                     - depth("/") = 0, depth("/a/b") = 2 (number of path segments),
@@ -388,6 +396,10 @@ packages:
                 - `event`: triggering event rendered via the `'simple'` JSON strategy (plain
                   values/arrays, no metadata).
                 - `eventCanonical`: triggering event rendered via the `'official'` strategy.
+                - `currentContract`: the current handler contract rendered via the `'simple'`
+                  JSON strategy.
+                - `currentContractCanonical`: current handler contract rendered via the
+                  `'official'` strategy.
                 - `document(pointer?)`: document snapshot (absolute path or scope-relative) rendered
                   with the `'simple'` strategy; defaults to `/` when omitted.
                 - `document.canonical(pointer?)`: snapshot rendered using the `'official'`
@@ -402,7 +414,7 @@ packages:
             description: JavaScript source to execute for this step.
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+            typeBlueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
             attributesAdded: []
       - status: stable
         content:
@@ -465,7 +477,7 @@ packages:
             type:
               blueId: Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g
             attributesAdded: []
       - status: dev
@@ -486,7 +498,7 @@ packages:
             items:
               - name: Prepare
                 type:
-                  blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                  blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                 code:
                   value: |
                     const issues = [];
@@ -546,14 +558,14 @@ packages:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
               - name: Apply
                 type:
-                  blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                  blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                 changeset:
                   value: ${steps.Prepare.changeset}
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 4
-            typeBlueId: 2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v
+          - repositoryVersionIndex: 0
+            typeBlueId: HBKMi42NAbj1yntTYCWxF1TrymXxjxxHvuEbeGfZYaEu
             attributesAdded: []
       - status: dev
         content:
@@ -566,7 +578,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Human-readable reason for the failure.
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M
             attributesAdded: []
       - status: dev
@@ -576,7 +588,7 @@ packages:
             blueId: BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC
           description: Operation to reject a previously proposed change.
         versions:
-          - repositoryVersionIndex: 4
+          - repositoryVersionIndex: 0
             typeBlueId: 4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6
             attributesAdded: []
       - status: dev
@@ -593,7 +605,7 @@ packages:
             items:
               - name: Prepare
                 type:
-                  blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                  blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                 code:
                   value: |
                     const postfix = currentContract.postfix ?? ''
@@ -619,14 +631,14 @@ packages:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
               - name: Apply
                 type:
-                  blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                  blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                 changeset:
                   value: ${steps.Prepare.changeset}
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 4
-            typeBlueId: DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc
+          - repositoryVersionIndex: 0
+            typeBlueId: 45v49NERDirLBd4eTZ2HVAxwnwuu15rZ5USWsZPgw1X7
             attributesAdded: []
       - status: stable
         content:
@@ -848,12 +860,14 @@ packages:
             blueId: HYsLiqsqk7t98d5fK6YxKEQGeqBaHNVjM4rRNdxK4yUW
           description: |
             Conversation workflow step that enqueues an event as part of the workflow.
-            - Gas accounting (when & what is charged):
+            - Gas accounting (when and what is charged):
                 - Base step charge (once per run of this step): 30.
                 - Expression/template resolution under "/event" (if present):
-                    - For each standalone expression ${…}: 5 + ceil(bytes(expr)/100).
-                    - For each template string containing one or more ${…} placeholders:
-                      3 × placeholderCount + ceil(bytes(template)/100).
+                    - Expressions run in the deterministic QuickJS VM (same sandbox and
+                      bindings as the JavaScript Code step).
+                    - VM gas is converted to host gas as:
+                      hostGas = ceil(wasmFuel / 1700)
+                      (calibration factor currently 1700 fuel per host gas unit).
                     - Any document(<pointer>) used inside expressions/templates charges
                       per call: 8 + depth(pointer) + ceil(snapshotBytes/100).
                 - Event emission (enqueue): 20 + ceil(eventBytes/100) for the final event
@@ -862,7 +876,7 @@ packages:
             description: The event payload to enqueue (any Blue node).
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU
+            typeBlueId: 2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2
             attributesAdded: []
       - status: stable
         content:
@@ -871,12 +885,14 @@ packages:
             blueId: HYsLiqsqk7t98d5fK6YxKEQGeqBaHNVjM4rRNdxK4yUW
           description: |
             Updates the document with the provided changeset.
-            - Gas accounting (when & what is charged):
-                - Base step charge (once per run of this step): 40 + 5 × changesetLength.
+            - Gas accounting (when and what is charged):
+                - Base step charge (once per run of this step): 40 + 5 * changesetLength.
                 - Expression/template resolution under "/changeset/**" (if present):
-                    - For each standalone expression ${…}: 5 + ceil(bytes(expr)/100).
-                    - For each template string containing one or more ${…} placeholders:
-                      3 × placeholderCount + ceil(bytes(template)/100).
+                    - Expressions run in the deterministic QuickJS VM (same sandbox and
+                      bindings as the JavaScript Code step).
+                    - VM gas is converted to host gas as:
+                      hostGas = ceil(wasmFuel / 1700)
+                      (calibration factor currently 1700 fuel per host gas unit).
                     - Any document(<pointer>) used inside expressions/templates charges
                       per call: 8 + depth(pointer) + ceil(snapshotBytes/100).
                 - Per change (applied in order after boundary validation):
@@ -886,7 +902,7 @@ packages:
                           canonical JSON size of val).
                         - remove: 10.
                     - Cascade routing (Document Update delivery):
-                      10 × N, where N is the number of scopes that receive the resulting
+                      10 * N, where N is the number of scopes that receive the resulting
                       Document Update (origin scope and each participating ancestor up to root).
           changeset:
             type:
@@ -895,7 +911,7 @@ packages:
               blueId: Bz49DbfqKC1yJeCfv5RYPZUKTfb7rtZnmreCaz4RsXn5
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+            typeBlueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
             attributesAdded: []
   - name: Core
     types:
@@ -1398,7 +1414,7 @@ packages:
                 items:
                   - name: Emit Install Prompt
                     type:
-                      blueId: GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU
+                      blueId: 2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2
                     event:
                       type:
                         blueId: CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3
@@ -1416,7 +1432,7 @@ packages:
                         value: ${event.message.request.package}
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: GH3Lqn1Vd4G36VjXu2j81SGfNqRUn82tkKiSSguhRp8J
+            typeBlueId: 3SULZSU6Yvi6rVuhGsRX7znRuyt6oWnx1Hdyu6QhdhFj
             attributesAdded: []
       - status: stable
         content:
@@ -1474,7 +1490,7 @@ packages:
         content:
           name: Document Session Bootstrap
           type:
-            blueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            blueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
           description: MyOS-specific document for bootstrapping document sessions and tracking bootstrap progress
           document:
             description: Target Blue document to be bootstrapped
@@ -1551,7 +1567,7 @@ packages:
                 items:
                   - name: Initialize Bootstrap Status
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -1579,7 +1595,7 @@ packages:
                 items:
                   - name: Prepare Participant State
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const participantState = {
@@ -1595,7 +1611,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Update Participants State
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -1624,7 +1640,7 @@ packages:
                 items:
                   - name: Update Initiator Session
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -1641,7 +1657,7 @@ packages:
                               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Emit Completion Event
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return { events: [ { type: 'Conversation/Status Change', status: { type: 'Conversation/Status Completed' } } ] };
@@ -1661,7 +1677,7 @@ packages:
                 items:
                   - name: Update Error Message
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -1678,7 +1694,7 @@ packages:
                               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Emit Failure Event
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return { events: [ { type: 'Conversation/Status Change', status: { type: 'Conversation/Status Failed' } } ] };
@@ -1698,7 +1714,7 @@ packages:
                 items:
                   - name: Update Bootstrap Status
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -1715,7 +1731,7 @@ packages:
                               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 84xMEnEYr3DPBuYZL3JtcsZBBTtRH9fEEJiPnk7ASj1o
+            typeBlueId: 6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ
             attributesAdded: []
       - status: stable
         content:
@@ -1777,14 +1793,14 @@ packages:
             type:
               blueId: 75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS
             attributesAdded: []
       - status: dev
         content:
           name: Linked Documents Permission Grant To Account
           type:
-            blueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            blueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
           targetSessionId:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
@@ -1838,7 +1854,7 @@ packages:
                 items:
                   - name: EmitRevokeRequested
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return {
@@ -1862,7 +1878,7 @@ packages:
                 items:
                   - name: ValidateBasicShape
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const issues = [];
@@ -1904,14 +1920,14 @@ packages:
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
-            typeBlueId: 3nHZjceYBWLD6nWXo354UhdU5vZWy26rUTL8aRj3xEmd
+          - repositoryVersionIndex: 0
+            typeBlueId: AFX9ct4gYywCbqPUJWaTz4JXS74RxxNPUMNzBMzNGD8c
             attributesAdded: []
       - status: dev
         content:
           name: Linked Documents Permission Grant To Document
           type:
-            blueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            blueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
           targetSessionId:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
@@ -1969,7 +1985,7 @@ packages:
                 items:
                   - name: EmitRevokeRequested
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return {
@@ -1993,7 +2009,7 @@ packages:
                 items:
                   - name: ValidateBasicShape
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const skipValidation = document('/skipValidation');
@@ -2040,8 +2056,8 @@ packages:
                       type:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
-            typeBlueId: 488CnQXrxMyNAgCVgL85SyHxUK5rZzWzd81eo4JkVHRD
+          - repositoryVersionIndex: 0
+            typeBlueId: A2dveyQFp6dYJgigdRuZW3dsbdeiG2HzHnjaobAHJCvY
             attributesAdded: []
       - status: dev
         content:
@@ -2056,7 +2072,7 @@ packages:
             type:
               blueId: 75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N
             attributesAdded: []
       - status: dev
@@ -2072,7 +2088,7 @@ packages:
             type:
               blueId: 75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: 8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK
             attributesAdded: []
       - status: dev
@@ -2087,7 +2103,7 @@ packages:
             itemType:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU
             attributesAdded: []
       - status: dev
@@ -2106,7 +2122,7 @@ packages:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi
             attributesAdded: []
       - status: dev
@@ -2119,7 +2135,7 @@ packages:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: 6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7
             attributesAdded: []
       - status: dev
@@ -2138,7 +2154,7 @@ packages:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: 9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h
             attributesAdded: []
       - status: dev
@@ -2157,7 +2173,7 @@ packages:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH
             attributesAdded: []
       - status: dev
@@ -2171,7 +2187,7 @@ packages:
           valueType:
             blueId: DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: 75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5
             attributesAdded: []
       - status: dev
@@ -2181,7 +2197,7 @@ packages:
             blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
           description: Emitted when the LDPG passes local validation.
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe
             attributesAdded: []
       - status: dev
@@ -2191,7 +2207,7 @@ packages:
             blueId: 8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc
           description: Marker type for a specialized Blue document that MyOS treats as an Agent, enabling richer UI and behaviors while remaining a standard Blue document.
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf
             attributesAdded: []
       - status: stable
@@ -2223,7 +2239,7 @@ packages:
                 items:
                   - name: EmitAdminEvents
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return { events: event.message.request };
@@ -2231,7 +2247,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            typeBlueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
             attributesAdded: []
       - status: stable
         content:
@@ -2605,7 +2621,7 @@ packages:
         content:
           name: Single Document Permission Grant To Account
           type:
-            blueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            blueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
           targetSessionId:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
@@ -2656,7 +2672,7 @@ packages:
                 items:
                   - name: EmitRevokeRequested
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return {
@@ -2680,7 +2696,7 @@ packages:
                 items:
                   - name: ValidateBasicShape
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const issues = [];
@@ -2718,13 +2734,13 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: EVkAZAwJkgjQfTkA3RXpdEX2VgYJtMREmkQEFrojAQ1j
+            typeBlueId: FZLsSeuoLTki2FpqYTr5nmqnAtKgTnmi18qNaTnRGBs6
             attributesAdded: []
       - status: stable
         content:
           name: Single Document Permission Grant To Document
           type:
-            blueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            blueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
           targetSessionId:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
@@ -2779,7 +2795,7 @@ packages:
                 items:
                   - name: EmitRevokeRequested
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return {
@@ -2803,7 +2819,7 @@ packages:
                 items:
                   - name: ValidateBasicShape
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const skipValidation = document('/skipValidation');
@@ -2846,7 +2862,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: AQyDRNKEkDan8VGNcvBdJCz95HKcwcAurhccHnCgV1j9
+            typeBlueId: 6fEj6jD4eEVJwjH9Z2aQ9HsqdaCzbppfsYL2mFLx32YP
             attributesAdded: []
       - status: stable
         content:
@@ -3178,7 +3194,7 @@ packages:
         content:
           name: Worker Agency Permission Grant
           type:
-            blueId: FHzfgUb3eTqBkgDi1n5QNw5PC1QYGycEVs1c3YSrZ53o
+            blueId: Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj
           granteeDocumentId:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
@@ -3221,7 +3237,7 @@ packages:
                 items:
                   - name: EmitRevokeRequested
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         return {
@@ -3245,7 +3261,7 @@ packages:
                 items:
                   - name: ValidateBasicShape
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const issues = [];
@@ -3420,7 +3436,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 2NN4VerhNHSyBcyoJpgtcuURkss2QRMmGkocQobJ8JYP
+            typeBlueId: A73AVDR9GWAshFUC2Me2qXNns2HECzbadtsgp5zxCjGx
             attributesAdded: []
       - status: stable
         content:
@@ -3637,7 +3653,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Failure reason.
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: 2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH
             attributesAdded: []
       - status: dev
@@ -3650,7 +3666,7 @@ packages:
             type:
               blueId: GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu
             attributesAdded: []
       - status: dev
@@ -3664,7 +3680,7 @@ packages:
               blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
             description: Timestamp of when the card transaction capture was locked.
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt
             attributesAdded: []
       - status: dev
@@ -3677,7 +3693,7 @@ packages:
             type:
               blueId: GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: 531sxtH5rD9ter3EzwBTcn9GMdA7RAYFwmSQRzxCru8z
             attributesAdded: []
       - status: dev
@@ -3691,7 +3707,7 @@ packages:
               blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
             description: Timestamp of when the card transaction capture was unlocked.
         versions:
-          - repositoryVersionIndex: 5
+          - repositoryVersionIndex: 0
             typeBlueId: DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5
             attributesAdded: []
       - status: dev
@@ -3715,7 +3731,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: ISO 8583 DE38 Authorization Identification Response (authorization code).
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT
             attributesAdded: []
       - status: stable
@@ -3866,7 +3882,7 @@ packages:
               blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
             description: Timestamp when the client accepted.
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: 6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3
             attributesAdded: []
       - status: stable
@@ -3935,7 +3951,7 @@ packages:
               blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
             description: Timestamp provided with the decision, if any.
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j
             attributesAdded: []
       - status: dev
@@ -4007,7 +4023,7 @@ packages:
                 items:
                   - name: Initialize Delivery State
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -4079,7 +4095,7 @@ packages:
                 items:
                   - name: Classify Identification Result
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const request =
@@ -4124,7 +4140,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Apply Identification Update
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -4186,7 +4202,7 @@ packages:
                 items:
                   - name: Capture Acceptance Timestamp
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const request =
@@ -4264,7 +4280,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Apply Acceptance Update
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -4342,7 +4358,7 @@ packages:
                 items:
                   - name: Capture Rejection Reason
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const request =
@@ -4427,7 +4443,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Apply Rejection Update
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -4500,7 +4516,7 @@ packages:
                 items:
                   - name: Capture Delivery Failure Reason
                     type:
-                      blueId: 3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
                     code:
                       value: |
                         const reason =
@@ -4520,7 +4536,7 @@ packages:
                         blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
                   - name: Apply Delivery Failure
                     type:
-                      blueId: BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
                     changeset:
                       items:
                         - op:
@@ -4547,8 +4563,8 @@ packages:
                             type:
                               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 5
-            typeBlueId: HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS
+          - repositoryVersionIndex: 0
+            typeBlueId: J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t
             attributesAdded: []
       - status: dev
         content:
@@ -4561,7 +4577,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Failure reason.
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y
             attributesAdded: []
       - status: stable
@@ -4592,7 +4608,7 @@ packages:
               blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
             description: Timestamp when the client rejected.
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G
             attributesAdded: []
       - status: stable
@@ -4710,7 +4726,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Optional failure reason.
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC
             attributesAdded: []
       - status: dev
@@ -4720,13 +4736,8 @@ packages:
             blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
           description: The deliverer identified the card transaction.
         versions:
-          - repositoryVersionIndex: 3
+          - repositoryVersionIndex: 0
             typeBlueId: 6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V
             attributesAdded: []
 repositoryVersions:
-  - 7Mh4CgtBu1xUyk64hVrF5HPbD9K8DvhGCecD2q74dMsi
-  - AGDPTwMdekjTE775U5Dc4WTjZPN46D14ohKsb6hUZkVp
-  - GenpwaWZPgCUuDBd8DDAa5Kes2ojV1oP4eVt6ayBKy6e
-  - EbEJF1ttddLLVTPtGjxo8TnjxdZsQvtfmanjgUheQuvp
-  - 4vpHZQ2NpENzjNmaR9TDBrezwZ392BJH9t31bZBaeRRr
-  - J41s13bymFExtPh8YmYrRdQECGKomDfB8djpj8uUNkHy
+  - 5C7dGdtZGYPee4HtCXqFF4XpRuhhXeuaiWNDpdcG2iie

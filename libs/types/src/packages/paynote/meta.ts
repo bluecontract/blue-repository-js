@@ -41,7 +41,7 @@ const meta = {
       name: 'Card Transaction Capture Lock Change Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH',
           attributesAdded: [],
         },
@@ -52,7 +52,7 @@ const meta = {
       name: 'Card Transaction Capture Lock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu',
           attributesAdded: [],
         },
@@ -63,7 +63,7 @@ const meta = {
       name: 'Card Transaction Capture Locked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt',
           attributesAdded: [],
         },
@@ -74,7 +74,7 @@ const meta = {
       name: 'Card Transaction Capture Unlock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '531sxtH5rD9ter3EzwBTcn9GMdA7RAYFwmSQRzxCru8z',
           attributesAdded: [],
         },
@@ -85,7 +85,7 @@ const meta = {
       name: 'Card Transaction Capture Unlocked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5',
           attributesAdded: [],
         },
@@ -96,7 +96,7 @@ const meta = {
       name: 'Card Transaction Details',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
           attributesAdded: [],
         },
@@ -184,7 +184,7 @@ const meta = {
       name: 'PayNote Accepted By Client',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3',
           attributesAdded: [],
         },
@@ -239,19 +239,19 @@ const meta = {
       name: 'PayNote Client Decision Discarded',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
           attributesAdded: [],
         },
       ],
     },
-    HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS: {
+    J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: 'HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t',
           attributesAdded: [],
         },
       ],
@@ -261,7 +261,7 @@ const meta = {
       name: 'PayNote Delivery Failed',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
           attributesAdded: [],
         },
@@ -283,7 +283,7 @@ const meta = {
       name: 'PayNote Rejected By Client',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G',
           attributesAdded: [],
         },
@@ -382,7 +382,7 @@ const meta = {
       name: 'Transaction Identification Failed',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC',
           attributesAdded: [],
         },
@@ -393,7 +393,7 @@ const meta = {
       name: 'Transaction Identified',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V',
           attributesAdded: [],
         },

@@ -2,13 +2,13 @@ export const blueIds = {
   'Conversation/Accept Change Operation':
     'APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv',
   'Conversation/Accept Change Workflow':
-    '4ydM8ihVRAgqRqx61PueAuegj1FDvGuf5FoqRugZk9dR',
+    'AwN4iZfsqtGnU1b4dKTFkZipLTKhT4Fu815sEDR1Uw2V',
   'Conversation/Actor': 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
   'Conversation/Change Operation':
     '3UQcFf9FhSYZPGtbxWTg2ifNAVKzbzb61aTMVUFaTCnD',
   'Conversation/Change Request': 'Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5',
   'Conversation/Change Workflow':
-    '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW',
+    '8dEMWKPqzV6E9nEecrNZgAx9VULdhXdoxWg4yT2qzWM7',
   'Conversation/Chat Message': 'AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD',
   'Conversation/Composite Timeline Channel':
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
@@ -28,7 +28,7 @@ export const blueIds = {
   'Conversation/Inform User About Pending Action':
     '8Akr9sdTkxBqMYWSGh8gHgoXQQeYEPfhV4s8fXeKTd9W',
   'Conversation/JavaScript Code':
-    '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+    'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
   'Conversation/Lifecycle Event':
     '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn',
   'Conversation/Operation': 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
@@ -37,13 +37,13 @@ export const blueIds = {
   'Conversation/Propose Change Operation':
     'D96pLVtZPE4Q6MgF31NDyUTQKazaTqJnA6koSW8SaS2g',
   'Conversation/Propose Change Workflow':
-    '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v',
+    'HBKMi42NAbj1yntTYCWxF1TrymXxjxxHvuEbeGfZYaEu',
   'Conversation/Proposed Change Invalid':
     'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
   'Conversation/Reject Change Operation':
     '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6',
   'Conversation/Reject Change Workflow':
-    'DPZyXiaegtbPsrL8dB415DxHRqFHML35uyqr2MX9XJYc',
+    '45v49NERDirLBd4eTZ2HVAxwnwuu15rZ5USWsZPgw1X7',
   'Conversation/Request': '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
   'Conversation/Response': '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
   'Conversation/Sequential Workflow':
@@ -63,8 +63,8 @@ export const blueIds = {
   'Conversation/Timeline Channel':
     'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
   'Conversation/Timeline Entry': 'EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn',
-  'Conversation/Trigger Event': 'GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU',
+  'Conversation/Trigger Event': '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
   'Conversation/Update Document':
-    'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+    'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
 } as const;
 export default blueIds;

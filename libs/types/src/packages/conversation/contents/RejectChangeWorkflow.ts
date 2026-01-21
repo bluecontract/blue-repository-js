@@ -21,7 +21,7 @@ export const RejectChangeWorkflow = {
         },
         name: 'Prepare',
         type: {
-          blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+          blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
         },
       },
       {
@@ -33,7 +33,7 @@ export const RejectChangeWorkflow = {
         },
         name: 'Apply',
         type: {
-          blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+          blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
         },
       },
     ],

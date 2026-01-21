@@ -8,7 +8,7 @@ const meta = {
       name: 'Timestamp',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
           attributesAdded: [],
         },
