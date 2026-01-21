@@ -1,6 +1,11 @@
 import { CaptureDeclinedSchema } from './CaptureDeclined';
 import { CaptureFailedSchema } from './CaptureFailed';
 import { CaptureFundsRequestedSchema } from './CaptureFundsRequested';
+import { CardTransactionCaptureLockChangeFailedSchema } from './CardTransactionCaptureLockChangeFailed';
+import { CardTransactionCaptureLockRequestedSchema } from './CardTransactionCaptureLockRequested';
+import { CardTransactionCaptureLockedSchema } from './CardTransactionCaptureLocked';
+import { CardTransactionCaptureUnlockRequestedSchema } from './CardTransactionCaptureUnlockRequested';
+import { CardTransactionCaptureUnlockedSchema } from './CardTransactionCaptureUnlocked';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 import { ChildPayNoteIssuanceDeclinedSchema } from './ChildPayNoteIssuanceDeclined';
 import { ChildPayNoteIssuedSchema } from './ChildPayNoteIssued';
@@ -16,7 +21,6 @@ import { PayNoteCancellationRequestedSchema } from './PayNoteCancellationRequest
 import { PayNoteCancelledSchema } from './PayNoteCancelled';
 import { PayNoteClientDecisionDiscardedSchema } from './PayNoteClientDecisionDiscarded';
 import { PayNoteDeliverySchema } from './PayNoteDelivery';
-import { PayNoteDeliveryBootstrapRequestedSchema } from './PayNoteDeliveryBootstrapRequested';
 import { PayNoteDeliveryFailedSchema } from './PayNoteDeliveryFailed';
 import { PayNoteRejectedSchema } from './PayNoteRejected';
 import { PayNoteRejectedByClientSchema } from './PayNoteRejectedByClient';
@@ -34,6 +38,11 @@ import { TransactionIdentifiedSchema } from './TransactionIdentified';
 export { CaptureDeclinedSchema } from './CaptureDeclined';
 export { CaptureFailedSchema } from './CaptureFailed';
 export { CaptureFundsRequestedSchema } from './CaptureFundsRequested';
+export { CardTransactionCaptureLockChangeFailedSchema } from './CardTransactionCaptureLockChangeFailed';
+export { CardTransactionCaptureLockRequestedSchema } from './CardTransactionCaptureLockRequested';
+export { CardTransactionCaptureLockedSchema } from './CardTransactionCaptureLocked';
+export { CardTransactionCaptureUnlockRequestedSchema } from './CardTransactionCaptureUnlockRequested';
+export { CardTransactionCaptureUnlockedSchema } from './CardTransactionCaptureUnlocked';
 export { CardTransactionDetailsSchema } from './CardTransactionDetails';
 export { ChildPayNoteIssuanceDeclinedSchema } from './ChildPayNoteIssuanceDeclined';
 export { ChildPayNoteIssuedSchema } from './ChildPayNoteIssued';
@@ -49,7 +58,6 @@ export { PayNoteCancellationRequestedSchema } from './PayNoteCancellationRequest
 export { PayNoteCancelledSchema } from './PayNoteCancelled';
 export { PayNoteClientDecisionDiscardedSchema } from './PayNoteClientDecisionDiscarded';
 export { PayNoteDeliverySchema } from './PayNoteDelivery';
-export { PayNoteDeliveryBootstrapRequestedSchema } from './PayNoteDeliveryBootstrapRequested';
 export { PayNoteDeliveryFailedSchema } from './PayNoteDeliveryFailed';
 export { PayNoteRejectedSchema } from './PayNoteRejected';
 export { PayNoteRejectedByClientSchema } from './PayNoteRejectedByClient';
@@ -68,6 +76,16 @@ export const schemas = {
   FzJqLm7Ek58LsVstJV2c37JfiMhRiWtjZNsiMz2ZfCYG: CaptureDeclinedSchema,
   FUh3TARSh4TjnWKAkM5ydjFWLWEmrFByKMBQzcgQfqRW: CaptureFailedSchema,
   DvxKVEFsDmgA1hcBDfh7t42NgTRLaxXjCrB48DufP3i3: CaptureFundsRequestedSchema,
+  '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH':
+    CardTransactionCaptureLockChangeFailedSchema,
+  DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu:
+    CardTransactionCaptureLockRequestedSchema,
+  EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt:
+    CardTransactionCaptureLockedSchema,
+  '531sxtH5rD9ter3EzwBTcn9GMdA7RAYFwmSQRzxCru8z':
+    CardTransactionCaptureUnlockRequestedSchema,
+  DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5:
+    CardTransactionCaptureUnlockedSchema,
   GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT: CardTransactionDetailsSchema,
   DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m:
     ChildPayNoteIssuanceDeclinedSchema,
@@ -87,9 +105,7 @@ export const schemas = {
   '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y': PayNoteCancelledSchema,
   Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j:
     PayNoteClientDecisionDiscardedSchema,
-  F55Gk1KTHsAfWVjfP4LH7bB558tJ5DL6FUu4as3g5mY1: PayNoteDeliverySchema,
-  '5dMaJQ2nrVQLFB6VT3RGRHJC1nKxzj89cji86TJo7YMr':
-    PayNoteDeliveryBootstrapRequestedSchema,
+  HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS: PayNoteDeliverySchema,
   GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: PayNoteDeliveryFailedSchema,
   AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: PayNoteRejectedSchema,
   EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: PayNoteRejectedByClientSchema,

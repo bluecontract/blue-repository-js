@@ -3,6 +3,16 @@ export const blueIds = {
   'PayNote/Capture Failed': 'FUh3TARSh4TjnWKAkM5ydjFWLWEmrFByKMBQzcgQfqRW',
   'PayNote/Capture Funds Requested':
     'DvxKVEFsDmgA1hcBDfh7t42NgTRLaxXjCrB48DufP3i3',
+  'PayNote/Card Transaction Capture Lock Change Failed':
+    '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH',
+  'PayNote/Card Transaction Capture Lock Requested':
+    'DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu',
+  'PayNote/Card Transaction Capture Locked':
+    'EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt',
+  'PayNote/Card Transaction Capture Unlock Requested':
+    '531sxtH5rD9ter3EzwBTcn9GMdA7RAYFwmSQRzxCru8z',
+  'PayNote/Card Transaction Capture Unlocked':
+    'DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5',
   'PayNote/Card Transaction Details':
     'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
   'PayNote/Child PayNote Issuance Declined':
@@ -26,9 +36,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y',
   'PayNote/PayNote Client Decision Discarded':
     'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
-  'PayNote/PayNote Delivery': 'F55Gk1KTHsAfWVjfP4LH7bB558tJ5DL6FUu4as3g5mY1',
-  'PayNote/PayNote Delivery Bootstrap Requested':
-    '5dMaJQ2nrVQLFB6VT3RGRHJC1nKxzj89cji86TJo7YMr',
+  'PayNote/PayNote Delivery': 'HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS',
   'PayNote/PayNote Delivery Failed':
     'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
   'PayNote/PayNote Rejected': 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',

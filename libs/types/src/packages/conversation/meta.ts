@@ -91,6 +91,50 @@ const meta = {
         },
       ],
     },
+    HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg: {
+      status: 'dev',
+      name: 'Document Bootstrap Completed',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg',
+          attributesAdded: [],
+        },
+      ],
+    },
+    B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH: {
+      status: 'dev',
+      name: 'Document Bootstrap Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg': {
+      status: 'dev',
+      name: 'Document Bootstrap Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv': {
+      status: 'dev',
+      name: 'Document Bootstrap Responded',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv',
+          attributesAdded: [],
+        },
+      ],
+    },
     jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp: {
       status: 'dev',
       name: 'Document Section',

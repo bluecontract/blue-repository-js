@@ -36,6 +36,61 @@ const meta = {
         },
       ],
     },
+    '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH': {
+      status: 'dev',
+      name: 'Card Transaction Capture Lock Change Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH',
+          attributesAdded: [],
+        },
+      ],
+    },
+    DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu: {
+      status: 'dev',
+      name: 'Card Transaction Capture Lock Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu',
+          attributesAdded: [],
+        },
+      ],
+    },
+    EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt: {
+      status: 'dev',
+      name: 'Card Transaction Capture Locked',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '531sxtH5rD9ter3EzwBTcn9GMdA7RAYFwmSQRzxCru8z': {
+      status: 'dev',
+      name: 'Card Transaction Capture Unlock Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '531sxtH5rD9ter3EzwBTcn9GMdA7RAYFwmSQRzxCru8z',
+          attributesAdded: [],
+        },
+      ],
+    },
+    DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5: {
+      status: 'dev',
+      name: 'Card Transaction Capture Unlocked',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5',
+          attributesAdded: [],
+        },
+      ],
+    },
     GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT: {
       status: 'dev',
       name: 'Card Transaction Details',
@@ -190,24 +245,13 @@ const meta = {
         },
       ],
     },
-    F55Gk1KTHsAfWVjfP4LH7bB558tJ5DL6FUu4as3g5mY1: {
+    HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: 'F55Gk1KTHsAfWVjfP4LH7bB558tJ5DL6FUu4as3g5mY1',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '5dMaJQ2nrVQLFB6VT3RGRHJC1nKxzj89cji86TJo7YMr': {
-      status: 'dev',
-      name: 'PayNote Delivery Bootstrap Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 3,
-          typeBlueId: '5dMaJQ2nrVQLFB6VT3RGRHJC1nKxzj89cji86TJo7YMr',
+          repositoryVersionIndex: 5,
+          typeBlueId: 'HLbADMUuL3giyZNqfrSVRC2uifTyRUJQPQkS2vDBCgdS',
           attributesAdded: [],
         },
       ],
