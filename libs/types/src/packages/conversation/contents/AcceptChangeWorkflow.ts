@@ -17,7 +17,7 @@ export const AcceptChangeWorkflow = {
             blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
           },
           value:
-            "const postfix = currentContract.postfix ?? ''\nconst path = '/proposedChange' + postfix\n\nconst proposedChange = document(path)\nif (proposedChange) {\n  const changeset = [...proposedChange.changeset, { op: 'remove', path }]\n  return {\n    changeset\n  }\n}\n\nreturn {\n  changeset: [],\n  events: [\n    {\n      type: \"Conversation/Proposed Change Invalid\",\n      reason: \"Proposed change does not exist at \" + path\n    }\n  ]\n};\n",
+            'const postfix = currentContract.postfix || \'\';\nconst path = \'/proposedChange\' + postfix;\n\nconst proposedChange = document(path);\nif (!proposedChange) {\n  return {\n    changeset: [],\n    events: [\n      {\n        type: "Conversation/Proposed Change Invalid",\n        reason: "Proposed change does not exist at " + path\n      }\n    ]\n  };\n}\n\nconst preparedChangeset = proposedChange.preparedChangeset;\nif (!preparedChangeset || preparedChangeset.length === 0) {\n  return {\n    changeset: [],\n    events: [\n      {\n        type: "Conversation/Proposed Change Invalid",\n        reason: "Proposed change is missing prepared changeset at " + path\n      }\n    ]\n  };\n}\n\nreturn {\n  changeset: preparedChangeset.concat({ op: \'remove\', path })\n};\n',
         },
         name: 'Prepare',
         type: {

@@ -4,7 +4,7 @@ export const ProposeChangeOperation = {
   name: 'Propose Change Operation',
   request: {
     type: {
-      blueId: 'Dfdxevr94oumtBfXyFBhx9tawqcFESioqmJxhVJBL5M5',
+      blueId: '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw',
     },
   },
   type: {
