@@ -6,6 +6,10 @@ import { ChangeRequestSchema } from './ChangeRequest';
 import { ChangeWorkflowSchema } from './ChangeWorkflow';
 import { ChatMessageSchema } from './ChatMessage';
 import { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
+import { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
+import { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
+import { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
+import { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
 import { DocumentSectionSchema } from './DocumentSection';
 import { DocumentStatusSchema } from './DocumentStatus';
 import { EventSchema } from './Event';
@@ -43,6 +47,10 @@ export { ChangeRequestSchema } from './ChangeRequest';
 export { ChangeWorkflowSchema } from './ChangeWorkflow';
 export { ChatMessageSchema } from './ChatMessage';
 export { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
+export { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
+export { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
+export { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
+export { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
 export { DocumentSectionSchema } from './DocumentSection';
 export { DocumentStatusSchema } from './DocumentStatus';
 export { EventSchema } from './Event';
@@ -81,6 +89,13 @@ export const schemas = {
   '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW': ChangeWorkflowSchema,
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessageSchema,
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannelSchema,
+  HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
+    DocumentBootstrapCompletedSchema,
+  B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH: DocumentBootstrapFailedSchema,
+  '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg':
+    DocumentBootstrapRequestedSchema,
+  '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv':
+    DocumentBootstrapRespondedSchema,
   jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp: DocumentSectionSchema,
   '58B8orsFkxxy7bWqjLXJmtBs2b5rwnNQNbeoAbGhPkJc': DocumentStatusSchema,
   '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we': EventSchema,

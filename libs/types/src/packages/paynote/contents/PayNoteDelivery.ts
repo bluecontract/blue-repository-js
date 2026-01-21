@@ -25,6 +25,147 @@ export const PayNoteDelivery = {
     },
   },
   contracts: {
+    acceptPayNote: {
+      channel: {
+        type: {
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        },
+        value: 'payNoteReceiver',
+      },
+      request: {
+        acceptedAt: {
+          description: 'Timestamp when the client accepted.',
+          type: {
+            blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+          },
+        },
+      },
+      type: {
+        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+      },
+    },
+    acceptPayNoteImpl: {
+      operation: {
+        type: {
+          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        },
+        value: 'acceptPayNote',
+      },
+      steps: {
+        items: [
+          {
+            code: {
+              type: {
+                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+              },
+              value:
+                'const request =\n  event && event.message ? event.message.request : null;\nconst acceptedAt =\n  request && typeof request.acceptedAt === "string"\n    ? request.acceptedAt\n    : "";\nconst currentDecisionStatus = document(\'/clientDecisionStatus\');\nconst alreadyAccepted = currentDecisionStatus === "accepted";\nconst alreadyRejected = currentDecisionStatus === "rejected";\nconst alreadyDecided = alreadyAccepted || alreadyRejected;\nconst transactionStatus = document(\'/transactionIdentificationStatus\');\nconst canAccept =\n  transactionStatus === "identified" &&\n  currentDecisionStatus === "pending";\nconst discardReason = canAccept\n  ? ""\n  : alreadyDecided\n    ? `PayNote already ${currentDecisionStatus}`\n    : transactionStatus === "failed"\n      ? "Transaction identification failed"\n      : "Transaction not identified";\nconst currentAcceptedAt = document(\'/clientAcceptedAt\');\nconst currentDeliveryStatus =\n  document.canonical(\'/deliveryStatus\') || {\n    type: "Conversation/Status Pending"\n  };\nconst currentDeliveryError = document(\'/deliveryError\');\nconst payNoteBootstrapRequest = document(\'/payNoteBootstrapRequest\');\n\nconst nextDecisionStatus = canAccept\n  ? "accepted"\n  : typeof currentDecisionStatus === "string"\n    ? currentDecisionStatus\n    : "pending";\nconst nextAcceptedAt = canAccept\n  ? acceptedAt\n  : typeof currentAcceptedAt === "string"\n    ? currentAcceptedAt\n    : "";\nconst nextDeliveryStatus = canAccept\n  ? { type: "Conversation/Status Completed" }\n  : currentDeliveryStatus;\nconst nextDeliveryError = canAccept\n  ? ""\n  : typeof currentDeliveryError === "string"\n    ? currentDeliveryError\n    : "";\n\nreturn {\n  acceptedAt,\n  nextDecisionStatus,\n  nextAcceptedAt,\n  nextDeliveryStatus,\n  nextDeliveryError,\n  events: canAccept\n    ? [\n        {\n          type: "PayNote/PayNote Accepted By Client",\n          acceptedAt\n        },\n        payNoteBootstrapRequest\n      ]\n    : [\n        {\n          type: "PayNote/PayNote Client Decision Discarded",\n          decision: "accepted",\n          reason: discardReason,\n          decisionAt: acceptedAt\n        }\n      ]\n};\n',
+            },
+            name: 'Capture Acceptance Timestamp',
+            type: {
+              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
+            },
+          },
+          {
+            changeset: {
+              items: [
+                {
+                  op: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: '/clientDecisionStatus',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value:
+                      "${steps['Capture Acceptance Timestamp'].nextDecisionStatus}",
+                  },
+                },
+                {
+                  op: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: '/clientAcceptedAt',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value:
+                      "${steps['Capture Acceptance Timestamp'].nextAcceptedAt}",
+                  },
+                },
+                {
+                  op: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: '/deliveryStatus',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value:
+                      "${steps['Capture Acceptance Timestamp'].nextDeliveryStatus}",
+                  },
+                },
+                {
+                  op: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value: '/deliveryError',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value:
+                      "${steps['Capture Acceptance Timestamp'].nextDeliveryError}",
+                  },
+                },
+              ],
+            },
+            name: 'Apply Acceptance Update',
+            type: {
+              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
+            },
+          },
+        ],
+      },
+      type: {
+        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+      },
+    },
     initialize: {
       channel: {
         type: {
@@ -139,153 +280,31 @@ export const PayNoteDelivery = {
         blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
       },
     },
-    markPayNoteAcceptedByClient: {
+    payNoteDeliverer: {
+      description: 'Participant delivering and reporting status (e.g., bank).',
+      type: {
+        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+      },
+    },
+    payNoteReceiver: {
+      description: 'Participant receiving the PayNote delivery (payer).',
+      type: {
+        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+      },
+    },
+    payNoteSender: {
+      description:
+        'Participant submitting the PayNote delivery (merchant or processor).',
+      type: {
+        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+      },
+    },
+    rejectPayNote: {
       channel: {
         type: {
           blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
-        value: 'payNoteDeliverer',
-      },
-      request: {
-        acceptedAt: {
-          description: 'Timestamp when the client accepted.',
-          type: {
-            blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
-          },
-        },
-      },
-      type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
-      },
-    },
-    markPayNoteAcceptedByClientImpl: {
-      operation: {
-        type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-        },
-        value: 'markPayNoteAcceptedByClient',
-      },
-      steps: {
-        items: [
-          {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                'const request =\n  event && event.message ? event.message.request : null;\nconst acceptedAt =\n  request && typeof request.acceptedAt === "string"\n    ? request.acceptedAt\n    : "";\nconst currentDecisionStatus = document(\'/clientDecisionStatus\');\nconst alreadyAccepted = currentDecisionStatus === "accepted";\nconst alreadyRejected = currentDecisionStatus === "rejected";\nconst alreadyDecided = alreadyAccepted || alreadyRejected;\nconst transactionStatus = document(\'/transactionIdentificationStatus\');\nconst canAccept =\n  transactionStatus === "identified" &&\n  currentDecisionStatus === "pending";\nconst discardReason = canAccept\n  ? ""\n  : alreadyDecided\n    ? `PayNote already ${currentDecisionStatus}`\n    : transactionStatus === "failed"\n      ? "Transaction identification failed"\n      : "Transaction not identified";\nconst currentAcceptedAt = document(\'/clientAcceptedAt\');\nconst currentDeliveryStatus =\n  document.canonical(\'/deliveryStatus\') || {\n    type: "Conversation/Status Pending"\n  };\nconst currentDeliveryError = document(\'/deliveryError\');\n\nconst nextDecisionStatus = canAccept\n  ? "accepted"\n  : typeof currentDecisionStatus === "string"\n    ? currentDecisionStatus\n    : "pending";\nconst nextAcceptedAt = canAccept\n  ? acceptedAt\n  : typeof currentAcceptedAt === "string"\n    ? currentAcceptedAt\n    : "";\nconst nextDeliveryStatus = canAccept\n  ? { type: "Conversation/Status Completed" }\n  : currentDeliveryStatus;\nconst nextDeliveryError = canAccept\n  ? ""\n  : typeof currentDeliveryError === "string"\n    ? currentDeliveryError\n    : "";\n\nreturn {\n  acceptedAt,\n  nextDecisionStatus,\n  nextAcceptedAt,\n  nextDeliveryStatus,\n  nextDeliveryError,\n  events: canAccept\n    ? [\n        {\n          type: "PayNote/PayNote Accepted By Client",\n          acceptedAt\n        }\n      ]\n    : [\n        {\n          type: "PayNote/PayNote Client Decision Discarded",\n          decision: "accepted",\n          reason: discardReason,\n          decisionAt: acceptedAt\n        }\n      ]\n};\n',
-            },
-            name: 'Capture Acceptance Timestamp',
-            type: {
-              blueId: '3hYcmWMtMUPAzXBLFLb7BpuG9537tuTJPCr7pxWXvTZK',
-            },
-          },
-          {
-            changeset: {
-              items: [
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/clientDecisionStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextDecisionStatus}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/clientAcceptedAt',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextAcceptedAt}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/deliveryStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextDeliveryStatus}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/deliveryError',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextDeliveryError}",
-                  },
-                },
-              ],
-            },
-            name: 'Apply Acceptance Update',
-            type: {
-              blueId: 'BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM',
-            },
-          },
-        ],
-      },
-      type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
-      },
-    },
-    markPayNoteRejectedByClient: {
-      channel: {
-        type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-        },
-        value: 'payNoteDeliverer',
+        value: 'payNoteReceiver',
       },
       request: {
         reason: {
@@ -305,12 +324,12 @@ export const PayNoteDelivery = {
         blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
       },
     },
-    markPayNoteRejectedByClientImpl: {
+    rejectPayNoteImpl: {
       operation: {
         type: {
           blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
-        value: 'markPayNoteRejectedByClient',
+        value: 'rejectPayNote',
       },
       steps: {
         items: [
@@ -425,25 +444,6 @@ export const PayNoteDelivery = {
       },
       type: {
         blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
-      },
-    },
-    payNoteDeliverer: {
-      description: 'Participant delivering and reporting status (e.g., bank).',
-      type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
-      },
-    },
-    payNoteReceiver: {
-      description: 'Participant receiving the PayNote delivery (payer).',
-      type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
-      },
-    },
-    payNoteSender: {
-      description:
-        'Participant submitting the PayNote delivery (merchant or processor).',
-      type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
     },
     reportDeliveryError: {
@@ -674,10 +674,15 @@ export const PayNoteDelivery = {
   description:
     'Tracks delivery of a PayNote through a deliverer (e.g., bank) to a receiver (payer).',
   name: 'PayNote Delivery',
-  payNote: {
-    description: 'PayNote being delivered.',
+  payNoteBootstrapRequest: {
+    description: 'PayNote bootstrap request details.',
+    document: {
+      type: {
+        blueId: 'CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT',
+      },
+    },
     type: {
-      blueId: 'CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT',
+      blueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
     },
   },
   transactionIdentificationStatus: {

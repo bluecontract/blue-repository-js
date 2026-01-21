@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
+import { DocumentBootstrapRequestedSchema } from '../../conversation/schemas/DocumentBootstrapRequested';
 import { DocumentStatusSchema } from '../../conversation/schemas/DocumentStatus';
 import { OperationSchema } from '../../conversation/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
@@ -9,7 +10,6 @@ import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/Se
 import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
-import { PayNoteSchema } from './PayNote';
 
 export const PayNoteDeliverySchema = withTypeBlueId(
   blueIds['PayNote/PayNote Delivery']
@@ -21,17 +21,15 @@ export const PayNoteDeliverySchema = withTypeBlueId(
     clientRejectedAt: TimestampSchema.optional(),
     contracts: z
       .object({
+        acceptPayNote: OperationSchema.optional(),
+        acceptPayNoteImpl: SequentialWorkflowOperationSchema.optional(),
         initialize: SequentialWorkflowSchema.optional(),
         initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        markPayNoteAcceptedByClient: OperationSchema.optional(),
-        markPayNoteAcceptedByClientImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        markPayNoteRejectedByClient: OperationSchema.optional(),
-        markPayNoteRejectedByClientImpl:
-          SequentialWorkflowOperationSchema.optional(),
         payNoteDeliverer: MyOSTimelineChannelSchema.optional(),
         payNoteReceiver: MyOSTimelineChannelSchema.optional(),
         payNoteSender: MyOSTimelineChannelSchema.optional(),
+        rejectPayNote: OperationSchema.optional(),
+        rejectPayNoteImpl: SequentialWorkflowOperationSchema.optional(),
         reportDeliveryError: OperationSchema.optional(),
         reportDeliveryErrorImpl: SequentialWorkflowOperationSchema.optional(),
         updateTransactionIdentificationStatus: OperationSchema.optional(),
@@ -43,7 +41,7 @@ export const PayNoteDeliverySchema = withTypeBlueId(
     deliveryStatus: DocumentStatusSchema.optional(),
     description: z.string().optional(),
     name: z.string().optional(),
-    payNote: PayNoteSchema.optional(),
+    payNoteBootstrapRequest: DocumentBootstrapRequestedSchema.optional(),
     transactionIdentificationStatus: z.string().optional(),
   })
 );

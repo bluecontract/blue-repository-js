@@ -1,3 +1,4 @@
+import { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
 import { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 import { Response } from './Response';
 import { Timeline } from './Timeline';
@@ -10,11 +11,13 @@ import { DocumentStatus } from './DocumentStatus';
 import { Event } from './Event';
 import { LifecycleEvent } from './LifecycleEvent';
 import { ChangeWorkflow } from './ChangeWorkflow';
+import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 import { SequentialWorkflow } from './SequentialWorkflow';
 import { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 import { Request } from './Request';
 import { ChatMessage } from './ChatMessage';
 import { AcceptChangeOperation } from './AcceptChangeOperation';
+import { DocumentBootstrapFailed } from './DocumentBootstrapFailed';
 import { UpdateDocument } from './UpdateDocument';
 import { Operation } from './Operation';
 import { StatusChange } from './StatusChange';
@@ -30,11 +33,13 @@ import { TimelineChannel } from './TimelineChannel';
 import { TimelineEntry } from './TimelineEntry';
 import { StatusFailed } from './StatusFailed';
 import { TriggerEvent } from './TriggerEvent';
+import { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
 import { OperationRequest } from './OperationRequest';
 import { CompositeTimelineChannel } from './CompositeTimelineChannel';
 import { SequentialWorkflowStep } from './SequentialWorkflowStep';
 import { DocumentSection } from './DocumentSection';
 
+export { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
 export { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 export { Response } from './Response';
 export { Timeline } from './Timeline';
@@ -47,11 +52,13 @@ export { DocumentStatus } from './DocumentStatus';
 export { Event } from './Event';
 export { LifecycleEvent } from './LifecycleEvent';
 export { ChangeWorkflow } from './ChangeWorkflow';
+export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 export { SequentialWorkflow } from './SequentialWorkflow';
 export { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 export { Request } from './Request';
 export { ChatMessage } from './ChatMessage';
 export { AcceptChangeOperation } from './AcceptChangeOperation';
+export { DocumentBootstrapFailed } from './DocumentBootstrapFailed';
 export { UpdateDocument } from './UpdateDocument';
 export { Operation } from './Operation';
 export { StatusChange } from './StatusChange';
@@ -67,12 +74,14 @@ export { TimelineChannel } from './TimelineChannel';
 export { TimelineEntry } from './TimelineEntry';
 export { StatusFailed } from './StatusFailed';
 export { TriggerEvent } from './TriggerEvent';
+export { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
 export { OperationRequest } from './OperationRequest';
 export { CompositeTimelineChannel } from './CompositeTimelineChannel';
 export { SequentialWorkflowStep } from './SequentialWorkflowStep';
 export { DocumentSection } from './DocumentSection';
 
 export const contents = {
+  '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv': DocumentBootstrapResponded,
   '2JsX64BknTYKNW6vhCxiZKXVX1WGxQAHWrkVNNnhof4v': ProposeChangeWorkflow,
   '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp': Response,
   '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa': Timeline,
@@ -85,11 +94,13 @@ export const contents = {
   '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we': Event,
   '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn': LifecycleEvent,
   '66hMJa3AbzQaYMh3xHPD2SZZGgMeVhb5ZcLrkSEyMTPW': ChangeWorkflow,
+  '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg': DocumentBootstrapRequested,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflow,
   '8Akr9sdTkxBqMYWSGh8gHgoXQQeYEPfhV4s8fXeKTd9W': InformUserAboutPendingAction,
   '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n': Request,
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessage,
   APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv: AcceptChangeOperation,
+  B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH: DocumentBootstrapFailed,
   BnnNLCnKF49TUJ1bRfZ5rSMaFw8SVfUNfnE4kJFG7HtM: UpdateDocument,
   BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC: Operation,
   C48nKSkbxraMSv4gCiGYVHKFjmtK12k63Yasn95zknWE: StatusChange,
@@ -105,6 +116,7 @@ export const contents = {
   EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn: TimelineEntry,
   Guus3kHbivXvy5G93yhiKs3Pc8sxCc4XVvSo7CqLsQEc: StatusFailed,
   GxUtWr3eH9a6YQeioQkujEnsPjD5s9RU8ZhEfmsV1vuU: TriggerEvent,
+  HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg: DocumentBootstrapCompleted,
   HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq: OperationRequest,
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannel,
   HYsLiqsqk7t98d5fK6YxKEQGeqBaHNVjM4rRNdxK4yUW: SequentialWorkflowStep,

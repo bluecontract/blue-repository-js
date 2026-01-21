@@ -12,6 +12,14 @@ export const blueIds = {
   'Conversation/Chat Message': 'AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD',
   'Conversation/Composite Timeline Channel':
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
+  'Conversation/Document Bootstrap Completed':
+    'HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg',
+  'Conversation/Document Bootstrap Failed':
+    'B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH',
+  'Conversation/Document Bootstrap Requested':
+    '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+  'Conversation/Document Bootstrap Responded':
+    '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv',
   'Conversation/Document Section':
     'jvUyZxPToTrcvJHLaYcmvKXrVJfbL1xvcaeK9ekKkJp',
   'Conversation/Document Status':
