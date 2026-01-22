@@ -58,13 +58,13 @@ const meta = {
         },
       ],
     },
-    AZ7kV2EzGpRMzUBCi5cYKd17gngvGDF9PVAdqaKRDqno: {
+    AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm: {
       status: 'dev',
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: 'AZ7kV2EzGpRMzUBCi5cYKd17gngvGDF9PVAdqaKRDqno',
+          repositoryVersionIndex: 2,
+          typeBlueId: 'AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm',
           attributesAdded: [],
         },
       ],
@@ -267,13 +267,13 @@ const meta = {
         },
       ],
     },
-    HWJfFpYwwYTs88XKXrShRdKy3yCUcTKTFTAkv1zLrSEp: {
+    Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL: {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: 'HWJfFpYwwYTs88XKXrShRdKy3yCUcTKTFTAkv1zLrSEp',
+          repositoryVersionIndex: 2,
+          typeBlueId: 'Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL',
           attributesAdded: [],
         },
       ],
