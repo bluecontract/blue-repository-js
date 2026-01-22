@@ -8,7 +8,7 @@ export const blueIds = {
     'BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB',
   'Conversation/Change Request': '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw',
   'Conversation/Change Workflow':
-    'AZ7kV2EzGpRMzUBCi5cYKd17gngvGDF9PVAdqaKRDqno',
+    'AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm',
   'Conversation/Chat Message': 'AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD',
   'Conversation/Composite Timeline Channel':
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
@@ -43,7 +43,7 @@ export const blueIds = {
   'Conversation/Propose Change Operation':
     '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx',
   'Conversation/Propose Change Workflow':
-    'HWJfFpYwwYTs88XKXrShRdKy3yCUcTKTFTAkv1zLrSEp',
+    'Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL',
   'Conversation/Proposed Change Invalid':
     'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
   'Conversation/Reject Change Operation':
