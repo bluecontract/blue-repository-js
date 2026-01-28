@@ -102,6 +102,72 @@ const meta = {
         },
       ],
     },
+    A9iWmccmaijQqQUBvVUkpHswPbMJ8AoxzoSWmSTTpz5R: {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Consent Granted',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'A9iWmccmaijQqQUBvVUkpHswPbMJ8AoxzoSWmSTTpz5R',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '6VsER7gR2EEqJuEkjRMrwfqu3iDeXsTQb2hcsiVxGHfP': {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Consent Rejected',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '6VsER7gR2EEqJuEkjRMrwfqu3iDeXsTQb2hcsiVxGHfP',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '7ZrGRtDg9NA9DTWmBboDhScAvAF1nnVEogLV3wn1aqr3': {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Consent Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '7ZrGRtDg9NA9DTWmBboDhScAvAF1nnVEogLV3wn1aqr3',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GYTfBKhq8H79vZcGNSHLXyiLPJfGtprJ8CvTayTCNZss: {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Request Rejected',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'GYTfBKhq8H79vZcGNSHLXyiLPJfGtprJ8CvTayTCNZss',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '5X6HGwYT2Z2x1sjz9LSDYN7sdJ9ee3cuqwz9PD33pBwu': {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Started',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '5X6HGwYT2Z2x1sjz9LSDYN7sdJ9ee3cuqwz9PD33pBwu',
+          attributesAdded: [],
+        },
+      ],
+    },
+    CTbHBf2xvYzi2JzwbwSR1B2z5NP566dKDyb1TkBGHfYp: {
+      status: 'dev',
+      name: 'Card Transaction Report',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'CTbHBf2xvYzi2JzwbwSR1B2z5NP566dKDyb1TkBGHfYp',
+          attributesAdded: [],
+        },
+      ],
+    },
     DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m: {
       status: 'stable',
       name: 'Child PayNote Issuance Declined',
@@ -124,6 +190,17 @@ const meta = {
         },
       ],
     },
+    CNuH6dfnFaWMenCaVBf7NRz2KNBcHyddjYKakbYehAf8: {
+      status: 'dev',
+      name: 'Eligible Card Transaction Reported',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'CNuH6dfnFaWMenCaVBf7NRz2KNBcHyddjYKakbYehAf8',
+          attributesAdded: [],
+        },
+      ],
+    },
     BJvjorbC5ed5KTV7SxoV3CvrJXjrFPcFxY9QT4jHBbXi: {
       status: 'stable',
       name: 'Funds Captured',
@@ -142,6 +219,17 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'AopfdGqnwcxsw4mJzXbmjDMnASRtkce9BZB1n6QSRNXX',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '3imL7991LsorpZHtBjvmyyatGQnaWwABWKAsQP5S79ma': {
+      status: 'dev',
+      name: 'Ineligible Card Transaction Reported',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '3imL7991LsorpZHtBjvmyyatGQnaWwABWKAsQP5S79ma',
           attributesAdded: [],
         },
       ],
@@ -289,6 +377,17 @@ const meta = {
         },
       ],
     },
+    AUsta1K6pa7Gfj9UqmwCmhwKZmzmuLX5PcMBpjCFWj5M: {
+      status: 'dev',
+      name: 'PayNote Voucher',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'AUsta1K6pa7Gfj9UqmwCmhwKZmzmuLX5PcMBpjCFWj5M',
+          attributesAdded: [],
+        },
+      ],
+    },
     '4xS8bmZQBGPENmaPfsrtYguYfq4hTtaZAXrefdyFNkKq': {
       status: 'stable',
       name: 'Reservation Declined',
@@ -373,6 +472,17 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '4pVAdZo93FHRRkAkshqCZW4pUvvV1ccczJZ2Lu4jkD1D',
+          attributesAdded: [],
+        },
+      ],
+    },
+    HQYgfw9sSv46ctN63B4emWefBcUgEoxxCuk7ENxpPq5V: {
+      status: 'dev',
+      name: 'Start Card Transaction Monitoring Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: 'HQYgfw9sSv46ctN63B4emWefBcUgEoxxCuk7ENxpPq5V',
           attributesAdded: [],
         },
       ],

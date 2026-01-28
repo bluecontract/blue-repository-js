@@ -7,10 +7,18 @@ import { CardTransactionCaptureLockedSchema } from './CardTransactionCaptureLock
 import { CardTransactionCaptureUnlockRequestedSchema } from './CardTransactionCaptureUnlockRequested';
 import { CardTransactionCaptureUnlockedSchema } from './CardTransactionCaptureUnlocked';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
+import { CardTransactionMonitoringConsentGrantedSchema } from './CardTransactionMonitoringConsentGranted';
+import { CardTransactionMonitoringConsentRejectedSchema } from './CardTransactionMonitoringConsentRejected';
+import { CardTransactionMonitoringConsentRequestedSchema } from './CardTransactionMonitoringConsentRequested';
+import { CardTransactionMonitoringRequestRejectedSchema } from './CardTransactionMonitoringRequestRejected';
+import { CardTransactionMonitoringStartedSchema } from './CardTransactionMonitoringStarted';
+import { CardTransactionReportSchema } from './CardTransactionReport';
 import { ChildPayNoteIssuanceDeclinedSchema } from './ChildPayNoteIssuanceDeclined';
 import { ChildPayNoteIssuedSchema } from './ChildPayNoteIssued';
+import { EligibleCardTransactionReportedSchema } from './EligibleCardTransactionReported';
 import { FundsCapturedSchema } from './FundsCaptured';
 import { FundsReservedSchema } from './FundsReserved';
+import { IneligibleCardTransactionReportedSchema } from './IneligibleCardTransactionReported';
 import { IssueChildPayNoteRequestedSchema } from './IssueChildPayNoteRequested';
 import { PayeeAssignmentRequestedSchema } from './PayeeAssignmentRequested';
 import { PayNoteSchema } from './PayNote';
@@ -24,6 +32,7 @@ import { PayNoteDeliverySchema } from './PayNoteDelivery';
 import { PayNoteDeliveryFailedSchema } from './PayNoteDeliveryFailed';
 import { PayNoteRejectedSchema } from './PayNoteRejected';
 import { PayNoteRejectedByClientSchema } from './PayNoteRejectedByClient';
+import { PayNoteVoucherSchema } from './PayNoteVoucher';
 import { ReservationDeclinedSchema } from './ReservationDeclined';
 import { ReservationReleaseDeclinedSchema } from './ReservationReleaseDeclined';
 import { ReservationReleaseRequestedSchema } from './ReservationReleaseRequested';
@@ -32,6 +41,7 @@ import { ReserveFundsAndCaptureImmediatelyRequestedSchema } from './ReserveFunds
 import { ReserveFundsRequestedSchema } from './ReserveFundsRequested';
 import { SettlementAmountRejectedSchema } from './SettlementAmountRejected';
 import { SettlementAmountSpecifiedSchema } from './SettlementAmountSpecified';
+import { StartCardTransactionMonitoringRequestedSchema } from './StartCardTransactionMonitoringRequested';
 import { TransactionIdentificationFailedSchema } from './TransactionIdentificationFailed';
 import { TransactionIdentifiedSchema } from './TransactionIdentified';
 
@@ -44,10 +54,18 @@ export { CardTransactionCaptureLockedSchema } from './CardTransactionCaptureLock
 export { CardTransactionCaptureUnlockRequestedSchema } from './CardTransactionCaptureUnlockRequested';
 export { CardTransactionCaptureUnlockedSchema } from './CardTransactionCaptureUnlocked';
 export { CardTransactionDetailsSchema } from './CardTransactionDetails';
+export { CardTransactionMonitoringConsentGrantedSchema } from './CardTransactionMonitoringConsentGranted';
+export { CardTransactionMonitoringConsentRejectedSchema } from './CardTransactionMonitoringConsentRejected';
+export { CardTransactionMonitoringConsentRequestedSchema } from './CardTransactionMonitoringConsentRequested';
+export { CardTransactionMonitoringRequestRejectedSchema } from './CardTransactionMonitoringRequestRejected';
+export { CardTransactionMonitoringStartedSchema } from './CardTransactionMonitoringStarted';
+export { CardTransactionReportSchema } from './CardTransactionReport';
 export { ChildPayNoteIssuanceDeclinedSchema } from './ChildPayNoteIssuanceDeclined';
 export { ChildPayNoteIssuedSchema } from './ChildPayNoteIssued';
+export { EligibleCardTransactionReportedSchema } from './EligibleCardTransactionReported';
 export { FundsCapturedSchema } from './FundsCaptured';
 export { FundsReservedSchema } from './FundsReserved';
+export { IneligibleCardTransactionReportedSchema } from './IneligibleCardTransactionReported';
 export { IssueChildPayNoteRequestedSchema } from './IssueChildPayNoteRequested';
 export { PayeeAssignmentRequestedSchema } from './PayeeAssignmentRequested';
 export { PayNoteSchema } from './PayNote';
@@ -61,6 +79,7 @@ export { PayNoteDeliverySchema } from './PayNoteDelivery';
 export { PayNoteDeliveryFailedSchema } from './PayNoteDeliveryFailed';
 export { PayNoteRejectedSchema } from './PayNoteRejected';
 export { PayNoteRejectedByClientSchema } from './PayNoteRejectedByClient';
+export { PayNoteVoucherSchema } from './PayNoteVoucher';
 export { ReservationDeclinedSchema } from './ReservationDeclined';
 export { ReservationReleaseDeclinedSchema } from './ReservationReleaseDeclined';
 export { ReservationReleaseRequestedSchema } from './ReservationReleaseRequested';
@@ -69,6 +88,7 @@ export { ReserveFundsAndCaptureImmediatelyRequestedSchema } from './ReserveFunds
 export { ReserveFundsRequestedSchema } from './ReserveFundsRequested';
 export { SettlementAmountRejectedSchema } from './SettlementAmountRejected';
 export { SettlementAmountSpecifiedSchema } from './SettlementAmountSpecified';
+export { StartCardTransactionMonitoringRequestedSchema } from './StartCardTransactionMonitoringRequested';
 export { TransactionIdentificationFailedSchema } from './TransactionIdentificationFailed';
 export { TransactionIdentifiedSchema } from './TransactionIdentified';
 
@@ -87,11 +107,26 @@ export const schemas = {
   DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5:
     CardTransactionCaptureUnlockedSchema,
   GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT: CardTransactionDetailsSchema,
+  A9iWmccmaijQqQUBvVUkpHswPbMJ8AoxzoSWmSTTpz5R:
+    CardTransactionMonitoringConsentGrantedSchema,
+  '6VsER7gR2EEqJuEkjRMrwfqu3iDeXsTQb2hcsiVxGHfP':
+    CardTransactionMonitoringConsentRejectedSchema,
+  '7ZrGRtDg9NA9DTWmBboDhScAvAF1nnVEogLV3wn1aqr3':
+    CardTransactionMonitoringConsentRequestedSchema,
+  GYTfBKhq8H79vZcGNSHLXyiLPJfGtprJ8CvTayTCNZss:
+    CardTransactionMonitoringRequestRejectedSchema,
+  '5X6HGwYT2Z2x1sjz9LSDYN7sdJ9ee3cuqwz9PD33pBwu':
+    CardTransactionMonitoringStartedSchema,
+  CTbHBf2xvYzi2JzwbwSR1B2z5NP566dKDyb1TkBGHfYp: CardTransactionReportSchema,
   DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m:
     ChildPayNoteIssuanceDeclinedSchema,
   FAZCx2s5eq9zPV64LdHNFYbjjxD3ci1ZqyTcQk5WhXAs: ChildPayNoteIssuedSchema,
+  CNuH6dfnFaWMenCaVBf7NRz2KNBcHyddjYKakbYehAf8:
+    EligibleCardTransactionReportedSchema,
   BJvjorbC5ed5KTV7SxoV3CvrJXjrFPcFxY9QT4jHBbXi: FundsCapturedSchema,
   AopfdGqnwcxsw4mJzXbmjDMnASRtkce9BZB1n6QSRNXX: FundsReservedSchema,
+  '3imL7991LsorpZHtBjvmyyatGQnaWwABWKAsQP5S79ma':
+    IneligibleCardTransactionReportedSchema,
   '53Dir2sGy1NHuCQXF6suGoDMxYacNhbcy23AKD89SghD':
     IssueChildPayNoteRequestedSchema,
   BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE: PayeeAssignmentRequestedSchema,
@@ -109,6 +144,7 @@ export const schemas = {
   GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: PayNoteDeliveryFailedSchema,
   AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: PayNoteRejectedSchema,
   EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: PayNoteRejectedByClientSchema,
+  AUsta1K6pa7Gfj9UqmwCmhwKZmzmuLX5PcMBpjCFWj5M: PayNoteVoucherSchema,
   '4xS8bmZQBGPENmaPfsrtYguYfq4hTtaZAXrefdyFNkKq': ReservationDeclinedSchema,
   '653sCbbRH3RiKhGjmVxh6wFVs4rn54wJRKDXRMKBZtjA':
     ReservationReleaseDeclinedSchema,
@@ -122,6 +158,8 @@ export const schemas = {
     SettlementAmountRejectedSchema,
   '4pVAdZo93FHRRkAkshqCZW4pUvvV1ccczJZ2Lu4jkD1D':
     SettlementAmountSpecifiedSchema,
+  HQYgfw9sSv46ctN63B4emWefBcUgEoxxCuk7ENxpPq5V:
+    StartCardTransactionMonitoringRequestedSchema,
   GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC:
     TransactionIdentificationFailedSchema,
   '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V': TransactionIdentifiedSchema,
