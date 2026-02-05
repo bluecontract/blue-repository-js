@@ -9,7 +9,7 @@ export const ChangeRequest = {
       blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
     },
   },
-  description: 'Payload for propose/make change operations.',
+  description: 'Payload for propose and direct change operations.',
   name: 'Change Request',
   sectionChanges: {
     description:

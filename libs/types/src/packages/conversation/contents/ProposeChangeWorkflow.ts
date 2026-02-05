@@ -11,7 +11,7 @@ export const ProposeChangeWorkflow = {
   request: {
     description: 'Expected request payload for this workflow.',
     type: {
-      blueId: '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp',
+      blueId: 'FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG',
     },
   },
   steps: {

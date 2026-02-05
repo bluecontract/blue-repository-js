@@ -4,7 +4,7 @@ export const ChangeOperation = {
   name: 'Change Operation',
   request: {
     type: {
-      blueId: '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp',
+      blueId: 'FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG',
     },
   },
   type: {
