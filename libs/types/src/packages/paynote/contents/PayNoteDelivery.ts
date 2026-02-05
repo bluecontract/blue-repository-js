@@ -30,7 +30,7 @@ export const PayNoteDelivery = {
         type: {
           blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
-        value: 'payNoteReceiver',
+        value: 'payNoteDeliverer',
       },
       request: {
         acceptedAt: {
@@ -286,12 +286,6 @@ export const PayNoteDelivery = {
         blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
     },
-    payNoteReceiver: {
-      description: 'Participant receiving the PayNote delivery (payer).',
-      type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
-      },
-    },
     payNoteSender: {
       description:
         'Participant submitting the PayNote delivery (merchant or processor).',
@@ -304,7 +298,7 @@ export const PayNoteDelivery = {
         type: {
           blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
-        value: 'payNoteReceiver',
+        value: 'payNoteDeliverer',
       },
       request: {
         reason: {
@@ -672,13 +666,13 @@ export const PayNoteDelivery = {
     },
   },
   description:
-    'Tracks delivery of a PayNote through a deliverer (e.g., bank) to a receiver (payer).',
+    'Tracks delivery of a PayNote through a deliverer (e.g., bank) to a receiver (payer - client).',
   name: 'PayNote Delivery',
   payNoteBootstrapRequest: {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: 'CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT',
+        blueId: '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE',
       },
     },
     type: {

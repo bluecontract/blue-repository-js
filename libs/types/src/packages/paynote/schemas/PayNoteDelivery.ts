@@ -26,7 +26,6 @@ export const PayNoteDeliverySchema = withTypeBlueId(
         initialize: SequentialWorkflowSchema.optional(),
         initLifecycleChannel: LifecycleEventChannelSchema.optional(),
         payNoteDeliverer: MyOSTimelineChannelSchema.optional(),
-        payNoteReceiver: MyOSTimelineChannelSchema.optional(),
         payNoteSender: MyOSTimelineChannelSchema.optional(),
         rejectPayNote: OperationSchema.optional(),
         rejectPayNoteImpl: SequentialWorkflowOperationSchema.optional(),

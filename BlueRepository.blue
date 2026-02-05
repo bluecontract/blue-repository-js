@@ -4,6 +4,16 @@ packages:
     types:
       - status: dev
         content:
+          name: Currency
+          type:
+            blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          description: ISO 4217 currency code (e.g., USD, EUR).
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc
+            attributesAdded: []
+      - status: dev
+        content:
           name: Timestamp
           type:
             blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
@@ -83,7 +93,7 @@ packages:
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG
             attributesAdded: []
       - status: stable
@@ -105,7 +115,7 @@ packages:
             type:
               blueId: 9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB
             attributesAdded: []
       - status: dev
@@ -127,7 +137,7 @@ packages:
               blueId: DEmFwGa1sWm2BKhrN98LREKiB8j8B8kFAo7KBkkaojnN
             description: Section-based /contracts mutations (required when Contracts Change Policy is enabled).
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: 9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw
             attributesAdded: []
       - status: dev
@@ -532,7 +542,7 @@ packages:
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm
             attributesAdded: []
       - status: stable
@@ -583,8 +593,224 @@ packages:
               blueId: 4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u
             description: Policy flag; when present and not false, /contracts changes must use sectionChanges. Set false to allow direct changeset edits.
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: 6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Customer Action Requested
+          type:
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
+          description: A document suggests that the bank should ask the customer to take a specific action in the bank UI.
+          actionId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Optional idempotency key for the action request.
+          actionType:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: consentApproval | callOperation | informational
+          title:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Short title for the pending action.
+          message:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Human-readable message describing what is expected.
+          operationName:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Optional contract operation to execute (used for callOperation).
+          prefillRequestJson:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Optional JSON string to prefill the operation request form.
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Customer Consent
+          description: Generic customer consent granted to a grantee (e.g., merchant).
+          consentKind:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Classification of the consent (e.g., cardTransactionMonitoring).
+          consentDetails:
+            type:
+              blueId: G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj
+            keyType:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            valueType:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Generic scope details (merchant id, event categories, requesting contract refs, etc.).
+          consentStatus:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Consent state (granted, revoked).
+            value: granted
+          grantedAt:
+            type:
+              blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
+            description: Timestamp when consent was granted.
+          revokedAt:
+            type:
+              blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
+            description: Timestamp when consent was revoked.
+          revocationReason:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Reason for revocation.
+          contracts:
+            granteeChannel:
+              type:
+                blueId: HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs
+              description: Grantee (e.g., merchant MyOS timeline).
+            granterChannel:
+              type:
+                blueId: HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs
+              description: Granter (customer represented by the bank; customer has no MyOS account).
+            guarantorChannel:
+              type:
+                blueId: HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs
+              description: Bank/admin channel.
+            initLifecycleChannel:
+              type:
+                blueId: H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr
+              event:
+                type:
+                  blueId: BrpmpNt5JkapeUvPqYcxgXZrHNZX3R757dRwuXXdfNM2
+            initialize:
+              type:
+                blueId: 7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe
+              channel:
+                value: initLifecycleChannel
+                type:
+                  blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+              steps:
+                items:
+                  - name: Initialize
+                    type:
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
+                    changeset:
+                      items:
+                        - op:
+                            value: replace
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          path:
+                            value: /consentStatus
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          val:
+                            value: granted
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            revokeConsent:
+              type:
+                blueId: BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC
+              description: Customer revokes the consent.
+              channel:
+                value: granterChannel
+                type:
+                  blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+              request:
+                reason:
+                  type:
+                    blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                revokedAt:
+                  type:
+                    blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
+            revokeConsentImpl:
+              type:
+                blueId: CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv
+              operation:
+                value: revokeConsent
+                type:
+                  blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+              steps:
+                items:
+                  - name: Capture
+                    type:
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
+                    code:
+                      value: |
+                        const request = event?.message?.request || {};
+                        const reason = request.reason || "";
+                        const revokedAt = request.revokedAt || "";
+                        const canRevoke = document('/consentStatus') === "granted";
+
+                        return {
+                          reason,
+                          revokedAt,
+                          canRevoke,
+                          events: canRevoke
+                            ? [{ type: "Conversation/Customer Consent Revoked", reason, revokedAt }]
+                            : []
+                        };
+                      type:
+                        blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                  - name: Apply
+                    type:
+                      blueId: FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa
+                    changeset:
+                      items:
+                        - op:
+                            value: replace
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          path:
+                            value: /consentStatus
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          val:
+                            value: revoked
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                        - op:
+                            value: replace
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          path:
+                            value: /revocationReason
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          val:
+                            value: ${steps['Capture'].reason}
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                        - op:
+                            value: replace
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          path:
+                            value: /revokedAt
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                          val:
+                            value: ${steps['Capture'].revokedAt}
+                            type:
+                              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: 7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Customer Consent Revoked
+          type:
+            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+          reason:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          revokedAt:
+            type:
+              blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: 9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK
             attributesAdded: []
       - status: dev
         content:
@@ -698,7 +924,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Contract keys in the same scope that implement or affect the section.
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm
             attributesAdded: []
       - status: dev
@@ -723,7 +949,7 @@ packages:
               blueId: AERp8BWnuUsjoPciAeNXuUWS9fmqPNMdWbxmKn3tcitx
             description: Map of contractKey -> contract node to add or replace for this section.
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: 9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs
             attributesAdded: []
       - status: dev
@@ -749,7 +975,7 @@ packages:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             description: Section keys to remove (also removes the section's related contracts).
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: DEmFwGa1sWm2BKhrN98LREKiB8j8B8kFAo7KBkkaojnN
             attributesAdded: []
       - status: stable
@@ -918,7 +1144,7 @@ packages:
             type:
               blueId: 9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: 2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx
             attributesAdded: []
       - status: dev
@@ -1361,7 +1587,7 @@ packages:
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 2
+          - repositoryVersionIndex: 0
             typeBlueId: Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL
             attributesAdded: []
       - status: dev
@@ -1434,7 +1660,7 @@ packages:
                   type:
                     blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ
             attributesAdded: []
       - status: stable
@@ -4531,6 +4757,131 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT
             attributesAdded: []
+      - status: dev
+        content:
+          name: Card Transaction Monitoring Request Rejected
+          type:
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
+          description: Notification that card transaction monitoring was rejected.
+          targetMerchantId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: External merchant identifier requested for monitoring.
+          events:
+            type:
+              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
+            itemType:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          reason:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Reason monitoring was rejected.
+          rejectedAt:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+            description: Timestamp (microseconds since epoch) when monitoring was rejected.
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: B2iherBskP5f4x7x31GahNmsJtyzian6ZN92b8kE1E5q
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Card Transaction Monitoring Started
+          type:
+            blueId: 36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp
+          description: Confirmation that card transaction monitoring has started.
+          targetMerchantId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: External merchant identifier being monitored.
+          events:
+            type:
+              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
+            itemType:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          startedAt:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+            description: Timestamp (microseconds since epoch) when monitoring started.
+          consentDocumentId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          consentSessionId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: GcKHzzeu5qehMo1JLGN7X5tSzrHM2iJoscN2qmkB5RPm
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Card Transaction Monitoring Stopped
+          type:
+            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+          targetMerchantId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          events:
+            type:
+              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
+            itemType:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          stoppedAt:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+          reason:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Card Transaction PayNote
+          type:
+            blueId: 6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE
+          description: PayNote tied to a specific card transaction via ISO scheme identifiers.
+          cardTransactionDetails:
+            type:
+              blueId: GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: 31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495
+            attributesAdded: []
+      - status: dev
+        content:
+          name: Card Transaction Report
+          type:
+            blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
+          description: Bank reports a posted card transaction into the requesting contract timeline.
+          transactionId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: Unique transaction identifier used for idempotency.
+          merchantId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: External merchant identifier for the purchase.
+          amountMinor:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+            description: Purchase amount in minor currency units.
+          currency:
+            type:
+              blueId: CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc
+            description: ISO 4217 currency code.
+          occurredAt:
+            type:
+              blueId: GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs
+            description: Timestamp when the transaction occurred.
+          cardTransactionDetails:
+            type:
+              blueId: GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2
+            attributesAdded: []
       - status: stable
         content:
           name: Child PayNote Issuance Declined
@@ -4598,6 +4949,16 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: 53Dir2sGy1NHuCQXF6suGoDMxYacNhbcy23AKD89SghD
             attributesAdded: []
+      - status: dev
+        content:
+          name: Merchant To Customer PayNote
+          type:
+            blueId: 6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE
+          description: Base PayNote where payer is merchant and payee is customer. Bank sets/validates payer channel bindings.
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: 7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA
+            attributesAdded: []
       - status: stable
         content:
           name: Payee Assignment Requested
@@ -4611,7 +4972,7 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE
             attributesAdded: []
-      - status: stable
+      - status: dev
         content:
           name: PayNote
           description: A verifiable instrument for managing a commitment of value between a Payer, Payee, and Guarantor.
@@ -4620,6 +4981,10 @@ packages:
             type:
               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
             value: Pending
+          transactionStatus:
+            type:
+              blueId: FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ
+            description: Optional status snapshot. If present in proposal, bank validates it; if missing bank sets it at bootstrap.
           currency:
             description: The ISO 4217 currency code for the transaction.
             type:
@@ -4664,9 +5029,35 @@ packages:
             guarantorChannel:
               type:
                 blueId: EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH
+            guarantorUpdate:
+              type:
+                blueId: BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC
+              description: Standard operation used by the guarantor (bank) to deliver events into the document.
+              channel:
+                value: guarantorChannel
+                type:
+                  blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            guarantorUpdateImpl:
+              type:
+                blueId: CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv
+              description: Re-emits provided events (MyOS-admin style).
+              operation:
+                value: guarantorUpdate
+                type:
+                  blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+              steps:
+                items:
+                  - name: EmitGuarantorEvents
+                    type:
+                      blueId: ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS
+                    code:
+                      value: |
+                        return { events: event.message.request };
+                      type:
+                        blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT
+            typeBlueId: 6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE
             attributesAdded: []
       - status: dev
         content:
@@ -4754,13 +5145,13 @@ packages:
       - status: dev
         content:
           name: PayNote Delivery
-          description: Tracks delivery of a PayNote through a deliverer (e.g., bank) to a receiver (payer).
+          description: Tracks delivery of a PayNote through a deliverer (e.g., bank) to a receiver (payer - client).
           payNoteBootstrapRequest:
             type:
               blueId: 7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg
             document:
               type:
-                blueId: CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT
+                blueId: 6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE
             description: PayNote bootstrap request details.
           cardTransactionDetails:
             type:
@@ -4795,10 +5186,6 @@ packages:
               type:
                 blueId: HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs
               description: Participant submitting the PayNote delivery (merchant or processor).
-            payNoteReceiver:
-              type:
-                blueId: HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs
-              description: Participant receiving the PayNote delivery (payer).
             payNoteDeliverer:
               type:
                 blueId: HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs
@@ -4980,7 +5367,7 @@ packages:
               type:
                 blueId: BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC
               channel:
-                value: payNoteReceiver
+                value: payNoteDeliverer
                 type:
                   blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
               request:
@@ -5132,7 +5519,7 @@ packages:
               type:
                 blueId: BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC
               channel:
-                value: payNoteReceiver
+                value: payNoteDeliverer
                 type:
                   blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
               request:
@@ -5361,7 +5748,7 @@ packages:
                               blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t
+            typeBlueId: 9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y
             attributesAdded: []
       - status: dev
         content:
@@ -5514,6 +5901,32 @@ packages:
             attributesAdded: []
       - status: dev
         content:
+          name: Start Card Transaction Monitoring Requested
+          type:
+            blueId: 8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n
+          description: Request to start monitoring card events for a target merchant.
+          targetMerchantId:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+          events:
+            type:
+              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
+            itemType:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: |
+              Requested card event categories.
+              For now:
+              - transaction
+          requestedAt:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+            description: Timestamp (microseconds since epoch).
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: 649PKUqAakwi2JwDwHyypfWb4VmrrBAeEqzSU6FDWfgm
+            attributesAdded: []
+      - status: dev
+        content:
           name: Transaction Identification Failed
           type:
             blueId: 5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we
@@ -5536,7 +5949,26 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: 6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V
             attributesAdded: []
+      - status: dev
+        content:
+          name: Transaction Status
+          description: Status snapshot of the referenced card transaction.
+          status:
+            type:
+              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+            description: authorized | captured | partiallyCaptured
+          authorizedAmountMinor:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+          capturedAmountMinor:
+            type:
+              blueId: 5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1
+          currency:
+            type:
+              blueId: CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ
+            attributesAdded: []
 repositoryVersions:
-  - 5C7dGdtZGYPee4HtCXqFF4XpRuhhXeuaiWNDpdcG2iie
-  - 2m6QjrS7SGeuhqufTcuunxLCpHmrqykEFXZcqSyU6wUc
-  - fWQgpx2U9V1wz6MqurHqeYfAbWxHP6ym1hsJfSb6aqt
+  - CQn9FCus2xkhgCdSZQqKQmKGRLKnqTboSyiJXn3pya68

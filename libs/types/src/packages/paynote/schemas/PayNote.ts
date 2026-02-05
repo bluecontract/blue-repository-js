@@ -1,7 +1,10 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
+import { OperationSchema } from '../../conversation/schemas/Operation';
+import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
 import { TimelineChannelSchema } from '../../conversation/schemas/TimelineChannel';
+import { TransactionStatusSchema } from './TransactionStatus';
 
 export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
   z.object({
@@ -16,6 +19,8 @@ export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
     contracts: z
       .object({
         guarantorChannel: TimelineChannelSchema.optional(),
+        guarantorUpdate: OperationSchema.optional(),
+        guarantorUpdateImpl: SequentialWorkflowOperationSchema.optional(),
         payeeChannel: TimelineChannelSchema.optional(),
         payerChannel: TimelineChannelSchema.optional(),
       })
@@ -30,6 +35,7 @@ export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
       })
       .optional(),
     status: z.string().optional(),
+    transactionStatus: TransactionStatusSchema.optional(),
   })
 );
 

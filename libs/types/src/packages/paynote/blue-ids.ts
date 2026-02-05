@@ -15,6 +15,16 @@ export const blueIds = {
     'DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5',
   'PayNote/Card Transaction Details':
     'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+  'PayNote/Card Transaction Monitoring Request Rejected':
+    'B2iherBskP5f4x7x31GahNmsJtyzian6ZN92b8kE1E5q',
+  'PayNote/Card Transaction Monitoring Started':
+    'GcKHzzeu5qehMo1JLGN7X5tSzrHM2iJoscN2qmkB5RPm',
+  'PayNote/Card Transaction Monitoring Stopped':
+    'BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr',
+  'PayNote/Card Transaction PayNote':
+    '31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495',
+  'PayNote/Card Transaction Report':
+    'GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2',
   'PayNote/Child PayNote Issuance Declined':
     'DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m',
   'PayNote/Child PayNote Issued':
@@ -23,9 +33,11 @@ export const blueIds = {
   'PayNote/Funds Reserved': 'AopfdGqnwcxsw4mJzXbmjDMnASRtkce9BZB1n6QSRNXX',
   'PayNote/Issue Child PayNote Requested':
     '53Dir2sGy1NHuCQXF6suGoDMxYacNhbcy23AKD89SghD',
+  'PayNote/Merchant To Customer PayNote':
+    '7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA',
   'PayNote/Payee Assignment Requested':
     'BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE',
-  'PayNote/PayNote': 'CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT',
+  'PayNote/PayNote': '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE',
   'PayNote/PayNote Accepted By Client':
     '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3',
   'PayNote/PayNote Approved': 'HQTUxErobqhSuhWo9DAC1WwaG9oYdjfmdKprGtV4TeEK',
@@ -36,7 +48,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y',
   'PayNote/PayNote Client Decision Discarded':
     'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
-  'PayNote/PayNote Delivery': 'J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t',
+  'PayNote/PayNote Delivery': '9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y',
   'PayNote/PayNote Delivery Failed':
     'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
   'PayNote/PayNote Rejected': 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',
@@ -58,9 +70,12 @@ export const blueIds = {
     '3b3ePGPg5GzS6KYfqoDfgjWbjccXVnGzytbpFS53x4HM',
   'PayNote/Settlement Amount Specified':
     '4pVAdZo93FHRRkAkshqCZW4pUvvV1ccczJZ2Lu4jkD1D',
+  'PayNote/Start Card Transaction Monitoring Requested':
+    '649PKUqAakwi2JwDwHyypfWb4VmrrBAeEqzSU6FDWfgm',
   'PayNote/Transaction Identification Failed':
     'GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC',
   'PayNote/Transaction Identified':
     '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V',
+  'PayNote/Transaction Status': 'FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ',
 } as const;
 export default blueIds;
