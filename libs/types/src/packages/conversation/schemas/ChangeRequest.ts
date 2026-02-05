@@ -8,11 +8,11 @@ export const ChangeRequestSchema = withTypeBlueId(
   blueIds['Conversation/Change Request']
 )(
   z.object({
-    changeDescription: z.string().optional(),
     changeset: z.array(JsonPatchEntrySchema).optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     sectionChanges: DocumentSectionChangesSchema.optional(),
+    summary: z.string().optional(),
   })
 );
 

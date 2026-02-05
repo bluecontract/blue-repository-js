@@ -14,13 +14,13 @@ const meta = {
         },
       ],
     },
-    G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG: {
+    '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy': {
       status: 'dev',
       name: 'Accept Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG',
+          repositoryVersionIndex: 1,
+          typeBlueId: '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy',
           attributesAdded: [],
         },
       ],
@@ -36,35 +36,35 @@ const meta = {
         },
       ],
     },
-    BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB: {
+    A3jjsMRLxrKo5pyPgLoT6e9jPGWfFPdkMs2wjyYMRpXk: {
       status: 'dev',
       name: 'Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'A3jjsMRLxrKo5pyPgLoT6e9jPGWfFPdkMs2wjyYMRpXk',
           attributesAdded: [],
         },
       ],
     },
-    '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw': {
+    '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp': {
       status: 'dev',
       name: 'Change Request',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw',
+          repositoryVersionIndex: 1,
+          typeBlueId: '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp',
           attributesAdded: [],
         },
       ],
     },
-    AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm: {
+    '2jSne57MeM1HvhrQscpbDqhR46TwpmpiEpfG6h8PfMZP': {
       status: 'dev',
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm',
+          repositoryVersionIndex: 1,
+          typeBlueId: '2jSne57MeM1HvhrQscpbDqhR46TwpmpiEpfG6h8PfMZP',
           attributesAdded: [],
         },
       ],
@@ -289,24 +289,24 @@ const meta = {
         },
       ],
     },
-    '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx': {
+    GzA8QNJnfYyFpFKmeM2HWzXJxYXoWgW6PtbyCAHhgoy4: {
       status: 'dev',
       name: 'Propose Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'GzA8QNJnfYyFpFKmeM2HWzXJxYXoWgW6PtbyCAHhgoy4',
           attributesAdded: [],
         },
       ],
     },
-    Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL: {
+    '5Ptp4ykWNiYNCmSbYEDpxjE21DGpBxdDR6CQeAaZUSva': {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL',
+          repositoryVersionIndex: 1,
+          typeBlueId: '5Ptp4ykWNiYNCmSbYEDpxjE21DGpBxdDR6CQeAaZUSva',
           attributesAdded: [],
         },
       ],
@@ -333,13 +333,13 @@ const meta = {
         },
       ],
     },
-    GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ: {
+    '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz': {
       status: 'dev',
       name: 'Reject Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ',
+          repositoryVersionIndex: 1,
+          typeBlueId: '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz',
           attributesAdded: [],
         },
       ],
