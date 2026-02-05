@@ -2,13 +2,13 @@ export const blueIds = {
   'Conversation/Accept Change Operation':
     'APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv',
   'Conversation/Accept Change Workflow':
-    'G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG',
+    '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy',
   'Conversation/Actor': 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
   'Conversation/Change Operation':
-    'BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB',
-  'Conversation/Change Request': '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw',
+    'A3jjsMRLxrKo5pyPgLoT6e9jPGWfFPdkMs2wjyYMRpXk',
+  'Conversation/Change Request': '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp',
   'Conversation/Change Workflow':
-    'AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm',
+    '2jSne57MeM1HvhrQscpbDqhR46TwpmpiEpfG6h8PfMZP',
   'Conversation/Chat Message': 'AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD',
   'Conversation/Composite Timeline Channel':
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
@@ -47,15 +47,15 @@ export const blueIds = {
   'Conversation/Operation Request':
     'HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq',
   'Conversation/Propose Change Operation':
-    '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx',
+    'GzA8QNJnfYyFpFKmeM2HWzXJxYXoWgW6PtbyCAHhgoy4',
   'Conversation/Propose Change Workflow':
-    'Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL',
+    '5Ptp4ykWNiYNCmSbYEDpxjE21DGpBxdDR6CQeAaZUSva',
   'Conversation/Proposed Change Invalid':
     'EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M',
   'Conversation/Reject Change Operation':
     '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6',
   'Conversation/Reject Change Workflow':
-    'GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ',
+    '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz',
   'Conversation/Request': '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
   'Conversation/Response': '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
   'Conversation/Sequential Workflow':
