@@ -19,7 +19,7 @@ const meta = {
       name: 'Accept Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'G6GMCB3AQvH2xR12RiDvaCiEbCjgz4uhjKssDMRXbCTG',
           attributesAdded: [],
         },
@@ -41,7 +41,7 @@ const meta = {
       name: 'Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BoyJNkH7CAzjuuzbZFpxB7HguZVtLCxpBLnuYY5k1eqB',
           attributesAdded: [],
         },
@@ -52,7 +52,7 @@ const meta = {
       name: 'Change Request',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw',
           attributesAdded: [],
         },
@@ -63,7 +63,7 @@ const meta = {
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm',
           attributesAdded: [],
         },
@@ -96,8 +96,41 @@ const meta = {
       name: 'Contracts Change Policy',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U',
+          attributesAdded: [],
+        },
+      ],
+    },
+    AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV: {
+      status: 'dev',
+      name: 'Customer Action Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8': {
+      status: 'dev',
+      name: 'Customer Consent',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': {
+      status: 'dev',
+      name: 'Customer Consent Revoked',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK',
           attributesAdded: [],
         },
       ],
@@ -151,7 +184,7 @@ const meta = {
       name: 'Document Section',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm',
           attributesAdded: [],
         },
@@ -162,7 +195,7 @@ const meta = {
       name: 'Document Section Change Entry',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs',
           attributesAdded: [],
         },
@@ -173,7 +206,7 @@ const meta = {
       name: 'Document Section Changes',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DEmFwGa1sWm2BKhrN98LREKiB8j8B8kFAo7KBkkaojnN',
           attributesAdded: [],
         },
@@ -261,7 +294,7 @@ const meta = {
       name: 'Propose Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '2mJhqggRy7YTHK5bSeAitqhhjynpe8mApvQXXpcwPCxx',
           attributesAdded: [],
         },
@@ -272,7 +305,7 @@ const meta = {
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Ecj8Y7rb7kMCkNFfvyZ36CNB2JjCWrqy7BiHcvcNELEL',
           attributesAdded: [],
         },
@@ -305,7 +338,7 @@ const meta = {
       name: 'Reject Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GfqZJJtSJfd69v3pJ67XURdzhC4byWJZAstCh6i4X6MZ',
           attributesAdded: [],
         },

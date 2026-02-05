@@ -102,6 +102,61 @@ const meta = {
         },
       ],
     },
+    B2iherBskP5f4x7x31GahNmsJtyzian6ZN92b8kE1E5q: {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Request Rejected',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'B2iherBskP5f4x7x31GahNmsJtyzian6ZN92b8kE1E5q',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GcKHzzeu5qehMo1JLGN7X5tSzrHM2iJoscN2qmkB5RPm: {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Started',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'GcKHzzeu5qehMo1JLGN7X5tSzrHM2iJoscN2qmkB5RPm',
+          attributesAdded: [],
+        },
+      ],
+    },
+    BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr: {
+      status: 'dev',
+      name: 'Card Transaction Monitoring Stopped',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495': {
+      status: 'dev',
+      name: 'Card Transaction PayNote',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2: {
+      status: 'dev',
+      name: 'Card Transaction Report',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2',
+          attributesAdded: [],
+        },
+      ],
+    },
     DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m: {
       status: 'stable',
       name: 'Child PayNote Issuance Declined',
@@ -157,6 +212,17 @@ const meta = {
         },
       ],
     },
+    '7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA': {
+      status: 'dev',
+      name: 'Merchant To Customer PayNote',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA',
+          attributesAdded: [],
+        },
+      ],
+    },
     BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE: {
       status: 'stable',
       name: 'Payee Assignment Requested',
@@ -168,13 +234,13 @@ const meta = {
         },
       ],
     },
-    CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT: {
-      status: 'stable',
+    '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE': {
+      status: 'dev',
       name: 'PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CDMVLRyodD2WhScu2PPRgGquEArMNGXxvZCYiJXg2YjT',
+          typeBlueId: '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE',
           attributesAdded: [],
         },
       ],
@@ -245,13 +311,13 @@ const meta = {
         },
       ],
     },
-    J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t: {
+    '9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y': {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J3tYgX1EYRXXJfAGAKbG5LkLm76hAwp1MurZdqkTdW1t',
+          typeBlueId: '9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y',
           attributesAdded: [],
         },
       ],
@@ -377,6 +443,17 @@ const meta = {
         },
       ],
     },
+    '649PKUqAakwi2JwDwHyypfWb4VmrrBAeEqzSU6FDWfgm': {
+      status: 'dev',
+      name: 'Start Card Transaction Monitoring Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '649PKUqAakwi2JwDwHyypfWb4VmrrBAeEqzSU6FDWfgm',
+          attributesAdded: [],
+        },
+      ],
+    },
     GvFQ71MZS1CrHvSopnTkSz8DBX2is4meMR5tpF5WmwCC: {
       status: 'dev',
       name: 'Transaction Identification Failed',
@@ -395,6 +472,17 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V',
+          attributesAdded: [],
+        },
+      ],
+    },
+    FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ: {
+      status: 'dev',
+      name: 'Transaction Status',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ',
           attributesAdded: [],
         },
       ],

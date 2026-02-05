@@ -9,12 +9,15 @@ import { DocumentStatus } from './DocumentStatus';
 import { Event } from './Event';
 import { LifecycleEvent } from './LifecycleEvent';
 import { ContractsChangePolicy } from './ContractsChangePolicy';
+import { CustomerConsent } from './CustomerConsent';
 import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 import { SequentialWorkflow } from './SequentialWorkflow';
 import { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 import { Request } from './Request';
+import { CustomerConsentRevoked } from './CustomerConsentRevoked';
 import { ChangeRequest } from './ChangeRequest';
 import { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
+import { CustomerActionRequested } from './CustomerActionRequested';
 import { ChangeWorkflow } from './ChangeWorkflow';
 import { ChatMessage } from './ChatMessage';
 import { AcceptChangeOperation } from './AcceptChangeOperation';
@@ -53,12 +56,15 @@ export { DocumentStatus } from './DocumentStatus';
 export { Event } from './Event';
 export { LifecycleEvent } from './LifecycleEvent';
 export { ContractsChangePolicy } from './ContractsChangePolicy';
+export { CustomerConsent } from './CustomerConsent';
 export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 export { SequentialWorkflow } from './SequentialWorkflow';
 export { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 export { Request } from './Request';
+export { CustomerConsentRevoked } from './CustomerConsentRevoked';
 export { ChangeRequest } from './ChangeRequest';
 export { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
+export { CustomerActionRequested } from './CustomerActionRequested';
 export { ChangeWorkflow } from './ChangeWorkflow';
 export { ChatMessage } from './ChatMessage';
 export { AcceptChangeOperation } from './AcceptChangeOperation';
@@ -98,12 +104,15 @@ export const contents = {
   '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we': Event,
   '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn': LifecycleEvent,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicy,
+  '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8': CustomerConsent,
   '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg': DocumentBootstrapRequested,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflow,
   '8Akr9sdTkxBqMYWSGh8gHgoXQQeYEPfhV4s8fXeKTd9W': InformUserAboutPendingAction,
   '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n': Request,
+  '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': CustomerConsentRevoked,
   '9KDfK6k1HBAyHckj5VuWXFMLkgY5cJBESKT4eoq1bnrw': ChangeRequest,
   '9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs': DocumentSectionChangeEntry,
+  AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV: CustomerActionRequested,
   AKNj5zwzgAkXZo3psikJfoVxUcNfMBVgDrf4HDGWL1gm: ChangeWorkflow,
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessage,
   APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv: AcceptChangeOperation,

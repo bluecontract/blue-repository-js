@@ -7,6 +7,9 @@ import { ChangeWorkflowSchema } from './ChangeWorkflow';
 import { ChatMessageSchema } from './ChatMessage';
 import { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
 import { ContractsChangePolicySchema } from './ContractsChangePolicy';
+import { CustomerActionRequestedSchema } from './CustomerActionRequested';
+import { CustomerConsentSchema } from './CustomerConsent';
+import { CustomerConsentRevokedSchema } from './CustomerConsentRevoked';
 import { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 import { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 import { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
@@ -51,6 +54,9 @@ export { ChangeWorkflowSchema } from './ChangeWorkflow';
 export { ChatMessageSchema } from './ChatMessage';
 export { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
 export { ContractsChangePolicySchema } from './ContractsChangePolicy';
+export { CustomerActionRequestedSchema } from './CustomerActionRequested';
+export { CustomerConsentSchema } from './CustomerConsent';
+export { CustomerConsentRevokedSchema } from './CustomerConsentRevoked';
 export { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 export { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 export { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
@@ -96,6 +102,9 @@ export const schemas = {
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessageSchema,
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannelSchema,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicySchema,
+  AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV: CustomerActionRequestedSchema,
+  '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8': CustomerConsentSchema,
+  '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': CustomerConsentRevokedSchema,
   HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
     DocumentBootstrapCompletedSchema,
   B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH: DocumentBootstrapFailedSchema,

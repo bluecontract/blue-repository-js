@@ -14,6 +14,12 @@ export const blueIds = {
     'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
   'Conversation/Contracts Change Policy':
     '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U',
+  'Conversation/Customer Action Requested':
+    'AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV',
+  'Conversation/Customer Consent':
+    '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8',
+  'Conversation/Customer Consent Revoked':
+    '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK',
   'Conversation/Document Bootstrap Completed':
     'HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg',
   'Conversation/Document Bootstrap Failed':
