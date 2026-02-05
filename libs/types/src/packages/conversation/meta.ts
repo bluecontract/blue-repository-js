@@ -36,35 +36,35 @@ const meta = {
         },
       ],
     },
-    A3jjsMRLxrKo5pyPgLoT6e9jPGWfFPdkMs2wjyYMRpXk: {
+    Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc: {
       status: 'dev',
       name: 'Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: 'A3jjsMRLxrKo5pyPgLoT6e9jPGWfFPdkMs2wjyYMRpXk',
+          repositoryVersionIndex: 2,
+          typeBlueId: 'Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc',
           attributesAdded: [],
         },
       ],
     },
-    '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp': {
+    FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG: {
       status: 'dev',
       name: 'Change Request',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '6KZwmcsyYNiJhn2pAfS9LAFTxTRHcDw4yzPwV3A3SSQp',
+          repositoryVersionIndex: 2,
+          typeBlueId: 'FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG',
           attributesAdded: [],
         },
       ],
     },
-    '2jSne57MeM1HvhrQscpbDqhR46TwpmpiEpfG6h8PfMZP': {
+    '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9': {
       status: 'dev',
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '2jSne57MeM1HvhrQscpbDqhR46TwpmpiEpfG6h8PfMZP',
+          repositoryVersionIndex: 2,
+          typeBlueId: '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9',
           attributesAdded: [],
         },
       ],
@@ -289,24 +289,24 @@ const meta = {
         },
       ],
     },
-    GzA8QNJnfYyFpFKmeM2HWzXJxYXoWgW6PtbyCAHhgoy4: {
+    BeiedmmcKDhStxDnnQqUaXDJLofWSnqX6CazKTvVpfbW: {
       status: 'dev',
       name: 'Propose Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: 'GzA8QNJnfYyFpFKmeM2HWzXJxYXoWgW6PtbyCAHhgoy4',
+          repositoryVersionIndex: 2,
+          typeBlueId: 'BeiedmmcKDhStxDnnQqUaXDJLofWSnqX6CazKTvVpfbW',
           attributesAdded: [],
         },
       ],
     },
-    '5Ptp4ykWNiYNCmSbYEDpxjE21DGpBxdDR6CQeAaZUSva': {
+    '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj': {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '5Ptp4ykWNiYNCmSbYEDpxjE21DGpBxdDR6CQeAaZUSva',
+          repositoryVersionIndex: 2,
+          typeBlueId: '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj',
           attributesAdded: [],
         },
       ],
