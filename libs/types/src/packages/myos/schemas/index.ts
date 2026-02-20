@@ -51,6 +51,7 @@ import { ParticipantResolvedSchema } from './ParticipantResolved';
 import { PrincipalActorSchema } from './PrincipalActor';
 import { RemovingParticipantRequestedSchema } from './RemovingParticipantRequested';
 import { RemovingParticipantRespondedSchema } from './RemovingParticipantResponded';
+import { SearchContractSchema } from './SearchContract';
 import { SessionEpochAdvancedSchema } from './SessionEpochAdvanced';
 import { SingleDocumentPermissionGrantRequestedSchema } from './SingleDocumentPermissionGrantRequested';
 import { SingleDocumentPermissionGrantRespondedSchema } from './SingleDocumentPermissionGrantResponded';
@@ -138,6 +139,7 @@ export { ParticipantResolvedSchema } from './ParticipantResolved';
 export { PrincipalActorSchema } from './PrincipalActor';
 export { RemovingParticipantRequestedSchema } from './RemovingParticipantRequested';
 export { RemovingParticipantRespondedSchema } from './RemovingParticipantResponded';
+export { SearchContractSchema } from './SearchContract';
 export { SessionEpochAdvancedSchema } from './SessionEpochAdvanced';
 export { SingleDocumentPermissionGrantRequestedSchema } from './SingleDocumentPermissionGrantRequested';
 export { SingleDocumentPermissionGrantRespondedSchema } from './SingleDocumentPermissionGrantResponded';
@@ -248,6 +250,7 @@ export const schemas = {
     RemovingParticipantRequestedSchema,
   '6efzqM67y1po3YWbsbYSkKW8L41Tx8THeMv1q1TksAmr':
     RemovingParticipantRespondedSchema,
+  '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx': SearchContractSchema,
   '9CvxqAMJhqcFoLr5nXSEdWDZUMD383xhJtyFwXsCqD9E': SessionEpochAdvancedSchema,
   Ef7EvcR5He11JtgBFtswYTHEfUKnTHmFysMTo3ZsoQby:
     SingleDocumentPermissionGrantRequestedSchema,
