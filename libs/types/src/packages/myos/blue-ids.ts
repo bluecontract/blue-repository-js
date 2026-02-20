@@ -79,6 +79,7 @@ export const blueIds = {
     '8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD',
   'MyOS/Removing Participant Responded':
     '6efzqM67y1po3YWbsbYSkKW8L41Tx8THeMv1q1TksAmr',
+  'MyOS/Search Contract': '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx',
   'MyOS/Session Epoch Advanced': '9CvxqAMJhqcFoLr5nXSEdWDZUMD383xhJtyFwXsCqD9E',
   'MyOS/Single Document Permission Grant Requested':
     'Ef7EvcR5He11JtgBFtswYTHEfUKnTHmFysMTo3ZsoQby',

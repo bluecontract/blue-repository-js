@@ -586,6 +586,17 @@ const meta = {
         },
       ],
     },
+    '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx': {
+      status: 'dev',
+      name: 'Search Contract',
+      versions: [
+        {
+          repositoryVersionIndex: 3,
+          typeBlueId: '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx',
+          attributesAdded: [],
+        },
+      ],
+    },
     '9CvxqAMJhqcFoLr5nXSEdWDZUMD383xhJtyFwXsCqD9E': {
       status: 'stable',
       name: 'Session Epoch Advanced',

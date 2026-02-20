@@ -16,6 +16,7 @@ import { SingleDocumentPermissionGrantingInProgress } from './SingleDocumentPerm
 import { PrincipalActor } from './PrincipalActor';
 import { WorkerAgencyPermission } from './WorkerAgencyPermission';
 import { SingleDocumentPermissionGrantResponded } from './SingleDocumentPermissionGrantResponded';
+import { SearchContract } from './SearchContract';
 import { WorkerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissionRevokingInProgress';
 import { RemovingParticipantResponded } from './RemovingParticipantResponded';
 import { SingleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
@@ -103,6 +104,7 @@ export { SingleDocumentPermissionGrantingInProgress } from './SingleDocumentPerm
 export { PrincipalActor } from './PrincipalActor';
 export { WorkerAgencyPermission } from './WorkerAgencyPermission';
 export { SingleDocumentPermissionGrantResponded } from './SingleDocumentPermissionGrantResponded';
+export { SearchContract } from './SearchContract';
 export { WorkerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissionRevokingInProgress';
 export { RemovingParticipantResponded } from './RemovingParticipantResponded';
 export { SingleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
@@ -195,6 +197,7 @@ export const contents = {
   '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp': WorkerAgencyPermission,
   '5jtNV7xpaim18pUQp4uvron8uHfTjPSi6kUZQdCMGsKa':
     SingleDocumentPermissionGrantResponded,
+  '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx': SearchContract,
   '5zNb9H63xeG2RjZ1gzJwyGxvTVzWdyNBb2Te6g8UXd72':
     WorkerAgencyPermissionRevokingInProgress,
   '6efzqM67y1po3YWbsbYSkKW8L41Tx8THeMv1q1TksAmr': RemovingParticipantResponded,
