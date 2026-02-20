@@ -1,3 +1,9 @@
+## 0.14.0 (2026-02-20)
+
+### 🚀 Features
+
+- update BlueRepository.blue + regenerate types (run 22228121095, trigger: repository_dispatch (blue-preprocessor-completed)) ([ad08e5e](https://github.com/bluecontract/blue-repository-js/commit/ad08e5e))
+
 ## 0.13.0 (2026-02-05)
 
 ### 🚀 Features
