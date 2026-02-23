@@ -10,6 +10,7 @@ import { ChatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 import { DocumentLinks } from './DocumentLinks';
 import { MyOSAgentChannel } from './MyOSAgentChannel';
 import { MyOSWorkerAgency } from './MyOSWorkerAgency';
+import { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 import { SingleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
 import { MyOSPackage } from './MyOSPackage';
 import { SingleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
@@ -76,7 +77,6 @@ import { WorkerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected
 import { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 import { MyOSAgentEvent } from './MyOSAgentEvent';
 import { WorkerAgencyPermissionValidated } from './WorkerAgencyPermissionValidated';
-import { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 import { MyOSTimelineChannel } from './MyOSTimelineChannel';
 import { WorkerAgencyPermissionGrantRequested } from './WorkerAgencyPermissionGrantRequested';
 import { DocumentAnchor } from './DocumentAnchor';
@@ -98,6 +98,7 @@ export { ChatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 export { DocumentLinks } from './DocumentLinks';
 export { MyOSAgentChannel } from './MyOSAgentChannel';
 export { MyOSWorkerAgency } from './MyOSWorkerAgency';
+export { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 export { SingleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
 export { MyOSPackage } from './MyOSPackage';
 export { SingleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
@@ -164,7 +165,6 @@ export { WorkerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected
 export { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 export { MyOSAgentEvent } from './MyOSAgentEvent';
 export { WorkerAgencyPermissionValidated } from './WorkerAgencyPermissionValidated';
-export { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 export { MyOSTimelineChannel } from './MyOSTimelineChannel';
 export { WorkerAgencyPermissionGrantRequested } from './WorkerAgencyPermissionGrantRequested';
 export { DocumentAnchor } from './DocumentAnchor';
@@ -188,6 +188,8 @@ export const contents = {
   '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5': DocumentLinks,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': MyOSAgentChannel,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgency,
+  '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6':
+    SubscriptionToSessionInitiated,
   '567voUMtKJQoqru6ZVPYb4EGwdeV99rUSAqsnod7gqfd':
     SingleDocumentPermissionInvalid,
   '5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr': MyOSPackage,
@@ -276,7 +278,6 @@ export const contents = {
   GcotFgiqo3GMHp4xKrArDJi7AqciJGgYKvHodoAJwcWp: SubscriptionToSessionRevoked,
   GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR: MyOSAgentEvent,
   GMDw72G9CRTJU12Rce9BDWGw8f715RJrWvPL78RYDWH4: WorkerAgencyPermissionValidated,
-  GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj: SubscriptionToSessionInitiated,
   HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs: MyOSTimelineChannel,
   HF5aRJZqvHn7sDFbwfDGQjkWmTSW9Lee7c9dUBtcdNtK:
     WorkerAgencyPermissionGrantRequested,

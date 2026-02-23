@@ -114,7 +114,7 @@ export const blueIds = {
   'MyOS/Subscription to Session Failed':
     'S1gzGs6z9uy5inkcJu5wr6i5ESKDmZy9XhgLHMZKrdV',
   'MyOS/Subscription to Session Initiated':
-    'GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj',
+    '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6',
   'MyOS/Subscription to Session Revoked':
     'GcotFgiqo3GMHp4xKrArDJi7AqciJGgYKvHodoAJwcWp',
   'MyOS/Subscription Update': '2gc8djtKGGRPjGfMQzvJZMviaXm4ytM1nA4DVbfyjkrW',
