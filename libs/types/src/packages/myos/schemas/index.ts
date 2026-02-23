@@ -284,7 +284,7 @@ export const schemas = {
     SubscribeToSessionRequestedSchema,
   S1gzGs6z9uy5inkcJu5wr6i5ESKDmZy9XhgLHMZKrdV:
     SubscriptionToSessionFailedSchema,
-  GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj:
+  '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6':
     SubscriptionToSessionInitiatedSchema,
   GcotFgiqo3GMHp4xKrArDJi7AqciJGgYKvHodoAJwcWp:
     SubscriptionToSessionRevokedSchema,

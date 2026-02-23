@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { ResponseSchema } from '../../conversation/schemas/Response';
 
 export const SubscriptionToSessionInitiatedSchema = withTypeBlueId(
@@ -9,6 +9,8 @@ export const SubscriptionToSessionInitiatedSchema = withTypeBlueId(
   ResponseSchema.extend({
     at: z.string().optional(),
     description: z.string().optional(),
+    document: blueNodeField().optional(),
+    epoch: z.number().optional(),
     name: z.string().optional(),
     subscriptionId: z.string().optional(),
     targetSessionId: z.string().optional(),

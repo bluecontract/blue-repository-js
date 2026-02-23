@@ -784,7 +784,7 @@ const meta = {
         },
       ],
     },
-    GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj: {
+    '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6': {
       status: 'stable',
       name: 'Subscription to Session Initiated',
       versions: [
@@ -792,6 +792,11 @@ const meta = {
           repositoryVersionIndex: 0,
           typeBlueId: 'GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj',
           attributesAdded: [],
+        },
+        {
+          repositoryVersionIndex: 4,
+          typeBlueId: '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6',
+          attributesAdded: ['/epoch', '/document'],
         },
       ],
     },
