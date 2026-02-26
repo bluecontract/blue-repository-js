@@ -1,3 +1,9 @@
+## 0.16.0 (2026-02-26)
+
+### 🚀 Features
+
+- update BlueRepository.blue and regenerate types ([#111](https://github.com/bluecontract/blue-repository-js/pull/111))
+
 ## 0.15.0 (2026-02-23)
 
 ### 🚀 Features
