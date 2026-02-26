@@ -36,6 +36,28 @@ const meta = {
         },
       ],
     },
+    Hrz9kzWXTXDfK2XEkRJtHqdKzHaQq919NcRL8QMAvEEQ: {
+      status: 'dev',
+      name: 'Card Charge Completed',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'Hrz9kzWXTXDfK2XEkRJtHqdKzHaQq919NcRL8QMAvEEQ',
+          attributesAdded: [],
+        },
+      ],
+    },
+    CFoaaYn29o7Mg7VaN7bkM87KrfE8fvnVYWkGXd6YnQ7S: {
+      status: 'dev',
+      name: 'Card Charge Responded',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'CFoaaYn29o7Mg7VaN7bkM87KrfE8fvnVYWkGXd6YnQ7S',
+          attributesAdded: [],
+        },
+      ],
+    },
     '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH': {
       status: 'dev',
       name: 'Card Transaction Capture Lock Change Failed',
@@ -135,24 +157,24 @@ const meta = {
         },
       ],
     },
-    '31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495': {
+    '2wqxtvdRHf7Z3qNNKnycnu3SBVqw4BenK8et9xeT7n86': {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495',
+          repositoryVersionIndex: 5,
+          typeBlueId: '2wqxtvdRHf7Z3qNNKnycnu3SBVqw4BenK8et9xeT7n86',
           attributesAdded: [],
         },
       ],
     },
-    GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2: {
+    '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X': {
       status: 'dev',
       name: 'Card Transaction Report',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2',
+          repositoryVersionIndex: 5,
+          typeBlueId: '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X',
           attributesAdded: [],
         },
       ],
@@ -212,13 +234,68 @@ const meta = {
         },
       ],
     },
-    '7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA': {
+    '2LqGeXL7WWYQJMqviyseKCekpY3wYdB6K1f9sqakBUY7': {
+      status: 'dev',
+      name: 'Linked Card Charge and Capture Immediately Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '2LqGeXL7WWYQJMqviyseKCekpY3wYdB6K1f9sqakBUY7',
+          attributesAdded: [],
+        },
+      ],
+    },
+    Aq4dNFtLHLWYfCS7aqAgWwGi48MgbQmp2EZJtDBN7FSg: {
+      status: 'dev',
+      name: 'Linked Card Charge Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'Aq4dNFtLHLWYfCS7aqAgWwGi48MgbQmp2EZJtDBN7FSg',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '8dggwonfALwrTSRhg8g8ncXFXierke2mogtEZQXHab64': {
+      status: 'dev',
+      name: 'Linked PayNote Start Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '8dggwonfALwrTSRhg8g8ncXFXierke2mogtEZQXHab64',
+          attributesAdded: [],
+        },
+      ],
+    },
+    BQioEtRPYv2fWVryRsSYQc1Vnp9eyX3CYDrNY1hEy1Ye: {
+      status: 'dev',
+      name: 'Linked PayNote Start Responded',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'BQioEtRPYv2fWVryRsSYQc1Vnp9eyX3CYDrNY1hEy1Ye',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q': {
+      status: 'dev',
+      name: 'Linked PayNote Started',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo': {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA',
+          repositoryVersionIndex: 5,
+          typeBlueId: '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo',
           attributesAdded: [],
         },
       ],
@@ -234,13 +311,101 @@ const meta = {
         },
       ],
     },
-    '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE': {
+    Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP: {
+      status: 'dev',
+      name: 'Payment Mandate',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7': {
+      status: 'dev',
+      name: 'Payment Mandate Attached',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2: {
+      status: 'dev',
+      name: 'Payment Mandate Attachment Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2',
+          attributesAdded: [],
+        },
+      ],
+    },
+    JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq: {
+      status: 'dev',
+      name: 'Payment Mandate Charge Attempt State',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT': {
+      status: 'dev',
+      name: 'Payment Mandate Spend Authorization Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E': {
+      status: 'dev',
+      name: 'Payment Mandate Spend Authorization Responded',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ': {
+      status: 'dev',
+      name: 'Payment Mandate Spend Settled',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY': {
+      status: 'dev',
+      name: 'Payment Mandate Spend Settlement Responded',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY',
+          attributesAdded: [],
+        },
+      ],
+    },
+    Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F: {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE',
+          repositoryVersionIndex: 5,
+          typeBlueId: 'Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F',
           attributesAdded: [],
         },
       ],
@@ -311,13 +476,13 @@ const meta = {
         },
       ],
     },
-    '9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y': {
+    '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g': {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y',
+          repositoryVersionIndex: 5,
+          typeBlueId: '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g',
           attributesAdded: [],
         },
       ],
@@ -417,6 +582,28 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '3Y3TYmSfZMmPYKmF5i3eR8YcVPNP5Sic2bZN8xRnvMWm',
+          attributesAdded: [],
+        },
+      ],
+    },
+    F4gfZeY8P8dkfwNSbEfq7xQ8axiHdfqgzGQQr3HLDyzC: {
+      status: 'dev',
+      name: 'Reverse Card Charge and Capture Immediately Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'F4gfZeY8P8dkfwNSbEfq7xQ8axiHdfqgzGQQr3HLDyzC',
+          attributesAdded: [],
+        },
+      ],
+    },
+    Fg5CEPi8Dbr1vBwGjzf8PbQNfuWfPP7HcLFChYwpRJq5: {
+      status: 'dev',
+      name: 'Reverse Card Charge Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 5,
+          typeBlueId: 'Fg5CEPi8Dbr1vBwGjzf8PbQNfuWfPP7HcLFChYwpRJq5',
           attributesAdded: [],
         },
       ],

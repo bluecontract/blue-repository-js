@@ -7,10 +7,10 @@ import { ChangeWorkflow } from './ChangeWorkflow';
 import { RejectChangeOperation } from './RejectChangeOperation';
 import { StatusInProgress } from './StatusInProgress';
 import { DocumentStatus } from './DocumentStatus';
+import { CustomerConsent } from './CustomerConsent';
 import { Event } from './Event';
 import { LifecycleEvent } from './LifecycleEvent';
 import { ContractsChangePolicy } from './ContractsChangePolicy';
-import { CustomerConsent } from './CustomerConsent';
 import { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 import { SequentialWorkflow } from './SequentialWorkflow';
@@ -54,10 +54,10 @@ export { ChangeWorkflow } from './ChangeWorkflow';
 export { RejectChangeOperation } from './RejectChangeOperation';
 export { StatusInProgress } from './StatusInProgress';
 export { DocumentStatus } from './DocumentStatus';
+export { CustomerConsent } from './CustomerConsent';
 export { Event } from './Event';
 export { LifecycleEvent } from './LifecycleEvent';
 export { ContractsChangePolicy } from './ContractsChangePolicy';
-export { CustomerConsent } from './CustomerConsent';
 export { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 export { SequentialWorkflow } from './SequentialWorkflow';
@@ -102,10 +102,10 @@ export const contents = {
   '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6': RejectChangeOperation,
   '56Lhu3Z2oF3kuYG41eZAK8TvgVtRNevkbRi4D31kKWZm': StatusInProgress,
   '58B8orsFkxxy7bWqjLXJmtBs2b5rwnNQNbeoAbGhPkJc': DocumentStatus,
+  '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx': CustomerConsent,
   '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we': Event,
   '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn': LifecycleEvent,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicy,
-  '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8': CustomerConsent,
   '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj': ProposeChangeWorkflow,
   '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg': DocumentBootstrapRequested,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflow,

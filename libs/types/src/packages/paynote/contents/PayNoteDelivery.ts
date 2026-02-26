@@ -668,11 +668,23 @@ export const PayNoteDelivery = {
   description:
     'Tracks delivery of a PayNote through a deliverer (e.g., bank) to a receiver (payer - client).',
   name: 'PayNote Delivery',
+  paymentMandateBootstrapRequest: {
+    description:
+      'Optional Payment Mandate bootstrap request details for Delivery flows that require mandate attachment before proposal exposure.',
+    document: {
+      type: {
+        blueId: 'Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP',
+      },
+    },
+    type: {
+      blueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+    },
+  },
   payNoteBootstrapRequest: {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE',
+        blueId: 'Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F',
       },
     },
     type: {

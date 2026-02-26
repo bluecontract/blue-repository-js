@@ -3,6 +3,10 @@ export const blueIds = {
   'PayNote/Capture Failed': 'FUh3TARSh4TjnWKAkM5ydjFWLWEmrFByKMBQzcgQfqRW',
   'PayNote/Capture Funds Requested':
     'DvxKVEFsDmgA1hcBDfh7t42NgTRLaxXjCrB48DufP3i3',
+  'PayNote/Card Charge Completed':
+    'Hrz9kzWXTXDfK2XEkRJtHqdKzHaQq919NcRL8QMAvEEQ',
+  'PayNote/Card Charge Responded':
+    'CFoaaYn29o7Mg7VaN7bkM87KrfE8fvnVYWkGXd6YnQ7S',
   'PayNote/Card Transaction Capture Lock Change Failed':
     '2LFkmyxDFSdNqM8mr6Md3LF54V15fFGL1s5fTnUfCpUH',
   'PayNote/Card Transaction Capture Lock Requested':
@@ -22,9 +26,9 @@ export const blueIds = {
   'PayNote/Card Transaction Monitoring Stopped':
     'BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr',
   'PayNote/Card Transaction PayNote':
-    '31FeauChLTApQ7FmwwUPuYnYPtgPC9kiu737UkbgK495',
+    '2wqxtvdRHf7Z3qNNKnycnu3SBVqw4BenK8et9xeT7n86',
   'PayNote/Card Transaction Report':
-    'GHjSaPm9ceTkRZn2QGxRkzptkiyVYi7AvF8LRgvWzVc2',
+    '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X',
   'PayNote/Child PayNote Issuance Declined':
     'DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m',
   'PayNote/Child PayNote Issued':
@@ -33,11 +37,36 @@ export const blueIds = {
   'PayNote/Funds Reserved': 'AopfdGqnwcxsw4mJzXbmjDMnASRtkce9BZB1n6QSRNXX',
   'PayNote/Issue Child PayNote Requested':
     '53Dir2sGy1NHuCQXF6suGoDMxYacNhbcy23AKD89SghD',
+  'PayNote/Linked Card Charge and Capture Immediately Requested':
+    '2LqGeXL7WWYQJMqviyseKCekpY3wYdB6K1f9sqakBUY7',
+  'PayNote/Linked Card Charge Requested':
+    'Aq4dNFtLHLWYfCS7aqAgWwGi48MgbQmp2EZJtDBN7FSg',
+  'PayNote/Linked PayNote Start Failed':
+    '8dggwonfALwrTSRhg8g8ncXFXierke2mogtEZQXHab64',
+  'PayNote/Linked PayNote Start Responded':
+    'BQioEtRPYv2fWVryRsSYQc1Vnp9eyX3CYDrNY1hEy1Ye',
+  'PayNote/Linked PayNote Started':
+    '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q',
   'PayNote/Merchant To Customer PayNote':
-    '7d7HJZ39tANAtmeRus31iSpNEidCdAsMLd33S1FEy7zA',
+    '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo',
   'PayNote/Payee Assignment Requested':
     'BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE',
-  'PayNote/PayNote': '6HxvsQMTdbmynxNgqtxcNuCr2RhiLHowVinyD5h3fXmE',
+  'PayNote/Payment Mandate': 'Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP',
+  'PayNote/Payment Mandate Attached':
+    '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7',
+  'PayNote/Payment Mandate Attachment Failed':
+    'GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2',
+  'PayNote/Payment Mandate Charge Attempt State':
+    'JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq',
+  'PayNote/Payment Mandate Spend Authorization Requested':
+    '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT',
+  'PayNote/Payment Mandate Spend Authorization Responded':
+    '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E',
+  'PayNote/Payment Mandate Spend Settled':
+    '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ',
+  'PayNote/Payment Mandate Spend Settlement Responded':
+    '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY',
+  'PayNote/PayNote': 'Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F',
   'PayNote/PayNote Accepted By Client':
     '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3',
   'PayNote/PayNote Approved': 'HQTUxErobqhSuhWo9DAC1WwaG9oYdjfmdKprGtV4TeEK',
@@ -48,7 +77,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y',
   'PayNote/PayNote Client Decision Discarded':
     'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
-  'PayNote/PayNote Delivery': '9jxRnexZ3DMoBAn1xZmjfV7pD1hkrd75qQ1p9a4Eeg4Y',
+  'PayNote/PayNote Delivery': '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g',
   'PayNote/PayNote Delivery Failed':
     'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
   'PayNote/PayNote Rejected': 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',
@@ -66,6 +95,10 @@ export const blueIds = {
     '3XstDYFkqsUP5PdM6Z6mwspPzgdQMFtUpNyMsKPK2o6N',
   'PayNote/Reserve Funds Requested':
     '3Y3TYmSfZMmPYKmF5i3eR8YcVPNP5Sic2bZN8xRnvMWm',
+  'PayNote/Reverse Card Charge and Capture Immediately Requested':
+    'F4gfZeY8P8dkfwNSbEfq7xQ8axiHdfqgzGQQr3HLDyzC',
+  'PayNote/Reverse Card Charge Requested':
+    'Fg5CEPi8Dbr1vBwGjzf8PbQNfuWfPP7HcLFChYwpRJq5',
   'PayNote/Settlement Amount Rejected':
     '3b3ePGPg5GzS6KYfqoDfgjWbjccXVnGzytbpFS53x4HM',
   'PayNote/Settlement Amount Specified':

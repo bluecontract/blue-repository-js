@@ -17,6 +17,7 @@ export const CardTransactionReportSchema = withTypeBlueId(
     merchantId: z.string().optional(),
     name: z.string().optional(),
     occurredAt: TimestampSchema.optional(),
+    status: z.string().optional(),
     transactionId: z.string().optional(),
   })
 );
