@@ -17,7 +17,7 @@ export const blueIds = {
   'Conversation/Customer Action Requested':
     'AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV',
   'Conversation/Customer Consent':
-    '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8',
+    '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx',
   'Conversation/Customer Consent Revoked':
     '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK',
   'Conversation/Document Bootstrap Completed':

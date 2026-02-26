@@ -31,6 +31,13 @@ export const CardTransactionReport = {
       blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
     },
   },
+  status: {
+    description:
+      'Transaction status ("authorized" | "partially captured" | "captured").',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   transactionId: {
     description: 'Unique transaction identifier used for idempotency.',
     type: {

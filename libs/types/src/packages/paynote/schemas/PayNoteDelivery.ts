@@ -40,6 +40,7 @@ export const PayNoteDeliverySchema = withTypeBlueId(
     deliveryStatus: DocumentStatusSchema.optional(),
     description: z.string().optional(),
     name: z.string().optional(),
+    paymentMandateBootstrapRequest: DocumentBootstrapRequestedSchema.optional(),
     payNoteBootstrapRequest: DocumentBootstrapRequestedSchema.optional(),
     transactionIdentificationStatus: z.string().optional(),
   })

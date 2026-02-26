@@ -24,7 +24,6 @@ export const CustomerConsent = {
     type: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
-    value: 'granted',
   },
   contracts: {
     granteeChannel: {

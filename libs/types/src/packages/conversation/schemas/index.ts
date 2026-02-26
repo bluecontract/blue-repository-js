@@ -103,7 +103,7 @@ export const schemas = {
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannelSchema,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicySchema,
   AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV: CustomerActionRequestedSchema,
-  '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8': CustomerConsentSchema,
+  '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx': CustomerConsentSchema,
   '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': CustomerConsentRevokedSchema,
   HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
     DocumentBootstrapCompletedSchema,

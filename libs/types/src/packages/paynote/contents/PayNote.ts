@@ -5,7 +5,6 @@ export const PayNote = {
       type: {
         blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
       },
-      value: 0,
     },
     description: 'The amounts associated with this PayNote.',
     reserved: {
@@ -13,7 +12,6 @@ export const PayNote = {
       type: {
         blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
       },
-      value: 0,
     },
     total: {
       description: 'The maximum total value of this PayNote.',
@@ -111,7 +109,6 @@ export const PayNote = {
     type: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
-    value: 'Pending',
   },
   transactionStatus: {
     description:

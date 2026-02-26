@@ -113,13 +113,13 @@ const meta = {
         },
       ],
     },
-    '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8': {
+    '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx': {
       status: 'dev',
       name: 'Customer Consent',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '7czpW4QyEqJy3d2X8dqsxcu3Q1G2CftTJUCTTyJSY6J8',
+          repositoryVersionIndex: 5,
+          typeBlueId: '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx',
           attributesAdded: [],
         },
       ],
