@@ -8,9 +8,9 @@ export const CustomerActionRespondedSchema = withTypeBlueId(
   blueIds['Conversation/Customer Action Responded']
 )(
   ResponseSchema.extend({
+    actionLabel: z.string().optional(),
     description: z.string().optional(),
     input: blueNodeField().optional(),
-    mode: z.string().optional(),
     name: z.string().optional(),
     respondedAt: TimestampSchema.optional(),
   })

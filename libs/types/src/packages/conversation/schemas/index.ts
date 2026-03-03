@@ -104,8 +104,8 @@ export const schemas = {
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessageSchema,
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannelSchema,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicySchema,
-  '6BBtNuLc2PR5G1bmtDfo429WWyP8QD13VwooMbHthfmM': CustomerActionRequestedSchema,
-  '951RFxKXpzbJiyMC7fYGSxMeSEqewmTwgZBtHMhVVsaj': CustomerActionRespondedSchema,
+  '6ZLHE59mb1ytEjW78jmYCU3DXxj4Fzfjea7tz3VEkwyX': CustomerActionRequestedSchema,
+  GFyes2Px1cY5Yfk2oiA1qpzhz2purMED3g1L74Bu1Ho6: CustomerActionRespondedSchema,
   '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx': CustomerConsentSchema,
   '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': CustomerConsentRevokedSchema,
   HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
