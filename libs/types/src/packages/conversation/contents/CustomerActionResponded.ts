@@ -1,15 +1,14 @@
 export const CustomerActionResponded = {
-  description:
-    'Bank response event that reports a user decision for a previously requested pending action.',
-  input: {
-    description:
-      'User-provided decision payload. For mode=options this should be a selected option label. For mode=input this should match the requested input schema.',
-  },
-  mode: {
-    description: 'Pending action mode. Supported values: options | input.',
+  actionLabel: {
+    description: 'Label of the action selected by the user.',
     type: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
+  },
+  description:
+    'Bank response event that reports a user decision for a previously requested pending action.',
+  input: {
+    description: 'Optional user-provided payload for the selected action.',
   },
   name: 'Customer Action Responded',
   respondedAt: {

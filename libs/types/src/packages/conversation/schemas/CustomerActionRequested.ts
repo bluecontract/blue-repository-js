@@ -7,12 +7,21 @@ export const CustomerActionRequestedSchema = withTypeBlueId(
   blueIds['Conversation/Customer Action Requested']
 )(
   RequestSchema.extend({
+    actions: z
+      .array(
+        z.object({
+          inputPlaceholder: z.string().optional(),
+          inputRequired: z.boolean().optional(),
+          inputSchema: blueNodeField().optional(),
+          inputTitle: z.string().optional(),
+          label: z.string().optional(),
+          variant: z.string().optional(),
+        })
+      )
+      .optional(),
     description: z.string().optional(),
-    inputSchema: blueNodeField().optional(),
     message: z.string().optional(),
-    mode: z.string().optional(),
     name: z.string().optional(),
-    options: z.array(z.string()).optional(),
     title: z.string().optional(),
   })
 );
