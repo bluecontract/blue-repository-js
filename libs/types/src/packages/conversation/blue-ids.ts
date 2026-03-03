@@ -15,7 +15,9 @@ export const blueIds = {
   'Conversation/Contracts Change Policy':
     '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U',
   'Conversation/Customer Action Requested':
-    'AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV',
+    '6BBtNuLc2PR5G1bmtDfo429WWyP8QD13VwooMbHthfmM',
+  'Conversation/Customer Action Responded':
+    '951RFxKXpzbJiyMC7fYGSxMeSEqewmTwgZBtHMhVVsaj',
   'Conversation/Customer Consent':
     '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx',
   'Conversation/Customer Consent Revoked':

@@ -8,6 +8,7 @@ import { ChatMessageSchema } from './ChatMessage';
 import { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
 import { ContractsChangePolicySchema } from './ContractsChangePolicy';
 import { CustomerActionRequestedSchema } from './CustomerActionRequested';
+import { CustomerActionRespondedSchema } from './CustomerActionResponded';
 import { CustomerConsentSchema } from './CustomerConsent';
 import { CustomerConsentRevokedSchema } from './CustomerConsentRevoked';
 import { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
@@ -55,6 +56,7 @@ export { ChatMessageSchema } from './ChatMessage';
 export { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
 export { ContractsChangePolicySchema } from './ContractsChangePolicy';
 export { CustomerActionRequestedSchema } from './CustomerActionRequested';
+export { CustomerActionRespondedSchema } from './CustomerActionResponded';
 export { CustomerConsentSchema } from './CustomerConsent';
 export { CustomerConsentRevokedSchema } from './CustomerConsentRevoked';
 export { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
@@ -102,7 +104,8 @@ export const schemas = {
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessageSchema,
   HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr: CompositeTimelineChannelSchema,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicySchema,
-  AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV: CustomerActionRequestedSchema,
+  '6BBtNuLc2PR5G1bmtDfo429WWyP8QD13VwooMbHthfmM': CustomerActionRequestedSchema,
+  '951RFxKXpzbJiyMC7fYGSxMeSEqewmTwgZBtHMhVVsaj': CustomerActionRespondedSchema,
   '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx': CustomerConsentSchema,
   '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': CustomerConsentRevokedSchema,
   HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
