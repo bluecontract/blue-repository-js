@@ -102,13 +102,24 @@ const meta = {
         },
       ],
     },
-    AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV: {
+    '6BBtNuLc2PR5G1bmtDfo429WWyP8QD13VwooMbHthfmM': {
       status: 'dev',
       name: 'Customer Action Requested',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'AemAG9Bb3XUZm6hLPMipUeYmpFFG6X4CUYZFSLC88WjV',
+          repositoryVersionIndex: 6,
+          typeBlueId: '6BBtNuLc2PR5G1bmtDfo429WWyP8QD13VwooMbHthfmM',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '951RFxKXpzbJiyMC7fYGSxMeSEqewmTwgZBtHMhVVsaj': {
+      status: 'dev',
+      name: 'Customer Action Responded',
+      versions: [
+        {
+          repositoryVersionIndex: 6,
+          typeBlueId: '951RFxKXpzbJiyMC7fYGSxMeSEqewmTwgZBtHMhVVsaj',
           attributesAdded: [],
         },
       ],
