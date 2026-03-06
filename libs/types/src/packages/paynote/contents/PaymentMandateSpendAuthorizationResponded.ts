@@ -1,5 +1,5 @@
 export const PaymentMandateSpendAuthorizationResponded = {
-  chargeAttemptId: {
+  authorizationId: {
     description:
       'Correlation key copied from Payment Mandate Spend Authorization Requested.',
     type: {

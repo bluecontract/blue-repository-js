@@ -311,13 +311,13 @@ const meta = {
         },
       ],
     },
-    Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP: {
+    BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr: {
       status: 'dev',
       name: 'Payment Mandate',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: 'Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP',
+          repositoryVersionIndex: 8,
+          typeBlueId: 'BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr',
           attributesAdded: [],
         },
       ],
@@ -344,57 +344,46 @@ const meta = {
         },
       ],
     },
-    JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq: {
-      status: 'dev',
-      name: 'Payment Mandate Charge Attempt State',
-      versions: [
-        {
-          repositoryVersionIndex: 5,
-          typeBlueId: 'JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT': {
+    '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF': {
       status: 'dev',
       name: 'Payment Mandate Spend Authorization Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT',
+          repositoryVersionIndex: 8,
+          typeBlueId: '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF',
           attributesAdded: [],
         },
       ],
     },
-    '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E': {
+    '6UFd89oNox3PCpeVFaaCXwbGDp3k3Qc56e4DktnK3F8P': {
       status: 'dev',
       name: 'Payment Mandate Spend Authorization Responded',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E',
+          repositoryVersionIndex: 8,
+          typeBlueId: '6UFd89oNox3PCpeVFaaCXwbGDp3k3Qc56e4DktnK3F8P',
           attributesAdded: [],
         },
       ],
     },
-    '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ': {
+    '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v': {
       status: 'dev',
       name: 'Payment Mandate Spend Settled',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ',
+          repositoryVersionIndex: 8,
+          typeBlueId: '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v',
           attributesAdded: [],
         },
       ],
     },
-    '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY': {
+    CoGAMipt8rhmnkMgKsyZ5aendkHvFc4muC6pVgrUT1rJ: {
       status: 'dev',
       name: 'Payment Mandate Spend Settlement Responded',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY',
+          repositoryVersionIndex: 8,
+          typeBlueId: 'CoGAMipt8rhmnkMgKsyZ5aendkHvFc4muC6pVgrUT1rJ',
           attributesAdded: [],
         },
       ],
@@ -476,13 +465,13 @@ const meta = {
         },
       ],
     },
-    '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g': {
+    FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g',
+          repositoryVersionIndex: 8,
+          typeBlueId: 'FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2',
           attributesAdded: [],
         },
       ],

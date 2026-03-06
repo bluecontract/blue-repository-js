@@ -29,7 +29,6 @@ import { PayeeAssignmentRequestedSchema } from './PayeeAssignmentRequested';
 import { PaymentMandateSchema } from './PaymentMandate';
 import { PaymentMandateAttachedSchema } from './PaymentMandateAttached';
 import { PaymentMandateAttachmentFailedSchema } from './PaymentMandateAttachmentFailed';
-import { PaymentMandateChargeAttemptStateSchema } from './PaymentMandateChargeAttemptState';
 import { PaymentMandateSpendAuthorizationRequestedSchema } from './PaymentMandateSpendAuthorizationRequested';
 import { PaymentMandateSpendAuthorizationRespondedSchema } from './PaymentMandateSpendAuthorizationResponded';
 import { PaymentMandateSpendSettledSchema } from './PaymentMandateSpendSettled';
@@ -91,7 +90,6 @@ export { PayeeAssignmentRequestedSchema } from './PayeeAssignmentRequested';
 export { PaymentMandateSchema } from './PaymentMandate';
 export { PaymentMandateAttachedSchema } from './PaymentMandateAttached';
 export { PaymentMandateAttachmentFailedSchema } from './PaymentMandateAttachmentFailed';
-export { PaymentMandateChargeAttemptStateSchema } from './PaymentMandateChargeAttemptState';
 export { PaymentMandateSpendAuthorizationRequestedSchema } from './PaymentMandateSpendAuthorizationRequested';
 export { PaymentMandateSpendAuthorizationRespondedSchema } from './PaymentMandateSpendAuthorizationResponded';
 export { PaymentMandateSpendSettledSchema } from './PaymentMandateSpendSettled';
@@ -165,19 +163,17 @@ export const schemas = {
   '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo':
     MerchantToCustomerPayNoteSchema,
   BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE: PayeeAssignmentRequestedSchema,
-  Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP: PaymentMandateSchema,
+  BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr: PaymentMandateSchema,
   '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7': PaymentMandateAttachedSchema,
   GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2:
     PaymentMandateAttachmentFailedSchema,
-  JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq:
-    PaymentMandateChargeAttemptStateSchema,
-  '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT':
+  '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF':
     PaymentMandateSpendAuthorizationRequestedSchema,
-  '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E':
+  '6UFd89oNox3PCpeVFaaCXwbGDp3k3Qc56e4DktnK3F8P':
     PaymentMandateSpendAuthorizationRespondedSchema,
-  '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ':
+  '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v':
     PaymentMandateSpendSettledSchema,
-  '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY':
+  CoGAMipt8rhmnkMgKsyZ5aendkHvFc4muC6pVgrUT1rJ:
     PaymentMandateSpendSettlementRespondedSchema,
   Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F: PayNoteSchema,
   '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3': PayNoteAcceptedByClientSchema,
@@ -189,7 +185,7 @@ export const schemas = {
   '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y': PayNoteCancelledSchema,
   Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j:
     PayNoteClientDecisionDiscardedSchema,
-  '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g': PayNoteDeliverySchema,
+  FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2: PayNoteDeliverySchema,
   GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: PayNoteDeliveryFailedSchema,
   AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: PayNoteRejectedSchema,
   EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: PayNoteRejectedByClientSchema,

@@ -1,16 +1,16 @@
 export const PaymentMandateSpendSettled = {
+  authorizationId: {
+    description:
+      'Correlation key copied from Payment Mandate Spend Authorization Requested.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   capturedDeltaMinor: {
     description:
       'Net change to amountCaptured in minor units. Positive for successful capture.\n',
     type: {
       blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-    },
-  },
-  chargeAttemptId: {
-    description:
-      'Correlation key copied from Payment Mandate Spend Authorization Requested.',
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   description:
@@ -39,6 +39,13 @@ export const PaymentMandateSpendSettled = {
     description: 'Timestamp when settlement result was emitted.',
     type: {
       blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+    },
+  },
+  settlementId: {
+    description:
+      'Optional settlement correlation id for idempotent settlement updates.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
   },
   status: {

@@ -10,11 +10,12 @@ export const PaymentMandateSpendSettlementRespondedSchema = withTypeBlueId(
   ResponseSchema.extend({
     amountCaptured: z.number().optional(),
     amountReserved: z.number().optional(),
-    chargeAttemptId: z.string().optional(),
+    authorizationId: z.string().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     reason: z.string().optional(),
     respondedAt: TimestampSchema.optional(),
+    settlementId: z.string().optional(),
     status: z.string().optional(),
   })
 );
