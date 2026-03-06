@@ -10,8 +10,7 @@ export const PaymentMandateSpendAuthorizationRequestedSchema = withTypeBlueId(
 )(
   RequestSchema.extend({
     amountMinor: z.number().optional(),
-    chargeAttemptId: z.string().optional(),
-    chargeMode: z.string().optional(),
+    authorizationId: z.string().optional(),
     counterpartyId: z.string().optional(),
     counterpartyType: z.string().optional(),
     currency: CurrencySchema.optional(),

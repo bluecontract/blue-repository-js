@@ -8,7 +8,7 @@ export const PaymentMandateSpendAuthorizationRespondedSchema = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Spend Authorization Responded']
 )(
   ResponseSchema.extend({
-    chargeAttemptId: z.string().optional(),
+    authorizationId: z.string().optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     reason: z.string().optional(),

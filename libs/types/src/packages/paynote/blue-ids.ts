@@ -51,21 +51,19 @@ export const blueIds = {
     '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo',
   'PayNote/Payee Assignment Requested':
     'BVLMcTzag3D2rvg8LoKQ3Htgoqsh77EAoiTLTxH5aVBE',
-  'PayNote/Payment Mandate': 'Cb8EjAE531e9RVa9RgFJzKmN9h6z8Xp3tAYaBFgqfHoP',
+  'PayNote/Payment Mandate': 'BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr',
   'PayNote/Payment Mandate Attached':
     '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7',
   'PayNote/Payment Mandate Attachment Failed':
     'GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2',
-  'PayNote/Payment Mandate Charge Attempt State':
-    'JADRqXZ7UWNDqPt9Zhnn6831Nz2X5yeSuyew4hu6ciVq',
   'PayNote/Payment Mandate Spend Authorization Requested':
-    '4STBHLJjxjCZVgeW2ScFfmsx8Vm16FenEbaNMyL8ZJUT',
+    '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF',
   'PayNote/Payment Mandate Spend Authorization Responded':
-    '8qdhLemMQ5MFtu9Aebpd9gKfKuLuRBEnT6yTTzr9F78E',
+    '6UFd89oNox3PCpeVFaaCXwbGDp3k3Qc56e4DktnK3F8P',
   'PayNote/Payment Mandate Spend Settled':
-    '3TW3tRAQdYoMTFeeqmnWLR9JFibTVaJuiRJfJ3ggeVTJ',
+    '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v',
   'PayNote/Payment Mandate Spend Settlement Responded':
-    '6P1iVKFwG9jgWV7Ye3Co6pWByuu5QpR4tpqu9oVVvawY',
+    'CoGAMipt8rhmnkMgKsyZ5aendkHvFc4muC6pVgrUT1rJ',
   'PayNote/PayNote': 'Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F',
   'PayNote/PayNote Accepted By Client':
     '6VQC585V4SdpyA5hCeQQGM178bbeW3D2WcKt8ZCWK9s3',
@@ -77,7 +75,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y',
   'PayNote/PayNote Client Decision Discarded':
     'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
-  'PayNote/PayNote Delivery': '2QkcYqeXBPfAzjYtasCrt91CKjQjcfdjfnHpZ3EX132g',
+  'PayNote/PayNote Delivery': 'FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2',
   'PayNote/PayNote Delivery Failed':
     'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
   'PayNote/PayNote Rejected': 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',

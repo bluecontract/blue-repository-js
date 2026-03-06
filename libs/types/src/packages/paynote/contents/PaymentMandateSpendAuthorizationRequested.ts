@@ -5,16 +5,9 @@ export const PaymentMandateSpendAuthorizationRequested = {
       blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
     },
   },
-  chargeAttemptId: {
+  authorizationId: {
     description:
-      'Correlation and idempotency key for a single charge attempt. Must be stable across retries of the same attempt.\n',
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
-  chargeMode: {
-    description:
-      'Requested charge execution mode ("authorize_only" | "authorize_and_capture").',
+      'Correlation and idempotency key for a single authorization lifecycle.',
     type: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
@@ -41,7 +34,7 @@ export const PaymentMandateSpendAuthorizationRequested = {
     },
   },
   description:
-    'Bank asks a Payment Mandate document to authorize a single charge attempt before reserve/capture execution.\n',
+    'Bank asks a Payment Mandate document to authorize a single spend before reserve/capture execution.\n',
   name: 'Payment Mandate Spend Authorization Requested',
   requestedAt: {
     description: 'Timestamp when the authorization request was created.',

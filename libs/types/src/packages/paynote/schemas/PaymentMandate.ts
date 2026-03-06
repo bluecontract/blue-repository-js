@@ -8,7 +8,6 @@ import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialW
 import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
 import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
-import { PaymentMandateChargeAttemptStateSchema } from './PaymentMandateChargeAttemptState';
 
 export const PaymentMandateSchema = withTypeBlueId(
   blueIds['PayNote/Payment Mandate']
@@ -35,7 +34,30 @@ export const PaymentMandateSchema = withTypeBlueId(
     amountLimit: z.number().optional(),
     amountReserved: z.number().optional(),
     chargeAttempts: z
-      .record(z.string(), PaymentMandateChargeAttemptStateSchema)
+      .record(
+        z.string(),
+        z.object({
+          amountMinor: z.number().optional(),
+          authorizationReason: z.string().optional(),
+          authorizationRespondedAt: TimestampSchema.optional(),
+          authorizationStatus: z.string().optional(),
+          authorizedAmountMinor: z.number().optional(),
+          capturedDeltaMinor: z.number().optional(),
+          chargeMode: z.string().optional(),
+          counterpartyId: z.string().optional(),
+          counterpartyType: z.string().optional(),
+          currency: CurrencySchema.optional(),
+          holdId: z.string().optional(),
+          lastSettlementId: z.string().optional(),
+          lastSettlementProcessingStatus: z.string().optional(),
+          lastSettlementRequestStatus: z.string().optional(),
+          reservedDeltaMinor: z.number().optional(),
+          settled: z.boolean().optional(),
+          settlementReason: z.string().optional(),
+          settlementRespondedAt: TimestampSchema.optional(),
+          transactionId: z.string().optional(),
+        })
+      )
       .optional(),
     contracts: z
       .object({
