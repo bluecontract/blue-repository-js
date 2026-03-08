@@ -10,6 +10,7 @@ import { ChatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 import { DocumentLinks } from './DocumentLinks';
 import { MyOSAgentChannel } from './MyOSAgentChannel';
 import { MyOSWorkerAgency } from './MyOSWorkerAgency';
+import { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
 import { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 import { SingleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
 import { MyOSPackage } from './MyOSPackage';
@@ -22,7 +23,6 @@ import { WorkerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissi
 import { RemovingParticipantResponded } from './RemovingParticipantResponded';
 import { SingleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
 import { LinkedDocumentsPermissionRevokeRequested } from './LinkedDocumentsPermissionRevokeRequested';
-import { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
 import { MyOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
 import { LinkedDocumentsPermissionSet } from './LinkedDocumentsPermissionSet';
 import { DocumentAnchors } from './DocumentAnchors';
@@ -98,6 +98,7 @@ export { ChatGPTConnectorAgent } from './ChatGPTConnectorAgent';
 export { DocumentLinks } from './DocumentLinks';
 export { MyOSAgentChannel } from './MyOSAgentChannel';
 export { MyOSWorkerAgency } from './MyOSWorkerAgency';
+export { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
 export { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
 export { SingleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
 export { MyOSPackage } from './MyOSPackage';
@@ -110,7 +111,6 @@ export { WorkerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissi
 export { RemovingParticipantResponded } from './RemovingParticipantResponded';
 export { SingleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
 export { LinkedDocumentsPermissionRevokeRequested } from './LinkedDocumentsPermissionRevokeRequested';
-export { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
 export { MyOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
 export { LinkedDocumentsPermissionSet } from './LinkedDocumentsPermissionSet';
 export { DocumentAnchors } from './DocumentAnchors';
@@ -188,6 +188,7 @@ export const contents = {
   '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5': DocumentLinks,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': MyOSAgentChannel,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgency,
+  '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy': DocumentSessionBootstrap,
   '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6':
     SubscriptionToSessionInitiated,
   '567voUMtKJQoqru6ZVPYb4EGwdeV99rUSAqsnod7gqfd':
@@ -207,7 +208,6 @@ export const contents = {
     SingleDocumentPermissionGrantToDocument,
   '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7':
     LinkedDocumentsPermissionRevokeRequested,
-  '6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ': DocumentSessionBootstrap,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU': MyOSParticipantsOrchestration,
   '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5': LinkedDocumentsPermissionSet,
   '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH': DocumentAnchors,
