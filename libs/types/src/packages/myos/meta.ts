@@ -179,7 +179,7 @@ const meta = {
         },
       ],
     },
-    '6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ': {
+    '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy': {
       status: 'stable',
       name: 'Document Session Bootstrap',
       versions: [
@@ -187,6 +187,11 @@ const meta = {
           repositoryVersionIndex: 0,
           typeBlueId: '6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ',
           attributesAdded: [],
+        },
+        {
+          repositoryVersionIndex: 9,
+          typeBlueId: '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy',
+          attributesAdded: ['/avatarUrl'],
         },
       ],
     },

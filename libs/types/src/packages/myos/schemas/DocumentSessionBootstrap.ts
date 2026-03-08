@@ -13,6 +13,7 @@ export const DocumentSessionBootstrapSchema = withTypeBlueId(
   blueIds['MyOS/Document Session Bootstrap']
 )(
   MyOSAdminBaseSchema.extend({
+    avatarUrl: z.string().optional(),
     bootstrapError: z.string().optional(),
     bootstrapStatus: DocumentStatusSchema.optional(),
     capabilities: z.record(z.string(), z.boolean()).optional(),

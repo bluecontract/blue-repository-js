@@ -1,4 +1,11 @@
 export const DocumentSessionBootstrap = {
+  avatarUrl: {
+    description:
+      'Uploaded avatar URL propagated to the bootstrapped target sessions',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   bootstrapError: {
     description: 'Error message explaining bootstrap failure',
     type: {

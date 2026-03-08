@@ -23,7 +23,7 @@ export const blueIds = {
   'MyOS/Document Link': 'BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk',
   'MyOS/Document Links': '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5',
   'MyOS/Document Session Bootstrap':
-    '6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ',
+    '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy',
   'MyOS/Document Type Link': 'D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX',
   'MyOS/Inform User To Install MyOS Package':
     'CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3',
