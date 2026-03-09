@@ -14,6 +14,17 @@ const meta = {
         },
       ],
     },
+    GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX: {
+      status: 'dev',
+      name: 'Named Event',
+      versions: [
+        {
+          repositoryVersionIndex: 10,
+          typeBlueId: 'GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX',
+          attributesAdded: [],
+        },
+      ],
+    },
     GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs: {
       status: 'dev',
       name: 'Timestamp',
