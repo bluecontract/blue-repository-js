@@ -1,5 +1,4 @@
 import { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
-import { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 import { TriggerEvent } from './TriggerEvent';
 import { Response } from './Response';
 import { Timeline } from './Timeline';
@@ -17,7 +16,6 @@ import { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 import { SequentialWorkflow } from './SequentialWorkflow';
 import { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 import { Request } from './Request';
-import { RejectChangeWorkflow } from './RejectChangeWorkflow';
 import { CustomerConsentRevoked } from './CustomerConsentRevoked';
 import { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
 import { ChatMessage } from './ChatMessage';
@@ -29,7 +27,9 @@ import { StatusChange } from './StatusChange';
 import { SequentialWorkflowOperation } from './SequentialWorkflowOperation';
 import { Actor } from './Actor';
 import { DocumentSectionChanges } from './DocumentSectionChanges';
+import { RejectChangeWorkflow } from './RejectChangeWorkflow';
 import { ProposedChangeInvalid } from './ProposedChangeInvalid';
+import { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 import { StatusCompleted } from './StatusCompleted';
 import { StatusPending } from './StatusPending';
 import { TimelineChannel } from './TimelineChannel';
@@ -47,7 +47,6 @@ import { SequentialWorkflowStep } from './SequentialWorkflowStep';
 import { DocumentSection } from './DocumentSection';
 
 export { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
-export { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 export { TriggerEvent } from './TriggerEvent';
 export { Response } from './Response';
 export { Timeline } from './Timeline';
@@ -65,7 +64,6 @@ export { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 export { SequentialWorkflow } from './SequentialWorkflow';
 export { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 export { Request } from './Request';
-export { RejectChangeWorkflow } from './RejectChangeWorkflow';
 export { CustomerConsentRevoked } from './CustomerConsentRevoked';
 export { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
 export { ChatMessage } from './ChatMessage';
@@ -77,7 +75,9 @@ export { StatusChange } from './StatusChange';
 export { SequentialWorkflowOperation } from './SequentialWorkflowOperation';
 export { Actor } from './Actor';
 export { DocumentSectionChanges } from './DocumentSectionChanges';
+export { RejectChangeWorkflow } from './RejectChangeWorkflow';
 export { ProposedChangeInvalid } from './ProposedChangeInvalid';
+export { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 export { StatusCompleted } from './StatusCompleted';
 export { StatusPending } from './StatusPending';
 export { TimelineChannel } from './TimelineChannel';
@@ -96,7 +96,6 @@ export { DocumentSection } from './DocumentSection';
 
 export const contents = {
   '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv': DocumentBootstrapResponded,
-  '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy': AcceptChangeWorkflow,
   '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2': TriggerEvent,
   '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp': Response,
   '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa': Timeline,
@@ -110,11 +109,10 @@ export const contents = {
   '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn': LifecycleEvent,
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicy,
   '6ZLHE59mb1ytEjW78jmYCU3DXxj4Fzfjea7tz3VEkwyX': CustomerActionRequested,
-  '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj': ProposeChangeWorkflow,
+  '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo': ProposeChangeWorkflow,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflow,
   '8Akr9sdTkxBqMYWSGh8gHgoXQQeYEPfhV4s8fXeKTd9W': InformUserAboutPendingAction,
   '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n': Request,
-  '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz': RejectChangeWorkflow,
   '9h1AhEexkxxKLYv1NHbEESYCPtvW7Nt51msGtuQC5jWK': CustomerConsentRevoked,
   '9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs': DocumentSectionChangeEntry,
   AkUKoKY1hHY1CytCrAXDPKCd4md1QGmn1WNcQtWBsyAD: ChatMessage,
@@ -126,7 +124,9 @@ export const contents = {
   CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv: SequentialWorkflowOperation,
   CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ: Actor,
   DEmFwGa1sWm2BKhrN98LREKiB8j8B8kFAo7KBkkaojnN: DocumentSectionChanges,
+  DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB: RejectChangeWorkflow,
   EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M: ProposedChangeInvalid,
+  Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV: AcceptChangeWorkflow,
   EhPFqrRCreg7StsZEcW8fRQ1FQVdqYSsMSis2CHHJZ1G: StatusCompleted,
   ETAPjwZVyYEfPUWvXkCWAuybBhYUayg4hKC2V7mLXmsv: StatusPending,
   EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH: TimelineChannel,

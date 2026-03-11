@@ -14,13 +14,13 @@ const meta = {
         },
       ],
     },
-    '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy': {
+    Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV: {
       status: 'dev',
       name: 'Accept Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy',
+          repositoryVersionIndex: 12,
+          typeBlueId: 'Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV',
           attributesAdded: [],
         },
       ],
@@ -311,13 +311,13 @@ const meta = {
         },
       ],
     },
-    '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj': {
+    '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo': {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 2,
-          typeBlueId: '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj',
+          repositoryVersionIndex: 12,
+          typeBlueId: '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo',
           attributesAdded: [],
         },
       ],
@@ -344,13 +344,13 @@ const meta = {
         },
       ],
     },
-    '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz': {
+    DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB: {
       status: 'dev',
       name: 'Reject Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz',
+          repositoryVersionIndex: 12,
+          typeBlueId: 'DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB',
           attributesAdded: [],
         },
       ],

@@ -96,7 +96,7 @@ export { UpdateDocumentSchema } from './UpdateDocument';
 
 export const schemas = {
   APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv: AcceptChangeOperationSchema,
-  '29xcoYKf9p47xagTDwGLuQyFrT9WBN3Sd7FaPtqLvydy': AcceptChangeWorkflowSchema,
+  Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV: AcceptChangeWorkflowSchema,
   CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ: ActorSchema,
   Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc: ChangeOperationSchema,
   FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG: ChangeRequestSchema,
@@ -128,10 +128,10 @@ export const schemas = {
   BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC: OperationSchema,
   HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq: OperationRequestSchema,
   BeiedmmcKDhStxDnnQqUaXDJLofWSnqX6CazKTvVpfbW: ProposeChangeOperationSchema,
-  '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj': ProposeChangeWorkflowSchema,
+  '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo': ProposeChangeWorkflowSchema,
   EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M: ProposedChangeInvalidSchema,
   '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6': RejectChangeOperationSchema,
-  '9fnXwi4Za8hjEj6zDSEjhbA5dLrDzs7sxoDMGLmRT2Gz': RejectChangeWorkflowSchema,
+  DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB: RejectChangeWorkflowSchema,
   '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n': RequestSchema,
   '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp': ResponseSchema,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflowSchema,
