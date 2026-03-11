@@ -185,7 +185,7 @@ export const schemas = {
   '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y': PayNoteCancelledSchema,
   Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j:
     PayNoteClientDecisionDiscardedSchema,
-  FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2: PayNoteDeliverySchema,
+  E22dx85oPtGX2DPRaKJzHVizREJmioNCJPurgBcHHhJ: PayNoteDeliverySchema,
   GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: PayNoteDeliveryFailedSchema,
   AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: PayNoteRejectedSchema,
   EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: PayNoteRejectedByClientSchema,

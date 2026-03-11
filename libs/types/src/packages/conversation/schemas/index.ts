@@ -111,7 +111,7 @@ export const schemas = {
   HH5u8PwvdXrARNkT4oyWR4QjgkwhKfPWGnNtEwfUBiUg:
     DocumentBootstrapCompletedSchema,
   B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH: DocumentBootstrapFailedSchema,
-  '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg':
+  '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior':
     DocumentBootstrapRequestedSchema,
   '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv':
     DocumentBootstrapRespondedSchema,

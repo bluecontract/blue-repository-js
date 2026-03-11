@@ -45,6 +45,13 @@ export const DocumentBootstrapRequested = {
     },
   },
   name: 'Document Bootstrap Requested',
+  onBehalfOf: {
+    description:
+      'account (channe name) on whose behalf the document is being created',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   type: {
     blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
   },

@@ -465,13 +465,13 @@ const meta = {
         },
       ],
     },
-    FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2: {
+    E22dx85oPtGX2DPRaKJzHVizREJmioNCJPurgBcHHhJ: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 8,
-          typeBlueId: 'FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2',
+          repositoryVersionIndex: 11,
+          typeBlueId: 'E22dx85oPtGX2DPRaKJzHVizREJmioNCJPurgBcHHhJ',
           attributesAdded: [],
         },
       ],

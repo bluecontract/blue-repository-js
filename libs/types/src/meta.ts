@@ -11,5 +11,6 @@ export const repositoryVersions = [
   '2X96EiMnmws7kmgtS3bgGm38NHGBwXeViAxmGqkxyiDT',
   'Aig1A2dxJCJkXPYQLyPSXhXJUdBDULKq2cFVv1mv2Uvg',
   'FLEAJh7wxmniwWikxfZmDDZvHKjBKuNQeBbQUbBqdJ7E',
+  '8woWtWYyJxmzPJhAv5SptmZJsyXAq2Q2ckF4jtwDQJPE',
 ] as const;
 export default { name, repositoryVersions } as const;

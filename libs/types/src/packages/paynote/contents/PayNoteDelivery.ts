@@ -677,7 +677,7 @@ export const PayNoteDelivery = {
       },
     },
     type: {
-      blueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+      blueId: '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
     },
   },
   payNoteBootstrapRequest: {
@@ -688,7 +688,7 @@ export const PayNoteDelivery = {
       },
     },
     type: {
-      blueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+      blueId: '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
     },
   },
   transactionIdentificationStatus: {

@@ -40,12 +40,12 @@ import { CardTransactionCaptureLockRequested } from './CardTransactionCaptureLoc
 import { CardTransactionCaptureUnlocked } from './CardTransactionCaptureUnlocked';
 import { PayNoteCancellationRequested } from './PayNoteCancellationRequested';
 import { CaptureFundsRequested } from './CaptureFundsRequested';
+import { PayNoteDelivery } from './PayNoteDelivery';
 import { PayNoteRejectedByClient } from './PayNoteRejectedByClient';
 import { CardTransactionCaptureLocked } from './CardTransactionCaptureLocked';
 import { ReverseCardChargeAndCaptureImmediatelyRequested } from './ReverseCardChargeAndCaptureImmediatelyRequested';
 import { ChildPayNoteIssued } from './ChildPayNoteIssued';
 import { ReverseCardChargeRequested } from './ReverseCardChargeRequested';
-import { PayNoteDelivery } from './PayNoteDelivery';
 import { CaptureFailed } from './CaptureFailed';
 import { TransactionStatus } from './TransactionStatus';
 import { CaptureDeclined } from './CaptureDeclined';
@@ -101,12 +101,12 @@ export { CardTransactionCaptureLockRequested } from './CardTransactionCaptureLoc
 export { CardTransactionCaptureUnlocked } from './CardTransactionCaptureUnlocked';
 export { PayNoteCancellationRequested } from './PayNoteCancellationRequested';
 export { CaptureFundsRequested } from './CaptureFundsRequested';
+export { PayNoteDelivery } from './PayNoteDelivery';
 export { PayNoteRejectedByClient } from './PayNoteRejectedByClient';
 export { CardTransactionCaptureLocked } from './CardTransactionCaptureLocked';
 export { ReverseCardChargeAndCaptureImmediatelyRequested } from './ReverseCardChargeAndCaptureImmediatelyRequested';
 export { ChildPayNoteIssued } from './ChildPayNoteIssued';
 export { ReverseCardChargeRequested } from './ReverseCardChargeRequested';
-export { PayNoteDelivery } from './PayNoteDelivery';
 export { CaptureFailed } from './CaptureFailed';
 export { TransactionStatus } from './TransactionStatus';
 export { CaptureDeclined } from './CaptureDeclined';
@@ -174,13 +174,13 @@ export const contents = {
   DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5: CardTransactionCaptureUnlocked,
   DqiwzsNLbHCh6PaDF6wy6ZqBSF5JV5nAQSKFKTPRTbGB: PayNoteCancellationRequested,
   DvxKVEFsDmgA1hcBDfh7t42NgTRLaxXjCrB48DufP3i3: CaptureFundsRequested,
+  E22dx85oPtGX2DPRaKJzHVizREJmioNCJPurgBcHHhJ: PayNoteDelivery,
   EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: PayNoteRejectedByClient,
   EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt: CardTransactionCaptureLocked,
   F4gfZeY8P8dkfwNSbEfq7xQ8axiHdfqgzGQQr3HLDyzC:
     ReverseCardChargeAndCaptureImmediatelyRequested,
   FAZCx2s5eq9zPV64LdHNFYbjjxD3ci1ZqyTcQk5WhXAs: ChildPayNoteIssued,
   Fg5CEPi8Dbr1vBwGjzf8PbQNfuWfPP7HcLFChYwpRJq5: ReverseCardChargeRequested,
-  FLTwmZbvgDuFodwUAqh16PBu3a8aU7Pu4cssCGqVCRh2: PayNoteDelivery,
   FUh3TARSh4TjnWKAkM5ydjFWLWEmrFByKMBQzcgQfqRW: CaptureFailed,
   FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ: TransactionStatus,
   FzJqLm7Ek58LsVstJV2c37JfiMhRiWtjZNsiMz2ZfCYG: CaptureDeclined,
