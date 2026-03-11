@@ -27,7 +27,7 @@ export const blueIds = {
   'Conversation/Document Bootstrap Failed':
     'B8b1ayXMrAYbwkqaJfAS6Aspp2kZyJda8ay9QeFkZ9MH',
   'Conversation/Document Bootstrap Requested':
-    '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+    '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
   'Conversation/Document Bootstrap Responded':
     '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv',
   'Conversation/Document Section':

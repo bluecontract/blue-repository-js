@@ -168,13 +168,13 @@ const meta = {
         },
       ],
     },
-    '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg': {
+    '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior': {
       status: 'dev',
       name: 'Document Bootstrap Requested',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg',
+          repositoryVersionIndex: 11,
+          typeBlueId: '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
           attributesAdded: [],
         },
       ],

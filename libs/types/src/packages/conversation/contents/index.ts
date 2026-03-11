@@ -3,6 +3,7 @@ import { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 import { TriggerEvent } from './TriggerEvent';
 import { Response } from './Response';
 import { Timeline } from './Timeline';
+import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 import { ChangeWorkflow } from './ChangeWorkflow';
 import { RejectChangeOperation } from './RejectChangeOperation';
 import { StatusInProgress } from './StatusInProgress';
@@ -13,7 +14,6 @@ import { LifecycleEvent } from './LifecycleEvent';
 import { ContractsChangePolicy } from './ContractsChangePolicy';
 import { CustomerActionRequested } from './CustomerActionRequested';
 import { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
-import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 import { SequentialWorkflow } from './SequentialWorkflow';
 import { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 import { Request } from './Request';
@@ -51,6 +51,7 @@ export { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 export { TriggerEvent } from './TriggerEvent';
 export { Response } from './Response';
 export { Timeline } from './Timeline';
+export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 export { ChangeWorkflow } from './ChangeWorkflow';
 export { RejectChangeOperation } from './RejectChangeOperation';
 export { StatusInProgress } from './StatusInProgress';
@@ -61,7 +62,6 @@ export { LifecycleEvent } from './LifecycleEvent';
 export { ContractsChangePolicy } from './ContractsChangePolicy';
 export { CustomerActionRequested } from './CustomerActionRequested';
 export { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
-export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
 export { SequentialWorkflow } from './SequentialWorkflow';
 export { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
 export { Request } from './Request';
@@ -100,6 +100,7 @@ export const contents = {
   '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2': TriggerEvent,
   '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp': Response,
   '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa': Timeline,
+  '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior': DocumentBootstrapRequested,
   '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9': ChangeWorkflow,
   '4T5AmhKAXSJAAHDEjtVJ2FQgCyz2qyd9qG5uoh627Ux6': RejectChangeOperation,
   '56Lhu3Z2oF3kuYG41eZAK8TvgVtRNevkbRi4D31kKWZm': StatusInProgress,
@@ -110,7 +111,6 @@ export const contents = {
   '6FDVZRQwuhXdXtnXq8kRg3f3DM8SUdbN3TT8rSGJcS2U': ContractsChangePolicy,
   '6ZLHE59mb1ytEjW78jmYCU3DXxj4Fzfjea7tz3VEkwyX': CustomerActionRequested,
   '7dUt8jiX5vGeZL7wVzWFA8uEw37T6oPgC8KyDZmqxeSj': ProposeChangeWorkflow,
-  '7JqBn4KcmZbHBBiQf3CAfpHBNaTKS1qhtkATsF7f6Sxg': DocumentBootstrapRequested,
   '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe': SequentialWorkflow,
   '8Akr9sdTkxBqMYWSGh8gHgoXQQeYEPfhV4s8fXeKTd9W': InformUserAboutPendingAction,
   '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n': Request,

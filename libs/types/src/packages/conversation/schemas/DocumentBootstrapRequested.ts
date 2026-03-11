@@ -20,6 +20,7 @@ export const DocumentBootstrapRequestedSchema = withTypeBlueId(
       })
       .optional(),
     name: z.string().optional(),
+    onBehalfOf: z.string().optional(),
   })
 );
 
