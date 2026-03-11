@@ -22,7 +22,7 @@ export const ProposeChangeWorkflow = {
             blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
           },
           value:
-            "const invalid = (reason) => ({\n  changeset: [],\n  events: [{ type: 'Conversation/Proposed Change Invalid', reason }]\n});\n\nconst request = event.message.request;\n\nconst summary = request?.summary;\nif (!summary || typeof summary !== 'string') {\n  return invalid('summary is missing');\n}\n\nconst postfixValue = currentContract?.postfix || '';\nconst path = '/proposedChange' + postfixValue;\n\nif (document(path)) {\n  return invalid('proposed change already exists at ' + path);\n}\n\nreturn {\n  changeset: [{ op: 'add', path, val: request }]\n};\n",
+            "const invalid = (reason) => ({\n  changeset: [],\n  events: [{ type: 'Conversation/Proposed Change Invalid', reason }]\n});\n\nconst request = event.message.request;\n\nconst summary = request?.summary;\nif (!summary || typeof summary !== 'string') {\n  return invalid('summary is missing');\n}\n\nconst postfixNode = canon.at(currentContractCanonical, '/postfix');\nconst postfixValue =\n  typeof postfixNode?.value === 'string' ? postfixNode.value : '';\nconst path = '/proposedChange' + postfixValue;\n\nif (document(path)) {\n  return invalid('proposed change already exists at ' + path);\n}\n\nreturn {\n  changeset: [{ op: 'add', path, val: request }]\n};\n",
         },
         name: 'Prepare',
         type: {

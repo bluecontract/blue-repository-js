@@ -17,7 +17,7 @@ export const RejectChangeWorkflow = {
             blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
           },
           value:
-            "const invalid = (reason) => ({\n  changeset: [],\n  events: [{ type: 'Conversation/Proposed Change Invalid', reason }]\n});\n\nconst postfixValue = currentContract?.postfix || '';\nconst path = '/proposedChange' + postfixValue;\n\nif (!document(path)) {\n  return invalid('no proposed change at ' + path);\n}\n\nreturn {\n  changeset: [{ op: 'remove', path }]\n};\n",
+            "const invalid = (reason) => ({\n  changeset: [],\n  events: [{ type: 'Conversation/Proposed Change Invalid', reason }]\n});\n\nconst postfixNode = canon.at(currentContractCanonical, '/postfix');\nconst postfixValue =\n  typeof postfixNode?.value === 'string' ? postfixNode.value : '';\nconst path = '/proposedChange' + postfixValue;\n\nif (!document(path)) {\n  return invalid('no proposed change at ' + path);\n}\n\nreturn {\n  changeset: [{ op: 'remove', path }]\n};\n",
         },
         name: 'Prepare',
         type: {

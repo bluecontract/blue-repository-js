@@ -12,7 +12,7 @@ It contains:
 ## Repository Information
 
 - Repository name: **Blue Repository**
-- RepoBlueId: **8woWtWYyJxmzPJhAv5SptmZJsyXAq2Q2ckF4jtwDQJPE**
+- RepoBlueId: **EQTRE5bBZZb7P6GB6r3p9scPTTgwbR1SHFhYePo3ji4x**
 
 ## Installation
 
