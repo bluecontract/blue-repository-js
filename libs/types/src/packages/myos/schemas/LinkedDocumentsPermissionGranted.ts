@@ -9,6 +9,7 @@ export const LinkedDocumentsPermissionGrantedSchema = withTypeBlueId(
 )(
   ResponseSchema.extend({
     description: z.string().optional(),
+    grantDocumentId: z.string().optional(),
     links: LinkedDocumentsPermissionSetSchema.optional(),
     name: z.string().optional(),
     targetSessionId: z.string().optional(),

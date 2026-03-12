@@ -8,6 +8,13 @@ export const WorkerAgencyPermissionGranted = {
     },
   },
   description: 'DB rows written; rights are effective.',
+  grantDocumentId: {
+    description:
+      'Optional. Stable handle of the created permission grant document. Required in request/response document-grant flows that later support self-revoke from the grantee document.',
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+  },
   granteeDocumentId: {
     type: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',

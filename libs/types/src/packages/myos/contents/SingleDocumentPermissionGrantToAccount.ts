@@ -1,13 +1,13 @@
 export const SingleDocumentPermissionGrantToAccount = {
   contracts: {
     granteeChannel: {
-      description: 'Grantee’s timeline (recipient of the rights)',
+      description: 'Grantee’s timeline',
       type: {
         blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
     },
     granterChannel: {
-      description: 'Granter/owner’s timeline (actor allowed to request revoke)',
+      description: 'Granter/owner’s timeline',
       type: {
         blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
@@ -27,10 +27,10 @@ export const SingleDocumentPermissionGrantToAccount = {
         type: {
           blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
         },
-        value: 'granterChannel',
+        value: 'revokeAccessChannel',
       },
       description:
-        'Granter or grantee indicates the grant should be revoked (MyOS Admin will handle)',
+        'Granter or grantee indicates the grant should be revoked (MyOS Admin will handle).',
       request: {
         description: 'Optional human-readable reason',
         type: {
@@ -41,7 +41,30 @@ export const SingleDocumentPermissionGrantToAccount = {
         blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
       },
     },
-    revokeImplGranter: {
+    revokeAccessChannel: {
+      channels: {
+        items: [
+          {
+            type: {
+              blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            },
+            value: 'granterChannel',
+          },
+          {
+            type: {
+              blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            },
+            value: 'granteeChannel',
+          },
+        ],
+      },
+      description:
+        'Either grant side can invoke revoke on this grant document.',
+      type: {
+        blueId: 'HsNatiPt2YvmkWQoqtfrFCbdp75ZUBLBUkWeq84WTfnr',
+      },
+    },
+    revokeImpl: {
       operation: {
         type: {
           blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
@@ -84,7 +107,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
               value:
-                'const issues = [];\n\n// Required: target session\nconst target = document(\'/targetSessionId\');\nif (!target || typeof target !== \'string\') issues.push("targetSessionId is missing or invalid");\n\n// Required: bound identities\nconst granterId = document(\'/contracts/granterChannel/accountId\');\nif (typeof granterId !== \'string\' || granterId.length === 0) issues.push("granterChannel must be bound to an accountId");\nconst granteeId = document(\'/contracts/granteeChannel/accountId\');\nif (typeof granteeId !== \'string\' || granteeId.length === 0) issues.push("granteeChannel must be bound to an accountId");\n\n// Permissions\nconst perms = document(\'/permissions\');\nif (!perms || typeof perms !== \'object\') {\n  issues.push("permissions block is missing");\n} else {\n  if (perms.read !== true) issues.push("permissions.read must be true for SDPG");\n  const hasSingle = Array.isArray(perms?.singleOps) && perms.singleOps.length > 0;\n  if (hasSingle) {\n    if (perms.singleOps.some(x => typeof x !== \'string\' || x.trim().length === 0)) {\n      issues.push("permissions.singleOps must contain only non-empty strings");\n    }\n  }\n  if (perms.allOps === true && hasSingle) {\n    issues.push("permissions.allOps=true and permissions.singleOps are mutually exclusive");\n  }\n}\n\nif (issues.length > 0) return { events: [ { type: "MyOS/Single Document Permission Invalid", issues } ] };\nreturn { events: [ { type: "MyOS/Single Document Permission Validated" } ] };\n',
+                'const issues = [];\n\nconst target = document(\'/targetSessionId\');\nif (!target || typeof target !== \'string\') issues.push("targetSessionId is missing or invalid");\n\nconst granterId = document(\'/contracts/granterChannel/accountId\');\nif (typeof granterId !== \'string\' || granterId.length === 0) issues.push("granterChannel must be bound to an accountId");\nconst granteeId = document(\'/contracts/granteeChannel/accountId\');\nif (typeof granteeId !== \'string\' || granteeId.length === 0) issues.push("granteeChannel must be bound to an accountId");\n\nconst perms = document(\'/permissions\');\nif (!perms || typeof perms !== \'object\') {\n  issues.push("permissions block is missing");\n} else {\n  if (perms.read !== true) issues.push("permissions.read must be true for SDPG");\n  const hasSingle = Array.isArray(perms?.singleOps) && perms.singleOps.length > 0;\n  if (hasSingle) {\n    if (perms.singleOps.some(x => typeof x !== \'string\' || x.trim().length === 0)) {\n      issues.push("permissions.singleOps must contain only non-empty strings");\n    }\n  }\n  if (perms.allOps === true && hasSingle) {\n    issues.push("permissions.allOps=true and permissions.singleOps are mutually exclusive");\n  }\n}\n\nif (issues.length > 0) return { events: [ { type: "MyOS/Single Document Permission Invalid", issues } ] };\nreturn { events: [ { type: "MyOS/Single Document Permission Validated" } ] };\n',
             },
             name: 'ValidateBasicShape',
             type: {

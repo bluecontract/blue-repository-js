@@ -9,6 +9,7 @@ export const SingleDocumentPermissionGrantedSchema = withTypeBlueId(
 )(
   ResponseSchema.extend({
     description: z.string().optional(),
+    grantDocumentId: z.string().optional(),
     name: z.string().optional(),
     permissions: SingleDocumentPermissionSetSchema.optional(),
     targetSessionId: z.string().optional(),

@@ -12,6 +12,7 @@ export const WorkerAgencyPermissionGrantedSchema = withTypeBlueId(
       .array(WorkerAgencyPermissionSchema)
       .optional(),
     description: z.string().optional(),
+    grantDocumentId: z.string().optional(),
     granteeDocumentId: z.string().optional(),
     name: z.string().optional(),
   })

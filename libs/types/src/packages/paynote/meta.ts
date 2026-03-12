@@ -41,7 +41,7 @@ const meta = {
       name: 'Card Charge Completed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Hrz9kzWXTXDfK2XEkRJtHqdKzHaQq919NcRL8QMAvEEQ',
           attributesAdded: [],
         },
@@ -52,7 +52,7 @@ const meta = {
       name: 'Card Charge Responded',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'CFoaaYn29o7Mg7VaN7bkM87KrfE8fvnVYWkGXd6YnQ7S',
           attributesAdded: [],
         },
@@ -162,7 +162,7 @@ const meta = {
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2wqxtvdRHf7Z3qNNKnycnu3SBVqw4BenK8et9xeT7n86',
           attributesAdded: [],
         },
@@ -173,7 +173,7 @@ const meta = {
       name: 'Card Transaction Report',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X',
           attributesAdded: [],
         },
@@ -239,7 +239,7 @@ const meta = {
       name: 'Linked Card Charge and Capture Immediately Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2LqGeXL7WWYQJMqviyseKCekpY3wYdB6K1f9sqakBUY7',
           attributesAdded: [],
         },
@@ -250,7 +250,7 @@ const meta = {
       name: 'Linked Card Charge Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Aq4dNFtLHLWYfCS7aqAgWwGi48MgbQmp2EZJtDBN7FSg',
           attributesAdded: [],
         },
@@ -261,7 +261,7 @@ const meta = {
       name: 'Linked PayNote Start Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '8dggwonfALwrTSRhg8g8ncXFXierke2mogtEZQXHab64',
           attributesAdded: [],
         },
@@ -272,7 +272,7 @@ const meta = {
       name: 'Linked PayNote Start Responded',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BQioEtRPYv2fWVryRsSYQc1Vnp9eyX3CYDrNY1hEy1Ye',
           attributesAdded: [],
         },
@@ -283,7 +283,7 @@ const meta = {
       name: 'Linked PayNote Started',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q',
           attributesAdded: [],
         },
@@ -294,7 +294,7 @@ const meta = {
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo',
           attributesAdded: [],
         },
@@ -316,7 +316,7 @@ const meta = {
       name: 'Payment Mandate',
       versions: [
         {
-          repositoryVersionIndex: 8,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr',
           attributesAdded: [],
         },
@@ -327,7 +327,7 @@ const meta = {
       name: 'Payment Mandate Attached',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7',
           attributesAdded: [],
         },
@@ -338,7 +338,7 @@ const meta = {
       name: 'Payment Mandate Attachment Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2',
           attributesAdded: [],
         },
@@ -349,7 +349,7 @@ const meta = {
       name: 'Payment Mandate Spend Authorization Requested',
       versions: [
         {
-          repositoryVersionIndex: 8,
+          repositoryVersionIndex: 0,
           typeBlueId: '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF',
           attributesAdded: [],
         },
@@ -360,7 +360,7 @@ const meta = {
       name: 'Payment Mandate Spend Authorization Responded',
       versions: [
         {
-          repositoryVersionIndex: 8,
+          repositoryVersionIndex: 0,
           typeBlueId: '6UFd89oNox3PCpeVFaaCXwbGDp3k3Qc56e4DktnK3F8P',
           attributesAdded: [],
         },
@@ -371,7 +371,7 @@ const meta = {
       name: 'Payment Mandate Spend Settled',
       versions: [
         {
-          repositoryVersionIndex: 8,
+          repositoryVersionIndex: 0,
           typeBlueId: '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v',
           attributesAdded: [],
         },
@@ -382,7 +382,7 @@ const meta = {
       name: 'Payment Mandate Spend Settlement Responded',
       versions: [
         {
-          repositoryVersionIndex: 8,
+          repositoryVersionIndex: 0,
           typeBlueId: 'CoGAMipt8rhmnkMgKsyZ5aendkHvFc4muC6pVgrUT1rJ',
           attributesAdded: [],
         },
@@ -393,7 +393,7 @@ const meta = {
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F',
           attributesAdded: [],
         },
@@ -470,7 +470,7 @@ const meta = {
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 11,
+          repositoryVersionIndex: 0,
           typeBlueId: 'E22dx85oPtGX2DPRaKJzHVizREJmioNCJPurgBcHHhJ',
           attributesAdded: [],
         },
@@ -580,7 +580,7 @@ const meta = {
       name: 'Reverse Card Charge and Capture Immediately Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'F4gfZeY8P8dkfwNSbEfq7xQ8axiHdfqgzGQQr3HLDyzC',
           attributesAdded: [],
         },
@@ -591,7 +591,7 @@ const meta = {
       name: 'Reverse Card Charge Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Fg5CEPi8Dbr1vBwGjzf8PbQNfuWfPP7HcLFChYwpRJq5',
           attributesAdded: [],
         },
