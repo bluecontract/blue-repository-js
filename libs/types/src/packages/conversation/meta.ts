@@ -19,7 +19,7 @@ const meta = {
       name: 'Accept Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 12,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV',
           attributesAdded: [],
         },
@@ -41,7 +41,7 @@ const meta = {
       name: 'Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc',
           attributesAdded: [],
         },
@@ -52,7 +52,7 @@ const meta = {
       name: 'Change Request',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG',
           attributesAdded: [],
         },
@@ -63,7 +63,7 @@ const meta = {
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9',
           attributesAdded: [],
         },
@@ -107,7 +107,7 @@ const meta = {
       name: 'Customer Action Requested',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: '6ZLHE59mb1ytEjW78jmYCU3DXxj4Fzfjea7tz3VEkwyX',
           attributesAdded: [],
         },
@@ -118,7 +118,7 @@ const meta = {
       name: 'Customer Action Responded',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GFyes2Px1cY5Yfk2oiA1qpzhz2purMED3g1L74Bu1Ho6',
           attributesAdded: [],
         },
@@ -129,7 +129,7 @@ const meta = {
       name: 'Customer Consent',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx',
           attributesAdded: [],
         },
@@ -173,7 +173,7 @@ const meta = {
       name: 'Document Bootstrap Requested',
       versions: [
         {
-          repositoryVersionIndex: 11,
+          repositoryVersionIndex: 0,
           typeBlueId: '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
           attributesAdded: [],
         },
@@ -305,7 +305,7 @@ const meta = {
       name: 'Propose Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BeiedmmcKDhStxDnnQqUaXDJLofWSnqX6CazKTvVpfbW',
           attributesAdded: [],
         },
@@ -316,7 +316,7 @@ const meta = {
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 12,
+          repositoryVersionIndex: 0,
           typeBlueId: '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo',
           attributesAdded: [],
         },
@@ -349,7 +349,7 @@ const meta = {
       name: 'Reject Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 12,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB',
           attributesAdded: [],
         },

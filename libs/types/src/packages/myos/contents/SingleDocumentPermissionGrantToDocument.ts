@@ -1,7 +1,8 @@
 export const SingleDocumentPermissionGrantToDocument = {
   contracts: {
     granterChannel: {
-      description: 'Granter/owner’s timeline (actor allowed to request revoke)',
+      description:
+        'Granter/owner’s timeline (direct grant-document revoke lives here).',
       type: {
         blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
       },
@@ -23,7 +24,8 @@ export const SingleDocumentPermissionGrantToDocument = {
         },
         value: 'granterChannel',
       },
-      description: 'Granter requests revocation (handled by MyOS Admin)',
+      description:
+        'Granter requests revocation on the grant document. Grantee-document self-revoke uses the existing revoke-request event with grantDocumentId emitted from the grantee document itself.',
       request: {
         description: 'Optional human-readable reason',
         type: {
@@ -77,7 +79,7 @@ export const SingleDocumentPermissionGrantToDocument = {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
               value:
-                "const skipValidation = document('/skipValidation');\nif (skipValidation === true) return { events: [] };\n\nconst issues = [];\n\n// Required: target session\nconst target = document('/targetSessionId');\nif (!target || typeof target !== 'string') issues.push(\"targetSessionId is missing or invalid\");\n\n// Required: bound granter identity\nconst granterId = document('/contracts/granterChannel/accountId');\nif (typeof granterId !== 'string' || granterId.length === 0) issues.push(\"granterChannel must be bound to an accountId\");\n\n// Required: grantee document id\nconst gdoc = document('/granteeDocumentId');\nif (typeof gdoc !== 'string' || gdoc.trim().length === 0) issues.push(\"granteeDocumentId must be a non-empty string (originalBlueId)\");\n\n// Permissions\nconst perms = document('/permissions');\nif (!perms || typeof perms !== 'object') {\n  issues.push(\"permissions block is missing\");\n} else {\n  if (perms.read !== true) issues.push(\"permissions.read must be true for SDPG\");\n  const hasSingle = Array.isArray(perms?.singleOps) && perms.singleOps.length > 0;\n  if (hasSingle) {\n    if (perms.singleOps.some(x => typeof x !== 'string' || x.trim().length === 0)) {\n      issues.push(\"permissions.singleOps must contain only non-empty strings\");\n    }\n  }\n  if (perms.allOps === true && hasSingle) {\n    issues.push(\"permissions.allOps=true and permissions.singleOps are mutually exclusive\");\n  }\n}\n\nif (issues.length > 0) return { events: [ { type: \"MyOS/Single Document Permission Invalid\", issues } ] };\nreturn { events: [ { type: \"MyOS/Single Document Permission Validated\" } ] };\n",
+                "const skipValidation = document('/skipValidation');\nif (skipValidation === true) return { events: [] };\n\nconst issues = [];\n\nconst target = document('/targetSessionId');\nif (!target || typeof target !== 'string') issues.push(\"targetSessionId is missing or invalid\");\n\nconst granterId = document('/contracts/granterChannel/accountId');\nif (typeof granterId !== 'string' || granterId.length === 0) issues.push(\"granterChannel must be bound to an accountId\");\n\nconst gdoc = document('/granteeDocumentId');\nif (typeof gdoc !== 'string' || gdoc.trim().length === 0) issues.push(\"granteeDocumentId must be a non-empty string (originalBlueId)\");\n\nconst perms = document('/permissions');\nif (!perms || typeof perms !== 'object') {\n  issues.push(\"permissions block is missing\");\n} else {\n  if (perms.read !== true) issues.push(\"permissions.read must be true for SDPG\");\n  const hasSingle = Array.isArray(perms?.singleOps) && perms.singleOps.length > 0;\n  if (hasSingle) {\n    if (perms.singleOps.some(x => typeof x !== 'string' || x.trim().length === 0)) {\n      issues.push(\"permissions.singleOps must contain only non-empty strings\");\n    }\n  }\n  if (perms.allOps === true && hasSingle) {\n    issues.push(\"permissions.allOps=true and permissions.singleOps are mutually exclusive\");\n  }\n}\n\nif (issues.length > 0) return { events: [ { type: \"MyOS/Single Document Permission Invalid\", issues } ] };\nreturn { events: [ { type: \"MyOS/Single Document Permission Validated\" } ] };\n",
             },
             name: 'ValidateBasicShape',
             type: {
@@ -93,7 +95,7 @@ export const SingleDocumentPermissionGrantToDocument = {
   },
   granteeDocumentId: {
     description:
-      "Required original document id (blueId) that will act as the grantee principal ('document')",
+      "Required original document id (blueId) that will act as the grantee principal ('document').",
     type: {
       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
     },
@@ -115,7 +117,7 @@ export const SingleDocumentPermissionGrantToDocument = {
   },
   skipValidation: {
     description:
-      "If true, the validation will be skipped (MyOS Admin won't be triggered to create permission grant)",
+      "If true, the validation will be skipped (MyOS Admin won't be triggered to create permission grant).",
     type: {
       blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
     },

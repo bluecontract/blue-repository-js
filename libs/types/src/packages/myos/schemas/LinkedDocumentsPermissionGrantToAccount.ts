@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
+import { CompositeTimelineChannelSchema } from '../../conversation/schemas/CompositeTimelineChannel';
 import { OperationSchema } from '../../conversation/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
@@ -19,7 +20,8 @@ export const LinkedDocumentsPermissionGrantToAccountSchema = withTypeBlueId(
         granterChannel: MyOSTimelineChannelSchema.optional(),
         initLifecycleChannel: LifecycleEventChannelSchema.optional(),
         revoke: OperationSchema.optional(),
-        revokeImplGranter: SequentialWorkflowOperationSchema.optional(),
+        revokeAccessChannel: CompositeTimelineChannelSchema.optional(),
+        revokeImpl: SequentialWorkflowOperationSchema.optional(),
         validateOnInit: SequentialWorkflowSchema.optional(),
       })
       .optional(),

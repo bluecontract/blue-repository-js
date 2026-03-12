@@ -19,7 +19,7 @@ const meta = {
       name: 'Named Event',
       versions: [
         {
-          repositoryVersionIndex: 10,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX',
           attributesAdded: [],
         },

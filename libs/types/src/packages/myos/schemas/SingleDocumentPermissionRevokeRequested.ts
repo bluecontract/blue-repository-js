@@ -8,6 +8,7 @@ export const SingleDocumentPermissionRevokeRequestedSchema = withTypeBlueId(
 )(
   RequestSchema.extend({
     description: z.string().optional(),
+    grantDocumentId: z.string().optional(),
     name: z.string().optional(),
     reason: z.string().optional(),
   })

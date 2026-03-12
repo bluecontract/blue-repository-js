@@ -185,13 +185,8 @@ const meta = {
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6HC9zdAPTChMDo8okX3rYTz4aeCEKCr8TtU2WmfugdSJ',
-          attributesAdded: [],
-        },
-        {
-          repositoryVersionIndex: 9,
           typeBlueId: '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy',
-          attributesAdded: ['/avatarUrl'],
+          attributesAdded: [],
         },
       ],
     },
@@ -239,35 +234,35 @@ const meta = {
         },
       ],
     },
-    AFX9ct4gYywCbqPUJWaTz4JXS74RxxNPUMNzBMzNGD8c: {
+    G5K5cSdn15yLJa6NBmjLuuZzJ5YShSU14kc4vitHpeHz: {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Account',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AFX9ct4gYywCbqPUJWaTz4JXS74RxxNPUMNzBMzNGD8c',
+          typeBlueId: 'G5K5cSdn15yLJa6NBmjLuuZzJ5YShSU14kc4vitHpeHz',
           attributesAdded: [],
         },
       ],
     },
-    A2dveyQFp6dYJgigdRuZW3dsbdeiG2HzHnjaobAHJCvY: {
+    DVuSpdSQzjj36rN9Eemu7oReooPe1YaqARx7aanQDppy: {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Document',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A2dveyQFp6dYJgigdRuZW3dsbdeiG2HzHnjaobAHJCvY',
+          typeBlueId: 'DVuSpdSQzjj36rN9Eemu7oReooPe1YaqARx7aanQDppy',
           attributesAdded: [],
         },
       ],
     },
-    BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N: {
+    '6kUamSN8Yq4L46PRaKRVc2BnG6xN7HCpmyG2STW3hecZ': {
       status: 'dev',
       name: 'Linked Documents Permission Granted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BM9qSFkhY9CV4BwHFP6DrrB9VbFZhTfwxCeS8Kh96o5N',
+          typeBlueId: '6kUamSN8Yq4L46PRaKRVc2BnG6xN7HCpmyG2STW3hecZ',
           attributesAdded: [],
         },
       ],
@@ -305,13 +300,13 @@ const meta = {
         },
       ],
     },
-    '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7': {
+    '4XzYndDA5v9yL5LYBq1Jk7ibA5x2ebN8vbSbEAoRrjaG': {
       status: 'dev',
       name: 'Linked Documents Permission Revoke Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6fTSbBwfj3zkin6EjGevF16QzokKa1xNXrDjdQwbDir7',
+          typeBlueId: '4XzYndDA5v9yL5LYBq1Jk7ibA5x2ebN8vbSbEAoRrjaG',
           attributesAdded: [],
         },
       ],
@@ -596,7 +591,7 @@ const meta = {
       name: 'Search Contract',
       versions: [
         {
-          repositoryVersionIndex: 3,
+          repositoryVersionIndex: 0,
           typeBlueId: '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx',
           attributesAdded: [],
         },
@@ -635,35 +630,35 @@ const meta = {
         },
       ],
     },
-    FZLsSeuoLTki2FpqYTr5nmqnAtKgTnmi18qNaTnRGBs6: {
-      status: 'stable',
+    y6JF5WHZjDq9PokMtHpqKhxbY7W6RQ41PBymPx7kjLz: {
+      status: 'dev',
       name: 'Single Document Permission Grant To Account',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FZLsSeuoLTki2FpqYTr5nmqnAtKgTnmi18qNaTnRGBs6',
+          typeBlueId: 'y6JF5WHZjDq9PokMtHpqKhxbY7W6RQ41PBymPx7kjLz',
           attributesAdded: [],
         },
       ],
     },
-    '6fEj6jD4eEVJwjH9Z2aQ9HsqdaCzbppfsYL2mFLx32YP': {
-      status: 'stable',
+    '3SQR9pgQoY8rE9XhSmDDbKdHwe7ZZDaX4hPkYirhjYmD': {
+      status: 'dev',
       name: 'Single Document Permission Grant To Document',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6fEj6jD4eEVJwjH9Z2aQ9HsqdaCzbppfsYL2mFLx32YP',
+          typeBlueId: '3SQR9pgQoY8rE9XhSmDDbKdHwe7ZZDaX4hPkYirhjYmD',
           attributesAdded: [],
         },
       ],
     },
-    '8XYzJ3BrgB5uoAWU5HvZ7Gej9RXNG5r52ccneLZxMAQd': {
-      status: 'stable',
+    BZPjcZmkuJpVFDYAZMexdG68KKFhgabnieBdG6DpHexR: {
+      status: 'dev',
       name: 'Single Document Permission Granted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8XYzJ3BrgB5uoAWU5HvZ7Gej9RXNG5r52ccneLZxMAQd',
+          typeBlueId: 'BZPjcZmkuJpVFDYAZMexdG68KKFhgabnieBdG6DpHexR',
           attributesAdded: [],
         },
       ],
@@ -701,13 +696,13 @@ const meta = {
         },
       ],
     },
-    E4R5PmrxAtCHsQtUKtwxMjXgE5qNJWuuziArDMATudfb: {
-      status: 'stable',
+    '53Kbf5fymxzBCJgf5BdCYCjCb6o5nWS1KWCzL8GkBF42': {
+      status: 'dev',
       name: 'Single Document Permission Revoke Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E4R5PmrxAtCHsQtUKtwxMjXgE5qNJWuuziArDMATudfb',
+          typeBlueId: '53Kbf5fymxzBCJgf5BdCYCjCb6o5nWS1KWCzL8GkBF42',
           attributesAdded: [],
         },
       ],
@@ -795,13 +790,8 @@ const meta = {
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GZPDibWTKDudqwPufgmNo7AHMLwY5FGeeHFx3EkegzLj',
-          attributesAdded: [],
-        },
-        {
-          repositoryVersionIndex: 4,
           typeBlueId: '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6',
-          attributesAdded: ['/epoch', '/document'],
+          attributesAdded: [],
         },
       ],
     },
@@ -849,13 +839,13 @@ const meta = {
         },
       ],
     },
-    A73AVDR9GWAshFUC2Me2qXNns2HECzbadtsgp5zxCjGx: {
-      status: 'stable',
+    '2ARFPC2YDspfN86MT897RDzGUtEEw1B7Lbdvy8Z3ZFQx': {
+      status: 'dev',
       name: 'Worker Agency Permission Grant',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A73AVDR9GWAshFUC2Me2qXNns2HECzbadtsgp5zxCjGx',
+          typeBlueId: '2ARFPC2YDspfN86MT897RDzGUtEEw1B7Lbdvy8Z3ZFQx',
           attributesAdded: [],
         },
       ],
@@ -871,13 +861,13 @@ const meta = {
         },
       ],
     },
-    '8GNc7HmPKXmURG12ZBY8iXYEP7CTfBLsfXvpLcQ6EMwS': {
-      status: 'stable',
+    '75TkZZcfwGMnD8ReqQg1KhBkdEV9U637TS5bGSv9n2Xn': {
+      status: 'dev',
       name: 'Worker Agency Permission Granted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8GNc7HmPKXmURG12ZBY8iXYEP7CTfBLsfXvpLcQ6EMwS',
+          typeBlueId: '75TkZZcfwGMnD8ReqQg1KhBkdEV9U637TS5bGSv9n2Xn',
           attributesAdded: [],
         },
       ],
@@ -915,13 +905,13 @@ const meta = {
         },
       ],
     },
-    ABJ7njZbfTXNP173SCoMytQtVfMXCEwPdFhSJ7F3Vbx9: {
-      status: 'stable',
+    '5sLtygzt8kxjzDwJLjVcSZj5GCXFyUXKuXxF8UFjfmm7': {
+      status: 'dev',
       name: 'Worker Agency Permission Revoke Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ABJ7njZbfTXNP173SCoMytQtVfMXCEwPdFhSJ7F3Vbx9',
+          typeBlueId: '5sLtygzt8kxjzDwJLjVcSZj5GCXFyUXKuXxF8UFjfmm7',
           attributesAdded: [],
         },
       ],
