@@ -6,7 +6,7 @@ import paynote from './packages/paynote/index';
 import { name, repositoryVersions } from './meta';
 import type { BlueRepository } from '@blue-labs/repository-contract';
 
-export const repository = {
+export const repository: BlueRepository = {
   name,
   repositoryVersions,
   packages: {
@@ -16,6 +16,6 @@ export const repository = {
     myos: myos,
     paynote: paynote,
   },
-} as const satisfies BlueRepository;
+};
 
 export default repository;
