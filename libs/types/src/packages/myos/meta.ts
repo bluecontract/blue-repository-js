@@ -410,6 +410,17 @@ const meta = {
         },
       ],
     },
+    '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb': {
+      status: 'dev',
+      name: 'MyOS Balance Account',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb',
+          attributesAdded: [],
+        },
+      ],
+    },
     '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9': {
       status: 'stable',
       name: 'MyOS Document Session Reference',
@@ -498,6 +509,17 @@ const meta = {
         },
       ],
     },
+    '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ': {
+      status: 'dev',
+      name: 'MyOS User',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ',
+          attributesAdded: [],
+        },
+      ],
+    },
     '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': {
       status: 'stable',
       name: 'MyOS Worker Agency',
@@ -549,6 +571,72 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD: {
+      status: 'dev',
+      name: 'Payment Initiation Accepted',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD',
+          attributesAdded: [],
+        },
+      ],
+    },
+    EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU: {
+      status: 'dev',
+      name: 'Payment Initiation Rejected',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r': {
+      status: 'dev',
+      name: 'Payment Initiation Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GSfJG3nahccpaqXHWBXes8RvNDENL17bz2yXdvn1suRY: {
+      status: 'dev',
+      name: 'Payment Target Preparation Failed',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'GSfJG3nahccpaqXHWBXes8RvNDENL17bz2yXdvn1suRY',
+          attributesAdded: [],
+        },
+      ],
+    },
+    EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5: {
+      status: 'dev',
+      name: 'Payment Target Preparation Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '3KTJBMse6aFELjAG6iJa9bo5XdJagLzQZdPkee64iVW1': {
+      status: 'dev',
+      name: 'Payment Target Prepared',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: '3KTJBMse6aFELjAG6iJa9bo5XdJagLzQZdPkee64iVW1',
           attributesAdded: [],
         },
       ],
