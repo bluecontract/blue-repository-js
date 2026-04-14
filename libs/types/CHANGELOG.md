@@ -1,3 +1,9 @@
+## 0.25.1 (2026-04-14)
+
+### 🩹 Fixes
+
+- **types:** avoid TS7056 in generated repository export ([#121](https://github.com/bluecontract/blue-repository-js/pull/121))
+
 ## 0.25.0 (2026-04-01)
 
 ### 🚀 Features
