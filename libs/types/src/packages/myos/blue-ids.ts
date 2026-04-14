@@ -57,6 +57,7 @@ export const blueIds = {
   'MyOS/MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
   'MyOS/MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
   'MyOS/MyOS Agent Event': 'GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR',
+  'MyOS/MyOS Balance Account': '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb',
   'MyOS/MyOS Document Session Reference':
     '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9',
   'MyOS/MyOS Package': '5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr',
@@ -68,12 +69,25 @@ export const blueIds = {
   'MyOS/MyOS Timeline': '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk',
   'MyOS/MyOS Timeline Channel': 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
   'MyOS/MyOS Timeline Entry': 'Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ',
+  'MyOS/MyOS User': '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ',
   'MyOS/MyOS Worker Agency': '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1',
   'MyOS/Participant': 'phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ',
   'MyOS/Participant Activated': 'EQhLKv5EAcFriegGYEP7ykwbjeyzFoaTxeizzuTd8VDq',
   'MyOS/Participant Activation State':
     'CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB',
   'MyOS/Participant Resolved': 'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
+  'MyOS/Payment Initiation Accepted':
+    'GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD',
+  'MyOS/Payment Initiation Rejected':
+    'EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU',
+  'MyOS/Payment Initiation Requested':
+    '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r',
+  'MyOS/Payment Target Preparation Failed':
+    'GSfJG3nahccpaqXHWBXes8RvNDENL17bz2yXdvn1suRY',
+  'MyOS/Payment Target Preparation Requested':
+    'EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5',
+  'MyOS/Payment Target Prepared':
+    '3KTJBMse6aFELjAG6iJa9bo5XdJagLzQZdPkee64iVW1',
   'MyOS/Principal Actor': '5GB8C22LsZGR3kkEmP5j5Zye7SR173ojzzUK99tUcoP',
   'MyOS/Removing Participant Requested':
     '8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD',

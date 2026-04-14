@@ -35,6 +35,7 @@ import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSAgentSchema } from './MyOSAgent';
 import { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 import { MyOSAgentEventSchema } from './MyOSAgentEvent';
+import { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 import { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 import { MyOSPackageSchema } from './MyOSPackage';
 import { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
@@ -43,11 +44,18 @@ import { MyOSSessionLinkSchema } from './MyOSSessionLink';
 import { MyOSTimelineSchema } from './MyOSTimeline';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 import { MyOSTimelineEntrySchema } from './MyOSTimelineEntry';
+import { MyOSUserSchema } from './MyOSUser';
 import { MyOSWorkerAgencySchema } from './MyOSWorkerAgency';
 import { ParticipantSchema } from './Participant';
 import { ParticipantActivatedSchema } from './ParticipantActivated';
 import { ParticipantActivationStateSchema } from './ParticipantActivationState';
 import { ParticipantResolvedSchema } from './ParticipantResolved';
+import { PaymentInitiationAcceptedSchema } from './PaymentInitiationAccepted';
+import { PaymentInitiationRejectedSchema } from './PaymentInitiationRejected';
+import { PaymentInitiationRequestedSchema } from './PaymentInitiationRequested';
+import { PaymentTargetPreparationFailedSchema } from './PaymentTargetPreparationFailed';
+import { PaymentTargetPreparationRequestedSchema } from './PaymentTargetPreparationRequested';
+import { PaymentTargetPreparedSchema } from './PaymentTargetPrepared';
 import { PrincipalActorSchema } from './PrincipalActor';
 import { RemovingParticipantRequestedSchema } from './RemovingParticipantRequested';
 import { RemovingParticipantRespondedSchema } from './RemovingParticipantResponded';
@@ -123,6 +131,7 @@ export { MyOSAdminBaseSchema } from './MyOSAdminBase';
 export { MyOSAgentSchema } from './MyOSAgent';
 export { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 export { MyOSAgentEventSchema } from './MyOSAgentEvent';
+export { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 export { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 export { MyOSPackageSchema } from './MyOSPackage';
 export { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
@@ -131,11 +140,18 @@ export { MyOSSessionLinkSchema } from './MyOSSessionLink';
 export { MyOSTimelineSchema } from './MyOSTimeline';
 export { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 export { MyOSTimelineEntrySchema } from './MyOSTimelineEntry';
+export { MyOSUserSchema } from './MyOSUser';
 export { MyOSWorkerAgencySchema } from './MyOSWorkerAgency';
 export { ParticipantSchema } from './Participant';
 export { ParticipantActivatedSchema } from './ParticipantActivated';
 export { ParticipantActivationStateSchema } from './ParticipantActivationState';
 export { ParticipantResolvedSchema } from './ParticipantResolved';
+export { PaymentInitiationAcceptedSchema } from './PaymentInitiationAccepted';
+export { PaymentInitiationRejectedSchema } from './PaymentInitiationRejected';
+export { PaymentInitiationRequestedSchema } from './PaymentInitiationRequested';
+export { PaymentTargetPreparationFailedSchema } from './PaymentTargetPreparationFailed';
+export { PaymentTargetPreparationRequestedSchema } from './PaymentTargetPreparationRequested';
+export { PaymentTargetPreparedSchema } from './PaymentTargetPrepared';
 export { PrincipalActorSchema } from './PrincipalActor';
 export { RemovingParticipantRequestedSchema } from './RemovingParticipantRequested';
 export { RemovingParticipantRespondedSchema } from './RemovingParticipantResponded';
@@ -229,6 +245,7 @@ export const schemas = {
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': MyOSAgentSchema,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': MyOSAgentChannelSchema,
   GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR: MyOSAgentEventSchema,
+  '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb': MyOSBalanceAccountSchema,
   '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9':
     MyOSDocumentSessionReferenceSchema,
   '5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr': MyOSPackageSchema,
@@ -239,12 +256,22 @@ export const schemas = {
   '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk': MyOSTimelineSchema,
   HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs: MyOSTimelineChannelSchema,
   Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ: MyOSTimelineEntrySchema,
+  '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ': MyOSUserSchema,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgencySchema,
   phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ: ParticipantSchema,
   EQhLKv5EAcFriegGYEP7ykwbjeyzFoaTxeizzuTd8VDq: ParticipantActivatedSchema,
   CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB:
     ParticipantActivationStateSchema,
   EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz: ParticipantResolvedSchema,
+  GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD: PaymentInitiationAcceptedSchema,
+  EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU: PaymentInitiationRejectedSchema,
+  '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r':
+    PaymentInitiationRequestedSchema,
+  GSfJG3nahccpaqXHWBXes8RvNDENL17bz2yXdvn1suRY:
+    PaymentTargetPreparationFailedSchema,
+  EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5:
+    PaymentTargetPreparationRequestedSchema,
+  '3KTJBMse6aFELjAG6iJa9bo5XdJagLzQZdPkee64iVW1': PaymentTargetPreparedSchema,
   '5GB8C22LsZGR3kkEmP5j5Zye7SR173ojzzUK99tUcoP': PrincipalActorSchema,
   '8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD':
     RemovingParticipantRequestedSchema,
