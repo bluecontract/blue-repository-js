@@ -162,7 +162,7 @@ const meta = {
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 0,
+          repositoryVersionIndex: 4,
           typeBlueId: '2wqxtvdRHf7Z3qNNKnycnu3SBVqw4BenK8et9xeT7n86',
           attributesAdded: [],
         },
@@ -294,7 +294,7 @@ const meta = {
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 0,
+          repositoryVersionIndex: 4,
           typeBlueId: '9dJ3W19EJ8MqtTJR8oidX8eRrkeB8xNQyqeTZeqBHZjo',
           attributesAdded: [],
         },
@@ -393,7 +393,7 @@ const meta = {
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 0,
+          repositoryVersionIndex: 4,
           typeBlueId: 'Dh2LtUN8Umc478kif8VWsNM1FrL5usVEeevv2GKnKP4F',
           attributesAdded: [],
         },
@@ -470,7 +470,7 @@ const meta = {
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 0,
+          repositoryVersionIndex: 4,
           typeBlueId: 'E22dx85oPtGX2DPRaKJzHVizREJmioNCJPurgBcHHhJ',
           attributesAdded: [],
         },
