@@ -168,13 +168,13 @@ const meta = {
         },
       ],
     },
-    '6DEqU222KQbg7YGb1EjF7ySj7x42oLCamLGf65V2gaZk': {
+    Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z: {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '6DEqU222KQbg7YGb1EjF7ySj7x42oLCamLGf65V2gaZk',
+          repositoryVersionIndex: 6,
+          typeBlueId: 'Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z',
           attributesAdded: [],
         },
       ],
@@ -377,13 +377,13 @@ const meta = {
         },
       ],
     },
-    '7MnGGMg6HX7UAB1bGhTL7QfNAWKFeHH8SpnEkWgaWQtV': {
+    GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb: {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '7MnGGMg6HX7UAB1bGhTL7QfNAWKFeHH8SpnEkWgaWQtV',
+          repositoryVersionIndex: 6,
+          typeBlueId: 'GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb',
           attributesAdded: [],
         },
       ],
@@ -707,13 +707,13 @@ const meta = {
         },
       ],
     },
-    '4kfReXTiPbwiptkS6DdriPwQubRnbiDm9ghWM9zkrQon': {
+    DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu: {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: '4kfReXTiPbwiptkS6DdriPwQubRnbiDm9ghWM9zkrQon',
+          repositoryVersionIndex: 6,
+          typeBlueId: 'DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu',
           attributesAdded: [],
         },
       ],
@@ -806,13 +806,13 @@ const meta = {
         },
       ],
     },
-    EziPPW12NGQo8Brd9C2FpM46BSSn2RhRX6PJbzKonFCE: {
+    DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 5,
-          typeBlueId: 'EziPPW12NGQo8Brd9C2FpM46BSSn2RhRX6PJbzKonFCE',
+          repositoryVersionIndex: 6,
+          typeBlueId: 'DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8',
           attributesAdded: [],
         },
       ],

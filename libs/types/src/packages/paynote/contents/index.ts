@@ -14,7 +14,6 @@ import { FinalAmountResolutionRequested } from './FinalAmountResolutionRequested
 import { ReserveFundsAndCaptureImmediatelyRequested } from './ReserveFundsAndCaptureImmediatelyRequested';
 import { ReserveFundsRequested } from './ReserveFundsRequested';
 import { PaymentMandateAttached } from './PaymentMandateAttached';
-import { PayNote } from './PayNote';
 import { CancelBeforeCompletionRequested } from './CancelBeforeCompletionRequested';
 import { SettlementAmountSpecified } from './SettlementAmountSpecified';
 import { PaymentCancellationDeclined } from './PaymentCancellationDeclined';
@@ -26,7 +25,6 @@ import { StartCardTransactionMonitoringRequested } from './StartCardTransactionM
 import { ReservationReleaseDeclined } from './ReservationReleaseDeclined';
 import { FundsSecuringFailed } from './FundsSecuringFailed';
 import { PaymentMandateSpendSettled } from './PaymentMandateSpendSettled';
-import { CardTransactionPayNote } from './CardTransactionPayNote';
 import { TransactionIdentified } from './TransactionIdentified';
 import { PaymentMandateSpendAuthorizationResponded } from './PaymentMandateSpendAuthorizationResponded';
 import { LinkedPayNoteStarted } from './LinkedPayNoteStarted';
@@ -34,7 +32,6 @@ import { PayNoteAcceptedByClient } from './PayNoteAcceptedByClient';
 import { CompletePaymentRequested } from './CompletePaymentRequested';
 import { PaymentCompleted } from './PaymentCompleted';
 import { PaymentMandateSpendAuthorizationRequested } from './PaymentMandateSpendAuthorizationRequested';
-import { MerchantToCustomerPayNote } from './MerchantToCustomerPayNote';
 import { FinalAmountResolved } from './FinalAmountResolved';
 import { PaymentReversedAfterCompletion } from './PaymentReversedAfterCompletion';
 import { LinkedPayNoteStartFailed } from './LinkedPayNoteStartFailed';
@@ -71,7 +68,9 @@ import { ChildPayNoteIssuanceDeclined } from './ChildPayNoteIssuanceDeclined';
 import { PaymentCompletionLockChangeFailed } from './PaymentCompletionLockChangeFailed';
 import { CardTransactionCaptureLockRequested } from './CardTransactionCaptureLockRequested';
 import { CardTransactionCaptureUnlocked } from './CardTransactionCaptureUnlocked';
+import { PayNote } from './PayNote';
 import { PayNoteCancellationRequested } from './PayNoteCancellationRequested';
+import { PayNoteDelivery } from './PayNoteDelivery';
 import { CaptureFundsRequested } from './CaptureFundsRequested';
 import { FundsSecured } from './FundsSecured';
 import { PaymentReversalLockChangeFailed } from './PaymentReversalLockChangeFailed';
@@ -81,7 +80,6 @@ import { TransactionDetailsUpdateLocked } from './TransactionDetailsUpdateLocked
 import { TransactionDetailsUpdated } from './TransactionDetailsUpdated';
 import { PaymentCancellationFailed } from './PaymentCancellationFailed';
 import { CardTransactionCaptureLocked } from './CardTransactionCaptureLocked';
-import { PayNoteDelivery } from './PayNoteDelivery';
 import { ReverseCardChargeAndCaptureImmediatelyRequested } from './ReverseCardChargeAndCaptureImmediatelyRequested';
 import { ChildPayNoteIssued } from './ChildPayNoteIssued';
 import { ReverseCardChargeRequested } from './ReverseCardChargeRequested';
@@ -93,6 +91,7 @@ import { TransactionStatus } from './TransactionStatus';
 import { CaptureDeclined } from './CaptureDeclined';
 import { PayNoteCancellationRejected } from './PayNoteCancellationRejected';
 import { CardTransactionMonitoringStarted } from './CardTransactionMonitoringStarted';
+import { MerchantToCustomerPayNote } from './MerchantToCustomerPayNote';
 import { PayNoteDeliveryFailed } from './PayNoteDeliveryFailed';
 import { PaymentMandateAttachmentFailed } from './PaymentMandateAttachmentFailed';
 import { ReservationReleaseRequested } from './ReservationReleaseRequested';
@@ -101,6 +100,7 @@ import { CardTransactionDetails } from './CardTransactionDetails';
 import { PaymentReversalUnlocked } from './PaymentReversalUnlocked';
 import { PayNoteApproved } from './PayNoteApproved';
 import { CardChargeCompleted } from './CardChargeCompleted';
+import { CardTransactionPayNote } from './CardTransactionPayNote';
 import { TransactionDetailsUpdateRejected } from './TransactionDetailsUpdateRejected';
 
 export { TransactionInitiated } from './TransactionInitiated';
@@ -119,7 +119,6 @@ export { FinalAmountResolutionRequested } from './FinalAmountResolutionRequested
 export { ReserveFundsAndCaptureImmediatelyRequested } from './ReserveFundsAndCaptureImmediatelyRequested';
 export { ReserveFundsRequested } from './ReserveFundsRequested';
 export { PaymentMandateAttached } from './PaymentMandateAttached';
-export { PayNote } from './PayNote';
 export { CancelBeforeCompletionRequested } from './CancelBeforeCompletionRequested';
 export { SettlementAmountSpecified } from './SettlementAmountSpecified';
 export { PaymentCancellationDeclined } from './PaymentCancellationDeclined';
@@ -131,7 +130,6 @@ export { StartCardTransactionMonitoringRequested } from './StartCardTransactionM
 export { ReservationReleaseDeclined } from './ReservationReleaseDeclined';
 export { FundsSecuringFailed } from './FundsSecuringFailed';
 export { PaymentMandateSpendSettled } from './PaymentMandateSpendSettled';
-export { CardTransactionPayNote } from './CardTransactionPayNote';
 export { TransactionIdentified } from './TransactionIdentified';
 export { PaymentMandateSpendAuthorizationResponded } from './PaymentMandateSpendAuthorizationResponded';
 export { LinkedPayNoteStarted } from './LinkedPayNoteStarted';
@@ -139,7 +137,6 @@ export { PayNoteAcceptedByClient } from './PayNoteAcceptedByClient';
 export { CompletePaymentRequested } from './CompletePaymentRequested';
 export { PaymentCompleted } from './PaymentCompleted';
 export { PaymentMandateSpendAuthorizationRequested } from './PaymentMandateSpendAuthorizationRequested';
-export { MerchantToCustomerPayNote } from './MerchantToCustomerPayNote';
 export { FinalAmountResolved } from './FinalAmountResolved';
 export { PaymentReversedAfterCompletion } from './PaymentReversedAfterCompletion';
 export { LinkedPayNoteStartFailed } from './LinkedPayNoteStartFailed';
@@ -176,7 +173,9 @@ export { ChildPayNoteIssuanceDeclined } from './ChildPayNoteIssuanceDeclined';
 export { PaymentCompletionLockChangeFailed } from './PaymentCompletionLockChangeFailed';
 export { CardTransactionCaptureLockRequested } from './CardTransactionCaptureLockRequested';
 export { CardTransactionCaptureUnlocked } from './CardTransactionCaptureUnlocked';
+export { PayNote } from './PayNote';
 export { PayNoteCancellationRequested } from './PayNoteCancellationRequested';
+export { PayNoteDelivery } from './PayNoteDelivery';
 export { CaptureFundsRequested } from './CaptureFundsRequested';
 export { FundsSecured } from './FundsSecured';
 export { PaymentReversalLockChangeFailed } from './PaymentReversalLockChangeFailed';
@@ -186,7 +185,6 @@ export { TransactionDetailsUpdateLocked } from './TransactionDetailsUpdateLocked
 export { TransactionDetailsUpdated } from './TransactionDetailsUpdated';
 export { PaymentCancellationFailed } from './PaymentCancellationFailed';
 export { CardTransactionCaptureLocked } from './CardTransactionCaptureLocked';
-export { PayNoteDelivery } from './PayNoteDelivery';
 export { ReverseCardChargeAndCaptureImmediatelyRequested } from './ReverseCardChargeAndCaptureImmediatelyRequested';
 export { ChildPayNoteIssued } from './ChildPayNoteIssued';
 export { ReverseCardChargeRequested } from './ReverseCardChargeRequested';
@@ -198,6 +196,7 @@ export { TransactionStatus } from './TransactionStatus';
 export { CaptureDeclined } from './CaptureDeclined';
 export { PayNoteCancellationRejected } from './PayNoteCancellationRejected';
 export { CardTransactionMonitoringStarted } from './CardTransactionMonitoringStarted';
+export { MerchantToCustomerPayNote } from './MerchantToCustomerPayNote';
 export { PayNoteDeliveryFailed } from './PayNoteDeliveryFailed';
 export { PaymentMandateAttachmentFailed } from './PaymentMandateAttachmentFailed';
 export { ReservationReleaseRequested } from './ReservationReleaseRequested';
@@ -206,6 +205,7 @@ export { CardTransactionDetails } from './CardTransactionDetails';
 export { PaymentReversalUnlocked } from './PaymentReversalUnlocked';
 export { PayNoteApproved } from './PayNoteApproved';
 export { CardChargeCompleted } from './CardChargeCompleted';
+export { CardTransactionPayNote } from './CardTransactionPayNote';
 export { TransactionDetailsUpdateRejected } from './TransactionDetailsUpdateRejected';
 
 export const contents = {
@@ -233,7 +233,6 @@ export const contents = {
     ReserveFundsAndCaptureImmediatelyRequested,
   '3Y3TYmSfZMmPYKmF5i3eR8YcVPNP5Sic2bZN8xRnvMWm': ReserveFundsRequested,
   '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7': PaymentMandateAttached,
-  '4kfReXTiPbwiptkS6DdriPwQubRnbiDm9ghWM9zkrQon': PayNote,
   '4oyKGB49m8MuAFdxgHZauwhDFvdBgziHnb9CCGeKNqEc':
     CancelBeforeCompletionRequested,
   '4pVAdZo93FHRRkAkshqCZW4pUvvV1ccczJZ2Lu4jkD1D': SettlementAmountSpecified,
@@ -248,7 +247,6 @@ export const contents = {
   '653sCbbRH3RiKhGjmVxh6wFVs4rn54wJRKDXRMKBZtjA': ReservationReleaseDeclined,
   '67BprL1WeSSpJDKawcnaNC6VF2vz68JQ5qrVfi37biBA': FundsSecuringFailed,
   '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v': PaymentMandateSpendSettled,
-  '6DEqU222KQbg7YGb1EjF7ySj7x42oLCamLGf65V2gaZk': CardTransactionPayNote,
   '6gQWKeJHZEbBo13Vvyf2nsdg7TA9kLSYdzMaJgySPG7V': TransactionIdentified,
   '6UFd89oNox3PCpeVFaaCXwbGDp3k3Qc56e4DktnK3F8P':
     PaymentMandateSpendAuthorizationResponded,
@@ -258,7 +256,6 @@ export const contents = {
   '72eeCYvygiChLj529TP1HKKBaYyB5TBa15Y3cn3JGsak': PaymentCompleted,
   '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF':
     PaymentMandateSpendAuthorizationRequested,
-  '7MnGGMg6HX7UAB1bGhTL7QfNAWKFeHH8SpnEkWgaWQtV': MerchantToCustomerPayNote,
   '7oKW3Fozo1KUPgxo4PdF6jJJQ83z11mBbpZF2xCENGDX': FinalAmountResolved,
   '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo':
     PaymentReversedAfterCompletion,
@@ -307,7 +304,9 @@ export const contents = {
   DhxGBjA6Gow9E6ZKZ49SdziihHZ4PeXxFNatSqmesKZu:
     CardTransactionCaptureLockRequested,
   DiowRXdCBw83YCn5Pwcg2YABaVQZ1p4Wk1L9DJfajqp5: CardTransactionCaptureUnlocked,
+  DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu: PayNote,
   DqiwzsNLbHCh6PaDF6wy6ZqBSF5JV5nAQSKFKTPRTbGB: PayNoteCancellationRequested,
+  DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8: PayNoteDelivery,
   DvxKVEFsDmgA1hcBDfh7t42NgTRLaxXjCrB48DufP3i3: CaptureFundsRequested,
   DvxVaiLspGpmTY5SiZDb85sJLcvzBCoJCjCHSAmVFbGT: FundsSecured,
   DYUz7mcFpgQdRNwwsSSBdDe3CYtfRbAeAUiEv6tuLDhy: PaymentReversalLockChangeFailed,
@@ -317,7 +316,6 @@ export const contents = {
   EsyQj8xWb1Kf2ESjDq1UR6PK2hx4fpnyGiEWJ14ttC8a: TransactionDetailsUpdated,
   ExfGtqDcSr7RkvA7XzdV5B1MVc7CPacHpanjGBtGhjyk: PaymentCancellationFailed,
   EXoQHkYEDQdhGd3AeXBryzxmCTXsvTjXTfZmjwuqqbHt: CardTransactionCaptureLocked,
-  EziPPW12NGQo8Brd9C2FpM46BSSn2RhRX6PJbzKonFCE: PayNoteDelivery,
   F4gfZeY8P8dkfwNSbEfq7xQ8axiHdfqgzGQQr3HLDyzC:
     ReverseCardChargeAndCaptureImmediatelyRequested,
   FAZCx2s5eq9zPV64LdHNFYbjjxD3ci1ZqyTcQk5WhXAs: ChildPayNoteIssued,
@@ -331,6 +329,7 @@ export const contents = {
   GaYDPA7TTqWuoxioCYFPeyqomjH4g3YDtFxHv9yLRQ8A: PayNoteCancellationRejected,
   GcKHzzeu5qehMo1JLGN7X5tSzrHM2iJoscN2qmkB5RPm:
     CardTransactionMonitoringStarted,
+  GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb: MerchantToCustomerPayNote,
   GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: PayNoteDeliveryFailed,
   GTwsVrbVb31sMub1vvU2KyY2nA8ekKWYDoqNAB1m4Vh2: PaymentMandateAttachmentFailed,
   GU8nkSnUuMs6632rHQyBndRtjDcMB9ZSbgwkGYcfGt97: ReservationReleaseRequested,
@@ -339,5 +338,6 @@ export const contents = {
   HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu: PaymentReversalUnlocked,
   HQTUxErobqhSuhWo9DAC1WwaG9oYdjfmdKprGtV4TeEK: PayNoteApproved,
   Hrz9kzWXTXDfK2XEkRJtHqdKzHaQq919NcRL8QMAvEEQ: CardChargeCompleted,
+  Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z: CardTransactionPayNote,
   tF2fYwf8b7HwErSWAduxWXoV8v7pMQPHVCsSZhZzhmT: TransactionDetailsUpdateRejected,
 } as const;
