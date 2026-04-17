@@ -1256,6 +1256,19 @@ export const PayNote = {
       steps: {
         items: [
           {
+            code: {
+              type: {
+                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+              },
+              value:
+                "const fallback = (current, value) =>\n  current === null || current === undefined ? value : current;\n\nreturn {\n  status: fallback(document('/status'), 'Pending'),\n  amountFinalResolved: fallback(document('/amount/finalResolved'), 0),\n  amountSecured: fallback(document('/amount/secured'), 0),\n  amountCompleted: fallback(document('/amount/completed'), 0),\n  amountReversed: fallback(document('/amount/reversed'), 0),\n  completionLocked: fallback(document('/controls/completionLocked'), false),\n  reversalLocked: fallback(document('/controls/reversalLocked'), false),\n  transactionDetailsUpdateLocked: fallback(\n    document('/controls/transactionDetailsUpdateLocked'),\n    false\n  ),\n  transactionDetails: fallback(document('/transactionDetails'), {}),\n};\n",
+            },
+            name: 'Resolve PayNote Runtime Defaults',
+            type: {
+              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
+            },
+          },
+          {
             changeset: {
               items: [
                 {
@@ -1275,7 +1288,8 @@ export const PayNote = {
                     type: {
                       blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: 'Pending',
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].status}",
                   },
                 },
                 {
@@ -1293,9 +1307,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: 0,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].amountFinalResolved}",
                   },
                 },
                 {
@@ -1313,9 +1328,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: 0,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].amountSecured}",
                   },
                 },
                 {
@@ -1333,9 +1349,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: 0,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].amountCompleted}",
                   },
                 },
                 {
@@ -1353,9 +1370,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: 0,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].amountReversed}",
                   },
                 },
                 {
@@ -1373,9 +1391,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: false,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].completionLocked}",
                   },
                 },
                 {
@@ -1393,9 +1412,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: false,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].reversalLocked}",
                   },
                 },
                 {
@@ -1413,9 +1433,10 @@ export const PayNote = {
                   },
                   val: {
                     type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
                     },
-                    value: false,
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].transactionDetailsUpdateLocked}",
                   },
                 },
                 {
@@ -1431,7 +1452,13 @@ export const PayNote = {
                     },
                     value: '/transactionDetails',
                   },
-                  val: {},
+                  val: {
+                    type: {
+                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    },
+                    value:
+                      "${steps['Resolve PayNote Runtime Defaults'].transactionDetails}",
+                  },
                 },
               ],
             },

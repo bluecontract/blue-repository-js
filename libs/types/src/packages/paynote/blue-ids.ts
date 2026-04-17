@@ -28,7 +28,7 @@ export const blueIds = {
   'PayNote/Card Transaction Monitoring Stopped':
     'BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr',
   'PayNote/Card Transaction PayNote':
-    '6DEqU222KQbg7YGb1EjF7ySj7x42oLCamLGf65V2gaZk',
+    'Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z',
   'PayNote/Card Transaction Report':
     '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X',
   'PayNote/Child PayNote Issuance Declined':
@@ -63,7 +63,7 @@ export const blueIds = {
   'PayNote/Linked PayNote Started':
     '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q',
   'PayNote/Merchant To Customer PayNote':
-    '7MnGGMg6HX7UAB1bGhTL7QfNAWKFeHH8SpnEkWgaWQtV',
+    'GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb',
   'PayNote/Payee Assignment Confirmed':
     '34v52X6nVj6muiD11W8nohLFn7DjT2RiaRYwjRNpq4v3',
   'PayNote/Payee Assignment Rejected':
@@ -120,7 +120,7 @@ export const blueIds = {
     'HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu',
   'PayNote/Payment Reversed After Completion':
     '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo',
-  'PayNote/PayNote': '4kfReXTiPbwiptkS6DdriPwQubRnbiDm9ghWM9zkrQon',
+  'PayNote/PayNote': 'DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu',
   'PayNote/PayNote Acceptance Requested':
     '3kyFUyupzb49ZoxVHnUhVe4XAbEN1Hpy8zN9Dx75GNyc',
   'PayNote/PayNote Accepted': 'CfSpcRXYk2qwu1vNs9LL8rycBsxzL2R4LGyDdrDzwCjh',
@@ -134,7 +134,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y',
   'PayNote/PayNote Client Decision Discarded':
     'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
-  'PayNote/PayNote Delivery': 'EziPPW12NGQo8Brd9C2FpM46BSSn2RhRX6PJbzKonFCE',
+  'PayNote/PayNote Delivery': 'DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8',
   'PayNote/PayNote Delivery Failed':
     'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
   'PayNote/PayNote Rejected': 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',

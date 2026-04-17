@@ -684,7 +684,7 @@ export const PayNoteDelivery = {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: '4kfReXTiPbwiptkS6DdriPwQubRnbiDm9ghWM9zkrQon',
+        blueId: 'DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu',
       },
     },
     type: {
