@@ -388,6 +388,17 @@ const meta = {
         },
       ],
     },
+    ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN: {
+      status: 'dev',
+      name: 'MyOS Agent Actor',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: 'ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN',
+          attributesAdded: [],
+        },
+      ],
+    },
     '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': {
       status: 'stable',
       name: 'MyOS Agent Channel',
@@ -454,6 +465,17 @@ const meta = {
         },
       ],
     },
+    '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw': {
+      status: 'dev',
+      name: 'MyOS Principal Actor',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw',
+          attributesAdded: [],
+        },
+      ],
+    },
     CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: {
       status: 'stable',
       name: 'MyOS Session Interaction',
@@ -498,13 +520,18 @@ const meta = {
         },
       ],
     },
-    Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ: {
+    F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ: {
       status: 'stable',
       name: 'MyOS Timeline Entry',
       versions: [
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ',
+          attributesAdded: [],
+        },
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: 'F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ',
           attributesAdded: [],
         },
       ],

@@ -36,6 +36,50 @@ const meta = {
         },
       ],
     },
+    EeWqP1Tw9WXo5nq8kx93FuTw9HRqpv34mbWFjH72nR7o: {
+      status: 'dev',
+      name: 'Actor Policy',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: 'EeWqP1Tw9WXo5nq8kx93FuTw9HRqpv34mbWFjH72nR7o',
+          attributesAdded: [],
+        },
+      ],
+    },
+    FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB: {
+      status: 'dev',
+      name: 'Agent Actor',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: 'FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB',
+          attributesAdded: [],
+        },
+      ],
+    },
+    HCTXeqkKBbVbsa3WfN2bPFSX7mthbtZ6ZhzByf9VDJJs: {
+      status: 'dev',
+      name: 'API Call',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: 'HCTXeqkKBbVbsa3WfN2bPFSX7mthbtZ6ZhzByf9VDJJs',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '8UVUYbhSVBAx7BAupgjSeeFuuyrgdFcGbaXBitEZD9B1': {
+      status: 'dev',
+      name: 'Browser Session',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: '8UVUYbhSVBAx7BAupgjSeeFuuyrgdFcGbaXBitEZD9B1',
+          attributesAdded: [],
+        },
+      ],
+    },
     Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc: {
       status: 'dev',
       name: 'Change Operation',
@@ -190,6 +234,17 @@ const meta = {
         },
       ],
     },
+    '7jZFAkmthHTeg6zAu5kBCDHswd2J5HNVnYPo9y435sin': {
+      status: 'dev',
+      name: 'Document Request',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: '7jZFAkmthHTeg6zAu5kBCDHswd2J5HNVnYPo9y435sin',
+          attributesAdded: [],
+        },
+      ],
+    },
     JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm: {
       status: 'dev',
       name: 'Document Section',
@@ -296,6 +351,17 @@ const meta = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq',
+          attributesAdded: [],
+        },
+      ],
+    },
+    FqipbF4UATjCRTqovGdREPAoaxj59NECb9xtnWRW1SWi: {
+      status: 'dev',
+      name: 'Principal Actor',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: 'FqipbF4UATjCRTqovGdREPAoaxj59NECb9xtnWRW1SWi',
           attributesAdded: [],
         },
       ],
@@ -410,6 +476,17 @@ const meta = {
         },
       ],
     },
+    '6ADCPYXkusrp4dL1FC126L2ccuzYfqGdBf1w6EXh2hnC': {
+      status: 'dev',
+      name: 'Source',
+      versions: [
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: '6ADCPYXkusrp4dL1FC126L2ccuzYfqGdBf1w6EXh2hnC',
+          attributesAdded: [],
+        },
+      ],
+    },
     C48nKSkbxraMSv4gCiGYVHKFjmtK12k63Yasn95zknWE: {
       status: 'stable',
       name: 'Status Change',
@@ -487,7 +564,7 @@ const meta = {
         },
       ],
     },
-    EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn: {
+    '29tcU8MkrV3KL5HqH6DHJDPPfJMheoqwiKJsaHnrp9hT': {
       status: 'stable',
       name: 'Timeline Entry',
       versions: [
@@ -495,6 +572,11 @@ const meta = {
           repositoryVersionIndex: 0,
           typeBlueId: 'EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn',
           attributesAdded: [],
+        },
+        {
+          repositoryVersionIndex: 7,
+          typeBlueId: '29tcU8MkrV3KL5HqH6DHJDPPfJMheoqwiKJsaHnrp9hT',
+          attributesAdded: ['/source'],
         },
       ],
     },

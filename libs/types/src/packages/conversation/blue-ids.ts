@@ -4,6 +4,11 @@ export const blueIds = {
   'Conversation/Accept Change Workflow':
     'Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV',
   'Conversation/Actor': 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
+  'Conversation/Actor Policy': 'EeWqP1Tw9WXo5nq8kx93FuTw9HRqpv34mbWFjH72nR7o',
+  'Conversation/Agent Actor': 'FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB',
+  'Conversation/API Call': 'HCTXeqkKBbVbsa3WfN2bPFSX7mthbtZ6ZhzByf9VDJJs',
+  'Conversation/Browser Session':
+    '8UVUYbhSVBAx7BAupgjSeeFuuyrgdFcGbaXBitEZD9B1',
   'Conversation/Change Operation':
     'Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc',
   'Conversation/Change Request': 'FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG',
@@ -30,6 +35,8 @@ export const blueIds = {
     '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
   'Conversation/Document Bootstrap Responded':
     '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv',
+  'Conversation/Document Request':
+    '7jZFAkmthHTeg6zAu5kBCDHswd2J5HNVnYPo9y435sin',
   'Conversation/Document Section':
     'JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm',
   'Conversation/Document Section Change Entry':
@@ -48,6 +55,8 @@ export const blueIds = {
   'Conversation/Operation': 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
   'Conversation/Operation Request':
     'HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq',
+  'Conversation/Principal Actor':
+    'FqipbF4UATjCRTqovGdREPAoaxj59NECb9xtnWRW1SWi',
   'Conversation/Propose Change Operation':
     'BeiedmmcKDhStxDnnQqUaXDJLofWSnqX6CazKTvVpfbW',
   'Conversation/Propose Change Workflow':
@@ -66,6 +75,7 @@ export const blueIds = {
     'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
   'Conversation/Sequential Workflow Step':
     'HYsLiqsqk7t98d5fK6YxKEQGeqBaHNVjM4rRNdxK4yUW',
+  'Conversation/Source': '6ADCPYXkusrp4dL1FC126L2ccuzYfqGdBf1w6EXh2hnC',
   'Conversation/Status Change': 'C48nKSkbxraMSv4gCiGYVHKFjmtK12k63Yasn95zknWE',
   'Conversation/Status Completed':
     'EhPFqrRCreg7StsZEcW8fRQ1FQVdqYSsMSis2CHHJZ1G',
@@ -76,7 +86,7 @@ export const blueIds = {
   'Conversation/Timeline': '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa',
   'Conversation/Timeline Channel':
     'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
-  'Conversation/Timeline Entry': 'EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn',
+  'Conversation/Timeline Entry': '29tcU8MkrV3KL5HqH6DHJDPPfJMheoqwiKJsaHnrp9hT',
   'Conversation/Trigger Event': '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
   'Conversation/Update Document':
     'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',

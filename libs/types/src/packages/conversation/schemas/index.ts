@@ -1,6 +1,10 @@
 import { AcceptChangeOperationSchema } from './AcceptChangeOperation';
 import { AcceptChangeWorkflowSchema } from './AcceptChangeWorkflow';
 import { ActorSchema } from './Actor';
+import { ActorPolicySchema } from './ActorPolicy';
+import { AgentActorSchema } from './AgentActor';
+import { APICallSchema } from './APICall';
+import { BrowserSessionSchema } from './BrowserSession';
 import { ChangeOperationSchema } from './ChangeOperation';
 import { ChangeRequestSchema } from './ChangeRequest';
 import { ChangeWorkflowSchema } from './ChangeWorkflow';
@@ -15,6 +19,7 @@ import { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 import { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 import { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
 import { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
+import { DocumentRequestSchema } from './DocumentRequest';
 import { DocumentSectionSchema } from './DocumentSection';
 import { DocumentSectionChangeEntrySchema } from './DocumentSectionChangeEntry';
 import { DocumentSectionChangesSchema } from './DocumentSectionChanges';
@@ -25,6 +30,7 @@ import { JavaScriptCodeSchema } from './JavaScriptCode';
 import { LifecycleEventSchema } from './LifecycleEvent';
 import { OperationSchema } from './Operation';
 import { OperationRequestSchema } from './OperationRequest';
+import { PrincipalActorSchema } from './PrincipalActor';
 import { ProposeChangeOperationSchema } from './ProposeChangeOperation';
 import { ProposeChangeWorkflowSchema } from './ProposeChangeWorkflow';
 import { ProposedChangeInvalidSchema } from './ProposedChangeInvalid';
@@ -35,6 +41,7 @@ import { ResponseSchema } from './Response';
 import { SequentialWorkflowSchema } from './SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from './SequentialWorkflowOperation';
 import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
+import { SourceSchema } from './Source';
 import { StatusChangeSchema } from './StatusChange';
 import { StatusCompletedSchema } from './StatusCompleted';
 import { StatusFailedSchema } from './StatusFailed';
@@ -49,6 +56,10 @@ import { UpdateDocumentSchema } from './UpdateDocument';
 export { AcceptChangeOperationSchema } from './AcceptChangeOperation';
 export { AcceptChangeWorkflowSchema } from './AcceptChangeWorkflow';
 export { ActorSchema } from './Actor';
+export { ActorPolicySchema } from './ActorPolicy';
+export { AgentActorSchema } from './AgentActor';
+export { APICallSchema } from './APICall';
+export { BrowserSessionSchema } from './BrowserSession';
 export { ChangeOperationSchema } from './ChangeOperation';
 export { ChangeRequestSchema } from './ChangeRequest';
 export { ChangeWorkflowSchema } from './ChangeWorkflow';
@@ -63,6 +74,7 @@ export { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 export { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 export { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
 export { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
+export { DocumentRequestSchema } from './DocumentRequest';
 export { DocumentSectionSchema } from './DocumentSection';
 export { DocumentSectionChangeEntrySchema } from './DocumentSectionChangeEntry';
 export { DocumentSectionChangesSchema } from './DocumentSectionChanges';
@@ -73,6 +85,7 @@ export { JavaScriptCodeSchema } from './JavaScriptCode';
 export { LifecycleEventSchema } from './LifecycleEvent';
 export { OperationSchema } from './Operation';
 export { OperationRequestSchema } from './OperationRequest';
+export { PrincipalActorSchema } from './PrincipalActor';
 export { ProposeChangeOperationSchema } from './ProposeChangeOperation';
 export { ProposeChangeWorkflowSchema } from './ProposeChangeWorkflow';
 export { ProposedChangeInvalidSchema } from './ProposedChangeInvalid';
@@ -83,6 +96,7 @@ export { ResponseSchema } from './Response';
 export { SequentialWorkflowSchema } from './SequentialWorkflow';
 export { SequentialWorkflowOperationSchema } from './SequentialWorkflowOperation';
 export { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
+export { SourceSchema } from './Source';
 export { StatusChangeSchema } from './StatusChange';
 export { StatusCompletedSchema } from './StatusCompleted';
 export { StatusFailedSchema } from './StatusFailed';
@@ -98,6 +112,10 @@ export const schemas = {
   APk3siB8g9pvWLG3qyqtGjRNNGB7RDpFWQtG4epj5Avv: AcceptChangeOperationSchema,
   Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV: AcceptChangeWorkflowSchema,
   CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ: ActorSchema,
+  EeWqP1Tw9WXo5nq8kx93FuTw9HRqpv34mbWFjH72nR7o: ActorPolicySchema,
+  FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB: AgentActorSchema,
+  HCTXeqkKBbVbsa3WfN2bPFSX7mthbtZ6ZhzByf9VDJJs: APICallSchema,
+  '8UVUYbhSVBAx7BAupgjSeeFuuyrgdFcGbaXBitEZD9B1': BrowserSessionSchema,
   Hd5uuFjqxyw5mrFPgJf2mcatij8ddtmGAMJu9ij5K1tc: ChangeOperationSchema,
   FW7iYkzig4fepCdwfCdgNJw4DQ1fKwnAUf3YpjgfTPmG: ChangeRequestSchema,
   '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9': ChangeWorkflowSchema,
@@ -115,6 +133,7 @@ export const schemas = {
     DocumentBootstrapRequestedSchema,
   '1Ucfmhtb9xjvyLxLKSVkqXZjVVuAdXyzdjb11QG11Uv':
     DocumentBootstrapRespondedSchema,
+  '7jZFAkmthHTeg6zAu5kBCDHswd2J5HNVnYPo9y435sin': DocumentRequestSchema,
   JBfupL6eyZsqj7CYbReFaS5ga784SLT8aP8r9W64vbLm: DocumentSectionSchema,
   '9xv7YjqsSn7W7P8rnUhSpdWGfSrgL4Jt3cmiACJT5VQs':
     DocumentSectionChangeEntrySchema,
@@ -127,6 +146,7 @@ export const schemas = {
   '5YZEAtUaHhNfnVnwtSsyBnBakpcSwdL75UcgtrtnqeYn': LifecycleEventSchema,
   BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC: OperationSchema,
   HM4Ku4LFcjC5MxnhPMRwQ8w3BbHmJKKZfHTTzsd4jbJq: OperationRequestSchema,
+  FqipbF4UATjCRTqovGdREPAoaxj59NECb9xtnWRW1SWi: PrincipalActorSchema,
   BeiedmmcKDhStxDnnQqUaXDJLofWSnqX6CazKTvVpfbW: ProposeChangeOperationSchema,
   '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo': ProposeChangeWorkflowSchema,
   EbGQYtYR9UNAxcn7auCCujXmnz6DWxMpqVcgYSsKE85M: ProposedChangeInvalidSchema,
@@ -138,6 +158,7 @@ export const schemas = {
   CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv:
     SequentialWorkflowOperationSchema,
   HYsLiqsqk7t98d5fK6YxKEQGeqBaHNVjM4rRNdxK4yUW: SequentialWorkflowStepSchema,
+  '6ADCPYXkusrp4dL1FC126L2ccuzYfqGdBf1w6EXh2hnC': SourceSchema,
   C48nKSkbxraMSv4gCiGYVHKFjmtK12k63Yasn95zknWE: StatusChangeSchema,
   EhPFqrRCreg7StsZEcW8fRQ1FQVdqYSsMSis2CHHJZ1G: StatusCompletedSchema,
   Guus3kHbivXvy5G93yhiKs3Pc8sxCc4XVvSo7CqLsQEc: StatusFailedSchema,
@@ -145,7 +166,7 @@ export const schemas = {
   ETAPjwZVyYEfPUWvXkCWAuybBhYUayg4hKC2V7mLXmsv: StatusPendingSchema,
   '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa': TimelineSchema,
   EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH: TimelineChannelSchema,
-  EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn: TimelineEntrySchema,
+  '29tcU8MkrV3KL5HqH6DHJDPPfJMheoqwiKJsaHnrp9hT': TimelineEntrySchema,
   '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2': TriggerEventSchema,
   FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa: UpdateDocumentSchema,
 } as const;

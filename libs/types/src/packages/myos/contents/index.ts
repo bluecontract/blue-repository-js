@@ -35,6 +35,7 @@ import { MyOSUser } from './MyOSUser';
 import { WorkerAgencyPermissionGranted } from './WorkerAgencyPermissionGranted';
 import { LinkedDocumentsPermissionSet } from './LinkedDocumentsPermissionSet';
 import { DocumentAnchors } from './DocumentAnchors';
+import { MyOSPrincipalActor } from './MyOSPrincipalActor';
 import { MyOSAgent } from './MyOSAgent';
 import { AnchorAutomationTemplate } from './AnchorAutomationTemplate';
 import { MyOSDocumentSessionReference } from './MyOSDocumentSessionReference';
@@ -69,14 +70,15 @@ import { SingleDocumentPermissionSet } from './SingleDocumentPermissionSet';
 import { LinkedDocumentsPermissionGrantToDocument } from './LinkedDocumentsPermissionGrantToDocument';
 import { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
 import { PaymentInitiationRejected } from './PaymentInitiationRejected';
+import { MyOSAgentActor } from './MyOSAgentActor';
 import { PaymentTargetPreparationRequested } from './PaymentTargetPreparationRequested';
 import { LinkedDocumentsPermissionInvalid } from './LinkedDocumentsPermissionInvalid';
 import { ParticipantActivated } from './ParticipantActivated';
 import { ParticipantResolved } from './ParticipantResolved';
 import { CallOperationRequested } from './CallOperationRequested';
+import { MyOSTimelineEntry } from './MyOSTimelineEntry';
 import { AllParticipantsReady } from './AllParticipantsReady';
 import { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
-import { MyOSTimelineEntry } from './MyOSTimelineEntry';
 import { WorkerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected';
 import { LinkedDocumentsPermissionGrantToAccount } from './LinkedDocumentsPermissionGrantToAccount';
 import { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
@@ -131,6 +133,7 @@ export { MyOSUser } from './MyOSUser';
 export { WorkerAgencyPermissionGranted } from './WorkerAgencyPermissionGranted';
 export { LinkedDocumentsPermissionSet } from './LinkedDocumentsPermissionSet';
 export { DocumentAnchors } from './DocumentAnchors';
+export { MyOSPrincipalActor } from './MyOSPrincipalActor';
 export { MyOSAgent } from './MyOSAgent';
 export { AnchorAutomationTemplate } from './AnchorAutomationTemplate';
 export { MyOSDocumentSessionReference } from './MyOSDocumentSessionReference';
@@ -165,14 +168,15 @@ export { SingleDocumentPermissionSet } from './SingleDocumentPermissionSet';
 export { LinkedDocumentsPermissionGrantToDocument } from './LinkedDocumentsPermissionGrantToDocument';
 export { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
 export { PaymentInitiationRejected } from './PaymentInitiationRejected';
+export { MyOSAgentActor } from './MyOSAgentActor';
 export { PaymentTargetPreparationRequested } from './PaymentTargetPreparationRequested';
 export { LinkedDocumentsPermissionInvalid } from './LinkedDocumentsPermissionInvalid';
 export { ParticipantActivated } from './ParticipantActivated';
 export { ParticipantResolved } from './ParticipantResolved';
 export { CallOperationRequested } from './CallOperationRequested';
+export { MyOSTimelineEntry } from './MyOSTimelineEntry';
 export { AllParticipantsReady } from './AllParticipantsReady';
 export { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
-export { MyOSTimelineEntry } from './MyOSTimelineEntry';
 export { WorkerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected';
 export { LinkedDocumentsPermissionGrantToAccount } from './LinkedDocumentsPermissionGrantToAccount';
 export { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
@@ -239,6 +243,7 @@ export const contents = {
   '75TkZZcfwGMnD8ReqQg1KhBkdEV9U637TS5bGSv9n2Xn': WorkerAgencyPermissionGranted,
   '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5': LinkedDocumentsPermissionSet,
   '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH': DocumentAnchors,
+  '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw': MyOSPrincipalActor,
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': MyOSAgent,
   '8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga': AnchorAutomationTemplate,
   '8jCUCDoX7LUd5UaktCD7i4xxEheCWFQDkTbbNTEdYVZ9': MyOSDocumentSessionReference,
@@ -282,6 +287,7 @@ export const contents = {
   Ef7EvcR5He11JtgBFtswYTHEfUKnTHmFysMTo3ZsoQby:
     SingleDocumentPermissionGrantRequested,
   EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU: PaymentInitiationRejected,
+  ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN: MyOSAgentActor,
   EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5:
     PaymentTargetPreparationRequested,
   ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU:
@@ -289,9 +295,9 @@ export const contents = {
   EQhLKv5EAcFriegGYEP7ykwbjeyzFoaTxeizzuTd8VDq: ParticipantActivated,
   EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz: ParticipantResolved,
   EVX6nBdHdVEBH9Gbthpd2eqpxaxS4bb9wM55QNdZmcBy: CallOperationRequested,
+  F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ: MyOSTimelineEntry,
   Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: AllParticipantsReady,
   FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p: TargetDocumentSessionStarted,
-  Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ: MyOSTimelineEntry,
   G1cW5kjZdJrmCwfrwiHXQcJfYfFAY5jEFZNA7u7pFdtY: WorkerAgencyPermissionRejected,
   G5K5cSdn15yLJa6NBmjLuuZzJ5YShSU14kc4vitHpeHz:
     LinkedDocumentsPermissionGrantToAccount,

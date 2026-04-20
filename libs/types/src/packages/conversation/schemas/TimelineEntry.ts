@@ -13,6 +13,7 @@ export const TimelineEntrySchema = withTypeBlueId(
     message: blueNodeField().optional(),
     name: z.string().optional(),
     prevEntry: blueNodeField().optional(),
+    source: blueNodeField().optional(),
     timeline: TimelineSchema.optional(),
     timestamp: z.number().optional(),
   })

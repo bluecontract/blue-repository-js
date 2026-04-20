@@ -16,6 +16,10 @@ export const TimelineEntry = {
     description:
       'The previous entry in the timeline; omitted for the first entry.',
   },
+  source: {
+    description:
+      'Optional delivery mechanism describing how the request reached the timeline provider, typically using a Conversation/Source specialization.',
+  },
   timeline: {
     description: 'The timeline this entry belongs to.',
     type: {
