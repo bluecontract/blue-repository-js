@@ -33,12 +33,14 @@ import { LinkedDocumentsPermissionValidatedSchema } from './LinkedDocumentsPermi
 import { LLMAgentSchema } from './LLMAgent';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSAgentSchema } from './MyOSAgent';
+import { MyOSAgentActorSchema } from './MyOSAgentActor';
 import { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 import { MyOSAgentEventSchema } from './MyOSAgentEvent';
 import { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 import { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 import { MyOSPackageSchema } from './MyOSPackage';
 import { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
+import { MyOSPrincipalActorSchema } from './MyOSPrincipalActor';
 import { MyOSSessionInteractionSchema } from './MyOSSessionInteraction';
 import { MyOSSessionLinkSchema } from './MyOSSessionLink';
 import { MyOSTimelineSchema } from './MyOSTimeline';
@@ -129,12 +131,14 @@ export { LinkedDocumentsPermissionValidatedSchema } from './LinkedDocumentsPermi
 export { LLMAgentSchema } from './LLMAgent';
 export { MyOSAdminBaseSchema } from './MyOSAdminBase';
 export { MyOSAgentSchema } from './MyOSAgent';
+export { MyOSAgentActorSchema } from './MyOSAgentActor';
 export { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 export { MyOSAgentEventSchema } from './MyOSAgentEvent';
 export { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 export { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 export { MyOSPackageSchema } from './MyOSPackage';
 export { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
+export { MyOSPrincipalActorSchema } from './MyOSPrincipalActor';
 export { MyOSSessionInteractionSchema } from './MyOSSessionInteraction';
 export { MyOSSessionLinkSchema } from './MyOSSessionLink';
 export { MyOSTimelineSchema } from './MyOSTimeline';
@@ -243,6 +247,7 @@ export const schemas = {
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
   Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj: MyOSAdminBaseSchema,
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': MyOSAgentSchema,
+  ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN: MyOSAgentActorSchema,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': MyOSAgentChannelSchema,
   GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR: MyOSAgentEventSchema,
   '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb': MyOSBalanceAccountSchema,
@@ -251,11 +256,12 @@ export const schemas = {
   '5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr': MyOSPackageSchema,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU':
     MyOSParticipantsOrchestrationSchema,
+  '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw': MyOSPrincipalActorSchema,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: MyOSSessionInteractionSchema,
   d1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB: MyOSSessionLinkSchema,
   '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk': MyOSTimelineSchema,
   HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs: MyOSTimelineChannelSchema,
-  Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ: MyOSTimelineEntrySchema,
+  F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ: MyOSTimelineEntrySchema,
   '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ': MyOSUserSchema,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgencySchema,
   phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ: ParticipantSchema,

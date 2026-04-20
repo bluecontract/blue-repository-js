@@ -55,6 +55,7 @@ export const blueIds = {
   'MyOS/LLM Agent': 'DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf',
   'MyOS/MyOS Admin Base': 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
   'MyOS/MyOS Agent': '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
+  'MyOS/MyOS Agent Actor': 'ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN',
   'MyOS/MyOS Agent Channel': '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW',
   'MyOS/MyOS Agent Event': 'GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR',
   'MyOS/MyOS Balance Account': '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb',
@@ -63,12 +64,13 @@ export const blueIds = {
   'MyOS/MyOS Package': '5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr',
   'MyOS/MyOS Participants Orchestration':
     '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
+  'MyOS/MyOS Principal Actor': '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw',
   'MyOS/MyOS Session Interaction':
     'CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H',
   'MyOS/MyOS Session Link': 'd1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB',
   'MyOS/MyOS Timeline': '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk',
   'MyOS/MyOS Timeline Channel': 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
-  'MyOS/MyOS Timeline Entry': 'Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ',
+  'MyOS/MyOS Timeline Entry': 'F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ',
   'MyOS/MyOS User': '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ',
   'MyOS/MyOS Worker Agency': '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1',
   'MyOS/Participant': 'phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ',

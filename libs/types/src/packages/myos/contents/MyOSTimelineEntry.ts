@@ -8,6 +8,6 @@ export const MyOSTimelineEntry = {
     },
   },
   type: {
-    blueId: 'EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn',
+    blueId: '29tcU8MkrV3KL5HqH6DHJDPPfJMheoqwiKJsaHnrp9hT',
   },
 } as const;
