@@ -2294,6 +2294,19 @@ export const PayNote = {
         blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
       },
     },
+    search: {
+      kv: {
+        kind: {
+          type: {
+            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          },
+          value: '/kind',
+        },
+      },
+      type: {
+        blueId: '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx',
+      },
+    },
     secureFunds: {
       channel: {
         type: {
@@ -2652,6 +2665,12 @@ export const PayNote = {
   },
   description:
     'A document attached to exactly one transaction that governs what should happen with that transaction.\n',
+  kind: {
+    type: {
+      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    },
+    value: 'PayNote',
+  },
   name: 'PayNote',
   payNoteInitialStateDescription: {
     details: {
