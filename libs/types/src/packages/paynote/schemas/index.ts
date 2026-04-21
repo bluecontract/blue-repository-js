@@ -233,7 +233,7 @@ export const schemas = {
     CardTransactionMonitoringStartedSchema,
   BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr:
     CardTransactionMonitoringStoppedSchema,
-  Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z: CardTransactionPayNoteSchema,
+  DuNTUpW45aVkLzXh5C63KiiAk5SGCWGTdE3M5iKRBab4: CardTransactionPayNoteSchema,
   '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X': CardTransactionReportSchema,
   DFKVw43E36kimqj64FyiiVxE9yNuB22SETFx5M4WAi9m:
     ChildPayNoteIssuanceDeclinedSchema,
@@ -260,7 +260,8 @@ export const schemas = {
   BQioEtRPYv2fWVryRsSYQc1Vnp9eyX3CYDrNY1hEy1Ye:
     LinkedPayNoteStartRespondedSchema,
   '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q': LinkedPayNoteStartedSchema,
-  GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb: MerchantToCustomerPayNoteSchema,
+  '85z8zJij5hoyZSVXHbHKUcyrMPKUAXQ9QnFyVrtGegJ1':
+    MerchantToCustomerPayNoteSchema,
   '34v52X6nVj6muiD11W8nohLFn7DjT2RiaRYwjRNpq4v3':
     PayeeAssignmentConfirmedSchema,
   CNFxs2PfxjDh7HNCaehyxNJ8zAdLbmgTcH12rU8VA7yi: PayeeAssignmentRejectedSchema,
@@ -306,7 +307,7 @@ export const schemas = {
   HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu: PaymentReversalUnlockedSchema,
   '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo':
     PaymentReversedAfterCompletionSchema,
-  DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu: PayNoteSchema,
+  '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9': PayNoteSchema,
   '3kyFUyupzb49ZoxVHnUhVe4XAbEN1Hpy8zN9Dx75GNyc':
     PayNoteAcceptanceRequestedSchema,
   CfSpcRXYk2qwu1vNs9LL8rycBsxzL2R4LGyDdrDzwCjh: PayNoteAcceptedSchema,
@@ -319,7 +320,7 @@ export const schemas = {
   '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y': PayNoteCancelledSchema,
   Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j:
     PayNoteClientDecisionDiscardedSchema,
-  DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8: PayNoteDeliverySchema,
+  FPsSzcPnRKzYdvXvzqSZ44dBPsTuGkbHwF47CEHt8EjH: PayNoteDeliverySchema,
   GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y: PayNoteDeliveryFailedSchema,
   AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe: PayNoteRejectedSchema,
   EGRRGwNnReqfQQhKnML28DWz9MvvC3B5JgbBrCUxrZ3G: PayNoteRejectedByClientSchema,

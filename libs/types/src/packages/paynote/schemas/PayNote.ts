@@ -7,6 +7,7 @@ import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialW
 import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
 import { ChannelSchema } from '../../core/schemas/Channel';
 import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
+import { SearchContractSchema } from '../../myos/schemas/SearchContract';
 
 export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
   z.object({
@@ -101,6 +102,7 @@ export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
         reverseAfterCompletion: OperationSchema.optional(),
         reverseAfterCompletionImpl:
           SequentialWorkflowOperationSchema.optional(),
+        search: SearchContractSchema.optional(),
         secureFunds: OperationSchema.optional(),
         secureFundsImpl: SequentialWorkflowOperationSchema.optional(),
         unlockPaymentCompletion: OperationSchema.optional(),
@@ -122,6 +124,7 @@ export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
       .optional(),
     currency: CurrencySchema.optional(),
     description: z.string().optional(),
+    kind: z.string().optional(),
     name: z.string().optional(),
     payNoteInitialStateDescription: z
       .object({

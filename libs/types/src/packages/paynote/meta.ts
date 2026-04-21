@@ -168,13 +168,13 @@ const meta = {
         },
       ],
     },
-    Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z: {
+    DuNTUpW45aVkLzXh5C63KiiAk5SGCWGTdE3M5iKRBab4: {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 6,
-          typeBlueId: 'Ja5fvEx8oyx8GSLUdAhtB4gi4qUGtnJYGJsGxQ86q3z',
+          repositoryVersionIndex: 8,
+          typeBlueId: 'DuNTUpW45aVkLzXh5C63KiiAk5SGCWGTdE3M5iKRBab4',
           attributesAdded: [],
         },
       ],
@@ -377,13 +377,13 @@ const meta = {
         },
       ],
     },
-    GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb: {
+    '85z8zJij5hoyZSVXHbHKUcyrMPKUAXQ9QnFyVrtGegJ1': {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 6,
-          typeBlueId: 'GRyCc29p1fQLpKARkjKNwTqt5zffv37rBsaE7RTjABtb',
+          repositoryVersionIndex: 8,
+          typeBlueId: '85z8zJij5hoyZSVXHbHKUcyrMPKUAXQ9QnFyVrtGegJ1',
           attributesAdded: [],
         },
       ],
@@ -707,13 +707,13 @@ const meta = {
         },
       ],
     },
-    DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu: {
+    '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9': {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 6,
-          typeBlueId: 'DJ6q5W2JcVYR8NpZ6CTZoMNZ9P8TaiLXkwWwyeTjg2Uu',
+          repositoryVersionIndex: 8,
+          typeBlueId: '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9',
           attributesAdded: [],
         },
       ],
@@ -806,13 +806,13 @@ const meta = {
         },
       ],
     },
-    DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8: {
+    FPsSzcPnRKzYdvXvzqSZ44dBPsTuGkbHwF47CEHt8EjH: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 6,
-          typeBlueId: 'DuqP4xc5kdpFREraHi3HEwX4f4jZt8mpzARbWjELnJn8',
+          repositoryVersionIndex: 8,
+          typeBlueId: 'FPsSzcPnRKzYdvXvzqSZ44dBPsTuGkbHwF47CEHt8EjH',
           attributesAdded: [],
         },
       ],
