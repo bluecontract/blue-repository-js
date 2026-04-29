@@ -111,7 +111,7 @@ export const LinkedDocumentsPermissionGrantToDocument = {
     description:
       'Map from anchor name to permissions that will be granted for documents linked to the base document via that anchor.',
     type: {
-      blueId: '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5',
+      blueId: '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9',
     },
   },
   name: 'Linked Documents Permission Grant To Document',
@@ -130,6 +130,6 @@ export const LinkedDocumentsPermissionGrantToDocument = {
     },
   },
   type: {
-    blueId: 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
+    blueId: '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB',
   },
 } as const;

@@ -3,7 +3,7 @@ export const SingleDocumentPermissionGrantResponded = {
   name: 'Single Document Permission Grant Responded',
   permissions: {
     type: {
-      blueId: 'DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54',
+      blueId: '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw',
     },
   },
   reason: {

@@ -4,7 +4,7 @@ export const WorkerAgencyPermission = {
     description:
       'The permissions granted to the worker for documents of the given type.',
     type: {
-      blueId: 'DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54',
+      blueId: '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw',
     },
   },
   workerType: {
