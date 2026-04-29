@@ -312,7 +312,7 @@ export const DocumentSessionBootstrap = {
                   },
                   val: {
                     type: {
-                      blueId: '56Lhu3Z2oF3kuYG41eZAK8TvgVtRNevkbRi4D31kKWZm',
+                      blueId: 'FDEV1Q9rBZwaponjfRmZ4HsUHRwPC4gvmeHiRqvkLAkY',
                     },
                   },
                 },
@@ -395,6 +395,6 @@ export const DocumentSessionBootstrap = {
     },
   },
   type: {
-    blueId: 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
+    blueId: '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB',
   },
 } as const;

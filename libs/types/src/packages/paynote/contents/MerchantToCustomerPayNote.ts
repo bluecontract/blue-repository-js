@@ -3,6 +3,6 @@ export const MerchantToCustomerPayNote = {
     'Base PayNote where payer is merchant and payee is customer. Bank sets/validates payer channel bindings.',
   name: 'Merchant To Customer PayNote',
   type: {
-    blueId: '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9',
+    blueId: 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
   },
 } as const;

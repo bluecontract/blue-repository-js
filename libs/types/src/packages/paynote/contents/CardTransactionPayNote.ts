@@ -8,6 +8,6 @@ export const CardTransactionPayNote = {
     'PayNote tied to a specific card transaction via ISO scheme identifiers.',
   name: 'Card Transaction PayNote',
   type: {
-    blueId: '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9',
+    blueId: 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
   },
 } as const;
