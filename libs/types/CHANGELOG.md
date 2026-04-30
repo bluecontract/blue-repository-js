@@ -1,3 +1,13 @@
+# 1.0.0 (2026-04-30)
+
+### 🚀 Features
+
+- ⚠️  use Language v4 BlueId calculation for repository types ([b676e53](https://github.com/bluecontract/blue-repository-js/commit/b676e53))
+
+### ⚠️  Breaking Changes
+
+- Repository type BlueIds now use Language v4 calculation semantics. ([b676e53](https://github.com/bluecontract/blue-repository-js/commit/b676e53))
+
 ## 0.30.0 (2026-04-21)
 
 ### 🚀 Features
