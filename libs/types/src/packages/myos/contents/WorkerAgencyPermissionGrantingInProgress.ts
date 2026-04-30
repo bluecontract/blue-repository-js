@@ -1,7 +1,7 @@
 export const WorkerAgencyPermissionGrantingInProgress = {
   allowedWorkerAgencyPermissions: {
     itemType: {
-      blueId: '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
+      blueId: 'EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS',
     },
     type: {
       blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',

@@ -8,7 +8,7 @@ const meta = {
       name: 'Cancel Before Completion Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '4oyKGB49m8MuAFdxgHZauwhDFvdBgziHnb9CCGeKNqEc',
           attributesAdded: [],
         },
@@ -168,13 +168,13 @@ const meta = {
         },
       ],
     },
-    DuNTUpW45aVkLzXh5C63KiiAk5SGCWGTdE3M5iKRBab4: {
+    '5D6BCVZDK6Q3RyigNTTNCEht3QJ4stSL5RsbYdfsPnMq': {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 8,
-          typeBlueId: 'DuNTUpW45aVkLzXh5C63KiiAk5SGCWGTdE3M5iKRBab4',
+          repositoryVersionIndex: 0,
+          typeBlueId: '5D6BCVZDK6Q3RyigNTTNCEht3QJ4stSL5RsbYdfsPnMq',
           attributesAdded: [],
         },
       ],
@@ -217,7 +217,7 @@ const meta = {
       name: 'Complete Payment Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '6yEDRKSGUFUhLMYf3anEytTjjV4PneHnzmqcwtFQ2m4T',
           attributesAdded: [],
         },
@@ -228,7 +228,7 @@ const meta = {
       name: 'Final Amount Resolution Rejected',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'E6zFPqoEmEdP9xFa1A9FDSsDJDb7BaR7tXakVD7RN8oH',
           attributesAdded: [],
         },
@@ -239,7 +239,7 @@ const meta = {
       name: 'Final Amount Resolution Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '3RkEm1oNz9wYn7CEvReyLduk71eU5e8psAeGyLXwZxr6',
           attributesAdded: [],
         },
@@ -250,7 +250,7 @@ const meta = {
       name: 'Final Amount Resolved',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '7oKW3Fozo1KUPgxo4PdF6jJJQ83z11mBbpZF2xCENGDX',
           attributesAdded: [],
         },
@@ -283,7 +283,7 @@ const meta = {
       name: 'Funds Secured',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DvxVaiLspGpmTY5SiZDb85sJLcvzBCoJCjCHSAmVFbGT',
           attributesAdded: [],
         },
@@ -294,7 +294,7 @@ const meta = {
       name: 'Funds Securing Declined',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '8PufMmsuBgpX5YCpiS7XuiCFUWDan1fN8c3TLLwh57gL',
           attributesAdded: [],
         },
@@ -305,7 +305,7 @@ const meta = {
       name: 'Funds Securing Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '67BprL1WeSSpJDKawcnaNC6VF2vz68JQ5qrVfi37biBA',
           attributesAdded: [],
         },
@@ -377,13 +377,13 @@ const meta = {
         },
       ],
     },
-    '85z8zJij5hoyZSVXHbHKUcyrMPKUAXQ9QnFyVrtGegJ1': {
+    '9svWm1o5mEHXiryFfhieELTRWENeUEsp1SivMWPmifXs': {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 8,
-          typeBlueId: '85z8zJij5hoyZSVXHbHKUcyrMPKUAXQ9QnFyVrtGegJ1',
+          repositoryVersionIndex: 0,
+          typeBlueId: '9svWm1o5mEHXiryFfhieELTRWENeUEsp1SivMWPmifXs',
           attributesAdded: [],
         },
       ],
@@ -393,7 +393,7 @@ const meta = {
       name: 'Payee Assignment Confirmed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '34v52X6nVj6muiD11W8nohLFn7DjT2RiaRYwjRNpq4v3',
           attributesAdded: [],
         },
@@ -404,7 +404,7 @@ const meta = {
       name: 'Payee Assignment Rejected',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'CNFxs2PfxjDh7HNCaehyxNJ8zAdLbmgTcH12rU8VA7yi',
           attributesAdded: [],
         },
@@ -426,7 +426,7 @@ const meta = {
       name: 'Payment Cancellation Declined',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '4witPJDjFKHNHyucepuDn9KXyUTTqZQTVsKHvcrVbGvY',
           attributesAdded: [],
         },
@@ -437,7 +437,7 @@ const meta = {
       name: 'Payment Cancellation Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'ExfGtqDcSr7RkvA7XzdV5B1MVc7CPacHpanjGBtGhjyk',
           attributesAdded: [],
         },
@@ -448,7 +448,7 @@ const meta = {
       name: 'Payment Cancelled Before Completion',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '9hvBQjesbYZPkZSaikm5avp7sFjTHsjRkQS2gas1u49p',
           attributesAdded: [],
         },
@@ -459,7 +459,7 @@ const meta = {
       name: 'Payment Completed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '72eeCYvygiChLj529TP1HKKBaYyB5TBa15Y3cn3JGsak',
           attributesAdded: [],
         },
@@ -470,7 +470,7 @@ const meta = {
       name: 'Payment Completion Declined',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '9AL8hghruGSH1ibFSYE8N7xoPLWLkktTCMFRkdoNsfTN',
           attributesAdded: [],
         },
@@ -481,7 +481,7 @@ const meta = {
       name: 'Payment Completion Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'An4JGf9zvSwEtYPJjZaWRnHaPXXvmyHg7oNLmJRKuxSV',
           attributesAdded: [],
         },
@@ -492,7 +492,7 @@ const meta = {
       name: 'Payment Completion Lock Change Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DG24you4q9reWwc93JPhCK21WoAtP8w9Y6HThyWmL41e',
           attributesAdded: [],
         },
@@ -503,7 +503,7 @@ const meta = {
       name: 'Payment Completion Lock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2aevbSbcGTCXR2n3Kftbsoo9yV4jHw9MFpbsRUDrMBDL',
           attributesAdded: [],
         },
@@ -514,7 +514,7 @@ const meta = {
       name: 'Payment Completion Locked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BKBtKSbxAxg1vyg2ZcghVANjaS4viMxUFY2un6TDPWbw',
           attributesAdded: [],
         },
@@ -525,7 +525,7 @@ const meta = {
       name: 'Payment Completion Unlock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BqygExH4phfPLuES2VLGpYL2gDenFFCcukPXzC1PmQtM',
           attributesAdded: [],
         },
@@ -536,19 +536,19 @@ const meta = {
       name: 'Payment Completion Unlocked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'BZxWkxpxVygutoo7KuBd7C63nZwYDuPXFhffXhZ319z9',
           attributesAdded: [],
         },
       ],
     },
-    BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr: {
+    BAcWp1auMPeb8VAkkswfKBAuLzP3RHuAVrhdHXc2KfUB: {
       status: 'dev',
       name: 'Payment Mandate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr',
+          typeBlueId: 'BAcWp1auMPeb8VAkkswfKBAuLzP3RHuAVrhdHXc2KfUB',
           attributesAdded: [],
         },
       ],
@@ -624,7 +624,7 @@ const meta = {
       name: 'Payment Reversal Declined',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Fk96a7GFSo2c3w7xWzaqnYhXXhLAAxj9Dwao8Hg9sdX',
           attributesAdded: [],
         },
@@ -635,7 +635,7 @@ const meta = {
       name: 'Payment Reversal Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FNZQJMETUdV57VFyWHGPdQVPSjWsvGj7u4n2oKYbgAaH',
           attributesAdded: [],
         },
@@ -646,7 +646,7 @@ const meta = {
       name: 'Payment Reversal Lock Change Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DYUz7mcFpgQdRNwwsSSBdDe3CYtfRbAeAUiEv6tuLDhy',
           attributesAdded: [],
         },
@@ -657,7 +657,7 @@ const meta = {
       name: 'Payment Reversal Lock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2qrvwZRrYWZvZZncsQHNbcQRXQDhoFQPcUsVxoT34L69',
           attributesAdded: [],
         },
@@ -668,7 +668,7 @@ const meta = {
       name: 'Payment Reversal Locked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '5fKdfddLui1nNGHq2hKyEZm8pR6vaN7BRcuomWJPj82Z',
           attributesAdded: [],
         },
@@ -679,7 +679,7 @@ const meta = {
       name: 'Payment Reversal Unlock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2xFW6D91Vx628zDGqPwyEPQAdUnmvm9G8Eki5pMeHWi4',
           attributesAdded: [],
         },
@@ -690,7 +690,7 @@ const meta = {
       name: 'Payment Reversal Unlocked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu',
           attributesAdded: [],
         },
@@ -701,19 +701,19 @@ const meta = {
       name: 'Payment Reversed After Completion',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo',
           attributesAdded: [],
         },
       ],
     },
-    '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9': {
+    emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w: {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 8,
-          typeBlueId: '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
           attributesAdded: [],
         },
       ],
@@ -723,7 +723,7 @@ const meta = {
       name: 'PayNote Acceptance Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '3kyFUyupzb49ZoxVHnUhVe4XAbEN1Hpy8zN9Dx75GNyc',
           attributesAdded: [],
         },
@@ -734,7 +734,7 @@ const meta = {
       name: 'PayNote Accepted',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'CfSpcRXYk2qwu1vNs9LL8rycBsxzL2R4LGyDdrDzwCjh',
           attributesAdded: [],
         },
@@ -806,13 +806,13 @@ const meta = {
         },
       ],
     },
-    FPsSzcPnRKzYdvXvzqSZ44dBPsTuGkbHwF47CEHt8EjH: {
+    '8NU68ai4UMAsKXphbR5sH8FythK6AE7eDUMEFzDEWMKR': {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 8,
-          typeBlueId: 'FPsSzcPnRKzYdvXvzqSZ44dBPsTuGkbHwF47CEHt8EjH',
+          repositoryVersionIndex: 0,
+          typeBlueId: '8NU68ai4UMAsKXphbR5sH8FythK6AE7eDUMEFzDEWMKR',
           attributesAdded: [],
         },
       ],
@@ -921,7 +921,7 @@ const meta = {
       name: 'Reverse After Completion Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'AG1PERDv5Vzxx3GTpeDKpEdMD3bPbMcijHndAPPdH8zc',
           attributesAdded: [],
         },
@@ -954,7 +954,7 @@ const meta = {
       name: 'Secure Funds Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '94M8FmSvYDJYBZwDvCuVYRQmYxD1Ek6cQSTMKEYYXbY6',
           attributesAdded: [],
         },
@@ -998,7 +998,7 @@ const meta = {
       name: 'Transaction Details Update Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '2dmAPySotyaWEPRLBYMiooqrqa3v42pyrHYvWskMMsMb',
           attributesAdded: [],
         },
@@ -1009,7 +1009,7 @@ const meta = {
       name: 'Transaction Details Update Lock Change Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '1j22qLMeLkRgtwiMHWXJNopKeBHdACS4vELfLxc1mnA',
           attributesAdded: [],
         },
@@ -1020,7 +1020,7 @@ const meta = {
       name: 'Transaction Details Update Lock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DFFyom6z2nbWmFyoi3DLngRJKgLXXF4inq7hmZX7eShJ',
           attributesAdded: [],
         },
@@ -1031,7 +1031,7 @@ const meta = {
       name: 'Transaction Details Update Locked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'eoi7pHyfDPfN9EkHcCNMekiZubrBa9EyywmnWrGUsGb',
           attributesAdded: [],
         },
@@ -1042,7 +1042,7 @@ const meta = {
       name: 'Transaction Details Update Rejected',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'tF2fYwf8b7HwErSWAduxWXoV8v7pMQPHVCsSZhZzhmT',
           attributesAdded: [],
         },
@@ -1053,7 +1053,7 @@ const meta = {
       name: 'Transaction Details Update Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '8tAYAsJki2mJb2qRu2H6dEYT2e3qQDqCFx2ugqtirLPU',
           attributesAdded: [],
         },
@@ -1064,7 +1064,7 @@ const meta = {
       name: 'Transaction Details Update Unlock Requested',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '9xTYCggegp9Ci5AGfDk9avuKax1FC5EvwADrXtpLSebR',
           attributesAdded: [],
         },
@@ -1075,7 +1075,7 @@ const meta = {
       name: 'Transaction Details Update Unlocked',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '8H1L8VGE9vXzbGgrv5RNkpYXngf43futPHQvnJ4SJD2B',
           attributesAdded: [],
         },
@@ -1086,7 +1086,7 @@ const meta = {
       name: 'Transaction Details Updated',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EsyQj8xWb1Kf2ESjDq1UR6PK2hx4fpnyGiEWJ14ttC8a',
           attributesAdded: [],
         },
@@ -1119,7 +1119,7 @@ const meta = {
       name: 'Transaction Initiated',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: '14UHCXtf9XLpi3Z3n4xbo1dmXRzfXnDEH23iVaechxzh',
           attributesAdded: [],
         },
@@ -1130,7 +1130,7 @@ const meta = {
       name: 'Transaction Initiation Failed',
       versions: [
         {
-          repositoryVersionIndex: 5,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FSfMCJpFDcB9zNfrd4gDhaDXpFhaSNToGbAdxSkw55V7',
           attributesAdded: [],
         },

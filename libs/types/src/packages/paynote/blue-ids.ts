@@ -28,7 +28,7 @@ export const blueIds = {
   'PayNote/Card Transaction Monitoring Stopped':
     'BYdTyyLphWQNKo1GBcnE1jQuaPyXexNnfzkXhMiRqmUr',
   'PayNote/Card Transaction PayNote':
-    'DuNTUpW45aVkLzXh5C63KiiAk5SGCWGTdE3M5iKRBab4',
+    '5D6BCVZDK6Q3RyigNTTNCEht3QJ4stSL5RsbYdfsPnMq',
   'PayNote/Card Transaction Report':
     '2ibvMNB7oxcpkYpxpag2HLC81sRs3PUBFtqjbqN7ET8X',
   'PayNote/Child PayNote Issuance Declined':
@@ -63,7 +63,7 @@ export const blueIds = {
   'PayNote/Linked PayNote Started':
     '6vnMMWuq6qJ1hxLqL1P2ckCqC9JtJF3QNW8s7rMTgZ4Q',
   'PayNote/Merchant To Customer PayNote':
-    '85z8zJij5hoyZSVXHbHKUcyrMPKUAXQ9QnFyVrtGegJ1',
+    '9svWm1o5mEHXiryFfhieELTRWENeUEsp1SivMWPmifXs',
   'PayNote/Payee Assignment Confirmed':
     '34v52X6nVj6muiD11W8nohLFn7DjT2RiaRYwjRNpq4v3',
   'PayNote/Payee Assignment Rejected':
@@ -91,7 +91,7 @@ export const blueIds = {
     'BqygExH4phfPLuES2VLGpYL2gDenFFCcukPXzC1PmQtM',
   'PayNote/Payment Completion Unlocked':
     'BZxWkxpxVygutoo7KuBd7C63nZwYDuPXFhffXhZ319z9',
-  'PayNote/Payment Mandate': 'BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr',
+  'PayNote/Payment Mandate': 'BAcWp1auMPeb8VAkkswfKBAuLzP3RHuAVrhdHXc2KfUB',
   'PayNote/Payment Mandate Attached':
     '49TYrHpnk2gepJiGduJP3afrnT2DJ6kDxqF4Y9M4C4t7',
   'PayNote/Payment Mandate Attachment Failed':
@@ -120,7 +120,7 @@ export const blueIds = {
     'HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu',
   'PayNote/Payment Reversed After Completion':
     '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo',
-  'PayNote/PayNote': '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9',
+  'PayNote/PayNote': 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
   'PayNote/PayNote Acceptance Requested':
     '3kyFUyupzb49ZoxVHnUhVe4XAbEN1Hpy8zN9Dx75GNyc',
   'PayNote/PayNote Accepted': 'CfSpcRXYk2qwu1vNs9LL8rycBsxzL2R4LGyDdrDzwCjh',
@@ -134,7 +134,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '96buyUXwhkak8xKoCR5nAW9tMuwzkevJFdELVvwKxR6Y',
   'PayNote/PayNote Client Decision Discarded':
     'Da7ZSyWgvMyTfwDVhAgCkGf3H8dwHhouHsHgNzg3DZ2j',
-  'PayNote/PayNote Delivery': 'FPsSzcPnRKzYdvXvzqSZ44dBPsTuGkbHwF47CEHt8EjH',
+  'PayNote/PayNote Delivery': '8NU68ai4UMAsKXphbR5sH8FythK6AE7eDUMEFzDEWMKR',
   'PayNote/PayNote Delivery Failed':
     'GtFG4Nt2fAamUZi9fSZNotab3BEUuv236LuPAcErVj5y',
   'PayNote/PayNote Rejected': 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',

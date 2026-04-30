@@ -19,7 +19,7 @@ const meta = {
       name: 'Document',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8',
           attributesAdded: [],
         },
@@ -30,7 +30,7 @@ const meta = {
       name: 'Document Anchor',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo',
           attributesAdded: [],
         },
@@ -41,7 +41,7 @@ const meta = {
       name: 'Document Anchors',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '3KRfhgbFdvyW9SGuKiq3WxWF9bHSATEb8tMso8Pykpre',
           attributesAdded: [],
         },
@@ -63,7 +63,7 @@ const meta = {
       name: 'Payment',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'DoDF7Hm2Ss7ikirPwXZ7KFiWNmdwtb53vHCSwYFbCdPk',
           attributesAdded: [],
         },
@@ -74,7 +74,7 @@ const meta = {
       name: 'PermissionGrant',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EHTR6jFrqbmjPf7dNSJUsGUJrgr5kLh62QiT2bxD6KRp',
           attributesAdded: [],
         },
@@ -85,7 +85,7 @@ const meta = {
       name: 'Profile',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EWfk8qkKZYqqTyeLs4wLJTfPCLufZBiNGFQY4M4PLv99',
           attributesAdded: [],
         },
@@ -96,7 +96,7 @@ const meta = {
       name: 'Record',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'J18rFf6VX3ADe5gTnqmL4wXtivLkzrRXLPPhnoghnjzB',
           attributesAdded: [],
         },
@@ -107,7 +107,7 @@ const meta = {
       name: 'Relationship',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '29BmTvgmhh9x7t2tGd38GqTH3b9v9rgqsuE21K73i86g',
           attributesAdded: [],
         },
@@ -118,7 +118,7 @@ const meta = {
       name: 'Request',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Ccj91K18JfH77i8bawJzR9GpRWXYf598uPjggxZU7Shd',
           attributesAdded: [],
         },
@@ -129,7 +129,7 @@ const meta = {
       name: 'Response',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'cLkohDeea8vefzVvUwsQ56BwUfedXpqeoD66PvRe7LB',
           attributesAdded: [],
         },
@@ -140,7 +140,7 @@ const meta = {
       name: 'Service',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'ALFnjBeqP1hupQrZGddqbi276GkwnuPtkQjiFLjU716A',
           attributesAdded: [],
         },
@@ -151,7 +151,7 @@ const meta = {
       name: 'Space',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'Bdyasci5huobiunZqkShQUiWzCyHLhY4fpMkG4YF5BiS',
           attributesAdded: [],
         },
@@ -162,7 +162,7 @@ const meta = {
       name: 'Task',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FfJjBeSAe4JWfA5FVnPDgL9pzLPYELskQnBSanPC9E8L',
           attributesAdded: [],
         },

@@ -133,7 +133,7 @@ export const SingleDocumentPermissionGrantToAccount = {
     description:
       'Rights to grant on the target session (READ required; allOps and singleOps are mutually exclusive; singleOps is optional but must be non-empty if provided).',
     type: {
-      blueId: 'DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54',
+      blueId: '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw',
     },
   },
   targetSessionId: {
@@ -143,6 +143,6 @@ export const SingleDocumentPermissionGrantToAccount = {
     },
   },
   type: {
-    blueId: 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
+    blueId: '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB',
   },
 } as const;
