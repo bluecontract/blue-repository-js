@@ -193,7 +193,7 @@ export const PayNoteDelivery = {
                   },
                   val: {
                     type: {
-                      blueId: 'ETAPjwZVyYEfPUWvXkCWAuybBhYUayg4hKC2V7mLXmsv',
+                      blueId: 'HTTYTqakRbb53umfjRvryunCRm5QQm3mMArTrgUF5DxL',
                     },
                   },
                 },
@@ -497,7 +497,7 @@ export const PayNoteDelivery = {
                   },
                   val: {
                     type: {
-                      blueId: 'Guus3kHbivXvy5G93yhiKs3Pc8sxCc4XVvSo7CqLsQEc',
+                      blueId: '5w8XTussoHoaLUy6gwou9Rz5Zxuh9yums9YDNjGdLCKV',
                     },
                   },
                 },
@@ -673,7 +673,7 @@ export const PayNoteDelivery = {
       'Optional Payment Mandate bootstrap request details for Delivery flows that require mandate attachment before proposal exposure.',
     document: {
       type: {
-        blueId: 'BKKgKnHFhLmmUxq4WRvhV7HYZNu6ngDEce1LvHjZimJr',
+        blueId: 'BAcWp1auMPeb8VAkkswfKBAuLzP3RHuAVrhdHXc2KfUB',
       },
     },
     type: {
@@ -684,7 +684,7 @@ export const PayNoteDelivery = {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: '7fWr1Bguxi4xnhXx4dpGjaLtjEBgUjyjjaV3vt492Z9',
+        blueId: 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
       },
     },
     type: {

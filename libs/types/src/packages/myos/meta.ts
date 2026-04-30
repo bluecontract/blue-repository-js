@@ -124,13 +124,13 @@ const meta = {
         },
       ],
     },
-    '3SULZSU6Yvi6rVuhGsRX7znRuyt6oWnx1Hdyu6QhdhFj': {
+    '3u1bvMQqqc9sj4zWmwwhQrbdfCn7xrGiN7KEczqq22XG': {
       status: 'stable',
       name: 'Chat GPT Connector Agent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3SULZSU6Yvi6rVuhGsRX7znRuyt6oWnx1Hdyu6QhdhFj',
+          typeBlueId: '3u1bvMQqqc9sj4zWmwwhQrbdfCn7xrGiN7KEczqq22XG',
           attributesAdded: [],
         },
       ],
@@ -179,13 +179,13 @@ const meta = {
         },
       ],
     },
-    '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy': {
+    AhSRfEjNdQ8AvA3AFigjdyQzAtoc2J29jpacEcKBNa32: {
       status: 'stable',
       name: 'Document Session Bootstrap',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4Mse3bdSz9YQbp5KkbUiVmkseK8upp5wexNDUq2rHuEy',
+          typeBlueId: 'AhSRfEjNdQ8AvA3AFigjdyQzAtoc2J29jpacEcKBNa32',
           attributesAdded: [],
         },
       ],
@@ -223,57 +223,57 @@ const meta = {
         },
       ],
     },
-    DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS: {
+    '6H5NxBuVypoTGEMKHScmszXmrz3nBVQy1FDHrxBRwMmh': {
       status: 'dev',
       name: 'Linked Documents Permission Grant Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DBv2TLwytwBgvrSVeauLjTZYycf8hiXgdadoyRVDfjhS',
+          typeBlueId: '6H5NxBuVypoTGEMKHScmszXmrz3nBVQy1FDHrxBRwMmh',
           attributesAdded: [],
         },
       ],
     },
-    G5K5cSdn15yLJa6NBmjLuuZzJ5YShSU14kc4vitHpeHz: {
+    FuQov123cM3ph1xcX5Cyx19D2w1vsitpAHfkdasZDE75: {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Account',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G5K5cSdn15yLJa6NBmjLuuZzJ5YShSU14kc4vitHpeHz',
+          typeBlueId: 'FuQov123cM3ph1xcX5Cyx19D2w1vsitpAHfkdasZDE75',
           attributesAdded: [],
         },
       ],
     },
-    DVuSpdSQzjj36rN9Eemu7oReooPe1YaqARx7aanQDppy: {
+    GSMPZr2s6Nb6SwHzx8XwLRwbJnUdboZDPckMQhwLgvJ7: {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Document',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DVuSpdSQzjj36rN9Eemu7oReooPe1YaqARx7aanQDppy',
+          typeBlueId: 'GSMPZr2s6Nb6SwHzx8XwLRwbJnUdboZDPckMQhwLgvJ7',
           attributesAdded: [],
         },
       ],
     },
-    '6kUamSN8Yq4L46PRaKRVc2BnG6xN7HCpmyG2STW3hecZ': {
+    '74TyANquDt5wUqoUfqA6i2CT5rDnfbfCSti1mkxowHpu': {
       status: 'dev',
       name: 'Linked Documents Permission Granted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6kUamSN8Yq4L46PRaKRVc2BnG6xN7HCpmyG2STW3hecZ',
+          typeBlueId: '74TyANquDt5wUqoUfqA6i2CT5rDnfbfCSti1mkxowHpu',
           attributesAdded: [],
         },
       ],
     },
-    '8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK': {
+    GuqbETNsYdtm6MdzKy2iqqaQZu617rnjZz3fQFJLjpQ8: {
       status: 'dev',
       name: 'Linked Documents Permission Granting in Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8rdTEmuSkwgzj47Uc4tLdSk1wSd8NG5Q6vTFZt8hXbHK',
+          typeBlueId: 'GuqbETNsYdtm6MdzKy2iqqaQZu617rnjZz3fQFJLjpQ8',
           attributesAdded: [],
         },
       ],
@@ -289,13 +289,13 @@ const meta = {
         },
       ],
     },
-    Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi: {
+    GFs1qrcTSzYq5tEN25GjGngu7fttnPgma6PU7TQ89Hjc: {
       status: 'dev',
       name: 'Linked Documents Permission Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Cg3FfBGZZSfviaJg4Jsf7Cbg4jLRPYDcrbT65YD4vjxi',
+          typeBlueId: 'GFs1qrcTSzYq5tEN25GjGngu7fttnPgma6PU7TQ89Hjc',
           attributesAdded: [],
         },
       ],
@@ -311,35 +311,35 @@ const meta = {
         },
       ],
     },
-    '9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h': {
+    '3How2U6g2sZe3xDCnJGAN96bcbyTabrTio7jEShH6pTh': {
       status: 'dev',
       name: 'Linked Documents Permission Revoked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9J18sDqoJX8KKutFwuzxeSdXiGuRbJB2yCfADGSKax6h',
+          typeBlueId: '3How2U6g2sZe3xDCnJGAN96bcbyTabrTio7jEShH6pTh',
           attributesAdded: [],
         },
       ],
     },
-    HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH: {
+    '5EWk4G87GuSwimUr67WJ9KQKGeGhSvjx8qMLmrhxzDDD': {
       status: 'dev',
       name: 'Linked Documents Permission Revoking in Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HTvyBGjSkM4gmJxhwznVMM1aU7UUaKCcWQY9qgU6JfvH',
+          typeBlueId: '5EWk4G87GuSwimUr67WJ9KQKGeGhSvjx8qMLmrhxzDDD',
           attributesAdded: [],
         },
       ],
     },
-    '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5': {
+    '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9': {
       status: 'dev',
       name: 'Linked Documents Permission Set',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5',
+          typeBlueId: '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9',
           attributesAdded: [],
         },
       ],
@@ -366,13 +366,13 @@ const meta = {
         },
       ],
     },
-    Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj: {
+    '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB': {
       status: 'stable',
       name: 'MyOS Admin Base',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Bu4YETSKYW8hHMwVy6zUUoBAGZPxX3KVXfKN9uoCUoJj',
+          typeBlueId: '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB',
           attributesAdded: [],
         },
       ],
@@ -393,7 +393,7 @@ const meta = {
       name: 'MyOS Agent Actor',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: 'ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN',
           attributesAdded: [],
         },
@@ -426,7 +426,7 @@ const meta = {
       name: 'MyOS Balance Account',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb',
           attributesAdded: [],
         },
@@ -470,7 +470,7 @@ const meta = {
       name: 'MyOS Principal Actor',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw',
           attributesAdded: [],
         },
@@ -526,11 +526,6 @@ const meta = {
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Furgmg5xcJVMDmaQXZRfZ1XehSf7PWctrioo8etRYJHQ',
-          attributesAdded: [],
-        },
-        {
-          repositoryVersionIndex: 7,
           typeBlueId: 'F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ',
           attributesAdded: [],
         },
@@ -541,7 +536,7 @@ const meta = {
       name: 'MyOS User',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ',
           attributesAdded: [],
         },
@@ -607,7 +602,7 @@ const meta = {
       name: 'Payment Initiation Accepted',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD',
           attributesAdded: [],
         },
@@ -618,7 +613,7 @@ const meta = {
       name: 'Payment Initiation Rejected',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU',
           attributesAdded: [],
         },
@@ -629,7 +624,7 @@ const meta = {
       name: 'Payment Initiation Requested',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r',
           attributesAdded: [],
         },
@@ -640,7 +635,7 @@ const meta = {
       name: 'Payment Target Preparation Failed',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'GSfJG3nahccpaqXHWBXes8RvNDENL17bz2yXdvn1suRY',
           attributesAdded: [],
         },
@@ -651,19 +646,19 @@ const meta = {
       name: 'Payment Target Preparation Requested',
       versions: [
         {
-          repositoryVersionIndex: 2,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5',
           attributesAdded: [],
         },
       ],
     },
-    '3KTJBMse6aFELjAG6iJa9bo5XdJagLzQZdPkee64iVW1': {
+    N7tRCfv2oxjN8ncrkPQb8c16CjUdJbM7aWDUJDR1C5k: {
       status: 'dev',
       name: 'Payment Target Prepared',
       versions: [
         {
-          repositoryVersionIndex: 2,
-          typeBlueId: '3KTJBMse6aFELjAG6iJa9bo5XdJagLzQZdPkee64iVW1',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'N7tRCfv2oxjN8ncrkPQb8c16CjUdJbM7aWDUJDR1C5k',
           attributesAdded: [],
         },
       ],
@@ -723,68 +718,68 @@ const meta = {
         },
       ],
     },
-    Ef7EvcR5He11JtgBFtswYTHEfUKnTHmFysMTo3ZsoQby: {
+    FAMQpJfZvF5gJphKzq96Bn2iLuJgMJwMek798cw8LR9D: {
       status: 'stable',
       name: 'Single Document Permission Grant Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ef7EvcR5He11JtgBFtswYTHEfUKnTHmFysMTo3ZsoQby',
+          typeBlueId: 'FAMQpJfZvF5gJphKzq96Bn2iLuJgMJwMek798cw8LR9D',
           attributesAdded: [],
         },
       ],
     },
-    '5jtNV7xpaim18pUQp4uvron8uHfTjPSi6kUZQdCMGsKa': {
+    aydjXRi7sz7352Pnbs25ko4cat9w4YnM6LzD5Dtj5T9: {
       status: 'stable',
       name: 'Single Document Permission Grant Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5jtNV7xpaim18pUQp4uvron8uHfTjPSi6kUZQdCMGsKa',
+          typeBlueId: 'aydjXRi7sz7352Pnbs25ko4cat9w4YnM6LzD5Dtj5T9',
           attributesAdded: [],
         },
       ],
     },
-    y6JF5WHZjDq9PokMtHpqKhxbY7W6RQ41PBymPx7kjLz: {
+    '9dmquqNvp5f47KPP3bno4t2DujWSjPtgJcEipMVPFNhN': {
       status: 'dev',
       name: 'Single Document Permission Grant To Account',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'y6JF5WHZjDq9PokMtHpqKhxbY7W6RQ41PBymPx7kjLz',
+          typeBlueId: '9dmquqNvp5f47KPP3bno4t2DujWSjPtgJcEipMVPFNhN',
           attributesAdded: [],
         },
       ],
     },
-    '3SQR9pgQoY8rE9XhSmDDbKdHwe7ZZDaX4hPkYirhjYmD': {
+    BivicTTRkWMt2f9qMqSPgWPEAHyVpAUmBE6xGLt3oVu2: {
       status: 'dev',
       name: 'Single Document Permission Grant To Document',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3SQR9pgQoY8rE9XhSmDDbKdHwe7ZZDaX4hPkYirhjYmD',
+          typeBlueId: 'BivicTTRkWMt2f9qMqSPgWPEAHyVpAUmBE6xGLt3oVu2',
           attributesAdded: [],
         },
       ],
     },
-    BZPjcZmkuJpVFDYAZMexdG68KKFhgabnieBdG6DpHexR: {
+    BqWoMewDiK6GgMVDXeBuPwWL3ka9DadzKu59uU51ZjW3: {
       status: 'dev',
       name: 'Single Document Permission Granted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BZPjcZmkuJpVFDYAZMexdG68KKFhgabnieBdG6DpHexR',
+          typeBlueId: 'BqWoMewDiK6GgMVDXeBuPwWL3ka9DadzKu59uU51ZjW3',
           attributesAdded: [],
         },
       ],
     },
-    '5dYUepkS2uQHtzhVYoHEtR4x8vaMRtNuHyiqqTvRrKGY': {
+    '4zC5mdSWymTamZVoQXDMCrFRTARef3RJM49gCSCuBv6F': {
       status: 'stable',
       name: 'Single Document Permission Granting in Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5dYUepkS2uQHtzhVYoHEtR4x8vaMRtNuHyiqqTvRrKGY',
+          typeBlueId: '4zC5mdSWymTamZVoQXDMCrFRTARef3RJM49gCSCuBv6F',
           attributesAdded: [],
         },
       ],
@@ -800,13 +795,13 @@ const meta = {
         },
       ],
     },
-    kHtVfa88aG4NMwCcBgJH9mq7EBqLQUrJVEr92porG5j: {
+    LaiT21WCsXzGorJ1dDsQ37dP2UtefPxNEwAA81W11WK: {
       status: 'stable',
       name: 'Single Document Permission Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'kHtVfa88aG4NMwCcBgJH9mq7EBqLQUrJVEr92porG5j',
+          typeBlueId: 'LaiT21WCsXzGorJ1dDsQ37dP2UtefPxNEwAA81W11WK',
           attributesAdded: [],
         },
       ],
@@ -833,24 +828,24 @@ const meta = {
         },
       ],
     },
-    Cyr8aNNYedFse1EZ74dy9uXJ59gLH5LhTRyVeLiSMkg8: {
+    CrRfT3MFQneNo99nfdhfgnTKF4fmKtSQEUQN8wTTbnjF: {
       status: 'stable',
       name: 'Single Document Permission Revoking in Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Cyr8aNNYedFse1EZ74dy9uXJ59gLH5LhTRyVeLiSMkg8',
+          typeBlueId: 'CrRfT3MFQneNo99nfdhfgnTKF4fmKtSQEUQN8wTTbnjF',
           attributesAdded: [],
         },
       ],
     },
-    DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54: {
+    '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw': {
       status: 'stable',
       name: 'Single Document Permission Set',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DRDQcve5AjwBK9z6Njfa4MNERko7Uf4ucvARFdC6sL54',
+          typeBlueId: '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw',
           attributesAdded: [],
         },
       ],
@@ -943,57 +938,57 @@ const meta = {
         },
       ],
     },
-    '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp': {
+    EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS: {
       status: 'stable',
       name: 'Worker Agency Permission',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5J3RXNnALK1ZYAQBrjGwCQ4WpL3YUGHvz9WcGos6mMSp',
+          typeBlueId: 'EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS',
           attributesAdded: [],
         },
       ],
     },
-    '2ARFPC2YDspfN86MT897RDzGUtEEw1B7Lbdvy8Z3ZFQx': {
+    CoyRC9eUW32e9MdSPy1xdGd4XgRMqBmPSsRe8hwiCJbF: {
       status: 'dev',
       name: 'Worker Agency Permission Grant',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2ARFPC2YDspfN86MT897RDzGUtEEw1B7Lbdvy8Z3ZFQx',
+          typeBlueId: 'CoyRC9eUW32e9MdSPy1xdGd4XgRMqBmPSsRe8hwiCJbF',
           attributesAdded: [],
         },
       ],
     },
-    HF5aRJZqvHn7sDFbwfDGQjkWmTSW9Lee7c9dUBtcdNtK: {
+    '5S64KLDcXLiHWsYP6EGpfANZQsvTH3APsWqqy7D3qqJN': {
       status: 'stable',
       name: 'Worker Agency Permission Grant Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HF5aRJZqvHn7sDFbwfDGQjkWmTSW9Lee7c9dUBtcdNtK',
+          typeBlueId: '5S64KLDcXLiHWsYP6EGpfANZQsvTH3APsWqqy7D3qqJN',
           attributesAdded: [],
         },
       ],
     },
-    '75TkZZcfwGMnD8ReqQg1KhBkdEV9U637TS5bGSv9n2Xn': {
+    BwYenFh5yEbjEW6FdBzYu2hCkUxGyBW6JJguusvtd5ut: {
       status: 'dev',
       name: 'Worker Agency Permission Granted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '75TkZZcfwGMnD8ReqQg1KhBkdEV9U637TS5bGSv9n2Xn',
+          typeBlueId: 'BwYenFh5yEbjEW6FdBzYu2hCkUxGyBW6JJguusvtd5ut',
           attributesAdded: [],
         },
       ],
     },
-    HzQyVKvSQ2cienAkjW5R8HgTcStPe13p8eoB4vXr7dAc: {
+    H4Yn9qiBncFkvBArAjWfqPTSdbiijm4MU74inx1o5eDL: {
       status: 'stable',
       name: 'Worker Agency Permission Granting in Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HzQyVKvSQ2cienAkjW5R8HgTcStPe13p8eoB4vXr7dAc',
+          typeBlueId: 'H4Yn9qiBncFkvBArAjWfqPTSdbiijm4MU74inx1o5eDL',
           attributesAdded: [],
         },
       ],
@@ -1009,13 +1004,13 @@ const meta = {
         },
       ],
     },
-    G1cW5kjZdJrmCwfrwiHXQcJfYfFAY5jEFZNA7u7pFdtY: {
+    HdRkyKgsk74k3QKBxnuy4iWn5u7Pf4wHY3nyJgGZd7jz: {
       status: 'stable',
       name: 'Worker Agency Permission Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G1cW5kjZdJrmCwfrwiHXQcJfYfFAY5jEFZNA7u7pFdtY',
+          typeBlueId: 'HdRkyKgsk74k3QKBxnuy4iWn5u7Pf4wHY3nyJgGZd7jz',
           attributesAdded: [],
         },
       ],
@@ -1042,13 +1037,13 @@ const meta = {
         },
       ],
     },
-    '5zNb9H63xeG2RjZ1gzJwyGxvTVzWdyNBb2Te6g8UXd72': {
+    '2xkX43Z7tML7KXJgHp5C7W2W465aGckp3jBVW37GyZqz': {
       status: 'stable',
       name: 'Worker Agency Permission Revoking in Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5zNb9H63xeG2RjZ1gzJwyGxvTVzWdyNBb2Te6g8UXd72',
+          typeBlueId: '2xkX43Z7tML7KXJgHp5C7W2W465aGckp3jBVW37GyZqz',
           attributesAdded: [],
         },
       ],

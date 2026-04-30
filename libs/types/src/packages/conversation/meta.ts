@@ -14,13 +14,13 @@ const meta = {
         },
       ],
     },
-    Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV: {
+    BAYbnfs8WkdH33UwCvmsuoAq6MyU6ha4KSTZPaeMp9kN: {
       status: 'dev',
       name: 'Accept Change Workflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Eh2y8JypsGTdFMpEGEK64vBdGtaJ9Q7Q5t7ChqHafwCV',
+          typeBlueId: 'BAYbnfs8WkdH33UwCvmsuoAq6MyU6ha4KSTZPaeMp9kN',
           attributesAdded: [],
         },
       ],
@@ -41,7 +41,7 @@ const meta = {
       name: 'Actor Policy',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: 'EeWqP1Tw9WXo5nq8kx93FuTw9HRqpv34mbWFjH72nR7o',
           attributesAdded: [],
         },
@@ -52,7 +52,7 @@ const meta = {
       name: 'Agent Actor',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB',
           attributesAdded: [],
         },
@@ -63,7 +63,7 @@ const meta = {
       name: 'API Call',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: 'HCTXeqkKBbVbsa3WfN2bPFSX7mthbtZ6ZhzByf9VDJJs',
           attributesAdded: [],
         },
@@ -74,7 +74,7 @@ const meta = {
       name: 'Browser Session',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: '8UVUYbhSVBAx7BAupgjSeeFuuyrgdFcGbaXBitEZD9B1',
           attributesAdded: [],
         },
@@ -102,13 +102,13 @@ const meta = {
         },
       ],
     },
-    '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9': {
+    '5cwVBvBpQWLmYmpAMfXVt7mGrrZDZinBkdgJ61oT2FGR': {
       status: 'dev',
       name: 'Change Workflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4pFvBSYyitoq8rWqTmY5rLywU2tpZsivDUCAo5vwoAT9',
+          typeBlueId: '5cwVBvBpQWLmYmpAMfXVt7mGrrZDZinBkdgJ61oT2FGR',
           attributesAdded: [],
         },
       ],
@@ -168,13 +168,13 @@ const meta = {
         },
       ],
     },
-    '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx': {
+    CZBP6a8kS4bKpA2f29oAfBpKVmw6PDLYXDyg8Ttx2ceE: {
       status: 'dev',
       name: 'Customer Consent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5UeiZ6EC1y3KMafuX6ioNqHHM62S5Xf3ULrC9L3m7MJx',
+          typeBlueId: 'CZBP6a8kS4bKpA2f29oAfBpKVmw6PDLYXDyg8Ttx2ceE',
           attributesAdded: [],
         },
       ],
@@ -239,7 +239,7 @@ const meta = {
       name: 'Document Request',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: '7jZFAkmthHTeg6zAu5kBCDHswd2J5HNVnYPo9y435sin',
           attributesAdded: [],
         },
@@ -360,7 +360,7 @@ const meta = {
       name: 'Principal Actor',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FqipbF4UATjCRTqovGdREPAoaxj59NECb9xtnWRW1SWi',
           attributesAdded: [],
         },
@@ -377,13 +377,13 @@ const meta = {
         },
       ],
     },
-    '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo': {
+    ELAgjQ99vBZLGfY6tJMuPRnm3avxpByyZsXc65aKQmi4: {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7icTT1chbH3UA2ybXgpfSSyNEAR4Wmm3EkbdGFaZSydo',
+          typeBlueId: 'ELAgjQ99vBZLGfY6tJMuPRnm3avxpByyZsXc65aKQmi4',
           attributesAdded: [],
         },
       ],
@@ -410,13 +410,13 @@ const meta = {
         },
       ],
     },
-    DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB: {
+    FbCbhWAeTsbLsBNn4Fvy3hyqPXFo5166rVwQVYCrtDE5: {
       status: 'dev',
       name: 'Reject Change Workflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DUjCaEniHH5oDXU3Ss5jWWft3pT9TUcNhv7HoCDU1NTB',
+          typeBlueId: 'FbCbhWAeTsbLsBNn4Fvy3hyqPXFo5166rVwQVYCrtDE5',
           attributesAdded: [],
         },
       ],
@@ -481,7 +481,7 @@ const meta = {
       name: 'Source',
       versions: [
         {
-          repositoryVersionIndex: 7,
+          repositoryVersionIndex: 0,
           typeBlueId: '6ADCPYXkusrp4dL1FC126L2ccuzYfqGdBf1w6EXh2hnC',
           attributesAdded: [],
         },
@@ -498,46 +498,46 @@ const meta = {
         },
       ],
     },
-    EhPFqrRCreg7StsZEcW8fRQ1FQVdqYSsMSis2CHHJZ1G: {
+    '6CtkPkPVtmiQJJienGdzvZf2qGTRQntLXfh8PYeMfxBX': {
       status: 'stable',
       name: 'Status Completed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EhPFqrRCreg7StsZEcW8fRQ1FQVdqYSsMSis2CHHJZ1G',
+          typeBlueId: '6CtkPkPVtmiQJJienGdzvZf2qGTRQntLXfh8PYeMfxBX',
           attributesAdded: [],
         },
       ],
     },
-    Guus3kHbivXvy5G93yhiKs3Pc8sxCc4XVvSo7CqLsQEc: {
+    '5w8XTussoHoaLUy6gwou9Rz5Zxuh9yums9YDNjGdLCKV': {
       status: 'stable',
       name: 'Status Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Guus3kHbivXvy5G93yhiKs3Pc8sxCc4XVvSo7CqLsQEc',
+          typeBlueId: '5w8XTussoHoaLUy6gwou9Rz5Zxuh9yums9YDNjGdLCKV',
           attributesAdded: [],
         },
       ],
     },
-    '56Lhu3Z2oF3kuYG41eZAK8TvgVtRNevkbRi4D31kKWZm': {
+    FDEV1Q9rBZwaponjfRmZ4HsUHRwPC4gvmeHiRqvkLAkY: {
       status: 'stable',
       name: 'Status In Progress',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '56Lhu3Z2oF3kuYG41eZAK8TvgVtRNevkbRi4D31kKWZm',
+          typeBlueId: 'FDEV1Q9rBZwaponjfRmZ4HsUHRwPC4gvmeHiRqvkLAkY',
           attributesAdded: [],
         },
       ],
     },
-    ETAPjwZVyYEfPUWvXkCWAuybBhYUayg4hKC2V7mLXmsv: {
+    HTTYTqakRbb53umfjRvryunCRm5QQm3mMArTrgUF5DxL: {
       status: 'stable',
       name: 'Status Pending',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ETAPjwZVyYEfPUWvXkCWAuybBhYUayg4hKC2V7mLXmsv',
+          typeBlueId: 'HTTYTqakRbb53umfjRvryunCRm5QQm3mMArTrgUF5DxL',
           attributesAdded: [],
         },
       ],
@@ -570,13 +570,8 @@ const meta = {
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EzDiC9Frs8V5yQBMtDYh1DobVnWtWpFemXDX5fGUULBn',
-          attributesAdded: [],
-        },
-        {
-          repositoryVersionIndex: 7,
           typeBlueId: '29tcU8MkrV3KL5HqH6DHJDPPfJMheoqwiKJsaHnrp9hT',
-          attributesAdded: ['/source'],
+          attributesAdded: [],
         },
       ],
     },

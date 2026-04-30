@@ -3,7 +3,7 @@ export const LinkedDocumentsPermissionGrantRequested = {
     'Ask MyOS Admin to grant permisison to document (event emitter) for a concrete target session.',
   links: {
     type: {
-      blueId: '75TXyy5E7vbexVAUZcjZ2vdQaG7fJJbAHAgrh8sMtTp5',
+      blueId: '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9',
     },
   },
   name: 'Linked Documents Permission Grant Requested',
