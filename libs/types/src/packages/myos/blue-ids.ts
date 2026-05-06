@@ -78,6 +78,7 @@ export const blueIds = {
   'MyOS/Participant Activation State':
     'CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB',
   'MyOS/Participant Resolved': 'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
+  'MyOS/Payment Initiated': 'DVdWNtgwNrRFw2xoM6nbjPtSr9HhHNxxZVurf3Dr4cX2',
   'MyOS/Payment Initiation Accepted':
     'GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD',
   'MyOS/Payment Initiation Rejected':
