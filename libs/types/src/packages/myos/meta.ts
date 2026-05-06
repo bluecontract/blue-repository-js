@@ -157,6 +157,39 @@ const meta = {
         },
       ],
     },
+    CTFByfge1uHNvbNNWP92XrGng1HnqAKVz9Wq1Tvg5x2T: {
+      status: 'stable',
+      name: 'Document Initial Snapshot Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'CTFByfge1uHNvbNNWP92XrGng1HnqAKVz9Wq1Tvg5x2T',
+          attributesAdded: [],
+        },
+      ],
+    },
+    GAFsQ4MjLuJZfEgPE1J1jp8fpihkgRq6Q1meF4xsmJYv: {
+      status: 'stable',
+      name: 'Document Initial Snapshot Resolved',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'GAFsQ4MjLuJZfEgPE1J1jp8fpihkgRq6Q1meF4xsmJYv',
+          attributesAdded: [],
+        },
+      ],
+    },
+    u64K6E1Yv7NWsaYuAExGJDaTcffX6Q4iSbUkgxZB1v9: {
+      status: 'stable',
+      name: 'Document Initial Snapshot Unresolved',
+      versions: [
+        {
+          repositoryVersionIndex: 2,
+          typeBlueId: 'u64K6E1Yv7NWsaYuAExGJDaTcffX6Q4iSbUkgxZB1v9',
+          attributesAdded: [],
+        },
+      ],
+    },
     BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk: {
       status: 'stable',
       name: 'Document Link',
