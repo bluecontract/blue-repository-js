@@ -20,6 +20,12 @@ export const blueIds = {
     '3u1bvMQqqc9sj4zWmwwhQrbdfCn7xrGiN7KEczqq22XG',
   'MyOS/Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
   'MyOS/Document Anchors': '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH',
+  'MyOS/Document Initial Snapshot Requested':
+    'CTFByfge1uHNvbNNWP92XrGng1HnqAKVz9Wq1Tvg5x2T',
+  'MyOS/Document Initial Snapshot Resolved':
+    'GAFsQ4MjLuJZfEgPE1J1jp8fpihkgRq6Q1meF4xsmJYv',
+  'MyOS/Document Initial Snapshot Unresolved':
+    'u64K6E1Yv7NWsaYuAExGJDaTcffX6Q4iSbUkgxZB1v9',
   'MyOS/Document Link': 'BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk',
   'MyOS/Document Links': '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5',
   'MyOS/Document Session Bootstrap':

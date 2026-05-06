@@ -60,6 +60,7 @@ import { ParticipantActivationState } from './ParticipantActivationState';
 import { WorkerAgencyPermissionGrant } from './WorkerAgencyPermissionGrant';
 import { InformUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
 import { SingleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
+import { DocumentInitialSnapshotRequested } from './DocumentInitialSnapshotRequested';
 import { MyOSSessionLink } from './MyOSSessionLink';
 import { Link } from './Link';
 import { DocumentTypeLink } from './DocumentTypeLink';
@@ -80,6 +81,7 @@ import { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissi
 import { AllParticipantsReady } from './AllParticipantsReady';
 import { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
 import { LinkedDocumentsPermissionGrantToAccount } from './LinkedDocumentsPermissionGrantToAccount';
+import { DocumentInitialSnapshotResolved } from './DocumentInitialSnapshotResolved';
 import { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 import { LinkedDocumentsPermissionRejected } from './LinkedDocumentsPermissionRejected';
 import { PaymentInitiationAccepted } from './PaymentInitiationAccepted';
@@ -96,6 +98,7 @@ import { SingleDocumentPermissionRejected } from './SingleDocumentPermissionReje
 import { PaymentTargetPrepared } from './PaymentTargetPrepared';
 import { Participant } from './Participant';
 import { SubscriptionToSessionFailed } from './SubscriptionToSessionFailed';
+import { DocumentInitialSnapshotUnresolved } from './DocumentInitialSnapshotUnresolved';
 
 export { PaymentInitiationRequested } from './PaymentInitiationRequested';
 export { SingleDocumentPermissionRevoked } from './SingleDocumentPermissionRevoked';
@@ -159,6 +162,7 @@ export { ParticipantActivationState } from './ParticipantActivationState';
 export { WorkerAgencyPermissionGrant } from './WorkerAgencyPermissionGrant';
 export { InformUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
 export { SingleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
+export { DocumentInitialSnapshotRequested } from './DocumentInitialSnapshotRequested';
 export { MyOSSessionLink } from './MyOSSessionLink';
 export { Link } from './Link';
 export { DocumentTypeLink } from './DocumentTypeLink';
@@ -179,6 +183,7 @@ export { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissi
 export { AllParticipantsReady } from './AllParticipantsReady';
 export { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
 export { LinkedDocumentsPermissionGrantToAccount } from './LinkedDocumentsPermissionGrantToAccount';
+export { DocumentInitialSnapshotResolved } from './DocumentInitialSnapshotResolved';
 export { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 export { LinkedDocumentsPermissionRejected } from './LinkedDocumentsPermissionRejected';
 export { PaymentInitiationAccepted } from './PaymentInitiationAccepted';
@@ -195,6 +200,7 @@ export { SingleDocumentPermissionRejected } from './SingleDocumentPermissionReje
 export { PaymentTargetPrepared } from './PaymentTargetPrepared';
 export { Participant } from './Participant';
 export { SubscriptionToSessionFailed } from './SubscriptionToSessionFailed';
+export { DocumentInitialSnapshotUnresolved } from './DocumentInitialSnapshotUnresolved';
 
 export const contents = {
   '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r': PaymentInitiationRequested,
@@ -277,6 +283,8 @@ export const contents = {
   CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3: InformUserToInstallMyOSPackage,
   CrRfT3MFQneNo99nfdhfgnTKF4fmKtSQEUQN8wTTbnjF:
     SingleDocumentPermissionRevokingInProgress,
+  CTFByfge1uHNvbNNWP92XrGng1HnqAKVz9Wq1Tvg5x2T:
+    DocumentInitialSnapshotRequested,
   d1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB: MyOSSessionLink,
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: Link,
   D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX: DocumentTypeLink,
@@ -302,6 +310,7 @@ export const contents = {
   FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p: TargetDocumentSessionStarted,
   FuQov123cM3ph1xcX5Cyx19D2w1vsitpAHfkdasZDE75:
     LinkedDocumentsPermissionGrantToAccount,
+  GAFsQ4MjLuJZfEgPE1J1jp8fpihkgRq6Q1meF4xsmJYv: DocumentInitialSnapshotResolved,
   GcotFgiqo3GMHp4xKrArDJi7AqciJGgYKvHodoAJwcWp: SubscriptionToSessionRevoked,
   GFs1qrcTSzYq5tEN25GjGngu7fttnPgma6PU7TQ89Hjc:
     LinkedDocumentsPermissionRejected,
@@ -322,4 +331,6 @@ export const contents = {
   N7tRCfv2oxjN8ncrkPQb8c16CjUdJbM7aWDUJDR1C5k: PaymentTargetPrepared,
   phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ: Participant,
   S1gzGs6z9uy5inkcJu5wr6i5ESKDmZy9XhgLHMZKrdV: SubscriptionToSessionFailed,
+  u64K6E1Yv7NWsaYuAExGJDaTcffX6Q4iSbUkgxZB1v9:
+    DocumentInitialSnapshotUnresolved,
 } as const;

@@ -12,6 +12,9 @@ import { CallOperationRespondedSchema } from './CallOperationResponded';
 import { ChatGPTConnectorAgentSchema } from './ChatGPTConnectorAgent';
 import { DocumentAnchorSchema } from './DocumentAnchor';
 import { DocumentAnchorsSchema } from './DocumentAnchors';
+import { DocumentInitialSnapshotRequestedSchema } from './DocumentInitialSnapshotRequested';
+import { DocumentInitialSnapshotResolvedSchema } from './DocumentInitialSnapshotResolved';
+import { DocumentInitialSnapshotUnresolvedSchema } from './DocumentInitialSnapshotUnresolved';
 import { DocumentLinkSchema } from './DocumentLink';
 import { DocumentLinksSchema } from './DocumentLinks';
 import { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
@@ -111,6 +114,9 @@ export { CallOperationRespondedSchema } from './CallOperationResponded';
 export { ChatGPTConnectorAgentSchema } from './ChatGPTConnectorAgent';
 export { DocumentAnchorSchema } from './DocumentAnchor';
 export { DocumentAnchorsSchema } from './DocumentAnchors';
+export { DocumentInitialSnapshotRequestedSchema } from './DocumentInitialSnapshotRequested';
+export { DocumentInitialSnapshotResolvedSchema } from './DocumentInitialSnapshotResolved';
+export { DocumentInitialSnapshotUnresolvedSchema } from './DocumentInitialSnapshotUnresolved';
 export { DocumentLinkSchema } from './DocumentLink';
 export { DocumentLinksSchema } from './DocumentLinks';
 export { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
@@ -214,6 +220,12 @@ export const schemas = {
   '3u1bvMQqqc9sj4zWmwwhQrbdfCn7xrGiN7KEczqq22XG': ChatGPTConnectorAgentSchema,
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: DocumentAnchorSchema,
   '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH': DocumentAnchorsSchema,
+  CTFByfge1uHNvbNNWP92XrGng1HnqAKVz9Wq1Tvg5x2T:
+    DocumentInitialSnapshotRequestedSchema,
+  GAFsQ4MjLuJZfEgPE1J1jp8fpihkgRq6Q1meF4xsmJYv:
+    DocumentInitialSnapshotResolvedSchema,
+  u64K6E1Yv7NWsaYuAExGJDaTcffX6Q4iSbUkgxZB1v9:
+    DocumentInitialSnapshotUnresolvedSchema,
   BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk: DocumentLinkSchema,
   '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5': DocumentLinksSchema,
   AhSRfEjNdQ8AvA3AFigjdyQzAtoc2J29jpacEcKBNa32: DocumentSessionBootstrapSchema,
