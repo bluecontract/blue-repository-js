@@ -597,6 +597,17 @@ const meta = {
         },
       ],
     },
+    DVdWNtgwNrRFw2xoM6nbjPtSr9HhHNxxZVurf3Dr4cX2: {
+      status: 'dev',
+      name: 'Payment Initiated',
+      versions: [
+        {
+          repositoryVersionIndex: 1,
+          typeBlueId: 'DVdWNtgwNrRFw2xoM6nbjPtSr9HhHNxxZVurf3Dr4cX2',
+          attributesAdded: [],
+        },
+      ],
+    },
     GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD: {
       status: 'dev',
       name: 'Payment Initiation Accepted',

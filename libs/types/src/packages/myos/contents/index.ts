@@ -66,6 +66,7 @@ import { DocumentTypeLink } from './DocumentTypeLink';
 import { CallOperationAccepted } from './CallOperationAccepted';
 import { LinkedDocumentsPermissionValidated } from './LinkedDocumentsPermissionValidated';
 import { LLMAgent } from './LLMAgent';
+import { PaymentInitiated } from './PaymentInitiated';
 import { PaymentInitiationRejected } from './PaymentInitiationRejected';
 import { WorkerAgencyPermission } from './WorkerAgencyPermission';
 import { MyOSAgentActor } from './MyOSAgentActor';
@@ -164,6 +165,7 @@ export { DocumentTypeLink } from './DocumentTypeLink';
 export { CallOperationAccepted } from './CallOperationAccepted';
 export { LinkedDocumentsPermissionValidated } from './LinkedDocumentsPermissionValidated';
 export { LLMAgent } from './LLMAgent';
+export { PaymentInitiated } from './PaymentInitiated';
 export { PaymentInitiationRejected } from './PaymentInitiationRejected';
 export { WorkerAgencyPermission } from './WorkerAgencyPermission';
 export { MyOSAgentActor } from './MyOSAgentActor';
@@ -282,6 +284,7 @@ export const contents = {
   DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe:
     LinkedDocumentsPermissionValidated,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgent,
+  DVdWNtgwNrRFw2xoM6nbjPtSr9HhHNxxZVurf3Dr4cX2: PaymentInitiated,
   EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU: PaymentInitiationRejected,
   EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS: WorkerAgencyPermission,
   ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN: MyOSAgentActor,

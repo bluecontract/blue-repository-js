@@ -52,6 +52,7 @@ import { ParticipantSchema } from './Participant';
 import { ParticipantActivatedSchema } from './ParticipantActivated';
 import { ParticipantActivationStateSchema } from './ParticipantActivationState';
 import { ParticipantResolvedSchema } from './ParticipantResolved';
+import { PaymentInitiatedSchema } from './PaymentInitiated';
 import { PaymentInitiationAcceptedSchema } from './PaymentInitiationAccepted';
 import { PaymentInitiationRejectedSchema } from './PaymentInitiationRejected';
 import { PaymentInitiationRequestedSchema } from './PaymentInitiationRequested';
@@ -150,6 +151,7 @@ export { ParticipantSchema } from './Participant';
 export { ParticipantActivatedSchema } from './ParticipantActivated';
 export { ParticipantActivationStateSchema } from './ParticipantActivationState';
 export { ParticipantResolvedSchema } from './ParticipantResolved';
+export { PaymentInitiatedSchema } from './PaymentInitiated';
 export { PaymentInitiationAcceptedSchema } from './PaymentInitiationAccepted';
 export { PaymentInitiationRejectedSchema } from './PaymentInitiationRejected';
 export { PaymentInitiationRequestedSchema } from './PaymentInitiationRequested';
@@ -268,6 +270,7 @@ export const schemas = {
   CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB:
     ParticipantActivationStateSchema,
   EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz: ParticipantResolvedSchema,
+  DVdWNtgwNrRFw2xoM6nbjPtSr9HhHNxxZVurf3Dr4cX2: PaymentInitiatedSchema,
   GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD: PaymentInitiationAcceptedSchema,
   EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU: PaymentInitiationRejectedSchema,
   '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r':
