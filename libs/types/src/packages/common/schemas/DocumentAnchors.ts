@@ -5,6 +5,6 @@ import { DocumentAnchorSchema } from './DocumentAnchor';
 
 export const DocumentAnchorsSchema = withTypeBlueId(
   blueIds['Common/Document Anchors']
-)(z.object({}).catchall(DocumentAnchorSchema));
+)(z.object({}).catchall(z.lazy(() => DocumentAnchorSchema)));
 
 export type DocumentAnchors = z.infer<typeof DocumentAnchorsSchema>;

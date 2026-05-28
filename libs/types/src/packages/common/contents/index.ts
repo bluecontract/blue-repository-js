@@ -1,5 +1,6 @@
 import { Relationship } from './Relationship';
 import { DocumentAnchors } from './DocumentAnchors';
+import { CryptoEd25519Verify } from './CryptoEd25519Verify';
 import { Service } from './Service';
 import { Space } from './Space';
 import { DocumentAnchor } from './DocumentAnchor';
@@ -11,12 +12,13 @@ import { Payment } from './Payment';
 import { PermissionGrant } from './PermissionGrant';
 import { Profile } from './Profile';
 import { Task } from './Task';
-import { Timestamp } from './Timestamp';
 import { NamedEvent } from './NamedEvent';
+import { Timestamp } from './Timestamp';
 import { Record } from './Record';
 
 export { Relationship } from './Relationship';
 export { DocumentAnchors } from './DocumentAnchors';
+export { CryptoEd25519Verify } from './CryptoEd25519Verify';
 export { Service } from './Service';
 export { Space } from './Space';
 export { DocumentAnchor } from './DocumentAnchor';
@@ -28,13 +30,14 @@ export { Payment } from './Payment';
 export { PermissionGrant } from './PermissionGrant';
 export { Profile } from './Profile';
 export { Task } from './Task';
-export { Timestamp } from './Timestamp';
 export { NamedEvent } from './NamedEvent';
+export { Timestamp } from './Timestamp';
 export { Record } from './Record';
 
-export const contents = {
+export const contents: Record<string, unknown> = {
   '29BmTvgmhh9x7t2tGd38GqTH3b9v9rgqsuE21K73i86g': Relationship,
   '3KRfhgbFdvyW9SGuKiq3WxWF9bHSATEb8tMso8Pykpre': DocumentAnchors,
+  '8wu86DtNarAvJYkPY6iKKYVBFAPedStVtDyjnwZ7xnCw': CryptoEd25519Verify,
   ALFnjBeqP1hupQrZGddqbi276GkwnuPtkQjiFLjU716A: Service,
   Bdyasci5huobiunZqkShQUiWzCyHLhY4fpMkG4YF5BiS: Space,
   Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo: DocumentAnchor,
@@ -46,7 +49,7 @@ export const contents = {
   EHTR6jFrqbmjPf7dNSJUsGUJrgr5kLh62QiT2bxD6KRp: PermissionGrant,
   EWfk8qkKZYqqTyeLs4wLJTfPCLufZBiNGFQY4M4PLv99: Profile,
   FfJjBeSAe4JWfA5FVnPDgL9pzLPYELskQnBSanPC9E8L: Task,
+  FWb3C8okT5wMqZVHCH4e3RAKLSk2EDw8ryxoonQY1pKz: NamedEvent,
   GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs: Timestamp,
-  GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX: NamedEvent,
   J18rFf6VX3ADe5gTnqmL4wXtivLkzrRXLPPhnoghnjzB: Record,
-} as const;
+};

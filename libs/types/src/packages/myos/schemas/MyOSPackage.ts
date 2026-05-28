@@ -8,9 +8,14 @@ import { AnchorAutomationTemplateSchema } from './AnchorAutomationTemplate';
 export const MyOSPackageSchema = withTypeBlueId(blueIds['MyOS/MyOS Package'])(
   AgentSchema.extend({
     agentStoreDescription: z.string().optional(),
-    automationTemplate: AnchorAutomationTemplateSchema.optional(),
+    automationTemplate: z.lazy(() => AnchorAutomationTemplateSchema).optional(),
     capabilities: z.record(z.string(), z.boolean()).optional(),
-    channelBindings: z.record(z.string(), ChannelSchema).optional(),
+    channelBindings: z
+      .record(
+        z.string(),
+        z.lazy(() => ChannelSchema)
+      )
+      .optional(),
     description: z.string().optional(),
     document: blueNodeField().optional(),
     initialMessages: z

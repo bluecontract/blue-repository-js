@@ -1,3 +1,5 @@
+import type { ZodTypeAny } from 'zod';
+import { CryptoEd25519VerifySchema } from './CryptoEd25519Verify';
 import { CurrencySchema } from './Currency';
 import { DocumentSchema } from './Document';
 import { DocumentAnchorSchema } from './DocumentAnchor';
@@ -15,6 +17,7 @@ import { SpaceSchema } from './Space';
 import { TaskSchema } from './Task';
 import { TimestampSchema } from './Timestamp';
 
+export { CryptoEd25519VerifySchema } from './CryptoEd25519Verify';
 export { CurrencySchema } from './Currency';
 export { DocumentSchema } from './Document';
 export { DocumentAnchorSchema } from './DocumentAnchor';
@@ -32,12 +35,13 @@ export { SpaceSchema } from './Space';
 export { TaskSchema } from './Task';
 export { TimestampSchema } from './Timestamp';
 
-export const schemas = {
+export const schemas: Record<string, ZodTypeAny> = {
+  '8wu86DtNarAvJYkPY6iKKYVBFAPedStVtDyjnwZ7xnCw': CryptoEd25519VerifySchema,
   CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc: CurrencySchema,
   Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8: DocumentSchema,
   Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo: DocumentAnchorSchema,
   '3KRfhgbFdvyW9SGuKiq3WxWF9bHSATEb8tMso8Pykpre': DocumentAnchorsSchema,
-  GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX: NamedEventSchema,
+  FWb3C8okT5wMqZVHCH4e3RAKLSk2EDw8ryxoonQY1pKz: NamedEventSchema,
   DoDF7Hm2Ss7ikirPwXZ7KFiWNmdwtb53vHCSwYFbCdPk: PaymentSchema,
   EHTR6jFrqbmjPf7dNSJUsGUJrgr5kLh62QiT2bxD6KRp: PermissionGrantSchema,
   EWfk8qkKZYqqTyeLs4wLJTfPCLufZBiNGFQY4M4PLv99: ProfileSchema,
@@ -49,4 +53,4 @@ export const schemas = {
   Bdyasci5huobiunZqkShQUiWzCyHLhY4fpMkG4YF5BiS: SpaceSchema,
   FfJjBeSAe4JWfA5FVnPDgL9pzLPYELskQnBSanPC9E8L: TaskSchema,
   GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs: TimestampSchema,
-} as const;
+};

@@ -5,6 +5,6 @@ import { LinkSchema } from './Link';
 
 export const DocumentLinksSchema = withTypeBlueId(
   blueIds['MyOS/Document Links']
-)(z.object({}).catchall(LinkSchema));
+)(z.object({}).catchall(z.lazy(() => LinkSchema)));
 
 export type DocumentLinks = z.infer<typeof DocumentLinksSchema>;

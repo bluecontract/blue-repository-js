@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
 export const TransactionDetailsUpdateLockChangeFailedSchema = withTypeBlueId(
   blueIds['PayNote/Transaction Details Update Lock Change Failed']

@@ -7,6 +7,6 @@ export const FundsSecuringDeclined = {
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
   },
 } as const;

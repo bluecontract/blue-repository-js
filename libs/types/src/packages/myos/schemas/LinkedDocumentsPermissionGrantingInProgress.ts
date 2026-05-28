@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
 
 export const LinkedDocumentsPermissionGrantingInProgressSchema = withTypeBlueId(
@@ -9,7 +9,7 @@ export const LinkedDocumentsPermissionGrantingInProgressSchema = withTypeBlueId(
 )(
   ResponseSchema.extend({
     description: z.string().optional(),
-    links: LinkedDocumentsPermissionSetSchema.optional(),
+    links: z.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
     name: z.string().optional(),
     targetSessionId: z.string().optional(),
   })

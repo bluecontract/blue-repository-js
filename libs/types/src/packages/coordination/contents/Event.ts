@@ -1,0 +1,5 @@
+export const Event = {
+  description:
+    'Base coordination type for Blue events delivered to channels, emitted by handlers, or recorded inside timeline entries.\nAn Event is a piece of meaning that may cause a document to react. It is not itself a transport envelope, a timeline\nentry, or a processing result; those are separate structures. Concrete event subtypes define the semantic fields\nnecessary for matching and handling.\n\nEvents are identity-bearing Blue content. If an event is emitted, stored in a checkpoint, or included in a timeline\nentry, its content and type determine its identity. The Coordination model treats events as read-only during\nprocessing. Handlers may emit new event nodes, but document mutation must happen through Update Document patches rather\nthan by mutating event objects.\n\nEvent is intentionally broad. Request, Response, Lifecycle Event, Status Change, Chat Message, Customer Action events,\nand domain-specific operation messages can all refine it. A concrete channel or workflow should describe which event\nsubtype it accepts and which fields are required for deterministic processing.\n',
+  name: 'Event',
+} as const;

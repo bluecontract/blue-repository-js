@@ -4,7 +4,7 @@ export const LinkedDocumentsPermissionGrantToDocument = {
       description:
         'Granter/owner’s timeline (direct grant-document revoke lives here).',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     initLifecycleChannel: {
@@ -33,7 +33,7 @@ export const LinkedDocumentsPermissionGrantToDocument = {
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     revokeImplGranter: {
@@ -46,22 +46,48 @@ export const LinkedDocumentsPermissionGrantToDocument = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                'return {\n  events: [\n    {\n      type: "MyOS/Linked Documents Permission Revoke Requested",\n      reason: event.message.request\n    }\n  ]\n};\n',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request',
+                      },
+                    },
+                    type: {
+                      blueId: 'Exjts5mZB8Z8sLyt79KSJozXFpgJJktEsX8ZHGjE6jNt',
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'EmitRevokeRequested',
             type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     validateOnInit: {
@@ -74,22 +100,1365 @@ export const LinkedDocumentsPermissionGrantToDocument = {
       steps: {
         items: [
           {
-            code: {
+            entry: {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value:
-                "const skipValidation = document('/skipValidation');\nif (skipValidation === true) return { events: [] };\n\nconst issues = [];\n\nconst target = document('/targetSessionId');\nif (!target || typeof target !== 'string') issues.push(\"targetSessionId is missing or invalid\");\n\nconst granterId = document('/contracts/granterChannel/accountId');\nif (typeof granterId !== 'string' || granterId.length === 0) issues.push(\"granterChannel must be bound to an accountId\");\n\nconst gdoc = document('/granteeDocumentId');\nif (typeof gdoc !== 'string' || gdoc.trim().length === 0) issues.push(\"granteeDocumentId must be a non-empty string\");\n\nconst links = document('/links');\nif (!links || typeof links !== 'object') issues.push(\"links is missing or invalid\");\n\nconst anchors = Object.keys(links).filter(key => !['description', 'type', 'keyType', 'valueType'].includes(key));\nif (anchors.length === 0) {\n  issues.push(\"links must have at least one anchor entry\");\n}\nfor (const anchor of anchors) {\n  const perms = links[anchor];\n  if (!perms || perms.read !== true) {\n    issues.push(`links['${anchor}'].read must be true`);\n  }\n  const hasSingle = Array.isArray(perms.singleOps) && perms.singleOps.length > 0;\n  if (hasSingle && perms.singleOps.some(x => typeof x !== \"string\" || x.trim().length === 0)) {\n    issues.push(`links['${anchor}'].singleOps must contain only non-empty strings`);\n  }\n  if (perms.allOps === true && hasSingle) {\n    issues.push(`links['${anchor}'].allOps=true and singleOps are mutually exclusive`);\n  }\n}\n\nif (issues.length > 0) return { events: [ { type: \"MyOS/Linked Documents Permission Invalid\", issues } ] };\nreturn { events: [ { type: \"MyOS/Linked Documents Permission Validated\" } ] };\n",
+              value: 'validate',
+            },
+            functions: {
+              asList: {
+                args: {
+                  val: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'list',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    },
+                    else: {
+                      items: [],
+                    },
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
+                    },
+                  },
+                },
+              },
+              asObject: {
+                args: {
+                  val: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'object',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    },
+                    else: {
+                      $emptyObject: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
+                    },
+                  },
+                },
+              },
+              hasBadSingleOps: {
+                args: {
+                  ops: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $some: {
+                    in: {
+                      $call: {
+                        args: {
+                          val: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'ops',
+                            },
+                          },
+                        },
+                        function: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'asList',
+                        },
+                      },
+                    },
+                    item: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'opName',
+                    },
+                    where: {
+                      $not: {
+                        $call: {
+                          args: {
+                            val: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'opName',
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'isNonEmptyText',
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+              isMetaKey: {
+                args: {
+                  key: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $or: {
+                    items: [
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'description',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'type',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'keyType',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'valueType',
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+              isNonEmptyText: {
+                args: {
+                  val: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $and: {
+                    items: [
+                      {
+                        $isKind: {
+                          kind: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'text',
+                          },
+                          val: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'val',
+                            },
+                          },
+                        },
+                      },
+                      {
+                        $truthy: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+              validate: {
+                do: {
+                  items: [
+                    {
+                      $returnIf: {
+                        cond: {
+                          $eq: {
+                            items: [
+                              {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/skipValidation',
+                                },
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                },
+                                value: true,
+                              },
+                            ],
+                          },
+                        },
+                        expr: {
+                          events: {
+                            items: [],
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'issues',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'target',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'granterId',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'granteeDocumentId',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'links',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'anchorCount',
+                            },
+                          ],
+                        },
+                        vars: {
+                          anchorCount: {
+                            type: {
+                              blueId:
+                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            },
+                            value: 0,
+                          },
+                          granteeDocumentId: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/granteeDocumentId',
+                            },
+                          },
+                          granterId: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/contracts/granterChannel/accountId',
+                            },
+                          },
+                          issues: {
+                            items: [],
+                          },
+                          links: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/links',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asObject',
+                              },
+                            },
+                          },
+                          target: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/targetSessionId',
+                            },
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'target',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'isNonEmptyText',
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $set: {
+                                expr: {
+                                  $listConcat: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'issues',
+                                        },
+                                      },
+                                      {
+                                        items: [
+                                          {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value:
+                                              'targetSessionId is missing or invalid',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                },
+                                name: 'issues',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'granterId',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'isNonEmptyText',
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $set: {
+                                expr: {
+                                  $listConcat: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'issues',
+                                        },
+                                      },
+                                      {
+                                        items: [
+                                          {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value:
+                                              'granterChannel must be bound to an accountId',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                },
+                                name: 'issues',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'granteeDocumentId',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'isNonEmptyText',
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $set: {
+                                expr: {
+                                  $listConcat: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'issues',
+                                        },
+                                      },
+                                      {
+                                        items: [
+                                          {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value:
+                                              'granteeDocumentId must be a non-empty string',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                },
+                                name: 'issues',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $eq: {
+                            items: [
+                              {
+                                $size: {
+                                  $keys: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'links',
+                                    },
+                                  },
+                                },
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                },
+                                value: 0,
+                              },
+                            ],
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $set: {
+                                expr: {
+                                  $listConcat: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'issues',
+                                        },
+                                      },
+                                      {
+                                        items: [
+                                          {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value:
+                                              'links is missing or invalid',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                },
+                                name: 'issues',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $forEach: {
+                        do: {
+                          items: [
+                            {
+                              $if: {
+                                cond: {
+                                  $not: {
+                                    $call: {
+                                      args: {
+                                        key: {
+                                          $var: {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value: 'anchor',
+                                          },
+                                        },
+                                      },
+                                      function: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'isMetaKey',
+                                      },
+                                    },
+                                  },
+                                },
+                                then: {
+                                  items: [
+                                    {
+                                      $set: {
+                                        expr: {
+                                          $add: {
+                                            items: [
+                                              {
+                                                $var: {
+                                                  type: {
+                                                    blueId:
+                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  },
+                                                  value: 'anchorCount',
+                                                },
+                                              },
+                                              {
+                                                type: {
+                                                  blueId:
+                                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                },
+                                                value: 1,
+                                              },
+                                            ],
+                                          },
+                                        },
+                                        name: 'anchorCount',
+                                      },
+                                    },
+                                    {
+                                      $let: {
+                                        order: {
+                                          items: [
+                                            {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'perms',
+                                            },
+                                            {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'singleOps',
+                                            },
+                                            {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'hasSingle',
+                                            },
+                                          ],
+                                        },
+                                        vars: {
+                                          hasSingle: {
+                                            $gt: {
+                                              items: [
+                                                {
+                                                  $size: {
+                                                    $call: {
+                                                      args: {
+                                                        val: {
+                                                          $var: {
+                                                            type: {
+                                                              blueId:
+                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            },
+                                                            value: 'singleOps',
+                                                          },
+                                                        },
+                                                      },
+                                                      function: {
+                                                        type: {
+                                                          blueId:
+                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        },
+                                                        value: 'asList',
+                                                      },
+                                                    },
+                                                  },
+                                                },
+                                                {
+                                                  type: {
+                                                    blueId:
+                                                      '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                  },
+                                                  value: 0,
+                                                },
+                                              ],
+                                            },
+                                          },
+                                          perms: {
+                                            $call: {
+                                              args: {
+                                                val: {
+                                                  $get: {
+                                                    key: {
+                                                      $var: {
+                                                        type: {
+                                                          blueId:
+                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        },
+                                                        value: 'anchor',
+                                                      },
+                                                    },
+                                                    object: {
+                                                      $var: {
+                                                        type: {
+                                                          blueId:
+                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        },
+                                                        value: 'links',
+                                                      },
+                                                    },
+                                                  },
+                                                },
+                                              },
+                                              function: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'asObject',
+                                              },
+                                            },
+                                          },
+                                          singleOps: {
+                                            $choose: {
+                                              cond: {
+                                                $exists: {
+                                                  $var: {
+                                                    name: 'perms',
+                                                    path: {
+                                                      type: {
+                                                        blueId:
+                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      },
+                                                      value: '/singleOps',
+                                                    },
+                                                  },
+                                                },
+                                              },
+                                              else: {
+                                                items: [],
+                                              },
+                                              then: {
+                                                $var: {
+                                                  name: 'perms',
+                                                  path: {
+                                                    type: {
+                                                      blueId:
+                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    },
+                                                    value: '/singleOps',
+                                                  },
+                                                },
+                                              },
+                                            },
+                                          },
+                                        },
+                                      },
+                                    },
+                                    {
+                                      $if: {
+                                        cond: {
+                                          $ne: {
+                                            items: [
+                                              {
+                                                $var: {
+                                                  name: 'perms',
+                                                  path: {
+                                                    type: {
+                                                      blueId:
+                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    },
+                                                    value: '/read',
+                                                  },
+                                                },
+                                              },
+                                              {
+                                                type: {
+                                                  blueId:
+                                                    '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                },
+                                                value: true,
+                                              },
+                                            ],
+                                          },
+                                        },
+                                        then: {
+                                          items: [
+                                            {
+                                              $set: {
+                                                expr: {
+                                                  $listConcat: {
+                                                    items: [
+                                                      {
+                                                        $var: {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: 'issues',
+                                                        },
+                                                      },
+                                                      {
+                                                        items: [
+                                                          {
+                                                            $concat: {
+                                                              items: [
+                                                                {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    "links['",
+                                                                },
+                                                                {
+                                                                  $var: {
+                                                                    type: {
+                                                                      blueId:
+                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                    },
+                                                                    value:
+                                                                      'anchor',
+                                                                  },
+                                                                },
+                                                                {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    "'].read must be true",
+                                                                },
+                                                              ],
+                                                            },
+                                                          },
+                                                        ],
+                                                      },
+                                                    ],
+                                                  },
+                                                },
+                                                name: 'issues',
+                                              },
+                                            },
+                                          ],
+                                        },
+                                      },
+                                    },
+                                    {
+                                      $if: {
+                                        cond: {
+                                          $call: {
+                                            args: {
+                                              ops: {
+                                                $var: {
+                                                  type: {
+                                                    blueId:
+                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  },
+                                                  value: 'singleOps',
+                                                },
+                                              },
+                                            },
+                                            function: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'hasBadSingleOps',
+                                            },
+                                          },
+                                        },
+                                        then: {
+                                          items: [
+                                            {
+                                              $set: {
+                                                expr: {
+                                                  $listConcat: {
+                                                    items: [
+                                                      {
+                                                        $var: {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: 'issues',
+                                                        },
+                                                      },
+                                                      {
+                                                        items: [
+                                                          {
+                                                            $concat: {
+                                                              items: [
+                                                                {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    "links['",
+                                                                },
+                                                                {
+                                                                  $var: {
+                                                                    type: {
+                                                                      blueId:
+                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                    },
+                                                                    value:
+                                                                      'anchor',
+                                                                  },
+                                                                },
+                                                                {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    "'].singleOps must contain only non-empty strings",
+                                                                },
+                                                              ],
+                                                            },
+                                                          },
+                                                        ],
+                                                      },
+                                                    ],
+                                                  },
+                                                },
+                                                name: 'issues',
+                                              },
+                                            },
+                                          ],
+                                        },
+                                      },
+                                    },
+                                    {
+                                      $if: {
+                                        cond: {
+                                          $and: {
+                                            items: [
+                                              {
+                                                $eq: {
+                                                  items: [
+                                                    {
+                                                      $var: {
+                                                        name: 'perms',
+                                                        path: {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: '/allOps',
+                                                        },
+                                                      },
+                                                    },
+                                                    {
+                                                      type: {
+                                                        blueId:
+                                                          '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                      },
+                                                      value: true,
+                                                    },
+                                                  ],
+                                                },
+                                              },
+                                              {
+                                                $var: {
+                                                  type: {
+                                                    blueId:
+                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  },
+                                                  value: 'hasSingle',
+                                                },
+                                              },
+                                            ],
+                                          },
+                                        },
+                                        then: {
+                                          items: [
+                                            {
+                                              $set: {
+                                                expr: {
+                                                  $listConcat: {
+                                                    items: [
+                                                      {
+                                                        $var: {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: 'issues',
+                                                        },
+                                                      },
+                                                      {
+                                                        items: [
+                                                          {
+                                                            $concat: {
+                                                              items: [
+                                                                {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    "links['",
+                                                                },
+                                                                {
+                                                                  $var: {
+                                                                    type: {
+                                                                      blueId:
+                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                    },
+                                                                    value:
+                                                                      'anchor',
+                                                                  },
+                                                                },
+                                                                {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    "'].allOps=true and singleOps are mutually exclusive",
+                                                                },
+                                                              ],
+                                                            },
+                                                          },
+                                                        ],
+                                                      },
+                                                    ],
+                                                  },
+                                                },
+                                                name: 'issues',
+                                              },
+                                            },
+                                          ],
+                                        },
+                                      },
+                                    },
+                                  ],
+                                },
+                              },
+                            },
+                          ],
+                        },
+                        in: {
+                          $keys: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'links',
+                            },
+                          },
+                        },
+                        item: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'anchor',
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $eq: {
+                            items: [
+                              {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'anchorCount',
+                                },
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                },
+                                value: 0,
+                              },
+                            ],
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $set: {
+                                expr: {
+                                  $listConcat: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'issues',
+                                        },
+                                      },
+                                      {
+                                        items: [
+                                          {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value:
+                                              'links must have at least one anchor entry',
+                                          },
+                                        ],
+                                      },
+                                    ],
+                                  },
+                                },
+                                name: 'issues',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $gt: {
+                            items: [
+                              {
+                                $size: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'issues',
+                                  },
+                                },
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                },
+                                value: 0,
+                              },
+                            ],
+                          },
+                        },
+                        else: {
+                          items: [
+                            {
+                              $appendEvent: {
+                                type: {
+                                  blueId:
+                                    'AuKN3wv7WZXJdonpPqP9TJCBqTfBssMj4f2G1ffyAs6E',
+                                },
+                              },
+                            },
+                          ],
+                        },
+                        then: {
+                          items: [
+                            {
+                              $appendEvent: {
+                                issues: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'issues',
+                                  },
+                                },
+                                type: {
+                                  blueId:
+                                    '4JMVYn4GU5hEc6f9PVuTUD7zr4mUgeTyCF54rkjsYUFE',
+                                },
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $return: {
+                        events: {
+                          $events: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
             },
             name: 'ValidateBasicShape',
             type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe',
+        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
       },
     },
   },
@@ -130,6 +1499,6 @@ export const LinkedDocumentsPermissionGrantToDocument = {
     },
   },
   type: {
-    blueId: '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB',
+    blueId: 'Gm9rGd9RJMvBcPCwN7ybywVAtMAAngeAB82DZ2cQ6bAE',
   },
 } as const;

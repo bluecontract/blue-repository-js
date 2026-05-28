@@ -8,6 +8,6 @@ export const FundsCaptured = {
     'The Guarantor confirms that funds have been successfully transferred to the Payee.',
   name: 'Funds Captured',
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
   },
 } as const;

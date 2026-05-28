@@ -3,6 +3,6 @@ export const PayNoteAcceptanceRequested = {
     'A participant requests that the Guarantor accept this PayNote as governing the referenced transaction.\n',
   name: 'PayNote Acceptance Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
   },
 } as const;

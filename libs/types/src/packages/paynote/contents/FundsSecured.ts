@@ -8,6 +8,6 @@ export const FundsSecured = {
     'The Guarantor confirms that value is now secured / under its control.',
   name: 'Funds Secured',
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
   },
 } as const;

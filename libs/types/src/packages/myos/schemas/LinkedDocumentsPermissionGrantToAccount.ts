@@ -1,10 +1,10 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { CompositeTimelineChannelSchema } from '../../conversation/schemas/CompositeTimelineChannel';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
+import { CompositeTimelineChannelSchema } from '../../coordination/schemas/CompositeTimelineChannel';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
@@ -16,17 +16,21 @@ export const LinkedDocumentsPermissionGrantToAccountSchema = withTypeBlueId(
   MyOSAdminBaseSchema.extend({
     contracts: z
       .object({
-        granteeChannel: MyOSTimelineChannelSchema.optional(),
-        granterChannel: MyOSTimelineChannelSchema.optional(),
-        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        revoke: OperationSchema.optional(),
-        revokeAccessChannel: CompositeTimelineChannelSchema.optional(),
-        revokeImpl: SequentialWorkflowOperationSchema.optional(),
-        validateOnInit: SequentialWorkflowSchema.optional(),
+        granteeChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        granterChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        initLifecycleChannel: z
+          .lazy(() => LifecycleEventChannelSchema)
+          .optional(),
+        revoke: z.lazy(() => OperationSchema).optional(),
+        revokeAccessChannel: z
+          .lazy(() => CompositeTimelineChannelSchema)
+          .optional(),
+        revokeImpl: z.lazy(() => SequentialWorkflowOperationSchema).optional(),
+        validateOnInit: z.lazy(() => SequentialWorkflowSchema).optional(),
       })
       .optional(),
     granterDocumentSessionId: z.string().optional(),
-    links: LinkedDocumentsPermissionSetSchema.optional(),
+    links: z.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
     name: z.string().optional(),
     targetSessionId: z.string().optional(),
   })

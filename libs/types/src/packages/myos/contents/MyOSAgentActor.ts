@@ -8,6 +8,6 @@ export const MyOSAgentActor = {
   description: 'MyOS-specific agent actor specialization.',
   name: 'MyOS Agent Actor',
   type: {
-    blueId: 'FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB',
+    blueId: 'HokwnQS9btAnSkJ4CuTqydH98mtsYj1SnCGTrRQh47Rw',
   },
 } as const;

@@ -10,6 +10,6 @@ export const MyOSTimeline = {
     'A managed timeline implementation providing convenient email-based authentication and extensive features. MyOS timelines are straightforward to set up and use, offering a balance of convenience and security through hash-chained, authenticated event sequences.',
   name: 'MyOS Timeline',
   type: {
-    blueId: '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa',
+    blueId: 'DFycCEHaAuMXptCMxQ4N5M1UW2yyddgi5xa3TPWDTNAZ',
   },
 } as const;

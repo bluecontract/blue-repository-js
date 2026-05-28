@@ -16,7 +16,7 @@ import {
 <% } -%>
 <% }); -%>
 
-export const <%= schemaName %>Schema = withTypeBlueId(blueIds['<%= blueIdsKey %>'])(
+export const <%= schemaName %>Schema<%- schemaTypeAnnotation %> = withTypeBlueId(blueIds['<%= blueIdsKey %>'])(
 <%- schemaExpressionIndented %>
 );
 

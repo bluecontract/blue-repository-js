@@ -3,9 +3,9 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
 
@@ -39,14 +39,14 @@ export const PaymentMandateSchema = withTypeBlueId(
         z.object({
           amountMinor: z.number().optional(),
           authorizationReason: z.string().optional(),
-          authorizationRespondedAt: TimestampSchema.optional(),
+          authorizationRespondedAt: z.lazy(() => TimestampSchema).optional(),
           authorizationStatus: z.string().optional(),
           authorizedAmountMinor: z.number().optional(),
           capturedDeltaMinor: z.number().optional(),
           chargeMode: z.string().optional(),
           counterpartyId: z.string().optional(),
           counterpartyType: z.string().optional(),
-          currency: CurrencySchema.optional(),
+          currency: z.lazy(() => CurrencySchema).optional(),
           holdId: z.string().optional(),
           lastSettlementId: z.string().optional(),
           lastSettlementProcessingStatus: z.string().optional(),
@@ -54,33 +54,39 @@ export const PaymentMandateSchema = withTypeBlueId(
           reservedDeltaMinor: z.number().optional(),
           settled: z.boolean().optional(),
           settlementReason: z.string().optional(),
-          settlementRespondedAt: TimestampSchema.optional(),
+          settlementRespondedAt: z.lazy(() => TimestampSchema).optional(),
           transactionId: z.string().optional(),
         })
       )
       .optional(),
     contracts: z
       .object({
-        authorizeSpend: OperationSchema.optional(),
-        authorizeSpendImpl: SequentialWorkflowOperationSchema.optional(),
-        granteeChannel: MyOSTimelineChannelSchema.optional(),
-        granterChannel: MyOSTimelineChannelSchema.optional(),
-        guarantorChannel: MyOSTimelineChannelSchema.optional(),
-        initialize: SequentialWorkflowSchema.optional(),
-        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        settleSpend: OperationSchema.optional(),
-        settleSpendImpl: SequentialWorkflowOperationSchema.optional(),
+        authorizeSpend: z.lazy(() => OperationSchema).optional(),
+        authorizeSpendImpl: z
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        granteeChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        granterChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        guarantorChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        initialize: z.lazy(() => SequentialWorkflowSchema).optional(),
+        initLifecycleChannel: z
+          .lazy(() => LifecycleEventChannelSchema)
+          .optional(),
+        settleSpend: z.lazy(() => OperationSchema).optional(),
+        settleSpendImpl: z
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
       })
       .optional(),
-    currency: CurrencySchema.optional(),
+    currency: z.lazy(() => CurrencySchema).optional(),
     description: z.string().optional(),
-    expiresAt: TimestampSchema.optional(),
+    expiresAt: z.lazy(() => TimestampSchema).optional(),
     granteeId: z.string().optional(),
     granteeType: z.string().optional(),
     granterId: z.string().optional(),
     granterType: z.string().optional(),
     name: z.string().optional(),
-    revokedAt: TimestampSchema.optional(),
+    revokedAt: z.lazy(() => TimestampSchema).optional(),
     sourceAccount: z.string().optional(),
   })
 );

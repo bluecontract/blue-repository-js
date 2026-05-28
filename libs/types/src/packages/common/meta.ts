@@ -3,6 +3,17 @@ import blueIds from './blue-ids';
 const meta = {
   name: 'Common',
   typesMeta: {
+    '8wu86DtNarAvJYkPY6iKKYVBFAPedStVtDyjnwZ7xnCw': {
+      status: 'dev',
+      name: 'Crypto Ed25519 Verify',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '8wu86DtNarAvJYkPY6iKKYVBFAPedStVtDyjnwZ7xnCw',
+          attributesAdded: [],
+        },
+      ],
+    },
     CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc: {
       status: 'dev',
       name: 'Currency',
@@ -47,13 +58,13 @@ const meta = {
         },
       ],
     },
-    GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX: {
+    FWb3C8okT5wMqZVHCH4e3RAKLSk2EDw8ryxoonQY1pKz: {
       status: 'dev',
       name: 'Named Event',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX',
+          typeBlueId: 'FWb3C8okT5wMqZVHCH4e3RAKLSk2EDw8ryxoonQY1pKz',
           attributesAdded: [],
         },
       ],

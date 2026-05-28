@@ -2,7 +2,7 @@ export const ChatGPTConnectorAgent = {
   contracts: {
     ownerChannel: {
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     startWorker: {
@@ -22,7 +22,7 @@ export const ChatGPTConnectorAgent = {
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     startWorkerImpl: {
@@ -61,13 +61,13 @@ export const ChatGPTConnectorAgent = {
             },
             name: 'Emit Install Prompt',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: '3Rgcf7G716Y9JhCov4m72m53tqpv3yDpzcBwGrxUaQSJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
   },

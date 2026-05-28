@@ -41,7 +41,7 @@ export const PayNoteDelivery = {
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     acceptPayNoteImpl: {
@@ -54,116 +54,827 @@ export const PayNoteDelivery = {
       steps: {
         items: [
           {
-            code: {
+            entry: {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value:
-                'const request =\n  event && event.message ? event.message.request : null;\nconst acceptedAt =\n  request && typeof request.acceptedAt === "string"\n    ? request.acceptedAt\n    : "";\nconst currentDecisionStatus = document(\'/clientDecisionStatus\');\nconst alreadyAccepted = currentDecisionStatus === "accepted";\nconst alreadyRejected = currentDecisionStatus === "rejected";\nconst alreadyDecided = alreadyAccepted || alreadyRejected;\nconst transactionStatus = document(\'/transactionIdentificationStatus\');\nconst canAccept =\n  transactionStatus === "identified" &&\n  currentDecisionStatus === "pending";\nconst discardReason = canAccept\n  ? ""\n  : alreadyDecided\n    ? `PayNote already ${currentDecisionStatus}`\n    : transactionStatus === "failed"\n      ? "Transaction identification failed"\n      : "Transaction not identified";\nconst currentAcceptedAt = document(\'/clientAcceptedAt\');\nconst currentDeliveryStatus =\n  document.canonical(\'/deliveryStatus\') || {\n    type: "Conversation/Status Pending"\n  };\nconst currentDeliveryError = document(\'/deliveryError\');\nconst payNoteBootstrapRequest = document(\'/payNoteBootstrapRequest\');\n\nconst nextDecisionStatus = canAccept\n  ? "accepted"\n  : typeof currentDecisionStatus === "string"\n    ? currentDecisionStatus\n    : "pending";\nconst nextAcceptedAt = canAccept\n  ? acceptedAt\n  : typeof currentAcceptedAt === "string"\n    ? currentAcceptedAt\n    : "";\nconst nextDeliveryStatus = canAccept\n  ? { type: "Conversation/Status Completed" }\n  : currentDeliveryStatus;\nconst nextDeliveryError = canAccept\n  ? ""\n  : typeof currentDeliveryError === "string"\n    ? currentDeliveryError\n    : "";\n\nreturn {\n  acceptedAt,\n  nextDecisionStatus,\n  nextAcceptedAt,\n  nextDeliveryStatus,\n  nextDeliveryError,\n  events: canAccept\n    ? [\n        {\n          type: "PayNote/PayNote Accepted By Client",\n          acceptedAt\n        },\n        payNoteBootstrapRequest\n      ]\n    : [\n        {\n          type: "PayNote/PayNote Client Decision Discarded",\n          decision: "accepted",\n          reason: discardReason,\n          decisionAt: acceptedAt\n        }\n      ]\n};\n',
+              value: 'accept',
             },
-            name: 'Capture Acceptance Timestamp',
+            functions: {
+              accept: {
+                do: {
+                  items: [
+                    {
+                      $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'acceptedAt',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'currentDecisionStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'alreadyDecided',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'transactionStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'canAccept',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'discardReason',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextDecisionStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextAcceptedAt',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextDeliveryStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextDeliveryError',
+                            },
+                          ],
+                        },
+                        vars: {
+                          acceptedAt: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $event: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/message/request/acceptedAt',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asText',
+                              },
+                            },
+                          },
+                          alreadyDecided: {
+                            $or: {
+                              items: [
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'currentDecisionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'accepted',
+                                      },
+                                    ],
+                                  },
+                                },
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'currentDecisionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'rejected',
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          canAccept: {
+                            $and: {
+                              items: [
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'transactionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'identified',
+                                      },
+                                    ],
+                                  },
+                                },
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'currentDecisionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'pending',
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          currentDecisionStatus: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/clientDecisionStatus',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asText',
+                              },
+                            },
+                          },
+                          discardReason: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canAccept',
+                                },
+                              },
+                              else: {
+                                $choose: {
+                                  cond: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'alreadyDecided',
+                                    },
+                                  },
+                                  else: {
+                                    $choose: {
+                                      cond: {
+                                        $eq: {
+                                          items: [
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'transactionStatus',
+                                              },
+                                            },
+                                            {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'failed',
+                                            },
+                                          ],
+                                        },
+                                      },
+                                      else: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'Transaction not identified',
+                                      },
+                                      then: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value:
+                                          'Transaction identification failed',
+                                      },
+                                    },
+                                  },
+                                  then: {
+                                    $concat: {
+                                      items: [
+                                        {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'PayNote already',
+                                        },
+                                        {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: ' ',
+                                        },
+                                        {
+                                          $var: {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value: 'currentDecisionStatus',
+                                          },
+                                        },
+                                      ],
+                                    },
+                                  },
+                                },
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '',
+                              },
+                            },
+                          },
+                          nextAcceptedAt: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canAccept',
+                                },
+                              },
+                              else: {
+                                $call: {
+                                  args: {
+                                    val: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/clientAcceptedAt',
+                                      },
+                                    },
+                                  },
+                                  function: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'asText',
+                                  },
+                                },
+                              },
+                              then: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'acceptedAt',
+                                },
+                              },
+                            },
+                          },
+                          nextDecisionStatus: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canAccept',
+                                },
+                              },
+                              else: {
+                                $choose: {
+                                  cond: {
+                                    $truthy: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'currentDecisionStatus',
+                                      },
+                                    },
+                                  },
+                                  else: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'pending',
+                                  },
+                                  then: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'currentDecisionStatus',
+                                    },
+                                  },
+                                },
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'accepted',
+                              },
+                            },
+                          },
+                          nextDeliveryError: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canAccept',
+                                },
+                              },
+                              else: {
+                                $call: {
+                                  args: {
+                                    val: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/deliveryError',
+                                      },
+                                    },
+                                  },
+                                  function: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'asText',
+                                  },
+                                },
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '',
+                              },
+                            },
+                          },
+                          nextDeliveryStatus: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canAccept',
+                                },
+                              },
+                              else: {
+                                $default: {
+                                  items: [
+                                    {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/deliveryStatus',
+                                      },
+                                    },
+                                    {
+                                      mode: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'pending',
+                                      },
+                                      type: {
+                                        blueId:
+                                          'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                                      },
+                                    },
+                                  ],
+                                },
+                              },
+                              then: {
+                                mode: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'terminated',
+                                },
+                                type: {
+                                  blueId:
+                                    'Pzdwn6mQJT2qFDaF4V1dzpcyu4ejRqDv8neLPnbHRGi',
+                                },
+                              },
+                            },
+                          },
+                          transactionStatus: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/transactionIdentificationStatus',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asText',
+                              },
+                            },
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/clientDecisionStatus',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextDecisionStatus',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/clientAcceptedAt',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextAcceptedAt',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/deliveryStatus',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextDeliveryStatus',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/deliveryError',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextDeliveryError',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'canAccept',
+                          },
+                        },
+                        else: {
+                          items: [
+                            {
+                              $appendEvent: {
+                                decision: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'accepted',
+                                },
+                                decisionAt: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'acceptedAt',
+                                  },
+                                },
+                                reason: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'discardReason',
+                                  },
+                                },
+                                type: {
+                                  blueId:
+                                    '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW',
+                                },
+                              },
+                            },
+                          ],
+                        },
+                        then: {
+                          items: [
+                            {
+                              $appendEvent: {
+                                acceptedAt: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'acceptedAt',
+                                  },
+                                },
+                                type: {
+                                  blueId:
+                                    'HtsPop9z5R2EoW3TLKCSePnQUAj5wqryWuRWV1cwyBTt',
+                                },
+                              },
+                            },
+                            {
+                              $appendEvent: {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/payNoteBootstrapRequest',
+                                },
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $return: {
+                        changeset: {
+                          $changeset: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                        events: {
+                          $events: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+              asText: {
+                args: {
+                  val: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'text',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    },
+                    else: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '',
+                    },
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
+                    },
+                  },
+                },
+              },
+            },
+            name: 'CaptureAcceptanceTimestamp',
             type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
-              items: [
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/clientDecisionStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextDecisionStatus}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/clientAcceptedAt',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextAcceptedAt}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/deliveryStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextDeliveryStatus}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/deliveryError',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Acceptance Timestamp'].nextDeliveryError}",
-                  },
-                },
-              ],
-            },
-            name: 'Apply Acceptance Update',
-            type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     initialize: {
@@ -193,7 +904,7 @@ export const PayNoteDelivery = {
                   },
                   val: {
                     type: {
-                      blueId: 'HTTYTqakRbb53umfjRvryunCRm5QQm3mMArTrgUF5DxL',
+                      blueId: 'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
                     },
                   },
                 },
@@ -261,13 +972,13 @@ export const PayNoteDelivery = {
             },
             name: 'Initialize Delivery State',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
         ],
       },
       type: {
-        blueId: '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe',
+        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
       },
     },
     initLifecycleChannel: {
@@ -283,14 +994,14 @@ export const PayNoteDelivery = {
     payNoteDeliverer: {
       description: 'Participant delivering and reporting status (e.g., bank).',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     payNoteSender: {
       description:
         'Participant submitting the PayNote delivery (merchant or processor).',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     rejectPayNote: {
@@ -315,7 +1026,7 @@ export const PayNoteDelivery = {
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     rejectPayNoteImpl: {
@@ -328,116 +1039,905 @@ export const PayNoteDelivery = {
       steps: {
         items: [
           {
-            code: {
+            entry: {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value:
-                'const request =\n  event && event.message ? event.message.request : null;\nconst safeReason =\n  typeof request === "string"\n    ? request\n    : request && typeof request.reason === "string"\n      ? request.reason\n      : "";\nconst rejectedAt =\n  request && typeof request.rejectedAt === "string"\n    ? request.rejectedAt\n    : "";\nconst currentDecisionStatus = document(\'/clientDecisionStatus\');\nconst alreadyAccepted = currentDecisionStatus === "accepted";\nconst alreadyRejected = currentDecisionStatus === "rejected";\nconst alreadyDecided = alreadyAccepted || alreadyRejected;\nconst transactionStatus = document(\'/transactionIdentificationStatus\');\nconst canReject =\n  transactionStatus === "identified" &&\n  currentDecisionStatus === "pending";\nconst discardReason = canReject\n  ? ""\n  : alreadyDecided\n    ? `PayNote already ${currentDecisionStatus}`\n    : transactionStatus === "failed"\n      ? "Transaction identification failed"\n      : "Transaction not identified";\n\nconst currentRejectedAt = document(\'/clientRejectedAt\');\nconst currentDeliveryStatus =\n  document.canonical(\'/deliveryStatus\') || {\n    type: "Conversation/Status Pending"\n  };\nconst currentDeliveryError = document(\'/deliveryError\');\n\nconst nextDecisionStatus = canReject\n  ? "rejected"\n  : typeof currentDecisionStatus === "string"\n    ? currentDecisionStatus\n    : "pending";\nconst nextRejectedAt = canReject\n  ? rejectedAt\n  : typeof currentRejectedAt === "string"\n    ? currentRejectedAt\n    : "";\nconst nextDeliveryStatus = canReject\n  ? { type: "Conversation/Status Failed" }\n  : currentDeliveryStatus;\nconst nextDeliveryError = canReject\n  ? safeReason\n  : typeof currentDeliveryError === "string"\n    ? currentDeliveryError\n    : "";\n\nreturn {\n  reason: safeReason,\n  rejectedAt,\n  nextDecisionStatus,\n  nextRejectedAt,\n  nextDeliveryStatus,\n  nextDeliveryError,\n  events: canReject\n    ? [\n        {\n          type: "PayNote/PayNote Rejected By Client",\n          reason: safeReason,\n          rejectedAt\n        }\n      ]\n    : [\n        {\n          type: "PayNote/PayNote Client Decision Discarded",\n          decision: "rejected",\n          reason: discardReason,\n          decisionAt: rejectedAt\n        }\n      ]\n};\n',
+              value: 'reject',
             },
-            name: 'Capture Rejection Reason',
+            functions: {
+              asText: {
+                args: {
+                  val: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'text',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    },
+                    else: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '',
+                    },
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
+                    },
+                  },
+                },
+              },
+              reject: {
+                do: {
+                  items: [
+                    {
+                      $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'request',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'safeReason',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'rejectedAt',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'currentDecisionStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'alreadyDecided',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'transactionStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'canReject',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'discardReason',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextDecisionStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextRejectedAt',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextDeliveryStatus',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextDeliveryError',
+                            },
+                          ],
+                        },
+                        vars: {
+                          alreadyDecided: {
+                            $or: {
+                              items: [
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'currentDecisionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'accepted',
+                                      },
+                                    ],
+                                  },
+                                },
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'currentDecisionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'rejected',
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          canReject: {
+                            $and: {
+                              items: [
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'transactionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'identified',
+                                      },
+                                    ],
+                                  },
+                                },
+                                {
+                                  $eq: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'currentDecisionStatus',
+                                        },
+                                      },
+                                      {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'pending',
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          currentDecisionStatus: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/clientDecisionStatus',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asText',
+                              },
+                            },
+                          },
+                          discardReason: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canReject',
+                                },
+                              },
+                              else: {
+                                $choose: {
+                                  cond: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'alreadyDecided',
+                                    },
+                                  },
+                                  else: {
+                                    $choose: {
+                                      cond: {
+                                        $eq: {
+                                          items: [
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'transactionStatus',
+                                              },
+                                            },
+                                            {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'failed',
+                                            },
+                                          ],
+                                        },
+                                      },
+                                      else: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'Transaction not identified',
+                                      },
+                                      then: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value:
+                                          'Transaction identification failed',
+                                      },
+                                    },
+                                  },
+                                  then: {
+                                    $concat: {
+                                      items: [
+                                        {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'PayNote already',
+                                        },
+                                        {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: ' ',
+                                        },
+                                        {
+                                          $var: {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value: 'currentDecisionStatus',
+                                          },
+                                        },
+                                      ],
+                                    },
+                                  },
+                                },
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '',
+                              },
+                            },
+                          },
+                          nextDecisionStatus: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canReject',
+                                },
+                              },
+                              else: {
+                                $choose: {
+                                  cond: {
+                                    $truthy: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'currentDecisionStatus',
+                                      },
+                                    },
+                                  },
+                                  else: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'pending',
+                                  },
+                                  then: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'currentDecisionStatus',
+                                    },
+                                  },
+                                },
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'rejected',
+                              },
+                            },
+                          },
+                          nextDeliveryError: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canReject',
+                                },
+                              },
+                              else: {
+                                $call: {
+                                  args: {
+                                    val: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/deliveryError',
+                                      },
+                                    },
+                                  },
+                                  function: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'asText',
+                                  },
+                                },
+                              },
+                              then: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'safeReason',
+                                },
+                              },
+                            },
+                          },
+                          nextDeliveryStatus: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canReject',
+                                },
+                              },
+                              else: {
+                                $default: {
+                                  items: [
+                                    {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/deliveryStatus',
+                                      },
+                                    },
+                                    {
+                                      mode: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'pending',
+                                      },
+                                      type: {
+                                        blueId:
+                                          'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                                      },
+                                    },
+                                  ],
+                                },
+                              },
+                              then: {
+                                mode: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'terminated',
+                                },
+                                type: {
+                                  blueId:
+                                    'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                                },
+                              },
+                            },
+                          },
+                          nextRejectedAt: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'canReject',
+                                },
+                              },
+                              else: {
+                                $call: {
+                                  args: {
+                                    val: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/clientRejectedAt',
+                                      },
+                                    },
+                                  },
+                                  function: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'asText',
+                                  },
+                                },
+                              },
+                              then: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'rejectedAt',
+                                },
+                              },
+                            },
+                          },
+                          rejectedAt: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $event: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/message/request/rejectedAt',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asText',
+                              },
+                            },
+                          },
+                          request: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request',
+                            },
+                          },
+                          safeReason: {
+                            $choose: {
+                              cond: {
+                                $isKind: {
+                                  kind: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'text',
+                                  },
+                                  val: {
+                                    $event: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: '/message/request',
+                                    },
+                                  },
+                                },
+                              },
+                              else: {
+                                $call: {
+                                  args: {
+                                    val: {
+                                      $event: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/message/request/reason',
+                                      },
+                                    },
+                                  },
+                                  function: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'asText',
+                                  },
+                                },
+                              },
+                              then: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request',
+                                },
+                              },
+                            },
+                          },
+                          transactionStatus: {
+                            $call: {
+                              args: {
+                                val: {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/transactionIdentificationStatus',
+                                  },
+                                },
+                              },
+                              function: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'asText',
+                              },
+                            },
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/clientDecisionStatus',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextDecisionStatus',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/clientRejectedAt',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextRejectedAt',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/deliveryStatus',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextDeliveryStatus',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/deliveryError',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextDeliveryError',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'canReject',
+                          },
+                        },
+                        else: {
+                          items: [
+                            {
+                              $appendEvent: {
+                                decision: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'rejected',
+                                },
+                                decisionAt: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'rejectedAt',
+                                  },
+                                },
+                                reason: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'discardReason',
+                                  },
+                                },
+                                type: {
+                                  blueId:
+                                    '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW',
+                                },
+                              },
+                            },
+                          ],
+                        },
+                        then: {
+                          items: [
+                            {
+                              $appendEvent: {
+                                reason: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'safeReason',
+                                  },
+                                },
+                                rejectedAt: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'rejectedAt',
+                                  },
+                                },
+                                type: {
+                                  blueId:
+                                    '6EwokAQarCKdRXuU2wpkCyHfXzhr1CgjY5feVomsYJob',
+                                },
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $return: {
+                        changeset: {
+                          $changeset: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                        events: {
+                          $events: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+            },
+            name: 'CaptureRejectionReason',
             type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
-              items: [
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/clientDecisionStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Rejection Reason'].nextDecisionStatus}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/clientRejectedAt',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Rejection Reason'].nextRejectedAt}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/deliveryStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Rejection Reason'].nextDeliveryStatus}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/deliveryError',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Capture Rejection Reason'].nextDeliveryError}",
-                  },
-                },
-              ],
-            },
-            name: 'Apply Rejection Update',
-            type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     reportDeliveryError: {
@@ -454,7 +1954,7 @@ export const PayNoteDelivery = {
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     reportDeliveryErrorImpl: {
@@ -467,71 +1967,155 @@ export const PayNoteDelivery = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                'const reason =\n  event && event.message ? event.message.request : "";\nconst safeReason = typeof reason === "string" ? reason : "";\n\nreturn {\n  reason: safeReason,\n  events: [\n    {\n      type: "PayNote/PayNote Delivery Failed",\n      reason: safeReason\n    }\n  ]\n};\n',
-            },
-            name: 'Capture Delivery Failure Reason',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $let: {
+                    expr: {
+                      $choose: {
+                        cond: {
+                          $isKind: {
+                            kind: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'text',
+                            },
+                            val: {
+                              $event: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '/message/request',
+                              },
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '',
+                        },
+                        then: {
+                          $event: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/message/request',
+                          },
+                        },
+                      },
                     },
-                    value: 'replace',
+                    name: 'reason',
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    reason: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'reason',
+                      },
                     },
-                    value: '/deliveryStatus',
-                  },
-                  val: {
                     type: {
-                      blueId: '5w8XTussoHoaLUy6gwou9Rz5Zxuh9yums9YDNjGdLCKV',
+                      blueId: '3VLavrr4LCLqo5FV1XxXhxUGryHBzBGQoFKTGWaXv7PM',
                     },
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/deliveryStatus',
+                    },
+                    val: {
+                      mode: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'terminated',
+                      },
+                      type: {
+                        blueId: 'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: '/deliveryError',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/deliveryError',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'reason',
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: "${steps['Capture Delivery Failure Reason'].reason}",
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Apply Delivery Failure',
+            name: 'CaptureDeliveryFailureReason',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     updateTransactionIdentificationStatus: {
@@ -548,7 +2132,7 @@ export const PayNoteDelivery = {
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     updateTransactionIdentificationStatusImpl: {
@@ -561,95 +2145,498 @@ export const PayNoteDelivery = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                'const request =\n  event && event.message ? event.message.request : null;\nconst identified = request === true;\nconst currentStatus = document(\'/transactionIdentificationStatus\');\nconst canUpdate =\n  currentStatus !== "identified" && currentStatus !== "failed";\nconst identificationStatus = canUpdate\n  ? identified\n    ? "identified"\n    : "failed"\n  : currentStatus;\nconst currentDeliveryStatus =\n  document.canonical(\'/deliveryStatus\') || {\n    type: "Conversation/Status Pending"\n  };\nconst deliveryStatus = canUpdate\n  ? identified\n    ? { type: "Conversation/Status In Progress" }\n    : { type: "Conversation/Status Failed" }\n  : currentDeliveryStatus;\nconst currentDeliveryError = document(\'/deliveryError\');\nconst deliveryError = canUpdate\n  ? identified\n    ? ""\n    : "Transaction identification failed"\n  : typeof currentDeliveryError === "string"\n    ? currentDeliveryError\n    : "";\nconst eventType = identified\n  ? "PayNote/Transaction Identified"\n  : "PayNote/Transaction Identification Failed";\n\nreturn {\n  identificationStatus,\n  deliveryStatus,\n  deliveryError,\n  events: canUpdate ? [{ type: eventType }] : []\n};\n',
-            },
-            name: 'Classify Identification Result',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $let: {
+                    order: {
+                      items: [
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'identified',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'currentStatus',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'canUpdate',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextIdentificationStatus',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextDeliveryStatus',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextDeliveryError',
+                        },
+                      ],
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    vars: {
+                      canUpdate: {
+                        $not: {
+                          $or: {
+                            items: [
+                              {
+                                $eq: {
+                                  items: [
+                                    {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value:
+                                          '/transactionIdentificationStatus',
+                                      },
+                                    },
+                                    {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'identified',
+                                    },
+                                  ],
+                                },
+                              },
+                              {
+                                $eq: {
+                                  items: [
+                                    {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value:
+                                          '/transactionIdentificationStatus',
+                                      },
+                                    },
+                                    {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'failed',
+                                    },
+                                  ],
+                                },
+                              },
+                            ],
+                          },
+                        },
+                      },
+                      currentStatus: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/transactionIdentificationStatus',
+                        },
+                      },
+                      identified: {
+                        $eq: {
+                          items: [
+                            {
+                              $event: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '/message/request',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                              },
+                              value: true,
+                            },
+                          ],
+                        },
+                      },
+                      nextDeliveryError: {
+                        $choose: {
+                          cond: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'canUpdate',
+                            },
+                          },
+                          else: {
+                            $default: {
+                              items: [
+                                {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/deliveryError',
+                                  },
+                                },
+                                {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '',
+                                },
+                              ],
+                            },
+                          },
+                          then: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'identified',
+                                },
+                              },
+                              else: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'Transaction identification failed',
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '',
+                              },
+                            },
+                          },
+                        },
+                      },
+                      nextDeliveryStatus: {
+                        $choose: {
+                          cond: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'canUpdate',
+                            },
+                          },
+                          else: {
+                            $default: {
+                              items: [
+                                {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/deliveryStatus',
+                                  },
+                                },
+                                {
+                                  mode: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'pending',
+                                  },
+                                  type: {
+                                    blueId:
+                                      'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          then: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'identified',
+                                },
+                              },
+                              else: {
+                                mode: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'terminated',
+                                },
+                                type: {
+                                  blueId:
+                                    'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                                },
+                              },
+                              then: {
+                                mode: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'active',
+                                },
+                                type: {
+                                  blueId:
+                                    'E6jaeVfFuyjB4YEZyp7fvUt8AJ7BmKr8WAM9oGDmhMbM',
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      nextIdentificationStatus: {
+                        $choose: {
+                          cond: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'canUpdate',
+                            },
+                          },
+                          else: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'currentStatus',
+                            },
+                          },
+                          then: {
+                            $choose: {
+                              cond: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'identified',
+                                },
+                              },
+                              else: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'failed',
+                              },
+                              then: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'identified',
+                              },
+                            },
+                          },
+                        },
+                      },
                     },
-                    value: '/transactionIdentificationStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Classify Identification Result'].identificationStatus}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/transactionIdentificationStatus',
                     },
-                    value: '/deliveryStatus',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextIdentificationStatus',
+                      },
                     },
-                    value:
-                      "${steps['Classify Identification Result'].deliveryStatus}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/deliveryStatus',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextDeliveryStatus',
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: '/deliveryError',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/deliveryError',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextDeliveryError',
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $if: {
+                    cond: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'canUpdate',
+                      },
                     },
-                    value:
-                      "${steps['Classify Identification Result'].deliveryError}",
+                    then: {
+                      items: [
+                        {
+                          $if: {
+                            cond: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'identified',
+                              },
+                            },
+                            else: {
+                              items: [
+                                {
+                                  $appendEvent: {
+                                    type: {
+                                      blueId:
+                                        '8XH1vN2R5tLKQKRz4bJzv1JuEnare6Q4G4A49gpJXceW',
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                            then: {
+                              items: [
+                                {
+                                  $appendEvent: {
+                                    type: {
+                                      blueId:
+                                        'FjaxYHKQ3DZ7h6ooFwVwD2Gs2WygLsw33xQ9vMLZzk8H',
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                        },
+                      ],
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Apply Identification Update',
+            name: 'ClassifyIdentificationResult',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
   },
@@ -662,7 +2649,7 @@ export const PayNoteDelivery = {
   deliveryStatus: {
     description: 'High-level delivery status.',
     type: {
-      blueId: '58B8orsFkxxy7bWqjLXJmtBs2b5rwnNQNbeoAbGhPkJc',
+      blueId: 'QHoUCCVhepZWQnSo9VfZCJWbSwyA9TuT65tBZMVtnRX',
     },
   },
   description:
@@ -673,22 +2660,22 @@ export const PayNoteDelivery = {
       'Optional Payment Mandate bootstrap request details for Delivery flows that require mandate attachment before proposal exposure.',
     document: {
       type: {
-        blueId: 'BAcWp1auMPeb8VAkkswfKBAuLzP3RHuAVrhdHXc2KfUB',
+        blueId: '5fBQHAnRCh6a5DwzJFV2f31yExvRhsnKNNMcuZnMHXry',
       },
     },
     type: {
-      blueId: '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
+      blueId: 'DRKHv2QVLQneubWYELKCoHcfen76T7KxDk5pdCT9w8Bw',
     },
   },
   payNoteBootstrapRequest: {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
+        blueId: 'GS7qK6RBWAKdCFMy6hdeQNgmqeAkw5LrbcktFfnQdAxe',
       },
     },
     type: {
-      blueId: '4derXUpwPZDDkBpYPCTMr6t3mbeGU7AUYmvfW22cZior',
+      blueId: 'DRKHv2QVLQneubWYELKCoHcfen76T7KxDk5pdCT9w8Bw',
     },
   },
   transactionIdentificationStatus: {

@@ -218,11 +218,11 @@ export const PaymentMandate = {
         'Validate a charge attempt against mandate policy and reserve capacity.',
       request: {
         type: {
-          blueId: '7EKvVzbT63C2taKWfLf9J2BiVL7BCL6Ld86tH8b9kmxF',
+          blueId: 'AnxxLd7NofAKrwNp22fvP4jQ24aAHKKvxsv4aXJgjziP',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     authorizeSpendImpl: {
@@ -235,94 +235,2098 @@ export const PaymentMandate = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                "const documentCanonical = document.canonical('/');\nconst requestCanonical = eventCanonical\n  ? canon.at(eventCanonical, '/message/request')\n  : undefined;\n\nconst requestedAtNode = requestCanonical\n  ? canon.at(requestCanonical, '/requestedAt')\n  : undefined;\nconst requestedAtRaw = requestedAtNode ? canon.unwrap(requestedAtNode) : '';\nconst requestedAt = typeof requestedAtRaw === 'string' ? requestedAtRaw : '';\nconst nowIso =\n  requestedAt ||\n  (typeof event.timestamp === 'string' ? event.timestamp : '');\n\nconst normalizeTimestamp = function (value) {\n  if (typeof value !== 'string' || !value) {\n    return '';\n  }\n  let digits = '';\n  let index = 0;\n  while (index < value.length) {\n    const code = value.charCodeAt(index);\n    if (code >= 48 && code <= 57) {\n      digits += value.charAt(index);\n    }\n    index += 1;\n  }\n  if (digits.length < 14) {\n    return '';\n  }\n  return digits.slice(0, 14);\n};\n\nconst authorizationIdNode = requestCanonical\n  ? canon.at(requestCanonical, '/authorizationId')\n  : undefined;\nconst authorizationIdRaw = authorizationIdNode\n  ? canon.unwrap(authorizationIdNode)\n  : '';\nconst authorizationId =\n  typeof authorizationIdRaw === 'string' ? authorizationIdRaw : '';\n\nconst amountMinorNode = requestCanonical\n  ? canon.at(requestCanonical, '/amountMinor')\n  : undefined;\nconst amountMinorRaw = amountMinorNode ? canon.unwrap(amountMinorNode) : 0;\nconst amountMinor = typeof amountMinorRaw === 'number' ? amountMinorRaw : 0;\n\nconst counterpartyTypeNode = requestCanonical\n  ? canon.at(requestCanonical, '/counterpartyType')\n  : undefined;\nconst counterpartyTypeRaw = counterpartyTypeNode\n  ? canon.unwrap(counterpartyTypeNode)\n  : '';\nconst counterpartyType =\n  typeof counterpartyTypeRaw === 'string' ? counterpartyTypeRaw : '';\n\nconst counterpartyIdNode = requestCanonical\n  ? canon.at(requestCanonical, '/counterpartyId')\n  : undefined;\nconst counterpartyIdRaw = counterpartyIdNode\n  ? canon.unwrap(counterpartyIdNode)\n  : '';\nconst counterpartyId =\n  typeof counterpartyIdRaw === 'string' ? counterpartyIdRaw : '';\n\nconst requestedCurrencyNode = requestCanonical\n  ? canon.at(requestCanonical, '/currency')\n  : undefined;\nconst requestedCurrencyRaw = requestedCurrencyNode\n  ? canon.unwrap(requestedCurrencyNode)\n  : '';\nconst requestedCurrency =\n  typeof requestedCurrencyRaw === 'string' ? requestedCurrencyRaw : '';\n\nconst chargeAttemptsNode = canon.at(documentCanonical, '/chargeAttempts');\nconst chargeAttemptsRaw = chargeAttemptsNode\n  ? canon.unwrap(chargeAttemptsNode)\n  : {};\nconst chargeAttempts =\n  chargeAttemptsRaw &&\n  typeof chargeAttemptsRaw === 'object' &&\n  !Array.isArray(chargeAttemptsRaw)\n    ? chargeAttemptsRaw\n    : {};\nconst nextChargeAttempts = { ...chargeAttempts };\n\nconst existingAttemptRaw = authorizationId\n  ? chargeAttempts[authorizationId]\n  : undefined;\nconst existingAttempt =\n  existingAttemptRaw &&\n  typeof existingAttemptRaw === 'object' &&\n  !Array.isArray(existingAttemptRaw)\n    ? existingAttemptRaw\n    : null;\nconst existingDecision =\n  existingAttempt &&\n  typeof existingAttempt.authorizationStatus === 'string'\n    ? existingAttempt.authorizationStatus\n    : '';\nconst existingReason =\n  existingAttempt && typeof existingAttempt.authorizationReason === 'string'\n    ? existingAttempt.authorizationReason\n    : '';\n\nconst amountLimitNode = canon.at(documentCanonical, '/amountLimit');\nconst amountLimitRaw = amountLimitNode ? canon.unwrap(amountLimitNode) : 0;\nconst amountLimit = typeof amountLimitRaw === 'number' ? amountLimitRaw : 0;\n\nconst amountReservedNode = canon.at(documentCanonical, '/amountReserved');\nconst amountReservedRaw = amountReservedNode\n  ? canon.unwrap(amountReservedNode)\n  : 0;\nconst amountReserved =\n  typeof amountReservedRaw === 'number' ? amountReservedRaw : 0;\n\nconst amountCapturedNode = canon.at(documentCanonical, '/amountCaptured');\nconst amountCapturedRaw = amountCapturedNode\n  ? canon.unwrap(amountCapturedNode)\n  : 0;\nconst amountCaptured =\n  typeof amountCapturedRaw === 'number' ? amountCapturedRaw : 0;\n\nconst mandateCurrencyNode = canon.at(documentCanonical, '/currency');\nconst mandateCurrencyRaw = mandateCurrencyNode\n  ? canon.unwrap(mandateCurrencyNode)\n  : '';\nconst mandateCurrency =\n  typeof mandateCurrencyRaw === 'string' ? mandateCurrencyRaw : '';\n\nconst expiresAtNode = canon.at(documentCanonical, '/expiresAt');\nconst expiresAtRaw = expiresAtNode ? canon.unwrap(expiresAtNode) : '';\nconst expiresAt = typeof expiresAtRaw === 'string' ? expiresAtRaw : '';\n\nconst revokedAtNode = canon.at(documentCanonical, '/revokedAt');\nconst revokedAtRaw = revokedAtNode ? canon.unwrap(revokedAtNode) : '';\nconst revokedAt = typeof revokedAtRaw === 'string' ? revokedAtRaw : '';\n\nconst nowComparable = normalizeTimestamp(nowIso);\n\nconst allowedCounterpartiesNode = canon.at(\n  documentCanonical,\n  '/allowedPaymentCounterparties'\n);\nconst allowedCounterpartiesRaw = allowedCounterpartiesNode\n  ? canon.unwrap(allowedCounterpartiesNode)\n  : [];\nconst allowedCounterparties = Array.isArray(allowedCounterpartiesRaw)\n  ? allowedCounterpartiesRaw\n  : [];\nconst isCounterpartyAllowed =\n  allowedCounterparties.length === 0 ||\n  allowedCounterparties.some(function (item) {\n    const itemType =\n      item && typeof item.counterpartyType === 'string'\n        ? item.counterpartyType\n        : '';\n    const itemId =\n      item && typeof item.counterpartyId === 'string'\n        ? item.counterpartyId\n        : '';\n    return (\n      item &&\n      itemType === counterpartyType &&\n      itemId === counterpartyId\n    );\n  });\n\nlet status = 'rejected';\nlet reason = '';\nlet nextAmountReserved = amountReserved;\n\nif (existingDecision === 'approved' || existingDecision === 'rejected') {\n  status = existingDecision;\n  reason = existingDecision === 'rejected' ? existingReason : '';\n} else if (!authorizationId) {\n  reason = 'Missing authorizationId.';\n} else if (amountMinor <= 0) {\n  reason = 'Amount must be greater than zero.';\n} else if (!requestedCurrency || requestedCurrency !== mandateCurrency) {\n  reason = 'Currency does not match mandate currency.';\n} else if (revokedAt) {\n  reason = 'Mandate is revoked.';\n} else if (\n  expiresAt &&\n  normalizeTimestamp(expiresAt) &&\n  nowComparable &&\n  normalizeTimestamp(expiresAt) < nowComparable\n) {\n  reason = 'Mandate is expired.';\n} else if (!isCounterpartyAllowed) {\n  reason = 'Counterparty is not allowed by mandate.';\n} else if (amountReserved + amountCaptured + amountMinor > amountLimit) {\n  reason = 'Mandate amount limit exceeded.';\n} else {\n  status = 'approved';\n  nextAmountReserved = amountReserved + amountMinor;\n}\n\nif (authorizationId && !existingDecision) {\n  const chargeModeNode = requestCanonical\n    ? canon.at(requestCanonical, '/chargeMode')\n    : undefined;\n  const chargeModeRaw = chargeModeNode ? canon.unwrap(chargeModeNode) : '';\n  const chargeMode = typeof chargeModeRaw === 'string' ? chargeModeRaw : '';\n\n  nextChargeAttempts[authorizationId] = {\n    amountMinor,\n    currency: requestedCurrency,\n    counterpartyType,\n    counterpartyId,\n    chargeMode,\n    authorizationStatus: status,\n    authorizationReason: reason,\n    authorizationRespondedAt: nowIso,\n    authorizedAmountMinor: status === 'approved' ? amountMinor : 0,\n    settled: false,\n    lastSettlementRequestStatus: '',\n    lastSettlementProcessingStatus: '',\n    settlementReason: '',\n    settlementRespondedAt: '',\n    reservedDeltaMinor: 0,\n    capturedDeltaMinor: 0,\n    holdId: '',\n    transactionId: ''\n  };\n}\n\nconst remainingAmountMinor = Math.max(\n  0,\n  amountLimit - (nextAmountReserved + amountCaptured)\n);\n\nconst responseEvent = {\n  type: 'PayNote/Payment Mandate Spend Authorization Responded',\n  authorizationId,\n  status,\n  remainingAmountMinor,\n  respondedAt: nowIso\n};\n\nif (reason) {\n  responseEvent.reason = reason;\n}\n\nreturn {\n  nextChargeAttempts: nextChargeAttempts,\n  nextAmountReserved: nextAmountReserved,\n  events: [responseEvent]\n};\n",
-            },
-            name: 'Decide Spend Authorization',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $let: {
+                    order: {
+                      items: [
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'authorizationId',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountMinor',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'requestedCurrency',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'counterpartyType',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'counterpartyId',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'chargeMode',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nowIso',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountLimit',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountReserved',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountCaptured',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'mandateCurrency',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'revokedAt',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'chargeAttempts',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'existingAttempt',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'existingDecision',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'existingReason',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'allowedCounterparties',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'counterpartyAllowed',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'status',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'reason',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextAmountReserved',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextChargeAttempts',
+                        },
+                      ],
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    vars: {
+                      allowedCounterparties: {
+                        $list: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/allowedPaymentCounterparties',
+                          },
+                        },
+                      },
+                      amountCaptured: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountCaptured',
+                        },
+                      },
+                      amountLimit: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountLimit',
+                        },
+                      },
+                      amountMinor: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'integer',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/amountMinor',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            },
+                            value: 0,
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/amountMinor',
+                            },
+                          },
+                        },
+                      },
+                      amountReserved: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountReserved',
+                        },
+                      },
+                      authorizationId: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/authorizationId',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/authorizationId',
+                            },
+                          },
+                        },
+                      },
+                      chargeAttempts: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/chargeAttempts',
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      chargeMode: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/chargeMode',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/chargeMode',
+                            },
+                          },
+                        },
+                      },
+                      counterpartyAllowed: {
+                        $or: {
+                          items: [
+                            {
+                              $eq: {
+                                items: [
+                                  {
+                                    $size: {
+                                      $list: {
+                                        $document: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value:
+                                            '/allowedPaymentCounterparties',
+                                        },
+                                      },
+                                    },
+                                  },
+                                  {
+                                    type: {
+                                      blueId:
+                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                    },
+                                    value: 0,
+                                  },
+                                ],
+                              },
+                            },
+                            {
+                              $some: {
+                                in: {
+                                  $list: {
+                                    $document: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: '/allowedPaymentCounterparties',
+                                    },
+                                  },
+                                },
+                                item: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'item',
+                                },
+                                where: {
+                                  $and: {
+                                    items: [
+                                      {
+                                        $eq: {
+                                          items: [
+                                            {
+                                              $var: {
+                                                name: 'item',
+                                                path: {
+                                                  type: {
+                                                    blueId:
+                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  },
+                                                  value: '/counterpartyType',
+                                                },
+                                              },
+                                            },
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'counterpartyType',
+                                              },
+                                            },
+                                          ],
+                                        },
+                                      },
+                                      {
+                                        $eq: {
+                                          items: [
+                                            {
+                                              $var: {
+                                                name: 'item',
+                                                path: {
+                                                  type: {
+                                                    blueId:
+                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  },
+                                                  value: '/counterpartyId',
+                                                },
+                                              },
+                                            },
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'counterpartyId',
+                                              },
+                                            },
+                                          ],
+                                        },
+                                      },
+                                    ],
+                                  },
+                                },
+                              },
+                            },
+                          ],
+                        },
+                      },
+                      counterpartyId: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/counterpartyId',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/counterpartyId',
+                            },
+                          },
+                        },
+                      },
+                      counterpartyType: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/counterpartyType',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/counterpartyType',
+                            },
+                          },
+                        },
+                      },
+                      existingAttempt: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $get: {
+                                  key: {
+                                    $choose: {
+                                      cond: {
+                                        $isKind: {
+                                          kind: {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value: 'text',
+                                          },
+                                          val: {
+                                            $event: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value:
+                                                '/message/request/authorizationId',
+                                            },
+                                          },
+                                        },
+                                      },
+                                      else: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '',
+                                      },
+                                      then: {
+                                        $event: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value:
+                                            '/message/request/authorizationId',
+                                        },
+                                      },
+                                    },
+                                  },
+                                  object: {
+                                    $object: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/chargeAttempts',
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      existingDecision: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $var: {
+                                  name: 'existingAttempt',
+                                  path: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/authorizationStatus',
+                                  },
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $var: {
+                              name: 'existingAttempt',
+                              path: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '/authorizationStatus',
+                              },
+                            },
+                          },
+                        },
+                      },
+                      existingReason: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $var: {
+                                  name: 'existingAttempt',
+                                  path: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/authorizationReason',
+                                  },
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $var: {
+                              name: 'existingAttempt',
+                              path: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '/authorizationReason',
+                              },
+                            },
+                          },
+                        },
+                      },
+                      mandateCurrency: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/currency',
+                        },
+                      },
+                      nextAmountReserved: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountReserved',
+                        },
+                      },
+                      nextChargeAttempts: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/chargeAttempts',
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      nowIso: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/requestedAt',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/requestedAt',
+                            },
+                          },
+                        },
+                      },
+                      reason: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '',
+                      },
+                      requestedCurrency: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/currency',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/currency',
+                            },
+                          },
+                        },
+                      },
+                      revokedAt: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/revokedAt',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/revokedAt',
+                            },
+                          },
+                        },
+                      },
+                      status: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'rejected',
+                      },
                     },
-                    value: '/chargeAttempts',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Decide Spend Authorization'].nextChargeAttempts}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $if: {
+                    cond: {
+                      $or: {
+                        items: [
+                          {
+                            $eq: {
+                              items: [
+                                {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'existingDecision',
+                                  },
+                                },
+                                {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'approved',
+                                },
+                              ],
+                            },
+                          },
+                          {
+                            $eq: {
+                              items: [
+                                {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'existingDecision',
+                                  },
+                                },
+                                {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'rejected',
+                                },
+                              ],
+                            },
+                          },
+                        ],
+                      },
                     },
-                    value: 'replace',
+                    else: {
+                      items: [
+                        {
+                          $if: {
+                            cond: {
+                              $not: {
+                                $truthy: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'authorizationId',
+                                  },
+                                },
+                              },
+                            },
+                            else: {
+                              items: [
+                                {
+                                  $if: {
+                                    cond: {
+                                      $lte: {
+                                        items: [
+                                          {
+                                            $var: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'amountMinor',
+                                            },
+                                          },
+                                          {
+                                            type: {
+                                              blueId:
+                                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                            },
+                                            value: 0,
+                                          },
+                                        ],
+                                      },
+                                    },
+                                    else: {
+                                      items: [
+                                        {
+                                          $if: {
+                                            cond: {
+                                              $or: {
+                                                items: [
+                                                  {
+                                                    $not: {
+                                                      $truthy: {
+                                                        $var: {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value:
+                                                            'requestedCurrency',
+                                                        },
+                                                      },
+                                                    },
+                                                  },
+                                                  {
+                                                    $ne: {
+                                                      items: [
+                                                        {
+                                                          $var: {
+                                                            type: {
+                                                              blueId:
+                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            },
+                                                            value:
+                                                              'requestedCurrency',
+                                                          },
+                                                        },
+                                                        {
+                                                          $var: {
+                                                            type: {
+                                                              blueId:
+                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            },
+                                                            value:
+                                                              'mandateCurrency',
+                                                          },
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                ],
+                                              },
+                                            },
+                                            else: {
+                                              items: [
+                                                {
+                                                  $if: {
+                                                    cond: {
+                                                      $truthy: {
+                                                        $var: {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: 'revokedAt',
+                                                        },
+                                                      },
+                                                    },
+                                                    else: {
+                                                      items: [
+                                                        {
+                                                          $if: {
+                                                            cond: {
+                                                              $not: {
+                                                                $var: {
+                                                                  type: {
+                                                                    blueId:
+                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                  },
+                                                                  value:
+                                                                    'counterpartyAllowed',
+                                                                },
+                                                              },
+                                                            },
+                                                            else: {
+                                                              items: [
+                                                                {
+                                                                  $if: {
+                                                                    cond: {
+                                                                      $gt: {
+                                                                        items: [
+                                                                          {
+                                                                            $add: {
+                                                                              items:
+                                                                                [
+                                                                                  {
+                                                                                    $var: {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                      },
+                                                                                      value:
+                                                                                        'amountReserved',
+                                                                                    },
+                                                                                  },
+                                                                                  {
+                                                                                    $var: {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                      },
+                                                                                      value:
+                                                                                        'amountCaptured',
+                                                                                    },
+                                                                                  },
+                                                                                  {
+                                                                                    $var: {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                      },
+                                                                                      value:
+                                                                                        'amountMinor',
+                                                                                    },
+                                                                                  },
+                                                                                ],
+                                                                            },
+                                                                          },
+                                                                          {
+                                                                            $var: {
+                                                                              type: {
+                                                                                blueId:
+                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                              },
+                                                                              value:
+                                                                                'amountLimit',
+                                                                            },
+                                                                          },
+                                                                        ],
+                                                                      },
+                                                                    },
+                                                                    else: {
+                                                                      items: [
+                                                                        {
+                                                                          $set: {
+                                                                            expr: {
+                                                                              type: {
+                                                                                blueId:
+                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                              },
+                                                                              value:
+                                                                                'approved',
+                                                                            },
+                                                                            name: 'status',
+                                                                          },
+                                                                        },
+                                                                        {
+                                                                          $set: {
+                                                                            expr: {
+                                                                              $add: {
+                                                                                items:
+                                                                                  [
+                                                                                    {
+                                                                                      $var: {
+                                                                                        type: {
+                                                                                          blueId:
+                                                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                        },
+                                                                                        value:
+                                                                                          'amountReserved',
+                                                                                      },
+                                                                                    },
+                                                                                    {
+                                                                                      $var: {
+                                                                                        type: {
+                                                                                          blueId:
+                                                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                        },
+                                                                                        value:
+                                                                                          'amountMinor',
+                                                                                      },
+                                                                                    },
+                                                                                  ],
+                                                                              },
+                                                                            },
+                                                                            name: 'nextAmountReserved',
+                                                                          },
+                                                                        },
+                                                                      ],
+                                                                    },
+                                                                    then: {
+                                                                      items: [
+                                                                        {
+                                                                          $set: {
+                                                                            expr: {
+                                                                              type: {
+                                                                                blueId:
+                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                              },
+                                                                              value:
+                                                                                'Mandate amount limit exceeded.',
+                                                                            },
+                                                                            name: 'reason',
+                                                                          },
+                                                                        },
+                                                                      ],
+                                                                    },
+                                                                  },
+                                                                },
+                                                              ],
+                                                            },
+                                                            then: {
+                                                              items: [
+                                                                {
+                                                                  $set: {
+                                                                    expr: {
+                                                                      type: {
+                                                                        blueId:
+                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      },
+                                                                      value:
+                                                                        'Counterparty is not allowed by mandate.',
+                                                                    },
+                                                                    name: 'reason',
+                                                                  },
+                                                                },
+                                                              ],
+                                                            },
+                                                          },
+                                                        },
+                                                      ],
+                                                    },
+                                                    then: {
+                                                      items: [
+                                                        {
+                                                          $set: {
+                                                            expr: {
+                                                              type: {
+                                                                blueId:
+                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              },
+                                                              value:
+                                                                'Mandate is revoked.',
+                                                            },
+                                                            name: 'reason',
+                                                          },
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                },
+                                              ],
+                                            },
+                                            then: {
+                                              items: [
+                                                {
+                                                  $set: {
+                                                    expr: {
+                                                      type: {
+                                                        blueId:
+                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      },
+                                                      value:
+                                                        'Currency does not match mandate currency.',
+                                                    },
+                                                    name: 'reason',
+                                                  },
+                                                },
+                                              ],
+                                            },
+                                          },
+                                        },
+                                      ],
+                                    },
+                                    then: {
+                                      items: [
+                                        {
+                                          $set: {
+                                            expr: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value:
+                                                'Amount must be greater than zero.',
+                                            },
+                                            name: 'reason',
+                                          },
+                                        },
+                                      ],
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                            then: {
+                              items: [
+                                {
+                                  $set: {
+                                    expr: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'Missing authorizationId.',
+                                    },
+                                    name: 'reason',
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                        },
+                      ],
+                    },
+                    then: {
+                      items: [
+                        {
+                          $set: {
+                            expr: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'existingDecision',
+                              },
+                            },
+                            name: 'status',
+                          },
+                        },
+                        {
+                          $if: {
+                            cond: {
+                              $eq: {
+                                items: [
+                                  {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'existingDecision',
+                                    },
+                                  },
+                                  {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'rejected',
+                                  },
+                                ],
+                              },
+                            },
+                            then: {
+                              items: [
+                                {
+                                  $set: {
+                                    expr: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'existingReason',
+                                      },
+                                    },
+                                    name: 'reason',
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                        },
+                      ],
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $if: {
+                    cond: {
+                      $and: {
+                        items: [
+                          {
+                            $truthy: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'authorizationId',
+                              },
+                            },
+                          },
+                          {
+                            $not: {
+                              $truthy: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'existingDecision',
+                                },
+                              },
+                            },
+                          },
+                        ],
+                      },
                     },
-                    value: '/amountReserved',
+                    then: {
+                      items: [
+                        {
+                          $set: {
+                            expr: {
+                              $objectSet: {
+                                key: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'authorizationId',
+                                  },
+                                },
+                                object: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'nextChargeAttempts',
+                                  },
+                                },
+                                val: {
+                                  amountMinor: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'amountMinor',
+                                    },
+                                  },
+                                  authorizationReason: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'reason',
+                                    },
+                                  },
+                                  authorizationRespondedAt: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'nowIso',
+                                    },
+                                  },
+                                  authorizationStatus: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'status',
+                                    },
+                                  },
+                                  authorizedAmountMinor: {
+                                    $choose: {
+                                      cond: {
+                                        $eq: {
+                                          items: [
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'status',
+                                              },
+                                            },
+                                            {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: 'approved',
+                                            },
+                                          ],
+                                        },
+                                      },
+                                      else: {
+                                        type: {
+                                          blueId:
+                                            '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                        },
+                                        value: 0,
+                                      },
+                                      then: {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'amountMinor',
+                                        },
+                                      },
+                                    },
+                                  },
+                                  capturedDeltaMinor: {
+                                    type: {
+                                      blueId:
+                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                    },
+                                    value: 0,
+                                  },
+                                  chargeMode: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'chargeMode',
+                                    },
+                                  },
+                                  counterpartyId: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'counterpartyId',
+                                    },
+                                  },
+                                  counterpartyType: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'counterpartyType',
+                                    },
+                                  },
+                                  currency: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'requestedCurrency',
+                                    },
+                                  },
+                                  holdId: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                  lastSettlementProcessingStatus: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                  lastSettlementRequestStatus: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                  reservedDeltaMinor: {
+                                    type: {
+                                      blueId:
+                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                    },
+                                    value: 0,
+                                  },
+                                  settled: {
+                                    type: {
+                                      blueId:
+                                        '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                    },
+                                    value: false,
+                                  },
+                                  settlementReason: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                  settlementRespondedAt: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                  transactionId: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                },
+                              },
+                            },
+                            name: 'nextChargeAttempts',
+                          },
+                        },
+                      ],
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $let: {
+                    order: {
+                      items: [
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'remainingAmountMinor',
+                        },
+                      ],
                     },
-                    value:
-                      "${steps['Decide Spend Authorization'].nextAmountReserved}",
+                    vars: {
+                      remainingAmountMinor: {
+                        $choose: {
+                          cond: {
+                            $gt: {
+                              items: [
+                                {
+                                  $subtract: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'amountLimit',
+                                        },
+                                      },
+                                      {
+                                        $add: {
+                                          items: [
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'nextAmountReserved',
+                                              },
+                                            },
+                                            {
+                                              $var: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: 'amountCaptured',
+                                              },
+                                            },
+                                          ],
+                                        },
+                                      },
+                                    ],
+                                  },
+                                },
+                                {
+                                  type: {
+                                    blueId:
+                                      '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                  },
+                                  value: 0,
+                                },
+                              ],
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            },
+                            value: 0,
+                          },
+                          then: {
+                            $subtract: {
+                              items: [
+                                {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'amountLimit',
+                                  },
+                                },
+                                {
+                                  $add: {
+                                    items: [
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'nextAmountReserved',
+                                        },
+                                      },
+                                      {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'amountCaptured',
+                                        },
+                                      },
+                                    ],
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/chargeAttempts',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextChargeAttempts',
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amountReserved',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextAmountReserved',
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendEvent: {
+                    authorizationId: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'authorizationId',
+                      },
+                    },
+                    reason: {
+                      $choose: {
+                        cond: {
+                          $truthy: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'reason',
+                            },
+                          },
+                        },
+                        then: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'reason',
+                          },
+                        },
+                      },
+                    },
+                    remainingAmountMinor: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'remainingAmountMinor',
+                      },
+                    },
+                    respondedAt: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nowIso',
+                      },
+                    },
+                    status: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'status',
+                      },
+                    },
+                    type: {
+                      blueId: '9h8QgAXNnpK8ekENXhGxvsqk74vXyBvdEbpHetsEYtQb',
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Persist Authorization Decision',
+            functions: {
+              cleanMap: {
+                args: {
+                  object: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $objectFromEntries: {
+                    $filter: {
+                      in: {
+                        $entries: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'object',
+                          },
+                        },
+                      },
+                      item: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'entry',
+                      },
+                      where: {
+                        $not: {
+                          $call: {
+                            args: {
+                              key: {
+                                $var: {
+                                  name: 'entry',
+                                  path: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/key',
+                                  },
+                                },
+                              },
+                            },
+                            function: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'isLanguageKey',
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+              isLanguageKey: {
+                args: {
+                  key: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $or: {
+                    items: [
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'blueId',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'type',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'name',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'description',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'schema',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'contracts',
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+            },
+            name: 'DecideSpendAuthorization',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     granteeChannel: {
       description:
         'Grantee timeline channel (party allowed to use the mandate).',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     granterChannel: {
       description: 'Granting party timeline channel.',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     guarantorChannel: {
       description:
         'Bank/admin channel executing mandate checks and settlement updates.',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     initialize: {
@@ -356,13 +2360,13 @@ export const PaymentMandate = {
             },
             name: 'Initialize mandate runtime state',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
         ],
       },
       type: {
-        blueId: '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe',
+        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
       },
     },
     initLifecycleChannel: {
@@ -386,11 +2390,11 @@ export const PaymentMandate = {
         'Apply final reserve/capture deltas for a previously authorized charge attempt.',
       request: {
         type: {
-          blueId: '6aPqmL9AQV31CCV576ZmEcUgysbdbQAfAig9J5VYeR6v',
+          blueId: 'Bsb4uv9m6GU7T8Z6TwXQGZagFcVR8xn4EBNTR5bBZfgv',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     settleSpendImpl: {
@@ -403,95 +2407,2401 @@ export const PaymentMandate = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                "const documentCanonical = document.canonical('/');\nconst requestCanonical = eventCanonical\n  ? canon.at(eventCanonical, '/message/request')\n  : undefined;\n\nconst settledAtNode = requestCanonical\n  ? canon.at(requestCanonical, '/settledAt')\n  : undefined;\nconst settledAtRaw = settledAtNode ? canon.unwrap(settledAtNode) : '';\nconst settledAt = typeof settledAtRaw === 'string' ? settledAtRaw : '';\nconst nowIso =\n  settledAt || (typeof event.timestamp === 'string' ? event.timestamp : '');\n\nconst authorizationIdNode = requestCanonical\n  ? canon.at(requestCanonical, '/authorizationId')\n  : undefined;\nconst authorizationIdRaw = authorizationIdNode\n  ? canon.unwrap(authorizationIdNode)\n  : '';\nconst authorizationId =\n  typeof authorizationIdRaw === 'string' ? authorizationIdRaw : '';\n\nconst settlementStatusNode = requestCanonical\n  ? canon.at(requestCanonical, '/status')\n  : undefined;\nconst settlementStatusRaw = settlementStatusNode\n  ? canon.unwrap(settlementStatusNode)\n  : '';\nconst settlementStatus =\n  typeof settlementStatusRaw === 'string' ? settlementStatusRaw : '';\n\nconst reservedDeltaNode = requestCanonical\n  ? canon.at(requestCanonical, '/reservedDeltaMinor')\n  : undefined;\nconst reservedDeltaRaw = reservedDeltaNode ? canon.unwrap(reservedDeltaNode) : 0;\nconst reservedDeltaMinor =\n  typeof reservedDeltaRaw === 'number' ? reservedDeltaRaw : 0;\n\nconst capturedDeltaNode = requestCanonical\n  ? canon.at(requestCanonical, '/capturedDeltaMinor')\n  : undefined;\nconst capturedDeltaRaw = capturedDeltaNode ? canon.unwrap(capturedDeltaNode) : 0;\nconst capturedDeltaMinor =\n  typeof capturedDeltaRaw === 'number' ? capturedDeltaRaw : 0;\n\nconst amountLimitNode = canon.at(documentCanonical, '/amountLimit');\nconst amountLimitRaw = amountLimitNode ? canon.unwrap(amountLimitNode) : 0;\nconst amountLimit = typeof amountLimitRaw === 'number' ? amountLimitRaw : 0;\n\nconst amountReservedNode = canon.at(documentCanonical, '/amountReserved');\nconst amountReservedRaw = amountReservedNode\n  ? canon.unwrap(amountReservedNode)\n  : 0;\nconst amountReserved =\n  typeof amountReservedRaw === 'number' ? amountReservedRaw : 0;\n\nconst amountCapturedNode = canon.at(documentCanonical, '/amountCaptured');\nconst amountCapturedRaw = amountCapturedNode\n  ? canon.unwrap(amountCapturedNode)\n  : 0;\nconst amountCaptured =\n  typeof amountCapturedRaw === 'number' ? amountCapturedRaw : 0;\n\nconst chargeAttemptsNode = canon.at(documentCanonical, '/chargeAttempts');\nconst chargeAttemptsRaw = chargeAttemptsNode\n  ? canon.unwrap(chargeAttemptsNode)\n  : {};\nconst chargeAttempts =\n  chargeAttemptsRaw &&\n  typeof chargeAttemptsRaw === 'object' &&\n  !Array.isArray(chargeAttemptsRaw)\n    ? chargeAttemptsRaw\n    : {};\nconst nextChargeAttempts = { ...chargeAttempts };\n\nconst existingAttemptRaw = authorizationId\n  ? chargeAttempts[authorizationId]\n  : undefined;\nconst existingAttempt =\n  existingAttemptRaw &&\n  typeof existingAttemptRaw === 'object' &&\n  !Array.isArray(existingAttemptRaw)\n    ? existingAttemptRaw\n    : null;\n\nconst alreadySettled = !!existingAttempt && existingAttempt.settled === true;\nconst approved =\n  !!existingAttempt &&\n  typeof existingAttempt.authorizationStatus === 'string' &&\n  existingAttempt.authorizationStatus === 'approved';\nconst authorizedAmount =\n  existingAttempt && typeof existingAttempt.authorizedAmountMinor === 'number'\n    ? existingAttempt.authorizedAmountMinor\n    : 0;\n\nconst holdIdNode = requestCanonical\n  ? canon.at(requestCanonical, '/holdId')\n  : undefined;\nconst holdIdRaw = holdIdNode ? canon.unwrap(holdIdNode) : '';\nconst holdId = typeof holdIdRaw === 'string' ? holdIdRaw : '';\n\nconst transactionIdNode = requestCanonical\n  ? canon.at(requestCanonical, '/transactionId')\n  : undefined;\nconst transactionIdRaw = transactionIdNode\n  ? canon.unwrap(transactionIdNode)\n  : '';\nconst transactionId =\n  typeof transactionIdRaw === 'string' ? transactionIdRaw : '';\n\nconst settlementIdNode = requestCanonical\n  ? canon.at(requestCanonical, '/settlementId')\n  : undefined;\nconst settlementIdRaw = settlementIdNode\n  ? canon.unwrap(settlementIdNode)\n  : '';\nconst settlementId =\n  typeof settlementIdRaw === 'string' ? settlementIdRaw : '';\n\nconst requestReasonNode = requestCanonical\n  ? canon.at(requestCanonical, '/reason')\n  : undefined;\nconst requestReasonRaw = requestReasonNode\n  ? canon.unwrap(requestReasonNode)\n  : '';\nconst requestReason =\n  typeof requestReasonRaw === 'string' ? requestReasonRaw : '';\n\nlet status = 'rejected';\nlet reason = '';\nlet nextAmountReserved = amountReserved;\nlet nextAmountCaptured = amountCaptured;\nlet nextAttempt = existingAttempt ? { ...existingAttempt } : null;\n\nif (!authorizationId) {\n  reason = 'Missing authorizationId.';\n} else if (alreadySettled) {\n  status = 'accepted';\n  reason = 'Authorization already settled.';\n} else if (!approved) {\n  reason = 'Authorization is not approved.';\n} else if (\n  settlementStatus !== 'succeeded' &&\n  settlementStatus !== 'failed'\n) {\n  reason = 'Unsupported settlement status.';\n} else if (capturedDeltaMinor < 0) {\n  reason = 'capturedDeltaMinor cannot be negative.';\n} else if (\n  settlementStatus === 'failed' &&\n  capturedDeltaMinor !== 0\n) {\n  reason = 'capturedDeltaMinor must be 0 for failed settlement.';\n} else if (capturedDeltaMinor > authorizedAmount) {\n  reason = 'capturedDeltaMinor exceeds authorized amount.';\n} else {\n  const candidateAmountReserved = amountReserved + reservedDeltaMinor;\n  const candidateAmountCaptured = amountCaptured + capturedDeltaMinor;\n  const candidateUsed = candidateAmountReserved + candidateAmountCaptured;\n\n  if (candidateAmountReserved < 0) {\n    reason = 'Settlement would make amountReserved negative.';\n  } else if (candidateAmountCaptured < 0) {\n    reason = 'Settlement would make amountCaptured negative.';\n  } else if (candidateUsed > amountLimit) {\n    reason = 'Settlement would exceed amountLimit.';\n  } else {\n    status = 'accepted';\n    nextAmountReserved = candidateAmountReserved;\n    nextAmountCaptured = candidateAmountCaptured;\n    nextAttempt = { ...existingAttempt };\n    nextAttempt.settled = true;\n    nextAttempt.lastSettlementRequestStatus = settlementStatus;\n    nextAttempt.lastSettlementProcessingStatus = 'accepted';\n    nextAttempt.settlementReason = requestReason;\n    nextAttempt.settlementRespondedAt = nowIso;\n    nextAttempt.reservedDeltaMinor = reservedDeltaMinor;\n    nextAttempt.capturedDeltaMinor = capturedDeltaMinor;\n    nextAttempt.holdId = holdId;\n    nextAttempt.transactionId = transactionId;\n    nextAttempt.lastSettlementId = settlementId;\n    nextChargeAttempts[authorizationId] = nextAttempt;\n  }\n}\n\nif (nextAttempt && status === 'rejected') {\n  nextAttempt = { ...nextAttempt };\n  nextAttempt.lastSettlementRequestStatus = settlementStatus;\n  nextAttempt.lastSettlementProcessingStatus = 'rejected';\n  nextAttempt.settlementReason = reason;\n  nextAttempt.settlementRespondedAt = nowIso;\n  nextAttempt.lastSettlementId = settlementId;\n  nextChargeAttempts[authorizationId] = nextAttempt;\n}\n\nconst responseEvent = {\n  type: 'PayNote/Payment Mandate Spend Settlement Responded',\n  authorizationId,\n  settlementId,\n  status,\n  amountReserved: nextAmountReserved,\n  amountCaptured: nextAmountCaptured,\n  respondedAt: nowIso\n};\n\nif (reason) {\n  responseEvent.reason = reason;\n}\n\nreturn {\n  nextChargeAttempts: nextChargeAttempts,\n  nextAmountReserved: nextAmountReserved,\n  nextAmountCaptured: nextAmountCaptured,\n  events: [responseEvent]\n};\n",
-            },
-            name: 'Validate and Apply Settlement',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $let: {
+                    order: {
+                      items: [
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'authorizationId',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'settlementId',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'settlementStatus',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'reservedDeltaMinor',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'capturedDeltaMinor',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'holdId',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'transactionId',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'requestReason',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nowIso',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountLimit',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountReserved',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'amountCaptured',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'chargeAttempts',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'existingAttempt',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'hasExistingAttempt',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'alreadySettled',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'approved',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'authorizedAmount',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'status',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'reason',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextAmountReserved',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextAmountCaptured',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextAttempt',
+                        },
+                        {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'nextChargeAttempts',
+                        },
+                      ],
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    vars: {
+                      alreadySettled: {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                name: 'existingAttempt',
+                                path: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/settled',
+                                },
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                              },
+                              value: true,
+                            },
+                          ],
+                        },
+                      },
+                      amountCaptured: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountCaptured',
+                        },
+                      },
+                      amountLimit: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountLimit',
+                        },
+                      },
+                      amountReserved: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountReserved',
+                        },
+                      },
+                      approved: {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                name: 'existingAttempt',
+                                path: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/authorizationStatus',
+                                },
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'approved',
+                            },
+                          ],
+                        },
+                      },
+                      authorizationId: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/authorizationId',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/authorizationId',
+                            },
+                          },
+                        },
+                      },
+                      authorizedAmount: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'integer',
+                              },
+                              val: {
+                                $var: {
+                                  name: 'existingAttempt',
+                                  path: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/authorizedAmountMinor',
+                                  },
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            },
+                            value: 0,
+                          },
+                          then: {
+                            $var: {
+                              name: 'existingAttempt',
+                              path: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: '/authorizedAmountMinor',
+                              },
+                            },
+                          },
+                        },
+                      },
+                      capturedDeltaMinor: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'integer',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/capturedDeltaMinor',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            },
+                            value: 0,
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/capturedDeltaMinor',
+                            },
+                          },
+                        },
+                      },
+                      chargeAttempts: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/chargeAttempts',
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      existingAttempt: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $get: {
+                                  key: {
+                                    $choose: {
+                                      cond: {
+                                        $isKind: {
+                                          kind: {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value: 'text',
+                                          },
+                                          val: {
+                                            $event: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value:
+                                                '/message/request/authorizationId',
+                                            },
+                                          },
+                                        },
+                                      },
+                                      else: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '',
+                                      },
+                                      then: {
+                                        $event: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value:
+                                            '/message/request/authorizationId',
+                                        },
+                                      },
+                                    },
+                                  },
+                                  object: {
+                                    $object: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/chargeAttempts',
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      hasExistingAttempt: {
+                        $isKind: {
+                          kind: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'object',
+                          },
+                          val: {
+                            $get: {
+                              key: {
+                                $choose: {
+                                  cond: {
+                                    $isKind: {
+                                      kind: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'text',
+                                      },
+                                      val: {
+                                        $event: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value:
+                                            '/message/request/authorizationId',
+                                        },
+                                      },
+                                    },
+                                  },
+                                  else: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '',
+                                  },
+                                  then: {
+                                    $event: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: '/message/request/authorizationId',
+                                    },
+                                  },
+                                },
+                              },
+                              object: {
+                                $object: {
+                                  $document: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/chargeAttempts',
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      holdId: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/holdId',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/holdId',
+                            },
+                          },
+                        },
+                      },
+                      nextAmountCaptured: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountCaptured',
+                        },
+                      },
+                      nextAmountReserved: {
+                        $document: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/amountReserved',
+                        },
+                      },
+                      nextAttempt: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $get: {
+                                  key: {
+                                    $choose: {
+                                      cond: {
+                                        $isKind: {
+                                          kind: {
+                                            type: {
+                                              blueId:
+                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            },
+                                            value: 'text',
+                                          },
+                                          val: {
+                                            $event: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value:
+                                                '/message/request/authorizationId',
+                                            },
+                                          },
+                                        },
+                                      },
+                                      else: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '',
+                                      },
+                                      then: {
+                                        $event: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value:
+                                            '/message/request/authorizationId',
+                                        },
+                                      },
+                                    },
+                                  },
+                                  object: {
+                                    $object: {
+                                      $document: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: '/chargeAttempts',
+                                      },
+                                    },
+                                  },
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      nextChargeAttempts: {
+                        $call: {
+                          args: {
+                            object: {
+                              $object: {
+                                $document: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/chargeAttempts',
+                                },
+                              },
+                            },
+                          },
+                          function: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'cleanMap',
+                          },
+                        },
+                      },
+                      nowIso: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/settledAt',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/settledAt',
+                            },
+                          },
+                        },
+                      },
+                      reason: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '',
+                      },
+                      requestReason: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/reason',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/reason',
+                            },
+                          },
+                        },
+                      },
+                      reservedDeltaMinor: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'integer',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/reservedDeltaMinor',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            },
+                            value: 0,
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/reservedDeltaMinor',
+                            },
+                          },
+                        },
+                      },
+                      settlementId: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/settlementId',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/settlementId',
+                            },
+                          },
+                        },
+                      },
+                      settlementStatus: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/status',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/status',
+                            },
+                          },
+                        },
+                      },
+                      status: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'rejected',
+                      },
+                      transactionId: {
+                        $choose: {
+                          cond: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $event: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: '/message/request/transactionId',
+                                },
+                              },
+                            },
+                          },
+                          else: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '',
+                          },
+                          then: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/transactionId',
+                            },
+                          },
+                        },
+                      },
                     },
-                    value: '/chargeAttempts',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Validate and Apply Settlement'].nextChargeAttempts}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $if: {
+                    cond: {
+                      $not: {
+                        $truthy: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'authorizationId',
+                          },
+                        },
+                      },
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    else: {
+                      items: [
+                        {
+                          $if: {
+                            cond: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'alreadySettled',
+                              },
+                            },
+                            else: {
+                              items: [
+                                {
+                                  $if: {
+                                    cond: {
+                                      $not: {
+                                        $var: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: 'approved',
+                                        },
+                                      },
+                                    },
+                                    else: {
+                                      items: [
+                                        {
+                                          $if: {
+                                            cond: {
+                                              $and: {
+                                                items: [
+                                                  {
+                                                    $ne: {
+                                                      items: [
+                                                        {
+                                                          $var: {
+                                                            type: {
+                                                              blueId:
+                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            },
+                                                            value:
+                                                              'settlementStatus',
+                                                          },
+                                                        },
+                                                        {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: 'succeeded',
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                  {
+                                                    $ne: {
+                                                      items: [
+                                                        {
+                                                          $var: {
+                                                            type: {
+                                                              blueId:
+                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            },
+                                                            value:
+                                                              'settlementStatus',
+                                                          },
+                                                        },
+                                                        {
+                                                          type: {
+                                                            blueId:
+                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          },
+                                                          value: 'failed',
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                ],
+                                              },
+                                            },
+                                            else: {
+                                              items: [
+                                                {
+                                                  $if: {
+                                                    cond: {
+                                                      $lt: {
+                                                        items: [
+                                                          {
+                                                            $var: {
+                                                              type: {
+                                                                blueId:
+                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              },
+                                                              value:
+                                                                'capturedDeltaMinor',
+                                                            },
+                                                          },
+                                                          {
+                                                            type: {
+                                                              blueId:
+                                                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                            },
+                                                            value: 0,
+                                                          },
+                                                        ],
+                                                      },
+                                                    },
+                                                    else: {
+                                                      items: [
+                                                        {
+                                                          $if: {
+                                                            cond: {
+                                                              $and: {
+                                                                items: [
+                                                                  {
+                                                                    $eq: {
+                                                                      items: [
+                                                                        {
+                                                                          $var: {
+                                                                            type: {
+                                                                              blueId:
+                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                            },
+                                                                            value:
+                                                                              'settlementStatus',
+                                                                          },
+                                                                        },
+                                                                        {
+                                                                          type: {
+                                                                            blueId:
+                                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                          },
+                                                                          value:
+                                                                            'failed',
+                                                                        },
+                                                                      ],
+                                                                    },
+                                                                  },
+                                                                  {
+                                                                    $ne: {
+                                                                      items: [
+                                                                        {
+                                                                          $var: {
+                                                                            type: {
+                                                                              blueId:
+                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                            },
+                                                                            value:
+                                                                              'capturedDeltaMinor',
+                                                                          },
+                                                                        },
+                                                                        {
+                                                                          type: {
+                                                                            blueId:
+                                                                              '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                                          },
+                                                                          value: 0,
+                                                                        },
+                                                                      ],
+                                                                    },
+                                                                  },
+                                                                ],
+                                                              },
+                                                            },
+                                                            else: {
+                                                              items: [
+                                                                {
+                                                                  $if: {
+                                                                    cond: {
+                                                                      $gt: {
+                                                                        items: [
+                                                                          {
+                                                                            $var: {
+                                                                              type: {
+                                                                                blueId:
+                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                              },
+                                                                              value:
+                                                                                'capturedDeltaMinor',
+                                                                            },
+                                                                          },
+                                                                          {
+                                                                            $var: {
+                                                                              type: {
+                                                                                blueId:
+                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                              },
+                                                                              value:
+                                                                                'authorizedAmount',
+                                                                            },
+                                                                          },
+                                                                        ],
+                                                                      },
+                                                                    },
+                                                                    else: {
+                                                                      items: [
+                                                                        {
+                                                                          $let: {
+                                                                            order:
+                                                                              {
+                                                                                items:
+                                                                                  [
+                                                                                    {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                      },
+                                                                                      value:
+                                                                                        'candidateAmountReserved',
+                                                                                    },
+                                                                                    {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                      },
+                                                                                      value:
+                                                                                        'candidateAmountCaptured',
+                                                                                    },
+                                                                                    {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                      },
+                                                                                      value:
+                                                                                        'candidateUsed',
+                                                                                    },
+                                                                                  ],
+                                                                              },
+                                                                            vars: {
+                                                                              candidateAmountCaptured:
+                                                                                {
+                                                                                  $add: {
+                                                                                    items:
+                                                                                      [
+                                                                                        {
+                                                                                          $var: {
+                                                                                            type: {
+                                                                                              blueId:
+                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                            },
+                                                                                            value:
+                                                                                              'amountCaptured',
+                                                                                          },
+                                                                                        },
+                                                                                        {
+                                                                                          $var: {
+                                                                                            type: {
+                                                                                              blueId:
+                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                            },
+                                                                                            value:
+                                                                                              'capturedDeltaMinor',
+                                                                                          },
+                                                                                        },
+                                                                                      ],
+                                                                                  },
+                                                                                },
+                                                                              candidateAmountReserved:
+                                                                                {
+                                                                                  $add: {
+                                                                                    items:
+                                                                                      [
+                                                                                        {
+                                                                                          $var: {
+                                                                                            type: {
+                                                                                              blueId:
+                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                            },
+                                                                                            value:
+                                                                                              'amountReserved',
+                                                                                          },
+                                                                                        },
+                                                                                        {
+                                                                                          $var: {
+                                                                                            type: {
+                                                                                              blueId:
+                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                            },
+                                                                                            value:
+                                                                                              'reservedDeltaMinor',
+                                                                                          },
+                                                                                        },
+                                                                                      ],
+                                                                                  },
+                                                                                },
+                                                                              candidateUsed:
+                                                                                {
+                                                                                  $add: {
+                                                                                    items:
+                                                                                      [
+                                                                                        {
+                                                                                          $add: {
+                                                                                            items:
+                                                                                              [
+                                                                                                {
+                                                                                                  $var: {
+                                                                                                    type: {
+                                                                                                      blueId:
+                                                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                    },
+                                                                                                    value:
+                                                                                                      'amountReserved',
+                                                                                                  },
+                                                                                                },
+                                                                                                {
+                                                                                                  $var: {
+                                                                                                    type: {
+                                                                                                      blueId:
+                                                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                    },
+                                                                                                    value:
+                                                                                                      'reservedDeltaMinor',
+                                                                                                  },
+                                                                                                },
+                                                                                              ],
+                                                                                          },
+                                                                                        },
+                                                                                        {
+                                                                                          $add: {
+                                                                                            items:
+                                                                                              [
+                                                                                                {
+                                                                                                  $var: {
+                                                                                                    type: {
+                                                                                                      blueId:
+                                                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                    },
+                                                                                                    value:
+                                                                                                      'amountCaptured',
+                                                                                                  },
+                                                                                                },
+                                                                                                {
+                                                                                                  $var: {
+                                                                                                    type: {
+                                                                                                      blueId:
+                                                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                    },
+                                                                                                    value:
+                                                                                                      'capturedDeltaMinor',
+                                                                                                  },
+                                                                                                },
+                                                                                              ],
+                                                                                          },
+                                                                                        },
+                                                                                      ],
+                                                                                  },
+                                                                                },
+                                                                            },
+                                                                          },
+                                                                        },
+                                                                        {
+                                                                          $if: {
+                                                                            cond: {
+                                                                              $lt: {
+                                                                                items:
+                                                                                  [
+                                                                                    {
+                                                                                      $var: {
+                                                                                        type: {
+                                                                                          blueId:
+                                                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                        },
+                                                                                        value:
+                                                                                          'candidateAmountReserved',
+                                                                                      },
+                                                                                    },
+                                                                                    {
+                                                                                      type: {
+                                                                                        blueId:
+                                                                                          '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                                                      },
+                                                                                      value: 0,
+                                                                                    },
+                                                                                  ],
+                                                                              },
+                                                                            },
+                                                                            else: {
+                                                                              items:
+                                                                                [
+                                                                                  {
+                                                                                    $if: {
+                                                                                      cond: {
+                                                                                        $lt: {
+                                                                                          items:
+                                                                                            [
+                                                                                              {
+                                                                                                $var: {
+                                                                                                  type: {
+                                                                                                    blueId:
+                                                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                  },
+                                                                                                  value:
+                                                                                                    'candidateAmountCaptured',
+                                                                                                },
+                                                                                              },
+                                                                                              {
+                                                                                                type: {
+                                                                                                  blueId:
+                                                                                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                                                                },
+                                                                                                value: 0,
+                                                                                              },
+                                                                                            ],
+                                                                                        },
+                                                                                      },
+                                                                                      else: {
+                                                                                        items:
+                                                                                          [
+                                                                                            {
+                                                                                              $if: {
+                                                                                                cond: {
+                                                                                                  $gt: {
+                                                                                                    items:
+                                                                                                      [
+                                                                                                        {
+                                                                                                          $var: {
+                                                                                                            type: {
+                                                                                                              blueId:
+                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                            },
+                                                                                                            value:
+                                                                                                              'candidateUsed',
+                                                                                                          },
+                                                                                                        },
+                                                                                                        {
+                                                                                                          $var: {
+                                                                                                            type: {
+                                                                                                              blueId:
+                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                            },
+                                                                                                            value:
+                                                                                                              'amountLimit',
+                                                                                                          },
+                                                                                                        },
+                                                                                                      ],
+                                                                                                  },
+                                                                                                },
+                                                                                                else: {
+                                                                                                  items:
+                                                                                                    [
+                                                                                                      {
+                                                                                                        $set: {
+                                                                                                          expr: {
+                                                                                                            type: {
+                                                                                                              blueId:
+                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                            },
+                                                                                                            value:
+                                                                                                              'accepted',
+                                                                                                          },
+                                                                                                          name: 'status',
+                                                                                                        },
+                                                                                                      },
+                                                                                                      {
+                                                                                                        $set: {
+                                                                                                          expr: {
+                                                                                                            $var: {
+                                                                                                              type: {
+                                                                                                                blueId:
+                                                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                              },
+                                                                                                              value:
+                                                                                                                'candidateAmountReserved',
+                                                                                                            },
+                                                                                                          },
+                                                                                                          name: 'nextAmountReserved',
+                                                                                                        },
+                                                                                                      },
+                                                                                                      {
+                                                                                                        $set: {
+                                                                                                          expr: {
+                                                                                                            $var: {
+                                                                                                              type: {
+                                                                                                                blueId:
+                                                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                              },
+                                                                                                              value:
+                                                                                                                'candidateAmountCaptured',
+                                                                                                            },
+                                                                                                          },
+                                                                                                          name: 'nextAmountCaptured',
+                                                                                                        },
+                                                                                                      },
+                                                                                                      {
+                                                                                                        $set: {
+                                                                                                          expr: {
+                                                                                                            $merge:
+                                                                                                              {
+                                                                                                                items:
+                                                                                                                  [
+                                                                                                                    {
+                                                                                                                      $var: {
+                                                                                                                        type: {
+                                                                                                                          blueId:
+                                                                                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                        },
+                                                                                                                        value:
+                                                                                                                          'existingAttempt',
+                                                                                                                      },
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                      capturedDeltaMinor:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'capturedDeltaMinor',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      holdId:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'holdId',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      lastSettlementId:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'settlementId',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      lastSettlementProcessingStatus:
+                                                                                                                        {
+                                                                                                                          type: {
+                                                                                                                            blueId:
+                                                                                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                          },
+                                                                                                                          value:
+                                                                                                                            'accepted',
+                                                                                                                        },
+                                                                                                                      lastSettlementRequestStatus:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'settlementStatus',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      reservedDeltaMinor:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'reservedDeltaMinor',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      settled:
+                                                                                                                        {
+                                                                                                                          type: {
+                                                                                                                            blueId:
+                                                                                                                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                                                                                          },
+                                                                                                                          value:
+                                                                                                                            true,
+                                                                                                                        },
+                                                                                                                      settlementReason:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'requestReason',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      settlementRespondedAt:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'nowIso',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                      transactionId:
+                                                                                                                        {
+                                                                                                                          $var: {
+                                                                                                                            type: {
+                                                                                                                              blueId:
+                                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                            },
+                                                                                                                            value:
+                                                                                                                              'transactionId',
+                                                                                                                          },
+                                                                                                                        },
+                                                                                                                    },
+                                                                                                                  ],
+                                                                                                              },
+                                                                                                          },
+                                                                                                          name: 'nextAttempt',
+                                                                                                        },
+                                                                                                      },
+                                                                                                      {
+                                                                                                        $set: {
+                                                                                                          expr: {
+                                                                                                            $objectSet:
+                                                                                                              {
+                                                                                                                key: {
+                                                                                                                  $var: {
+                                                                                                                    type: {
+                                                                                                                      blueId:
+                                                                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                    },
+                                                                                                                    value:
+                                                                                                                      'authorizationId',
+                                                                                                                  },
+                                                                                                                },
+                                                                                                                object:
+                                                                                                                  {
+                                                                                                                    $var: {
+                                                                                                                      type: {
+                                                                                                                        blueId:
+                                                                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                      },
+                                                                                                                      value:
+                                                                                                                        'nextChargeAttempts',
+                                                                                                                    },
+                                                                                                                  },
+                                                                                                                val: {
+                                                                                                                  $var: {
+                                                                                                                    type: {
+                                                                                                                      blueId:
+                                                                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                                    },
+                                                                                                                    value:
+                                                                                                                      'nextAttempt',
+                                                                                                                  },
+                                                                                                                },
+                                                                                                              },
+                                                                                                          },
+                                                                                                          name: 'nextChargeAttempts',
+                                                                                                        },
+                                                                                                      },
+                                                                                                    ],
+                                                                                                },
+                                                                                                then: {
+                                                                                                  items:
+                                                                                                    [
+                                                                                                      {
+                                                                                                        $set: {
+                                                                                                          expr: {
+                                                                                                            type: {
+                                                                                                              blueId:
+                                                                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                            },
+                                                                                                            value:
+                                                                                                              'Settlement would exceed amountLimit.',
+                                                                                                          },
+                                                                                                          name: 'reason',
+                                                                                                        },
+                                                                                                      },
+                                                                                                    ],
+                                                                                                },
+                                                                                              },
+                                                                                            },
+                                                                                          ],
+                                                                                      },
+                                                                                      then: {
+                                                                                        items:
+                                                                                          [
+                                                                                            {
+                                                                                              $set: {
+                                                                                                expr: {
+                                                                                                  type: {
+                                                                                                    blueId:
+                                                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                                  },
+                                                                                                  value:
+                                                                                                    'Settlement would make amountCaptured negative.',
+                                                                                                },
+                                                                                                name: 'reason',
+                                                                                              },
+                                                                                            },
+                                                                                          ],
+                                                                                      },
+                                                                                    },
+                                                                                  },
+                                                                                ],
+                                                                            },
+                                                                            then: {
+                                                                              items:
+                                                                                [
+                                                                                  {
+                                                                                    $set: {
+                                                                                      expr: {
+                                                                                        type: {
+                                                                                          blueId:
+                                                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                                        },
+                                                                                        value:
+                                                                                          'Settlement would make amountReserved negative.',
+                                                                                      },
+                                                                                      name: 'reason',
+                                                                                    },
+                                                                                  },
+                                                                                ],
+                                                                            },
+                                                                          },
+                                                                        },
+                                                                      ],
+                                                                    },
+                                                                    then: {
+                                                                      items: [
+                                                                        {
+                                                                          $set: {
+                                                                            expr: {
+                                                                              type: {
+                                                                                blueId:
+                                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                              },
+                                                                              value:
+                                                                                'capturedDeltaMinor exceeds authorized amount.',
+                                                                            },
+                                                                            name: 'reason',
+                                                                          },
+                                                                        },
+                                                                      ],
+                                                                    },
+                                                                  },
+                                                                },
+                                                              ],
+                                                            },
+                                                            then: {
+                                                              items: [
+                                                                {
+                                                                  $set: {
+                                                                    expr: {
+                                                                      type: {
+                                                                        blueId:
+                                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      },
+                                                                      value:
+                                                                        'capturedDeltaMinor must be 0 for failed settlement.',
+                                                                    },
+                                                                    name: 'reason',
+                                                                  },
+                                                                },
+                                                              ],
+                                                            },
+                                                          },
+                                                        },
+                                                      ],
+                                                    },
+                                                    then: {
+                                                      items: [
+                                                        {
+                                                          $set: {
+                                                            expr: {
+                                                              type: {
+                                                                blueId:
+                                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              },
+                                                              value:
+                                                                'capturedDeltaMinor cannot be negative.',
+                                                            },
+                                                            name: 'reason',
+                                                          },
+                                                        },
+                                                      ],
+                                                    },
+                                                  },
+                                                },
+                                              ],
+                                            },
+                                            then: {
+                                              items: [
+                                                {
+                                                  $set: {
+                                                    expr: {
+                                                      type: {
+                                                        blueId:
+                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      },
+                                                      value:
+                                                        'Unsupported settlement status.',
+                                                    },
+                                                    name: 'reason',
+                                                  },
+                                                },
+                                              ],
+                                            },
+                                          },
+                                        },
+                                      ],
+                                    },
+                                    then: {
+                                      items: [
+                                        {
+                                          $set: {
+                                            expr: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value:
+                                                'Authorization is not approved.',
+                                            },
+                                            name: 'reason',
+                                          },
+                                        },
+                                      ],
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                            then: {
+                              items: [
+                                {
+                                  $set: {
+                                    expr: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'accepted',
+                                    },
+                                    name: 'status',
+                                  },
+                                },
+                                {
+                                  $set: {
+                                    expr: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'Authorization already settled.',
+                                    },
+                                    name: 'reason',
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                        },
+                      ],
                     },
-                    value: '/amountReserved',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    then: {
+                      items: [
+                        {
+                          $set: {
+                            expr: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'Missing authorizationId.',
+                            },
+                            name: 'reason',
+                          },
+                        },
+                      ],
                     },
-                    value:
-                      "${steps['Validate and Apply Settlement'].nextAmountReserved}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $if: {
+                    cond: {
+                      $and: {
+                        items: [
+                          {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'hasExistingAttempt',
+                            },
+                          },
+                          {
+                            $eq: {
+                              items: [
+                                {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'status',
+                                  },
+                                },
+                                {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'rejected',
+                                },
+                              ],
+                            },
+                          },
+                        ],
+                      },
                     },
-                    value: 'replace',
+                    then: {
+                      items: [
+                        {
+                          $set: {
+                            expr: {
+                              $merge: {
+                                items: [
+                                  {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'existingAttempt',
+                                    },
+                                  },
+                                  {
+                                    lastSettlementId: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'settlementId',
+                                      },
+                                    },
+                                    lastSettlementProcessingStatus: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'rejected',
+                                    },
+                                    lastSettlementRequestStatus: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'settlementStatus',
+                                      },
+                                    },
+                                    settlementReason: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'reason',
+                                      },
+                                    },
+                                    settlementRespondedAt: {
+                                      $var: {
+                                        type: {
+                                          blueId:
+                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        },
+                                        value: 'nowIso',
+                                      },
+                                    },
+                                  },
+                                ],
+                              },
+                            },
+                            name: 'nextAttempt',
+                          },
+                        },
+                        {
+                          $set: {
+                            expr: {
+                              $objectSet: {
+                                key: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'authorizationId',
+                                  },
+                                },
+                                object: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'nextChargeAttempts',
+                                  },
+                                },
+                                val: {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'nextAttempt',
+                                  },
+                                },
+                              },
+                            },
+                            name: 'nextChargeAttempts',
+                          },
+                        },
+                      ],
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: '/amountCaptured',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/chargeAttempts',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextChargeAttempts',
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value:
-                      "${steps['Validate and Apply Settlement'].nextAmountCaptured}",
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amountReserved',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextAmountReserved',
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amountCaptured',
+                    },
+                    val: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextAmountCaptured',
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendEvent: {
+                    amountCaptured: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextAmountCaptured',
+                      },
+                    },
+                    amountReserved: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nextAmountReserved',
+                      },
+                    },
+                    authorizationId: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'authorizationId',
+                      },
+                    },
+                    reason: {
+                      $choose: {
+                        cond: {
+                          $truthy: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'reason',
+                            },
+                          },
+                        },
+                        then: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'reason',
+                          },
+                        },
+                      },
+                    },
+                    respondedAt: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'nowIso',
+                      },
+                    },
+                    settlementId: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'settlementId',
+                      },
+                    },
+                    status: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'status',
+                      },
+                    },
+                    type: {
+                      blueId: '5Ef9YNuRSVFdykdjoBVWb5QHSzerHE8RAPaq58ARGrt7',
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Persist Settlement',
+            functions: {
+              cleanMap: {
+                args: {
+                  object: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $objectFromEntries: {
+                    $filter: {
+                      in: {
+                        $entries: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'object',
+                          },
+                        },
+                      },
+                      item: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'entry',
+                      },
+                      where: {
+                        $not: {
+                          $call: {
+                            args: {
+                              key: {
+                                $var: {
+                                  name: 'entry',
+                                  path: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/key',
+                                  },
+                                },
+                              },
+                            },
+                            function: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'isLanguageKey',
+                            },
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+              },
+              isLanguageKey: {
+                args: {
+                  key: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $or: {
+                    items: [
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'blueId',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'type',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'name',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'description',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'schema',
+                            },
+                          ],
+                        },
+                      },
+                      {
+                        $eq: {
+                          items: [
+                            {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'contracts',
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+              },
+            },
+            name: 'ValidateAndApplySettlement',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
   },

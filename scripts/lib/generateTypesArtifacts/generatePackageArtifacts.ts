@@ -58,7 +58,7 @@ export function generatePackageArtifacts(
     .join(',\n');
   const contentsIndex =
     `${contentsImports}\n\n${contentsExports}\n\n` +
-    `export const contents = {\n${contentsMapEntries}\n} as const;\n`;
+    `export const contents: Record<string, unknown> = {\n${contentsMapEntries}\n};\n`;
   writeFile(outDir, path.join(pkgDir, 'contents', 'index.ts'), contentsIndex);
   const contentsTs =
     `export * from './contents/index';\n` +

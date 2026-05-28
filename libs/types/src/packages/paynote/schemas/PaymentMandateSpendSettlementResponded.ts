@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
 export const PaymentMandateSpendSettlementRespondedSchema = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Spend Settlement Responded']
@@ -14,7 +14,7 @@ export const PaymentMandateSpendSettlementRespondedSchema = withTypeBlueId(
     description: z.string().optional(),
     name: z.string().optional(),
     reason: z.string().optional(),
-    respondedAt: TimestampSchema.optional(),
+    respondedAt: z.lazy(() => TimestampSchema).optional(),
     settlementId: z.string().optional(),
     status: z.string().optional(),
   })

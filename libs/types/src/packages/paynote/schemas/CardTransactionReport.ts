@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 
 export const CardTransactionReportSchema = withTypeBlueId(
@@ -11,12 +11,14 @@ export const CardTransactionReportSchema = withTypeBlueId(
 )(
   EventSchema.extend({
     amountMinor: z.number().optional(),
-    cardTransactionDetails: CardTransactionDetailsSchema.optional(),
-    currency: CurrencySchema.optional(),
+    cardTransactionDetails: z
+      .lazy(() => CardTransactionDetailsSchema)
+      .optional(),
+    currency: z.lazy(() => CurrencySchema).optional(),
     description: z.string().optional(),
     merchantId: z.string().optional(),
     name: z.string().optional(),
-    occurredAt: TimestampSchema.optional(),
+    occurredAt: z.lazy(() => TimestampSchema).optional(),
     status: z.string().optional(),
     transactionId: z.string().optional(),
   })

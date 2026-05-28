@@ -5,7 +5,7 @@ import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet
 
 export const LinkedDocumentsPermissionSetSchema = withTypeBlueId(
   blueIds['MyOS/Linked Documents Permission Set']
-)(z.object({}).catchall(SingleDocumentPermissionSetSchema));
+)(z.object({}).catchall(z.lazy(() => SingleDocumentPermissionSetSchema)));
 
 export type LinkedDocumentsPermissionSet = z.infer<
   typeof LinkedDocumentsPermissionSetSchema

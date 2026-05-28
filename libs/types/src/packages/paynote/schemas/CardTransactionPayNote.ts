@@ -8,7 +8,9 @@ export const CardTransactionPayNoteSchema = withTypeBlueId(
   blueIds['PayNote/Card Transaction PayNote']
 )(
   PayNoteSchema.extend({
-    cardTransactionDetails: CardTransactionDetailsSchema.optional(),
+    cardTransactionDetails: z
+      .lazy(() => CardTransactionDetailsSchema)
+      .optional(),
     description: z.string().optional(),
     name: z.string().optional(),
   })

@@ -42,11 +42,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'CfSpcRXYk2qwu1vNs9LL8rycBsxzL2R4LGyDdrDzwCjh',
+          blueId: 'AKym7uykt3iv73tEfAP1k9f8dXpbp9i9dZNRhwfwhUYt',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     acceptPayNoteImpl: {
@@ -85,24 +85,24 @@ export const PayNote = {
             },
             name: 'Mark PayNote Accepted',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
             event: {
               type: {
-                blueId: 'CfSpcRXYk2qwu1vNs9LL8rycBsxzL2R4LGyDdrDzwCjh',
+                blueId: 'AKym7uykt3iv73tEfAP1k9f8dXpbp9i9dZNRhwfwhUYt',
               },
             },
             name: 'Emit PayNote Accepted',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: '3Rgcf7G716Y9JhCov4m72m53tqpv3yDpzcBwGrxUaQSJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     cancelBeforeCompletion: {
@@ -114,11 +114,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '9hvBQjesbYZPkZSaikm5avp7sFjTHsjRkQS2gas1u49p',
+          blueId: 'CLCm3e8rHeFTMWuV5A415fZZvVc9Xb9yj2p1eEMyTwrf',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     cancelBeforeCompletionImpl: {
@@ -157,24 +157,24 @@ export const PayNote = {
             },
             name: 'Mark Cancelled Before Completion',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
             event: {
               type: {
-                blueId: '9hvBQjesbYZPkZSaikm5avp7sFjTHsjRkQS2gas1u49p',
+                blueId: 'CLCm3e8rHeFTMWuV5A415fZZvVc9Xb9yj2p1eEMyTwrf',
               },
             },
             name: 'Emit Payment Cancelled Before Completion',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: '3Rgcf7G716Y9JhCov4m72m53tqpv3yDpzcBwGrxUaQSJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     completePayment: {
@@ -186,11 +186,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '72eeCYvygiChLj529TP1HKKBaYyB5TBa15Y3cn3JGsak',
+          blueId: 'BaKeiFYCdzpGKobh6oq3y9ZwFA2pVgtCNn5CipfDRPDn',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     completePaymentImpl: {
@@ -203,76 +203,104 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/status',
                     },
-                    value: '/status',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'Completed',
                     },
-                    value: 'Completed',
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/completed',
+                    },
+                    val: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/amountCompleted',
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    amountCompleted: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/amountCompleted',
+                      },
                     },
-                    value: '/amount/completed',
+                    type: {
+                      blueId: 'BaKeiFYCdzpGKobh6oq3y9ZwFA2pVgtCNn5CipfDRPDn',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: '${event.message.request.amountCompleted}',
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Update Completed Amount',
+            name: 'CompletePayment',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              amountCompleted: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.amountCompleted}',
-              },
-              type: {
-                blueId: '72eeCYvygiChLj529TP1HKKBaYyB5TBa15Y3cn3JGsak',
-              },
-            },
-            name: 'Emit Payment Completed',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     confirmPayeeAssignment: {
@@ -284,11 +312,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '34v52X6nVj6muiD11W8nohLFn7DjT2RiaRYwjRNpq4v3',
+          blueId: 'G7VEB2qKr36H5CUdSCrFsw2LTkpEx7nfgaFWuD3UeFeq',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     confirmPayeeAssignmentImpl: {
@@ -301,53 +329,317 @@ export const PayNote = {
       steps: {
         items: [
           {
-            code: {
+            entry: {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value:
-                "const request =\n  event && event.message ? event.message.request : null;\n\nif (!request || typeof request !== 'object' || Array.isArray(request)) {\n  throw new Error('Payee assignment payload must be an object.');\n}\nif (typeof request.payeeRef !== 'string') {\n  throw new Error('Payee assignment payload must include payeeRef.');\n}\n\nconst current = document('/transactionDetails');\nconst next =\n  current && typeof current === 'object' && !Array.isArray(current)\n    ? { ...current }\n    : {};\nnext.payeeRef = request.payeeRef;\n\nreturn { nextTransactionDetails: next, events: [request] };\n",
+              value: 'merge',
             },
-            name: 'Merge Payee Assignment',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
-              items: [
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/transactionDetails',
-                  },
+            functions: {
+              asObject: {
+                args: {
                   val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Merge Payee Assignment'].nextTransactionDetails}",
+                    value: null,
                   },
                 },
-              ],
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'object',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    },
+                    else: {
+                      $emptyObject: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
+                    },
+                  },
+                },
+              },
+              merge: {
+                do: {
+                  items: [
+                    {
+                      $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'request',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextTransactionDetails',
+                            },
+                          ],
+                        },
+                        vars: {
+                          nextTransactionDetails: {
+                            $merge: {
+                              items: [
+                                {
+                                  $call: {
+                                    args: {
+                                      val: {
+                                        $choose: {
+                                          cond: {
+                                            $exists: {
+                                              $document: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: '/transactionDetails',
+                                              },
+                                            },
+                                          },
+                                          else: {
+                                            $emptyObject: {
+                                              type: {
+                                                blueId:
+                                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                              },
+                                              value: true,
+                                            },
+                                          },
+                                          then: {
+                                            $document: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: '/transactionDetails',
+                                            },
+                                          },
+                                        },
+                                      },
+                                    },
+                                    function: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'asObject',
+                                    },
+                                  },
+                                },
+                                {
+                                  payeeRef: {
+                                    $event: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: '/message/request/payeeRef',
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          request: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request',
+                            },
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'object',
+                              },
+                              val: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'request',
+                                },
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $fail: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value:
+                                  'Payee assignment payload must be an object.',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'text',
+                              },
+                              val: {
+                                $var: {
+                                  name: 'request',
+                                  path: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: '/payeeRef',
+                                  },
+                                },
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $fail: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value:
+                                  'Payee assignment payload must include payeeRef.',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $appendEvent: {
+                        $var: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'request',
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/transactionDetails',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextTransactionDetails',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $return: {
+                        changeset: {
+                          $changeset: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                        events: {
+                          $events: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
             },
-            name: 'Update Payee Assignment',
+            name: 'MergePayeeAssignment',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     confirmTransactionDetailsUpdated: {
@@ -359,11 +651,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'EsyQj8xWb1Kf2ESjDq1UR6PK2hx4fpnyGiEWJ14ttC8a',
+          blueId: '9FTgniVVTmyp3f1Di3dL9c6izKbVEb6XFUnWng1mAiyb',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     confirmTransactionDetailsUpdatedImpl: {
@@ -376,53 +668,342 @@ export const PayNote = {
       steps: {
         items: [
           {
-            code: {
+            entry: {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value:
-                "const request =\n  event && event.message ? event.message.request : null;\n\nif (!request || typeof request !== 'object' || Array.isArray(request)) {\n  throw new Error('Transaction details update payload must be an object.');\n}\nif (\n  !request.transactionDetails ||\n  typeof request.transactionDetails !== 'object' ||\n  Array.isArray(request.transactionDetails)\n) {\n  throw new Error(\n    'Transaction details update payload must include transactionDetails object.'\n  );\n}\n\nconst current = document('/transactionDetails');\nconst next =\n  current && typeof current === 'object' && !Array.isArray(current)\n    ? { ...current }\n    : {};\nconst patch = request.transactionDetails;\n\nconst patchKeys = Object.keys(patch);\nlet index = 0;\nwhile (index < patchKeys.length) {\n  const key = patchKeys[index];\n  next[key] = patch[key];\n  index += 1;\n}\n\nreturn { nextTransactionDetails: next, events: [request] };\n",
+              value: 'merge',
             },
-            name: 'Merge Transaction Details Update',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
-              items: [
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/transactionDetails',
-                  },
+            functions: {
+              asObject: {
+                args: {
                   val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Merge Transaction Details Update'].nextTransactionDetails}",
+                    value: null,
                   },
                 },
-              ],
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'object',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
+                    },
+                    else: {
+                      $emptyObject: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
+                    },
+                  },
+                },
+              },
+              merge: {
+                do: {
+                  items: [
+                    {
+                      $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'request',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'patch',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextTransactionDetails',
+                            },
+                          ],
+                        },
+                        vars: {
+                          nextTransactionDetails: {
+                            $merge: {
+                              items: [
+                                {
+                                  $call: {
+                                    args: {
+                                      val: {
+                                        $choose: {
+                                          cond: {
+                                            $exists: {
+                                              $document: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: '/transactionDetails',
+                                              },
+                                            },
+                                          },
+                                          else: {
+                                            $emptyObject: {
+                                              type: {
+                                                blueId:
+                                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                              },
+                                              value: true,
+                                            },
+                                          },
+                                          then: {
+                                            $document: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: '/transactionDetails',
+                                            },
+                                          },
+                                        },
+                                      },
+                                    },
+                                    function: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'asObject',
+                                    },
+                                  },
+                                },
+                                {
+                                  $call: {
+                                    args: {
+                                      val: {
+                                        $event: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value:
+                                            '/message/request/transactionDetails',
+                                        },
+                                      },
+                                    },
+                                    function: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'asObject',
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          patch: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request/transactionDetails',
+                            },
+                          },
+                          request: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request',
+                            },
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'object',
+                              },
+                              val: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'request',
+                                },
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $fail: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value:
+                                  'Transaction details update payload must be an object.',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'object',
+                              },
+                              val: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'patch',
+                                },
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $fail: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value:
+                                  'Transaction details update payload must include transactionDetails object.',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $appendEvent: {
+                        $var: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'request',
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/transactionDetails',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextTransactionDetails',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $return: {
+                        changeset: {
+                          $changeset: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                        events: {
+                          $events: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
             },
-            name: 'Apply Transaction Details Update',
+            name: 'MergeTransactionDetailsUpdate',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     declineCancelBeforeCompletion: {
@@ -434,11 +1015,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '4witPJDjFKHNHyucepuDn9KXyUTTqZQTVsKHvcrVbGvY',
+          blueId: '5vPSqDeCjrrSzKmCyDn3s7C6v1UbwThGCRk9Zc6VYojK',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     declineCancelBeforeCompletionImpl: {
@@ -477,30 +1058,52 @@ export const PayNote = {
             },
             name: 'Mark Payment Cancellation Declined',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '5vPSqDeCjrrSzKmCyDn3s7C6v1UbwThGCRk9Zc6VYojK',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: '4witPJDjFKHNHyucepuDn9KXyUTTqZQTVsKHvcrVbGvY',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Cancellation Declined',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     declineCompletePayment: {
@@ -512,11 +1115,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '9AL8hghruGSH1ibFSYE8N7xoPLWLkktTCMFRkdoNsfTN',
+          blueId: 'CJXbcUUJuDYcDY63DDWatYNoww5HNyLG9tBiyK4kfqDr',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     declineCompletePaymentImpl: {
@@ -555,30 +1158,52 @@ export const PayNote = {
             },
             name: 'Mark Payment Completion Declined',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'CJXbcUUJuDYcDY63DDWatYNoww5HNyLG9tBiyK4kfqDr',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: '9AL8hghruGSH1ibFSYE8N7xoPLWLkktTCMFRkdoNsfTN',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Completion Declined',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     declineReverseAfterCompletion: {
@@ -590,11 +1215,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'Fk96a7GFSo2c3w7xWzaqnYhXXhLAAxj9Dwao8Hg9sdX',
+          blueId: '3JuJT2LrVdb7ZZyjZsEjh1N2hDtBedCrg3NLomPPyGvu',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     declineReverseAfterCompletionImpl: {
@@ -633,30 +1258,52 @@ export const PayNote = {
             },
             name: 'Mark Payment Reversal Declined',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '3JuJT2LrVdb7ZZyjZsEjh1N2hDtBedCrg3NLomPPyGvu',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'Fk96a7GFSo2c3w7xWzaqnYhXXhLAAxj9Dwao8Hg9sdX',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Reversal Declined',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     declineSecureFunds: {
@@ -668,11 +1315,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '8PufMmsuBgpX5YCpiS7XuiCFUWDan1fN8c3TLLwh57gL',
+          blueId: 'Ep5q2Z4UEqUnMJGwb8CxbkjfFf5SYFsJf855LS68vWHw',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     declineSecureFundsImpl: {
@@ -711,30 +1358,52 @@ export const PayNote = {
             },
             name: 'Mark Funds Securing Declined',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'Ep5q2Z4UEqUnMJGwb8CxbkjfFf5SYFsJf855LS68vWHw',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: '8PufMmsuBgpX5YCpiS7XuiCFUWDan1fN8c3TLLwh57gL',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Funds Securing Declined',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failCancelBeforeCompletion: {
@@ -746,11 +1415,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'ExfGtqDcSr7RkvA7XzdV5B1MVc7CPacHpanjGBtGhjyk',
+          blueId: 'BYm2KcRydg8r9LQEWTZhi6r1fTvnJGkxHUzSbZd5wQJZ',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failCancelBeforeCompletionImpl: {
@@ -789,30 +1458,52 @@ export const PayNote = {
             },
             name: 'Mark Payment Cancellation Failed',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'BYm2KcRydg8r9LQEWTZhi6r1fTvnJGkxHUzSbZd5wQJZ',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'ExfGtqDcSr7RkvA7XzdV5B1MVc7CPacHpanjGBtGhjyk',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Cancellation Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failCompletePayment: {
@@ -824,11 +1515,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'An4JGf9zvSwEtYPJjZaWRnHaPXXvmyHg7oNLmJRKuxSV',
+          blueId: 'FXoL7smVn5Qr8rWaMiAkJX1tJYFf6pJQNCHyk9YEzsYj',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failCompletePaymentImpl: {
@@ -867,30 +1558,52 @@ export const PayNote = {
             },
             name: 'Mark Payment Completion Failed',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'FXoL7smVn5Qr8rWaMiAkJX1tJYFf6pJQNCHyk9YEzsYj',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'An4JGf9zvSwEtYPJjZaWRnHaPXXvmyHg7oNLmJRKuxSV',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Completion Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failPaymentCompletionLockChange: {
@@ -902,11 +1615,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'DG24you4q9reWwc93JPhCK21WoAtP8w9Y6HThyWmL41e',
+          blueId: 'CWmwgreYPytk6uMhrPPQtwrEngyoMzmVCHCJwjESKxQe',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failPaymentCompletionLockChangeImpl: {
@@ -919,26 +1632,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'CWmwgreYPytk6uMhrPPQtwrEngyoMzmVCHCJwjESKxQe',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'DG24you4q9reWwc93JPhCK21WoAtP8w9Y6HThyWmL41e',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Completion Lock Change Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failPaymentReversalLockChange: {
@@ -950,11 +1685,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'DYUz7mcFpgQdRNwwsSSBdDe3CYtfRbAeAUiEv6tuLDhy',
+          blueId: '3ZL5qKgNJweUij3KwA6xp4KC1ReZ1AqXTFzhE1hCg5Hd',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failPaymentReversalLockChangeImpl: {
@@ -967,26 +1702,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '3ZL5qKgNJweUij3KwA6xp4KC1ReZ1AqXTFzhE1hCg5Hd',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'DYUz7mcFpgQdRNwwsSSBdDe3CYtfRbAeAUiEv6tuLDhy',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Reversal Lock Change Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failReverseAfterCompletion: {
@@ -998,11 +1755,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'FNZQJMETUdV57VFyWHGPdQVPSjWsvGj7u4n2oKYbgAaH',
+          blueId: 'BzR72tUU9bspQ3JBm54rjg3A7XFJLSuscvYdyw5LWQ7o',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failReverseAfterCompletionImpl: {
@@ -1041,30 +1798,52 @@ export const PayNote = {
             },
             name: 'Mark Payment Reversal Failed',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'BzR72tUU9bspQ3JBm54rjg3A7XFJLSuscvYdyw5LWQ7o',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'FNZQJMETUdV57VFyWHGPdQVPSjWsvGj7u4n2oKYbgAaH',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payment Reversal Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failSecureFunds: {
@@ -1076,11 +1855,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '67BprL1WeSSpJDKawcnaNC6VF2vz68JQ5qrVfi37biBA',
+          blueId: '6d2zv3cUykVpodfq3nHnsJ62sJHjViw66JkmziQAYrRA',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failSecureFundsImpl: {
@@ -1119,30 +1898,52 @@ export const PayNote = {
             },
             name: 'Mark Funds Securing Failed',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '6d2zv3cUykVpodfq3nHnsJ62sJHjViw66JkmziQAYrRA',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: '67BprL1WeSSpJDKawcnaNC6VF2vz68JQ5qrVfi37biBA',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Funds Securing Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failTransactionDetailsUpdate: {
@@ -1154,11 +1955,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '2dmAPySotyaWEPRLBYMiooqrqa3v42pyrHYvWskMMsMb',
+          blueId: '23KuRV6NdYxuHeDMJX4cHK4imFDvn552wY4CBTP6k5m8',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failTransactionDetailsUpdateImpl: {
@@ -1171,26 +1972,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '23KuRV6NdYxuHeDMJX4cHK4imFDvn552wY4CBTP6k5m8',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: '2dmAPySotyaWEPRLBYMiooqrqa3v42pyrHYvWskMMsMb',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Transaction Details Update Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     failTransactionDetailsUpdateLockChange: {
@@ -1202,11 +2025,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '1j22qLMeLkRgtwiMHWXJNopKeBHdACS4vELfLxc1mnA',
+          blueId: 'GoTKbpUrjeonNMKf7zyHm6TbD5tbJdqyRk4Etck1qU8N',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     failTransactionDetailsUpdateLockChangeImpl: {
@@ -1219,26 +2042,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: 'GoTKbpUrjeonNMKf7zyHm6TbD5tbJdqyRk4Etck1qU8N',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: '1j22qLMeLkRgtwiMHWXJNopKeBHdACS4vELfLxc1mnA',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Transaction Details Update Lock Change Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     guarantorChannel: {
@@ -1256,221 +2101,457 @@ export const PayNote = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                "const fallback = (current, value) =>\n  current === null || current === undefined ? value : current;\n\nreturn {\n  status: fallback(document('/status'), 'Pending'),\n  amountFinalResolved: fallback(document('/amount/finalResolved'), 0),\n  amountSecured: fallback(document('/amount/secured'), 0),\n  amountCompleted: fallback(document('/amount/completed'), 0),\n  amountReversed: fallback(document('/amount/reversed'), 0),\n  completionLocked: fallback(document('/controls/completionLocked'), false),\n  reversalLocked: fallback(document('/controls/reversalLocked'), false),\n  transactionDetailsUpdateLocked: fallback(\n    document('/controls/transactionDetailsUpdateLocked'),\n    false\n  ),\n  transactionDetails: fallback(document('/transactionDetails'), {}),\n};\n",
-            },
-            name: 'Resolve PayNote Runtime Defaults',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/status',
                     },
-                    value: '/status',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/status',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'Pending',
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/status',
+                          },
+                        },
+                      },
                     },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].status}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/amount/finalResolved',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].amountFinalResolved}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/amount/secured',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].amountSecured}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/finalResolved',
                     },
-                    value: '/amount/completed',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/amount/finalResolved',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                          },
+                          value: 0,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/amount/finalResolved',
+                          },
+                        },
+                      },
                     },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].amountCompleted}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/amount/reversed',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].amountReversed}",
-                  },
-                },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/controls/completionLocked',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].completionLocked}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/secured',
                     },
-                    value: '/controls/reversalLocked',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/amount/secured',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                          },
+                          value: 0,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/amount/secured',
+                          },
+                        },
+                      },
                     },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].reversalLocked}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/completed',
                     },
-                    value: '/controls/transactionDetailsUpdateLocked',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/amount/completed',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                          },
+                          value: 0,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/amount/completed',
+                          },
+                        },
+                      },
                     },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].transactionDetailsUpdateLocked}",
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/reversed',
+                    },
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/amount/reversed',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                          },
+                          value: 0,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/amount/reversed',
+                          },
+                        },
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value: '/transactionDetails',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/completionLocked',
+                    },
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/controls/completionLocked',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                          },
+                          value: false,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/controls/completionLocked',
+                          },
+                        },
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
                     },
-                    value:
-                      "${steps['Resolve PayNote Runtime Defaults'].transactionDetails}",
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/reversalLocked',
+                    },
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/controls/reversalLocked',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                          },
+                          value: false,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/controls/reversalLocked',
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/transactionDetailsUpdateLocked',
+                    },
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/controls/transactionDetailsUpdateLocked',
+                            },
+                          },
+                        },
+                        else: {
+                          type: {
+                            blueId:
+                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                          },
+                          value: false,
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/controls/transactionDetailsUpdateLocked',
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'add',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/transactionDetails',
+                    },
+                    val: {
+                      $choose: {
+                        cond: {
+                          $exists: {
+                            $document: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/transactionDetails',
+                            },
+                          },
+                        },
+                        else: {
+                          $emptyObject: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                        then: {
+                          $document: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: '/transactionDetails',
+                          },
+                        },
+                      },
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Initialize PayNote Runtime State',
+            name: 'ResolveRuntimeDefaults',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: '7X3LkN54Yp88JgZbppPhP6hM3Jqiqv8Z2i4kS7phXtQe',
+        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
       },
     },
     initLifecycleChannel: {
@@ -1492,11 +2573,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'BKBtKSbxAxg1vyg2ZcghVANjaS4viMxUFY2un6TDPWbw',
+          blueId: 'ChQAXUw8C752hUQ8TDDjLGnZHWEuw4yXqZTpNR54Soqr',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     lockPaymentCompletionImpl: {
@@ -1509,56 +2590,79 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/completionLocked',
+                    },
+                    val: {
+                      type: {
+                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      },
+                      value: true,
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    lockedAt: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/lockedAt',
+                      },
                     },
-                    value: '/controls/completionLocked',
+                    type: {
+                      blueId: 'ChQAXUw8C752hUQ8TDDjLGnZHWEuw4yXqZTpNR54Soqr',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: true,
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Enable Completion Lock',
+            name: 'LockPaymentCompletion',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              lockedAt: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.lockedAt}',
-              },
-              type: {
-                blueId: 'BKBtKSbxAxg1vyg2ZcghVANjaS4viMxUFY2un6TDPWbw',
-              },
-            },
-            name: 'Emit Payment Completion Locked',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     lockPaymentReversal: {
@@ -1570,11 +2674,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '5fKdfddLui1nNGHq2hKyEZm8pR6vaN7BRcuomWJPj82Z',
+          blueId: '455HeywDQjC8Kh6GtzqmVCRQMUQ2JtXj2sEabUr91CqN',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     lockPaymentReversalImpl: {
@@ -1587,56 +2691,79 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/reversalLocked',
+                    },
+                    val: {
+                      type: {
+                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      },
+                      value: true,
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    lockedAt: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/lockedAt',
+                      },
                     },
-                    value: '/controls/reversalLocked',
+                    type: {
+                      blueId: '455HeywDQjC8Kh6GtzqmVCRQMUQ2JtXj2sEabUr91CqN',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: true,
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Enable Reversal Lock',
+            name: 'LockPaymentReversal',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              lockedAt: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.lockedAt}',
-              },
-              type: {
-                blueId: '5fKdfddLui1nNGHq2hKyEZm8pR6vaN7BRcuomWJPj82Z',
-              },
-            },
-            name: 'Emit Payment Reversal Locked',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     lockTransactionDetailsUpdate: {
@@ -1648,11 +2775,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'eoi7pHyfDPfN9EkHcCNMekiZubrBa9EyywmnWrGUsGb',
+          blueId: '6qCdP6iHAPsWcA5G2N28tthQnoCGxzJvdjmFRU7JB8m7',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     lockTransactionDetailsUpdateImpl: {
@@ -1665,56 +2792,79 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/transactionDetailsUpdateLocked',
+                    },
+                    val: {
+                      type: {
+                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      },
+                      value: true,
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    lockedAt: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/lockedAt',
+                      },
                     },
-                    value: '/controls/transactionDetailsUpdateLocked',
+                    type: {
+                      blueId: '6qCdP6iHAPsWcA5G2N28tthQnoCGxzJvdjmFRU7JB8m7',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: true,
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Enable Transaction Details Update Lock',
+            name: 'LockTransactionDetailsUpdate',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              lockedAt: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.lockedAt}',
-              },
-              type: {
-                blueId: 'eoi7pHyfDPfN9EkHcCNMekiZubrBa9EyywmnWrGUsGb',
-              },
-            },
-            name: 'Emit Transaction Details Update Locked',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     payeeChannel: {
@@ -1736,11 +2886,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '14UHCXtf9XLpi3Z3n4xbo1dmXRzfXnDEH23iVaechxzh',
+          blueId: '4wPjsVSUbGeWCPY2vSBEAsVAt4Vqr1LB1CpAr4XsxApi',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     recordTransactionInitiatedImpl: {
@@ -1753,73 +2903,435 @@ export const PayNote = {
       steps: {
         items: [
           {
-            code: {
+            entry: {
               type: {
                 blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
               },
-              value:
-                "const request =\n  event && event.message ? event.message.request : null;\n\nif (!request || typeof request !== 'object' || Array.isArray(request)) {\n  throw new Error('Transaction initiated payload must be an object.');\n}\n\nconst current = document('/transactionDetails');\nconst next =\n  current && typeof current === 'object' && !Array.isArray(current)\n    ? { ...current }\n    : {};\nconst keys = Object.keys(request);\nlet index = 0;\nwhile (index < keys.length) {\n  const key = keys[index];\n  if (key !== 'type') {\n    next[key] = request[key];\n  }\n  index += 1;\n}\n\nreturn { nextTransactionDetails: next, events: [request] };\n",
+              value: 'merge',
             },
-            name: 'Merge Initiation Transaction Details',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
-              items: [
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: '/status',
-                  },
+            functions: {
+              asObject: {
+                args: {
                   val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                    },
-                    value: 'Initiated',
+                    value: null,
                   },
                 },
-                {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                expr: {
+                  $choose: {
+                    cond: {
+                      $isKind: {
+                        kind: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'object',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'val',
+                          },
+                        },
+                      },
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    else: {
+                      $emptyObject: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: '/transactionDetails',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    then: {
+                      $var: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'val',
+                      },
                     },
-                    value:
-                      "${steps['Merge Initiation Transaction Details'].nextTransactionDetails}",
                   },
                 },
-              ],
+              },
+              merge: {
+                do: {
+                  items: [
+                    {
+                      $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'request',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'nextTransactionDetails',
+                            },
+                          ],
+                        },
+                        vars: {
+                          nextTransactionDetails: {
+                            $merge: {
+                              items: [
+                                {
+                                  $call: {
+                                    args: {
+                                      val: {
+                                        $choose: {
+                                          cond: {
+                                            $exists: {
+                                              $document: {
+                                                type: {
+                                                  blueId:
+                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                },
+                                                value: '/transactionDetails',
+                                              },
+                                            },
+                                          },
+                                          else: {
+                                            $emptyObject: {
+                                              type: {
+                                                blueId:
+                                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                              },
+                                              value: true,
+                                            },
+                                          },
+                                          then: {
+                                            $document: {
+                                              type: {
+                                                blueId:
+                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              },
+                                              value: '/transactionDetails',
+                                            },
+                                          },
+                                        },
+                                      },
+                                    },
+                                    function: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'asObject',
+                                    },
+                                  },
+                                },
+                                {
+                                  $call: {
+                                    args: {
+                                      val: {
+                                        $event: {
+                                          type: {
+                                            blueId:
+                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          },
+                                          value: '/message/request',
+                                        },
+                                      },
+                                    },
+                                    function: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'objectWithoutType',
+                                    },
+                                  },
+                                },
+                              ],
+                            },
+                          },
+                          request: {
+                            $event: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: '/message/request',
+                            },
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $if: {
+                        cond: {
+                          $not: {
+                            $isKind: {
+                              kind: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'object',
+                              },
+                              val: {
+                                $var: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'request',
+                                },
+                              },
+                            },
+                          },
+                        },
+                        then: {
+                          items: [
+                            {
+                              $fail: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value:
+                                  'Transaction initiated payload must be an object.',
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    },
+                    {
+                      $appendEvent: {
+                        $var: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'request',
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/status',
+                        },
+                        val: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'Initiated',
+                        },
+                      },
+                    },
+                    {
+                      $appendChange: {
+                        op: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: 'replace',
+                        },
+                        path: {
+                          type: {
+                            blueId:
+                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                          },
+                          value: '/transactionDetails',
+                        },
+                        val: {
+                          $var: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'nextTransactionDetails',
+                          },
+                        },
+                      },
+                    },
+                    {
+                      $return: {
+                        changeset: {
+                          $changeset: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                        events: {
+                          $events: {
+                            type: {
+                              blueId:
+                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            },
+                            value: true,
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              },
+              objectWithoutType: {
+                args: {
+                  val: {
+                    value: null,
+                  },
+                },
+                expr: {
+                  $objectFromEntries: {
+                    $map: {
+                      expr: {
+                        key: {
+                          $text: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'key',
+                            },
+                          },
+                        },
+                        val: {
+                          $get: {
+                            key: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'key',
+                              },
+                            },
+                            object: {
+                              $call: {
+                                args: {
+                                  val: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'val',
+                                    },
+                                  },
+                                },
+                                function: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'asObject',
+                                },
+                              },
+                            },
+                          },
+                        },
+                      },
+                      in: {
+                        $filter: {
+                          in: {
+                            $keys: {
+                              $call: {
+                                args: {
+                                  val: {
+                                    $var: {
+                                      type: {
+                                        blueId:
+                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      },
+                                      value: 'val',
+                                    },
+                                  },
+                                },
+                                function: {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'asObject',
+                                },
+                              },
+                            },
+                          },
+                          item: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'key',
+                          },
+                          where: {
+                            $ne: {
+                              items: [
+                                {
+                                  $var: {
+                                    type: {
+                                      blueId:
+                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    },
+                                    value: 'key',
+                                  },
+                                },
+                                {
+                                  type: {
+                                    blueId:
+                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  },
+                                  value: 'type',
+                                },
+                              ],
+                            },
+                          },
+                        },
+                      },
+                      item: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: 'key',
+                      },
+                    },
+                  },
+                },
+              },
             },
-            name: 'Update Initiation State',
+            name: 'MergeInitiationTransactionDetails',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     recordTransactionInitiationFailed: {
@@ -1831,11 +3343,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'FSfMCJpFDcB9zNfrd4gDhaDXpFhaSNToGbAdxSkw55V7',
+          blueId: '7zJ55EuAZbwtxHUt8gqKJVmjPpURbUCge9kGeLXprtmy',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     recordTransactionInitiationFailedImpl: {
@@ -1874,30 +3386,52 @@ export const PayNote = {
             },
             name: 'Mark Initiation Failed',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
             },
           },
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '7zJ55EuAZbwtxHUt8gqKJVmjPpURbUCge9kGeLXprtmy',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'FSfMCJpFDcB9zNfrd4gDhaDXpFhaSNToGbAdxSkw55V7',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Transaction Initiation Failed',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     rejectFinalAmountResolution: {
@@ -1909,11 +3443,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'E6zFPqoEmEdP9xFa1A9FDSsDJDb7BaR7tXakVD7RN8oH',
+          blueId: '9g76Ge68UF744b6KWgGkrAudVCdM8Ggs1YjVcZXXWmsS',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     rejectFinalAmountResolutionImpl: {
@@ -1926,26 +3460,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '9g76Ge68UF744b6KWgGkrAudVCdM8Ggs1YjVcZXXWmsS',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'E6zFPqoEmEdP9xFa1A9FDSsDJDb7BaR7tXakVD7RN8oH',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Final Amount Resolution Rejected',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     rejectPayeeAssignment: {
@@ -1957,11 +3513,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'CNFxs2PfxjDh7HNCaehyxNJ8zAdLbmgTcH12rU8VA7yi',
+          blueId: '3CuhNQR9wKoJgiFtEagaHcWskzPtsAsGgDwSfcjhSTz3',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     rejectPayeeAssignmentImpl: {
@@ -1974,26 +3530,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '3CuhNQR9wKoJgiFtEagaHcWskzPtsAsGgDwSfcjhSTz3',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'CNFxs2PfxjDh7HNCaehyxNJ8zAdLbmgTcH12rU8VA7yi',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Payee Assignment Rejected',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     rejectPayNote: {
@@ -2005,11 +3583,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'AdKfkwRfzRUxUKSzhRfYANsaUBNnz4u6JFWR66qhzyZe',
+          blueId: 'G7UfGk3acE63TsiGzKM2xdSdW1ZUtmzGuMDypx9dXHVL',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     rejectPayNoteImpl: {
@@ -2022,52 +3600,127 @@ export const PayNote = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value:
-                "const request =\n  event && event.message ? event.message.request : null;\n\nif (!request || typeof request !== 'object' || Array.isArray(request)) {\n  throw new Error('PayNote rejection request must be an object.');\n}\n\nreturn { events: [request] };\n",
-            },
-            name: 'Validate and Forward Rejection',
-            type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
-            },
-          },
-          {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $let: {
+                    expr: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request',
+                      },
                     },
-                    value: 'replace',
+                    name: 'request',
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $if: {
+                    cond: {
+                      $not: {
+                        $isKind: {
+                          kind: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value: 'object',
+                          },
+                          val: {
+                            $var: {
+                              type: {
+                                blueId:
+                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              },
+                              value: 'request',
+                            },
+                          },
+                        },
+                      },
                     },
-                    value: '/status',
+                    then: {
+                      items: [
+                        {
+                          $fail: {
+                            type: {
+                              blueId:
+                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            },
+                            value:
+                              'PayNote rejection request must be an object.',
+                          },
+                        },
+                      ],
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    $var: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'request',
                     },
-                    value: 'Rejected',
+                  },
+                },
+                {
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/status',
+                    },
+                    val: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'Rejected',
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Mark PayNote Rejected',
+            name: 'ValidateForwardAndReject',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     rejectTransactionDetailsUpdate: {
@@ -2079,11 +3732,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'tF2fYwf8b7HwErSWAduxWXoV8v7pMQPHVCsSZhZzhmT',
+          blueId: '2kNE5ZeV6v5vzeq6WRAYLmCmdswhkigP5RQWLd8Po7Pc',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     rejectTransactionDetailsUpdateImpl: {
@@ -2096,26 +3749,48 @@ export const PayNote = {
       steps: {
         items: [
           {
-            event: {
-              reason: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            do: {
+              items: [
+                {
+                  $appendEvent: {
+                    reason: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/reason',
+                      },
+                    },
+                    type: {
+                      blueId: '2kNE5ZeV6v5vzeq6WRAYLmCmdswhkigP5RQWLd8Po7Pc',
+                    },
+                  },
                 },
-                value: '${event.message.request.reason}',
-              },
-              type: {
-                blueId: 'tF2fYwf8b7HwErSWAduxWXoV8v7pMQPHVCsSZhZzhmT',
-              },
+                {
+                  $return: {
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'Emit Transaction Details Update Rejected',
             type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     resolveFinalAmount: {
@@ -2127,11 +3802,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '7oKW3Fozo1KUPgxo4PdF6jJJQ83z11mBbpZF2xCENGDX',
+          blueId: '14aYCUtepzJKAQ8rVtfNUcSebrBYbva3VBjhdtXgm4GV',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     resolveFinalAmountImpl: {
@@ -2144,56 +3819,82 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/finalResolved',
+                    },
+                    val: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/finalAmount',
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    finalAmount: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/finalAmount',
+                      },
                     },
-                    value: '/amount/finalResolved',
+                    type: {
+                      blueId: '14aYCUtepzJKAQ8rVtfNUcSebrBYbva3VBjhdtXgm4GV',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: '${event.message.request.finalAmount}',
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Update Final Amount',
+            name: 'ResolveFinalAmount',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              finalAmount: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.finalAmount}',
-              },
-              type: {
-                blueId: '7oKW3Fozo1KUPgxo4PdF6jJJQ83z11mBbpZF2xCENGDX',
-              },
-            },
-            name: 'Emit Final Amount Resolved',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     reverseAfterCompletion: {
@@ -2205,11 +3906,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo',
+          blueId: '2xgUeYahgLZCGnrNaVqsCbwEP9xnsaU8LKk3jcDtx8jw',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     reverseAfterCompletionImpl: {
@@ -2222,76 +3923,104 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/status',
                     },
-                    value: '/status',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'Reversed',
                     },
-                    value: 'Reversed',
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/reversed',
+                    },
+                    val: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/amountReversed',
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    amountReversed: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/amountReversed',
+                      },
                     },
-                    value: '/amount/reversed',
+                    type: {
+                      blueId: '2xgUeYahgLZCGnrNaVqsCbwEP9xnsaU8LKk3jcDtx8jw',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: '${event.message.request.amountReversed}',
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Update Reversed Amount',
+            name: 'ReverseAfterCompletion',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              amountReversed: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.amountReversed}',
-              },
-              type: {
-                blueId: '81whmkSDanPULQUi4sMuVkxiWDLHb3VPC5PeLfJCXCGo',
-              },
-            },
-            name: 'Emit Payment Reversed After Completion',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     search: {
@@ -2316,11 +4045,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'DvxVaiLspGpmTY5SiZDb85sJLcvzBCoJCjCHSAmVFbGT',
+          blueId: 'Dhq87PEpVaYUJAkCHxWxmRcmgQGg8qkCWyuVo7rJhNrZ',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     secureFundsImpl: {
@@ -2333,76 +4062,104 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/status',
                     },
-                    value: '/status',
-                  },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    val: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'Secured',
                     },
-                    value: 'Secured',
                   },
                 },
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/amount/secured',
+                    },
+                    val: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/amountSecured',
+                      },
+                    },
                   },
-                  path: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $appendEvent: {
+                    amountSecured: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/amountSecured',
+                      },
                     },
-                    value: '/amount/secured',
+                    type: {
+                      blueId: 'Dhq87PEpVaYUJAkCHxWxmRcmgQGg8qkCWyuVo7rJhNrZ',
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: '${event.message.request.amountSecured}',
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Update Secured Amount',
+            name: 'SecureFunds',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              amountSecured: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.amountSecured}',
-              },
-              type: {
-                blueId: 'DvxVaiLspGpmTY5SiZDb85sJLcvzBCoJCjCHSAmVFbGT',
-              },
-            },
-            name: 'Emit Funds Secured',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     unlockPaymentCompletion: {
@@ -2414,11 +4171,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'BZxWkxpxVygutoo7KuBd7C63nZwYDuPXFhffXhZ319z9',
+          blueId: 'HWbQL6dGkDfjPDU57aghQmWMtpi3ai9sTX4TmMnA2k3X',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     unlockPaymentCompletionImpl: {
@@ -2431,56 +4188,79 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/completionLocked',
+                    },
+                    val: {
+                      type: {
+                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      },
+                      value: false,
+                    },
                   },
-                  path: {
+                },
+                {
+                  $appendEvent: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'HWbQL6dGkDfjPDU57aghQmWMtpi3ai9sTX4TmMnA2k3X',
                     },
-                    value: '/controls/completionLocked',
+                    unlockedAt: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/unlockedAt',
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: false,
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Disable Completion Lock',
+            name: 'UnlockPaymentCompletion',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              type: {
-                blueId: 'BZxWkxpxVygutoo7KuBd7C63nZwYDuPXFhffXhZ319z9',
-              },
-              unlockedAt: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.unlockedAt}',
-              },
-            },
-            name: 'Emit Payment Completion Unlocked',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     unlockPaymentReversal: {
@@ -2492,11 +4272,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: 'HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu',
+          blueId: '6sVrGit3FwrSRnVr4kKLk3PJC33mqAPzzuDqbzCvordD',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     unlockPaymentReversalImpl: {
@@ -2509,56 +4289,79 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/reversalLocked',
+                    },
+                    val: {
+                      type: {
+                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      },
+                      value: false,
+                    },
                   },
-                  path: {
+                },
+                {
+                  $appendEvent: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: '6sVrGit3FwrSRnVr4kKLk3PJC33mqAPzzuDqbzCvordD',
                     },
-                    value: '/controls/reversalLocked',
+                    unlockedAt: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/unlockedAt',
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: false,
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Disable Reversal Lock',
+            name: 'UnlockPaymentReversal',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              type: {
-                blueId: 'HPLY55rtyD7BVZaHWhB9iUP7AoFTykn6ZCF3K3BaBbVu',
-              },
-              unlockedAt: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.unlockedAt}',
-              },
-            },
-            name: 'Emit Payment Reversal Unlocked',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
     unlockTransactionDetailsUpdate: {
@@ -2570,11 +4373,11 @@ export const PayNote = {
       },
       request: {
         type: {
-          blueId: '8H1L8VGE9vXzbGgrv5RNkpYXngf43futPHQvnJ4SJD2B',
+          blueId: 'BDLj2txke2Z35TyNhd4QyNa4C3dtqJcmpti5C5Y6Gvt5',
         },
       },
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     unlockTransactionDetailsUpdateImpl: {
@@ -2587,56 +4390,79 @@ export const PayNote = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                  $appendChange: {
+                    op: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: 'replace',
                     },
-                    value: 'replace',
+                    path: {
+                      type: {
+                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      },
+                      value: '/controls/transactionDetailsUpdateLocked',
+                    },
+                    val: {
+                      type: {
+                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      },
+                      value: false,
+                    },
                   },
-                  path: {
+                },
+                {
+                  $appendEvent: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'BDLj2txke2Z35TyNhd4QyNa4C3dtqJcmpti5C5Y6Gvt5',
                     },
-                    value: '/controls/transactionDetailsUpdateLocked',
+                    unlockedAt: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request/unlockedAt',
+                      },
+                    },
                   },
-                  val: {
-                    type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
                     },
-                    value: false,
+                    events: {
+                      $events: {
+                        type: {
+                          blueId:
+                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        },
+                        value: true,
+                      },
+                    },
                   },
                 },
               ],
             },
-            name: 'Disable Transaction Details Update Lock',
+            name: 'UnlockTransactionDetailsUpdate',
             type: {
-              blueId: 'FtHZJzH4hqAoGxFBjsmy1svfT4BwEBB4aHpFSZycZLLa',
-            },
-          },
-          {
-            event: {
-              type: {
-                blueId: '8H1L8VGE9vXzbGgrv5RNkpYXngf43futPHQvnJ4SJD2B',
-              },
-              unlockedAt: {
-                type: {
-                  blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                },
-                value: '${event.message.request.unlockedAt}',
-              },
-            },
-            name: 'Emit Transaction Details Update Unlocked',
-            type: {
-              blueId: '2bSWEoMSZwzf32Hnr4BDVsuq8NRjrWEpnhZvMZAJGhh2',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
   },

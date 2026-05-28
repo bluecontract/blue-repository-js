@@ -4,7 +4,7 @@ export const MyOSAdminBase = {
       description:
         'MyOS Admin (accountId=0) — posts operational progress/decisions via myOsAdminUpdate',
       type: {
-        blueId: 'HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs',
+        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
       },
     },
     myOsAdminUpdate: {
@@ -17,7 +17,7 @@ export const MyOSAdminBase = {
       description:
         'The standard, required operation for MyOS Admin to deliver events.',
       type: {
-        blueId: 'BoAiqVUZv9Fum3wFqaX2JnQMBHJLxJSo2V9U2UBmCfsC',
+        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
       },
     },
     myOsAdminUpdateImpl: {
@@ -31,21 +31,32 @@ export const MyOSAdminBase = {
       steps: {
         items: [
           {
-            code: {
-              type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-              },
-              value: 'return { events: event.message.request };\n',
+            do: {
+              items: [
+                {
+                  $return: {
+                    events: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        },
+                        value: '/message/request',
+                      },
+                    },
+                  },
+                },
+              ],
             },
             name: 'EmitAdminEvents',
             type: {
-              blueId: 'ExZxT61PSpWHpEAtP2WKMXXqxEYN7Z13j7Zv36Dp99kS',
+              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
             },
           },
         ],
       },
       type: {
-        blueId: 'CGdxkNjPcsdescqLPz6SNLsMyak6demQQr7RoKNHbCyv',
+        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
       },
     },
   },

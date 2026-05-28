@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/types",
-  "version": "1.2.1",
+  "version": "1.2.2-rc.0",
   "type": "module",
   "sideEffects": false,
   "repository": {
@@ -57,13 +57,13 @@
       "types": "./dist/packages/common/contents/*.d.ts",
       "default": "./dist/packages/common/contents/*.js"
     },
-    "./packages/conversation/schemas/*": {
-      "types": "./dist/packages/conversation/schemas/*.d.ts",
-      "default": "./dist/packages/conversation/schemas/*.js"
+    "./packages/coordination/schemas/*": {
+      "types": "./dist/packages/coordination/schemas/*.d.ts",
+      "default": "./dist/packages/coordination/schemas/*.js"
     },
-    "./packages/conversation/contents/*": {
-      "types": "./dist/packages/conversation/contents/*.d.ts",
-      "default": "./dist/packages/conversation/contents/*.js"
+    "./packages/coordination/contents/*": {
+      "types": "./dist/packages/coordination/contents/*.d.ts",
+      "default": "./dist/packages/coordination/contents/*.js"
     },
     "./packages/core/schemas/*": {
       "types": "./dist/packages/core/schemas/*.d.ts",
@@ -72,6 +72,14 @@
     "./packages/core/contents/*": {
       "types": "./dist/packages/core/contents/*.d.ts",
       "default": "./dist/packages/core/contents/*.js"
+    },
+    "./packages/finos-cdm-6-0-d07/schemas/*": {
+      "types": "./dist/packages/finos-cdm-6-0-d07/schemas/*.d.ts",
+      "default": "./dist/packages/finos-cdm-6-0-d07/schemas/*.js"
+    },
+    "./packages/finos-cdm-6-0-d07/contents/*": {
+      "types": "./dist/packages/finos-cdm-6-0-d07/contents/*.d.ts",
+      "default": "./dist/packages/finos-cdm-6-0-d07/contents/*.js"
     },
     "./packages/myos/schemas/*": {
       "types": "./dist/packages/myos/schemas/*.d.ts",
@@ -88,6 +96,14 @@
     "./packages/paynote/contents/*": {
       "types": "./dist/packages/paynote/contents/*.d.ts",
       "default": "./dist/packages/paynote/contents/*.js"
+    },
+    "./packages/workflows/schemas/*": {
+      "types": "./dist/packages/workflows/schemas/*.d.ts",
+      "default": "./dist/packages/workflows/schemas/*.js"
+    },
+    "./packages/workflows/contents/*": {
+      "types": "./dist/packages/workflows/contents/*.d.ts",
+      "default": "./dist/packages/workflows/contents/*.js"
     }
   },
   "files": [
@@ -100,6 +116,6 @@
   },
   "blueType": {
     "moduleName": "Blue Repository",
-    "moduleBlueId": "sUk1iHFrf7UQXAMeQvWRyvYVxxStUjfARaE5e4EgDKv"
+    "moduleBlueId": "4iVbHvs27ozUtF4hbp4SD9CU1emxEZmBqrY9TtU2AfKr"
   }
 }

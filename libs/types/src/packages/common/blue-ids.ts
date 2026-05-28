@@ -1,9 +1,11 @@
 export const blueIds = {
+  'Common/Crypto Ed25519 Verify':
+    '8wu86DtNarAvJYkPY6iKKYVBFAPedStVtDyjnwZ7xnCw',
   'Common/Currency': 'CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc',
   'Common/Document': 'Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8',
   'Common/Document Anchor': 'Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo',
   'Common/Document Anchors': '3KRfhgbFdvyW9SGuKiq3WxWF9bHSATEb8tMso8Pykpre',
-  'Common/Named Event': 'GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX',
+  'Common/Named Event': 'FWb3C8okT5wMqZVHCH4e3RAKLSk2EDw8ryxoonQY1pKz',
   'Common/Payment': 'DoDF7Hm2Ss7ikirPwXZ7KFiWNmdwtb53vHCSwYFbCdPk',
   'Common/PermissionGrant': 'EHTR6jFrqbmjPf7dNSJUsGUJrgr5kLh62QiT2bxD6KRp',
   'Common/Profile': 'EWfk8qkKZYqqTyeLs4wLJTfPCLufZBiNGFQY4M4PLv99',

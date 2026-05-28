@@ -1,9 +1,9 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
@@ -15,17 +15,21 @@ export const SingleDocumentPermissionGrantToDocumentSchema = withTypeBlueId(
   MyOSAdminBaseSchema.extend({
     contracts: z
       .object({
-        granterChannel: MyOSTimelineChannelSchema.optional(),
-        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        revoke: OperationSchema.optional(),
-        revokeImplGranter: SequentialWorkflowOperationSchema.optional(),
-        validateOnInit: SequentialWorkflowSchema.optional(),
+        granterChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        initLifecycleChannel: z
+          .lazy(() => LifecycleEventChannelSchema)
+          .optional(),
+        revoke: z.lazy(() => OperationSchema).optional(),
+        revokeImplGranter: z
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        validateOnInit: z.lazy(() => SequentialWorkflowSchema).optional(),
       })
       .optional(),
     granteeDocumentId: z.string().optional(),
     granterDocumentSessionId: z.string().optional(),
     name: z.string().optional(),
-    permissions: SingleDocumentPermissionSetSchema.optional(),
+    permissions: z.lazy(() => SingleDocumentPermissionSetSchema).optional(),
     skipValidation: z.boolean().optional(),
     targetSessionId: z.string().optional(),
   })

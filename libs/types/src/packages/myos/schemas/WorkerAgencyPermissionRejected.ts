@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 import { WorkerAgencyPermissionSchema } from './WorkerAgencyPermission';
 
 export const WorkerAgencyPermissionRejectedSchema = withTypeBlueId(
@@ -9,7 +9,7 @@ export const WorkerAgencyPermissionRejectedSchema = withTypeBlueId(
 )(
   ResponseSchema.extend({
     allowedWorkerAgencyPermissions: z
-      .array(WorkerAgencyPermissionSchema)
+      .array(z.lazy(() => WorkerAgencyPermissionSchema))
       .optional(),
     description: z.string().optional(),
     granteeDocumentId: z.string().optional(),

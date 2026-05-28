@@ -3,7 +3,7 @@ export const PaymentReversalUnlocked = {
     'Payment reversal was unlocked. Subsequent reversal attempts may now be processed again.\n',
   name: 'Payment Reversal Unlocked',
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
   },
   unlockedAt: {
     type: {

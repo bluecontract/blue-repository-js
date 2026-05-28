@@ -3,7 +3,7 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
 export const PaymentMandateSpendAuthorizationRequestedSchema = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Spend Authorization Requested']
@@ -13,10 +13,10 @@ export const PaymentMandateSpendAuthorizationRequestedSchema = withTypeBlueId(
     authorizationId: z.string().optional(),
     counterpartyId: z.string().optional(),
     counterpartyType: z.string().optional(),
-    currency: CurrencySchema.optional(),
+    currency: z.lazy(() => CurrencySchema).optional(),
     description: z.string().optional(),
     name: z.string().optional(),
-    requestedAt: TimestampSchema.optional(),
+    requestedAt: z.lazy(() => TimestampSchema).optional(),
     requestingDocumentId: z.string().optional(),
     requestingSessionId: z.string().optional(),
   })

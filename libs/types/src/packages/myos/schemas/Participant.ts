@@ -8,7 +8,7 @@ export const ParticipantSchema = withTypeBlueId(blueIds['MyOS/Participant'])(
     accountId: z.string().optional(),
     email: z.string().optional(),
     name: z.string().optional(),
-    status: ParticipantActivationStateSchema.optional(),
+    status: z.lazy(() => ParticipantActivationStateSchema).optional(),
     timelineId: z.string().optional(),
   })
 );

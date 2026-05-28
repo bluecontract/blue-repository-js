@@ -19,6 +19,6 @@ export const AgentActor = {
     },
   },
   type: {
-    blueId: 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
+    blueId: 'CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd',
   },
 } as const;

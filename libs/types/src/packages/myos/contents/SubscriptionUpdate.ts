@@ -14,7 +14,7 @@ export const SubscriptionUpdate = {
     },
   },
   type: {
-    blueId: '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
+    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
   },
   update: {
     description: 'The update (subscription event) from the target session.',

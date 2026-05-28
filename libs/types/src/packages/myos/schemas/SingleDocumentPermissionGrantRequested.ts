@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 
 export const SingleDocumentPermissionGrantRequestedSchema = withTypeBlueId(
@@ -11,7 +11,7 @@ export const SingleDocumentPermissionGrantRequestedSchema = withTypeBlueId(
     description: z.string().optional(),
     name: z.string().optional(),
     onBehalfOf: z.string().optional(),
-    permissions: SingleDocumentPermissionSetSchema.optional(),
+    permissions: z.lazy(() => SingleDocumentPermissionSetSchema).optional(),
     targetSessionId: z.string().optional(),
   })
 );

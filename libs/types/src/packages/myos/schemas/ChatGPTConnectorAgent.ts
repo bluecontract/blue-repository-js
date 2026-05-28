@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { AgentSchema } from './Agent';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 
@@ -12,9 +12,11 @@ export const ChatGPTConnectorAgentSchema = withTypeBlueId(
   AgentSchema.extend({
     contracts: z
       .object({
-        ownerChannel: MyOSTimelineChannelSchema.optional(),
-        startWorker: OperationSchema.optional(),
-        startWorkerImpl: SequentialWorkflowOperationSchema.optional(),
+        ownerChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        startWorker: z.lazy(() => OperationSchema).optional(),
+        startWorkerImpl: z
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
       })
       .optional(),
     description: z.string().optional(),

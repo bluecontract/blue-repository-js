@@ -6,7 +6,7 @@ import { DocumentAnchorsSchema } from './DocumentAnchors';
 
 export const SpaceSchema = withTypeBlueId(blueIds['Common/Space'])(
   DocumentSchema.extend({
-    anchors: DocumentAnchorsSchema.optional(),
+    anchors: z.lazy(() => DocumentAnchorsSchema).optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     website: z.string().optional(),

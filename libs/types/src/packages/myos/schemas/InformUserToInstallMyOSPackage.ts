@@ -10,7 +10,7 @@ export const InformUserToInstallMyOSPackageSchema = withTypeBlueId(
     description: z.string().optional(),
     message: z.string().optional(),
     name: z.string().optional(),
-    package: MyOSPackageSchema.optional(),
+    package: z.lazy(() => MyOSPackageSchema).optional(),
     title: z.string().optional(),
   })
 );

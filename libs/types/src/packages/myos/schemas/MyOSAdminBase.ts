@@ -1,8 +1,8 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 
 export const MyOSAdminBaseSchema = withTypeBlueId(
@@ -11,9 +11,11 @@ export const MyOSAdminBaseSchema = withTypeBlueId(
   z.object({
     contracts: z
       .object({
-        myOsAdminChannel: MyOSTimelineChannelSchema.optional(),
-        myOsAdminUpdate: OperationSchema.optional(),
-        myOsAdminUpdateImpl: SequentialWorkflowOperationSchema.optional(),
+        myOsAdminChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
+        myOsAdminUpdate: z.lazy(() => OperationSchema).optional(),
+        myOsAdminUpdateImpl: z
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
       })
       .optional(),
     description: z.string().optional(),

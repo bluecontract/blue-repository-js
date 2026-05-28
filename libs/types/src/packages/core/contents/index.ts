@@ -32,7 +32,7 @@ export { EmbeddedNodeChannel } from './EmbeddedNodeChannel';
 export { LifecycleEventChannel } from './LifecycleEventChannel';
 export { ProcessEmbedded } from './ProcessEmbedded';
 
-export const contents = {
+export const contents: Record<string, unknown> = {
   '5AJiAUgiSDwfCzv9rCYKNaAJu1hm8BXFu7eLNAEHNACr': DocumentProcessingTerminated,
   '5NiEhupJ6uF54Q3vs4GwQX4UX4ExtwHpKRVvjKEHtvjR': ProcessingTerminatedMarker,
   '6H1iGrDAcqtFE1qv3iyMTj79jCZsMUMxsNUzqYSJNbyR': DocumentUpdateChannel,
@@ -49,4 +49,4 @@ export const contents = {
   Fjbu3QpnUaTruDTcTidETCX2N5STyv7KYxT42PCzGHxm: EmbeddedNodeChannel,
   H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr: LifecycleEventChannel,
   Hu4XkfvyXLSdfFNUwuXebEu3oJeWcMyhBTcRV9AQyKPC: ProcessEmbedded,
-} as const;
+};

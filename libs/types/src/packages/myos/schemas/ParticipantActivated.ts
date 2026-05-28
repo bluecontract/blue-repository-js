@@ -9,7 +9,7 @@ export const ParticipantActivatedSchema = withTypeBlueId(
   z.object({
     channelName: z.string().optional(),
     name: z.string().optional(),
-    participant: ParticipantSchema.optional(),
+    participant: z.lazy(() => ParticipantSchema).optional(),
   })
 );
 

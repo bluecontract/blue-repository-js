@@ -1,0 +1,17 @@
+export const CdmProductCommonSettlementQuantityMultiplier = {
+  description:
+    'Class to specify a mechanism for a quantity to be set as a multiplier to another (reference) quantity, based on a price observation. At the moment this class only supports FX or Equity-linked notional and re-uses existing building blocks for those 2 cases, until such time when component can be made more generic. This captures the case of resetting cross-currency swaps and resetting equity swaps.\n',
+  fxLinkedNotionalSchedule: {
+    description:
+      'Multiplier specified as an FX-linked schedule, e.g. for a resetting cross-currency swap..',
+    type: {
+      blueId: 'BReQt7q6C5537Y3nyWefx79E61Eegxm6K7xrLwVrEmHp',
+    },
+  },
+  multiplierValue: {
+    type: {
+      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+    },
+  },
+  name: 'cdm/product/common/settlement/QuantityMultiplier',
+} as const;

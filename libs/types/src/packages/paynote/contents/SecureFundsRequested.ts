@@ -8,6 +8,6 @@ export const SecureFundsRequested = {
     'A participant requests that the Guarantor secure value for this transaction.',
   name: 'Secure Funds Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
   },
 } as const;

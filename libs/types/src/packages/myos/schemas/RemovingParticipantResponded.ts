@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 import { RemovingParticipantRequestedSchema } from './RemovingParticipantRequested';
 
 export const RemovingParticipantRespondedSchema = withTypeBlueId(
@@ -9,7 +9,7 @@ export const RemovingParticipantRespondedSchema = withTypeBlueId(
 )(
   ResponseSchema.extend({
     name: z.string().optional(),
-    request: RemovingParticipantRequestedSchema.optional(),
+    request: z.lazy(() => RemovingParticipantRequestedSchema).optional(),
     status: z.string().optional(),
   })
 );

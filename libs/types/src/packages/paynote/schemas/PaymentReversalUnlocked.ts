@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
 export const PaymentReversalUnlockedSchema = withTypeBlueId(
   blueIds['PayNote/Payment Reversal Unlocked']
@@ -10,7 +10,7 @@ export const PaymentReversalUnlockedSchema = withTypeBlueId(
   ResponseSchema.extend({
     description: z.string().optional(),
     name: z.string().optional(),
-    unlockedAt: TimestampSchema.optional(),
+    unlockedAt: z.lazy(() => TimestampSchema).optional(),
   })
 );
 

@@ -1,3 +1,4 @@
+import type { ZodTypeAny } from 'zod';
 import { ChannelSchema } from './Channel';
 import { ChannelEventCheckpointSchema } from './ChannelEventCheckpoint';
 import { ContractSchema } from './Contract';
@@ -32,7 +33,7 @@ export { ProcessingInitializedMarkerSchema } from './ProcessingInitializedMarker
 export { ProcessingTerminatedMarkerSchema } from './ProcessingTerminatedMarker';
 export { TriggeredEventChannelSchema } from './TriggeredEventChannel';
 
-export const schemas = {
+export const schemas: Record<string, ZodTypeAny> = {
   DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr: ChannelSchema,
   B7YQeYdQzUNuzaDQ4tNTd2iJqgd4YnVQkgz4QgymDWWU: ChannelEventCheckpointSchema,
   AERp8BWnuUsjoPciAeNXuUWS9fmqPNMdWbxmKn3tcitx: ContractSchema,
@@ -53,4 +54,4 @@ export const schemas = {
   '5NiEhupJ6uF54Q3vs4GwQX4UX4ExtwHpKRVvjKEHtvjR':
     ProcessingTerminatedMarkerSchema,
   C77W4kVGcxL7Mkx9WL9QESPEFFL2GzWAe647s1Efprt: TriggeredEventChannelSchema,
-} as const;
+};

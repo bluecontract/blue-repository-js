@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
 export const TransactionDetailsUpdateRequestedSchema = withTypeBlueId(
   blueIds['PayNote/Transaction Details Update Requested']

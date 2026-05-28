@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
 export const WorkerAgencyPermissionRevokeRequestedSchema = withTypeBlueId(
   blueIds['MyOS/Worker Agency Permission Revoke Requested']

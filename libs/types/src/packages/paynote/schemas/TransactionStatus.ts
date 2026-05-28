@@ -9,7 +9,7 @@ export const TransactionStatusSchema = withTypeBlueId(
   z.object({
     authorizedAmountMinor: z.number().optional(),
     capturedAmountMinor: z.number().optional(),
-    currency: CurrencySchema.optional(),
+    currency: z.lazy(() => CurrencySchema).optional(),
     description: z.string().optional(),
     name: z.string().optional(),
     status: z.string().optional(),

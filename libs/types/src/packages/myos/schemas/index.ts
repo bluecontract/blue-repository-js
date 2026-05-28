@@ -1,3 +1,4 @@
+import type { ZodTypeAny } from 'zod';
 import { AddingParticipantRequestedSchema } from './AddingParticipantRequested';
 import { AddingParticipantRespondedSchema } from './AddingParticipantResponded';
 import { AgentSchema } from './Agent';
@@ -202,65 +203,65 @@ export { WorkerAgencyPermissionRevokingInProgressSchema } from './WorkerAgencyPe
 export { WorkerAgencyPermissionValidatedSchema } from './WorkerAgencyPermissionValidated';
 export { WorkerSessionStartingSchema } from './WorkerSessionStarting';
 
-export const schemas = {
-  '98JmkF189jZpQRyzaiQxLbc2rRUqnRy2o6bH2qCRaBg3':
+export const schemas: Record<string, ZodTypeAny> = {
+  '64nzNQj2VjnjPwDz58sQEKWHxYj4pMek7zx56cehVswy':
     AddingParticipantRequestedSchema,
-  BQMtWzcdbYUdaJQADyy6bkscxQGfhQHT4BgFhXQAgKfz:
+  FUiUHqx8xVVAey1EztoguwrzTysUC8K8yUQrAzAM7AwJ:
     AddingParticipantRespondedSchema,
   '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc': AgentSchema,
-  '3SJK2XGFHJgqXyCK4sjZ6tmAk3VjyuX6imGBJmV2LgQZ': AgentActorSchema,
+  '4cmSq5dc11j8xtpsfZAwsuP5FiCA7o4LQ3VyeKCwsU6x': AgentActorSchema,
   Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: AllParticipantsReadySchema,
   '8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga':
     AnchorAutomationTemplateSchema,
   '9iEADVdqxqgacF3GAZVMFZu4m5ywuNpsGzButLUNkPWo': BootstrapFailedSchema,
-  Dd53JjiBGUnASZXjhiHBqCSnruN2XmLtcW2vNQB7Sm34: CallOperationAcceptedSchema,
-  BaNmvStTGdsBsSHiHbqdhrrC7vfwiQdDK6NYiyRbJowx: CallOperationFailedSchema,
-  EVX6nBdHdVEBH9Gbthpd2eqpxaxS4bb9wM55QNdZmcBy: CallOperationRequestedSchema,
-  '3P4vsTx8Ky2pucXxKgkn8MouveP2DBRjkwZckCG5b9Lb': CallOperationRespondedSchema,
-  '3u1bvMQqqc9sj4zWmwwhQrbdfCn7xrGiN7KEczqq22XG': ChatGPTConnectorAgentSchema,
+  EEkjPEAbvuHvqWme4XY6C3ti65dyHhEGSPknRQPrydmR: CallOperationAcceptedSchema,
+  BVQuX53S36JxtTteebPh9fLPG7P44VZ7MjBag7efAtc8: CallOperationFailedSchema,
+  '6FcjvaWHHTmGycQ97B2EvAoPeLCHownJZbeL5Aw7tfrJ': CallOperationRequestedSchema,
+  HzUo1Z5WD7M9YYuUfVtZ2ZJHRwcoroeFVXTNTKoevmfc: CallOperationRespondedSchema,
+  '6RGwZfzmVxnM1SgpbauuvTAZaN1CTyNCGwnTRSCBhBXQ': ChatGPTConnectorAgentSchema,
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: DocumentAnchorSchema,
   '7Usvk6dZMVqas3yqs23ZEXn1zu1YDPjgYiZFNYaw3puH': DocumentAnchorsSchema,
-  CTFByfge1uHNvbNNWP92XrGng1HnqAKVz9Wq1Tvg5x2T:
+  BcH85vwUmnacT3ysx4tKyddth7U3SjHNEwqoovxKfdvi:
     DocumentInitialSnapshotRequestedSchema,
-  GAFsQ4MjLuJZfEgPE1J1jp8fpihkgRq6Q1meF4xsmJYv:
+  CKx4gpSEa3k6oAY6NgZmcTTgCEqnwjJLd41qsWZKLi4t:
     DocumentInitialSnapshotResolvedSchema,
-  u64K6E1Yv7NWsaYuAExGJDaTcffX6Q4iSbUkgxZB1v9:
+  BqUTCgDTJHsV3HVovTMPnZQtyYQH6NTYApnnaLXVVLF6:
     DocumentInitialSnapshotUnresolvedSchema,
   BFxgEnovNHQ693YR2YvALi4FP8vjcwSQiX63LiLwjUhk: DocumentLinkSchema,
   '4cmrbevB6K23ZenjqwmNxpnaw6RF4VB3wkP7XB59V7W5': DocumentLinksSchema,
-  AhSRfEjNdQ8AvA3AFigjdyQzAtoc2J29jpacEcKBNa32: DocumentSessionBootstrapSchema,
+  AP71nQ7g7Geo6LEKJ9cQVBhZJUDdcKY8z8S2bAw62RAU: DocumentSessionBootstrapSchema,
   D9Ret9Hmz5TWxzuJEeauWEuZVPkPL7hcHYsSNY1cZ5zX: DocumentTypeLinkSchema,
   CrGV4ZYjvPvMqrgNQAfgZCUnFjFW6HDjYNdon2chLKU3:
     InformUserToInstallMyOSPackageSchema,
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: LinkSchema,
-  '6H5NxBuVypoTGEMKHScmszXmrz3nBVQy1FDHrxBRwMmh':
+  '5Px7DM11jwCays8RBCH6or3y5VkZkuvP9PRqoS7WAeRm':
     LinkedDocumentsPermissionGrantRequestedSchema,
-  FuQov123cM3ph1xcX5Cyx19D2w1vsitpAHfkdasZDE75:
+  B5KWLeHZ2AFskZ14MpJwiMztLrgT54Mq2iuQDwfXLwzE:
     LinkedDocumentsPermissionGrantToAccountSchema,
-  GSMPZr2s6Nb6SwHzx8XwLRwbJnUdboZDPckMQhwLgvJ7:
+  '482BxrFaNYD9Speaeds3DLEoEBpCY1mb5uNSdHzyrkLr':
     LinkedDocumentsPermissionGrantToDocumentSchema,
-  '74TyANquDt5wUqoUfqA6i2CT5rDnfbfCSti1mkxowHpu':
+  D7GG9bxpGZQiqAv9ofbh1aG7suN3KmUM3YkKX9o2nX7B:
     LinkedDocumentsPermissionGrantedSchema,
-  GuqbETNsYdtm6MdzKy2iqqaQZu617rnjZz3fQFJLjpQ8:
+  '5LwiL17sotDa6GZMterYF2EbxP1TLtJkHD3cp8Ng4wco':
     LinkedDocumentsPermissionGrantingInProgressSchema,
-  ENswN7PB5Ty8mfy1AdFsu2QR9jMjCsm5AGGJgkYSTrWU:
+  '4JMVYn4GU5hEc6f9PVuTUD7zr4mUgeTyCF54rkjsYUFE':
     LinkedDocumentsPermissionInvalidSchema,
-  GFs1qrcTSzYq5tEN25GjGngu7fttnPgma6PU7TQ89Hjc:
+  '5UBYb9HeYha5jBw6h3S82toBYphEVFiy3pvQR4LeW8Jw':
     LinkedDocumentsPermissionRejectedSchema,
-  '4XzYndDA5v9yL5LYBq1Jk7ibA5x2ebN8vbSbEAoRrjaG':
+  Exjts5mZB8Z8sLyt79KSJozXFpgJJktEsX8ZHGjE6jNt:
     LinkedDocumentsPermissionRevokeRequestedSchema,
-  '3How2U6g2sZe3xDCnJGAN96bcbyTabrTio7jEShH6pTh':
+  BB1AP49xKCLdA52DmW9xmJddTnqhEHBDsWndyurcfciK:
     LinkedDocumentsPermissionRevokedSchema,
-  '5EWk4G87GuSwimUr67WJ9KQKGeGhSvjx8qMLmrhxzDDD':
+  '4iratLtSnVR7yxwyJdKc85ThJdQvMPZ9GLE7ukz1PTqH':
     LinkedDocumentsPermissionRevokingInProgressSchema,
   '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9':
     LinkedDocumentsPermissionSetSchema,
-  DFMcBSRfNqK6NqdNLCF8b88soezajjq4gyBS8QRzSBhe:
+  AuKN3wv7WZXJdonpPqP9TJCBqTfBssMj4f2G1ffyAs6E:
     LinkedDocumentsPermissionValidatedSchema,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
-  '8qXt15h35iHYF2yBcPJ82HzizzZv7iuU2Lu3qorweJfB': MyOSAdminBaseSchema,
+  Gm9rGd9RJMvBcPCwN7ybywVAtMAAngeAB82DZ2cQ6bAE: MyOSAdminBaseSchema,
   '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5': MyOSAgentSchema,
-  ELnMo95Gduw4zFLakSGqg44AiaP27jEdeg1kMR14TFQN: MyOSAgentActorSchema,
+  Bbz3i3jxymcWiX9Vtp9HbYkFchBqkeyPETfoGjTRsGHc: MyOSAgentActorSchema,
   '4fYuD2ZdTQpm5T6Xtibge9SKkNA8RrvDVmKmArrToQQW': MyOSAgentChannelSchema,
   GiYocGMGQcneiMPm4NH9MxVj7Fr4jwg2BUAMzwZcWRNR: MyOSAgentEventSchema,
   '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb': MyOSBalanceAccountSchema,
@@ -269,12 +270,12 @@ export const schemas = {
   '5cg55kgH8ckRVji4oWSBBxthJQFYmB5Lb1Pea7achyNr': MyOSPackageSchema,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU':
     MyOSParticipantsOrchestrationSchema,
-  '8CHJQMaaPFCmvSrDfrNWitRCBcMMiUzJFaW42HtH1Thw': MyOSPrincipalActorSchema,
+  '6yMrRewkCoJrhutyLg8bGA4s2nrALnv3SoHUbLUwiGzD': MyOSPrincipalActorSchema,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: MyOSSessionInteractionSchema,
   d1vQ8ZTPcQc5KeuU6tzWaVukWRVtKjQL4hbvbpC22rB: MyOSSessionLinkSchema,
-  '2gyToM86KgFJpB8inz8TBVEMZk8UVGYdRozF4mfvxtuk': MyOSTimelineSchema,
-  HCF8mXnX3dFjQ8osjxb4Wzm2Nm1DoXnTYuA5sPnV7NTs: MyOSTimelineChannelSchema,
-  F3mQaGQ1B48yMedKZojFTxeKxtee4xU66QBbiyEMvGeZ: MyOSTimelineEntrySchema,
+  '12b7StrRyA33gnKbKcBQZqfLUYTnBoiQFFN3MsDRYp4Y': MyOSTimelineSchema,
+  '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh': MyOSTimelineChannelSchema,
+  Bopi2AeKczd6Vnfxs6XMyH7YVfwDfEgZVSRUz2HeMKPA: MyOSTimelineEntrySchema,
   '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ': MyOSUserSchema,
   '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgencySchema,
   phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ: ParticipantSchema,
@@ -282,82 +283,82 @@ export const schemas = {
   CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB:
     ParticipantActivationStateSchema,
   EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz: ParticipantResolvedSchema,
-  DVdWNtgwNrRFw2xoM6nbjPtSr9HhHNxxZVurf3Dr4cX2: PaymentInitiatedSchema,
-  GiEwEdvT2jPoT4bK8hvmjTBJUVQqRtHoAejfdpM7HtuD: PaymentInitiationAcceptedSchema,
-  EJkmgZa48d3knTpcqxWzu2zo34yWEbVKJVPcyLR7fgGU: PaymentInitiationRejectedSchema,
-  '26eFVecG5eovbFVYf7YcdN2bFhuFiNhRFxrCZSBb1H3r':
+  F77xdQBBFMbFbG1ubRR8iibsYpCrFFzxi1uCaCa582K8: PaymentInitiatedSchema,
+  HjZnELunK888XmJ4Vu4mBBKRFn2WcUEpweEnZgVAHWDA: PaymentInitiationAcceptedSchema,
+  JBjbkyj3pQCAKK1nZuT4EdeB1DCSXUyHug5anmkeB61X: PaymentInitiationRejectedSchema,
+  GVAHasyD4DPb3Ri1tD14jyhfzSsfs4n1svD8NF2jU4XH:
     PaymentInitiationRequestedSchema,
-  GSfJG3nahccpaqXHWBXes8RvNDENL17bz2yXdvn1suRY:
+  '8xv37mGF2Awx5dQHqRGDcGFjjprUcALoeXDZbFSakF9v':
     PaymentTargetPreparationFailedSchema,
-  EmMN2rpkHKmaw4Q1THLJAZBAiT7HyXex8RBu1yiapJP5:
+  '8FENBjBpzCnGMNiaQZxh3aENM4vxzEGGTJpJN4VzfuLD':
     PaymentTargetPreparationRequestedSchema,
-  N7tRCfv2oxjN8ncrkPQb8c16CjUdJbM7aWDUJDR1C5k: PaymentTargetPreparedSchema,
-  '5GB8C22LsZGR3kkEmP5j5Zye7SR173ojzzUK99tUcoP': PrincipalActorSchema,
-  '8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD':
+  An8BLGrTQ2Erua3FXuhisvhQ9gpUBJFiKQATiEv5iTjQ: PaymentTargetPreparedSchema,
+  AnSzziLDwXM8TmSbCu4Jg2yazY2yA1q9MUD8h3Jvd4qB: PrincipalActorSchema,
+  '97cyP8PtDQZXZg5NWBJaLhR1o7tFomkSmzUKKR2uUSVQ':
     RemovingParticipantRequestedSchema,
-  '6efzqM67y1po3YWbsbYSkKW8L41Tx8THeMv1q1TksAmr':
+  '9wYwaPe6i2hJfNBzQS4Dy3FcW2pnVmEPVjpxLDJ3JKqc':
     RemovingParticipantRespondedSchema,
   '5KdjguBmn7AwB9d8tjKxRh4xUHU9T8WDJ4dbaY6qgPvx': SearchContractSchema,
-  '9CvxqAMJhqcFoLr5nXSEdWDZUMD383xhJtyFwXsCqD9E': SessionEpochAdvancedSchema,
-  FAMQpJfZvF5gJphKzq96Bn2iLuJgMJwMek798cw8LR9D:
+  '28cHdCnoq3A6AmnpNVVoz2pyGrKAbGus8kN7wzEAHHxb': SessionEpochAdvancedSchema,
+  '5t6fnwt3wq9gj4XYsFJE3hRETvix1AsAdraUnSzLg742':
     SingleDocumentPermissionGrantRequestedSchema,
-  aydjXRi7sz7352Pnbs25ko4cat9w4YnM6LzD5Dtj5T9:
+  GcvGRKaJkYDcDMdHoxp6euiq49Epn6wtN8eicnHBRJ1:
     SingleDocumentPermissionGrantRespondedSchema,
-  '9dmquqNvp5f47KPP3bno4t2DujWSjPtgJcEipMVPFNhN':
+  EM4VfR7FUSNvF88tUyxQAFZRvjKe4DDJD6iFUTAF2cqo:
     SingleDocumentPermissionGrantToAccountSchema,
-  BivicTTRkWMt2f9qMqSPgWPEAHyVpAUmBE6xGLt3oVu2:
+  '9z3E29ZbXPhmDWStUA5gAe4dmDqf8AifZF4Ys2tKR7Wb':
     SingleDocumentPermissionGrantToDocumentSchema,
-  BqWoMewDiK6GgMVDXeBuPwWL3ka9DadzKu59uU51ZjW3:
+  '7k8EJnJNz7tn5fJiPJuetpAATzkmJn3v6tD1q8exJSeT':
     SingleDocumentPermissionGrantedSchema,
-  '4zC5mdSWymTamZVoQXDMCrFRTARef3RJM49gCSCuBv6F':
+  '7vhrQLWtgSgvD8kahdHybaMApbBYHnJePN1gewm5Zw7Q':
     SingleDocumentPermissionGrantingInProgressSchema,
-  '567voUMtKJQoqru6ZVPYb4EGwdeV99rUSAqsnod7gqfd':
+  HTd3TkLwKaALYryVRrwnTTnF3rUzF5yrqzKg2ChrcaE9:
     SingleDocumentPermissionInvalidSchema,
-  LaiT21WCsXzGorJ1dDsQ37dP2UtefPxNEwAA81W11WK:
+  '4FrkCKWwTBuELbzmVkmuHSHLN36RQuPDb6cL9mUDmai5':
     SingleDocumentPermissionRejectedSchema,
-  '53Kbf5fymxzBCJgf5BdCYCjCb6o5nWS1KWCzL8GkBF42':
+  '2nRHhR7JeMKzs5wPKV6GMwbxbyvts5Boynzv6yNJxnQz':
     SingleDocumentPermissionRevokeRequestedSchema,
-  '29JSV8DwY6x3zfvAqiM7xNc96i46sKcunFYgfywBkF2f':
+  A2SRNzwupD26E2KPh5f8WnX2zEvXBmoDtSp4TpFdMfVh:
     SingleDocumentPermissionRevokedSchema,
-  CrRfT3MFQneNo99nfdhfgnTKF4fmKtSQEUQN8wTTbnjF:
+  FKDVQ5Upo52ZZCHPyoKXtW4UuyLxySGVEXY2e75SX5FH:
     SingleDocumentPermissionRevokingInProgressSchema,
   '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw':
     SingleDocumentPermissionSetSchema,
-  AG6fiGy88gX5eKoUcHS2BV17EfMssiYZj99kx9RcpKEX:
+  '6EYcrXJUBiocfFddndoEx1RdAnXuGr3XTxwGoBDdv5x6':
     SingleDocumentPermissionValidatedSchema,
-  '3f9PA4RUDBxs6DsqGEYjna2RNf8XhCDHjQGDjLyNZyRh':
+  '6nwPz9C6i8oLW6bUGPYKkeCbQgGnvwPJv8rRy1EUuhZw':
     StartWorkerSessionRequestedSchema,
-  BnrAcFrEHzoARE2yqKmRv7jrPWCbJsVBqSoXwWCaTtrk:
+  D9dbLWSyjKQgYcWwqNgMnKRf8Uq1vQC8q3eiKxtcoDdQ:
     SubscribeToSessionRequestedSchema,
-  S1gzGs6z9uy5inkcJu5wr6i5ESKDmZy9XhgLHMZKrdV:
+  '7azQr55sCEj68gqTVfZhU8szN17BwemJjTAHkZuT4zDM':
     SubscriptionToSessionFailedSchema,
-  '4sJYYU5tjqKy43Mbe1Mt5WKfaynHs9rTj3QGAvTAZkM6':
+  '4VAYpB5qevBKek6FbR4w5JeGdpAFZQryHmUmiVFV7kXv':
     SubscriptionToSessionInitiatedSchema,
-  GcotFgiqo3GMHp4xKrArDJi7AqciJGgYKvHodoAJwcWp:
+  '8y4x3y9wBygncmdQRriTXLH4R318HEZraEFy9zxH3QVg':
     SubscriptionToSessionRevokedSchema,
-  '2gc8djtKGGRPjGfMQzvJZMviaXm4ytM1nA4DVbfyjkrW': SubscriptionUpdateSchema,
+  '2y9zDSA5aiX6iXTeBMr4PvHyAv1yNCdPmwEwVyyTRZrb': SubscriptionUpdateSchema,
   FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p:
     TargetDocumentSessionStartedSchema,
   EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS: WorkerAgencyPermissionSchema,
-  CoyRC9eUW32e9MdSPy1xdGd4XgRMqBmPSsRe8hwiCJbF:
+  '2Kn9s7EnZoimgkcVuX3gQYbND7iiYo9mHLB14tAfQrTm':
     WorkerAgencyPermissionGrantSchema,
-  '5S64KLDcXLiHWsYP6EGpfANZQsvTH3APsWqqy7D3qqJN':
+  FA9mnT3XtiU1F9CcgDqUSg3ZTgrnGdrZ5piiNWbFeWgQ:
     WorkerAgencyPermissionGrantRequestedSchema,
-  BwYenFh5yEbjEW6FdBzYu2hCkUxGyBW6JJguusvtd5ut:
+  '5HUF8RkgVh3A3tZpnRazuFFoDmZnqg6sVb118KAvmJNr':
     WorkerAgencyPermissionGrantedSchema,
-  H4Yn9qiBncFkvBArAjWfqPTSdbiijm4MU74inx1o5eDL:
+  '2w2L26N5qwqDLZRyDMAR6hHsKwBgmLxZ5JCu8L3MX1ro':
     WorkerAgencyPermissionGrantingInProgressSchema,
-  '29zvV2MA4XAwLoGoNLLhLMa61mEgGceFnDvMznfQauYY':
+  '5eDTUokCWbu8Sp1PRZewh7wkdwwdrvpQZcweiMjaHd6m':
     WorkerAgencyPermissionInvalidSchema,
-  HdRkyKgsk74k3QKBxnuy4iWn5u7Pf4wHY3nyJgGZd7jz:
+  HayginbRMtjpaxXsW3a51xwpztb56bQW5wn8okyxeLnt:
     WorkerAgencyPermissionRejectedSchema,
-  '5sLtygzt8kxjzDwJLjVcSZj5GCXFyUXKuXxF8UFjfmm7':
+  BwXQmude1f6U9P3BG1HbaxC7ekQxGSm6TKAosiZE2rdY:
     WorkerAgencyPermissionRevokeRequestedSchema,
-  AMNPp7uGYBgygbnmMS649m6Gf5bNULaEK8aSQ3b4xdrf:
+  HTky4txBNGHYaPck4D2RxfZfFkMMzCgyiZchzhHpA4gu:
     WorkerAgencyPermissionRevokedSchema,
-  '2xkX43Z7tML7KXJgHp5C7W2W465aGckp3jBVW37GyZqz':
+  '8tj1rxAjz8BHp2MeunLsZXSeqdurN4rwDj2vG89LfBym':
     WorkerAgencyPermissionRevokingInProgressSchema,
-  GMDw72G9CRTJU12Rce9BDWGw8f715RJrWvPL78RYDWH4:
+  '8EcfEBSmZUTp73AjLNaCQQRrdQzzdxebG1QUpGe95im2':
     WorkerAgencyPermissionValidatedSchema,
-  '3B7ErHwZ9NHiW4e6msFDt57U8sTvFXZQBEwHzcdNCjmf': WorkerSessionStartingSchema,
-} as const;
+  mSkjHDPQ8cpb8JRXzonzCdG6bBzGfz1SadUhR9PiuMb: WorkerSessionStartingSchema,
+};

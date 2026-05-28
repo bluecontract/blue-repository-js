@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 
 export const PaymentMandateAttachedSchema = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Attached']

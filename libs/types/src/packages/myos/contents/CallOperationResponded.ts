@@ -4,7 +4,7 @@ export const CallOperationResponded = {
   events: {
     description: 'Operation Response events',
     itemType: {
-      blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+      blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
     },
     type: {
       blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
@@ -12,6 +12,6 @@ export const CallOperationResponded = {
   },
   name: 'Call Operation Responded',
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
   },
 } as const;

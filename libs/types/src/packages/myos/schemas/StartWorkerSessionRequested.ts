@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 import { ChannelSchema } from '../../core/schemas/Channel';
 
 export const StartWorkerSessionRequestedSchema = withTypeBlueId(
@@ -9,7 +9,12 @@ export const StartWorkerSessionRequestedSchema = withTypeBlueId(
 )(
   RequestSchema.extend({
     capabilities: z.record(z.string(), z.boolean()).optional(),
-    channelBindings: z.record(z.string(), ChannelSchema).optional(),
+    channelBindings: z
+      .record(
+        z.string(),
+        z.lazy(() => ChannelSchema)
+      )
+      .optional(),
     description: z.string().optional(),
     document: blueNodeField().optional(),
     initialMessages: z

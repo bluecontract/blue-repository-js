@@ -8,6 +8,6 @@ export const MyOSPrincipalActor = {
   description: 'MyOS-specific principal actor specialization.',
   name: 'MyOS Principal Actor',
   type: {
-    blueId: 'FqipbF4UATjCRTqovGdREPAoaxj59NECb9xtnWRW1SWi',
+    blueId: 'QpJs5D2xRNzmEqXvra312z1fXkyyJehdJUs4ZTwUnD3',
   },
 } as const;

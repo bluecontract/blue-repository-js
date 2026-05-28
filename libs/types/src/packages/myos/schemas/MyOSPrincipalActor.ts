@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { PrincipalActorSchema } from '../../conversation/schemas/PrincipalActor';
+import { PrincipalActorSchema } from '../../coordination/schemas/PrincipalActor';
 
 export const MyOSPrincipalActorSchema = withTypeBlueId(
   blueIds['MyOS/MyOS Principal Actor']

@@ -2,14 +2,14 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 import { MyOSUserSchema } from './MyOSUser';
 
 export const PaymentTargetPreparationRequestedSchema = withTypeBlueId(
   blueIds['MyOS/Payment Target Preparation Requested']
 )(
   RequestSchema.extend({
-    allowedPayer: MyOSUserSchema.optional(),
+    allowedPayer: z.lazy(() => MyOSUserSchema).optional(),
     amount: z.number().optional(),
     context: z
       .object({
@@ -17,7 +17,7 @@ export const PaymentTargetPreparationRequestedSchema = withTypeBlueId(
         documentId: z.string().optional(),
       })
       .optional(),
-    currency: CurrencySchema.optional(),
+    currency: z.lazy(() => CurrencySchema).optional(),
     description: z.string().optional(),
     expectedPaynote: blueNodeField().optional(),
     expiresAt: z.string().optional(),

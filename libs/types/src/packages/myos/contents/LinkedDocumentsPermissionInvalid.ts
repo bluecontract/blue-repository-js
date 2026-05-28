@@ -10,6 +10,6 @@ export const LinkedDocumentsPermissionInvalid = {
   },
   name: 'Linked Documents Permission Invalid',
   type: {
-    blueId: '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
+    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
   },
 } as const;

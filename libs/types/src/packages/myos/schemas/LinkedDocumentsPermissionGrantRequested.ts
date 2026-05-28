@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
 
 export const LinkedDocumentsPermissionGrantRequestedSchema = withTypeBlueId(
@@ -9,7 +9,7 @@ export const LinkedDocumentsPermissionGrantRequestedSchema = withTypeBlueId(
 )(
   RequestSchema.extend({
     description: z.string().optional(),
-    links: LinkedDocumentsPermissionSetSchema.optional(),
+    links: z.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
     name: z.string().optional(),
     onBehalfOf: z.string().optional(),
     targetSessionId: z.string().optional(),

@@ -1,10 +1,11 @@
 <% /* index.ts.ejs */ %>
+import type { ZodTypeAny } from 'zod';
 <%- schemaImports.join('\n') %>
 
 <%- schemaExports.join('\n') %>
 
-export const schemas = {
+export const schemas: Record<string, ZodTypeAny> = {
 <% schemaEntries.forEach((entry) => { -%>
   <%- entry %>,
 <% }); -%>
-} as const;
+};

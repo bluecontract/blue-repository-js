@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { TimelineChannelSchema } from '../../conversation/schemas/TimelineChannel';
+import { TimelineChannelSchema } from '../../coordination/schemas/TimelineChannel';
 
 export const MyOSTimelineChannelSchema = withTypeBlueId(
   blueIds['MyOS/MyOS Timeline Channel']

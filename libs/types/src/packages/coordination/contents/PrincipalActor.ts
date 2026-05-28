@@ -1,0 +1,8 @@
+export const PrincipalActor = {
+  description:
+    'Actor specialization representing direct action by a principal exercising their own authority. A principal is the\nperson, organization, account holder, or other primary identity that owns or controls the timeline, channel, account,\nor document context in which the event was produced. A Principal Actor means the Timeline Provider or event source is\nasserting that the action was initiated through a mechanism it treats as direct principal control, such as an\nauthenticated user interface session, a principal-owned API credential, or another provider-approved direct-control\nchannel.\n\nThis type is the base identity for policies that require human or principal authorization. A policy that says an\noperation requires a principal actor is saying that delegated automation is not enough: the action must be attributed\nto the principal themselves or to a provider-defined specialization of Principal Actor. Provider-specific principal\nactor types should refine this type and include enough evidence for auditing, such as UI session details,\nauthentication strength, API credential identity, or regulatory identity verification level.\n\nThis type does not itself prove that the principal was physically present, that a particular authentication method was\nused, or that a legal signature occurred. Those assertions belong in concrete subtypes. This base type only provides\nthe nominal category used by actor-policy matching and by documents that need to distinguish principal authority from\ndelegated agent authority.\n',
+  name: 'Principal Actor',
+  type: {
+    blueId: 'CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd',
+  },
+} as const;

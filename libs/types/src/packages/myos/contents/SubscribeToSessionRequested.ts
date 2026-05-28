@@ -23,6 +23,6 @@ export const SubscribeToSessionRequested = {
     },
   },
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
   },
 } as const;

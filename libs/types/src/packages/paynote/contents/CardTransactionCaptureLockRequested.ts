@@ -8,6 +8,6 @@ export const CardTransactionCaptureLockRequested = {
     'Request to the card issuer to deny any following card transaction capture requests.',
   name: 'Card Transaction Capture Lock Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
   },
 } as const;

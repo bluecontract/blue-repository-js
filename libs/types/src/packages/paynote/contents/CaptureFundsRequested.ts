@@ -8,6 +8,6 @@ export const CaptureFundsRequested = {
     'A participant (usually the Payee) requests the final transfer of funds.',
   name: 'Capture Funds Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
   },
 } as const;
