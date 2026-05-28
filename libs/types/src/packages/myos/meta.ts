@@ -267,24 +267,24 @@ const meta = {
         },
       ],
     },
-    B5KWLeHZ2AFskZ14MpJwiMztLrgT54Mq2iuQDwfXLwzE: {
+    HyT47C2h9HTydsDYqwCbfb4euRo2PDrt67bjrrGqyKPY: {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Account',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: 'B5KWLeHZ2AFskZ14MpJwiMztLrgT54Mq2iuQDwfXLwzE',
+          repositoryVersionIndex: 4,
+          typeBlueId: 'HyT47C2h9HTydsDYqwCbfb4euRo2PDrt67bjrrGqyKPY',
           attributesAdded: [],
         },
       ],
     },
-    '482BxrFaNYD9Speaeds3DLEoEBpCY1mb5uNSdHzyrkLr': {
+    '4vCUeTymGeSeuhuceAXKeGMvmL7JrFKv9fpJuiT2A5cK': {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Document',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: '482BxrFaNYD9Speaeds3DLEoEBpCY1mb5uNSdHzyrkLr',
+          repositoryVersionIndex: 4,
+          typeBlueId: '4vCUeTymGeSeuhuceAXKeGMvmL7JrFKv9fpJuiT2A5cK',
           attributesAdded: [],
         },
       ],
@@ -784,24 +784,24 @@ const meta = {
         },
       ],
     },
-    EM4VfR7FUSNvF88tUyxQAFZRvjKe4DDJD6iFUTAF2cqo: {
+    rSiPqGU8Wg383dnNh17d3amQuSFa2SJzqVVwvbgmiYE: {
       status: 'dev',
       name: 'Single Document Permission Grant To Account',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: 'EM4VfR7FUSNvF88tUyxQAFZRvjKe4DDJD6iFUTAF2cqo',
+          repositoryVersionIndex: 4,
+          typeBlueId: 'rSiPqGU8Wg383dnNh17d3amQuSFa2SJzqVVwvbgmiYE',
           attributesAdded: [],
         },
       ],
     },
-    '9z3E29ZbXPhmDWStUA5gAe4dmDqf8AifZF4Ys2tKR7Wb': {
+    '2dUjYSFbUbUvDiVD4BfvDiAzjTasa5ePDof8QomWDzEN': {
       status: 'dev',
       name: 'Single Document Permission Grant To Document',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: '9z3E29ZbXPhmDWStUA5gAe4dmDqf8AifZF4Ys2tKR7Wb',
+          repositoryVersionIndex: 4,
+          typeBlueId: '2dUjYSFbUbUvDiVD4BfvDiAzjTasa5ePDof8QomWDzEN',
           attributesAdded: [],
         },
       ],
@@ -993,13 +993,13 @@ const meta = {
         },
       ],
     },
-    '2Kn9s7EnZoimgkcVuX3gQYbND7iiYo9mHLB14tAfQrTm': {
+    F7CcFKjY1oGwpyFc4vDF66qEZrhCnmfPEXN3MaXd67LS: {
       status: 'dev',
       name: 'Worker Agency Permission Grant',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: '2Kn9s7EnZoimgkcVuX3gQYbND7iiYo9mHLB14tAfQrTm',
+          repositoryVersionIndex: 4,
+          typeBlueId: 'F7CcFKjY1oGwpyFc4vDF66qEZrhCnmfPEXN3MaXd67LS',
           attributesAdded: [],
         },
       ],

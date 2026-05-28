@@ -236,9 +236,9 @@ export const schemas: Record<string, ZodTypeAny> = {
   D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD: LinkSchema,
   '5Px7DM11jwCays8RBCH6or3y5VkZkuvP9PRqoS7WAeRm':
     LinkedDocumentsPermissionGrantRequestedSchema,
-  B5KWLeHZ2AFskZ14MpJwiMztLrgT54Mq2iuQDwfXLwzE:
+  HyT47C2h9HTydsDYqwCbfb4euRo2PDrt67bjrrGqyKPY:
     LinkedDocumentsPermissionGrantToAccountSchema,
-  '482BxrFaNYD9Speaeds3DLEoEBpCY1mb5uNSdHzyrkLr':
+  '4vCUeTymGeSeuhuceAXKeGMvmL7JrFKv9fpJuiT2A5cK':
     LinkedDocumentsPermissionGrantToDocumentSchema,
   D7GG9bxpGZQiqAv9ofbh1aG7suN3KmUM3YkKX9o2nX7B:
     LinkedDocumentsPermissionGrantedSchema,
@@ -304,9 +304,9 @@ export const schemas: Record<string, ZodTypeAny> = {
     SingleDocumentPermissionGrantRequestedSchema,
   GcvGRKaJkYDcDMdHoxp6euiq49Epn6wtN8eicnHBRJ1:
     SingleDocumentPermissionGrantRespondedSchema,
-  EM4VfR7FUSNvF88tUyxQAFZRvjKe4DDJD6iFUTAF2cqo:
+  rSiPqGU8Wg383dnNh17d3amQuSFa2SJzqVVwvbgmiYE:
     SingleDocumentPermissionGrantToAccountSchema,
-  '9z3E29ZbXPhmDWStUA5gAe4dmDqf8AifZF4Ys2tKR7Wb':
+  '2dUjYSFbUbUvDiVD4BfvDiAzjTasa5ePDof8QomWDzEN':
     SingleDocumentPermissionGrantToDocumentSchema,
   '7k8EJnJNz7tn5fJiPJuetpAATzkmJn3v6tD1q8exJSeT':
     SingleDocumentPermissionGrantedSchema,
@@ -340,7 +340,7 @@ export const schemas: Record<string, ZodTypeAny> = {
   FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p:
     TargetDocumentSessionStartedSchema,
   EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS: WorkerAgencyPermissionSchema,
-  '2Kn9s7EnZoimgkcVuX3gQYbND7iiYo9mHLB14tAfQrTm':
+  F7CcFKjY1oGwpyFc4vDF66qEZrhCnmfPEXN3MaXd67LS:
     WorkerAgencyPermissionGrantSchema,
   FA9mnT3XtiU1F9CcgDqUSg3ZTgrnGdrZ5piiNWbFeWgQ:
     WorkerAgencyPermissionGrantRequestedSchema,

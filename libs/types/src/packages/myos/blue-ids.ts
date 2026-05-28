@@ -37,9 +37,9 @@ export const blueIds = {
   'MyOS/Linked Documents Permission Grant Requested':
     '5Px7DM11jwCays8RBCH6or3y5VkZkuvP9PRqoS7WAeRm',
   'MyOS/Linked Documents Permission Grant To Account':
-    'B5KWLeHZ2AFskZ14MpJwiMztLrgT54Mq2iuQDwfXLwzE',
+    'HyT47C2h9HTydsDYqwCbfb4euRo2PDrt67bjrrGqyKPY',
   'MyOS/Linked Documents Permission Grant To Document':
-    '482BxrFaNYD9Speaeds3DLEoEBpCY1mb5uNSdHzyrkLr',
+    '4vCUeTymGeSeuhuceAXKeGMvmL7JrFKv9fpJuiT2A5cK',
   'MyOS/Linked Documents Permission Granted':
     'D7GG9bxpGZQiqAv9ofbh1aG7suN3KmUM3YkKX9o2nX7B',
   'MyOS/Linked Documents Permission Granting in Progress':
@@ -109,9 +109,9 @@ export const blueIds = {
   'MyOS/Single Document Permission Grant Responded':
     'GcvGRKaJkYDcDMdHoxp6euiq49Epn6wtN8eicnHBRJ1',
   'MyOS/Single Document Permission Grant To Account':
-    'EM4VfR7FUSNvF88tUyxQAFZRvjKe4DDJD6iFUTAF2cqo',
+    'rSiPqGU8Wg383dnNh17d3amQuSFa2SJzqVVwvbgmiYE',
   'MyOS/Single Document Permission Grant To Document':
-    '9z3E29ZbXPhmDWStUA5gAe4dmDqf8AifZF4Ys2tKR7Wb',
+    '2dUjYSFbUbUvDiVD4BfvDiAzjTasa5ePDof8QomWDzEN',
   'MyOS/Single Document Permission Granted':
     '7k8EJnJNz7tn5fJiPJuetpAATzkmJn3v6tD1q8exJSeT',
   'MyOS/Single Document Permission Granting in Progress':
@@ -146,7 +146,7 @@ export const blueIds = {
   'MyOS/Worker Agency Permission':
     'EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS',
   'MyOS/Worker Agency Permission Grant':
-    '2Kn9s7EnZoimgkcVuX3gQYbND7iiYo9mHLB14tAfQrTm',
+    'F7CcFKjY1oGwpyFc4vDF66qEZrhCnmfPEXN3MaXd67LS',
   'MyOS/Worker Agency Permission Grant Requested':
     'FA9mnT3XtiU1F9CcgDqUSg3ZTgrnGdrZ5piiNWbFeWgQ',
   'MyOS/Worker Agency Permission Granted':

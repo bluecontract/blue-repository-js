@@ -260,6 +260,21 @@ export const SingleDocumentPermissionGrantToAccount = {
                             value: 'text',
                           },
                           val: {
+                            $unwrap: {
+                              $var: {
+                                type: {
+                                  blueId:
+                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                },
+                                value: 'val',
+                              },
+                            },
+                          },
+                        },
+                      },
+                      {
+                        $truthy: {
+                          $unwrap: {
                             $var: {
                               type: {
                                 blueId:
@@ -267,17 +282,6 @@ export const SingleDocumentPermissionGrantToAccount = {
                               },
                               value: 'val',
                             },
-                          },
-                        },
-                      },
-                      {
-                        $truthy: {
-                          $var: {
-                            type: {
-                              blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                            },
-                            value: 'val',
                           },
                         },
                       },
