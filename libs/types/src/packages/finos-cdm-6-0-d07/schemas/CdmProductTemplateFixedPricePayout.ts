@@ -9,32 +9,33 @@ import { CdmProductCommonSettlementResolvablePriceQuantitySchema } from './CdmPr
 import { CdmProductCommonSettlementSettlementTermsSchema } from './CdmProductCommonSettlementSettlementTerms';
 import { CdmProductTemplateCalculationScheduleSchema } from './CdmProductTemplateCalculationSchedule';
 
-export const CdmProductTemplateFixedPricePayoutSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/FixedPricePayout']
-  )(
-    z.object({
-      description: z.string().optional(),
-      fixedPrice: z.lazy(() => CdmProductCommonSettlementFixedPriceSchema),
-      name: z.string().optional(),
-      payerReceiver: z
-        .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
-        .optional(),
-      paymentDates: z.lazy(() => CdmProductCommonSchedulePaymentDatesSchema),
-      priceQuantity: z
-        .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
-        .optional(),
-      principalPayment: z
-        .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
-        .optional(),
-      schedule: z
-        .lazy(() => CdmProductTemplateCalculationScheduleSchema)
-        .optional(),
-      settlementTerms: z
-        .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateFixedPricePayoutSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/FixedPricePayout']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    fixedPrice: zod.lazy(() => CdmProductCommonSettlementFixedPriceSchema),
+    name: zod.string().optional(),
+    payerReceiver: zod
+      .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
+      .optional(),
+    paymentDates: zod.lazy(() => CdmProductCommonSchedulePaymentDatesSchema),
+    priceQuantity: zod
+      .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
+      .optional(),
+    principalPayment: zod
+      .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
+      .optional(),
+    schedule: zod
+      .lazy(() => CdmProductTemplateCalculationScheduleSchema)
+      .optional(),
+    settlementTerms: zod
+      .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductTemplateFixedPricePayout = z.infer<
   typeof CdmProductTemplateFixedPricePayoutSchema

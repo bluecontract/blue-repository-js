@@ -6,28 +6,29 @@ import { CdmEventCommonCorporateActionTypeEnumSchema } from './CdmEventCommonCor
 import { CdmEventCommonEventIntentEnumSchema } from './CdmEventCommonEventIntentEnum';
 import { CdmEventCommonInstructionSchema } from './CdmEventCommonInstruction';
 
-export const CdmEventWorkflowEventInstructionSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/EventInstruction']
-  )(
-    z.object({
-      corporateActionIntent: z
-        .lazy(() => CdmEventCommonCorporateActionTypeEnumSchema)
-        .optional(),
-      description: z.string().optional(),
-      effectiveDate: z.string().optional(),
-      eventDate: z.string().optional(),
-      instruction: z
-        .array(z.lazy(() => CdmEventCommonInstructionSchema))
-        .min(0)
-        .optional(),
-      intent: z.lazy(() => CdmEventCommonEventIntentEnumSchema).optional(),
-      name: z.string().optional(),
-      packageInformation: z
-        .lazy(() => CdmBaseStaticdataIdentifierIdentifiedListSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventWorkflowEventInstructionSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/EventInstruction']
+)(
+  zod.object({
+    corporateActionIntent: zod
+      .lazy(() => CdmEventCommonCorporateActionTypeEnumSchema)
+      .optional(),
+    description: zod.string().optional(),
+    effectiveDate: zod.string().optional(),
+    eventDate: zod.string().optional(),
+    instruction: zod
+      .array(zod.lazy(() => CdmEventCommonInstructionSchema))
+      .min(0)
+      .optional(),
+    intent: zod.lazy(() => CdmEventCommonEventIntentEnumSchema).optional(),
+    name: zod.string().optional(),
+    packageInformation: zod
+      .lazy(() => CdmBaseStaticdataIdentifierIdentifiedListSchema)
+      .optional(),
+  })
+);
 
 export type CdmEventWorkflowEventInstruction = z.infer<
   typeof CdmEventWorkflowEventInstructionSchema

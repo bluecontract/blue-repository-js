@@ -1,452 +1,453 @@
-export const CdmLegaldocumentationCommonContractualSupplementTypeEnum = {
+export const CdmLegaldocumentationCommonContractualSupplementTypeEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'The enumerated values to define the supplements to a base set of ISDA Definitions that are applicable to the transaction.\n',
   name: 'cdm/legaldocumentation/common/ContractualSupplementTypeEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ABX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ABXTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDSonLeveragedLoans',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDSonMBS',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDXEmergingMarkets',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDXEmergingMarketsDiversified',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDXSwaption',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CDXTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CMBX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'EuropeanCMBS',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'EuropeanRMBS',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'IOS',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA1999CreditConvertibleExchangeableAccretingObligations',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA1999CreditRestructuring',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA1999CreditSuccessorAndCreditEvents',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003AdditionalProvisionsLPN',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003ContingentCreditSpreadTransaction',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003Credit2005MatrixSupplement',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditArgentineRepublic',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditAuctionSupplement',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditMay2003',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditMonolineInsurers',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditMonolineInsurers2005',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditRepublicOfHungary',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditRepublicOfHungary2005',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditRussianFederation',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003CreditUSMunicipals',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2003STMicroelectronicsNV',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2007FullLookthroughDepositoryReceiptSupplement',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDA2007PartialLookthroughDepositoryReceiptSupplement',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDACreditMonolineInsurers',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDADeliveryRestrictions',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDAFixedRecovery',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDALPNReferenceEntities',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDAMarch2004EquityCanadianSupplement',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDARecoveryLock',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ISDASecuredDeliverableObligationCharacteristic',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'LCDX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'LCDXTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'MBX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'MCDX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'PO',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'PrimeX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'StandardCDXTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'StandardLCDS',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'StandardLCDSBullet',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'StandardLCDXBullet',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'StandardLCDXBulletTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'StandardiTraxxEuropeTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'SyndicatedSecuredLoanCDS',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'TRX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'TRX.II',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxAsiaExJapan',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxAsiaExJapanSwaption',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxAsiaExJapanTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxAustralia',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxAustraliaSwaption',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxAustraliaTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxCJ',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxCJTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxEurope',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxEuropeDealer',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxEuropeNonDealer',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxEuropeSwaption',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxEuropeTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxJapan',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxJapanSwaption',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxJapanTranche',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxLevX',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxSDI75Dealer',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxSDI75NonDealer',
-        },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'iTraxxSovX',
-        },
-      ],
-    },
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ABX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ABXTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDSonLeveragedLoans',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDSonMBS',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDXEmergingMarkets',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDXEmergingMarketsDiversified',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDXSwaption',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CDXTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CMBX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'EuropeanCMBS',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'EuropeanRMBS',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'IOS',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA1999CreditConvertibleExchangeableAccretingObligations',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA1999CreditRestructuring',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA1999CreditSuccessorAndCreditEvents',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003AdditionalProvisionsLPN',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003ContingentCreditSpreadTransaction',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003Credit2005MatrixSupplement',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditArgentineRepublic',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditAuctionSupplement',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditMay2003',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditMonolineInsurers',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditMonolineInsurers2005',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditRepublicOfHungary',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditRepublicOfHungary2005',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditRussianFederation',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003CreditUSMunicipals',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2003STMicroelectronicsNV',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2007FullLookthroughDepositoryReceiptSupplement',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDA2007PartialLookthroughDepositoryReceiptSupplement',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDACreditMonolineInsurers',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDADeliveryRestrictions',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDAFixedRecovery',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDALPNReferenceEntities',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDAMarch2004EquityCanadianSupplement',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDARecoveryLock',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'ISDASecuredDeliverableObligationCharacteristic',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'LCDX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'LCDXTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'MBX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'MCDX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'PO',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'PrimeX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'StandardCDXTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'StandardLCDS',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'StandardLCDSBullet',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'StandardLCDXBullet',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'StandardLCDXBulletTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'StandardiTraxxEuropeTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'SyndicatedSecuredLoanCDS',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'TRX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'TRX.II',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxAsiaExJapan',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxAsiaExJapanSwaption',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxAsiaExJapanTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxAustralia',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxAustraliaSwaption',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxAustraliaTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxCJ',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxCJTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxEurope',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxEuropeDealer',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxEuropeNonDealer',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxEuropeSwaption',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxEuropeTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxJapan',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxJapanSwaption',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxJapanTranche',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxLevX',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxSDI75Dealer',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxSDI75NonDealer',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'iTraxxSovX',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

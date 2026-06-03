@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonSettlementSettlementCentreEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementSettlementCentreEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/SettlementCentreEnum'
     ]
   )(
-    z.enum(['ClearstreamBankingLuxembourg', 'EuroclearBank'] as [
+    zod.enum(['ClearstreamBankingLuxembourg', 'EuroclearBank'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

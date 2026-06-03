@@ -1,26 +1,27 @@
-export const CdmProductAssetFinalPrincipalExchangeCalculationEnum = {
+export const CdmProductAssetFinalPrincipalExchangeCalculationEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'To be specified only for products that embed a redemption payment.',
   name: 'cdm/product/asset/FinalPrincipalExchangeCalculationEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'Floored',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'NonFloored',
+        value: 'Floored',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'NonFloored',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

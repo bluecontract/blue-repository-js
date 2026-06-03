@@ -3,19 +3,21 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCommonScheduleFxLinkedNotionalScheduleSchema } from './CdmProductCommonScheduleFxLinkedNotionalSchedule';
 
-export const CdmProductCommonSettlementQuantityMultiplierSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementQuantityMultiplierSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/QuantityMultiplier'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      fxLinkedNotionalSchedule: z
+    zod.object({
+      description: zod.string().optional(),
+      fxLinkedNotionalSchedule: zod
         .lazy(() => CdmProductCommonScheduleFxLinkedNotionalScheduleSchema)
         .optional(),
-      multiplierValue: z.number().optional(),
-      name: z.string().optional(),
+      multiplierValue: zod.number().optional(),
+      name: zod.string().optional(),
     })
   );
 

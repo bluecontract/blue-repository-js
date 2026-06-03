@@ -1,38 +1,39 @@
-export const CdmProductTemplateExerciseNoticeGiverEnum = {
+export const CdmProductTemplateExerciseNoticeGiverEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'Defines the principal party to the trade that has the right to exercise.',
   name: 'cdm/product/template/ExerciseNoticeGiverEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'AsSpecifiedInMasterAgreement',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'Both',
+        value: 'AsSpecifiedInMasterAgreement',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'Buyer',
+        value: 'Both',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'Seller',
+        value: 'Buyer',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'Seller',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

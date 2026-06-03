@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { LinkSchema } from './Link';
 
-export const MyOSSessionLinkSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSSessionLinkSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Session Link']
 )(
   LinkSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    sessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    sessionId: zod.string().optional(),
   })
 );
 

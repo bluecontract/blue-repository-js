@@ -1,17 +1,15 @@
-export const CdmLegaldocumentationCommonLegalAgreementIdentification = {
+export const CdmLegaldocumentationCommonLegalAgreementIdentification: Record<
+  string,
+  unknown
+> = {
   agreementName: {
     description:
       'The legal agreement name, e.g. Credit Support Annex for Variation Margin.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F7fkku2HrNQ5jSPUdK2yWnWFShTMYUFJh1xqKudc3NLg',
+      blueId: 'BU5zwrVyY7wwfteRD7Vdaj9pWLX2CSnscAydsqWAUXjk',
     },
   },
   description:
@@ -20,21 +18,21 @@ export const CdmLegaldocumentationCommonLegalAgreementIdentification = {
     description:
       'The law governing the legal agreement, e.g. English Law, New York Law or Japanese Law.',
     type: {
-      blueId: '28gUYx1HzG6py2PmTBRca9g3wdwdcVnEHvzAZX7PGUUG',
+      blueId: 'F6XBKSmZ9oSyV7jNgy8VWvvVG1HtjMoByYPxs4837cbw',
     },
   },
   name: 'cdm/legaldocumentation/common/LegalAgreementIdentification',
   publisher: {
     description: 'The legal agreement publisher, e.g. ISDA.',
     type: {
-      blueId: 'CRozp4MyQcRb718xLH5WdVCyDSyimrwJKNMFoWND29qS',
+      blueId: 'HGBC71V1WUat7dy4BrSGTr2RgCAN75RmLY4EUC3WmHtm',
     },
   },
   vintage: {
     description:
       'In the case where successive definitions of the legal agreement have been developed, the vintage identification. This is typically (but not necessarily) done by referencing the year, e.g. 2013 in the case of the ISDA 2013 Standard Credit Support Annex.\n',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
-} as const;
+};

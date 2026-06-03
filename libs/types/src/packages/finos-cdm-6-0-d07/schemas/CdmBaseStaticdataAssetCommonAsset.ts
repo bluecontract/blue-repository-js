@@ -6,25 +6,26 @@ import { CdmBaseStaticdataAssetCommonCommoditySchema } from './CdmBaseStaticdata
 import { CdmBaseStaticdataAssetCommonDigitalAssetSchema } from './CdmBaseStaticdataAssetCommonDigitalAsset';
 import { CdmBaseStaticdataAssetCommonInstrumentSchema } from './CdmBaseStaticdataAssetCommonInstrument';
 
-export const CdmBaseStaticdataAssetCommonAssetSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Asset']
-  )(
-    z.object({
-      Cash: z.lazy(() => CdmBaseStaticdataAssetCommonCashSchema).optional(),
-      Commodity: z
-        .lazy(() => CdmBaseStaticdataAssetCommonCommoditySchema)
-        .optional(),
-      description: z.string().optional(),
-      DigitalAsset: z
-        .lazy(() => CdmBaseStaticdataAssetCommonDigitalAssetSchema)
-        .optional(),
-      Instrument: z
-        .lazy(() => CdmBaseStaticdataAssetCommonInstrumentSchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonAssetSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Asset']
+)(
+  zod.object({
+    Cash: zod.lazy(() => CdmBaseStaticdataAssetCommonCashSchema).optional(),
+    Commodity: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonCommoditySchema)
+      .optional(),
+    description: zod.string().optional(),
+    DigitalAsset: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonDigitalAssetSchema)
+      .optional(),
+    Instrument: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonInstrumentSchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmBaseStaticdataAssetCommonAsset = z.infer<
   typeof CdmBaseStaticdataAssetCommonAssetSchema

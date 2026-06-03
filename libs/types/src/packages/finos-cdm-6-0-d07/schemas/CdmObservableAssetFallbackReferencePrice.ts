@@ -5,26 +5,28 @@ import { CdmObservableAssetCalculationAgentSchema } from './CdmObservableAssetCa
 import { CdmObservableAssetFieldWithMetaSettlementRateOptionEnumSchema } from './CdmObservableAssetFieldWithMetaSettlementRateOptionEnum';
 import { CdmObservableAssetValuationPostponementSchema } from './CdmObservableAssetValuationPostponement';
 
-export const CdmObservableAssetFallbackReferencePriceSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFallbackReferencePriceSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/FallbackReferencePrice']
   )(
-    z.object({
-      calculationAgentDetermination: z
+    zod.object({
+      calculationAgentDetermination: zod
         .lazy(() => CdmObservableAssetCalculationAgentSchema)
         .optional(),
-      description: z.string().optional(),
-      fallBackSettlementRateOption: z
+      description: zod.string().optional(),
+      fallBackSettlementRateOption: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmObservableAssetFieldWithMetaSettlementRateOptionEnumSchema
           )
         )
         .min(0)
         .optional(),
-      fallbackSurveyValuationPostponement: z.boolean().optional(),
-      name: z.string().optional(),
-      valuationPostponement: z
+      fallbackSurveyValuationPostponement: zod.boolean().optional(),
+      name: zod.string().optional(),
+      valuationPostponement: zod
         .lazy(() => CdmObservableAssetValuationPostponementSchema)
         .optional(),
     })

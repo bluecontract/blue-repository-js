@@ -36,9 +36,9 @@ export function generatePackageArtifacts(
       );
     }
     const safe = toIdentifier(typeMeta.name, blueId);
-    const fileContent = `export const ${safe} = ${formatObject(
+    const fileContent = `export const ${safe}: Record<string, unknown> = ${formatObject(
       canonicalizeValue(content),
-    )} as const;\n`;
+    )};\n`;
     writeFile(outDir, path.join(pkgDir, 'contents', `${safe}.ts`), fileContent);
     contentEntries.push({ safe, blueId });
   }

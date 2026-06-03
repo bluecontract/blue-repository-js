@@ -1,21 +1,22 @@
-export const DocumentBootstrapResponded = {
+export const DocumentBootstrapResponded: Record<string, unknown> = {
   description:
-    'Generic response event for a document bootstrap request. It carries a `status` and optional `reason` so a provider can\nreport success, failure, pending state, or another coarse result without choosing a more specific completed/failed\nresponse type.\n\nUse this type when the bootstrap protocol needs a compact status response. Use Document Bootstrap Completed or Document\nBootstrap Failed when the outcome should be semantically specific and easier for workflows to match.\n',
+    'Response event for a document bootstrap request. It records the resulting status and optional reason. Concrete\nsystems may use the more specific Completed or Failed events when they want clearer type-level distinction.\n',
   name: 'Document Bootstrap Responded',
   reason: {
-    description: 'Details when rejected or additional context.',
+    description:
+      'Optional reason explaining success, failure, or pending state.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   status: {
     description:
-      'Decision for the bootstrap request ("accepted" | "rejected").',
+      'Bootstrap response status. Prefer a Document Status specialization where possible.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

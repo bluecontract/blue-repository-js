@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseDatetimeBusinessDayConventionEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeBusinessDayConventionEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/BusinessDayConventionEnum']
   )(
-    z.enum([
+    zod.enum([
       'FOLLOWING',
       'FRN',
       'MODFOLLOWING',

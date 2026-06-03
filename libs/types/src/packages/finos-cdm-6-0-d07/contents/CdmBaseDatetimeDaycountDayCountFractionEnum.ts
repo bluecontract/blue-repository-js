@@ -1,97 +1,98 @@
-export const CdmBaseDatetimeDaycountDayCountFractionEnum = {
+export const CdmBaseDatetimeDaycountDayCountFractionEnum: Record<
+  string,
+  unknown
+> = {
   description: 'The enumerated values to specify the day count fraction.',
   name: 'cdm/base/datetime/daycount/DayCountFractionEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/360',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/364',
+        value: 'ACT/360',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/365L',
+        value: 'ACT/364',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/365.FIXED',
+        value: 'ACT/365L',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/ACT.AFB',
+        value: 'ACT/365.FIXED',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/ACT.ICMA',
+        value: 'ACT/ACT.AFB',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/ACT.ISDA',
+        value: 'ACT/ACT.ICMA',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'ACT/ACT.ISMA',
+        value: 'ACT/ACT.ISDA',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CAL/252',
+        value: 'ACT/ACT.ISMA',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'RBA Bond Basis',
+        value: 'CAL/252',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: '1/1',
+        value: 'RBA Bond Basis',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: '30E/360',
+        value: '1/1',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: '30E/360.ISDA',
+        value: '30E/360',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: '30/360',
+        value: '30E/360.ISDA',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: '30/360',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

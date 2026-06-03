@@ -1,14 +1,15 @@
-export const StatusChange = {
+export const StatusChange: Record<string, unknown> = {
   description:
-    "Event indicating that a document's application-level status has changed. The `status` field carries the new\nCoordination/Document Status node. Status Change is useful for notifying participants, timelines, embedded parent\nscopes, or external observers when a workflow transitions between pending, active, completed, failed, or custom status\nstates.\n\nThis event is descriptive. It does not itself change status; a workflow must still apply the corresponding Update\nDocument patch if the document state should change. Emitting Status Change alongside a patch creates an auditable event\nthat mirrors the state transition.\n",
+    'Event announcing that a status value has changed or should be observed as changed. Status Change is useful when a\nworkflow wants to notify participants or parent scopes about state progress without exposing an entire document\nsnapshot.\n\nThe `status` field carries the new status object. Consumers should use the status type and `mode` value rather than\nparsing human-readable text.\n',
   name: 'Status Change',
   status: {
-    description: 'The new status node.',
+    description:
+      'New status value. Usually a Document Status specialization such as Status Pending, Status In Progress, Status\nCompleted, or Status Failed.\n',
     type: {
-      blueId: 'QHoUCCVhepZWQnSo9VfZCJWbSwyA9TuT65tBZMVtnRX',
+      blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
     },
   },
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

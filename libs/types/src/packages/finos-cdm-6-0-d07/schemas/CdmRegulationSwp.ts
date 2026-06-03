@@ -4,13 +4,15 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmRegulationSwpInSchema } from './CdmRegulationSwpIn';
 import { CdmRegulationSwpOutSchema } from './CdmRegulationSwpOut';
 
-export const CdmRegulationSwpSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmRegulationSwpSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/regulation/Swp']
 )(
-  z.object({
-    name: z.string().optional(),
-    swpIn: z.lazy(() => CdmRegulationSwpInSchema),
-    swpOut: z.lazy(() => CdmRegulationSwpOutSchema),
+  zod.object({
+    name: zod.string().optional(),
+    swpIn: zod.lazy(() => CdmRegulationSwpInSchema),
+    swpOut: zod.lazy(() => CdmRegulationSwpOutSchema),
   })
 );
 

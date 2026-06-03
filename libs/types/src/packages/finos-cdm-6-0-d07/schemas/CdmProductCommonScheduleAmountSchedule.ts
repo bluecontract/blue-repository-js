@@ -4,24 +4,25 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathDatedValueSchema } from './CdmBaseMathDatedValue';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductCommonScheduleAmountScheduleSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/AmountSchedule']
-  )(
-    z.object({
-      currency: z
-        .array(z.lazy(() => ComRosettaModelFieldWithMetaStringSchema))
-        .min(1)
-        .optional(),
-      datedValue: z
-        .array(z.lazy(() => CdmBaseMathDatedValueSchema))
-        .min(0)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      val: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonScheduleAmountScheduleSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/AmountSchedule']
+)(
+  zod.object({
+    currency: zod
+      .array(zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema))
+      .min(1)
+      .optional(),
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
+      .min(0)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    val: zod.number().optional(),
+  })
+);
 
 export type CdmProductCommonScheduleAmountSchedule = z.infer<
   typeof CdmProductCommonScheduleAmountScheduleSchema

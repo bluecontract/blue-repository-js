@@ -1,38 +1,36 @@
-export const CdmObservableAssetPremiumTypeEnum = {
+export const CdmObservableAssetPremiumTypeEnum: Record<string, unknown> = {
   description:
     'The enumerated values to specify the premium type for forward start options.',
   name: 'cdm/observable/asset/PremiumTypeEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'Fixed',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'PostPaid',
+        value: 'Fixed',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'PrePaid',
+        value: 'PostPaid',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'Variable',
+        value: 'PrePaid',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'Variable',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

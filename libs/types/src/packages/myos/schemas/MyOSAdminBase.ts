@@ -5,21 +5,23 @@ import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 
-export const MyOSAdminBaseSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSAdminBaseSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Admin Base']
 )(
-  z.object({
-    contracts: z
+  zod.object({
+    contracts: zod
       .object({
-        myOsAdminChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        myOsAdminUpdate: z.lazy(() => OperationSchema).optional(),
-        myOsAdminUpdateImpl: z
+        myOsAdminChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        myOsAdminUpdate: zod.lazy(() => OperationSchema).optional(),
+        myOsAdminUpdateImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
       })
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

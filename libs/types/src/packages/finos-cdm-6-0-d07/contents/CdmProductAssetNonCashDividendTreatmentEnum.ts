@@ -1,26 +1,27 @@
-export const CdmProductAssetNonCashDividendTreatmentEnum = {
+export const CdmProductAssetNonCashDividendTreatmentEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'The enumerated values to specify the treatment of Non-Cash Dividends.',
   name: 'cdm/product/asset/NonCashDividendTreatmentEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CashEquivalent',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'PotentialAdjustmentEvent',
+        value: 'CashEquivalent',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'PotentialAdjustmentEvent',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

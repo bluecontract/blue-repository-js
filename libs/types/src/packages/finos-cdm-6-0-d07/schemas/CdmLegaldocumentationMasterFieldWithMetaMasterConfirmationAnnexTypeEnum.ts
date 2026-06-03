@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnumSchema } from './CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/FieldWithMetaMasterConfirmationAnnexTypeEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod
         .lazy(
           () => CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnumSchema
         )

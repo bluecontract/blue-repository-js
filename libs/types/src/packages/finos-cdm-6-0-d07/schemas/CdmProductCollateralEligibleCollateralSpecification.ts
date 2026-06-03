@@ -7,37 +7,39 @@ import { CdmBaseStaticdataPartyPartySchema } from './CdmBaseStaticdataPartyParty
 import { CdmBaseStaticdataPartyPartyRoleSchema } from './CdmBaseStaticdataPartyPartyRole';
 import { CdmProductCollateralEligibleCollateralCriteriaSchema } from './CdmProductCollateralEligibleCollateralCriteria';
 
-export const CdmProductCollateralEligibleCollateralSpecificationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralEligibleCollateralSpecificationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/EligibleCollateralSpecification'
     ]
   )(
-    z.object({
-      counterparty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
+    zod.object({
+      counterparty: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
         .min(0)
         .max(2)
         .optional(),
-      criteria: z
+      criteria: zod
         .array(
-          z.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
+          zod.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
         )
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
+      description: zod.string().optional(),
+      identifier: zod
+        .array(zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
         .min(0)
         .optional(),
-      name: z.string().optional(),
-      party: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartySchema))
+      name: zod.string().optional(),
+      party: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyPartySchema))
         .min(0)
         .max(2)
         .optional(),
-      partyRole: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+      partyRole: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
         .min(0)
         .optional(),
     })

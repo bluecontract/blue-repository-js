@@ -1,24 +1,19 @@
-export const CdmEventCommonBillingSummary = {
+export const CdmEventCommonBillingSummary: Record<string, unknown> = {
   description: 'Specifies individual summaries within a billing invoice.',
   name: 'cdm/event/common/BillingSummary',
   summaryAmountType: {
     description: 'The account level for the billing summary.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4Wn9bRiHpqcy5PwHNSLRprPvX37tuFs1nCqq9WQfmLGF',
+      blueId: 'AnFR5nwdiQukWW9YeZRmgTparyPvgRKghypvgvUWqU1c',
     },
   },
   summaryTransfer: {
     description: 'The settlement terms for the billing summary',
     type: {
-      blueId: '98eFnr7F52GRnD9gADRtEuqZMPpuZCmesaDMrQ7wS8Xk',
+      blueId: 'Huf4W2NzpakJVTTdkhKJriEVabT1NBezmnyTJB9Wt2Vs',
     },
   },
-} as const;
+};

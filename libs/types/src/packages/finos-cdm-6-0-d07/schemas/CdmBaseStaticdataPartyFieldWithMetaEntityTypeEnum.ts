@@ -4,16 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataPartyEntityTypeEnumSchema } from './CdmBaseStaticdataPartyEntityTypeEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/party/FieldWithMetaEntityTypeEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmBaseStaticdataPartyEntityTypeEnumSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod
+        .lazy(() => CdmBaseStaticdataPartyEntityTypeEnumSchema)
+        .optional(),
     })
   );
 

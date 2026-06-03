@@ -5,22 +5,24 @@ import { CdmBaseStaticdataAssetCommonDebtInterestEnumSchema } from './CdmBaseSta
 import { CdmBaseStaticdataAssetCommonDebtPrincipalEnumSchema } from './CdmBaseStaticdataAssetCommonDebtPrincipalEnum';
 import { CdmBaseStaticdataAssetCommonDebtSeniorityEnumSchema } from './CdmBaseStaticdataAssetCommonDebtSeniorityEnum';
 
-export const CdmBaseStaticdataAssetCommonDebtEconomicsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonDebtEconomicsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/DebtEconomics']
   )(
-    z.object({
-      debtInterest: z
+    zod.object({
+      debtInterest: zod
         .lazy(() => CdmBaseStaticdataAssetCommonDebtInterestEnumSchema)
         .optional(),
-      debtPrincipal: z
+      debtPrincipal: zod
         .lazy(() => CdmBaseStaticdataAssetCommonDebtPrincipalEnumSchema)
         .optional(),
-      debtSeniority: z
+      debtSeniority: zod
         .lazy(() => CdmBaseStaticdataAssetCommonDebtSeniorityEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

@@ -3,21 +3,23 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmLegaldocumentationCommonLegalAgreementSchema } from './CdmLegaldocumentationCommonLegalAgreement';
 
-export const CdmEventCommonContractFormationInstructionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventCommonContractFormationInstructionSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ContractFormationInstruction']
   )(
-    z.object({
-      description: z.string().optional(),
-      legalAgreement: z
+    zod.object({
+      description: zod.string().optional(),
+      legalAgreement: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny => CdmLegaldocumentationCommonLegalAgreementSchema
           )
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

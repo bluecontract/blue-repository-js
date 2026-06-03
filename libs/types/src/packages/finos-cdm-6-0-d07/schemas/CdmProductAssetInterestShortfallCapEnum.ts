@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductAssetInterestShortfallCapEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetInterestShortfallCapEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/InterestShortfallCapEnum']
   )(
-    z.enum(['Fixed', 'Variable'] as [
+    zod.enum(['Fixed', 'Variable'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

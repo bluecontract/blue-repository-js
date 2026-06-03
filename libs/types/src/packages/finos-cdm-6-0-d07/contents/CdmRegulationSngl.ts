@@ -1,29 +1,19 @@
-export const CdmRegulationSngl = {
+export const CdmRegulationSngl: Record<string, unknown> = {
   indx: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'GSr9GFBnxJ593ATrkLyLwdp2hjwqr3CpAxjR7PVvjrSX',
+      blueId: '8QRJrGUFmKzsaoBkwKWPd9tQK2zyZV2LcezMZ66M3Cr1',
     },
   },
   isin: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/regulation/Sngl',
-} as const;
+};

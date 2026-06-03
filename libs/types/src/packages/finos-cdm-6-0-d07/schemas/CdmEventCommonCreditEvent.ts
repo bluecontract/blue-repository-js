@@ -6,22 +6,24 @@ import { CdmLegaldocumentationCommonResourceSchema } from './CdmLegaldocumentati
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 import { CdmProductAssetReferenceInformationSchema } from './CdmProductAssetReferenceInformation';
 
-export const CdmEventCommonCreditEventSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonCreditEventSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/CreditEvent']
 )(
-  z.object({
-    auctionDate: z.string().optional(),
-    creditEventType: z.lazy(() => CdmEventCommonCreditEventTypeEnumSchema),
-    description: z.string().optional(),
-    eventDeterminationDate: z.string(),
-    finalPrice: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
-    name: z.string().optional(),
-    publiclyAvailableInformation: z
-      .array(z.lazy(() => CdmLegaldocumentationCommonResourceSchema))
+  zod.object({
+    auctionDate: zod.string().optional(),
+    creditEventType: zod.lazy(() => CdmEventCommonCreditEventTypeEnumSchema),
+    description: zod.string().optional(),
+    eventDeterminationDate: zod.string(),
+    finalPrice: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
+    name: zod.string().optional(),
+    publiclyAvailableInformation: zod
+      .array(zod.lazy(() => CdmLegaldocumentationCommonResourceSchema))
       .min(0)
       .optional(),
-    recoveryPercent: z.number().optional(),
-    referenceInformation: z.lazy(
+    recoveryPercent: zod.number().optional(),
+    referenceInformation: zod.lazy(
       () => CdmProductAssetReferenceInformationSchema
     ),
   })

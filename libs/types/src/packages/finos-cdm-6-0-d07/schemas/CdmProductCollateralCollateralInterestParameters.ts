@@ -7,34 +7,36 @@ import { CdmProductCollateralCollateralInterestCalculationParametersSchema } fro
 import { CdmProductCollateralCollateralInterestHandlingParametersSchema } from './CdmProductCollateralCollateralInterestHandlingParameters';
 import { CdmProductCollateralCollateralMarginTypeEnumSchema } from './CdmProductCollateralCollateralMarginTypeEnum';
 
-export const CdmProductCollateralCollateralInterestParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralInterestParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralInterestParameters'
     ]
   )(
-    z.object({
-      currency: z.string().optional(),
-      description: z.string().optional(),
-      interestCalculationFrequency: z
+    zod.object({
+      currency: zod.string().optional(),
+      description: zod.string().optional(),
+      interestCalculationFrequency: zod
         .lazy(() => CdmBaseDatetimeCalculationFrequencySchema)
         .optional(),
-      interestCalculationParameters: z
+      interestCalculationParameters: zod
         .lazy(
           () =>
             CdmProductCollateralCollateralInterestCalculationParametersSchema
         )
         .optional(),
-      interestHandlingParameters: z
+      interestHandlingParameters: zod
         .lazy(
           () => CdmProductCollateralCollateralInterestHandlingParametersSchema
         )
         .optional(),
-      marginType: z
+      marginType: zod
         .lazy(() => CdmProductCollateralCollateralMarginTypeEnumSchema)
         .optional(),
-      name: z.string().optional(),
-      postingParty: z
+      name: zod.string().optional(),
+      postingParty: zod
         .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
         .optional(),
     })

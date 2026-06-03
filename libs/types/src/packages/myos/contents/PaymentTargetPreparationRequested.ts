@@ -1,14 +1,14 @@
-export const PaymentTargetPreparationRequested = {
+export const PaymentTargetPreparationRequested: Record<string, unknown> = {
   allowedPayer: {
     description: 'Optional payer identity restriction.',
     type: {
-      blueId: '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ',
+      blueId: 'Cw952SXno2SWR9HL8EwUxWGeioRjxHjCd7G7uFAwC9kN',
     },
   },
   amount: {
     description: 'Optional expected payment amount in minor units.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   context: {
@@ -17,14 +17,14 @@ export const PaymentTargetPreparationRequested = {
       description:
         'Blue document id identifying the business document this payment is for.',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
   },
   currency: {
     description: 'Optional expected ISO 4217 currency code.',
     type: {
-      blueId: 'CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc',
+      blueId: 'rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ',
     },
   },
   description:
@@ -36,11 +36,11 @@ export const PaymentTargetPreparationRequested = {
   expiresAt: {
     description: 'Optional ISO-8601 expiry timestamp for the prepared target.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Payment Target Preparation Requested',
   type: {
-    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
+    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
   },
-} as const;
+};

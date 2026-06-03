@@ -3,26 +3,28 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetCalculatedrateCalculatedRateObservationsSchema } from './CdmObservableAssetCalculatedrateCalculatedRateObservations';
 
-export const CdmObservableAssetCalculatedrateCalculatedRateDetailsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCalculatedrateCalculatedRateDetailsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/calculatedrate/CalculatedRateDetails'
     ]
   )(
-    z.object({
-      aggregateValue: z.number().optional(),
-      aggregateWeight: z.number().optional(),
-      calculatedRate: z.number().optional(),
-      compoundedGrowth: z.array(z.number()).min(0).optional(),
-      description: z.string().optional(),
-      growthFactor: z.array(z.number()).min(0).optional(),
-      name: z.string().optional(),
-      observations: z
+    zod.object({
+      aggregateValue: zod.number().optional(),
+      aggregateWeight: zod.number().optional(),
+      calculatedRate: zod.number().optional(),
+      compoundedGrowth: zod.array(zod.number()).min(0).optional(),
+      description: zod.string().optional(),
+      growthFactor: zod.array(zod.number()).min(0).optional(),
+      name: zod.string().optional(),
+      observations: zod
         .lazy(
           () => CdmObservableAssetCalculatedrateCalculatedRateObservationsSchema
         )
         .optional(),
-      weightedRates: z.array(z.number()).min(0).optional(),
+      weightedRates: zod.array(zod.number()).min(0).optional(),
     })
   );
 

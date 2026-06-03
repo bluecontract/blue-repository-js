@@ -1,8 +1,8 @@
-export const CdmObservableAssetCreditIndex = {
+export const CdmObservableAssetCreditIndex: Record<string, unknown> = {
   assetClass: {
     description: 'The Asset Class of the Index.',
     type: {
-      blueId: '4gwWtTHkdAAdqikxU182Yp5LKQnusRffi5xWuWCEKVxK',
+      blueId: '7TQnexn6ZGhptp1EP3RxiJM3434J7VHgDn7cvqXRvfvh',
     },
   },
   description:
@@ -11,140 +11,120 @@ export const CdmObservableAssetCreditIndex = {
     description:
       'If the Asset is listed, defines the public exchange of the listing.',
     type: {
-      blueId: '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o',
+      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
     },
   },
   excludedReferenceEntity: {
     description: 'Excluded reference entity.',
     itemType: {
-      blueId: 'HDWPv3g9U1KUdNNbF554aWveShvcV6UnPnH8HQGqtppM',
+      blueId: '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   identifier: {
     description:
       'Asset Identifiers are used to uniquely identify an Asset, using a specified Asset Identifier Type.',
     itemType: {
-      blueId: 'EFYo6JAQMRJEAg6yzzafESRVFXGTiNSjmy9ehctCH3Y4',
+      blueId: 'B4oXDUH9jELDatvZSw3oWXtJefJ4ixYawEjxBMqSerth',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   indexAnnexDate: {
     description: 'A CDS index series annex date.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   indexAnnexSource: {
     description: 'A CDS index series annex source.',
     type: {
-      blueId: 'GknZ9cDpboEQXHMijEuoMgXTb2P8Gyu81nfwr5bBAP8B',
+      blueId: 'Ertdu3BkSJQ4wFYEPS4YyzEkSnGfu7XaooXCfRXXXENY',
     },
   },
   indexAnnexVersion: {
     description: 'A CDS index series version identifier, e.g. 1, 2, 3 etc.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   indexFactor: {
     description:
       'Index Factor is the index version factor or percent, expressed as an absolute decimal value between 0 and 1, that multiplied by the original notional amount yields the notional amount covered by the seller of protection.\n',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   indexSeries: {
     description: 'A CDS index series identifier, e.g. 1, 2, 3 etc.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   isExchangeListed: {
     description: 'Defines whether the Asset is listed on a public exchange.',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/observable/asset/CreditIndex',
   provider: {
     description: 'The organisation that creates or maintains the Index.',
     type: {
-      blueId: '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o',
+      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
     },
   },
   relatedExchange: {
     description: 'Provides the related Exchanges, if applicable.',
     itemType: {
-      blueId: '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o',
+      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   seniority: {
     description: 'Seniority of debt instruments comprising the index.',
     type: {
-      blueId: '9uDWp1q9YxCE1cTdRRJoNvBwAY8sF71RbqWxaA3Xiwh',
+      blueId: 'Hu5VnYpz7ZCRzsMjDtVxSVoN2RK42N3T3a1rvcvnMAyV',
     },
   },
   settledEntityMatrix: {
     description:
       'Used to specify the Relevant Settled Entity Matrix when there are settled entities at the time of the trade.',
     type: {
-      blueId: 'G6d8KNyxd48FEiAucE5KdoV7bwfdvPoygUV2xZVmPHeZ',
+      blueId: '4A1qUaufcqcuzgYMrhKzobEdbwF774fdj4o1nwgmxUdJ',
     },
   },
   taxonomy: {
     description:
       'Defines the taxonomy of an object by combining a taxonomy source (i.e. the rules to classify the object) and a value (i.e. the output of those rules on the object.\n',
     itemType: {
-      blueId: '9iqdbfahQtNXNenCSE8hAFbq298MVvdACauLx1FZWRQt',
+      blueId: '9MYk7MRYjbMWPHe7v3WexZqePowTL8eRrW8TmNNEtzQJ',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   tranche: {
     description: 'This element contains CDS tranche terms.',
     type: {
-      blueId: 'AzjDeg6NcvxKrLxiwH4AdjVNhMtWHj2BHfTGYmY7NVrP',
+      blueId: 'AhnjPV8YNPhbAjozktmjeX2wDwUvX9j1SLMv3rUYCvk3',
     },
   },
-} as const;
+};

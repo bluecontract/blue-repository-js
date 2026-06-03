@@ -4,20 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnumSchema } from './CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum';
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPersonSchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson';
 
-export const CdmBaseStaticdataPartyNaturalPersonRoleSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyNaturalPersonRoleSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/NaturalPersonRole']
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      personReference: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      personReference: zod.lazy(
         () =>
           CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPersonSchema
       ),
-      role: z
+      role: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnumSchema
           )
         )

@@ -42,6 +42,7 @@ type ResolvedBase =
   | { kind: 'list'; blueId: string }
   | { kind: 'dictionary'; blueId: string }
   | { kind: 'type'; blueId: string; safeName: string; importPath: string }
+  | { kind: 'runtime'; blueId: string }
   | null;
 
 export class PackageSchemaBuilder {
@@ -98,9 +99,7 @@ export class PackageSchemaBuilder {
 
     return renderSchemaFile({
       schemaName: safeName,
-      schemaTypeAnnotation: this.requiresSchemaTypeAnnotation(info)
-        ? ': z.ZodTypeAny'
-        : '',
+      schemaTypeAnnotation: ': any',
       blueIdsKey: this.aliasFor(info),
       usesBlueNode: schema.usesBlueNode,
       schemaImports: this.groupSchemaImports(depImports),
@@ -144,7 +143,7 @@ export class PackageSchemaBuilder {
       const itemSchema = this.compileRootListItemSchema(info, imports);
       const rootSchema = this.applySchemaMetadata(
         {
-          expr: `z.array(${itemSchema.expr})`,
+          expr: `zod.array(${itemSchema.expr})`,
           usesZ: true,
           usesBlueNode: itemSchema.usesBlueNode,
           kind: 'array',
@@ -163,7 +162,7 @@ export class PackageSchemaBuilder {
       const valueSchema = this.compileRootDictionaryValueSchema(info, imports);
       const rootSchema = this.applySchemaMetadata(
         {
-          expr: `z.object({}).catchall(${valueSchema.expr})`,
+          expr: `zod.object({}).catchall(${valueSchema.expr})`,
           usesZ: true,
           usesBlueNode: valueSchema.usesBlueNode,
           kind: 'other',
@@ -194,9 +193,26 @@ export class PackageSchemaBuilder {
       };
     }
 
+    if (base?.kind === 'runtime') {
+      const rootSchema = this.applySchemaMetadata(
+        {
+          expr: `zod.object(${fieldResults.shape})`,
+          usesZ: true,
+          usesBlueNode: fieldResults.usesBlueNode,
+          kind: 'other',
+        },
+        this.extractSchemaMetadata(info.content),
+      );
+      return {
+        baseSchema: rootSchema.expr,
+        usesBlueNode: rootSchema.usesBlueNode,
+        needsZodObjectCast: false,
+      };
+    }
+
     const rootSchema = this.applySchemaMetadata(
       {
-        expr: `z.object(${fieldResults.shape})`,
+        expr: `zod.object(${fieldResults.shape})`,
         usesZ: true,
         usesBlueNode: fieldResults.usesBlueNode,
         kind: 'other',
@@ -318,13 +334,13 @@ export class PackageSchemaBuilder {
     for (const key of sortedKeys) {
       const value = content[key];
       if (key === 'name' && typeof value === 'string') {
-        entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
+        entries.push(`${this.formatObjectKey(key)}: zod.string().optional()`);
         usesZ = true;
         continue;
       }
 
       if (key === 'description' && typeof value === 'string') {
-        entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
+        entries.push(`${this.formatObjectKey(key)}: zod.string().optional()`);
         usesZ = true;
         continue;
       }
@@ -431,6 +447,9 @@ export class PackageSchemaBuilder {
     if (collection === 'dictionary') {
       return this.compileDictionarySchema(def, imports, path, indent);
     }
+    if (this.ctx.runtimeTypeBlueIds.has(resolved.refBlueId)) {
+      return this.blueNodeFallback();
+    }
 
     return this.compileTypeSchemaReference(
       resolved.refRaw,
@@ -465,7 +484,7 @@ export class PackageSchemaBuilder {
         )
       : this.blueNodeFallback();
     return {
-      expr: `z.array(${itemSchema.expr})`,
+      expr: `zod.array(${itemSchema.expr})`,
       usesZ: true,
       usesBlueNode: itemSchema.usesBlueNode,
       kind: 'array',
@@ -488,7 +507,7 @@ export class PackageSchemaBuilder {
         )
       : this.blueNodeFallback();
     return {
-      expr: `z.record(z.string(), ${valueSchema.expr})`,
+      expr: `zod.record(zod.string(), ${valueSchema.expr})`,
       usesZ: true,
       usesBlueNode: valueSchema.usesBlueNode,
       kind: 'other',
@@ -515,7 +534,7 @@ export class PackageSchemaBuilder {
         ? ': z.ZodTypeAny'
         : '';
     return {
-      expr: `z.lazy(()${lazyReturnType} => ${safe}Schema)`,
+      expr: `zod.lazy(()${lazyReturnType} => ${safe}Schema)`,
       usesZ: true,
       usesBlueNode: false,
       kind: 'other',
@@ -537,7 +556,7 @@ export class PackageSchemaBuilder {
   ): CompiledSchema {
     const nested = this.compileFields(def as Record<string, unknown>, imports, path, indent + 2);
     return {
-      expr: `z.object(${nested.shape})`,
+      expr: `zod.object(${nested.shape})`,
       usesZ: true,
       usesBlueNode: nested.usesBlueNode,
       kind: 'other',
@@ -590,15 +609,15 @@ export class PackageSchemaBuilder {
         all.findIndex((candidate) => Object.is(candidate, value)) === index,
     );
     if (uniqueValues.length === 1) {
-      return `z.literal(${JSON.stringify(uniqueValues[0])})`;
+      return `zod.literal(${JSON.stringify(uniqueValues[0])})`;
     }
 
     if (uniqueValues.every((value) => typeof value === 'string')) {
-      return `z.enum(${JSON.stringify(uniqueValues)} as [string, ...string[]])`;
+      return `zod.enum(${JSON.stringify(uniqueValues)} as [string, ...string[]])`;
     }
 
-    return `z.union([${uniqueValues
-      .map((value) => `z.literal(${JSON.stringify(value)})`)
+    return `zod.union([${uniqueValues
+      .map((value) => `zod.literal(${JSON.stringify(value)})`)
       .join(', ')}])`;
   }
 
@@ -659,13 +678,13 @@ export class PackageSchemaBuilder {
   private primitiveSchema(kind: string): string {
     switch (kind) {
       case 'text':
-        return 'z.string()';
+        return 'zod.string()';
       case 'integer':
-        return 'z.number()';
+        return 'zod.number()';
       case 'double':
-        return 'z.number()';
+        return 'zod.number()';
       case 'boolean':
-        return 'z.boolean()';
+        return 'zod.boolean()';
       default:
         return this.throwUnknownType(kind, []);
     }
@@ -703,6 +722,9 @@ export class PackageSchemaBuilder {
     }
     if (collection === 'dictionary') {
       return { kind: 'dictionary', blueId: baseId };
+    }
+    if (this.ctx.runtimeTypeBlueIds.has(baseId)) {
+      return { kind: 'runtime', blueId: baseId };
     }
 
     const base = this.ctx.typeIndex.get(baseId);
@@ -749,10 +771,6 @@ export class PackageSchemaBuilder {
 
   private normalizeBlueId(blueId: string): string {
     return this.ctx.toCurrent.get(blueId) ?? blueId;
-  }
-
-  private requiresSchemaTypeAnnotation(info: TypeInfo): boolean {
-    return this.isCyclicBlueId(info.blueId) || this.types.length > 250;
   }
 
   private isCyclicBlueId(blueId: string | undefined): boolean {

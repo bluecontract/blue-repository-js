@@ -1,19 +1,19 @@
-export const CardTransactionReport = {
+export const CardTransactionReport: Record<string, unknown> = {
   amountMinor: {
     description: 'Purchase amount in minor currency units.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   cardTransactionDetails: {
     type: {
-      blueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+      blueId: 'DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV',
     },
   },
   currency: {
     description: 'ISO 4217 currency code.',
     type: {
-      blueId: 'CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc',
+      blueId: 'rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ',
     },
   },
   description:
@@ -21,30 +21,30 @@ export const CardTransactionReport = {
   merchantId: {
     description: 'External merchant identifier for the purchase.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Card Transaction Report',
   occurredAt: {
     description: 'Timestamp when the transaction occurred.',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   status: {
     description:
       'Transaction status ("authorized" | "partially captured" | "captured").',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   transactionId: {
     description: 'Unique transaction identifier used for idempotency.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

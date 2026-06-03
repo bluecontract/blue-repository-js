@@ -4,34 +4,36 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataPartyAncillaryRoleEnumSchema } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
 import { CdmLegaldocumentationMasterClauseSchema } from './CdmLegaldocumentationMasterClause';
 
-export const CdmLegaldocumentationMasterAdditionalDisruptionEventsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterAdditionalDisruptionEventsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/AdditionalDisruptionEvents'
     ]
   )(
-    z.object({
-      additionalBespokeTerms: z
+    zod.object({
+      additionalBespokeTerms: zod
         .array(
-          z.lazy((): z.ZodTypeAny => CdmLegaldocumentationMasterClauseSchema)
+          zod.lazy((): z.ZodTypeAny => CdmLegaldocumentationMasterClauseSchema)
         )
         .min(0)
         .optional(),
-      changeInLaw: z.boolean().optional(),
-      description: z.string().optional(),
-      determiningParty: z
+      changeInLaw: zod.boolean().optional(),
+      description: zod.string().optional(),
+      determiningParty: zod
         .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
         .optional(),
-      failureToDeliver: z.boolean().optional(),
-      foreignOwnershipEvent: z.boolean().optional(),
-      hedgingDisruption: z.boolean().optional(),
-      increasedCostOfHedging: z.boolean().optional(),
-      increasedCostOfStockBorrow: z.boolean().optional(),
-      initialStockLoanRate: z.number().optional(),
-      insolvencyFiling: z.boolean().optional(),
-      lossOfStockBorrow: z.boolean().optional(),
-      maximumStockLoanRate: z.number().optional(),
-      name: z.string().optional(),
+      failureToDeliver: zod.boolean().optional(),
+      foreignOwnershipEvent: zod.boolean().optional(),
+      hedgingDisruption: zod.boolean().optional(),
+      increasedCostOfHedging: zod.boolean().optional(),
+      increasedCostOfStockBorrow: zod.boolean().optional(),
+      initialStockLoanRate: zod.number().optional(),
+      insolvencyFiling: zod.boolean().optional(),
+      lossOfStockBorrow: zod.boolean().optional(),
+      maximumStockLoanRate: zod.number().optional(),
+      name: zod.string().optional(),
     })
   );
 

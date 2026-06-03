@@ -6,26 +6,27 @@ import { CdmBaseDatetimeBusinessCenterTimeSchema } from './CdmBaseDatetimeBusine
 import { CdmBaseDatetimeDayOfWeekEnumSchema } from './CdmBaseDatetimeDayOfWeekEnum';
 import { CdmBaseDatetimePeriodSchema } from './CdmBaseDatetimePeriod';
 
-export const CdmBaseDatetimeCalculationFrequencySchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/CalculationFrequency']
-  )(
-    z.object({
-      businessCenter: z
-        .array(z.lazy(() => CdmBaseDatetimeBusinessCenterEnumSchema))
-        .min(0)
-        .optional(),
-      dateLocation: z.lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema),
-      dayOfMonth: z.number().optional(),
-      dayOfWeek: z.lazy(() => CdmBaseDatetimeDayOfWeekEnumSchema).optional(),
-      description: z.string().optional(),
-      monthOfYear: z.number().optional(),
-      name: z.string().optional(),
-      offsetDays: z.number(),
-      period: z.lazy(() => CdmBaseDatetimePeriodSchema),
-      weekOfMonth: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseDatetimeCalculationFrequencySchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/CalculationFrequency']
+)(
+  zod.object({
+    businessCenter: zod
+      .array(zod.lazy(() => CdmBaseDatetimeBusinessCenterEnumSchema))
+      .min(0)
+      .optional(),
+    dateLocation: zod.lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema),
+    dayOfMonth: zod.number().optional(),
+    dayOfWeek: zod.lazy(() => CdmBaseDatetimeDayOfWeekEnumSchema).optional(),
+    description: zod.string().optional(),
+    monthOfYear: zod.number().optional(),
+    name: zod.string().optional(),
+    offsetDays: zod.number(),
+    period: zod.lazy(() => CdmBaseDatetimePeriodSchema),
+    weekOfMonth: zod.number().optional(),
+  })
+);
 
 export type CdmBaseDatetimeCalculationFrequency = z.infer<
   typeof CdmBaseDatetimeCalculationFrequencySchema

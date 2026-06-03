@@ -11,44 +11,44 @@ import { CdmProductCommonScheduleDateRelativeToCalculationPeriodDatesSchema } fr
 import { CdmProductCommonScheduleDateRelativeToPaymentDatesSchema } from './CdmProductCommonScheduleDateRelativeToPaymentDates';
 import { CdmProductCommonScheduleDateRelativeToValuationDatesSchema } from './CdmProductCommonScheduleDateRelativeToValuationDates';
 
-export const CdmProductCommonSettlementFxFixingDateSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/FxFixingDate']
-  )(
-    z.object({
-      businessCenters: z
-        .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
-        .optional(),
-      businessCentersReference: z
-        .lazy(
-          () => CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema
-        )
-        .optional(),
-      businessDayConvention: z
-        .lazy(() => CdmBaseDatetimeBusinessDayConventionEnumSchema)
-        .optional(),
-      dateRelativeToCalculationPeriodDates: z
-        .lazy(
-          () =>
-            CdmProductCommonScheduleDateRelativeToCalculationPeriodDatesSchema
-        )
-        .optional(),
-      dateRelativeToPaymentDates: z
-        .lazy(() => CdmProductCommonScheduleDateRelativeToPaymentDatesSchema)
-        .optional(),
-      dateRelativeToValuationDates: z
-        .lazy(() => CdmProductCommonScheduleDateRelativeToValuationDatesSchema)
-        .optional(),
-      dayType: z.lazy(() => CdmBaseDatetimeDayTypeEnumSchema).optional(),
-      description: z.string().optional(),
-      fxFixingDate: z
-        .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
-        .optional(),
-      name: z.string().optional(),
-      period: z.lazy(() => CdmBaseDatetimePeriodEnumSchema).optional(),
-      periodMultiplier: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonSettlementFxFixingDateSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/FxFixingDate']
+)(
+  zod.object({
+    businessCenters: zod
+      .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
+      .optional(),
+    businessCentersReference: zod
+      .lazy(
+        () => CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema
+      )
+      .optional(),
+    businessDayConvention: zod
+      .lazy(() => CdmBaseDatetimeBusinessDayConventionEnumSchema)
+      .optional(),
+    dateRelativeToCalculationPeriodDates: zod
+      .lazy(
+        () => CdmProductCommonScheduleDateRelativeToCalculationPeriodDatesSchema
+      )
+      .optional(),
+    dateRelativeToPaymentDates: zod
+      .lazy(() => CdmProductCommonScheduleDateRelativeToPaymentDatesSchema)
+      .optional(),
+    dateRelativeToValuationDates: zod
+      .lazy(() => CdmProductCommonScheduleDateRelativeToValuationDatesSchema)
+      .optional(),
+    dayType: zod.lazy(() => CdmBaseDatetimeDayTypeEnumSchema).optional(),
+    description: zod.string().optional(),
+    fxFixingDate: zod
+      .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
+      .optional(),
+    name: zod.string().optional(),
+    period: zod.lazy(() => CdmBaseDatetimePeriodEnumSchema).optional(),
+    periodMultiplier: zod.number().optional(),
+  })
+);
 
 export type CdmProductCommonSettlementFxFixingDate = z.infer<
   typeof CdmProductCommonSettlementFxFixingDateSchema

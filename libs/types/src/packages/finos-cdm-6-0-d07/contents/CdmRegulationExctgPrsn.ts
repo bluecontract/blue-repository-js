@@ -1,16 +1,11 @@
-export const CdmRegulationExctgPrsn = {
+export const CdmRegulationExctgPrsn: Record<string, unknown> = {
   name: 'cdm/regulation/ExctgPrsn',
   prsn: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'EHJBg7p3U5yUbBzkHyVcMUrwbPSn3FVeaRERg67YinMz',
+      blueId: 'CyNw28ZuCZFruvDWiNYs7yzqKEpzdtRFQFErS383wQQn',
     },
   },
-} as const;
+};

@@ -8,42 +8,42 @@ import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataA
 import { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmObservableAssetFloatingRateIndexSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/FloatingRateIndex']
-  )(
-    z.object({
-      assetClass: z
-        .lazy(() => CdmBaseStaticdataAssetCommonAssetClassEnumSchema)
-        .optional(),
-      description: z.string().optional(),
-      exchange: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      floatingRateIndex: z.lazy(
-        () =>
-          CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema
-      ),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
-        .min(1)
-        .optional(),
-      indexTenor: z.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
-      isExchangeListed: z.boolean().optional(),
-      name: z.string().optional(),
-      provider: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
-        .min(0)
-        .optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
-        .min(0)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetFloatingRateIndexSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/FloatingRateIndex']
+)(
+  zod.object({
+    assetClass: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonAssetClassEnumSchema)
+      .optional(),
+    description: zod.string().optional(),
+    exchange: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    floatingRateIndex: zod.lazy(
+      () => CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema
+    ),
+    identifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      .min(1)
+      .optional(),
+    indexTenor: zod.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
+    isExchangeListed: zod.boolean().optional(),
+    name: zod.string().optional(),
+    provider: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    relatedExchange: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      .min(0)
+      .optional(),
+    taxonomy: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      .min(0)
+      .optional(),
+  })
+);
 
 export type CdmObservableAssetFloatingRateIndex = z.infer<
   typeof CdmObservableAssetFloatingRateIndexSchema

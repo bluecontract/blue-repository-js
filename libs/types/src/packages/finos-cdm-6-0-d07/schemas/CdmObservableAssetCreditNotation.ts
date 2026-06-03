@@ -7,25 +7,26 @@ import { CdmObservableAssetCreditRatingDebtSchema } from './CdmObservableAssetCr
 import { CdmObservableAssetCreditRatingOutlookEnumSchema } from './CdmObservableAssetCreditRatingOutlookEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmObservableAssetCreditNotationSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CreditNotation']
-  )(
-    z.object({
-      agency: z.lazy(() => CdmObservableAssetCreditRatingAgencyEnumSchema),
-      creditWatch: z
-        .lazy(() => CdmObservableAssetCreditRatingCreditWatchEnumSchema)
-        .optional(),
-      debt: z.lazy(() => CdmObservableAssetCreditRatingDebtSchema).optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      notation: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-      outlook: z
-        .lazy(() => CdmObservableAssetCreditRatingOutlookEnumSchema)
-        .optional(),
-      scale: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetCreditNotationSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CreditNotation']
+)(
+  zod.object({
+    agency: zod.lazy(() => CdmObservableAssetCreditRatingAgencyEnumSchema),
+    creditWatch: zod
+      .lazy(() => CdmObservableAssetCreditRatingCreditWatchEnumSchema)
+      .optional(),
+    debt: zod.lazy(() => CdmObservableAssetCreditRatingDebtSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    notation: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+    outlook: zod
+      .lazy(() => CdmObservableAssetCreditRatingOutlookEnumSchema)
+      .optional(),
+    scale: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
+  })
+);
 
 export type CdmObservableAssetCreditNotation = z.infer<
   typeof CdmObservableAssetCreditNotationSchema

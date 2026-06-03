@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { EventSchema } from '../../coordination/schemas/Event';
 
-export const LinkedDocumentsPermissionInvalidSchema = withTypeBlueId(
+const zod = z as any;
+
+export const LinkedDocumentsPermissionInvalidSchema: any = withTypeBlueId(
   blueIds['MyOS/Linked Documents Permission Invalid']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    issues: z.array(z.string()).optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    issues: zod.array(zod.string()).optional(),
+    name: zod.string().optional(),
   })
 );
 

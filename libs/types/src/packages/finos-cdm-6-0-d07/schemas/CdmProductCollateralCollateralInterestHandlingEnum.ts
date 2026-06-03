@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCollateralCollateralInterestHandlingEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralInterestHandlingEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralInterestHandlingEnum'
     ]
   )(
-    z.enum(['Adjust', 'Transfer', 'Transfer_or_Adjust'] as [
+    zod.enum(['Adjust', 'Transfer', 'Transfer_or_Adjust'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

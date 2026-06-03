@@ -4,17 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeAdjustableDateSchema } from './CdmBaseDatetimeAdjustableDate';
 import { CdmBaseDatetimeAdjustedRelativeDateOffsetSchema } from './CdmBaseDatetimeAdjustedRelativeDateOffset';
 
-export const CdmBaseDatetimeAdjustableOrRelativeDateSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeAdjustableOrRelativeDateSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/AdjustableOrRelativeDate']
   )(
-    z.object({
-      adjustableDate: z
+    zod.object({
+      adjustableDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableDateSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      relativeDate: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      relativeDate: zod
         .lazy(() => CdmBaseDatetimeAdjustedRelativeDateOffsetSchema)
         .optional(),
     })

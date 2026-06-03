@@ -9,43 +9,44 @@ import { CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema } from './CdmBaseS
 import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataAssetCommonTaxonomy';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmBaseStaticdataAssetCommonSecuritySchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Security']
-  )(
-    z.object({
-      debtType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonDebtTypeSchema)
-        .optional(),
-      description: z.string().optional(),
-      equityType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonEquityTypeEnumSchema)
-        .optional(),
-      exchange: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      fundType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonFundProductTypeEnumSchema)
-        .optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
-        .min(1)
-        .optional(),
-      instrumentType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
-        .optional(),
-      isExchangeListed: z.boolean().optional(),
-      name: z.string().optional(),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
-        .min(0)
-        .optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
-        .min(0)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonSecuritySchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Security']
+)(
+  zod.object({
+    debtType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonDebtTypeSchema)
+      .optional(),
+    description: zod.string().optional(),
+    equityType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonEquityTypeEnumSchema)
+      .optional(),
+    exchange: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    fundType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonFundProductTypeEnumSchema)
+      .optional(),
+    identifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      .min(1)
+      .optional(),
+    instrumentType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
+      .optional(),
+    isExchangeListed: zod.boolean().optional(),
+    name: zod.string().optional(),
+    relatedExchange: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      .min(0)
+      .optional(),
+    taxonomy: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      .min(0)
+      .optional(),
+  })
+);
 
 export type CdmBaseStaticdataAssetCommonSecurity = z.infer<
   typeof CdmBaseStaticdataAssetCommonSecuritySchema

@@ -1,13 +1,16 @@
-export const CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule = {
+export const CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/math/FieldWithMetaNonNegativeQuantitySchedule',
   val: {
     type: {
-      blueId: '3aukDRc2UqShaPzsHHg8ry28kkvETMb95rfAeM65GH1Q',
+      blueId: 'FgPwQQd53zyxFZAVWWuQLMY8QcPYNzeupku9hKxvYNob',
     },
   },
-} as const;
+};

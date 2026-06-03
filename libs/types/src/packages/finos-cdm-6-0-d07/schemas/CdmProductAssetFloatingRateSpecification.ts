@@ -13,51 +13,53 @@ import { CdmProductAssetSpreadScheduleSchema } from './CdmProductAssetSpreadSche
 import { CdmProductCommonScheduleRateScheduleSchema } from './CdmProductCommonScheduleRateSchedule';
 import { CdmProductTemplateStrikeScheduleSchema } from './CdmProductTemplateStrikeSchedule';
 
-export const CdmProductAssetFloatingRateSpecificationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFloatingRateSpecificationSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FloatingRateSpecification']
   )(
-    z.object({
-      averagingMethod: z
+    zod.object({
+      averagingMethod: zod
         .lazy(() => CdmBaseMathAveragingWeightingMethodEnumSchema)
         .optional(),
-      calculationParameters: z
+      calculationParameters: zod
         .lazy(
           () =>
             CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema
         )
         .optional(),
-      capRateSchedule: z
+      capRateSchedule: zod
         .lazy(() => CdmProductTemplateStrikeScheduleSchema)
         .optional(),
-      description: z.string().optional(),
-      fallbackRate: z
+      description: zod.string().optional(),
+      fallbackRate: zod
         .lazy(
           () => CdmObservableAssetCalculatedrateFallbackRateParametersSchema
         )
         .optional(),
-      finalRateRounding: z.lazy(() => CdmBaseMathRoundingSchema).optional(),
-      floatingRateMultiplierSchedule: z
+      finalRateRounding: zod.lazy(() => CdmBaseMathRoundingSchema).optional(),
+      floatingRateMultiplierSchedule: zod
         .lazy(() => CdmProductCommonScheduleRateScheduleSchema)
         .optional(),
-      floorRateSchedule: z
+      floorRateSchedule: zod
         .lazy(() => CdmProductTemplateStrikeScheduleSchema)
         .optional(),
-      initialRate: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
-      name: z.string().optional(),
-      negativeInterestRateTreatment: z
+      initialRate: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
+      name: zod.string().optional(),
+      negativeInterestRateTreatment: zod
         .lazy(() => CdmProductAssetNegativeInterestRateTreatmentEnumSchema)
         .optional(),
-      rateOption: z
+      rateOption: zod
         .lazy(
           () =>
             CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema
         )
         .optional(),
-      rateTreatment: z
+      rateTreatment: zod
         .lazy(() => CdmProductAssetRateTreatmentEnumSchema)
         .optional(),
-      spreadSchedule: z
+      spreadSchedule: zod
         .lazy(() => CdmProductAssetSpreadScheduleSchema)
         .optional(),
     })

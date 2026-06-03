@@ -6,19 +6,21 @@ import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 import { CdmObservableAssetPriceQuantitySchema } from './CdmObservableAssetPriceQuantity';
 import { CdmProductTemplateProductSchema } from './CdmProductTemplateProduct';
 
-export const CdmEventPositionPositionSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventPositionPositionSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/position/Position']
 )(
-  z.object({
-    cashBalance: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    priceQuantity: z
-      .array(z.lazy(() => CdmObservableAssetPriceQuantitySchema))
+  zod.object({
+    cashBalance: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    priceQuantity: zod
+      .array(zod.lazy(() => CdmObservableAssetPriceQuantitySchema))
       .min(1)
       .optional(),
-    product: z.lazy((): z.ZodTypeAny => CdmProductTemplateProductSchema),
-    tradeReference: z
+    product: zod.lazy((): z.ZodTypeAny => CdmProductTemplateProductSchema),
+    tradeReference: zod
       .lazy(() => CdmEventCommonMetafieldsReferenceWithMetaTradeStateSchema)
       .optional(),
   })

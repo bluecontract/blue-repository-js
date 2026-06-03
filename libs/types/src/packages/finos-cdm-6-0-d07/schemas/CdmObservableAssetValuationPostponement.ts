@@ -2,14 +2,16 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetValuationPostponementSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetValuationPostponementSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/ValuationPostponement']
   )(
-    z.object({
-      description: z.string().optional(),
-      maximumDaysOfPostponement: z.number(),
-      name: z.string().optional(),
+    zod.object({
+      description: zod.string().optional(),
+      maximumDaysOfPostponement: zod.number(),
+      name: zod.string().optional(),
     })
   );
 

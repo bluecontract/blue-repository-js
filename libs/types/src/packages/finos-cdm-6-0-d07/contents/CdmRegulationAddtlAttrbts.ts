@@ -1,29 +1,19 @@
-export const CdmRegulationAddtlAttrbts = {
+export const CdmRegulationAddtlAttrbts: Record<string, unknown> = {
   name: 'cdm/regulation/AddtlAttrbts',
   rskRdcgTx: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   sctiesFincgTxInd: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

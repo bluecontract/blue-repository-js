@@ -1,26 +1,27 @@
-export const CdmBaseStaticdataAssetCommonCreditRiskEnum = {
+export const CdmBaseStaticdataAssetCommonCreditRiskEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'Represents an enumeration list to identify tranched or untranched credit risk.',
   name: 'cdm/base/staticdata/asset/common/CreditRiskEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'TranchedCreditRisk',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'UntranchedCreditRisk',
+        value: 'TranchedCreditRisk',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'UntranchedCreditRisk',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

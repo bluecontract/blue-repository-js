@@ -1,3 +1,3 @@
-export const MyOSSessionInteraction = {
+export const MyOSSessionInteraction: Record<string, unknown> = {
   name: 'MyOS Session Interaction',
-} as const;
+};

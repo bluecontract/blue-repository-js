@@ -1,15 +1,15 @@
-export const CdmEventPositionCounterpartyPosition = {
+export const CdmEventPositionCounterpartyPosition: Record<string, unknown> = {
   collateral: {
     description: 'Represents the collateral obligations of a party.',
     type: {
-      blueId: '7j2afftZwsKVHvwsGny36DeHZyszQTNjaKddY3EUPFWP',
+      blueId: '5okT4PBEHijywnb7jBieEoVCyGTRkhzDmbMEDnxtpD92',
     },
   },
   contractDetails: {
     description:
       'Represents information specific to trades or positions involving contractual products.',
     type: {
-      blueId: 'B8n9R5augGxzewv3AeZA4bBhgHYizX9BW45egn8ua3br',
+      blueId: '9QvPaXwgMX4bfTdirhDyje4sXJhxGdfrXikFFGpngwAb',
     },
   },
   description:
@@ -18,100 +18,75 @@ export const CdmEventPositionCounterpartyPosition = {
     description:
       'Defines specific attributes that relate to trade or position executions.',
     type: {
-      blueId: 'CMP6Shj6SxTXkHaZATbUmY9anEdJwQH5tnPfbddySWBo',
+      blueId: 'AveBbPNcyiENsH8aGj4xhEY7GkX7xuoVApDW87Er969J',
     },
   },
   name: 'cdm/event/position/CounterpartyPosition',
   openDateTime: {
     description: 'The date and time when the position was opened.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   party: {
     description:
       'The parties involved in the position, including the Clearing Organization.',
     itemType: {
-      blueId: '694bqGLce4g9XrBubcFXs81gNNsvVTGK3msPSdNsj5jD',
+      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   partyRole: {
     description:
       'Represents the role each specified party takes in the position.',
     itemType: {
-      blueId: '8fXEqMXsnZAuwSFKfhiksmAPnV7yvaxSbmwgTbGrN75M',
+      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   positionBase: {
     description:
       'Encapsulates the core constituents that characterize a position.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7NAeEvw67mqergRTy5KQA52oFxHHa8GFwsojp9Laqfiv',
+      blueId: '5L5ELtTjqEroydK4qXv9bitzL5wJ8yY6yjAhFum13A7U',
     },
   },
   positionIdentifier: {
     description:
       'Represents the identifier(s) that uniquely identify a position for an identity issuer. A position can include multiple identifiers, for example an internal position identifer and a UTI (Unique Trade Identifier).\n',
     itemType: {
-      blueId: 'AnXrCwduqixvTNugK5Dsyr9upeRqJtsTmmvnvRrEjA7k',
+      blueId: '69nLFfiGcCWNuTn9H9eiEcBwsXuqgNxxqgB7X8X9XaSz',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   tradeReference: {
     description: 'Reference to all the trades that constitute the position.',
     itemType: {
-      blueId: 'DXhfNgQ1Hmipx5YJVPFZLYTAfk5vomh4ywYmSZX1ChyJ',
+      blueId: 'EQ41UGrPkUeaUNXD9QmELA1aEoVBtx9tVzgQZ5Tp1rMT',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

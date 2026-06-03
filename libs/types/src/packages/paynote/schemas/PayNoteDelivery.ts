@@ -1,65 +1,64 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { DocumentBootstrapRequestedSchema } from '../../coordination/schemas/DocumentBootstrapRequested';
 import { DocumentStatusSchema } from '../../coordination/schemas/DocumentStatus';
 import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 
-export const PayNoteDeliverySchema = withTypeBlueId(
+const zod = z as any;
+
+export const PayNoteDeliverySchema: any = withTypeBlueId(
   blueIds['PayNote/PayNote Delivery']
 )(
-  z.object({
-    cardTransactionDetails: z
+  zod.object({
+    cardTransactionDetails: zod
       .lazy(() => CardTransactionDetailsSchema)
       .optional(),
-    clientAcceptedAt: z.lazy(() => TimestampSchema).optional(),
-    clientDecisionStatus: z.string().optional(),
-    clientRejectedAt: z.lazy(() => TimestampSchema).optional(),
-    contracts: z
+    clientAcceptedAt: zod.lazy(() => TimestampSchema).optional(),
+    clientDecisionStatus: zod.string().optional(),
+    clientRejectedAt: zod.lazy(() => TimestampSchema).optional(),
+    contracts: zod
       .object({
-        acceptPayNote: z.lazy(() => OperationSchema).optional(),
-        acceptPayNoteImpl: z
+        acceptPayNote: zod.lazy(() => OperationSchema).optional(),
+        acceptPayNoteImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
-        initialize: z.lazy(() => SequentialWorkflowSchema).optional(),
-        initLifecycleChannel: z
-          .lazy(() => LifecycleEventChannelSchema)
-          .optional(),
-        payNoteDeliverer: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        payNoteSender: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        rejectPayNote: z.lazy(() => OperationSchema).optional(),
-        rejectPayNoteImpl: z
+        initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        initLifecycleChannel: blueNodeField().optional(),
+        payNoteDeliverer: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        payNoteSender: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        rejectPayNote: zod.lazy(() => OperationSchema).optional(),
+        rejectPayNoteImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
-        reportDeliveryError: z.lazy(() => OperationSchema).optional(),
-        reportDeliveryErrorImpl: z
+        reportDeliveryError: zod.lazy(() => OperationSchema).optional(),
+        reportDeliveryErrorImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
-        updateTransactionIdentificationStatus: z
+        updateTransactionIdentificationStatus: zod
           .lazy(() => OperationSchema)
           .optional(),
-        updateTransactionIdentificationStatusImpl: z
+        updateTransactionIdentificationStatusImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
       })
       .optional(),
-    deliveryError: z.string().optional(),
-    deliveryStatus: z.lazy(() => DocumentStatusSchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paymentMandateBootstrapRequest: z
+    deliveryError: zod.string().optional(),
+    deliveryStatus: zod.lazy(() => DocumentStatusSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentMandateBootstrapRequest: zod
       .lazy(() => DocumentBootstrapRequestedSchema)
       .optional(),
-    payNoteBootstrapRequest: z
+    payNoteBootstrapRequest: zod
       .lazy(() => DocumentBootstrapRequestedSchema)
       .optional(),
-    transactionIdentificationStatus: z.string().optional(),
+    transactionIdentificationStatus: zod.string().optional(),
   })
 );
 

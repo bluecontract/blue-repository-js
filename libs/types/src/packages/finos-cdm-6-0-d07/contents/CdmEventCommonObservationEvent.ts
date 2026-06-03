@@ -1,19 +1,19 @@
-export const CdmEventCommonObservationEvent = {
+export const CdmEventCommonObservationEvent: Record<string, unknown> = {
   corporateAction: {
     description:
       'Specifies the necessary information to create a corporate action.',
     type: {
-      blueId: '3cW9DCrH3S9RbC5r5ufGus2ntS4cJjxaa7gnHbEmCnT3',
+      blueId: 'Cd5dfDZ2vya9EXadanoFVVizmTtXVyCD3eetnLfjKM7R',
     },
   },
   creditEvent: {
     description:
       'Specifies the necessary information to create a credit event.',
     type: {
-      blueId: '9cRutV8nPCZ2C48bBwAY4oDTiYNr1ig82uHvSf4tZjHf',
+      blueId: 'AVPqeTe3UbwZW8Fbubbmr4aPptrhVekU6a5UqnSKNLfH',
     },
   },
   description:
     'Specifies the necessary information to create any observation event.',
   name: 'cdm/event/common/ObservationEvent',
-} as const;
+};

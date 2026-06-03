@@ -5,27 +5,29 @@ import { CdmEventCommonMetafieldsReferenceWithMetaContractDetailsSchema } from '
 import { CdmEventCommonMetafieldsReferenceWithMetaExecutionDetailsSchema } from './CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails';
 import { CdmProductCollateralMetafieldsReferenceWithMetaCollateralSchema } from './CdmProductCollateralMetafieldsReferenceWithMetaCollateral';
 
-export const CdmEventPositionContractBaseSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventPositionContractBaseSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/position/ContractBase']
 )(
-  z.object({
-    collateral: z
+  zod.object({
+    collateral: zod
       .lazy(
         () => CdmProductCollateralMetafieldsReferenceWithMetaCollateralSchema
       )
       .optional(),
-    contractDetails: z
+    contractDetails: zod
       .lazy(
         () => CdmEventCommonMetafieldsReferenceWithMetaContractDetailsSchema
       )
       .optional(),
-    description: z.string().optional(),
-    executionDetails: z
+    description: zod.string().optional(),
+    executionDetails: zod
       .lazy(
         () => CdmEventCommonMetafieldsReferenceWithMetaExecutionDetailsSchema
       )
       .optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

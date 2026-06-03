@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from './Response';
 
-export const DocumentBootstrapFailedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentBootstrapFailedSchema: any = withTypeBlueId(
   blueIds['Coordination/Document Bootstrap Failed']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

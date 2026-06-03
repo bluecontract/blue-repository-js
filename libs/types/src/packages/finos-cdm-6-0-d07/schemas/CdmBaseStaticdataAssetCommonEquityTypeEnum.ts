@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCommonEquityTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonEquityTypeEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/EquityTypeEnum']
   )(
-    z.enum(['NonConvertiblePreference', 'Ordinary'] as [
+    zod.enum(['NonConvertiblePreference', 'Ordinary'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

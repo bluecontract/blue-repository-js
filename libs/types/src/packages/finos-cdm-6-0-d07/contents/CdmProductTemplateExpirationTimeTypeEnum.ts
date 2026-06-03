@@ -1,56 +1,55 @@
-export const CdmProductTemplateExpirationTimeTypeEnum = {
-  description:
-    'The time of day at which the equity option expires, for example the official closing time of the exchange.',
-  name: 'cdm/product/template/ExpirationTimeTypeEnum',
-  schema: {
-    enum: {
-      items: [
+export const CdmProductTemplateExpirationTimeTypeEnum: Record<string, unknown> =
+  {
+    description:
+      'The time of day at which the equity option expires, for example the official closing time of the exchange.',
+    name: 'cdm/product/template/ExpirationTimeTypeEnum',
+    schema: {
+      enum: [
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'AsSpecifiedInMasterConfirmation',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Close',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'DerivativesClose',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'OSP',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Open',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'SpecificTime',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'XETRA',
         },
       ],
     },
-  },
-  type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-  },
-} as const;
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+    },
+  };

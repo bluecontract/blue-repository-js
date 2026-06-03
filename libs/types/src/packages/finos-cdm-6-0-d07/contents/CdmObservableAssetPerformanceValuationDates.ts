@@ -1,19 +1,17 @@
-export const CdmObservableAssetPerformanceValuationDates = {
+export const CdmObservableAssetPerformanceValuationDates: Record<
+  string,
+  unknown
+> = {
   description:
     'Defines how and when a performance type option or performance type swap is to be valued.',
   determinationMethod: {
     description:
       'Specifies the method according to which an amount or a date is determined.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '3y75YW3Xvg26b63Etnyf7EmxBfhFMUEgAhimCGQ2jyab',
+      blueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
     },
   },
   name: 'cdm/observable/asset/PerformanceValuationDates',
@@ -21,28 +19,28 @@ export const CdmObservableAssetPerformanceValuationDates = {
     description:
       '2018 ISDA CDM Equity Confirmation for Security Equity Swap: Pricing Date\n',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   valuationDates: {
     description:
       '2018 ISDA CDM Equity Confirmation for Security Equity Swap: Pricing Date\n',
     type: {
-      blueId: 'Cpbn2utZQopvuh7pdxe4hrg9S6CvTTqwa6hLYZRihZRr',
+      blueId: '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg',
     },
   },
   valuationTime: {
     description:
       'The specific time of day at which the calculation agent values the underlying. The SpecificTime is the only case when the valuationTime (time + business center location  e.g. 10:00:00 USNY) should be provided. You should be able to provide just the valuationTime without valuationTimeType, which infer that this is a specific time.\n',
     type: {
-      blueId: 'AYcPv3zXSTKojz4MpYi8KWL5Z9TVBuzNzHmzsZe3cYcC',
+      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
     },
   },
   valuationTimeType: {
     description:
       'The time of day at which the calculation agent values the underlying, for example the official closing time of the exchange.\n',
     type: {
-      blueId: '5SHUer2m9Wrjeo45qpWiGeBoKwQ2Z66Waz5zaTwYcJUp',
+      blueId: '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv',
     },
   },
-} as const;
+};

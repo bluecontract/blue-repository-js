@@ -1,26 +1,25 @@
-export const CdmProductAssetInterestShortfallCapEnum = {
-  description:
-    'The enumerated values to specify the interest shortfall cap, applicable to mortgage derivatives.',
-  name: 'cdm/product/asset/InterestShortfallCapEnum',
-  schema: {
-    enum: {
-      items: [
+export const CdmProductAssetInterestShortfallCapEnum: Record<string, unknown> =
+  {
+    description:
+      'The enumerated values to specify the interest shortfall cap, applicable to mortgage derivatives.',
+    name: 'cdm/product/asset/InterestShortfallCapEnum',
+    schema: {
+      enum: [
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Fixed',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Variable',
         },
       ],
     },
-  },
-  type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-  },
-} as const;
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+    },
+  };

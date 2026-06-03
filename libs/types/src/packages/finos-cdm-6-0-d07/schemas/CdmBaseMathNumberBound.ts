@@ -2,14 +2,16 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseMathNumberBoundSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathNumberBoundSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/NumberBound']
 )(
-  z.object({
-    description: z.string().optional(),
-    inclusive: z.boolean(),
-    name: z.string().optional(),
-    number: z.number(),
+  zod.object({
+    description: zod.string().optional(),
+    inclusive: zod.boolean(),
+    name: zod.string().optional(),
+    number: zod.number(),
   })
 );
 

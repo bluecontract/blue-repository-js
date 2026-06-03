@@ -1,17 +1,12 @@
-export const CdmBaseDatetimeBusinessCenterTime = {
+export const CdmBaseDatetimeBusinessCenterTime: Record<string, unknown> = {
   businessCenter: {
     description:
       'A code identifying a business day calendar location. A business day calendar location is drawn from the list identified by the business day calendar location enumeration.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2Y1JVjnbbb22zrKVYtvVRfAkqMEsujAWoUHytGJxuprQ',
+      blueId: 'EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy',
     },
   },
   description:
@@ -20,16 +15,11 @@ export const CdmBaseDatetimeBusinessCenterTime = {
     description:
       "A time specified in hh:mm:ss format where the second component must be '00', e.g. 11am would be represented as 11:00:00.\n",
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/base/datetime/BusinessCenterTime',
-} as const;
+};

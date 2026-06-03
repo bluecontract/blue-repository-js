@@ -8,56 +8,58 @@ import { CdmBaseStaticdataAssetCreditSpecifiedCurrencySchema } from './CdmBaseSt
 import { CdmProductCommonSettlementLoanParticipationSchema } from './CdmProductCommonSettlementLoanParticipation';
 import { CdmProductCommonSettlementPCDeliverableObligationCharacSchema } from './CdmProductCommonSettlementPCDeliverableObligationCharac';
 
-export const CdmProductCommonSettlementDeliverableObligationsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementDeliverableObligationsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/DeliverableObligations'
     ]
   )(
-    z.object({
-      acceleratedOrMatured: z.boolean().optional(),
-      accruedInterest: z.boolean().optional(),
-      assignableLoan: z
+    zod.object({
+      acceleratedOrMatured: zod.boolean().optional(),
+      accruedInterest: zod.boolean().optional(),
+      assignableLoan: zod
         .lazy(
           () => CdmProductCommonSettlementPCDeliverableObligationCharacSchema
         )
         .optional(),
-      category: z
+      category: zod
         .lazy(() => CdmBaseStaticdataAssetCreditObligationCategoryEnumSchema)
         .optional(),
-      consentRequiredLoan: z
+      consentRequiredLoan: zod
         .lazy(
           () => CdmProductCommonSettlementPCDeliverableObligationCharacSchema
         )
         .optional(),
-      description: z.string().optional(),
-      directLoanParticipation: z
+      description: zod.string().optional(),
+      directLoanParticipation: zod
         .lazy(() => CdmProductCommonSettlementLoanParticipationSchema)
         .optional(),
-      excluded: z.string().optional(),
-      fullFaithAndCreditObLiability: z.boolean().optional(),
-      generalFundObligationLiability: z.boolean().optional(),
-      indirectLoanParticipation: z
+      excluded: zod.string().optional(),
+      fullFaithAndCreditObLiability: zod.boolean().optional(),
+      generalFundObligationLiability: zod.boolean().optional(),
+      indirectLoanParticipation: zod
         .lazy(() => CdmProductCommonSettlementLoanParticipationSchema)
         .optional(),
-      listed: z.boolean().optional(),
-      maximumMaturity: z.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
-      name: z.string().optional(),
-      notBearer: z.boolean().optional(),
-      notContingent: z.boolean().optional(),
-      notDomesticCurrency: z
+      listed: zod.boolean().optional(),
+      maximumMaturity: zod.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
+      name: zod.string().optional(),
+      notBearer: zod.boolean().optional(),
+      notContingent: zod.boolean().optional(),
+      notDomesticCurrency: zod
         .lazy(() => CdmBaseStaticdataAssetCreditNotDomesticCurrencySchema)
         .optional(),
-      notDomesticIssuance: z.boolean().optional(),
-      notDomesticLaw: z.boolean().optional(),
-      notSovereignLender: z.boolean().optional(),
-      notSubordinated: z.boolean().optional(),
-      othReferenceEntityObligations: z.string().optional(),
-      revenueObligationLiability: z.boolean().optional(),
-      specifiedCurrency: z
+      notDomesticIssuance: zod.boolean().optional(),
+      notDomesticLaw: zod.boolean().optional(),
+      notSovereignLender: zod.boolean().optional(),
+      notSubordinated: zod.boolean().optional(),
+      othReferenceEntityObligations: zod.string().optional(),
+      revenueObligationLiability: zod.boolean().optional(),
+      specifiedCurrency: zod
         .lazy(() => CdmBaseStaticdataAssetCreditSpecifiedCurrencySchema)
         .optional(),
-      transferable: z.boolean().optional(),
+      transferable: zod.boolean().optional(),
     })
   );
 

@@ -1,16 +1,16 @@
-export const CdmProductTemplateBarrier = {
+export const CdmProductTemplateBarrier: Record<string, unknown> = {
   barrierCap: {
     description: 'A trigger level approached from beneath.',
     type: {
-      blueId: '5q7Te3Mgou1kKCrZx5Xwb2rPekcJF6cL81MN9mfRkjxf',
+      blueId: 'GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC',
     },
   },
   barrierFloor: {
     description: 'A trigger level approached from above.',
     type: {
-      blueId: '5q7Te3Mgou1kKCrZx5Xwb2rPekcJF6cL81MN9mfRkjxf',
+      blueId: 'GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC',
     },
   },
   description: 'As per ISDA 2002 Definitions.',
   name: 'cdm/product/template/Barrier',
-} as const;
+};

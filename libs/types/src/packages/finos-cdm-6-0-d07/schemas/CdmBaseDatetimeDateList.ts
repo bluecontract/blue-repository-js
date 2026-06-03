@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseDatetimeDateListSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseDatetimeDateListSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/DateList']
 )(
-  z.object({
-    date: z.array(z.string()).min(1).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+  zod.object({
+    date: zod.array(zod.string()).min(1).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

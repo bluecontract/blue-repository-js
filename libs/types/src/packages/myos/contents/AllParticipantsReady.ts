@@ -1,3 +1,3 @@
-export const AllParticipantsReady = {
+export const AllParticipantsReady: Record<string, unknown> = {
   name: 'All Participants Ready',
-} as const;
+};

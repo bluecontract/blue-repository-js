@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/NationalizationOrInsolvencyOrDelistingEventEnum'
     ]
   )(
-    z.enum(['CancellationAndPayment', 'NegotiatedCloseout'] as [
+    zod.enum(['CancellationAndPayment', 'NegotiatedCloseout'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

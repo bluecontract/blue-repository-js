@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PaymentInitiatedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentInitiatedSchema: any = withTypeBlueId(
   blueIds['MyOS/Payment Initiated']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paynoteDocumentId: z.string().optional(),
-    paynotePayeeSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paynoteDocumentId: zod.string().optional(),
+    paynotePayeeSessionId: zod.string().optional(),
   })
 );
 

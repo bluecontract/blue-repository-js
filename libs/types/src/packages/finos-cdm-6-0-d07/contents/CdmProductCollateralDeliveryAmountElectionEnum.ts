@@ -1,26 +1,27 @@
-export const CdmProductCollateralDeliveryAmountElectionEnum = {
+export const CdmProductCollateralDeliveryAmountElectionEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'The enumerated values to specify the application of Interest Amount with respect to the Delivery Amount through standard language.\n',
   name: 'cdm/product/collateral/DeliveryAmountElectionEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'LastAndAnyLocalBusinessDay',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'LastLocalBusinessDay',
+        value: 'LastAndAnyLocalBusinessDay',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'LastLocalBusinessDay',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

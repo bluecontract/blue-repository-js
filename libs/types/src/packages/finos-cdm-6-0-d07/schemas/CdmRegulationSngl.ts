@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmRegulationIndxSchema } from './CdmRegulationIndx';
 
-export const CdmRegulationSnglSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmRegulationSnglSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/regulation/Sngl']
 )(
-  z.object({
-    indx: z.lazy(() => CdmRegulationIndxSchema),
-    isin: z.string(),
-    name: z.string().optional(),
+  zod.object({
+    indx: zod.lazy(() => CdmRegulationIndxSchema),
+    isin: zod.string(),
+    name: zod.string().optional(),
   })
 );
 

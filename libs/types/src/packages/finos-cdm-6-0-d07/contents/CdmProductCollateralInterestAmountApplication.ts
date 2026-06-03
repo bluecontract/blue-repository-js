@@ -1,17 +1,15 @@
-export const CdmProductCollateralInterestAmountApplication = {
+export const CdmProductCollateralInterestAmountApplication: Record<
+  string,
+  unknown
+> = {
   deliveryAmount: {
     description:
       'The application of Interest Amount with respect the Delivery Amount.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '8WSVgLvQLqBZPfmneqoMN3uQVAz6N5xkrPQBmDUkzdzX',
+      blueId: 'HKVLiaT4w9torwoHkj96Mx7aKTg2Hav87Wintsd8TvXU',
     },
   },
   description:
@@ -21,15 +19,10 @@ export const CdmProductCollateralInterestAmountApplication = {
     description:
       'The application of Interest Amount with respect the Return Amount.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5KpA82QSi1KJJu5Y1QFYm3KVvYrsajy5CANvijdTquA',
+      blueId: 'HpBh6DxVn5k45kpY9oDbqGhBWE3eEphzgwottdc68x3B',
     },
   },
-} as const;
+};

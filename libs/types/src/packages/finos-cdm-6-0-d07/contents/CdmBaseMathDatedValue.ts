@@ -1,17 +1,12 @@
-export const CdmBaseMathDatedValue = {
+export const CdmBaseMathDatedValue: Record<string, unknown> = {
   date: {
     description:
       'The date on which the associated step value becomes effective. This day may be subject to adjustment in accordance with a business day convention.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -21,15 +16,10 @@ export const CdmBaseMathDatedValue = {
     description:
       'The rate of amount which becomes effective on the associated step date. A rate of 5% would be represented as 0.05.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

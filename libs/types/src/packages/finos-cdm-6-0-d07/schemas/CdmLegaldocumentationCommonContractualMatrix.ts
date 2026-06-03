@@ -4,20 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnumSchema } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum';
 import { CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnumSchema } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum';
 
-export const CdmLegaldocumentationCommonContractualMatrixSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonContractualMatrixSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/ContractualMatrix']
   )(
-    z.object({
-      matrixTerm: z
+    zod.object({
+      matrixTerm: zod
         .lazy(
           () => CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnumSchema
         )
         .optional(),
-      matrixType: z.lazy(
+      matrixType: zod.lazy(
         () => CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnumSchema
       ),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

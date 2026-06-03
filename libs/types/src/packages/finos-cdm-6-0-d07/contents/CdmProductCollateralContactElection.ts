@@ -1,28 +1,18 @@
-export const CdmProductCollateralContactElection = {
+export const CdmProductCollateralContactElection: Record<string, unknown> = {
   description:
     "A class to specify the parties' election to specify contact information, in relation to elections such as the Addresses for Transfer or the Demand and Notices as specified in the ISDA Credit Support Annex agreement.\n",
   name: 'cdm/product/collateral/ContactElection',
   partyElection: {
     description: "The parties' contact information election.",
     itemType: {
-      blueId: '9bBnotjYVoTpiPp618XfsvChy9sMkorNRd8X1hGQVM7o',
+      blueId: '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR',
     },
     schema: {
-      maxItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
+      maxItems: 2,
+      minItems: 2,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

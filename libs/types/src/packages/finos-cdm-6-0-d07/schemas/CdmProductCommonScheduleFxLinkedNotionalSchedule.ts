@@ -6,26 +6,30 @@ import { CdmBaseDatetimeRelativeDateOffsetSchema } from './CdmBaseDatetimeRelati
 import { CdmObservableAssetFxSpotRateSourceSchema } from './CdmObservableAssetFxSpotRateSource';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductCommonScheduleFxLinkedNotionalScheduleSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleFxLinkedNotionalScheduleSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/FxLinkedNotionalSchedule'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      fixingTime: z
+    zod.object({
+      description: zod.string().optional(),
+      fixingTime: zod
         .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
         .optional(),
-      fxSpotRateSource: z.lazy(() => CdmObservableAssetFxSpotRateSourceSchema),
-      name: z.string().optional(),
-      varyingNotionalCurrency: z.lazy(
+      fxSpotRateSource: zod.lazy(
+        () => CdmObservableAssetFxSpotRateSourceSchema
+      ),
+      name: zod.string().optional(),
+      varyingNotionalCurrency: zod.lazy(
         () => ComRosettaModelFieldWithMetaStringSchema
       ),
-      varyingNotionalFixingDates: z.lazy(
+      varyingNotionalFixingDates: zod.lazy(
         () => CdmBaseDatetimeRelativeDateOffsetSchema
       ),
-      varyingNotionalInterimExchangePaymentDates: z.lazy(
+      varyingNotionalInterimExchangePaymentDates: zod.lazy(
         () => CdmBaseDatetimeRelativeDateOffsetSchema
       ),
     })

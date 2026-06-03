@@ -1,25 +1,26 @@
-export const WorkerAgencyPermissionGrantingInProgress = {
-  allowedWorkerAgencyPermissions: {
-    itemType: {
-      blueId: 'EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS',
+export const WorkerAgencyPermissionGrantingInProgress: Record<string, unknown> =
+  {
+    allowedWorkerAgencyPermissions: {
+      itemType: {
+        blueId: 'GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH',
+      },
+      type: {
+        blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
+      },
+    },
+    description: 'Admin has started applying the grant for this WAG.',
+    granteeDocumentId: {
+      type: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
+    },
+    name: 'Worker Agency Permission Granting in Progress',
+    note: {
+      type: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
     },
-  },
-  description: 'Admin has started applying the grant for this WAG.',
-  granteeDocumentId: {
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
-  name: 'Worker Agency Permission Granting in Progress',
-  note: {
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
-  type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
-  },
-} as const;
+  };

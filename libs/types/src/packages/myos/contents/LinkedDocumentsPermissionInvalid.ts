@@ -1,15 +1,15 @@
-export const LinkedDocumentsPermissionInvalid = {
+export const LinkedDocumentsPermissionInvalid: Record<string, unknown> = {
   description: 'Emitted when LDPG fails local validation.',
   issues: {
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   name: 'Linked Documents Permission Invalid',
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

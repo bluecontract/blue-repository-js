@@ -1,4 +1,7 @@
-export const CdmBaseStaticdataPartyPartyReferencePayerReceiver = {
+export const CdmBaseStaticdataPartyPartyReferencePayerReceiver: Record<
+  string,
+  unknown
+> = {
   description:
     'Specifies the parties responsible for making and receiving payments defined by this structure.',
   name: 'cdm/base/staticdata/party/PartyReferencePayerReceiver',
@@ -6,44 +9,34 @@ export const CdmBaseStaticdataPartyPartyReferencePayerReceiver = {
     description:
       'A reference to the account responsible for making the payments defined by this structure.',
     type: {
-      blueId: 'HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX',
+      blueId: 'HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi',
     },
   },
   payerPartyReference: {
     description:
       'The party responsible for making the payments defined by this structure.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
   receiverAccountReference: {
     description:
       'A reference to the account that receives the payments corresponding to this structure.',
     type: {
-      blueId: 'HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX',
+      blueId: 'HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi',
     },
   },
   receiverPartyReference: {
     description:
       'The party that receives the payments corresponding to this structure.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
-} as const;
+};

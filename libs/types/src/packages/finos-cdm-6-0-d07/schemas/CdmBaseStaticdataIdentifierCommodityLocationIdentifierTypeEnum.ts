@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/identifier/CommodityLocationIdentifierTypeEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'BuyerHub',
       'DeliveryPoint',
       'DeliveryZone',

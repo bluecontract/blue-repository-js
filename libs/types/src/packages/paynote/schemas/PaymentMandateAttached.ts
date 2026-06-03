@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { EventSchema } from '../../coordination/schemas/Event';
 
-export const PaymentMandateAttachedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentMandateAttachedSchema: any = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Attached']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paymentMandateDocumentId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentMandateDocumentId: zod.string().optional(),
   })
 );
 

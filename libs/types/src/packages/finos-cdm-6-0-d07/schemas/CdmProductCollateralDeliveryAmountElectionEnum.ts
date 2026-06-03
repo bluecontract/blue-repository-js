@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCollateralDeliveryAmountElectionEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralDeliveryAmountElectionEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/DeliveryAmountElectionEnum'
     ]
   )(
-    z.enum(['LastAndAnyLocalBusinessDay', 'LastLocalBusinessDay'] as [
+    zod.enum(['LastAndAnyLocalBusinessDay', 'LastLocalBusinessDay'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

@@ -1,3854 +1,3854 @@
 import blueIds from './blue-ids';
 
-const meta = {
+const meta: { name: string; typesMeta: Record<string, unknown> } = {
   name: 'FINOS-CDM-6.0-d07',
   typesMeta: {
-    '4Ro4tKrST2yaBWNytCjLJMhx3DMoAXwqU1W6HBKrnfRn': {
+    GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi: {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4Ro4tKrST2yaBWNytCjLJMhx3DMoAXwqU1W6HBKrnfRn',
+          typeBlueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
           attributesAdded: [],
         },
       ],
     },
-    '3UQyaunu7noHsnkXtFNJHuwdv1AH6Uq6MZ1bZSHN9hYW': {
+    '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA': {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3UQyaunu7noHsnkXtFNJHuwdv1AH6Uq6MZ1bZSHN9hYW',
+          typeBlueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
           attributesAdded: [],
         },
       ],
     },
-    EMewkrxSUCQddjXsDB5V833VQJGmxV68bbryLqrUJfKz: {
+    CdgiECBjpwU7k35HhiQi9JBRDcAEBJDGnCGvMjE3KMxX: {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableOrAdjustedDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EMewkrxSUCQddjXsDB5V833VQJGmxV68bbryLqrUJfKz',
+          typeBlueId: 'CdgiECBjpwU7k35HhiQi9JBRDcAEBJDGnCGvMjE3KMxX',
           attributesAdded: [],
         },
       ],
     },
-    BwTCpPFhSqEbgjkUmssmzp1ig5hb3QSdGhqroiTDsJvJ: {
+    '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF': {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableOrAdjustedOrRelativeDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BwTCpPFhSqEbgjkUmssmzp1ig5hb3QSdGhqroiTDsJvJ',
+          typeBlueId: '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF',
           attributesAdded: [],
         },
       ],
     },
-    '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd': {
+    '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R': {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableOrRelativeDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+          typeBlueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
           attributesAdded: [],
         },
       ],
     },
-    '8PKDuaLpjNXiaiuAt3sN69jDVCEBaEXv2LsUjsa8MMZS': {
+    AiYMNnHZT7DJNXi1wScVgJSGHkgj5i6eH6jUgQoxX9Bw: {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableOrRelativeDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8PKDuaLpjNXiaiuAt3sN69jDVCEBaEXv2LsUjsa8MMZS',
+          typeBlueId: 'AiYMNnHZT7DJNXi1wScVgJSGHkgj5i6eH6jUgQoxX9Bw',
           attributesAdded: [],
         },
       ],
     },
-    Cpbn2utZQopvuh7pdxe4hrg9S6CvTTqwa6hLYZRihZRr: {
+    '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg': {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustableRelativeOrPeriodicDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Cpbn2utZQopvuh7pdxe4hrg9S6CvTTqwa6hLYZRihZRr',
+          typeBlueId: '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg',
           attributesAdded: [],
         },
       ],
     },
-    DMeQ9ECaWbb3DdSYMpZmd7xvFu5cGC4dptRizNCch8D2: {
+    GagRkiFg7C2PG1ce2M6QYaKL99fY3TTLH3DBbZp4Fduc: {
       status: 'stable',
       name: 'cdm/base/datetime/AdjustedRelativeDateOffset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DMeQ9ECaWbb3DdSYMpZmd7xvFu5cGC4dptRizNCch8D2',
+          typeBlueId: 'GagRkiFg7C2PG1ce2M6QYaKL99fY3TTLH3DBbZp4Fduc',
           attributesAdded: [],
         },
       ],
     },
-    '4gPZWnb1vTp42ssUQer9eA7aUVRjtisHDCL1LhrNuH44': {
+    CR9L4SVmKAvSmKh2xUfY6RvyAg4XL3BwDYCeqWk8ejn8: {
       status: 'stable',
       name: 'cdm/base/datetime/AveragingSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4gPZWnb1vTp42ssUQer9eA7aUVRjtisHDCL1LhrNuH44',
+          typeBlueId: 'CR9L4SVmKAvSmKh2xUfY6RvyAg4XL3BwDYCeqWk8ejn8',
           attributesAdded: [],
         },
       ],
     },
-    T68z84ntdBb19juBApDyMAndAVUzzmotTGUTuJnHV3D: {
+    Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL: {
       status: 'stable',
       name: 'cdm/base/datetime/BusinessCenterEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'T68z84ntdBb19juBApDyMAndAVUzzmotTGUTuJnHV3D',
+          typeBlueId: 'Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL',
           attributesAdded: [],
         },
       ],
     },
-    AaeaS3nBkqHVJTRb23iTwYjbMyikRz6mRz7L5FdHczSH: {
+    H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti: {
       status: 'stable',
       name: 'cdm/base/datetime/BusinessCenters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AaeaS3nBkqHVJTRb23iTwYjbMyikRz6mRz7L5FdHczSH',
+          typeBlueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
           attributesAdded: [],
         },
       ],
     },
-    AYcPv3zXSTKojz4MpYi8KWL5Z9TVBuzNzHmzsZe3cYcC: {
+    '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j': {
       status: 'stable',
       name: 'cdm/base/datetime/BusinessCenterTime',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AYcPv3zXSTKojz4MpYi8KWL5Z9TVBuzNzHmzsZe3cYcC',
+          typeBlueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
           attributesAdded: [],
         },
       ],
     },
-    ANtReDKQ2SuFnWeerTjR3U9Voqzy5V6qqQgX7JtosAi6: {
+    HNjhMn7WT4JjM4LH3CAB6FzPpLMvur9mQW6knri1HnTg: {
       status: 'stable',
       name: 'cdm/base/datetime/BusinessDateRange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ANtReDKQ2SuFnWeerTjR3U9Voqzy5V6qqQgX7JtosAi6',
+          typeBlueId: 'HNjhMn7WT4JjM4LH3CAB6FzPpLMvur9mQW6knri1HnTg',
           attributesAdded: [],
         },
       ],
     },
-    FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd: {
+    '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq': {
       status: 'stable',
       name: 'cdm/base/datetime/BusinessDayAdjustments',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd',
+          typeBlueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
           attributesAdded: [],
         },
       ],
     },
-    EP4PK7ibh1EaWh9sLTjFcwVikiRQECurvR5Nb9ZPbJCs: {
+    UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ: {
       status: 'stable',
       name: 'cdm/base/datetime/BusinessDayConventionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EP4PK7ibh1EaWh9sLTjFcwVikiRQECurvR5Nb9ZPbJCs',
+          typeBlueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
           attributesAdded: [],
         },
       ],
     },
-    BTY81xfhqyEEMs1ZiVvEnaRbfLvALxLiEYU9aNdedseZ: {
+    DgNkH6r165bjLKnYWiVE6o2FPj5mEztGpd21mfsiyDXA: {
       status: 'stable',
       name: 'cdm/base/datetime/CalculationFrequency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BTY81xfhqyEEMs1ZiVvEnaRbfLvALxLiEYU9aNdedseZ',
+          typeBlueId: 'DgNkH6r165bjLKnYWiVE6o2FPj5mEztGpd21mfsiyDXA',
           attributesAdded: [],
         },
       ],
     },
-    DVb1fCp6T4qAajXVrhWU73Yx25sFe7MdqmytdKoz9LuJ: {
+    CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce: {
       status: 'stable',
       name: 'cdm/base/datetime/CalculationPeriodFrequency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DVb1fCp6T4qAajXVrhWU73Yx25sFe7MdqmytdKoz9LuJ',
+          typeBlueId: 'CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce',
           attributesAdded: [],
         },
       ],
     },
-    H1brAJ4DsQvt9MbnoyYuq5L7Z5nJJ5rxyrfmYTDXT7VJ: {
+    '3nrMEw5ojL2L4nx9YC3c3c4ANcs6gAFKkas7RgDE5Ao2': {
       status: 'stable',
       name: 'cdm/base/datetime/CommodityBusinessCalendarEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H1brAJ4DsQvt9MbnoyYuq5L7Z5nJJ5rxyrfmYTDXT7VJ',
+          typeBlueId: '3nrMEw5ojL2L4nx9YC3c3c4ANcs6gAFKkas7RgDE5Ao2',
           attributesAdded: [],
         },
       ],
     },
-    '5ojsHNF1jNcdgizZKEHoVtM4tCrpwCnSYbccLWJLnS5A': {
+    GvNXAYyGbJwhZ1D7jxhPLtLsKVTeAZor6SgFatG9UvMa: {
       status: 'stable',
       name: 'cdm/base/datetime/CompoundingTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5ojsHNF1jNcdgizZKEHoVtM4tCrpwCnSYbccLWJLnS5A',
+          typeBlueId: 'GvNXAYyGbJwhZ1D7jxhPLtLsKVTeAZor6SgFatG9UvMa',
           attributesAdded: [],
         },
       ],
     },
-    HF3m5gt9EEbudTKjeLeqgptEHRPniWju6A4n1YYAUejj: {
+    EaaCUoNmXLQTY4MPLncXFmVQqSS88MhbwvejcfJKUAdS: {
       status: 'stable',
       name: 'cdm/base/datetime/CustomisableOffset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HF3m5gt9EEbudTKjeLeqgptEHRPniWju6A4n1YYAUejj',
+          typeBlueId: 'EaaCUoNmXLQTY4MPLncXFmVQqSS88MhbwvejcfJKUAdS',
           attributesAdded: [],
         },
       ],
     },
-    '6FERZPz42ZzYn2R9FbEZtJ4sscsq9wYcg9tANknRZjnM': {
+    '75qSo7DxMh9MksCdoEnKxduHVLunj1pn42TvPFdxTgN8': {
       status: 'stable',
       name: 'cdm/base/datetime/DateList',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6FERZPz42ZzYn2R9FbEZtJ4sscsq9wYcg9tANknRZjnM',
+          typeBlueId: '75qSo7DxMh9MksCdoEnKxduHVLunj1pn42TvPFdxTgN8',
           attributesAdded: [],
         },
       ],
     },
-    HzWZdNo2fx1o4EhUXn1aUnQgTLJm9PASFfSrNzJzLiT8: {
+    ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM: {
       status: 'stable',
       name: 'cdm/base/datetime/DateRange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HzWZdNo2fx1o4EhUXn1aUnQgTLJm9PASFfSrNzJzLiT8',
+          typeBlueId: 'ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM',
           attributesAdded: [],
         },
       ],
     },
-    '6geCuQi9d7Zffp3p3nxFjJBawUz6oUHKH19RmptB9h3H': {
+    H5D8BrpdPx4G3A74ypfsUrC27hh6pjWVeJD3s6bkSu7e: {
       status: 'stable',
       name: 'cdm/base/datetime/DateTimeList',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6geCuQi9d7Zffp3p3nxFjJBawUz6oUHKH19RmptB9h3H',
+          typeBlueId: 'H5D8BrpdPx4G3A74ypfsUrC27hh6pjWVeJD3s6bkSu7e',
           attributesAdded: [],
         },
       ],
     },
-    Gg7yf6CJg1QvGhkZFmdUsZR7t1wfdN4PpLPrymefw2Yx: {
+    G5reDMTj2A64oDwXZBaNeRgFEhAtZMkWvkJcte51qHiJ: {
       status: 'stable',
       name: 'cdm/base/datetime/daycount/DayCountFractionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Gg7yf6CJg1QvGhkZFmdUsZR7t1wfdN4PpLPrymefw2Yx',
+          typeBlueId: 'G5reDMTj2A64oDwXZBaNeRgFEhAtZMkWvkJcte51qHiJ',
           attributesAdded: [],
         },
       ],
     },
-    '5Dtu3pEFyiD2KsqxowhubHTHw758PbJQU3gY7JfV51ou': {
+    '587iDHMkRt71kZVCzE5o3zXzWprHzypcRd91TYbQnSpE': {
       status: 'stable',
       name: 'cdm/base/datetime/daycount/FieldWithMetaDayCountFractionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5Dtu3pEFyiD2KsqxowhubHTHw758PbJQU3gY7JfV51ou',
+          typeBlueId: '587iDHMkRt71kZVCzE5o3zXzWprHzypcRd91TYbQnSpE',
           attributesAdded: [],
         },
       ],
     },
-    HF3CKQiKCRyZGK1Um3jMYPpiothNepYg5tDmY7KzPphK: {
+    AYNVNBQsDmS46NA7kfw7jh6eh8DBspyMyDd1bzyBmDG5: {
       status: 'stable',
       name: 'cdm/base/datetime/DayOfWeekEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HF3CKQiKCRyZGK1Um3jMYPpiothNepYg5tDmY7KzPphK',
+          typeBlueId: 'AYNVNBQsDmS46NA7kfw7jh6eh8DBspyMyDd1bzyBmDG5',
           attributesAdded: [],
         },
       ],
     },
-    '5TzmGki42MGuPUhmSXFrfufu3WDLpyQMvv91eWXoxniX': {
+    EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq: {
       status: 'stable',
       name: 'cdm/base/datetime/DayTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5TzmGki42MGuPUhmSXFrfufu3WDLpyQMvv91eWXoxniX',
+          typeBlueId: 'EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq',
           attributesAdded: [],
         },
       ],
     },
-    '2Y1JVjnbbb22zrKVYtvVRfAkqMEsujAWoUHytGJxuprQ': {
+    EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy: {
       status: 'stable',
       name: 'cdm/base/datetime/FieldWithMetaBusinessCenterEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2Y1JVjnbbb22zrKVYtvVRfAkqMEsujAWoUHytGJxuprQ',
+          typeBlueId: 'EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy',
           attributesAdded: [],
         },
       ],
     },
-    CFEktjfDYZuSwRvSqRUCwDkDa6kpoBHKx93zLdD4TNHr: {
+    '8TYiPxS12nea35y6YR9jrThpiNyYMJgNPgJCd6hF3T1i': {
       status: 'stable',
       name: 'cdm/base/datetime/FieldWithMetaCommodityBusinessCalendarEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CFEktjfDYZuSwRvSqRUCwDkDa6kpoBHKx93zLdD4TNHr',
+          typeBlueId: '8TYiPxS12nea35y6YR9jrThpiNyYMJgNPgJCd6hF3T1i',
           attributesAdded: [],
         },
       ],
     },
-    rB8EXnktzaQ1oDqNjTTbY6Wub1oWxsU4bXUUGA32yMY: {
+    DuGS3hb9QASiMfVarVtXqrw8YdvHS99bzooo3dinungf: {
       status: 'stable',
       name: 'cdm/base/datetime/FieldWithMetaTimeZone',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'rB8EXnktzaQ1oDqNjTTbY6Wub1oWxsU4bXUUGA32yMY',
+          typeBlueId: 'DuGS3hb9QASiMfVarVtXqrw8YdvHS99bzooo3dinungf',
           attributesAdded: [],
         },
       ],
     },
-    JCn7SJcxSE4UKZYvi2YchB4nwjTsdYKvhCc7RnYogigz: {
+    '66A3jW7LyiNtMy7z2YQQFpSs2dyBatQtY1MXhCSnvNPC': {
       status: 'stable',
       name: 'cdm/base/datetime/Frequency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JCn7SJcxSE4UKZYvi2YchB4nwjTsdYKvhCc7RnYogigz',
+          typeBlueId: '66A3jW7LyiNtMy7z2YQQFpSs2dyBatQtY1MXhCSnvNPC',
           attributesAdded: [],
         },
       ],
     },
-    '6y41K737Kb28nfUX28CtjAbV1gqD7wSHtrmzVTF36QH6': {
+    EEy3XcQkPgCWJbBTZ5xCt324t2pFRJU6q9odJm19McMd: {
       status: 'stable',
       name: 'cdm/base/datetime/metafields/ReferenceWithMetaAdjustableOrRelativeDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6y41K737Kb28nfUX28CtjAbV1gqD7wSHtrmzVTF36QH6',
+          typeBlueId: 'EEy3XcQkPgCWJbBTZ5xCt324t2pFRJU6q9odJm19McMd',
           attributesAdded: [],
         },
       ],
     },
-    '2JofigEJD6epctAhG3VgunrLaPXKzTDmRyfSZzpFHEkS': {
+    F2nvaUqNbFKSuzYyyhRM8m7PgfFhFvkDbejeQWX9jYCs: {
       status: 'stable',
       name: 'cdm/base/datetime/metafields/ReferenceWithMetaAdjustableOrRelativeDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2JofigEJD6epctAhG3VgunrLaPXKzTDmRyfSZzpFHEkS',
+          typeBlueId: 'F2nvaUqNbFKSuzYyyhRM8m7PgfFhFvkDbejeQWX9jYCs',
           attributesAdded: [],
         },
       ],
     },
-    '4rV1yRtzeWP1SgQcDCpH4suo5UMbYFANCbKcwXZWtfQv': {
+    '7ACnecbuWHtBLYhrw8BaioS3DSUQFiDskjpaDNspEmof': {
       status: 'stable',
       name: 'cdm/base/datetime/metafields/ReferenceWithMetaBusinessCenters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4rV1yRtzeWP1SgQcDCpH4suo5UMbYFANCbKcwXZWtfQv',
+          typeBlueId: '7ACnecbuWHtBLYhrw8BaioS3DSUQFiDskjpaDNspEmof',
           attributesAdded: [],
         },
       ],
     },
-    '3LPKhzVGjkHFZMKRZJovvBn66KELQss6RiFVVDaqjC4c': {
+    '8ob5XfEjggmQWCgVGZrrfihRpPpUr2yZ4MepyJHJvZ4C': {
       status: 'stable',
       name: 'cdm/base/datetime/metafields/ReferenceWithMetaBusinessDayAdjustments',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3LPKhzVGjkHFZMKRZJovvBn66KELQss6RiFVVDaqjC4c',
+          typeBlueId: '8ob5XfEjggmQWCgVGZrrfihRpPpUr2yZ4MepyJHJvZ4C',
           attributesAdded: [],
         },
       ],
     },
-    '5pnk9bH1JJq67GAcpXYjFhhREvjUoveKHs98CBqt9pEq': {
+    GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ: {
       status: 'stable',
       name: 'cdm/base/datetime/Offset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5pnk9bH1JJq67GAcpXYjFhhREvjUoveKHs98CBqt9pEq',
+          typeBlueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
           attributesAdded: [],
         },
       ],
     },
-    '5rdYwkwGdndCoYmQi9MNzw9SKQZsr68igDgyYFgvNzmh': {
+    G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY: {
       status: 'stable',
       name: 'cdm/base/datetime/Period',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5rdYwkwGdndCoYmQi9MNzw9SKQZsr68igDgyYFgvNzmh',
+          typeBlueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
           attributesAdded: [],
         },
       ],
     },
-    jdGLLmYcPH1SJmGWnGeTDz2mBFp1xR8wP48NG8gskcH: {
+    DtV3Ngp9MSk1v1Wcbq82ZaJHv5dkHz2XFfpccV8mzgXP: {
       status: 'stable',
       name: 'cdm/base/datetime/PeriodBound',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'jdGLLmYcPH1SJmGWnGeTDz2mBFp1xR8wP48NG8gskcH',
+          typeBlueId: 'DtV3Ngp9MSk1v1Wcbq82ZaJHv5dkHz2XFfpccV8mzgXP',
           attributesAdded: [],
         },
       ],
     },
-    AgkY1rP5TjBiYR6gsYzEm1vgFaYxyUc6Lt3pwuRsWx8F: {
+    DLZBHc2QwPj4my2QeZffRBsJxbqMSJzN3PScqxr9C1Yj: {
       status: 'stable',
       name: 'cdm/base/datetime/PeriodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AgkY1rP5TjBiYR6gsYzEm1vgFaYxyUc6Lt3pwuRsWx8F',
+          typeBlueId: 'DLZBHc2QwPj4my2QeZffRBsJxbqMSJzN3PScqxr9C1Yj',
           attributesAdded: [],
         },
       ],
     },
-    '8JrXfrP1RKiRgkbKoCnDi4yAzTEQHNJTFGXAwiNB1Rov': {
+    BLwQ9sW7unThpYZC3TVs8YtMmiAoZ4NVGjVRppu4gm7x: {
       status: 'stable',
       name: 'cdm/base/datetime/PeriodExtendedEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8JrXfrP1RKiRgkbKoCnDi4yAzTEQHNJTFGXAwiNB1Rov',
+          typeBlueId: 'BLwQ9sW7unThpYZC3TVs8YtMmiAoZ4NVGjVRppu4gm7x',
           attributesAdded: [],
         },
       ],
     },
-    A7n4Qooqj58rSepqdAnqh6w3cUZ2grnNMz4KXt1znNND: {
+    JBENwei996PNTBkNZUR1ojomCwz48ULaZEJoeaXxukmT: {
       status: 'stable',
       name: 'cdm/base/datetime/PeriodicDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A7n4Qooqj58rSepqdAnqh6w3cUZ2grnNMz4KXt1znNND',
+          typeBlueId: 'JBENwei996PNTBkNZUR1ojomCwz48ULaZEJoeaXxukmT',
           attributesAdded: [],
         },
       ],
     },
-    '9U8DjGW5C9KDiofbqRSgjUGn8zzm279fFRHZ1W9VNLoD': {
+    Gnv2JatHomC6ZL7YnSSsr5b8Qx1hWWGYFQocqArJgJCj: {
       status: 'stable',
       name: 'cdm/base/datetime/PeriodRange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9U8DjGW5C9KDiofbqRSgjUGn8zzm279fFRHZ1W9VNLoD',
+          typeBlueId: 'Gnv2JatHomC6ZL7YnSSsr5b8Qx1hWWGYFQocqArJgJCj',
           attributesAdded: [],
         },
       ],
     },
-    '5XHHdiRH8TMfQjroSueRJHdrffKowum2j3MNEz6MZLZr': {
+    GNrP38tyPnaCEFuGcFscbFEJhuVkgbjD2h7HMSS7WKq2: {
       status: 'stable',
       name: 'cdm/base/datetime/PeriodTimeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5XHHdiRH8TMfQjroSueRJHdrffKowum2j3MNEz6MZLZr',
+          typeBlueId: 'GNrP38tyPnaCEFuGcFscbFEJhuVkgbjD2h7HMSS7WKq2',
           attributesAdded: [],
         },
       ],
     },
-    '2wAd2mDukRH6r2YEZ4kU9e1fcUYpGHT8ZJEwFZFkKaCL': {
+    '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z': {
       status: 'stable',
       name: 'cdm/base/datetime/RelativeDateOffset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2wAd2mDukRH6r2YEZ4kU9e1fcUYpGHT8ZJEwFZFkKaCL',
+          typeBlueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
           attributesAdded: [],
         },
       ],
     },
-    '2B96QnMxNfXMKPboSVa6Jpe7kf5J5A31gxoB2B9cNLjJ': {
+    DXynKUQNFZU7oUmvsh7mUrjs7JL5RKXrrmkH9hZr99CL: {
       status: 'stable',
       name: 'cdm/base/datetime/RelativeDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2B96QnMxNfXMKPboSVa6Jpe7kf5J5A31gxoB2B9cNLjJ',
+          typeBlueId: 'DXynKUQNFZU7oUmvsh7mUrjs7JL5RKXrrmkH9hZr99CL',
           attributesAdded: [],
         },
       ],
     },
-    GuCCvmuEa9YVo21GL55jX27P3w1AYG7GA6XRTzThccjb: {
+    '5vi7aU3GvfLQ4xDo1Ud6tENVfH6eddFwtnAbqXHuxMfi': {
       status: 'stable',
       name: 'cdm/base/datetime/RollConventionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GuCCvmuEa9YVo21GL55jX27P3w1AYG7GA6XRTzThccjb',
+          typeBlueId: '5vi7aU3GvfLQ4xDo1Ud6tENVfH6eddFwtnAbqXHuxMfi',
           attributesAdded: [],
         },
       ],
     },
-    HsMcUzdZLtswDJ9XExanUTbjYaQ6n5UmH2JZ7RQkHNzR: {
+    Fw3wLbrcadtqbe88BTTnN3TZSgcXPzyHjjPvsic6NY2P: {
       status: 'stable',
       name: 'cdm/base/datetime/RoundingFrequencyEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HsMcUzdZLtswDJ9XExanUTbjYaQ6n5UmH2JZ7RQkHNzR',
+          typeBlueId: 'Fw3wLbrcadtqbe88BTTnN3TZSgcXPzyHjjPvsic6NY2P',
           attributesAdded: [],
         },
       ],
     },
-    '4egpcbMVQjh4aJRd37GGhenWeaUWgc6X7ySNZw3uxHd2': {
+    Evebus71x5rCJiCAsgwRLqNJttzXHHUTbxXnJfjFWjpG: {
       status: 'stable',
       name: 'cdm/base/datetime/TimeUnitEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4egpcbMVQjh4aJRd37GGhenWeaUWgc6X7ySNZw3uxHd2',
+          typeBlueId: 'Evebus71x5rCJiCAsgwRLqNJttzXHHUTbxXnJfjFWjpG',
           attributesAdded: [],
         },
       ],
     },
-    FTUwPbNf3h5HEXFU1GenFhKNQoZGkBe5zAWAf3ZnpvrK: {
+    A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92: {
       status: 'stable',
       name: 'cdm/base/datetime/TimeZone',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FTUwPbNf3h5HEXFU1GenFhKNQoZGkBe5zAWAf3ZnpvrK',
+          typeBlueId: 'A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92',
           attributesAdded: [],
         },
       ],
     },
-    '7PeesYPnoTZrVwovaiKPhiXVvtX9xYNf8gSPTGKzBsaF': {
+    '8G8JMx9Qw4DFmuzKHtJVfUGbY57zaKc4EsT77wyLek9y': {
       status: 'stable',
       name: 'cdm/base/math/ArithmeticOperationEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7PeesYPnoTZrVwovaiKPhiXVvtX9xYNf8gSPTGKzBsaF',
+          typeBlueId: '8G8JMx9Qw4DFmuzKHtJVfUGbY57zaKc4EsT77wyLek9y',
           attributesAdded: [],
         },
       ],
     },
-    AhJDsRsjAqd5ThJefWvZsh3Zp5VREyt5SvAhpzMNhZMz: {
+    '2EzRuguKzzQR2u8dtQqTXe7ATvUruro1jyD4Hc8MHaJk': {
       status: 'stable',
       name: 'cdm/base/math/AveragingCalculationMethod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AhJDsRsjAqd5ThJefWvZsh3Zp5VREyt5SvAhpzMNhZMz',
+          typeBlueId: '2EzRuguKzzQR2u8dtQqTXe7ATvUruro1jyD4Hc8MHaJk',
           attributesAdded: [],
         },
       ],
     },
-    '4W3FMfAf11hDkmCcU5z9e73aZtzoh9ZyM9gN7himsoy2': {
+    D8BAM3Ef8YgktLMNJZg82NyQjEWkwYXQ2pZYpzsXPtnQ: {
       status: 'stable',
       name: 'cdm/base/math/AveragingCalculationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4W3FMfAf11hDkmCcU5z9e73aZtzoh9ZyM9gN7himsoy2',
+          typeBlueId: 'D8BAM3Ef8YgktLMNJZg82NyQjEWkwYXQ2pZYpzsXPtnQ',
           attributesAdded: [],
         },
       ],
     },
-    FEzG5SmK13XNnh3kh51FRzCSuQLhC7M8Cugva3kwKFkG: {
+    '2Xm4KS94SVHHV9NjHpmazjMW6ALPBBv1ALbx2bE3B7K5': {
       status: 'stable',
       name: 'cdm/base/math/AveragingWeightingMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FEzG5SmK13XNnh3kh51FRzCSuQLhC7M8Cugva3kwKFkG',
+          typeBlueId: '2Xm4KS94SVHHV9NjHpmazjMW6ALPBBv1ALbx2bE3B7K5',
           attributesAdded: [],
         },
       ],
     },
-    ANaFxPMcbPKw8USLSD7mcUeT9DBz5q9BkYYt9GMjvDMz: {
+    g4vkocaqQK6FYK1ys61BBsp11Y2Daj3aPCffWwm5Egq: {
       status: 'stable',
       name: 'cdm/base/math/CapacityUnitEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ANaFxPMcbPKw8USLSD7mcUeT9DBz5q9BkYYt9GMjvDMz',
+          typeBlueId: 'g4vkocaqQK6FYK1ys61BBsp11Y2Daj3aPCffWwm5Egq',
           attributesAdded: [],
         },
       ],
     },
-    '5oGrpkhQus7oBFaHwckJJTedha1WXN8M4PE2uvTL5kM8': {
+    ERgfFXDHh7Wgme2CrDN4aVQ74wSP6ER4PpBe7JdQRPct: {
       status: 'stable',
       name: 'cdm/base/math/CompareOp',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5oGrpkhQus7oBFaHwckJJTedha1WXN8M4PE2uvTL5kM8',
+          typeBlueId: 'ERgfFXDHh7Wgme2CrDN4aVQ74wSP6ER4PpBe7JdQRPct',
           attributesAdded: [],
         },
       ],
     },
-    '4Goc1Ax7PdSp2KoLBDYnqrtvCeRBneZD8E97GQazSXQv': {
+    '9zYcb3FcpfuBbxSMqUwSRoYJ3gPs7Nv1qeZUmFvVniPL': {
       status: 'stable',
       name: 'cdm/base/math/DatedValue',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4Goc1Ax7PdSp2KoLBDYnqrtvCeRBneZD8E97GQazSXQv',
+          typeBlueId: '9zYcb3FcpfuBbxSMqUwSRoYJ3gPs7Nv1qeZUmFvVniPL',
           attributesAdded: [],
         },
       ],
     },
-    '8hR8iAKvHAwmBTKxfHuhZUDeDWMp3H16GudiMXMGZqbv': {
+    '4u9YFPkqCriFw9Nz1fytvh7d9BRSRKqqQKDjqfPsqaD5': {
       status: 'stable',
       name: 'cdm/base/math/FieldWithMetaNonNegativeQuantitySchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8hR8iAKvHAwmBTKxfHuhZUDeDWMp3H16GudiMXMGZqbv',
+          typeBlueId: '4u9YFPkqCriFw9Nz1fytvh7d9BRSRKqqQKDjqfPsqaD5',
           attributesAdded: [],
         },
       ],
     },
-    FWBc9MZLyNP1UHpkesLTwX4uMpnMK6Tjr5QZnhvs2WRB: {
+    G6nxZBJqZZ3cY44FGfFfpKCDEC1JqqauJ8rcR7H1niTr: {
       status: 'stable',
       name: 'cdm/base/math/FinancialUnitEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FWBc9MZLyNP1UHpkesLTwX4uMpnMK6Tjr5QZnhvs2WRB',
+          typeBlueId: 'G6nxZBJqZZ3cY44FGfFfpKCDEC1JqqauJ8rcR7H1niTr',
           attributesAdded: [],
         },
       ],
     },
-    BCRUUCDz5YoH72WRdFUdE8hpNrxmqAyK6QzZdV91WaHp: {
+    GdxjH3XMfuhBXiciCVsrgQC7QGBiz2DTWMg4SUHSMJTi: {
       status: 'stable',
       name: 'cdm/base/math/Measure',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BCRUUCDz5YoH72WRdFUdE8hpNrxmqAyK6QzZdV91WaHp',
+          typeBlueId: 'GdxjH3XMfuhBXiciCVsrgQC7QGBiz2DTWMg4SUHSMJTi',
           attributesAdded: [],
         },
       ],
     },
-    '7CW8TfgwDk8nYxmthrZy3Ypyf7C2UGco8X9dxdfWmJdU': {
+    AwzjFS4L3p8CS3Duc2TcZNSvcwY6WewWPLRK4pNSpEge: {
       status: 'stable',
       name: 'cdm/base/math/MeasureBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7CW8TfgwDk8nYxmthrZy3Ypyf7C2UGco8X9dxdfWmJdU',
+          typeBlueId: 'AwzjFS4L3p8CS3Duc2TcZNSvcwY6WewWPLRK4pNSpEge',
           attributesAdded: [],
         },
       ],
     },
-    '9ZwUPPMUKxgNGs4D8BffqeBVQw834LMvoYNoYrHmKWcG': {
+    '9iUkF9gsuXLuwMBgKBgapjbetLX7PzRtP9ee3m9Awamv': {
       status: 'stable',
       name: 'cdm/base/math/MeasureSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9ZwUPPMUKxgNGs4D8BffqeBVQw834LMvoYNoYrHmKWcG',
+          typeBlueId: '9iUkF9gsuXLuwMBgKBgapjbetLX7PzRtP9ee3m9Awamv',
           attributesAdded: [],
         },
       ],
     },
-    aox7Y6mfMBx71DQngCd45QQNaCFw5yiNGb7U3XJD7r2: {
+    '3QpANvMr6891ZuV6c8Yze7qcCyqbKRhy9zqwHuMkw8FP': {
       status: 'stable',
       name: 'cdm/base/math/metafields/ReferenceWithMetaNonNegativeQuantitySchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'aox7Y6mfMBx71DQngCd45QQNaCFw5yiNGb7U3XJD7r2',
+          typeBlueId: '3QpANvMr6891ZuV6c8Yze7qcCyqbKRhy9zqwHuMkw8FP',
           attributesAdded: [],
         },
       ],
     },
-    HqUegcGfdAEK5srxpQGsXa5P43vCM9hADmhrJX7ii9fi: {
+    '9fGt41es96nHUb6cGZZBa26G29o9ywchRk5rjx5ri8gp': {
       status: 'stable',
       name: 'cdm/base/math/MoneyBound',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HqUegcGfdAEK5srxpQGsXa5P43vCM9hADmhrJX7ii9fi',
+          typeBlueId: '9fGt41es96nHUb6cGZZBa26G29o9ywchRk5rjx5ri8gp',
           attributesAdded: [],
         },
       ],
     },
-    DKKgVj4h6rghgaMZrdFzPJpGQfNdR8YrcHenPgFkvjQ1: {
+    '4NGaBXKBS6QDTeN9ZdQEgWHvYg1Kd3Dqr86Xs9BpVh7A': {
       status: 'stable',
       name: 'cdm/base/math/MoneyRange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DKKgVj4h6rghgaMZrdFzPJpGQfNdR8YrcHenPgFkvjQ1',
+          typeBlueId: '4NGaBXKBS6QDTeN9ZdQEgWHvYg1Kd3Dqr86Xs9BpVh7A',
           attributesAdded: [],
         },
       ],
     },
-    BbfKyr9mpdQ8cuNvCP78fS2o4Rc7gQZ1GdcbnyD6grzK: {
+    BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd: {
       status: 'stable',
       name: 'cdm/base/math/NonNegativeQuantity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BbfKyr9mpdQ8cuNvCP78fS2o4Rc7gQZ1GdcbnyD6grzK',
+          typeBlueId: 'BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd',
           attributesAdded: [],
         },
       ],
     },
-    '3aukDRc2UqShaPzsHHg8ry28kkvETMb95rfAeM65GH1Q': {
+    FgPwQQd53zyxFZAVWWuQLMY8QcPYNzeupku9hKxvYNob: {
       status: 'stable',
       name: 'cdm/base/math/NonNegativeQuantitySchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3aukDRc2UqShaPzsHHg8ry28kkvETMb95rfAeM65GH1Q',
+          typeBlueId: 'FgPwQQd53zyxFZAVWWuQLMY8QcPYNzeupku9hKxvYNob',
           attributesAdded: [],
         },
       ],
     },
-    '3tHmP4cU3vsQunFDGwaDERxB8ZVg7AVLYj29XjgxbaNd': {
+    '68KbNxL8Zk6injt7KEzchnGU1s7jEBrrdNTEayuTNdzA': {
       status: 'stable',
       name: 'cdm/base/math/NonNegativeStep',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3tHmP4cU3vsQunFDGwaDERxB8ZVg7AVLYj29XjgxbaNd',
+          typeBlueId: '68KbNxL8Zk6injt7KEzchnGU1s7jEBrrdNTEayuTNdzA',
           attributesAdded: [],
         },
       ],
     },
-    AT5JtWQz9LEbYiYD2utqkpNY5Kg4aUBGiVFJZ5Vuhj9S: {
+    CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq: {
       status: 'stable',
       name: 'cdm/base/math/NumberBound',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AT5JtWQz9LEbYiYD2utqkpNY5Kg4aUBGiVFJZ5Vuhj9S',
+          typeBlueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
           attributesAdded: [],
         },
       ],
     },
-    HeV5hUrnbKo6ccs1jqoxC5k85Qng7uvpVxMGApHXK7nN: {
+    '6YPBFzb6J5zZWUx1H7SSeJNLQWwAzYsVjRxgdkFZMVrn': {
       status: 'stable',
       name: 'cdm/base/math/NumberRange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HeV5hUrnbKo6ccs1jqoxC5k85Qng7uvpVxMGApHXK7nN',
+          typeBlueId: '6YPBFzb6J5zZWUx1H7SSeJNLQWwAzYsVjRxgdkFZMVrn',
           attributesAdded: [],
         },
       ],
     },
-    '63nKry6nGnCtyHC4B341Sun8eUejEvoq7JeK4A4AY7Er': {
+    '5AmXPpNccrpoL5H4BBSk9y2QfnizHY6JKgXqaHJTHgvy': {
       status: 'stable',
       name: 'cdm/base/math/QuantifierEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '63nKry6nGnCtyHC4B341Sun8eUejEvoq7JeK4A4AY7Er',
+          typeBlueId: '5AmXPpNccrpoL5H4BBSk9y2QfnizHY6JKgXqaHJTHgvy',
           attributesAdded: [],
         },
       ],
     },
-    '2uPPgn1ZsbovDfjRb1d8M9YmmgEnNo9UeG1VEz2wceY3': {
+    DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR: {
       status: 'stable',
       name: 'cdm/base/math/Quantity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2uPPgn1ZsbovDfjRb1d8M9YmmgEnNo9UeG1VEz2wceY3',
+          typeBlueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
           attributesAdded: [],
         },
       ],
     },
-    CVMkWffJ7quAiCT1yuTA9Yfe2iFwZdCBMRUkJAvQowDL: {
+    '3PEKcTxZjwjadkRHkdE5cLAN5jWQkiSt4SmaU1mwZbgZ': {
       status: 'stable',
       name: 'cdm/base/math/QuantityChangeDirectionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CVMkWffJ7quAiCT1yuTA9Yfe2iFwZdCBMRUkJAvQowDL',
+          typeBlueId: '3PEKcTxZjwjadkRHkdE5cLAN5jWQkiSt4SmaU1mwZbgZ',
           attributesAdded: [],
         },
       ],
     },
-    '6dk5GwNi2WVW1WtdQX75yiMvujuqv21d4kneiqK6QKzT': {
+    DDPEJCtbjCK4fCy5ZwmHdduie29MQdvdscPV38q6HwfM: {
       status: 'stable',
       name: 'cdm/base/math/QuantitySchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6dk5GwNi2WVW1WtdQX75yiMvujuqv21d4kneiqK6QKzT',
+          typeBlueId: 'DDPEJCtbjCK4fCy5ZwmHdduie29MQdvdscPV38q6HwfM',
           attributesAdded: [],
         },
       ],
     },
-    ArfQ58kSzN4QkRNkhhMYbmgBrEGPrnnSSA4sgC1Stoho: {
+    BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj: {
       status: 'stable',
       name: 'cdm/base/math/Rounding',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ArfQ58kSzN4QkRNkhhMYbmgBrEGPrnnSSA4sgC1Stoho',
+          typeBlueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
           attributesAdded: [],
         },
       ],
     },
-    GiWBNc37iwwMQdVLNNuNgT9Sz81v1zvwUB1G98aPvqa4: {
+    '53mxbAPQ46Wh3prwQvdFjRpUKwN5aa2yN3YLYMRZotEK': {
       status: 'stable',
       name: 'cdm/base/math/RoundingDirectionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GiWBNc37iwwMQdVLNNuNgT9Sz81v1zvwUB1G98aPvqa4',
+          typeBlueId: '53mxbAPQ46Wh3prwQvdFjRpUKwN5aa2yN3YLYMRZotEK',
           attributesAdded: [],
         },
       ],
     },
-    J8qh3m8ZL5ifRQhM8Vjoki2nGhcdXhkzvzX7MkCeP5pj: {
+    D9YY1v2J14dSGr9FSvTV3S7cVD8933KNkDtMjV3Len2A: {
       status: 'stable',
       name: 'cdm/base/math/RoundingModeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J8qh3m8ZL5ifRQhM8Vjoki2nGhcdXhkzvzX7MkCeP5pj',
+          typeBlueId: 'D9YY1v2J14dSGr9FSvTV3S7cVD8933KNkDtMjV3Len2A',
           attributesAdded: [],
         },
       ],
     },
-    '73UaBEmPjNZQT7mUS7Rdnxb9fLcnfsn84MCkvVALW3vw': {
+    FYo7TjN1ZyQhoK2ypBWjmiE2Q6gyQ13fpHnTWBZdEdi2: {
       status: 'stable',
       name: 'cdm/base/math/Schedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '73UaBEmPjNZQT7mUS7Rdnxb9fLcnfsn84MCkvVALW3vw',
+          typeBlueId: 'FYo7TjN1ZyQhoK2ypBWjmiE2Q6gyQ13fpHnTWBZdEdi2',
           attributesAdded: [],
         },
       ],
     },
-    '7UDCVn3tDYHeQBU818n6bFdccjBeDPrc6GddKWkT4WDu': {
+    DJ7mNRisRDzwiXVunMHLfDzvMqVHiQo2iHab3fCmxUL7: {
       status: 'stable',
       name: 'cdm/base/math/UnitType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7UDCVn3tDYHeQBU818n6bFdccjBeDPrc6GddKWkT4WDu',
+          typeBlueId: 'DJ7mNRisRDzwiXVunMHLfDzvMqVHiQo2iHab3fCmxUL7',
           attributesAdded: [],
         },
       ],
     },
-    aUWGFpq6gwDP6zaku6dz6bnhGWzX5a3YSgTLJzSqXiL: {
+    DePEyNHqpBtxPVrPYXSKuWt1ugb339xn92ZXP2uKKUgY: {
       status: 'stable',
       name: 'cdm/base/math/WeatherUnitEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'aUWGFpq6gwDP6zaku6dz6bnhGWzX5a3YSgTLJzSqXiL',
+          typeBlueId: 'DePEyNHqpBtxPVrPYXSKuWt1ugb339xn92ZXP2uKKUgY',
           attributesAdded: [],
         },
       ],
     },
-    B3bsNNAr8QJpJA8r84kgZrHLE5PZREBGxXWYJdtaDRJ7: {
+    '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Asset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B3bsNNAr8QJpJA8r84kgZrHLE5PZREBGxXWYJdtaDRJ7',
+          typeBlueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
           attributesAdded: [],
         },
       ],
     },
-    '6pVLqA5jCBFn1xFmznDn8hRDyzaHRvRQ5XjxvAEEXKy1': {
+    JCEmAFppnRAGm6rWtFQLD8vdHx8yV6aob51V3iP4UKFa: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/AssetBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6pVLqA5jCBFn1xFmznDn8hRDyzaHRvRQ5XjxvAEEXKy1',
+          typeBlueId: 'JCEmAFppnRAGm6rWtFQLD8vdHx8yV6aob51V3iP4UKFa',
           attributesAdded: [],
         },
       ],
     },
-    '4gwWtTHkdAAdqikxU182Yp5LKQnusRffi5xWuWCEKVxK': {
+    '7TQnexn6ZGhptp1EP3RxiJM3434J7VHgDn7cvqXRvfvh': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/AssetClassEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4gwWtTHkdAAdqikxU182Yp5LKQnusRffi5xWuWCEKVxK',
+          typeBlueId: '7TQnexn6ZGhptp1EP3RxiJM3434J7VHgDn7cvqXRvfvh',
           attributesAdded: [],
         },
       ],
     },
-    EFYo6JAQMRJEAg6yzzafESRVFXGTiNSjmy9ehctCH3Y4: {
+    B4oXDUH9jELDatvZSw3oWXtJefJ4ixYawEjxBMqSerth: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/AssetIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EFYo6JAQMRJEAg6yzzafESRVFXGTiNSjmy9ehctCH3Y4',
+          typeBlueId: 'B4oXDUH9jELDatvZSw3oWXtJefJ4ixYawEjxBMqSerth',
           attributesAdded: [],
         },
       ],
     },
-    '3TWoeGYJX3t5xD73ccA1wDeoWbGqpwVhJ4qVR2p4v3Gs': {
+    '5mbfUkBFTEYhKyTf1DNksGFTiyJzZooRyUog7hBoYzHC': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/AssetIdTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3TWoeGYJX3t5xD73ccA1wDeoWbGqpwVhJ4qVR2p4v3Gs',
+          typeBlueId: '5mbfUkBFTEYhKyTf1DNksGFTiyJzZooRyUog7hBoYzHC',
           attributesAdded: [],
         },
       ],
     },
-    DBnAMusnqCBb9qkA5usvmPTb27HNy5VzKi8JoTrgPoRV: {
+    AjHv57wVryq4YK8oodLNAT95JAYhuGRRiKk7hhX93LLi: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/AssetType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DBnAMusnqCBb9qkA5usvmPTb27HNy5VzKi8JoTrgPoRV',
+          typeBlueId: 'AjHv57wVryq4YK8oodLNAT95JAYhuGRRiKk7hhX93LLi',
           attributesAdded: [],
         },
       ],
     },
-    '8pEtwrEnUXP8pCx6Madi5B3qyA2oDyHVfxyVjkX8qhL2': {
+    '7FL7vGvhvZLCWZZPR1Eyoc1iJ69A3jcSF95meBVxT4Qe': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/AssetTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8pEtwrEnUXP8pCx6Madi5B3qyA2oDyHVfxyVjkX8qhL2',
+          typeBlueId: '7FL7vGvhvZLCWZZPR1Eyoc1iJ69A3jcSF95meBVxT4Qe',
           attributesAdded: [],
         },
       ],
     },
-    DHpHHdiJGEagTPm7Y9Vz6cdsbKwjXg8HjJkoUjpRra2Y: {
+    G6NQsm1Wur914oo6eCsazG77Y4gjnkMAZw1cSEieEBTV: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Cash',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DHpHHdiJGEagTPm7Y9Vz6cdsbKwjXg8HjJkoUjpRra2Y',
+          typeBlueId: 'G6NQsm1Wur914oo6eCsazG77Y4gjnkMAZw1cSEieEBTV',
           attributesAdded: [],
         },
       ],
     },
-    DiuzkpaQqLNDsehNb5xLTrFkVqpEqS9ZGtqTJ2fBzhvm: {
+    GL9FygufGouoWPdbzaZ4SKyuRahWMAUxZ5q3bFMSWnRj: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CollateralIssuerType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DiuzkpaQqLNDsehNb5xLTrFkVqpEqS9ZGtqTJ2fBzhvm',
+          typeBlueId: 'GL9FygufGouoWPdbzaZ4SKyuRahWMAUxZ5q3bFMSWnRj',
           attributesAdded: [],
         },
       ],
     },
-    H4qZFJo3XTXtRYCdhTukmA5mA72cU1icWF7LyydKrfPT: {
+    '6FkJxLK4KiPuQ7LHqQDvpGSeaWMVr5dw4g2K9mBrnybJ': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CollateralTaxonomy',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H4qZFJo3XTXtRYCdhTukmA5mA72cU1icWF7LyydKrfPT',
+          typeBlueId: '6FkJxLK4KiPuQ7LHqQDvpGSeaWMVr5dw4g2K9mBrnybJ',
           attributesAdded: [],
         },
       ],
     },
-    '3HrgPHYwkPSXNE4DHc2FFPAowGK3N5VQRnhAg2oYufpe': {
+    '46LCCSVXKexPjXtAyPSyNEvZuzGR66uVP8ccRPSrwJhs': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CollateralTaxonomyValue',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3HrgPHYwkPSXNE4DHc2FFPAowGK3N5VQRnhAg2oYufpe',
+          typeBlueId: '46LCCSVXKexPjXtAyPSyNEvZuzGR66uVP8ccRPSrwJhs',
           attributesAdded: [],
         },
       ],
     },
-    H5njvRER8CjtGtwUC4FooQuqnXpt8hpw2oZAAAuCW8Dn: {
+    VrWJzqq3ogdc8MhQ87P7nugRkiYR7sK4XS7wQzTvce3: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Commodity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H5njvRER8CjtGtwUC4FooQuqnXpt8hpw2oZAAAuCW8Dn',
+          typeBlueId: 'VrWJzqq3ogdc8MhQ87P7nugRkiYR7sK4XS7wQzTvce3',
           attributesAdded: [],
         },
       ],
     },
-    GpLEdBS7Wo3gH26kSqsDLo7RudnuHCXQQear34hMXeV7: {
+    '2U5utSJ8k2ZUUAhQ55aoZL8AB4QWHroS2oQQx7uBhvdk': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CommodityInformationPublisherEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GpLEdBS7Wo3gH26kSqsDLo7RudnuHCXQQear34hMXeV7',
+          typeBlueId: '2U5utSJ8k2ZUUAhQ55aoZL8AB4QWHroS2oQQx7uBhvdk',
           attributesAdded: [],
         },
       ],
     },
-    Gos89VTGy6DvLCuG5yT2kFBYMxBpaCGwUTNsNWRo54yH: {
+    '42E8LjfyrvfiY3rzFn9ktgxtEHdG6eXmK5CyYGHUkotU': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CommodityProductDefinition',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Gos89VTGy6DvLCuG5yT2kFBYMxBpaCGwUTNsNWRo54yH',
+          typeBlueId: '42E8LjfyrvfiY3rzFn9ktgxtEHdG6eXmK5CyYGHUkotU',
           attributesAdded: [],
         },
       ],
     },
-    '2LPZuZ9LPiKM2aCEuPCrJLd9Ui3gKomr2qL3fVuqDuMP': {
+    '3Szwd2qmGpb984rriz5Yia1VSkVLPrvXGSTv9qhsFyQf': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CommodityReferenceFramework',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2LPZuZ9LPiKM2aCEuPCrJLd9Ui3gKomr2qL3fVuqDuMP',
+          typeBlueId: '3Szwd2qmGpb984rriz5Yia1VSkVLPrvXGSTv9qhsFyQf',
           attributesAdded: [],
         },
       ],
     },
-    '4vgWSAqEkzGf7yiQ9rsm3s5Nk6Ncj4iT16wxhQXAwe8y': {
+    C86NQuRAaVy32AX779AyrsbMw7Q2wQQu35dN3MbdAtEL: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CreditRiskEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4vgWSAqEkzGf7yiQ9rsm3s5Nk6Ncj4iT16wxhQXAwe8y',
+          typeBlueId: 'C86NQuRAaVy32AX779AyrsbMw7Q2wQQu35dN3MbdAtEL',
           attributesAdded: [],
         },
       ],
     },
-    '8BnAu36c4Gt6aVwBhawFckQGNkLaZsPodbBkQd7GpV8V': {
+    Gb5ryH6JKgjNLySafKo7tXkb9PRgaQkWHcSibFZ96AbP: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/CurrencyCodeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8BnAu36c4Gt6aVwBhawFckQGNkLaZsPodbBkQd7GpV8V',
+          typeBlueId: 'Gb5ryH6JKgjNLySafKo7tXkb9PRgaQkWHcSibFZ96AbP',
           attributesAdded: [],
         },
       ],
     },
-    Gc9TLaZnGNEqejv5pHhE4uD3fJKegqfQCT1Wo76Ca5wx: {
+    ASAPTC3f63jq934hhnLQ4c9BNLF9RtGVn3iLdv8L37LU: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DebtClassEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Gc9TLaZnGNEqejv5pHhE4uD3fJKegqfQCT1Wo76Ca5wx',
+          typeBlueId: 'ASAPTC3f63jq934hhnLQ4c9BNLF9RtGVn3iLdv8L37LU',
           attributesAdded: [],
         },
       ],
     },
-    '3FVbfvSZd1U3oZCBpPH9cRkbM4Ef9NXGE6jVV4jLCedz': {
+    '7Lf9XXZdBaTwDFPQsXLZfcyiVkKhfJ2GJcKZFMkQ7mNX': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DebtEconomics',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3FVbfvSZd1U3oZCBpPH9cRkbM4Ef9NXGE6jVV4jLCedz',
+          typeBlueId: '7Lf9XXZdBaTwDFPQsXLZfcyiVkKhfJ2GJcKZFMkQ7mNX',
           attributesAdded: [],
         },
       ],
     },
-    '8XrxPP2rP3zwDTjRoHPp75ydfxNSwRdzq7SDXWdu6wkm': {
+    CKeQ92fWPg4Y5pBNbpKczdPnPQQ8erD4GHJk9jUQJ2bD: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DebtInterestEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8XrxPP2rP3zwDTjRoHPp75ydfxNSwRdzq7SDXWdu6wkm',
+          typeBlueId: 'CKeQ92fWPg4Y5pBNbpKczdPnPQQ8erD4GHJk9jUQJ2bD',
           attributesAdded: [],
         },
       ],
     },
-    '7amP8mEsUdLRShji4Z8rjnewniyvxfvsXM3DW9cmZ4ei': {
+    '6BJ4CubLVSgwchKqdWjX3bW3sPCa6dktMHc8CJzQM6HT': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DebtPrincipalEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7amP8mEsUdLRShji4Z8rjnewniyvxfvsXM3DW9cmZ4ei',
+          typeBlueId: '6BJ4CubLVSgwchKqdWjX3bW3sPCa6dktMHc8CJzQM6HT',
           attributesAdded: [],
         },
       ],
     },
-    E6Tfme4krXS9rATBWNUAkF3zodjRvrY68ugTnUpjH7da: {
+    '2T9bE3hBaZbmmKhFKA3Vw77BMH3N5vRZDgjh4BBTWvuS': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DebtSeniorityEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E6Tfme4krXS9rATBWNUAkF3zodjRvrY68ugTnUpjH7da',
+          typeBlueId: '2T9bE3hBaZbmmKhFKA3Vw77BMH3N5vRZDgjh4BBTWvuS',
           attributesAdded: [],
         },
       ],
     },
-    '8zRMsseB4URcb7VtWt5Lk3W3aftmSFekTiuo4Ab3orEP': {
+    '9vqkkCNnmKd3FB5tMAKKYenwq2i3mYyHmgYdPKKqkZ8U': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DebtType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8zRMsseB4URcb7VtWt5Lk3W3aftmSFekTiuo4Ab3orEP',
+          typeBlueId: '9vqkkCNnmKd3FB5tMAKKYenwq2i3mYyHmgYdPKKqkZ8U',
           attributesAdded: [],
         },
       ],
     },
-    '3DArzNi9wjXXGVfHSEMaFHEhe4PbD2PeV6vtuVM4PpMm': {
+    '4ZskTzTzcVURodZiz2Xe1cU3ryAzGu9uwsf7Nc5DU4tA': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DeliveryDateParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3DArzNi9wjXXGVfHSEMaFHEhe4PbD2PeV6vtuVM4PpMm',
+          typeBlueId: '4ZskTzTzcVURodZiz2Xe1cU3ryAzGu9uwsf7Nc5DU4tA',
           attributesAdded: [],
         },
       ],
     },
-    '3gNMcA1zQ2qk1wNF4NwznJBFvez8ZP8niUMhZ97yvAEF': {
+    BdSsHq2ECAAYgerYX9wpYFfPWLUAANHLG2TAEt8BiCNC: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DeliveryNearbyTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3gNMcA1zQ2qk1wNF4NwznJBFvez8ZP8niUMhZ97yvAEF',
+          typeBlueId: 'BdSsHq2ECAAYgerYX9wpYFfPWLUAANHLG2TAEt8BiCNC',
           attributesAdded: [],
         },
       ],
     },
-    GekwBuYCVfkr4sCyWTFmw8QtYrXx7zDE8G5YwHkaRVL: {
+    '7rybfxmxNUFUfZGaK3oX9W3kqCWh8zNvXJgUAjrfayPZ': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/DigitalAsset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GekwBuYCVfkr4sCyWTFmw8QtYrXx7zDE8G5YwHkaRVL',
+          typeBlueId: '7rybfxmxNUFUfZGaK3oX9W3kqCWh8zNvXJgUAjrfayPZ',
           attributesAdded: [],
         },
       ],
     },
-    '6CG21iTqgkhkNe8QKj5A9BYagGYdz7YVNXQ1WK7UZtZG': {
+    DZstXEXxF1iHJunLqdgbypWWK6H28QwVCtxJRbMUDpza: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/EquityTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6CG21iTqgkhkNe8QKj5A9BYagGYdz7YVNXQ1WK7UZtZG',
+          typeBlueId: 'DZstXEXxF1iHJunLqdgbypWWK6H28QwVCtxJRbMUDpza',
           attributesAdded: [],
         },
       ],
     },
-    '3zkV5sdhebtWXg2afUDkU9JwMtUwvnFXdnvGJS4MwSXr': {
+    JD6nBEcv7VVBDthKMnQ7bjvFeFys3igpBt4jJgWKqU6q: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/EU_EMIR_EligibleCollateralEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3zkV5sdhebtWXg2afUDkU9JwMtUwvnFXdnvGJS4MwSXr',
+          typeBlueId: 'JD6nBEcv7VVBDthKMnQ7bjvFeFys3igpBt4jJgWKqU6q',
           attributesAdded: [],
         },
       ],
     },
-    '4jGK1XJ5V4ZC8QhCScrxssdJY2ocrqSf5He7TPL6E6sE': {
+    DvnafttCVMzGEcQC34ARZkLMZfgEVv5CcjPrtA2b5f3L: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/FieldWithMetaAssetClassEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4jGK1XJ5V4ZC8QhCScrxssdJY2ocrqSf5He7TPL6E6sE',
+          typeBlueId: 'DvnafttCVMzGEcQC34ARZkLMZfgEVv5CcjPrtA2b5f3L',
           attributesAdded: [],
         },
       ],
     },
-    HCjRKFns6xhAbeXFMGXkGdJv7QjQ42YLS3H2KTtjprU3: {
+    As4LSyzdsEDrcBhhNCQ78eXDcY41rjgBoZJZenTJ2J7F: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/FundProductTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HCjRKFns6xhAbeXFMGXkGdJv7QjQ42YLS3H2KTtjprU3',
+          typeBlueId: 'As4LSyzdsEDrcBhhNCQ78eXDcY41rjgBoZJZenTJ2J7F',
           attributesAdded: [],
         },
       ],
     },
-    J1Lgg2ajU8Qy4mgpL5ELeryh9L63Mk2B9paZPCz5bsp8: {
+    '6pomFByRysSRpLwQEWHeqiGU8sc3DrBMjCiuHEuQ1iPB': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Instrument',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J1Lgg2ajU8Qy4mgpL5ELeryh9L63Mk2B9paZPCz5bsp8',
+          typeBlueId: '6pomFByRysSRpLwQEWHeqiGU8sc3DrBMjCiuHEuQ1iPB',
           attributesAdded: [],
         },
       ],
     },
-    GACsbchJtx8HFpVjdmgs6rPWwZiNXGuFqV5WWHWzGumH: {
+    CfZVt2o3BMybSUEVcmhUtaaj3dFxbw8HDBEaFu9yyrTm: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/InstrumentBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GACsbchJtx8HFpVjdmgs6rPWwZiNXGuFqV5WWHWzGumH',
+          typeBlueId: 'CfZVt2o3BMybSUEVcmhUtaaj3dFxbw8HDBEaFu9yyrTm',
           attributesAdded: [],
         },
       ],
     },
-    '62KT7CCANTnUvju5nRQRPnwuRqsRPapXwdQJjLqhyo8C': {
+    EmkPx4XLJeffJqq9EbwZicZCxqAhVBpDz1vu6eP1oTYj: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/InstrumentTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '62KT7CCANTnUvju5nRQRPnwuRqsRPapXwdQJjLqhyo8C',
+          typeBlueId: 'EmkPx4XLJeffJqq9EbwZicZCxqAhVBpDz1vu6eP1oTYj',
           attributesAdded: [],
         },
       ],
     },
-    DAxrfnnD9436ZRpQ3FGCM1i7Xq8brfqBB5cYxBuSuyag: {
+    '9ppB13T87oA9HL9NWZr6pkLmcjb1HmUAgzVGS7yDyttw': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/ISOCountryCodeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DAxrfnnD9436ZRpQ3FGCM1i7Xq8brfqBB5cYxBuSuyag',
+          typeBlueId: '9ppB13T87oA9HL9NWZr6pkLmcjb1HmUAgzVGS7yDyttw',
           attributesAdded: [],
         },
       ],
     },
-    ByfckK7AWY3YWapMTruTAWXvgAmfacrawZvg5LmjhND3: {
+    Gu97NnLopxnvJeTi1J3ygTVWYehmh6xiwRabP93c6Y8r: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/ISOCurrencyCodeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ByfckK7AWY3YWapMTruTAWXvgAmfacrawZvg5LmjhND3',
+          typeBlueId: 'Gu97NnLopxnvJeTi1J3ygTVWYehmh6xiwRabP93c6Y8r',
           attributesAdded: [],
         },
       ],
     },
-    GsGAdnX5acwQtmYsn3WQTMmsvfnjFYsndL1pHPqocW1s: {
+    '5Vqz5iZWg2FYRz1e6qJVm5q3vRS2ML19JPjvEpZ4bYtu': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/IssuerTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GsGAdnX5acwQtmYsn3WQTMmsvfnjFYsndL1pHPqocW1s',
+          typeBlueId: '5Vqz5iZWg2FYRz1e6qJVm5q3vRS2ML19JPjvEpZ4bYtu',
           attributesAdded: [],
         },
       ],
     },
-    '6QXysvk5wKooQQckLijtFXwzL8JzYBViFzRCkYPNJnSX': {
+    BRguGmoK69E2QqgFfbDWc1f6YVqxFzv3auepNc48tdFR: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/ListedDerivative',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6QXysvk5wKooQQckLijtFXwzL8JzYBViFzRCkYPNJnSX',
+          typeBlueId: 'BRguGmoK69E2QqgFfbDWc1f6YVqxFzv3auepNc48tdFR',
           attributesAdded: [],
         },
       ],
     },
-    DVipsn2Vc1vxevvyncjA1XjeWrMHt7pCWmHgf444oA6A: {
+    ByX5xzV8skV8bxwB7jTPa5FXEzKdm3SxrkmkC22W4nz5: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Loan',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DVipsn2Vc1vxevvyncjA1XjeWrMHt7pCWmHgf444oA6A',
+          typeBlueId: 'ByX5xzV8skV8bxwB7jTPa5FXEzKdm3SxrkmkC22W4nz5',
           attributesAdded: [],
         },
       ],
     },
-    '4FEgZ2S5mgNGfwpTRngN5cA9QySYVkoZyRvstY7sKH9x': {
+    '4M9RAThHXP4VWteUq2nq2RyirfHaGCinAVabk8gf2AYC': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/MaturityTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4FEgZ2S5mgNGfwpTRngN5cA9QySYVkoZyRvstY7sKH9x',
+          typeBlueId: '4M9RAThHXP4VWteUq2nq2RyirfHaGCinAVabk8gf2AYC',
           attributesAdded: [],
         },
       ],
     },
-    '3AioqoWbYGgXHexocZKRw4s5DTNfC3QMNGuVvTzLmk7n': {
+    BC6YqUyfhqQhwNKk7o8C8MyYcmHWnGk8RJ3Q5Fijn3TW: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/MoneyMarketTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3AioqoWbYGgXHexocZKRw4s5DTNfC3QMNGuVvTzLmk7n',
+          typeBlueId: 'BC6YqUyfhqQhwNKk7o8C8MyYcmHWnGk8RJ3Q5Fijn3TW',
           attributesAdded: [],
         },
       ],
     },
-    '7iVrwmxYPhEys3U1gW5XuLq4fFt7XbEdv4H1TSLxucq6': {
+    HyV2GLWDgCxkJJ2KRpuvtTdGurQejk4MXEKSi2vu8aKN: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/PriceSource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7iVrwmxYPhEys3U1gW5XuLq4fFt7XbEdv4H1TSLxucq6',
+          typeBlueId: 'HyV2GLWDgCxkJJ2KRpuvtTdGurQejk4MXEKSi2vu8aKN',
           attributesAdded: [],
         },
       ],
     },
-    K1T3rxTw4qgMTWWXRK65HvnRu9dEGYUj1dnWgD8wJyS: {
+    GFVh22HvpZREhKsn8HDuBiUrwRScVzwx6ZnNNmZrisx9: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/ProductIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'K1T3rxTw4qgMTWWXRK65HvnRu9dEGYUj1dnWgD8wJyS',
+          typeBlueId: 'GFVh22HvpZREhKsn8HDuBiUrwRScVzwx6ZnNNmZrisx9',
           attributesAdded: [],
         },
       ],
     },
-    '8K6WNDwrEvM8ZWoTxdgirRUPiBgvFUgxXyuKj4jCxmKm': {
+    Eo87ZezRqLBDT3fRPNRexD992udkMVK8vj65DfWNoF4b: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/ProductIdTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8K6WNDwrEvM8ZWoTxdgirRUPiBgvFUgxXyuKj4jCxmKm',
+          typeBlueId: 'Eo87ZezRqLBDT3fRPNRexD992udkMVK8vj65DfWNoF4b',
           attributesAdded: [],
         },
       ],
     },
-    '2VvT5a944fY15VZhySKrqEWBUHdaz3WdLPPyU9TEVSQC': {
+    '4Yp9gtVpX1NNhVLvRCpFGS3MvbUnmDXUmuAKSDYaTNWN': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/ProductTaxonomy',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2VvT5a944fY15VZhySKrqEWBUHdaz3WdLPPyU9TEVSQC',
+          typeBlueId: '4Yp9gtVpX1NNhVLvRCpFGS3MvbUnmDXUmuAKSDYaTNWN',
           attributesAdded: [],
         },
       ],
     },
-    DyW8PoZ3SG5vrDUuHR4Yc12WC9QiAkuptxKhotnQqSSC: {
+    '4fBHTQQgpt7zfCdmZdM8xKEqaXQv24aeBbn7p8bid744': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/PutCallEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DyW8PoZ3SG5vrDUuHR4Yc12WC9QiAkuptxKhotnQqSSC',
+          typeBlueId: '4fBHTQQgpt7zfCdmZdM8xKEqaXQv24aeBbn7p8bid744',
           attributesAdded: [],
         },
       ],
     },
-    '9SwjQNQUerVoGrpV9dTTUrUcN92HvFBECzoBUN3J9pjJ': {
+    GKXmRwDfJrtMQq78SdC8CuCaCqc3Fq99jNHShLFH3CFi: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/QuasiGovernmentIssuerType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9SwjQNQUerVoGrpV9dTTUrUcN92HvFBECzoBUN3J9pjJ',
+          typeBlueId: 'GKXmRwDfJrtMQq78SdC8CuCaCqc3Fq99jNHShLFH3CFi',
           attributesAdded: [],
         },
       ],
     },
-    EfNf2MwwCBqn8fqvmXa6jpnxUBnNyuLoB2day7wtu4mk: {
+    HLEkFY88ouS3waVvxxHJE5z23k1PYJGizdrHbYYg1rGp: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/RegionalGovernmentIssuerType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EfNf2MwwCBqn8fqvmXa6jpnxUBnNyuLoB2day7wtu4mk',
+          typeBlueId: 'HLEkFY88ouS3waVvxxHJE5z23k1PYJGizdrHbYYg1rGp',
           attributesAdded: [],
         },
       ],
     },
-    AKAF6F23pDRPx5M9gsqtAKXBUf46Vnz1STHsk38YEAWm: {
+    '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Security',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AKAF6F23pDRPx5M9gsqtAKXBUf46Vnz1STHsk38YEAWm',
+          typeBlueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
           attributesAdded: [],
         },
       ],
     },
-    FFRnQiL3bCrcgQFbQM9Gf4yzfqkiSnx9SMqfCAdxckut: {
+    '5qsyiVpwMMJ634uApJQwMnZmrry7x6MHoaMJeGxdb5Bq': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/SpecialPurposeVehicleIssuerType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FFRnQiL3bCrcgQFbQM9Gf4yzfqkiSnx9SMqfCAdxckut',
+          typeBlueId: '5qsyiVpwMMJ634uApJQwMnZmrry7x6MHoaMJeGxdb5Bq',
           attributesAdded: [],
         },
       ],
     },
-    CMj4N8cXj9KS7aPG8P3F4vssfTBZeLnDFZmyyy71gWdu: {
+    DntsTXHGwUWVz7qTBeVzcb1XUkrUGTNzhHREc9jpBLF7: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/SupraNationalIssuerTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CMj4N8cXj9KS7aPG8P3F4vssfTBZeLnDFZmyyy71gWdu',
+          typeBlueId: 'DntsTXHGwUWVz7qTBeVzcb1XUkrUGTNzhHREc9jpBLF7',
           attributesAdded: [],
         },
       ],
     },
-    '9iqdbfahQtNXNenCSE8hAFbq298MVvdACauLx1FZWRQt': {
+    '9MYk7MRYjbMWPHe7v3WexZqePowTL8eRrW8TmNNEtzQJ': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/Taxonomy',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9iqdbfahQtNXNenCSE8hAFbq298MVvdACauLx1FZWRQt',
+          typeBlueId: '9MYk7MRYjbMWPHe7v3WexZqePowTL8eRrW8TmNNEtzQJ',
           attributesAdded: [],
         },
       ],
     },
-    ApvPCwWxoPQoZrrkARTha8wjMC3hEvoFrjkU36rfoyeh: {
+    '4yg3H6YAUTCit6hxRnAEyVQGYTMFm4nGL1gMyQpvzmZ5': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/TaxonomyClassification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ApvPCwWxoPQoZrrkARTha8wjMC3hEvoFrjkU36rfoyeh',
+          typeBlueId: '4yg3H6YAUTCit6hxRnAEyVQGYTMFm4nGL1gMyQpvzmZ5',
           attributesAdded: [],
         },
       ],
     },
-    JCJ9MNesX9TGLQYptUpXZV8MhajfmB9tBsCwmJAg1q3K: {
+    CUzMUxNcMqZb1GuDaw2n29RnNcaPce9HrpKAyz8gT2m8: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/TaxonomySourceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JCJ9MNesX9TGLQYptUpXZV8MhajfmB9tBsCwmJAg1q3K',
+          typeBlueId: 'CUzMUxNcMqZb1GuDaw2n29RnNcaPce9HrpKAyz8gT2m8',
           attributesAdded: [],
         },
       ],
     },
-    '2JHuzDshr7hYFEXcgPfEiDuNuEyzHXv79pWqZqYa5FCQ': {
+    EnoVKrrGFyBuE513RQdZXz4EPFgLMoR13a5djKi32gB9: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/TaxonomyValue',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2JHuzDshr7hYFEXcgPfEiDuNuEyzHXv79pWqZqYa5FCQ',
+          typeBlueId: 'EnoVKrrGFyBuE513RQdZXz4EPFgLMoR13a5djKi32gB9',
           attributesAdded: [],
         },
       ],
     },
-    '8MxHUdKpCt28QyKKNvn72MyyHZ1rJdZmCz9jpzbzXfR8': {
+    AzXN6ztsTLkCn7bM8QH8xfhjrtrr3MVYuhKiVM2y7JUe: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/UK_EMIR_EligibleCollateralEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8MxHUdKpCt28QyKKNvn72MyyHZ1rJdZmCz9jpzbzXfR8',
+          typeBlueId: 'AzXN6ztsTLkCn7bM8QH8xfhjrtrr3MVYuhKiVM2y7JUe',
           attributesAdded: [],
         },
       ],
     },
-    '7rst54neQ5PNXRSMpnStomSJWqxhAZTpudLpEvW79pY9': {
+    '4uCFVBTnzc9vzmmzLSyG6TPxegT1i7fGFyiwSkSAhNNW': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/common/US_CFTC_PR_EligibleCollateralEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7rst54neQ5PNXRSMpnStomSJWqxhAZTpudLpEvW79pY9',
+          typeBlueId: '4uCFVBTnzc9vzmmzLSyG6TPxegT1i7fGFyiwSkSAhNNW',
           attributesAdded: [],
         },
       ],
     },
-    HY6fzoqXYcLxugpqJYdA99VPgHSFJ1NTXKfDtKLSj8fk: {
+    GMpNRbtpXncDuLhyddMFw2W43rpm8H6AVYkoczBix3tG: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/credit/NotDomesticCurrency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HY6fzoqXYcLxugpqJYdA99VPgHSFJ1NTXKfDtKLSj8fk',
+          typeBlueId: 'GMpNRbtpXncDuLhyddMFw2W43rpm8H6AVYkoczBix3tG',
           attributesAdded: [],
         },
       ],
     },
-    DAXvwiRxSepN3dRd7rdTfVGH5bP2Dpu4LcczjjaFEy3s: {
+    '3kqHna3Z2FVYvPx85aDFr4WH2NPEmuQhrh8XXzbkQosH': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/credit/ObligationCategoryEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DAXvwiRxSepN3dRd7rdTfVGH5bP2Dpu4LcczjjaFEy3s',
+          typeBlueId: '3kqHna3Z2FVYvPx85aDFr4WH2NPEmuQhrh8XXzbkQosH',
           attributesAdded: [],
         },
       ],
     },
-    '81CgZwLx8Rj95fxGdWZWogMwu49Nt63P7S4jVVGzbbNd': {
+    '8hht48mGH2ZK8VFHr71MXDR5Mrge37JSMeCJn1DTKdxt': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/credit/Obligations',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '81CgZwLx8Rj95fxGdWZWogMwu49Nt63P7S4jVVGzbbNd',
+          typeBlueId: '8hht48mGH2ZK8VFHr71MXDR5Mrge37JSMeCJn1DTKdxt',
           attributesAdded: [],
         },
       ],
     },
-    F4jfVFVy1pLV3NpgzaiQY7F7vgzXzekentUSL7cHykj8: {
+    GgYvaTiQsh1xn3XTCrAaxQ7jizAVYyU7EnLPR5eZdVUp: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/credit/SpecifiedCurrency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F4jfVFVy1pLV3NpgzaiQY7F7vgzXzekentUSL7cHykj8',
+          typeBlueId: 'GgYvaTiQsh1xn3XTCrAaxQ7jizAVYyU7EnLPR5eZdVUp',
           attributesAdded: [],
         },
       ],
     },
-    D1NQDMjhdP9hVZMeu9eipm9vH3aGJP3Zn1Ea8snMVxam: {
+    '2qVsAJiDNKtcYeoPmttQzFLH44MsczpvMvQ9ZQvwUW6Z': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/rates/FieldWithMetaFloatingRateIndexEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'D1NQDMjhdP9hVZMeu9eipm9vH3aGJP3Zn1Ea8snMVxam',
+          typeBlueId: '2qVsAJiDNKtcYeoPmttQzFLH44MsczpvMvQ9ZQvwUW6Z',
           attributesAdded: [],
         },
       ],
     },
-    '2Azf3HadXRbAMWVQbVu4rbKPBmEghSoifFhxZC2Pc8hM': {
+    '6C5cWr4to9ATnkFbP7DRXtMUZfGVzou2g22vC7vYgdLG': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/rates/FieldWithMetaInflationRateIndexEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2Azf3HadXRbAMWVQbVu4rbKPBmEghSoifFhxZC2Pc8hM',
+          typeBlueId: '6C5cWr4to9ATnkFbP7DRXtMUZfGVzou2g22vC7vYgdLG',
           attributesAdded: [],
         },
       ],
     },
-    AygoLHtsrgUkWFxjVtQsDYzEn5EbXUEt8avHzLQsUUVZ: {
+    Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF: {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/rates/FloatingRateIndexEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AygoLHtsrgUkWFxjVtQsDYzEn5EbXUEt8avHzLQsUUVZ',
+          typeBlueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
           attributesAdded: [],
         },
       ],
     },
-    '91hZREKUiWsHQdnBssNUwUcNjEcnqiuhNdzVEmFNhhmd': {
+    '6DRWaqGdw8CTwRo3fMjKm3geyesH3QBat4P1SeqvgNLc': {
       status: 'stable',
       name: 'cdm/base/staticdata/asset/rates/InflationRateIndexEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '91hZREKUiWsHQdnBssNUwUcNjEcnqiuhNdzVEmFNhhmd',
+          typeBlueId: '6DRWaqGdw8CTwRo3fMjKm3geyesH3QBat4P1SeqvgNLc',
           attributesAdded: [],
         },
       ],
     },
-    CNZP6GsTZi731ekV62fUVAXc2yL9DVbiHje2LSX8DmWf: {
+    HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU: {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/AssignedIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CNZP6GsTZi731ekV62fUVAXc2yL9DVbiHje2LSX8DmWf',
+          typeBlueId: 'HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU',
           attributesAdded: [],
         },
       ],
     },
-    uri72eSXHNadMdx367eVwLSSA5rqrou8jwm3NGJ1u3K: {
+    B6yDYwTa5XyjC3ke1cVr21qBLMFJWDovsExQd3Y68pHj: {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/CommodityLocationIdentifierTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'uri72eSXHNadMdx367eVwLSSA5rqrou8jwm3NGJ1u3K',
+          typeBlueId: 'B6yDYwTa5XyjC3ke1cVr21qBLMFJWDovsExQd3Y68pHj',
           attributesAdded: [],
         },
       ],
     },
-    '3eTtCxBt24us9TCBr18msWJzdN7HeDk1d6J1ycAcQ5YJ': {
+    '4PPUed4wa5yh6Po87HFZQNZmaedjsuVfFRs2XCHbzciY': {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/FieldWithMetaIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3eTtCxBt24us9TCBr18msWJzdN7HeDk1d6J1ycAcQ5YJ',
+          typeBlueId: '4PPUed4wa5yh6Po87HFZQNZmaedjsuVfFRs2XCHbzciY',
           attributesAdded: [],
         },
       ],
     },
-    '8MnuJdVvYHPDMwmMys25jzVcinAGzNijc9wRSzKdQaS3': {
+    Dq7xVZaLz1ofmKsUodtSSbe6YGxaRdCtP5HM1pKU8RHF: {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/IdentifiedList',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8MnuJdVvYHPDMwmMys25jzVcinAGzNijc9wRSzKdQaS3',
+          typeBlueId: 'Dq7xVZaLz1ofmKsUodtSSbe6YGxaRdCtP5HM1pKU8RHF',
           attributesAdded: [],
         },
       ],
     },
-    '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ': {
+    '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv': {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/Identifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ',
+          typeBlueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
           attributesAdded: [],
         },
       ],
     },
-    '6U2c4eAmwS4qmrPVZRhZQJXRs75a2JGrkQBHr3xRuRXe': {
+    Cc6abtfBMYGmbDzKaDhnZfAxERd36qMiuHyDbE1wWuuQ: {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/LocationIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6U2c4eAmwS4qmrPVZRhZQJXRs75a2JGrkQBHr3xRuRXe',
+          typeBlueId: 'Cc6abtfBMYGmbDzKaDhnZfAxERd36qMiuHyDbE1wWuuQ',
           attributesAdded: [],
         },
       ],
     },
-    '9SEUQrSK7ewpiykS84gvowEErbpYgoX5vEhGy89i4FTd': {
+    '9YDcX7WZdjBgo7K9Kss1FBKB5BJLedbkwzY5f4DdFZ48': {
       status: 'stable',
       name: 'cdm/base/staticdata/identifier/TradeIdentifierTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9SEUQrSK7ewpiykS84gvowEErbpYgoX5vEhGy89i4FTd',
+          typeBlueId: '9YDcX7WZdjBgo7K9Kss1FBKB5BJLedbkwzY5f4DdFZ48',
           attributesAdded: [],
         },
       ],
     },
-    '2redquTFoM18tjds3NfGQwUYCvsE2KxUExBUqKyf3rJX': {
+    HCfJUUx9k8N8QqUgtRQZDaSkcsnmcWrN6CsVeT5ViMfM: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/Account',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2redquTFoM18tjds3NfGQwUYCvsE2KxUExBUqKyf3rJX',
+          typeBlueId: 'HCfJUUx9k8N8QqUgtRQZDaSkcsnmcWrN6CsVeT5ViMfM',
           attributesAdded: [],
         },
       ],
     },
-    '6wko9wDGMgxzo9xtP73GZpXho6rT5ZcrZ1RgAhSpjBwA': {
+    '3RvMJskqcUvhXZBqQuGuqyxWNuVgQf51kdCaBEzensYx': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/AccountTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6wko9wDGMgxzo9xtP73GZpXho6rT5ZcrZ1RgAhSpjBwA',
+          typeBlueId: '3RvMJskqcUvhXZBqQuGuqyxWNuVgQf51kdCaBEzensYx',
           attributesAdded: [],
         },
       ],
     },
-    Hk5B9aTGsoWURT33pKwD1Dx8TudcUZHgrK1oKGmLKRnJ: {
+    BMokXsNGeVbH3hGbewvBy1NG4V2DoVoJ7LRURPqGQ2Hz: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/Address',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hk5B9aTGsoWURT33pKwD1Dx8TudcUZHgrK1oKGmLKRnJ',
+          typeBlueId: 'BMokXsNGeVbH3hGbewvBy1NG4V2DoVoJ7LRURPqGQ2Hz',
           attributesAdded: [],
         },
       ],
     },
-    '51nNpi3cxfsuvq28FACnE28gdaAJusoNwcHqTKcQAgPj': {
+    '5xa7EuQoL6MHLEkfe2xUYenDRD52BrW1dDcJHWhB4zFP': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/AncillaryEntity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '51nNpi3cxfsuvq28FACnE28gdaAJusoNwcHqTKcQAgPj',
+          typeBlueId: '5xa7EuQoL6MHLEkfe2xUYenDRD52BrW1dDcJHWhB4zFP',
           attributesAdded: [],
         },
       ],
     },
-    gyjCjxW6qhXCC455CPDLkx4ccUz75HgdRL21KfMsdMs: {
+    '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/AncillaryParty',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'gyjCjxW6qhXCC455CPDLkx4ccUz75HgdRL21KfMsdMs',
+          typeBlueId: '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4',
           attributesAdded: [],
         },
       ],
     },
-    '6Z3jsP3QVXumTdQMGZVcCDRNn3n62xjfZLNEHaZeDWmb': {
+    C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/AncillaryRoleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6Z3jsP3QVXumTdQMGZVcCDRNn3n62xjfZLNEHaZeDWmb',
+          typeBlueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
           attributesAdded: [],
         },
       ],
     },
-    '4wK85f9dMypnjbUUmXb66JUEiKd6uhgWc8Eg1rx4exS4': {
+    '6L9P51qVV3HH366DyCCXDxSEYLtr6zN1bAMebbiK5iW1': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/BusinessUnit',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4wK85f9dMypnjbUUmXb66JUEiKd6uhgWc8Eg1rx4exS4',
+          typeBlueId: '6L9P51qVV3HH366DyCCXDxSEYLtr6zN1bAMebbiK5iW1',
           attributesAdded: [],
         },
       ],
     },
-    ATD4mngyB7ULwUSU6DbEMVcLMyFeZxXRKDJrTsFAJ1dx: {
+    HA8fmtXcNJxs3hXa88H9PHchDg6hgAFvto4VVdW1aZmf: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/BuyerSeller',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ATD4mngyB7ULwUSU6DbEMVcLMyFeZxXRKDJrTsFAJ1dx',
+          typeBlueId: 'HA8fmtXcNJxs3hXa88H9PHchDg6hgAFvto4VVdW1aZmf',
           attributesAdded: [],
         },
       ],
     },
-    '8K3bpBAvaZu9SQSpibF46XfDiBxveFTBYFEXySs3rjsP': {
+    '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/ContactInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8K3bpBAvaZu9SQSpibF46XfDiBxveFTBYFEXySs3rjsP',
+          typeBlueId: '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A',
           attributesAdded: [],
         },
       ],
     },
-    '3xDGPtjud4dCVNF9Swm1X7WoCse6gMziwHGvUnp1h3EK': {
+    '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/Counterparty',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3xDGPtjud4dCVNF9Swm1X7WoCse6gMziwHGvUnp1h3EK',
+          typeBlueId: '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x',
           attributesAdded: [],
         },
       ],
     },
-    '6x12g8enT8MoRfSx5A65GDeBhgNsaewRCdXG5hsioGmL': {
+    '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/CounterpartyRoleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6x12g8enT8MoRfSx5A65GDeBhgNsaewRCdXG5hsioGmL',
+          typeBlueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
           attributesAdded: [],
         },
       ],
     },
-    B5aA6nWfmxJdP3f6kFCyqBA41CUzn6mmhyqnqdQ2yQi7: {
+    HwqBkWFGaGHyDnDyqqp3Exgm9NRyzpNMvF1N6UtAJeGi: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/EntityTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B5aA6nWfmxJdP3f6kFCyqBA41CUzn6mmhyqnqdQ2yQi7',
+          typeBlueId: 'HwqBkWFGaGHyDnDyqqp3Exgm9NRyzpNMvF1N6UtAJeGi',
           attributesAdded: [],
         },
       ],
     },
-    HWaoVtND9cNy4h58tMGuWiynD42VByHqrEfXft6ogrRr: {
+    '4ziQZYSMsRBGw2UcuWWBCV7f3BDZdr6LRtdVLEavoHaw': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/FieldWithMetaAccountTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HWaoVtND9cNy4h58tMGuWiynD42VByHqrEfXft6ogrRr',
+          typeBlueId: '4ziQZYSMsRBGw2UcuWWBCV7f3BDZdr6LRtdVLEavoHaw',
           attributesAdded: [],
         },
       ],
     },
-    BgAaUQrWcUNA3jJZ7gzBjTpU3T4Htfxaga8q7QxR6WUA: {
+    '8JiSzKwsUM83StApPmxZgggZyHQCSUvE6Fy23XWLQHUB': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/FieldWithMetaEntityTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BgAaUQrWcUNA3jJZ7gzBjTpU3T4Htfxaga8q7QxR6WUA',
+          typeBlueId: '8JiSzKwsUM83StApPmxZgggZyHQCSUvE6Fy23XWLQHUB',
           attributesAdded: [],
         },
       ],
     },
-    '8We3ifRCJDJwmBVXuSehPTJrLYivWwUDmGZ6pd5yqKLF': {
+    '9rvLaroTfdZSpfMcA8dBg3zpJu9MmRcN4mqeMUJpWPZB': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/FieldWithMetaNaturalPersonRoleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8We3ifRCJDJwmBVXuSehPTJrLYivWwUDmGZ6pd5yqKLF',
+          typeBlueId: '9rvLaroTfdZSpfMcA8dBg3zpJu9MmRcN4mqeMUJpWPZB',
           attributesAdded: [],
         },
       ],
     },
-    '9gcVCXTLD6bbDcef1Qvc2g9DyAZyLQN9aQuT7xkM2Qy9': {
+    '3QYsrTuj8NArStHVg4Bkwnj3LgYz2Rd52Xq4psjQm74A': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/FieldWithMetaPersonIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9gcVCXTLD6bbDcef1Qvc2g9DyAZyLQN9aQuT7xkM2Qy9',
+          typeBlueId: '3QYsrTuj8NArStHVg4Bkwnj3LgYz2Rd52Xq4psjQm74A',
           attributesAdded: [],
         },
       ],
     },
-    '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o': {
+    '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/LegalEntity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o',
+          typeBlueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
           attributesAdded: [],
         },
       ],
     },
-    HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX: {
+    HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/metafields/ReferenceWithMetaAccount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX',
+          typeBlueId: 'HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi',
           attributesAdded: [],
         },
       ],
     },
-    CEiSj56t3pfX2pXr4xSE9ejLoG6NgvSmjdYCMPxiNCRK: {
+    '2y5oTswWqzzAdz3YW657fXdmY8ENhbHAEWBxJwfmi5f3': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/metafields/ReferenceWithMetaLegalEntity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CEiSj56t3pfX2pXr4xSE9ejLoG6NgvSmjdYCMPxiNCRK',
+          typeBlueId: '2y5oTswWqzzAdz3YW657fXdmY8ENhbHAEWBxJwfmi5f3',
           attributesAdded: [],
         },
       ],
     },
-    '8Trmrr2auNXC1rSUVpofHGpAnufdc2zUsGwJ1Jx44Cp6': {
+    AqRajqKToreHabAHCgT66Zc87qk24EdQSawSThmGb9Eu: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/metafields/ReferenceWithMetaNaturalPerson',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8Trmrr2auNXC1rSUVpofHGpAnufdc2zUsGwJ1Jx44Cp6',
+          typeBlueId: 'AqRajqKToreHabAHCgT66Zc87qk24EdQSawSThmGb9Eu',
           attributesAdded: [],
         },
       ],
     },
-    GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik: {
+    Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/metafields/ReferenceWithMetaParty',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+          typeBlueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
           attributesAdded: [],
         },
       ],
     },
-    GPJrucxvdtQQxaNZByVgHcHLEAux1TNC7KL1JdEdBgLF: {
+    Dz8x4hxN4LrnwACtSYMSryByQKNPMssYkK9899oiNbyh: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/NaturalPerson',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GPJrucxvdtQQxaNZByVgHcHLEAux1TNC7KL1JdEdBgLF',
+          typeBlueId: 'Dz8x4hxN4LrnwACtSYMSryByQKNPMssYkK9899oiNbyh',
           attributesAdded: [],
         },
       ],
     },
-    '3uQqaX7x6W6DWTjsoQ1nPnUqxSnb3hwfBUfB75JAtaZJ': {
+    '9jMFqKdmgCwgQBzfKNbUAGoTLobW3aCoWXv25TRM7oHp': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/NaturalPersonRole',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3uQqaX7x6W6DWTjsoQ1nPnUqxSnb3hwfBUfB75JAtaZJ',
+          typeBlueId: '9jMFqKdmgCwgQBzfKNbUAGoTLobW3aCoWXv25TRM7oHp',
           attributesAdded: [],
         },
       ],
     },
-    DRXnENhi2PPC41zdWCTei38nBDnGJAHhGw77pHSaZu9R: {
+    A4UUWtjEmLLX2CyaoMPRZ3X1Ea55w5TbqgueoeTHNvEs: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/NaturalPersonRoleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DRXnENhi2PPC41zdWCTei38nBDnGJAHhGw77pHSaZu9R',
+          typeBlueId: 'A4UUWtjEmLLX2CyaoMPRZ3X1Ea55w5TbqgueoeTHNvEs',
           attributesAdded: [],
         },
       ],
     },
-    '694bqGLce4g9XrBubcFXs81gNNsvVTGK3msPSdNsj5jD': {
+    '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/Party',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '694bqGLce4g9XrBubcFXs81gNNsvVTGK3msPSdNsj5jD',
+          typeBlueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
           attributesAdded: [],
         },
       ],
     },
-    '9bBnotjYVoTpiPp618XfsvChy9sMkorNRd8X1hGQVM7o': {
+    '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PartyContactInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9bBnotjYVoTpiPp618XfsvChy9sMkorNRd8X1hGQVM7o',
+          typeBlueId: '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR',
           attributesAdded: [],
         },
       ],
     },
-    F9QyJcHdFeo31fUAc165RhT6gR1XEBxazkp5cgYo4DAF: {
+    '9cfoNdV96xTzev5mSMGvEn7aYQWsjw2BsB7p8HG2KVYx': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PartyIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F9QyJcHdFeo31fUAc165RhT6gR1XEBxazkp5cgYo4DAF',
+          typeBlueId: '9cfoNdV96xTzev5mSMGvEn7aYQWsjw2BsB7p8HG2KVYx',
           attributesAdded: [],
         },
       ],
     },
-    CtYQqMrkLRGoYSHCKUDDnqB3MYRfBuTgo1ccTwdeo5qV: {
+    JCXuAtNHkVPfjzG8gXbgiwoAYAmMiB2EfaSy8qU3iqtz: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PartyIdentifierTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CtYQqMrkLRGoYSHCKUDDnqB3MYRfBuTgo1ccTwdeo5qV',
+          typeBlueId: 'JCXuAtNHkVPfjzG8gXbgiwoAYAmMiB2EfaSy8qU3iqtz',
           attributesAdded: [],
         },
       ],
     },
-    '5jMMKaokSyc3P5cYsiGHgYgok3sYf3J1f3Cq4Ue2LX4C': {
+    '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PartyReferencePayerReceiver',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5jMMKaokSyc3P5cYsiGHgYgok3sYf3J1f3Cq4Ue2LX4C',
+          typeBlueId: '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs',
           attributesAdded: [],
         },
       ],
     },
-    '8fXEqMXsnZAuwSFKfhiksmAPnV7yvaxSbmwgTbGrN75M': {
+    Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PartyRole',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8fXEqMXsnZAuwSFKfhiksmAPnV7yvaxSbmwgTbGrN75M',
+          typeBlueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
           attributesAdded: [],
         },
       ],
     },
-    EncqNSCrVYMkox9haeHEq66bWJTaR3vwubufrZkZzB4: {
+    H6gWEiw9pVTmNQVvvZzt7KcBJ1Ub6wMyaVh3zbM7qCkM: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PartyRoleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EncqNSCrVYMkox9haeHEq66bWJTaR3vwubufrZkZzB4',
+          typeBlueId: 'H6gWEiw9pVTmNQVvvZzt7KcBJ1Ub6wMyaVh3zbM7qCkM',
           attributesAdded: [],
         },
       ],
     },
-    Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3: {
+    '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PayerReceiver',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3',
+          typeBlueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
           attributesAdded: [],
         },
       ],
     },
-    '3h5wRr1PRsH4WePSXwrdNrRnbGYxzTUTdLMKCpegAmi8': {
+    AYi3oguzR4Utfj7hc4duXgvb2M7SapBbYpq8SyJbHghs: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PayerReceiverEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3h5wRr1PRsH4WePSXwrdNrRnbGYxzTUTdLMKCpegAmi8',
+          typeBlueId: 'AYi3oguzR4Utfj7hc4duXgvb2M7SapBbYpq8SyJbHghs',
           attributesAdded: [],
         },
       ],
     },
-    '137V6nzc2EYMvMNiSoeM36TQTSfPuL5rp8pjRkrno11f': {
+    HU9UvBYP6JQj6JsSUxAzJ1j8s9qEtMMq6JEmcjiChryk: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PersonIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '137V6nzc2EYMvMNiSoeM36TQTSfPuL5rp8pjRkrno11f',
+          typeBlueId: 'HU9UvBYP6JQj6JsSUxAzJ1j8s9qEtMMq6JEmcjiChryk',
           attributesAdded: [],
         },
       ],
     },
-    FMkLv6qXtSm7J9WiqjortpggKS64LbdJJWwyPv81h7V3: {
+    '2DvCCVBpSHMw3EiuFp3MYB9YQpwrSYx4jvwkNtoq3jx9': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/PersonIdentifierTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FMkLv6qXtSm7J9WiqjortpggKS64LbdJJWwyPv81h7V3',
+          typeBlueId: '2DvCCVBpSHMw3EiuFp3MYB9YQpwrSYx4jvwkNtoq3jx9',
           attributesAdded: [],
         },
       ],
     },
-    '6vvQAa2n4pBkXLzf2nm13fChPvmaGmYx9naGFczd8n7a': {
+    '9w3yZ13uv2onHnWSmTEKqfVrjkKHHBuryHdKhMswV6it': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/ReferenceBank',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6vvQAa2n4pBkXLzf2nm13fChPvmaGmYx9naGFczd8n7a',
+          typeBlueId: '9w3yZ13uv2onHnWSmTEKqfVrjkKHHBuryHdKhMswV6it',
           attributesAdded: [],
         },
       ],
     },
-    JCCsntcYSJvUuuRsTPmhRoozDmZLnnfrSSnkfe8pBCnq: {
+    Dr7s6cFbs9aSU7RTFMQNVdpt9CuuUy3nRKpnUmXo3cbD: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/ReferenceBanks',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JCCsntcYSJvUuuRsTPmhRoozDmZLnnfrSSnkfe8pBCnq',
+          typeBlueId: 'Dr7s6cFbs9aSU7RTFMQNVdpt9CuuUy3nRKpnUmXo3cbD',
           attributesAdded: [],
         },
       ],
     },
-    '49qBetBBtcupafRpn91bK11BuJmHBAUsRXrc7UoZYMbo': {
+    Ckw9v2wXUokJbSTvCdt5Q8XQuPvLbUCCx6JaAoaUpDGt: {
       status: 'stable',
       name: 'cdm/base/staticdata/party/RelatedParty',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '49qBetBBtcupafRpn91bK11BuJmHBAUsRXrc7UoZYMbo',
+          typeBlueId: 'Ckw9v2wXUokJbSTvCdt5Q8XQuPvLbUCCx6JaAoaUpDGt',
           attributesAdded: [],
         },
       ],
     },
-    CGwZNWTLoCkGLH5yAn2EKVGseTWXNNNk34hFwFugDRnt: {
+    '7kBg2fFNHjAkhkMGJPiz8uovR4bTqF6RJzCUk6YKB2Aq': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/TelephoneNumber',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CGwZNWTLoCkGLH5yAn2EKVGseTWXNNNk34hFwFugDRnt',
+          typeBlueId: '7kBg2fFNHjAkhkMGJPiz8uovR4bTqF6RJzCUk6YKB2Aq',
           attributesAdded: [],
         },
       ],
     },
-    '7baagyYQ5pks4axcyWu1AiqBmHkoMoc6PrF7XpeGCaE3': {
+    '7PAPLMPSmka7bG7227fzRv3qSgjt72t52HW5JbZddX1w': {
       status: 'stable',
       name: 'cdm/base/staticdata/party/TelephoneTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7baagyYQ5pks4axcyWu1AiqBmHkoMoc6PrF7XpeGCaE3',
+          typeBlueId: '7PAPLMPSmka7bG7227fzRv3qSgjt72t52HW5JbZddX1w',
           attributesAdded: [],
         },
       ],
     },
-    FZv8rcp2vixvrFz76oD9XQQi3AkBXSWz2YSBg7zgTZbx: {
+    DW7rU2G1aVFJWe4AguEb2Usk8YfFAXvUzqiNDKzFurHz: {
       status: 'stable',
       name: 'cdm/event/common/ActionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FZv8rcp2vixvrFz76oD9XQQi3AkBXSWz2YSBg7zgTZbx',
+          typeBlueId: 'DW7rU2G1aVFJWe4AguEb2Usk8YfFAXvUzqiNDKzFurHz',
           attributesAdded: [],
         },
       ],
     },
-    A9LgPmzptBkZ2aoGKzFdFNyrkP7yQoKpGFDRRy2QHAJV: {
+    GaQ1ieWhk2E2fW4etzuQbWGUxDQvA7SeT6XT4nunJLWi: {
       status: 'stable',
       name: 'cdm/event/common/AffirmationStatusEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A9LgPmzptBkZ2aoGKzFdFNyrkP7yQoKpGFDRRy2QHAJV',
+          typeBlueId: 'GaQ1ieWhk2E2fW4etzuQbWGUxDQvA7SeT6XT4nunJLWi',
           attributesAdded: [],
         },
       ],
     },
-    '14FpJ1vaYbMpoyCkuQj7hbGcbtaDHt82Sbm1qh8P81wH': {
+    H7BQ5tsetxzrnYgPhyG3s5vGJptCu5BD9tAGJm6R6UUp: {
       status: 'stable',
       name: 'cdm/event/common/AssetTransferTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '14FpJ1vaYbMpoyCkuQj7hbGcbtaDHt82Sbm1qh8P81wH',
+          typeBlueId: 'H7BQ5tsetxzrnYgPhyG3s5vGJptCu5BD9tAGJm6R6UUp',
           attributesAdded: [],
         },
       ],
     },
-    '7xfB6U2pnWXbkxPK3W2Q7fHZqYxzn8mWRNpgnJMho5t8': {
+    '5W5vjs214raXHjKjnhu1xesDsR28cGgcqUEJZdPcnm9u': {
       status: 'stable',
       name: 'cdm/event/common/BillingInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7xfB6U2pnWXbkxPK3W2Q7fHZqYxzn8mWRNpgnJMho5t8',
+          typeBlueId: '5W5vjs214raXHjKjnhu1xesDsR28cGgcqUEJZdPcnm9u',
           attributesAdded: [],
         },
       ],
     },
-    u2MbP3uz3Mn5cpDkvucuBvQGAkXiEd8swnBN5DdAkMg: {
+    '2zMRqKefYonWQ8EuyFg2YU4i4zB7SE1Yph91R4PEy7WW': {
       status: 'stable',
       name: 'cdm/event/common/BillingRecord',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'u2MbP3uz3Mn5cpDkvucuBvQGAkXiEd8swnBN5DdAkMg',
+          typeBlueId: '2zMRqKefYonWQ8EuyFg2YU4i4zB7SE1Yph91R4PEy7WW',
           attributesAdded: [],
         },
       ],
     },
-    H4SNQ2RMiX7HVAo7y3Mqdb6vmQUYJX2dEMYpjGXUAWcX: {
+    DsCUffxSDY6GA5gzndifSLMQRghvnkjFraENE8pUUmzA: {
       status: 'stable',
       name: 'cdm/event/common/BillingRecordInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H4SNQ2RMiX7HVAo7y3Mqdb6vmQUYJX2dEMYpjGXUAWcX',
+          typeBlueId: 'DsCUffxSDY6GA5gzndifSLMQRghvnkjFraENE8pUUmzA',
           attributesAdded: [],
         },
       ],
     },
-    D5c4Z8okogMsZ9ZgPhXhrjcP4DG8tnDr7tGQGW22454v: {
+    hDUXATg8yvnWEPHNH63w5HzgAKwLoFeQGGn6JTqWHsw: {
       status: 'stable',
       name: 'cdm/event/common/BillingSummary',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'D5c4Z8okogMsZ9ZgPhXhrjcP4DG8tnDr7tGQGW22454v',
+          typeBlueId: 'hDUXATg8yvnWEPHNH63w5HzgAKwLoFeQGGn6JTqWHsw',
           attributesAdded: [],
         },
       ],
     },
-    FXouY2iD5yAkGjtQpRoJkLoD46rKCnoTQKrRcsQBaJjx: {
+    GzR7cbwzNiQXhjYVBoCoZjjS5gQuW2pqty2pX2zHCkJ7: {
       status: 'stable',
       name: 'cdm/event/common/BillingSummaryInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FXouY2iD5yAkGjtQpRoJkLoD46rKCnoTQKrRcsQBaJjx',
+          typeBlueId: 'GzR7cbwzNiQXhjYVBoCoZjjS5gQuW2pqty2pX2zHCkJ7',
           attributesAdded: [],
         },
       ],
     },
-    '8qWdT3E5NidUckPJrWGmAnsexmocYp7EofAQ2FAmaTPs': {
+    EhgUPTjNky8ntLuNCUAumwbyM9VxFbf2HcZ4Pkp2cfsM: {
       status: 'stable',
       name: 'cdm/event/common/BusinessEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8qWdT3E5NidUckPJrWGmAnsexmocYp7EofAQ2FAmaTPs',
+          typeBlueId: 'EhgUPTjNky8ntLuNCUAumwbyM9VxFbf2HcZ4Pkp2cfsM',
           attributesAdded: [],
         },
       ],
     },
-    APFczLgPo3ATLpUGVzXPPU14GjwHCm9tPJDFDwjJCXWh: {
+    J3qzEabcpDNDy884Jd998xkJpMR5zFZJuiaxAq95ZLLx: {
       status: 'stable',
       name: 'cdm/event/common/CalculateTransferInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'APFczLgPo3ATLpUGVzXPPU14GjwHCm9tPJDFDwjJCXWh',
+          typeBlueId: 'J3qzEabcpDNDy884Jd998xkJpMR5zFZJuiaxAq95ZLLx',
           attributesAdded: [],
         },
       ],
     },
-    ArrXGPispsyEryoQo3F2re4vbxjj2xjYyQyBjvDQ36dd: {
+    Fz4NTo1FbXH16J8EfuEn4VzfYkcagg6FsmDXL49ce7H: {
       status: 'stable',
       name: 'cdm/event/common/CallTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ArrXGPispsyEryoQo3F2re4vbxjj2xjYyQyBjvDQ36dd',
+          typeBlueId: 'Fz4NTo1FbXH16J8EfuEn4VzfYkcagg6FsmDXL49ce7H',
           attributesAdded: [],
         },
       ],
     },
-    HRwaQ2c9fB55QNhRMMhu2q79V8gaMJaqAM2sofveHeP2: {
+    '5ZkYvwfLfiF71H4xx4uG96T64QSNJTzuohdaDKaDJbbY': {
       status: 'stable',
       name: 'cdm/event/common/ClearingInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HRwaQ2c9fB55QNhRMMhu2q79V8gaMJaqAM2sofveHeP2',
+          typeBlueId: '5ZkYvwfLfiF71H4xx4uG96T64QSNJTzuohdaDKaDJbbY',
           attributesAdded: [],
         },
       ],
     },
-    '9XXCYnAKStGGQJv82Q3iAt6L217E7QCFrotX9UUHC84P': {
+    '8nANyRzbRdjuTq7qNZchzDJ4XYqZ8HWYinBX4dWM6NAV': {
       status: 'stable',
       name: 'cdm/event/common/CollateralBalance',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9XXCYnAKStGGQJv82Q3iAt6L217E7QCFrotX9UUHC84P',
+          typeBlueId: '8nANyRzbRdjuTq7qNZchzDJ4XYqZ8HWYinBX4dWM6NAV',
           attributesAdded: [],
         },
       ],
     },
-    '5zV9UAvEAPPoJE8p76hiGGxkbAdmTYVYyCXFALa1MFCS': {
+    '7hZg754vaDMZPnXQ2cJ35bvJ8EeQtSssdsyhPk3WSW5x': {
       status: 'stable',
       name: 'cdm/event/common/CollateralPortfolio',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5zV9UAvEAPPoJE8p76hiGGxkbAdmTYVYyCXFALa1MFCS',
+          typeBlueId: '7hZg754vaDMZPnXQ2cJ35bvJ8EeQtSssdsyhPk3WSW5x',
           attributesAdded: [],
         },
       ],
     },
-    RkQ9hssWBiUyn4LiaktzsRVjx76PDv5qNq4T8YionjL: {
+    '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT': {
       status: 'stable',
       name: 'cdm/event/common/CollateralPosition',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'RkQ9hssWBiUyn4LiaktzsRVjx76PDv5qNq4T8YionjL',
+          typeBlueId: '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT',
           attributesAdded: [],
         },
       ],
     },
-    ET5sToBGwmEYMrixxQtBQCXUeukfnnYAJugSx43kxbwm: {
+    ScqKZW3m5Vk4Ht3xpASxxv9euZM32FQPYjE6PbCZEHc: {
       status: 'stable',
       name: 'cdm/event/common/CollateralStatusEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ET5sToBGwmEYMrixxQtBQCXUeukfnnYAJugSx43kxbwm',
+          typeBlueId: 'ScqKZW3m5Vk4Ht3xpASxxv9euZM32FQPYjE6PbCZEHc',
           attributesAdded: [],
         },
       ],
     },
-    FkVKJHod7pqUSpYVBLN3NXQjh65FZKScBP6WoBY1o86o: {
+    '3rCwZx3mRa8Z3ZECBEL7GM4gEwf8NnjrvaktzD83D13b': {
       status: 'stable',
       name: 'cdm/event/common/ConfirmationStatusEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FkVKJHod7pqUSpYVBLN3NXQjh65FZKScBP6WoBY1o86o',
+          typeBlueId: '3rCwZx3mRa8Z3ZECBEL7GM4gEwf8NnjrvaktzD83D13b',
           attributesAdded: [],
         },
       ],
     },
-    '73jkwTbyMo2KXQaySh2bPD7JZbKKWQBJYofeJMMprsr2': {
+    G6a8EHMCBFTctoKK7wpHrSKyqmnPqZLuyEMGhXiaHYzB: {
       status: 'stable',
       name: 'cdm/event/common/ContractDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '73jkwTbyMo2KXQaySh2bPD7JZbKKWQBJYofeJMMprsr2',
+          typeBlueId: 'G6a8EHMCBFTctoKK7wpHrSKyqmnPqZLuyEMGhXiaHYzB',
           attributesAdded: [],
         },
       ],
     },
-    '8sWBuDCNB5CU2KAPqM9MbS1YnWs7XXXHSwBZ3u9wkBgX': {
+    DGsbtTnVqKahxQWYvWbmGWFYBqtFfWxbBr5DuADrAFqK: {
       status: 'stable',
       name: 'cdm/event/common/ContractFormationInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8sWBuDCNB5CU2KAPqM9MbS1YnWs7XXXHSwBZ3u9wkBgX',
+          typeBlueId: 'DGsbtTnVqKahxQWYvWbmGWFYBqtFfWxbBr5DuADrAFqK',
           attributesAdded: [],
         },
       ],
     },
-    '3cW9DCrH3S9RbC5r5ufGus2ntS4cJjxaa7gnHbEmCnT3': {
+    Cd5dfDZ2vya9EXadanoFVVizmTtXVyCD3eetnLfjKM7R: {
       status: 'stable',
       name: 'cdm/event/common/CorporateAction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3cW9DCrH3S9RbC5r5ufGus2ntS4cJjxaa7gnHbEmCnT3',
+          typeBlueId: 'Cd5dfDZ2vya9EXadanoFVVizmTtXVyCD3eetnLfjKM7R',
           attributesAdded: [],
         },
       ],
     },
-    '2BvXwm2PJoPCvRz7g8DFbxuMwvaXy1mHq7Tnw2QmQAn6': {
+    GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR: {
       status: 'stable',
       name: 'cdm/event/common/CorporateActionTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2BvXwm2PJoPCvRz7g8DFbxuMwvaXy1mHq7Tnw2QmQAn6',
+          typeBlueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
           attributesAdded: [],
         },
       ],
     },
-    Gm1bbskyhwzzc6X2nYgZ7F5WWwWhBVgSMLYpJsp7y8PY: {
+    HmAtnSZuDe4ifp5cQh4JwWZmz7AEJjddmWkQ7QEmTjEv: {
       status: 'stable',
       name: 'cdm/event/common/CounterpartyPositionBusinessEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Gm1bbskyhwzzc6X2nYgZ7F5WWwWhBVgSMLYpJsp7y8PY',
+          typeBlueId: 'HmAtnSZuDe4ifp5cQh4JwWZmz7AEJjddmWkQ7QEmTjEv',
           attributesAdded: [],
         },
       ],
     },
-    '5J6Xvc5wFYpUHdUb6UeB9296nV6NEZu3TW92cnZ8Jou2': {
+    EEF9WbKw9D9wtisDhW8324FJ2E947ssWHTCgh83EtSwA: {
       status: 'stable',
       name: 'cdm/event/common/CounterpartyPositionState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5J6Xvc5wFYpUHdUb6UeB9296nV6NEZu3TW92cnZ8Jou2',
+          typeBlueId: 'EEF9WbKw9D9wtisDhW8324FJ2E947ssWHTCgh83EtSwA',
           attributesAdded: [],
         },
       ],
     },
-    '9cRutV8nPCZ2C48bBwAY4oDTiYNr1ig82uHvSf4tZjHf': {
+    AVPqeTe3UbwZW8Fbubbmr4aPptrhVekU6a5UqnSKNLfH: {
       status: 'stable',
       name: 'cdm/event/common/CreditEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9cRutV8nPCZ2C48bBwAY4oDTiYNr1ig82uHvSf4tZjHf',
+          typeBlueId: 'AVPqeTe3UbwZW8Fbubbmr4aPptrhVekU6a5UqnSKNLfH',
           attributesAdded: [],
         },
       ],
     },
-    FRSvW86AnukqsUtioAtNxLvGvH8hBV3m6J2YV3egXjjV: {
+    '5fy8DQMQDgMbPNnMB9zmKJVXYJWdVuBKFNuYz87LZ6S9': {
       status: 'stable',
       name: 'cdm/event/common/CreditEventTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FRSvW86AnukqsUtioAtNxLvGvH8hBV3m6J2YV3egXjjV',
+          typeBlueId: '5fy8DQMQDgMbPNnMB9zmKJVXYJWdVuBKFNuYz87LZ6S9',
           attributesAdded: [],
         },
       ],
     },
-    '7LGs1cSGANHMycsBA9QoTJgdxMMVCPo5KnmfspkQtue5': {
+    '3eSk21DN6a3UUApaPYyPtqi3HPeLX7zYga6PMuXULqNa': {
       status: 'stable',
       name: 'cdm/event/common/EventIntentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7LGs1cSGANHMycsBA9QoTJgdxMMVCPo5KnmfspkQtue5',
+          typeBlueId: '3eSk21DN6a3UUApaPYyPtqi3HPeLX7zYga6PMuXULqNa',
           attributesAdded: [],
         },
       ],
     },
-    AgMJ76KMYXbdeYrEq5PfQtesuf5rxVkbspBBciEBpYux: {
+    '34vDDjWK88raLcbwzsk1RG6XiYVNqS2twvW2mBVySxxe': {
       status: 'stable',
       name: 'cdm/event/common/ExecutionDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AgMJ76KMYXbdeYrEq5PfQtesuf5rxVkbspBBciEBpYux',
+          typeBlueId: '34vDDjWK88raLcbwzsk1RG6XiYVNqS2twvW2mBVySxxe',
           attributesAdded: [],
         },
       ],
     },
-    BjTwLDK7HwHXyVMxzicMA3VkVKfqaJbiEBPWQc2zogzw: {
+    CBTSmXARftQib1Z7xkk5BvzFCwYNVs56io1CySzwVRv6: {
       status: 'stable',
       name: 'cdm/event/common/ExecutionInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BjTwLDK7HwHXyVMxzicMA3VkVKfqaJbiEBPWQc2zogzw',
+          typeBlueId: 'CBTSmXARftQib1Z7xkk5BvzFCwYNVs56io1CySzwVRv6',
           attributesAdded: [],
         },
       ],
     },
-    HEn2fsPSsyYtggnb2vhQ7afyPMTHJnpQRj7VE6DCDUNk: {
+    '82AwW4L6L3Hb2HAxzeRUzisvXkEvVu1AaKYAjJ657nnt': {
       status: 'stable',
       name: 'cdm/event/common/ExecutionTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HEn2fsPSsyYtggnb2vhQ7afyPMTHJnpQRj7VE6DCDUNk',
+          typeBlueId: '82AwW4L6L3Hb2HAxzeRUzisvXkEvVu1AaKYAjJ657nnt',
           attributesAdded: [],
         },
       ],
     },
-    '8rgtsvs6w6qZz1PrkVBt2E7HaV2wh8X43gQe1J1P7TCj': {
+    C4t841uYAz7R5kNxJsYAeKiyFsyBQFp3wRvMihrEeHiA: {
       status: 'stable',
       name: 'cdm/event/common/ExerciseEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8rgtsvs6w6qZz1PrkVBt2E7HaV2wh8X43gQe1J1P7TCj',
+          typeBlueId: 'C4t841uYAz7R5kNxJsYAeKiyFsyBQFp3wRvMihrEeHiA',
           attributesAdded: [],
         },
       ],
     },
-    '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#1': {
+    '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#1': {
       status: 'stable',
       name: 'cdm/event/common/ExerciseInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#1',
+          typeBlueId: '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#1',
           attributesAdded: [],
         },
       ],
     },
-    CixZxDsRYNoZ2VQAdXvETFbZ3JHGQqFYi5Q5xdevtMKX: {
+    C679ZMU8EZmaa6vaEdfxHjNQD8fM5PUBNsXR3ZQJUxio: {
       status: 'stable',
       name: 'cdm/event/common/Exposure',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CixZxDsRYNoZ2VQAdXvETFbZ3JHGQqFYi5Q5xdevtMKX',
+          typeBlueId: 'C679ZMU8EZmaa6vaEdfxHjNQD8fM5PUBNsXR3ZQJUxio',
           attributesAdded: [],
         },
       ],
     },
-    '6dsiwJuR69CVpGRuRqj3ymfDhYpGGDRtLQLHmTZMqGC': {
+    BhcAc9aom3oN5CJ2MVXmyyUEeSBLxX3PgyuKursXD5hQ: {
       status: 'stable',
       name: 'cdm/event/common/HaircutIndicatorEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6dsiwJuR69CVpGRuRqj3ymfDhYpGGDRtLQLHmTZMqGC',
+          typeBlueId: 'BhcAc9aom3oN5CJ2MVXmyyUEeSBLxX3PgyuKursXD5hQ',
           attributesAdded: [],
         },
       ],
     },
-    '4h8Hk4G2qP8cK5WAMzdQNkMdsPkLH7teFQRJqhe7VAh4': {
+    ESVYFHhwAEbDfHx7VpnDSeYjKbYM1yz22iidmSJwTbPR: {
       status: 'stable',
       name: 'cdm/event/common/IndexTransitionInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4h8Hk4G2qP8cK5WAMzdQNkMdsPkLH7teFQRJqhe7VAh4',
+          typeBlueId: 'ESVYFHhwAEbDfHx7VpnDSeYjKbYM1yz22iidmSJwTbPR',
           attributesAdded: [],
         },
       ],
     },
-    DmjvxxGktgvt2rg94yzABomuVAXUs5cCj4GRYGt8yxhr: {
+    GEHuJ1Fk1jSrDMfbynCACW1dsPVuMhSkjFbkitJU37Qp: {
       status: 'stable',
       name: 'cdm/event/common/Instruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DmjvxxGktgvt2rg94yzABomuVAXUs5cCj4GRYGt8yxhr',
+          typeBlueId: 'GEHuJ1Fk1jSrDMfbynCACW1dsPVuMhSkjFbkitJU37Qp',
           attributesAdded: [],
         },
       ],
     },
-    fKPDzutMwno59HhJG23YycNn4iwE4yFTS17R3MkzbT5: {
+    '8p1vMWCA7VEoeAswXYP9yUFGd3HxbVB48WeGbQNmrJYw': {
       status: 'stable',
       name: 'cdm/event/common/InstructionFunctionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'fKPDzutMwno59HhJG23YycNn4iwE4yFTS17R3MkzbT5',
+          typeBlueId: '8p1vMWCA7VEoeAswXYP9yUFGd3HxbVB48WeGbQNmrJYw',
           attributesAdded: [],
         },
       ],
     },
-    BSWGnuEuyVaWENR6s4Aj98zry3uTZBX1uQHBAwY83v16: {
+    AU5SZ3DHqRdpqT1JPJ9S96fTUWv7kU2ofDC4zNRK6quM: {
       status: 'stable',
       name: 'cdm/event/common/Lineage',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BSWGnuEuyVaWENR6s4Aj98zry3uTZBX1uQHBAwY83v16',
+          typeBlueId: 'AU5SZ3DHqRdpqT1JPJ9S96fTUWv7kU2ofDC4zNRK6quM',
           attributesAdded: [],
         },
       ],
     },
-    '6tjVZ5NjLm5HQgsKdMnRgy9TgumvEg9qnjDmMth7np6R': {
+    '9CwCB3Fnvz24SzGuu8TbsuxrVJz8FFCvQCzGsfUyEjHK': {
       status: 'stable',
       name: 'cdm/event/common/MarginCallActionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6tjVZ5NjLm5HQgsKdMnRgy9TgumvEg9qnjDmMth7np6R',
+          typeBlueId: '9CwCB3Fnvz24SzGuu8TbsuxrVJz8FFCvQCzGsfUyEjHK',
           attributesAdded: [],
         },
       ],
     },
-    DZahcmhDuPiP5rvn1PkdAsfSa4FbHepF3J6MUZbNZRrB: {
+    Ee3C3vqSeFDzzP16yujSkrhc9JNvgdr2F2DYyVzGjfaG: {
       status: 'stable',
       name: 'cdm/event/common/MarginCallBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DZahcmhDuPiP5rvn1PkdAsfSa4FbHepF3J6MUZbNZRrB',
+          typeBlueId: 'Ee3C3vqSeFDzzP16yujSkrhc9JNvgdr2F2DYyVzGjfaG',
           attributesAdded: [],
         },
       ],
     },
-    'A6TXpRc2pwcrcevpAeFov8KwBeHqv2S128cwKYfERM5K#0': {
+    '8nEcYjH4ixVg7JfABg3dqYi9nqpHYwCrdcXfWzfmtnkd#0': {
       status: 'stable',
       name: 'cdm/event/common/MarginCallExposure',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A6TXpRc2pwcrcevpAeFov8KwBeHqv2S128cwKYfERM5K#0',
+          typeBlueId: '8nEcYjH4ixVg7JfABg3dqYi9nqpHYwCrdcXfWzfmtnkd#0',
           attributesAdded: [],
         },
       ],
     },
-    CN1YqoktYc73VUJTbsBfBBFsVz5duttYrP8g2ME4Sfzp: {
+    '7LjiKLT6mqi1aN28PDZP7RC1BCddoDdaZRX5HQSggkHK': {
       status: 'stable',
       name: 'cdm/event/common/MarginCallInstructionType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CN1YqoktYc73VUJTbsBfBBFsVz5duttYrP8g2ME4Sfzp',
+          typeBlueId: '7LjiKLT6mqi1aN28PDZP7RC1BCddoDdaZRX5HQSggkHK',
           attributesAdded: [],
         },
       ],
     },
-    BXBZ8pcf9CM5xyavpLypzqjDRy7y7Gr6pt9efFiLniFC: {
+    D6KzTrAtJgtar4KhLVeopPRGn169Q4jxU7U1Kp2N2CEy: {
       status: 'stable',
       name: 'cdm/event/common/MarginCallIssuance',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BXBZ8pcf9CM5xyavpLypzqjDRy7y7Gr6pt9efFiLniFC',
+          typeBlueId: 'D6KzTrAtJgtar4KhLVeopPRGn169Q4jxU7U1Kp2N2CEy',
           attributesAdded: [],
         },
       ],
     },
-    '6uUKa3KvHi9m8CmvHFfmNhUiSoQkBre2rAx55EMNRfbG': {
+    G5qfFX27BDWryZJLHxvyt5oNLEsFedJBwWzVhUDN4nQR: {
       status: 'stable',
       name: 'cdm/event/common/MarginCallResponse',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6uUKa3KvHi9m8CmvHFfmNhUiSoQkBre2rAx55EMNRfbG',
+          typeBlueId: 'G5qfFX27BDWryZJLHxvyt5oNLEsFedJBwWzVhUDN4nQR',
           attributesAdded: [],
         },
       ],
     },
-    GU4SDGPhFNx3W3BPgnnyiavM6ynheQGXz7dupfTVjWyj: {
+    '7D3ayms1ts4uASMX9CDoM8rNqDQe4wV1tFypq41nC7Pd': {
       status: 'stable',
       name: 'cdm/event/common/MarginCallResponseAction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GU4SDGPhFNx3W3BPgnnyiavM6ynheQGXz7dupfTVjWyj',
+          typeBlueId: '7D3ayms1ts4uASMX9CDoM8rNqDQe4wV1tFypq41nC7Pd',
           attributesAdded: [],
         },
       ],
     },
-    Bstw5ouUce1eNCyQGqvChydQAQAAkrG2DdvUA8dVbdYT: {
+    DCBUG67sRjRXZ7Yi8KP7GaYSeAqW5NamG77yzUifTiX5: {
       status: 'stable',
       name: 'cdm/event/common/MarginCallResponseTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Bstw5ouUce1eNCyQGqvChydQAQAAkrG2DdvUA8dVbdYT',
+          typeBlueId: 'DCBUG67sRjRXZ7Yi8KP7GaYSeAqW5NamG77yzUifTiX5',
           attributesAdded: [],
         },
       ],
     },
-    '9hmSFPZtTqFUhhBwuNHQvS49fmooEgKt1nnxJeNPUFY3': {
+    '4BrXNc4oFsUfnFzm3uWTqNmgivGhZJRmaoxvb8kK9xiw': {
       status: 'stable',
       name: 'cdm/event/common/metafields/ReferenceWithMetaCollateralPortfolio',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9hmSFPZtTqFUhhBwuNHQvS49fmooEgKt1nnxJeNPUFY3',
+          typeBlueId: '4BrXNc4oFsUfnFzm3uWTqNmgivGhZJRmaoxvb8kK9xiw',
           attributesAdded: [],
         },
       ],
     },
-    B8n9R5augGxzewv3AeZA4bBhgHYizX9BW45egn8ua3br: {
+    '9QvPaXwgMX4bfTdirhDyje4sXJhxGdfrXikFFGpngwAb': {
       status: 'stable',
       name: 'cdm/event/common/metafields/ReferenceWithMetaContractDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B8n9R5augGxzewv3AeZA4bBhgHYizX9BW45egn8ua3br',
+          typeBlueId: '9QvPaXwgMX4bfTdirhDyje4sXJhxGdfrXikFFGpngwAb',
           attributesAdded: [],
         },
       ],
     },
-    CMP6Shj6SxTXkHaZATbUmY9anEdJwQH5tnPfbddySWBo: {
+    AveBbPNcyiENsH8aGj4xhEY7GkX7xuoVApDW87Er969J: {
       status: 'stable',
       name: 'cdm/event/common/metafields/ReferenceWithMetaExecutionDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CMP6Shj6SxTXkHaZATbUmY9anEdJwQH5tnPfbddySWBo',
+          typeBlueId: 'AveBbPNcyiENsH8aGj4xhEY7GkX7xuoVApDW87Er969J',
           attributesAdded: [],
         },
       ],
     },
-    '8BmnK6T9mumAJYKndXNUZva1zqE9Ud8sbdK7Es4Dnmto': {
+    C5nADRBcWM2dKjXzJRRmahbypM7x2DUsv7Mxpuc9uPRu: {
       status: 'stable',
       name: 'cdm/event/common/metafields/ReferenceWithMetaTrade',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8BmnK6T9mumAJYKndXNUZva1zqE9Ud8sbdK7Es4Dnmto',
+          typeBlueId: 'C5nADRBcWM2dKjXzJRRmahbypM7x2DUsv7Mxpuc9uPRu',
           attributesAdded: [],
         },
       ],
     },
-    DXhfNgQ1Hmipx5YJVPFZLYTAfk5vomh4ywYmSZX1ChyJ: {
+    EQ41UGrPkUeaUNXD9QmELA1aEoVBtx9tVzgQZ5Tp1rMT: {
       status: 'stable',
       name: 'cdm/event/common/metafields/ReferenceWithMetaTradeState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DXhfNgQ1Hmipx5YJVPFZLYTAfk5vomh4ywYmSZX1ChyJ',
+          typeBlueId: 'EQ41UGrPkUeaUNXD9QmELA1aEoVBtx9tVzgQZ5Tp1rMT',
           attributesAdded: [],
         },
       ],
     },
-    '4E5yCo7XYTiKuuHHwr5uzwASRLaQSQREJNNpmiGAGT3N': {
+    '7UyroNcHi5ggaDeDqgACDvjixoTVqZyHPUiNuGcK3gXq': {
       status: 'stable',
       name: 'cdm/event/common/ObservationEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4E5yCo7XYTiKuuHHwr5uzwASRLaQSQREJNNpmiGAGT3N',
+          typeBlueId: '7UyroNcHi5ggaDeDqgACDvjixoTVqZyHPUiNuGcK3gXq',
           attributesAdded: [],
         },
       ],
     },
-    '4TiZGE3EKm8kGwGtipCB7SEXRoitCDwxdB8rCyr6mRsC': {
+    '8UoUJDRFiVPok3ABp8K2j4QuwD6Mn5jbUhmPukGth8rV': {
       status: 'stable',
       name: 'cdm/event/common/ObservationInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4TiZGE3EKm8kGwGtipCB7SEXRoitCDwxdB8rCyr6mRsC',
+          typeBlueId: '8UoUJDRFiVPok3ABp8K2j4QuwD6Mn5jbUhmPukGth8rV',
           attributesAdded: [],
         },
       ],
     },
-    '6ExYXjmvyeVTNcjUV1RhKjrEdJZrXuqeMggJ4UV4BiDX': {
+    '23BvjXEenVrVtJqaEg2dcrfEDjwqbfn2AbohdEQC5q54': {
       status: 'stable',
       name: 'cdm/event/common/PartyChangeInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ExYXjmvyeVTNcjUV1RhKjrEdJZrXuqeMggJ4UV4BiDX',
+          typeBlueId: '23BvjXEenVrVtJqaEg2dcrfEDjwqbfn2AbohdEQC5q54',
           attributesAdded: [],
         },
       ],
     },
-    '5nAc77Zk7DnMxDwNvokqJKAF6KWnvCgo18NsZFnBQPjH': {
+    HCvuuD7chfLnfNLrGsb6jCRU56ynTit3RvVgZcRpjqCP: {
       status: 'stable',
       name: 'cdm/event/common/PerformanceTransferTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5nAc77Zk7DnMxDwNvokqJKAF6KWnvCgo18NsZFnBQPjH',
+          typeBlueId: 'HCvuuD7chfLnfNLrGsb6jCRU56ynTit3RvVgZcRpjqCP',
           attributesAdded: [],
         },
       ],
     },
-    AFqxQfgMVPciFz41pKMubsG7wUWhEhMwAoy3bZ9AzEKY: {
+    FurdrKKKE4EKbMMyMvsWgSGLYyqPxhjTKSZcJDKD777K: {
       status: 'stable',
       name: 'cdm/event/common/PositionEventIntentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AFqxQfgMVPciFz41pKMubsG7wUWhEhMwAoy3bZ9AzEKY',
+          typeBlueId: 'FurdrKKKE4EKbMMyMvsWgSGLYyqPxhjTKSZcJDKD777K',
           attributesAdded: [],
         },
       ],
     },
-    AnXrCwduqixvTNugK5Dsyr9upeRqJtsTmmvnvRrEjA7k: {
+    '69nLFfiGcCWNuTn9H9eiEcBwsXuqgNxxqgB7X8X9XaSz': {
       status: 'stable',
       name: 'cdm/event/common/PositionIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AnXrCwduqixvTNugK5Dsyr9upeRqJtsTmmvnvRrEjA7k',
+          typeBlueId: '69nLFfiGcCWNuTn9H9eiEcBwsXuqgNxxqgB7X8X9XaSz',
           attributesAdded: [],
         },
       ],
     },
-    AfmZhLuxXWB5bhr9ojzoNAja5XJ5XKyWjjKQdzhS4tvs: {
+    AKxcCwdA28GyqV4bAANz5gwr1mkuBEft7TkK7FwJkEew: {
       status: 'stable',
       name: 'cdm/event/common/PriceTimingEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AfmZhLuxXWB5bhr9ojzoNAja5XJ5XKyWjjKQdzhS4tvs',
+          typeBlueId: 'AKxcCwdA28GyqV4bAANz5gwr1mkuBEft7TkK7FwJkEew',
           attributesAdded: [],
         },
       ],
     },
-    '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#2': {
+    '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#0': {
       status: 'stable',
       name: 'cdm/event/common/PrimitiveInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#2',
+          typeBlueId: '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#0',
           attributesAdded: [],
         },
       ],
     },
-    '5b6HW7a1ekzpFv4yM48pejFPmaWgcnYYnPgwgiXz8cgk': {
+    CGh8Ro5bj5zb6exK9S5PSK14D7LfDgmyq2CmshhZHCav: {
       status: 'stable',
       name: 'cdm/event/common/QuantityChangeInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5b6HW7a1ekzpFv4yM48pejFPmaWgcnYYnPgwgiXz8cgk',
+          typeBlueId: 'CGh8Ro5bj5zb6exK9S5PSK14D7LfDgmyq2CmshhZHCav',
           attributesAdded: [],
         },
       ],
     },
-    '4Wn9bRiHpqcy5PwHNSLRprPvX37tuFs1nCqq9WQfmLGF': {
+    AnFR5nwdiQukWW9YeZRmgTparyPvgRKghypvgvUWqU1c: {
       status: 'stable',
       name: 'cdm/event/common/RecordAmountTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4Wn9bRiHpqcy5PwHNSLRprPvX37tuFs1nCqq9WQfmLGF',
+          typeBlueId: 'AnFR5nwdiQukWW9YeZRmgTparyPvgRKghypvgvUWqU1c',
           attributesAdded: [],
         },
       ],
     },
-    '4uJVRvwwVNEj9rBzrw3MG5hDWu6VEQFjKX3TkVNmZtxQ': {
+    DbDuU56mMCeHMmfAJPu7gVNzKPqsoCbfKMA4B2f7KJob: {
       status: 'stable',
       name: 'cdm/event/common/RegIMRoleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4uJVRvwwVNEj9rBzrw3MG5hDWu6VEQFjKX3TkVNmZtxQ',
+          typeBlueId: 'DbDuU56mMCeHMmfAJPu7gVNzKPqsoCbfKMA4B2f7KJob',
           attributesAdded: [],
         },
       ],
     },
-    DLLoN3NFnWwpjGzEuobQDyZqPUSbRS8jddLaQZw9eq9B: {
+    C9KJZWTduUXk4iocTB63NwBs7xirNjChn9pPZsyhbhHL: {
       status: 'stable',
       name: 'cdm/event/common/RegMarginTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DLLoN3NFnWwpjGzEuobQDyZqPUSbRS8jddLaQZw9eq9B',
+          typeBlueId: 'C9KJZWTduUXk4iocTB63NwBs7xirNjChn9pPZsyhbhHL',
           attributesAdded: [],
         },
       ],
     },
-    '14sVVTzSacMzHornDaXpUxvVuwj3EZYsDLgepvsmbGW7': {
+    C2cq6aR7yoFg7jn9vV3wrTukUrevaRzkBo4PeSWP5die: {
       status: 'stable',
       name: 'cdm/event/common/Reset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '14sVVTzSacMzHornDaXpUxvVuwj3EZYsDLgepvsmbGW7',
+          typeBlueId: 'C2cq6aR7yoFg7jn9vV3wrTukUrevaRzkBo4PeSWP5die',
           attributesAdded: [],
         },
       ],
     },
-    CGgHYqeKaTiPo5dk5t6JAnpqatYqufkEN4kTzTqXnZJ4: {
+    '8yJJHXbkr87FPBmSyeeUAyCyN3LVuUaUmGL9rTQ9nzC8': {
       status: 'stable',
       name: 'cdm/event/common/ResetInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CGgHYqeKaTiPo5dk5t6JAnpqatYqufkEN4kTzTqXnZJ4',
+          typeBlueId: '8yJJHXbkr87FPBmSyeeUAyCyN3LVuUaUmGL9rTQ9nzC8',
           attributesAdded: [],
         },
       ],
     },
-    HKQMWBrXhV2XfYjyXebnyRrgnmenTn2sd5jzfe9BKyr7: {
+    CHEdUbdvTiHGF4JCJFKNu57aubrgQGWDnj36TaxaftB4: {
       status: 'stable',
       name: 'cdm/event/common/ReturnInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HKQMWBrXhV2XfYjyXebnyRrgnmenTn2sd5jzfe9BKyr7',
+          typeBlueId: 'CHEdUbdvTiHGF4JCJFKNu57aubrgQGWDnj36TaxaftB4',
           attributesAdded: [],
         },
       ],
     },
-    '6u2SSYbiL1wde49f5mpDzE76eiZkyF3yeZ7WL3j6RnBZ': {
+    '4L9Uam1XY7h4ygfK9tdFjDPMNsNEn9NAVvoGNsHvGfWD': {
       status: 'stable',
       name: 'cdm/event/common/ScheduledTransfer',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6u2SSYbiL1wde49f5mpDzE76eiZkyF3yeZ7WL3j6RnBZ',
+          typeBlueId: '4L9Uam1XY7h4ygfK9tdFjDPMNsNEn9NAVvoGNsHvGfWD',
           attributesAdded: [],
         },
       ],
     },
-    DWrVb467npLJhtqWXL5jedbqPvpecQLcHXJFKAwmoYKg: {
+    GvXkW9qPM5UsXhKy6zRjhXxHpmcYaTCpkA3q2xmQuGxZ: {
       status: 'stable',
       name: 'cdm/event/common/SecurityLendingInvoice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DWrVb467npLJhtqWXL5jedbqPvpecQLcHXJFKAwmoYKg',
+          typeBlueId: 'GvXkW9qPM5UsXhKy6zRjhXxHpmcYaTCpkA3q2xmQuGxZ',
           attributesAdded: [],
         },
       ],
     },
-    '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#0': {
+    '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#2': {
       status: 'stable',
       name: 'cdm/event/common/SplitInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#0',
+          typeBlueId: '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#2',
           attributesAdded: [],
         },
       ],
     },
-    AWNewCb8jDEbBUtfpqBitVftxPaEyRa5nkUc3446e8NA: {
+    HcvuPprC3CbAxkBiEwkiWsJzW5pVqZ7occ8cncqAtQR: {
       status: 'stable',
       name: 'cdm/event/common/State',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AWNewCb8jDEbBUtfpqBitVftxPaEyRa5nkUc3446e8NA',
+          typeBlueId: 'HcvuPprC3CbAxkBiEwkiWsJzW5pVqZ7occ8cncqAtQR',
           attributesAdded: [],
         },
       ],
     },
-    FzQcp26M2wWMZ8oAGjQMCQdvRGbamTTNF788oeS8mRAo: {
+    GAPYEKW715oyitUYJp6oG8TJQrZ3oHrfHbahRSWKXVAm: {
       status: 'stable',
       name: 'cdm/event/common/StockSplitInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FzQcp26M2wWMZ8oAGjQMCQdvRGbamTTNF788oeS8mRAo',
+          typeBlueId: 'GAPYEKW715oyitUYJp6oG8TJQrZ3oHrfHbahRSWKXVAm',
           attributesAdded: [],
         },
       ],
     },
-    '9RwGQUii5VWniPgSYepeWwC1kxvZFDkzF6A5wK9ESXLW': {
+    FF9Z3uZqajrrPRisojyAFgTfoSsZRLq3qzqR19xY3meW: {
       status: 'stable',
       name: 'cdm/event/common/TermsChangeInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9RwGQUii5VWniPgSYepeWwC1kxvZFDkzF6A5wK9ESXLW',
+          typeBlueId: 'FF9Z3uZqajrrPRisojyAFgTfoSsZRLq3qzqR19xY3meW',
           attributesAdded: [],
         },
       ],
     },
-    DMPg8sNY4NvsU9grh9o2Bbqy9F7wFkLkA74Z5g8pwNNk: {
+    GHKfcNGEW4jfWBhqCesd1ZbQ2ZJvDnS1YMm2UZ2ZZNZG: {
       status: 'stable',
       name: 'cdm/event/common/Trade',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DMPg8sNY4NvsU9grh9o2Bbqy9F7wFkLkA74Z5g8pwNNk',
+          typeBlueId: 'GHKfcNGEW4jfWBhqCesd1ZbQ2ZJvDnS1YMm2UZ2ZZNZG',
           attributesAdded: [],
         },
       ],
     },
-    '5NL7sLmwPvsGQHH4cx5g8ajq8wbZMimREKKDky2KMRFQ': {
+    '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU': {
       status: 'stable',
       name: 'cdm/event/common/TradeIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5NL7sLmwPvsGQHH4cx5g8ajq8wbZMimREKKDky2KMRFQ',
+          typeBlueId: '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU',
           attributesAdded: [],
         },
       ],
     },
-    EkwCZJVkbvyuxajEsGZpbJ7VXpXvUkhnSAEFVUNjVeB5: {
+    '7RF4XftJyc9vK9ZmWCJeaHhcyEAv7nfiBYWQ95m9R24Y': {
       status: 'stable',
       name: 'cdm/event/common/TradePricingReport',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EkwCZJVkbvyuxajEsGZpbJ7VXpXvUkhnSAEFVUNjVeB5',
+          typeBlueId: '7RF4XftJyc9vK9ZmWCJeaHhcyEAv7nfiBYWQ95m9R24Y',
           attributesAdded: [],
         },
       ],
     },
-    J8SrPWrtbe4J2GJXdDo51yKLW7GpaZmwrtGnvLKFRArQ: {
+    HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd: {
       status: 'stable',
       name: 'cdm/event/common/TradeState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J8SrPWrtbe4J2GJXdDo51yKLW7GpaZmwrtGnvLKFRArQ',
+          typeBlueId: 'HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd',
           attributesAdded: [],
         },
       ],
     },
-    '98eFnr7F52GRnD9gADRtEuqZMPpuZCmesaDMrQ7wS8Xk': {
+    Huf4W2NzpakJVTTdkhKJriEVabT1NBezmnyTJB9Wt2Vs: {
       status: 'stable',
       name: 'cdm/event/common/Transfer',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '98eFnr7F52GRnD9gADRtEuqZMPpuZCmesaDMrQ7wS8Xk',
+          typeBlueId: 'Huf4W2NzpakJVTTdkhKJriEVabT1NBezmnyTJB9Wt2Vs',
           attributesAdded: [],
         },
       ],
     },
-    FcygtYNeeqry73mriebsFBhtXNtXX2ULZyMgcESYBSyY: {
+    '28K8jWekKx6AFsw5haFZg81uADTmzkkgCKQErSng8jXd': {
       status: 'stable',
       name: 'cdm/event/common/TransferExpression',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FcygtYNeeqry73mriebsFBhtXNtXX2ULZyMgcESYBSyY',
+          typeBlueId: '28K8jWekKx6AFsw5haFZg81uADTmzkkgCKQErSng8jXd',
           attributesAdded: [],
         },
       ],
     },
-    CJvucYnLjJ6YQyYuspTnZJGLBaDpLV8VYMdDgadAmjNF: {
+    EPw23JvyLZR41DTM3xD1zG4onVhCwLqBoQYZN27eS27R: {
       status: 'stable',
       name: 'cdm/event/common/TransferInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CJvucYnLjJ6YQyYuspTnZJGLBaDpLV8VYMdDgadAmjNF',
+          typeBlueId: 'EPw23JvyLZR41DTM3xD1zG4onVhCwLqBoQYZN27eS27R',
           attributesAdded: [],
         },
       ],
     },
-    CFc6Qd17SJME5NRgGX5E2JvDaLCdH3FFGafnxKTvqrdw: {
+    '9HPCH457X3P45F4b4BRLZZYtzUtV2TFY3DmCKNCJL7DZ': {
       status: 'stable',
       name: 'cdm/event/common/TransferState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CFc6Qd17SJME5NRgGX5E2JvDaLCdH3FFGafnxKTvqrdw',
+          typeBlueId: '9HPCH457X3P45F4b4BRLZZYtzUtV2TFY3DmCKNCJL7DZ',
           attributesAdded: [],
         },
       ],
     },
-    A34Y1hbdkfTp159ccYU6dWyPMcb7T2yb5WeUyjbVuDVZ: {
+    CffZN3WjvV7L4yuq8gPxEorKZMGZzCxYzuaCyW5GRsfn: {
       status: 'stable',
       name: 'cdm/event/common/TransferStatusEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A34Y1hbdkfTp159ccYU6dWyPMcb7T2yb5WeUyjbVuDVZ',
+          typeBlueId: 'CffZN3WjvV7L4yuq8gPxEorKZMGZzCxYzuaCyW5GRsfn',
           attributesAdded: [],
         },
       ],
     },
-    FsvHni5Yw2kgwi13MLfPDm1kxtkAxtwNuT3wJNMwYWjB: {
+    '35r3StzAH6Qus8FCSpiCqqUrKHx9d4SYBCL2gEecgCJq': {
       status: 'stable',
       name: 'cdm/event/common/Valuation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FsvHni5Yw2kgwi13MLfPDm1kxtkAxtwNuT3wJNMwYWjB',
+          typeBlueId: '35r3StzAH6Qus8FCSpiCqqUrKHx9d4SYBCL2gEecgCJq',
           attributesAdded: [],
         },
       ],
     },
-    '8ZzaFzKBw64vzQDiMvQmnvkqQceABGeE2Tg7Hv49brUQ': {
+    EYHsr3QdfZNKZWjh2MH65Run9WHCSMwVoQabxHFou3oX: {
       status: 'stable',
       name: 'cdm/event/common/ValuationInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8ZzaFzKBw64vzQDiMvQmnvkqQceABGeE2Tg7Hv49brUQ',
+          typeBlueId: 'EYHsr3QdfZNKZWjh2MH65Run9WHCSMwVoQabxHFou3oX',
           attributesAdded: [],
         },
       ],
     },
-    '3qgdUWu7raBQuXg5poKvwjaHsLprDJhjEdxa8ZcXbCMD': {
+    GV6VzVBrD9mNeCdw21SuF8iXDvMQGY5KsZFTLB9dh5aZ: {
       status: 'stable',
       name: 'cdm/event/common/ValuationSourceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3qgdUWu7raBQuXg5poKvwjaHsLprDJhjEdxa8ZcXbCMD',
+          typeBlueId: 'GV6VzVBrD9mNeCdw21SuF8iXDvMQGY5KsZFTLB9dh5aZ',
           attributesAdded: [],
         },
       ],
     },
-    '6d1G7oKbQHMycN2DpoiwfRUVYVHqAbkSg12MQas8Qbc5': {
+    HsG4xRp4HQZoXBBj6gQLY1cHS5gQpBY9GJeaUjGbd97Z: {
       status: 'stable',
       name: 'cdm/event/common/ValuationTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6d1G7oKbQHMycN2DpoiwfRUVYVHqAbkSg12MQas8Qbc5',
+          typeBlueId: 'HsG4xRp4HQZoXBBj6gQLY1cHS5gQpBY9GJeaUjGbd97Z',
           attributesAdded: [],
         },
       ],
     },
-    '79YpRF1QvMBEWLGAWkLqBGPQXzuJpz5nxGxrBNrJ7bAY': {
+    '2AjMswvvUFa65tb2E1fgtkxxgJ7ReLj17xorwjbb8wAb': {
       status: 'stable',
       name: 'cdm/event/position/AggregationParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '79YpRF1QvMBEWLGAWkLqBGPQXzuJpz5nxGxrBNrJ7bAY',
+          typeBlueId: '2AjMswvvUFa65tb2E1fgtkxxgJ7ReLj17xorwjbb8wAb',
           attributesAdded: [],
         },
       ],
     },
-    '5XqSaDHYYoCm6CbhKtjCg411iW28d94bCQv3Dzssm85r': {
+    '8gNG5f8FJbRxhdf2sZeitv3B3z4WF4YQTxzMJL1RU2Mb': {
       status: 'stable',
       name: 'cdm/event/position/AvailableInventory',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5XqSaDHYYoCm6CbhKtjCg411iW28d94bCQv3Dzssm85r',
+          typeBlueId: '8gNG5f8FJbRxhdf2sZeitv3B3z4WF4YQTxzMJL1RU2Mb',
           attributesAdded: [],
         },
       ],
     },
-    '7i3shwTd6gctk8tdQbYYwNjTUuVQxFY8Fj6NUeADMeaq': {
+    '2V4dGZWz8cuGsz2de8Z56U5MbYQwAFwUMekoMx6KF9MR': {
       status: 'stable',
       name: 'cdm/event/position/AvailableInventoryRecord',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7i3shwTd6gctk8tdQbYYwNjTUuVQxFY8Fj6NUeADMeaq',
+          typeBlueId: '2V4dGZWz8cuGsz2de8Z56U5MbYQwAFwUMekoMx6KF9MR',
           attributesAdded: [],
         },
       ],
     },
-    '2RFeesvWLv2qoVxFe5jTLyoVYdZHmyW9dnfWhJjwf53k': {
+    aBFCJu2rgHDvt2e9kS3mCjQEMuVFbBnupxJkHCP32WV: {
       status: 'stable',
       name: 'cdm/event/position/AvailableInventoryTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2RFeesvWLv2qoVxFe5jTLyoVYdZHmyW9dnfWhJjwf53k',
+          typeBlueId: 'aBFCJu2rgHDvt2e9kS3mCjQEMuVFbBnupxJkHCP32WV',
           attributesAdded: [],
         },
       ],
     },
-    '3mtxL1pBoXkjuTxeX9scwFvV5Aojb66cJmej6pndkJWD': {
+    BkMb8vLvnJKd2uBNbPk8QJCpmMbYGV8HNkhUbEsM5p81: {
       status: 'stable',
       name: 'cdm/event/position/ContractBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3mtxL1pBoXkjuTxeX9scwFvV5Aojb66cJmej6pndkJWD',
+          typeBlueId: 'BkMb8vLvnJKd2uBNbPk8QJCpmMbYGV8HNkhUbEsM5p81',
           attributesAdded: [],
         },
       ],
     },
-    '4pkLwzBQctB2qVDMb1UAtQuhPbBpChuWnEEdq4AQcznd': {
+    DhpZ3SZe34Pz3xJLcAS74rHhgZSez7ZvQx3yqmXcYA8r: {
       status: 'stable',
       name: 'cdm/event/position/CounterpartyPosition',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4pkLwzBQctB2qVDMb1UAtQuhPbBpChuWnEEdq4AQcznd',
+          typeBlueId: 'DhpZ3SZe34Pz3xJLcAS74rHhgZSez7ZvQx3yqmXcYA8r',
           attributesAdded: [],
         },
       ],
     },
-    HwwB2B9ieWdwirXKrPSjxx9FeZbNK5uqN78Fquk7XRK2: {
+    BTewRSf9MC2WLXoWSxonQnNA9mncZSiYdnUB4odA6MN9: {
       status: 'stable',
       name: 'cdm/event/position/Inventory',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HwwB2B9ieWdwirXKrPSjxx9FeZbNK5uqN78Fquk7XRK2',
+          typeBlueId: 'BTewRSf9MC2WLXoWSxonQnNA9mncZSiYdnUB4odA6MN9',
           attributesAdded: [],
         },
       ],
     },
-    '7RagTg1Tpw9L7gAaRss9AXVYT3D7jC9KKyQgQe2nzpkB': {
+    '6ixYuBhfiWQfvWDH1SyBRA2mJcRzpiH3SWomNPu3paz1': {
       status: 'stable',
       name: 'cdm/event/position/InventoryRecord',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7RagTg1Tpw9L7gAaRss9AXVYT3D7jC9KKyQgQe2nzpkB',
+          typeBlueId: '6ixYuBhfiWQfvWDH1SyBRA2mJcRzpiH3SWomNPu3paz1',
           attributesAdded: [],
         },
       ],
     },
-    '8ahLvM8228zmLQwX87iqop1DsD6pV5ZmzmGw6VQ6cL3j': {
+    FiGnX5GAARt1cJzgo4BT3oAxDUqkYktySnbp28d47HxS: {
       status: 'stable',
       name: 'cdm/event/position/metafields/ReferenceWithMetaPortfolioState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8ahLvM8228zmLQwX87iqop1DsD6pV5ZmzmGw6VQ6cL3j',
+          typeBlueId: 'FiGnX5GAARt1cJzgo4BT3oAxDUqkYktySnbp28d47HxS',
           attributesAdded: [],
         },
       ],
     },
-    BUNxoowt97aMvGEavQkPkCd4nHQTtcamT9JJzvXpyHKd: {
+    '5uwV9tJmkwW5rZ6mfKRco97dQEw9rwznJePYQbLyAJco': {
       status: 'stable',
       name: 'cdm/event/position/Portfolio',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BUNxoowt97aMvGEavQkPkCd4nHQTtcamT9JJzvXpyHKd',
+          typeBlueId: '5uwV9tJmkwW5rZ6mfKRco97dQEw9rwznJePYQbLyAJco',
           attributesAdded: [],
         },
       ],
     },
-    '96TUPsr1vKCN1d5SygGFrJqPYHxmvcL3JLE7RqaakpTg': {
+    '5rZCg68iGGiKxNzqKGrKhdGvwvL65GzoawTiePj97t9T': {
       status: 'stable',
       name: 'cdm/event/position/PortfolioState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '96TUPsr1vKCN1d5SygGFrJqPYHxmvcL3JLE7RqaakpTg',
+          typeBlueId: '5rZCg68iGGiKxNzqKGrKhdGvwvL65GzoawTiePj97t9T',
           attributesAdded: [],
         },
       ],
     },
-    HbEa5JnvDWdeSRPvvAFuriDHdfE4gteVmh5RoPeY8QN8: {
+    '22Lbahf1cGvTSTcW83aFHjBwGYU4D8XJ4Nmupa8TNRJH': {
       status: 'stable',
       name: 'cdm/event/position/Position',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HbEa5JnvDWdeSRPvvAFuriDHdfE4gteVmh5RoPeY8QN8',
+          typeBlueId: '22Lbahf1cGvTSTcW83aFHjBwGYU4D8XJ4Nmupa8TNRJH',
           attributesAdded: [],
         },
       ],
     },
-    H8eopTmsWExtp1LBnrmRgLseBswCZb7FcMX44dWKFNQd: {
+    CtjNKoKQ8S3xNPyMY6GXJKQAAfjxpTQmdDgLUNE3iAJM: {
       status: 'stable',
       name: 'cdm/event/position/PositionStatusEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H8eopTmsWExtp1LBnrmRgLseBswCZb7FcMX44dWKFNQd',
+          typeBlueId: 'CtjNKoKQ8S3xNPyMY6GXJKQAAfjxpTQmdDgLUNE3iAJM',
           attributesAdded: [],
         },
       ],
     },
-    ABWcZnb8tDCZpPvBSWChTAtPtn8pr8B9iaDKGTazMvde: {
+    F2Wt1EDZnfiFP4epJAKj86zS8AfxfM9y6A37JnsMLx5j: {
       status: 'stable',
       name: 'cdm/event/position/SecurityLocate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ABWcZnb8tDCZpPvBSWChTAtPtn8pr8B9iaDKGTazMvde',
+          typeBlueId: 'F2Wt1EDZnfiFP4epJAKj86zS8AfxfM9y6A37JnsMLx5j',
           attributesAdded: [],
         },
       ],
     },
-    EUhKix96qBRpb8cnMTF8gcMWJy2C8uLuSVgDDmiWB82j: {
+    '5MhstayLq1JLa2NHwkVTfhEPNG54pMxBdyN7fZ7dzvx6': {
       status: 'stable',
       name: 'cdm/event/workflow/CreditLimitInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EUhKix96qBRpb8cnMTF8gcMWJy2C8uLuSVgDDmiWB82j',
+          typeBlueId: '5MhstayLq1JLa2NHwkVTfhEPNG54pMxBdyN7fZ7dzvx6',
           attributesAdded: [],
         },
       ],
     },
-    B56ozkEmANXmnwGKZwUCnfN6mpja8ytvV9aTBgmCyYtw: {
+    CRo3EU8CPpKHNiGvaX5xb9nGp7qqfXDNxyuzxdjqhqUP: {
       status: 'stable',
       name: 'cdm/event/workflow/CreditLimitTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B56ozkEmANXmnwGKZwUCnfN6mpja8ytvV9aTBgmCyYtw',
+          typeBlueId: 'CRo3EU8CPpKHNiGvaX5xb9nGp7qqfXDNxyuzxdjqhqUP',
           attributesAdded: [],
         },
       ],
     },
-    '78EQYkDkf7rGpcLm6EChjXZahyPjkpNnuPg5fpQ2FQEk': {
+    '6jrB2pq8NLHiipfLLWQHfSy6DxQvWsHdiVcQ4VP3BUFy': {
       status: 'stable',
       name: 'cdm/event/workflow/CreditLimitUtilisation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '78EQYkDkf7rGpcLm6EChjXZahyPjkpNnuPg5fpQ2FQEk',
+          typeBlueId: '6jrB2pq8NLHiipfLLWQHfSy6DxQvWsHdiVcQ4VP3BUFy',
           attributesAdded: [],
         },
       ],
     },
-    '5mSFBLKEbHuJRnrmTEjggEtTrLgU7NJhaz9tcKqiJVZy': {
+    DhHQHqqp2Z9sKdNPDi7Zcxze2V3FZafnK1rKbVaWWDHE: {
       status: 'stable',
       name: 'cdm/event/workflow/CreditLimitUtilisationPosition',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5mSFBLKEbHuJRnrmTEjggEtTrLgU7NJhaz9tcKqiJVZy',
+          typeBlueId: 'DhHQHqqp2Z9sKdNPDi7Zcxze2V3FZafnK1rKbVaWWDHE',
           attributesAdded: [],
         },
       ],
     },
-    '9To4fnNdzSDWsi6bJQXF3mF5qrWL3Z512YNM4QAgavMg': {
+    HZmoSFgPTJDpgvQbhrw415z735PsqkkNK7AhockdXE35: {
       status: 'stable',
       name: 'cdm/event/workflow/CustomisedWorkflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9To4fnNdzSDWsi6bJQXF3mF5qrWL3Z512YNM4QAgavMg',
+          typeBlueId: 'HZmoSFgPTJDpgvQbhrw415z735PsqkkNK7AhockdXE35',
           attributesAdded: [],
         },
       ],
     },
-    '8miTVbK5NJxxVBWQ7jeftLfg8P7YfMa3Ksi8a3XDJJ6': {
+    A1jYzNcEp75NaNXNyvEb5S2noXSa3PnFck4qj5Cdvuvs: {
       status: 'stable',
       name: 'cdm/event/workflow/EventInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8miTVbK5NJxxVBWQ7jeftLfg8P7YfMa3Ksi8a3XDJJ6',
+          typeBlueId: 'A1jYzNcEp75NaNXNyvEb5S2noXSa3PnFck4qj5Cdvuvs',
           attributesAdded: [],
         },
       ],
     },
-    '29Bam3D6qfaY6wWG9a8BVSCbVzvz6r97xkbk4nU7aU7U': {
+    DSJDCMX9fWnAZqseXHzuc3NWEvtct9Ay1D8XqV7Cz8sb: {
       status: 'stable',
       name: 'cdm/event/workflow/EventTimestamp',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '29Bam3D6qfaY6wWG9a8BVSCbVzvz6r97xkbk4nU7aU7U',
+          typeBlueId: 'DSJDCMX9fWnAZqseXHzuc3NWEvtct9Ay1D8XqV7Cz8sb',
           attributesAdded: [],
         },
       ],
     },
-    F7xhVYtqhoLA4Xk12rbQC3UUXbJBcxj2VRtwQUxpn251: {
+    '98uPvPckZ92oJWmjF6PjWKjL2AQpfcZkKBFUSXjnaWdu': {
       status: 'stable',
       name: 'cdm/event/workflow/EventTimestampQualificationEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F7xhVYtqhoLA4Xk12rbQC3UUXbJBcxj2VRtwQUxpn251',
+          typeBlueId: '98uPvPckZ92oJWmjF6PjWKjL2AQpfcZkKBFUSXjnaWdu',
           attributesAdded: [],
         },
       ],
     },
-    ZRQoGVDtnXG3DMztqxmZoXT8DTZM1bAdtyW3JLZzS25: {
+    BRdxjWnBGUSh37id1GM71wzr5JbVB7YUZknt2qh1GRd5: {
       status: 'stable',
       name: 'cdm/event/workflow/FieldWithMetaCreditLimitTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ZRQoGVDtnXG3DMztqxmZoXT8DTZM1bAdtyW3JLZzS25',
+          typeBlueId: 'BRdxjWnBGUSh37id1GM71wzr5JbVB7YUZknt2qh1GRd5',
           attributesAdded: [],
         },
       ],
     },
-    '7VnSHn8rstQhmaLbXZA83RTKM3Kcjw68ebKhohRvD2mA': {
+    umfXQbzquU2FEApASMDmHC7pUrpJatVHuKZmEBofQ7g: {
       status: 'stable',
       name: 'cdm/event/workflow/FieldWithMetaLimitLevelEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7VnSHn8rstQhmaLbXZA83RTKM3Kcjw68ebKhohRvD2mA',
+          typeBlueId: 'umfXQbzquU2FEApASMDmHC7pUrpJatVHuKZmEBofQ7g',
           attributesAdded: [],
         },
       ],
     },
-    '53AbkCoJHgxqgWGG6v2TSpY2qeaLG862cAjoiiYDzv1L': {
+    '7kTQtXqJDXrzKy4Qi8KccDimTXajinKszZDzGGAVE3Fe': {
       status: 'stable',
       name: 'cdm/event/workflow/LimitApplicable',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '53AbkCoJHgxqgWGG6v2TSpY2qeaLG862cAjoiiYDzv1L',
+          typeBlueId: '7kTQtXqJDXrzKy4Qi8KccDimTXajinKszZDzGGAVE3Fe',
           attributesAdded: [],
         },
       ],
     },
-    FkagaCXwpvV1bHkAtUqKKkwuyNj7BX5UnEfwfHeDHvuv: {
+    EYpcaUBjmYVc34MF2zDCr15B8fCMH1Lrnw2Zq1zPU4TS: {
       status: 'stable',
       name: 'cdm/event/workflow/LimitApplicableExtended',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FkagaCXwpvV1bHkAtUqKKkwuyNj7BX5UnEfwfHeDHvuv',
+          typeBlueId: 'EYpcaUBjmYVc34MF2zDCr15B8fCMH1Lrnw2Zq1zPU4TS',
           attributesAdded: [],
         },
       ],
     },
-    '2BsPgE1jX1a3Hm3bnnC5scsZoqfNiMhN1PxggpSyDJHa': {
+    EZdU7ZfikeT9jXmxHjC3ABGRtnYsqhzhoL58Cfo3ojj1: {
       status: 'stable',
       name: 'cdm/event/workflow/LimitLevelEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2BsPgE1jX1a3Hm3bnnC5scsZoqfNiMhN1PxggpSyDJHa',
+          typeBlueId: 'EZdU7ZfikeT9jXmxHjC3ABGRtnYsqhzhoL58Cfo3ojj1',
           attributesAdded: [],
         },
       ],
     },
-    AqS1brpf2w2Q425LEFsrQQKPZHrParp6fMbzm7hy1cqV: {
+    '98dPVuFQFzp6TPmhAh6zjz4zFp8sdg597uHrfF3ztLkP': {
       status: 'stable',
       name: 'cdm/event/workflow/MessageInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AqS1brpf2w2Q425LEFsrQQKPZHrParp6fMbzm7hy1cqV',
+          typeBlueId: '98dPVuFQFzp6TPmhAh6zjz4zFp8sdg597uHrfF3ztLkP',
           attributesAdded: [],
         },
       ],
     },
-    '6HKfs5P29obpmgCujF88CdGns3p8Udb8sHA6m99noVZw': {
+    '5FztK8LEabxgM4scSQjt3nPYnDnrndC8WDtkrCKtWy5e': {
       status: 'stable',
       name: 'cdm/event/workflow/metafields/ReferenceWithMetaWorkflowStep',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6HKfs5P29obpmgCujF88CdGns3p8Udb8sHA6m99noVZw',
+          typeBlueId: '5FztK8LEabxgM4scSQjt3nPYnDnrndC8WDtkrCKtWy5e',
           attributesAdded: [],
         },
       ],
     },
-    FmwzzAFmqGuCenMT7mzAuGYDNJaYPsnDg5cWKFkHnjwL: {
+    HL2ZcMwczuHgPoUL75nm9XG9rZy6XeFMmzGuuWfqxkya: {
       status: 'stable',
       name: 'cdm/event/workflow/PartyCustomisedWorkflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FmwzzAFmqGuCenMT7mzAuGYDNJaYPsnDg5cWKFkHnjwL',
+          typeBlueId: 'HL2ZcMwczuHgPoUL75nm9XG9rZy6XeFMmzGuuWfqxkya',
           attributesAdded: [],
         },
       ],
     },
-    ACjVrd9M4uVUxaFUuoq8puE5GX9w3TWnMxGNJCW8BGdo: {
+    B2QkNd6opHqfsBrrTAsNeuzDJGQoGukZ6M3oQ254E6ag: {
       status: 'stable',
       name: 'cdm/event/workflow/Velocity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ACjVrd9M4uVUxaFUuoq8puE5GX9w3TWnMxGNJCW8BGdo',
+          typeBlueId: 'B2QkNd6opHqfsBrrTAsNeuzDJGQoGukZ6M3oQ254E6ag',
           attributesAdded: [],
         },
       ],
     },
-    '98XAqUNzZkNVqqaqfN3uL863kyUvoPoeaj1C6t8TcBcc': {
+    '6exizYh6WdJdboTXU5vG7ZycT7oysGTNWCBaBzuWkBBs': {
       status: 'stable',
       name: 'cdm/event/workflow/WarehouseIdentityEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '98XAqUNzZkNVqqaqfN3uL863kyUvoPoeaj1C6t8TcBcc',
+          typeBlueId: '6exizYh6WdJdboTXU5vG7ZycT7oysGTNWCBaBzuWkBBs',
           attributesAdded: [],
         },
       ],
     },
-    DVtFVNsGALqE4V9Un3ftDWwJ51qkUXqwoi53xU1DCDcZ: {
+    '69BAj8p5rA9BuAUmQM81t6H6n2keSWdJxMXhZQqzaotS': {
       status: 'stable',
       name: 'cdm/event/workflow/Workflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DVtFVNsGALqE4V9Un3ftDWwJ51qkUXqwoi53xU1DCDcZ',
+          typeBlueId: '69BAj8p5rA9BuAUmQM81t6H6n2keSWdJxMXhZQqzaotS',
           attributesAdded: [],
         },
       ],
     },
-    FjbFhrFxtxs3sDqZwM29eQWswygXu1ogCT2Pi2U4mQRp: {
+    GZHhbuAMJUxPqZ627VF6tcc7Jky7YaBT1ctEWpw3De4m: {
       status: 'stable',
       name: 'cdm/event/workflow/WorkflowState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FjbFhrFxtxs3sDqZwM29eQWswygXu1ogCT2Pi2U4mQRp',
+          typeBlueId: 'GZHhbuAMJUxPqZ627VF6tcc7Jky7YaBT1ctEWpw3De4m',
           attributesAdded: [],
         },
       ],
     },
-    Cqsvhr2yBW9tghAQNKR3XDYzG1BtRFwCBgpQ7zz5iuXo: {
+    BvJRype2zWVijuwSinejW5FK4QMppv6EphZ6CPresR4s: {
       status: 'stable',
       name: 'cdm/event/workflow/WorkflowStatusEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Cqsvhr2yBW9tghAQNKR3XDYzG1BtRFwCBgpQ7zz5iuXo',
+          typeBlueId: 'BvJRype2zWVijuwSinejW5FK4QMppv6EphZ6CPresR4s',
           attributesAdded: [],
         },
       ],
     },
-    BAy5Lg47k6suMJXPgRrjQuGU6tZqZzABdrA4M3Rvv142: {
+    DocYqREg9o4T2rhZSgBc4WNY8RpRSEM9zXWkDh65v5Z7: {
       status: 'stable',
       name: 'cdm/event/workflow/WorkflowStep',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BAy5Lg47k6suMJXPgRrjQuGU6tZqZzABdrA4M3Rvv142',
+          typeBlueId: 'DocYqREg9o4T2rhZSgBc4WNY8RpRSEM9zXWkDh65v5Z7',
           attributesAdded: [],
         },
       ],
     },
-    G4jFdkwRjRnQEpGMrZtySGdPr3tRWJd7bh65nxK1Pp8N: {
+    '3hc2fs3hNHSJTJ1K3BXvZXCq4XHj7rRGhvfo62XddQin': {
       status: 'stable',
       name: 'cdm/event/workflow/WorkflowStepApproval',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G4jFdkwRjRnQEpGMrZtySGdPr3tRWJd7bh65nxK1Pp8N',
+          typeBlueId: '3hc2fs3hNHSJTJ1K3BXvZXCq4XHj7rRGhvfo62XddQin',
           attributesAdded: [],
         },
       ],
     },
-    FdxEpwBVWWvKrLVJFiCY2ChgGSz5yA1uMFC8F5cEd7CR: {
+    '5NxschaoZUezk2BPbZj7X7nhfYwLz97EWLXacfYbzGHh': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/AddressForNotices',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FdxEpwBVWWvKrLVJFiCY2ChgGSz5yA1uMFC8F5cEd7CR',
+          typeBlueId: '5NxschaoZUezk2BPbZj7X7nhfYwLz97EWLXacfYbzGHh',
           attributesAdded: [],
         },
       ],
     },
-    F7fkku2HrNQ5jSPUdK2yWnWFShTMYUFJh1xqKudc3NLg: {
+    BU5zwrVyY7wwfteRD7Vdaj9pWLX2CSnscAydsqWAUXjk: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/AgreementName',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F7fkku2HrNQ5jSPUdK2yWnWFShTMYUFJh1xqKudc3NLg',
+          typeBlueId: 'BU5zwrVyY7wwfteRD7Vdaj9pWLX2CSnscAydsqWAUXjk',
           attributesAdded: [],
         },
       ],
     },
-    HyGbxWb5gZabiVhZkNgTGw4LRVjYgdzF3HEJdyeTtuvM: {
+    '4KjkUNqNW52EyuCcnzPCbMA8tfR6qRi9jXUsZ3s5vFTv': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/AgreementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HyGbxWb5gZabiVhZkNgTGw4LRVjYgdzF3HEJdyeTtuvM',
+          typeBlueId: '4KjkUNqNW52EyuCcnzPCbMA8tfR6qRi9jXUsZ3s5vFTv',
           attributesAdded: [],
         },
       ],
     },
-    '3FwnfmPe8axs9Sr2iFvR9Qg5tKQmQpQYDYFksE9EHFxF': {
+    HFnvdnbcm5FbHRjXNW9KZ6x5LzJhCDhTuXtU3tDamXrQ: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ClosedState',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3FwnfmPe8axs9Sr2iFvR9Qg5tKQmQpQYDYFksE9EHFxF',
+          typeBlueId: 'HFnvdnbcm5FbHRjXNW9KZ6x5LzJhCDhTuXtU3tDamXrQ',
           attributesAdded: [],
         },
       ],
     },
-    AxtAGhrVfdEab1B2endnkUSwdQci3yBfHnPi7r21fKgG: {
+    H4Q9vZBMs955sVKjew3tU5xKipMXrqJNyTf7MDqQvRjH: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ClosedStateEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AxtAGhrVfdEab1B2endnkUSwdQci3yBfHnPi7r21fKgG',
+          typeBlueId: 'H4Q9vZBMs955sVKjew3tU5xKipMXrqJNyTf7MDqQvRjH',
           attributesAdded: [],
         },
       ],
     },
-    '5txXuuQEYq3DRJtqa9g5CMLyFXyChsrbeA6Q8sruRz3e': {
+    CQzTbWm83XYnnNf8Z5x9G7WakNb7E4nLLZqNgDki1J2p: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ContractualDefinitionsEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5txXuuQEYq3DRJtqa9g5CMLyFXyChsrbeA6Q8sruRz3e',
+          typeBlueId: 'CQzTbWm83XYnnNf8Z5x9G7WakNb7E4nLLZqNgDki1J2p',
           attributesAdded: [],
         },
       ],
     },
-    DqGobrtxaAEaszyaxnf1T8PaYqNexwwc7b6EHDQcFsQG: {
+    '6jcZ9zLDpCUUHnubcVFKvtCrbSEVir51vkUuHYoQEtTv': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ContractualMatrix',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DqGobrtxaAEaszyaxnf1T8PaYqNexwwc7b6EHDQcFsQG',
+          typeBlueId: '6jcZ9zLDpCUUHnubcVFKvtCrbSEVir51vkUuHYoQEtTv',
           attributesAdded: [],
         },
       ],
     },
-    '5JbcXku8tos98BGy9mMDtCZ5CRhRzUb7oGjCW73eLqcZ': {
+    B68gARDj25MKrfCetdMJ4VkSs38arw6Bqr2TPDnbwyBD: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ContractualSupplementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5JbcXku8tos98BGy9mMDtCZ5CRhRzUb7oGjCW73eLqcZ',
+          typeBlueId: 'B68gARDj25MKrfCetdMJ4VkSs38arw6Bqr2TPDnbwyBD',
           attributesAdded: [],
         },
       ],
     },
-    '3apKhKP5xQpMoT4sNuUZ78eq9rVCkEASywdq4Fwcq1Pr': {
+    '3USYNWwBjwfneMFPfLEAygbecRdE9pmiE6VzumZMpdRQ': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ContractualTermsSupplement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3apKhKP5xQpMoT4sNuUZ78eq9rVCkEASywdq4Fwcq1Pr',
+          typeBlueId: '3USYNWwBjwfneMFPfLEAygbecRdE9pmiE6VzumZMpdRQ',
           attributesAdded: [],
         },
       ],
     },
-    '4i3WZ6muDQ6NE6m8F9Xeuh3VH2ZcyjVNMCPWDkjEBtPz': {
+    AA7nW2FUcjuuyrgpc3ytfvoUQ34Ux6RFfNyLuHmnYxJU: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/CreditSupportDocumentTermsEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4i3WZ6muDQ6NE6m8F9Xeuh3VH2ZcyjVNMCPWDkjEBtPz',
+          typeBlueId: 'AA7nW2FUcjuuyrgpc3ytfvoUQ34Ux6RFfNyLuHmnYxJU',
           attributesAdded: [],
         },
       ],
     },
-    '3wxUxQ84F797fYARR8X6Eo2XFCB944hauuSNuQmcXggJ': {
+    '55eAMVBDrc97nSg81oZ8CAjTfKe1nT7pk36qGrAdm3zF': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/CreditSupportProviderTermsEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3wxUxQ84F797fYARR8X6Eo2XFCB944hauuSNuQmcXggJ',
+          typeBlueId: '55eAMVBDrc97nSg81oZ8CAjTfKe1nT7pk36qGrAdm3zF',
           attributesAdded: [],
         },
       ],
     },
-    '8zxPrGpNdV8RXvND2vW7jBAK56wBonsNYwbDiEaiasdP': {
+    '9dLtbVyZnKc2oNincBJmQCsy1WxLSSEybcdCJjn5TYm9': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ExecutionLocationEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8zxPrGpNdV8RXvND2vW7jBAK56wBonsNYwbDiEaiasdP',
+          typeBlueId: '9dLtbVyZnKc2oNincBJmQCsy1WxLSSEybcdCJjn5TYm9',
           attributesAdded: [],
         },
       ],
     },
-    '5CZGuPh2NgVWkxTTTqHn4LykAwKTXqtg83oWxA6HPX8j': {
+    CZWJZLLr3HQs8VCBUxDWXabvSf6Q3319JdxR7Apv4ijg: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/FieldWithMetaContractualDefinitionsEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5CZGuPh2NgVWkxTTTqHn4LykAwKTXqtg83oWxA6HPX8j',
+          typeBlueId: 'CZWJZLLr3HQs8VCBUxDWXabvSf6Q3319JdxR7Apv4ijg',
           attributesAdded: [],
         },
       ],
     },
-    FgeGQiLz9TJQSYENK3T48kJAnBoypPpJTdxNttHXYVSj: {
+    HnmNxnPfmCYsrrcW4ZHfLPh81wfJNCf4xE2hqXeuzSgu: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/FieldWithMetaContractualSupplementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FgeGQiLz9TJQSYENK3T48kJAnBoypPpJTdxNttHXYVSj',
+          typeBlueId: 'HnmNxnPfmCYsrrcW4ZHfLPh81wfJNCf4xE2hqXeuzSgu',
           attributesAdded: [],
         },
       ],
     },
-    EvqvkLHSgg23hZpBiCkngAjwG8xuBKGiDCpbDgMpS97G: {
+    FPz2gxL3hhBbrKzsyDHCfd6NPDNRZN4HckQY4e1gj5u9: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/FieldWithMetaGoverningLawEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EvqvkLHSgg23hZpBiCkngAjwG8xuBKGiDCpbDgMpS97G',
+          typeBlueId: 'FPz2gxL3hhBbrKzsyDHCfd6NPDNRZN4HckQY4e1gj5u9',
           attributesAdded: [],
         },
       ],
     },
-    '4FF87GVL4rfENXZ1E4J9DU3xpkfVLVGmfJySWqeorhS5': {
+    Eyc8B8F3y2KnRoznB2hdpowXLuoWSHAkCnr3veTzM2Lc: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/FieldWithMetaMatrixTermEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4FF87GVL4rfENXZ1E4J9DU3xpkfVLVGmfJySWqeorhS5',
+          typeBlueId: 'Eyc8B8F3y2KnRoznB2hdpowXLuoWSHAkCnr3veTzM2Lc',
           attributesAdded: [],
         },
       ],
     },
-    FpHDJapzgLvakFXFV8ZtQe1CcZ7aBKpmPLKLwWkp2tRd: {
+    '27svQFwe6bB27frVyJ6e6Nx85ok2AeWiaJyYCwEwdVF4': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/FieldWithMetaMatrixTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FpHDJapzgLvakFXFV8ZtQe1CcZ7aBKpmPLKLwWkp2tRd',
+          typeBlueId: '27svQFwe6bB27frVyJ6e6Nx85ok2AeWiaJyYCwEwdVF4',
           attributesAdded: [],
         },
       ],
     },
-    ABknki16oPwUDYoEVUFzYPxboxn2iwssEg2ST1wCz9sA: {
+    '8Wj1ScUWE2jG7vPb1vgp6xRgqJ4EbYyCS9n2CbaCYTSY': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/FieldWithMetaResourceTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ABknki16oPwUDYoEVUFzYPxboxn2iwssEg2ST1wCz9sA',
+          typeBlueId: '8Wj1ScUWE2jG7vPb1vgp6xRgqJ4EbYyCS9n2CbaCYTSY',
           attributesAdded: [],
         },
       ],
     },
-    '28gUYx1HzG6py2PmTBRca9g3wdwdcVnEHvzAZX7PGUUG': {
+    F6XBKSmZ9oSyV7jNgy8VWvvVG1HtjMoByYPxs4837cbw: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/GoverningLawEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '28gUYx1HzG6py2PmTBRca9g3wdwdcVnEHvzAZX7PGUUG',
+          typeBlueId: 'F6XBKSmZ9oSyV7jNgy8VWvvVG1HtjMoByYPxs4837cbw',
           attributesAdded: [],
         },
       ],
     },
-    'wvWoY9SJeRuG4p44dmwhpRcK5q7gCLULWqjwhDHDWbM#0': {
+    '9LAToUm7ugSfrCZWL6KmTwi7jAEoXH8TcNNGxr34YvFc#0': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/LegalAgreement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'wvWoY9SJeRuG4p44dmwhpRcK5q7gCLULWqjwhDHDWbM#0',
+          typeBlueId: '9LAToUm7ugSfrCZWL6KmTwi7jAEoXH8TcNNGxr34YvFc#0',
           attributesAdded: [],
         },
       ],
     },
-    '8J3C4rdvxDeNySQAyEy4m9sDnUTPA9iyb9cU9dV8oFF6': {
+    DcgdSd4HsySv1Kjs3mmHtjdobShDTmMi1HHGXnxFpUAb: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/LegalAgreementBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8J3C4rdvxDeNySQAyEy4m9sDnUTPA9iyb9cU9dV8oFF6',
+          typeBlueId: 'DcgdSd4HsySv1Kjs3mmHtjdobShDTmMi1HHGXnxFpUAb',
           attributesAdded: [],
         },
       ],
     },
-    '8w1bMmBxMPwfqicGZQvJc2KRac3pHCk1BFR3rzdBpzUx': {
+    '7p7rsMrLJRwnskaTsetTmKypk1jyyLVvR6JTdJNYeFNf': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/LegalAgreementIdentification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8w1bMmBxMPwfqicGZQvJc2KRac3pHCk1BFR3rzdBpzUx',
+          typeBlueId: '7p7rsMrLJRwnskaTsetTmKypk1jyyLVvR6JTdJNYeFNf',
           attributesAdded: [],
         },
       ],
     },
-    CRozp4MyQcRb718xLH5WdVCyDSyimrwJKNMFoWND29qS: {
+    HGBC71V1WUat7dy4BrSGTr2RgCAN75RmLY4EUC3WmHtm: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/LegalAgreementPublisherEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CRozp4MyQcRb718xLH5WdVCyDSyimrwJKNMFoWND29qS',
+          typeBlueId: 'HGBC71V1WUat7dy4BrSGTr2RgCAN75RmLY4EUC3WmHtm',
           attributesAdded: [],
         },
       ],
     },
-    GeHvZrkuseiXsj542Qn9FKQA1nJMimyARrdb5L7wtar2: {
+    '1xkXx62AuJPeBWbqXe9my7R6wp5KHPpRYMPgfh4Md8s': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/LegalAgreementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GeHvZrkuseiXsj542Qn9FKQA1nJMimyARrdb5L7wtar2',
+          typeBlueId: '1xkXx62AuJPeBWbqXe9my7R6wp5KHPpRYMPgfh4Md8s',
           attributesAdded: [],
         },
       ],
     },
-    H1cpAvAZcBXBrWSby7gNSkMZhqb2aZQZu6eTk7fAzab9: {
+    '55gwzrtwt8NQXzuzesGej1NAFoZdqtmqMGguHuuJAZJN': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/LengthUnitEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H1cpAvAZcBXBrWSby7gNSkMZhqb2aZQZu6eTk7fAzab9',
+          typeBlueId: '55gwzrtwt8NQXzuzesGej1NAFoZdqtmqMGguHuuJAZJN',
           attributesAdded: [],
         },
       ],
     },
-    JARXei1DForaTSYxUytManRt7d74D93e3QDyu2rYa62M: {
+    Cx27wd1NsZNkmCvmLdCFXNsL3u2k25coNe5ESEWgV3px: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/MatrixTermEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JARXei1DForaTSYxUytManRt7d74D93e3QDyu2rYa62M',
+          typeBlueId: 'Cx27wd1NsZNkmCvmLdCFXNsL3u2k25coNe5ESEWgV3px',
           attributesAdded: [],
         },
       ],
     },
-    GXq1sStyP4yc76EdyvPejrtY3e5bHp7P1zWkSawDZneM: {
+    '2q1k6XA3Pp2HSmogbNojZ7iaaia4yLRxkEHhC2Dnj3Rm': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/MatrixTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GXq1sStyP4yc76EdyvPejrtY3e5bHp7P1zWkSawDZneM',
+          typeBlueId: '2q1k6XA3Pp2HSmogbNojZ7iaaia4yLRxkEHhC2Dnj3Rm',
           attributesAdded: [],
         },
       ],
     },
-    '9Sgsf7rKtkk3txxbTriyWaPPryyctCqx4hxMCFPS8AyU': {
+    '8d7t77eoZznGXdoKdpQK6QFJcZuzZrjj3VtBPGBQ4sUm': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/metafields/ReferenceWithMetaLegalAgreement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9Sgsf7rKtkk3txxbTriyWaPPryyctCqx4hxMCFPS8AyU',
+          typeBlueId: '8d7t77eoZznGXdoKdpQK6QFJcZuzZrjj3VtBPGBQ4sUm',
           attributesAdded: [],
         },
       ],
     },
-    HkkhGdGGb9rAcTm7MfWZzCLyJzxjQZGcff5L2LmUwr9S: {
+    '8u8RRRaPSjvteWaRcrpDfgP6uCdhaSyC9WgLTyGotjCH': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/OtherAgreement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HkkhGdGGb9rAcTm7MfWZzCLyJzxjQZGcff5L2LmUwr9S',
+          typeBlueId: '8u8RRRaPSjvteWaRcrpDfgP6uCdhaSyC9WgLTyGotjCH',
           attributesAdded: [],
         },
       ],
     },
-    '2ENM8iDfj2xSZqxnz1eMD7PWGF5e5yeBadxubUoZe6BX': {
+    DLLTGYKnoD2U92utJW3eUJCc4mmSgtMnRGcepG9e2dps: {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/OtherAgreementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2ENM8iDfj2xSZqxnz1eMD7PWGF5e5yeBadxubUoZe6BX',
+          typeBlueId: 'DLLTGYKnoD2U92utJW3eUJCc4mmSgtMnRGcepG9e2dps',
           attributesAdded: [],
         },
       ],
     },
-    '2fzQ4bmVx18K4uraBPwsuECfabcNN1YjL3czhxh3Da7k': {
+    '4anwVBorXr81GoC4Wkf4trYWror3mSXbzukXdYgwmG7N': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/Resource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2fzQ4bmVx18K4uraBPwsuECfabcNN1YjL3czhxh3Da7k',
+          typeBlueId: '4anwVBorXr81GoC4Wkf4trYWror3mSXbzukXdYgwmG7N',
           attributesAdded: [],
         },
       ],
     },
-    EsaEdPrqBuTPDTW68YziAqcjM8vg4cypYktMjidE6dQe: {
+    '3HwpSv5LnJqxEq379qzBShVAkqrJkDsW1ysGVeXzwd6B': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ResourceLength',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EsaEdPrqBuTPDTW68YziAqcjM8vg4cypYktMjidE6dQe',
+          typeBlueId: '3HwpSv5LnJqxEq379qzBShVAkqrJkDsW1ysGVeXzwd6B',
           attributesAdded: [],
         },
       ],
     },
-    '6v9zzNRv4mEw925bbbUR2shJzVQvBRNmns9iVZBqhzjt': {
+    '6Eina6hrt9KKXg8ZTfhCSwwcHkxjXe8HVdHFo6X8toya': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/ResourceTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6v9zzNRv4mEw925bbbUR2shJzVQvBRNmns9iVZBqhzjt',
+          typeBlueId: '6Eina6hrt9KKXg8ZTfhCSwwcHkxjXe8HVdHFo6X8toya',
           attributesAdded: [],
         },
       ],
     },
-    CvE5BfFWsqRpy2bhRv2TsRqEsM2Ve6nwcumAr2uZ1BDx: {
+    '2vjyHHweohchsUQ7vzRWYnkpZEn1AcEHAqi83TmYW23F': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/SpecifiedEntityClauseEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CvE5BfFWsqRpy2bhRv2TsRqEsM2Ve6nwcumAr2uZ1BDx',
+          typeBlueId: '2vjyHHweohchsUQ7vzRWYnkpZEn1AcEHAqi83TmYW23F',
           attributesAdded: [],
         },
       ],
     },
-    '7bvotppQD6qAT2nJAzisWtzQZEZhpXWNPUVV744PQmR5': {
+    '4ye56L9in1qinh2cpAHGxVWkoWGLGzRyNgsSzA4P1Kvf': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/SpecifiedEntityTermsEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7bvotppQD6qAT2nJAzisWtzQZEZhpXWNPUVV744PQmR5',
+          typeBlueId: '4ye56L9in1qinh2cpAHGxVWkoWGLGzRyNgsSzA4P1Kvf',
           attributesAdded: [],
         },
       ],
     },
-    '53mYkzn4YVZUhVSm7oRqND1THNrHx9iJ7DNHGT7Pse9x': {
+    '8fyiEEfhkg9F3ovSugXkHETAhUT6cbG8QTzxvV31T8jm': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/TerminationCurrencyConditionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '53mYkzn4YVZUhVSm7oRqND1THNrHx9iJ7DNHGT7Pse9x',
+          typeBlueId: '8fyiEEfhkg9F3ovSugXkHETAhUT6cbG8QTzxvV31T8jm',
           attributesAdded: [],
         },
       ],
     },
-    CdXm9LZqmWgFFgpoHDNCBYp7kGANguTUS1Zshm9tf4HF: {
+    '34yZnruVzk2TWwJj25VXtQ6vJsyoHWmMQdFWUBQGYp1x': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/UmbrellaAgreement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CdXm9LZqmWgFFgpoHDNCBYp7kGANguTUS1Zshm9tf4HF',
+          typeBlueId: '34yZnruVzk2TWwJj25VXtQ6vJsyoHWmMQdFWUBQGYp1x',
           attributesAdded: [],
         },
       ],
     },
-    Ay8eESfxaGKpwyCsv1ZCC9QedmfPTNyL3FGU7pBYVEXM: {
+    '8i9Ncryq3v4GEFNYHazXRPvCCHC9DGTnoSc9f9vqJXoN': {
       status: 'stable',
       name: 'cdm/legaldocumentation/common/UmbrellaAgreementEntity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ay8eESfxaGKpwyCsv1ZCC9QedmfPTNyL3FGU7pBYVEXM',
+          typeBlueId: '8i9Ncryq3v4GEFNYHazXRPvCCHC9DGTnoSc9f9vqJXoN',
           attributesAdded: [],
         },
       ],
     },
-    EwFdHo4Jxu4HXFdAczFttPDMuiJhjdR3ukBBNCTdxBUJ: {
+    '24XR8iGVZsSMcRtHNgWSpYEEza3KosniTayAxz2hnncm': {
       status: 'stable',
       name: 'cdm/legaldocumentation/contract/Agreement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EwFdHo4Jxu4HXFdAczFttPDMuiJhjdR3ukBBNCTdxBUJ',
+          typeBlueId: '24XR8iGVZsSMcRtHNgWSpYEEza3KosniTayAxz2hnncm',
           attributesAdded: [],
         },
       ],
@@ -3886,24 +3886,24 @@ const meta = {
         },
       ],
     },
-    EWRf98rx4nuLswzBWueTYEraywCRrEzoC9xLLRZXEinG: {
+    '9k6rT7iiYXbFohPsdojsVuAV5SSxQxhoLfFzFwh9CtQy': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/AdditionalDisruptionEvents',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EWRf98rx4nuLswzBWueTYEraywCRrEzoC9xLLRZXEinG',
+          typeBlueId: '9k6rT7iiYXbFohPsdojsVuAV5SSxQxhoLfFzFwh9CtQy',
           attributesAdded: [],
         },
       ],
     },
-    '44Vi7jQyj5Xitt2LqNBTBiKbLULnniytnNKHM2Q27NFs#0': {
+    'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/Clause',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '44Vi7jQyj5Xitt2LqNBTBiKbLULnniytnNKHM2Q27NFs#0',
+          typeBlueId: 'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0',
           attributesAdded: [],
         },
       ],
@@ -3919,13 +3919,13 @@ const meta = {
         },
       ],
     },
-    '568nwfoghuyvUdxUYEk7LMjQo15F8tTxJN7yDtW9bmi6': {
+    '95T825bQFLe9KC4B7yuQzPWcdNpg4muWrPiQjsK914F3': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/EquityAdditionalTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '568nwfoghuyvUdxUYEk7LMjQo15F8tTxJN7yDtW9bmi6',
+          typeBlueId: '95T825bQFLe9KC4B7yuQzPWcdNpg4muWrPiQjsK914F3',
           attributesAdded: [],
         },
       ],
@@ -3952,57 +3952,57 @@ const meta = {
         },
       ],
     },
-    '61QpsnPyqxJkJwdii4SY7Y9HVY5eZRkuUd3jUcvL5aub': {
+    '39XeVq1TJts5ATQmUwpB8HKruLr5jxWH4BxrT8gtkSa9': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/EquitySwapMasterConfirmation2018',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '61QpsnPyqxJkJwdii4SY7Y9HVY5eZRkuUd3jUcvL5aub',
+          typeBlueId: '39XeVq1TJts5ATQmUwpB8HKruLr5jxWH4BxrT8gtkSa9',
           attributesAdded: [],
         },
       ],
     },
-    '8sYH7XQbWpcyvuYLn11bRuqsxJQgkVtzqWfC8JayJXre': {
+    '5TwYH1UDWUhzBQmxrWFhK5phemNwZXmScWVwCZNB72rU': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/ExtraordinaryEvents',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8sYH7XQbWpcyvuYLn11bRuqsxJQgkVtzqWfC8JayJXre',
+          typeBlueId: '5TwYH1UDWUhzBQmxrWFhK5phemNwZXmScWVwCZNB72rU',
           attributesAdded: [],
         },
       ],
     },
-    D6dSn6AsPGjD2zwCwNeCcF8gQWc73EsG3MsXx7RRtpHK: {
+    DkpHjXSPYeeAymNJRnod9AFWqxCfj21de5396nJX3jb5: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/FieldWithMetaMasterAgreementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'D6dSn6AsPGjD2zwCwNeCcF8gQWc73EsG3MsXx7RRtpHK',
+          typeBlueId: 'DkpHjXSPYeeAymNJRnod9AFWqxCfj21de5396nJX3jb5',
           attributesAdded: [],
         },
       ],
     },
-    Dd2beZG11x8F2zfZyRG7m81qHdArX5iUKEK3RnpUCBiz: {
+    Et7RmFhXC1S5FYbAYAkgpkUfwspKqhDrsG1K89ev7DVu: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/FieldWithMetaMasterConfirmationAnnexTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Dd2beZG11x8F2zfZyRG7m81qHdArX5iUKEK3RnpUCBiz',
+          typeBlueId: 'Et7RmFhXC1S5FYbAYAkgpkUfwspKqhDrsG1K89ev7DVu',
           attributesAdded: [],
         },
       ],
     },
-    H7rMTsaH3T57Fy2L1PGAZycjKRZJrPhoiVWH8wKQZXZB: {
+    HaEz2HuxrPwUkAPyfLmet7k7WuJfH6KjErdWuSXuJE71: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/FieldWithMetaMasterConfirmationTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H7rMTsaH3T57Fy2L1PGAZycjKRZJrPhoiVWH8wKQZXZB',
+          typeBlueId: 'HaEz2HuxrPwUkAPyfLmet7k7WuJfH6KjErdWuSXuJE71',
           attributesAdded: [],
         },
       ],
@@ -4029,90 +4029,90 @@ const meta = {
         },
       ],
     },
-    '3N7EgkSRxjnYvZ2ERBeP5kVt5dr65FiuYYh8NGNQ35t2': {
+    ALTxMwzmSAWeMbuzsF2tmt5uiyupRXVdsbuT3oYEtq4a: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementClause',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3N7EgkSRxjnYvZ2ERBeP5kVt5dr65FiuYYh8NGNQ35t2',
+          typeBlueId: 'ALTxMwzmSAWeMbuzsF2tmt5uiyupRXVdsbuT3oYEtq4a',
           attributesAdded: [],
         },
       ],
     },
-    ATRquhefedUFSWUpWKJTWMqSXbQ5oeXqJjWsFxU4zXvd: {
+    '8PqFpFTcFhXD8jv7MGaW7zx9isCBxvU2dYAKLW7yU6tM': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementClauseIdentifierEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ATRquhefedUFSWUpWKJTWMqSXbQ5oeXqJjWsFxU4zXvd',
+          typeBlueId: '8PqFpFTcFhXD8jv7MGaW7zx9isCBxvU2dYAKLW7yU6tM',
           attributesAdded: [],
         },
       ],
     },
-    '82sz4bxrB4XdaHpf6yNEZZyFnSqicJknQE13QAy4QvNx': {
+    '7wLk2adpUVoD6AqqF85TpGzcSum1hoSQ8TeAhfcmdpmH': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementClauseVariant',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '82sz4bxrB4XdaHpf6yNEZZyFnSqicJknQE13QAy4QvNx',
+          typeBlueId: '7wLk2adpUVoD6AqqF85TpGzcSum1hoSQ8TeAhfcmdpmH',
           attributesAdded: [],
         },
       ],
     },
-    AKSMUzaw181vmfKQvqHV4MsmNu7rSU91j4ckLWhrkFdT: {
+    GMD6WsoUkvr8UPZVAk2ciZmosp1rstjA8D6jSBTFkJzm: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AKSMUzaw181vmfKQvqHV4MsmNu7rSU91j4ckLWhrkFdT',
+          typeBlueId: 'GMD6WsoUkvr8UPZVAk2ciZmosp1rstjA8D6jSBTFkJzm',
           attributesAdded: [],
         },
       ],
     },
-    Ap1qb3ywVUxeRiWE3DybbLoY6b6Nwbkyf9ME4rE4KEMX: {
+    tC1wwJYkPfwpsdrur65zifZokmE1Kzb4gNtdNXBTLut: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ap1qb3ywVUxeRiWE3DybbLoY6b6Nwbkyf9ME4rE4KEMX',
+          typeBlueId: 'tC1wwJYkPfwpsdrur65zifZokmE1Kzb4gNtdNXBTLut',
           attributesAdded: [],
         },
       ],
     },
-    'Di6SFxkKQMc6nqT3aGU1YqGGEZxoqde2cDU2V2RUauq9#0': {
+    '7x2TozKfF6tLZmiLa8mcLTM76BnCwyDrjFPBihcxGx5K#0': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementVariableSet',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Di6SFxkKQMc6nqT3aGU1YqGGEZxoqde2cDU2V2RUauq9#0',
+          typeBlueId: '7x2TozKfF6tLZmiLa8mcLTM76BnCwyDrjFPBihcxGx5K#0',
           attributesAdded: [],
         },
       ],
     },
-    '3ogLgKzrgp38r1n3NkU7CtA1DcL4gyLuTT9mAegThW7k': {
+    FrXtTcZdci7tGHhDi1HXMnBCW5ZREz3QTn3enyNDgvxE: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterAgreementVariantIdentifierEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3ogLgKzrgp38r1n3NkU7CtA1DcL4gyLuTT9mAegThW7k',
+          typeBlueId: 'FrXtTcZdci7tGHhDi1HXMnBCW5ZREz3QTn3enyNDgvxE',
           attributesAdded: [],
         },
       ],
     },
-    '3umcSYDhotX3cidttq9vwUAQsUwH1ciFwBQHaKs6b248': {
+    Ge5XthGPax9Pcox4Sg4TN3G8GY41YZjZQjFbGESHPqiV: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterConfirmationAnnexTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3umcSYDhotX3cidttq9vwUAQsUwH1ciFwBQHaKs6b248',
+          typeBlueId: 'Ge5XthGPax9Pcox4Sg4TN3G8GY41YZjZQjFbGESHPqiV',
           attributesAdded: [],
         },
       ],
@@ -4128,24 +4128,24 @@ const meta = {
         },
       ],
     },
-    '97UVa5ekPsBLkaKpPUJB2jUiwbdDuJjNYSLWuLgfQNgp': {
+    '8CUt8DbZ5NEvW1nUfgiy523gcBrNzqqdRSQrzwY3u5Vu': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/MasterConfirmationTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '97UVa5ekPsBLkaKpPUJB2jUiwbdDuJjNYSLWuLgfQNgp',
+          typeBlueId: '8CUt8DbZ5NEvW1nUfgiy523gcBrNzqqdRSQrzwY3u5Vu',
           attributesAdded: [],
         },
       ],
     },
-    '8msnyrNccCP7gT7FBgDZjFm4uqHXKgBd3d78zcAtFrBu': {
+    '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq': {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/NationalizationOrInsolvencyOrDelistingEventEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8msnyrNccCP7gT7FBgDZjFm4uqHXKgBd3d78zcAtFrBu',
+          typeBlueId: '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq',
           attributesAdded: [],
         },
       ],
@@ -4161,5148 +4161,5152 @@ const meta = {
         },
       ],
     },
-    VgMJmdXEfv5xJBtRFPU6x3vPg1JeSyN8rztyutdDdLY: {
+    JBQsnuxVFxN3iNMcYdNDDrSvjPZ2uBGXmVMdq9rLwNYn: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/TransactionAdditionalTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'VgMJmdXEfv5xJBtRFPU6x3vPg1JeSyN8rztyutdDdLY',
+          typeBlueId: 'JBQsnuxVFxN3iNMcYdNDDrSvjPZ2uBGXmVMdq9rLwNYn',
           attributesAdded: [],
         },
       ],
     },
-    JZupLwwpyJMf2c6XtxhFCk4JMDgSqUU2yV2sQNgX7xu: {
+    B7HxeT3Xft46tT5ze4mQnBq7hxyLkZUxSGkgRhMoPRuJ: {
       status: 'stable',
       name: 'cdm/legaldocumentation/master/UnderlierSubstitutionProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JZupLwwpyJMf2c6XtxhFCk4JMDgSqUU2yV2sQNgX7xu',
+          typeBlueId: 'B7HxeT3Xft46tT5ze4mQnBq7hxyLkZUxSGkgRhMoPRuJ',
           attributesAdded: [],
         },
       ],
     },
-    '6ToNNPaPv4BRxC69FF1nCdsrm54iDJm6GPiRYRYnt2Ev': {
+    '2xXTVFJJC2AthhSszyY4ca794zXYkKYyEqir5EjFU4Zm': {
       status: 'stable',
       name: 'cdm/margin/schedule/StandardizedSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ToNNPaPv4BRxC69FF1nCdsrm54iDJm6GPiRYRYnt2Ev',
+          typeBlueId: '2xXTVFJJC2AthhSszyY4ca794zXYkKYyEqir5EjFU4Zm',
           attributesAdded: [],
         },
       ],
     },
-    FzucpKNGdebaXt16BhwDALjdEj7H13SwFXddZjsqxHvk: {
+    CDbwJvzYyrQ7afEJRFR8x1ii8sk11Es3z1e62dbNj2rU: {
       status: 'stable',
       name: 'cdm/margin/schedule/StandardizedScheduleAssetClassEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FzucpKNGdebaXt16BhwDALjdEj7H13SwFXddZjsqxHvk',
+          typeBlueId: 'CDbwJvzYyrQ7afEJRFR8x1ii8sk11Es3z1e62dbNj2rU',
           attributesAdded: [],
         },
       ],
     },
-    '6TYrLCivDmD4vVBbMHT9QvJcAbGwJTQJw2ZeD8VYpqKz': {
+    '31LuHdvewSLrx6VphDocTHZpRiRxE7vw5HywfyoE5xsE': {
       status: 'stable',
       name: 'cdm/margin/schedule/StandardizedScheduleInitialMargin',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6TYrLCivDmD4vVBbMHT9QvJcAbGwJTQJw2ZeD8VYpqKz',
+          typeBlueId: '31LuHdvewSLrx6VphDocTHZpRiRxE7vw5HywfyoE5xsE',
           attributesAdded: [],
         },
       ],
     },
-    DtAjQji5fMaopUpWiA8ZrmHUiTEFdYPhtvujqB9CMLc3: {
+    BwbqfunwwJxSMfQD4CEUJ2Ab4AqzjMTjpeSCF3E1NLYx: {
       status: 'stable',
       name: 'cdm/margin/schedule/StandardizedScheduleProductClassEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DtAjQji5fMaopUpWiA8ZrmHUiTEFdYPhtvujqB9CMLc3',
+          typeBlueId: 'BwbqfunwwJxSMfQD4CEUJ2Ab4AqzjMTjpeSCF3E1NLYx',
           attributesAdded: [],
         },
       ],
     },
-    '2imJjdaxdUbe6MWN6u3gyGVbMBrdbHAfXZWZz7qn6a27': {
+    AyHS2v2wXHzgR4ASSkm7Ab98k8dMLwEZKWPPPTXGUcJB: {
       status: 'stable',
       name: 'cdm/margin/schedule/StandardizedScheduleTradeInfo',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2imJjdaxdUbe6MWN6u3gyGVbMBrdbHAfXZWZz7qn6a27',
+          typeBlueId: 'AyHS2v2wXHzgR4ASSkm7Ab98k8dMLwEZKWPPPTXGUcJB',
           attributesAdded: [],
         },
       ],
     },
-    'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#2': {
+    '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#0': {
       status: 'stable',
       name: 'cdm/observable/asset/Basket',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#2',
+          typeBlueId: '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#0',
           attributesAdded: [],
         },
       ],
     },
-    'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#1': {
+    '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#2': {
       status: 'stable',
       name: 'cdm/observable/asset/BasketConstituent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#1',
+          typeBlueId: '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#2',
           attributesAdded: [],
         },
       ],
     },
-    CrPVPZLyLfrUHufFAw5BvtRgXXaqECqrHbdmTXfVK6sd: {
+    '3xtXK1YdVmKnwdTBo6WKzcZ4cthkLD6Cotrd9TGebUpn': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/CalculatedRateDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CrPVPZLyLfrUHufFAw5BvtRgXXaqECqrHbdmTXfVK6sd',
+          typeBlueId: '3xtXK1YdVmKnwdTBo6WKzcZ4cthkLD6Cotrd9TGebUpn',
           attributesAdded: [],
         },
       ],
     },
-    '6WADf5sCCR4MuRuJ5iHs5dpqWw4n3fPXnjuqN86S26rw': {
+    DQ56S8AUX7XtvjkfZSuzYpayNS38eibZb5PEpsrperoP: {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/CalculatedRateObservationDatesAndWeights',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6WADf5sCCR4MuRuJ5iHs5dpqWw4n3fPXnjuqN86S26rw',
+          typeBlueId: 'DQ56S8AUX7XtvjkfZSuzYpayNS38eibZb5PEpsrperoP',
           attributesAdded: [],
         },
       ],
     },
-    A3LiTUf3Z3kxSCVRG8KUG4b1N4trvuPs1rXWQ2wDLxTD: {
+    '4A7KRZp8xfcHRGGZtVf7xSp75Hu97uNM4dk6MD5ezR9W': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/CalculatedRateObservations',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A3LiTUf3Z3kxSCVRG8KUG4b1N4trvuPs1rXWQ2wDLxTD',
+          typeBlueId: '4A7KRZp8xfcHRGGZtVf7xSp75Hu97uNM4dk6MD5ezR9W',
           attributesAdded: [],
         },
       ],
     },
-    '8Gym5rgFDbWfvgkK1dRFec8LLZbBhsMaKQsfgziFhHan': {
+    '5noQvmG1G1xXrG8SxnbN37mhXkXDttDg7VNkk4vHoTMt': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/CalculationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8Gym5rgFDbWfvgkK1dRFec8LLZbBhsMaKQsfgziFhHan',
+          typeBlueId: '5noQvmG1G1xXrG8SxnbN37mhXkXDttDg7VNkk4vHoTMt',
           attributesAdded: [],
         },
       ],
     },
-    '9WHGhfPmPC3ogGPkexgmVsjUKxezrnHX2V4i8fPrqEM': {
+    '4B3Gz2f94wTHNuSEpR6eCBJGvdrLhfaVFwGYDJriKbnh': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/CalculationShiftMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9WHGhfPmPC3ogGPkexgmVsjUKxezrnHX2V4i8fPrqEM',
+          typeBlueId: '4B3Gz2f94wTHNuSEpR6eCBJGvdrLhfaVFwGYDJriKbnh',
           attributesAdded: [],
         },
       ],
     },
-    '8ewDoZepMSiSGwyUFm3RC7ALebYhyNao67da6AsyiLFA': {
+    '6KNQgESYt6L53eckR5BrECbH1phWdXFMzZATcAzK9NLy': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/FallbackRateParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8ewDoZepMSiSGwyUFm3RC7ALebYhyNao67da6AsyiLFA',
+          typeBlueId: '6KNQgESYt6L53eckR5BrECbH1phWdXFMzZATcAzK9NLy',
           attributesAdded: [],
         },
       ],
     },
-    B7KJroezbBh48oEcEjQn6jGLYdXUKPwEMnSuKkCujhV8: {
+    BzAmRPH81HKGy6cSBQMksdVVxBpKtdVhJKSbFqKiErQP: {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/FloatingRateCalculationParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B7KJroezbBh48oEcEjQn6jGLYdXUKPwEMnSuKkCujhV8',
+          typeBlueId: 'BzAmRPH81HKGy6cSBQMksdVVxBpKtdVhJKSbFqKiErQP',
           attributesAdded: [],
         },
       ],
     },
-    '7wtF6zpuWsqFREVYvoqU88XF6uZLVezmX7j7mdccphG8': {
+    '3RT4aqPB3gGbtKfrgwy1KQmMu48NpwSTvJX4tykc6r2F': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/InflationCalculationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7wtF6zpuWsqFREVYvoqU88XF6uZLVezmX7j7mdccphG8',
+          typeBlueId: '3RT4aqPB3gGbtKfrgwy1KQmMu48NpwSTvJX4tykc6r2F',
           attributesAdded: [],
         },
       ],
     },
-    GJjsf6Jkta38B3Y4Fyk7DJm2wJwfrHKthki9RDxBCKfq: {
+    HAi9mCEW8j9oop8P3eGhgP2n9tVbXqrtCWnF77msRpK4: {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/InflationCalculationStyleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GJjsf6Jkta38B3Y4Fyk7DJm2wJwfrHKthki9RDxBCKfq',
+          typeBlueId: 'HAi9mCEW8j9oop8P3eGhgP2n9tVbXqrtCWnF77msRpK4',
           attributesAdded: [],
         },
       ],
     },
-    '6e8bWMLWmAugBkofJStEGzazoGnD7NkWaWK1zPbK4zCP': {
+    DKxKbxnu2Fwsa8UzqKbgTU29eJKTYiwMNoJTqTNZLM6p: {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/ObservationParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6e8bWMLWmAugBkofJStEGzazoGnD7NkWaWK1zPbK4zCP',
+          typeBlueId: 'DKxKbxnu2Fwsa8UzqKbgTU29eJKTYiwMNoJTqTNZLM6p',
           attributesAdded: [],
         },
       ],
     },
-    BNn2MDf54qJ4KLiE7sTpeS2BokqPqPz5hsVNwwRVfrwF: {
+    '2W3rHTz4L7GBmVkiESoY8puS9uU1rTGL2SfpTGJy2kse': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/ObservationPeriodDatesEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BNn2MDf54qJ4KLiE7sTpeS2BokqPqPz5hsVNwwRVfrwF',
+          typeBlueId: '2W3rHTz4L7GBmVkiESoY8puS9uU1rTGL2SfpTGJy2kse',
           attributesAdded: [],
         },
       ],
     },
-    '3Ab8ff8vHj6yZniQHU1kEyVi2DQyjvhXFPTFikY4ayof': {
+    '5qPopZ2RMbhbDtd5XmtdT1QCkFussYRLiFeUPqAWCd9a': {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/ObservationShiftCalculation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3Ab8ff8vHj6yZniQHU1kEyVi2DQyjvhXFPTFikY4ayof',
+          typeBlueId: '5qPopZ2RMbhbDtd5XmtdT1QCkFussYRLiFeUPqAWCd9a',
           attributesAdded: [],
         },
       ],
     },
-    As6wv4pz5jg38xpxx4xowPAz7wfQoARSJ7tYUGcEAZSj: {
+    FNvJ5Bykw9Ak2JRJJJ1nizpUFbufUY7ciCjGoMLUAQzA: {
       status: 'stable',
       name: 'cdm/observable/asset/calculatedrate/OffsetCalculation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'As6wv4pz5jg38xpxx4xowPAz7wfQoARSJ7tYUGcEAZSj',
+          typeBlueId: 'FNvJ5Bykw9Ak2JRJJJ1nizpUFbufUY7ciCjGoMLUAQzA',
           attributesAdded: [],
         },
       ],
     },
-    '5j3wvfjXc4HawVrDneYuxTD3C2At3QwdvEBK7LxSw24q': {
+    FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau: {
       status: 'stable',
       name: 'cdm/observable/asset/CalculationAgent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5j3wvfjXc4HawVrDneYuxTD3C2At3QwdvEBK7LxSw24q',
+          typeBlueId: 'FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau',
           attributesAdded: [],
         },
       ],
     },
-    GVEAhEaPG7w5cDrNpAj5J7xLgZSdAVqV1YBZqXyyrj7m: {
+    '6C5T6HNc1xggFbuGGNXtXJ2qeiBiqRvHGvNJdJA3sW6q': {
       status: 'stable',
       name: 'cdm/observable/asset/CashCollateralValuationMethod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GVEAhEaPG7w5cDrNpAj5J7xLgZSdAVqV1YBZqXyyrj7m',
+          typeBlueId: '6C5T6HNc1xggFbuGGNXtXJ2qeiBiqRvHGvNJdJA3sW6q',
           attributesAdded: [],
         },
       ],
     },
-    EBxPTGdUnubTi1nPQX8vJqTa8Q5FX7fvkCdtYQrZyUdg: {
+    EdLKjCfief3mhGVbVnHDpyHDKbTXHYqXoaTKtcn9EjDL: {
       status: 'stable',
       name: 'cdm/observable/asset/CashPrice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EBxPTGdUnubTi1nPQX8vJqTa8Q5FX7fvkCdtYQrZyUdg',
+          typeBlueId: 'EdLKjCfief3mhGVbVnHDpyHDKbTXHYqXoaTKtcn9EjDL',
           attributesAdded: [],
         },
       ],
     },
-    H2xVoXBmfUbQs6cNWFyDcyfWSDbZB2kUQU4av2ty95u8: {
+    '8AJje6F3LQBvFYx4iuQMLA7qkEW1m2oeGabyMjZSLuFU': {
       status: 'stable',
       name: 'cdm/observable/asset/CashPriceTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H2xVoXBmfUbQs6cNWFyDcyfWSDbZB2kUQU4av2ty95u8',
+          typeBlueId: '8AJje6F3LQBvFYx4iuQMLA7qkEW1m2oeGabyMjZSLuFU',
           attributesAdded: [],
         },
       ],
     },
-    '6nB2ZhwxV9UTUVbUSndGEBkqYemsbhs9sXZEWJ6heeYA': {
+    '4omrk7WjD1yjwjt3edKCzksnAKX38duEcsLE2esZpg6q': {
       status: 'stable',
       name: 'cdm/observable/asset/CommodityReferencePriceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6nB2ZhwxV9UTUVbUSndGEBkqYemsbhs9sXZEWJ6heeYA',
+          typeBlueId: '4omrk7WjD1yjwjt3edKCzksnAKX38duEcsLE2esZpg6q',
           attributesAdded: [],
         },
       ],
     },
-    DEx8mELrNiMvJnmN1WRhZbyCiZRmtgBjuJXyfcSztf4h: {
+    EXhnZXqvEcgXZrY2VK9WqgZz87y5NwxZ4axscyrAeSBv: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DEx8mELrNiMvJnmN1WRhZbyCiZRmtgBjuJXyfcSztf4h',
+          typeBlueId: 'EXhnZXqvEcgXZrY2VK9WqgZz87y5NwxZ4axscyrAeSBv',
           attributesAdded: [],
         },
       ],
     },
-    '32asBc8ZWx9istLdot48ciBYnh6kd2GHf6nLVWkjkA8Z': {
+    EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditNotation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '32asBc8ZWx9istLdot48ciBYnh6kd2GHf6nLVWkjkA8Z',
+          typeBlueId: 'EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1',
           attributesAdded: [],
         },
       ],
     },
-    '3tMLCZ3MJxBYvVqoBVK5jgsre5azRP9dXQk3ek6NGhQE': {
+    EGpvPDYUy6WpBH4kNy693iBCzvTxxufSoJNuPsWaeJnc: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditNotationBoundaryEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3tMLCZ3MJxBYvVqoBVK5jgsre5azRP9dXQk3ek6NGhQE',
+          typeBlueId: 'EGpvPDYUy6WpBH4kNy693iBCzvTxxufSoJNuPsWaeJnc',
           attributesAdded: [],
         },
       ],
     },
-    '8jUUnEg4y5rth3zGXqPDihqz397GjFwaQQYfvUR7VVKU': {
+    DRzBA7DNKGx3x57DdS7v8C2BBHL55ia9a7Sqzx7r5Qr7: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditNotationMismatchResolutionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8jUUnEg4y5rth3zGXqPDihqz397GjFwaQQYfvUR7VVKU',
+          typeBlueId: 'DRzBA7DNKGx3x57DdS7v8C2BBHL55ia9a7Sqzx7r5Qr7',
           attributesAdded: [],
         },
       ],
     },
-    '741YYkEZ3LbnGoBjp5zMiLiToHK93h9yRdxRAEQeWYvx': {
+    F93Z49WPhvseXnmUoYUCWkT5Eg6S4PQfSsy5s4SZkNoz: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditNotations',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '741YYkEZ3LbnGoBjp5zMiLiToHK93h9yRdxRAEQeWYvx',
+          typeBlueId: 'F93Z49WPhvseXnmUoYUCWkT5Eg6S4PQfSsy5s4SZkNoz',
           attributesAdded: [],
         },
       ],
     },
-    BFNEhsfLPvMSawMY6Q3SUpNzPsjYgQEKYmUQrD92UE4r: {
+    D1H3C3xAMJv2XQNBYfethSUKDH7kngUkefwbzLwVLW1i: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditRatingAgencyEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BFNEhsfLPvMSawMY6Q3SUpNzPsjYgQEKYmUQrD92UE4r',
+          typeBlueId: 'D1H3C3xAMJv2XQNBYfethSUKDH7kngUkefwbzLwVLW1i',
           attributesAdded: [],
         },
       ],
     },
-    BgVnixZS6aAn2Xvg2wyoxaFLhL4nCdoLXTihMhmw4p8R: {
+    HaWzE4gbbhGKXJnQA29vkDyfHSkhDsje8H82PYwV2Phr: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditRatingCreditWatchEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BgVnixZS6aAn2Xvg2wyoxaFLhL4nCdoLXTihMhmw4p8R',
+          typeBlueId: 'HaWzE4gbbhGKXJnQA29vkDyfHSkhDsje8H82PYwV2Phr',
           attributesAdded: [],
         },
       ],
     },
-    DqC2oNjEyRAjmb6kubvmJ5ppLVuekBouV87Zjnvc289g: {
+    H8A5EpXYgdKnD1FhyTni2vHEnBp15QF3Y1Hk9y72CfzJ: {
       status: 'stable',
       name: 'cdm/observable/asset/CreditRatingDebt',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DqC2oNjEyRAjmb6kubvmJ5ppLVuekBouV87Zjnvc289g',
+          typeBlueId: 'H8A5EpXYgdKnD1FhyTni2vHEnBp15QF3Y1Hk9y72CfzJ',
           attributesAdded: [],
         },
       ],
     },
-    BnWttcLPfpaqYUTyq7j6NHVPGJv1W1SJxLuyCksLQ9xE: {
+    '8STyBvSNBUVRcziJ5ApHvpPRYRvyJTGTsrM6RAFpGJE': {
       status: 'stable',
       name: 'cdm/observable/asset/CreditRatingOutlookEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BnWttcLPfpaqYUTyq7j6NHVPGJv1W1SJxLuyCksLQ9xE',
+          typeBlueId: '8STyBvSNBUVRcziJ5ApHvpPRYRvyJTGTsrM6RAFpGJE',
           attributesAdded: [],
         },
       ],
     },
-    '6aL4Uv72Kn3HLmR96RGbWs3RSBXaDcEwYRYpCFoCFJ1s': {
+    '6UyMCLhWc1ZAqEfpnAbByw5F6GWt5hg25X2o3HVmZfGn': {
       status: 'stable',
       name: 'cdm/observable/asset/CsaTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6aL4Uv72Kn3HLmR96RGbWs3RSBXaDcEwYRYpCFoCFJ1s',
+          typeBlueId: '6UyMCLhWc1ZAqEfpnAbByw5F6GWt5hg25X2o3HVmZfGn',
           attributesAdded: [],
         },
       ],
     },
-    DP9vzie9YSXjQYMDVQb3TFeYN1on5KA4A37wPREYWq2C: {
+    '3RnDS9BkyGXnmPcVrtU9vHuk1ioPRchsKsKfZ2yvvdvp': {
       status: 'stable',
       name: 'cdm/observable/asset/Curve',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DP9vzie9YSXjQYMDVQb3TFeYN1on5KA4A37wPREYWq2C',
+          typeBlueId: '3RnDS9BkyGXnmPcVrtU9vHuk1ioPRchsKsKfZ2yvvdvp',
           attributesAdded: [],
         },
       ],
     },
-    JDNuetaPzRJ1YcnfGUCcHqTorc5byg7A9rwtFg9X6MZg: {
+    AfKweapaqsU79LG9ZWn4qFZmKFXJo7xvzr7cVxixP86u: {
       status: 'stable',
       name: 'cdm/observable/asset/DividendApplicability',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JDNuetaPzRJ1YcnfGUCcHqTorc5byg7A9rwtFg9X6MZg',
+          typeBlueId: 'AfKweapaqsU79LG9ZWn4qFZmKFXJo7xvzr7cVxixP86u',
           attributesAdded: [],
         },
       ],
     },
-    '69jx9rXicruZGKCBH22y3ssVo8rTB3rDWeNgDh7qhAET': {
+    EArWxvBkePDwUEtKBhh6BFEHXRgqmUAiHbHAVCW9EWu4: {
       status: 'stable',
       name: 'cdm/observable/asset/EquityIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '69jx9rXicruZGKCBH22y3ssVo8rTB3rDWeNgDh7qhAET',
+          typeBlueId: 'EArWxvBkePDwUEtKBhh6BFEHXRgqmUAiHbHAVCW9EWu4',
           attributesAdded: [],
         },
       ],
     },
-    '8u75ZsfFENxuuWeFUM4VVj4pAdSd8NHQ4HucWy2U6LrX': {
+    FSP23sNY1FGeadmmkSZjmqWKdkoLdCoMqZ3eBePPS9N8: {
       status: 'stable',
       name: 'cdm/observable/asset/FallbackReferencePrice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8u75ZsfFENxuuWeFUM4VVj4pAdSd8NHQ4HucWy2U6LrX',
+          typeBlueId: 'FSP23sNY1FGeadmmkSZjmqWKdkoLdCoMqZ3eBePPS9N8',
           attributesAdded: [],
         },
       ],
     },
-    CEYV9kEtFbGQ1TN5ZdT4jXMZfSQUVyhphKVVYFHwQ1uq: {
+    '2GtrN4UDxwH4P5TqQ8bNcVwjwcdDhjkNovEAYuhpAhJQ': {
       status: 'stable',
       name: 'cdm/observable/asset/FeeTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CEYV9kEtFbGQ1TN5ZdT4jXMZfSQUVyhphKVVYFHwQ1uq',
+          typeBlueId: '2GtrN4UDxwH4P5TqQ8bNcVwjwcdDhjkNovEAYuhpAhJQ',
           attributesAdded: [],
         },
       ],
     },
-    'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#0': {
+    '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#1': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaBasketConstituent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#0',
+          typeBlueId: '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#1',
           attributesAdded: [],
         },
       ],
     },
-    GpoU5yGYF1qd5qSfQLpFsNBGnJXEaP3fZZTzmmiqWEte: {
+    GPbJZLwy1LyEN9r8a3LkR1UD8WgNNEjAhcG6gxpRbWzK: {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaCommodityReferencePriceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GpoU5yGYF1qd5qSfQLpFsNBGnJXEaP3fZZTzmmiqWEte',
+          typeBlueId: 'GPbJZLwy1LyEN9r8a3LkR1UD8WgNNEjAhcG6gxpRbWzK',
           attributesAdded: [],
         },
       ],
     },
-    GxtMQNerdSTaQX4ik747BJde7hdaCUGQs5gCyGs4THE: {
+    '3a31df2HdfB7EqRbM2D5wwBaTaVC1tUemQ66F91P16xS': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaCreditNotation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GxtMQNerdSTaQX4ik747BJde7hdaCUGQs5gCyGs4THE',
+          typeBlueId: '3a31df2HdfB7EqRbM2D5wwBaTaVC1tUemQ66F91P16xS',
           attributesAdded: [],
         },
       ],
     },
-    '4XRAbTxyhpi3g9jM47PSnx6GCzjXS7KbDW8rWLRyKGjA': {
+    JMdjF7BkL7hgbzHsPDqk4D7tgaZ98wirqwFPWCQBuvs: {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaInformationProviderEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4XRAbTxyhpi3g9jM47PSnx6GCzjXS7KbDW8rWLRyKGjA',
+          typeBlueId: 'JMdjF7BkL7hgbzHsPDqk4D7tgaZ98wirqwFPWCQBuvs',
           attributesAdded: [],
         },
       ],
     },
-    '9NuX39eGBeGjQU9qFkJnqaMBLFBXyF3Qq2zwXtJKPvro': {
+    '9QkWzeLcgPCCJUappiHJdN2AEyj6ZnCAsxX668fGGgG5': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaInterestRateIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9NuX39eGBeGjQU9qFkJnqaMBLFBXyF3Qq2zwXtJKPvro',
+          typeBlueId: '9QkWzeLcgPCCJUappiHJdN2AEyj6ZnCAsxX668fGGgG5',
           attributesAdded: [],
         },
       ],
     },
-    FUZQmvWkXE16AV15YKc9DANRQNrg2wMz8MDdtcPfnPjc: {
+    Ea14T9qt8BFXsBnenzGNrbYsLa1CRPUUK1ChYX6Zo5dK: {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaInterpolationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FUZQmvWkXE16AV15YKc9DANRQNrg2wMz8MDdtcPfnPjc',
+          typeBlueId: 'Ea14T9qt8BFXsBnenzGNrbYsLa1CRPUUK1ChYX6Zo5dK',
           attributesAdded: [],
         },
       ],
     },
-    '6E8HRHJPNpbSaPQoLzzGEaJf6en5naXtbaNeGZ7ar9b1': {
+    '356TLY4h2f86ko6g3UzBMXTWaCaZ9zdRXa3zrGiVTQrL': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaObservable',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6E8HRHJPNpbSaPQoLzzGEaJf6en5naXtbaNeGZ7ar9b1',
+          typeBlueId: '356TLY4h2f86ko6g3UzBMXTWaCaZ9zdRXa3zrGiVTQrL',
           attributesAdded: [],
         },
       ],
     },
-    '8M8p7J9e17R96KGxd8hWDz34b3w8981GYsa4TGJtPhNG': {
+    '5P1iV2VHBfC9AHhxAxN9sAUaoXTBP5jKaV5KMwJEtLvz': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaPriceSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8M8p7J9e17R96KGxd8hWDz34b3w8981GYsa4TGJtPhNG',
+          typeBlueId: '5P1iV2VHBfC9AHhxAxN9sAUaoXTBP5jKaV5KMwJEtLvz',
           attributesAdded: [],
         },
       ],
     },
-    '2FZHZ5RzsW7awysoaorCfmAnZGtxLTf6BLoT23v3CUbx': {
+    '7gVW4FqUTJb8Nv4aMbSXumbRtc7MKhNqxdk3LPMZx6Qh': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaQuotedCurrencyPair',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2FZHZ5RzsW7awysoaorCfmAnZGtxLTf6BLoT23v3CUbx',
+          typeBlueId: '7gVW4FqUTJb8Nv4aMbSXumbRtc7MKhNqxdk3LPMZx6Qh',
           attributesAdded: [],
         },
       ],
     },
-    '2gfQWVQFHUKLQjAkfCvcbJNDyzFEQ8nZxo6gzLu3iBbF': {
+    '8iH51R45gmWCtNjqrR63GErLSs4TeUXk51R7D4ky3NDz': {
       status: 'stable',
       name: 'cdm/observable/asset/FieldWithMetaSettlementRateOptionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2gfQWVQFHUKLQjAkfCvcbJNDyzFEQ8nZxo6gzLu3iBbF',
+          typeBlueId: '8iH51R45gmWCtNjqrR63GErLSs4TeUXk51R7D4ky3NDz',
           attributesAdded: [],
         },
       ],
     },
-    '5wT2z1zzPQuYcm3mfixA2omkencs18E7UbtVshA7VV91': {
+    '5HGCdXL7A44CctEHzdmFoxAvfxHpCB2myr1mHPM1b72K': {
       status: 'stable',
       name: 'cdm/observable/asset/FloatingRateIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5wT2z1zzPQuYcm3mfixA2omkencs18E7UbtVshA7VV91',
+          typeBlueId: '5HGCdXL7A44CctEHzdmFoxAvfxHpCB2myr1mHPM1b72K',
           attributesAdded: [],
         },
       ],
     },
-    '9MJsMkavMQapBs1dYUW5H2rFfdgrUA78Ttyxc1G9yHkv': {
+    '3r42QBCBADZWzkxMBCQkvH3c6M3c1raWTFgLjoCsjZoe': {
       status: 'stable',
       name: 'cdm/observable/asset/ForeignExchangeRateIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9MJsMkavMQapBs1dYUW5H2rFfdgrUA78Ttyxc1G9yHkv',
+          typeBlueId: '3r42QBCBADZWzkxMBCQkvH3c6M3c1raWTFgLjoCsjZoe',
           attributesAdded: [],
         },
       ],
     },
-    ffUyq1uLJr9pnbCbPGb4K1JcnKnJuaoqQNJkQwfCi9N: {
+    '9LjQgXLW5xCQTuGhVNkiuZsj7avYufhHx2dAav9z1WxS': {
       status: 'stable',
       name: 'cdm/observable/asset/fro/FloatingRateIndexCalculationDefaults',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ffUyq1uLJr9pnbCbPGb4K1JcnKnJuaoqQNJkQwfCi9N',
+          typeBlueId: '9LjQgXLW5xCQTuGhVNkiuZsj7avYufhHx2dAav9z1WxS',
           attributesAdded: [],
         },
       ],
     },
-    '4mpErrGaQgDKSpphXbwY9BbsiJ1pApWHTA8KfMbzQbbJ': {
+    Ef7JSbybnYTf6DGe3sD3EoBBngjeauFZcUey5CPfgotg: {
       status: 'stable',
       name: 'cdm/observable/asset/fro/FloatingRateIndexCalculationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4mpErrGaQgDKSpphXbwY9BbsiJ1pApWHTA8KfMbzQbbJ',
+          typeBlueId: 'Ef7JSbybnYTf6DGe3sD3EoBBngjeauFZcUey5CPfgotg',
           attributesAdded: [],
         },
       ],
     },
-    G9npdgFMDFvJBGT5mnkkLXcQPMFyryX9eZkBmAupDwzK: {
+    uyCbFUtyiur98B8jKgwwDdT7g5AQzSgfK77hjbHKgXm: {
       status: 'stable',
       name: 'cdm/observable/asset/fro/FloatingRateIndexCategoryEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G9npdgFMDFvJBGT5mnkkLXcQPMFyryX9eZkBmAupDwzK',
+          typeBlueId: 'uyCbFUtyiur98B8jKgwwDdT7g5AQzSgfK77hjbHKgXm',
           attributesAdded: [],
         },
       ],
     },
-    '7qaTZ8Xc3MHy9jpCRnc5mKPG1jU61ZHGMtwZhgBu5tQy': {
+    '8cQvKoNWKBBYhoiZMn3MsZL1PgvMDDmeeSsr4MQuDxAN': {
       status: 'stable',
       name: 'cdm/observable/asset/fro/FloatingRateIndexDefinition',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7qaTZ8Xc3MHy9jpCRnc5mKPG1jU61ZHGMtwZhgBu5tQy',
+          typeBlueId: '8cQvKoNWKBBYhoiZMn3MsZL1PgvMDDmeeSsr4MQuDxAN',
           attributesAdded: [],
         },
       ],
     },
-    '96T2JgQE4VDra6h3ycZ6kq7so3h7TVScf8cEw5kbkkq4': {
+    '2NHDTBFFfyusp7iNLi7PU4AMTA1BCZ8H6rJRL8xJboP9': {
       status: 'stable',
       name: 'cdm/observable/asset/fro/FloatingRateIndexIdentification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '96T2JgQE4VDra6h3ycZ6kq7so3h7TVScf8cEw5kbkkq4',
+          typeBlueId: '2NHDTBFFfyusp7iNLi7PU4AMTA1BCZ8H6rJRL8xJboP9',
           attributesAdded: [],
         },
       ],
     },
-    '9oK7sdYVedByaGENq67wFqNA3Nqzunehwby4acgNNce6': {
+    '98SyBWL9ENVd5hF1HHdCKz8RG35SmSdrNx9Dh2tPj9AK': {
       status: 'stable',
       name: 'cdm/observable/asset/fro/FloatingRateIndexStyleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9oK7sdYVedByaGENq67wFqNA3Nqzunehwby4acgNNce6',
+          typeBlueId: '98SyBWL9ENVd5hF1HHdCKz8RG35SmSdrNx9Dh2tPj9AK',
           attributesAdded: [],
         },
       ],
     },
-    F1apuBfHekENK3SqhCbhgdcHymV6jcuhFhC45BZhuy9J: {
+    '8RaYn7dAapW3dFmuG6AwXr5mpv24qXUMLg5Y8yn3ULA4': {
       status: 'stable',
       name: 'cdm/observable/asset/FxInformationSource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F1apuBfHekENK3SqhCbhgdcHymV6jcuhFhC45BZhuy9J',
+          typeBlueId: '8RaYn7dAapW3dFmuG6AwXr5mpv24qXUMLg5Y8yn3ULA4',
           attributesAdded: [],
         },
       ],
     },
-    GUt1SUo6dMPSuntNueHZRjt3nrrab2xJB86nBLGRQrEY: {
+    '3j6sxnQ7QgWXvufbYN59akG5xPy8Sz1wg8Lr1nR32iFw': {
       status: 'stable',
       name: 'cdm/observable/asset/FxRate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GUt1SUo6dMPSuntNueHZRjt3nrrab2xJB86nBLGRQrEY',
+          typeBlueId: '3j6sxnQ7QgWXvufbYN59akG5xPy8Sz1wg8Lr1nR32iFw',
           attributesAdded: [],
         },
       ],
     },
-    ArWyqfsfZyH5kHrUojjHkMRYz5Eun9yWVTvdqwTPbwpB: {
+    '59cfrRQLPJncH1tkA8gcjLTVBbBRu2ex63nqTvfmmwoz': {
       status: 'stable',
       name: 'cdm/observable/asset/FxRateSourceFixing',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ArWyqfsfZyH5kHrUojjHkMRYz5Eun9yWVTvdqwTPbwpB',
+          typeBlueId: '59cfrRQLPJncH1tkA8gcjLTVBbBRu2ex63nqTvfmmwoz',
           attributesAdded: [],
         },
       ],
     },
-    FmLtwXC2QV65Ns3nmhjxLXoKCP4AuGj1rv5iMdcqmUmC: {
+    GVLFiYcKvhpQsRySPjAnN9GhoocdasLdpFcxrHBBs3SB: {
       status: 'stable',
       name: 'cdm/observable/asset/FxSettlementRateSource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FmLtwXC2QV65Ns3nmhjxLXoKCP4AuGj1rv5iMdcqmUmC',
+          typeBlueId: 'GVLFiYcKvhpQsRySPjAnN9GhoocdasLdpFcxrHBBs3SB',
           attributesAdded: [],
         },
       ],
     },
-    HnwRAqr1R2aXWUnkBsKcZ8yNRHPCmQTAVm6griWqkRce: {
+    AxAyn6UgyoJj9YDT4soz7eYpmhL8U6kEzFxGMonZgxcg: {
       status: 'stable',
       name: 'cdm/observable/asset/FxSpotRateSource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HnwRAqr1R2aXWUnkBsKcZ8yNRHPCmQTAVm6griWqkRce',
+          typeBlueId: 'AxAyn6UgyoJj9YDT4soz7eYpmhL8U6kEzFxGMonZgxcg',
           attributesAdded: [],
         },
       ],
     },
-    '9uQM3zoMTMLZFipKa1PU3Z1YndVH7avxgSGLXms3GVF3': {
+    FtoRYZujAAg27pRyk4p13wRUXC9JWtWMkcjiAZULxMWP: {
       status: 'stable',
       name: 'cdm/observable/asset/Index',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9uQM3zoMTMLZFipKa1PU3Z1YndVH7avxgSGLXms3GVF3',
+          typeBlueId: 'FtoRYZujAAg27pRyk4p13wRUXC9JWtWMkcjiAZULxMWP',
           attributesAdded: [],
         },
       ],
     },
-    '5mJyH3fk9daCZNjHN5gVMnpg4zEt5Nu2GWky6QSkHKZG': {
+    '6MigHz3STyVUpn4VU9UoVTrxz2mfJ7oPf6w3suDvW8z4': {
       status: 'stable',
       name: 'cdm/observable/asset/IndexBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5mJyH3fk9daCZNjHN5gVMnpg4zEt5Nu2GWky6QSkHKZG',
+          typeBlueId: '6MigHz3STyVUpn4VU9UoVTrxz2mfJ7oPf6w3suDvW8z4',
           attributesAdded: [],
         },
       ],
     },
-    '2K2y4HCSe3GYtg8okRPpYgcJdTtQXHQ25mihbE8Paa6u': {
+    '3PW2wc587i1dSwdY8mw99sh8auYBiNqWChG6tCKiMGS6': {
       status: 'stable',
       name: 'cdm/observable/asset/InflationIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2K2y4HCSe3GYtg8okRPpYgcJdTtQXHQ25mihbE8Paa6u',
+          typeBlueId: '3PW2wc587i1dSwdY8mw99sh8auYBiNqWChG6tCKiMGS6',
           attributesAdded: [],
         },
       ],
     },
-    '9SbzsCyyrBbtfyrpVNNoTN5WhstJwnUvNnjX6pFenBBp': {
+    Byw4nUAhk4eWhAxnnEkCp1oMG5Acyg7nvG75MFXFjASY: {
       status: 'stable',
       name: 'cdm/observable/asset/InformationProviderEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9SbzsCyyrBbtfyrpVNNoTN5WhstJwnUvNnjX6pFenBBp',
+          typeBlueId: 'Byw4nUAhk4eWhAxnnEkCp1oMG5Acyg7nvG75MFXFjASY',
           attributesAdded: [],
         },
       ],
     },
-    '4ewTgKPXq5xDsrR3GStD5tHN6FnPdeZXUQ5JDo5tkqZc': {
+    '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y': {
       status: 'stable',
       name: 'cdm/observable/asset/InformationSource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4ewTgKPXq5xDsrR3GStD5tHN6FnPdeZXUQ5JDo5tkqZc',
+          typeBlueId: '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y',
           attributesAdded: [],
         },
       ],
     },
-    CjLhV9zXsEPWjij1Hz3NWZZVtDmXET3xVwB1i8gzL7SX: {
+    '8wSm9S7Vp4q2gTRjpiHXeveAoWJb4WwMcfGPdNhN7TJv': {
       status: 'stable',
       name: 'cdm/observable/asset/InterestRateCurve',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CjLhV9zXsEPWjij1Hz3NWZZVtDmXET3xVwB1i8gzL7SX',
+          typeBlueId: '8wSm9S7Vp4q2gTRjpiHXeveAoWJb4WwMcfGPdNhN7TJv',
           attributesAdded: [],
         },
       ],
     },
-    C4ggqArmWWYiuaePZaGFxFhaaidYckVeowufcqR1WPKu: {
+    ADajEoGA7ikQhVMsqRiRuiY11MeoVJc66Wkb2WYmzsr3: {
       status: 'stable',
       name: 'cdm/observable/asset/InterestRateIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C4ggqArmWWYiuaePZaGFxFhaaidYckVeowufcqR1WPKu',
+          typeBlueId: 'ADajEoGA7ikQhVMsqRiRuiY11MeoVJc66Wkb2WYmzsr3',
           attributesAdded: [],
         },
       ],
     },
-    EZCcXSeu6Mk3Bc3Qcno1DBgEKRoJ1xsTQUDczkFSE6g8: {
+    '69SohrhYgsRTiHcPmh9GwadYoxt1kJgmJ3e2nrCajFHt': {
       status: 'stable',
       name: 'cdm/observable/asset/InterpolationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EZCcXSeu6Mk3Bc3Qcno1DBgEKRoJ1xsTQUDczkFSE6g8',
+          typeBlueId: '69SohrhYgsRTiHcPmh9GwadYoxt1kJgmJ3e2nrCajFHt',
           attributesAdded: [],
         },
       ],
     },
-    '5N7r2T8zJNb9icnFAz3pNxwh7pMydKvTZyuGcLFAC4Jd': {
+    '9cFYfvN7xbbc43QhKiCviJrNrMQbUP3XZPyc3x2B7CFB': {
       status: 'stable',
       name: 'cdm/observable/asset/MakeWholeAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5N7r2T8zJNb9icnFAz3pNxwh7pMydKvTZyuGcLFAC4Jd',
+          typeBlueId: '9cFYfvN7xbbc43QhKiCviJrNrMQbUP3XZPyc3x2B7CFB',
           attributesAdded: [],
         },
       ],
     },
-    '6tLPRxaKr8kikEkfnoFn5a6CqY61ckSNTb2NLzfWwRb7': {
+    '9TCszX7p3useiqzNm9UPp1AMdorfkHLknXYXqEVsE2N8': {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaBasketConstituent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6tLPRxaKr8kikEkfnoFn5a6CqY61ckSNTb2NLzfWwRb7',
+          typeBlueId: '9TCszX7p3useiqzNm9UPp1AMdorfkHLknXYXqEVsE2N8',
           attributesAdded: [],
         },
       ],
     },
-    CwpYZPmQdRGD5hBExM6HNqoCwdcXsK3bbUFxDHPbYjFs: {
+    '4G54JBxkdxEwLZwmqaWCK5bKJB6A4GG18uBgBUKxJ4am': {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaInterestRateIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CwpYZPmQdRGD5hBExM6HNqoCwdcXsK3bbUFxDHPbYjFs',
+          typeBlueId: '4G54JBxkdxEwLZwmqaWCK5bKJB6A4GG18uBgBUKxJ4am',
           attributesAdded: [],
         },
       ],
     },
-    B6z4sPE6mbrDKZ212dEzdy8bC6F5DNgR8Eh4KK623JA: {
+    EP1r4ouVVbfJhEazX6iBArCJYk3u6aP7hwxJSGLBFbet: {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaMoney',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B6z4sPE6mbrDKZ212dEzdy8bC6F5DNgR8Eh4KK623JA',
+          typeBlueId: 'EP1r4ouVVbfJhEazX6iBArCJYk3u6aP7hwxJSGLBFbet',
           attributesAdded: [],
         },
       ],
     },
-    '7Ezn98bzTDBSzbTRQf8yvx7zNsbGwp4w3rfb12fsiBwz': {
+    '29tRf6HKyJ5PZ7qSgJmiEnuDwSx7xXy8vHzP4X2PfJU8': {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaObservable',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7Ezn98bzTDBSzbTRQf8yvx7zNsbGwp4w3rfb12fsiBwz',
+          typeBlueId: '29tRf6HKyJ5PZ7qSgJmiEnuDwSx7xXy8vHzP4X2PfJU8',
           attributesAdded: [],
         },
       ],
     },
-    DQP2qi6gwFxKtKMataRY4XdJdpe3v4MNCv43aURbDBPn: {
+    FZijMkQPrtZQaEQjCE7pXzh3u7cK2CoCy2dG3PDmNQc6: {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaPerformanceValuationDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQP2qi6gwFxKtKMataRY4XdJdpe3v4MNCv43aURbDBPn',
+          typeBlueId: 'FZijMkQPrtZQaEQjCE7pXzh3u7cK2CoCy2dG3PDmNQc6',
           attributesAdded: [],
         },
       ],
     },
-    BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25: {
+    '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy': {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaPriceSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25',
+          typeBlueId: '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy',
           attributesAdded: [],
         },
       ],
     },
-    '3X1BxSYgvTeSDYHTZnCPcsWXcGAqhEu9B5XmTv8mUH1v': {
+    AyEBp4Mbar43fuYsMicvQsPWCtvzqv7kEt3G9UEdSbHx: {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaQuotedCurrencyPair',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3X1BxSYgvTeSDYHTZnCPcsWXcGAqhEu9B5XmTv8mUH1v',
+          typeBlueId: 'AyEBp4Mbar43fuYsMicvQsPWCtvzqv7kEt3G9UEdSbHx',
           attributesAdded: [],
         },
       ],
     },
-    fx4LQnhJaV8s5Joj7TDWyvEhsFX5aHaLQe3VAVAU8FC: {
+    '5ELPXXGetNc7L1KzToiwonniwtgkJ3BHxxLYZiFDy22x': {
       status: 'stable',
       name: 'cdm/observable/asset/metafields/ReferenceWithMetaRateObservation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'fx4LQnhJaV8s5Joj7TDWyvEhsFX5aHaLQe3VAVAU8FC',
+          typeBlueId: '5ELPXXGetNc7L1KzToiwonniwtgkJ3BHxxLYZiFDy22x',
           attributesAdded: [],
         },
       ],
     },
-    '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE': {
+    '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy': {
       status: 'stable',
       name: 'cdm/observable/asset/Money',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+          typeBlueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
           attributesAdded: [],
         },
       ],
     },
-    DcUTaEYM4WWvLRoDutDM6dukE5ZErd9Nm1ke8SZwWUp9: {
+    '8Zxjn3QHqYieQ4XTe55zZnRoVGJUea245LGooM18oqK2': {
       status: 'stable',
       name: 'cdm/observable/asset/MultipleCreditNotations',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DcUTaEYM4WWvLRoDutDM6dukE5ZErd9Nm1ke8SZwWUp9',
+          typeBlueId: '8Zxjn3QHqYieQ4XTe55zZnRoVGJUea245LGooM18oqK2',
           attributesAdded: [],
         },
       ],
     },
-    '5PFLZB36WnuYf12r9mcZZHtgkGG8orG4mKYXZUf2T2L8': {
+    ARtKwcQKppAKVf5WDJvuwGatLemZ18RcJsXU23W4RfH8: {
       status: 'stable',
       name: 'cdm/observable/asset/MultipleDebtTypes',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5PFLZB36WnuYf12r9mcZZHtgkGG8orG4mKYXZUf2T2L8',
+          typeBlueId: 'ARtKwcQKppAKVf5WDJvuwGatLemZ18RcJsXU23W4RfH8',
           attributesAdded: [],
         },
       ],
     },
-    '3TzCHW48PK6kL5s7n3x7jyA7VmeiJJ9D2JgzR53cTcPe': {
+    HyKWLzqSMdXydTHsC9zJwdiVi6KcdZVngY9WJ5PV3xMR: {
       status: 'stable',
       name: 'cdm/observable/asset/MultipleValuationDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3TzCHW48PK6kL5s7n3x7jyA7VmeiJJ9D2JgzR53cTcPe',
+          typeBlueId: 'HyKWLzqSMdXydTHsC9zJwdiVi6KcdZVngY9WJ5PV3xMR',
           attributesAdded: [],
         },
       ],
     },
-    Hb4wmAVuJwiD8UV5Stp7MdchNt2tK1QCEE5tBFxE5F9A: {
+    xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS: {
       status: 'stable',
       name: 'cdm/observable/asset/Observable',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hb4wmAVuJwiD8UV5Stp7MdchNt2tK1QCEE5tBFxE5F9A',
+          typeBlueId: 'xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS',
           attributesAdded: [],
         },
       ],
     },
-    C1fmUXxsuQZKB9pnb77XYeC8nw26iYVpjkTRaG1dchYX: {
+    GXtabg3erarMspr34yVya2Ybpw1LUGLXNHdWCkovVNAA: {
       status: 'stable',
       name: 'cdm/observable/asset/OtherIndex',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C1fmUXxsuQZKB9pnb77XYeC8nw26iYVpjkTRaG1dchYX',
+          typeBlueId: 'GXtabg3erarMspr34yVya2Ybpw1LUGLXNHdWCkovVNAA',
           attributesAdded: [],
         },
       ],
     },
-    Gx6tnCEperfB7Xg7wHbZx5dSuf9AEGb5zk5PdoPPbSKQ: {
+    GEZ4BVRUpw6ZgUyioiUUFgX7KRu1BLBoubvwFuS6XdFd: {
       status: 'stable',
       name: 'cdm/observable/asset/PartyDeterminationEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Gx6tnCEperfB7Xg7wHbZx5dSuf9AEGb5zk5PdoPPbSKQ',
+          typeBlueId: 'GEZ4BVRUpw6ZgUyioiUUFgX7KRu1BLBoubvwFuS6XdFd',
           attributesAdded: [],
         },
       ],
     },
-    G7RBkCYuRGtWRTgXUrQzXRkYF1PaULGgHp8KeH6spT6k: {
+    BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx: {
       status: 'stable',
       name: 'cdm/observable/asset/PerformanceValuationDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G7RBkCYuRGtWRTgXUrQzXRkYF1PaULGgHp8KeH6spT6k',
+          typeBlueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
           attributesAdded: [],
         },
       ],
     },
-    '9so5mJWR9jvdKWfaAnMyj5WMAv2TaLmZrmBZxGyLWqMf': {
+    BnX8YWGNQEemBPGhMwg9Dn7EZKXy7TKV3Pdoa8bijM8K: {
       status: 'stable',
       name: 'cdm/observable/asset/PremiumExpression',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9so5mJWR9jvdKWfaAnMyj5WMAv2TaLmZrmBZxGyLWqMf',
+          typeBlueId: 'BnX8YWGNQEemBPGhMwg9Dn7EZKXy7TKV3Pdoa8bijM8K',
           attributesAdded: [],
         },
       ],
     },
-    V3Wp7L7rEDxbgbj92BVzYAqyLjSQQWBdwRqiyHtAuu9: {
+    HsnQM55utMJ2MK1JFiAmmg7CVx7NSKY33Ecru99LtN2H: {
       status: 'stable',
       name: 'cdm/observable/asset/PremiumTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'V3Wp7L7rEDxbgbj92BVzYAqyLjSQQWBdwRqiyHtAuu9',
+          typeBlueId: 'HsnQM55utMJ2MK1JFiAmmg7CVx7NSKY33Ecru99LtN2H',
           attributesAdded: [],
         },
       ],
     },
-    wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543: {
+    GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm: {
       status: 'stable',
       name: 'cdm/observable/asset/Price',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543',
+          typeBlueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
           attributesAdded: [],
         },
       ],
     },
-    BoD5XyrRXadR1NLz2BSQ2UQ34JUbjZPKbt59eNzTqx6N: {
+    EjBpyo5KGACQ7knjNw98Y71wwTCGfQn96DouM8q8m7Gu: {
       status: 'stable',
       name: 'cdm/observable/asset/PriceComposite',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BoD5XyrRXadR1NLz2BSQ2UQ34JUbjZPKbt59eNzTqx6N',
+          typeBlueId: 'EjBpyo5KGACQ7knjNw98Y71wwTCGfQn96DouM8q8m7Gu',
           attributesAdded: [],
         },
       ],
     },
-    '5oss5vAthfdDyx4i1CUcAgeHxzWsk2SCDGWtrZ76qZzi': {
+    DGw3j3EkTUgoJb9WQD39BfVPHsqnL4bXU5uXCMnmCe3v: {
       status: 'stable',
       name: 'cdm/observable/asset/PriceExpressionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5oss5vAthfdDyx4i1CUcAgeHxzWsk2SCDGWtrZ76qZzi',
+          typeBlueId: 'DGw3j3EkTUgoJb9WQD39BfVPHsqnL4bXU5uXCMnmCe3v',
           attributesAdded: [],
         },
       ],
     },
-    BVwHNgkrszdwh7BMc66NPQwh2gQsFJvJJQE7F88TBxwV: {
+    AYFWVGAm6RijsVmJ8UzknPTSr57LT6zv3HLbBwiqWeQn: {
       status: 'stable',
       name: 'cdm/observable/asset/PriceOperandEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BVwHNgkrszdwh7BMc66NPQwh2gQsFJvJJQE7F88TBxwV',
+          typeBlueId: 'AYFWVGAm6RijsVmJ8UzknPTSr57LT6zv3HLbBwiqWeQn',
           attributesAdded: [],
         },
       ],
     },
-    '3M3Dq9Mg9Eq1zojVRM5ZJVz9nV2VfXFeSLB6TnvKozYs': {
+    '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8': {
       status: 'stable',
       name: 'cdm/observable/asset/PriceQuantity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3M3Dq9Mg9Eq1zojVRM5ZJVz9nV2VfXFeSLB6TnvKozYs',
+          typeBlueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
           attributesAdded: [],
         },
       ],
     },
-    '7ujhwBZKKYZ8KFEFNUSPTPcy8E1hFRJJzhgaX3ZgJGY5': {
+    F7QahhLQE8sqX4t6NBvj5SDbcCWwr9pBdZDMZaqg7mSx: {
       status: 'stable',
       name: 'cdm/observable/asset/PriceSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7ujhwBZKKYZ8KFEFNUSPTPcy8E1hFRJJzhgaX3ZgJGY5',
+          typeBlueId: 'F7QahhLQE8sqX4t6NBvj5SDbcCWwr9pBdZDMZaqg7mSx',
           attributesAdded: [],
         },
       ],
     },
-    HXr8kdL38en5pwXowLj5Q3Zm1ZazRrhbNVRosgr5VrV9: {
+    '7B7UekmPAs7VxgX8jAooMTn1cRUmS94ja5eiFSvuGp8L': {
       status: 'stable',
       name: 'cdm/observable/asset/PriceSourceDisruption',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HXr8kdL38en5pwXowLj5Q3Zm1ZazRrhbNVRosgr5VrV9',
+          typeBlueId: '7B7UekmPAs7VxgX8jAooMTn1cRUmS94ja5eiFSvuGp8L',
           attributesAdded: [],
         },
       ],
     },
-    C1BmErqx6smbQokFqorQp8PqoSsJWkSGu3M3mD78tJAq: {
+    '57TNhfCPohyptzE8EPedTDH19ZH7MkzMEo4S8VWeQ9Ck': {
       status: 'stable',
       name: 'cdm/observable/asset/PriceTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C1BmErqx6smbQokFqorQp8PqoSsJWkSGu3M3mD78tJAq',
+          typeBlueId: '57TNhfCPohyptzE8EPedTDH19ZH7MkzMEo4S8VWeQ9Ck',
           attributesAdded: [],
         },
       ],
     },
-    GxBLq28MxAyJ2dmLBBURqHrK8qZuSmpxRR19gZsCJG7Y: {
+    '8zos93F6Rp44xvm8FYMXKw5xnQKEUMyY6UNchYmnn968': {
       status: 'stable',
       name: 'cdm/observable/asset/QuotationRateTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GxBLq28MxAyJ2dmLBBURqHrK8qZuSmpxRR19gZsCJG7Y',
+          typeBlueId: '8zos93F6Rp44xvm8FYMXKw5xnQKEUMyY6UNchYmnn968',
           attributesAdded: [],
         },
       ],
     },
-    '8rvM94HuSxVEjNh7NmWuk8pKTjeiV7uTrwNqUX9zsDaU': {
+    AH1BY9EazwZmuZ6LcxCKPZSzsejRaRpRinAqLmVsFTgc: {
       status: 'stable',
       name: 'cdm/observable/asset/QuotationSideEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8rvM94HuSxVEjNh7NmWuk8pKTjeiV7uTrwNqUX9zsDaU',
+          typeBlueId: 'AH1BY9EazwZmuZ6LcxCKPZSzsejRaRpRinAqLmVsFTgc',
           attributesAdded: [],
         },
       ],
     },
-    '5GwsMwbaX4fp4AD7NMb1rr8z8WDVafnPXTBwsagyzx2': {
+    VVDNkAFA8n1iP8XHiNgLYMtF7r3mfFkx4P4nqUhsDYH: {
       status: 'stable',
       name: 'cdm/observable/asset/QuotationStyleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5GwsMwbaX4fp4AD7NMb1rr8z8WDVafnPXTBwsagyzx2',
+          typeBlueId: 'VVDNkAFA8n1iP8XHiNgLYMtF7r3mfFkx4P4nqUhsDYH',
           attributesAdded: [],
         },
       ],
     },
-    DYuwgUPfQXXLvHYN9CkQCk14eheznpsJXzEVZupjdJdD: {
+    '38MJMyCWnyrfancwTmzba2YAVR4YfwGbKcnfueN32RCR': {
       status: 'stable',
       name: 'cdm/observable/asset/QuoteBasisEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DYuwgUPfQXXLvHYN9CkQCk14eheznpsJXzEVZupjdJdD',
+          typeBlueId: '38MJMyCWnyrfancwTmzba2YAVR4YfwGbKcnfueN32RCR',
           attributesAdded: [],
         },
       ],
     },
-    CRDQNtXNJmEa2569YsarVn2w4uDdGJfuoMsGA37B3aci: {
+    Fh47tZBtYn2vAYUQFPhW9yfe2PQ2jNgj4jqnT8kVqWGm: {
       status: 'stable',
       name: 'cdm/observable/asset/QuotedCurrencyPair',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CRDQNtXNJmEa2569YsarVn2w4uDdGJfuoMsGA37B3aci',
+          typeBlueId: 'Fh47tZBtYn2vAYUQFPhW9yfe2PQ2jNgj4jqnT8kVqWGm',
           attributesAdded: [],
         },
       ],
     },
-    '8ozLJtusb6qjQQvGNBr3CSm5GrpkBW1qH3gderp3Jrog': {
+    AxRtbapEBZySZ4EiPgeQy1TunP6re28X7ipk2brY6NJV: {
       status: 'stable',
       name: 'cdm/observable/asset/RateObservation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8ozLJtusb6qjQQvGNBr3CSm5GrpkBW1qH3gderp3Jrog',
+          typeBlueId: 'AxRtbapEBZySZ4EiPgeQy1TunP6re28X7ipk2brY6NJV',
           attributesAdded: [],
         },
       ],
     },
-    '3ePuoisseC1LPtuzJDr9A1SpUkuyfzKiDPwFQS4DtH7h': {
+    '2sDB91wA63tF5EXtQR9UbQQnyGu7CqG5AHbYURVxLHNc': {
       status: 'stable',
       name: 'cdm/observable/asset/ReferenceSwapCurve',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3ePuoisseC1LPtuzJDr9A1SpUkuyfzKiDPwFQS4DtH7h',
+          typeBlueId: '2sDB91wA63tF5EXtQR9UbQQnyGu7CqG5AHbYURVxLHNc',
           attributesAdded: [],
         },
       ],
     },
-    '3iMwczqZ5hCmimZgAMWak1MiTjPqmNqxhKbiCnuKhHiD': {
+    '4fDBuDhuDX6EwGXzGFCqTDbxE4JukhE8mVQ8BFtq5d3j': {
       status: 'stable',
       name: 'cdm/observable/asset/SettlementRateOption',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3iMwczqZ5hCmimZgAMWak1MiTjPqmNqxhKbiCnuKhHiD',
+          typeBlueId: '4fDBuDhuDX6EwGXzGFCqTDbxE4JukhE8mVQ8BFtq5d3j',
           attributesAdded: [],
         },
       ],
     },
-    FWDtHcje7vk2DT9i83ydGLBfFw8w7RmzGbaZaLknALuS: {
+    AC1Ks1QsNocGMbEcoyG6AAtphUMjU2nH9ByiwJVAPxWW: {
       status: 'stable',
       name: 'cdm/observable/asset/SettlementRateOptionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FWDtHcje7vk2DT9i83ydGLBfFw8w7RmzGbaZaLknALuS',
+          typeBlueId: 'AC1Ks1QsNocGMbEcoyG6AAtphUMjU2nH9ByiwJVAPxWW',
           attributesAdded: [],
         },
       ],
     },
-    '8EqwdQrn5Dw7AHtUZT6rtQFm2KyamTxrfc8dzdBkyRcU': {
+    '14czdjerkJ6X1HwgQE2RFvCte476RbB2aWmpUby9D7bG': {
       status: 'stable',
       name: 'cdm/observable/asset/SingleValuationDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8EqwdQrn5Dw7AHtUZT6rtQFm2KyamTxrfc8dzdBkyRcU',
+          typeBlueId: '14czdjerkJ6X1HwgQE2RFvCte476RbB2aWmpUby9D7bG',
           attributesAdded: [],
         },
       ],
     },
-    C9EPdpPrzh5V9xD3tEvsVVTXiTnJY6xu9LYzmuhxErxD: {
+    TuUaQmwiwbNnpZ2No6iRHWhHTr63186fYNv8REBGMWB: {
       status: 'stable',
       name: 'cdm/observable/asset/SwapCurveValuation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C9EPdpPrzh5V9xD3tEvsVVTXiTnJY6xu9LYzmuhxErxD',
+          typeBlueId: 'TuUaQmwiwbNnpZ2No6iRHWhHTr63186fYNv8REBGMWB',
           attributesAdded: [],
         },
       ],
     },
-    '65FKmZoG2ihwTo3rzTDNSxkKZagb2Cf5Yd4XZz9V9hRT': {
+    '2VoGuVXkABhTyi7xKubFr6JzJfGRVE4L71H1o3KouEtk': {
       status: 'stable',
       name: 'cdm/observable/asset/TransactedPrice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '65FKmZoG2ihwTo3rzTDNSxkKZagb2Cf5Yd4XZz9V9hRT',
+          typeBlueId: '2VoGuVXkABhTyi7xKubFr6JzJfGRVE4L71H1o3KouEtk',
           attributesAdded: [],
         },
       ],
     },
-    '66zVckdam9PFW8teq1v55hAb2SjzvqkkKJKB5VKKrrkT': {
+    UcvnGWBznJQMKxTqZfWEzoJ4bovdXYkn8PTxfrA9Kxt: {
       status: 'stable',
       name: 'cdm/observable/asset/ValuationDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '66zVckdam9PFW8teq1v55hAb2SjzvqkkKJKB5VKKrrkT',
+          typeBlueId: 'UcvnGWBznJQMKxTqZfWEzoJ4bovdXYkn8PTxfrA9Kxt',
           attributesAdded: [],
         },
       ],
     },
-    AdF7VVSQD7g6WDw7T1ERRvh2LyUa1x3ViWqt4xqRh9tj: {
+    G6B4zpZqUNxW8aaqxnCjbpzHwcszJHv47qgoCSRLg9FS: {
       status: 'stable',
       name: 'cdm/observable/asset/ValuationMethod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AdF7VVSQD7g6WDw7T1ERRvh2LyUa1x3ViWqt4xqRh9tj',
+          typeBlueId: 'G6B4zpZqUNxW8aaqxnCjbpzHwcszJHv47qgoCSRLg9FS',
           attributesAdded: [],
         },
       ],
     },
-    GdU62xtHbp3vNgepv4Uup6pJ6aTD2aWwLiwoktktLLBX: {
+    '9Hdb7PQKx6QSKmvMRcDsHuTCkar1FKjhxc3gFZY4hgWE': {
       status: 'stable',
       name: 'cdm/observable/asset/ValuationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GdU62xtHbp3vNgepv4Uup6pJ6aTD2aWwLiwoktktLLBX',
+          typeBlueId: '9Hdb7PQKx6QSKmvMRcDsHuTCkar1FKjhxc3gFZY4hgWE',
           attributesAdded: [],
         },
       ],
     },
-    '4qEkQfDu8oCghp1oSzQpCCV54KiEzfWX7fbKB9doJUtM': {
+    FSNs7wPUozqjz5B6qRf7FwdstVC9R3vaMucjkk4PqKXW: {
       status: 'stable',
       name: 'cdm/observable/asset/ValuationPostponement',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4qEkQfDu8oCghp1oSzQpCCV54KiEzfWX7fbKB9doJUtM',
+          typeBlueId: 'FSNs7wPUozqjz5B6qRf7FwdstVC9R3vaMucjkk4PqKXW',
           attributesAdded: [],
         },
       ],
     },
-    '47H6pRnGpeWU8CvBFZH3noy3Tkc3X5qKNLzj1PkiBoxL': {
+    FCKyQt9cG2gZA2twmB2EjomRWASZunsNMVkfDRtdJCDd: {
       status: 'stable',
       name: 'cdm/observable/asset/ValuationSource',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '47H6pRnGpeWU8CvBFZH3noy3Tkc3X5qKNLzj1PkiBoxL',
+          typeBlueId: 'FCKyQt9cG2gZA2twmB2EjomRWASZunsNMVkfDRtdJCDd',
           attributesAdded: [],
         },
       ],
     },
-    '3y75YW3Xvg26b63Etnyf7EmxBfhFMUEgAhimCGQ2jyab': {
+    F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH: {
       status: 'stable',
       name: 'cdm/observable/common/DeterminationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3y75YW3Xvg26b63Etnyf7EmxBfhFMUEgAhimCGQ2jyab',
+          typeBlueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
           attributesAdded: [],
         },
       ],
     },
-    '5SHUer2m9Wrjeo45qpWiGeBoKwQ2Z66Waz5zaTwYcJUp': {
+    '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv': {
       status: 'stable',
       name: 'cdm/observable/common/TimeTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5SHUer2m9Wrjeo45qpWiGeBoKwQ2Z66Waz5zaTwYcJUp',
+          typeBlueId: '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv',
           attributesAdded: [],
         },
       ],
     },
-    MYhc6gGsaViuAUK2NFHroGDTxJMNRTGbXn7tJw4k8Rf: {
+    AWhnPfrvzFRQCvzfQY8CZB6Xp8Eknw8gcnAg53xtbBwj: {
       status: 'stable',
       name: 'cdm/observable/event/CreditEventNotice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'MYhc6gGsaViuAUK2NFHroGDTxJMNRTGbXn7tJw4k8Rf',
+          typeBlueId: 'AWhnPfrvzFRQCvzfQY8CZB6Xp8Eknw8gcnAg53xtbBwj',
           attributesAdded: [],
         },
       ],
     },
-    HWbAdp28QNY1ehyUyubaSbcB8FhMbDv3qp7poZxNn9mM: {
+    '3VWXt9VeCTwLSaTRa6KebXPdyz4Gy3Xwf33wBbvgbeqo': {
       status: 'stable',
       name: 'cdm/observable/event/CreditEvents',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HWbAdp28QNY1ehyUyubaSbcB8FhMbDv3qp7poZxNn9mM',
+          typeBlueId: '3VWXt9VeCTwLSaTRa6KebXPdyz4Gy3Xwf33wBbvgbeqo',
           attributesAdded: [],
         },
       ],
     },
-    AVTGwC6XTdPNBYpCUxUf5Agcpf2Z8whRs2N8aNRbffDr: {
+    '4Gy7A4j9sYhPf8Eqd9dXLdUFBWPHMDXxiV4n5VNAsmQF': {
       status: 'stable',
       name: 'cdm/observable/event/DeterminationMethodology',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AVTGwC6XTdPNBYpCUxUf5Agcpf2Z8whRs2N8aNRbffDr',
+          typeBlueId: '4Gy7A4j9sYhPf8Eqd9dXLdUFBWPHMDXxiV4n5VNAsmQF',
           attributesAdded: [],
         },
       ],
     },
-    '841NMvSM9PQqKJH7bDVnLgUotN9taubNFzdxbkbjNLnK': {
+    HTuXbgSEpM5XerhmFWMb4d5MBP6ixLzjeJKEuNq6pZ2n: {
       status: 'stable',
       name: 'cdm/observable/event/FailureToPay',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '841NMvSM9PQqKJH7bDVnLgUotN9taubNFzdxbkbjNLnK',
+          typeBlueId: 'HTuXbgSEpM5XerhmFWMb4d5MBP6ixLzjeJKEuNq6pZ2n',
           attributesAdded: [],
         },
       ],
     },
-    GEqVXdfmyLaRbcY72PwcZzu8xtsZVwesLZCTFcqN59mA: {
+    '658or3kYtUm56ELDk8VvoiAT7agLsP99UNrYUqXPMWyp': {
       status: 'stable',
       name: 'cdm/observable/event/FeaturePayment',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GEqVXdfmyLaRbcY72PwcZzu8xtsZVwesLZCTFcqN59mA',
+          typeBlueId: '658or3kYtUm56ELDk8VvoiAT7agLsP99UNrYUqXPMWyp',
           attributesAdded: [],
         },
       ],
     },
-    EuGpRedX58TPU3i5qZ6LxsNcbEJmKoGSNL6ivqwkFYgj: {
+    FjySLYZUdztPrBskVvWtnCvGs6KZVkZWrLsrrLpotMYG: {
       status: 'stable',
       name: 'cdm/observable/event/FieldWithMetaMarketDisruptionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EuGpRedX58TPU3i5qZ6LxsNcbEJmKoGSNL6ivqwkFYgj',
+          typeBlueId: 'FjySLYZUdztPrBskVvWtnCvGs6KZVkZWrLsrrLpotMYG',
           attributesAdded: [],
         },
       ],
     },
-    '8nmbwhMz1vxgssSgz1Fpj1Acf2tKDiXSEx1nprSHWZV8': {
+    vFG54w9Xw7FthPkNNnfst9e9Nf2BmRqjAGcxUSz7WPS: {
       status: 'stable',
       name: 'cdm/observable/event/FieldWithMetaRestructuringEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8nmbwhMz1vxgssSgz1Fpj1Acf2tKDiXSEx1nprSHWZV8',
+          typeBlueId: 'vFG54w9Xw7FthPkNNnfst9e9Nf2BmRqjAGcxUSz7WPS',
           attributesAdded: [],
         },
       ],
     },
-    '5JU838ptsuP3xhN8DLcMeENsfzy6eK4qD4QJETiXAH5h': {
+    BTysZP1WpL4z9tsQazV1uF7AmmG5ZiX4Q8ABMpMSnfCW: {
       status: 'stable',
       name: 'cdm/observable/event/GracePeriodExtension',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5JU838ptsuP3xhN8DLcMeENsfzy6eK4qD4QJETiXAH5h',
+          typeBlueId: 'BTysZP1WpL4z9tsQazV1uF7AmmG5ZiX4Q8ABMpMSnfCW',
           attributesAdded: [],
         },
       ],
     },
-    BHYPNp3oAgUMuAWFmLUF4tjwQpm7LpWwt6gZVmtqXwyv: {
+    '12z8itumtMLpP3nE32bH5sneayWtT3viPrN58UPt7BkV': {
       status: 'stable',
       name: 'cdm/observable/event/IndexEventConsequenceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BHYPNp3oAgUMuAWFmLUF4tjwQpm7LpWwt6gZVmtqXwyv',
+          typeBlueId: '12z8itumtMLpP3nE32bH5sneayWtT3viPrN58UPt7BkV',
           attributesAdded: [],
         },
       ],
     },
-    uUenBfK6DiEGeZWysD2Hj8epQYj7yTPH1iKfF2bAtT7: {
+    Cm6CtKyZMW81X3HmtPtvXLE5EpvBpSEnyVK5Th2bmQ3v: {
       status: 'stable',
       name: 'cdm/observable/event/MarketDisruptionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'uUenBfK6DiEGeZWysD2Hj8epQYj7yTPH1iKfF2bAtT7',
+          typeBlueId: 'Cm6CtKyZMW81X3HmtPtvXLE5EpvBpSEnyVK5Th2bmQ3v',
           attributesAdded: [],
         },
       ],
     },
-    '7nuxJCjc51f4w1EhUb9R9P4L5uBQELSPjqdBhMothJ2G': {
+    FWcQmx5gu2ihsKm9K2BYniLmbetQeMxPF6ZpzM3uVXXD: {
       status: 'stable',
       name: 'cdm/observable/event/metafields/ReferenceWithMetaCreditEvents',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7nuxJCjc51f4w1EhUb9R9P4L5uBQELSPjqdBhMothJ2G',
+          typeBlueId: 'FWcQmx5gu2ihsKm9K2BYniLmbetQeMxPF6ZpzM3uVXXD',
           attributesAdded: [],
         },
       ],
     },
-    FrLAdW4sDG6MpoBXdBATgMkuuGm9pecAaarCRhvnCb2F: {
+    A2eu6mCquL2q8sKhpvBAfkp3b6uAG8GdE22hHTvvQEMi: {
       status: 'stable',
       name: 'cdm/observable/event/metafields/ReferenceWithMetaObservation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FrLAdW4sDG6MpoBXdBATgMkuuGm9pecAaarCRhvnCb2F',
+          typeBlueId: 'A2eu6mCquL2q8sKhpvBAfkp3b6uAG8GdE22hHTvvQEMi',
           attributesAdded: [],
         },
       ],
     },
-    FTknYeDBE8m3vDi6uLPgcH5j3YeR6NduZGwBrVmho2qs: {
+    C6Yp749VzC7SApKQGjPSUFxLD5E445bVciFGiaHHE4pi: {
       status: 'stable',
       name: 'cdm/observable/event/Observation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FTknYeDBE8m3vDi6uLPgcH5j3YeR6NduZGwBrVmho2qs',
+          typeBlueId: 'C6Yp749VzC7SApKQGjPSUFxLD5E445bVciFGiaHHE4pi',
           attributesAdded: [],
         },
       ],
     },
-    '9KXvG7maDiQ34ZWLG3PFbh8mX8zubdxajYg63XxeMUHa': {
+    HsL4LyTBaWKTLfoBBFsckiquH2hkGP3QRC7x8z6S4s2L: {
       status: 'stable',
       name: 'cdm/observable/event/ObservationIdentifier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9KXvG7maDiQ34ZWLG3PFbh8mX8zubdxajYg63XxeMUHa',
+          typeBlueId: 'HsL4LyTBaWKTLfoBBFsckiquH2hkGP3QRC7x8z6S4s2L',
           attributesAdded: [],
         },
       ],
     },
-    BiHXzuMF85zKCgU4f3BJ2Si1sps8uCqcRrB2XxMrhTPq: {
+    EY9iPDd22LwArn4MV9fUHUqkd2gX1guSkAntckHs1xYa: {
       status: 'stable',
       name: 'cdm/observable/event/PubliclyAvailableInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BiHXzuMF85zKCgU4f3BJ2Si1sps8uCqcRrB2XxMrhTPq',
+          typeBlueId: 'EY9iPDd22LwArn4MV9fUHUqkd2gX1guSkAntckHs1xYa',
           attributesAdded: [],
         },
       ],
     },
-    '9CCmvz3XrLCmtbjeACPQa5Rbn3V7RkiquALmSzJ9dLTV': {
+    CTdbPvJCySH7c1fo91jyuTmUVte9C47K3AKTScxXfHEe: {
       status: 'stable',
       name: 'cdm/observable/event/Restructuring',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9CCmvz3XrLCmtbjeACPQa5Rbn3V7RkiquALmSzJ9dLTV',
+          typeBlueId: 'CTdbPvJCySH7c1fo91jyuTmUVte9C47K3AKTScxXfHEe',
           attributesAdded: [],
         },
       ],
     },
-    GVjv34nbkQTtiTyxF1YaWKj1CzAkkX7yeirLncT6H8h8: {
+    '2nbojqENR7xMarP4TbXNuLgBPVLDgA4Jf6RYtJTucwte': {
       status: 'stable',
       name: 'cdm/observable/event/RestructuringEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GVjv34nbkQTtiTyxF1YaWKj1CzAkkX7yeirLncT6H8h8',
+          typeBlueId: '2nbojqENR7xMarP4TbXNuLgBPVLDgA4Jf6RYtJTucwte',
           attributesAdded: [],
         },
       ],
     },
-    '6F51Eo9CeCcpo2FgVGKKsS5rBRpqpkyo1WoTxMfYUwZZ': {
+    CMxZE5qhdNQfLUUyDEzXKqCWuy42NTHNxfgVPFBmduvr: {
       status: 'stable',
       name: 'cdm/observable/event/ShareExtraordinaryEventEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6F51Eo9CeCcpo2FgVGKKsS5rBRpqpkyo1WoTxMfYUwZZ',
+          typeBlueId: 'CMxZE5qhdNQfLUUyDEzXKqCWuy42NTHNxfgVPFBmduvr',
           attributesAdded: [],
         },
       ],
     },
-    F4aQKt7CSGvhjKJxn6Eq7qh8eWsMhiWdGoPrRMMpNknC: {
+    '21pozsBPMtA8xJQ77VahQiEpCbG8nV3ryR8r5xgX4sQP': {
       status: 'stable',
       name: 'cdm/observable/event/Trigger',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F4aQKt7CSGvhjKJxn6Eq7qh8eWsMhiWdGoPrRMMpNknC',
+          typeBlueId: '21pozsBPMtA8xJQ77VahQiEpCbG8nV3ryR8r5xgX4sQP',
           attributesAdded: [],
         },
       ],
     },
-    '5q7Te3Mgou1kKCrZx5Xwb2rPekcJF6cL81MN9mfRkjxf': {
+    GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC: {
       status: 'stable',
       name: 'cdm/observable/event/TriggerEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5q7Te3Mgou1kKCrZx5Xwb2rPekcJF6cL81MN9mfRkjxf',
+          typeBlueId: 'GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC',
           attributesAdded: [],
         },
       ],
     },
-    BDRmKW7BVJYNZXDyKP5S625t8NyJmgQDWfRw8Mjzizgd: {
+    '9VsQvLxQQRJfFp1j9v2evTD4tnmTZzxJFZGRrDLRXRNj': {
       status: 'stable',
       name: 'cdm/observable/event/TriggerTimeTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BDRmKW7BVJYNZXDyKP5S625t8NyJmgQDWfRw8Mjzizgd',
+          typeBlueId: '9VsQvLxQQRJfFp1j9v2evTD4tnmTZzxJFZGRrDLRXRNj',
           attributesAdded: [],
         },
       ],
     },
-    EQg8oK2XCYwAPXBQbQ25PHut48x4LXJQsYqgXoaEtcRq: {
+    Etd1jjtUSJfgtR9oe5rJxj387pjT2ZNMQG9kipLjW5hj: {
       status: 'stable',
       name: 'cdm/observable/event/TriggerTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EQg8oK2XCYwAPXBQbQ25PHut48x4LXJQsYqgXoaEtcRq',
+          typeBlueId: 'Etd1jjtUSJfgtR9oe5rJxj387pjT2ZNMQG9kipLjW5hj',
           attributesAdded: [],
         },
       ],
     },
-    HeB8cgyKQTeXcVdVnsFpiWBGgXUAfpUPUwPFBPY7JU6H: {
+    '2MBY3n1ccqVv3XyWrmGJ6dB87YtvzCaNGTvwyiDrVjdn': {
       status: 'stable',
       name: 'cdm/product/asset/AdditionalFixedPayments',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HeB8cgyKQTeXcVdVnsFpiWBGgXUAfpUPUwPFBPY7JU6H',
+          typeBlueId: '2MBY3n1ccqVv3XyWrmGJ6dB87YtvzCaNGTvwyiDrVjdn',
           attributesAdded: [],
         },
       ],
     },
-    DFCwxwyJL859yeqbrr3oY7vncLWeadysD9VJGA6LGJgK: {
+    '78abSDet2v5nbbeXAmoFZG2ZcMhk4674b2vrAKGT3yiu': {
       status: 'stable',
       name: 'cdm/product/asset/AssetDeliveryInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DFCwxwyJL859yeqbrr3oY7vncLWeadysD9VJGA6LGJgK',
+          typeBlueId: '78abSDet2v5nbbeXAmoFZG2ZcMhk4674b2vrAKGT3yiu',
           attributesAdded: [],
         },
       ],
     },
-    HjxX213km4XYV1mYvnDzqdcve8BuM63aN1sJ8oe1TbYc: {
+    '6ZsZcTEaVYcHQtEkhsQLm4rfmMsNHjFRR3oPX9j9T5rP': {
       status: 'stable',
       name: 'cdm/product/asset/AssetDeliveryPeriods',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HjxX213km4XYV1mYvnDzqdcve8BuM63aN1sJ8oe1TbYc',
+          typeBlueId: '6ZsZcTEaVYcHQtEkhsQLm4rfmMsNHjFRR3oPX9j9T5rP',
           attributesAdded: [],
         },
       ],
     },
-    G3hrrr7rcs6ZtCze1xXjYezVbZ6rTuYfog2nrcJZ7fTN: {
+    E8QF9EBMdnTPHUuRgEqvQUvGm75ReZB3zjKJB7BSjt7z: {
       status: 'stable',
       name: 'cdm/product/asset/AssetDeliveryProfile',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G3hrrr7rcs6ZtCze1xXjYezVbZ6rTuYfog2nrcJZ7fTN',
+          typeBlueId: 'E8QF9EBMdnTPHUuRgEqvQUvGm75ReZB3zjKJB7BSjt7z',
           attributesAdded: [],
         },
       ],
     },
-    '6Tr6ZRk2ed6Xz94Dfj4ZYH9Z1EnxKkZ2z7uEyNB3Krv': {
+    BE8tk1V1aM9RX2EaQdADCudboiUVLdjeqNbgPXMoWXXt: {
       status: 'stable',
       name: 'cdm/product/asset/AssetDeliveryProfileBlock',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6Tr6ZRk2ed6Xz94Dfj4ZYH9Z1EnxKkZ2z7uEyNB3Krv',
+          typeBlueId: 'BE8tk1V1aM9RX2EaQdADCudboiUVLdjeqNbgPXMoWXXt',
           attributesAdded: [],
         },
       ],
     },
-    DPWX3TQgadyc2NWPmBWPGsZuwotdkjqzr3AZzY6JgdeY: {
+    '833fsMUyREDfoeWcVvcxsNdLqF3mjxj8sUSJtn7h5aDG': {
       status: 'stable',
       name: 'cdm/product/asset/BankHolidayTreatmentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DPWX3TQgadyc2NWPmBWPGsZuwotdkjqzr3AZzY6JgdeY',
+          typeBlueId: '833fsMUyREDfoeWcVvcxsNdLqF3mjxj8sUSJtn7h5aDG',
           attributesAdded: [],
         },
       ],
     },
-    '2hzofepdHmrqpLHQwtRqdcJ6PoT2WXfk69YAGwBuwZhX': {
+    axuXmPNwYdajJqoyfRBqGLYdVR7pu272ceY2KqBq9nB: {
       status: 'stable',
       name: 'cdm/product/asset/BasketReferenceInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2hzofepdHmrqpLHQwtRqdcJ6PoT2WXfk69YAGwBuwZhX',
+          typeBlueId: 'axuXmPNwYdajJqoyfRBqGLYdVR7pu272ceY2KqBq9nB',
           attributesAdded: [],
         },
       ],
     },
-    E7YUir3XYc6p222k9M2DUYKNK573NXkhiQkA9SfScEJv: {
+    '5UTtrYJXRQ91C3zHV1ASggKdKMGxrvDbyUoqY7HwknPB': {
       status: 'stable',
       name: 'cdm/product/asset/BondReference',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E7YUir3XYc6p222k9M2DUYKNK573NXkhiQkA9SfScEJv',
+          typeBlueId: '5UTtrYJXRQ91C3zHV1ASggKdKMGxrvDbyUoqY7HwknPB',
           attributesAdded: [],
         },
       ],
     },
-    VHha4CybnXvTZ9WjbHZHgkHWN8Rdh964hfPSj1Tb5yi: {
+    '5h378nRjo3jm7Ls8JJ42cmd4XHzLYLu8A6TzQsDDM4f3': {
       status: 'stable',
       name: 'cdm/product/asset/BoundedCorrelation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'VHha4CybnXvTZ9WjbHZHgkHWN8Rdh964hfPSj1Tb5yi',
+          typeBlueId: '5h378nRjo3jm7Ls8JJ42cmd4XHzLYLu8A6TzQsDDM4f3',
           attributesAdded: [],
         },
       ],
     },
-    '6P8aTS33Up5mmto9DnUZz5ACxLVmLywWGuVqNKfHX8uK': {
+    DCKZsuug7AQ1eNWGKNHVPELUTjey85wne3B6xqsewUYF: {
       status: 'stable',
       name: 'cdm/product/asset/BoundedVariance',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6P8aTS33Up5mmto9DnUZz5ACxLVmLywWGuVqNKfHX8uK',
+          typeBlueId: 'DCKZsuug7AQ1eNWGKNHVPELUTjey85wne3B6xqsewUYF',
           attributesAdded: [],
         },
       ],
     },
-    '136mCFHby12JarZJeWoUUxHWR7a7DAi5bJW6dEaTmy1c': {
+    '4VSDgMR93vRjmusHhPRNXjdGuVnxrN3FBojT35y2b6cd': {
       status: 'stable',
       name: 'cdm/product/asset/CalculationScheduleDeliveryPeriods',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '136mCFHby12JarZJeWoUUxHWR7a7DAi5bJW6dEaTmy1c',
+          typeBlueId: '4VSDgMR93vRjmusHhPRNXjdGuVnxrN3FBojT35y2b6cd',
           attributesAdded: [],
         },
       ],
     },
-    FG2jLxQvPs3SKvJ3Jmg6mN7bHSMMac1ZBTWtVvnHP8M7: {
+    DTtWhJnXuoKubPMxQyji2Nw7Ci2mGd6RoJWN5EbzReoR: {
       status: 'stable',
       name: 'cdm/product/asset/CashflowRepresentation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FG2jLxQvPs3SKvJ3Jmg6mN7bHSMMac1ZBTWtVvnHP8M7',
+          typeBlueId: 'DTtWhJnXuoKubPMxQyji2Nw7Ci2mGd6RoJWN5EbzReoR',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#6': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#5': {
       status: 'stable',
       name: 'cdm/product/asset/CommodityPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#6',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#5',
           attributesAdded: [],
         },
       ],
     },
-    HiGUe6GomANJoTCv9K4kKoGwPWphKP2zCh4VE9B1syGk: {
+    HzNNten2ctS1XjUDRet8Qr7Nq3sh6vfsJBS3d1gH1JVH: {
       status: 'stable',
       name: 'cdm/product/asset/CompoundingMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HiGUe6GomANJoTCv9K4kKoGwPWphKP2zCh4VE9B1syGk',
+          typeBlueId: 'HzNNten2ctS1XjUDRet8Qr7Nq3sh6vfsJBS3d1gH1JVH',
           attributesAdded: [],
         },
       ],
     },
-    HqY3kSqV1NfLvT5YLvitQ5Nq1sktFe6oA5AqyQC1j9jT: {
+    EwvxCeweE6NzDi8idFivNwZ9joYB35RKBbzvwypsqnAR: {
       status: 'stable',
       name: 'cdm/product/asset/CorrelationReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HqY3kSqV1NfLvT5YLvitQ5Nq1sktFe6oA5AqyQC1j9jT',
+          typeBlueId: 'EwvxCeweE6NzDi8idFivNwZ9joYB35RKBbzvwypsqnAR',
           attributesAdded: [],
         },
       ],
     },
-    '8urUwRupxFQSg44fuqHiVELRztwhJH1CyMTbTSkKSFEA': {
+    AgZcx5eJYcy6vzz9NejmvMBuMpzza4tjH2bEtMYNkMVD: {
       status: 'stable',
       name: 'cdm/product/asset/CreditDefaultPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8urUwRupxFQSg44fuqHiVELRztwhJH1CyMTbTSkKSFEA',
+          typeBlueId: 'AgZcx5eJYcy6vzz9NejmvMBuMpzza4tjH2bEtMYNkMVD',
           attributesAdded: [],
         },
       ],
     },
-    '9uDWp1q9YxCE1cTdRRJoNvBwAY8sF71RbqWxaA3Xiwh': {
+    Hu5VnYpz7ZCRzsMjDtVxSVoN2RK42N3T3a1rvcvnMAyV: {
       status: 'stable',
       name: 'cdm/product/asset/CreditSeniorityEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9uDWp1q9YxCE1cTdRRJoNvBwAY8sF71RbqWxaA3Xiwh',
+          typeBlueId: 'Hu5VnYpz7ZCRzsMjDtVxSVoN2RK42N3T3a1rvcvnMAyV',
           attributesAdded: [],
         },
       ],
     },
-    FD6kLg2xwgd3jdCKhBv6qFv2EqCJPcQbjUm5b9XKmQDg: {
+    '7aBrcowDER57iJ1dKZQ3YqngDZfz6eNHJExw8Egww997': {
       status: 'stable',
       name: 'cdm/product/asset/DayDistributionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FD6kLg2xwgd3jdCKhBv6qFv2EqCJPcQbjUm5b9XKmQDg',
+          typeBlueId: '7aBrcowDER57iJ1dKZQ3YqngDZfz6eNHJExw8Egww997',
           attributesAdded: [],
         },
       ],
     },
-    '3K4A6xNiQ9Kzu5Qm4GacSdzEutFxAdniaFS2YvFUaSMa': {
+    Cr2qn4kdXt3AhEMg3m3yXpBXDDPzHwdy72ZZKWK8a1y7: {
       status: 'stable',
       name: 'cdm/product/asset/DiscountingMethod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3K4A6xNiQ9Kzu5Qm4GacSdzEutFxAdniaFS2YvFUaSMa',
+          typeBlueId: 'Cr2qn4kdXt3AhEMg3m3yXpBXDDPzHwdy72ZZKWK8a1y7',
           attributesAdded: [],
         },
       ],
     },
-    '7BRQPc5ga1LQPaFUJpmc5huifPeUuZvVsyovgsxm1TSx': {
+    EbjHFpZTcuFSaUzQnoeLBnQ5parZksPwCnkTUkahrgmy: {
       status: 'stable',
       name: 'cdm/product/asset/DiscountingTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7BRQPc5ga1LQPaFUJpmc5huifPeUuZvVsyovgsxm1TSx',
+          typeBlueId: 'EbjHFpZTcuFSaUzQnoeLBnQ5parZksPwCnkTUkahrgmy',
           attributesAdded: [],
         },
       ],
     },
-    HKJnSoksJBRW2rZ8dJKqPrqMNKwbSMWak8yFAgbBniu6: {
+    EPZXT4tSSu6F1Bgi8FKpq43oaSVqFr8Um1HXaoK25VVE: {
       status: 'stable',
       name: 'cdm/product/asset/DividendAmountTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HKJnSoksJBRW2rZ8dJKqPrqMNKwbSMWak8yFAgbBniu6',
+          typeBlueId: 'EPZXT4tSSu6F1Bgi8FKpq43oaSVqFr8Um1HXaoK25VVE',
           attributesAdded: [],
         },
       ],
     },
-    ChCPF5QmbcAobXbvs9K4wvqSwzqR7kRvufRyresyq2Rj: {
+    HN4sqTAXi2pGFVHbV6MLLdW3RgQ9Qq4thhJ9rWVsexks: {
       status: 'stable',
       name: 'cdm/product/asset/DividendCompositionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ChCPF5QmbcAobXbvs9K4wvqSwzqR7kRvufRyresyq2Rj',
+          typeBlueId: 'HN4sqTAXi2pGFVHbV6MLLdW3RgQ9Qq4thhJ9rWVsexks',
           attributesAdded: [],
         },
       ],
     },
-    HXFJiXPaDjND3jSjnioKon2K8cUjyf3aWi2kEsfB8FU4: {
+    '6YjggFTd8yUypLgjeUwSiJGZvfraozN2PjZBK4Q8KLQ6': {
       status: 'stable',
       name: 'cdm/product/asset/DividendCurrency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HXFJiXPaDjND3jSjnioKon2K8cUjyf3aWi2kEsfB8FU4',
+          typeBlueId: '6YjggFTd8yUypLgjeUwSiJGZvfraozN2PjZBK4Q8KLQ6',
           attributesAdded: [],
         },
       ],
     },
-    '4gtwm1ndbcupZZhmUktf8yr4opV2kyAfwauYoMthJWqH': {
+    '27h9XhtCRRX1w8W56vcSY2T14PTbGigcrhbRWGDy7fKe': {
       status: 'stable',
       name: 'cdm/product/asset/DividendDateReference',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4gtwm1ndbcupZZhmUktf8yr4opV2kyAfwauYoMthJWqH',
+          typeBlueId: '27h9XhtCRRX1w8W56vcSY2T14PTbGigcrhbRWGDy7fKe',
           attributesAdded: [],
         },
       ],
     },
-    BUpou4kA4YDHYorRt8HySKCususevQATeSj9bysNS8AK: {
+    Bh6NCuJAY3pXVNvSM2B31NzdPp9zCisTdM2dbrauJJw8: {
       status: 'stable',
       name: 'cdm/product/asset/DividendDateReferenceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BUpou4kA4YDHYorRt8HySKCususevQATeSj9bysNS8AK',
+          typeBlueId: 'Bh6NCuJAY3pXVNvSM2B31NzdPp9zCisTdM2dbrauJJw8',
           attributesAdded: [],
         },
       ],
     },
-    CVotzT95LfpnY2dTRZM7sgw142QseC5qSBhosJ1xtHbK: {
+    '5A3hCLVC8huTr312Z9ddi2snvyWozZsHadHLetvYe31g': {
       status: 'stable',
       name: 'cdm/product/asset/DividendEntitlementEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CVotzT95LfpnY2dTRZM7sgw142QseC5qSBhosJ1xtHbK',
+          typeBlueId: '5A3hCLVC8huTr312Z9ddi2snvyWozZsHadHLetvYe31g',
           attributesAdded: [],
         },
       ],
     },
-    FschfMdbVginzubUZdVVEtooCLzhymBvnVnHpkmdgsfE: {
+    '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7': {
       status: 'stable',
       name: 'cdm/product/asset/DividendPaymentDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FschfMdbVginzubUZdVVEtooCLzhymBvnVnHpkmdgsfE',
+          typeBlueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
           attributesAdded: [],
         },
       ],
     },
-    KDqBQDTNYga8X7NLQ7JAEt4WfKWsizZQbLLCPtaLiAL: {
+    CXNX5xUoDwJxfTwLJdwkuXkNThirm3BpXK2QCH6kBkeu: {
       status: 'stable',
       name: 'cdm/product/asset/DividendPayoutRatio',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'KDqBQDTNYga8X7NLQ7JAEt4WfKWsizZQbLLCPtaLiAL',
+          typeBlueId: 'CXNX5xUoDwJxfTwLJdwkuXkNThirm3BpXK2QCH6kBkeu',
           attributesAdded: [],
         },
       ],
     },
-    '2nm92VnYrhXCMzyc33qGyg5j5Jyb1yNPyTfHecpCuyVE': {
+    EQ1DnA2mvWsTZJUqo9NJBj9AF7uJYZXPRwQw2ZUqpqQC: {
       status: 'stable',
       name: 'cdm/product/asset/DividendPeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2nm92VnYrhXCMzyc33qGyg5j5Jyb1yNPyTfHecpCuyVE',
+          typeBlueId: 'EQ1DnA2mvWsTZJUqo9NJBj9AF7uJYZXPRwQw2ZUqpqQC',
           attributesAdded: [],
         },
       ],
     },
-    CUrYmDpSDF4EJz6dwV7Y4bsg12J8srR6T6zijqvRfZh3: {
+    '4Dvzid1TBuLFxwiAp8Wd2pdhRLvMpCoGBe9D6fba8eVg': {
       status: 'stable',
       name: 'cdm/product/asset/DividendPeriodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CUrYmDpSDF4EJz6dwV7Y4bsg12J8srR6T6zijqvRfZh3',
+          typeBlueId: '4Dvzid1TBuLFxwiAp8Wd2pdhRLvMpCoGBe9D6fba8eVg',
           attributesAdded: [],
         },
       ],
     },
-    '7h8FScnN4pQLHjNkSJKae9Pz8U5rCRfseiLcscSpZTss': {
+    J8EZbmYAMd5iEdiJDjh3B8Pk6R4eAXrQdryNuThytk1B: {
       status: 'stable',
       name: 'cdm/product/asset/DividendReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7h8FScnN4pQLHjNkSJKae9Pz8U5rCRfseiLcscSpZTss',
+          typeBlueId: 'J8EZbmYAMd5iEdiJDjh3B8Pk6R4eAXrQdryNuThytk1B',
           attributesAdded: [],
         },
       ],
     },
-    Jo6daPzLZmva9P2h4WZUsuU1uvgGPFixiCYarEPe9ts: {
+    G2uPrFU4uNeXsrT1Qauu3GMgFXeHpGU8yyPtUKRD4kr3: {
       status: 'stable',
       name: 'cdm/product/asset/EquityUnderlierProvisions',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Jo6daPzLZmva9P2h4WZUsuU1uvgGPFixiCYarEPe9ts',
+          typeBlueId: 'G2uPrFU4uNeXsrT1Qauu3GMgFXeHpGU8yyPtUKRD4kr3',
           attributesAdded: [],
         },
       ],
     },
-    GknZ9cDpboEQXHMijEuoMgXTb2P8Gyu81nfwr5bBAP8B: {
+    Ertdu3BkSJQ4wFYEPS4YyzEkSnGfu7XaooXCfRXXXENY: {
       status: 'stable',
       name: 'cdm/product/asset/FieldWithMetaIndexAnnexSourceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GknZ9cDpboEQXHMijEuoMgXTb2P8Gyu81nfwr5bBAP8B',
+          typeBlueId: 'Ertdu3BkSJQ4wFYEPS4YyzEkSnGfu7XaooXCfRXXXENY',
           attributesAdded: [],
         },
       ],
     },
-    '2HJVG7XkuEXr46byHb52g7WoYmwwfUGky6XyUDF7Wjgq': {
+    BPH2yXsmaVJzV83dHZy9t4ZxLRN8JyMueAXWyLF15CnU: {
       status: 'stable',
       name: 'cdm/product/asset/FieldWithMetaSettledEntityMatrixSourceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2HJVG7XkuEXr46byHb52g7WoYmwwfUGky6XyUDF7Wjgq',
+          typeBlueId: 'BPH2yXsmaVJzV83dHZy9t4ZxLRN8JyMueAXWyLF15CnU',
           attributesAdded: [],
         },
       ],
     },
-    '6BMwav4uPAPxHDeLGeAJfRnPnXj8bbdd7czs69vEFKGe': {
+    '4buYFvhK8MygP1T8vKFuNofU4rApmaG5WxpnBQWE5LXs': {
       status: 'stable',
       name: 'cdm/product/asset/FieldWithMetaSpreadScheduleTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6BMwav4uPAPxHDeLGeAJfRnPnXj8bbdd7czs69vEFKGe',
+          typeBlueId: '4buYFvhK8MygP1T8vKFuNofU4rApmaG5WxpnBQWE5LXs',
           attributesAdded: [],
         },
       ],
     },
-    '8msKPRtLbjwYbGSWkXSUbT1ZRqy31FsfvB3pDj12CYrj': {
+    AwBvNeQkdx5SBB1b5oih7GqzBqUwUFskHKoPF7zMgqxz: {
       status: 'stable',
       name: 'cdm/product/asset/FinalPrincipalExchangeCalculationEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8msKPRtLbjwYbGSWkXSUbT1ZRqy31FsfvB3pDj12CYrj',
+          typeBlueId: 'AwBvNeQkdx5SBB1b5oih7GqzBqUwUFskHKoPF7zMgqxz',
           attributesAdded: [],
         },
       ],
     },
-    '3vj6ssPFj4gjJ2GtTYcG7fYFup3n4kMFQnCR3byzuLkR': {
+    DWiJVyeaSktJL6mTLvKLC2nxdiKY3CWQfU91sHJ2wtuc: {
       status: 'stable',
       name: 'cdm/product/asset/FixedAmountCalculationDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3vj6ssPFj4gjJ2GtTYcG7fYFup3n4kMFQnCR3byzuLkR',
+          typeBlueId: 'DWiJVyeaSktJL6mTLvKLC2nxdiKY3CWQfU91sHJ2wtuc',
           attributesAdded: [],
         },
       ],
     },
-    '46SWDPN5nuL9ZzDydHQsubnAhiJ9bTSAdCTzFqR4v3uz': {
+    '9svusKr6LvCBhk7gV6JsbPAwwXWASiSTahN4JPrDC5rH': {
       status: 'stable',
       name: 'cdm/product/asset/FixedRateSpecification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '46SWDPN5nuL9ZzDydHQsubnAhiJ9bTSAdCTzFqR4v3uz',
+          typeBlueId: '9svusKr6LvCBhk7gV6JsbPAwwXWASiSTahN4JPrDC5rH',
           attributesAdded: [],
         },
       ],
     },
-    AfcYntvhQ2t2vgDhAMWwSr5ppeynG2uGcXJKuBR3wzw7: {
+    '5arWKUo6ZdrsnkGXoVp8CVH4YWcUpQsCZ1EdqkBn5py5': {
       status: 'stable',
       name: 'cdm/product/asset/FloatingAmountEvents',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AfcYntvhQ2t2vgDhAMWwSr5ppeynG2uGcXJKuBR3wzw7',
+          typeBlueId: '5arWKUo6ZdrsnkGXoVp8CVH4YWcUpQsCZ1EdqkBn5py5',
           attributesAdded: [],
         },
       ],
     },
-    GMkA62ZBwre9RPW2n4w7eTR8b5JAYucewf6zjRxusAjQ: {
+    Gd3N5B2Q5Fb7AXEaXfe3iXtXmHuAUXDYpfeqAF9fULPd: {
       status: 'stable',
       name: 'cdm/product/asset/FloatingAmountProvisions',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GMkA62ZBwre9RPW2n4w7eTR8b5JAYucewf6zjRxusAjQ',
+          typeBlueId: 'Gd3N5B2Q5Fb7AXEaXfe3iXtXmHuAUXDYpfeqAF9fULPd',
           attributesAdded: [],
         },
       ],
     },
-    AVat3RrkCKPwq5tdXB5kqbsA321NrwR1NP6QvGN1ag9s: {
+    '5oZ8oDvcos6sGR3oh3ta6MA4X2qAUnyWcWnAEFRFJg7x': {
       status: 'stable',
       name: 'cdm/product/asset/FloatingRate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AVat3RrkCKPwq5tdXB5kqbsA321NrwR1NP6QvGN1ag9s',
+          typeBlueId: '5oZ8oDvcos6sGR3oh3ta6MA4X2qAUnyWcWnAEFRFJg7x',
           attributesAdded: [],
         },
       ],
     },
-    EsmTXkqcph5RVz2zTb6zvTt1xj9SQCBKMxiTaQQypHqp: {
+    JBVrcovreAULjudjM8h3ZNKFRpz44Df8UvgAKWXwK6sa: {
       status: 'stable',
       name: 'cdm/product/asset/floatingrate/FloatingAmountCalculationDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EsmTXkqcph5RVz2zTb6zvTt1xj9SQCBKMxiTaQQypHqp',
+          typeBlueId: 'JBVrcovreAULjudjM8h3ZNKFRpz44Df8UvgAKWXwK6sa',
           attributesAdded: [],
         },
       ],
     },
-    BtnLfx11x5MLsz1yoyY1HQ3iFLL3LRZzsXX9sNuK3X6Q: {
+    '8wd3KgpKHHveFneuumsbLT96wJ6Zfa7Aq8rJ2JP7kcBL': {
       status: 'stable',
       name: 'cdm/product/asset/floatingrate/FloatingRateIndexProcessingTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BtnLfx11x5MLsz1yoyY1HQ3iFLL3LRZzsXX9sNuK3X6Q',
+          typeBlueId: '8wd3KgpKHHveFneuumsbLT96wJ6Zfa7Aq8rJ2JP7kcBL',
           attributesAdded: [],
         },
       ],
     },
-    A4wWX8jkgKvvqEesWt98ZquGHUZwQv42BCV1VfTQ3xWp: {
+    J69Sz4Uv6ctiB4mjnSwqhxeCfdaxH8nDcKbss99wExLC: {
       status: 'stable',
       name: 'cdm/product/asset/floatingrate/FloatingRateProcessingDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A4wWX8jkgKvvqEesWt98ZquGHUZwQv42BCV1VfTQ3xWp',
+          typeBlueId: 'J69Sz4Uv6ctiB4mjnSwqhxeCfdaxH8nDcKbss99wExLC',
           attributesAdded: [],
         },
       ],
     },
-    '8qzg72AeYj2iiu6z9Le3h4TKysg4qnoMf4fda8wiSkPn': {
+    '6xhUj24tdK3fZ5cyajqu3YGHmhotZzzXE5P1CxK4E7uu': {
       status: 'stable',
       name: 'cdm/product/asset/floatingrate/FloatingRateProcessingParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8qzg72AeYj2iiu6z9Le3h4TKysg4qnoMf4fda8wiSkPn',
+          typeBlueId: '6xhUj24tdK3fZ5cyajqu3YGHmhotZzzXE5P1CxK4E7uu',
           attributesAdded: [],
         },
       ],
     },
-    '4Nyffqeo3KW7MXuPbXExtEv3Rym5Eutspbx5HHitiKoC': {
+    FQsK7NhvbG8qLJfMS4tZVLVuJeB4Le9vPFtixb7kDC47: {
       status: 'stable',
       name: 'cdm/product/asset/floatingrate/FloatingRateSettingDetails',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4Nyffqeo3KW7MXuPbXExtEv3Rym5Eutspbx5HHitiKoC',
+          typeBlueId: 'FQsK7NhvbG8qLJfMS4tZVLVuJeB4Le9vPFtixb7kDC47',
           attributesAdded: [],
         },
       ],
     },
-    BjA7tiVvew9kmoLb6h8x1ARy9pGqjoid3GzEK7wTAjPe: {
+    AEj3LejPJxMDLSPh9wzuLb2u9HnXwqiUBJv4HnuBMZoS: {
       status: 'stable',
       name: 'cdm/product/asset/FloatingRateBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BjA7tiVvew9kmoLb6h8x1ARy9pGqjoid3GzEK7wTAjPe',
+          typeBlueId: 'AEj3LejPJxMDLSPh9wzuLb2u9HnXwqiUBJv4HnuBMZoS',
           attributesAdded: [],
         },
       ],
     },
-    DZ3QQaSdFmgFJ78DH9tSdAoquu9tGTmUiKpyntACFVwX: {
+    '4oxb1sguUNq2AqF4ycCwRJPs6eJL47WfUqhjsxJXRZNa': {
       status: 'stable',
       name: 'cdm/product/asset/FloatingRateDefinition',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DZ3QQaSdFmgFJ78DH9tSdAoquu9tGTmUiKpyntACFVwX',
+          typeBlueId: '4oxb1sguUNq2AqF4ycCwRJPs6eJL47WfUqhjsxJXRZNa',
           attributesAdded: [],
         },
       ],
     },
-    '2EMfLJYhLWvzUA3EhndQzxjEwTJz1JeAYUNjZDJL66PJ': {
+    '7Qg4XRChRagWG1WXXQ6SxKQFUAWi38ZztLZRLJigyUr8': {
       status: 'stable',
       name: 'cdm/product/asset/FloatingRateSpecification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2EMfLJYhLWvzUA3EhndQzxjEwTJz1JeAYUNjZDJL66PJ',
+          typeBlueId: '7Qg4XRChRagWG1WXXQ6SxKQFUAWi38ZztLZRLJigyUr8',
           attributesAdded: [],
         },
       ],
     },
-    '9fg2VP16HfxmxtjeZutwPjya1nGg6zAhShf72sfYynLa': {
+    EdjmRMLoCGVJpgxbL5wiR6MA6JpvcTiLAu3PTiGCn8ci: {
       status: 'stable',
       name: 'cdm/product/asset/ForeignExchange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9fg2VP16HfxmxtjeZutwPjya1nGg6zAhShf72sfYynLa',
+          typeBlueId: 'EdjmRMLoCGVJpgxbL5wiR6MA6JpvcTiLAu3PTiGCn8ci',
           attributesAdded: [],
         },
       ],
     },
-    EzG7sUjQ1nt9FsGH9rGXPtygd5B7hpbtNNK57CxGS247: {
+    '6ddJUitXi5N7MkKNmyabHzuZ6qhZC3kt5EZJoEPpmr2P': {
       status: 'stable',
       name: 'cdm/product/asset/FPVFinalPriceElectionFallbackEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EzG7sUjQ1nt9FsGH9rGXPtygd5B7hpbtNNK57CxGS247',
+          typeBlueId: '6ddJUitXi5N7MkKNmyabHzuZ6qhZC3kt5EZJoEPpmr2P',
           attributesAdded: [],
         },
       ],
     },
-    '7dEpdwMAhKecY1UWLsDtUvYvxQgWGnNrAQJjcKd76hSv': {
+    '8KR7WNN1kPD6WbWLzqQ3tozV5eP1w3ioLjp9aTZLW14L': {
       status: 'stable',
       name: 'cdm/product/asset/FutureValueAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7dEpdwMAhKecY1UWLsDtUvYvxQgWGnNrAQJjcKd76hSv',
+          typeBlueId: '8KR7WNN1kPD6WbWLzqQ3tozV5eP1w3ioLjp9aTZLW14L',
           attributesAdded: [],
         },
       ],
     },
-    '8688b9SPeJc34d4CJykTKUnQpiSqJQDX6zUE4m6DiHh3': {
+    '3DSVTtZYj7KKPwr2oTs7ERknxwH4pXMvk9G1H7LkPkyr': {
       status: 'stable',
       name: 'cdm/product/asset/GeneralTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8688b9SPeJc34d4CJykTKUnQpiSqJQDX6zUE4m6DiHh3',
+          typeBlueId: '3DSVTtZYj7KKPwr2oTs7ERknxwH4pXMvk9G1H7LkPkyr',
           attributesAdded: [],
         },
       ],
     },
-    '966esNeqYwpoFQgb847YHKee3fozzSrJhnCs1532odLB': {
+    '2Ma1dyndNGQoSoTdwyFuZ8bbJcqQ1FbMXQMSHeWyjoao': {
       status: 'stable',
       name: 'cdm/product/asset/IndexAnnexSourceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '966esNeqYwpoFQgb847YHKee3fozzSrJhnCs1532odLB',
+          typeBlueId: '2Ma1dyndNGQoSoTdwyFuZ8bbJcqQ1FbMXQMSHeWyjoao',
           attributesAdded: [],
         },
       ],
     },
-    EjsFU4aMgFpnjbnat7xVhaXFrniJ8sabV7w3XFBgP3C3: {
+    FWV3Br4aKDWruqfn5vhLVt6xEv37srRU5k5YncDQvGnz: {
       status: 'stable',
       name: 'cdm/product/asset/InflationRateSpecification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EjsFU4aMgFpnjbnat7xVhaXFrniJ8sabV7w3XFBgP3C3',
+          typeBlueId: 'FWV3Br4aKDWruqfn5vhLVt6xEv37srRU5k5YncDQvGnz',
           attributesAdded: [],
         },
       ],
     },
-    CEPYQUQEyD1UJSztEdRDbm5tx1WpgfhmqDCG9g7zJdRm: {
+    '6JEZ2eR6XbPr27we4enAnhEA3t33WcEUzQSnH1uFWQ5Q': {
       status: 'stable',
       name: 'cdm/product/asset/InterestRatePayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CEPYQUQEyD1UJSztEdRDbm5tx1WpgfhmqDCG9g7zJdRm',
+          typeBlueId: '6JEZ2eR6XbPr27we4enAnhEA3t33WcEUzQSnH1uFWQ5Q',
           attributesAdded: [],
         },
       ],
     },
-    sfaJ5JP9gKaCYXxiJ6wnxfEBWk7QSjUi1UW4TauKx4R: {
+    '5dGWGFZAUi1PKkhPU7YyqpjKufXV7BQNEntUPbgE8HZS': {
       status: 'stable',
       name: 'cdm/product/asset/InterestShortFall',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'sfaJ5JP9gKaCYXxiJ6wnxfEBWk7QSjUi1UW4TauKx4R',
+          typeBlueId: '5dGWGFZAUi1PKkhPU7YyqpjKufXV7BQNEntUPbgE8HZS',
           attributesAdded: [],
         },
       ],
     },
-    F4ABm6Sk4m5YjceKSAfEmsyYDkQG4Zm6byLLXq9kdSpM: {
+    GtGzeeGr59oZMBK4qT628HxyPEj3ux2JxtFjbU8GTbuN: {
       status: 'stable',
       name: 'cdm/product/asset/InterestShortfallCapEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F4ABm6Sk4m5YjceKSAfEmsyYDkQG4Zm6byLLXq9kdSpM',
+          typeBlueId: 'GtGzeeGr59oZMBK4qT628HxyPEj3ux2JxtFjbU8GTbuN',
           attributesAdded: [],
         },
       ],
     },
-    HzHMSqRjpyrAtbCm2oQg1DY1Bkk5tpeoCGTii8EGuUa9: {
+    '3Cw8RykF4cE5soC5fNPE2vRpWQcT4cwXUTQED5ux8xZ6': {
       status: 'stable',
       name: 'cdm/product/asset/LoadTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HzHMSqRjpyrAtbCm2oQg1DY1Bkk5tpeoCGTii8EGuUa9',
+          typeBlueId: '3Cw8RykF4cE5soC5fNPE2vRpWQcT4cwXUTQED5ux8xZ6',
           attributesAdded: [],
         },
       ],
     },
-    BBgcbEXC2m59J1z1f2zctaxNzuEUosaMi3HLNPPMLwAt: {
+    '9MuxTNnqdBfc2jXWLVxrcXeAQkmmc3aoj2AuNQ46RBnh': {
       status: 'stable',
       name: 'cdm/product/asset/metafields/ReferenceWithMetaFixedRateSpecification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BBgcbEXC2m59J1z1f2zctaxNzuEUosaMi3HLNPPMLwAt',
+          typeBlueId: '9MuxTNnqdBfc2jXWLVxrcXeAQkmmc3aoj2AuNQ46RBnh',
           attributesAdded: [],
         },
       ],
     },
-    '9s7DmteKxA3yXxQB2nMZpieJDgH1HyVyhHrufLuusW3Z': {
+    '2U7YP6Ym1jX4mFm5GexJ4F3psZB836JfxHmp6MF1dcAF': {
       status: 'stable',
       name: 'cdm/product/asset/metafields/ReferenceWithMetaInterestRatePayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9s7DmteKxA3yXxQB2nMZpieJDgH1HyVyhHrufLuusW3Z',
+          typeBlueId: '2U7YP6Ym1jX4mFm5GexJ4F3psZB836JfxHmp6MF1dcAF',
           attributesAdded: [],
         },
       ],
     },
-    '5F15MHyVL82YVLdpKtyeyJTtHvbHtqQDKZj8NkhWm8hd': {
+    D5MVAPQZZQMZXFW2noGBFFgRgvJ2sLSL8SKwphof8rd4: {
       status: 'stable',
       name: 'cdm/product/asset/metafields/ReferenceWithMetaProtectionTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5F15MHyVL82YVLdpKtyeyJTtHvbHtqQDKZj8NkhWm8hd',
+          typeBlueId: 'D5MVAPQZZQMZXFW2noGBFFgRgvJ2sLSL8SKwphof8rd4',
           attributesAdded: [],
         },
       ],
     },
-    CyvEqKQpGL1tCK33KuVNmoqqfPY41YR2zXaxhgsjDER2: {
+    BsWNiWBWBcPvxq7gbRKXCVo4xpJ1fYXPvWNafB7Bvxzt: {
       status: 'stable',
       name: 'cdm/product/asset/NegativeInterestRateTreatmentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CyvEqKQpGL1tCK33KuVNmoqqfPY41YR2zXaxhgsjDER2',
+          typeBlueId: 'BsWNiWBWBcPvxq7gbRKXCVo4xpJ1fYXPvWNafB7Bvxzt',
           attributesAdded: [],
         },
       ],
     },
-    Ac1dFPFVTVYmkEvcK2s53fVPu24ZEec5HFv1Sb43RD4t: {
+    '7X5DcG9JMYrcW7XQWvsmFc2zX3uk1rsikycU2gBnKSyV': {
       status: 'stable',
       name: 'cdm/product/asset/NonCashDividendTreatmentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ac1dFPFVTVYmkEvcK2s53fVPu24ZEec5HFv1Sb43RD4t',
+          typeBlueId: '7X5DcG9JMYrcW7XQWvsmFc2zX3uk1rsikycU2gBnKSyV',
           attributesAdded: [],
         },
       ],
     },
-    '7YFwQGbWnfaZ3YgwzGGgdBhyDppvFGTH2LibSGzdhSnH': {
+    JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv: {
       status: 'stable',
       name: 'cdm/product/asset/PriceReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7YFwQGbWnfaZ3YgwzGGgdBhyDppvFGTH2LibSGzdhSnH',
+          typeBlueId: 'JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv',
           attributesAdded: [],
         },
       ],
     },
-    C6peWW2cNzfWSj33MN1qibTwdFUkKrMXLu4XCNZwRqLv: {
+    '6p917qiqhcPsLDv4c6fcokZDb38SkP1i69kThgdzHgBY': {
       status: 'stable',
       name: 'cdm/product/asset/ProtectionTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C6peWW2cNzfWSj33MN1qibTwdFUkKrMXLu4XCNZwRqLv',
+          typeBlueId: '6p917qiqhcPsLDv4c6fcokZDb38SkP1i69kThgdzHgBY',
           attributesAdded: [],
         },
       ],
     },
-    '2WkEpRF5iUYJyCn1j83Cdfs6zeRh6Wn1FLXwQCMU5EpE': {
+    '6sGfKpzEcNGWsWw9v54bkUTJDbBHqbhEeJFCsf6tUhXf': {
       status: 'stable',
       name: 'cdm/product/asset/RateSpecification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2WkEpRF5iUYJyCn1j83Cdfs6zeRh6Wn1FLXwQCMU5EpE',
+          typeBlueId: '6sGfKpzEcNGWsWw9v54bkUTJDbBHqbhEeJFCsf6tUhXf',
           attributesAdded: [],
         },
       ],
     },
-    '8GhAUMM1Z2VZSQY9oufxMtUgDuQ5iTuBVYEYrjnYQBBt': {
+    '6vYpwpDGdaR6pbtzmJTTxmLwiWsbwBhhaiecmRbLMtix': {
       status: 'stable',
       name: 'cdm/product/asset/RateTreatmentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8GhAUMM1Z2VZSQY9oufxMtUgDuQ5iTuBVYEYrjnYQBBt',
+          typeBlueId: '6vYpwpDGdaR6pbtzmJTTxmLwiWsbwBhhaiecmRbLMtix',
           attributesAdded: [],
         },
       ],
     },
-    E6NzqHc6ART6mrFaiHBHZQdpeKND6nhvC8RWNuBEmiqc: {
+    '6bttAkwgoE4wCcbzrxpxn9QC6RyNAX7D58kev7GDsGiS': {
       status: 'stable',
       name: 'cdm/product/asset/RealisedVarianceMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E6NzqHc6ART6mrFaiHBHZQdpeKND6nhvC8RWNuBEmiqc',
+          typeBlueId: '6bttAkwgoE4wCcbzrxpxn9QC6RyNAX7D58kev7GDsGiS',
           attributesAdded: [],
         },
       ],
     },
-    HDWPv3g9U1KUdNNbF554aWveShvcV6UnPnH8HQGqtppM: {
+    '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f': {
       status: 'stable',
       name: 'cdm/product/asset/ReferenceInformation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HDWPv3g9U1KUdNNbF554aWveShvcV6UnPnH8HQGqtppM',
+          typeBlueId: '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f',
           attributesAdded: [],
         },
       ],
     },
-    '9Ad9BQPwszkJzQsWNjXKRKHseE3BgBEg5Jcb66mt5qGV': {
+    Bv5sBf6gMTS32hBro1iBzhNmGnSuqD84Wfc4EqRV4Whg: {
       status: 'stable',
       name: 'cdm/product/asset/ReferenceObligation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9Ad9BQPwszkJzQsWNjXKRKHseE3BgBEg5Jcb66mt5qGV',
+          typeBlueId: 'Bv5sBf6gMTS32hBro1iBzhNmGnSuqD84Wfc4EqRV4Whg',
           attributesAdded: [],
         },
       ],
     },
-    C44nC78rjDLbXVjfppMUZMnRAhZJU9me93bNLYMajtUz: {
+    '6dgH4biBE9pfYSSx3pD7kWuYHhmxVmVGoHckDDNdqz85': {
       status: 'stable',
       name: 'cdm/product/asset/ReferencePair',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C44nC78rjDLbXVjfppMUZMnRAhZJU9me93bNLYMajtUz',
+          typeBlueId: '6dgH4biBE9pfYSSx3pD7kWuYHhmxVmVGoHckDDNdqz85',
           attributesAdded: [],
         },
       ],
     },
-    '9FLEZ3hoqXBNGzWS96voDe9xUfnPW3V6ah4Rf5UuethY': {
+    rgdUZuvv5BLqYZSUay5yfjqPvRRqkZ9bhihtJLpcBKN: {
       status: 'stable',
       name: 'cdm/product/asset/ReferencePool',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9FLEZ3hoqXBNGzWS96voDe9xUfnPW3V6ah4Rf5UuethY',
+          typeBlueId: 'rgdUZuvv5BLqYZSUay5yfjqPvRRqkZ9bhihtJLpcBKN',
           attributesAdded: [],
         },
       ],
     },
-    '78hstsoD3xojutwJdHjXPCPrZAeHmmoYTZo4oAjX8BnR': {
+    AWwDERDMrCASiqr7n2YEUi5tSny4VTcu6gDZ7vYA6Mb: {
       status: 'stable',
       name: 'cdm/product/asset/ReferencePoolItem',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '78hstsoD3xojutwJdHjXPCPrZAeHmmoYTZo4oAjX8BnR',
+          typeBlueId: 'AWwDERDMrCASiqr7n2YEUi5tSny4VTcu6gDZ7vYA6Mb',
           attributesAdded: [],
         },
       ],
     },
-    FMz7cW1KAAZd9MhEa5hUpryh8Xj1masTxFKjK7XUo6Re: {
+    '3cc9F6sZrvGSPkpHcHkSujKHWjLXZrjjdEdMNX1ityZd': {
       status: 'stable',
       name: 'cdm/product/asset/ReturnTermsBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FMz7cW1KAAZd9MhEa5hUpryh8Xj1masTxFKjK7XUo6Re',
+          typeBlueId: '3cc9F6sZrvGSPkpHcHkSujKHWjLXZrjjdEdMNX1ityZd',
           attributesAdded: [],
         },
       ],
     },
-    '4SvjRC1Thybv7EN6BqY9TGmSF2x7zK9ixyYS8UCempKF': {
+    EvqKp8C4TsU58D4ZoFC8ba55Fdq8Qeka9NmEAAuioCk3: {
       status: 'stable',
       name: 'cdm/product/asset/ReturnTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4SvjRC1Thybv7EN6BqY9TGmSF2x7zK9ixyYS8UCempKF',
+          typeBlueId: 'EvqKp8C4TsU58D4ZoFC8ba55Fdq8Qeka9NmEAAuioCk3',
           attributesAdded: [],
         },
       ],
     },
-    ACsXLxAEZUyN5kmAjEy5ZdkU7y9Vu2cB3BYqYHLTopZY: {
+    AdBXeocSsEm9rv2JA8A8svrtozRHrQt3xCeTWXxANydN: {
       status: 'stable',
       name: 'cdm/product/asset/RollSourceCalendarEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ACsXLxAEZUyN5kmAjEy5ZdkU7y9Vu2cB3BYqYHLTopZY',
+          typeBlueId: 'AdBXeocSsEm9rv2JA8A8svrtozRHrQt3xCeTWXxANydN',
           attributesAdded: [],
         },
       ],
     },
-    G6d8KNyxd48FEiAucE5KdoV7bwfdvPoygUV2xZVmPHeZ: {
+    '4A1qUaufcqcuzgYMrhKzobEdbwF774fdj4o1nwgmxUdJ': {
       status: 'stable',
       name: 'cdm/product/asset/SettledEntityMatrix',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G6d8KNyxd48FEiAucE5KdoV7bwfdvPoygUV2xZVmPHeZ',
+          typeBlueId: '4A1qUaufcqcuzgYMrhKzobEdbwF774fdj4o1nwgmxUdJ',
           attributesAdded: [],
         },
       ],
     },
-    Dwv7F3TApZyy78ART4sz8g3mMZvHV3rwAjVXeG9vxviY: {
+    BMRn1GaLgfQuHBa1zsfT1sd7aCFhqKxoBzmieXMWqy17: {
       status: 'stable',
       name: 'cdm/product/asset/SettledEntityMatrixSourceEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Dwv7F3TApZyy78ART4sz8g3mMZvHV3rwAjVXeG9vxviY',
+          typeBlueId: 'BMRn1GaLgfQuHBa1zsfT1sd7aCFhqKxoBzmieXMWqy17',
           attributesAdded: [],
         },
       ],
     },
-    GaAg8q3PSay1AwNrPupAHeyXJ8umRSUtc4civJtymJVs: {
+    '5PZmtNnUvmoYu5wdHEd1a3Ng2sZcZ76qmfmNG6hoFS61': {
       status: 'stable',
       name: 'cdm/product/asset/SpreadCalculationMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GaAg8q3PSay1AwNrPupAHeyXJ8umRSUtc4civJtymJVs',
+          typeBlueId: '5PZmtNnUvmoYu5wdHEd1a3Ng2sZcZ76qmfmNG6hoFS61',
           attributesAdded: [],
         },
       ],
     },
-    BB9KuWeeD17dQmZbr44QJkSjv1PV3rNCJgH848EEaCyJ: {
+    BbmQzuzA7aBEkeWMx9NniHvZEqR3bPsBJzX8iyyokN7A: {
       status: 'stable',
       name: 'cdm/product/asset/SpreadSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BB9KuWeeD17dQmZbr44QJkSjv1PV3rNCJgH848EEaCyJ',
+          typeBlueId: 'BbmQzuzA7aBEkeWMx9NniHvZEqR3bPsBJzX8iyyokN7A',
           attributesAdded: [],
         },
       ],
     },
-    E5MxGtJaFFNZDf6ekGwAefBGRTzwccbYECFDpCS7Ztgw: {
+    EakZSquKh6nNrGeVqD4Jn7fEVe48f55oM2KdN21fjZhY: {
       status: 'stable',
       name: 'cdm/product/asset/SpreadScheduleTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E5MxGtJaFFNZDf6ekGwAefBGRTzwccbYECFDpCS7Ztgw',
+          typeBlueId: 'EakZSquKh6nNrGeVqD4Jn7fEVe48f55oM2KdN21fjZhY',
           attributesAdded: [],
         },
       ],
     },
-    CAKY5ifWX2fXVm7watWiPNQV4WEpGGKux4YmFmLEfodd: {
+    '822rbnqRheYsGdSxwqfBNQRrUQGbug5bDb8Kdoz9UbSH': {
       status: 'stable',
       name: 'cdm/product/asset/StubFloatingRate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CAKY5ifWX2fXVm7watWiPNQV4WEpGGKux4YmFmLEfodd',
+          typeBlueId: '822rbnqRheYsGdSxwqfBNQRrUQGbug5bDb8Kdoz9UbSH',
           attributesAdded: [],
         },
       ],
     },
-    Ew8cBFQJEiMm5RgVmJg1Cmvyjbi29rZ1Rcv7oQrsSSYR: {
+    '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij': {
       status: 'stable',
       name: 'cdm/product/asset/StubValue',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ew8cBFQJEiMm5RgVmJg1Cmvyjbi29rZ1Rcv7oQrsSSYR',
+          typeBlueId: '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij',
           attributesAdded: [],
         },
       ],
     },
-    AzjDeg6NcvxKrLxiwH4AdjVNhMtWHj2BHfTGYmY7NVrP: {
+    AhnjPV8YNPhbAjozktmjeX2wDwUvX9j1SLMv3rUYCvk3: {
       status: 'stable',
       name: 'cdm/product/asset/Tranche',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AzjDeg6NcvxKrLxiwH4AdjVNhMtWHj2BHfTGYmY7NVrP',
+          typeBlueId: 'AhnjPV8YNPhbAjozktmjeX2wDwUvX9j1SLMv3rUYCvk3',
           attributesAdded: [],
         },
       ],
     },
-    '4mhmBno4oM75kHALfSudGb7kWTYN5GN8J5C6WqRoX6fv': {
+    '3RVpuPyLZTsRz9wSfRCjDrY84adxxkZBQaYM8p28MYpK': {
       status: 'stable',
       name: 'cdm/product/asset/ValuationTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4mhmBno4oM75kHALfSudGb7kWTYN5GN8J5C6WqRoX6fv',
+          typeBlueId: '3RVpuPyLZTsRz9wSfRCjDrY84adxxkZBQaYM8p28MYpK',
           attributesAdded: [],
         },
       ],
     },
-    '3tApr9XRthnu91mUaWPjYs5ywdrhGSFHV3jDycqYLtHL': {
+    '2mLzkHwpaH6DYE1kmEHmQzEUUPMt4HSJJx2cMn6WEJJL': {
       status: 'stable',
       name: 'cdm/product/asset/VarianceCapFloor',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3tApr9XRthnu91mUaWPjYs5ywdrhGSFHV3jDycqYLtHL',
+          typeBlueId: '2mLzkHwpaH6DYE1kmEHmQzEUUPMt4HSJJx2cMn6WEJJL',
           attributesAdded: [],
         },
       ],
     },
-    DyvMnYXfQRGwqfP9Kybg1qYNhMuFyGyMpw3x1vAopkmX: {
+    '7mdyTJMV5CfZFGwVGuYsu7jWpiqsAjBJWPPuvhpsR7Lu': {
       status: 'stable',
       name: 'cdm/product/asset/VarianceReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DyvMnYXfQRGwqfP9Kybg1qYNhMuFyGyMpw3x1vAopkmX',
+          typeBlueId: '7mdyTJMV5CfZFGwVGuYsu7jWpiqsAjBJWPPuvhpsR7Lu',
           attributesAdded: [],
         },
       ],
     },
-    '2FArPnEgeydac33KBUck7sDiK4rQpun7wismexFXyRmD': {
+    GxggG4PmBLZC3tQQEfAUNmomUmcbfT2ZjjQZzWL55dng: {
       status: 'stable',
       name: 'cdm/product/asset/VolatilityCapFloor',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2FArPnEgeydac33KBUck7sDiK4rQpun7wismexFXyRmD',
+          typeBlueId: 'GxggG4PmBLZC3tQQEfAUNmomUmcbfT2ZjjQZzWL55dng',
           attributesAdded: [],
         },
       ],
     },
-    '3e4M5cnE53HFtp4uJHoNYZeL1Vwo4xTDK6XJh5tNRiGb': {
+    '3BXRxsxyT6CgqYyNVM6wZNBwCaCAARu7VCvmQoCkn18s': {
       status: 'stable',
       name: 'cdm/product/asset/VolatilityReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3e4M5cnE53HFtp4uJHoNYZeL1Vwo4xTDK6XJh5tNRiGb',
+          typeBlueId: '3BXRxsxyT6CgqYyNVM6wZNBwCaCAARu7VCvmQoCkn18s',
           attributesAdded: [],
         },
       ],
     },
-    EFt5vpwMjQFJJ8LHLDpuEqY5R7UNo6zDPqdti3crxcVv: {
+    HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU: {
       status: 'stable',
       name: 'cdm/product/collateral/AgencyRatingCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EFt5vpwMjQFJJ8LHLDpuEqY5R7UNo6zDPqdti3crxcVv',
+          typeBlueId: 'HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU',
           attributesAdded: [],
         },
       ],
     },
-    'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#2': {
+    'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#2': {
       status: 'stable',
       name: 'cdm/product/collateral/AllCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#2',
+          typeBlueId: 'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#2',
           attributesAdded: [],
         },
       ],
     },
-    HwuWMb3tTYLKx27eGnZD5LB4TVdV6iz8fUGmWx1zqM21: {
+    DpVYkkJKuVne3rcRtkfcsA1c5rBQibEFY4ujWCibD9jS: {
       status: 'stable',
       name: 'cdm/product/collateral/AlternativeToInterestAmountEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HwuWMb3tTYLKx27eGnZD5LB4TVdV6iz8fUGmWx1zqM21',
+          typeBlueId: 'DpVYkkJKuVne3rcRtkfcsA1c5rBQibEFY4ujWCibD9jS',
           attributesAdded: [],
         },
       ],
     },
-    'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#3': {
+    'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#0': {
       status: 'stable',
       name: 'cdm/product/collateral/AnyCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#3',
+          typeBlueId: 'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#0',
           attributesAdded: [],
         },
       ],
     },
-    '3Z7Qd4nvD5kznK6ReEW6jkdThhTmUXZjY8dXKEUBgqXx': {
+    '4wRJXUzN8uTkKFeHycmg5s4LPtKSpfJSj9cRXHx5JAsi': {
       status: 'stable',
       name: 'cdm/product/collateral/AssetAgencyRating',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3Z7Qd4nvD5kznK6ReEW6jkdThhTmUXZjY8dXKEUBgqXx',
+          typeBlueId: '4wRJXUzN8uTkKFeHycmg5s4LPtKSpfJSj9cRXHx5JAsi',
           attributesAdded: [],
         },
       ],
     },
-    Fdf7nwnsHtnk24Wpyw2jqDFq5rEd7WLR39X6EQnoWsmU: {
+    FCuNiKfbXacwA5Cb4PtQoxUqheV4siYC6kq5GkcmGBvM: {
       status: 'stable',
       name: 'cdm/product/collateral/AssetCountryOfOrigin',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Fdf7nwnsHtnk24Wpyw2jqDFq5rEd7WLR39X6EQnoWsmU',
+          typeBlueId: 'FCuNiKfbXacwA5Cb4PtQoxUqheV4siYC6kq5GkcmGBvM',
           attributesAdded: [],
         },
       ],
     },
-    '7xRHcjREGdk4hE9MrxxaotTFeaL3wGTBBs3Ez8K8o259': {
+    DvHC67ebizujZAhviEeMQ82ZhicijkGL6dTdyk24smo3: {
       status: 'stable',
       name: 'cdm/product/collateral/AssetMaturity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7xRHcjREGdk4hE9MrxxaotTFeaL3wGTBBs3Ez8K8o259',
+          typeBlueId: 'DvHC67ebizujZAhviEeMQ82ZhicijkGL6dTdyk24smo3',
           attributesAdded: [],
         },
       ],
     },
-    '58o5oEHw5suowY8qW1qPwFwvjEWhvEosaggAnTkfqHUm': {
+    '6fscFVW5aHmtMRKjEQ93zMSWd6uq8CvM8i8Zkvtjbm5d': {
       status: 'stable',
       name: 'cdm/product/collateral/AverageTradingVolume',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '58o5oEHw5suowY8qW1qPwFwvjEWhvEosaggAnTkfqHUm',
+          typeBlueId: '6fscFVW5aHmtMRKjEQ93zMSWd6uq8CvM8i8Zkvtjbm5d',
           attributesAdded: [],
         },
       ],
     },
-    DBtNQnoS2ASiapYrVYocF4KmKjybYa5xQcvCQqGs2B69: {
+    '9ievDTbZij3cJJ9jg1P1QCr6ezKnnV7LPCaYa9ghiPQK': {
       status: 'stable',
       name: 'cdm/product/collateral/AverageTradingVolumeMethodologyEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DBtNQnoS2ASiapYrVYocF4KmKjybYa5xQcvCQqGs2B69',
+          typeBlueId: '9ievDTbZij3cJJ9jg1P1QCr6ezKnnV7LPCaYa9ghiPQK',
           attributesAdded: [],
         },
       ],
     },
-    '8HEhkXnXfJhyvURQJyvVSY9RQ1RChe4ZsT8pcSGCwLWc': {
+    '3M9i21vmhfQSWy2BnUDTVM3gUywbEnZ6SaPXvrvFAYTN': {
       status: 'stable',
       name: 'cdm/product/collateral/CheckEligibilityResult',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8HEhkXnXfJhyvURQJyvVSY9RQ1RChe4ZsT8pcSGCwLWc',
+          typeBlueId: '3M9i21vmhfQSWy2BnUDTVM3gUywbEnZ6SaPXvrvFAYTN',
           attributesAdded: [],
         },
       ],
     },
-    '4TmMsyAdoN2Np4C6v3ypajqNSQXAgmDT7v2FYpcc7DY7': {
+    '6jhHzxNcd11YEG9a9f1yBWhmm5qpzmbZ6E7JEqHpPj7r': {
       status: 'stable',
       name: 'cdm/product/collateral/Collateral',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4TmMsyAdoN2Np4C6v3ypajqNSQXAgmDT7v2FYpcc7DY7',
+          typeBlueId: '6jhHzxNcd11YEG9a9f1yBWhmm5qpzmbZ6E7JEqHpPj7r',
           attributesAdded: [],
         },
       ],
     },
-    CmSrznzVLE1Cqum7Xx5TArrxUTDcNSUH9UDm1PLDZWeB: {
+    '9je4gdfYWh5s9PxZCf36xymmiBGd59PHPrBapq7pnGVf': {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralAgreementFloatingRate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CmSrznzVLE1Cqum7Xx5TArrxUTDcNSUH9UDm1PLDZWeB',
+          typeBlueId: '9je4gdfYWh5s9PxZCf36xymmiBGd59PHPrBapq7pnGVf',
           attributesAdded: [],
         },
       ],
     },
-    'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#0': {
+    'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#1': {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#0',
+          typeBlueId: 'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#1',
           attributesAdded: [],
         },
       ],
     },
-    DNrLYMzUypd54LsHQ7fuTGkHeaucAd3AmcgDyB9DXPaY: {
+    EQwUBWQNzAfwaD546noV7pi1eo589s6uaDsRWdx2YCMX: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralCriteriaBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DNrLYMzUypd54LsHQ7fuTGkHeaucAd3AmcgDyB9DXPaY',
+          typeBlueId: 'EQwUBWQNzAfwaD546noV7pi1eo589s6uaDsRWdx2YCMX',
           attributesAdded: [],
         },
       ],
     },
-    GwW6uGFK3Akqa3zGHwGsdS5Ejo1HHYia3YVdNX9wxpAU: {
+    ATaY9YDiFkKfTkbxTfZ7LyFzaz3P294UgpPFzLNMMNhE: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralInterestCalculationParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GwW6uGFK3Akqa3zGHwGsdS5Ejo1HHYia3YVdNX9wxpAU',
+          typeBlueId: 'ATaY9YDiFkKfTkbxTfZ7LyFzaz3P294UgpPFzLNMMNhE',
           attributesAdded: [],
         },
       ],
     },
-    '7fK6wnRWpFjqpe79nBuP5Y5x5DnXYGWkx1G6G3hmnf47': {
+    sKqpZrkqt2VYmFSkbB7RRDetUKe7PJhYfsksQL6utY4: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralInterestHandlingEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7fK6wnRWpFjqpe79nBuP5Y5x5DnXYGWkx1G6G3hmnf47',
+          typeBlueId: 'sKqpZrkqt2VYmFSkbB7RRDetUKe7PJhYfsksQL6utY4',
           attributesAdded: [],
         },
       ],
     },
-    DFfVKuUpQ3nKk6osGBkvUZ2FSvR8myNQj2QHsn5GFzo4: {
+    EcvzpLymGTG2HkooovYn4sPFjmSFWGF1uM1CeM6FfNgz: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralInterestHandlingParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DFfVKuUpQ3nKk6osGBkvUZ2FSvR8myNQj2QHsn5GFzo4',
+          typeBlueId: 'EcvzpLymGTG2HkooovYn4sPFjmSFWGF1uM1CeM6FfNgz',
           attributesAdded: [],
         },
       ],
     },
-    Hu2GxR5c7eMm5dFy9t6mhrBCQP9G6EdyEPDUz7TUV7Co: {
+    AYFPdhUATGeD5Kaw7pwDQbqnwnGZ2DyM7rk1rVn4M1uM: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralInterestNotification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hu2GxR5c7eMm5dFy9t6mhrBCQP9G6EdyEPDUz7TUV7Co',
+          typeBlueId: 'AYFPdhUATGeD5Kaw7pwDQbqnwnGZ2DyM7rk1rVn4M1uM',
           attributesAdded: [],
         },
       ],
     },
-    '5rPzzyeLok543pSmRaRgtJQh7E6qcVWqmPgrgji6Avv2': {
+    F248AjhdVnADUz9CQXosVKujLgoTFeRXayYnkVuaof5T: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralInterestParameters',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5rPzzyeLok543pSmRaRgtJQh7E6qcVWqmPgrgji6Avv2',
+          typeBlueId: 'F248AjhdVnADUz9CQXosVKujLgoTFeRXayYnkVuaof5T',
           attributesAdded: [],
         },
       ],
     },
-    S4kLcw9up81q3TNVMZRCthznJz71LuEpiPLPWh1MJ87: {
+    '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ': {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralMarginTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'S4kLcw9up81q3TNVMZRCthznJz71LuEpiPLPWh1MJ87',
+          typeBlueId: '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ',
           attributesAdded: [],
         },
       ],
     },
-    otvEhr2nsePtQK4XNps2jE29Fd9hQtnEiPi9j3sssCi: {
+    EE9ddWepUCVpA88PcNq8buPwyuFbJawoqrJwAAwpCjcx: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralProvisions',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'otvEhr2nsePtQK4XNps2jE29Fd9hQtnEiPi9j3sssCi',
+          typeBlueId: 'EE9ddWepUCVpA88PcNq8buPwyuFbJawoqrJwAAwpCjcx',
           attributesAdded: [],
         },
       ],
     },
-    BL9z4RShUcNi4oWpkU2pgnaKF2vGwrxjpJBWWMAUruzN: {
+    '3J8QUqU5781wEZ91F9Y7a1CUz2EihFL2b3SWBCB1FBth': {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralTreatment',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BL9z4RShUcNi4oWpkU2pgnaKF2vGwrxjpJBWWMAUruzN',
+          typeBlueId: '3J8QUqU5781wEZ91F9Y7a1CUz2EihFL2b3SWBCB1FBth',
           attributesAdded: [],
         },
       ],
     },
-    DZPehsWDuPxFb1C3cSpumhHsTjexDKRzrbgBgFDfYLKH: {
+    HNcaEBRQkyoWFVGH1rA32NFXn4vu5wVaftRYmaKr4FMa: {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DZPehsWDuPxFb1C3cSpumhHsTjexDKRzrbgBgFDfYLKH',
+          typeBlueId: 'HNcaEBRQkyoWFVGH1rA32NFXn4vu5wVaftRYmaKr4FMa',
           attributesAdded: [],
         },
       ],
     },
-    '5tTMFMnH6nTLVpswR4BaaD9sD5W22HSgJu5F8iTop8AS': {
+    '6jPEeuHYwc7SYkDRExZS37FF7KdHg9uaHEasdRpFFvGN': {
       status: 'stable',
       name: 'cdm/product/collateral/CollateralValuationTreatment',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5tTMFMnH6nTLVpswR4BaaD9sD5W22HSgJu5F8iTop8AS',
+          typeBlueId: '6jPEeuHYwc7SYkDRExZS37FF7KdHg9uaHEasdRpFFvGN',
           attributesAdded: [],
         },
       ],
     },
-    '7JhDBQ8P99z1vkjs3NtSrZYQwsbwwMPjU8BSR4sjD7c5': {
+    ADNePctyfUS9D2wfp8ho1wmncZkAMrobNLpZ1gcNK8Wt: {
       status: 'stable',
       name: 'cdm/product/collateral/ConcentrationLimit',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7JhDBQ8P99z1vkjs3NtSrZYQwsbwwMPjU8BSR4sjD7c5',
+          typeBlueId: 'ADNePctyfUS9D2wfp8ho1wmncZkAMrobNLpZ1gcNK8Wt',
           attributesAdded: [],
         },
       ],
     },
-    Ag7HvtBnwEeKkpZQ17isCMUnXuFik93kdftfxJN8ih6h: {
+    '7YP39rZ8BWEkzLnifnowdqDWusgdTtoaAQADyndrMtvU': {
       status: 'stable',
       name: 'cdm/product/collateral/ConcentrationLimitCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ag7HvtBnwEeKkpZQ17isCMUnXuFik93kdftfxJN8ih6h',
+          typeBlueId: '7YP39rZ8BWEkzLnifnowdqDWusgdTtoaAQADyndrMtvU',
           attributesAdded: [],
         },
       ],
     },
-    '12eAkteKQP3QRJHzFcoKpMYpGiRWkbuRMJSY7ZSMmsBi': {
+    '97mmS2fJNEvvd9MB3p3a9VwsSgF8QN5MXMCg3hQhQ9EG': {
       status: 'stable',
       name: 'cdm/product/collateral/ConcentrationLimitTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '12eAkteKQP3QRJHzFcoKpMYpGiRWkbuRMJSY7ZSMmsBi',
+          typeBlueId: '97mmS2fJNEvvd9MB3p3a9VwsSgF8QN5MXMCg3hQhQ9EG',
           attributesAdded: [],
         },
       ],
     },
-    '2SCDqYNfqg2Ef6R5QB9F1V7RLuuBbGUCoc6LnFrM1jwp': {
+    '9TmPYroGmuj6v7x9aMMV97Hqg4a4xhW19VqhcavbmgRL': {
       status: 'stable',
       name: 'cdm/product/collateral/ContactElection',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2SCDqYNfqg2Ef6R5QB9F1V7RLuuBbGUCoc6LnFrM1jwp',
+          typeBlueId: '9TmPYroGmuj6v7x9aMMV97Hqg4a4xhW19VqhcavbmgRL',
           attributesAdded: [],
         },
       ],
     },
-    EUQ9MJibMGwCC7weff1GEUA2cy4bvdFoqaAJx4ySahKL: {
+    BSxC7wcq6PvdbEFuVkkBrzKz4bFBiG8He3PZk9SqFFeQ: {
       status: 'stable',
       name: 'cdm/product/collateral/CounterpartyOwnIssuePermitted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EUQ9MJibMGwCC7weff1GEUA2cy4bvdFoqaAJx4ySahKL',
+          typeBlueId: 'BSxC7wcq6PvdbEFuVkkBrzKz4bFBiG8He3PZk9SqFFeQ',
           attributesAdded: [],
         },
       ],
     },
-    CvgQkLkTY3wpBq3P2xqK9it4xHe69wrRbrazq7FNNLci: {
+    '8AGPnyrJ2WJVLWcdLebte5zu9TkzmSqbARfQEuGmSmDD': {
       status: 'stable',
       name: 'cdm/product/collateral/CreditSupportAgreementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CvgQkLkTY3wpBq3P2xqK9it4xHe69wrRbrazq7FNNLci',
+          typeBlueId: '8AGPnyrJ2WJVLWcdLebte5zu9TkzmSqbARfQEuGmSmDD',
           attributesAdded: [],
         },
       ],
     },
-    '8WSVgLvQLqBZPfmneqoMN3uQVAz6N5xkrPQBmDUkzdzX': {
+    HKVLiaT4w9torwoHkj96Mx7aKTg2Hav87Wintsd8TvXU: {
       status: 'stable',
       name: 'cdm/product/collateral/DeliveryAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8WSVgLvQLqBZPfmneqoMN3uQVAz6N5xkrPQBmDUkzdzX',
+          typeBlueId: 'HKVLiaT4w9torwoHkj96Mx7aKTg2Hav87Wintsd8TvXU',
           attributesAdded: [],
         },
       ],
     },
-    B9b96SYnsgwBPG9yHVVuip7q1ccRhp3uVXxr8cwVkBWb: {
+    ASFFM9ufg5x7Gsa379ue1XqS24UGxKLYAdFAPeQif8Zh: {
       status: 'stable',
       name: 'cdm/product/collateral/DeliveryAmountElectionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B9b96SYnsgwBPG9yHVVuip7q1ccRhp3uVXxr8cwVkBWb',
+          typeBlueId: 'ASFFM9ufg5x7Gsa379ue1XqS24UGxKLYAdFAPeQif8Zh',
           attributesAdded: [],
         },
       ],
     },
-    ABc6qnhxyapptzFA4KdSazTxrmr1Xf5LaKiVA7d9Zzgu: {
+    '3i98p29gyoZ1j352vAmuPHEtinsZgRDfRmRT4oCRAjh7': {
       status: 'stable',
       name: 'cdm/product/collateral/DistributionAndInterestPayment',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ABc6qnhxyapptzFA4KdSazTxrmr1Xf5LaKiVA7d9Zzgu',
+          typeBlueId: '3i98p29gyoZ1j352vAmuPHEtinsZgRDfRmRT4oCRAjh7',
           attributesAdded: [],
         },
       ],
     },
-    H32BQcu8EWs2WztGEuCPiGD6VGEtRwNB7CPsoE8MX25p: {
+    GSqFLxJkjPptdZcwACBFg4PMYhDwpuNcRBdKtNHgs4Wn: {
       status: 'stable',
       name: 'cdm/product/collateral/DomesticCurrencyIssued',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H32BQcu8EWs2WztGEuCPiGD6VGEtRwNB7CPsoE8MX25p',
+          typeBlueId: 'GSqFLxJkjPptdZcwACBFg4PMYhDwpuNcRBdKtNHgs4Wn',
           attributesAdded: [],
         },
       ],
     },
-    BnjZSXrPHPuuzDKnKtzYoNPSNR9RwaZyNpnHHx1MnsY8: {
+    EqeLySr1GukguPVVt5XqDUVQFVenWZYySiuo6qQbQ3pT: {
       status: 'stable',
       name: 'cdm/product/collateral/EligibilityQuery',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BnjZSXrPHPuuzDKnKtzYoNPSNR9RwaZyNpnHHx1MnsY8',
+          typeBlueId: 'EqeLySr1GukguPVVt5XqDUVQFVenWZYySiuo6qQbQ3pT',
           attributesAdded: [],
         },
       ],
     },
-    '4wYLbmNHssjvkRwDS66pb73SsDArUAfMW2BHtj2dZEkZ': {
+    '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6': {
       status: 'stable',
       name: 'cdm/product/collateral/EligibleCollateralCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4wYLbmNHssjvkRwDS66pb73SsDArUAfMW2BHtj2dZEkZ',
+          typeBlueId: '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6',
           attributesAdded: [],
         },
       ],
     },
-    '3L89wYhXf68oUZTeBkXQnsfBZCox4PN1dZWV9BcQzfdu': {
+    '95Kqzip4NxUfKxtGutCfDtBUDLMZhWmnm6jhQZJtfzXj': {
       status: 'stable',
       name: 'cdm/product/collateral/EligibleCollateralSpecification',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3L89wYhXf68oUZTeBkXQnsfBZCox4PN1dZWV9BcQzfdu',
+          typeBlueId: '95Kqzip4NxUfKxtGutCfDtBUDLMZhWmnm6jhQZJtfzXj',
           attributesAdded: [],
         },
       ],
     },
-    '7SZ3Np81ht94V1CujqhpiyFZFHojhPKCRtHnfChNWjyq': {
+    BMz1AMPiyGb3jJWUQ9jgpmXc5r6rkWQqcXyHJjegvEEu: {
       status: 'stable',
       name: 'cdm/product/collateral/EligibleCollateralSpecificationInstruction',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7SZ3Np81ht94V1CujqhpiyFZFHojhPKCRtHnfChNWjyq',
+          typeBlueId: 'BMz1AMPiyGb3jJWUQ9jgpmXc5r6rkWQqcXyHJjegvEEu',
           attributesAdded: [],
         },
       ],
     },
-    G7K82XJ1MNdo3T8yPiSDcb6H8yyWjbQwdH4WSJGPGWWx: {
+    '73DfnZhYH3dTmicn8zMHsthj9qQ6K9XEB5KLdtiJSK7u': {
       status: 'stable',
       name: 'cdm/product/collateral/FieldWithMetaCreditSupportAgreementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G7K82XJ1MNdo3T8yPiSDcb6H8yyWjbQwdH4WSJGPGWWx',
+          typeBlueId: '73DfnZhYH3dTmicn8zMHsthj9qQ6K9XEB5KLdtiJSK7u',
           attributesAdded: [],
         },
       ],
     },
-    '3RjPAV7XDWbonvs8Tan8M9CcFfX9XTnBrDec54oyL7rv': {
+    Bx6RbJH85Gh7BbnBoSUaTvzqwCNheMpjmwzdouE6UJz: {
       status: 'stable',
       name: 'cdm/product/collateral/IndependentAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3RjPAV7XDWbonvs8Tan8M9CcFfX9XTnBrDec54oyL7rv',
+          typeBlueId: 'Bx6RbJH85Gh7BbnBoSUaTvzqwCNheMpjmwzdouE6UJz',
           attributesAdded: [],
         },
       ],
     },
-    '64gfjSEPVGo67KbDGZX2jznDz7yJ8jdjLU64hFY297xY': {
+    '7kes2FB65JuXjGdz6Lp6zhm95qL5DTCjDxCKwSm8USPV': {
       status: 'stable',
       name: 'cdm/product/collateral/InterestAmountApplication',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '64gfjSEPVGo67KbDGZX2jznDz7yJ8jdjLU64hFY297xY',
+          typeBlueId: '7kes2FB65JuXjGdz6Lp6zhm95qL5DTCjDxCKwSm8USPV',
           attributesAdded: [],
         },
       ],
     },
-    HKeLnZoECFzBPxtPse5jEjzWuTQvvvURtKimZSBSdAzL: {
+    BQF5ff4etcuh9njP6VFEZiHKExrKnVkMbMrfqE7wkWHq: {
       status: 'stable',
       name: 'cdm/product/collateral/IssuerAgencyRating',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HKeLnZoECFzBPxtPse5jEjzWuTQvvvURtKimZSBSdAzL',
+          typeBlueId: 'BQF5ff4etcuh9njP6VFEZiHKExrKnVkMbMrfqE7wkWHq',
           attributesAdded: [],
         },
       ],
     },
-    '5vbt3yqCDAPHfDtrqySHEMgZbgECnD13NMCkT8ndvRME': {
+    '9qB83hxGqypCsEF6MKyZFWjg9t2VMnqgDMywCd2LCh6z': {
       status: 'stable',
       name: 'cdm/product/collateral/IssuerCountryOfOrigin',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5vbt3yqCDAPHfDtrqySHEMgZbgECnD13NMCkT8ndvRME',
+          typeBlueId: '9qB83hxGqypCsEF6MKyZFWjg9t2VMnqgDMywCd2LCh6z',
           attributesAdded: [],
         },
       ],
     },
-    B7KUAgvBkpwEWEYnisJG6iRRicpw2LC4MuxeYzxhMh9y: {
+    '9bkUNZgKaw1Cro32d1MxEwS5ZxRXwMi6iFvMNGxgekBC': {
       status: 'stable',
       name: 'cdm/product/collateral/IssuerName',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B7KUAgvBkpwEWEYnisJG6iRRicpw2LC4MuxeYzxhMh9y',
+          typeBlueId: '9bkUNZgKaw1Cro32d1MxEwS5ZxRXwMi6iFvMNGxgekBC',
           attributesAdded: [],
         },
       ],
     },
-    DBagP8NcuSpNGeJTMciJspmiVKhEvpxenhq1VwyxA9yu: {
+    BzgPMJPnH7Cq2NK4PkNTKXVrpY3u3BUxB9jjvKLAxpq8: {
       status: 'stable',
       name: 'cdm/product/collateral/ListingExchange',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DBagP8NcuSpNGeJTMciJspmiVKhEvpxenhq1VwyxA9yu',
+          typeBlueId: 'BzgPMJPnH7Cq2NK4PkNTKXVrpY3u3BUxB9jjvKLAxpq8',
           attributesAdded: [],
         },
       ],
     },
-    '7AfyjzzZ8Y9CSKTQ3jRNBeoosewUEsqKoK4tfANwmDuR': {
+    '2sRSP8xV5oTb6nySDWzH4ZcHxhHkKtMgqw73G2Y7kwC8': {
       status: 'stable',
       name: 'cdm/product/collateral/ListingSector',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7AfyjzzZ8Y9CSKTQ3jRNBeoosewUEsqKoK4tfANwmDuR',
+          typeBlueId: '2sRSP8xV5oTb6nySDWzH4ZcHxhHkKtMgqw73G2Y7kwC8',
           attributesAdded: [],
         },
       ],
     },
-    '7j2afftZwsKVHvwsGny36DeHZyszQTNjaKddY3EUPFWP': {
+    '5okT4PBEHijywnb7jBieEoVCyGTRkhzDmbMEDnxtpD92': {
       status: 'stable',
       name: 'cdm/product/collateral/metafields/ReferenceWithMetaCollateral',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7j2afftZwsKVHvwsGny36DeHZyszQTNjaKddY3EUPFWP',
+          typeBlueId: '5okT4PBEHijywnb7jBieEoVCyGTRkhzDmbMEDnxtpD92',
           attributesAdded: [],
         },
       ],
     },
-    'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#1': {
+    'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#3': {
       status: 'stable',
       name: 'cdm/product/collateral/NegativeCriteria',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#1',
+          typeBlueId: 'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#3',
           attributesAdded: [],
         },
       ],
     },
-    EM2cuboURhKvNDFYAA6NaucjpnUHYb2s4CKVEyrAt3nK: {
+    HN2xCyqgWdVYt6ta4R5o6we7NmT9i49Jn2V5R4V9BoCD: {
       status: 'stable',
       name: 'cdm/product/collateral/RatingPriorityResolutionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EM2cuboURhKvNDFYAA6NaucjpnUHYb2s4CKVEyrAt3nK',
+          typeBlueId: 'HN2xCyqgWdVYt6ta4R5o6we7NmT9i49Jn2V5R4V9BoCD',
           attributesAdded: [],
         },
       ],
     },
-    F5KpA82QSi1KJJu5Y1QFYm3KVvYrsajy5CANvijdTquA: {
+    HpBh6DxVn5k45kpY9oDbqGhBWE3eEphzgwottdc68x3B: {
       status: 'stable',
       name: 'cdm/product/collateral/ReturnAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F5KpA82QSi1KJJu5Y1QFYm3KVvYrsajy5CANvijdTquA',
+          typeBlueId: 'HpBh6DxVn5k45kpY9oDbqGhBWE3eEphzgwottdc68x3B',
           attributesAdded: [],
         },
       ],
     },
-    E3BwAcnw9Vo2sDe14rdt76sD8KTECTPFQHhFqUu5Weoe: {
+    '8tRrLY27bAdfQuvV7dnmS5iQ1QW6VFmjUB7KsaAjNpQv': {
       status: 'stable',
       name: 'cdm/product/collateral/SovereignAgencyRating',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E3BwAcnw9Vo2sDe14rdt76sD8KTECTPFQHhFqUu5Weoe',
+          typeBlueId: '8tRrLY27bAdfQuvV7dnmS5iQ1QW6VFmjUB7KsaAjNpQv',
           attributesAdded: [],
         },
       ],
     },
-    EjBk15nz62KvMKiydMXvoDBt48tV6rBpEhuKBW5QABxM: {
+    '2Gr3Akes7mjaFvgw48PJ56oasjq7iSukKYHpJJZcCwCS': {
       status: 'stable',
       name: 'cdm/product/collateral/SpecificAsset',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EjBk15nz62KvMKiydMXvoDBt48tV6rBpEhuKBW5QABxM',
+          typeBlueId: '2Gr3Akes7mjaFvgw48PJ56oasjq7iSukKYHpJJZcCwCS',
           attributesAdded: [],
         },
       ],
     },
-    '5jNLBK4JBUbp17MKjC98nsw6G8uvTkkc3hMW1Ao1P8Kw': {
+    G6wTgdqazh3P4ppaphmfLKqmekudYnsS5TDSKnzhiCYi: {
       status: 'stable',
       name: 'cdm/product/collateral/SubstitutionProvisions',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5jNLBK4JBUbp17MKjC98nsw6G8uvTkkc3hMW1Ao1P8Kw',
+          typeBlueId: 'G6wTgdqazh3P4ppaphmfLKqmekudYnsS5TDSKnzhiCYi',
           attributesAdded: [],
         },
       ],
     },
-    FP5233evs7ZPmt4TtJViFwDZ7XUgyXmKmP7WGgjrSKtp: {
+    Fu36EUGcA7u8BqhZftYyUEUqgrd4mi4LXffiZx7DXTvo: {
       status: 'stable',
       name: 'cdm/product/common/NotionalAdjustmentEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FP5233evs7ZPmt4TtJViFwDZ7XUgyXmKmP7WGgjrSKtp',
+          typeBlueId: 'Fu36EUGcA7u8BqhZftYyUEUqgrd4mi4LXffiZx7DXTvo',
           attributesAdded: [],
         },
       ],
     },
-    FDhYdNTtaLCVNSezF95Ys51ECzH3L89vhhaxYFDFUP6w: {
+    J4wqPRqUgot11KtycNoGqM9u43KZrNSvWHAbzBSR4WNS: {
       status: 'stable',
       name: 'cdm/product/common/schedule/AmountSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FDhYdNTtaLCVNSezF95Ys51ECzH3L89vhhaxYFDFUP6w',
+          typeBlueId: 'J4wqPRqUgot11KtycNoGqM9u43KZrNSvWHAbzBSR4WNS',
           attributesAdded: [],
         },
       ],
     },
-    BXbBNHYXNsAs17oYsKYnKjD8RK186gXxjiPPnFzNiVVU: {
+    GVFbbaLLLxVnRS8pEFt4Pwr3VMsXjMm2nM6PdGfDenD3: {
       status: 'stable',
       name: 'cdm/product/common/schedule/AveragingObservationList',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BXbBNHYXNsAs17oYsKYnKjD8RK186gXxjiPPnFzNiVVU',
+          typeBlueId: 'GVFbbaLLLxVnRS8pEFt4Pwr3VMsXjMm2nM6PdGfDenD3',
           attributesAdded: [],
         },
       ],
     },
-    '9hxbzdeXPKQQGVKqPfSXbF69HWKHGiPzMLHRa4vh62dM': {
+    GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9: {
       status: 'stable',
       name: 'cdm/product/common/schedule/AveragingPeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9hxbzdeXPKQQGVKqPfSXbF69HWKHGiPzMLHRa4vh62dM',
+          typeBlueId: 'GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9',
           attributesAdded: [],
         },
       ],
     },
-    '5Lq5NnUDQc1VYTrSN1ydpnZwyrjq2SofswjFANgehFem': {
+    BXpC64gmuFbvh5L5cvC2KjCgBSBYvePrnA5wcL1K4rFT: {
       status: 'stable',
       name: 'cdm/product/common/schedule/CalculationPeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5Lq5NnUDQc1VYTrSN1ydpnZwyrjq2SofswjFANgehFem',
+          typeBlueId: 'BXpC64gmuFbvh5L5cvC2KjCgBSBYvePrnA5wcL1K4rFT',
           attributesAdded: [],
         },
       ],
     },
-    '3VwhGwLL7XV8qQMng9XQDytu3E4oEQBmpePGJqopB4yb': {
+    HjEmRrvzUJGJ8GfKAGdbcnZbK68UnqsEfHnP7fQL2aXu: {
       status: 'stable',
       name: 'cdm/product/common/schedule/CalculationPeriodBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3VwhGwLL7XV8qQMng9XQDytu3E4oEQBmpePGJqopB4yb',
+          typeBlueId: 'HjEmRrvzUJGJ8GfKAGdbcnZbK68UnqsEfHnP7fQL2aXu',
           attributesAdded: [],
         },
       ],
     },
-    '7vwHYRPc5UsNRrLwCSTCUnBaDSvw6C495mDPvTrmsiNe': {
+    A8TvjwnZQGaerbL4hKYYEZJYcaVL7fv6uvShyjZLGhoW: {
       status: 'stable',
       name: 'cdm/product/common/schedule/CalculationPeriodData',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7vwHYRPc5UsNRrLwCSTCUnBaDSvw6C495mDPvTrmsiNe',
+          typeBlueId: 'A8TvjwnZQGaerbL4hKYYEZJYcaVL7fv6uvShyjZLGhoW',
           attributesAdded: [],
         },
       ],
     },
-    HNqe2eLHMNHdTJAqM3zJLo9SBP9LgZu1vfSbhQ9KX51v: {
+    '7dK86pbyNfhuuigQR5bQueaqH68Sqze66Qwad2m64rxg': {
       status: 'stable',
       name: 'cdm/product/common/schedule/CalculationPeriodDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HNqe2eLHMNHdTJAqM3zJLo9SBP9LgZu1vfSbhQ9KX51v',
+          typeBlueId: '7dK86pbyNfhuuigQR5bQueaqH68Sqze66Qwad2m64rxg',
           attributesAdded: [],
         },
       ],
     },
-    '4o5d36vxkXs3Qdn8xQqyihG3a6eaDaNsQ8gKqkZoUWSK': {
+    '8a1MTndCYSZYYLgqPZewqnR4VyMuKN2TSytKifycuYRQ': {
       status: 'stable',
       name: 'cdm/product/common/schedule/DateRelativeToCalculationPeriodDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4o5d36vxkXs3Qdn8xQqyihG3a6eaDaNsQ8gKqkZoUWSK',
+          typeBlueId: '8a1MTndCYSZYYLgqPZewqnR4VyMuKN2TSytKifycuYRQ',
           attributesAdded: [],
         },
       ],
     },
-    AeiUZ17pKAByiRrS6p1GH2RgKqQbh5a2F9SJ2rTsr2bE: {
+    Cjg8S7jVCYAEjpd8qzXY28Qmn2YJWnHx1emVGo6DF4ro: {
       status: 'stable',
       name: 'cdm/product/common/schedule/DateRelativeToPaymentDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AeiUZ17pKAByiRrS6p1GH2RgKqQbh5a2F9SJ2rTsr2bE',
+          typeBlueId: 'Cjg8S7jVCYAEjpd8qzXY28Qmn2YJWnHx1emVGo6DF4ro',
           attributesAdded: [],
         },
       ],
     },
-    '8anXaV9kfWdcakaHM9sbDkkkXhFwYtAELJDCmQDjZ9wU': {
+    Amvx9G3h2wHURbQkfGuuEwHYch5CWjYiD1ooToEb9FAn: {
       status: 'stable',
       name: 'cdm/product/common/schedule/DateRelativeToValuationDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8anXaV9kfWdcakaHM9sbDkkkXhFwYtAELJDCmQDjZ9wU',
+          typeBlueId: 'Amvx9G3h2wHURbQkfGuuEwHYch5CWjYiD1ooToEb9FAn',
           attributesAdded: [],
         },
       ],
     },
-    CwVqcagqRU8u2uYQ7UX2DhBEktwSuwCNdvLc92FdhUm6: {
+    FLLBtJA3uBehX7mffS1DNAvuAgzQmL3tLBCtQL9xQRBY: {
       status: 'stable',
       name: 'cdm/product/common/schedule/FinalCalculationPeriodDateAdjustment',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CwVqcagqRU8u2uYQ7UX2DhBEktwSuwCNdvLc92FdhUm6',
+          typeBlueId: 'FLLBtJA3uBehX7mffS1DNAvuAgzQmL3tLBCtQL9xQRBY',
           attributesAdded: [],
         },
       ],
     },
-    '7HjksLDGh6YzfTHkRQ2USZ5teJDX6vUpijbCQZwrYeSN': {
+    J1E3aP2gHFG6xXmDZbkh3v4aXuN62czNKzQgw9T41sdB: {
       status: 'stable',
       name: 'cdm/product/common/schedule/FxLinkedNotionalAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7HjksLDGh6YzfTHkRQ2USZ5teJDX6vUpijbCQZwrYeSN',
+          typeBlueId: 'J1E3aP2gHFG6xXmDZbkh3v4aXuN62czNKzQgw9T41sdB',
           attributesAdded: [],
         },
       ],
     },
-    BReQt7q6C5537Y3nyWefx79E61Eegxm6K7xrLwVrEmHp: {
+    BRCQiBi9STYfKiP9KdPDPjoyi46W34fzykNMzGBP1YFT: {
       status: 'stable',
       name: 'cdm/product/common/schedule/FxLinkedNotionalSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BReQt7q6C5537Y3nyWefx79E61Eegxm6K7xrLwVrEmHp',
+          typeBlueId: 'BRCQiBi9STYfKiP9KdPDPjoyi46W34fzykNMzGBP1YFT',
           attributesAdded: [],
         },
       ],
     },
-    Ez5s9tbfPdmp7LcecKGYBeQLLSQFq5JghRb2yZTgTQTo: {
+    y6unn9zuC4eqixnmkEKxXhareLao3FvJgXeACGbLHaA: {
       status: 'stable',
       name: 'cdm/product/common/schedule/InitialFixingDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ez5s9tbfPdmp7LcecKGYBeQLLSQFq5JghRb2yZTgTQTo',
+          typeBlueId: 'y6unn9zuC4eqixnmkEKxXhareLao3FvJgXeACGbLHaA',
           attributesAdded: [],
         },
       ],
     },
-    '5vk3XbD6dScT1eaY9grEq8mtTaaaAM5g7kjvCTk7s5a5': {
+    H52wAsRZktjp4tpCZgu6wnQMFaksvVT2T9gxSHdZjSbg: {
       status: 'stable',
       name: 'cdm/product/common/schedule/Lag',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5vk3XbD6dScT1eaY9grEq8mtTaaaAM5g7kjvCTk7s5a5',
+          typeBlueId: 'H52wAsRZktjp4tpCZgu6wnQMFaksvVT2T9gxSHdZjSbg',
           attributesAdded: [],
         },
       ],
     },
-    FeNrqxwS32kNzjXs7HqrxtfK9N58r3zNtk2U2uKgXJQU: {
+    '5kML8V9qeDP2N3N3L173vbHKEbT1tjwLQ89bXgwhB2jf': {
       status: 'stable',
       name: 'cdm/product/common/schedule/metafields/ReferenceWithMetaCalculationPeriodDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FeNrqxwS32kNzjXs7HqrxtfK9N58r3zNtk2U2uKgXJQU',
+          typeBlueId: '5kML8V9qeDP2N3N3L173vbHKEbT1tjwLQ89bXgwhB2jf',
           attributesAdded: [],
         },
       ],
     },
-    '8NNNz18sSETdae4uM2DzFCgUaZuSYVrut2KQHj6E2q46': {
+    '3dRUSDjJdgNWK1v7xMqD4sANMTcNwBMxpGLaLVPaZk4D': {
       status: 'stable',
       name: 'cdm/product/common/schedule/metafields/ReferenceWithMetaPaymentDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8NNNz18sSETdae4uM2DzFCgUaZuSYVrut2KQHj6E2q46',
+          typeBlueId: '3dRUSDjJdgNWK1v7xMqD4sANMTcNwBMxpGLaLVPaZk4D',
           attributesAdded: [],
         },
       ],
     },
-    '2jeU259hBuPLHL5wYMHnutcujA2porimr9ETLQNUcyCc': {
+    JDFk4bjDaXiaZiEkLkoPoa66bJWLrnTJB59D2KofE1yE: {
       status: 'stable',
       name: 'cdm/product/common/schedule/ObservationDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2jeU259hBuPLHL5wYMHnutcujA2porimr9ETLQNUcyCc',
+          typeBlueId: 'JDFk4bjDaXiaZiEkLkoPoa66bJWLrnTJB59D2KofE1yE',
           attributesAdded: [],
         },
       ],
     },
-    '3eEv8a1ur5GmtEdvqCS9sTFEgTzz1ffcWEvBcZfTMy2h': {
+    '93jNg58r6VkSD6oX2SzTDJrVHFDWVgDA28zPR4rQJS4F': {
       status: 'stable',
       name: 'cdm/product/common/schedule/ObservationDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3eEv8a1ur5GmtEdvqCS9sTFEgTzz1ffcWEvBcZfTMy2h',
+          typeBlueId: '93jNg58r6VkSD6oX2SzTDJrVHFDWVgDA28zPR4rQJS4F',
           attributesAdded: [],
         },
       ],
     },
-    '5HyA1BrsbksXL8qZtKjnV98GEFdqbjYkQRaHW2XuXupL': {
+    '4mtcJBY3NiPAmBruiozFAPqC5nhTXezbGrPZnsfcxeAR': {
       status: 'stable',
       name: 'cdm/product/common/schedule/ObservationSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5HyA1BrsbksXL8qZtKjnV98GEFdqbjYkQRaHW2XuXupL',
+          typeBlueId: '4mtcJBY3NiPAmBruiozFAPqC5nhTXezbGrPZnsfcxeAR',
           attributesAdded: [],
         },
       ],
     },
-    '3wwdVKCEN7pSLG9mPnXFiizaAo59qz2yQnNHrzGhT59K': {
+    '9pJEidhmAUQebdR3uTioauH2mNHR8RLS9r7xaB9vxpRd': {
       status: 'stable',
       name: 'cdm/product/common/schedule/ObservationTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3wwdVKCEN7pSLG9mPnXFiizaAo59qz2yQnNHrzGhT59K',
+          typeBlueId: '9pJEidhmAUQebdR3uTioauH2mNHR8RLS9r7xaB9vxpRd',
           attributesAdded: [],
         },
       ],
     },
-    CnFPWcJf9xSTq4FLwvkKAXcrxAjrdDmjq7gzPjKyC2MN: {
+    EYbEZSe5HQWGHhD1r1THTXaZHW6xpyBn5zsupY3usXJ4: {
       status: 'stable',
       name: 'cdm/product/common/schedule/ParametricDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CnFPWcJf9xSTq4FLwvkKAXcrxAjrdDmjq7gzPjKyC2MN',
+          typeBlueId: 'EYbEZSe5HQWGHhD1r1THTXaZHW6xpyBn5zsupY3usXJ4',
           attributesAdded: [],
         },
       ],
     },
-    '5X3D2ENebv1d9zFVGd1EdB4mT992xV4BvQ4xjuwktuNK': {
+    AGSb42ioNbHLTCP12AbmMbhsiH4CTHve73GmjTCTJtcR: {
       status: 'stable',
       name: 'cdm/product/common/schedule/PaymentCalculationPeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5X3D2ENebv1d9zFVGd1EdB4mT992xV4BvQ4xjuwktuNK',
+          typeBlueId: 'AGSb42ioNbHLTCP12AbmMbhsiH4CTHve73GmjTCTJtcR',
           attributesAdded: [],
         },
       ],
     },
-    '913TgdFLeMHEAXnndV1KuUqmoxUtRjXn8X8JRX4n632b': {
+    '23fb9HBYcZQ8enTm83iVQjixyTrHqNc5G1ANtAbB1ixz': {
       status: 'stable',
       name: 'cdm/product/common/schedule/PaymentDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '913TgdFLeMHEAXnndV1KuUqmoxUtRjXn8X8JRX4n632b',
+          typeBlueId: '23fb9HBYcZQ8enTm83iVQjixyTrHqNc5G1ANtAbB1ixz',
           attributesAdded: [],
         },
       ],
     },
-    '6q21RVmQN33ataLNzF7toqxk33ACgLu2ai2zbmpPrgaW': {
+    '21vD19q8M9BVLcNChK9mx3GcJ7VRagziHdvCXtj5AFCk': {
       status: 'stable',
       name: 'cdm/product/common/schedule/PaymentDateSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6q21RVmQN33ataLNzF7toqxk33ACgLu2ai2zbmpPrgaW',
+          typeBlueId: '21vD19q8M9BVLcNChK9mx3GcJ7VRagziHdvCXtj5AFCk',
           attributesAdded: [],
         },
       ],
     },
-    GduyNWwKbvbkvqDp8epxCYREJb39YMi8nSs2ctyUMCXF: {
+    '6w9Y1wNfyQCQMPw3tuPpDbjFcKki2M2zaFeTRXCgcGfF': {
       status: 'stable',
       name: 'cdm/product/common/schedule/PayRelativeToEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GduyNWwKbvbkvqDp8epxCYREJb39YMi8nSs2ctyUMCXF',
+          typeBlueId: '6w9Y1wNfyQCQMPw3tuPpDbjFcKki2M2zaFeTRXCgcGfF',
           attributesAdded: [],
         },
       ],
     },
-    '3ScAWMceSndUiR2vHtzZGzPGccvuNjx7L5TmQVXQ9AYf': {
+    '7EEvMt9emT8iceX5fpLkggKJmrok2qeWHbESwueZHstB': {
       status: 'stable',
       name: 'cdm/product/common/schedule/RateSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3ScAWMceSndUiR2vHtzZGzPGccvuNjx7L5TmQVXQ9AYf',
+          typeBlueId: '7EEvMt9emT8iceX5fpLkggKJmrok2qeWHbESwueZHstB',
           attributesAdded: [],
         },
       ],
     },
-    '3UjvYgL77sb6K36nNvsdpE4Hyt82LgNWcuWKqhKzh6to': {
+    '2smAatQQw7CLfmf1HYvJs7niaBG5fYmRvaYQFZzbxFyF': {
       status: 'stable',
       name: 'cdm/product/common/schedule/ResetDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3UjvYgL77sb6K36nNvsdpE4Hyt82LgNWcuWKqhKzh6to',
+          typeBlueId: '2smAatQQw7CLfmf1HYvJs7niaBG5fYmRvaYQFZzbxFyF',
           attributesAdded: [],
         },
       ],
     },
-    DpTSHTppc3xwy2ybJQxiZTCtQk19AUWX1Rca92nyrjHQ: {
+    GKgPYhw21hXmUrUfE9bywu62WWdBcnVYxyDjjx8DND8f: {
       status: 'stable',
       name: 'cdm/product/common/schedule/ResetFrequency',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DpTSHTppc3xwy2ybJQxiZTCtQk19AUWX1Rca92nyrjHQ',
+          typeBlueId: 'GKgPYhw21hXmUrUfE9bywu62WWdBcnVYxyDjjx8DND8f',
           attributesAdded: [],
         },
       ],
     },
-    Dm9PM5TwaH54z4a5ziQoapPuuwNsvRFCZkEYx2ZFiegM: {
+    BeEMYYKgbMhxWfYP2PwjXqrWw9s2qJ5j7iptwHErctFb: {
       status: 'stable',
       name: 'cdm/product/common/schedule/ResetRelativeToEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Dm9PM5TwaH54z4a5ziQoapPuuwNsvRFCZkEYx2ZFiegM',
+          typeBlueId: 'BeEMYYKgbMhxWfYP2PwjXqrWw9s2qJ5j7iptwHErctFb',
           attributesAdded: [],
         },
       ],
     },
-    '8zaTiZzQWmHuDkVfG5pqQfJPSbt7shdT3KzVHLNtpYEA': {
+    '5TF8P1YZtVnW4MLUB8XNfNU9ypzqPgDVZtNQasAEi6BJ': {
       status: 'stable',
       name: 'cdm/product/common/schedule/StubCalculationPeriodAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8zaTiZzQWmHuDkVfG5pqQfJPSbt7shdT3KzVHLNtpYEA',
+          typeBlueId: '5TF8P1YZtVnW4MLUB8XNfNU9ypzqPgDVZtNQasAEi6BJ',
           attributesAdded: [],
         },
       ],
     },
-    '4TTL4gJb5c5Ph8vm7n74shdG3HTtVXP4jKfvM1mJ9dGi': {
+    GDsReUUBoQqUk4nzm4MUFgBzwihcp99Xt2hYSukxTdPp: {
       status: 'stable',
       name: 'cdm/product/common/schedule/StubPeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4TTL4gJb5c5Ph8vm7n74shdG3HTtVXP4jKfvM1mJ9dGi',
+          typeBlueId: 'GDsReUUBoQqUk4nzm4MUFgBzwihcp99Xt2hYSukxTdPp',
           attributesAdded: [],
         },
       ],
     },
-    '6oofq5cEqVvBXkWwkQPGzgZJdGR1TRM7i29UzSnVFFVd': {
+    HvTJUwtwoF7FUYtZGRhW3CHYRsrhurJcEfFY6YuH4Kaq: {
       status: 'stable',
       name: 'cdm/product/common/schedule/StubPeriodTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6oofq5cEqVvBXkWwkQPGzgZJdGR1TRM7i29UzSnVFFVd',
+          typeBlueId: 'HvTJUwtwoF7FUYtZGRhW3CHYRsrhurJcEfFY6YuH4Kaq',
           attributesAdded: [],
         },
       ],
     },
-    fSHW6Drrbqfcs6E2UTodamRcqyfSTBkYTsnXEqbno3m: {
+    '4X8F2gmBL4p3H4RQFALaRrLn3E4tnCr4a7kQgN7NmnWV': {
       status: 'stable',
       name: 'cdm/product/common/schedule/WeeklyRollConventionEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'fSHW6Drrbqfcs6E2UTodamRcqyfSTBkYTsnXEqbno3m',
+          typeBlueId: '4X8F2gmBL4p3H4RQFALaRrLn3E4tnCr4a7kQgN7NmnWV',
           attributesAdded: [],
         },
       ],
     },
-    ESLgkpXCoVxwQbnAPvgczaFCG8BevyuAr7HkFo9WThDR: {
+    '6BCHpCe7FxvsdKprgbdq44ovxXH55YFYtLRFtqQ4KyeE': {
       status: 'stable',
       name: 'cdm/product/common/schedule/WeightedAveragingObservation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ESLgkpXCoVxwQbnAPvgczaFCG8BevyuAr7HkFo9WThDR',
+          typeBlueId: '6BCHpCe7FxvsdKprgbdq44ovxXH55YFYtLRFtqQ4KyeE',
           attributesAdded: [],
         },
       ],
     },
-    '6QVHrqvDdhrztaqgMzWNPogaPn1tM5Kq3cPyMJnzAoZr': {
+    DDpzEiQvyGjc3WViRctaB8EJPZHGTbbpLManidhjUsxW: {
       status: 'stable',
       name: 'cdm/product/common/settlement/AssetFlowBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6QVHrqvDdhrztaqgMzWNPogaPn1tM5Kq3cPyMJnzAoZr',
+          typeBlueId: 'DDpzEiQvyGjc3WViRctaB8EJPZHGTbbpLManidhjUsxW',
           attributesAdded: [],
         },
       ],
     },
-    HSzaYj4NHo8yQEzxs9i6136jxrgSGM3ETvCGRjWRNBbe: {
+    '3vRMCGh2M3Ggi4kWVbmZ85TLuo1A54NFwDCbhvAZt9XA': {
       status: 'stable',
       name: 'cdm/product/common/settlement/Cashflow',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HSzaYj4NHo8yQEzxs9i6136jxrgSGM3ETvCGRjWRNBbe',
+          typeBlueId: '3vRMCGh2M3Ggi4kWVbmZ85TLuo1A54NFwDCbhvAZt9XA',
           attributesAdded: [],
         },
       ],
     },
-    Ccm42B9pqHXvdGEKGXbippze1ftyBoJLzTcK6oXCTx1s: {
+    GArm2fDK1vopaSHjgRguRRS1k6GiHBGUifjuhdbJEfg: {
       status: 'stable',
       name: 'cdm/product/common/settlement/CashflowType',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ccm42B9pqHXvdGEKGXbippze1ftyBoJLzTcK6oXCTx1s',
+          typeBlueId: 'GArm2fDK1vopaSHjgRguRRS1k6GiHBGUifjuhdbJEfg',
           attributesAdded: [],
         },
       ],
     },
-    '56d1q7spHaAFPp9dywxuqec2NvTpBDCMa4ztph6Anuo5': {
+    BFK7Kwvvqbbpshj96TundhGbsBuspSgCDzv732RGP6aJ: {
       status: 'stable',
       name: 'cdm/product/common/settlement/CashSettlementMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '56d1q7spHaAFPp9dywxuqec2NvTpBDCMa4ztph6Anuo5',
+          typeBlueId: 'BFK7Kwvvqbbpshj96TundhGbsBuspSgCDzv732RGP6aJ',
           attributesAdded: [],
         },
       ],
     },
-    Gitr4e5rQ7kpdhDKFvTuGDoxwkjHoVtwLL3mfUEf5BLa: {
+    Fffk6F9WofKSKmkg6i3ft1dNq2tPApbqbMZjguK1xFX8: {
       status: 'stable',
       name: 'cdm/product/common/settlement/CashSettlementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Gitr4e5rQ7kpdhDKFvTuGDoxwkjHoVtwLL3mfUEf5BLa',
+          typeBlueId: 'Fffk6F9WofKSKmkg6i3ft1dNq2tPApbqbMZjguK1xFX8',
           attributesAdded: [],
         },
       ],
     },
-    '5x1sDH43jpfnxCpn7SxGocGurJQPFSuhA9VqKTEj3p4y': {
+    '14FV7tMj4HrFn5mGMxp1ip6AhhhvTsLR6FH1eXyL6Ts9': {
       status: 'stable',
       name: 'cdm/product/common/settlement/CommodityPriceReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5x1sDH43jpfnxCpn7SxGocGurJQPFSuhA9VqKTEj3p4y',
+          typeBlueId: '14FV7tMj4HrFn5mGMxp1ip6AhhhvTsLR6FH1eXyL6Ts9',
           attributesAdded: [],
         },
       ],
     },
-    B6jumk3FUsgHPFi2jhgxri51dHbhYGBYzMNKjWYtosTm: {
+    BDhRUc68Brq8ongRzTRuhXJ5ZwMKhFYca1YMMPB1A4AT: {
       status: 'stable',
       name: 'cdm/product/common/settlement/ComputedAmount',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'B6jumk3FUsgHPFi2jhgxri51dHbhYGBYzMNKjWYtosTm',
+          typeBlueId: 'BDhRUc68Brq8ongRzTRuhXJ5ZwMKhFYca1YMMPB1A4AT',
           attributesAdded: [],
         },
       ],
     },
-    Hzvh7SeAByhG3miYtQ9HRosLr6vfMQWfTTrrFpxLAd9s: {
+    siew7R9pM49xxdDdrA2tnaBp8jSYtkNG6esorJcxELg: {
       status: 'stable',
       name: 'cdm/product/common/settlement/DeliverableObligations',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hzvh7SeAByhG3miYtQ9HRosLr6vfMQWfTTrrFpxLAd9s',
+          typeBlueId: 'siew7R9pM49xxdDdrA2tnaBp8jSYtkNG6esorJcxELg',
           attributesAdded: [],
         },
       ],
     },
-    FRoMknL5tLocYSiFfWHQdaNh9P69TCfagyqaUDB7r1fx: {
+    '6LWhigVjjAUUSFhmA6HbeNXAPPtSPD97nTeiyR7yRQCn': {
       status: 'stable',
       name: 'cdm/product/common/settlement/DeliveryMethodEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FRoMknL5tLocYSiFfWHQdaNh9P69TCfagyqaUDB7r1fx',
+          typeBlueId: '6LWhigVjjAUUSFhmA6HbeNXAPPtSPD97nTeiyR7yRQCn',
           attributesAdded: [],
         },
       ],
     },
-    '3ahFTRDyW1vZN9J2RUwVpic72VhPCPqMVDvfoRzNAiFv': {
+    '3WvaxijQwR1ELLMK9QtedoyNZ1wy9YZrGnGe2wvdpVWk': {
       status: 'stable',
       name: 'cdm/product/common/settlement/FixedPrice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3ahFTRDyW1vZN9J2RUwVpic72VhPCPqMVDvfoRzNAiFv',
+          typeBlueId: '3WvaxijQwR1ELLMK9QtedoyNZ1wy9YZrGnGe2wvdpVWk',
           attributesAdded: [],
         },
       ],
     },
-    '8eCwVe8o3HJ59kXXDpmZNzc3nFwUj5KV4TtcM7LbwaRA': {
+    GsdSDZrs9XevoM9WdLLncZ1DTMsjbcSjcPyPt8z2XBWj: {
       status: 'stable',
       name: 'cdm/product/common/settlement/FxFixingDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8eCwVe8o3HJ59kXXDpmZNzc3nFwUj5KV4TtcM7LbwaRA',
+          typeBlueId: 'GsdSDZrs9XevoM9WdLLncZ1DTMsjbcSjcPyPt8z2XBWj',
           attributesAdded: [],
         },
       ],
     },
-    CSA4yBTRY5RmGSiiVcNmFcriFgUvvzUBaRzbignT7fcZ: {
+    G14P9maXfUePjqhHWmNFfQEWPG5NJ18iL3rpGBMoLyDZ: {
       status: 'stable',
       name: 'cdm/product/common/settlement/LoanParticipation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CSA4yBTRY5RmGSiiVcNmFcriFgUvvzUBaRzbignT7fcZ',
+          typeBlueId: 'G14P9maXfUePjqhHWmNFfQEWPG5NJ18iL3rpGBMoLyDZ',
           attributesAdded: [],
         },
       ],
     },
-    Eud1PpiZWvCUx1fnCMC8CwsLqPdmoGhibUuZ6Xrxayic: {
+    '4LxF2iZVCWETVa5Sk6jK2WAVLX1SD7WaPtmgesb4xuBC': {
       status: 'stable',
       name: 'cdm/product/common/settlement/metafields/ReferenceWithMetaCashSettlementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Eud1PpiZWvCUx1fnCMC8CwsLqPdmoGhibUuZ6Xrxayic',
+          typeBlueId: '4LxF2iZVCWETVa5Sk6jK2WAVLX1SD7WaPtmgesb4xuBC',
           attributesAdded: [],
         },
       ],
     },
-    AZ5TAtN5poY1sFC8CQEDKukTVaTP7itawDyHn3a1MtBq: {
+    '4zZq26rs1RRNTjwdwvbyZZAbRe3y2EykE2PtTne7suWB': {
       status: 'stable',
       name: 'cdm/product/common/settlement/metafields/ReferenceWithMetaPhysicalSettlementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AZ5TAtN5poY1sFC8CQEDKukTVaTP7itawDyHn3a1MtBq',
+          typeBlueId: '4zZq26rs1RRNTjwdwvbyZZAbRe3y2EykE2PtTne7suWB',
           attributesAdded: [],
         },
       ],
     },
-    '2SgkFqRu6tSRS1M4vnbT4GFgWFQXoGgkmpiYTmqafTNK': {
+    Dyqr7TA1HN5EcvzLV8Yzj2SDcBRhKaKqVGCBXkTfUDZZ: {
       status: 'stable',
       name: 'cdm/product/common/settlement/metafields/ReferenceWithMetaResolvablePriceQuantity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2SgkFqRu6tSRS1M4vnbT4GFgWFQXoGgkmpiYTmqafTNK',
+          typeBlueId: 'Dyqr7TA1HN5EcvzLV8Yzj2SDcBRhKaKqVGCBXkTfUDZZ',
           attributesAdded: [],
         },
       ],
     },
-    '2iax3ewikmufx2SGAqv9teMyfvSypMUiCfrvrNVxSRwy': {
+    DekzGsQAbNvqbqgomWQkf83asiULvd7vJKgEzRsTBfFf: {
       status: 'stable',
       name: 'cdm/product/common/settlement/PaymentDetail',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2iax3ewikmufx2SGAqv9teMyfvSypMUiCfrvrNVxSRwy',
+          typeBlueId: 'DekzGsQAbNvqbqgomWQkf83asiULvd7vJKgEzRsTBfFf',
           attributesAdded: [],
         },
       ],
     },
-    J8ZU2YWmzTrtbSkNs5DysuLN5tLJDjMJg7Ca32VEAQqW: {
+    '9dkTzBV6xqQ9LmULZCPBAZi5Afj3tZytwUtqXc1iccwt': {
       status: 'stable',
       name: 'cdm/product/common/settlement/PaymentDiscounting',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J8ZU2YWmzTrtbSkNs5DysuLN5tLJDjMJg7Ca32VEAQqW',
+          typeBlueId: '9dkTzBV6xqQ9LmULZCPBAZi5Afj3tZytwUtqXc1iccwt',
           attributesAdded: [],
         },
       ],
     },
-    N9dqrkkDsXewQqjzkzMPPFBSGpAGbdj5Nya3g9ZDPtp: {
+    '3YeAtbFamK5F5iKzyL3iNd6gFidd9BmNNPL6HqrJVqgu': {
       status: 'stable',
       name: 'cdm/product/common/settlement/PaymentRule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'N9dqrkkDsXewQqjzkzMPPFBSGpAGbdj5Nya3g9ZDPtp',
+          typeBlueId: '3YeAtbFamK5F5iKzyL3iNd6gFidd9BmNNPL6HqrJVqgu',
           attributesAdded: [],
         },
       ],
     },
-    AACYsunmjj2NwkmbQNtZGz6ucL362oYrJR4mWh7ADhqK: {
+    ARbkpkeADfYoKeiyty5x9mD3gRHk9537e2q8tBS1SrqM: {
       status: 'stable',
       name: 'cdm/product/common/settlement/PayoutBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AACYsunmjj2NwkmbQNtZGz6ucL362oYrJR4mWh7ADhqK',
+          typeBlueId: 'ARbkpkeADfYoKeiyty5x9mD3gRHk9537e2q8tBS1SrqM',
           attributesAdded: [],
         },
       ],
     },
-    DRkD8HVscRs6KUaFJvG9NfY3w4CcbbHbGTZjFrUtDL9Y: {
+    CfL1c8JN1WqjG49j7D1R5Sb4acqi6yrgcRdEo3jHGKMR: {
       status: 'stable',
       name: 'cdm/product/common/settlement/PCDeliverableObligationCharac',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DRkD8HVscRs6KUaFJvG9NfY3w4CcbbHbGTZjFrUtDL9Y',
+          typeBlueId: 'CfL1c8JN1WqjG49j7D1R5Sb4acqi6yrgcRdEo3jHGKMR',
           attributesAdded: [],
         },
       ],
     },
-    '4uSK8CTQBqbG69cx8nFuQsvcD7Weh5Dxu4368t6wLeZe': {
+    GqKSKHCa6D8xbrMJnRibPtb1dXGasKD1awv2Ubini8GT: {
       status: 'stable',
       name: 'cdm/product/common/settlement/PercentageRule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4uSK8CTQBqbG69cx8nFuQsvcD7Weh5Dxu4368t6wLeZe',
+          typeBlueId: 'GqKSKHCa6D8xbrMJnRibPtb1dXGasKD1awv2Ubini8GT',
           attributesAdded: [],
         },
       ],
     },
-    '3Z1haGAuv4YLmGkJjXiSsx5csxv4vCKiyoyVtNfbZ6Ww': {
+    CBd7ZWKAnVWWTwFSHphamHTzqi86dtsgpe4aNTpHVHMe: {
       status: 'stable',
       name: 'cdm/product/common/settlement/PhysicalSettlementPeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3Z1haGAuv4YLmGkJjXiSsx5csxv4vCKiyoyVtNfbZ6Ww',
+          typeBlueId: 'CBd7ZWKAnVWWTwFSHphamHTzqi86dtsgpe4aNTpHVHMe',
           attributesAdded: [],
         },
       ],
     },
-    E4Zcf9acqN6Mw1bpD2Joc5sWAQXChRtmorCBtr7tPWf3: {
+    '4HwR25LkwrYYmgCxQfJaEUfML14hfQADHRnF6nmUfUtR': {
       status: 'stable',
       name: 'cdm/product/common/settlement/PhysicalSettlementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E4Zcf9acqN6Mw1bpD2Joc5sWAQXChRtmorCBtr7tPWf3',
+          typeBlueId: '4HwR25LkwrYYmgCxQfJaEUfML14hfQADHRnF6nmUfUtR',
           attributesAdded: [],
         },
       ],
     },
-    ENR8ZMb3BXhAA9nevcEyKgFFFrZ2fgr7kuxCniYTsx1w: {
+    '2MAF9GVz5RtZKjkk4so3hxRXrU2WZSs92BQ1bUeT9CDa': {
       status: 'stable',
       name: 'cdm/product/common/settlement/PricingDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ENR8ZMb3BXhAA9nevcEyKgFFFrZ2fgr7kuxCniYTsx1w',
+          typeBlueId: '2MAF9GVz5RtZKjkk4so3hxRXrU2WZSs92BQ1bUeT9CDa',
           attributesAdded: [],
         },
       ],
     },
-    '9cWWHV5DRe4SuejnEf6PBEsFWjw5RA8u3n2yKvLwXzMS': {
+    '9XUMDnSJjmK5Kqp5BL268vZoXGmEQAMCFTKbJVVwuPbB': {
       status: 'stable',
       name: 'cdm/product/common/settlement/PrincipalPayment',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9cWWHV5DRe4SuejnEf6PBEsFWjw5RA8u3n2yKvLwXzMS',
+          typeBlueId: '9XUMDnSJjmK5Kqp5BL268vZoXGmEQAMCFTKbJVVwuPbB',
           attributesAdded: [],
         },
       ],
     },
-    '79fSZCgPXnnm5bsD9s4XCQXn5MaCb8UAVq6ybHFbLdpq': {
+    '8VsQE5PSzyWWApw5Ykfum97vLPNoa36BemLUMHimzMb5': {
       status: 'stable',
       name: 'cdm/product/common/settlement/PrincipalPayments',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '79fSZCgPXnnm5bsD9s4XCQXn5MaCb8UAVq6ybHFbLdpq',
+          typeBlueId: '8VsQE5PSzyWWApw5Ykfum97vLPNoa36BemLUMHimzMb5',
           attributesAdded: [],
         },
       ],
     },
-    '4FTqK6vYmEpdwWnDuD2EjcJ7sLWWdhgeB2duLV8aA5bC': {
+    Esmmz6HUDCJAgn44LSSCvC1CCKuZW9U22nKNF4fXwkjv: {
       status: 'stable',
       name: 'cdm/product/common/settlement/PrincipalPaymentSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4FTqK6vYmEpdwWnDuD2EjcJ7sLWWdhgeB2duLV8aA5bC',
+          typeBlueId: 'Esmmz6HUDCJAgn44LSSCvC1CCKuZW9U22nKNF4fXwkjv',
           attributesAdded: [],
         },
       ],
     },
-    '2yGhR6zH9SnskKV4Btr1vhB3CY3iuq5hAcGtRNAZWJK3': {
+    DJFB2Tj6nmeKEJudCnrcJLRjTfjdUDQDmosfijnNhHrg: {
       status: 'stable',
       name: 'cdm/product/common/settlement/QuantityMultiplier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2yGhR6zH9SnskKV4Btr1vhB3CY3iuq5hAcGtRNAZWJK3',
+          typeBlueId: 'DJFB2Tj6nmeKEJudCnrcJLRjTfjdUDQDmosfijnNhHrg',
           attributesAdded: [],
         },
       ],
     },
-    F4ihqR7D44ZpGGutb98mpsdE6QNtkrVZM4oiK6Vuzcsy: {
+    '7nSxNdghnPkGBbyqzqUELC5UcBMNfLdrCr4oXbav2d3J': {
       status: 'stable',
       name: 'cdm/product/common/settlement/ResolvablePriceQuantity',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F4ihqR7D44ZpGGutb98mpsdE6QNtkrVZM4oiK6Vuzcsy',
+          typeBlueId: '7nSxNdghnPkGBbyqzqUELC5UcBMNfLdrCr4oXbav2d3J',
           attributesAdded: [],
         },
       ],
     },
-    FnPP6UpBmzGuofUSjyTEcZkfz1AefAVsm79a4yyozJZS: {
+    '8egmsgTVVkTcqNTDUm9EaLcKVzmRTw5uiK4S3zrc88BH': {
       status: 'stable',
       name: 'cdm/product/common/settlement/RollFeature',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FnPP6UpBmzGuofUSjyTEcZkfz1AefAVsm79a4yyozJZS',
+          typeBlueId: '8egmsgTVVkTcqNTDUm9EaLcKVzmRTw5uiK4S3zrc88BH',
           attributesAdded: [],
         },
       ],
     },
-    H7iPS6CrsvGu1PXNutZkgqEEQDC4jBXCMGkL1Ku6TxLf: {
+    '9k43VLjjoSJbXKM7aCSjBTinwWFf8sRDogVJbsM2JjjR': {
       status: 'stable',
       name: 'cdm/product/common/settlement/ScheduledTransferEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H7iPS6CrsvGu1PXNutZkgqEEQDC4jBXCMGkL1Ku6TxLf',
+          typeBlueId: '9k43VLjjoSJbXKM7aCSjBTinwWFf8sRDogVJbsM2JjjR',
           attributesAdded: [],
         },
       ],
     },
-    eKGLgkZSes6kGqQ8XSphsvzmYrXGH8BYreDDqVQiE26: {
+    FRNg4ydc3F8rvwrqYRg8u7vigXiWiCjXAY9CFHc61QKA: {
       status: 'stable',
       name: 'cdm/product/common/settlement/SettlementBase',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'eKGLgkZSes6kGqQ8XSphsvzmYrXGH8BYreDDqVQiE26',
+          typeBlueId: 'FRNg4ydc3F8rvwrqYRg8u7vigXiWiCjXAY9CFHc61QKA',
           attributesAdded: [],
         },
       ],
     },
-    EdmhbyH7xsBGyqV7bbekHDFWNScUciKyPKEuEsTbVHam: {
+    '645oAr2atS3TekcTBduwAeUSH7aauAokbEg66ZLpz4YE': {
       status: 'stable',
       name: 'cdm/product/common/settlement/SettlementCentreEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EdmhbyH7xsBGyqV7bbekHDFWNScUciKyPKEuEsTbVHam',
+          typeBlueId: '645oAr2atS3TekcTBduwAeUSH7aauAokbEg66ZLpz4YE',
           attributesAdded: [],
         },
       ],
     },
-    BpU6xJSR2z5NwXmV5bD8YQ9JC6fwfmHdoqNcxYGeucmQ: {
+    '7Q5F1XxXtAWfQfrSL8T366Bz2JLxc3qFWWnR7Xazhgvx': {
       status: 'stable',
       name: 'cdm/product/common/settlement/SettlementDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BpU6xJSR2z5NwXmV5bD8YQ9JC6fwfmHdoqNcxYGeucmQ',
+          typeBlueId: '7Q5F1XxXtAWfQfrSL8T366Bz2JLxc3qFWWnR7Xazhgvx',
           attributesAdded: [],
         },
       ],
     },
-    '4ZRat5NKcUmJRnQwyF3q1SUzsaJbhHUXrEPGq7p8SRcj': {
+    wNGmmHNkPh47VcmdJFAFyWS5mS1W5PvRW9UW2h3YWFW: {
       status: 'stable',
       name: 'cdm/product/common/settlement/SettlementProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4ZRat5NKcUmJRnQwyF3q1SUzsaJbhHUXrEPGq7p8SRcj',
+          typeBlueId: 'wNGmmHNkPh47VcmdJFAFyWS5mS1W5PvRW9UW2h3YWFW',
           attributesAdded: [],
         },
       ],
     },
-    '7zkmbj4175pTZ3exYCBnCyVdiSaAT2SEfkxhDTus8iLY': {
+    '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m': {
       status: 'stable',
       name: 'cdm/product/common/settlement/SettlementTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7zkmbj4175pTZ3exYCBnCyVdiSaAT2SEfkxhDTus8iLY',
+          typeBlueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
           attributesAdded: [],
         },
       ],
     },
-    '6PaHnEA3rYitZ2JKHenwQog3g7ZAfxruJMGQcpWCEDFK': {
+    '796x89gqZi8yLKhDwKArGYcCuCbixQw7PQhuDpancqMn': {
       status: 'stable',
       name: 'cdm/product/common/settlement/SettlementTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6PaHnEA3rYitZ2JKHenwQog3g7ZAfxruJMGQcpWCEDFK',
+          typeBlueId: '796x89gqZi8yLKhDwKArGYcCuCbixQw7PQhuDpancqMn',
           attributesAdded: [],
         },
       ],
     },
-    '6ujxkamD9qS94hfxbcFpvQanjfpKtgYotribjwqvMsL': {
+    '3fNfpR7yecM7ZSSL3mC6i4VWFehcFtvJ1FFQd1SsATpi': {
       status: 'stable',
       name: 'cdm/product/common/settlement/ShapingProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ujxkamD9qS94hfxbcFpvQanjfpKtgYotribjwqvMsL',
+          typeBlueId: '3fNfpR7yecM7ZSSL3mC6i4VWFehcFtvJ1FFQd1SsATpi',
           attributesAdded: [],
         },
       ],
     },
-    '7YFjahYdHYHERXt79M9mLJ1qKNxQPm89ieLFXUZ2KcwA': {
+    '3gvWJxrxUUD4bdYMUZb5GWjJwHqshsA9ncx7VngcWSQG': {
       status: 'stable',
       name: 'cdm/product/common/settlement/StandardSettlementStyleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7YFjahYdHYHERXt79M9mLJ1qKNxQPm89ieLFXUZ2KcwA',
+          typeBlueId: '3gvWJxrxUUD4bdYMUZb5GWjJwHqshsA9ncx7VngcWSQG',
           attributesAdded: [],
         },
       ],
     },
-    Dh5YZ8UboebnzAaX4XPDYtGbPzNfaHDzsrZX9Nocp8CM: {
+    BSQDJMfPWXBaqWYWPJCUYYLzftmLKsUbi3EyLhuh7Mr1: {
       status: 'stable',
       name: 'cdm/product/common/settlement/TransferSettlementEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Dh5YZ8UboebnzAaX4XPDYtGbPzNfaHDzsrZX9Nocp8CM',
+          typeBlueId: 'BSQDJMfPWXBaqWYWPJCUYYLzftmLKsUbi3EyLhuh7Mr1',
           attributesAdded: [],
         },
       ],
     },
-    '3FPEtqo9ZEbsCjRxeVSxiRbvCVP9ZM2mJRpkmc7uyEvM': {
+    Ec6MmK2TGnYoMytTLHEDcnQGwA2y427JhgfBex5P61Ax: {
       status: 'stable',
       name: 'cdm/product/common/settlement/ValuationDate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3FPEtqo9ZEbsCjRxeVSxiRbvCVP9ZM2mJRpkmc7uyEvM',
+          typeBlueId: 'Ec6MmK2TGnYoMytTLHEDcnQGwA2y427JhgfBex5P61Ax',
           attributesAdded: [],
         },
       ],
     },
-    H5B7PvZ4UumP4QHzn5bVRpT2DxM3Cu8De5f9wQwrZZ13: {
+    '5NmgrQaeHqWvPdpEvNrGu7kkR4UF38A8c7p9tVrF1G41': {
       status: 'stable',
       name: 'cdm/product/template/Asian',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H5B7PvZ4UumP4QHzn5bVRpT2DxM3Cu8De5f9wQwrZZ13',
+          typeBlueId: '5NmgrQaeHqWvPdpEvNrGu7kkR4UF38A8c7p9tVrF1G41',
           attributesAdded: [],
         },
       ],
     },
-    HXa76EzxhXAHLP3yM8iCLC171STC5PBQPhnX4ghaUW4g: {
+    '4xmZ7ro4SjPB1Qqi1VDv8EsMmJHKedpeQsvvYum9u8Sn': {
       status: 'stable',
       name: 'cdm/product/template/AssetLeg',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HXa76EzxhXAHLP3yM8iCLC171STC5PBQPhnX4ghaUW4g',
+          typeBlueId: '4xmZ7ro4SjPB1Qqi1VDv8EsMmJHKedpeQsvvYum9u8Sn',
           attributesAdded: [],
         },
       ],
     },
-    '4CuK7zsyx6DKDM2yuq991XfZ1PC48uiEZFZNsp1F4tMZ': {
+    CaDUz9AY1EXhFRYQN73HdC98mAe18bh4BxACMShr4JNB: {
       status: 'stable',
       name: 'cdm/product/template/AssetPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4CuK7zsyx6DKDM2yuq991XfZ1PC48uiEZFZNsp1F4tMZ',
+          typeBlueId: 'CaDUz9AY1EXhFRYQN73HdC98mAe18bh4BxACMShr4JNB',
           attributesAdded: [],
         },
       ],
     },
-    H9K4V7vLZdWh8Vfqst6t9NiRAX6Ho6M8oZqFtojWhczK: {
+    '8X2WFbGTFXVbc8c7DytjqFNpyyEVGtXoNV8b14t6tRsk': {
       status: 'stable',
       name: 'cdm/product/template/AssetPayoutTradeTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H9K4V7vLZdWh8Vfqst6t9NiRAX6Ho6M8oZqFtojWhczK',
+          typeBlueId: '8X2WFbGTFXVbc8c7DytjqFNpyyEVGtXoNV8b14t6tRsk',
           attributesAdded: [],
         },
       ],
     },
-    '7JsYEgXkXn7dqsmdqpe5ABe62ZQGPbkU5NSp8dTwtLAA': {
+    '6fnDZS1zqAsqg6ScqF5Y7LEwCWQtuBpB621ZXfC9ocuy': {
       status: 'stable',
       name: 'cdm/product/template/AutomaticExercise',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7JsYEgXkXn7dqsmdqpe5ABe62ZQGPbkU5NSp8dTwtLAA',
+          typeBlueId: '6fnDZS1zqAsqg6ScqF5Y7LEwCWQtuBpB621ZXfC9ocuy',
           attributesAdded: [],
         },
       ],
     },
-    DgMT9GvGPfVpoxATLX7UH2QtPrCD7csg3P5rdgiQxAUg: {
+    G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ: {
       status: 'stable',
       name: 'cdm/product/template/AveragingCalculation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DgMT9GvGPfVpoxATLX7UH2QtPrCD7csg3P5rdgiQxAUg',
+          typeBlueId: 'G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ',
           attributesAdded: [],
         },
       ],
     },
-    '7TNdG2Z7nw9MPJJnRN9AWntYxxBDXatd9BRy86A9zjep': {
+    Bp5wh9hxR98RaErYfLT3GHtCA5Z4HjFmNg4EABQ26PAc: {
       status: 'stable',
       name: 'cdm/product/template/AveragingInOutEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7TNdG2Z7nw9MPJJnRN9AWntYxxBDXatd9BRy86A9zjep',
+          typeBlueId: 'Bp5wh9hxR98RaErYfLT3GHtCA5Z4HjFmNg4EABQ26PAc',
           attributesAdded: [],
         },
       ],
     },
-    '2ivieRnuYvgJa1vamkzsA1moey8Co6QwbcHzZLJtw432': {
+    HxYQ9z6xDVRw63wB5M3kiknebJ9fvTEFsXwtbJPtXRRD: {
       status: 'stable',
       name: 'cdm/product/template/AveragingStrikeFeature',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2ivieRnuYvgJa1vamkzsA1moey8Co6QwbcHzZLJtw432',
+          typeBlueId: 'HxYQ9z6xDVRw63wB5M3kiknebJ9fvTEFsXwtbJPtXRRD',
           attributesAdded: [],
         },
       ],
     },
-    BEbFVsDjqqvf3dVeshgGzf9rW4xPdk4DnECxRAcKSJ3M: {
+    BY44nAmZ3yv6hAhiK1EG57TXEZNquFC8QoiMLUBELm2h: {
       status: 'stable',
       name: 'cdm/product/template/Barrier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BEbFVsDjqqvf3dVeshgGzf9rW4xPdk4DnECxRAcKSJ3M',
+          typeBlueId: 'BY44nAmZ3yv6hAhiK1EG57TXEZNquFC8QoiMLUBELm2h',
           attributesAdded: [],
         },
       ],
     },
-    '4W1R4RHyg7dDwmQXUBPtdq2118vcYaxmhXXpAsyJ45iG': {
+    GbAmo8bxznHkBwFWFP6JMXCQEsWMyu9iKFV2KtBqH1rP: {
       status: 'stable',
       name: 'cdm/product/template/CalculationSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4W1R4RHyg7dDwmQXUBPtdq2118vcYaxmhXXpAsyJ45iG',
+          typeBlueId: 'GbAmo8bxznHkBwFWFP6JMXCQEsWMyu9iKFV2KtBqH1rP',
           attributesAdded: [],
         },
       ],
     },
-    '5BRV3dENe3YELEAA7xMEUBRjjigptKH5g74xXLVJzSQt': {
+    Be5gaN5HPKz2EcJiToRx6MH2goHMeGvXvwQWamg73gYh: {
       status: 'stable',
       name: 'cdm/product/template/CalendarSpread',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5BRV3dENe3YELEAA7xMEUBRjjigptKH5g74xXLVJzSQt',
+          typeBlueId: 'Be5gaN5HPKz2EcJiToRx6MH2goHMeGvXvwQWamg73gYh',
           attributesAdded: [],
         },
       ],
     },
-    '7JgCzWgxDq22P8AyrrUkykevhpTvXY5s46gDXHG4aBwP': {
+    HvCMubnrJNvp3fupXZTsjTSXTE6Hx1m47cYMbRkQVWRQ: {
       status: 'stable',
       name: 'cdm/product/template/CallingPartyEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7JgCzWgxDq22P8AyrrUkykevhpTvXY5s46gDXHG4aBwP',
+          typeBlueId: 'HvCMubnrJNvp3fupXZTsjTSXTE6Hx1m47cYMbRkQVWRQ',
           attributesAdded: [],
         },
       ],
     },
-    CmrgcyG3eBXu1VywrDkV1pqtQ2sRfaYXfDqFSuPDN6Qh: {
+    sVFMtj5ZT137eKRyfVL1QifzgJDfQ2Jcm4PkY5CVWd5: {
       status: 'stable',
       name: 'cdm/product/template/CancelableProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CmrgcyG3eBXu1VywrDkV1pqtQ2sRfaYXfDqFSuPDN6Qh',
+          typeBlueId: 'sVFMtj5ZT137eKRyfVL1QifzgJDfQ2Jcm4PkY5CVWd5',
           attributesAdded: [],
         },
       ],
     },
-    '5bwTE9f1nJUBqj4vqvFo7c4i18afULFEC5FeQM5nzXkr': {
+    CDsiMFyUmtAL1XNKLh9LcCjvCTRpiHNkgWZs3PvwAQYZ: {
       status: 'stable',
       name: 'cdm/product/template/CancelableProvisionAdjustedDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5bwTE9f1nJUBqj4vqvFo7c4i18afULFEC5FeQM5nzXkr',
+          typeBlueId: 'CDsiMFyUmtAL1XNKLh9LcCjvCTRpiHNkgWZs3PvwAQYZ',
           attributesAdded: [],
         },
       ],
     },
-    '6eP5udkrBCHMkFQYgYuVDdkQys7PjPXJzCoczGrwv5G1': {
+    GqYrmY5dMSWXRFKtVLctnrBGJy893E8Gbj3pe5kFN7w: {
       status: 'stable',
       name: 'cdm/product/template/CancellationEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6eP5udkrBCHMkFQYgYuVDdkQys7PjPXJzCoczGrwv5G1',
+          typeBlueId: 'GqYrmY5dMSWXRFKtVLctnrBGJy893E8Gbj3pe5kFN7w',
           attributesAdded: [],
         },
       ],
     },
-    BujYvKmwMpKf1xPsjKG4tarjNAHNuBDrzcS9MthAgsXw: {
+    DCnYs1WEp3CCC7chsbsbVHV4Z3Lc4szZSdG7Cp5A3DfU: {
       status: 'stable',
       name: 'cdm/product/template/Composite',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BujYvKmwMpKf1xPsjKG4tarjNAHNuBDrzcS9MthAgsXw',
+          typeBlueId: 'DCnYs1WEp3CCC7chsbsbVHV4Z3Lc4szZSdG7Cp5A3DfU',
           attributesAdded: [],
         },
       ],
     },
-    AfmdCkcHzUmPq2oxE9uum8nnnL5nm62GZ5s2wsr1oobp: {
+    '6eYoofdAibUdi9DT8tvNo7PNJF1DxZcM4UrQwinBs3mk': {
       status: 'stable',
       name: 'cdm/product/template/ConstituentWeight',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AfmdCkcHzUmPq2oxE9uum8nnnL5nm62GZ5s2wsr1oobp',
+          typeBlueId: '6eYoofdAibUdi9DT8tvNo7PNJF1DxZcM4UrQwinBs3mk',
           attributesAdded: [],
         },
       ],
     },
-    GWSnFb8ZSatiW9mUTcxJWEZCkQ5KmTdEqcJ45uRZ1P81: {
+    J4xjdbvJ317WkqdXSfzxaATEcgGQkHQ7btViXDULfhK5: {
       status: 'stable',
       name: 'cdm/product/template/DividendTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GWSnFb8ZSatiW9mUTcxJWEZCkQ5KmTdEqcJ45uRZ1P81',
+          typeBlueId: 'J4xjdbvJ317WkqdXSfzxaATEcgGQkHQ7btViXDULfhK5',
           attributesAdded: [],
         },
       ],
     },
-    '4n5WuJ3pxb3PuTwkKoXzfT7yaA7CeDwExT7qkMjxU8eb': {
+    '3wSwzEEsW9wqLsvHavDA1EwFMzMefG38hhcM1BgdrLr9': {
       status: 'stable',
       name: 'cdm/product/template/EarlyTerminationEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4n5WuJ3pxb3PuTwkKoXzfT7yaA7CeDwExT7qkMjxU8eb',
+          typeBlueId: '3wSwzEEsW9wqLsvHavDA1EwFMzMefG38hhcM1BgdrLr9',
           attributesAdded: [],
         },
       ],
     },
-    ATdAeszcXw1uFWsWdnzsyBx1vs22fznFDA5f664ZSGnW: {
+    '9K4QJAeRZGFPrjmc6aqWztkSzi2pqrKf43HC1nEtwp46': {
       status: 'stable',
       name: 'cdm/product/template/EarlyTerminationProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ATdAeszcXw1uFWsWdnzsyBx1vs22fznFDA5f664ZSGnW',
+          typeBlueId: '9K4QJAeRZGFPrjmc6aqWztkSzi2pqrKf43HC1nEtwp46',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#4': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#6': {
       status: 'stable',
       name: 'cdm/product/template/EconomicTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#4',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#6',
           attributesAdded: [],
         },
       ],
     },
-    HRvhJg5k7JKhCKUjPBe3dA2sJs8mUa8XXAKisLbesC3m: {
+    CMm4iPYPHqRhURXoiwZTTM4mvuLvUGKoBVRb6e2NhZEa: {
       status: 'stable',
       name: 'cdm/product/template/EvergreenProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HRvhJg5k7JKhCKUjPBe3dA2sJs8mUa8XXAKisLbesC3m',
+          typeBlueId: 'CMm4iPYPHqRhURXoiwZTTM4mvuLvUGKoBVRb6e2NhZEa',
           attributesAdded: [],
         },
       ],
     },
-    HvQDymCJPSYfbPyJRe3bcnP2z9wwXwLNLr39Fe2JNjXK: {
+    '287wM7CqpP1RTW7bu4j4pUa7QdEuXGE6E186mu2bhovh': {
       status: 'stable',
       name: 'cdm/product/template/ExerciseFee',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HvQDymCJPSYfbPyJRe3bcnP2z9wwXwLNLr39Fe2JNjXK',
+          typeBlueId: '287wM7CqpP1RTW7bu4j4pUa7QdEuXGE6E186mu2bhovh',
           attributesAdded: [],
         },
       ],
     },
-    HHomVWgkz7HLWPaQxw8dHHS3rvajLUUT7cGBX398BLaw: {
+    '5tK1F6AqKSKAHYjvgz5cGCNx6EQGZTimozK4y9mc1wWx': {
       status: 'stable',
       name: 'cdm/product/template/ExerciseFeeSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HHomVWgkz7HLWPaQxw8dHHS3rvajLUUT7cGBX398BLaw',
+          typeBlueId: '5tK1F6AqKSKAHYjvgz5cGCNx6EQGZTimozK4y9mc1wWx',
           attributesAdded: [],
         },
       ],
     },
-    DRzHnd5fFvvt3FAGunPM7qFcwB1KgFPJn8D7zyBankMz: {
+    JC1AzddnU2E4ioTzwsgW9ohgnrfpQQusp6hRq412YjUZ: {
       status: 'stable',
       name: 'cdm/product/template/ExerciseNotice',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DRzHnd5fFvvt3FAGunPM7qFcwB1KgFPJn8D7zyBankMz',
+          typeBlueId: 'JC1AzddnU2E4ioTzwsgW9ohgnrfpQQusp6hRq412YjUZ',
           attributesAdded: [],
         },
       ],
     },
-    '12Vk9Vr4K8mMX1W8Wzr5LhciVWUSW5eLT6swkA7rmYQF': {
+    B1vhPUsx48HVhqzgCrbzrCdTrzUxEiaHYjyp5gsErLd9: {
       status: 'stable',
       name: 'cdm/product/template/ExerciseNoticeGiverEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '12Vk9Vr4K8mMX1W8Wzr5LhciVWUSW5eLT6swkA7rmYQF',
+          typeBlueId: 'B1vhPUsx48HVhqzgCrbzrCdTrzUxEiaHYjyp5gsErLd9',
           attributesAdded: [],
         },
       ],
     },
-    FKfCuPahjxDovRJtwwh6TYBHD86Z1mi3jBbEP6dW91gZ: {
+    HUVjH3KGpFwoVaPyrgN35iMi95ckgPM1rjoMfUvcfmNe: {
       status: 'stable',
       name: 'cdm/product/template/ExercisePeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FKfCuPahjxDovRJtwwh6TYBHD86Z1mi3jBbEP6dW91gZ',
+          typeBlueId: 'HUVjH3KGpFwoVaPyrgN35iMi95ckgPM1rjoMfUvcfmNe',
           attributesAdded: [],
         },
       ],
     },
-    '9z3w1uRxwTdjEC98TsWyE2nFgxyAzTrvZBEBQiHUqoUp': {
+    G7wUufVEcg9HCHxDMWdxfs1AaqKxx29vqAa8aBEKkQ8Q: {
       status: 'stable',
       name: 'cdm/product/template/ExerciseProcedure',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9z3w1uRxwTdjEC98TsWyE2nFgxyAzTrvZBEBQiHUqoUp',
+          typeBlueId: 'G7wUufVEcg9HCHxDMWdxfs1AaqKxx29vqAa8aBEKkQ8Q',
           attributesAdded: [],
         },
       ],
     },
-    Chheuq1dPEWCj7bsdGkRo52qY4nscUb7oURn3FKrqFtS: {
+    J1G2hQLDGZ1gu2re4Z6NCNRA3Ze9S9LM51pbnxyzozLq: {
       status: 'stable',
       name: 'cdm/product/template/ExerciseTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Chheuq1dPEWCj7bsdGkRo52qY4nscUb7oURn3FKrqFtS',
+          typeBlueId: 'J1G2hQLDGZ1gu2re4Z6NCNRA3Ze9S9LM51pbnxyzozLq',
           attributesAdded: [],
         },
       ],
     },
-    '41zKqJF8nsUVGAhnPCpFjsuqNBTNH75h3UWaZJQ1duMg': {
+    '2LeVjwPpBKrVtg3zHwoBYJoNvx1Hset4WEYcxiPcPMxA': {
       status: 'stable',
       name: 'cdm/product/template/ExpirationTimeTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '41zKqJF8nsUVGAhnPCpFjsuqNBTNH75h3UWaZJQ1duMg',
+          typeBlueId: '2LeVjwPpBKrVtg3zHwoBYJoNvx1Hset4WEYcxiPcPMxA',
           attributesAdded: [],
         },
       ],
     },
-    X7icfoV6dj3szD5tQnt8vHJD7WqBQ86TXpN5cDpvPu7: {
+    '8g6Aj993L9mK5RLmqSBfVURYxXXrLK1LeswPCY4wBeSe': {
       status: 'stable',
       name: 'cdm/product/template/ExtendibleProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'X7icfoV6dj3szD5tQnt8vHJD7WqBQ86TXpN5cDpvPu7',
+          typeBlueId: '8g6Aj993L9mK5RLmqSBfVURYxXXrLK1LeswPCY4wBeSe',
           attributesAdded: [],
         },
       ],
     },
-    '4YkGkyxKKm3k8Cp3fDdgnjWyruPT4JUACTFh2tkSUy3Q': {
+    DQQrQuJKE7UsmUgxYPbLeQ8cKAW52kt3TeHJBj752tYF: {
       status: 'stable',
       name: 'cdm/product/template/ExtendibleProvisionAdjustedDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4YkGkyxKKm3k8Cp3fDdgnjWyruPT4JUACTFh2tkSUy3Q',
+          typeBlueId: 'DQQrQuJKE7UsmUgxYPbLeQ8cKAW52kt3TeHJBj752tYF',
           attributesAdded: [],
         },
       ],
     },
-    '6egBPp2kV6N2Nsr2wJ4x1cygyeyacb8ybmRmite4dDKm': {
+    '7kPFEKFtejzTGGDA1frQXvH2u9EU6WsGUUqNESpNkKVH': {
       status: 'stable',
       name: 'cdm/product/template/ExtensionEvent',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6egBPp2kV6N2Nsr2wJ4x1cygyeyacb8ybmRmite4dDKm',
+          typeBlueId: '7kPFEKFtejzTGGDA1frQXvH2u9EU6WsGUUqNESpNkKVH',
           attributesAdded: [],
         },
       ],
     },
-    '6ZDCQKZdsUezXkYv4TiQ9upHiNBjJ7MQMpjtwK64HMf2': {
+    HGZMKY1yoBjBujWhaTqwBYYsw3GkD4w8Wc9G6D6nrDaa: {
       status: 'stable',
       name: 'cdm/product/template/FixedPricePayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ZDCQKZdsUezXkYv4TiQ9upHiNBjJ7MQMpjtwK64HMf2',
+          typeBlueId: 'HGZMKY1yoBjBujWhaTqwBYYsw3GkD4w8Wc9G6D6nrDaa',
           attributesAdded: [],
         },
       ],
     },
-    '4vFVJ5RzFY4D7trKTFXSjcQJv9vQk2V1fzpSsA4MHF3u': {
+    HPRsaReKQuhsZQyFweRGJshuiWo9hd1r6CsmkM6iPQnN: {
       status: 'stable',
       name: 'cdm/product/template/FxFeature',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4vFVJ5RzFY4D7trKTFXSjcQJv9vQk2V1fzpSsA4MHF3u',
+          typeBlueId: 'HPRsaReKQuhsZQyFweRGJshuiWo9hd1r6CsmkM6iPQnN',
           attributesAdded: [],
         },
       ],
     },
-    CL3hBXyGabfmMpYHcZYWQxP93Xs1YFHL6AcsrLfzFqtB: {
+    '6BETyPG5V4U1TUp5rVWo3V4V47SDx9g18ekbAAYhpp4U': {
       status: 'stable',
       name: 'cdm/product/template/Knock',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CL3hBXyGabfmMpYHcZYWQxP93Xs1YFHL6AcsrLfzFqtB',
+          typeBlueId: '6BETyPG5V4U1TUp5rVWo3V4V47SDx9g18ekbAAYhpp4U',
           attributesAdded: [],
         },
       ],
     },
-    '3Wj1feGDTKdrryudkfw1ks2dViWQTUZT7ef7RbJ2a2w9': {
+    C6BHM5uzagsmiKxWqshqYj8ZhE13jTZuXKcAaJG5Lbsh: {
       status: 'stable',
       name: 'cdm/product/template/MandatoryEarlyTermination',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3Wj1feGDTKdrryudkfw1ks2dViWQTUZT7ef7RbJ2a2w9',
+          typeBlueId: 'C6BHM5uzagsmiKxWqshqYj8ZhE13jTZuXKcAaJG5Lbsh',
           attributesAdded: [],
         },
       ],
     },
-    '5rLfe9XaZJN6C7Emyi4zRZrov1SdCdCb8wmVVLRNhwEo': {
+    ENSK1BSQZtUz73JC51Ww2axF9BMWqhkBEE9AzutJiqoH: {
       status: 'stable',
       name: 'cdm/product/template/MandatoryEarlyTerminationAdjustedDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5rLfe9XaZJN6C7Emyi4zRZrov1SdCdCb8wmVVLRNhwEo',
+          typeBlueId: 'ENSK1BSQZtUz73JC51Ww2axF9BMWqhkBEE9AzutJiqoH',
           attributesAdded: [],
         },
       ],
     },
-    '2N8WqdA3bWZaDeAy5nB7wit1jTvBeB4gLKqwL2dDqu4a': {
+    '2PgTgt4qH9bmia6Zfzyn13BPBa6T1NX5cpy1x7F86H9N': {
       status: 'stable',
       name: 'cdm/product/template/ManualExercise',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2N8WqdA3bWZaDeAy5nB7wit1jTvBeB4gLKqwL2dDqu4a',
+          typeBlueId: '2PgTgt4qH9bmia6Zfzyn13BPBa6T1NX5cpy1x7F86H9N',
           attributesAdded: [],
         },
       ],
     },
-    '7KrSJK8LLai4ZexQz5d8ZSJSE3qocTA5XDmz3i9UNJe2': {
+    FaWYhMbHHgHX1o1pCiT3R4zJ8b5g9ywJSEChRJD9m3hL: {
       status: 'stable',
       name: 'cdm/product/template/MarginTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7KrSJK8LLai4ZexQz5d8ZSJSE3qocTA5XDmz3i9UNJe2',
+          typeBlueId: 'FaWYhMbHHgHX1o1pCiT3R4zJ8b5g9ywJSEChRJD9m3hL',
           attributesAdded: [],
         },
       ],
     },
-    G3CzbfYpxoJLYRFaNem1FoCEK8YU8gE9Xy8ESCNoAr5e: {
+    E8kNFVq5rjJaDyLo4StMphfzm1hmN8457CXWNFQVj2iH: {
       status: 'stable',
       name: 'cdm/product/template/metafields/ReferenceWithMetaOptionPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G3CzbfYpxoJLYRFaNem1FoCEK8YU8gE9Xy8ESCNoAr5e',
+          typeBlueId: 'E8kNFVq5rjJaDyLo4StMphfzm1hmN8457CXWNFQVj2iH',
           attributesAdded: [],
         },
       ],
     },
-    '529d4eeRPqjy1E5t4zWJpWVA2HKzpHHLCXrsg3D3pMZQ': {
+    B5Jakr9Bd7eaMZzThRtLAaP1ZnjC3yngwZjL4GXVZW7P: {
       status: 'stable',
       name: 'cdm/product/template/metafields/ReferenceWithMetaPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '529d4eeRPqjy1E5t4zWJpWVA2HKzpHHLCXrsg3D3pMZQ',
+          typeBlueId: 'B5Jakr9Bd7eaMZzThRtLAaP1ZnjC3yngwZjL4GXVZW7P',
           attributesAdded: [],
         },
       ],
     },
-    Ga3XHeXbo3fH52RQovQsWvQ4WdEQTmW3YJFW4w9QRjqE: {
+    '8eLP8HxgpSvj1vyxDJXMhDpMcQU696aKo5Uvz1mt9Q1S': {
       status: 'stable',
       name: 'cdm/product/template/MultipleExercise',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ga3XHeXbo3fH52RQovQsWvQ4WdEQTmW3YJFW4w9QRjqE',
+          typeBlueId: '8eLP8HxgpSvj1vyxDJXMhDpMcQU696aKo5Uvz1mt9Q1S',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#2': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4': {
       status: 'stable',
       name: 'cdm/product/template/NonTransferableProduct',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#2',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4',
           attributesAdded: [],
         },
       ],
     },
-    '6r9HC6aEvzHgbMXoGSQrFYX4t5gd7479xixcJs4h3ot1': {
+    '9qZESRoTw3JVrvChnNta2oj5TcTb7RV9ijcSRtnuCQvs': {
       status: 'stable',
       name: 'cdm/product/template/OptionalEarlyTermination',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6r9HC6aEvzHgbMXoGSQrFYX4t5gd7479xixcJs4h3ot1',
+          typeBlueId: '9qZESRoTw3JVrvChnNta2oj5TcTb7RV9ijcSRtnuCQvs',
           attributesAdded: [],
         },
       ],
     },
-    '3pSmHpeb9yUjkpUmFmAS4nUVy9QvuKFFwPLxuN8Yjv7W': {
+    GjM8odwxuvdr9Y58M4jULKzxi93AmZuKSFfkTFsJ7cYx: {
       status: 'stable',
       name: 'cdm/product/template/OptionalEarlyTerminationAdjustedDates',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3pSmHpeb9yUjkpUmFmAS4nUVy9QvuKFFwPLxuN8Yjv7W',
+          typeBlueId: 'GjM8odwxuvdr9Y58M4jULKzxi93AmZuKSFfkTFsJ7cYx',
           attributesAdded: [],
         },
       ],
     },
-    E4R8utNSd78UCdxdMrishhhpVuyncUtJGCKUfNBVnBqu: {
+    E7G8rbJWZbrsWYs4MwRaciyoqUH3qB2cKFMgynJ8Jide: {
       status: 'stable',
       name: 'cdm/product/template/OptionExerciseStyleEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E4R8utNSd78UCdxdMrishhhpVuyncUtJGCKUfNBVnBqu',
+          typeBlueId: 'E7G8rbJWZbrsWYs4MwRaciyoqUH3qB2cKFMgynJ8Jide',
           attributesAdded: [],
         },
       ],
     },
-    JDGRPFj4wNXyhxtXXFrhaCacWSCaiZeP3YHSLDZxPpj1: {
+    iFRGjqPC6ijQF491otn9biLkPW4na25mmZ7gGtFn2Fj: {
       status: 'stable',
       name: 'cdm/product/template/OptionFeature',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'JDGRPFj4wNXyhxtXXFrhaCacWSCaiZeP3YHSLDZxPpj1',
+          typeBlueId: 'iFRGjqPC6ijQF491otn9biLkPW4na25mmZ7gGtFn2Fj',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#7': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#7': {
       status: 'stable',
       name: 'cdm/product/template/OptionPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#7',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#7',
           attributesAdded: [],
         },
       ],
     },
-    Ah265ohZqxFXsWTp62UC3yWMvZAwGymx5y9Hu55yG4MN: {
+    '2dSkgwb8hLPVxQFwzcY81Rz3doMpbjGnxxouhx3k8wJ2': {
       status: 'stable',
       name: 'cdm/product/template/OptionStrike',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ah265ohZqxFXsWTp62UC3yWMvZAwGymx5y9Hu55yG4MN',
+          typeBlueId: '2dSkgwb8hLPVxQFwzcY81Rz3doMpbjGnxxouhx3k8wJ2',
           attributesAdded: [],
         },
       ],
     },
-    J4ZdDBZPY9VTNearpD8S9gntq7sM6egJXSCgbUSuBopC: {
+    '8ErhA2L9qAVdWjMVzZuXRSZDWRC2HdhAZCUsa4qbaya4': {
       status: 'stable',
       name: 'cdm/product/template/OptionTypeEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J4ZdDBZPY9VTNearpD8S9gntq7sM6egJXSCgbUSuBopC',
+          typeBlueId: '8ErhA2L9qAVdWjMVzZuXRSZDWRC2HdhAZCUsa4qbaya4',
           attributesAdded: [],
         },
       ],
     },
-    '3DEqhNWWEiUQB1fLiPm2kEPVVpQNPPb4ygac1EcsPw5C': {
+    BpdSpKc8R5gAnDZQF7eJYbRNetxpvv1r1XSY9dh1LTaC: {
       status: 'stable',
       name: 'cdm/product/template/PartialExercise',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3DEqhNWWEiUQB1fLiPm2kEPVVpQNPPb4ygac1EcsPw5C',
+          typeBlueId: 'BpdSpKc8R5gAnDZQF7eJYbRNetxpvv1r1XSY9dh1LTaC',
           attributesAdded: [],
         },
       ],
     },
-    '4d4qPzCq4LAzZkhP87mw5hoXewnyCnGKrdjgtMcZYXWc': {
+    '48DkPx7UNHrRug36JutQfuqHBiEgcCS2XZiEbFZ4xi4q': {
       status: 'stable',
       name: 'cdm/product/template/PassThrough',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4d4qPzCq4LAzZkhP87mw5hoXewnyCnGKrdjgtMcZYXWc',
+          typeBlueId: '48DkPx7UNHrRug36JutQfuqHBiEgcCS2XZiEbFZ4xi4q',
           attributesAdded: [],
         },
       ],
     },
-    Hqwa8X7pvMZZRLdwwa5Cj15xwqMknn63xJyvR4RdpXvF: {
+    '6NM4Yn28gaQ8DzULANDLBBiyvCGXsVB8yFf3ZfqfPgCJ': {
       status: 'stable',
       name: 'cdm/product/template/PassThroughItem',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hqwa8X7pvMZZRLdwwa5Cj15xwqMknn63xJyvR4RdpXvF',
+          typeBlueId: '6NM4Yn28gaQ8DzULANDLBBiyvCGXsVB8yFf3ZfqfPgCJ',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#3': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#9': {
       status: 'stable',
       name: 'cdm/product/template/Payout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#3',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#9',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#1': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#1': {
       status: 'stable',
       name: 'cdm/product/template/PerformancePayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#1',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#1',
           attributesAdded: [],
         },
       ],
     },
-    C2yrjwk7TcgoNvD5fnRnG7esNmaqnM1fKRrGAGhNBewD: {
+    E51UFE2FEkY3QMB4wW2zNBSjHwzSoUThQsP37iRWRLuD: {
       status: 'stable',
       name: 'cdm/product/template/PortfolioReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'C2yrjwk7TcgoNvD5fnRnG7esNmaqnM1fKRrGAGhNBewD',
+          typeBlueId: 'E51UFE2FEkY3QMB4wW2zNBSjHwzSoUThQsP37iRWRLuD',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#0': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#0': {
       status: 'stable',
       name: 'cdm/product/template/Product',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#0',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#0',
           attributesAdded: [],
         },
       ],
     },
-    FP3Z6B5EZbM6cJbRUXnbPHiNqwLhR5XncUa3C9U1okK5: {
+    Hkq47ArK1FdesDuspFiSZKL2AMTNWMyH2tNfymLamXvR: {
       status: 'stable',
       name: 'cdm/product/template/Quanto',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FP3Z6B5EZbM6cJbRUXnbPHiNqwLhR5XncUa3C9U1okK5',
+          typeBlueId: 'Hkq47ArK1FdesDuspFiSZKL2AMTNWMyH2tNfymLamXvR',
           attributesAdded: [],
         },
       ],
     },
-    Em6kmmUkkT5JMxFuFBF4pMuY4Do9HDE1HCkz2RifWreo: {
+    HT169Rk7tLNc9M1FuEaAZZtqo54zHh2xfJ2Sp9vugGV3: {
       status: 'stable',
       name: 'cdm/product/template/RepoDurationEnum',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Em6kmmUkkT5JMxFuFBF4pMuY4Do9HDE1HCkz2RifWreo',
+          typeBlueId: 'HT169Rk7tLNc9M1FuEaAZZtqo54zHh2xfJ2Sp9vugGV3',
           attributesAdded: [],
         },
       ],
     },
-    H4YFmRdPDQurJuk9z7qEXdhRpcSgEWjT8SA5CmHuzJvC: {
+    '3pA66XRhiAooUuGarBuys5JR2iwpE3DN1FJh1ToZzDfu': {
       status: 'stable',
       name: 'cdm/product/template/ReturnTerms',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H4YFmRdPDQurJuk9z7qEXdhRpcSgEWjT8SA5CmHuzJvC',
+          typeBlueId: '3pA66XRhiAooUuGarBuys5JR2iwpE3DN1FJh1ToZzDfu',
           attributesAdded: [],
         },
       ],
     },
-    CUr5jr5noh86g6Ljvib2NKFYTBBK5zc36XB5Xv6Wy4v1: {
+    CAWuQnv8ErBNebNAhWCC5XXHxx49GA2Yi9eaWFTXcij1: {
       status: 'stable',
       name: 'cdm/product/template/SchedulePeriod',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CUr5jr5noh86g6Ljvib2NKFYTBBK5zc36XB5Xv6Wy4v1',
+          typeBlueId: 'CAWuQnv8ErBNebNAhWCC5XXHxx49GA2Yi9eaWFTXcij1',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#8': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#2': {
       status: 'stable',
       name: 'cdm/product/template/SettlementPayout',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#8',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#2',
           attributesAdded: [],
         },
       ],
     },
-    DgYhTvKZWcbsWAJhHrAdY7ihYDMtyVr2mPxUjDnwHkUN: {
+    '8Y5hzBqBHEUiwLTnEj3w34yWp3pZ7s2RiBzE2Mi9or3v': {
       status: 'stable',
       name: 'cdm/product/template/StrategyFeature',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DgYhTvKZWcbsWAJhHrAdY7ihYDMtyVr2mPxUjDnwHkUN',
+          typeBlueId: '8Y5hzBqBHEUiwLTnEj3w34yWp3pZ7s2RiBzE2Mi9or3v',
           attributesAdded: [],
         },
       ],
     },
-    DTjpaA5nNPtRc9cjg3pKvtYra986CsXi7yi6mkfQ6cCN: {
+    H7eZouArq1oyXs52mV5ZcafixuEA7B8eTRVyaQZ6FDox: {
       status: 'stable',
       name: 'cdm/product/template/Strike',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DTjpaA5nNPtRc9cjg3pKvtYra986CsXi7yi6mkfQ6cCN',
+          typeBlueId: 'H7eZouArq1oyXs52mV5ZcafixuEA7B8eTRVyaQZ6FDox',
           attributesAdded: [],
         },
       ],
     },
-    '6ktRd3DjxSYyCKanDCXymsiwCRfvE8Nmdg6Hr6nRsGLs': {
+    '6YLNUc4mUyAXJnpaEm2W4KAfb1HUCDcrXqv7KetjrbwH': {
       status: 'stable',
       name: 'cdm/product/template/StrikeSchedule',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ktRd3DjxSYyCKanDCXymsiwCRfvE8Nmdg6Hr6nRsGLs',
+          typeBlueId: '6YLNUc4mUyAXJnpaEm2W4KAfb1HUCDcrXqv7KetjrbwH',
           attributesAdded: [],
         },
       ],
     },
-    '3YR2sV7tFdGrtX699mGysL4mGGEkjpmBPfpeyYXKnQjU': {
+    '5ge8BnjNZtu74pTtnhLvWJ7ud6SPTwyz1TmpHomfonoo': {
       status: 'stable',
       name: 'cdm/product/template/StrikeSpread',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3YR2sV7tFdGrtX699mGysL4mGGEkjpmBPfpeyYXKnQjU',
+          typeBlueId: '5ge8BnjNZtu74pTtnhLvWJ7ud6SPTwyz1TmpHomfonoo',
           attributesAdded: [],
         },
       ],
     },
-    '9TkgobVuFAyf4FySwjWfMwU2Vem42ccyJHArhuMETnvE': {
+    FpTrBfyCdqmzaN9ByjGQj2bxPZQnpJ2hHCYSkTgoJhtF: {
       status: 'stable',
       name: 'cdm/product/template/TerminationProvision',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9TkgobVuFAyf4FySwjWfMwU2Vem42ccyJHArhuMETnvE',
+          typeBlueId: 'FpTrBfyCdqmzaN9ByjGQj2bxPZQnpJ2hHCYSkTgoJhtF',
           attributesAdded: [],
         },
       ],
     },
-    '7NAeEvw67mqergRTy5KQA52oFxHHa8GFwsojp9Laqfiv': {
+    '5L5ELtTjqEroydK4qXv9bitzL5wJ8yY6yjAhFum13A7U': {
       status: 'stable',
       name: 'cdm/product/template/TradableProduct',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7NAeEvw67mqergRTy5KQA52oFxHHa8GFwsojp9Laqfiv',
+          typeBlueId: '5L5ELtTjqEroydK4qXv9bitzL5wJ8yY6yjAhFum13A7U',
           attributesAdded: [],
         },
       ],
     },
-    ZLG4da8C48xHnYaRKjAQoKys4k2Y2XufFG4HGCeTAwU: {
+    BmdnVkDXfdg2N2r7qgbCGTcmvRVJJCeGYWgqPEVPtqns: {
       status: 'stable',
       name: 'cdm/product/template/TradeLot',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ZLG4da8C48xHnYaRKjAQoKys4k2Y2XufFG4HGCeTAwU',
+          typeBlueId: 'BmdnVkDXfdg2N2r7qgbCGTcmvRVJJCeGYWgqPEVPtqns',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#9': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#8': {
       status: 'stable',
       name: 'cdm/product/template/TransferableProduct',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#9',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#8',
           attributesAdded: [],
         },
       ],
     },
-    'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#5': {
+    '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#3': {
       status: 'stable',
       name: 'cdm/product/template/Underlier',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#5',
+          typeBlueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#3',
           attributesAdded: [],
         },
       ],
     },
-    '2Midawi9zUfJvcpA1goJXVsvZDiVfwMTkFWPqYK18DH5': {
+    UtoHX84Jf14Vt8tqUwNyELWR28U4cEGWMm5MnHPKLpi: {
       status: 'stable',
       name: 'cdm/regulation/AcctOwnr',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2Midawi9zUfJvcpA1goJXVsvZDiVfwMTkFWPqYK18DH5',
+          typeBlueId: 'UtoHX84Jf14Vt8tqUwNyELWR28U4cEGWMm5MnHPKLpi',
           attributesAdded: [],
         },
       ],
     },
-    E7oLhGAsFNjqjmhJsUSRdndnofi3eoLvC8TzLEgS7Ajd: {
+    Avs2j3Cu7pPm5XZLVwYQ6SAEzUqvm8fnxQ3NWGaneps6: {
       status: 'stable',
       name: 'cdm/regulation/AddtlAttrbts',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E7oLhGAsFNjqjmhJsUSRdndnofi3eoLvC8TzLEgS7Ajd',
+          typeBlueId: 'Avs2j3Cu7pPm5XZLVwYQ6SAEzUqvm8fnxQ3NWGaneps6',
           attributesAdded: [],
         },
       ],
     },
-    '3aE6erdTtbhjt2mHbmzNNZUUARddk4ptbRvmzW71PMPB': {
+    D47eyKS7yewPVC5jUEbouYutWpSrDF1kdJ1AVrcHsRd4: {
       status: 'stable',
       name: 'cdm/regulation/Buyr',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3aE6erdTtbhjt2mHbmzNNZUUARddk4ptbRvmzW71PMPB',
+          typeBlueId: 'D47eyKS7yewPVC5jUEbouYutWpSrDF1kdJ1AVrcHsRd4',
           attributesAdded: [],
         },
       ],
     },
-    '64GDGQPRbi64gBYYU2bn3xS8o4snUE3Xkyj4KZMP7iiP': {
+    H4qXNCgRHrt2vNW5Ck9VynMAfvyCFYzUwMSSZWpuPRyL: {
       status: 'stable',
       name: 'cdm/regulation/DerivInstrmAttrbts',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '64GDGQPRbi64gBYYU2bn3xS8o4snUE3Xkyj4KZMP7iiP',
+          typeBlueId: 'H4qXNCgRHrt2vNW5Ck9VynMAfvyCFYzUwMSSZWpuPRyL',
           attributesAdded: [],
         },
       ],
     },
-    FqQmwTFY4AP5Fj5sBr9KSRM3jJXSkDdD5HqWF1F73qvx: {
+    J7cGS2ULhJNntQQ71zGFdzAiBmqwNpHRp6huPsfDKKtt: {
       status: 'stable',
       name: 'cdm/regulation/Document',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FqQmwTFY4AP5Fj5sBr9KSRM3jJXSkDdD5HqWF1F73qvx',
+          typeBlueId: 'J7cGS2ULhJNntQQ71zGFdzAiBmqwNpHRp6huPsfDKKtt',
           attributesAdded: [],
         },
       ],
     },
-    '5GH5b3hqDNFtdYyKYrrsT7yR5dbQz89rdseFTBATZBzE': {
+    Tu5nRRqGCYvPv1JfDkUiceaDiRxNSCT7gT7SQx2GA5Z: {
       status: 'stable',
       name: 'cdm/regulation/ExctgPrsn',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5GH5b3hqDNFtdYyKYrrsT7yR5dbQz89rdseFTBATZBzE',
+          typeBlueId: 'Tu5nRRqGCYvPv1JfDkUiceaDiRxNSCT7gT7SQx2GA5Z',
           attributesAdded: [],
         },
       ],
     },
-    kLfZhAvkAh8wK55kKLDNzrrUYScHA3iDAvQxXMzfg29: {
+    HvRvtYT6FnHr42G7nsiDHeXpPGgvFLtoazqsLEYL5gNa: {
       status: 'stable',
       name: 'cdm/regulation/FinInstrm',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'kLfZhAvkAh8wK55kKLDNzrrUYScHA3iDAvQxXMzfg29',
+          typeBlueId: 'HvRvtYT6FnHr42G7nsiDHeXpPGgvFLtoazqsLEYL5gNa',
           attributesAdded: [],
         },
       ],
     },
-    '2CibfSNr9fgCU28YroYKvUvh4as3ggUB9FsfNBXNpvKu': {
+    '8VKLe5YFMNREPES73PCMyATqUbr8SexStcAoUJHdcGEE': {
       status: 'stable',
       name: 'cdm/regulation/FinInstrmGnlAttrbts',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2CibfSNr9fgCU28YroYKvUvh4as3ggUB9FsfNBXNpvKu',
+          typeBlueId: '8VKLe5YFMNREPES73PCMyATqUbr8SexStcAoUJHdcGEE',
           attributesAdded: [],
         },
       ],
     },
-    BfKLQH4QVw4S4wzQKmy5dHE6Cv1nwWZFPDQov8mdWQhT: {
+    FGw3uzcfaLXE48TDaEuANFJZ3XL3kJ8QvApSUhqzHsXo: {
       status: 'stable',
       name: 'cdm/regulation/FinInstrmRptgTxRpt',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BfKLQH4QVw4S4wzQKmy5dHE6Cv1nwWZFPDQov8mdWQhT',
+          typeBlueId: 'FGw3uzcfaLXE48TDaEuANFJZ3XL3kJ8QvApSUhqzHsXo',
           attributesAdded: [],
         },
       ],
     },
-    '3f4WiUJG3FhvWWyDoRyCBQcSoCNhmwkWYRRFeKfXoe4J': {
+    G7k1Tk3cb59mR6bbpEGUCpLLZpWszEjL9odkebn25QBq: {
       status: 'stable',
       name: 'cdm/regulation/Id',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3f4WiUJG3FhvWWyDoRyCBQcSoCNhmwkWYRRFeKfXoe4J',
+          typeBlueId: 'G7k1Tk3cb59mR6bbpEGUCpLLZpWszEjL9odkebn25QBq',
           attributesAdded: [],
         },
       ],
     },
-    GSr9GFBnxJ593ATrkLyLwdp2hjwqr3CpAxjR7PVvjrSX: {
+    '8QRJrGUFmKzsaoBkwKWPd9tQK2zyZV2LcezMZ66M3Cr1': {
       status: 'stable',
       name: 'cdm/regulation/Indx',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GSr9GFBnxJ593ATrkLyLwdp2hjwqr3CpAxjR7PVvjrSX',
+          typeBlueId: '8QRJrGUFmKzsaoBkwKWPd9tQK2zyZV2LcezMZ66M3Cr1',
           attributesAdded: [],
         },
       ],
     },
-    '8YBEPRD6BeGxpiyzcHu23gtC1XJcfqMM5Vn8HyG134Lz': {
+    '9aWzcazT96cuBgu8aeqXmWbGmtbVKjeBYG4ZKYcd3zCS': {
       status: 'stable',
       name: 'cdm/regulation/InvstmtDcsnPrsn',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8YBEPRD6BeGxpiyzcHu23gtC1XJcfqMM5Vn8HyG134Lz',
+          typeBlueId: '9aWzcazT96cuBgu8aeqXmWbGmtbVKjeBYG4ZKYcd3zCS',
           attributesAdded: [],
         },
       ],
     },
-    '5escwe4iATiixbpkVsC5bgMF6yMNwffv9q8Sjf2uL1MB#0': {
+    '7nPHq44WkgzcmatogSGoahnTBmfbTfRpaG1YBa7e8RcQ#0': {
       status: 'stable',
       name: 'cdm/regulation/New',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5escwe4iATiixbpkVsC5bgMF6yMNwffv9q8Sjf2uL1MB#0',
+          typeBlueId: '7nPHq44WkgzcmatogSGoahnTBmfbTfRpaG1YBa7e8RcQ#0',
           attributesAdded: [],
         },
       ],
     },
-    DZdnkAMDLkRVqy6xSZjUpZSFPATDK7GBQSknpso93uax: {
+    Bnyu2YsX3C75feLrApJur1wxc78rkg6UmHvj7zoZSsV8: {
       status: 'stable',
       name: 'cdm/regulation/Nm',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DZdnkAMDLkRVqy6xSZjUpZSFPATDK7GBQSknpso93uax',
+          typeBlueId: 'Bnyu2YsX3C75feLrApJur1wxc78rkg6UmHvj7zoZSsV8',
           attributesAdded: [],
         },
       ],
     },
-    E2D4RQHe2Jrvc7V7HKEDA9JsHhpAZx9S896oDvTHgi9v: {
+    ih2SVSx6Uk2K2w79prjoTJxTTBVLXjU1jfZWiKtWVz4: {
       status: 'stable',
       name: 'cdm/regulation/OrdrTrnsmssn',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E2D4RQHe2Jrvc7V7HKEDA9JsHhpAZx9S896oDvTHgi9v',
+          typeBlueId: 'ih2SVSx6Uk2K2w79prjoTJxTTBVLXjU1jfZWiKtWVz4',
           attributesAdded: [],
         },
       ],
     },
-    J3fYik4rPisN3CPxe58U3DcMcwjzE6rQTNE9q3kXLCPn: {
+    '2xwAHyjVuSzA57dVQJAEcfr7Eg6P3Ms4XxwPwQwPQsAK': {
       status: 'stable',
       name: 'cdm/regulation/Othr',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'J3fYik4rPisN3CPxe58U3DcMcwjzE6rQTNE9q3kXLCPn',
+          typeBlueId: '2xwAHyjVuSzA57dVQJAEcfr7Eg6P3Ms4XxwPwQwPQsAK',
           attributesAdded: [],
         },
       ],
     },
-    'BUq3VPPkQHRHG7roNyDNCeLNzQfLSsPoSqiRQgbDnCdv#0': {
+    'AbfDrU3fgSd82Mgi4iEoZ41s3qXFqRnSTETansBbw9HF#0': {
       status: 'stable',
       name: 'cdm/regulation/Pric',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BUq3VPPkQHRHG7roNyDNCeLNzQfLSsPoSqiRQgbDnCdv#0',
+          typeBlueId: 'AbfDrU3fgSd82Mgi4iEoZ41s3qXFqRnSTETansBbw9HF#0',
           attributesAdded: [],
         },
       ],
     },
-    EHJBg7p3U5yUbBzkHyVcMUrwbPSn3FVeaRERg67YinMz: {
+    CyNw28ZuCZFruvDWiNYs7yzqKEpzdtRFQFErS383wQQn: {
       status: 'stable',
       name: 'cdm/regulation/Prsn',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EHJBg7p3U5yUbBzkHyVcMUrwbPSn3FVeaRERg67YinMz',
+          typeBlueId: 'CyNw28ZuCZFruvDWiNYs7yzqKEpzdtRFQFErS383wQQn',
           attributesAdded: [],
         },
       ],
     },
-    GCcHv8RLUEgahAAWFcRgRTb784jyA3pUR884URcEurcp: {
+    '6LfAdgL3H4Evj6cxAmHvohUbKGvi8hMjCW2VA7FCmp2f': {
       status: 'stable',
       name: 'cdm/regulation/Qty',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GCcHv8RLUEgahAAWFcRgRTb784jyA3pUR884URcEurcp',
+          typeBlueId: '6LfAdgL3H4Evj6cxAmHvohUbKGvi8hMjCW2VA7FCmp2f',
           attributesAdded: [],
         },
       ],
     },
-    AcEgwB4h9wHoHeS5UXLfAN76wwkUSG2T7F7gwHYjW2mr: {
+    '3iGK8rtshZDYPEKjPLJb7aYsVc2cBa7Pnkc4Nr1vLoZt': {
       status: 'stable',
       name: 'cdm/regulation/RefRate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AcEgwB4h9wHoHeS5UXLfAN76wwkUSG2T7F7gwHYjW2mr',
+          typeBlueId: '3iGK8rtshZDYPEKjPLJb7aYsVc2cBa7Pnkc4Nr1vLoZt',
           attributesAdded: [],
         },
       ],
     },
-    HdczVmReriwEJcH4QKu8zRPfiatW6tmAm71DbNp161hr: {
+    '6sHTanKcHB14wiXCFtoehJEB7HWsy21ExqHEvQYtw7NP': {
       status: 'stable',
       name: 'cdm/regulation/SchmeNm',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HdczVmReriwEJcH4QKu8zRPfiatW6tmAm71DbNp161hr',
+          typeBlueId: '6sHTanKcHB14wiXCFtoehJEB7HWsy21ExqHEvQYtw7NP',
           attributesAdded: [],
         },
       ],
     },
-    HzcHUHF1xsByJ4YwDfte8JR64TXZwA6AMYVTEAyQwbRE: {
+    BYr7BukA73s6xgYtaFZi9nyu9YegpSmpt2B825iLKpBm: {
       status: 'stable',
       name: 'cdm/regulation/Sellr',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HzcHUHF1xsByJ4YwDfte8JR64TXZwA6AMYVTEAyQwbRE',
+          typeBlueId: 'BYr7BukA73s6xgYtaFZi9nyu9YegpSmpt2B825iLKpBm',
           attributesAdded: [],
         },
       ],
     },
-    DKSYtGQVeGfDCYPvWG3sDggvoZMojMdvZHwHechNkWWZ: {
+    HBLtWnWoBNq2J8Z6DEVz3GUac4po9oBJgoYmPZSkT27k: {
       status: 'stable',
       name: 'cdm/regulation/Sngl',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DKSYtGQVeGfDCYPvWG3sDggvoZMojMdvZHwHechNkWWZ',
+          typeBlueId: 'HBLtWnWoBNq2J8Z6DEVz3GUac4po9oBJgoYmPZSkT27k',
           attributesAdded: [],
         },
       ],
     },
-    DQ1ZuZ8UYNPHqFcdVn6TqSrr3Stdugj4GzTRnARu5M53: {
+    '5EjZim32Eqda6ddZQRiibshQCRikGFQeJc8nvxDo9bjc': {
       status: 'stable',
       name: 'cdm/regulation/Swp',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DQ1ZuZ8UYNPHqFcdVn6TqSrr3Stdugj4GzTRnARu5M53',
+          typeBlueId: '5EjZim32Eqda6ddZQRiibshQCRikGFQeJc8nvxDo9bjc',
           attributesAdded: [],
         },
       ],
     },
-    '2T3hoZUtEHPP41LrKUi7cCiEHCk8AwUskHa4sVvsm6GD': {
+    '8wDzaj8nhdMn9sTJMrWq1siNiVWLq5NQ6cURKPYNN86F': {
       status: 'stable',
       name: 'cdm/regulation/SwpIn',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2T3hoZUtEHPP41LrKUi7cCiEHCk8AwUskHa4sVvsm6GD',
+          typeBlueId: '8wDzaj8nhdMn9sTJMrWq1siNiVWLq5NQ6cURKPYNN86F',
           attributesAdded: [],
         },
       ],
     },
-    '8Dw97kNp5Jao28zFYWCpReQahB3h93YosQEdCZLjdkEV': {
+    Du8Dj1mUc32NnorgGE844tyffuiu6gfALcLKPPS9mZKL: {
       status: 'stable',
       name: 'cdm/regulation/SwpOut',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8Dw97kNp5Jao28zFYWCpReQahB3h93YosQEdCZLjdkEV',
+          typeBlueId: 'Du8Dj1mUc32NnorgGE844tyffuiu6gfALcLKPPS9mZKL',
           attributesAdded: [],
         },
       ],
     },
-    '7emp1LEhZ1y3VEERHEsAEa4npZSpiVUDeFQob2LpBkhG': {
+    BjVwAr1pYp3ZQh3wtJi2zXxjpqqqyBzNjp9m1ZpZVP15: {
       status: 'stable',
       name: 'cdm/regulation/Term',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7emp1LEhZ1y3VEERHEsAEa4npZSpiVUDeFQob2LpBkhG',
+          typeBlueId: 'BjVwAr1pYp3ZQh3wtJi2zXxjpqqqyBzNjp9m1ZpZVP15',
           attributesAdded: [],
         },
       ],
     },
-    '5escwe4iATiixbpkVsC5bgMF6yMNwffv9q8Sjf2uL1MB#1': {
+    '7nPHq44WkgzcmatogSGoahnTBmfbTfRpaG1YBa7e8RcQ#1': {
       status: 'stable',
       name: 'cdm/regulation/Tx',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5escwe4iATiixbpkVsC5bgMF6yMNwffv9q8Sjf2uL1MB#1',
+          typeBlueId: '7nPHq44WkgzcmatogSGoahnTBmfbTfRpaG1YBa7e8RcQ#1',
           attributesAdded: [],
         },
       ],
     },
-    BVyMiCqaVYHQWWuyvwivy7Wvm49w2nuhJV25PpEaxm23: {
+    FaYSdGaujuranVkQXU82UtdDR1Gfq9L7YpR3JXGx7dZt: {
       status: 'stable',
       name: 'cdm/regulation/UndrlygInstrm',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BVyMiCqaVYHQWWuyvwivy7Wvm49w2nuhJV25PpEaxm23',
+          typeBlueId: 'FaYSdGaujuranVkQXU82UtdDR1Gfq9L7YpR3JXGx7dZt',
           attributesAdded: [],
         },
       ],
     },
-    F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY: {
+    HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg: {
       status: 'stable',
       name: 'com/rosetta/model/FieldWithMetaString',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+          typeBlueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
           attributesAdded: [],
         },
       ],
     },
-    '24GKTJcRDZ4QRLVkFjFWdWkoGbNLiYvcfVyFPvapMLkx': {
+    '3dJskTcZWkGvVvc2CnvQkC12gkgaSGjZ8ix7XR2XxxjR': {
       status: 'stable',
       name: 'com/rosetta/model/lib/meta/Key',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '24GKTJcRDZ4QRLVkFjFWdWkoGbNLiYvcfVyFPvapMLkx',
+          typeBlueId: '3dJskTcZWkGvVvc2CnvQkC12gkgaSGjZ8ix7XR2XxxjR',
           attributesAdded: [],
         },
       ],
     },
-    DZcxdcnsm5jzC1CJU9fo6qUsNmG7i4H6LgZ4otSyMwas: {
+    Ha6Tqhjz1UHFLv8HHkvJRZfyUyGhWefXqcUSiETMrniq: {
       status: 'stable',
       name: 'com/rosetta/model/lib/meta/Reference',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DZcxdcnsm5jzC1CJU9fo6qUsNmG7i4H6LgZ4otSyMwas',
+          typeBlueId: 'Ha6Tqhjz1UHFLv8HHkvJRZfyUyGhWefXqcUSiETMrniq',
           attributesAdded: [],
         },
       ],
     },
-    DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk: {
+    '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj': {
       status: 'stable',
       name: 'com/rosetta/model/metafields/MetaFields',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+          typeBlueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
           attributesAdded: [],
         },
       ],
     },
-    '2NmzfUpHRVGHJtBNJodPdDCxDTwixoJpKAWSpVNE9ema': {
+    '6r7X1t4mk8pzhtyij1QDYaoMrseQxsRdHuJTw8dJaEk2': {
       status: 'stable',
       name: 'com/rosetta/model/metafields/ReferenceWithMetaString',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2NmzfUpHRVGHJtBNJodPdDCxDTwixoJpKAWSpVNE9ema',
+          typeBlueId: '6r7X1t4mk8pzhtyij1QDYaoMrseQxsRdHuJTw8dJaEk2',
           attributesAdded: [],
         },
       ],
     },
   },
-} as const;
-const metaWithAliases = {
+};
+const metaWithAliases: {
+  name: string;
+  typesMeta: Record<string, unknown>;
+  aliases: Record<string, string>;
+} = {
   ...meta,
   aliases: blueIds,
-} as const;
+};
 
 export default metaWithAliases;

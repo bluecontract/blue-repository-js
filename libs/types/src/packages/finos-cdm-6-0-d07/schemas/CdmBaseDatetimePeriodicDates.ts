@@ -6,23 +6,25 @@ import { CdmBaseDatetimeBusinessDayAdjustmentsSchema } from './CdmBaseDatetimeBu
 import { CdmBaseDatetimeCalculationPeriodFrequencySchema } from './CdmBaseDatetimeCalculationPeriodFrequency';
 import { CdmBaseDatetimeDayTypeEnumSchema } from './CdmBaseDatetimeDayTypeEnum';
 
-export const CdmBaseDatetimePeriodicDatesSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseDatetimePeriodicDatesSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/PeriodicDates']
 )(
-  z.object({
-    dayType: z.lazy(() => CdmBaseDatetimeDayTypeEnumSchema).optional(),
-    description: z.string().optional(),
-    endDate: z
+  zod.object({
+    dayType: zod.lazy(() => CdmBaseDatetimeDayTypeEnumSchema).optional(),
+    description: zod.string().optional(),
+    endDate: zod
       .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
       .optional(),
-    name: z.string().optional(),
-    periodDatesAdjustments: z
+    name: zod.string().optional(),
+    periodDatesAdjustments: zod
       .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
       .optional(),
-    periodFrequency: z
+    periodFrequency: zod
       .lazy(() => CdmBaseDatetimeCalculationPeriodFrequencySchema)
       .optional(),
-    startDate: z
+    startDate: zod
       .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
       .optional(),
   })

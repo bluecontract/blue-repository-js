@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCollateralCollateralValuationTreatmentSchema } from './CdmProductCollateralCollateralValuationTreatment';
 import { CdmProductCollateralConcentrationLimitSchema } from './CdmProductCollateralConcentrationLimit';
 
-export const CdmProductCollateralCollateralTreatmentSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralTreatmentSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralTreatment']
   )(
-    z.object({
-      concentrationLimit: z
-        .array(z.lazy(() => CdmProductCollateralConcentrationLimitSchema))
+    zod.object({
+      concentrationLimit: zod
+        .array(zod.lazy(() => CdmProductCollateralConcentrationLimitSchema))
         .min(0)
         .optional(),
-      description: z.string().optional(),
-      isIncluded: z.boolean(),
-      name: z.string().optional(),
-      valuationTreatment: z
+      description: zod.string().optional(),
+      isIncluded: zod.boolean(),
+      name: zod.string().optional(),
+      valuationTreatment: zod
         .lazy(() => CdmProductCollateralCollateralValuationTreatmentSchema)
         .optional(),
     })

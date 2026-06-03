@@ -1,18 +1,18 @@
-export const CompositeTimelineChannel = {
+export const CompositeTimelineChannel: Record<string, unknown> = {
   channels: {
     description:
-      'List of contracts-map keys (Text) of channels in the same scope to compose (union). Each entry must name an existing Channel contract.\n',
+      'Same-scope contract-map keys of Timeline Channel contracts included in this composite. The list order is not a\ncross-timeline ordering rule; event ordering must be established by the feeder/provider layer and deterministic\nprocessor sorting.\n',
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
-    "Channel contract that composes several same-scope Timeline Channel contracts into a single union channel. It matches an\nincoming event when any child channel named in `channels` would match. This is useful when a workflow should react to a\ngroup of timelines through one handler binding while preserving each child timeline's individual identity,\ncheckpointing, and provider semantics.\n\nComposite Timeline Channel does not create a new global timeline and does not impose consensus over the child\ntimelines. It is a routing convenience inside a document scope. Completeness and ordering must still be handled by the\nfeeder/provider layer and by the underlying child channels. The composite channel should adapt or pass through the\nmatched child channel's payload in a deterministic way defined by the concrete implementation or profile.\n\nThe `channels` list contains contract-map keys in the same scope. The keys are ordered list content, but matching should\nremain deterministic regardless of notification arrival order. If more than one child channel could accept the same\nevent, the processor must use the supported channel semantics and deterministic ordering rules to choose or deliver\nconsistently.\n",
+    'Channel contract that groups several same-scope Timeline Channels into one union channel. A Composite Timeline\nChannel matches when any referenced child channel would accept the delivered event. It is useful when a workflow\nshould react to a family of participant timelines while binding handlers to one logical channel key.\n\nThis type does not create global consensus and does not collapse the child timelines into one storage log. Each child\ntimeline retains its provider, checkpoint, completeness, actor attribution, and trust model. The composite only\nsimplifies routing inside the document. A correct feeder/processor must still preserve deterministic ordering across\nthe relevant timelines using provider completeness guarantees and the Blue Contracts checkpoint model.\n',
   name: 'Composite Timeline Channel',
   type: {
-    blueId: 'DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr',
+    blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
   },
-} as const;
+};

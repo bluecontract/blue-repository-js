@@ -3,19 +3,21 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataAssetCreditNotDomesticCurrencySchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCreditNotDomesticCurrencySchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/credit/NotDomesticCurrency'
     ]
   )(
-    z.object({
-      applicable: z.boolean(),
-      currency: z
+    zod.object({
+      applicable: zod.boolean(),
+      currency: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

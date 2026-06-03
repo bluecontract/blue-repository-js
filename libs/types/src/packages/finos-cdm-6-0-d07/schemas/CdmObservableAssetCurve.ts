@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetFieldWithMetaCommodityReferencePriceEnumSchema } from './CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum';
 import { CdmObservableAssetInterestRateCurveSchema } from './CdmObservableAssetInterestRateCurve';
 
-export const CdmObservableAssetCurveSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetCurveSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/Curve']
 )(
-  z.object({
-    commodityCurve: z
+  zod.object({
+    commodityCurve: zod
       .lazy(
         () => CdmObservableAssetFieldWithMetaCommodityReferencePriceEnumSchema
       )
       .optional(),
-    interestRateCurve: z
+    interestRateCurve: zod
       .lazy(() => CdmObservableAssetInterestRateCurveSchema)
       .optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

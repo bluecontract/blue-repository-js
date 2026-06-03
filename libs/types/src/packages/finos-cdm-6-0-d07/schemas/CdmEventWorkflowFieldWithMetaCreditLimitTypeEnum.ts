@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventWorkflowCreditLimitTypeEnumSchema } from './CdmEventWorkflowCreditLimitTypeEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmEventWorkflowFieldWithMetaCreditLimitTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventWorkflowFieldWithMetaCreditLimitTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/event/workflow/FieldWithMetaCreditLimitTypeEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmEventWorkflowCreditLimitTypeEnumSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod.lazy(() => CdmEventWorkflowCreditLimitTypeEnumSchema).optional(),
     })
   );
 

@@ -1,54 +1,54 @@
-export const CustomerConsent = {
+export const CustomerConsent: Record<string, unknown> = {
   consentDetails: {
     description:
       'Generic scope details (merchant id, event categories, requesting contract refs, etc.).',
     keyType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   consentKind: {
     description:
       'Classification of the consent (e.g., cardTransactionMonitoring).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   consentStatus: {
     description: 'Consent state (granted, revoked).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   contracts: {
     granteeChannel: {
       description: 'Grantee (e.g., merchant MyOS timeline).',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     granterChannel: {
       description:
         'Granter (customer represented by the bank; customer has no MyOS account).',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     guarantorChannel: {
       description: 'Bank/admin channel.',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     initialize: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'initLifecycleChannel',
       },
@@ -61,19 +61,19 @@ export const CustomerConsent = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/consentStatus',
                     },
                     val: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'granted',
                     },
@@ -85,7 +85,7 @@ export const CustomerConsent = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -94,7 +94,7 @@ export const CustomerConsent = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -105,29 +105,29 @@ export const CustomerConsent = {
             },
             name: 'Initialize',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     initLifecycleChannel: {
       event: {
         type: {
-          blueId: 'BrpmpNt5JkapeUvPqYcxgXZrHNZX3R757dRwuXXdfNM2',
+          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
         },
       },
       type: {
-        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
+        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
       },
     },
     revokeConsent: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'granterChannel',
       },
@@ -135,23 +135,23 @@ export const CustomerConsent = {
       request: {
         reason: {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
         },
         revokedAt: {
           type: {
-            blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+            blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
           },
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     revokeConsentImpl: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'revokeConsent',
       },
@@ -167,28 +167,28 @@ export const CustomerConsent = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'request',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'reason',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'revokedAt',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'canRevoke',
                         },
@@ -202,7 +202,7 @@ export const CustomerConsent = {
                               $document: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/consentStatus',
                               },
@@ -210,7 +210,7 @@ export const CustomerConsent = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'granted',
                             },
@@ -224,7 +224,7 @@ export const CustomerConsent = {
                               $event: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/message/request/reason',
                               },
@@ -232,7 +232,7 @@ export const CustomerConsent = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '',
                             },
@@ -243,7 +243,7 @@ export const CustomerConsent = {
                         $event: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/message/request',
                         },
@@ -255,7 +255,7 @@ export const CustomerConsent = {
                               $event: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/message/request/revokedAt',
                               },
@@ -263,7 +263,7 @@ export const CustomerConsent = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '',
                             },
@@ -279,7 +279,7 @@ export const CustomerConsent = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'canRevoke',
                       },
@@ -292,7 +292,7 @@ export const CustomerConsent = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'reason',
                               },
@@ -301,14 +301,14 @@ export const CustomerConsent = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'revokedAt',
                               },
                             },
                             type: {
                               blueId:
-                                'FGgYcn3phzJUoBfDJzV1QxeGKGbaH7zUEj1trRbBpmmJ',
+                                'BffmfCSM6r3GgrQU9XK3Qaj83gw4H8rfa1N7gXuab1ma',
                             },
                           },
                         },
@@ -320,19 +320,19 @@ export const CustomerConsent = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/consentStatus',
                     },
                     val: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'revoked',
                     },
@@ -342,13 +342,13 @@ export const CustomerConsent = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/revocationReason',
                     },
@@ -356,7 +356,7 @@ export const CustomerConsent = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'reason',
                       },
@@ -367,13 +367,13 @@ export const CustomerConsent = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/revokedAt',
                     },
@@ -381,7 +381,7 @@ export const CustomerConsent = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'revokedAt',
                       },
@@ -394,7 +394,7 @@ export const CustomerConsent = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -403,7 +403,7 @@ export const CustomerConsent = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -414,13 +414,13 @@ export const CustomerConsent = {
             },
             name: 'Capture',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
   },
@@ -429,20 +429,20 @@ export const CustomerConsent = {
   grantedAt: {
     description: 'Timestamp when consent was granted.',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   name: 'Customer Consent',
   revocationReason: {
     description: 'Reason for revocation.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   revokedAt: {
     description: 'Timestamp when consent was revoked.',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
-} as const;
+};

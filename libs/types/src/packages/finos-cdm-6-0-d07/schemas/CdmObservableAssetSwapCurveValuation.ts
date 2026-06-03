@@ -5,21 +5,22 @@ import { CdmBaseDatetimePeriodSchema } from './CdmBaseDatetimePeriod';
 import { CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema } from './CdmBaseStaticdataAssetRatesFloatingRateIndexEnum';
 import { CdmObservableAssetQuotationSideEnumSchema } from './CdmObservableAssetQuotationSideEnum';
 
-export const CdmObservableAssetSwapCurveValuationSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/SwapCurveValuation']
-  )(
-    z.object({
-      description: z.string().optional(),
-      floatingRateIndex: z.lazy(
-        () => CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema
-      ),
-      indexTenor: z.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
-      name: z.string().optional(),
-      side: z.lazy(() => CdmObservableAssetQuotationSideEnumSchema).optional(),
-      spread: z.number(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetSwapCurveValuationSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/SwapCurveValuation']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    floatingRateIndex: zod.lazy(
+      () => CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema
+    ),
+    indexTenor: zod.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
+    name: zod.string().optional(),
+    side: zod.lazy(() => CdmObservableAssetQuotationSideEnumSchema).optional(),
+    spread: zod.number(),
+  })
+);
 
 export type CdmObservableAssetSwapCurveValuation = z.infer<
   typeof CdmObservableAssetSwapCurveValuationSchema

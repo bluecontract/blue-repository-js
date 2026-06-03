@@ -1,13 +1,16 @@
-export const CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum = {
+export const CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/legaldocumentation/master/FieldWithMetaMasterAgreementTypeEnum',
   val: {
     type: {
-      blueId: 'Ap1qb3ywVUxeRiWE3DybbLoY6b6Nwbkyf9ME4rE4KEMX',
+      blueId: 'tC1wwJYkPfwpsdrur65zifZokmE1Kzb4gNtdNXBTLut',
     },
   },
-} as const;
+};

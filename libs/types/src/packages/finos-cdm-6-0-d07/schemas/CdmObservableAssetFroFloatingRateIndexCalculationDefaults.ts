@@ -5,27 +5,29 @@ import { CdmObservableAssetFroFloatingRateIndexCalculationMethodEnumSchema } fro
 import { CdmObservableAssetFroFloatingRateIndexCategoryEnumSchema } from './CdmObservableAssetFroFloatingRateIndexCategoryEnum';
 import { CdmObservableAssetFroFloatingRateIndexStyleEnumSchema } from './CdmObservableAssetFroFloatingRateIndexStyleEnum';
 
-export const CdmObservableAssetFroFloatingRateIndexCalculationDefaultsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFroFloatingRateIndexCalculationDefaultsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/fro/FloatingRateIndexCalculationDefaults'
     ]
   )(
-    z.object({
-      category: z
+    zod.object({
+      category: zod
         .lazy(() => CdmObservableAssetFroFloatingRateIndexCategoryEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      indexStyle: z
+      description: zod.string().optional(),
+      indexStyle: zod
         .lazy(() => CdmObservableAssetFroFloatingRateIndexStyleEnumSchema)
         .optional(),
-      method: z
+      method: zod
         .lazy(
           () =>
             CdmObservableAssetFroFloatingRateIndexCalculationMethodEnumSchema
         )
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimePeriodExtendedEnumSchema } from './CdmBaseDatetimePeriodExtendedEnum';
 
-export const CdmBaseDatetimeFrequencySchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseDatetimeFrequencySchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/Frequency']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    period: z.lazy(() => CdmBaseDatetimePeriodExtendedEnumSchema),
-    periodMultiplier: z.number(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    period: zod.lazy(() => CdmBaseDatetimePeriodExtendedEnumSchema),
+    periodMultiplier: zod.number(),
   })
 );
 

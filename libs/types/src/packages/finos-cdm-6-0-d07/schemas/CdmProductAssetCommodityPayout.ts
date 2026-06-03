@@ -15,65 +15,63 @@ import { CdmProductTemplateCalculationScheduleSchema } from './CdmProductTemplat
 import { CdmProductTemplateFxFeatureSchema } from './CdmProductTemplateFxFeature';
 import { CdmProductTemplateUnderlierSchema } from './CdmProductTemplateUnderlier';
 
-export const CdmProductAssetCommodityPayoutSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/CommodityPayout']
-  )(
-    z.object({
-      averagingFeature: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateAveragingCalculationSchema)
-        .optional(),
-      calculationPeriodDates: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmProductCommonScheduleCalculationPeriodDatesSchema
-        )
-        .optional(),
-      commodityPriceReturnTerms: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmProductCommonSettlementCommodityPriceReturnTermsSchema
-        )
-        .optional(),
-      delivery: z
-        .lazy((): z.ZodTypeAny => CdmProductAssetAssetDeliveryInformationSchema)
-        .optional(),
-      description: z.string().optional(),
-      fxFeature: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateFxFeatureSchema)
-        .optional(),
-      name: z.string().optional(),
-      payerReceiver: z
-        .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPayerReceiverSchema)
-        .optional(),
-      paymentDates: z.lazy(
-        (): z.ZodTypeAny => CdmProductCommonSchedulePaymentDatesSchema
-      ),
-      priceQuantity: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmProductCommonSettlementResolvablePriceQuantitySchema
-        )
-        .optional(),
-      pricingDates: z.lazy(
-        (): z.ZodTypeAny => CdmProductCommonSettlementPricingDatesSchema
-      ),
-      principalPayment: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonSettlementPrincipalPaymentsSchema
-        )
-        .optional(),
-      schedule: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateCalculationScheduleSchema)
-        .optional(),
-      settlementTerms: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonSettlementSettlementTermsSchema
-        )
-        .optional(),
-      underlier: z.lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetCommodityPayoutSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/CommodityPayout']
+)(
+  zod.object({
+    averagingFeature: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateAveragingCalculationSchema)
+      .optional(),
+    calculationPeriodDates: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmProductCommonScheduleCalculationPeriodDatesSchema
+      )
+      .optional(),
+    commodityPriceReturnTerms: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmProductCommonSettlementCommodityPriceReturnTermsSchema
+      )
+      .optional(),
+    delivery: zod
+      .lazy((): z.ZodTypeAny => CdmProductAssetAssetDeliveryInformationSchema)
+      .optional(),
+    description: zod.string().optional(),
+    fxFeature: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateFxFeatureSchema)
+      .optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod
+      .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPayerReceiverSchema)
+      .optional(),
+    paymentDates: zod.lazy(
+      (): z.ZodTypeAny => CdmProductCommonSchedulePaymentDatesSchema
+    ),
+    priceQuantity: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmProductCommonSettlementResolvablePriceQuantitySchema
+      )
+      .optional(),
+    pricingDates: zod.lazy(
+      (): z.ZodTypeAny => CdmProductCommonSettlementPricingDatesSchema
+    ),
+    principalPayment: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmProductCommonSettlementPrincipalPaymentsSchema
+      )
+      .optional(),
+    schedule: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateCalculationScheduleSchema)
+      .optional(),
+    settlementTerms: zod
+      .lazy((): z.ZodTypeAny => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+    underlier: zod.lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema),
+  })
+);
 
 export type CdmProductAssetCommodityPayout = z.infer<
   typeof CdmProductAssetCommodityPayoutSchema

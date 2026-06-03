@@ -5,15 +5,17 @@ import { CdmRegulationDerivInstrmAttrbtsSchema } from './CdmRegulationDerivInstr
 import { CdmRegulationFinInstrmGnlAttrbtsSchema } from './CdmRegulationFinInstrmGnlAttrbts';
 import { CdmRegulationSchmeNmSchema } from './CdmRegulationSchmeNm';
 
-export const CdmRegulationOthrSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmRegulationOthrSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/regulation/Othr']
 )(
-  z.object({
-    derivInstrmAttrbts: z.lazy(() => CdmRegulationDerivInstrmAttrbtsSchema),
-    finInstrmGnlAttrbts: z.lazy(() => CdmRegulationFinInstrmGnlAttrbtsSchema),
-    id: z.string(),
-    name: z.string().optional(),
-    schmeNm: z.lazy(() => CdmRegulationSchmeNmSchema),
+  zod.object({
+    derivInstrmAttrbts: zod.lazy(() => CdmRegulationDerivInstrmAttrbtsSchema),
+    finInstrmGnlAttrbts: zod.lazy(() => CdmRegulationFinInstrmGnlAttrbtsSchema),
+    id: zod.string(),
+    name: zod.string().optional(),
+    schmeNm: zod.lazy(() => CdmRegulationSchmeNmSchema),
   })
 );
 

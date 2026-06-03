@@ -1,14 +1,16 @@
-export const CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum =
-  {
-    meta: {
-      type: {
-        blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
-      },
+export const CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum: Record<
+  string,
+  unknown
+> = {
+  meta: {
+    type: {
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
-    name: 'cdm/legaldocumentation/common/FieldWithMetaContractualDefinitionsEnum',
-    val: {
-      type: {
-        blueId: '5txXuuQEYq3DRJtqa9g5CMLyFXyChsrbeA6Q8sruRz3e',
-      },
+  },
+  name: 'cdm/legaldocumentation/common/FieldWithMetaContractualDefinitionsEnum',
+  val: {
+    type: {
+      blueId: 'CQzTbWm83XYnnNf8Z5x9G7WakNb7E4nLLZqNgDki1J2p',
     },
-  } as const;
+  },
+};

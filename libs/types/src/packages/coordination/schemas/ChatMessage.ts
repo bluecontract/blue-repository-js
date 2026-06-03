@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { EventSchema } from './Event';
 
-export const ChatMessageSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ChatMessageSchema: any = withTypeBlueId(
   blueIds['Coordination/Chat Message']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    message: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    message: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

@@ -3,11 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimelineSchema } from '../../coordination/schemas/Timeline';
 
-export const MyOSTimelineSchema = withTypeBlueId(blueIds['MyOS/MyOS Timeline'])(
+const zod = z as any;
+
+export const MyOSTimelineSchema: any = withTypeBlueId(
+  blueIds['MyOS/MyOS Timeline']
+)(
   TimelineSchema.extend({
-    accountId: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    accountId: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

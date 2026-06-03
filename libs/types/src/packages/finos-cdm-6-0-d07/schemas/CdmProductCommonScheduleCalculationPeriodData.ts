@@ -2,20 +2,22 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonScheduleCalculationPeriodDataSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleCalculationPeriodDataSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/CalculationPeriodData'
     ]
   )(
-    z.object({
-      daysInLeapYearPeriod: z.number(),
-      daysInPeriod: z.number(),
-      endDate: z.string(),
-      isFirstPeriod: z.boolean(),
-      isLastPeriod: z.boolean(),
-      name: z.string().optional(),
-      startDate: z.string(),
+    zod.object({
+      daysInLeapYearPeriod: zod.number(),
+      daysInPeriod: zod.number(),
+      endDate: zod.string(),
+      isFirstPeriod: zod.boolean(),
+      isLastPeriod: zod.boolean(),
+      name: zod.string().optional(),
+      startDate: zod.string(),
     })
   );
 

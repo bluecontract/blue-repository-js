@@ -1,4 +1,4 @@
-export const CdmEventCommonTransferExpression = {
+export const CdmEventCommonTransferExpression: Record<string, unknown> = {
   description:
     'Specifies a transfer expression (cash price, performance amount, scheduled payment amount, etc.) to define the nature of the transfer amount and its source.\n',
   name: 'cdm/event/common/TransferExpression',
@@ -6,14 +6,14 @@ export const CdmEventCommonTransferExpression = {
     description:
       'Specifies a transfer amount exchanged as a price or fee for entering into a Business Event, e.g. Premium, Termination fee, Novation fee.\n',
     type: {
-      blueId: 'CEYV9kEtFbGQ1TN5ZdT4jXMZfSQUVyhphKVVYFHwQ1uq',
+      blueId: '2GtrN4UDxwH4P5TqQ8bNcVwjwcdDhjkNovEAYuhpAhJQ',
     },
   },
   scheduledTransfer: {
     description:
       'Specifies a transfer created from a scheduled or contingent event on a contract, e.g. Exercise, Performance, Credit Event\n',
     type: {
-      blueId: '6u2SSYbiL1wde49f5mpDzE76eiZkyF3yeZ7WL3j6RnBZ',
+      blueId: '4L9Uam1XY7h4ygfK9tdFjDPMNsNEn9NAVvoGNsHvGfWD',
     },
   },
-} as const;
+};

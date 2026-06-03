@@ -4,24 +4,25 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantityScheduleSchema } from './CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductAssetFutureValueAmountSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FutureValueAmount']
-  )(
-    z.object({
-      calculationPeriodNumberOfDays: z.number(),
-      currency: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      quantity: z
-        .lazy(
-          () =>
-            CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantityScheduleSchema
-        )
-        .optional(),
-      valueDate: z.string(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetFutureValueAmountSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FutureValueAmount']
+)(
+  zod.object({
+    calculationPeriodNumberOfDays: zod.number(),
+    currency: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    quantity: zod
+      .lazy(
+        () =>
+          CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantityScheduleSchema
+      )
+      .optional(),
+    valueDate: zod.string(),
+  })
+);
 
 export type CdmProductAssetFutureValueAmount = z.infer<
   typeof CdmProductAssetFutureValueAmountSchema

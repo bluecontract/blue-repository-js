@@ -15,61 +15,58 @@ import { CdmProductTemplateOptionStrikeSchema } from './CdmProductTemplateOption
 import { CdmProductTemplateOptionTypeEnumSchema } from './CdmProductTemplateOptionTypeEnum';
 import { CdmProductTemplateUnderlierSchema } from './CdmProductTemplateUnderlier';
 
-export const CdmProductTemplateOptionPayoutSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/OptionPayout']
-  )(
-    z.object({
-      buyerSeller: z.lazy(
-        (): z.ZodTypeAny => CdmBaseStaticdataPartyBuyerSellerSchema
-      ),
-      delivery: z
-        .lazy((): z.ZodTypeAny => CdmProductAssetAssetDeliveryInformationSchema)
-        .optional(),
-      description: z.string().optional(),
-      exerciseTerms: z.lazy(
-        (): z.ZodTypeAny => CdmProductTemplateExerciseTermsSchema
-      ),
-      feature: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateOptionFeatureSchema)
-        .optional(),
-      name: z.string().optional(),
-      observationTerms: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonScheduleObservationTermsSchema
-        )
-        .optional(),
-      optionType: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateOptionTypeEnumSchema)
-        .optional(),
-      payerReceiver: z
-        .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPayerReceiverSchema)
-        .optional(),
-      priceQuantity: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmProductCommonSettlementResolvablePriceQuantitySchema
-        )
-        .optional(),
-      principalPayment: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonSettlementPrincipalPaymentsSchema
-        )
-        .optional(),
-      schedule: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateCalculationScheduleSchema)
-        .optional(),
-      settlementTerms: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonSettlementSettlementTermsSchema
-        )
-        .optional(),
-      strike: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateOptionStrikeSchema)
-        .optional(),
-      underlier: z.lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateOptionPayoutSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/OptionPayout']
+)(
+  zod.object({
+    buyerSeller: zod.lazy(
+      (): z.ZodTypeAny => CdmBaseStaticdataPartyBuyerSellerSchema
+    ),
+    delivery: zod
+      .lazy((): z.ZodTypeAny => CdmProductAssetAssetDeliveryInformationSchema)
+      .optional(),
+    description: zod.string().optional(),
+    exerciseTerms: zod.lazy(
+      (): z.ZodTypeAny => CdmProductTemplateExerciseTermsSchema
+    ),
+    feature: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateOptionFeatureSchema)
+      .optional(),
+    name: zod.string().optional(),
+    observationTerms: zod
+      .lazy((): z.ZodTypeAny => CdmProductCommonScheduleObservationTermsSchema)
+      .optional(),
+    optionType: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateOptionTypeEnumSchema)
+      .optional(),
+    payerReceiver: zod
+      .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPayerReceiverSchema)
+      .optional(),
+    priceQuantity: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmProductCommonSettlementResolvablePriceQuantitySchema
+      )
+      .optional(),
+    principalPayment: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmProductCommonSettlementPrincipalPaymentsSchema
+      )
+      .optional(),
+    schedule: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateCalculationScheduleSchema)
+      .optional(),
+    settlementTerms: zod
+      .lazy((): z.ZodTypeAny => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+    strike: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateOptionStrikeSchema)
+      .optional(),
+    underlier: zod.lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema),
+  })
+);
 
 export type CdmProductTemplateOptionPayout = z.infer<
   typeof CdmProductTemplateOptionPayoutSchema

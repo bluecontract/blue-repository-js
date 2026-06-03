@@ -4,31 +4,33 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 import { CdmProductCommonScheduleCalculationPeriodSchema } from './CdmProductCommonScheduleCalculationPeriod';
 
-export const CdmProductCommonSchedulePaymentCalculationPeriodSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSchedulePaymentCalculationPeriodSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/PaymentCalculationPeriod'
     ]
   )(
-    z.object({
-      adjustedPaymentDate: z.string().optional(),
-      calculationPeriod: z
-        .array(z.lazy(() => CdmProductCommonScheduleCalculationPeriodSchema))
+    zod.object({
+      adjustedPaymentDate: zod.string().optional(),
+      calculationPeriod: zod
+        .array(zod.lazy(() => CdmProductCommonScheduleCalculationPeriodSchema))
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      discountFactor: z.number().optional(),
-      fixedPaymentAmount: z
+      description: zod.string().optional(),
+      discountFactor: zod.number().optional(),
+      fixedPaymentAmount: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
-      forecastPaymentAmount: z
+      forecastPaymentAmount: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
-      name: z.string().optional(),
-      presentValueAmount: z
+      name: zod.string().optional(),
+      presentValueAmount: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
-      unadjustedPaymentDate: z.string().optional(),
+      unadjustedPaymentDate: zod.string().optional(),
     })
   );
 

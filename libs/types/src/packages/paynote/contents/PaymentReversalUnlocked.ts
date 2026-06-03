@@ -1,13 +1,13 @@
-export const PaymentReversalUnlocked = {
+export const PaymentReversalUnlocked: Record<string, unknown> = {
   description:
     'Payment reversal was unlocked. Subsequent reversal attempts may now be processed again.\n',
   name: 'Payment Reversal Unlocked',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
   unlockedAt: {
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
-} as const;
+};

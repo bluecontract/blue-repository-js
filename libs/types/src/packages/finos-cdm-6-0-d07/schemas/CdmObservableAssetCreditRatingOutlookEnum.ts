@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetCreditRatingOutlookEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCreditRatingOutlookEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CreditRatingOutlookEnum']
   )(
-    z.enum(['Developing', 'Negative', 'Positive', 'Stable'] as [
+    zod.enum(['Developing', 'Negative', 'Positive', 'Stable'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

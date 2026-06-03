@@ -3,24 +3,26 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDatesSchema } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates';
 
-export const CdmProductCommonScheduleDateRelativeToCalculationPeriodDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleDateRelativeToCalculationPeriodDatesSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/DateRelativeToCalculationPeriodDates'
     ]
   )(
-    z.object({
-      calculationPeriodDatesReference: z
+    zod.object({
+      calculationPeriodDatesReference: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () =>
               CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDatesSchema
           )
         )
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

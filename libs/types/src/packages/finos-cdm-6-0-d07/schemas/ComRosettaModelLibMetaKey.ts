@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const ComRosettaModelLibMetaKeySchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const ComRosettaModelLibMetaKeySchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/com/rosetta/model/lib/meta/Key']
 )(
-  z.object({
-    name: z.string().optional(),
-    scope: z.string().optional(),
-    val: z.string().optional(),
+  zod.object({
+    name: zod.string().optional(),
+    scope: zod.string().optional(),
+    val: zod.string().optional(),
   })
 );
 

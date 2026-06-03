@@ -7,26 +7,28 @@ import { CdmBaseDatetimeBusinessCenterTimeSchema } from './CdmBaseDatetimeBusine
 import { CdmObservableCommonDeterminationMethodEnumSchema } from './CdmObservableCommonDeterminationMethodEnum';
 import { CdmObservableCommonTimeTypeEnumSchema } from './CdmObservableCommonTimeTypeEnum';
 
-export const CdmObservableAssetPerformanceValuationDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetPerformanceValuationDatesSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/PerformanceValuationDates']
   )(
-    z.object({
-      description: z.string().optional(),
-      determinationMethod: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      determinationMethod: zod.lazy(
         () => CdmObservableCommonDeterminationMethodEnumSchema
       ),
-      name: z.string().optional(),
-      valuationDate: z
+      name: zod.string().optional(),
+      valuationDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
         .optional(),
-      valuationDates: z
+      valuationDates: zod
         .lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
         .optional(),
-      valuationTime: z
+      valuationTime: zod
         .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
         .optional(),
-      valuationTimeType: z
+      valuationTimeType: zod
         .lazy(() => CdmObservableCommonTimeTypeEnumSchema)
         .optional(),
     })

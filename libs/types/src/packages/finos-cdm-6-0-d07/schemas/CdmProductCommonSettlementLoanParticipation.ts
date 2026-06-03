@@ -2,16 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonSettlementLoanParticipationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementLoanParticipationSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/LoanParticipation']
   )(
-    z.object({
-      applicable: z.boolean().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      partialCashSettlement: z.boolean().optional(),
-      qualifyingParticipationSeller: z.string().optional(),
+    zod.object({
+      applicable: zod.boolean().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      partialCashSettlement: zod.boolean().optional(),
+      qualifyingParticipationSeller: zod.string().optional(),
     })
   );
 

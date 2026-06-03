@@ -1,13 +1,16 @@
-export const CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum = {
+export const CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/legaldocumentation/common/FieldWithMetaResourceTypeEnum',
   val: {
     type: {
-      blueId: '6v9zzNRv4mEw925bbbUR2shJzVQvBRNmns9iVZBqhzjt',
+      blueId: '6Eina6hrt9KKXg8ZTfhCSwwcHkxjXe8HVdHFo6X8toya',
     },
   },
-} as const;
+};

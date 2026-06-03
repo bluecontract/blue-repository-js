@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCreditObligationCategoryEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCreditObligationCategoryEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/credit/ObligationCategoryEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'Bond',
       'BondOrLoan',
       'BorrowedMoney',

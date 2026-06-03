@@ -5,33 +5,35 @@ import { CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnumSchema } from '.
 import { CdmBaseStaticdataAssetCommonTaxonomySourceEnumSchema } from './CdmBaseStaticdataAssetCommonTaxonomySourceEnum';
 import { CdmBaseStaticdataAssetCommonTaxonomyValueSchema } from './CdmBaseStaticdataAssetCommonTaxonomyValue';
 
-export const CdmBaseStaticdataAssetCommonProductTaxonomySchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonProductTaxonomySchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/ProductTaxonomy'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      primaryAssetClass: z
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      primaryAssetClass: zod
         .lazy(
           () => CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnumSchema
         )
         .optional(),
-      productQualifier: z.string().optional(),
-      secondaryAssetClass: z
+      productQualifier: zod.string().optional(),
+      secondaryAssetClass: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnumSchema
           )
         )
         .min(0)
         .optional(),
-      source: z
+      source: zod
         .lazy(() => CdmBaseStaticdataAssetCommonTaxonomySourceEnumSchema)
         .optional(),
-      val: z
+      val: zod
         .lazy(() => CdmBaseStaticdataAssetCommonTaxonomyValueSchema)
         .optional(),
     })

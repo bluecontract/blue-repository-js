@@ -4,17 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCollateralDeliveryAmountSchema } from './CdmProductCollateralDeliveryAmount';
 import { CdmProductCollateralReturnAmountSchema } from './CdmProductCollateralReturnAmount';
 
-export const CdmProductCollateralInterestAmountApplicationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralInterestAmountApplicationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/InterestAmountApplication'
     ]
   )(
-    z.object({
-      deliveryAmount: z.lazy(() => CdmProductCollateralDeliveryAmountSchema),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      returnAmount: z.lazy(() => CdmProductCollateralReturnAmountSchema),
+    zod.object({
+      deliveryAmount: zod.lazy(() => CdmProductCollateralDeliveryAmountSchema),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      returnAmount: zod.lazy(() => CdmProductCollateralReturnAmountSchema),
     })
   );
 

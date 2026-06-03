@@ -1,3 +1,3 @@
-export const MyOSWorkerAgency = {
+export const MyOSWorkerAgency: Record<string, unknown> = {
   name: 'MyOS Worker Agency',
-} as const;
+};

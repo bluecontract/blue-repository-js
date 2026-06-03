@@ -4,13 +4,15 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const CardTransactionCaptureLockedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionCaptureLockedSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction Capture Locked']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    lockedAt: z.lazy(() => TimestampSchema).optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    lockedAt: zod.lazy(() => TimestampSchema).optional(),
+    name: zod.string().optional(),
   })
 );
 

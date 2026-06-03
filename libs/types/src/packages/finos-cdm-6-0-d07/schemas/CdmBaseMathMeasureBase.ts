@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathUnitTypeSchema } from './CdmBaseMathUnitType';
 
-export const CdmBaseMathMeasureBaseSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathMeasureBaseSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/MeasureBase']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    unit: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-    val: z.number().optional(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    unit: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    val: zod.number().optional(),
   })
 );
 

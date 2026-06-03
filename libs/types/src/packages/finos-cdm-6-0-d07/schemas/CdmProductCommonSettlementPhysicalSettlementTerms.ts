@@ -5,27 +5,29 @@ import { CdmBaseStaticdataPartyAncillaryRoleEnumSchema } from './CdmBaseStaticda
 import { CdmProductCommonSettlementDeliverableObligationsSchema } from './CdmProductCommonSettlementDeliverableObligations';
 import { CdmProductCommonSettlementPhysicalSettlementPeriodSchema } from './CdmProductCommonSettlementPhysicalSettlementPeriod';
 
-export const CdmProductCommonSettlementPhysicalSettlementTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPhysicalSettlementTermsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/PhysicalSettlementTerms'
     ]
   )(
-    z.object({
-      clearedPhysicalSettlement: z.boolean().optional(),
-      deliverableObligations: z
+    zod.object({
+      clearedPhysicalSettlement: zod.boolean().optional(),
+      deliverableObligations: zod
         .lazy(() => CdmProductCommonSettlementDeliverableObligationsSchema)
         .optional(),
-      description: z.string().optional(),
-      escrow: z.boolean().optional(),
-      name: z.string().optional(),
-      physicalSettlementPeriod: z
+      description: zod.string().optional(),
+      escrow: zod.boolean().optional(),
+      name: zod.string().optional(),
+      physicalSettlementPeriod: zod
         .lazy(() => CdmProductCommonSettlementPhysicalSettlementPeriodSchema)
         .optional(),
-      predeterminedClearingOrganizationParty: z
+      predeterminedClearingOrganizationParty: zod
         .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
         .optional(),
-      sixtyBusinessDaySettlementCap: z.boolean().optional(),
+      sixtyBusinessDaySettlementCap: zod.boolean().optional(),
     })
   );
 

@@ -1,9 +1,12 @@
-export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDates = {
+export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDates: Record<
+  string,
+  unknown
+> = {
   adjustableDates: {
     description:
       'A series of dates that shall be subject to adjustment if they would otherwise fall on a day that is not a business day in the specified business centers, together with the convention for adjusting the date.\n',
     type: {
-      blueId: '3UQyaunu7noHsnkXtFNJHuwdv1AH6Uq6MZ1bZSHN9hYW',
+      blueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
     },
   },
   description:
@@ -12,14 +15,14 @@ export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDates = {
   periodicDates: {
     description: 'A calculation period schedule.',
     type: {
-      blueId: 'A7n4Qooqj58rSepqdAnqh6w3cUZ2grnNMz4KXt1znNND',
+      blueId: 'JBENwei996PNTBkNZUR1ojomCwz48ULaZEJoeaXxukmT',
     },
   },
   relativeDates: {
     description:
       'A series of dates specified as some offset to another series of dates (the anchor dates).',
     type: {
-      blueId: '2B96QnMxNfXMKPboSVa6Jpe7kf5J5A31gxoB2B9cNLjJ',
+      blueId: 'DXynKUQNFZU7oUmvsh7mUrjs7JL5RKXrrmkH9hZr99CL',
     },
   },
-} as const;
+};

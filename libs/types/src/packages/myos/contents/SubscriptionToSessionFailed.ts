@@ -1,26 +1,26 @@
-export const SubscriptionToSessionFailed = {
+export const SubscriptionToSessionFailed: Record<string, unknown> = {
   description:
     'Indicates MyOS Admin rejected the subscription request before activation.',
   name: 'Subscription to Session Failed',
   reason: {
     description: 'Explanation why the subscription could not be established.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   subscriptionId: {
     description: 'The subscription id that failed.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   targetSessionId: {
     description: 'Session that was requested, if known.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

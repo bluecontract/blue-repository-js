@@ -6,22 +6,24 @@ import { CdmObservableAssetInformationSourceSchema } from './CdmObservableAssetI
 import { CdmObservableAssetObservableSchema } from './CdmObservableAssetObservable';
 import { CdmObservableEventDeterminationMethodologySchema } from './CdmObservableEventDeterminationMethodology';
 
-export const CdmObservableEventObservationIdentifierSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableEventObservationIdentifierSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/ObservationIdentifier']
   )(
-    z.object({
-      description: z.string().optional(),
-      determinationMethodology: z
+    zod.object({
+      description: zod.string().optional(),
+      determinationMethodology: zod
         .lazy(() => CdmObservableEventDeterminationMethodologySchema)
         .optional(),
-      informationSource: z
+      informationSource: zod
         .lazy(() => CdmObservableAssetInformationSourceSchema)
         .optional(),
-      name: z.string().optional(),
-      observable: z.lazy(() => CdmObservableAssetObservableSchema),
-      observationDate: z.string(),
-      observationTime: z.lazy(() => CdmBaseDatetimeTimeZoneSchema).optional(),
+      name: zod.string().optional(),
+      observable: zod.lazy(() => CdmObservableAssetObservableSchema),
+      observationDate: zod.string(),
+      observationTime: zod.lazy(() => CdmBaseDatetimeTimeZoneSchema).optional(),
     })
   );
 

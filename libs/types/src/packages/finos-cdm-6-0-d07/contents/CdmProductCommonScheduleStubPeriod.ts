@@ -1,17 +1,12 @@
-export const CdmProductCommonScheduleStubPeriod = {
+export const CdmProductCommonScheduleStubPeriod: Record<string, unknown> = {
   calculationPeriodDatesReference: {
     description:
       'A pointer style reference to the associated calculation period dates component defined elsewhere in the document.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'FeNrqxwS32kNzjXs7HqrxtfK9N58r3zNtk2U2uKgXJQU',
+      blueId: '5kML8V9qeDP2N3N3L173vbHKEbT1tjwLQ89bXgwhB2jf',
     },
   },
   description:
@@ -20,15 +15,15 @@ export const CdmProductCommonScheduleStubPeriod = {
     description:
       'Specifies how the final stub amount is calculated. A single floating rate tenor different to that used for the regular part of the calculation periods schedule may be specified, or two floating tenors may be specified. If two floating rate tenors are specified then Linear Interpolation (in accordance with the 2000 ISDA Definitions, Section 8.3. Interpolation) is assumed to apply. Alternatively, an actual known stub rate or stub amount may be specified.\n',
     type: {
-      blueId: 'Ew8cBFQJEiMm5RgVmJg1Cmvyjbi29rZ1Rcv7oQrsSSYR',
+      blueId: '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij',
     },
   },
   initialStub: {
     description:
       'Specifies how the initial stub amount is calculated. A single floating rate tenor different to that used for the regular part of the calculation periods schedule may be specified, or two floating tenors may be specified. If two floating rate tenors are specified then Linear Interpolation (in accordance with the 2000 ISDA Definitions, Section 8.3. Interpolation) is assumed to apply. Alternatively, an actual known stub rate or stub amount may be specified.\n',
     type: {
-      blueId: 'Ew8cBFQJEiMm5RgVmJg1Cmvyjbi29rZ1Rcv7oQrsSSYR',
+      blueId: '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij',
     },
   },
   name: 'cdm/product/common/schedule/StubPeriod',
-} as const;
+};

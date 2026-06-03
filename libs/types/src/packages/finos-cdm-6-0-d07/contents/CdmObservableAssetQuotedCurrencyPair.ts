@@ -1,32 +1,22 @@
-export const CdmObservableAssetQuotedCurrencyPair = {
+export const CdmObservableAssetQuotedCurrencyPair: Record<string, unknown> = {
   currency1: {
     description:
       'The first currency specified when a pair of currencies is to be evaluated.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   currency2: {
     description:
       'The second currency specified when a pair of currencies is to be evaluated.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   description:
@@ -35,15 +25,10 @@ export const CdmObservableAssetQuotedCurrencyPair = {
   quoteBasis: {
     description: 'The method by which the exchange rate is quoted.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DYuwgUPfQXXLvHYN9CkQCk14eheznpsJXzEVZupjdJdD',
+      blueId: '38MJMyCWnyrfancwTmzba2YAVR4YfwGbKcnfueN32RCR',
     },
   },
-} as const;
+};

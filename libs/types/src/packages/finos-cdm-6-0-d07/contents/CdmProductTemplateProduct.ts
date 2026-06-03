@@ -1,4 +1,4 @@
-export const CdmProductTemplateProduct = {
+export const CdmProductTemplateProduct: Record<string, unknown> = {
   description:
     'Enables either a TransferableProduct or a NonTransferableProduct to be used in an underlier.',
   name: 'cdm/product/template/Product',
@@ -6,14 +6,14 @@ export const CdmProductTemplateProduct = {
     description:
       'The non-transferable product data type represents a product that can be traded (as part of a TradableProduct) but cannot be transferred to others.\n',
     type: {
-      blueId: 'this#2',
+      blueId: 'this#4',
     },
   },
   TransferableProduct: {
     description:
       'A TransferableProduct is a type of financial product which can be held or transferred, represented as an Asset with the addition of specific EconomicTerms.\n',
     type: {
-      blueId: 'this#9',
+      blueId: 'this#8',
     },
   },
-} as const;
+};

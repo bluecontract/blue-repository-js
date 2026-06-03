@@ -1,26 +1,27 @@
-export const CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum = {
+export const CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'Represents an enumeration list to identify the type of supranational entity issuing the asset.',
   name: 'cdm/base/staticdata/asset/common/SupraNationalIssuerTypeEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'InternationalOrganisation',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'MultilateralBank',
+        value: 'InternationalOrganisation',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'MultilateralBank',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

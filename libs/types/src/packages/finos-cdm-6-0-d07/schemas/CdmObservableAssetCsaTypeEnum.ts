@@ -2,10 +2,12 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetCsaTypeEnumSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetCsaTypeEnumSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CsaTypeEnum']
 )(
-  z.enum(['ExistingCSA', 'NoCSA', 'ReferenceVMCSA'] as [
+  zod.enum(['ExistingCSA', 'NoCSA', 'ReferenceVMCSA'] as [
     string,
     ...string[]
   ]) as unknown as z.ZodObject<any>

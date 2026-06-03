@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimelineChannelSchema } from '../../coordination/schemas/TimelineChannel';
 
-export const MyOSTimelineChannelSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSTimelineChannelSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Timeline Channel']
 )(
   TimelineChannelSchema.extend({
-    accountId: z.string().optional(),
-    description: z.string().optional(),
-    email: z.string().optional(),
-    name: z.string().optional(),
+    accountId: zod.string().optional(),
+    description: zod.string().optional(),
+    email: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

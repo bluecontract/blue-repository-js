@@ -4,22 +4,23 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetFieldWithMetaInformationProviderEnumSchema } from './CdmObservableAssetFieldWithMetaInformationProviderEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmObservableAssetInformationSourceSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/InformationSource']
-  )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      sourcePage: z
-        .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
-        .optional(),
-      sourcePageHeading: z.string().optional(),
-      sourceProvider: z.lazy(
-        () => CdmObservableAssetFieldWithMetaInformationProviderEnumSchema
-      ),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetInformationSourceSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/InformationSource']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    sourcePage: zod
+      .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+      .optional(),
+    sourcePageHeading: zod.string().optional(),
+    sourceProvider: zod.lazy(
+      () => CdmObservableAssetFieldWithMetaInformationProviderEnumSchema
+    ),
+  })
+);
 
 export type CdmObservableAssetInformationSource = z.infer<
   typeof CdmObservableAssetInformationSourceSchema

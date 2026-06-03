@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/types",
-  "version": "1.2.2-rc.0",
+  "version": "1.3.0",
   "type": "module",
   "sideEffects": false,
   "repository": {
@@ -65,14 +65,6 @@
       "types": "./dist/packages/coordination/contents/*.d.ts",
       "default": "./dist/packages/coordination/contents/*.js"
     },
-    "./packages/core/schemas/*": {
-      "types": "./dist/packages/core/schemas/*.d.ts",
-      "default": "./dist/packages/core/schemas/*.js"
-    },
-    "./packages/core/contents/*": {
-      "types": "./dist/packages/core/contents/*.d.ts",
-      "default": "./dist/packages/core/contents/*.js"
-    },
     "./packages/finos-cdm-6-0-d07/schemas/*": {
       "types": "./dist/packages/finos-cdm-6-0-d07/schemas/*.d.ts",
       "default": "./dist/packages/finos-cdm-6-0-d07/schemas/*.js"
@@ -116,6 +108,6 @@
   },
   "blueType": {
     "moduleName": "Blue Repository",
-    "moduleBlueId": "398E2mZT2j3jiteRy2eVYVhzSC1CrQc6Rkaep8ANWJQx"
+    "moduleBlueId": "FBFYKUBVpZRJMwh8pVyuJo78wAe46m6XDjmLF2jMKnSp"
   }
 }

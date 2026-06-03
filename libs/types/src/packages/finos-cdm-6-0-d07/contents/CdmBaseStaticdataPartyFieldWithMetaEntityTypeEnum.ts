@@ -1,13 +1,16 @@
-export const CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum = {
+export const CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/staticdata/party/FieldWithMetaEntityTypeEnum',
   val: {
     type: {
-      blueId: 'B5aA6nWfmxJdP3f6kFCyqBA41CUzn6mmhyqnqdQ2yQi7',
+      blueId: 'HwqBkWFGaGHyDnDyqqp3Exgm9NRyzpNMvF1N6UtAJeGi',
     },
   },
-} as const;
+};

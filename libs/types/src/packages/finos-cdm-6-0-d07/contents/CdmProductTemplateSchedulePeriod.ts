@@ -1,22 +1,17 @@
-export const CdmProductTemplateSchedulePeriod = {
+export const CdmProductTemplateSchedulePeriod: Record<string, unknown> = {
   calculationPeriod: {
     description: 'Period for which the payment is generated.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'HzWZdNo2fx1o4EhUXn1aUnQgTLJm9PASFfSrNzJzLiT8',
+      blueId: 'ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM',
     },
   },
   deliveryPeriod: {
     description: 'Period and time profile over which the delivery takes place.',
     type: {
-      blueId: '136mCFHby12JarZJeWoUUxHWR7a7DAi5bJW6dEaTmy1c',
+      blueId: '4VSDgMR93vRjmusHhPRNXjdGuVnxrN3FBojT35y2b6cd',
     },
   },
   description:
@@ -24,30 +19,20 @@ export const CdmProductTemplateSchedulePeriod = {
   fixingPeriod: {
     description: 'Period over which the underlying price is observed.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'HzWZdNo2fx1o4EhUXn1aUnQgTLJm9PASFfSrNzJzLiT8',
+      blueId: 'ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM',
     },
   },
   name: 'cdm/product/template/SchedulePeriod',
   paymentDate: {
     description: 'Adjusted payment date.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

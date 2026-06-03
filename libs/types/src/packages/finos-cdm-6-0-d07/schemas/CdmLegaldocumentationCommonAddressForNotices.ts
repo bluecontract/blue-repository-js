@@ -4,20 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataPartyPartyContactInformationSchema } from './CdmBaseStaticdataPartyPartyContactInformation';
 import { CdmProductCollateralContactElectionSchema } from './CdmProductCollateralContactElection';
 
-export const CdmLegaldocumentationCommonAddressForNoticesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonAddressForNoticesSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/AddressForNotices']
   )(
-    z.object({
-      additionalNotices: z
+    zod.object({
+      additionalNotices: zod
         .array(
-          z.lazy(() => CdmBaseStaticdataPartyPartyContactInformationSchema)
+          zod.lazy(() => CdmBaseStaticdataPartyPartyContactInformationSchema)
         )
         .min(0)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      primaryNotices: z.lazy(() => CdmProductCollateralContactElectionSchema),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      primaryNotices: zod.lazy(() => CdmProductCollateralContactElectionSchema),
     })
   );
 

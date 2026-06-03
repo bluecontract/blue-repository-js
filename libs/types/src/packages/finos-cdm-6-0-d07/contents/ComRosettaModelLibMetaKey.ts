@@ -1,13 +1,13 @@
-export const ComRosettaModelLibMetaKey = {
+export const ComRosettaModelLibMetaKey: Record<string, unknown> = {
   name: 'com/rosetta/model/lib/meta/Key',
   scope: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   val: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

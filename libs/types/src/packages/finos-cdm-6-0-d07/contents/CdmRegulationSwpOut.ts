@@ -1,16 +1,11 @@
-export const CdmRegulationSwpOut = {
+export const CdmRegulationSwpOut: Record<string, unknown> = {
   name: 'cdm/regulation/SwpOut',
   sngl: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DKSYtGQVeGfDCYPvWG3sDggvoZMojMdvZHwHechNkWWZ',
+      blueId: 'HBLtWnWoBNq2J8Z6DEVz3GUac4po9oBJgoYmPZSkT27k',
     },
   },
-} as const;
+};

@@ -1,36 +1,39 @@
-export const PaymentMandateSpendAuthorizationRequested = {
+export const PaymentMandateSpendAuthorizationRequested: Record<
+  string,
+  unknown
+> = {
   amountMinor: {
     description: 'Requested amount in minor currency units.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   authorizationId: {
     description:
       'Correlation and idempotency key for a single authorization lifecycle.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   counterpartyId: {
     description:
       'Counterparty identifier interpreted according to counterpartyType.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   counterpartyType: {
     description:
       'Counterparty identifier type ("merchantId" | "customerId" | "accountNumber").',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   currency: {
     description:
       'Currency used to validate amountMinor against mandate limits.',
     type: {
-      blueId: 'CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc',
+      blueId: 'rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ',
     },
   },
   description:
@@ -39,22 +42,22 @@ export const PaymentMandateSpendAuthorizationRequested = {
   requestedAt: {
     description: 'Timestamp when the authorization request was created.',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   requestingDocumentId: {
     description: 'Document id that requested the charge.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   requestingSessionId: {
     description: 'Session id that requested the charge.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
+    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
   },
-} as const;
+};

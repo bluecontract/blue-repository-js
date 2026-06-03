@@ -1,12 +1,12 @@
-export const ReservationDeclined = {
+export const ReservationDeclined: Record<string, unknown> = {
   description: 'The Guarantor could not reserve the requested funds.',
   name: 'Reservation Declined',
   reason: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

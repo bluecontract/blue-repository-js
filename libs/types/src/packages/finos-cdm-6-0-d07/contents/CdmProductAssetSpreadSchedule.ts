@@ -1,4 +1,4 @@
-export const CdmProductAssetSpreadSchedule = {
+export const CdmProductAssetSpreadSchedule: Record<string, unknown> = {
   description:
     'Adds an optional spread type element to the Schedule to identify a long or short spread value.',
   name: 'cdm/product/asset/SpreadSchedule',
@@ -6,14 +6,14 @@ export const CdmProductAssetSpreadSchedule = {
     description:
       'The initial rate. An initial rate of 5% would be represented as 0.05.',
     type: {
-      blueId: 'BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25',
+      blueId: '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy',
     },
   },
   spreadScheduleType: {
     description:
       'An element which purpose is to identify a long or short spread value.',
     type: {
-      blueId: '6BMwav4uPAPxHDeLGeAJfRnPnXj8bbdd7czs69vEFKGe',
+      blueId: '4buYFvhK8MygP1T8vKFuNofU4rApmaG5WxpnBQWE5LXs',
     },
   },
-} as const;
+};

@@ -1,51 +1,46 @@
-export const CdmObservableAssetMakeWholeAmount = {
+export const CdmObservableAssetMakeWholeAmount: Record<string, unknown> = {
   description:
     'A class to specify the amount to be paid by the buyer of the option if the option is exercised prior to the Early Call Date (typically applicable to the convertible bond options).\n',
   earlyCallDate: {
     description:
       'Date prior to which the option buyer will have to pay a Make Whole Amount to the option seller if he/she exercises the option.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   floatingRateIndex: {
     type: {
-      blueId: 'AygoLHtsrgUkWFxjVtQsDYzEn5EbXUEt8avHzLQsUUVZ',
+      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
     },
   },
   indexTenor: {
     description:
       'The ISDA Designated Maturity, i.e. the tenor of the floating rate.',
     type: {
-      blueId: '5rdYwkwGdndCoYmQi9MNzw9SKQZsr68igDgyYFgvNzmh',
+      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
     },
   },
   interpolationMethod: {
     description:
       'The type of interpolation method that the calculation agent reserves the right to use.',
     type: {
-      blueId: 'EZCcXSeu6Mk3Bc3Qcno1DBgEKRoJ1xsTQUDczkFSE6g8',
+      blueId: '69SohrhYgsRTiHcPmh9GwadYoxt1kJgmJ3e2nrCajFHt',
     },
   },
   name: 'cdm/observable/asset/MakeWholeAmount',
   side: {
     description: 'The side (bid/mid/ask) of the measure.',
     type: {
-      blueId: '8rvM94HuSxVEjNh7NmWuk8pKTjeiV7uTrwNqUX9zsDaU',
+      blueId: 'AH1BY9EazwZmuZ6LcxCKPZSzsejRaRpRinAqLmVsFTgc',
     },
   },
   spread: {
     description: 'Spread in basis points over the floating rate index.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

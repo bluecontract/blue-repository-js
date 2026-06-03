@@ -2,10 +2,12 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const AgentSchema = withTypeBlueId(blueIds['MyOS/Agent'])(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
+const zod = z as any;
+
+export const AgentSchema: any = withTypeBlueId(blueIds['MyOS/Agent'])(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

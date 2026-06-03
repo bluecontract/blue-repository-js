@@ -1,17 +1,12 @@
-export const CdmBaseMathAveragingCalculationMethod = {
+export const CdmBaseMathAveragingCalculationMethod: Record<string, unknown> = {
   calculationMethod: {
     description:
       'Identifies which of the Pythagorean means is being used to compute an average value.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4W3FMfAf11hDkmCcU5z9e73aZtzoh9ZyM9gN7himsoy2',
+      blueId: 'D8BAM3Ef8YgktLMNJZg82NyQjEWkwYXQ2pZYpzsXPtnQ',
     },
   },
   description:
@@ -20,16 +15,11 @@ export const CdmBaseMathAveragingCalculationMethod = {
     description:
       'Identifies whether the average values will be weighted or unweighted.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/base/math/AveragingCalculationMethod',
-} as const;
+};

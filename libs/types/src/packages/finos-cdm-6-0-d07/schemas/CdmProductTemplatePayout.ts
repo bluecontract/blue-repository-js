@@ -10,34 +10,36 @@ import { CdmProductTemplateOptionPayoutSchema } from './CdmProductTemplateOption
 import { CdmProductTemplatePerformancePayoutSchema } from './CdmProductTemplatePerformancePayout';
 import { CdmProductTemplateSettlementPayoutSchema } from './CdmProductTemplateSettlementPayout';
 
-export const CdmProductTemplatePayoutSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplatePayoutSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/Payout']
 )(
-  z.object({
-    AssetPayout: z
+  zod.object({
+    AssetPayout: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplateAssetPayoutSchema)
       .optional(),
-    CommodityPayout: z
+    CommodityPayout: zod
       .lazy((): z.ZodTypeAny => CdmProductAssetCommodityPayoutSchema)
       .optional(),
-    CreditDefaultPayout: z
+    CreditDefaultPayout: zod
       .lazy((): z.ZodTypeAny => CdmProductAssetCreditDefaultPayoutSchema)
       .optional(),
-    description: z.string().optional(),
-    FixedPricePayout: z
+    description: zod.string().optional(),
+    FixedPricePayout: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplateFixedPricePayoutSchema)
       .optional(),
-    InterestRatePayout: z
+    InterestRatePayout: zod
       .lazy((): z.ZodTypeAny => CdmProductAssetInterestRatePayoutSchema)
       .optional(),
-    name: z.string().optional(),
-    OptionPayout: z
+    name: zod.string().optional(),
+    OptionPayout: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplateOptionPayoutSchema)
       .optional(),
-    PerformancePayout: z
+    PerformancePayout: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplatePerformancePayoutSchema)
       .optional(),
-    SettlementPayout: z
+    SettlementPayout: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplateSettlementPayoutSchema)
       .optional(),
   })

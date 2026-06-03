@@ -1,16 +1,19 @@
-export const CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate = {
+export const CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate: Record<
+  string,
+  unknown
+> = {
   adjustedDate: {
     description:
       'The date once the adjustment has been performed. (Note that this date may change if the business center holidays change).\n',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   dateAdjustments: {
     description:
       'The business day convention and financial business centers used for adjusting the date if it would otherwise fall on a day that is not a business date in the specified business centers.\n',
     type: {
-      blueId: 'FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd',
+      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
     },
   },
   description:
@@ -20,13 +23,13 @@ export const CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate = {
     description:
       'A date specified as some offset to another date (the anchor date).',
     type: {
-      blueId: '2wAd2mDukRH6r2YEZ4kU9e1fcUYpGHT8ZJEwFZFkKaCL',
+      blueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
     },
   },
   unadjustedDate: {
     description: 'A date subject to adjustment.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

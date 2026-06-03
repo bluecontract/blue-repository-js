@@ -4,21 +4,23 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PaymentMandateSpendSettledSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentMandateSpendSettledSchema: any = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Spend Settled']
 )(
   ResponseSchema.extend({
-    authorizationId: z.string().optional(),
-    capturedDeltaMinor: z.number().optional(),
-    description: z.string().optional(),
-    holdId: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    reservedDeltaMinor: z.number().optional(),
-    settledAt: z.lazy(() => TimestampSchema).optional(),
-    settlementId: z.string().optional(),
-    status: z.string().optional(),
-    transactionId: z.string().optional(),
+    authorizationId: zod.string().optional(),
+    capturedDeltaMinor: zod.number().optional(),
+    description: zod.string().optional(),
+    holdId: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
+    reservedDeltaMinor: zod.number().optional(),
+    settledAt: zod.lazy(() => TimestampSchema).optional(),
+    settlementId: zod.string().optional(),
+    status: zod.string().optional(),
+    transactionId: zod.string().optional(),
   })
 );
 

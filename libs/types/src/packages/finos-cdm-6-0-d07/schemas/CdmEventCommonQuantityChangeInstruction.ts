@@ -5,22 +5,24 @@ import { CdmBaseMathQuantityChangeDirectionEnumSchema } from './CdmBaseMathQuant
 import { CdmBaseStaticdataIdentifierIdentifierSchema } from './CdmBaseStaticdataIdentifierIdentifier';
 import { CdmObservableAssetPriceQuantitySchema } from './CdmObservableAssetPriceQuantity';
 
-export const CdmEventCommonQuantityChangeInstructionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventCommonQuantityChangeInstructionSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/common/QuantityChangeInstruction']
   )(
-    z.object({
-      change: z
-        .array(z.lazy(() => CdmObservableAssetPriceQuantitySchema))
+    zod.object({
+      change: zod
+        .array(zod.lazy(() => CdmObservableAssetPriceQuantitySchema))
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      direction: z.lazy(() => CdmBaseMathQuantityChangeDirectionEnumSchema),
-      lotIdentifier: z
-        .array(z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
+      description: zod.string().optional(),
+      direction: zod.lazy(() => CdmBaseMathQuantityChangeDirectionEnumSchema),
+      lotIdentifier: zod
+        .array(zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
         .min(0)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

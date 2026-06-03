@@ -1,9 +1,9 @@
-export const CdmProductTemplatePortfolioReturnTerms = {
+export const CdmProductTemplatePortfolioReturnTerms: Record<string, unknown> = {
   correlationReturnTerms: {
     description:
       'Return terms based upon the observed correlation between the components of the underlying basket.',
     type: {
-      blueId: 'HqY3kSqV1NfLvT5YLvitQ5Nq1sktFe6oA5AqyQC1j9jT',
+      blueId: 'EwvxCeweE6NzDi8idFivNwZ9joYB35RKBbzvwypsqnAR',
     },
   },
   description:
@@ -12,61 +12,46 @@ export const CdmProductTemplatePortfolioReturnTerms = {
     description:
       'Return terms based upon dividend payments associated to the underlier.',
     type: {
-      blueId: '7h8FScnN4pQLHjNkSJKae9Pz8U5rCRfseiLcscSpZTss',
+      blueId: 'J8EZbmYAMd5iEdiJDjh3B8Pk6R4eAXrQdryNuThytk1B',
     },
   },
   finalValuationPrice: {
     description:
       '2018 ISDA CDM Equity Confirmation for Security Equity Swap: Final Price | Specifies the final valuation price of the underlier. This price can be expressed either as an actual amount/currency, as a determination method, or by reference to another value specified in the swap document.\n',
     itemType: {
-      blueId: 'BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25',
+      blueId: '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   initialValuationPrice: {
     description:
       'Specifies the initial valuation price(s) of the underlier. This price can be expressed either as an actual amount/currency, as a determination method, or by reference to another value specified in the swap document.\n',
     itemType: {
-      blueId: 'BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25',
+      blueId: '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   interimValuationPrice: {
     description:
       'Specifies the initial valuation price(s) of the underlier. This price can be expressed either as an actual amount/currency, as a determination method, or by reference to another value specified in the swap document.\n',
     itemType: {
-      blueId: 'BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25',
+      blueId: '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   name: 'cdm/product/template/PortfolioReturnTerms',
@@ -74,57 +59,47 @@ export const CdmProductTemplatePortfolioReturnTerms = {
     description:
       'Canonical representation of the payer and receiver parties applicable to each individual return leg.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3',
+      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
     },
   },
   priceReturnTerms: {
     description: "Return terms based upon the underlier's observed price.",
     type: {
-      blueId: '7YFwQGbWnfaZ3YgwzGGgdBhyDppvFGTH2LibSGzdhSnH',
+      blueId: 'JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv',
     },
   },
   quantity: {
     description:
       'Specifies a quantity schedule for the underlier, which applies to each individual return leg.',
     type: {
-      blueId: 'aox7Y6mfMBx71DQngCd45QQNaCFw5yiNGb7U3XJD7r2',
+      blueId: '3QpANvMr6891ZuV6c8Yze7qcCyqbKRhy9zqwHuMkw8FP',
     },
   },
   underlier: {
     description:
       'Defines the product that is the subject of a tradable product definition, an underlying product definition, a physical exercise, a position, or other purposes.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7Ezn98bzTDBSzbTRQf8yvx7zNsbGwp4w3rfb12fsiBwz',
+      blueId: '29tRf6HKyJ5PZ7qSgJmiEnuDwSx7xXy8vHzP4X2PfJU8',
     },
   },
   varianceReturnTerms: {
     description:
       "Return terms based upon the observed variance of the underlier's price.",
     type: {
-      blueId: 'DyvMnYXfQRGwqfP9Kybg1qYNhMuFyGyMpw3x1vAopkmX',
+      blueId: '7mdyTJMV5CfZFGwVGuYsu7jWpiqsAjBJWPPuvhpsR7Lu',
     },
   },
   volatilityReturnTerms: {
     description:
       "Return terms based upon the observed volatility of the underlier's price.",
     type: {
-      blueId: '3e4M5cnE53HFtp4uJHoNYZeL1Vwo4xTDK6XJh5tNRiGb',
+      blueId: '3BXRxsxyT6CgqYyNVM6wZNBwCaCAARu7VCvmQoCkn18s',
     },
   },
-} as const;
+};

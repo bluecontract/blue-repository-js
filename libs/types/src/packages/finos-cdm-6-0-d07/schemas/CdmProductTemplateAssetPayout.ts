@@ -11,36 +11,38 @@ import { CdmProductTemplateAssetLegSchema } from './CdmProductTemplateAssetLeg';
 import { CdmProductTemplateAssetPayoutTradeTypeEnumSchema } from './CdmProductTemplateAssetPayoutTradeTypeEnum';
 import { CdmProductTemplateDividendTermsSchema } from './CdmProductTemplateDividendTerms';
 
-export const CdmProductTemplateAssetPayoutSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateAssetPayoutSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/AssetPayout']
 )(
-  z.object({
-    assetLeg: z
-      .array(z.lazy(() => CdmProductTemplateAssetLegSchema))
+  zod.object({
+    assetLeg: zod
+      .array(zod.lazy(() => CdmProductTemplateAssetLegSchema))
       .min(1)
       .optional(),
-    description: z.string().optional(),
-    dividendTerms: z
+    description: zod.string().optional(),
+    dividendTerms: zod
       .lazy(() => CdmProductTemplateDividendTermsSchema)
       .optional(),
-    minimumFee: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-    name: z.string().optional(),
-    payerReceiver: z
+    minimumFee: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod
       .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
       .optional(),
-    priceQuantity: z
+    priceQuantity: zod
       .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
       .optional(),
-    principalPayment: z
+    principalPayment: zod
       .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
       .optional(),
-    settlementTerms: z
+    settlementTerms: zod
       .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
       .optional(),
-    tradeType: z
+    tradeType: zod
       .lazy(() => CdmProductTemplateAssetPayoutTradeTypeEnumSchema)
       .optional(),
-    underlier: z.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema),
+    underlier: zod.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema),
   })
 );
 

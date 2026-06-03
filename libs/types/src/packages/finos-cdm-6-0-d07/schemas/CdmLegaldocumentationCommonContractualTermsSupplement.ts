@@ -3,20 +3,22 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnumSchema } from './CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum';
 
-export const CdmLegaldocumentationCommonContractualTermsSupplementSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonContractualTermsSupplementSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/ContractualTermsSupplement'
     ]
   )(
-    z.object({
-      contractualTermsSupplementType: z.lazy(
+    zod.object({
+      contractualTermsSupplementType: zod.lazy(
         () =>
           CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnumSchema
       ),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      publicationDate: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      publicationDate: zod.string().optional(),
     })
   );
 

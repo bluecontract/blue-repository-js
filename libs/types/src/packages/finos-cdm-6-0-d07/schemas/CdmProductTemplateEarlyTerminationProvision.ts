@@ -6,23 +6,25 @@ import { CdmProductTemplateExercisePeriodSchema } from './CdmProductTemplateExer
 import { CdmProductTemplateMandatoryEarlyTerminationSchema } from './CdmProductTemplateMandatoryEarlyTermination';
 import { CdmProductTemplateOptionalEarlyTerminationSchema } from './CdmProductTemplateOptionalEarlyTermination';
 
-export const CdmProductTemplateEarlyTerminationProvisionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateEarlyTerminationProvisionSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/template/EarlyTerminationProvision']
   )(
-    z.object({
-      description: z.string().optional(),
-      mandatoryEarlyTermination: z
+    zod.object({
+      description: zod.string().optional(),
+      mandatoryEarlyTermination: zod
         .lazy(() => CdmProductTemplateMandatoryEarlyTerminationSchema)
         .optional(),
-      mandatoryEarlyTerminationDateTenor: z
+      mandatoryEarlyTerminationDateTenor: zod
         .lazy(() => CdmBaseDatetimePeriodSchema)
         .optional(),
-      name: z.string().optional(),
-      optionalEarlyTermination: z
+      name: zod.string().optional(),
+      optionalEarlyTermination: zod
         .lazy(() => CdmProductTemplateOptionalEarlyTerminationSchema)
         .optional(),
-      optionalEarlyTerminationParameters: z
+      optionalEarlyTerminationParameters: zod
         .lazy(() => CdmProductTemplateExercisePeriodSchema)
         .optional(),
     })

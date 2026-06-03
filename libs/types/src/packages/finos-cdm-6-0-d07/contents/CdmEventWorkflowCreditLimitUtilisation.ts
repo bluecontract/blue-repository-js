@@ -1,10 +1,10 @@
-export const CdmEventWorkflowCreditLimitUtilisation = {
+export const CdmEventWorkflowCreditLimitUtilisation: Record<string, unknown> = {
   description:
     'Credit limit utilisation breakdown by executed trades and pending orders.',
   executed: {
     description: 'Credit limit utilisation attributable to executed trades.',
     type: {
-      blueId: '5mSFBLKEbHuJRnrmTEjggEtTrLgU7NJhaz9tcKqiJVZy',
+      blueId: 'DhHQHqqp2Z9sKdNPDi7Zcxze2V3FZafnK1rKbVaWWDHE',
     },
   },
   name: 'cdm/event/workflow/CreditLimitUtilisation',
@@ -12,7 +12,7 @@ export const CdmEventWorkflowCreditLimitUtilisation = {
     description:
       'Credit limit utilisation attributable to pending unexecuted orders.',
     type: {
-      blueId: '5mSFBLKEbHuJRnrmTEjggEtTrLgU7NJhaz9tcKqiJVZy',
+      blueId: 'DhHQHqqp2Z9sKdNPDi7Zcxze2V3FZafnK1rKbVaWWDHE',
     },
   },
-} as const;
+};

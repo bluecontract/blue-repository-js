@@ -5,25 +5,27 @@ import { CdmBaseDatetimeBusinessDayAdjustmentsSchema } from './CdmBaseDatetimeBu
 import { CdmBaseDatetimeRelativeDateOffsetSchema } from './CdmBaseDatetimeRelativeDateOffset';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/datetime/AdjustableOrAdjustedOrRelativeDate'
     ]
   )(
-    z.object({
-      adjustedDate: z
+    zod.object({
+      adjustedDate: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      dateAdjustments: z
+      dateAdjustments: zod
         .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      relativeDate: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      relativeDate: zod
         .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
         .optional(),
-      unadjustedDate: z.string().optional(),
+      unadjustedDate: zod.string().optional(),
     })
   );
 

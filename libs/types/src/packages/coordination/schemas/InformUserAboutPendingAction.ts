@@ -3,17 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { EventSchema } from './Event';
 
-export const InformUserAboutPendingActionSchema = withTypeBlueId(
+const zod = z as any;
+
+export const InformUserAboutPendingActionSchema: any = withTypeBlueId(
   blueIds['Coordination/Inform User About Pending Action']
 )(
   EventSchema.extend({
-    channel: z.string().optional(),
-    description: z.string().optional(),
+    channel: zod.string().optional(),
+    description: zod.string().optional(),
     expectedRequest: blueNodeField().optional(),
-    message: z.string().optional(),
-    name: z.string().optional(),
-    operation: z.string().optional(),
-    title: z.string().optional(),
+    message: zod.string().optional(),
+    name: zod.string().optional(),
+    operation: zod.string().optional(),
+    title: zod.string().optional(),
   })
 );
 

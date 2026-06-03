@@ -1,13 +1,13 @@
-export const TransactionDetailsUpdateLocked = {
+export const TransactionDetailsUpdateLocked: Record<string, unknown> = {
   description:
     'Transaction-details updates were locked. Subsequent details changes must be rejected until explicitly unlocked.\n',
   lockedAt: {
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   name: 'Transaction Details Update Locked',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

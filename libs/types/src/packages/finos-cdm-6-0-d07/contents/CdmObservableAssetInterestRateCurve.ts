@@ -1,29 +1,19 @@
-export const CdmObservableAssetInterestRateCurve = {
+export const CdmObservableAssetInterestRateCurve: Record<string, unknown> = {
   floatingRateIndex: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'D1NQDMjhdP9hVZMeu9eipm9vH3aGJP3Zn1Ea8snMVxam',
+      blueId: '2qVsAJiDNKtcYeoPmttQzFLH44MsczpvMvQ9ZQvwUW6Z',
     },
   },
   name: 'cdm/observable/asset/InterestRateCurve',
   tenor: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5rdYwkwGdndCoYmQi9MNzw9SKQZsr68igDgyYFgvNzmh',
+      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
     },
   },
-} as const;
+};

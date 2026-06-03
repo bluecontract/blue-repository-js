@@ -1,27 +1,22 @@
-export const CdmBaseDatetimeAdjustableDates = {
+export const CdmBaseDatetimeAdjustableDates: Record<string, unknown> = {
   adjustedDate: {
     description:
       'The date(s) once the adjustment has been performed. (Note that this date may change if the business center holidays change).\n',
     itemType: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   dateAdjustments: {
     description:
       'The business day convention and financial business centers used for adjusting the date if it would otherwise fall on a day that is not a business date in the specified business centers.\n',
     type: {
-      blueId: 'FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd',
+      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
     },
   },
   description:
@@ -30,18 +25,13 @@ export const CdmBaseDatetimeAdjustableDates = {
   unadjustedDate: {
     description: 'A date subject to adjustment.',
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

@@ -1,14 +1,14 @@
-export const CdmEventCommonCollateralPosition = {
+export const CdmEventCommonCollateralPosition: Record<string, unknown> = {
   cashBalance: {
     description: 'The aggregate cost of proceeds',
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   collateralPositionStatus: {
     description: 'Indicates the collateral positions settlement status.',
     type: {
-      blueId: 'ET5sToBGwmEYMrixxQtBQCXUeukfnnYAJugSx43kxbwm',
+      blueId: 'ScqKZW3m5Vk4Ht3xpASxxv9euZM32FQPYjE6PbCZEHc',
     },
   },
   description: 'Specifies the individual components of collateral positions.',
@@ -16,38 +16,33 @@ export const CdmEventCommonCollateralPosition = {
   priceQuantity: {
     description: 'Position with many price quantities.',
     itemType: {
-      blueId: '3M3Dq9Mg9Eq1zojVRM5ZJVz9nV2VfXFeSLB6TnvKozYs',
+      blueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   product: {
     description: 'The product underlying the position.',
     type: {
-      blueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#0',
+      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#0',
     },
   },
   tradeReference: {
     description:
       'Reference to the Contract, in case product is contractual and the contract has been formed',
     type: {
-      blueId: 'DXhfNgQ1Hmipx5YJVPFZLYTAfk5vomh4ywYmSZX1ChyJ',
+      blueId: 'EQ41UGrPkUeaUNXD9QmELA1aEoVBtx9tVzgQZ5Tp1rMT',
     },
   },
   treatment: {
     description:
       'Specifies if there is any treatment to be applied to collateral, such as percentage discount which will impact collateral value.\n',
     type: {
-      blueId: 'BL9z4RShUcNi4oWpkU2pgnaKF2vGwrxjpJBWWMAUruzN',
+      blueId: '3J8QUqU5781wEZ91F9Y7a1CUz2EihFL2b3SWBCB1FBth',
     },
   },
-} as const;
+};

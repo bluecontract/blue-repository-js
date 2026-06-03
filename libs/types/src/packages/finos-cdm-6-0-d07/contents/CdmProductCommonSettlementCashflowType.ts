@@ -1,15 +1,15 @@
-export const CdmProductCommonSettlementCashflowType = {
+export const CdmProductCommonSettlementCashflowType: Record<string, unknown> = {
   cashflowType: {
     description: 'Type of cashflow corresponding to a scheduled event.',
     type: {
-      blueId: 'H7iPS6CrsvGu1PXNutZkgqEEQDC4jBXCMGkL1Ku6TxLf',
+      blueId: '9k43VLjjoSJbXKM7aCSjBTinwWFf8sRDogVJbsM2JjjR',
     },
   },
   cashPrice: {
     description:
       'Type of cashflow corresponding to a non-scheduled event, where a price must be agreed between the parties.',
     type: {
-      blueId: 'EBxPTGdUnubTi1nPQX8vJqTa8Q5FX7fvkCdtYQrZyUdg',
+      blueId: 'EdLKjCfief3mhGVbVnHDpyHDKbTXHYqXoaTKtcn9EjDL',
     },
   },
   description:
@@ -17,7 +17,7 @@ export const CdmProductCommonSettlementCashflowType = {
   name: 'cdm/product/common/settlement/CashflowType',
   priceExpression: {
     type: {
-      blueId: '5oss5vAthfdDyx4i1CUcAgeHxzWsk2SCDGWtrZ76qZzi',
+      blueId: 'DGw3j3EkTUgoJb9WQD39BfVPHsqnL4bXU5uXCMnmCe3v',
     },
   },
-} as const;
+};

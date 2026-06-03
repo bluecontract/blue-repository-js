@@ -9,39 +9,41 @@ import { CdmProductAssetSpreadScheduleSchema } from './CdmProductAssetSpreadSche
 import { CdmProductCommonScheduleRateScheduleSchema } from './CdmProductCommonScheduleRateSchedule';
 import { CdmProductTemplateStrikeScheduleSchema } from './CdmProductTemplateStrikeSchedule';
 
-export const CdmProductAssetFloatingRateSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductAssetFloatingRateSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FloatingRate']
 )(
-  z.object({
-    calculationParameters: z
+  zod.object({
+    calculationParameters: zod
       .lazy(
         () =>
           CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema
       )
       .optional(),
-    capRateSchedule: z
+    capRateSchedule: zod
       .lazy(() => CdmProductTemplateStrikeScheduleSchema)
       .optional(),
-    fallbackRate: z
+    fallbackRate: zod
       .lazy(() => CdmObservableAssetCalculatedrateFallbackRateParametersSchema)
       .optional(),
-    floatingRateMultiplierSchedule: z
+    floatingRateMultiplierSchedule: zod
       .lazy(() => CdmProductCommonScheduleRateScheduleSchema)
       .optional(),
-    floorRateSchedule: z
+    floorRateSchedule: zod
       .lazy(() => CdmProductTemplateStrikeScheduleSchema)
       .optional(),
-    name: z.string().optional(),
-    rateOption: z
+    name: zod.string().optional(),
+    rateOption: zod
       .lazy(
         () =>
           CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema
       )
       .optional(),
-    rateTreatment: z
+    rateTreatment: zod
       .lazy(() => CdmProductAssetRateTreatmentEnumSchema)
       .optional(),
-    spreadSchedule: z
+    spreadSchedule: zod
       .lazy(() => CdmProductAssetSpreadScheduleSchema)
       .optional(),
   })

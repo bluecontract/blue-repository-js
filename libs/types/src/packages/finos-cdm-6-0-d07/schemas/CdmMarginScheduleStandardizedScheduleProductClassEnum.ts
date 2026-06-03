@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmMarginScheduleStandardizedScheduleProductClassEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmMarginScheduleStandardizedScheduleProductClassEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/margin/schedule/StandardizedScheduleProductClassEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'BasisSwap',
       'ContractForDifference',
       'CorrelationSwap',

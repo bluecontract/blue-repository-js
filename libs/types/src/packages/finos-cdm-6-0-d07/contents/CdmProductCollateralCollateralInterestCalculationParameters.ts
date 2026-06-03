@@ -1,40 +1,33 @@
-export const CdmProductCollateralCollateralInterestCalculationParameters = {
+export const CdmProductCollateralCollateralInterestCalculationParameters: Record<
+  string,
+  unknown
+> = {
   compoundingBusinessCenter: {
     description: 'Specifies the applicable business centers for compounding.',
     itemType: {
-      blueId: 'T68z84ntdBb19juBApDyMAndAVUzzmotTGUTuJnHV3D',
+      blueId: 'Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   compoundingType: {
     description:
       'Specifies the type of compounding to be applied (None, Business, Calendar).',
     type: {
-      blueId: '5ojsHNF1jNcdgizZKEHoVtM4tCrpwCnSYbccLWJLnS5A',
+      blueId: 'GvNXAYyGbJwhZ1D7jxhPLtLsKVTeAZor6SgFatG9UvMa',
     },
   },
   dayCountFraction: {
     description: 'Specifies the day count fraction to use for that currency.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'Gg7yf6CJg1QvGhkZFmdUsZR7t1wfdN4PpLPrymefw2Yx',
+      blueId: 'G5reDMTj2A64oDwXZBaNeRgFEhAtZMkWvkJcte51qHiJ',
     },
   },
   description:
@@ -42,48 +35,43 @@ export const CdmProductCollateralCollateralInterestCalculationParameters = {
   fixedRate: {
     description: 'Specifies the applicable fixed rate  if used.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   floatingRate: {
     description: 'Specifies the floating interest rate to be used.',
     type: {
-      blueId: 'CmSrznzVLE1Cqum7Xx5TArrxUTDcNSUH9UDm1PLDZWeB',
+      blueId: '9je4gdfYWh5s9PxZCf36xymmiBGd59PHPrBapq7pnGVf',
     },
   },
   inBaseCurrency: {
     description:
       'If True, specifies that the interest transfers should be converted to base currency equivalent, or if False specifies that the transfer should be in the currency of the collateral.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/product/collateral/CollateralInterestCalculationParameters',
   rounding: {
     description: 'Specifies the rounding rules for settling in that currency.',
     type: {
-      blueId: 'ArfQ58kSzN4QkRNkhhMYbmgBrEGPrnnSSA4sgC1Stoho',
+      blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
     },
   },
   roundingFrequency: {
     description: 'Specifies when/how often is rounding applied?',
     type: {
-      blueId: 'HsMcUzdZLtswDJ9XExanUTbjYaQ6n5UmH2JZ7RQkHNzR',
+      blueId: 'Fw3wLbrcadtqbe88BTTnN3TZSgcXPzyHjjPvsic6NY2P',
     },
   },
   withholdingTaxRate: {
     description:
       'Specifies the withholding tax rate if a withholding tax is applicable.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

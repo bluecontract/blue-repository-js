@@ -1,60 +1,40 @@
-export const CdmMarginScheduleStandardizedSchedule = {
+export const CdmMarginScheduleStandardizedSchedule: Record<string, unknown> = {
   assetClass: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'FzucpKNGdebaXt16BhwDALjdEj7H13SwFXddZjsqxHvk',
+      blueId: 'CDbwJvzYyrQ7afEJRFR8x1ii8sk11Es3z1e62dbNj2rU',
     },
   },
   durationInYears: {
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/margin/schedule/StandardizedSchedule',
   notional: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   notionalCurrency: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   productClass: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DtAjQji5fMaopUpWiA8ZrmHUiTEFdYPhtvujqB9CMLc3',
+      blueId: 'BwbqfunwwJxSMfQD4CEUJ2Ab4AqzjMTjpeSCF3E1NLYx',
     },
   },
-} as const;
+};

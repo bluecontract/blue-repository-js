@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductTemplatePassThroughItemSchema } from './CdmProductTemplatePassThroughItem';
 
-export const CdmProductTemplatePassThroughSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplatePassThroughSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PassThrough']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    passThroughItem: z
-      .array(z.lazy(() => CdmProductTemplatePassThroughItemSchema))
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    passThroughItem: zod
+      .array(zod.lazy(() => CdmProductTemplatePassThroughItemSchema))
       .min(1)
       .optional(),
   })

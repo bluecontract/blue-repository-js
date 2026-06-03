@@ -6,27 +6,28 @@ import { CdmBaseStaticdataPartyPartyReferencePayerReceiverSchema } from './CdmBa
 import { CdmObservableCommonTimeTypeEnumSchema } from './CdmObservableCommonTimeTypeEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmObservableEventFeaturePaymentSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/FeaturePayment']
-  )(
-    z.object({
-      amount: z.number().optional(),
-      currency: z
-        .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
-        .optional(),
-      description: z.string().optional(),
-      levelPercentage: z.number().optional(),
-      name: z.string().optional(),
-      payerReceiver: z.lazy(
-        () => CdmBaseStaticdataPartyPartyReferencePayerReceiverSchema
-      ),
-      paymentDate: z
-        .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
-        .optional(),
-      time: z.lazy(() => CdmObservableCommonTimeTypeEnumSchema).optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableEventFeaturePaymentSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/FeaturePayment']
+)(
+  zod.object({
+    amount: zod.number().optional(),
+    currency: zod
+      .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+      .optional(),
+    description: zod.string().optional(),
+    levelPercentage: zod.number().optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod.lazy(
+      () => CdmBaseStaticdataPartyPartyReferencePayerReceiverSchema
+    ),
+    paymentDate: zod
+      .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
+      .optional(),
+    time: zod.lazy(() => CdmObservableCommonTimeTypeEnumSchema).optional(),
+  })
+);
 
 export type CdmObservableEventFeaturePayment = z.infer<
   typeof CdmObservableEventFeaturePaymentSchema

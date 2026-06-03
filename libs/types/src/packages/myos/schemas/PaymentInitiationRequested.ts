@@ -3,37 +3,33 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 import { RequestSchema } from '../../coordination/schemas/Request';
-import { ChannelSchema } from '../../core/schemas/Channel';
 import { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 
-export const PaymentInitiationRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentInitiationRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Payment Initiation Requested']
 )(
   RequestSchema.extend({
-    amount: z.number().optional(),
-    context: z
+    amount: zod.number().optional(),
+    context: zod
       .object({
-        description: z.string().optional(),
-        documentId: z.string().optional(),
+        description: zod.string().optional(),
+        documentId: zod.string().optional(),
       })
       .optional(),
-    currency: z.lazy(() => CurrencySchema).optional(),
-    description: z.string().optional(),
-    idempotencyKey: z.string().optional(),
-    name: z.string().optional(),
-    paynote: z
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
+    idempotencyKey: zod.string().optional(),
+    name: zod.string().optional(),
+    paynote: zod
       .object({
-        channelBindings: z
-          .record(
-            z.string(),
-            z.lazy(() => ChannelSchema)
-          )
-          .optional(),
-        description: z.string().optional(),
+        channelBindings: zod.record(zod.string(), blueNodeField()).optional(),
+        description: zod.string().optional(),
         document: blueNodeField().optional(),
       })
       .optional(),
-    recipient: z.lazy(() => MyOSBalanceAccountSchema).optional(),
+    recipient: zod.lazy(() => MyOSBalanceAccountSchema).optional(),
   })
 );
 

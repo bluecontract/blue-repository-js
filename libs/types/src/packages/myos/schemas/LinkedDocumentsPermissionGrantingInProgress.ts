@@ -4,16 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
 
-export const LinkedDocumentsPermissionGrantingInProgressSchema = withTypeBlueId(
-  blueIds['MyOS/Linked Documents Permission Granting in Progress']
-)(
-  ResponseSchema.extend({
-    description: z.string().optional(),
-    links: z.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
-    name: z.string().optional(),
-    targetSessionId: z.string().optional(),
-  })
-);
+const zod = z as any;
+
+export const LinkedDocumentsPermissionGrantingInProgressSchema: any =
+  withTypeBlueId(
+    blueIds['MyOS/Linked Documents Permission Granting in Progress']
+  )(
+    ResponseSchema.extend({
+      description: zod.string().optional(),
+      links: zod.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
+      name: zod.string().optional(),
+      targetSessionId: zod.string().optional(),
+    })
+  );
 
 export type LinkedDocumentsPermissionGrantingInProgress = z.infer<
   typeof LinkedDocumentsPermissionGrantingInProgressSchema

@@ -1,11 +1,11 @@
-export const CdmObservableAssetPriceQuantity = {
+export const CdmObservableAssetPriceQuantity: Record<string, unknown> = {
   description:
     'Defines a settlement as an exchange between two parties of a specified quantity of an asset (the quantity) against a specified quantity of another asset (the price). The settlement is optional and can be either cash or physical. The quantity can additionally be specified in terms of one or more currency amounts. In the case of non-cash products, the settlement of the price/quantity would not be specified here and instead would be delegated to the product mechanics, as parameterised by the price/quantity values.\n',
   effectiveDate: {
     description:
       'Specifies the date at which the price and quantity become effective. This day may be subject to adjustment in accordance with a business day convention, or could be specified as relative to a trade date, for instance. Optional cardinality, as the effective date is usually specified in the product definition, so it may only need to be specified as part of the PriceQuantity in an increase/decrease scenario for an existing trade.\n',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   name: 'cdm/observable/asset/PriceQuantity',
@@ -13,43 +13,33 @@ export const CdmObservableAssetPriceQuantity = {
     description:
       'Specifies the object to be observed for a price, it could be an asset or an index. The cardinality is optional as some quantity / price cases have no observable (e.g. a fixed rate in a given currency).\n',
     type: {
-      blueId: '6E8HRHJPNpbSaPQoLzzGEaJf6en5naXtbaNeGZ7ar9b1',
+      blueId: '356TLY4h2f86ko6g3UzBMXTWaCaZ9zdRXa3zrGiVTQrL',
     },
   },
   price: {
     description:
       'Specifies a price to be used for trade amounts and other purposes.',
     itemType: {
-      blueId: '8M8p7J9e17R96KGxd8hWDz34b3w8981GYsa4TGJtPhNG',
+      blueId: '5P1iV2VHBfC9AHhxAxN9sAUaoXTBP5jKaV5KMwJEtLvz',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   quantity: {
     description:
       'Specifies a quantity to be associated with an event, for example a trade amount.',
     itemType: {
-      blueId: '8hR8iAKvHAwmBTKxfHuhZUDeDWMp3H16GudiMXMGZqbv',
+      blueId: '4u9YFPkqCriFw9Nz1fytvh7d9BRSRKqqQKDjqfPsqaD5',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

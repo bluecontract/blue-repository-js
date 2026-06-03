@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductAssetIndexAnnexSourceEnumSchema } from './CdmProductAssetIndexAnnexSourceEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmProductAssetFieldWithMetaIndexAnnexSourceEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFieldWithMetaIndexAnnexSourceEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/FieldWithMetaIndexAnnexSourceEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmProductAssetIndexAnnexSourceEnumSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod.lazy(() => CdmProductAssetIndexAnnexSourceEnumSchema).optional(),
     })
   );
 

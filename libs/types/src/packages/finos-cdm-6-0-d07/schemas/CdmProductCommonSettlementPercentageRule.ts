@@ -3,17 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
 
-export const CdmProductCommonSettlementPercentageRuleSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPercentageRuleSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/PercentageRule']
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      notionalAmountReference: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      notionalAmountReference: zod.lazy(
         () => CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema
       ),
-      paymentPercent: z.number(),
+      paymentPercent: zod.number(),
     })
   );
 

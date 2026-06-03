@@ -5,16 +5,18 @@ import { CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema } from './CdmBa
 import { CdmBaseMathNonNegativeQuantitySchema } from './CdmBaseMathNonNegativeQuantity';
 import { CdmBaseStaticdataAssetCommonAssetSchema } from './CdmBaseStaticdataAssetCommonAsset';
 
-export const CdmProductCommonSettlementAssetFlowBaseSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementAssetFlowBaseSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/AssetFlowBase']
   )(
-    z.object({
-      asset: z.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      quantity: z.lazy(() => CdmBaseMathNonNegativeQuantitySchema),
-      settlementDate: z.lazy(
+    zod.object({
+      asset: zod.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      quantity: zod.lazy(() => CdmBaseMathNonNegativeQuantitySchema),
+      settlementDate: zod.lazy(
         () => CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema
       ),
     })

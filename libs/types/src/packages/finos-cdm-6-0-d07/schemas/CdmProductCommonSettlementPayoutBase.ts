@@ -6,25 +6,26 @@ import { CdmProductCommonSettlementPrincipalPaymentsSchema } from './CdmProductC
 import { CdmProductCommonSettlementResolvablePriceQuantitySchema } from './CdmProductCommonSettlementResolvablePriceQuantity';
 import { CdmProductCommonSettlementSettlementTermsSchema } from './CdmProductCommonSettlementSettlementTerms';
 
-export const CdmProductCommonSettlementPayoutBaseSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/PayoutBase']
-  )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      payerReceiver: z.lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema),
-      priceQuantity: z
-        .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
-        .optional(),
-      principalPayment: z
-        .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
-        .optional(),
-      settlementTerms: z
-        .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonSettlementPayoutBaseSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/PayoutBase']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod.lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema),
+    priceQuantity: zod
+      .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
+      .optional(),
+    principalPayment: zod
+      .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
+      .optional(),
+    settlementTerms: zod
+      .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCommonSettlementPayoutBase = z.infer<
   typeof CdmProductCommonSettlementPayoutBaseSchema

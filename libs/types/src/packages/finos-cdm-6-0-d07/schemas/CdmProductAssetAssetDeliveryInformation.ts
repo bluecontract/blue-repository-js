@@ -5,21 +5,23 @@ import { CdmBaseMathQuantitySchema } from './CdmBaseMathQuantity';
 import { CdmBaseStaticdataIdentifierLocationIdentifierSchema } from './CdmBaseStaticdataIdentifierLocationIdentifier';
 import { CdmProductAssetAssetDeliveryPeriodsSchema } from './CdmProductAssetAssetDeliveryPeriods';
 
-export const CdmProductAssetAssetDeliveryInformationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetAssetDeliveryInformationSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/AssetDeliveryInformation']
   )(
-    z.object({
-      deliveryCapacity: z.lazy(() => CdmBaseMathQuantitySchema).optional(),
-      description: z.string().optional(),
-      location: z
+    zod.object({
+      deliveryCapacity: zod.lazy(() => CdmBaseMathQuantitySchema).optional(),
+      description: zod.string().optional(),
+      location: zod
         .array(
-          z.lazy(() => CdmBaseStaticdataIdentifierLocationIdentifierSchema)
+          zod.lazy(() => CdmBaseStaticdataIdentifierLocationIdentifierSchema)
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
-      periods: z
+      name: zod.string().optional(),
+      periods: zod
         .lazy(() => CdmProductAssetAssetDeliveryPeriodsSchema)
         .optional(),
     })

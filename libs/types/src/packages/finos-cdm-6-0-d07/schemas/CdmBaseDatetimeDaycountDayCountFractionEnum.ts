@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseDatetimeDaycountDayCountFractionEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeDaycountDayCountFractionEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/daycount/DayCountFractionEnum']
   )(
-    z.enum([
+    zod.enum([
       'ACT/360',
       'ACT/364',
       'ACT/365L',

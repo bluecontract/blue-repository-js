@@ -4,18 +4,20 @@ import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { ActorSchema } from './Actor';
 import { TimelineSchema } from './Timeline';
 
-export const TimelineEntrySchema = withTypeBlueId(
+const zod = z as any;
+
+export const TimelineEntrySchema: any = withTypeBlueId(
   blueIds['Coordination/Timeline Entry']
 )(
-  z.object({
-    actor: z.lazy(() => ActorSchema).optional(),
-    description: z.string().optional(),
+  zod.object({
+    actor: zod.lazy(() => ActorSchema).optional(),
+    description: zod.string().optional(),
     message: blueNodeField().optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
     prevEntry: blueNodeField().optional(),
     source: blueNodeField().optional(),
-    timeline: z.lazy(() => TimelineSchema).optional(),
-    timestamp: z.number().optional(),
+    timeline: zod.lazy(() => TimelineSchema).optional(),
+    timestamp: zod.number().optional(),
   })
 );
 

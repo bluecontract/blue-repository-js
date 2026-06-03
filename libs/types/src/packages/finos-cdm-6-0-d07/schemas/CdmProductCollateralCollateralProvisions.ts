@@ -5,23 +5,25 @@ import { CdmProductCollateralCollateralTypeEnumSchema } from './CdmProductCollat
 import { CdmProductCollateralEligibleCollateralCriteriaSchema } from './CdmProductCollateralEligibleCollateralCriteria';
 import { CdmProductCollateralSubstitutionProvisionsSchema } from './CdmProductCollateralSubstitutionProvisions';
 
-export const CdmProductCollateralCollateralProvisionsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralProvisionsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralProvisions']
   )(
-    z.object({
-      collateralType: z.lazy(
+    zod.object({
+      collateralType: zod.lazy(
         () => CdmProductCollateralCollateralTypeEnumSchema
       ),
-      description: z.string().optional(),
-      eligibleCollateral: z
+      description: zod.string().optional(),
+      eligibleCollateral: zod
         .array(
-          z.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
+          zod.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
-      substitutionProvisions: z
+      name: zod.string().optional(),
+      substitutionProvisions: zod
         .lazy(() => CdmProductCollateralSubstitutionProvisionsSchema)
         .optional(),
     })

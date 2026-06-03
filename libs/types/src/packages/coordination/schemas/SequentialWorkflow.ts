@@ -1,16 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { HandlerSchema } from '../../core/schemas/Handler';
 import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
 
-export const SequentialWorkflowSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SequentialWorkflowSchema: any = withTypeBlueId(
   blueIds['Coordination/Sequential Workflow']
 )(
-  HandlerSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    steps: z.array(z.lazy(() => SequentialWorkflowStepSchema)).optional(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    steps: zod.array(zod.lazy(() => SequentialWorkflowStepSchema)).optional(),
   })
 );
 

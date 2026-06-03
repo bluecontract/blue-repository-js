@@ -5,24 +5,25 @@ import { CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema } from './CdmBaseD
 import { CdmBaseStaticdataPartyAncillaryRoleEnumSchema } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
 import { CdmProductTemplateExerciseNoticeGiverEnumSchema } from './CdmProductTemplateExerciseNoticeGiverEnum';
 
-export const CdmProductTemplateExerciseNoticeSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseNotice']
-  )(
-    z.object({
-      businessCenter: z.lazy(
-        () => CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema
-      ),
-      description: z.string().optional(),
-      exerciseNoticeGiver: z.lazy(
-        () => CdmProductTemplateExerciseNoticeGiverEnumSchema
-      ),
-      exerciseNoticeReceiver: z
-        .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateExerciseNoticeSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseNotice']
+)(
+  zod.object({
+    businessCenter: zod.lazy(
+      () => CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema
+    ),
+    description: zod.string().optional(),
+    exerciseNoticeGiver: zod.lazy(
+      () => CdmProductTemplateExerciseNoticeGiverEnumSchema
+    ),
+    exerciseNoticeReceiver: zod
+      .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmProductTemplateExerciseNotice = z.infer<
   typeof CdmProductTemplateExerciseNoticeSchema

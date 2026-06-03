@@ -1,45 +1,35 @@
-export const CdmObservableAssetSwapCurveValuation = {
+export const CdmObservableAssetSwapCurveValuation: Record<string, unknown> = {
   description:
     'A class to specify a valuation swap curve, which is used as part of the strike construct for the bond and convertible bond options.\n',
   floatingRateIndex: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'AygoLHtsrgUkWFxjVtQsDYzEn5EbXUEt8avHzLQsUUVZ',
+      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
     },
   },
   indexTenor: {
     description:
       'The ISDA Designated Maturity, i.e. the tenor of the floating rate.',
     type: {
-      blueId: '5rdYwkwGdndCoYmQi9MNzw9SKQZsr68igDgyYFgvNzmh',
+      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
     },
   },
   name: 'cdm/observable/asset/SwapCurveValuation',
   side: {
     description: 'The side (bid/mid/ask) of the measure.',
     type: {
-      blueId: '8rvM94HuSxVEjNh7NmWuk8pKTjeiV7uTrwNqUX9zsDaU',
+      blueId: 'AH1BY9EazwZmuZ6LcxCKPZSzsejRaRpRinAqLmVsFTgc',
     },
   },
   spread: {
     description: 'Spread in basis points over the floating rate index.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

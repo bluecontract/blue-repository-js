@@ -4,24 +4,26 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataAssetCommonISOCurrencyCodeEnumSchema } from './CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum';
 import { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
 
-export const CdmObservableAssetFroFloatingRateIndexIdentificationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFroFloatingRateIndexIdentificationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/fro/FloatingRateIndexIdentification'
     ]
   )(
-    z.object({
-      currency: z
+    zod.object({
+      currency: zod
         .lazy(() => CdmBaseStaticdataAssetCommonISOCurrencyCodeEnumSchema)
         .optional(),
-      floatingRateIndex: z
+      floatingRateIndex: zod
         .lazy(
           () =>
             CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema
         )
         .optional(),
-      froType: z.string().optional(),
-      name: z.string().optional(),
+      froType: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

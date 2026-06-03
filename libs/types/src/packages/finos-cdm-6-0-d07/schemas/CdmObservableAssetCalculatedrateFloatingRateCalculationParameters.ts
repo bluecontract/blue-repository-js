@@ -7,31 +7,33 @@ import { CdmObservableAssetCalculatedrateObservationParametersSchema } from './C
 import { CdmObservableAssetCalculatedrateObservationShiftCalculationSchema } from './CdmObservableAssetCalculatedrateObservationShiftCalculation';
 import { CdmObservableAssetCalculatedrateOffsetCalculationSchema } from './CdmObservableAssetCalculatedrateOffsetCalculation';
 
-export const CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/calculatedrate/FloatingRateCalculationParameters'
     ]
   )(
-    z.object({
-      applicableBusinessDays: z
+    zod.object({
+      applicableBusinessDays: zod
         .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
         .optional(),
-      calculationMethod: z.lazy(
+      calculationMethod: zod.lazy(
         () => CdmObservableAssetCalculatedrateCalculationMethodEnumSchema
       ),
-      description: z.string().optional(),
-      lockoutCalculation: z
+      description: zod.string().optional(),
+      lockoutCalculation: zod
         .lazy(() => CdmObservableAssetCalculatedrateOffsetCalculationSchema)
         .optional(),
-      lookbackCalculation: z
+      lookbackCalculation: zod
         .lazy(() => CdmObservableAssetCalculatedrateOffsetCalculationSchema)
         .optional(),
-      name: z.string().optional(),
-      observationParameters: z
+      name: zod.string().optional(),
+      observationParameters: zod
         .lazy(() => CdmObservableAssetCalculatedrateObservationParametersSchema)
         .optional(),
-      observationShiftCalculation: z
+      observationShiftCalculation: zod
         .lazy(
           () =>
             CdmObservableAssetCalculatedrateObservationShiftCalculationSchema

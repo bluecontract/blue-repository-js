@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentStatusSchema } from './DocumentStatus';
 
-export const StatusInProgressSchema = withTypeBlueId(
+const zod = z as any;
+
+export const StatusInProgressSchema: any = withTypeBlueId(
   blueIds['Coordination/Status In Progress']
 )(
   DocumentStatusSchema.extend({
-    description: z.string().optional(),
-    mode: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    mode: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

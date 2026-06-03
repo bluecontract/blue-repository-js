@@ -4,15 +4,17 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 
-export const SingleDocumentPermissionRejectedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SingleDocumentPermissionRejectedSchema: any = withTypeBlueId(
   blueIds['MyOS/Single Document Permission Rejected']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    permissions: z.lazy(() => SingleDocumentPermissionSetSchema).optional(),
-    reason: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    permissions: zod.lazy(() => SingleDocumentPermissionSetSchema).optional(),
+    reason: zod.string().optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

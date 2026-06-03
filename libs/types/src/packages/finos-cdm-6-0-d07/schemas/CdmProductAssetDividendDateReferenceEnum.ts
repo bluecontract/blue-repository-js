@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductAssetDividendDateReferenceEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetDividendDateReferenceEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/DividendDateReferenceEnum']
   )(
-    z.enum([
+    zod.enum([
       'AdHocDate',
       'CashSettlePaymentDateExDiv',
       'CashSettlePaymentDateIssuerPayment',

@@ -11,65 +11,69 @@ import { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnumSchem
 import { CdmProductCollateralCollateralMarginTypeEnumSchema } from './CdmProductCollateralCollateralMarginTypeEnum';
 import { CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnumSchema } from './CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum';
 
-export const CdmLegaldocumentationCommonAgreementNameSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonAgreementNameSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/AgreementName']
   )(
-    z.object({
-      agreementType: z.lazy(
+    zod.object({
+      agreementType: zod.lazy(
         () => CdmLegaldocumentationCommonLegalAgreementTypeEnumSchema
       ),
-      contractualDefinitionsType: z
+      contractualDefinitionsType: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () =>
               CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnumSchema
           )
         )
         .min(0)
         .optional(),
-      contractualMatrix: z
-        .array(z.lazy(() => CdmLegaldocumentationCommonContractualMatrixSchema))
+      contractualMatrix: zod
+        .array(
+          zod.lazy(() => CdmLegaldocumentationCommonContractualMatrixSchema)
+        )
         .min(0)
         .optional(),
-      contractualTermsSupplement: z
+      contractualTermsSupplement: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmLegaldocumentationCommonContractualTermsSupplementSchema
           )
         )
         .min(0)
         .optional(),
-      creditSupportAgreementMarginType: z
+      creditSupportAgreementMarginType: zod
         .lazy(() => CdmProductCollateralCollateralMarginTypeEnumSchema)
         .optional(),
-      creditSupportAgreementType: z
+      creditSupportAgreementType: zod
         .lazy(
           () =>
             CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnumSchema
         )
         .optional(),
-      description: z.string().optional(),
-      masterAgreementType: z
+      description: zod.string().optional(),
+      masterAgreementType: zod
         .lazy(
           () =>
             CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnumSchema
         )
         .optional(),
-      masterConfirmationAnnexType: z
+      masterConfirmationAnnexType: zod
         .lazy(
           () =>
             CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnumSchema
         )
         .optional(),
-      masterConfirmationType: z
+      masterConfirmationType: zod
         .lazy(
           () =>
             CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnumSchema
         )
         .optional(),
-      name: z.string().optional(),
-      otherAgreement: z.string().optional(),
+      name: zod.string().optional(),
+      otherAgreement: zod.string().optional(),
     })
   );
 

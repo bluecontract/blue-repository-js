@@ -1,16 +1,11 @@
-export const CdmEventCommonCorporateAction = {
+export const CdmEventCommonCorporateAction: Record<string, unknown> = {
   corporateActionType: {
     description: 'The type of corporate action taking place.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2BvXwm2PJoPCvRz7g8DFbxuMwvaXy1mHq7Tnw2QmQAn6',
+      blueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
     },
   },
   description: 'Specifies the relevant data regarding a corporate action.',
@@ -18,15 +13,10 @@ export const CdmEventCommonCorporateAction = {
     description:
       'The date on which the corporate action is known to have taken place.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/event/common/CorporateAction',
@@ -34,29 +24,19 @@ export const CdmEventCommonCorporateAction = {
     description:
       'The date on which resulting from the corporate action are delivered.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   underlier: {
     description: 'The underlier impacted by the corporate action.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#5',
+      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#3',
     },
   },
-} as const;
+};

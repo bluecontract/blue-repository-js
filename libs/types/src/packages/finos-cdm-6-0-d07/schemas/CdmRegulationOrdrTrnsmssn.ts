@@ -2,12 +2,14 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmRegulationOrdrTrnsmssnSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmRegulationOrdrTrnsmssnSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/regulation/OrdrTrnsmssn']
 )(
-  z.object({
-    name: z.string().optional(),
-    trnsmssnInd: z.string(),
+  zod.object({
+    name: zod.string().optional(),
+    trnsmssnInd: zod.string(),
   })
 );
 

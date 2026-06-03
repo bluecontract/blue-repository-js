@@ -1,15 +1,15 @@
-export const MyOSTimeline = {
+export const MyOSTimeline: Record<string, unknown> = {
   accountId: {
     description:
       'Identifier for the MyOS account associated with this timeline',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
     'A managed timeline implementation providing convenient email-based authentication and extensive features. MyOS timelines are straightforward to set up and use, offering a balance of convenience and security through hash-chained, authenticated event sequences.',
   name: 'MyOS Timeline',
   type: {
-    blueId: 'DFycCEHaAuMXptCMxQ4N5M1UW2yyddgi5xa3TPWDTNAZ',
+    blueId: '7wUHmjDmM9suCSX1HPL7NZncfwPmMmXq2vfSVBmRLgAu',
   },
-} as const;
+};

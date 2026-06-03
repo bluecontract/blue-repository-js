@@ -7,39 +7,41 @@ import { CdmBaseStaticdataPartyPartyRoleSchema } from './CdmBaseStaticdataPartyP
 import { CdmLegaldocumentationCommonLegalAgreementIdentificationSchema } from './CdmLegaldocumentationCommonLegalAgreementIdentification';
 import { CdmLegaldocumentationCommonResourceSchema } from './CdmLegaldocumentationCommonResource';
 
-export const CdmLegaldocumentationCommonLegalAgreementBaseSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonLegalAgreementBaseSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/LegalAgreementBase'
     ]
   )(
-    z.object({
-      agreementDate: z.string().optional(),
-      attachment: z
-        .array(z.lazy(() => CdmLegaldocumentationCommonResourceSchema))
+    zod.object({
+      agreementDate: zod.string().optional(),
+      attachment: zod
+        .array(zod.lazy(() => CdmLegaldocumentationCommonResourceSchema))
         .min(0)
         .optional(),
-      contractualParty: z
+      contractualParty: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
           )
         )
         .min(2)
         .max(2)
         .optional(),
-      description: z.string().optional(),
-      effectiveDate: z.string().optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
+      description: zod.string().optional(),
+      effectiveDate: zod.string().optional(),
+      identifier: zod
+        .array(zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
         .min(0)
         .optional(),
-      legalAgreementIdentification: z.lazy(
+      legalAgreementIdentification: zod.lazy(
         () => CdmLegaldocumentationCommonLegalAgreementIdentificationSchema
       ),
-      name: z.string().optional(),
-      otherParty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+      name: zod.string().optional(),
+      otherParty: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
         .min(0)
         .optional(),
     })

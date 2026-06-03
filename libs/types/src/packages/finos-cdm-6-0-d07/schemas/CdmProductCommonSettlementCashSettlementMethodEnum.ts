@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonSettlementCashSettlementMethodEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementCashSettlementMethodEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/CashSettlementMethodEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'CashPriceAlternateMethod',
       'CashPriceMethod',
       'CollateralizedCashPriceMethod',

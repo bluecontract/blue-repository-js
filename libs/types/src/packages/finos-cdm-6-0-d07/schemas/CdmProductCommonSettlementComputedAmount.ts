@@ -3,18 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductCommonSettlementComputedAmountSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementComputedAmountSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/ComputedAmount']
   )(
-    z.object({
-      amount: z.number(),
-      callFunction: z.string(),
-      currency: z
+    zod.object({
+      amount: zod.number(),
+      callFunction: zod.string(),
+      currency: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

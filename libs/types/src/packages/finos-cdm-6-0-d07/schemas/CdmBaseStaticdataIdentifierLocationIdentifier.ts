@@ -6,33 +6,37 @@ import { CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnumSchema } 
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataIdentifierLocationIdentifierSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataIdentifierLocationIdentifierSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/identifier/LocationIdentifier'
     ]
   )(
-    z.object({
-      assignedIdentifier: z
+    zod.object({
+      assignedIdentifier: zod
         .array(
-          z.lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
+          zod.lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
         )
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      issuer: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
-      issuerReference: z
+      description: zod.string().optional(),
+      issuer: zod
+        .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+        .optional(),
+      issuerReference: zod
         .lazy(
           () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
         )
         .optional(),
-      locationIdentifierType: z
+      locationIdentifierType: zod
         .lazy(
           () =>
             CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnumSchema
         )
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

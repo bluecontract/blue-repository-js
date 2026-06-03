@@ -1,10 +1,10 @@
-export const WorkerAgencyPermissionGrant = {
+export const WorkerAgencyPermissionGrant: Record<string, unknown> = {
   allowedWorkerAgencyPermissions: {
     itemType: {
-      blueId: 'EKPgicPVdFxx8X4ZBsnx7mT387M3VXDeMjSBnmAreUsS',
+      blueId: 'GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   contracts: {
@@ -12,23 +12,23 @@ export const WorkerAgencyPermissionGrant = {
       description:
         'Granter/owner’s timeline (direct grant-document revoke lives here).',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     initLifecycleChannel: {
       event: {
         type: {
-          blueId: 'BrpmpNt5JkapeUvPqYcxgXZrHNZX3R757dRwuXXdfNM2',
+          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
         },
       },
       type: {
-        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
+        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
       },
     },
     revoke: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'granterChannel',
       },
@@ -37,17 +37,17 @@ export const WorkerAgencyPermissionGrant = {
       request: {
         description: 'Optional human-readable reason',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     revokeImplGranter: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'revoke',
       },
@@ -62,13 +62,13 @@ export const WorkerAgencyPermissionGrant = {
                       $event: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: '/message/request',
                       },
                     },
                     type: {
-                      blueId: 'BwXQmude1f6U9P3BG1HbaxC7ekQxGSm6TKAosiZE2rdY',
+                      blueId: 'GeNaTohvYFC1xu9RLJS1buzqj1JpqyernRsvJiTiSTTY',
                     },
                   },
                 },
@@ -78,7 +78,7 @@ export const WorkerAgencyPermissionGrant = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -89,19 +89,19 @@ export const WorkerAgencyPermissionGrant = {
             },
             name: 'EmitRevokeRequested',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
     validateOnInit: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'initLifecycleChannel',
       },
@@ -110,7 +110,7 @@ export const WorkerAgencyPermissionGrant = {
           {
             entry: {
               type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
               },
               value: 'validate',
             },
@@ -118,7 +118,7 @@ export const WorkerAgencyPermissionGrant = {
               asList: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -128,7 +128,7 @@ export const WorkerAgencyPermissionGrant = {
                         kind: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'list',
                         },
@@ -136,7 +136,7 @@ export const WorkerAgencyPermissionGrant = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'val',
                           },
@@ -150,7 +150,7 @@ export const WorkerAgencyPermissionGrant = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -161,7 +161,7 @@ export const WorkerAgencyPermissionGrant = {
               asObject: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -171,7 +171,7 @@ export const WorkerAgencyPermissionGrant = {
                         kind: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'object',
                         },
@@ -179,7 +179,7 @@ export const WorkerAgencyPermissionGrant = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'val',
                           },
@@ -190,7 +190,7 @@ export const WorkerAgencyPermissionGrant = {
                       $emptyObject: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -199,7 +199,7 @@ export const WorkerAgencyPermissionGrant = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -210,7 +210,7 @@ export const WorkerAgencyPermissionGrant = {
               hasBadSingleOps: {
                 args: {
                   ops: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -222,7 +222,7 @@ export const WorkerAgencyPermissionGrant = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'ops',
                             },
@@ -231,7 +231,7 @@ export const WorkerAgencyPermissionGrant = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'asList',
                         },
@@ -239,7 +239,7 @@ export const WorkerAgencyPermissionGrant = {
                     },
                     item: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'opName',
                     },
@@ -251,7 +251,7 @@ export const WorkerAgencyPermissionGrant = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'opName',
                               },
@@ -260,7 +260,7 @@ export const WorkerAgencyPermissionGrant = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'isNonEmptyText',
                           },
@@ -273,7 +273,7 @@ export const WorkerAgencyPermissionGrant = {
               isNonEmptyText: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -284,33 +284,29 @@ export const WorkerAgencyPermissionGrant = {
                           kind: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'text',
                           },
                           val: {
-                            $unwrap: {
-                              $var: {
-                                type: {
-                                  blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                                },
-                                value: 'val',
+                            $var: {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
+                              value: 'val',
                             },
                           },
                         },
                       },
                       {
                         $truthy: {
-                          $unwrap: {
-                            $var: {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'val',
+                          $var: {
+                            type: {
+                              blueId:
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
+                            value: 'val',
                           },
                         },
                       },
@@ -323,51 +319,12 @@ export const WorkerAgencyPermissionGrant = {
                   items: [
                     {
                       $let: {
-                        order: {
-                          items: [
-                            {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'issues',
-                            },
-                            {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'seenWorkerTypes',
-                            },
-                            {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'granterId',
-                            },
-                            {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'granteeDocumentId',
-                            },
-                            {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'permissionsList',
-                            },
-                          ],
-                        },
                         vars: {
                           granteeDocumentId: {
                             $document: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/granteeDocumentId',
                             },
@@ -376,7 +333,7 @@ export const WorkerAgencyPermissionGrant = {
                             $document: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/contracts/granterChannel/accountId',
                             },
@@ -391,7 +348,7 @@ export const WorkerAgencyPermissionGrant = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/allowedWorkerAgencyPermissions',
                                   },
@@ -404,7 +361,7 @@ export const WorkerAgencyPermissionGrant = {
                                 $document: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/allowedWorkerAgencyPermissions',
                                 },
@@ -415,7 +372,7 @@ export const WorkerAgencyPermissionGrant = {
                             $emptyObject: {
                               type: {
                                 blueId:
-                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                  'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                               },
                               value: true,
                             },
@@ -433,7 +390,7 @@ export const WorkerAgencyPermissionGrant = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'granterId',
                                   },
@@ -442,7 +399,7 @@ export const WorkerAgencyPermissionGrant = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'isNonEmptyText',
                               },
@@ -460,7 +417,7 @@ export const WorkerAgencyPermissionGrant = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -470,7 +427,7 @@ export const WorkerAgencyPermissionGrant = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'granterChannel must be bound to an accountId',
@@ -497,7 +454,7 @@ export const WorkerAgencyPermissionGrant = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'granteeDocumentId',
                                   },
@@ -506,7 +463,7 @@ export const WorkerAgencyPermissionGrant = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'isNonEmptyText',
                               },
@@ -524,7 +481,7 @@ export const WorkerAgencyPermissionGrant = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -534,7 +491,7 @@ export const WorkerAgencyPermissionGrant = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'granteeDocumentId must be a non-empty string',
@@ -564,7 +521,7 @@ export const WorkerAgencyPermissionGrant = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'permissionsList',
                                         },
@@ -573,7 +530,7 @@ export const WorkerAgencyPermissionGrant = {
                                     function: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'asList',
                                     },
@@ -583,7 +540,7 @@ export const WorkerAgencyPermissionGrant = {
                               {
                                 type: {
                                   blueId:
-                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                    'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                 },
                                 value: 0,
                               },
@@ -601,7 +558,7 @@ export const WorkerAgencyPermissionGrant = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -611,7 +568,7 @@ export const WorkerAgencyPermissionGrant = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'allowedWorkerAgencyPermissions must be a non-empty array',
@@ -639,42 +596,42 @@ export const WorkerAgencyPermissionGrant = {
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'itemPath',
                                     },
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'itemObject',
                                     },
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'workerType',
                                     },
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'perms',
                                     },
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'singleOps',
                                     },
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'hasSingle',
                                     },
@@ -692,7 +649,7 @@ export const WorkerAgencyPermissionGrant = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'singleOps',
                                                   },
@@ -701,7 +658,7 @@ export const WorkerAgencyPermissionGrant = {
                                               function: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'asList',
                                               },
@@ -711,7 +668,7 @@ export const WorkerAgencyPermissionGrant = {
                                         {
                                           type: {
                                             blueId:
-                                              '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                              'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                           },
                                           value: 0,
                                         },
@@ -725,7 +682,7 @@ export const WorkerAgencyPermissionGrant = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'item',
                                           },
@@ -734,7 +691,7 @@ export const WorkerAgencyPermissionGrant = {
                                       function: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'asObject',
                                       },
@@ -746,7 +703,7 @@ export const WorkerAgencyPermissionGrant = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value:
                                             '/allowedWorkerAgencyPermissions[',
@@ -755,7 +712,7 @@ export const WorkerAgencyPermissionGrant = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'idx',
                                           },
@@ -763,7 +720,7 @@ export const WorkerAgencyPermissionGrant = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: ']',
                                         },
@@ -779,7 +736,7 @@ export const WorkerAgencyPermissionGrant = {
                                             path: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: '/permissions',
                                             },
@@ -790,7 +747,7 @@ export const WorkerAgencyPermissionGrant = {
                                         $emptyObject: {
                                           type: {
                                             blueId:
-                                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                              'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                           },
                                           value: true,
                                         },
@@ -804,7 +761,7 @@ export const WorkerAgencyPermissionGrant = {
                                                 path: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: '/permissions',
                                                 },
@@ -814,7 +771,7 @@ export const WorkerAgencyPermissionGrant = {
                                           function: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'asObject',
                                           },
@@ -831,7 +788,7 @@ export const WorkerAgencyPermissionGrant = {
                                             path: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: '/singleOps',
                                             },
@@ -847,7 +804,7 @@ export const WorkerAgencyPermissionGrant = {
                                           path: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: '/singleOps',
                                           },
@@ -861,7 +818,7 @@ export const WorkerAgencyPermissionGrant = {
                                       path: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/workerType',
                                       },
@@ -878,7 +835,7 @@ export const WorkerAgencyPermissionGrant = {
                                       kind: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'object',
                                       },
@@ -886,7 +843,7 @@ export const WorkerAgencyPermissionGrant = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'item',
                                         },
@@ -905,7 +862,7 @@ export const WorkerAgencyPermissionGrant = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'issues',
                                                 },
@@ -919,7 +876,7 @@ export const WorkerAgencyPermissionGrant = {
                                                           $var: {
                                                             type: {
                                                               blueId:
-                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                             },
                                                             value: 'itemPath',
                                                           },
@@ -927,7 +884,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value:
                                                             ' must be an object',
@@ -957,7 +914,7 @@ export const WorkerAgencyPermissionGrant = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'workerType',
                                           },
@@ -966,7 +923,7 @@ export const WorkerAgencyPermissionGrant = {
                                       function: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'isNonEmptyText',
                                       },
@@ -983,7 +940,7 @@ export const WorkerAgencyPermissionGrant = {
                                               $var: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'workerType',
                                               },
@@ -992,7 +949,7 @@ export const WorkerAgencyPermissionGrant = {
                                               $var: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'seenWorkerTypes',
                                               },
@@ -1009,7 +966,7 @@ export const WorkerAgencyPermissionGrant = {
                                                       $var: {
                                                         type: {
                                                           blueId:
-                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                         },
                                                         value: 'workerType',
                                                       },
@@ -1018,7 +975,7 @@ export const WorkerAgencyPermissionGrant = {
                                                       $var: {
                                                         type: {
                                                           blueId:
-                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                         },
                                                         value:
                                                           'seenWorkerTypes',
@@ -1027,7 +984,7 @@ export const WorkerAgencyPermissionGrant = {
                                                     val: {
                                                       type: {
                                                         blueId:
-                                                          '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                          'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                                       },
                                                       value: true,
                                                     },
@@ -1049,7 +1006,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'issues',
                                                         },
@@ -1062,7 +1019,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     "duplicate workerType '",
@@ -1071,7 +1028,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                   $var: {
                                                                     type: {
                                                                       blueId:
-                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                     },
                                                                     value:
                                                                       'workerType',
@@ -1080,7 +1037,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     "' in allowedWorkerAgencyPermissions",
@@ -1113,7 +1070,7 @@ export const WorkerAgencyPermissionGrant = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'issues',
                                                 },
@@ -1127,7 +1084,7 @@ export const WorkerAgencyPermissionGrant = {
                                                           $var: {
                                                             type: {
                                                               blueId:
-                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                             },
                                                             value: 'itemPath',
                                                           },
@@ -1135,7 +1092,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value:
                                                             '.workerType must be a non-empty string',
@@ -1165,7 +1122,7 @@ export const WorkerAgencyPermissionGrant = {
                                         path: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: '/permissions',
                                         },
@@ -1186,7 +1143,7 @@ export const WorkerAgencyPermissionGrant = {
                                                     $var: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'perms',
                                                     },
@@ -1196,7 +1153,7 @@ export const WorkerAgencyPermissionGrant = {
                                               {
                                                 type: {
                                                   blueId:
-                                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                    'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                                 },
                                                 value: 0,
                                               },
@@ -1214,7 +1171,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'issues',
                                                         },
@@ -1228,7 +1185,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                   $var: {
                                                                     type: {
                                                                       blueId:
-                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                     },
                                                                     value:
                                                                       'itemPath',
@@ -1237,7 +1194,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     '.permissions must be an object',
@@ -1268,7 +1225,7 @@ export const WorkerAgencyPermissionGrant = {
                                                   path: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: '/read',
                                                   },
@@ -1277,7 +1234,7 @@ export const WorkerAgencyPermissionGrant = {
                                               {
                                                 type: {
                                                   blueId:
-                                                    '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                    'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                                 },
                                                 value: true,
                                               },
@@ -1295,7 +1252,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'issues',
                                                         },
@@ -1309,7 +1266,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                   $var: {
                                                                     type: {
                                                                       blueId:
-                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                     },
                                                                     value:
                                                                       'itemPath',
@@ -1318,7 +1275,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     '.permissions.read must be true',
@@ -1347,7 +1304,7 @@ export const WorkerAgencyPermissionGrant = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'singleOps',
                                                 },
@@ -1356,7 +1313,7 @@ export const WorkerAgencyPermissionGrant = {
                                             function: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'hasBadSingleOps',
                                             },
@@ -1373,7 +1330,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'issues',
                                                         },
@@ -1387,7 +1344,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                   $var: {
                                                                     type: {
                                                                       blueId:
-                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                     },
                                                                     value:
                                                                       'itemPath',
@@ -1396,7 +1353,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     '.permissions.singleOps must contain only non-empty strings',
@@ -1430,7 +1387,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         path: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: '/allOps',
                                                         },
@@ -1439,7 +1396,7 @@ export const WorkerAgencyPermissionGrant = {
                                                     {
                                                       type: {
                                                         blueId:
-                                                          '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                          'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                                       },
                                                       value: true,
                                                     },
@@ -1450,7 +1407,7 @@ export const WorkerAgencyPermissionGrant = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'hasSingle',
                                                 },
@@ -1469,7 +1426,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'issues',
                                                         },
@@ -1483,7 +1440,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                   $var: {
                                                                     type: {
                                                                       blueId:
-                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                     },
                                                                     value:
                                                                       'itemPath',
@@ -1492,7 +1449,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     '.permissions.allOps=true and',
@@ -1500,7 +1457,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value: ' ',
                                                                 },
@@ -1508,7 +1465,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                   $var: {
                                                                     type: {
                                                                       blueId:
-                                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                     },
                                                                     value:
                                                                       'itemPath',
@@ -1517,7 +1474,7 @@ export const WorkerAgencyPermissionGrant = {
                                                                 {
                                                                   type: {
                                                                     blueId:
-                                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                                   },
                                                                   value:
                                                                     '.permissions.singleOps are mutually exclusive',
@@ -1550,7 +1507,7 @@ export const WorkerAgencyPermissionGrant = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'issues',
                                                 },
@@ -1564,7 +1521,7 @@ export const WorkerAgencyPermissionGrant = {
                                                           $var: {
                                                             type: {
                                                               blueId:
-                                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                             },
                                                             value: 'itemPath',
                                                           },
@@ -1572,7 +1529,7 @@ export const WorkerAgencyPermissionGrant = {
                                                         {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value:
                                                             '.permissions is required',
@@ -1601,7 +1558,7 @@ export const WorkerAgencyPermissionGrant = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'permissionsList',
                                 },
@@ -1610,7 +1567,7 @@ export const WorkerAgencyPermissionGrant = {
                             function: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'asList',
                             },
@@ -1619,14 +1576,14 @@ export const WorkerAgencyPermissionGrant = {
                         index: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'idx',
                         },
                         item: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'item',
                         },
@@ -1642,7 +1599,7 @@ export const WorkerAgencyPermissionGrant = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'issues',
                                   },
@@ -1651,7 +1608,7 @@ export const WorkerAgencyPermissionGrant = {
                               {
                                 type: {
                                   blueId:
-                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                    'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                 },
                                 value: 0,
                               },
@@ -1664,7 +1621,7 @@ export const WorkerAgencyPermissionGrant = {
                               $appendEvent: {
                                 type: {
                                   blueId:
-                                    '8EcfEBSmZUTp73AjLNaCQQRrdQzzdxebG1QUpGe95im2',
+                                    'J7ssmNEa6YpxrLFTqZfwgD4uiz3cSyNLNaC4WbnLEhj7',
                                 },
                               },
                             },
@@ -1678,14 +1635,14 @@ export const WorkerAgencyPermissionGrant = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'issues',
                                   },
                                 },
                                 type: {
                                   blueId:
-                                    '5eDTUokCWbu8Sp1PRZewh7wkdwwdrvpQZcweiMjaHd6m',
+                                    'B1RnGH4azPberZAn1F3YrP5c2sGV939EpruSPBD2Kc1u',
                                 },
                               },
                             },
@@ -1699,7 +1656,7 @@ export const WorkerAgencyPermissionGrant = {
                           $events: {
                             type: {
                               blueId:
-                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                             },
                             value: true,
                           },
@@ -1712,23 +1669,23 @@ export const WorkerAgencyPermissionGrant = {
             },
             name: 'ValidateBasicShape',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
   },
   granteeDocumentId: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Worker Agency Permission Grant',
   type: {
-    blueId: 'Gm9rGd9RJMvBcPCwN7ybywVAtMAAngeAB82DZ2cQ6bAE',
+    blueId: 'FMWYekdjwkDnoM2YfHmwuUATHZovSgmDEvSVTmyVmbHc',
   },
-} as const;
+};

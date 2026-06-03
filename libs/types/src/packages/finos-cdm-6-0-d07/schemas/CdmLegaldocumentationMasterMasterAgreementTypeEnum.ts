@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationMasterMasterAgreementTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterMasterAgreementTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/MasterAgreementTypeEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'AFB',
       'Bespoke',
       'CMA',

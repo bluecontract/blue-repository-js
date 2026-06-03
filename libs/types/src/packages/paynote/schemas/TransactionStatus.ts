@@ -3,16 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 
-export const TransactionStatusSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TransactionStatusSchema: any = withTypeBlueId(
   blueIds['PayNote/Transaction Status']
 )(
-  z.object({
-    authorizedAmountMinor: z.number().optional(),
-    capturedAmountMinor: z.number().optional(),
-    currency: z.lazy(() => CurrencySchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    status: z.string().optional(),
+  zod.object({
+    authorizedAmountMinor: zod.number().optional(),
+    capturedAmountMinor: zod.number().optional(),
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    status: zod.string().optional(),
   })
 );
 

@@ -1,38 +1,28 @@
-export const CdmBaseStaticdataPartyRelatedParty = {
+export const CdmBaseStaticdataPartyRelatedParty: Record<string, unknown> = {
   accountReference: {
     description: 'Reference to an account.',
     type: {
-      blueId: 'HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX',
+      blueId: 'HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi',
     },
   },
   name: 'cdm/base/staticdata/party/RelatedParty',
   partyReference: {
     description: 'Reference to a party.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
   role: {
     description:
       'The category of the relationship. The related party performs the role specified in this field for the base party. For example, if the role is ,Guarantor, the related party acts as a guarantor for the base party.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'EncqNSCrVYMkox9haeHEq66bWJTaR3vwubufrZkZzB4',
+      blueId: 'H6gWEiw9pVTmNQVvvZzt7KcBJ1Ub6wMyaVh3zbM7qCkM',
     },
   },
-} as const;
+};

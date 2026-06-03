@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { SourceSchema } from './Source';
 
-export const DocumentRequestSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentRequestSchema: any = withTypeBlueId(
   blueIds['Coordination/Document Request']
 )(
   SourceSchema.extend({
-    description: z.string().optional(),
-    documentId: z.string().optional(),
-    epoch: z.number().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    documentId: zod.string().optional(),
+    epoch: zod.number().optional(),
+    name: zod.string().optional(),
   })
 );
 

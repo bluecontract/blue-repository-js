@@ -7,33 +7,34 @@ import { CdmEventPositionAvailableInventoryRecordSchema } from './CdmEventPositi
 import { CdmEventPositionAvailableInventoryTypeEnumSchema } from './CdmEventPositionAvailableInventoryTypeEnum';
 import { CdmEventWorkflowMessageInformationSchema } from './CdmEventWorkflowMessageInformation';
 
-export const CdmEventPositionSecurityLocateSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/position/SecurityLocate']
-  )(
-    z.object({
-      availableInventoryRecord: z
-        .array(z.lazy(() => CdmEventPositionAvailableInventoryRecordSchema))
-        .min(0)
-        .optional(),
-      availableInventoryType: z
-        .lazy(() => CdmEventPositionAvailableInventoryTypeEnumSchema)
-        .optional(),
-      description: z.string().optional(),
-      messageInformation: z
-        .lazy(() => CdmEventWorkflowMessageInformationSchema)
-        .optional(),
-      name: z.string().optional(),
-      party: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartySchema))
-        .min(0)
-        .optional(),
-      partyRole: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
-        .min(0)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventPositionSecurityLocateSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/position/SecurityLocate']
+)(
+  zod.object({
+    availableInventoryRecord: zod
+      .array(zod.lazy(() => CdmEventPositionAvailableInventoryRecordSchema))
+      .min(0)
+      .optional(),
+    availableInventoryType: zod
+      .lazy(() => CdmEventPositionAvailableInventoryTypeEnumSchema)
+      .optional(),
+    description: zod.string().optional(),
+    messageInformation: zod
+      .lazy(() => CdmEventWorkflowMessageInformationSchema)
+      .optional(),
+    name: zod.string().optional(),
+    party: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartySchema))
+      .min(0)
+      .optional(),
+    partyRole: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+      .min(0)
+      .optional(),
+  })
+);
 
 export type CdmEventPositionSecurityLocate = z.infer<
   typeof CdmEventPositionSecurityLocateSchema

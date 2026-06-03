@@ -1,24 +1,27 @@
-export const CdmLegaldocumentationMasterTransactionAdditionalTerms = {
+export const CdmLegaldocumentationMasterTransactionAdditionalTerms: Record<
+  string,
+  unknown
+> = {
   commoditiesAdditionalTerms: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   creditAdditionalTerms: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
     'Additional specification for the extraordinary events that may affect a trade and the related contractual rights and obligation of the parties when this happens. Such terms are typically required to extend the economics terms, for the purpose of producing the final legal contractual form of the Transaction.\n',
   digitalAssetAdditionalTerms: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   equityAdditionalTerms: {
     type: {
-      blueId: '568nwfoghuyvUdxUYEk7LMjQo15F8tTxJN7yDtW9bmi6',
+      blueId: '95T825bQFLe9KC4B7yuQzPWcdNpg4muWrPiQjsK914F3',
     },
   },
   foreignExchangeAdditionalTerms: {
@@ -28,8 +31,8 @@ export const CdmLegaldocumentationMasterTransactionAdditionalTerms = {
   },
   interestRateAdditionalTerms: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/legaldocumentation/master/TransactionAdditionalTerms',
-} as const;
+};

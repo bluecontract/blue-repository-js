@@ -1,7 +1,7 @@
-export const CdmEventCommonScheduledTransfer = {
+export const CdmEventCommonScheduledTransfer: Record<string, unknown> = {
   corporateActionTransferType: {
     type: {
-      blueId: '2BvXwm2PJoPCvRz7g8DFbxuMwvaXy1mHq7Tnw2QmQAn6',
+      blueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
     },
   },
   name: 'cdm/event/common/ScheduledTransfer',
@@ -9,15 +9,10 @@ export const CdmEventCommonScheduledTransfer = {
     description:
       'Specifies a transfer created from a scheduled or contingent event on a contract, e.g. Exercise, Performance, Credit Event\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'H7iPS6CrsvGu1PXNutZkgqEEQDC4jBXCMGkL1Ku6TxLf',
+      blueId: '9k43VLjjoSJbXKM7aCSjBTinwWFf8sRDogVJbsM2JjjR',
     },
   },
-} as const;
+};

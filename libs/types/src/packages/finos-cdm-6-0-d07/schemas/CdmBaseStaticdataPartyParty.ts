@@ -8,30 +8,32 @@ import { CdmBaseStaticdataPartyNaturalPersonSchema } from './CdmBaseStaticdataPa
 import { CdmBaseStaticdataPartyNaturalPersonRoleSchema } from './CdmBaseStaticdataPartyNaturalPersonRole';
 import { CdmBaseStaticdataPartyPartyIdentifierSchema } from './CdmBaseStaticdataPartyPartyIdentifier';
 
-export const CdmBaseStaticdataPartyPartySchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyPartySchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/Party']
 )(
-  z.object({
-    account: z.lazy(() => CdmBaseStaticdataPartyAccountSchema).optional(),
-    businessUnit: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyBusinessUnitSchema))
+  zod.object({
+    account: zod.lazy(() => CdmBaseStaticdataPartyAccountSchema).optional(),
+    businessUnit: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyBusinessUnitSchema))
       .min(0)
       .optional(),
-    contactInformation: z
+    contactInformation: zod
       .lazy(() => CdmBaseStaticdataPartyContactInformationSchema)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    partyId: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyPartyIdentifierSchema))
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    partyId: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartyIdentifierSchema))
       .min(1)
       .optional(),
-    person: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyNaturalPersonSchema))
+    person: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyNaturalPersonSchema))
       .min(0)
       .optional(),
-    personRole: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyNaturalPersonRoleSchema))
+    personRole: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyNaturalPersonRoleSchema))
       .min(0)
       .optional(),
   })

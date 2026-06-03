@@ -14,52 +14,53 @@ import { CdmProductCollateralCollateralSchema } from './CdmProductCollateralColl
 import { CdmProductTemplateNonTransferableProductSchema } from './CdmProductTemplateNonTransferableProduct';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmEventCommonExecutionInstructionSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ExecutionInstruction']
-  )(
-    z.object({
-      ancillaryParty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyAncillaryPartySchema))
-        .min(0)
-        .optional(),
-      collateral: z.lazy(() => CdmProductCollateralCollateralSchema).optional(),
-      counterparty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
-        .min(2)
-        .max(2)
-        .optional(),
-      description: z.string().optional(),
-      executionDetails: z.lazy(() => CdmEventCommonExecutionDetailsSchema),
-      lotIdentifier: z
-        .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
-        .optional(),
-      name: z.string().optional(),
-      parties: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartySchema))
-        .min(2)
-        .optional(),
-      partyRoles: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
-        .min(0)
-        .optional(),
-      priceQuantity: z
-        .array(z.lazy(() => CdmObservableAssetPriceQuantitySchema))
-        .min(1)
-        .optional(),
-      product: z.lazy(
-        (): z.ZodTypeAny => CdmProductTemplateNonTransferableProductSchema
-      ),
-      tradeDate: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-      tradeIdentifier: z
-        .array(z.lazy(() => CdmEventCommonTradeIdentifierSchema))
-        .min(1)
-        .optional(),
-      tradeTime: z
-        .lazy(() => CdmBaseDatetimeFieldWithMetaTimeZoneSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonExecutionInstructionSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ExecutionInstruction']
+)(
+  zod.object({
+    ancillaryParty: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyAncillaryPartySchema))
+      .min(0)
+      .optional(),
+    collateral: zod.lazy(() => CdmProductCollateralCollateralSchema).optional(),
+    counterparty: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
+      .min(2)
+      .max(2)
+      .optional(),
+    description: zod.string().optional(),
+    executionDetails: zod.lazy(() => CdmEventCommonExecutionDetailsSchema),
+    lotIdentifier: zod
+      .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
+      .optional(),
+    name: zod.string().optional(),
+    parties: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartySchema))
+      .min(2)
+      .optional(),
+    partyRoles: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+      .min(0)
+      .optional(),
+    priceQuantity: zod
+      .array(zod.lazy(() => CdmObservableAssetPriceQuantitySchema))
+      .min(1)
+      .optional(),
+    product: zod.lazy(
+      (): z.ZodTypeAny => CdmProductTemplateNonTransferableProductSchema
+    ),
+    tradeDate: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+    tradeIdentifier: zod
+      .array(zod.lazy(() => CdmEventCommonTradeIdentifierSchema))
+      .min(1)
+      .optional(),
+    tradeTime: zod
+      .lazy(() => CdmBaseDatetimeFieldWithMetaTimeZoneSchema)
+      .optional(),
+  })
+);
 
 export type CdmEventCommonExecutionInstruction = z.infer<
   typeof CdmEventCommonExecutionInstructionSchema

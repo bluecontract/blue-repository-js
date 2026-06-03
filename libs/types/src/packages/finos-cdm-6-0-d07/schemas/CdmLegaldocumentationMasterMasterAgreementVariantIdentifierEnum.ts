@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/MasterAgreementVariantIdentifierEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'ISLA_GMSLA_001_01',
       'ISLA_GMSLA_001_02',
       'ISLA_GMSLA_002_01',

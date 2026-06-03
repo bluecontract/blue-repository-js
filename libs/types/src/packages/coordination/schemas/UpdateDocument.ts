@@ -1,16 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
-import { JsonPatchEntrySchema } from '../../core/schemas/JsonPatchEntry';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
 
-export const UpdateDocumentSchema = withTypeBlueId(
+const zod = z as any;
+
+export const UpdateDocumentSchema: any = withTypeBlueId(
   blueIds['Coordination/Update Document']
 )(
   SequentialWorkflowStepSchema.extend({
-    changeset: z.array(z.lazy(() => JsonPatchEntrySchema)).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    changeset: zod.array(blueNodeField()).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

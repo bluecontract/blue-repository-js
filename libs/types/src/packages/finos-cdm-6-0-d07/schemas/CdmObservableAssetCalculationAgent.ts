@@ -5,24 +5,25 @@ import { CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema } from './CdmBaseD
 import { CdmBaseStaticdataPartyAncillaryRoleEnumSchema } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
 import { CdmObservableAssetPartyDeterminationEnumSchema } from './CdmObservableAssetPartyDeterminationEnum';
 
-export const CdmObservableAssetCalculationAgentSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CalculationAgent']
-  )(
-    z.object({
-      calculationAgentBusinessCenter: z
-        .lazy(() => CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema)
-        .optional(),
-      calculationAgentParty: z
-        .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
-        .optional(),
-      calculationAgentPartyEnum: z
-        .lazy(() => CdmObservableAssetPartyDeterminationEnumSchema)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetCalculationAgentSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CalculationAgent']
+)(
+  zod.object({
+    calculationAgentBusinessCenter: zod
+      .lazy(() => CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema)
+      .optional(),
+    calculationAgentParty: zod
+      .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
+      .optional(),
+    calculationAgentPartyEnum: zod
+      .lazy(() => CdmObservableAssetPartyDeterminationEnumSchema)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmObservableAssetCalculationAgent = z.infer<
   typeof CdmObservableAssetCalculationAgentSchema

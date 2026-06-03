@@ -3,17 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductAssetReturnTypeEnumSchema } from './CdmProductAssetReturnTypeEnum';
 
-export const CdmProductAssetPriceReturnTermsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/PriceReturnTerms']
-  )(
-    z.object({
-      conversionFactor: z.number().optional(),
-      name: z.string().optional(),
-      performance: z.string().optional(),
-      returnType: z.lazy(() => CdmProductAssetReturnTypeEnumSchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetPriceReturnTermsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/PriceReturnTerms']
+)(
+  zod.object({
+    conversionFactor: zod.number().optional(),
+    name: zod.string().optional(),
+    performance: zod.string().optional(),
+    returnType: zod.lazy(() => CdmProductAssetReturnTypeEnumSchema),
+  })
+);
 
 export type CdmProductAssetPriceReturnTerms = z.infer<
   typeof CdmProductAssetPriceReturnTermsSchema

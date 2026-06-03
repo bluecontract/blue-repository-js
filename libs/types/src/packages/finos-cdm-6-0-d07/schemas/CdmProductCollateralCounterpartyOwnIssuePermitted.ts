@@ -2,15 +2,17 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCollateralCounterpartyOwnIssuePermittedSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCounterpartyOwnIssuePermittedSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/CounterpartyOwnIssuePermitted'
     ]
   )(
-    z.object({
-      counterpartyOwnIssuePermitted: z.boolean(),
-      name: z.string().optional(),
+    zod.object({
+      counterpartyOwnIssuePermitted: zod.boolean(),
+      name: zod.string().optional(),
     })
   );
 

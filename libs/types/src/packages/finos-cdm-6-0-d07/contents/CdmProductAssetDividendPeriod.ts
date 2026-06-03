@@ -1,24 +1,19 @@
-export const CdmProductAssetDividendPeriod = {
+export const CdmProductAssetDividendPeriod: Record<string, unknown> = {
   basketConstituent: {
     description:
       'For basket underliers, reference to the basket component which is paying dividends in the specified period.',
     type: {
-      blueId: '6tLPRxaKr8kikEkfnoFn5a6CqY61ckSNTb2NLzfWwRb7',
+      blueId: '9TCszX7p3useiqzNm9UPp1AMdorfkHLknXYXqEVsE2N8',
     },
   },
   dateAdjustments: {
     description:
       'Date adjustments for all unadjusted dates in this dividend period.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd',
+      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
     },
   },
   description:
@@ -27,34 +22,29 @@ export const CdmProductAssetDividendPeriod = {
     description:
       'Specifies when the dividend will be paid to the receiver of the equity return. Has the meaning as defined in the ISDA 2002 Equity Derivatives Definitions. Is not applicable in the case of a dividend reinvestment election.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'FschfMdbVginzubUZdVVEtooCLzhymBvnVnHpkmdgsfE',
+      blueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
     },
   },
   dividendValuationDate: {
     description: 'Specifies the dividend valuation dates of the swap.',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   endDate: {
     description: 'Dividend period end date.',
     type: {
-      blueId: 'FschfMdbVginzubUZdVVEtooCLzhymBvnVnHpkmdgsfE',
+      blueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
     },
   },
   name: 'cdm/product/asset/DividendPeriod',
   startDate: {
     description: 'Dividend period start date.',
     type: {
-      blueId: 'FschfMdbVginzubUZdVVEtooCLzhymBvnVnHpkmdgsfE',
+      blueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
     },
   },
-} as const;
+};

@@ -1,30 +1,30 @@
-export const MyOSAdminBase = {
+export const MyOSAdminBase: Record<string, unknown> = {
   contracts: {
     myOsAdminChannel: {
       description:
         'MyOS Admin (accountId=0) — posts operational progress/decisions via myOsAdminUpdate',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     myOsAdminUpdate: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'myOsAdminChannel',
       },
       description:
         'The standard, required operation for MyOS Admin to deliver events.',
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     myOsAdminUpdateImpl: {
       description: 'Implementation that re-emits the provided events',
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'myOsAdminUpdate',
       },
@@ -39,7 +39,7 @@ export const MyOSAdminBase = {
                       $event: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: '/message/request',
                       },
@@ -50,16 +50,16 @@ export const MyOSAdminBase = {
             },
             name: 'EmitAdminEvents',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
   },
   description: 'Document base for MyOS Admin participant',
   name: 'MyOS Admin Base',
-} as const;
+};

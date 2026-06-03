@@ -3,15 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { EventSchema } from '../../coordination/schemas/Event';
 
-export const CardTransactionMonitoringStoppedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionMonitoringStoppedSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction Monitoring Stopped']
 )(
   EventSchema.extend({
-    events: z.array(z.string()).optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    stoppedAt: z.number().optional(),
-    targetMerchantId: z.string().optional(),
+    events: zod.array(zod.string()).optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
+    stoppedAt: zod.number().optional(),
+    targetMerchantId: zod.string().optional(),
   })
 );
 

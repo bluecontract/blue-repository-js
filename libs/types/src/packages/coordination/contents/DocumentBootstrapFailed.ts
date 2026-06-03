@@ -1,14 +1,14 @@
-export const DocumentBootstrapFailed = {
+export const DocumentBootstrapFailed: Record<string, unknown> = {
   description:
-    'Response event indicating that a requested document bootstrap failed. The `reason` field explains why the provider\ncould not create or prepare the document, such as invalid input, missing channel binding, unsupported participant,\nauthorization failure, or provider error.\n\nThis event is a domain-level failure response. It does not necessarily imply a processor fatal error in the requesting\ndocument. Workflows can use it to notify users, retry, store failure state, or select an alternate provider.\n',
+    'Lifecycle/coordination event indicating that a document bootstrap request failed. The `reason` field should explain\nthe deterministic failure cause or provider-specific rejection reason.\n',
   name: 'Document Bootstrap Failed',
   reason: {
-    description: 'Failure reason.',
+    description: 'Human-readable or structured failure reason.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

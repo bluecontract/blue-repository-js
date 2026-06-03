@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { SourceSchema } from './Source';
 
-export const BrowserSessionSchema = withTypeBlueId(
+const zod = z as any;
+
+export const BrowserSessionSchema: any = withTypeBlueId(
   blueIds['Coordination/Browser Session']
 )(
   SourceSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    uiSessionNonce: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    uiSessionNonce: zod.string().optional(),
   })
 );
 

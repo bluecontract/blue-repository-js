@@ -6,26 +6,28 @@ import { CdmEventCommonCorporateActionTypeEnumSchema } from './CdmEventCommonCor
 import { CdmEventCommonCounterpartyPositionStateSchema } from './CdmEventCommonCounterpartyPositionState';
 import { CdmEventCommonPositionEventIntentEnumSchema } from './CdmEventCommonPositionEventIntentEnum';
 
-export const CdmEventCommonCounterpartyPositionBusinessEventSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventCommonCounterpartyPositionBusinessEventSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/event/common/CounterpartyPositionBusinessEvent'
     ]
   )(
-    z.object({
-      after: z
-        .array(z.lazy(() => CdmEventCommonCounterpartyPositionStateSchema))
+    zod.object({
+      after: zod
+        .array(zod.lazy(() => CdmEventCommonCounterpartyPositionStateSchema))
         .min(0)
         .optional(),
-      corporateActionIntent: z
+      corporateActionIntent: zod
         .lazy(() => CdmEventCommonCorporateActionTypeEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      effectiveDate: z.string().optional(),
-      eventDate: z.string().optional(),
-      intent: z.lazy(() => CdmEventCommonPositionEventIntentEnumSchema),
-      name: z.string().optional(),
-      packageInformation: z
+      description: zod.string().optional(),
+      effectiveDate: zod.string().optional(),
+      eventDate: zod.string().optional(),
+      intent: zod.lazy(() => CdmEventCommonPositionEventIntentEnumSchema),
+      name: zod.string().optional(),
+      packageInformation: zod
         .lazy(() => CdmBaseStaticdataIdentifierIdentifiedListSchema)
         .optional(),
     })

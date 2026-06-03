@@ -3,19 +3,21 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductTemplateEarlyTerminationEventSchema } from './CdmProductTemplateEarlyTerminationEvent';
 
-export const CdmProductTemplateOptionalEarlyTerminationAdjustedDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateOptionalEarlyTerminationAdjustedDatesSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/template/OptionalEarlyTerminationAdjustedDates'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      earlyTerminationEvent: z
-        .array(z.lazy(() => CdmProductTemplateEarlyTerminationEventSchema))
+    zod.object({
+      description: zod.string().optional(),
+      earlyTerminationEvent: zod
+        .array(zod.lazy(() => CdmProductTemplateEarlyTerminationEventSchema))
         .min(1)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

@@ -7,33 +7,34 @@ import { CdmObservableAssetFxSpotRateSourceSchema } from './CdmObservableAssetFx
 import { CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPairSchema } from './CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair';
 import { CdmObservableAssetSettlementRateOptionSchema } from './CdmObservableAssetSettlementRateOption';
 
-export const CdmObservableAssetValuationSourceSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/ValuationSource']
-  )(
-    z.object({
-      dealerOrCCP: z
-        .lazy(() => CdmBaseStaticdataPartyAncillaryEntitySchema)
-        .optional(),
-      description: z.string().optional(),
-      informationSource: z
-        .lazy(() => CdmObservableAssetFxSpotRateSourceSchema)
-        .optional(),
-      name: z.string().optional(),
-      quotedCurrencyPair: z
-        .lazy(
-          () =>
-            CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPairSchema
-        )
-        .optional(),
-      referenceBanks: z
-        .lazy(() => CdmBaseStaticdataPartyReferenceBanksSchema)
-        .optional(),
-      settlementRateOption: z
-        .lazy(() => CdmObservableAssetSettlementRateOptionSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetValuationSourceSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/ValuationSource']
+)(
+  zod.object({
+    dealerOrCCP: zod
+      .lazy(() => CdmBaseStaticdataPartyAncillaryEntitySchema)
+      .optional(),
+    description: zod.string().optional(),
+    informationSource: zod
+      .lazy(() => CdmObservableAssetFxSpotRateSourceSchema)
+      .optional(),
+    name: zod.string().optional(),
+    quotedCurrencyPair: zod
+      .lazy(
+        () =>
+          CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPairSchema
+      )
+      .optional(),
+    referenceBanks: zod
+      .lazy(() => CdmBaseStaticdataPartyReferenceBanksSchema)
+      .optional(),
+    settlementRateOption: zod
+      .lazy(() => CdmObservableAssetSettlementRateOptionSchema)
+      .optional(),
+  })
+);
 
 export type CdmObservableAssetValuationSource = z.infer<
   typeof CdmObservableAssetValuationSourceSchema

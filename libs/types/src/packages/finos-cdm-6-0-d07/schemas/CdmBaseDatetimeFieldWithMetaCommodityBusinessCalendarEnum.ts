@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeCommodityBusinessCalendarEnumSchema } from './CdmBaseDatetimeCommodityBusinessCalendarEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/datetime/FieldWithMetaCommodityBusinessCalendarEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod
         .lazy(() => CdmBaseDatetimeCommodityBusinessCalendarEnumSchema)
         .optional(),
     })

@@ -5,22 +5,24 @@ import { CdmBaseDatetimeAdjustableDatesSchema } from './CdmBaseDatetimeAdjustabl
 import { CdmBaseDatetimePeriodicDatesSchema } from './CdmBaseDatetimePeriodicDates';
 import { CdmBaseDatetimeRelativeDatesSchema } from './CdmBaseDatetimeRelativeDates';
 
-export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/datetime/AdjustableRelativeOrPeriodicDates'
     ]
   )(
-    z.object({
-      adjustableDates: z
+    zod.object({
+      adjustableDates: zod
         .lazy(() => CdmBaseDatetimeAdjustableDatesSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      periodicDates: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      periodicDates: zod
         .lazy(() => CdmBaseDatetimePeriodicDatesSchema)
         .optional(),
-      relativeDates: z
+      relativeDates: zod
         .lazy(() => CdmBaseDatetimeRelativeDatesSchema)
         .optional(),
     })

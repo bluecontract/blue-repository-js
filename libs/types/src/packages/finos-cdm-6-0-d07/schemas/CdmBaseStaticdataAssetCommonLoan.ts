@@ -7,46 +7,47 @@ import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataA
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataAssetCommonLoanSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Loan']
-  )(
-    z.object({
-      borrower: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
-        .min(0)
-        .optional(),
-      creditAgreementDate: z.string().optional(),
-      description: z.string().optional(),
-      exchange: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      facilityType: z
-        .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
-        .optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
-        .min(1)
-        .optional(),
-      instrumentType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
-        .optional(),
-      isExchangeListed: z.boolean().optional(),
-      lien: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
-      name: z.string().optional(),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
-        .min(0)
-        .optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
-        .min(0)
-        .optional(),
-      tranche: z
-        .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonLoanSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Loan']
+)(
+  zod.object({
+    borrower: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      .min(0)
+      .optional(),
+    creditAgreementDate: zod.string().optional(),
+    description: zod.string().optional(),
+    exchange: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    facilityType: zod
+      .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+      .optional(),
+    identifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      .min(1)
+      .optional(),
+    instrumentType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
+      .optional(),
+    isExchangeListed: zod.boolean().optional(),
+    lien: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
+    name: zod.string().optional(),
+    relatedExchange: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      .min(0)
+      .optional(),
+    taxonomy: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      .min(0)
+      .optional(),
+    tranche: zod
+      .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+      .optional(),
+  })
+);
 
 export type CdmBaseStaticdataAssetCommonLoan = z.infer<
   typeof CdmBaseStaticdataAssetCommonLoanSchema

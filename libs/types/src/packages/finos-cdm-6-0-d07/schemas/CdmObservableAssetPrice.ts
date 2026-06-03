@@ -9,28 +9,32 @@ import { CdmObservableAssetPriceCompositeSchema } from './CdmObservableAssetPric
 import { CdmObservableAssetPriceExpressionEnumSchema } from './CdmObservableAssetPriceExpressionEnum';
 import { CdmObservableAssetPriceTypeEnumSchema } from './CdmObservableAssetPriceTypeEnum';
 
-export const CdmObservableAssetPriceSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetPriceSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/Price']
 )(
-  z.object({
-    arithmeticOperator: z
+  zod.object({
+    arithmeticOperator: zod
       .lazy(() => CdmBaseMathArithmeticOperationEnumSchema)
       .optional(),
-    cashPrice: z.lazy(() => CdmObservableAssetCashPriceSchema).optional(),
-    composite: z.lazy(() => CdmObservableAssetPriceCompositeSchema).optional(),
-    datedValue: z
-      .array(z.lazy(() => CdmBaseMathDatedValueSchema))
+    cashPrice: zod.lazy(() => CdmObservableAssetCashPriceSchema).optional(),
+    composite: zod
+      .lazy(() => CdmObservableAssetPriceCompositeSchema)
+      .optional(),
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
       .min(0)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    perUnitOf: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-    priceExpression: z
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    perUnitOf: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    priceExpression: zod
       .lazy(() => CdmObservableAssetPriceExpressionEnumSchema)
       .optional(),
-    priceType: z.lazy(() => CdmObservableAssetPriceTypeEnumSchema).optional(),
-    unit: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-    val: z.number().optional(),
+    priceType: zod.lazy(() => CdmObservableAssetPriceTypeEnumSchema).optional(),
+    unit: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    val: zod.number().optional(),
   })
 );
 

@@ -1,13 +1,16 @@
-export const CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum = {
+export const CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/legaldocumentation/common/FieldWithMetaGoverningLawEnum',
   val: {
     type: {
-      blueId: '28gUYx1HzG6py2PmTBRca9g3wdwdcVnEHvzAZX7PGUUG',
+      blueId: 'F6XBKSmZ9oSyV7jNgy8VWvvVG1HtjMoByYPxs4837cbw',
     },
   },
-} as const;
+};

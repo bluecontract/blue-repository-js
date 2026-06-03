@@ -1,40 +1,37 @@
-export const CdmProductCommonScheduleAveragingPeriod = {
-  averagingDateTimes: {
-    description: 'An unweighted list of averaging observation date and times.',
-    type: {
-      blueId: '6geCuQi9d7Zffp3p3nxFjJBawUz6oUHKH19RmptB9h3H',
-    },
-  },
-  averagingObservations: {
-    description: 'A weighted list of averaging observation date and times.',
-    type: {
-      blueId: 'BXbBNHYXNsAs17oYsKYnKjD8RK186gXxjiPPnFzNiVVU',
-    },
-  },
-  description: 'Period over which an average value is taken.',
-  marketDisruption: {
-    description:
-      'The market disruption event as defined by ISDA 2002 Definitions.',
-    type: {
-      blueId: 'EuGpRedX58TPU3i5qZ6LxsNcbEJmKoGSNL6ivqwkFYgj',
-    },
-  },
-  name: 'cdm/product/common/schedule/AveragingPeriod',
-  schedule: {
-    description: 'A schedule for generating averaging observation dates.',
-    itemType: {
-      blueId: '4gPZWnb1vTp42ssUQer9eA7aUVRjtisHDCL1LhrNuH44',
-    },
-    schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
+export const CdmProductCommonScheduleAveragingPeriod: Record<string, unknown> =
+  {
+    averagingDateTimes: {
+      description:
+        'An unweighted list of averaging observation date and times.',
+      type: {
+        blueId: 'H5D8BrpdPx4G3A74ypfsUrC27hh6pjWVeJD3s6bkSu7e',
       },
     },
-    type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+    averagingObservations: {
+      description: 'A weighted list of averaging observation date and times.',
+      type: {
+        blueId: 'GVFbbaLLLxVnRS8pEFt4Pwr3VMsXjMm2nM6PdGfDenD3',
+      },
     },
-  },
-} as const;
+    description: 'Period over which an average value is taken.',
+    marketDisruption: {
+      description:
+        'The market disruption event as defined by ISDA 2002 Definitions.',
+      type: {
+        blueId: 'FjySLYZUdztPrBskVvWtnCvGs6KZVkZWrLsrrLpotMYG',
+      },
+    },
+    name: 'cdm/product/common/schedule/AveragingPeriod',
+    schedule: {
+      description: 'A schedule for generating averaging observation dates.',
+      itemType: {
+        blueId: 'CR9L4SVmKAvSmKh2xUfY6RvyAg4XL3BwDYCeqWk8ejn8',
+      },
+      schema: {
+        minItems: 0,
+      },
+      type: {
+        blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
+      },
+    },
+  };

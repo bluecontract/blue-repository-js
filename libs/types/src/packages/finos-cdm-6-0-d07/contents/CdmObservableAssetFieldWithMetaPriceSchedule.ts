@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaPriceSchedule = {
+export const CdmObservableAssetFieldWithMetaPriceSchedule: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaPriceSchedule',
   val: {
     type: {
-      blueId: '7ujhwBZKKYZ8KFEFNUSPTPcy8E1hFRJJzhgaX3ZgJGY5',
+      blueId: 'F7QahhLQE8sqX4t6NBvj5SDbcCWwr9pBdZDMZaqg7mSx',
     },
   },
-} as const;
+};

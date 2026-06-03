@@ -1,197 +1,197 @@
 export const blueIds = {
   'PayNote/Cancel Before Completion Requested':
-    'Hp9rbhaVLQFEpBy9EZ6YuEh8PrXXciJkY8eUfwEg55YK',
-  'PayNote/Capture Declined': 'Ghp8jKdGRtcdYv5aLuukrGQazUiiWVkjGRswhkrfp8uA',
-  'PayNote/Capture Failed': '7pCJnj5CuTi5NppZ6hWK3wMSwGveGW9fB8ydWge9kfsr',
+    '3q7ZoYNpX5GoVScYTqzom7YQ1fTCPZeegmdvRZvTVee1',
+  'PayNote/Capture Declined': 'Fco4nFxgHFP38LD59gHmiTrKyqJAG5B623gShceqRYyF',
+  'PayNote/Capture Failed': '9UCqtGPAjKMd77NN7G4oTL6DKKimkLoT5V69AiUh6knx',
   'PayNote/Capture Funds Requested':
-    '22tDCFoSnr3H8mpKoMcNWu6HFYRLJ8WVtA9HJJjZFTDp',
+    '8WUtwwVnvBXPJwa1b9ewP5xiCRZt9z8XrDzs1fNzN1UL',
   'PayNote/Card Charge Completed':
-    '6x3rEAr4r7E6TnmtGcKXmtofkZ5XbKWfWTtUjVBSjixb',
+    'DeNXwMeUPHywS5dnywPdkm8TS6qXYuvm1jBU81r8vicY',
   'PayNote/Card Charge Responded':
-    'CQa9Xv397jjXRmiW2mCmUv5ZQ2zQ7k4nvzwHUSod7Ao4',
+    'BChX2KCCV8bAaVpcxk2AMGyL5EBWkMN7A6MXqYx23kna',
   'PayNote/Card Transaction Capture Lock Change Failed':
-    'H1bKjnbdLgF16E7YusAusW8JYyUHzmZKFk6p7tP6jFxy',
+    'BVWamaKm2AEt9FEN5HZKuGWseEzeWPJeyJHbCFq4AGbz',
   'PayNote/Card Transaction Capture Lock Requested':
-    'BGFAz4x6LaxXTpTZyXzbE4kr4EDATVcpMgxgcH5UYzQn',
+    '3WUS7fRk3isWgjSnFGXta9HMkGmj2zg6898rbLH5G5iz',
   'PayNote/Card Transaction Capture Locked':
-    '9QmNQ9HyiNxJf4vGrGFSUQh2DdreV3awweaDdsB1n3CP',
+    'DMqN5PRMtERwhanUamBCYfELwGNxSq5aLXQDStPNFBio',
   'PayNote/Card Transaction Capture Unlock Requested':
-    '2dkYN3GYhWt5qVFk3Svcsqx3AumtupuDCir3Png3BnCn',
+    'GRKRovDGMJjtV4dtaUmmUJEojNCwyosV6hZtmsjPzs4d',
   'PayNote/Card Transaction Capture Unlocked':
-    '8qwZofJMDX7VN4oTvXki8sRqjRztHm1AJKY69kiqKQJV',
+    'FKW7FJk8UxqKkYsPfGBwv3sWdBrgiaV1emVVWj1RFTA6',
   'PayNote/Card Transaction Details':
-    'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+    'DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV',
   'PayNote/Card Transaction Monitoring Request Rejected':
-    'DrwZrgeKXZwsEQDJXdEaWQBivpSyZdb1nLjRMjjigov6',
+    '9gABqM7a7rkmcy1hymgajNEvYRKff7GUbHQuWPx1Qt9k',
   'PayNote/Card Transaction Monitoring Started':
-    'CL3RhUcWJG9JmKEENaZWewsYhmsSdTbFPaeW8jb1jZpj',
+    'CyqbBE2DCyFLhMSpyy5n48JHVUcWhzFVKV4mf5pMP86p',
   'PayNote/Card Transaction Monitoring Stopped':
-    'G9yQsyYfiwkDhap7VTq12yj26kGkgvPsX92cQp6rEbfx',
+    '45LGaTEkpqKVCXfgjbdq4kEeQ64qV5TsgYVCiQev9J9n',
   'PayNote/Card Transaction PayNote':
-    'BPCVqgc2J3NnYW2A8xMjGX8Wv5v5APpXuut8afiJTF3E',
+    '5aVPumax9MbaaEVd1kyZEoTu2vtZHDffWP8R1ALP7vV',
   'PayNote/Card Transaction Report':
-    'BVo3umEXBPKoCiDC7PrKQf5m3ENZGKt9xGgPTJJXCXcb',
+    '2eNmDqhcQGV7Z7cJ6EJ9WnnpVKrqCuJrYfyiz1sfSPxC',
   'PayNote/Child PayNote Issuance Declined':
-    '2UDXQuYTuwbbj6eXgvUxiSweq8Kz5yQqSuhFsjVASUBh',
+    '7TZfFGcCm89ELP9am43qpyEfGSEMpup6fPkEjQEKiVNw',
   'PayNote/Child PayNote Issued':
-    'GYpUo3MXjje9h9kCdKunkb4RQoU5uX1nq77uqe6jqjgU',
+    'Han6ZfnAh4BUecEKcFoQo36EdoSHxyNtDdtt6bHer3aM',
   'PayNote/Complete Payment Requested':
-    'DDRzktkPV3srozHVEzYUHdC9MX7Lzvq1HZ1enDEeYqfs',
+    'GaCbTkHKYc8bbvCwR7zCU7V29HGvoiMR3EU6HULign51',
   'PayNote/Final Amount Resolution Rejected':
-    '9g76Ge68UF744b6KWgGkrAudVCdM8Ggs1YjVcZXXWmsS',
+    '72A3S6dDAqoMPUbC1EUUoCCsnfecvpS1L3cYevSydsai',
   'PayNote/Final Amount Resolution Requested':
-    'EHySZYfMJC3JDuuottDsKyE4d6Xof6eKCWrzMjg2LyUh',
+    '3fe87zG5NdKpGKCwWistwuomDgVR56uoo9QyvwbqrA3k',
   'PayNote/Final Amount Resolved':
-    '14aYCUtepzJKAQ8rVtfNUcSebrBYbva3VBjhdtXgm4GV',
-  'PayNote/Funds Captured': 'HFKZ6MnBdTMNRi72P1zqUEh2RgagBX4DP4MLknWvpwrL',
-  'PayNote/Funds Reserved': '4AegLZ1gGqhXWQ66prGJB4yWcoHfqpKes8kbkfURnvE4',
-  'PayNote/Funds Secured': 'Dhq87PEpVaYUJAkCHxWxmRcmgQGg8qkCWyuVo7rJhNrZ',
+    'wi22d16wHycXs4G9op3SEHvcR2rK3JTedywGewUt27F',
+  'PayNote/Funds Captured': '8nn7phpXTbkJDdtcUoWifGAu3sUG85atgLLU8QcupWmw',
+  'PayNote/Funds Reserved': '5PasMX8MMx5Z4Jwr63W5w7tA7E7gGCVzYrrKkJGvU8xX',
+  'PayNote/Funds Secured': 'BRCYCbhWLNL4eV9PPiXyR9jD5vUwZJM1QzVRitbzgttG',
   'PayNote/Funds Securing Declined':
-    'Ep5q2Z4UEqUnMJGwb8CxbkjfFf5SYFsJf855LS68vWHw',
+    'F9uGVcesweVvK72Uw95r5uoC3N9rK7wEqrLesNF2dg6t',
   'PayNote/Funds Securing Failed':
-    '6d2zv3cUykVpodfq3nHnsJ62sJHjViw66JkmziQAYrRA',
+    'BWyf1rwHSCFApt6cTx1pq758Cwkmf6ip1XdEBg4QnCv8',
   'PayNote/Issue Child PayNote Requested':
-    '6xPfgoVRspFpZ1ftEsCFhDQt5vaPN4u9kfdAdzFzh8JS',
+    '2BGKdGTmrSuS7j7wE2bneyopsfgj5MwLLeU21CodKn4p',
   'PayNote/Linked Card Charge and Capture Immediately Requested':
-    'D5CBwemEH71dvFYLwngHXqQb3AfrX7vQ6qQQggA5w4kL',
+    '5EzstBLEcdv1qNVo8JYzxRd7T6P8fyZ5HrgN2fxz6CdX',
   'PayNote/Linked Card Charge Requested':
-    'CvGySPArfCvAW8wES6mLHAxW275hVGaWYDGcnmvDroiw',
+    '8btGPWw748VG2tHnj248YNV6EirmDg8oJWAN5UmzcwEo',
   'PayNote/Linked PayNote Start Failed':
-    '27m5LHt8BGFbjCtbc8TmpjbRr4C5Yof9ivb95Q1qjGp5',
+    'FRcHiifo1E2aQMx1YEMfD2wBTLFAhX4hHCAr4rAHruCS',
   'PayNote/Linked PayNote Start Responded':
-    'D3oNNKrhuezgtZwNQFVVeYSoQjamdb7cHzeJAitzSnMJ',
+    '25NBCk2eHaVrp8z8c81y75HAiL55nNZRSZ7uxDsHEGuX',
   'PayNote/Linked PayNote Started':
-    '136wy9eVvz2GrQpBBFSS3VxGXKjw8xSh5M1GYxgTussB',
+    'BrueWfkUx7usLz6HqUq1vLUZtab8cYcuPuHzthmhip8E',
   'PayNote/Merchant To Customer PayNote':
-    '2hDRCj9thcDsfKHHNy1hBKZG4fn8pEyWDVsaJQjouHZp',
+    'HY6PWoQGPqoJHmBMZyF8BEkovMzsz1dewfoeCAJ8urpA',
   'PayNote/Payee Assignment Confirmed':
-    'G7VEB2qKr36H5CUdSCrFsw2LTkpEx7nfgaFWuD3UeFeq',
+    '44BS4uToUQLVy8cFfUjbxr99ozR6fiAtCtC3Wd38VPwd',
   'PayNote/Payee Assignment Rejected':
-    '3CuhNQR9wKoJgiFtEagaHcWskzPtsAsGgDwSfcjhSTz3',
+    '3zCHLCtMCUoM1LiZP7skhLwZ5NGcTmVLQbdfPkDuv4q4',
   'PayNote/Payee Assignment Requested':
-    'FJFBLMQjKue73Ls3a3Hm4Bk51CqN4odCxZUwkioLWk8T',
+    'D17BbAFgz2YXvNegams28sxZqtqNKFepEMbPHrfed4bF',
   'PayNote/Payment Cancellation Declined':
-    '5vPSqDeCjrrSzKmCyDn3s7C6v1UbwThGCRk9Zc6VYojK',
+    '7QLdg1jcp7zdZHW8TMek1KRhdhpjmXNyJv83qmMLedkp',
   'PayNote/Payment Cancellation Failed':
-    'BYm2KcRydg8r9LQEWTZhi6r1fTvnJGkxHUzSbZd5wQJZ',
+    '3PohjSUMX4izceADM8gpy4Mg9988TNPWX9fKGrMBtZ8a',
   'PayNote/Payment Cancelled Before Completion':
-    'CLCm3e8rHeFTMWuV5A415fZZvVc9Xb9yj2p1eEMyTwrf',
-  'PayNote/Payment Completed': 'BaKeiFYCdzpGKobh6oq3y9ZwFA2pVgtCNn5CipfDRPDn',
+    'EUw3vUNYpwxKrtvF9FE7jwGzMo7NByVZcLuaTi8Pks7X',
+  'PayNote/Payment Completed': '5hNfvS7YBGdFfwoUt214LTTk8NSsVETTwDfDTzqcWihu',
   'PayNote/Payment Completion Declined':
-    'CJXbcUUJuDYcDY63DDWatYNoww5HNyLG9tBiyK4kfqDr',
+    'os4PgmBBxgt26WMaUg4XC4kmHkHygU5WL6PD5bHhShL',
   'PayNote/Payment Completion Failed':
-    'FXoL7smVn5Qr8rWaMiAkJX1tJYFf6pJQNCHyk9YEzsYj',
+    '6NZSd6JgMDdXikYHCDkeQ6aJsWCvMaznrRWdAaGRxnAL',
   'PayNote/Payment Completion Lock Change Failed':
-    'CWmwgreYPytk6uMhrPPQtwrEngyoMzmVCHCJwjESKxQe',
+    'WAYPYNWJEBL2TPtMuk8R3HYXcSR1itCizbyQoKwg2bn',
   'PayNote/Payment Completion Lock Requested':
-    'BAmesvVsg5mMyv7ywqNfcKA9heQRAavcXi8UDN7wKnkP',
+    'Gom5w2zMmTCErVF7vgKzSbE1HKv6xfsYzwXJEq3FanhA',
   'PayNote/Payment Completion Locked':
-    'ChQAXUw8C752hUQ8TDDjLGnZHWEuw4yXqZTpNR54Soqr',
+    'GnhJBCKaSH7HSDuD2LihE7ds3Dcddfg8ueDEcaC5VV2Q',
   'PayNote/Payment Completion Unlock Requested':
-    'Ae6M8hQ664pDy73x96xMABj3WnFuH6hkC61vcz8CNUQW',
+    '9t7hUWWXDow4cJfSuG88zruU6YasQeQz1J8jGwcvwthf',
   'PayNote/Payment Completion Unlocked':
-    'HWbQL6dGkDfjPDU57aghQmWMtpi3ai9sTX4TmMnA2k3X',
-  'PayNote/Payment Mandate': '5fBQHAnRCh6a5DwzJFV2f31yExvRhsnKNNMcuZnMHXry',
+    'BGqFuh1FHNRvBYfqDegotUCuCkZUyHPi4cMzfzZMEsGH',
+  'PayNote/Payment Mandate': 'CtbsuXntvrM28GGveCCe4Ks2xKTTmBvkMBAetSqXRCia',
   'PayNote/Payment Mandate Attached':
-    'CS8Zf2Nmo9QsvDwvBbTbpq9VL1gJTXC4ix9tzgmHnXvN',
+    'Gs1jHaTTnb8cv6VH6GKwnDAzBPkRjH81wRj28zqkGtz7',
   'PayNote/Payment Mandate Attachment Failed':
-    '2AggJktF7rdGkScmVmf58kzQ6x5SJQBVMq2LtthirY4b',
+    'Bini6FefW5nZTkMuiVtPCbxWPfATrtYWpSDfwEvEcXTp',
   'PayNote/Payment Mandate Spend Authorization Requested':
-    'AnxxLd7NofAKrwNp22fvP4jQ24aAHKKvxsv4aXJgjziP',
+    '8jsJ7UY8wiQvDtpsjqXvnrQUMhqXZhfF6EKBzhtkUKqo',
   'PayNote/Payment Mandate Spend Authorization Responded':
-    '9h8QgAXNnpK8ekENXhGxvsqk74vXyBvdEbpHetsEYtQb',
+    'F1JQhT1Fxn5QMcvtTUn95qvi7tTggAhv3nvQmHExUTuH',
   'PayNote/Payment Mandate Spend Settled':
-    'Bsb4uv9m6GU7T8Z6TwXQGZagFcVR8xn4EBNTR5bBZfgv',
+    '7MrYz5SYkcN9b479w4R4M3JzsgWYuuJBhSfMLwSPdetk',
   'PayNote/Payment Mandate Spend Settlement Responded':
-    '5Ef9YNuRSVFdykdjoBVWb5QHSzerHE8RAPaq58ARGrt7',
+    'CNxDfzH62fY9mtj71BTaZZNsyGLpS2RinaB6K34tibbh',
   'PayNote/Payment Reversal Declined':
-    '3JuJT2LrVdb7ZZyjZsEjh1N2hDtBedCrg3NLomPPyGvu',
+    'HsMuLH95bFaoqknkp6z3ZxMZyAmP21Qx9aYBTtc41zES',
   'PayNote/Payment Reversal Failed':
-    'BzR72tUU9bspQ3JBm54rjg3A7XFJLSuscvYdyw5LWQ7o',
+    'Aa45Pf6wk1T9YFxjxBk7fVRygZk9XQ7FWvXquQyLdGZH',
   'PayNote/Payment Reversal Lock Change Failed':
-    '3ZL5qKgNJweUij3KwA6xp4KC1ReZ1AqXTFzhE1hCg5Hd',
+    '2a2gKUm58bHAhhod7QW8ET32tB1UsNAMcfTCkP6i42TM',
   'PayNote/Payment Reversal Lock Requested':
-    '8kwErWXi6Ts7gypBEL7EFpegWV43cxQ9EpodWfLTigeJ',
+    '2qv8FU2sy1vXRuuVFKjr4e564Khe1iT1j9YDTfffK3Ti',
   'PayNote/Payment Reversal Locked':
-    '455HeywDQjC8Kh6GtzqmVCRQMUQ2JtXj2sEabUr91CqN',
+    '4VMcLbCnPdsVT5VozPcgoQhEi9HyxKwoWZw92PdHSBQZ',
   'PayNote/Payment Reversal Unlock Requested':
-    'q6TEeYDbn4Vdd5zxDjN4Ddyay31ivB852TZCuL17ULb',
+    'AWvMe8pZ3sK5ihyXirhd3KUyxsJkAJPyARigaj2ujF6F',
   'PayNote/Payment Reversal Unlocked':
-    '6sVrGit3FwrSRnVr4kKLk3PJC33mqAPzzuDqbzCvordD',
+    'G2Nsw7CtbAig3r87U1GJSV8Rhvvg86gmS6dwP657ZTNF',
   'PayNote/Payment Reversed After Completion':
-    '2xgUeYahgLZCGnrNaVqsCbwEP9xnsaU8LKk3jcDtx8jw',
-  'PayNote/PayNote': 'GS7qK6RBWAKdCFMy6hdeQNgmqeAkw5LrbcktFfnQdAxe',
+    'BZL11BoCdd5wXZ1XGwPqckiCzfinoVLNUpmFt4cXGEQ8',
+  'PayNote/PayNote': '65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q',
   'PayNote/PayNote Acceptance Requested':
-    '4xd8eGnNyTRRrMQAgz6nvNtRgpiDthUr8BLs3ugBDKkV',
-  'PayNote/PayNote Accepted': 'AKym7uykt3iv73tEfAP1k9f8dXpbp9i9dZNRhwfwhUYt',
+    'B2iduV8cAcvAuNCJ7HDZuR5N1YJETbdeohZF1EEXhTZE',
+  'PayNote/PayNote Accepted': 'Hcg9rpEFRbEcsVyx2Doq7MHZx9bhP4J32x3jA74AgTz7',
   'PayNote/PayNote Accepted By Client':
-    'HtsPop9z5R2EoW3TLKCSePnQUAj5wqryWuRWV1cwyBTt',
-  'PayNote/PayNote Approved': '2FLMQNYESLh8W5ivBYejLnBsS8E5DiD2m8AjNTBK6yVy',
+    '9ST1DLJxByDzvtdeJt8SFeZadSYokstVbWYcGVXnrEzk',
+  'PayNote/PayNote Approved': 'GqsXg52deb5uuCQyUo4XnRWHwPAhpyW7muCpfdnpo4fj',
   'PayNote/PayNote Cancellation Rejected':
-    'j48pW3ti66f4NoABqMAbaMkJKGztzsobPrUfXkVoSvB',
+    'HqAkxbtsXiTe2YVKh3ohbQTQMit7yLrgRS84ttoHpNe9',
   'PayNote/PayNote Cancellation Requested':
-    '3NTTDXW9VAaeU1W9s4FshMTZCNemsA5nPBWZgyF8qWpA',
-  'PayNote/PayNote Cancelled': 'BrrMLE9Gq3p36wSWxTeecJToXGziP2squb6omeb4CEFy',
+    '3RY8mx3eh39FJDi6wBK95ZLr9vq8aXNWy7ynX95hCR8z',
+  'PayNote/PayNote Cancelled': '8Qtt1QxdAecmYSHjLU9GPQC2NDm8TGnaQvfPz7himXK2',
   'PayNote/PayNote Client Decision Discarded':
-    '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW',
-  'PayNote/PayNote Delivery': '2JTgRGneJ5yzunYmA1gq8gg1joCgygcsdjjLPuMehJ9i',
+    'FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE',
+  'PayNote/PayNote Delivery': '983dg6ddoprdRNVHuwExmWLhA1DpG4Cz4oLYutMxhHvg',
   'PayNote/PayNote Delivery Failed':
-    '3VLavrr4LCLqo5FV1XxXhxUGryHBzBGQoFKTGWaXv7PM',
-  'PayNote/PayNote Rejected': 'G7UfGk3acE63TsiGzKM2xdSdW1ZUtmzGuMDypx9dXHVL',
+    'GJhhepPZcpJxJjNrFscPYJCaUQN8EgvXVZDobduzhSKy',
+  'PayNote/PayNote Rejected': '9XRGf45TaohQEHutFaNYPHkYYe2NWsyXsSsv2UoTfm6L',
   'PayNote/PayNote Rejected By Client':
-    '6EwokAQarCKdRXuU2wpkCyHfXzhr1CgjY5feVomsYJob',
+    '7jrHNe8HAs3LiLz5hmTZsAHCNwEaVNXQHf5ZomHVyVZC',
   'PayNote/Reservation Declined':
-    '6TWWiE2AfszYPHtDFcBahzeiTSgsMmaivZbUncyCKcf4',
+    'EK3i61s8rDuLgcTEZVFSctMBe5egvZPyjjGvUoLhwLie',
   'PayNote/Reservation Release Declined':
-    'E3dhGvVJHtQkqkbX73GCmV8Nhw9wFjxuAr6GUjb78SZQ',
+    'HhyRVknmhGnXhGBT53hKCioV6Roq1gEb14DAR6Gwu8r9',
   'PayNote/Reservation Release Requested':
-    '9YGdHtuBwjtuUYgU7rxEr9eYPiXENcBbLPFwWUqmhSR9',
+    '9wv1GB7j71PTZFYmatANzxk34KPaCeouB4yc4AxYirrU',
   'PayNote/Reservation Released':
-    'GNtXW3EQSFTwidGNPi2mKTwbGHQENDNUvM2ASkq1Av9Q',
+    'CP7T2PwEUP3xDiT6qMxNacVrigJFMKYFPLZCEkSdoddu',
   'PayNote/Reserve Funds and Capture Immediately Requested':
-    'HAT49nMdc1VVbgDxTusZ9wRUFFcbw8qx9pjmoZwg59LS',
+    'ApRvaTP7YHK4q4acrZFTtrsRLxqHSiEp4d6vVZ8sGFup',
   'PayNote/Reserve Funds Requested':
-    '4iRGNCp5PFihQDjMhCSMxkJq8NEqHqdiq68YPuEPqbZi',
+    'DEmon8pFkVCLcStZFXVz5FyrorbjnKHNdVfyRBNKKLp1',
   'PayNote/Reverse After Completion Requested':
-    'GPd6u4dQko5mDzWVgEJaJjsfffaykk29nv74drEM7rR6',
+    'FzBVMWWfDew8fdnxss4ABMm2ESMqS79dBP4fmwA4CtA4',
   'PayNote/Reverse Card Charge and Capture Immediately Requested':
-    '9G6U8wzPxB5WjwMEeHmDGfzwhxok6hk3Usno6ESRETR3',
+    '8Yvq4VCuntJBda3PDdVi2GEnCpi1UHVUZhmZBt4599aa',
   'PayNote/Reverse Card Charge Requested':
-    '9mACwX7GPNuwKycefkpa2sNJh3rAXjYuiEuTWfe5fBZf',
+    '5ZqjnjtJJMxKao4htfHUAJGTbPedxv9HMdELRsXaR8mR',
   'PayNote/Secure Funds Requested':
-    'CznqsDr7E4sduFbmLQCEMhhtBfGY615JvZ7uPhUtoFRS',
+    '3LxPRfuHdLUsCMZciUSsFXLyLoJUDjCYreAgFb24zJQr',
   'PayNote/Settlement Amount Rejected':
-    'ELN3C1kMSaJ9yEE4Vkd3FRQbEwhgegwjSHA5c4v7hER',
+    'ByF1yfP9y8HBLFWZ6qzYhYnuujUEpEvx4AFUsgKVfjWZ',
   'PayNote/Settlement Amount Specified':
-    '6eEzoRyTHDWRZn3nuTdivRNbnkM6YwQPVqXWrag5CJZr',
+    'A67ddLVzitXDJTFNC3hg4fp4a52aUHjvtLsKkqE5v3ZH',
   'PayNote/Start Card Transaction Monitoring Requested':
-    '7ZQKR5ExFxL3xj9vB5vrYnFP4DCnnPKSGJEcxtEKcDpR',
+    'DaZpPPmySzsqr4TNuxQaQunmNgbcMZCz3amwe57N6pnm',
   'PayNote/Transaction Details Update Failed':
-    '23KuRV6NdYxuHeDMJX4cHK4imFDvn552wY4CBTP6k5m8',
+    '2ZtTQ2b9sFY65w4f4wWYQctRGj9o9ApkRb6tMXyiUqMb',
   'PayNote/Transaction Details Update Lock Change Failed':
-    'GoTKbpUrjeonNMKf7zyHm6TbD5tbJdqyRk4Etck1qU8N',
+    'AGmjYB8hJAL9JUR3vsoqktdA7RcivcsjgoGjxQq3RQgj',
   'PayNote/Transaction Details Update Lock Requested':
-    'DLePv5DMMwmjZeEgDcCc8PFTyjT3C9XDDfA7CoM8GKjU',
+    'ARgyNXBQ7CxMxtsnZhyGv62H45uRN4rd7L74RUzyCgcz',
   'PayNote/Transaction Details Update Locked':
-    '6qCdP6iHAPsWcA5G2N28tthQnoCGxzJvdjmFRU7JB8m7',
+    '8rhab2RQZiMZ4zqT85vNKR2zVCk9ZfCXGMLWERMnWF7R',
   'PayNote/Transaction Details Update Rejected':
-    '2kNE5ZeV6v5vzeq6WRAYLmCmdswhkigP5RQWLd8Po7Pc',
+    '3BD7DPACFH2DZWxs9kb8YCBNypzJYMzctkyu6GZDsf85',
   'PayNote/Transaction Details Update Requested':
-    'CqwUgzcG2PdfPp4aK3XD11eQPmDXKkbPrck5nTpxczof',
+    'B2MMGSbvPhSodiLY7RPngBv9G87VSkgxgC2SF8DzA733',
   'PayNote/Transaction Details Update Unlock Requested':
-    '6ehbtZAKxK6XxA53wsANhCSBJVaenKw5TfwBgL63sydP',
+    'FAvCxgQqrzAckkXgEU6UXfnntsq8V1V2tfEiHYtuZBPs',
   'PayNote/Transaction Details Update Unlocked':
-    'BDLj2txke2Z35TyNhd4QyNa4C3dtqJcmpti5C5Y6Gvt5',
+    '9MDjTe2agSVnBooUFpMSzXenPYPgTC7Z4CvTB9nkyCyc',
   'PayNote/Transaction Details Updated':
-    '9FTgniVVTmyp3f1Di3dL9c6izKbVEb6XFUnWng1mAiyb',
+    '28nyzzqFkwjPojUURBiBoHQeGb4B74JGQSe5Ly5zXjK3',
   'PayNote/Transaction Identification Failed':
-    '8XH1vN2R5tLKQKRz4bJzv1JuEnare6Q4G4A49gpJXceW',
+    '7zoVbzvzqxvKAcvdbSSxGPR4RxjQ9iNip3WhU52bRBtb',
   'PayNote/Transaction Identified':
-    'FjaxYHKQ3DZ7h6ooFwVwD2Gs2WygLsw33xQ9vMLZzk8H',
+    'BDeXDAG91B72CFtoPcDUk3odhFMBhiueneS1RcM4nbPf',
   'PayNote/Transaction Initiated':
-    '4wPjsVSUbGeWCPY2vSBEAsVAt4Vqr1LB1CpAr4XsxApi',
+    '75FqpZhMunC4H25PrrsmNRCRGoLj5UJ1Ldc4eVsHqjGM',
   'PayNote/Transaction Initiation Failed':
-    '7zJ55EuAZbwtxHUt8gqKJVmjPpURbUCge9kGeLXprtmy',
-  'PayNote/Transaction Status': 'FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ',
+    'AAEsZ5p6qEHZYr4ZP9oFMyYvJkFNbF6miqtnnYYkovTE',
+  'PayNote/Transaction Status': 'DtMSkzcFRUytFjeQEB5ZSEnu1jewVNMuHbN6sDWKjQ7d',
 } as const;
 export default blueIds;

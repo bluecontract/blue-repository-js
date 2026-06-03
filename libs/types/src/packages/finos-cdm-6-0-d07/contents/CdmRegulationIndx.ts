@@ -1,16 +1,11 @@
-export const CdmRegulationIndx = {
+export const CdmRegulationIndx: Record<string, unknown> = {
   name: 'cdm/regulation/Indx',
   nm: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DZdnkAMDLkRVqy6xSZjUpZSFPATDK7GBQSknpso93uax',
+      blueId: 'Bnyu2YsX3C75feLrApJur1wxc78rkg6UmHvj7zoZSsV8',
     },
   },
-} as const;
+};

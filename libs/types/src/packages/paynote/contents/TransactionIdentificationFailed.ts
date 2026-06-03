@@ -1,13 +1,13 @@
-export const TransactionIdentificationFailed = {
+export const TransactionIdentificationFailed: Record<string, unknown> = {
   description: 'The deliverer could not identify the card transaction.',
   name: 'Transaction Identification Failed',
   reason: {
     description: 'Optional failure reason.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

@@ -2,12 +2,14 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 
-export const DocumentAnchorSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentAnchorSchema: any = withTypeBlueId(
   blueIds['MyOS/Document Anchor']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
     template: blueNodeField().optional(),
   })
 );

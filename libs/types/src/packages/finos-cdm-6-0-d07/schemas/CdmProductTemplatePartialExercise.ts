@@ -3,21 +3,22 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
 
-export const CdmProductTemplatePartialExerciseSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PartialExercise']
-  )(
-    z.object({
-      description: z.string().optional(),
-      integralMultipleAmount: z.number().optional(),
-      minimumNotionalAmount: z.number().optional(),
-      minimumNumberOfOptions: z.number().optional(),
-      name: z.string().optional(),
-      notionaReference: z.lazy(
-        () => CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema
-      ),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplatePartialExerciseSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PartialExercise']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    integralMultipleAmount: zod.number().optional(),
+    minimumNotionalAmount: zod.number().optional(),
+    minimumNumberOfOptions: zod.number().optional(),
+    name: zod.string().optional(),
+    notionaReference: zod.lazy(
+      () => CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema
+    ),
+  })
+);
 
 export type CdmProductTemplatePartialExercise = z.infer<
   typeof CdmProductTemplatePartialExerciseSchema

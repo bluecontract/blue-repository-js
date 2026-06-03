@@ -1,9 +1,9 @@
-export const CdmObservableAssetIndex = {
+export const CdmObservableAssetIndex: Record<string, unknown> = {
   CreditIndex: {
     description:
       'An index based on credit risk, typically composed using corporate debt instruments in a region or industry sector, e.g. the iTraxx indices.\n',
     type: {
-      blueId: 'DEx8mELrNiMvJnmN1WRhZbyCiZRmtgBjuJXyfcSztf4h',
+      blueId: 'EXhnZXqvEcgXZrY2VK9WqgZz87y5NwxZ4axscyrAeSBv',
     },
   },
   description:
@@ -11,21 +11,21 @@ export const CdmObservableAssetIndex = {
   EquityIndex: {
     description: 'An index based on equity securities, e.g. the S&P 500.',
     type: {
-      blueId: '69jx9rXicruZGKCBH22y3ssVo8rTB3rDWeNgDh7qhAET',
+      blueId: 'EArWxvBkePDwUEtKBhh6BFEHXRgqmUAiHbHAVCW9EWu4',
     },
   },
   ForeignExchangeRateIndex: {
     description:
       'A rate based on the exchange of a pair of cash assets in specific currencies, e.g. USD versus GBP.',
     type: {
-      blueId: '9MJsMkavMQapBs1dYUW5H2rFfdgrUA78Ttyxc1G9yHkv',
+      blueId: '3r42QBCBADZWzkxMBCQkvH3c6M3c1raWTFgLjoCsjZoe',
     },
   },
   InterestRateIndex: {
     description:
       'An index based in interest rates or inflation rates in a certain market.',
     type: {
-      blueId: '9NuX39eGBeGjQU9qFkJnqaMBLFBXyF3Qq2zwXtJKPvro',
+      blueId: '9QkWzeLcgPCCJUappiHJdN2AEyj6ZnCAsxX668fGGgG5',
     },
   },
   name: 'cdm/observable/asset/Index',
@@ -33,7 +33,7 @@ export const CdmObservableAssetIndex = {
     description:
       "An index created by a market participant which doesn't align with the other index types.",
     type: {
-      blueId: 'C1fmUXxsuQZKB9pnb77XYeC8nw26iYVpjkTRaG1dchYX',
+      blueId: 'GXtabg3erarMspr34yVya2Ybpw1LUGLXNHdWCkovVNAA',
     },
   },
-} as const;
+};

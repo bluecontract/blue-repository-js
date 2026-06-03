@@ -5,23 +5,24 @@ import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema } from '
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { CdmBaseStaticdataPartyPartyRoleEnumSchema } from './CdmBaseStaticdataPartyPartyRoleEnum';
 
-export const CdmBaseStaticdataPartyRelatedPartySchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/RelatedParty']
-  )(
-    z.object({
-      accountReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema
-        )
-        .optional(),
-      name: z.string().optional(),
-      partyReference: z.lazy(
-        () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
-      ),
-      role: z.lazy(() => CdmBaseStaticdataPartyPartyRoleEnumSchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyRelatedPartySchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/RelatedParty']
+)(
+  zod.object({
+    accountReference: zod
+      .lazy(
+        () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema
+      )
+      .optional(),
+    name: zod.string().optional(),
+    partyReference: zod.lazy(
+      () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
+    ),
+    role: zod.lazy(() => CdmBaseStaticdataPartyPartyRoleEnumSchema),
+  })
+);
 
 export type CdmBaseStaticdataPartyRelatedParty = z.infer<
   typeof CdmBaseStaticdataPartyRelatedPartySchema

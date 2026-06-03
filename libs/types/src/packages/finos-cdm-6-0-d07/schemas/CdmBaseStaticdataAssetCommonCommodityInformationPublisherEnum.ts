@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/CommodityInformationPublisherEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'Argus',
       'ArgusAmericasCrudeReport',
       'ArgusBiofuelReport',

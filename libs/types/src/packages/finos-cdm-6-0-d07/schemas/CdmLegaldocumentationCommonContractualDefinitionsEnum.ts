@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationCommonContractualDefinitionsEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonContractualDefinitionsEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/ContractualDefinitionsEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'ISDA1991InterestRate',
       'ISDA1993CommodityDerivatives',
       'ISDA1996EquityDerivatives',

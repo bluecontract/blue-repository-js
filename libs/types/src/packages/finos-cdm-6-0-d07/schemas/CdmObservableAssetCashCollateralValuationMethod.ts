@@ -5,28 +5,30 @@ import { CdmObservableAssetCsaTypeEnumSchema } from './CdmObservableAssetCsaType
 import { CdmObservableAssetPartyDeterminationEnumSchema } from './CdmObservableAssetPartyDeterminationEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmObservableAssetCashCollateralValuationMethodSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCashCollateralValuationMethodSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/CashCollateralValuationMethod'
     ]
   )(
-    z.object({
-      agreedDiscountRate: z
+    zod.object({
+      agreedDiscountRate: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      applicableCsa: z
+      applicableCsa: zod
         .lazy(() => CdmObservableAssetCsaTypeEnumSchema)
         .optional(),
-      cashCollateralCurrency: z.string().optional(),
-      cashCollateralInterestRate: z
+      cashCollateralCurrency: zod.string().optional(),
+      cashCollateralInterestRate: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      prescribedDocumentationAdjustment: z.boolean().optional(),
-      protectedParty: z
-        .array(z.lazy(() => CdmObservableAssetPartyDeterminationEnumSchema))
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      prescribedDocumentationAdjustment: zod.boolean().optional(),
+      protectedParty: zod
+        .array(zod.lazy(() => CdmObservableAssetPartyDeterminationEnumSchema))
         .min(0)
         .max(2)
         .optional(),

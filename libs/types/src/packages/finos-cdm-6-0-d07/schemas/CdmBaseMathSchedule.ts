@@ -3,17 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathDatedValueSchema } from './CdmBaseMathDatedValue';
 
-export const CdmBaseMathScheduleSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathScheduleSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/Schedule']
 )(
-  z.object({
-    datedValue: z
-      .array(z.lazy(() => CdmBaseMathDatedValueSchema))
+  zod.object({
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
       .min(0)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    val: z.number(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    val: zod.number(),
   })
 );
 

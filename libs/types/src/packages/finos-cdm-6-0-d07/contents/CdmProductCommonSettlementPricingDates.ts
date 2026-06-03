@@ -1,4 +1,4 @@
-export const CdmProductCommonSettlementPricingDates = {
+export const CdmProductCommonSettlementPricingDates: Record<string, unknown> = {
   description:
     'Specifies specific dates or parametric rules for the dates on which the price will be determined',
   name: 'cdm/product/common/settlement/PricingDates',
@@ -6,25 +6,20 @@ export const CdmProductCommonSettlementPricingDates = {
     description:
       'Defines rules for the dates on which the price will be determined.',
     type: {
-      blueId: 'CnFPWcJf9xSTq4FLwvkKAXcrxAjrdDmjq7gzPjKyC2MN',
+      blueId: 'EYbEZSe5HQWGHhD1r1THTXaZHW6xpyBn5zsupY3usXJ4',
     },
   },
   specifiedDates: {
     description:
       'Defines specified dates on which the price will be determined.',
     itemType: {
-      blueId: '3UQyaunu7noHsnkXtFNJHuwdv1AH6Uq6MZ1bZSHN9hYW',
+      blueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

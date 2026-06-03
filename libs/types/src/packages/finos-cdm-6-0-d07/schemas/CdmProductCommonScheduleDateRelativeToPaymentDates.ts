@@ -3,18 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDatesSchema } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates';
 
-export const CdmProductCommonScheduleDateRelativeToPaymentDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleDateRelativeToPaymentDatesSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/DateRelativeToPaymentDates'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      paymentDatesReference: z
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      paymentDatesReference: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () =>
               CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDatesSchema
           )

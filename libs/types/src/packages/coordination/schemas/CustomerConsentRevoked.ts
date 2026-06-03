@@ -4,14 +4,16 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { EventSchema } from './Event';
 
-export const CustomerConsentRevokedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CustomerConsentRevokedSchema: any = withTypeBlueId(
   blueIds['Coordination/Customer Consent Revoked']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    revokedAt: z.lazy(() => TimestampSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
+    revokedAt: zod.lazy(() => TimestampSchema).optional(),
   })
 );
 

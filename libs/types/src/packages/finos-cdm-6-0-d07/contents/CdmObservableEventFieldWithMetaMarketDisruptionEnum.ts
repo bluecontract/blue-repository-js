@@ -1,13 +1,16 @@
-export const CdmObservableEventFieldWithMetaMarketDisruptionEnum = {
+export const CdmObservableEventFieldWithMetaMarketDisruptionEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/event/FieldWithMetaMarketDisruptionEnum',
   val: {
     type: {
-      blueId: 'uUenBfK6DiEGeZWysD2Hj8epQYj7yTPH1iKfF2bAtT7',
+      blueId: 'Cm6CtKyZMW81X3HmtPtvXLE5EpvBpSEnyVK5Th2bmQ3v',
     },
   },
-} as const;
+};

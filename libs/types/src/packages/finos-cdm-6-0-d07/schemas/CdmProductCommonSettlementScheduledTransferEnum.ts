@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonSettlementScheduledTransferEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementScheduledTransferEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/ScheduledTransferEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'CorporateAction',
       'Coupon',
       'CreditEvent',

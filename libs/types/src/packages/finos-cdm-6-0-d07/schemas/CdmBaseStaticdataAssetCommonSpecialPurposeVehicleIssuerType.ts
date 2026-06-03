@@ -3,18 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataAssetCommonCreditRiskEnumSchema } from './CdmBaseStaticdataAssetCommonCreditRiskEnum';
 
-export const CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerTypeSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerTypeSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/SpecialPurposeVehicleIssuerType'
     ]
   )(
-    z.object({
-      creditRisk: z
+    zod.object({
+      creditRisk: zod
         .lazy(() => CdmBaseStaticdataAssetCommonCreditRiskEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

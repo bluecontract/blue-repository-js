@@ -2,17 +2,19 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonScheduleCalculationPeriodBaseSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleCalculationPeriodBaseSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/CalculationPeriodBase'
     ]
   )(
-    z.object({
-      adjustedEndDate: z.string().optional(),
-      adjustedStartDate: z.string().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+    zod.object({
+      adjustedEndDate: zod.string().optional(),
+      adjustedStartDate: zod.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

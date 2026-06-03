@@ -2,10 +2,12 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseDatetimePeriodTimeEnumSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseDatetimePeriodTimeEnumSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/PeriodTimeEnum']
 )(
-  z.enum(['Hour', 'Minute', 'Second'] as [
+  zod.enum(['Hour', 'Minute', 'Second'] as [
     string,
     ...string[]
   ]) as unknown as z.ZodObject<any>

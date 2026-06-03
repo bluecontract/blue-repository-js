@@ -1,4 +1,4 @@
-export const SearchContract = {
+export const SearchContract: Record<string, unknown> = {
   description:
     'Marker contract that describes how a document should project search fields\nfor indexing (`q`, `kv`, `geo`). Paths must follow BlueNode.get(path)\nsemantics and be absolute.\n',
   geo: {
@@ -6,13 +6,13 @@ export const SearchContract = {
     lat: {
       description: 'Absolute path to latitude value.',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
     lon: {
       description: 'Absolute path to longitude value.',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
   },
@@ -20,13 +20,13 @@ export const SearchContract = {
     description:
       'Map of index key -> absolute source path for `kv.<key>` extraction.',
     keyType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Search Contract',
@@ -34,13 +34,13 @@ export const SearchContract = {
     description:
       'Absolute paths whose extracted values should be appended to the indexed `q` text.',
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   type: {
-    blueId: '7QACj919YMRvFCTELCf6jfQTp41RVhtHdE6bPazLUZQ6',
+    blueId: '6zqbYGDGrMv5ReuEsjyzyyjjuqVnqDZxtY7RsPXdBTNy',
   },
-} as const;
+};

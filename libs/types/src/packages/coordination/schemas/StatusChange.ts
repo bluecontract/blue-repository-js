@@ -4,13 +4,15 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentStatusSchema } from './DocumentStatus';
 import { EventSchema } from './Event';
 
-export const StatusChangeSchema = withTypeBlueId(
+const zod = z as any;
+
+export const StatusChangeSchema: any = withTypeBlueId(
   blueIds['Coordination/Status Change']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    status: z.lazy(() => DocumentStatusSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    status: zod.lazy(() => DocumentStatusSchema).optional(),
   })
 );
 

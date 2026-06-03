@@ -1,13 +1,13 @@
-export const PaymentReversedAfterCompletion = {
+export const PaymentReversedAfterCompletion: Record<string, unknown> = {
   amountReversed: {
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   description:
     'The Guarantor confirms that value was reversed after completion.',
   name: 'Payment Reversed After Completion',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

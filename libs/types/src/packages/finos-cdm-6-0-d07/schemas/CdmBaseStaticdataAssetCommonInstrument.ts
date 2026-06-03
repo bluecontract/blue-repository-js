@@ -5,22 +5,23 @@ import { CdmBaseStaticdataAssetCommonListedDerivativeSchema } from './CdmBaseSta
 import { CdmBaseStaticdataAssetCommonLoanSchema } from './CdmBaseStaticdataAssetCommonLoan';
 import { CdmBaseStaticdataAssetCommonSecuritySchema } from './CdmBaseStaticdataAssetCommonSecurity';
 
-export const CdmBaseStaticdataAssetCommonInstrumentSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Instrument']
-  )(
-    z.object({
-      description: z.string().optional(),
-      ListedDerivative: z
-        .lazy(() => CdmBaseStaticdataAssetCommonListedDerivativeSchema)
-        .optional(),
-      Loan: z.lazy(() => CdmBaseStaticdataAssetCommonLoanSchema).optional(),
-      name: z.string().optional(),
-      Security: z
-        .lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonInstrumentSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/Instrument']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    ListedDerivative: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonListedDerivativeSchema)
+      .optional(),
+    Loan: zod.lazy(() => CdmBaseStaticdataAssetCommonLoanSchema).optional(),
+    name: zod.string().optional(),
+    Security: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema)
+      .optional(),
+  })
+);
 
 export type CdmBaseStaticdataAssetCommonInstrument = z.infer<
   typeof CdmBaseStaticdataAssetCommonInstrumentSchema

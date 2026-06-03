@@ -2,59 +2,60 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseDatetimeRollConventionEnumSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/RollConventionEnum']
-  )(
-    z.union([
-      z.literal('EOM'),
-      z.literal('FRI'),
-      z.literal('FRN'),
-      z.literal('IMM'),
-      z.literal('IMMAUD'),
-      z.literal('IMMCAD'),
-      z.literal('IMMNZD'),
-      z.literal('MON'),
-      z.literal('NONE'),
-      z.literal('SAT'),
-      z.literal('SFE'),
-      z.literal('SUN'),
-      z.literal('TBILL'),
-      z.literal('THU'),
-      z.literal('TUE'),
-      z.literal('WED'),
-      z.literal(1),
-      z.literal(10),
-      z.literal(11),
-      z.literal(12),
-      z.literal(13),
-      z.literal(14),
-      z.literal(15),
-      z.literal(16),
-      z.literal(17),
-      z.literal(18),
-      z.literal(19),
-      z.literal(2),
-      z.literal(20),
-      z.literal(21),
-      z.literal(22),
-      z.literal(23),
-      z.literal(24),
-      z.literal(25),
-      z.literal(26),
-      z.literal(27),
-      z.literal(28),
-      z.literal(29),
-      z.literal(3),
-      z.literal(30),
-      z.literal(4),
-      z.literal(5),
-      z.literal(6),
-      z.literal(7),
-      z.literal(8),
-      z.literal(9),
-    ]) as unknown as z.ZodObject<any>
-  );
+const zod = z as any;
+
+export const CdmBaseDatetimeRollConventionEnumSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/RollConventionEnum']
+)(
+  zod.union([
+    zod.literal('EOM'),
+    zod.literal('FRI'),
+    zod.literal('FRN'),
+    zod.literal('IMM'),
+    zod.literal('IMMAUD'),
+    zod.literal('IMMCAD'),
+    zod.literal('IMMNZD'),
+    zod.literal('MON'),
+    zod.literal('NONE'),
+    zod.literal('SAT'),
+    zod.literal('SFE'),
+    zod.literal('SUN'),
+    zod.literal('TBILL'),
+    zod.literal('THU'),
+    zod.literal('TUE'),
+    zod.literal('WED'),
+    zod.literal(1),
+    zod.literal(10),
+    zod.literal(11),
+    zod.literal(12),
+    zod.literal(13),
+    zod.literal(14),
+    zod.literal(15),
+    zod.literal(16),
+    zod.literal(17),
+    zod.literal(18),
+    zod.literal(19),
+    zod.literal(2),
+    zod.literal(20),
+    zod.literal(21),
+    zod.literal(22),
+    zod.literal(23),
+    zod.literal(24),
+    zod.literal(25),
+    zod.literal(26),
+    zod.literal(27),
+    zod.literal(28),
+    zod.literal(29),
+    zod.literal(3),
+    zod.literal(30),
+    zod.literal(4),
+    zod.literal(5),
+    zod.literal(6),
+    zod.literal(7),
+    zod.literal(8),
+    zod.literal(9),
+  ]) as unknown as z.ZodObject<any>
+);
 
 export type CdmBaseDatetimeRollConventionEnum = z.infer<
   typeof CdmBaseDatetimeRollConventionEnumSchema

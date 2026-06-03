@@ -3,11 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { LinkSchema } from './Link';
 
-export const DocumentLinkSchema = withTypeBlueId(blueIds['MyOS/Document Link'])(
+const zod = z as any;
+
+export const DocumentLinkSchema: any = withTypeBlueId(
+  blueIds['MyOS/Document Link']
+)(
   LinkSchema.extend({
-    description: z.string().optional(),
-    documentId: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    documentId: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

@@ -5,24 +5,25 @@ import { CdmObservableCommonDeterminationMethodEnumSchema } from './CdmObservabl
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 import { ComRosettaModelMetafieldsReferenceWithMetaStringSchema } from './ComRosettaModelMetafieldsReferenceWithMetaString';
 
-export const CdmProductAssetDividendCurrencySchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/DividendCurrency']
-  )(
-    z.object({
-      currency: z
-        .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
-        .optional(),
-      currencyReference: z
-        .lazy(() => ComRosettaModelMetafieldsReferenceWithMetaStringSchema)
-        .optional(),
-      description: z.string().optional(),
-      determinationMethod: z
-        .lazy(() => CdmObservableCommonDeterminationMethodEnumSchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetDividendCurrencySchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/DividendCurrency']
+)(
+  zod.object({
+    currency: zod
+      .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+      .optional(),
+    currencyReference: zod
+      .lazy(() => ComRosettaModelMetafieldsReferenceWithMetaStringSchema)
+      .optional(),
+    description: zod.string().optional(),
+    determinationMethod: zod
+      .lazy(() => CdmObservableCommonDeterminationMethodEnumSchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmProductAssetDividendCurrency = z.infer<
   typeof CdmProductAssetDividendCurrencySchema

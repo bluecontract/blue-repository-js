@@ -1,24 +1,19 @@
-export const CdmEventCommonTermsChangeInstruction = {
+export const CdmEventCommonTermsChangeInstruction: Record<string, unknown> = {
   adjustment: {
     type: {
-      blueId: 'FP5233evs7ZPmt4TtJViFwDZ7XUgyXmKmP7WGgjrSKtp',
+      blueId: 'Fu36EUGcA7u8BqhZftYyUEUqgrd4mi4LXffiZx7DXTvo',
     },
   },
   ancillaryParty: {
     description: 'ancillary party to be changed',
     itemType: {
-      blueId: 'gyjCjxW6qhXCC455CPDLkx4ccUz75HgdRL21KfMsdMs',
+      blueId: '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -27,7 +22,7 @@ export const CdmEventCommonTermsChangeInstruction = {
   product: {
     description: 'product to be changed',
     type: {
-      blueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#2',
+      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4',
     },
   },
-} as const;
+};

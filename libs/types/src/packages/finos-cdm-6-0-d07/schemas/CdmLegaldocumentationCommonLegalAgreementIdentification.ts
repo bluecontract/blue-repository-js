@@ -5,27 +5,29 @@ import { CdmLegaldocumentationCommonAgreementNameSchema } from './CdmLegaldocume
 import { CdmLegaldocumentationCommonGoverningLawEnumSchema } from './CdmLegaldocumentationCommonGoverningLawEnum';
 import { CdmLegaldocumentationCommonLegalAgreementPublisherEnumSchema } from './CdmLegaldocumentationCommonLegalAgreementPublisherEnum';
 
-export const CdmLegaldocumentationCommonLegalAgreementIdentificationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonLegalAgreementIdentificationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/LegalAgreementIdentification'
     ]
   )(
-    z.object({
-      agreementName: z.lazy(
+    zod.object({
+      agreementName: zod.lazy(
         () => CdmLegaldocumentationCommonAgreementNameSchema
       ),
-      description: z.string().optional(),
-      governingLaw: z
+      description: zod.string().optional(),
+      governingLaw: zod
         .lazy(() => CdmLegaldocumentationCommonGoverningLawEnumSchema)
         .optional(),
-      name: z.string().optional(),
-      publisher: z
+      name: zod.string().optional(),
+      publisher: zod
         .lazy(
           () => CdmLegaldocumentationCommonLegalAgreementPublisherEnumSchema
         )
         .optional(),
-      vintage: z.number().optional(),
+      vintage: zod.number().optional(),
     })
   );
 

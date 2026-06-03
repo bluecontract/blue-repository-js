@@ -6,21 +6,23 @@ import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/Se
 import { AgentSchema } from './Agent';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 
-export const ChatGPTConnectorAgentSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ChatGPTConnectorAgentSchema: any = withTypeBlueId(
   blueIds['MyOS/Chat GPT Connector Agent']
 )(
   AgentSchema.extend({
-    contracts: z
+    contracts: zod
       .object({
-        ownerChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        startWorker: z.lazy(() => OperationSchema).optional(),
-        startWorkerImpl: z
+        ownerChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        startWorker: zod.lazy(() => OperationSchema).optional(),
+        startWorkerImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
       })
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

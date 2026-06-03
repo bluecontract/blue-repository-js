@@ -4,24 +4,26 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeBusinessCentersSchema } from './CdmBaseDatetimeBusinessCenters';
 import { CdmObservableAssetCalculatedrateObservationPeriodDatesEnumSchema } from './CdmObservableAssetCalculatedrateObservationPeriodDatesEnum';
 
-export const CdmObservableAssetCalculatedrateObservationShiftCalculationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCalculatedrateObservationShiftCalculationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/calculatedrate/ObservationShiftCalculation'
     ]
   )(
-    z.object({
-      additionalBusinessDays: z
+    zod.object({
+      additionalBusinessDays: zod
         .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
         .optional(),
-      calculationBase: z
+      calculationBase: zod
         .lazy(
           () => CdmObservableAssetCalculatedrateObservationPeriodDatesEnumSchema
         )
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      offsetDays: z.number().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      offsetDays: zod.number().optional(),
     })
   );
 

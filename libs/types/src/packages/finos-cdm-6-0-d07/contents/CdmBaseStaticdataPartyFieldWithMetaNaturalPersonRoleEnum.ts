@@ -1,13 +1,16 @@
-export const CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum = {
+export const CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/staticdata/party/FieldWithMetaNaturalPersonRoleEnum',
   val: {
     type: {
-      blueId: 'DRXnENhi2PPC41zdWCTei38nBDnGJAHhGw77pHSaZu9R',
+      blueId: 'A4UUWtjEmLLX2CyaoMPRZ3X1Ea55w5TbqgueoeTHNvEs',
     },
   },
-} as const;
+};

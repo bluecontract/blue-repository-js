@@ -1,32 +1,25 @@
-export const CdmProductTemplateMandatoryEarlyTermination = {
+export const CdmProductTemplateMandatoryEarlyTermination: Record<
+  string,
+  unknown
+> = {
   calculationAgent: {
     description:
       'The ISDA Calculation Agent responsible for performing duties associated with an optional early termination.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5j3wvfjXc4HawVrDneYuxTD3C2At3QwdvEBK7LxSw24q',
+      blueId: 'FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau',
     },
   },
   cashSettlement: {
     description:
       'If specified, this means that cash settlement is applicable to the transaction and defines the parameters associated with the cash settlement procedure. If not specified, then physical settlement is applicable.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7zkmbj4175pTZ3exYCBnCyVdiSaAT2SEfkxhDTus8iLY',
+      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
     },
   },
   description:
@@ -35,23 +28,18 @@ export const CdmProductTemplateMandatoryEarlyTermination = {
     description:
       'The adjusted dates associated with a mandatory early termination provision. These dates have been adjusted for any applicable business day convention.\n',
     type: {
-      blueId: '5rLfe9XaZJN6C7Emyi4zRZrov1SdCdCb8wmVVLRNhwEo',
+      blueId: 'ENSK1BSQZtUz73JC51Ww2axF9BMWqhkBEE9AzutJiqoH',
     },
   },
   mandatoryEarlyTerminationDate: {
     description:
       'The early termination date associated with a mandatory early termination of a swap.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4Ro4tKrST2yaBWNytCjLJMhx3DMoAXwqU1W6HBKrnfRn',
+      blueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
     },
   },
   name: 'cdm/product/template/MandatoryEarlyTermination',
-} as const;
+};

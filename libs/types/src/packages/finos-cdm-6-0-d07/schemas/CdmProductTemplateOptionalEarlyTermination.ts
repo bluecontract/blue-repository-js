@@ -8,32 +8,34 @@ import { CdmProductTemplateExerciseNoticeSchema } from './CdmProductTemplateExer
 import { CdmProductTemplateExerciseTermsSchema } from './CdmProductTemplateExerciseTerms';
 import { CdmProductTemplateOptionalEarlyTerminationAdjustedDatesSchema } from './CdmProductTemplateOptionalEarlyTerminationAdjustedDates';
 
-export const CdmProductTemplateOptionalEarlyTerminationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateOptionalEarlyTerminationSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/template/OptionalEarlyTermination']
   )(
-    z.object({
-      calculationAgent: z
+    zod.object({
+      calculationAgent: zod
         .lazy(() => CdmObservableAssetCalculationAgentSchema)
         .optional(),
-      cashSettlement: z
+      cashSettlement: zod
         .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
         .optional(),
-      description: z.string().optional(),
-      exerciseNotice: z
-        .array(z.lazy(() => CdmProductTemplateExerciseNoticeSchema))
+      description: zod.string().optional(),
+      exerciseNotice: zod
+        .array(zod.lazy(() => CdmProductTemplateExerciseNoticeSchema))
         .min(0)
         .optional(),
-      exerciseTerms: z.lazy(() => CdmProductTemplateExerciseTermsSchema),
-      followUpConfirmation: z.boolean().optional(),
-      mutualEarlyTermination: z.boolean().optional(),
-      name: z.string().optional(),
-      optionalEarlyTerminationAdjustedDates: z
+      exerciseTerms: zod.lazy(() => CdmProductTemplateExerciseTermsSchema),
+      followUpConfirmation: zod.boolean().optional(),
+      mutualEarlyTermination: zod.boolean().optional(),
+      name: zod.string().optional(),
+      optionalEarlyTerminationAdjustedDates: zod
         .lazy(
           () => CdmProductTemplateOptionalEarlyTerminationAdjustedDatesSchema
         )
         .optional(),
-      singlePartyOption: z
+      singlePartyOption: zod
         .lazy(() => CdmBaseStaticdataPartyBuyerSellerSchema)
         .optional(),
     })

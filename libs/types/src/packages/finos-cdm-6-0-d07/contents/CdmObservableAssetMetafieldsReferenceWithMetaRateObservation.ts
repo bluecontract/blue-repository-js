@@ -1,18 +1,21 @@
-export const CdmObservableAssetMetafieldsReferenceWithMetaRateObservation = {
+export const CdmObservableAssetMetafieldsReferenceWithMetaRateObservation: Record<
+  string,
+  unknown
+> = {
   address: {
     type: {
-      blueId: 'DZcxdcnsm5jzC1CJU9fo6qUsNmG7i4H6LgZ4otSyMwas',
+      blueId: 'Ha6Tqhjz1UHFLv8HHkvJRZfyUyGhWefXqcUSiETMrniq',
     },
   },
   externalReference: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   globalReference: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/observable/asset/metafields/ReferenceWithMetaRateObservation',
-} as const;
+};

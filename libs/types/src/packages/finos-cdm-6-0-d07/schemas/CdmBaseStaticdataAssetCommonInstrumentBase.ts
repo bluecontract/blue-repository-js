@@ -6,30 +6,34 @@ import { CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema } from './CdmBaseS
 import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataAssetCommonTaxonomy';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmBaseStaticdataAssetCommonInstrumentBaseSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonInstrumentBaseSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/InstrumentBase']
   )(
-    z.object({
-      description: z.string().optional(),
-      exchange: z
+    zod.object({
+      description: zod.string().optional(),
+      exchange: zod
         .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
         .optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      identifier: zod
+        .array(
+          zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema)
+        )
         .min(1)
         .optional(),
-      instrumentType: z.lazy(
+      instrumentType: zod.lazy(
         () => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema
       ),
-      isExchangeListed: z.boolean().optional(),
-      name: z.string().optional(),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      isExchangeListed: zod.boolean().optional(),
+      name: zod.string().optional(),
+      relatedExchange: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
         .min(0)
         .optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      taxonomy: zod
+        .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
         .min(0)
         .optional(),
     })

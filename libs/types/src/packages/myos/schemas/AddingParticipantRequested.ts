@@ -3,17 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const AddingParticipantRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const AddingParticipantRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Adding Participant Requested']
 )(
   RequestSchema.extend({
-    channelName: z.string().optional(),
-    name: z.string().optional(),
-    participantBinding: z
+    channelName: zod.string().optional(),
+    name: zod.string().optional(),
+    participantBinding: zod
       .object({
-        accountId: z.string().optional(),
-        description: z.string().optional(),
-        email: z.string().optional(),
+        accountId: zod.string().optional(),
+        description: zod.string().optional(),
+        email: zod.string().optional(),
       })
       .optional(),
   })

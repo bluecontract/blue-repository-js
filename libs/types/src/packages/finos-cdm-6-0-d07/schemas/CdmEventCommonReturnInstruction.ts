@@ -3,19 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathQuantitySchema } from './CdmBaseMathQuantity';
 
-export const CdmEventCommonReturnInstructionSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ReturnInstruction']
-  )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      quantity: z
-        .array(z.lazy(() => CdmBaseMathQuantitySchema))
-        .min(1)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonReturnInstructionSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ReturnInstruction']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    quantity: zod
+      .array(zod.lazy(() => CdmBaseMathQuantitySchema))
+      .min(1)
+      .optional(),
+  })
+);
 
 export type CdmEventCommonReturnInstruction = z.infer<
   typeof CdmEventCommonReturnInstructionSchema

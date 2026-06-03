@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaInterestRateIndex = {
+export const CdmObservableAssetFieldWithMetaInterestRateIndex: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaInterestRateIndex',
   val: {
     type: {
-      blueId: 'C4ggqArmWWYiuaePZaGFxFhaaidYckVeowufcqR1WPKu',
+      blueId: 'ADajEoGA7ikQhVMsqRiRuiY11MeoVJc66Wkb2WYmzsr3',
     },
   },
-} as const;
+};

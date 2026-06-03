@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataPartyAncillaryRoleEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyAncillaryRoleEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/AncillaryRoleEnum']
   )(
-    z.enum([
+    zod.enum([
       'CalculationAgentFallback',
       'CalculationAgentIndependent',
       'CalculationAgentMandatoryEarlyTermination',

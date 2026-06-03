@@ -7,35 +7,33 @@ import { CdmLegaldocumentationCsaSecurityAgreementElectionsSchema } from './CdmL
 import { CdmLegaldocumentationMasterMasterAgreementScheduleSchema } from './CdmLegaldocumentationMasterMasterAgreementSchedule';
 import { CdmLegaldocumentationMasterTransactionAdditionalTermsSchema } from './CdmLegaldocumentationMasterTransactionAdditionalTerms';
 
-export const CdmLegaldocumentationContractAgreementSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/contract/Agreement']
-  )(
-    z.object({
-      collateralTransferAgreementElections: z
-        .lazy(
-          () =>
-            CdmLegaldocumentationCsaCollateralTransferAgreementElectionsSchema
-        )
-        .optional(),
-      creditSupportAgreementElections: z
-        .lazy(
-          () => CdmLegaldocumentationCsaCreditSupportAgreementElectionsSchema
-        )
-        .optional(),
-      description: z.string().optional(),
-      masterAgreementSchedule: z
-        .lazy(() => CdmLegaldocumentationMasterMasterAgreementScheduleSchema)
-        .optional(),
-      name: z.string().optional(),
-      securityAgreementElections: z
-        .lazy(() => CdmLegaldocumentationCsaSecurityAgreementElectionsSchema)
-        .optional(),
-      transactionAdditionalTerms: z
-        .lazy(() => CdmLegaldocumentationMasterTransactionAdditionalTermsSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmLegaldocumentationContractAgreementSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/contract/Agreement']
+)(
+  zod.object({
+    collateralTransferAgreementElections: zod
+      .lazy(
+        () => CdmLegaldocumentationCsaCollateralTransferAgreementElectionsSchema
+      )
+      .optional(),
+    creditSupportAgreementElections: zod
+      .lazy(() => CdmLegaldocumentationCsaCreditSupportAgreementElectionsSchema)
+      .optional(),
+    description: zod.string().optional(),
+    masterAgreementSchedule: zod
+      .lazy(() => CdmLegaldocumentationMasterMasterAgreementScheduleSchema)
+      .optional(),
+    name: zod.string().optional(),
+    securityAgreementElections: zod
+      .lazy(() => CdmLegaldocumentationCsaSecurityAgreementElectionsSchema)
+      .optional(),
+    transactionAdditionalTerms: zod
+      .lazy(() => CdmLegaldocumentationMasterTransactionAdditionalTermsSchema)
+      .optional(),
+  })
+);
 
 export type CdmLegaldocumentationContractAgreement = z.infer<
   typeof CdmLegaldocumentationContractAgreementSchema

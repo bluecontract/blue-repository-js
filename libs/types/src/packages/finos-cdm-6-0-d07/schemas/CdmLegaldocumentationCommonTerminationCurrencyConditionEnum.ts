@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationCommonTerminationCurrencyConditionEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonTerminationCurrencyConditionEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/TerminationCurrencyConditionEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'FreelyAvailable',
       'PaymentsDue',
       'PaymentsDueAndFreelyAvailable',

@@ -1,20 +1,18 @@
-export const CdmLegaldocumentationCommonAddressForNotices = {
+export const CdmLegaldocumentationCommonAddressForNotices: Record<
+  string,
+  unknown
+> = {
   additionalNotices: {
     description:
       'The optional specification of additional information when a party requires notices to be delivered to more than one address.\n',
     itemType: {
-      blueId: '9bBnotjYVoTpiPp618XfsvChy9sMkorNRd8X1hGQVM7o',
+      blueId: '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description: 'Specification of the address and other details for notices.',
@@ -22,15 +20,10 @@ export const CdmLegaldocumentationCommonAddressForNotices = {
   primaryNotices: {
     description: 'Specification of primary notice details',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2SCDqYNfqg2Ef6R5QB9F1V7RLuuBbGUCoc6LnFrM1jwp',
+      blueId: '9TmPYroGmuj6v7x9aMMV97Hqg4a4xhW19VqhcavbmgRL',
     },
   },
-} as const;
+};

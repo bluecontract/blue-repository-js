@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonSchedulePayRelativeToEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSchedulePayRelativeToEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/PayRelativeToEnum']
   )(
-    z.enum([
+    zod.enum([
       'CalculationPeriodEndDate',
       'CalculationPeriodStartDate',
       'LastPricingDate',

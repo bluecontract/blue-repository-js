@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationCommonMatrixTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonMatrixTypeEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/MatrixTypeEnum']
   )(
-    z.enum([
+    zod.enum([
       'CreditDerivativesPhysicalSettlementMatrix',
       'EquityDerivativesMatrix',
       'SettlementMatrix',

@@ -4,15 +4,17 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 import { PayNoteSchema } from './PayNote';
 
-export const CardTransactionPayNoteSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionPayNoteSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction PayNote']
 )(
   PayNoteSchema.extend({
-    cardTransactionDetails: z
+    cardTransactionDetails: zod
       .lazy(() => CardTransactionDetailsSchema)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

@@ -4,25 +4,27 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmLegaldocumentationMasterEquityAdditionalTermsSchema } from './CdmLegaldocumentationMasterEquityAdditionalTerms';
 import { CdmLegaldocumentationMasterFxAdditionalTermsSchema } from './CdmLegaldocumentationMasterFxAdditionalTerms';
 
-export const CdmLegaldocumentationMasterTransactionAdditionalTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterTransactionAdditionalTermsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/TransactionAdditionalTerms'
     ]
   )(
-    z.object({
-      commoditiesAdditionalTerms: z.string().optional(),
-      creditAdditionalTerms: z.string().optional(),
-      description: z.string().optional(),
-      digitalAssetAdditionalTerms: z.string().optional(),
-      equityAdditionalTerms: z
+    zod.object({
+      commoditiesAdditionalTerms: zod.string().optional(),
+      creditAdditionalTerms: zod.string().optional(),
+      description: zod.string().optional(),
+      digitalAssetAdditionalTerms: zod.string().optional(),
+      equityAdditionalTerms: zod
         .lazy(() => CdmLegaldocumentationMasterEquityAdditionalTermsSchema)
         .optional(),
-      foreignExchangeAdditionalTerms: z
+      foreignExchangeAdditionalTerms: zod
         .lazy(() => CdmLegaldocumentationMasterFxAdditionalTermsSchema)
         .optional(),
-      interestRateAdditionalTerms: z.string().optional(),
-      name: z.string().optional(),
+      interestRateAdditionalTerms: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

@@ -2,17 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductTemplateAutomaticExerciseSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/AutomaticExercise']
-  )(
-    z.object({
-      description: z.string().optional(),
-      isApplicable: z.boolean().optional(),
-      name: z.string().optional(),
-      thresholdRate: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateAutomaticExerciseSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/AutomaticExercise']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    isApplicable: zod.boolean().optional(),
+    name: zod.string().optional(),
+    thresholdRate: zod.number().optional(),
+  })
+);
 
 export type CdmProductTemplateAutomaticExercise = z.infer<
   typeof CdmProductTemplateAutomaticExerciseSchema

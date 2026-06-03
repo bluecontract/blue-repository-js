@@ -2,17 +2,19 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCommonSettlementPhysicalSettlementPeriodSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPhysicalSettlementPeriodSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/PhysicalSettlementPeriod'
     ]
   )(
-    z.object({
-      businessDays: z.number().optional(),
-      businessDaysNotSpecified: z.boolean().optional(),
-      maximumBusinessDays: z.number().optional(),
-      name: z.string().optional(),
+    zod.object({
+      businessDays: zod.number().optional(),
+      businessDaysNotSpecified: zod.boolean().optional(),
+      maximumBusinessDays: zod.number().optional(),
+      name: zod.string().optional(),
     })
   );
 

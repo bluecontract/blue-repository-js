@@ -1,16 +1,16 @@
-export const PaymentTargetPrepared = {
+export const PaymentTargetPrepared: Record<string, unknown> = {
   allowedPayer: {
     description:
       'Optional effective payer restriction echoed back to the caller.',
     type: {
-      blueId: '6VqxRuWBPVJ8qTBPWxYKaSi5UB3zb8Y9vadtxbsL4vzJ',
+      blueId: 'Cw952SXno2SWR9HL8EwUxWGeioRjxHjCd7G7uFAwC9kN',
     },
   },
   amount: {
     description:
       'Optional effective amount constraint echoed back to the caller.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   context: {
@@ -19,7 +19,7 @@ export const PaymentTargetPrepared = {
       description:
         'Blue document id identifying the business document this payment is for.',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
   },
@@ -27,7 +27,7 @@ export const PaymentTargetPrepared = {
     description:
       'Optional effective currency constraint echoed back to the caller.',
     type: {
-      blueId: 'CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc',
+      blueId: 'rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ',
     },
   },
   description:
@@ -39,7 +39,7 @@ export const PaymentTargetPrepared = {
   expiresAt: {
     description: 'Optional expiry echoed back to the caller.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Payment Target Prepared',
@@ -48,14 +48,14 @@ export const PaymentTargetPrepared = {
     token: {
       description: 'Opaque prepared recipient token.',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
     type: {
-      blueId: '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb',
+      blueId: '9aVaJJvfRrGjLZ55HbKbrd4AUgA9RmjEUCxtfCtqodM9',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

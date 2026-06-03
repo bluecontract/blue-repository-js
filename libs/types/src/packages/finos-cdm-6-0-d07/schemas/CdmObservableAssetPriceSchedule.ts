@@ -9,33 +9,34 @@ import { CdmObservableAssetPriceCompositeSchema } from './CdmObservableAssetPric
 import { CdmObservableAssetPriceExpressionEnumSchema } from './CdmObservableAssetPriceExpressionEnum';
 import { CdmObservableAssetPriceTypeEnumSchema } from './CdmObservableAssetPriceTypeEnum';
 
-export const CdmObservableAssetPriceScheduleSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/PriceSchedule']
-  )(
-    z.object({
-      arithmeticOperator: z
-        .lazy(() => CdmBaseMathArithmeticOperationEnumSchema)
-        .optional(),
-      cashPrice: z.lazy(() => CdmObservableAssetCashPriceSchema).optional(),
-      composite: z
-        .lazy(() => CdmObservableAssetPriceCompositeSchema)
-        .optional(),
-      datedValue: z
-        .array(z.lazy(() => CdmBaseMathDatedValueSchema))
-        .min(0)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      perUnitOf: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-      priceExpression: z
-        .lazy(() => CdmObservableAssetPriceExpressionEnumSchema)
-        .optional(),
-      priceType: z.lazy(() => CdmObservableAssetPriceTypeEnumSchema),
-      unit: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-      val: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetPriceScheduleSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/PriceSchedule']
+)(
+  zod.object({
+    arithmeticOperator: zod
+      .lazy(() => CdmBaseMathArithmeticOperationEnumSchema)
+      .optional(),
+    cashPrice: zod.lazy(() => CdmObservableAssetCashPriceSchema).optional(),
+    composite: zod
+      .lazy(() => CdmObservableAssetPriceCompositeSchema)
+      .optional(),
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
+      .min(0)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    perUnitOf: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    priceExpression: zod
+      .lazy(() => CdmObservableAssetPriceExpressionEnumSchema)
+      .optional(),
+    priceType: zod.lazy(() => CdmObservableAssetPriceTypeEnumSchema),
+    unit: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    val: zod.number().optional(),
+  })
+);
 
 export type CdmObservableAssetPriceSchedule = z.infer<
   typeof CdmObservableAssetPriceScheduleSchema

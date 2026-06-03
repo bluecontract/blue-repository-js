@@ -5,30 +5,31 @@ import { CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema } 
 import { CdmProductAssetSpreadScheduleSchema } from './CdmProductAssetSpreadSchedule';
 import { CdmProductTemplateStrikeScheduleSchema } from './CdmProductTemplateStrikeSchedule';
 
-export const CdmProductAssetFloatingRateBaseSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FloatingRateBase']
-  )(
-    z.object({
-      capRateSchedule: z
-        .lazy(() => CdmProductTemplateStrikeScheduleSchema)
-        .optional(),
-      description: z.string().optional(),
-      floorRateSchedule: z
-        .lazy(() => CdmProductTemplateStrikeScheduleSchema)
-        .optional(),
-      name: z.string().optional(),
-      rateOption: z
-        .lazy(
-          () =>
-            CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema
-        )
-        .optional(),
-      spreadSchedule: z
-        .lazy(() => CdmProductAssetSpreadScheduleSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetFloatingRateBaseSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FloatingRateBase']
+)(
+  zod.object({
+    capRateSchedule: zod
+      .lazy(() => CdmProductTemplateStrikeScheduleSchema)
+      .optional(),
+    description: zod.string().optional(),
+    floorRateSchedule: zod
+      .lazy(() => CdmProductTemplateStrikeScheduleSchema)
+      .optional(),
+    name: zod.string().optional(),
+    rateOption: zod
+      .lazy(
+        () =>
+          CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema
+      )
+      .optional(),
+    spreadSchedule: zod
+      .lazy(() => CdmProductAssetSpreadScheduleSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductAssetFloatingRateBase = z.infer<
   typeof CdmProductAssetFloatingRateBaseSchema

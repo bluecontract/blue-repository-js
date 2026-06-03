@@ -1,11 +1,14 @@
-export const CdmProductCommonSettlementPrincipalPayment = {
+export const CdmProductCommonSettlementPrincipalPayment: Record<
+  string,
+  unknown
+> = {
   description:
     'Any kind of principal payments when the amount is known and thus fixed.',
   discountFactor: {
     description:
       'The value representing the discount factor used to calculate the present value of the principal payment amount.\n',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/product/common/settlement/PrincipalPayment',
@@ -13,27 +16,27 @@ export const CdmProductCommonSettlementPrincipalPayment = {
     description:
       'Specifies the parties responsible for making and receiving payments defined by this structure.',
     type: {
-      blueId: 'Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3',
+      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
     },
   },
   presentValuePrincipalAmount: {
     description:
       'The amount representing the present value of the principal payment.',
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   principalAmount: {
     description:
       'When known at the time the transaction is made, the cash amount to be paid.',
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   principalPaymentDate: {
     description: 'The date where the PrincipalPayment shall be settled.',
     type: {
-      blueId: '4Ro4tKrST2yaBWNytCjLJMhx3DMoAXwqU1W6HBKrnfRn',
+      blueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
     },
   },
-} as const;
+};

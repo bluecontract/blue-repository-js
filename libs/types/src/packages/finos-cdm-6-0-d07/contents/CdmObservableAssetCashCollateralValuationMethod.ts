@@ -1,30 +1,33 @@
-export const CdmObservableAssetCashCollateralValuationMethod = {
+export const CdmObservableAssetCashCollateralValuationMethod: Record<
+  string,
+  unknown
+> = {
   agreedDiscountRate: {
     description:
       'This may be used to indicate the discount rate to be used for cash collateral for cash settlement purposes.',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   applicableCsa: {
     description:
       'This may be used to specify what type of CSA (credit support annex/agreement) is to be used for cash settlement purposes.\n',
     type: {
-      blueId: '6aL4Uv72Kn3HLmR96RGbWs3RSBXaDcEwYRYpCFoCFJ1s',
+      blueId: '6UyMCLhWc1ZAqEfpnAbByw5F6GWt5hg25X2o3HVmZfGn',
     },
   },
   cashCollateralCurrency: {
     description:
       'This may be used to indicate the currency of cash collateral for cash settlement purposes.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   cashCollateralInterestRate: {
     description:
       'This may be used to indicate the interest rate to be used for cash collateral for cash settlement purposes.',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   description:
@@ -34,31 +37,21 @@ export const CdmObservableAssetCashCollateralValuationMethod = {
     description:
       "This may be used to indicate that 'prescribed documentation adjustment' is applicable.",
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   protectedParty: {
     description:
       'This may be used to specify which party is protected (e.g. under Replacement Value cash settlement methods).',
     itemType: {
-      blueId: 'Gx6tnCEperfB7Xg7wHbZx5dSuf9AEGb5zk5PdoPPbSKQ',
+      blueId: 'GEZ4BVRUpw6ZgUyioiUUFgX7KRu1BLBoubvwFuS6XdFd',
     },
     schema: {
-      maxItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      maxItems: 2,
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

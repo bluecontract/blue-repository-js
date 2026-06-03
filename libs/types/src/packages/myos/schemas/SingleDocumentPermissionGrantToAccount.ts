@@ -1,38 +1,39 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { CompositeTimelineChannelSchema } from '../../coordination/schemas/CompositeTimelineChannel';
 import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 
-export const SingleDocumentPermissionGrantToAccountSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SingleDocumentPermissionGrantToAccountSchema: any = withTypeBlueId(
   blueIds['MyOS/Single Document Permission Grant To Account']
 )(
   MyOSAdminBaseSchema.extend({
-    contracts: z
+    contracts: zod
       .object({
-        granteeChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        granterChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        initLifecycleChannel: z
-          .lazy(() => LifecycleEventChannelSchema)
-          .optional(),
-        revoke: z.lazy(() => OperationSchema).optional(),
-        revokeAccessChannel: z
+        granteeChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        granterChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        initLifecycleChannel: blueNodeField().optional(),
+        revoke: zod.lazy(() => OperationSchema).optional(),
+        revokeAccessChannel: zod
           .lazy(() => CompositeTimelineChannelSchema)
           .optional(),
-        revokeImpl: z.lazy(() => SequentialWorkflowOperationSchema).optional(),
-        validateOnInit: z.lazy(() => SequentialWorkflowSchema).optional(),
+        revokeImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        validateOnInit: zod.lazy(() => SequentialWorkflowSchema).optional(),
       })
       .optional(),
-    granterDocumentSessionId: z.string().optional(),
-    name: z.string().optional(),
-    permissions: z.lazy(() => SingleDocumentPermissionSetSchema).optional(),
-    targetSessionId: z.string().optional(),
+    granterDocumentSessionId: zod.string().optional(),
+    name: zod.string().optional(),
+    permissions: zod.lazy(() => SingleDocumentPermissionSetSchema).optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

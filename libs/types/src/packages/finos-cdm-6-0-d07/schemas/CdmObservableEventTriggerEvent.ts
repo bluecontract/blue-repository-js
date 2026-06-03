@@ -6,24 +6,25 @@ import { CdmBaseDatetimeDateListSchema } from './CdmBaseDatetimeDateList';
 import { CdmObservableEventFeaturePaymentSchema } from './CdmObservableEventFeaturePayment';
 import { CdmObservableEventTriggerSchema } from './CdmObservableEventTrigger';
 
-export const CdmObservableEventTriggerEventSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/TriggerEvent']
-  )(
-    z.object({
-      description: z.string().optional(),
-      featurePayment: z
-        .lazy(() => CdmObservableEventFeaturePaymentSchema)
-        .optional(),
-      name: z.string().optional(),
-      schedule: z
-        .array(z.lazy(() => CdmBaseDatetimeAveragingScheduleSchema))
-        .min(0)
-        .optional(),
-      trigger: z.lazy(() => CdmObservableEventTriggerSchema),
-      triggerDates: z.lazy(() => CdmBaseDatetimeDateListSchema).optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableEventTriggerEventSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/TriggerEvent']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    featurePayment: zod
+      .lazy(() => CdmObservableEventFeaturePaymentSchema)
+      .optional(),
+    name: zod.string().optional(),
+    schedule: zod
+      .array(zod.lazy(() => CdmBaseDatetimeAveragingScheduleSchema))
+      .min(0)
+      .optional(),
+    trigger: zod.lazy(() => CdmObservableEventTriggerSchema),
+    triggerDates: zod.lazy(() => CdmBaseDatetimeDateListSchema).optional(),
+  })
+);
 
 export type CdmObservableEventTriggerEvent = z.infer<
   typeof CdmObservableEventTriggerEventSchema

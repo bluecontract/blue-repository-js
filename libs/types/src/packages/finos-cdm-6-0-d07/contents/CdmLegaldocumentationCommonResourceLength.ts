@@ -1,33 +1,26 @@
-export const CdmLegaldocumentationCommonResourceLength = {
+export const CdmLegaldocumentationCommonResourceLength: Record<
+  string,
+  unknown
+> = {
   description: 'A class to indicate the length of the resource.',
   lengthUnit: {
     description:
       'The length unit of the resource. For example, pages (pdf, text documents) or time (audio, video files).',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'H1cpAvAZcBXBrWSby7gNSkMZhqb2aZQZu6eTk7fAzab9',
+      blueId: '55gwzrtwt8NQXzuzesGej1NAFoZdqtmqMGguHuuJAZJN',
     },
   },
   lengthValue: {
     description: 'The length value of the resource.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/legaldocumentation/common/ResourceLength',
-} as const;
+};

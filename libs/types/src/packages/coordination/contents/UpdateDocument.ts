@@ -1,18 +1,18 @@
-export const UpdateDocument = {
+export const UpdateDocument: Record<string, unknown> = {
   changeset: {
     description:
-      'Ordered list of patch entries to apply through the Blue Contracts processor. The order is significant. Each patch is\nvalidated and applied atomically with its post-patch type-soundness/generalization work and Document Update cascade\nbefore the next patch is considered.\n',
+      'Ordered list of patch entries to apply through the Blue Contracts processor. Each entry must be valid under the\nprocessor patch rules. The order is significant: each patch is applied, type-checked/generalized, and cascaded before\nthe next patch is considered.\n',
     itemType: {
-      blueId: 'Bz49DbfqKC1yJeCfv5RYPZUKTfb7rtZnmreCaz4RsXn5',
+      blueId: '61W96XosAp3DrEC7PuqLYtmF2A6ETpqH6qF2DgYwDq4c',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
-    "Workflow step that requests selected-document mutation by applying a list of Blue Contracts patch entries. Update\nDocument is the controlled gateway for state changes in a sequential workflow. It is the point where computed changeset\ndata becomes actual document mutation under the processor's rules.\n\nEvery patch must pass boundary validation, reserved-key protection, runtime insertion normalization, and Blue Language\nvalidity checks. Each successful patch is applied in order. After each patch, the processor must run post-patch\ntype-soundness validation and dynamic generalization when required, then deliver Document Update cascades before the\nnext patch. If a patch would make the document invalid and no permitted generalization can repair the declared type,\nthe step fails and the processor terminates the executing scope according to the Blue Contracts fatal rules.\n\nIn a sequential workflow, an implementation may preview Update Document patches in a frozen WorkingDocument before the\nbuffered processor commit so that later steps can read the updated state without materializing the full document. That\npreview must use the same immutable patch planning, conformance, generalization policy, and boundary rules as the final\nprocessor commit. The step's `changeset` is therefore not a loose JSON patch list; it is a deterministic, gas-metered,\ntype-sound state transition request.\n",
+    'Workflow step that requests selected-document mutation through the Blue Contracts patch pipeline. Update Document is\nthe controlled gateway for state changes in a sequential workflow. It takes a changeset produced by authoring, BEX,\nprior steps, or host bindings, validates it, previews it when needed, and submits it to the processor as ordered patch\neffects.\n\nEvery patch is processed under Blue Contracts rules: runtime pointer validation, scope boundary checks, reserved-key\nprotection, runtime insertion normalization, gas charging, post-patch type-soundness validation, dynamic type\ngeneralization when a valid more-general type is required, Type Generalization Policy enforcement, and Document\nUpdate cascade delivery. A patch that would leave the selected document inconsistent with its declared type must be\nrepaired by permitted generalization or rejected; the processor must not commit a document that lies about its type.\n\nIn sequential workflows, an implementation may maintain a frozen WorkingDocument. Applying an Update Document step to\nthat working state gives later steps read-your-writes behavior before the final effect buffer is committed. The\npreview must use the same immutable patch planner and conformance/generalization logic as the final processor commit,\notherwise workflows could observe a state that the processor could not legally produce.\n',
   name: 'Update Document',
   type: {
-    blueId: '99AomnUQTnL52YVYXwEbGNeKnV6u1cjm73xLFSAt7mwe',
+    blueId: '9oGn8V6FSVcJYhRfuHRShfWjiHBUqzxVi9StGtHZNfev',
   },
-} as const;
+};

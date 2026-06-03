@@ -16,6 +16,13 @@ function resolveCoreTypeMap(): Record<string, string> {
   return Properties.CORE_TYPE_NAME_TO_BLUE_ID_MAP as Record<string, string>;
 }
 
+function resolveRuntimeTypeMap(): Record<string, string> {
+  return Properties.BLUE_CONTRACTS_RUNTIME_TYPE_NAME_TO_BLUE_ID_MAP as Record<
+    string,
+    string
+  >;
+}
+
 export function buildRepoContext(
   meta: BlueRepositoryMeta,
   packages: Record<string, BlueRepositoryPackage>,
@@ -50,6 +57,9 @@ export function buildRepoContext(
   const coreTypeMap = resolveCoreTypeMap();
   const { primitiveKindByBlueId, collectionKindByBlueId } =
     deriveCoreKindMaps(coreTypeMap);
+  const runtimeTypeBlueIds = new Set<BlueId>(
+    Object.values(resolveRuntimeTypeMap()),
+  );
 
   return {
     meta,
@@ -59,6 +69,7 @@ export function buildRepoContext(
     aliasToBlueId,
     primitiveKindByBlueId,
     collectionKindByBlueId,
+    runtimeTypeBlueIds,
   };
 }
 

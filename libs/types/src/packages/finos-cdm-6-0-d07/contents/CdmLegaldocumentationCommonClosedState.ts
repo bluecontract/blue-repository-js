@@ -1,17 +1,12 @@
-export const CdmLegaldocumentationCommonClosedState = {
+export const CdmLegaldocumentationCommonClosedState: Record<string, unknown> = {
   activityDate: {
     description:
       'The activity date on which the closing state took place, i.e. either the event date of the closing event (e.g. option exercise, contract early termination) or the contractual termination date.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -20,14 +15,14 @@ export const CdmLegaldocumentationCommonClosedState = {
     description:
       'The date on which the closing event contractually takes effect, when different from the activity date. When an explicit event effective date attribute is associated with the closing event, it will be that date. In the case of a cancellation event, it will be the date on which the cancelled event took place.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   lastPaymentDate: {
     description:
       'The date associated with the last payment in relation to the artefact (e.g. contract) to which this closed state applies. As an example, in the case of an early termination event, it would be the settlement date of the associated fee, if applicable.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/legaldocumentation/common/ClosedState',
@@ -35,15 +30,10 @@ export const CdmLegaldocumentationCommonClosedState = {
     description:
       'The qualification of what gave way to the contract or execution closure, e.g. allocation, termination, ...',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'AxtAGhrVfdEab1B2endnkUSwdQci3yBfHnPi7r21fKgG',
+      blueId: 'H4Q9vZBMs955sVKjew3tU5xKipMXrqJNyTf7MDqQvRjH',
     },
   },
-} as const;
+};

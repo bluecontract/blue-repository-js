@@ -35,6 +35,7 @@ export interface RepoContext {
   aliasToBlueId: Map<string, BlueId>;
   primitiveKindByBlueId: Map<BlueId, PrimitiveKind>;
   collectionKindByBlueId: Map<BlueId, CollectionKind>;
+  runtimeTypeBlueIds: Set<BlueId>;
 }
 
 export class UnknownTypeReferenceError extends Error {

@@ -50,4 +50,47 @@ describe('core primitive resolution', () => {
       })
     ).not.toThrow();
   });
+
+  it('accepts runtime built-ins as core-less base and field references', () => {
+    const meta: BlueRepositoryMeta = {
+      name: 'repo',
+      repositoryVersions: [],
+      version: '',
+      repoVersionIndexById: {},
+    };
+
+    const markerId =
+      Properties.BLUE_CONTRACTS_RUNTIME_TYPE_NAME_TO_BLUE_ID_MAP.Marker;
+    const channelId =
+      Properties.BLUE_CONTRACTS_RUNTIME_TYPE_NAME_TO_BLUE_ID_MAP.Channel;
+
+    const samplePackage: BlueRepositoryPackage = {
+      name: 'sample',
+      aliases: { 'sample/Actor Policy': 'ACTOR_POLICY' },
+      typesMeta: {
+        ACTOR_POLICY: {
+          status: 'stable',
+          name: 'Actor Policy',
+          versions: [],
+        },
+      },
+      contents: {
+        ACTOR_POLICY: {
+          name: 'Actor Policy',
+          type: { blueId: markerId },
+          policyChannel: { type: { blueId: channelId } },
+        },
+      },
+      schemas: {},
+    };
+
+    const { perPackage } = compileValueSchemasFromRepository(meta, {
+      sample: samplePackage,
+    });
+    const source =
+      perPackage.sample.perTypeFiles['packages/sample/schemas/ActorPolicy.ts'];
+
+    expect(source).toContain('zod.object(');
+    expect(source).toContain('policyChannel: blueNodeField().optional()');
+  });
 });

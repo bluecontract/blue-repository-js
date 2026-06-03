@@ -4,21 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeBusinessCentersSchema } from './CdmBaseDatetimeBusinessCenters';
 import { CdmBaseDatetimeBusinessDayConventionEnumSchema } from './CdmBaseDatetimeBusinessDayConventionEnum';
 
-export const CdmBaseDatetimeBusinessDayAdjustmentsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/BusinessDayAdjustments']
-  )(
-    z.object({
-      businessCenters: z
-        .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
-        .optional(),
-      businessDayConvention: z.lazy(
-        () => CdmBaseDatetimeBusinessDayConventionEnumSchema
-      ),
-      description: z.string().optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseDatetimeBusinessDayAdjustmentsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/BusinessDayAdjustments']
+)(
+  zod.object({
+    businessCenters: zod
+      .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
+      .optional(),
+    businessDayConvention: zod.lazy(
+      () => CdmBaseDatetimeBusinessDayConventionEnumSchema
+    ),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmBaseDatetimeBusinessDayAdjustments = z.infer<
   typeof CdmBaseDatetimeBusinessDayAdjustmentsSchema

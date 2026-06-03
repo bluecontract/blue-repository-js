@@ -1,19 +1,14 @@
-export const CdmEventCommonMarginCallResponseAction = {
+export const CdmEventCommonMarginCallResponseAction: Record<string, unknown> = {
   collateralPositionComponent: {
     description: 'Specifies the collateral to be moved and its direction.',
     itemType: {
-      blueId: 'RkQ9hssWBiUyn4LiaktzsRVjx76PDv5qNq4T8YionjL',
+      blueId: '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -22,16 +17,11 @@ export const CdmEventCommonMarginCallResponseAction = {
     description:
       'Specifies the margin call action details, specified as either Delivery or Return.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '6tjVZ5NjLm5HQgsKdMnRgy9TgumvEg9qnjDmMth7np6R',
+      blueId: '9CwCB3Fnvz24SzGuu8TbsuxrVJz8FFCvQCzGsfUyEjHK',
     },
   },
   name: 'cdm/event/common/MarginCallResponseAction',
-} as const;
+};

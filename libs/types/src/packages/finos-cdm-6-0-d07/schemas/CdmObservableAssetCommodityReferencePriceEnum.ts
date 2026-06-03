@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetCommodityReferencePriceEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCommodityReferencePriceEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/CommodityReferencePriceEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'ALUMINIUM ALLOY-LME 15 MONTH',
       'COAL-CENTRAL APPALACHIAN-NYMEX',
       'COCOA-ICE',

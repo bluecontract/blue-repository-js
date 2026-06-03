@@ -1,93 +1,92 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
 
-export const PaymentMandateSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentMandateSchema: any = withTypeBlueId(
   blueIds['PayNote/Payment Mandate']
 )(
-  z.object({
-    allowedPaymentCounterparties: z
+  zod.object({
+    allowedPaymentCounterparties: zod
       .array(
-        z.object({
-          counterpartyId: z.string().optional(),
-          counterpartyType: z.string().optional(),
+        zod.object({
+          counterpartyId: zod.string().optional(),
+          counterpartyType: zod.string().optional(),
         })
       )
       .optional(),
-    allowedPayNotes: z
+    allowedPayNotes: zod
       .array(
-        z.object({
-          documentBlueId: z.string().optional(),
-          typeBlueId: z.string().optional(),
+        zod.object({
+          documentBlueId: zod.string().optional(),
+          typeBlueId: zod.string().optional(),
         })
       )
       .optional(),
-    allowLinkedPayNote: z.boolean().optional(),
-    amountCaptured: z.number().optional(),
-    amountLimit: z.number().optional(),
-    amountReserved: z.number().optional(),
-    chargeAttempts: z
+    allowLinkedPayNote: zod.boolean().optional(),
+    amountCaptured: zod.number().optional(),
+    amountLimit: zod.number().optional(),
+    amountReserved: zod.number().optional(),
+    chargeAttempts: zod
       .record(
-        z.string(),
-        z.object({
-          amountMinor: z.number().optional(),
-          authorizationReason: z.string().optional(),
-          authorizationRespondedAt: z.lazy(() => TimestampSchema).optional(),
-          authorizationStatus: z.string().optional(),
-          authorizedAmountMinor: z.number().optional(),
-          capturedDeltaMinor: z.number().optional(),
-          chargeMode: z.string().optional(),
-          counterpartyId: z.string().optional(),
-          counterpartyType: z.string().optional(),
-          currency: z.lazy(() => CurrencySchema).optional(),
-          holdId: z.string().optional(),
-          lastSettlementId: z.string().optional(),
-          lastSettlementProcessingStatus: z.string().optional(),
-          lastSettlementRequestStatus: z.string().optional(),
-          reservedDeltaMinor: z.number().optional(),
-          settled: z.boolean().optional(),
-          settlementReason: z.string().optional(),
-          settlementRespondedAt: z.lazy(() => TimestampSchema).optional(),
-          transactionId: z.string().optional(),
+        zod.string(),
+        zod.object({
+          amountMinor: zod.number().optional(),
+          authorizationReason: zod.string().optional(),
+          authorizationRespondedAt: zod.lazy(() => TimestampSchema).optional(),
+          authorizationStatus: zod.string().optional(),
+          authorizedAmountMinor: zod.number().optional(),
+          capturedDeltaMinor: zod.number().optional(),
+          chargeMode: zod.string().optional(),
+          counterpartyId: zod.string().optional(),
+          counterpartyType: zod.string().optional(),
+          currency: zod.lazy(() => CurrencySchema).optional(),
+          holdId: zod.string().optional(),
+          lastSettlementId: zod.string().optional(),
+          lastSettlementProcessingStatus: zod.string().optional(),
+          lastSettlementRequestStatus: zod.string().optional(),
+          reservedDeltaMinor: zod.number().optional(),
+          settled: zod.boolean().optional(),
+          settlementReason: zod.string().optional(),
+          settlementRespondedAt: zod.lazy(() => TimestampSchema).optional(),
+          transactionId: zod.string().optional(),
         })
       )
       .optional(),
-    contracts: z
+    contracts: zod
       .object({
-        authorizeSpend: z.lazy(() => OperationSchema).optional(),
-        authorizeSpendImpl: z
+        authorizeSpend: zod.lazy(() => OperationSchema).optional(),
+        authorizeSpendImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
-        granteeChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        granterChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        guarantorChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        initialize: z.lazy(() => SequentialWorkflowSchema).optional(),
-        initLifecycleChannel: z
-          .lazy(() => LifecycleEventChannelSchema)
-          .optional(),
-        settleSpend: z.lazy(() => OperationSchema).optional(),
-        settleSpendImpl: z
+        granteeChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        granterChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        guarantorChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        initLifecycleChannel: blueNodeField().optional(),
+        settleSpend: zod.lazy(() => OperationSchema).optional(),
+        settleSpendImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
       })
       .optional(),
-    currency: z.lazy(() => CurrencySchema).optional(),
-    description: z.string().optional(),
-    expiresAt: z.lazy(() => TimestampSchema).optional(),
-    granteeId: z.string().optional(),
-    granteeType: z.string().optional(),
-    granterId: z.string().optional(),
-    granterType: z.string().optional(),
-    name: z.string().optional(),
-    revokedAt: z.lazy(() => TimestampSchema).optional(),
-    sourceAccount: z.string().optional(),
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
+    expiresAt: zod.lazy(() => TimestampSchema).optional(),
+    granteeId: zod.string().optional(),
+    granteeType: zod.string().optional(),
+    granterId: zod.string().optional(),
+    granterType: zod.string().optional(),
+    name: zod.string().optional(),
+    revokedAt: zod.lazy(() => TimestampSchema).optional(),
+    sourceAccount: zod.string().optional(),
   })
 );
 

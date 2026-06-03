@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const FinalAmountResolutionRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const FinalAmountResolutionRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Final Amount Resolution Requested']
 )(
   RequestSchema.extend({
-    description: z.string().optional(),
-    finalAmount: z.number().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    description: zod.string().optional(),
+    finalAmount: zod.number().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

@@ -1,51 +1,36 @@
-export const CdmEventCommonExecutionInstruction = {
+export const CdmEventCommonExecutionInstruction: Record<string, unknown> = {
   ancillaryParty: {
     description:
       'Maps any ancillary parties, e.g. parties involved in the transaction that are not one of the two principal parties.\n',
     itemType: {
-      blueId: 'gyjCjxW6qhXCC455CPDLkx4ccUz75HgdRL21KfMsdMs',
+      blueId: '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   collateral: {
     description:
       'Detail the collateral requirement anticipated with the transaction.',
     type: {
-      blueId: '4TmMsyAdoN2Np4C6v3ypajqNSQXAgmDT7v2FYpcc7DY7',
+      blueId: '6jhHzxNcd11YEG9a9f1yBWhmm5qpzmbZ6E7JEqHpPj7r',
     },
   },
   counterparty: {
     description:
       'Maps two defined parties to counterparty enums for the transacted product.',
     itemType: {
-      blueId: '3xDGPtjud4dCVNF9Swm1X7WoCse6gMziwHGvUnp1h3EK',
+      blueId: '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x',
     },
     schema: {
-      maxItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
+      maxItems: 2,
+      minItems: 2,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -54,21 +39,16 @@ export const CdmEventCommonExecutionInstruction = {
     description:
       'Specifies the type and venue of execution, e.g. via voice, or electronically.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'AgMJ76KMYXbdeYrEq5PfQtesuf5rxVkbspBBciEBpYux',
+      blueId: '34vDDjWK88raLcbwzsk1RG6XiYVNqS2twvW2mBVySxxe',
     },
   },
   lotIdentifier: {
     description: 'Lot Identifier associated with the transaction.',
     type: {
-      blueId: '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ',
+      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
     },
   },
   name: 'cdm/event/common/ExecutionInstruction',
@@ -76,108 +56,78 @@ export const CdmEventCommonExecutionInstruction = {
     description:
       'Defines all parties to that execution, including agents and brokers.',
     itemType: {
-      blueId: '694bqGLce4g9XrBubcFXs81gNNsvVTGK3msPSdNsj5jD',
+      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
+      minItems: 2,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   partyRoles: {
     description:
       'Defines the role(s) that party(ies) may have in relation to the execution.',
     itemType: {
-      blueId: '8fXEqMXsnZAuwSFKfhiksmAPnV7yvaxSbmwgTbGrN75M',
+      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   priceQuantity: {
     description:
       'Defines the prices (e.g. spread, equity price, FX rate), quantities (e.g. currency amount, no. shares) and settlement terms (e.g. initial fee, broker fee, up-front cds payment or option premium settlement) associated with the constituents of the transacted product.\n',
     itemType: {
-      blueId: '3M3Dq9Mg9Eq1zojVRM5ZJVz9nV2VfXFeSLB6TnvKozYs',
+      blueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   product: {
     description:
       'Defines the financial product to be executed and contract formed.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#2',
+      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4',
     },
   },
   tradeDate: {
     description: 'Denotes the trade/execution date.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   tradeIdentifier: {
     description:
       'Denotes one or more identifiers associated with the transaction.',
     itemType: {
-      blueId: '5NL7sLmwPvsGQHH4cx5g8ajq8wbZMimREKKDky2KMRFQ',
+      blueId: '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   tradeTime: {
     description:
       'Denotes the trade time and timezone as agreed by the parties to the trade.',
     type: {
-      blueId: 'rB8EXnktzaQ1oDqNjTTbY6Wub1oWxsU4bXUUGA32yMY',
+      blueId: 'DuGS3hb9QASiMfVarVtXqrw8YdvHS99bzooo3dinungf',
     },
   },
-} as const;
+};

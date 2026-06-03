@@ -22,94 +22,88 @@ import { CdmProductCollateralNegativeCriteriaSchema } from './CdmProductCollater
 import { CdmProductCollateralSovereignAgencyRatingSchema } from './CdmProductCollateralSovereignAgencyRating';
 import { CdmProductCollateralSpecificAssetSchema } from './CdmProductCollateralSpecificAsset';
 
-export const CdmProductCollateralCollateralCriteriaSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralCriteria']
-  )(
-    z.object({
-      AllCriteria: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralAllCriteriaSchema)
-        .optional(),
-      AnyCriteria: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralAnyCriteriaSchema)
-        .optional(),
-      AssetAgencyRating: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralAssetAgencyRatingSchema)
-        .optional(),
-      AssetCountryOfOrigin: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCollateralAssetCountryOfOriginSchema
-        )
-        .optional(),
-      AssetMaturity: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralAssetMaturitySchema)
-        .optional(),
-      AssetType: z
-        .lazy((): z.ZodTypeAny => CdmBaseStaticdataAssetCommonAssetTypeSchema)
-        .optional(),
-      CollateralIssuerType: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmBaseStaticdataAssetCommonCollateralIssuerTypeSchema
-        )
-        .optional(),
-      CollateralTaxonomy: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmBaseStaticdataAssetCommonCollateralTaxonomySchema
-        )
-        .optional(),
-      CounterpartyOwnIssuePermitted: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmProductCollateralCounterpartyOwnIssuePermittedSchema
-        )
-        .optional(),
-      CurrencyCodeEnum: z
-        .lazy(
-          (): z.ZodTypeAny => CdmBaseStaticdataAssetCommonCurrencyCodeEnumSchema
-        )
-        .optional(),
-      description: z.string().optional(),
-      DomesticCurrencyIssued: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCollateralDomesticCurrencyIssuedSchema
-        )
-        .optional(),
-      Index: z
-        .lazy((): z.ZodTypeAny => CdmObservableAssetIndexSchema)
-        .optional(),
-      IssuerAgencyRating: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralIssuerAgencyRatingSchema)
-        .optional(),
-      IssuerCountryOfOrigin: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCollateralIssuerCountryOfOriginSchema
-        )
-        .optional(),
-      IssuerName: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralIssuerNameSchema)
-        .optional(),
-      ListingExchange: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralListingExchangeSchema)
-        .optional(),
-      ListingSector: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralListingSectorSchema)
-        .optional(),
-      name: z.string().optional(),
-      NegativeCriteria: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralNegativeCriteriaSchema)
-        .optional(),
-      SovereignAgencyRating: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCollateralSovereignAgencyRatingSchema
-        )
-        .optional(),
-      SpecificAsset: z
-        .lazy((): z.ZodTypeAny => CdmProductCollateralSpecificAssetSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCollateralCollateralCriteriaSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralCriteria']
+)(
+  zod.object({
+    AllCriteria: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralAllCriteriaSchema)
+      .optional(),
+    AnyCriteria: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralAnyCriteriaSchema)
+      .optional(),
+    AssetAgencyRating: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralAssetAgencyRatingSchema)
+      .optional(),
+    AssetCountryOfOrigin: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralAssetCountryOfOriginSchema)
+      .optional(),
+    AssetMaturity: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralAssetMaturitySchema)
+      .optional(),
+    AssetType: zod
+      .lazy((): z.ZodTypeAny => CdmBaseStaticdataAssetCommonAssetTypeSchema)
+      .optional(),
+    CollateralIssuerType: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmBaseStaticdataAssetCommonCollateralIssuerTypeSchema
+      )
+      .optional(),
+    CollateralTaxonomy: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmBaseStaticdataAssetCommonCollateralTaxonomySchema
+      )
+      .optional(),
+    CounterpartyOwnIssuePermitted: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmProductCollateralCounterpartyOwnIssuePermittedSchema
+      )
+      .optional(),
+    CurrencyCodeEnum: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmBaseStaticdataAssetCommonCurrencyCodeEnumSchema
+      )
+      .optional(),
+    description: zod.string().optional(),
+    DomesticCurrencyIssued: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmProductCollateralDomesticCurrencyIssuedSchema
+      )
+      .optional(),
+    Index: zod
+      .lazy((): z.ZodTypeAny => CdmObservableAssetIndexSchema)
+      .optional(),
+    IssuerAgencyRating: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralIssuerAgencyRatingSchema)
+      .optional(),
+    IssuerCountryOfOrigin: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralIssuerCountryOfOriginSchema)
+      .optional(),
+    IssuerName: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralIssuerNameSchema)
+      .optional(),
+    ListingExchange: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralListingExchangeSchema)
+      .optional(),
+    ListingSector: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralListingSectorSchema)
+      .optional(),
+    name: zod.string().optional(),
+    NegativeCriteria: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralNegativeCriteriaSchema)
+      .optional(),
+    SovereignAgencyRating: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralSovereignAgencyRatingSchema)
+      .optional(),
+    SpecificAsset: zod
+      .lazy((): z.ZodTypeAny => CdmProductCollateralSpecificAssetSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCollateralCollateralCriteria = z.infer<
   typeof CdmProductCollateralCollateralCriteriaSchema

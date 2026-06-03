@@ -1,18 +1,16 @@
-export const CdmProductCollateralCounterpartyOwnIssuePermitted = {
+export const CdmProductCollateralCounterpartyOwnIssuePermitted: Record<
+  string,
+  unknown
+> = {
   counterpartyOwnIssuePermitted: {
     description:
       'Represents a filter based on whether it is permitted for the underlying asset to be issued by the posting entity or part of their corporate family.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/product/collateral/CounterpartyOwnIssuePermitted',
-} as const;
+};

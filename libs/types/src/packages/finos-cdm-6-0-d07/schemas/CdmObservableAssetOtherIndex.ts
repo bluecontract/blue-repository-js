@@ -6,28 +6,34 @@ import { CdmBaseStaticdataAssetCommonAssetIdentifierSchema } from './CdmBaseStat
 import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataAssetCommonTaxonomy';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmObservableAssetOtherIndexSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetOtherIndexSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/OtherIndex']
 )(
-  z.object({
-    assetClass: z
+  zod.object({
+    assetClass: zod
       .lazy(() => CdmBaseStaticdataAssetCommonAssetClassEnumSchema)
       .optional(),
-    description: z.string().optional(),
-    exchange: z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema).optional(),
-    identifier: z
-      .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+    description: zod.string().optional(),
+    exchange: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    identifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
       .min(1)
       .optional(),
-    isExchangeListed: z.boolean().optional(),
-    name: z.string().optional(),
-    provider: z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema).optional(),
-    relatedExchange: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+    isExchangeListed: zod.boolean().optional(),
+    name: zod.string().optional(),
+    provider: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    relatedExchange: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
       .min(0)
       .optional(),
-    taxonomy: z
-      .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+    taxonomy: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
       .min(0)
       .optional(),
   })

@@ -1,4 +1,4 @@
-export const MyOSBalanceAccount = {
+export const MyOSBalanceAccount: Record<string, unknown> = {
   description:
     'A prepared or direct MyOS balance-account reference used in payment requests.',
   name: 'MyOS Balance Account',
@@ -6,7 +6,7 @@ export const MyOSBalanceAccount = {
     description:
       'Opaque token representing a prepared recipient payment target.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

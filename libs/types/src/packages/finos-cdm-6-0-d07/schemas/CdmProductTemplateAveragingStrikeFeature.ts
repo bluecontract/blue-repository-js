@@ -4,17 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCommonScheduleObservationTermsSchema } from './CdmProductCommonScheduleObservationTerms';
 import { CdmProductTemplateAveragingCalculationSchema } from './CdmProductTemplateAveragingCalculation';
 
-export const CdmProductTemplateAveragingStrikeFeatureSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateAveragingStrikeFeatureSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/template/AveragingStrikeFeature']
   )(
-    z.object({
-      averagingCalculation: z.lazy(
+    zod.object({
+      averagingCalculation: zod.lazy(
         () => CdmProductTemplateAveragingCalculationSchema
       ),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      observationTerms: z.lazy(
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      observationTerms: zod.lazy(
         () => CdmProductCommonScheduleObservationTermsSchema
       ),
     })

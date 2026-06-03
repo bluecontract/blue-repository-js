@@ -8,48 +8,50 @@ import { CdmLegaldocumentationMasterIndexAdjustmentEventsSchema } from './CdmLeg
 import { CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnumSchema } from './CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum';
 import { CdmLegaldocumentationMasterRepresentationsSchema } from './CdmLegaldocumentationMasterRepresentations';
 
-export const CdmLegaldocumentationMasterExtraordinaryEventsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterExtraordinaryEventsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/ExtraordinaryEvents'
     ]
   )(
-    z.object({
-      additionalBespokeTerms: z
+    zod.object({
+      additionalBespokeTerms: zod
         .array(
-          z.lazy((): z.ZodTypeAny => CdmLegaldocumentationMasterClauseSchema)
+          zod.lazy((): z.ZodTypeAny => CdmLegaldocumentationMasterClauseSchema)
         )
         .min(0)
         .optional(),
-      additionalDisruptionEvents: z
+      additionalDisruptionEvents: zod
         .lazy(() => CdmLegaldocumentationMasterAdditionalDisruptionEventsSchema)
         .optional(),
-      compositionOfCombinedConsideration: z.boolean().optional(),
-      delisting: z
+      compositionOfCombinedConsideration: zod.boolean().optional(),
+      delisting: zod
         .lazy(
           () =>
             CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnumSchema
         )
         .optional(),
-      description: z.string().optional(),
-      failureToDeliver: z.boolean().optional(),
-      indexAdjustmentEvents: z
+      description: zod.string().optional(),
+      failureToDeliver: zod.boolean().optional(),
+      indexAdjustmentEvents: zod
         .lazy(() => CdmLegaldocumentationMasterIndexAdjustmentEventsSchema)
         .optional(),
-      mergerEvents: z
+      mergerEvents: zod
         .lazy(() => CdmLegaldocumentationMasterEquityCorporateEventsSchema)
         .optional(),
-      name: z.string().optional(),
-      nationalizationOrInsolvency: z
+      name: zod.string().optional(),
+      nationalizationOrInsolvency: zod
         .lazy(
           () =>
             CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnumSchema
         )
         .optional(),
-      representations: z
+      representations: zod
         .lazy(() => CdmLegaldocumentationMasterRepresentationsSchema)
         .optional(),
-      tenderOfferEvents: z
+      tenderOfferEvents: zod
         .lazy(() => CdmLegaldocumentationMasterEquityCorporateEventsSchema)
         .optional(),
     })

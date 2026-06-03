@@ -4,17 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimePeriodExtendedEnumSchema } from './CdmBaseDatetimePeriodExtendedEnum';
 import { CdmBaseDatetimeRollConventionEnumSchema } from './CdmBaseDatetimeRollConventionEnum';
 
-export const CdmBaseDatetimeCalculationPeriodFrequencySchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeCalculationPeriodFrequencySchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/CalculationPeriodFrequency']
   )(
-    z.object({
-      balanceOfFirstPeriod: z.boolean().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      period: z.lazy(() => CdmBaseDatetimePeriodExtendedEnumSchema).optional(),
-      periodMultiplier: z.number().optional(),
-      rollConvention: z.lazy(() => CdmBaseDatetimeRollConventionEnumSchema),
+    zod.object({
+      balanceOfFirstPeriod: zod.boolean().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      period: zod
+        .lazy(() => CdmBaseDatetimePeriodExtendedEnumSchema)
+        .optional(),
+      periodMultiplier: zod.number().optional(),
+      rollConvention: zod.lazy(() => CdmBaseDatetimeRollConventionEnumSchema),
     })
   );
 

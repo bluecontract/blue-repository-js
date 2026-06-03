@@ -14,90 +14,87 @@ import { CdmProductTemplatePortfolioReturnTermsSchema } from './CdmProductTempla
 import { CdmProductTemplateReturnTermsSchema } from './CdmProductTemplateReturnTerms';
 import { CdmProductTemplateUnderlierSchema } from './CdmProductTemplateUnderlier';
 
-export const CdmProductTemplatePerformancePayoutSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PerformancePayout']
-  )(
-    z.object({
-      description: z.string().optional(),
-      finalValuationPrice: z
-        .array(
-          z.lazy(
-            (): z.ZodTypeAny =>
-              CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-          )
-        )
-        .min(0)
-        .optional(),
-      fxFeature: z
-        .array(z.lazy((): z.ZodTypeAny => CdmProductTemplateFxFeatureSchema))
-        .min(0)
-        .optional(),
-      initialValuationPrice: z
-        .array(
-          z.lazy(
-            (): z.ZodTypeAny =>
-              CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-          )
-        )
-        .min(0)
-        .optional(),
-      interimValuationPrice: z
-        .array(
-          z.lazy(
-            (): z.ZodTypeAny =>
-              CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-          )
-        )
-        .min(0)
-        .optional(),
-      name: z.string().optional(),
-      observationTerms: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonScheduleObservationTermsSchema
-        )
-        .optional(),
-      payerReceiver: z
-        .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPayerReceiverSchema)
-        .optional(),
-      paymentDates: z.lazy(
-        (): z.ZodTypeAny => CdmProductCommonSchedulePaymentDatesSchema
-      ),
-      portfolioReturnTerms: z
-        .array(
-          z.lazy(
-            (): z.ZodTypeAny => CdmProductTemplatePortfolioReturnTermsSchema
-          )
-        )
-        .min(0)
-        .optional(),
-      priceQuantity: z
-        .lazy(
+const zod = z as any;
+
+export const CdmProductTemplatePerformancePayoutSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PerformancePayout']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    finalValuationPrice: zod
+      .array(
+        zod.lazy(
           (): z.ZodTypeAny =>
-            CdmProductCommonSettlementResolvablePriceQuantitySchema
+            CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
         )
-        .optional(),
-      principalPayment: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonSettlementPrincipalPaymentsSchema
+      )
+      .min(0)
+      .optional(),
+    fxFeature: zod
+      .array(zod.lazy((): z.ZodTypeAny => CdmProductTemplateFxFeatureSchema))
+      .min(0)
+      .optional(),
+    initialValuationPrice: zod
+      .array(
+        zod.lazy(
+          (): z.ZodTypeAny =>
+            CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
         )
-        .optional(),
-      returnTerms: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateReturnTermsSchema)
-        .optional(),
-      settlementTerms: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductCommonSettlementSettlementTermsSchema
+      )
+      .min(0)
+      .optional(),
+    interimValuationPrice: zod
+      .array(
+        zod.lazy(
+          (): z.ZodTypeAny =>
+            CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
         )
-        .optional(),
-      underlier: z
-        .lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema)
-        .optional(),
-      valuationDates: z.lazy(
-        (): z.ZodTypeAny => CdmObservableAssetValuationDatesSchema
-      ),
-    })
-  );
+      )
+      .min(0)
+      .optional(),
+    name: zod.string().optional(),
+    observationTerms: zod
+      .lazy((): z.ZodTypeAny => CdmProductCommonScheduleObservationTermsSchema)
+      .optional(),
+    payerReceiver: zod
+      .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPayerReceiverSchema)
+      .optional(),
+    paymentDates: zod.lazy(
+      (): z.ZodTypeAny => CdmProductCommonSchedulePaymentDatesSchema
+    ),
+    portfolioReturnTerms: zod
+      .array(
+        zod.lazy(
+          (): z.ZodTypeAny => CdmProductTemplatePortfolioReturnTermsSchema
+        )
+      )
+      .min(0)
+      .optional(),
+    priceQuantity: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmProductCommonSettlementResolvablePriceQuantitySchema
+      )
+      .optional(),
+    principalPayment: zod
+      .lazy(
+        (): z.ZodTypeAny => CdmProductCommonSettlementPrincipalPaymentsSchema
+      )
+      .optional(),
+    returnTerms: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateReturnTermsSchema)
+      .optional(),
+    settlementTerms: zod
+      .lazy((): z.ZodTypeAny => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+    underlier: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema)
+      .optional(),
+    valuationDates: zod.lazy(
+      (): z.ZodTypeAny => CdmObservableAssetValuationDatesSchema
+    ),
+  })
+);
 
 export type CdmProductTemplatePerformancePayout = z.infer<
   typeof CdmProductTemplatePerformancePayoutSchema

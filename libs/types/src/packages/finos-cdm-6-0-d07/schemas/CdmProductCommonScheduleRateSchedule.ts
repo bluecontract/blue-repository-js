@@ -3,18 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema } from './CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule';
 
-export const CdmProductCommonScheduleRateScheduleSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/RateSchedule']
-  )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      price: z.lazy(
-        () => CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-      ),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonScheduleRateScheduleSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/RateSchedule']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    price: zod.lazy(
+      () => CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
+    ),
+  })
+);
 
 export type CdmProductCommonScheduleRateSchedule = z.infer<
   typeof CdmProductCommonScheduleRateScheduleSchema

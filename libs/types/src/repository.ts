@@ -1,6 +1,5 @@
 import common from './packages/common/index';
 import coordination from './packages/coordination/index';
-import core from './packages/core/index';
 import finos_cdm_6_0_d07 from './packages/finos-cdm-6-0-d07/index';
 import myos from './packages/myos/index';
 import paynote from './packages/paynote/index';
@@ -14,7 +13,6 @@ export const repository = {
   packages: {
     common: common,
     coordination: coordination,
-    core: core,
     'finos-cdm-6-0-d07': finos_cdm_6_0_d07,
     myos: myos,
     paynote: paynote,

@@ -3,20 +3,22 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCollateralEligibleCollateralCriteriaSchema } from './CdmProductCollateralEligibleCollateralCriteria';
 
-export const CdmProductCollateralEligibleCollateralSpecificationInstructionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralEligibleCollateralSpecificationInstructionSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/EligibleCollateralSpecificationInstruction'
     ]
   )(
-    z.object({
-      common: z.lazy(
+    zod.object({
+      common: zod.lazy(
         () => CdmProductCollateralEligibleCollateralCriteriaSchema
       ),
-      name: z.string().optional(),
-      variable: z
+      name: zod.string().optional(),
+      variable: zod
         .array(
-          z.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
+          zod.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
         )
         .min(1)
         .optional(),

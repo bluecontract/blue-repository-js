@@ -4,14 +4,18 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventWorkflowLimitLevelEnumSchema } from './CdmEventWorkflowLimitLevelEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmEventWorkflowFieldWithMetaLimitLevelEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventWorkflowFieldWithMetaLimitLevelEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/FieldWithMetaLimitLevelEnum']
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmEventWorkflowLimitLevelEnumSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod.lazy(() => CdmEventWorkflowLimitLevelEnumSchema).optional(),
     })
   );
 

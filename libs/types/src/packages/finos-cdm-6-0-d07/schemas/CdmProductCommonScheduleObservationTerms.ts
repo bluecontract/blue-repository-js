@@ -8,30 +8,32 @@ import { CdmObservableCommonTimeTypeEnumSchema } from './CdmObservableCommonTime
 import { CdmProductCommonScheduleCalculationPeriodDatesSchema } from './CdmProductCommonScheduleCalculationPeriodDates';
 import { CdmProductCommonScheduleObservationDatesSchema } from './CdmProductCommonScheduleObservationDates';
 
-export const CdmProductCommonScheduleObservationTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleObservationTermsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/ObservationTerms']
   )(
-    z.object({
-      calculationPeriodDates: z
+    zod.object({
+      calculationPeriodDates: zod
         .lazy(() => CdmProductCommonScheduleCalculationPeriodDatesSchema)
         .optional(),
-      description: z.string().optional(),
-      informationSource: z
+      description: zod.string().optional(),
+      informationSource: zod
         .lazy(() => CdmObservableAssetFxSpotRateSourceSchema)
         .optional(),
-      name: z.string().optional(),
-      numberOfObservationDates: z.number().optional(),
-      observationDates: z.lazy(
+      name: zod.string().optional(),
+      numberOfObservationDates: zod.number().optional(),
+      observationDates: zod.lazy(
         () => CdmProductCommonScheduleObservationDatesSchema
       ),
-      observationTime: z
+      observationTime: zod
         .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
         .optional(),
-      observationTimeType: z
+      observationTimeType: zod
         .lazy(() => CdmObservableCommonTimeTypeEnumSchema)
         .optional(),
-      precision: z.lazy(() => CdmBaseMathRoundingSchema).optional(),
+      precision: zod.lazy(() => CdmBaseMathRoundingSchema).optional(),
     })
   );
 

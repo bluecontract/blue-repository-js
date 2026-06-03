@@ -1,22 +1,22 @@
-export const CdmProductTemplatePayout = {
+export const CdmProductTemplatePayout: Record<string, unknown> = {
   AssetPayout: {
     description:
       'Defines the assets and movements in a security financing transaction.',
     type: {
-      blueId: '4CuK7zsyx6DKDM2yuq991XfZ1PC48uiEZFZNsp1F4tMZ',
+      blueId: 'CaDUz9AY1EXhFRYQN73HdC98mAe18bh4BxACMShr4JNB',
     },
   },
   CommodityPayout: {
     description: 'Defines the payout for the floating leg of a Commodity Swap.',
     type: {
-      blueId: 'this#6',
+      blueId: 'this#5',
     },
   },
   CreditDefaultPayout: {
     description:
       'The credit default payout, which provides the details necessary for determining when a credit payout will be triggered as well as the parameters for calculating the payout and the settlement terms.\n',
     type: {
-      blueId: '8urUwRupxFQSg44fuqHiVELRztwhJH1CyMTbTSkKSFEA',
+      blueId: 'AgZcx5eJYcy6vzz9NejmvMBuMpzza4tjH2bEtMYNkMVD',
     },
   },
   description:
@@ -25,14 +25,14 @@ export const CdmProductTemplatePayout = {
     description:
       'Defines a payout in which one or more payouts are defined as a fixed price.',
     type: {
-      blueId: '6ZDCQKZdsUezXkYv4TiQ9upHiNBjJ7MQMpjtwK64HMf2',
+      blueId: 'HGZMKY1yoBjBujWhaTqwBYYsw3GkD4w8Wc9G6D6nrDaa',
     },
   },
   InterestRatePayout: {
     description:
       'All of the terms necessary to define and calculate a cash flow based on a fixed, a floating or an inflation index rate. The interest rate payout can be applied to interest rate swaps and FRA (which both have two associated interest rate payouts), credit default swaps (to represent the fee leg when subject to periodic payments) and equity swaps (to represent the funding leg).\n',
     type: {
-      blueId: 'CEPYQUQEyD1UJSztEdRDbm5tx1WpgfhmqDCG9g7zJdRm',
+      blueId: '6JEZ2eR6XbPr27we4enAnhEA3t33WcEUzQSnH1uFWQ5Q',
     },
   },
   name: 'cdm/product/template/Payout',
@@ -53,7 +53,7 @@ export const CdmProductTemplatePayout = {
     description:
       "Represents a forward settling payout. The 'Underlier' attribute captures the underlying payout, which is settled according to the 'SettlementTerms' attribute. Both FX Spot and FX Forward should use this component.\n",
     type: {
-      blueId: 'this#8',
+      blueId: 'this#2',
     },
   },
-} as const;
+};

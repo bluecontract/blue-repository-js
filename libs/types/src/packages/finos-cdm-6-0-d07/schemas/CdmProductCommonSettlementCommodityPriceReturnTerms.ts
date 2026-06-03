@@ -5,21 +5,23 @@ import { CdmBaseMathRoundingSchema } from './CdmBaseMathRounding';
 import { CdmProductAssetSpreadScheduleSchema } from './CdmProductAssetSpreadSchedule';
 import { CdmProductCommonSettlementRollFeatureSchema } from './CdmProductCommonSettlementRollFeature';
 
-export const CdmProductCommonSettlementCommodityPriceReturnTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementCommodityPriceReturnTermsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/CommodityPriceReturnTerms'
     ]
   )(
-    z.object({
-      conversionFactor: z.number().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      rollFeature: z
+    zod.object({
+      conversionFactor: zod.number().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      rollFeature: zod
         .lazy(() => CdmProductCommonSettlementRollFeatureSchema)
         .optional(),
-      rounding: z.lazy(() => CdmBaseMathRoundingSchema).optional(),
-      spread: z.lazy(() => CdmProductAssetSpreadScheduleSchema).optional(),
+      rounding: zod.lazy(() => CdmBaseMathRoundingSchema).optional(),
+      spread: zod.lazy(() => CdmProductAssetSpreadScheduleSchema).optional(),
     })
   );
 

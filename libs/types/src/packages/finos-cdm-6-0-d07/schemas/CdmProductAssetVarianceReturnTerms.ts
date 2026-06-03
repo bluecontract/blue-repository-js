@@ -11,52 +11,51 @@ import { CdmProductAssetValuationTermsSchema } from './CdmProductAssetValuationT
 import { CdmProductAssetVarianceCapFloorSchema } from './CdmProductAssetVarianceCapFloor';
 import { CdmProductAssetVolatilityCapFloorSchema } from './CdmProductAssetVolatilityCapFloor';
 
-export const CdmProductAssetVarianceReturnTermsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/VarianceReturnTerms']
-  )(
-    z.object({
-      annualizationFactor: z.number().optional(),
-      dividendApplicability: z
-        .lazy(() => CdmObservableAssetDividendApplicabilitySchema)
-        .optional(),
-      equityUnderlierProvisions: z
-        .lazy(() => CdmProductAssetEquityUnderlierProvisionsSchema)
-        .optional(),
-      exchangeTradedContractNearest: z
-        .lazy(
-          () => CdmObservableAssetMetafieldsReferenceWithMetaObservableSchema
-        )
-        .optional(),
-      expectedN: z.number().optional(),
-      initialLevel: z.number().optional(),
-      initialLevelSource: z
-        .lazy(() => CdmObservableCommonDeterminationMethodEnumSchema)
-        .optional(),
-      meanAdjustment: z.boolean().optional(),
-      name: z.string().optional(),
-      performance: z.string().optional(),
-      sharePriceDividendAdjustment: z.boolean().optional(),
-      valuationTerms: z
-        .lazy(() => CdmProductAssetValuationTermsSchema)
-        .optional(),
-      varianceCapFloor: z
-        .lazy(() => CdmProductAssetVarianceCapFloorSchema)
-        .optional(),
-      varianceStrikePrice: z
-        .lazy(() => CdmObservableAssetPriceSchema)
-        .optional(),
-      vegaNotionalAmount: z
-        .lazy(() => CdmBaseMathNonNegativeQuantityScheduleSchema)
-        .optional(),
-      volatilityCapFloor: z
-        .lazy(() => CdmProductAssetVolatilityCapFloorSchema)
-        .optional(),
-      volatilityStrikePrice: z
-        .lazy(() => CdmObservableAssetPriceSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetVarianceReturnTermsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/VarianceReturnTerms']
+)(
+  zod.object({
+    annualizationFactor: zod.number().optional(),
+    dividendApplicability: zod
+      .lazy(() => CdmObservableAssetDividendApplicabilitySchema)
+      .optional(),
+    equityUnderlierProvisions: zod
+      .lazy(() => CdmProductAssetEquityUnderlierProvisionsSchema)
+      .optional(),
+    exchangeTradedContractNearest: zod
+      .lazy(() => CdmObservableAssetMetafieldsReferenceWithMetaObservableSchema)
+      .optional(),
+    expectedN: zod.number().optional(),
+    initialLevel: zod.number().optional(),
+    initialLevelSource: zod
+      .lazy(() => CdmObservableCommonDeterminationMethodEnumSchema)
+      .optional(),
+    meanAdjustment: zod.boolean().optional(),
+    name: zod.string().optional(),
+    performance: zod.string().optional(),
+    sharePriceDividendAdjustment: zod.boolean().optional(),
+    valuationTerms: zod
+      .lazy(() => CdmProductAssetValuationTermsSchema)
+      .optional(),
+    varianceCapFloor: zod
+      .lazy(() => CdmProductAssetVarianceCapFloorSchema)
+      .optional(),
+    varianceStrikePrice: zod
+      .lazy(() => CdmObservableAssetPriceSchema)
+      .optional(),
+    vegaNotionalAmount: zod
+      .lazy(() => CdmBaseMathNonNegativeQuantityScheduleSchema)
+      .optional(),
+    volatilityCapFloor: zod
+      .lazy(() => CdmProductAssetVolatilityCapFloorSchema)
+      .optional(),
+    volatilityStrikePrice: zod
+      .lazy(() => CdmObservableAssetPriceSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductAssetVarianceReturnTerms = z.infer<
   typeof CdmProductAssetVarianceReturnTermsSchema

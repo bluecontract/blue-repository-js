@@ -5,17 +5,19 @@ import { CdmEventCommonMetafieldsReferenceWithMetaTradeStateSchema } from './Cdm
 import { CdmEventCommonTransferSchema } from './CdmEventCommonTransfer';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmEventCommonBillingRecordSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonBillingRecordSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/BillingRecord']
 )(
-  z.object({
-    description: z.string().optional(),
-    minimumFee: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-    name: z.string().optional(),
-    recordEndDate: z.string(),
-    recordStartDate: z.string(),
-    recordTransfer: z.lazy(() => CdmEventCommonTransferSchema),
-    tradeState: z.lazy(
+  zod.object({
+    description: zod.string().optional(),
+    minimumFee: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+    name: zod.string().optional(),
+    recordEndDate: zod.string(),
+    recordStartDate: zod.string(),
+    recordTransfer: zod.lazy(() => CdmEventCommonTransferSchema),
+    tradeState: zod.lazy(
       () => CdmEventCommonMetafieldsReferenceWithMetaTradeStateSchema
     ),
   })

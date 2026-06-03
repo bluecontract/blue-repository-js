@@ -3,11 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { EventSchema } from './Event';
 
-export const ResponseSchema = withTypeBlueId(blueIds['Coordination/Response'])(
+const zod = z as any;
+
+export const ResponseSchema: any = withTypeBlueId(
+  blueIds['Coordination/Response']
+)(
   EventSchema.extend({
-    description: z.string().optional(),
+    description: zod.string().optional(),
     inResponseTo: blueNodeField().optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

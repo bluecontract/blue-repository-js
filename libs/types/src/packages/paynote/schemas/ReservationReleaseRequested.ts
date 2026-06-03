@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const ReservationReleaseRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ReservationReleaseRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Reservation Release Requested']
 )(
   RequestSchema.extend({
-    amount: z.number().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    amount: zod.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

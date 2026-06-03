@@ -1,9 +1,12 @@
-export const CdmObservableEventDeterminationMethodology = {
+export const CdmObservableEventDeterminationMethodology: Record<
+  string,
+  unknown
+> = {
   averagingMethod: {
     description:
       'Specifies enumerations for the type of averaging calculation.',
     type: {
-      blueId: '4W3FMfAf11hDkmCcU5z9e73aZtzoh9ZyM9gN7himsoy2',
+      blueId: 'D8BAM3Ef8YgktLMNJZg82NyQjEWkwYXQ2pZYpzsXPtnQ',
     },
   },
   description:
@@ -12,8 +15,8 @@ export const CdmObservableEventDeterminationMethodology = {
     description:
       'Represents a more granular dimention of observation. Typically relevent for resolving a unique equity price, which can be expressed as trade-weighted or volume-weighted averages.\n',
     type: {
-      blueId: '3y75YW3Xvg26b63Etnyf7EmxBfhFMUEgAhimCGQ2jyab',
+      blueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
     },
   },
   name: 'cdm/observable/event/DeterminationMethodology',
-} as const;
+};

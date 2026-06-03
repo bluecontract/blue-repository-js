@@ -3,21 +3,23 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetCalculatedrateCalculatedRateDetailsSchema } from './CdmObservableAssetCalculatedrateCalculatedRateDetails';
 
-export const CdmProductAssetFloatingrateFloatingRateSettingDetailsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFloatingrateFloatingRateSettingDetailsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/floatingrate/FloatingRateSettingDetails'
     ]
   )(
-    z.object({
-      calculationDetails: z
+    zod.object({
+      calculationDetails: zod
         .lazy(() => CdmObservableAssetCalculatedrateCalculatedRateDetailsSchema)
         .optional(),
-      description: z.string().optional(),
-      floatingRate: z.number(),
-      name: z.string().optional(),
-      observationDate: z.string().optional(),
-      resetDate: z.string().optional(),
+      description: zod.string().optional(),
+      floatingRate: zod.number(),
+      name: zod.string().optional(),
+      observationDate: zod.string().optional(),
+      resetDate: zod.string().optional(),
     })
   );
 

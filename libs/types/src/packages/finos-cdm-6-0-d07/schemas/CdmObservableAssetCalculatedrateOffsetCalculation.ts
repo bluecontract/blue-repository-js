@@ -2,16 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetCalculatedrateOffsetCalculationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCalculatedrateOffsetCalculationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/calculatedrate/OffsetCalculation'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      offsetDays: z.number().optional(),
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      offsetDays: zod.number().optional(),
     })
   );
 

@@ -1,31 +1,26 @@
-export const CdmObservableAssetValuationDates = {
+export const CdmObservableAssetValuationDates: Record<string, unknown> = {
   description:
     'Defines how and when a performance type option or performance type swap is to be valued, including initial, interim and final valuation dates.\n',
   finalValuationDate: {
     description: 'Specifies the final valuation dates of the underlyer.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'G7RBkCYuRGtWRTgXUrQzXRkYF1PaULGgHp8KeH6spT6k',
+      blueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
     },
   },
   initialValuationDate: {
     description: 'Specifies the initial valuation dates of the underlyer.',
     type: {
-      blueId: 'G7RBkCYuRGtWRTgXUrQzXRkYF1PaULGgHp8KeH6spT6k',
+      blueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
     },
   },
   interimValuationDate: {
     description: 'Specifies the interim valuation dates of the underlyer.',
     type: {
-      blueId: 'G7RBkCYuRGtWRTgXUrQzXRkYF1PaULGgHp8KeH6spT6k',
+      blueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
     },
   },
   name: 'cdm/observable/asset/ValuationDates',
-} as const;
+};

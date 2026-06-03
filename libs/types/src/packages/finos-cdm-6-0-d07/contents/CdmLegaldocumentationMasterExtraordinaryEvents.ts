@@ -1,40 +1,38 @@
-export const CdmLegaldocumentationMasterExtraordinaryEvents = {
+export const CdmLegaldocumentationMasterExtraordinaryEvents: Record<
+  string,
+  unknown
+> = {
   additionalBespokeTerms: {
     description:
       'Where parties may optionnaly describe any extra bespoke agreements, in regards of the standardized Extraordinary Events.\n',
     itemType: {
-      blueId: '44Vi7jQyj5Xitt2LqNBTBiKbLULnniytnNKHM2Q27NFs#0',
+      blueId: 'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   additionalDisruptionEvents: {
     description:
       'Per the 2002 ISDA Equity Derivatives Definitions | 2018 ISDA CDM Equity Confirmation for Security Equity Swaps',
     type: {
-      blueId: 'EWRf98rx4nuLswzBWueTYEraywCRrEzoC9xLLRZXEinG',
+      blueId: '9k6rT7iiYXbFohPsdojsVuAV5SSxQxhoLfFzFwh9CtQy',
     },
   },
   compositionOfCombinedConsideration: {
     description: 'Per the 2002 ISDA Equity Derivatives Definitions:',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   delisting: {
     description:
       'Per the 2002 ISDA Equity Derivatives Definitions | 2018 ISDA CDM Equity Confirmation for Security Equity Swap:',
     type: {
-      blueId: '8msnyrNccCP7gT7FBgDZjFm4uqHXKgBd3d78zcAtFrBu',
+      blueId: '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq',
     },
   },
   description:
@@ -42,7 +40,7 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents = {
   failureToDeliver: {
     description: 'If true, failure to deliver is applicable.',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   indexAdjustmentEvents: {
@@ -64,7 +62,7 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents = {
     description:
       'Per the 2002 ISDA Equity Derivatives Definitions | 2018 ISDA CDM Equity Confirmation for Security Equity Swap',
     type: {
-      blueId: '8msnyrNccCP7gT7FBgDZjFm4uqHXKgBd3d78zcAtFrBu',
+      blueId: '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq',
     },
   },
   representations: {
@@ -78,4 +76,4 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents = {
       blueId: '8eyJdEjEPGbFnR2mLmiXtvsj5zsq51J2BKrRERr4rfQH',
     },
   },
-} as const;
+};

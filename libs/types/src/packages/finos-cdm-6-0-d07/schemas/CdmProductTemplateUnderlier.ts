@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMetafieldsReferenceWithMetaObservableSchema } from './CdmObservableAssetMetafieldsReferenceWithMetaObservable';
 import { CdmProductTemplateProductSchema } from './CdmProductTemplateProduct';
 
-export const CdmProductTemplateUnderlierSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateUnderlierSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/Underlier']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    Observable: z
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    Observable: zod
       .lazy(
         (): z.ZodTypeAny =>
           CdmObservableAssetMetafieldsReferenceWithMetaObservableSchema
       )
       .optional(),
-    Product: z
+    Product: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplateProductSchema)
       .optional(),
   })

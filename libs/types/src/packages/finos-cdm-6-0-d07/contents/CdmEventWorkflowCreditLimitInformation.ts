@@ -1,20 +1,15 @@
-export const CdmEventWorkflowCreditLimitInformation = {
+export const CdmEventWorkflowCreditLimitInformation: Record<string, unknown> = {
   description: 'A class to represent the credit limit utilisation information.',
   limitApplicable: {
     itemType: {
-      blueId: 'FkagaCXwpvV1bHkAtUqKKkwuyNj7BX5UnEfwfHeDHvuv',
+      blueId: 'EYpcaUBjmYVc34MF2zDCr15B8fCMH1Lrnw2Zq1zPU4TS',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   name: 'cdm/event/workflow/CreditLimitInformation',
-} as const;
+};

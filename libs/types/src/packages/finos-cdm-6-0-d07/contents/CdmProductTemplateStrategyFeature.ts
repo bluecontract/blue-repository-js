@@ -1,9 +1,9 @@
-export const CdmProductTemplateStrategyFeature = {
+export const CdmProductTemplateStrategyFeature: Record<string, unknown> = {
   calendarSpread: {
     description:
       'Definition of the later expiration date in a calendar spread.',
     type: {
-      blueId: '5BRV3dENe3YELEAA7xMEUBRjjigptKH5g74xXLVJzSQt',
+      blueId: 'Be5gaN5HPKz2EcJiToRx6MH2goHMeGvXvwQWamg73gYh',
     },
   },
   description: 'A class for defining option strategy features.',
@@ -11,7 +11,7 @@ export const CdmProductTemplateStrategyFeature = {
   strikeSpread: {
     description: 'Definition of the upper strike in a strike spread.',
     type: {
-      blueId: '3YR2sV7tFdGrtX699mGysL4mGGEkjpmBPfpeyYXKnQjU',
+      blueId: '5ge8BnjNZtu74pTtnhLvWJ7ud6SPTwyz1TmpHomfonoo',
     },
   },
-} as const;
+};

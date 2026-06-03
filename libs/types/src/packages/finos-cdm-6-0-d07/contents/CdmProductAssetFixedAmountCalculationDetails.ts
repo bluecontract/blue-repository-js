@@ -1,46 +1,34 @@
-export const CdmProductAssetFixedAmountCalculationDetails = {
+export const CdmProductAssetFixedAmountCalculationDetails: Record<
+  string,
+  unknown
+> = {
   calculatedAmount: {
     description:
       'The amount of the cash flow that was computed, including any spreads and other processing.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   calculationPeriod: {
     description:
       'The calculation period for which the floating calculation was performed.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '3VwhGwLL7XV8qQMng9XQDytu3E4oEQBmpePGJqopB4yb',
+      blueId: 'HjEmRrvzUJGJ8GfKAGdbcnZbK68UnqsEfHnP7fQL2aXu',
     },
   },
   calculationPeriodNotionalAmount: {
     description: 'The notional in effect during the calculation period.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   description:
@@ -48,15 +36,10 @@ export const CdmProductAssetFixedAmountCalculationDetails = {
   fixedRate: {
     description: 'The value of the fixed rate that was used.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/product/asset/FixedAmountCalculationDetails',
@@ -64,15 +47,10 @@ export const CdmProductAssetFixedAmountCalculationDetails = {
     description:
       'The fraction of a year that this calculation represents, according to the day count fraction method.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

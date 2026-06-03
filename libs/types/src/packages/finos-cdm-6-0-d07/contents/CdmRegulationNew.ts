@@ -1,143 +1,88 @@
-export const CdmRegulationNew = {
+export const CdmRegulationNew: Record<string, unknown> = {
   addtlAttrbts: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'E7oLhGAsFNjqjmhJsUSRdndnofi3eoLvC8TzLEgS7Ajd',
+      blueId: 'Avs2j3Cu7pPm5XZLVwYQ6SAEzUqvm8fnxQ3NWGaneps6',
     },
   },
   buyr: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '3aE6erdTtbhjt2mHbmzNNZUUARddk4ptbRvmzW71PMPB',
+      blueId: 'D47eyKS7yewPVC5jUEbouYutWpSrDF1kdJ1AVrcHsRd4',
     },
   },
   exctgPrsn: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5GH5b3hqDNFtdYyKYrrsT7yR5dbQz89rdseFTBATZBzE',
+      blueId: 'Tu5nRRqGCYvPv1JfDkUiceaDiRxNSCT7gT7SQx2GA5Z',
     },
   },
   exctgPty: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   finInstrm: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'kLfZhAvkAh8wK55kKLDNzrrUYScHA3iDAvQxXMzfg29',
+      blueId: 'HvRvtYT6FnHr42G7nsiDHeXpPGgvFLtoazqsLEYL5gNa',
     },
   },
   invstmtDcsnPrsn: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '8YBEPRD6BeGxpiyzcHu23gtC1XJcfqMM5Vn8HyG134Lz',
+      blueId: '9aWzcazT96cuBgu8aeqXmWbGmtbVKjeBYG4ZKYcd3zCS',
     },
   },
   invstmtPtyInd: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/regulation/New',
   ordrTrnsmssn: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'E2D4RQHe2Jrvc7V7HKEDA9JsHhpAZx9S896oDvTHgi9v',
+      blueId: 'ih2SVSx6Uk2K2w79prjoTJxTTBVLXjU1jfZWiKtWVz4',
     },
   },
   sellr: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'HzcHUHF1xsByJ4YwDfte8JR64TXZwA6AMYVTEAyQwbRE',
+      blueId: 'BYr7BukA73s6xgYtaFZi9nyu9YegpSmpt2B825iLKpBm',
     },
   },
   submitgPty: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   tx: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
       blueId: 'this#1',
@@ -145,15 +90,10 @@ export const CdmRegulationNew = {
   },
   txId: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

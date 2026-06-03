@@ -13,73 +13,72 @@ import { CdmEventCommonRegMarginTypeEnumSchema } from './CdmEventCommonRegMargin
 import { CdmLegaldocumentationCommonAgreementNameSchema } from './CdmLegaldocumentationCommonAgreementName';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmEventCommonMarginCallExposureSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/MarginCallExposure']
-  )(
-    z.object({
-      agreementMinimumTransferAmount: z
-        .lazy((): z.ZodTypeAny => CdmObservableAssetMoneySchema)
-        .optional(),
-      agreementRounding: z
-        .lazy((): z.ZodTypeAny => CdmObservableAssetMoneySchema)
-        .optional(),
-      agreementThreshold: z
-        .lazy((): z.ZodTypeAny => CdmObservableAssetMoneySchema)
-        .optional(),
-      baseCurrencyExposure: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonMarginCallExposureSchema)
-        .optional(),
-      callAgreementType: z
-        .lazy(
-          (): z.ZodTypeAny => CdmLegaldocumentationCommonAgreementNameSchema
-        )
-        .optional(),
-      callIdentifier: z
-        .lazy((): z.ZodTypeAny => CdmBaseStaticdataIdentifierIdentifierSchema)
-        .optional(),
-      clearingBroker: z
-        .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartySchema)
-        .optional(),
-      collateralPortfolio: z
-        .lazy(
-          (): z.ZodTypeAny =>
-            CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema
-        )
-        .optional(),
-      description: z.string().optional(),
-      independentAmountBalance: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonCollateralBalanceSchema)
-        .optional(),
-      instructionType: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonMarginCallInstructionTypeSchema)
-        .optional(),
-      name: z.string().optional(),
-      overallExposure: z.lazy((): z.ZodTypeAny => CdmEventCommonExposureSchema),
-      party: z
-        .array(z.lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartySchema))
-        .min(0)
-        .optional(),
-      partyRole: z
-        .array(
-          z.lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartyRoleSchema)
-        )
-        .min(0)
-        .optional(),
-      regIMRole: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonRegIMRoleEnumSchema)
-        .optional(),
-      regMarginType: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonRegMarginTypeEnumSchema)
-        .optional(),
-      scheduleGridIMExposure: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonExposureSchema)
-        .optional(),
-      simmIMExposure: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonExposureSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonMarginCallExposureSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/MarginCallExposure']
+)(
+  zod.object({
+    agreementMinimumTransferAmount: zod
+      .lazy((): z.ZodTypeAny => CdmObservableAssetMoneySchema)
+      .optional(),
+    agreementRounding: zod
+      .lazy((): z.ZodTypeAny => CdmObservableAssetMoneySchema)
+      .optional(),
+    agreementThreshold: zod
+      .lazy((): z.ZodTypeAny => CdmObservableAssetMoneySchema)
+      .optional(),
+    baseCurrencyExposure: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonMarginCallExposureSchema)
+      .optional(),
+    callAgreementType: zod
+      .lazy((): z.ZodTypeAny => CdmLegaldocumentationCommonAgreementNameSchema)
+      .optional(),
+    callIdentifier: zod
+      .lazy((): z.ZodTypeAny => CdmBaseStaticdataIdentifierIdentifierSchema)
+      .optional(),
+    clearingBroker: zod
+      .lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartySchema)
+      .optional(),
+    collateralPortfolio: zod
+      .lazy(
+        (): z.ZodTypeAny =>
+          CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema
+      )
+      .optional(),
+    description: zod.string().optional(),
+    independentAmountBalance: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonCollateralBalanceSchema)
+      .optional(),
+    instructionType: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonMarginCallInstructionTypeSchema)
+      .optional(),
+    name: zod.string().optional(),
+    overallExposure: zod.lazy((): z.ZodTypeAny => CdmEventCommonExposureSchema),
+    party: zod
+      .array(zod.lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartySchema))
+      .min(0)
+      .optional(),
+    partyRole: zod
+      .array(
+        zod.lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartyRoleSchema)
+      )
+      .min(0)
+      .optional(),
+    regIMRole: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonRegIMRoleEnumSchema)
+      .optional(),
+    regMarginType: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonRegMarginTypeEnumSchema)
+      .optional(),
+    scheduleGridIMExposure: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonExposureSchema)
+      .optional(),
+    simmIMExposure: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonExposureSchema)
+      .optional(),
+  })
+);
 
 export type CdmEventCommonMarginCallExposure = z.infer<
   typeof CdmEventCommonMarginCallExposureSchema

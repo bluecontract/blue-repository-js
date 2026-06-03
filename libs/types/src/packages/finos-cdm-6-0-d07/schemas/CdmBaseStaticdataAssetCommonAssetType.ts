@@ -7,29 +7,30 @@ import { CdmBaseStaticdataAssetCommonEquityTypeEnumSchema } from './CdmBaseStati
 import { CdmBaseStaticdataAssetCommonFundProductTypeEnumSchema } from './CdmBaseStaticdataAssetCommonFundProductTypeEnum';
 import { CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema } from './CdmBaseStaticdataAssetCommonInstrumentTypeEnum';
 
-export const CdmBaseStaticdataAssetCommonAssetTypeSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/AssetType']
-  )(
-    z.object({
-      assetType: z.lazy(() => CdmBaseStaticdataAssetCommonAssetTypeEnumSchema),
-      debtType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonDebtTypeSchema)
-        .optional(),
-      description: z.string().optional(),
-      equityType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonEquityTypeEnumSchema)
-        .optional(),
-      fundType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonFundProductTypeEnumSchema)
-        .optional(),
-      name: z.string().optional(),
-      otherAssetType: z.array(z.string()).min(0).optional(),
-      securityType: z
-        .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonAssetTypeSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/AssetType']
+)(
+  zod.object({
+    assetType: zod.lazy(() => CdmBaseStaticdataAssetCommonAssetTypeEnumSchema),
+    debtType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonDebtTypeSchema)
+      .optional(),
+    description: zod.string().optional(),
+    equityType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonEquityTypeEnumSchema)
+      .optional(),
+    fundType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonFundProductTypeEnumSchema)
+      .optional(),
+    name: zod.string().optional(),
+    otherAssetType: zod.array(zod.string()).min(0).optional(),
+    securityType: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmBaseStaticdataAssetCommonAssetType = z.infer<
   typeof CdmBaseStaticdataAssetCommonAssetTypeSchema

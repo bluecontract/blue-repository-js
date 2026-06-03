@@ -3,10 +3,12 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentSchema } from './Document';
 
-export const ProfileSchema = withTypeBlueId(blueIds['Common/Profile'])(
+const zod = z as any;
+
+export const ProfileSchema: any = withTypeBlueId(blueIds['Common/Profile'])(
   DocumentSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

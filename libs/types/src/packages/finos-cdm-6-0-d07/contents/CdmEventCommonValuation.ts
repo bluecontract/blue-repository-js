@@ -1,23 +1,18 @@
-export const CdmEventCommonValuation = {
+export const CdmEventCommonValuation: Record<string, unknown> = {
   amount: {
     description: 'Current value of the outstanding contract',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   delta: {
     description:
       'The ratio of the change in the price of a derivative transaction to the change in the price of the underlying. This field is applicable only to options and swaptions.\n',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   description: 'Defines the value of an investment, asset, or security',
@@ -25,43 +20,38 @@ export const CdmEventCommonValuation = {
     description:
       'Method used for the valuation of the transaction by the valuation party.',
     type: {
-      blueId: '6d1G7oKbQHMycN2DpoiwfRUVYVHqAbkSg12MQas8Qbc5',
+      blueId: 'HsG4xRp4HQZoXBBj6gQLY1cHS5gQpBY9GJeaUjGbd97Z',
     },
   },
   name: 'cdm/event/common/Valuation',
   priceComponent: {
     description: 'Denotes the price used to compute the valuation.',
     type: {
-      blueId: 'wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543',
+      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
     },
   },
   source: {
     description:
       'Source of the valuation of the transaction by the valuation party.',
     type: {
-      blueId: '3qgdUWu7raBQuXg5poKvwjaHsLprDJhjEdxa8ZcXbCMD',
+      blueId: 'GV6VzVBrD9mNeCdw21SuF8iXDvMQGY5KsZFTLB9dh5aZ',
     },
   },
   timestamp: {
     description:
       'Date and time of the last valuation marked to market, provided by the central counterparty (CCP) or calculated using the current or last available market price of the inputs.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   valuationTiming: {
     description:
       'Denotes when the valuation was sourced during a business day.',
     type: {
-      blueId: 'AfmZhLuxXWB5bhr9ojzoNAja5XJ5XKyWjjKQdzhS4tvs',
+      blueId: 'AKxcCwdA28GyqV4bAANz5gwr1mkuBEft7TkK7FwJkEew',
     },
   },
-} as const;
+};

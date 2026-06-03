@@ -2,16 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerTypeSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerTypeSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/RegionalGovernmentIssuerType'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      sovereignRecourse: z.boolean(),
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      sovereignRecourse: zod.boolean(),
     })
   );
 

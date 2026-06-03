@@ -1,13 +1,16 @@
-export const CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum = {
+export const CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/product/asset/FieldWithMetaSpreadScheduleTypeEnum',
   val: {
     type: {
-      blueId: 'E5MxGtJaFFNZDf6ekGwAefBGRTzwccbYECFDpCS7Ztgw',
+      blueId: 'EakZSquKh6nNrGeVqD4Jn7fEVe48f55oM2KdN21fjZhY',
     },
   },
-} as const;
+};

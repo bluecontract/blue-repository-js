@@ -1,24 +1,19 @@
-export const CdmEventCommonPartyChangeInstruction = {
+export const CdmEventCommonPartyChangeInstruction: Record<string, unknown> = {
   ancillaryParty: {
     description:
       'Specifies an ancillary party to be added onto the new transaction, e.g. the original executing party in an allocation.\n',
     type: {
-      blueId: 'gyjCjxW6qhXCC455CPDLkx4ccUz75HgdRL21KfMsdMs',
+      blueId: '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4',
     },
   },
   counterparty: {
     description:
       'The new counterparty who is stepping into the trade. The stepping out counterparty is inferred based on the counterparty role that is being updated.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '3xDGPtjud4dCVNF9Swm1X7WoCse6gMziwHGvUnp1h3EK',
+      blueId: '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x',
     },
   },
   description:
@@ -28,25 +23,20 @@ export const CdmEventCommonPartyChangeInstruction = {
     description:
       'Specifies an additional party roles to be added on to the new transaction.',
     type: {
-      blueId: '8fXEqMXsnZAuwSFKfhiksmAPnV7yvaxSbmwgTbGrN75M',
+      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
     },
   },
   tradeId: {
     description:
       'The identifier to be assigned to the new trade post change of party.',
     itemType: {
-      blueId: '5NL7sLmwPvsGQHH4cx5g8ajq8wbZMimREKKDky2KMRFQ',
+      blueId: '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

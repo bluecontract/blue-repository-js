@@ -1,11 +1,14 @@
-export const CdmProductCommonSettlementPaymentDiscounting = {
+export const CdmProductCommonSettlementPaymentDiscounting: Record<
+  string,
+  unknown
+> = {
   description:
     'This class corresponds to the FpML PaymentDiscounting.model group for representing the discounting elements that can be associated with a payment.\n',
   discountFactor: {
     description:
       'The value representing the discount factor used to calculate the present value of the cash flow.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/product/common/settlement/PaymentDiscounting',
@@ -13,7 +16,7 @@ export const CdmProductCommonSettlementPaymentDiscounting = {
     description:
       'The amount representing the present value of the forecast payment.',
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
-} as const;
+};

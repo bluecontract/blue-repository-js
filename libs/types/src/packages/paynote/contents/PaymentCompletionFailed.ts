@@ -1,13 +1,13 @@
-export const PaymentCompletionFailed = {
+export const PaymentCompletionFailed: Record<string, unknown> = {
   description:
     'The Guarantor attempted to complete the payment, but it failed.',
   name: 'Payment Completion Failed',
   reason: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

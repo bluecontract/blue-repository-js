@@ -3,23 +3,25 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCommonScheduleWeightedAveragingObservationSchema } from './CdmProductCommonScheduleWeightedAveragingObservation';
 
-export const CdmProductCommonScheduleAveragingObservationListSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleAveragingObservationListSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/AveragingObservationList'
     ]
   )(
-    z.object({
-      averagingObservation: z
+    zod.object({
+      averagingObservation: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmProductCommonScheduleWeightedAveragingObservationSchema
           )
         )
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

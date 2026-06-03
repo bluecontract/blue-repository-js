@@ -3,14 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableEventTriggerEventSchema } from './CdmObservableEventTriggerEvent';
 
-export const CdmProductTemplateBarrierSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateBarrierSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/Barrier']
 )(
-  z.object({
-    barrierCap: z.lazy(() => CdmObservableEventTriggerEventSchema).optional(),
-    barrierFloor: z.lazy(() => CdmObservableEventTriggerEventSchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+  zod.object({
+    barrierCap: zod.lazy(() => CdmObservableEventTriggerEventSchema).optional(),
+    barrierFloor: zod
+      .lazy(() => CdmObservableEventTriggerEventSchema)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

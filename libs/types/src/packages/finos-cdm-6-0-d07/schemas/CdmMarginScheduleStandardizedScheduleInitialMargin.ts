@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmMarginScheduleStandardizedScheduleTradeInfoSchema } from './CdmMarginScheduleStandardizedScheduleTradeInfo';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmMarginScheduleStandardizedScheduleInitialMarginSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmMarginScheduleStandardizedScheduleInitialMarginSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/margin/schedule/StandardizedScheduleInitialMargin'
     ]
   )(
-    z.object({
-      name: z.string().optional(),
-      netInitialMargin: z.lazy(() => CdmObservableAssetMoneySchema),
-      tradeInfo: z
+    zod.object({
+      name: zod.string().optional(),
+      netInitialMargin: zod.lazy(() => CdmObservableAssetMoneySchema),
+      tradeInfo: zod
         .array(
-          z.lazy(() => CdmMarginScheduleStandardizedScheduleTradeInfoSchema)
+          zod.lazy(() => CdmMarginScheduleStandardizedScheduleTradeInfoSchema)
         )
         .min(0)
         .optional(),

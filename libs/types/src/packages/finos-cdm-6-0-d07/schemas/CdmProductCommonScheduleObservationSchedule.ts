@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeBusinessDayAdjustmentsSchema } from './CdmBaseDatetimeBusinessDayAdjustments';
 import { CdmProductCommonScheduleObservationDateSchema } from './CdmProductCommonScheduleObservationDate';
 
-export const CdmProductCommonScheduleObservationScheduleSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleObservationScheduleSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/ObservationSchedule']
   )(
-    z.object({
-      dateAdjustments: z
+    zod.object({
+      dateAdjustments: zod
         .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      observationDate: z
-        .array(z.lazy(() => CdmProductCommonScheduleObservationDateSchema))
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      observationDate: zod
+        .array(zod.lazy(() => CdmProductCommonScheduleObservationDateSchema))
         .min(0)
         .optional(),
     })

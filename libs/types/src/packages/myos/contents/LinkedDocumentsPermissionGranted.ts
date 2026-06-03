@@ -1,24 +1,24 @@
-export const LinkedDocumentsPermissionGranted = {
+export const LinkedDocumentsPermissionGranted: Record<string, unknown> = {
   description: 'All initial rights from this LDPG have been persisted.',
   grantDocumentId: {
     description:
       'Optional. Stable handle of the created permission grant document. Required in request/response document-grant flows that later support self-revoke from the grantee document.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   links: {
     type: {
-      blueId: '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9',
+      blueId: 'DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn',
     },
   },
   name: 'Linked Documents Permission Granted',
   targetSessionId: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

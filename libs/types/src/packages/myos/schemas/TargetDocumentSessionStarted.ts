@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 
-export const TargetDocumentSessionStartedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TargetDocumentSessionStartedSchema: any = withTypeBlueId(
   blueIds['MyOS/Target Document Session Started']
 )(
-  z.object({
+  zod.object({
     document: blueNodeField().optional(),
-    initiatorSessionIds: z.array(z.string()).optional(),
-    name: z.string().optional(),
+    initiatorSessionIds: zod.array(zod.string()).optional(),
+    name: zod.string().optional(),
   })
 );
 

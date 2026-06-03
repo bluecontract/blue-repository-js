@@ -1,17 +1,12 @@
-export const CdmEventPositionPortfolio = {
+export const CdmEventPositionPortfolio: Record<string, unknown> = {
   aggregationParameters: {
     description:
       'Describes the portfolio by describing how to aggregate all its relevant Events.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '79YpRF1QvMBEWLGAWkLqBGPQXzuJpz5nxGxrBNrJ7bAY',
+      blueId: '2AjMswvvUFa65tb2E1fgtkxxgJ7ReLj17xorwjbb8wAb',
     },
   },
   description:
@@ -21,15 +16,10 @@ export const CdmEventPositionPortfolio = {
     description:
       'Describes the state of the Portfolio as a list of Positions resulting from the aggregation.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '96TUPsr1vKCN1d5SygGFrJqPYHxmvcL3JLE7RqaakpTg',
+      blueId: '5rZCg68iGGiKxNzqKGrKhdGvwvL65GzoawTiePj97t9T',
     },
   },
-} as const;
+};

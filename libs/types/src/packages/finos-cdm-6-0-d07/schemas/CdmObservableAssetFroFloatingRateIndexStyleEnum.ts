@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetFroFloatingRateIndexStyleEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFroFloatingRateIndexStyleEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/fro/FloatingRateIndexStyleEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'Average FRO',
       'Compounded FRO',
       'Compounded Index',

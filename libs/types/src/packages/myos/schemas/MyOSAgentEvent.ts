@@ -2,16 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 
-export const MyOSAgentEventSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSAgentEventSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Agent Event']
 )(
-  z.object({
-    agentId: z.string().optional(),
-    description: z.string().optional(),
+  zod.object({
+    agentId: zod.string().optional(),
+    description: zod.string().optional(),
     event: blueNodeField().optional(),
-    id: z.string().optional(),
-    name: z.string().optional(),
-    timestamp: z.number().optional(),
+    id: zod.string().optional(),
+    name: zod.string().optional(),
+    timestamp: zod.number().optional(),
   })
 );
 

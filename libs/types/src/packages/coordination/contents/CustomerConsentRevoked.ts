@@ -1,18 +1,22 @@
-export const CustomerConsentRevoked = {
+export const CustomerConsentRevoked: Record<string, unknown> = {
   description:
-    'Event indicating that a Customer Consent document has been revoked. It carries the revocation reason and timestamp\nsupplied by the revocation workflow. Observers should treat this as the domain-level signal that the grantee should no\nlonger rely on the consent, subject to whatever propagation and processing guarantees are provided by the surrounding\ntimelines and channels.\n\nThe event does not itself modify the consent document. The revoke workflow emits the event and applies the document\npatches that set consent status, revocation reason, and revocation time. This separation preserves auditability and\ndeterministic processor behavior.\n',
+    'Event indicating that a customer or participant revoked a previously granted consent, authorization, or permission.\nWorkflows should treat this as a high-priority signal and re-check any operation that depends on the revoked consent.\n\nThe event records an optional reason and timestamp. Actor/source attribution should be supplied by the enclosing\nTimeline Entry or event source so that processors can determine whether the revocation came from an authorized\nprincipal or an allowed delegate.\n',
   name: 'Customer Consent Revoked',
   reason: {
+    description:
+      'Optional human-readable or structured reason for revocation.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   revokedAt: {
+    description:
+      'Timestamp when revocation was recorded by the source or provider.\n',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventWorkflowWorkflowStepSchema } from './CdmEventWorkflowWorkflowStep';
 
-export const CdmEventWorkflowWorkflowSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventWorkflowWorkflowSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/Workflow']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    steps: z
-      .array(z.lazy(() => CdmEventWorkflowWorkflowStepSchema))
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    steps: zod
+      .array(zod.lazy(() => CdmEventWorkflowWorkflowStepSchema))
       .min(1)
       .optional(),
   })

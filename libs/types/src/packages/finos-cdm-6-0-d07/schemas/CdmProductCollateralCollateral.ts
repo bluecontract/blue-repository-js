@@ -6,34 +6,35 @@ import { CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema } fr
 import { CdmProductCollateralCollateralProvisionsSchema } from './CdmProductCollateralCollateralProvisions';
 import { CdmProductCollateralIndependentAmountSchema } from './CdmProductCollateralIndependentAmount';
 
-export const CdmProductCollateralCollateralSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/Collateral']
-  )(
-    z.object({
-      collateralPortfolio: z
-        .array(
-          z.lazy(
-            () =>
-              CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema
-          )
+const zod = z as any;
+
+export const CdmProductCollateralCollateralSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/Collateral']
+)(
+  zod.object({
+    collateralPortfolio: zod
+      .array(
+        zod.lazy(
+          () =>
+            CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema
         )
-        .min(0)
-        .optional(),
-      collateralProvisions: z
-        .lazy(() => CdmProductCollateralCollateralProvisionsSchema)
-        .optional(),
-      description: z.string().optional(),
-      independentAmount: z
-        .lazy(() => CdmProductCollateralIndependentAmountSchema)
-        .optional(),
-      name: z.string().optional(),
-      portfolioIdentifier: z
-        .array(z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
-        .min(0)
-        .optional(),
-    })
-  );
+      )
+      .min(0)
+      .optional(),
+    collateralProvisions: zod
+      .lazy(() => CdmProductCollateralCollateralProvisionsSchema)
+      .optional(),
+    description: zod.string().optional(),
+    independentAmount: zod
+      .lazy(() => CdmProductCollateralIndependentAmountSchema)
+      .optional(),
+    name: zod.string().optional(),
+    portfolioIdentifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
+      .min(0)
+      .optional(),
+  })
+);
 
 export type CdmProductCollateralCollateral = z.infer<
   typeof CdmProductCollateralCollateralSchema

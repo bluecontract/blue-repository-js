@@ -8,44 +8,46 @@ import { CdmProductAssetFutureValueAmountSchema } from './CdmProductAssetFutureV
 import { CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantitySchema } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity';
 import { CdmProductCommonSettlementQuantityMultiplierSchema } from './CdmProductCommonSettlementQuantityMultiplier';
 
-export const CdmProductCommonSettlementResolvablePriceQuantitySchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementResolvablePriceQuantitySchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/ResolvablePriceQuantity'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      futureValueNotional: z
+    zod.object({
+      description: zod.string().optional(),
+      futureValueNotional: zod
         .lazy(() => CdmProductAssetFutureValueAmountSchema)
         .optional(),
-      name: z.string().optional(),
-      priceSchedule: z
+      name: zod.string().optional(),
+      priceSchedule: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () =>
               CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
           )
         )
         .min(0)
         .optional(),
-      quantityMultiplier: z
+      quantityMultiplier: zod
         .lazy(() => CdmProductCommonSettlementQuantityMultiplierSchema)
         .optional(),
-      quantityReference: z
+      quantityReference: zod
         .lazy(
           () =>
             CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantitySchema
         )
         .optional(),
-      quantitySchedule: z
+      quantitySchedule: zod
         .lazy(
           () =>
             CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantityScheduleSchema
         )
         .optional(),
-      reset: z.boolean().optional(),
-      resolvedQuantity: z.lazy(() => CdmBaseMathQuantitySchema).optional(),
+      reset: zod.boolean().optional(),
+      resolvedQuantity: zod.lazy(() => CdmBaseMathQuantitySchema).optional(),
     })
   );
 

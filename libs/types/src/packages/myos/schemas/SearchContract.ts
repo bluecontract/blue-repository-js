@@ -1,23 +1,24 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { MarkerSchema } from '../../core/schemas/Marker';
 
-export const SearchContractSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SearchContractSchema: any = withTypeBlueId(
   blueIds['MyOS/Search Contract']
 )(
-  MarkerSchema.extend({
-    description: z.string().optional(),
-    geo: z
+  zod.object({
+    description: zod.string().optional(),
+    geo: zod
       .object({
-        description: z.string().optional(),
-        lat: z.string().optional(),
-        lon: z.string().optional(),
+        description: zod.string().optional(),
+        lat: zod.string().optional(),
+        lon: zod.string().optional(),
       })
       .optional(),
-    kv: z.record(z.string(), z.string()).optional(),
-    name: z.string().optional(),
-    q: z.array(z.string()).optional(),
+    kv: zod.record(zod.string(), zod.string()).optional(),
+    name: zod.string().optional(),
+    q: zod.array(zod.string()).optional(),
   })
 );
 

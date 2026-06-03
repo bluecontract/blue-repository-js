@@ -1,20 +1,18 @@
-export const CdmProductCommonSettlementSettlementTerms = {
+export const CdmProductCommonSettlementSettlementTerms: Record<
+  string,
+  unknown
+> = {
   cashSettlementTerms: {
     description:
       'Specifies the parameters associated with the cash settlement procedure.',
     itemType: {
-      blueId: 'Gitr4e5rQ7kpdhDKFvTuGDoxwkjHoVtwLL3mfUEf5BLa',
+      blueId: 'Fffk6F9WofKSKmkg6i3ft1dNq2tPApbqbMZjguK1xFX8',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -24,55 +22,55 @@ export const CdmProductCommonSettlementSettlementTerms = {
     description:
       'Specifies the physical settlement terms which apply to the transaction.',
     type: {
-      blueId: 'E4Zcf9acqN6Mw1bpD2Joc5sWAQXChRtmorCBtr7tPWf3',
+      blueId: '4HwR25LkwrYYmgCxQfJaEUfML14hfQADHRnF6nmUfUtR',
     },
   },
   settlementCentre: {
     description:
       'Optional settlement centre as an enumerated list: Euroclear, Clearstream.\n',
     type: {
-      blueId: 'EdmhbyH7xsBGyqV7bbekHDFWNScUciKyPKEuEsTbVHam',
+      blueId: '645oAr2atS3TekcTBduwAeUSH7aauAokbEg66ZLpz4YE',
     },
   },
   settlementCurrency: {
     description:
       'The settlement currency is to be specified when the Settlement Amount cannot be known in advance. The list of valid currencies is not presently positioned as an enumeration as part of the CDM because that scope is limited to the values specified by ISDA and FpML. As a result, implementers have to make reference to the relevant standard, such as the ISO 4217 standard for currency codes.\n',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   settlementDate: {
     description:
       'The date on which the settlement amount will be paid, subject to adjustment in accordance with any applicable business day convention. This component would not be present for a mandatory early termination provision where the cash settlement payment date is the mandatory early termination date.\n',
     type: {
-      blueId: 'BpU6xJSR2z5NwXmV5bD8YQ9JC6fwfmHdoqNcxYGeucmQ',
+      blueId: '7Q5F1XxXtAWfQfrSL8T366Bz2JLxc3qFWWnR7Xazhgvx',
     },
   },
   settlementProvision: {
     description:
       'Optionally defines the parameters that regulate a settlement.',
     type: {
-      blueId: '4ZRat5NKcUmJRnQwyF3q1SUzsaJbhHUXrEPGq7p8SRcj',
+      blueId: 'wNGmmHNkPh47VcmdJFAFyWS5mS1W5PvRW9UW2h3YWFW',
     },
   },
   settlementType: {
     description:
       'Whether the settlement will be cash, physical, by election, ...',
     type: {
-      blueId: '6PaHnEA3rYitZ2JKHenwQog3g7ZAfxruJMGQcpWCEDFK',
+      blueId: '796x89gqZi8yLKhDwKArGYcCuCbixQw7PQhuDpancqMn',
     },
   },
   standardSettlementStyle: {
     description: 'Settlement Style.',
     type: {
-      blueId: '7YFjahYdHYHERXt79M9mLJ1qKNxQPm89ieLFXUZ2KcwA',
+      blueId: '3gvWJxrxUUD4bdYMUZb5GWjJwHqshsA9ncx7VngcWSQG',
     },
   },
   transferSettlementType: {
     description:
       'The qualification as to how the transfer will settle, e.g. a DvP settlement.',
     type: {
-      blueId: 'Dh5YZ8UboebnzAaX4XPDYtGbPzNfaHDzsrZX9Nocp8CM',
+      blueId: 'BSQDJMfPWXBaqWYWPJCUYYLzftmLKsUbi3EyLhuh7Mr1',
     },
   },
-} as const;
+};

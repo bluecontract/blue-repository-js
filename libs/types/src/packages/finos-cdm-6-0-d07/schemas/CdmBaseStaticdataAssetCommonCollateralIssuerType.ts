@@ -7,33 +7,35 @@ import { CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerTypeSchema } from '
 import { CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerTypeSchema } from './CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType';
 import { CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnumSchema } from './CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum';
 
-export const CdmBaseStaticdataAssetCommonCollateralIssuerTypeSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonCollateralIssuerTypeSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/CollateralIssuerType'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      issuerType: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      issuerType: zod.lazy(
         () => CdmBaseStaticdataAssetCommonIssuerTypeEnumSchema
       ),
-      name: z.string().optional(),
-      quasiGovernmentType: z
+      name: zod.string().optional(),
+      quasiGovernmentType: zod
         .lazy(() => CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerTypeSchema)
         .optional(),
-      regionalGovernmentType: z
+      regionalGovernmentType: zod
         .lazy(
           () => CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerTypeSchema
         )
         .optional(),
-      specialPurposeVehicleType: z
+      specialPurposeVehicleType: zod
         .lazy(
           () =>
             CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerTypeSchema
         )
         .optional(),
-      supraNationalType: z
+      supraNationalType: zod
         .lazy(
           () => CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnumSchema
         )

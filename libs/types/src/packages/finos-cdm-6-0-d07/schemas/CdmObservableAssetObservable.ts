@@ -5,17 +5,19 @@ import { CdmBaseStaticdataAssetCommonAssetSchema } from './CdmBaseStaticdataAsse
 import { CdmObservableAssetBasketSchema } from './CdmObservableAssetBasket';
 import { CdmObservableAssetIndexSchema } from './CdmObservableAssetIndex';
 
-export const CdmObservableAssetObservableSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetObservableSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/Observable']
 )(
-  z.object({
-    Asset: z.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema).optional(),
-    Basket: z
+  zod.object({
+    Asset: zod.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema).optional(),
+    Basket: zod
       .lazy((): z.ZodTypeAny => CdmObservableAssetBasketSchema)
       .optional(),
-    description: z.string().optional(),
-    Index: z.lazy(() => CdmObservableAssetIndexSchema).optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    Index: zod.lazy(() => CdmObservableAssetIndexSchema).optional(),
+    name: zod.string().optional(),
   })
 );
 

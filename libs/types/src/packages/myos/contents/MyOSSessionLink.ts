@@ -1,14 +1,14 @@
-export const MyOSSessionLink = {
+export const MyOSSessionLink: Record<string, unknown> = {
   description:
     'Link targeting a specific document session by its sessionId. Use when referencing a live session rather than a logical document.',
   name: 'MyOS Session Link',
   sessionId: {
     description: 'Identifier of the document session being targeted.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
+    blueId: '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP',
   },
-} as const;
+};

@@ -1,55 +1,35 @@
-export const CdmRegulationOthr = {
+export const CdmRegulationOthr: Record<string, unknown> = {
   derivInstrmAttrbts: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '64GDGQPRbi64gBYYU2bn3xS8o4snUE3Xkyj4KZMP7iiP',
+      blueId: 'H4qXNCgRHrt2vNW5Ck9VynMAfvyCFYzUwMSSZWpuPRyL',
     },
   },
   finInstrmGnlAttrbts: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2CibfSNr9fgCU28YroYKvUvh4as3ggUB9FsfNBXNpvKu',
+      blueId: '8VKLe5YFMNREPES73PCMyATqUbr8SexStcAoUJHdcGEE',
     },
   },
   id: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/regulation/Othr',
   schmeNm: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'HdczVmReriwEJcH4QKu8zRPfiatW6tmAm71DbNp161hr',
+      blueId: '6sHTanKcHB14wiXCFtoehJEB7HWsy21ExqHEvQYtw7NP',
     },
   },
-} as const;
+};

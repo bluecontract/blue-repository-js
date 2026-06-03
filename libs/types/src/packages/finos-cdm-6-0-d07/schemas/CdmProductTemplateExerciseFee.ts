@@ -5,22 +5,24 @@ import { CdmBaseDatetimeRelativeDateOffsetSchema } from './CdmBaseDatetimeRelati
 import { CdmBaseStaticdataPartyCounterpartyRoleEnumSchema } from './CdmBaseStaticdataPartyCounterpartyRoleEnum';
 import { CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
 
-export const CdmProductTemplateExerciseFeeSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateExerciseFeeSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseFee']
 )(
-  z.object({
-    description: z.string().optional(),
-    feeAmount: z.number().optional(),
-    feePaymentDate: z.lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema),
-    feeRate: z.number().optional(),
-    name: z.string().optional(),
-    notionalReference: z.lazy(
+  zod.object({
+    description: zod.string().optional(),
+    feeAmount: zod.number().optional(),
+    feePaymentDate: zod.lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema),
+    feeRate: zod.number().optional(),
+    name: zod.string().optional(),
+    notionalReference: zod.lazy(
       () => CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema
     ),
-    payer: z
+    payer: zod
       .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
       .optional(),
-    receiver: z
+    receiver: zod
       .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
       .optional(),
   })

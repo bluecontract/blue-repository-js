@@ -4,20 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataPartyCounterpartySchema } from './CdmBaseStaticdataPartyCounterparty';
 import { CdmLegaldocumentationContractAgreementSchema } from './CdmLegaldocumentationContractAgreement';
 
-export const CdmLegaldocumentationCommonAgreementTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonAgreementTermsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/AgreementTerms']
   )(
-    z.object({
-      agreement: z.lazy(() => CdmLegaldocumentationContractAgreementSchema),
-      clauseLibrary: z.boolean().optional(),
-      counterparty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
+    zod.object({
+      agreement: zod.lazy(() => CdmLegaldocumentationContractAgreementSchema),
+      clauseLibrary: zod.boolean().optional(),
+      counterparty: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
         .min(2)
         .max(2)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

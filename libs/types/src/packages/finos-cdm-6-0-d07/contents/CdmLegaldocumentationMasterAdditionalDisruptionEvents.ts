@@ -1,26 +1,24 @@
-export const CdmLegaldocumentationMasterAdditionalDisruptionEvents = {
+export const CdmLegaldocumentationMasterAdditionalDisruptionEvents: Record<
+  string,
+  unknown
+> = {
   additionalBespokeTerms: {
     description:
       'Where parties may optionnaly describe any extra bespoke agreements, in regards of the standardized Extraordinary Events.\n',
     itemType: {
-      blueId: '44Vi7jQyj5Xitt2LqNBTBiKbLULnniytnNKHM2Q27NFs#0',
+      blueId: 'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   changeInLaw: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions:',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   description: 'A type for defining the Additional Disruption Events.',
@@ -28,64 +26,64 @@ export const CdmLegaldocumentationMasterAdditionalDisruptionEvents = {
     description:
       'Specifies the party which determines additional disruption events.',
     type: {
-      blueId: '6Z3jsP3QVXumTdQMGZVcCDRNn3n62xjfZLNEHaZeDWmb',
+      blueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
     },
   },
   failureToDeliver: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   foreignOwnershipEvent: {
     description: 'Per ISDA Def',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   hedgingDisruption: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   increasedCostOfHedging: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   increasedCostOfStockBorrow: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   initialStockLoanRate: {
     description:
       'Specifies the initial stock loan per ISDA Def. A percentage of 5% is represented as 0.05.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   insolvencyFiling: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   lossOfStockBorrow: {
     description: 'Per 2002 ISDA Equity Derivatives Definitions:',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   maximumStockLoanRate: {
     description:
       'Specifies the maximum stock loan rate for Loss of Stock Borrow. A percentage of 5% is represented as 0.05.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/legaldocumentation/master/AdditionalDisruptionEvents',
-} as const;
+};

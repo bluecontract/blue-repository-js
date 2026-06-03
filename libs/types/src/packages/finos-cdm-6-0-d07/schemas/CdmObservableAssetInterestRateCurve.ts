@@ -4,19 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimePeriodSchema } from './CdmBaseDatetimePeriod';
 import { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
 
-export const CdmObservableAssetInterestRateCurveSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/InterestRateCurve']
-  )(
-    z.object({
-      floatingRateIndex: z.lazy(
-        () =>
-          CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema
-      ),
-      name: z.string().optional(),
-      tenor: z.lazy(() => CdmBaseDatetimePeriodSchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableAssetInterestRateCurveSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/InterestRateCurve']
+)(
+  zod.object({
+    floatingRateIndex: zod.lazy(
+      () => CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnumSchema
+    ),
+    name: zod.string().optional(),
+    tenor: zod.lazy(() => CdmBaseDatetimePeriodSchema),
+  })
+);
 
 export type CdmObservableAssetInterestRateCurve = z.infer<
   typeof CdmObservableAssetInterestRateCurveSchema

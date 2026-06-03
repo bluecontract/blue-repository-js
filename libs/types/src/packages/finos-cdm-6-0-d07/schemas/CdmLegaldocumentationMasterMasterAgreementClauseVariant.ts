@@ -6,31 +6,33 @@ import { CdmBaseStaticdataPartyPartyRoleEnumSchema } from './CdmBaseStaticdataPa
 import { CdmLegaldocumentationMasterMasterAgreementVariableSetSchema } from './CdmLegaldocumentationMasterMasterAgreementVariableSet';
 import { CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnumSchema } from './CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum';
 
-export const CdmLegaldocumentationMasterMasterAgreementClauseVariantSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterMasterAgreementClauseVariantSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/MasterAgreementClauseVariant'
     ]
   )(
-    z.object({
-      counterparty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
+    zod.object({
+      counterparty: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
         .min(0)
         .max(2)
         .optional(),
-      description: z.string().optional(),
-      identifier: z.lazy(
+      description: zod.string().optional(),
+      identifier: zod.lazy(
         () =>
           CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnumSchema
       ),
-      name: z.string().optional(),
-      otherParty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleEnumSchema))
+      name: zod.string().optional(),
+      otherParty: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleEnumSchema))
         .min(0)
         .optional(),
-      variableSet: z
+      variableSet: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny =>
               CdmLegaldocumentationMasterMasterAgreementVariableSetSchema
           )

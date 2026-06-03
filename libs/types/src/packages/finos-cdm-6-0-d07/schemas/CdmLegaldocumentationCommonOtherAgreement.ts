@@ -3,21 +3,23 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmLegaldocumentationCommonOtherAgreementSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonOtherAgreementSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/OtherAgreement']
   )(
-    z.object({
-      date: z.string().optional(),
-      description: z.string().optional(),
-      identifier: z
+    zod.object({
+      date: zod.string().optional(),
+      description: zod.string().optional(),
+      identifier: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      name: z.string().optional(),
-      otherAgreementType: z.lazy(
+      name: zod.string().optional(),
+      otherAgreementType: zod.lazy(
         () => ComRosettaModelFieldWithMetaStringSchema
       ),
-      version: z
+      version: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
     })

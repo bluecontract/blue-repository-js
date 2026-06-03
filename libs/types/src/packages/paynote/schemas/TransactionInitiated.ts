@@ -3,16 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const TransactionInitiatedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TransactionInitiatedSchema: any = withTypeBlueId(
   blueIds['PayNote/Transaction Initiated']
 )(
   ResponseSchema.extend({
-    attachmentPoint: z.string().optional(),
-    description: z.string().optional(),
-    initiatedAmount: z.number().optional(),
-    name: z.string().optional(),
-    providerReference: z.string().optional(),
-    railType: z.string().optional(),
+    attachmentPoint: zod.string().optional(),
+    description: zod.string().optional(),
+    initiatedAmount: zod.number().optional(),
+    name: zod.string().optional(),
+    providerReference: zod.string().optional(),
+    railType: zod.string().optional(),
   })
 );
 

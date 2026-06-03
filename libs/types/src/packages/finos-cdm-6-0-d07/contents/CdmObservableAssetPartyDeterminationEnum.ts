@@ -1,44 +1,43 @@
-export const CdmObservableAssetPartyDeterminationEnum = {
-  description:
-    'The enumerated values to specify how a calculation agent will be determined.',
-  name: 'cdm/observable/asset/PartyDeterminationEnum',
-  schema: {
-    enum: {
-      items: [
+export const CdmObservableAssetPartyDeterminationEnum: Record<string, unknown> =
+  {
+    description:
+      'The enumerated values to specify how a calculation agent will be determined.',
+    name: 'cdm/observable/asset/PartyDeterminationEnum',
+    schema: {
+      enum: [
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'AsSpecifiedInMasterAgreement',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'AsSpecifiedInStandardTermsSupplement',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Both',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'ExercisingParty',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'NonExercisingParty',
         },
       ],
     },
-  },
-  type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-  },
-} as const;
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+    },
+  };

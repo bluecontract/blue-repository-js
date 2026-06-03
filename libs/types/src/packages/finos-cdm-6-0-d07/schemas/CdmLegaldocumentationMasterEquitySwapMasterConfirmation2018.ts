@@ -8,29 +8,31 @@ import { CdmProductAssetReturnTypeEnumSchema } from './CdmProductAssetReturnType
 import { CdmProductCommonSchedulePaymentDatesSchema } from './CdmProductCommonSchedulePaymentDates';
 import { CdmProductCommonSettlementSettlementTermsSchema } from './CdmProductCommonSettlementSettlementTerms';
 
-export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018Schema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018Schema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/EquitySwapMasterConfirmation2018'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      equityCashSettlementDates: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      equityCashSettlementDates: zod.lazy(
         () => CdmProductCommonSchedulePaymentDatesSchema
       ),
-      linearInterpolationElection: z.lazy(
+      linearInterpolationElection: zod.lazy(
         () => CdmObservableAssetInterpolationMethodEnumSchema
       ),
-      name: z.string().optional(),
-      pricingMethodElection: z.lazy(
+      name: zod.string().optional(),
+      pricingMethodElection: zod.lazy(
         () => CdmProductAssetPriceReturnTermsSchema
       ),
-      settlementTerms: z.lazy(
+      settlementTerms: zod.lazy(
         () => CdmProductCommonSettlementSettlementTermsSchema
       ),
-      typeOfSwapElection: z.lazy(() => CdmProductAssetReturnTypeEnumSchema),
-      valuationDates: z.lazy(() => CdmObservableAssetValuationDatesSchema),
+      typeOfSwapElection: zod.lazy(() => CdmProductAssetReturnTypeEnumSchema),
+      valuationDates: zod.lazy(() => CdmObservableAssetValuationDatesSchema),
     })
   );
 

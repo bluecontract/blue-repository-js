@@ -1,13 +1,13 @@
-export const PrincipalActor = {
+export const PrincipalActor: Record<string, unknown> = {
   accountId: {
     description: 'MyOS account ID of the principal.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description: 'The base type for a direct action by the account owner.',
   name: 'Principal Actor',
   type: {
-    blueId: 'CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd',
+    blueId: 'GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7',
   },
-} as const;
+};

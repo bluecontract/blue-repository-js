@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const ReverseCardChargeRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ReverseCardChargeRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Reverse Card Charge Requested']
 )(
   RequestSchema.extend({
-    amount: z.number().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paymentMandateDocumentId: z.string().optional(),
+    amount: zod.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentMandateDocumentId: zod.string().optional(),
     paynote: blueNodeField().optional(),
   })
 );

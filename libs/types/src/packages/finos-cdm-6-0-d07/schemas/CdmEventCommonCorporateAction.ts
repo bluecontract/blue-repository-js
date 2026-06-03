@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventCommonCorporateActionTypeEnumSchema } from './CdmEventCommonCorporateActionTypeEnum';
 import { CdmProductTemplateUnderlierSchema } from './CdmProductTemplateUnderlier';
 
-export const CdmEventCommonCorporateActionSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonCorporateActionSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/CorporateAction']
 )(
-  z.object({
-    corporateActionType: z.lazy(
+  zod.object({
+    corporateActionType: zod.lazy(
       () => CdmEventCommonCorporateActionTypeEnumSchema
     ),
-    description: z.string().optional(),
-    exDate: z.string(),
-    name: z.string().optional(),
-    payDate: z.string(),
-    underlier: z.lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema),
+    description: zod.string().optional(),
+    exDate: zod.string(),
+    name: zod.string().optional(),
+    payDate: zod.string(),
+    underlier: zod.lazy((): z.ZodTypeAny => CdmProductTemplateUnderlierSchema),
   })
 );
 

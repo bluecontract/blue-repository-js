@@ -5,27 +5,26 @@ import { CdmBaseStaticdataPartyAncillaryPartySchema } from './CdmBaseStaticdataP
 import { CdmProductCommonNotionalAdjustmentEnumSchema } from './CdmProductCommonNotionalAdjustmentEnum';
 import { CdmProductTemplateNonTransferableProductSchema } from './CdmProductTemplateNonTransferableProduct';
 
-export const CdmEventCommonTermsChangeInstructionSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/TermsChangeInstruction']
-  )(
-    z.object({
-      adjustment: z
-        .lazy(() => CdmProductCommonNotionalAdjustmentEnumSchema)
-        .optional(),
-      ancillaryParty: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyAncillaryPartySchema))
-        .min(0)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      product: z
-        .lazy(
-          (): z.ZodTypeAny => CdmProductTemplateNonTransferableProductSchema
-        )
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonTermsChangeInstructionSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/TermsChangeInstruction']
+)(
+  zod.object({
+    adjustment: zod
+      .lazy(() => CdmProductCommonNotionalAdjustmentEnumSchema)
+      .optional(),
+    ancillaryParty: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyAncillaryPartySchema))
+      .min(0)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    product: zod
+      .lazy((): z.ZodTypeAny => CdmProductTemplateNonTransferableProductSchema)
+      .optional(),
+  })
+);
 
 export type CdmEventCommonTermsChangeInstruction = z.infer<
   typeof CdmEventCommonTermsChangeInstructionSchema

@@ -1,9 +1,9 @@
-export const CdmEventCommonInstruction = {
+export const CdmEventCommonInstruction: Record<string, unknown> = {
   before: {
     description:
       'Specifies the trade state that will be acted on by the primitive event functions.',
     type: {
-      blueId: 'DXhfNgQ1Hmipx5YJVPFZLYTAfk5vomh4ywYmSZX1ChyJ',
+      blueId: 'EQ41UGrPkUeaUNXD9QmELA1aEoVBtx9tVzgQZ5Tp1rMT',
     },
   },
   description:
@@ -13,7 +13,7 @@ export const CdmEventCommonInstruction = {
     description:
       'Specifies the primitive instructions that will be used to call primitive event functions.',
     type: {
-      blueId: '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#2',
+      blueId: '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#0',
     },
   },
-} as const;
+};

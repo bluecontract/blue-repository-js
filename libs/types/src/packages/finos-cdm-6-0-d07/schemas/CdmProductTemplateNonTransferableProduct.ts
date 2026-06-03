@@ -5,28 +5,30 @@ import { CdmBaseStaticdataAssetCommonProductIdentifierSchema } from './CdmBaseSt
 import { CdmBaseStaticdataAssetCommonProductTaxonomySchema } from './CdmBaseStaticdataAssetCommonProductTaxonomy';
 import { CdmProductTemplateEconomicTermsSchema } from './CdmProductTemplateEconomicTerms';
 
-export const CdmProductTemplateNonTransferableProductSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateNonTransferableProductSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/template/NonTransferableProduct']
   )(
-    z.object({
-      description: z.string().optional(),
-      economicTerms: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      economicTerms: zod.lazy(
         (): z.ZodTypeAny => CdmProductTemplateEconomicTermsSchema
       ),
-      identifier: z
+      identifier: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny =>
               CdmBaseStaticdataAssetCommonProductIdentifierSchema
           )
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
-      taxonomy: z
+      name: zod.string().optional(),
+      taxonomy: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny =>
               CdmBaseStaticdataAssetCommonProductTaxonomySchema
           )

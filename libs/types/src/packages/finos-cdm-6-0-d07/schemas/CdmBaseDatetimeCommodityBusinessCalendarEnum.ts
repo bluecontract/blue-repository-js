@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseDatetimeCommodityBusinessCalendarEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeCommodityBusinessCalendarEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/CommodityBusinessCalendarEnum']
   )(
-    z.enum([
+    zod.enum([
       'ADSM',
       'AGRUS-FMB',
       'APPI',

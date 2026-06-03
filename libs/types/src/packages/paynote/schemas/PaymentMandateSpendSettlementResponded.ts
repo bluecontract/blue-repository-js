@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PaymentMandateSpendSettlementRespondedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentMandateSpendSettlementRespondedSchema: any = withTypeBlueId(
   blueIds['PayNote/Payment Mandate Spend Settlement Responded']
 )(
   ResponseSchema.extend({
-    amountCaptured: z.number().optional(),
-    amountReserved: z.number().optional(),
-    authorizationId: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    respondedAt: z.lazy(() => TimestampSchema).optional(),
-    settlementId: z.string().optional(),
-    status: z.string().optional(),
+    amountCaptured: zod.number().optional(),
+    amountReserved: zod.number().optional(),
+    authorizationId: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
+    respondedAt: zod.lazy(() => TimestampSchema).optional(),
+    settlementId: zod.string().optional(),
+    status: zod.string().optional(),
   })
 );
 

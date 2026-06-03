@@ -1,1157 +1,1161 @@
 import blueIds from './blue-ids';
 
-const meta = {
+const meta: { name: string; typesMeta: Record<string, unknown> } = {
   name: 'PayNote',
   typesMeta: {
-    Hp9rbhaVLQFEpBy9EZ6YuEh8PrXXciJkY8eUfwEg55YK: {
+    '3q7ZoYNpX5GoVScYTqzom7YQ1fTCPZeegmdvRZvTVee1': {
       status: 'dev',
       name: 'Cancel Before Completion Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hp9rbhaVLQFEpBy9EZ6YuEh8PrXXciJkY8eUfwEg55YK',
+          typeBlueId: '3q7ZoYNpX5GoVScYTqzom7YQ1fTCPZeegmdvRZvTVee1',
           attributesAdded: [],
         },
       ],
     },
-    Ghp8jKdGRtcdYv5aLuukrGQazUiiWVkjGRswhkrfp8uA: {
+    Fco4nFxgHFP38LD59gHmiTrKyqJAG5B623gShceqRYyF: {
       status: 'stable',
       name: 'Capture Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ghp8jKdGRtcdYv5aLuukrGQazUiiWVkjGRswhkrfp8uA',
+          typeBlueId: 'Fco4nFxgHFP38LD59gHmiTrKyqJAG5B623gShceqRYyF',
           attributesAdded: [],
         },
       ],
     },
-    '7pCJnj5CuTi5NppZ6hWK3wMSwGveGW9fB8ydWge9kfsr': {
+    '9UCqtGPAjKMd77NN7G4oTL6DKKimkLoT5V69AiUh6knx': {
       status: 'stable',
       name: 'Capture Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7pCJnj5CuTi5NppZ6hWK3wMSwGveGW9fB8ydWge9kfsr',
+          typeBlueId: '9UCqtGPAjKMd77NN7G4oTL6DKKimkLoT5V69AiUh6knx',
           attributesAdded: [],
         },
       ],
     },
-    '22tDCFoSnr3H8mpKoMcNWu6HFYRLJ8WVtA9HJJjZFTDp': {
+    '8WUtwwVnvBXPJwa1b9ewP5xiCRZt9z8XrDzs1fNzN1UL': {
       status: 'stable',
       name: 'Capture Funds Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '22tDCFoSnr3H8mpKoMcNWu6HFYRLJ8WVtA9HJJjZFTDp',
+          typeBlueId: '8WUtwwVnvBXPJwa1b9ewP5xiCRZt9z8XrDzs1fNzN1UL',
           attributesAdded: [],
         },
       ],
     },
-    '6x3rEAr4r7E6TnmtGcKXmtofkZ5XbKWfWTtUjVBSjixb': {
+    DeNXwMeUPHywS5dnywPdkm8TS6qXYuvm1jBU81r8vicY: {
       status: 'dev',
       name: 'Card Charge Completed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6x3rEAr4r7E6TnmtGcKXmtofkZ5XbKWfWTtUjVBSjixb',
+          typeBlueId: 'DeNXwMeUPHywS5dnywPdkm8TS6qXYuvm1jBU81r8vicY',
           attributesAdded: [],
         },
       ],
     },
-    CQa9Xv397jjXRmiW2mCmUv5ZQ2zQ7k4nvzwHUSod7Ao4: {
+    BChX2KCCV8bAaVpcxk2AMGyL5EBWkMN7A6MXqYx23kna: {
       status: 'dev',
       name: 'Card Charge Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CQa9Xv397jjXRmiW2mCmUv5ZQ2zQ7k4nvzwHUSod7Ao4',
+          typeBlueId: 'BChX2KCCV8bAaVpcxk2AMGyL5EBWkMN7A6MXqYx23kna',
           attributesAdded: [],
         },
       ],
     },
-    H1bKjnbdLgF16E7YusAusW8JYyUHzmZKFk6p7tP6jFxy: {
+    BVWamaKm2AEt9FEN5HZKuGWseEzeWPJeyJHbCFq4AGbz: {
       status: 'dev',
       name: 'Card Transaction Capture Lock Change Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'H1bKjnbdLgF16E7YusAusW8JYyUHzmZKFk6p7tP6jFxy',
+          typeBlueId: 'BVWamaKm2AEt9FEN5HZKuGWseEzeWPJeyJHbCFq4AGbz',
           attributesAdded: [],
         },
       ],
     },
-    BGFAz4x6LaxXTpTZyXzbE4kr4EDATVcpMgxgcH5UYzQn: {
+    '3WUS7fRk3isWgjSnFGXta9HMkGmj2zg6898rbLH5G5iz': {
       status: 'dev',
       name: 'Card Transaction Capture Lock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BGFAz4x6LaxXTpTZyXzbE4kr4EDATVcpMgxgcH5UYzQn',
+          typeBlueId: '3WUS7fRk3isWgjSnFGXta9HMkGmj2zg6898rbLH5G5iz',
           attributesAdded: [],
         },
       ],
     },
-    '9QmNQ9HyiNxJf4vGrGFSUQh2DdreV3awweaDdsB1n3CP': {
+    DMqN5PRMtERwhanUamBCYfELwGNxSq5aLXQDStPNFBio: {
       status: 'dev',
       name: 'Card Transaction Capture Locked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9QmNQ9HyiNxJf4vGrGFSUQh2DdreV3awweaDdsB1n3CP',
+          typeBlueId: 'DMqN5PRMtERwhanUamBCYfELwGNxSq5aLXQDStPNFBio',
           attributesAdded: [],
         },
       ],
     },
-    '2dkYN3GYhWt5qVFk3Svcsqx3AumtupuDCir3Png3BnCn': {
+    GRKRovDGMJjtV4dtaUmmUJEojNCwyosV6hZtmsjPzs4d: {
       status: 'dev',
       name: 'Card Transaction Capture Unlock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2dkYN3GYhWt5qVFk3Svcsqx3AumtupuDCir3Png3BnCn',
+          typeBlueId: 'GRKRovDGMJjtV4dtaUmmUJEojNCwyosV6hZtmsjPzs4d',
           attributesAdded: [],
         },
       ],
     },
-    '8qwZofJMDX7VN4oTvXki8sRqjRztHm1AJKY69kiqKQJV': {
+    FKW7FJk8UxqKkYsPfGBwv3sWdBrgiaV1emVVWj1RFTA6: {
       status: 'dev',
       name: 'Card Transaction Capture Unlocked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8qwZofJMDX7VN4oTvXki8sRqjRztHm1AJKY69kiqKQJV',
+          typeBlueId: 'FKW7FJk8UxqKkYsPfGBwv3sWdBrgiaV1emVVWj1RFTA6',
           attributesAdded: [],
         },
       ],
     },
-    GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT: {
+    DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV: {
       status: 'dev',
       name: 'Card Transaction Details',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+          typeBlueId: 'DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV',
           attributesAdded: [],
         },
       ],
     },
-    DrwZrgeKXZwsEQDJXdEaWQBivpSyZdb1nLjRMjjigov6: {
+    '9gABqM7a7rkmcy1hymgajNEvYRKff7GUbHQuWPx1Qt9k': {
       status: 'dev',
       name: 'Card Transaction Monitoring Request Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DrwZrgeKXZwsEQDJXdEaWQBivpSyZdb1nLjRMjjigov6',
+          typeBlueId: '9gABqM7a7rkmcy1hymgajNEvYRKff7GUbHQuWPx1Qt9k',
           attributesAdded: [],
         },
       ],
     },
-    CL3RhUcWJG9JmKEENaZWewsYhmsSdTbFPaeW8jb1jZpj: {
+    CyqbBE2DCyFLhMSpyy5n48JHVUcWhzFVKV4mf5pMP86p: {
       status: 'dev',
       name: 'Card Transaction Monitoring Started',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CL3RhUcWJG9JmKEENaZWewsYhmsSdTbFPaeW8jb1jZpj',
+          typeBlueId: 'CyqbBE2DCyFLhMSpyy5n48JHVUcWhzFVKV4mf5pMP86p',
           attributesAdded: [],
         },
       ],
     },
-    G9yQsyYfiwkDhap7VTq12yj26kGkgvPsX92cQp6rEbfx: {
+    '45LGaTEkpqKVCXfgjbdq4kEeQ64qV5TsgYVCiQev9J9n': {
       status: 'dev',
       name: 'Card Transaction Monitoring Stopped',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G9yQsyYfiwkDhap7VTq12yj26kGkgvPsX92cQp6rEbfx',
+          typeBlueId: '45LGaTEkpqKVCXfgjbdq4kEeQ64qV5TsgYVCiQev9J9n',
           attributesAdded: [],
         },
       ],
     },
-    BPCVqgc2J3NnYW2A8xMjGX8Wv5v5APpXuut8afiJTF3E: {
+    '5aVPumax9MbaaEVd1kyZEoTu2vtZHDffWP8R1ALP7vV': {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: 'BPCVqgc2J3NnYW2A8xMjGX8Wv5v5APpXuut8afiJTF3E',
+          repositoryVersionIndex: 0,
+          typeBlueId: '5aVPumax9MbaaEVd1kyZEoTu2vtZHDffWP8R1ALP7vV',
           attributesAdded: [],
         },
       ],
     },
-    BVo3umEXBPKoCiDC7PrKQf5m3ENZGKt9xGgPTJJXCXcb: {
+    '2eNmDqhcQGV7Z7cJ6EJ9WnnpVKrqCuJrYfyiz1sfSPxC': {
       status: 'dev',
       name: 'Card Transaction Report',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BVo3umEXBPKoCiDC7PrKQf5m3ENZGKt9xGgPTJJXCXcb',
+          typeBlueId: '2eNmDqhcQGV7Z7cJ6EJ9WnnpVKrqCuJrYfyiz1sfSPxC',
           attributesAdded: [],
         },
       ],
     },
-    '2UDXQuYTuwbbj6eXgvUxiSweq8Kz5yQqSuhFsjVASUBh': {
+    '7TZfFGcCm89ELP9am43qpyEfGSEMpup6fPkEjQEKiVNw': {
       status: 'stable',
       name: 'Child PayNote Issuance Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2UDXQuYTuwbbj6eXgvUxiSweq8Kz5yQqSuhFsjVASUBh',
+          typeBlueId: '7TZfFGcCm89ELP9am43qpyEfGSEMpup6fPkEjQEKiVNw',
           attributesAdded: [],
         },
       ],
     },
-    GYpUo3MXjje9h9kCdKunkb4RQoU5uX1nq77uqe6jqjgU: {
+    Han6ZfnAh4BUecEKcFoQo36EdoSHxyNtDdtt6bHer3aM: {
       status: 'stable',
       name: 'Child PayNote Issued',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GYpUo3MXjje9h9kCdKunkb4RQoU5uX1nq77uqe6jqjgU',
+          typeBlueId: 'Han6ZfnAh4BUecEKcFoQo36EdoSHxyNtDdtt6bHer3aM',
           attributesAdded: [],
         },
       ],
     },
-    DDRzktkPV3srozHVEzYUHdC9MX7Lzvq1HZ1enDEeYqfs: {
+    GaCbTkHKYc8bbvCwR7zCU7V29HGvoiMR3EU6HULign51: {
       status: 'dev',
       name: 'Complete Payment Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DDRzktkPV3srozHVEzYUHdC9MX7Lzvq1HZ1enDEeYqfs',
+          typeBlueId: 'GaCbTkHKYc8bbvCwR7zCU7V29HGvoiMR3EU6HULign51',
           attributesAdded: [],
         },
       ],
     },
-    '9g76Ge68UF744b6KWgGkrAudVCdM8Ggs1YjVcZXXWmsS': {
+    '72A3S6dDAqoMPUbC1EUUoCCsnfecvpS1L3cYevSydsai': {
       status: 'dev',
       name: 'Final Amount Resolution Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9g76Ge68UF744b6KWgGkrAudVCdM8Ggs1YjVcZXXWmsS',
+          typeBlueId: '72A3S6dDAqoMPUbC1EUUoCCsnfecvpS1L3cYevSydsai',
           attributesAdded: [],
         },
       ],
     },
-    EHySZYfMJC3JDuuottDsKyE4d6Xof6eKCWrzMjg2LyUh: {
+    '3fe87zG5NdKpGKCwWistwuomDgVR56uoo9QyvwbqrA3k': {
       status: 'dev',
       name: 'Final Amount Resolution Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EHySZYfMJC3JDuuottDsKyE4d6Xof6eKCWrzMjg2LyUh',
+          typeBlueId: '3fe87zG5NdKpGKCwWistwuomDgVR56uoo9QyvwbqrA3k',
           attributesAdded: [],
         },
       ],
     },
-    '14aYCUtepzJKAQ8rVtfNUcSebrBYbva3VBjhdtXgm4GV': {
+    wi22d16wHycXs4G9op3SEHvcR2rK3JTedywGewUt27F: {
       status: 'dev',
       name: 'Final Amount Resolved',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '14aYCUtepzJKAQ8rVtfNUcSebrBYbva3VBjhdtXgm4GV',
+          typeBlueId: 'wi22d16wHycXs4G9op3SEHvcR2rK3JTedywGewUt27F',
           attributesAdded: [],
         },
       ],
     },
-    HFKZ6MnBdTMNRi72P1zqUEh2RgagBX4DP4MLknWvpwrL: {
+    '8nn7phpXTbkJDdtcUoWifGAu3sUG85atgLLU8QcupWmw': {
       status: 'stable',
       name: 'Funds Captured',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HFKZ6MnBdTMNRi72P1zqUEh2RgagBX4DP4MLknWvpwrL',
+          typeBlueId: '8nn7phpXTbkJDdtcUoWifGAu3sUG85atgLLU8QcupWmw',
           attributesAdded: [],
         },
       ],
     },
-    '4AegLZ1gGqhXWQ66prGJB4yWcoHfqpKes8kbkfURnvE4': {
+    '5PasMX8MMx5Z4Jwr63W5w7tA7E7gGCVzYrrKkJGvU8xX': {
       status: 'stable',
       name: 'Funds Reserved',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4AegLZ1gGqhXWQ66prGJB4yWcoHfqpKes8kbkfURnvE4',
+          typeBlueId: '5PasMX8MMx5Z4Jwr63W5w7tA7E7gGCVzYrrKkJGvU8xX',
           attributesAdded: [],
         },
       ],
     },
-    Dhq87PEpVaYUJAkCHxWxmRcmgQGg8qkCWyuVo7rJhNrZ: {
+    BRCYCbhWLNL4eV9PPiXyR9jD5vUwZJM1QzVRitbzgttG: {
       status: 'dev',
       name: 'Funds Secured',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Dhq87PEpVaYUJAkCHxWxmRcmgQGg8qkCWyuVo7rJhNrZ',
+          typeBlueId: 'BRCYCbhWLNL4eV9PPiXyR9jD5vUwZJM1QzVRitbzgttG',
           attributesAdded: [],
         },
       ],
     },
-    Ep5q2Z4UEqUnMJGwb8CxbkjfFf5SYFsJf855LS68vWHw: {
+    F9uGVcesweVvK72Uw95r5uoC3N9rK7wEqrLesNF2dg6t: {
       status: 'dev',
       name: 'Funds Securing Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ep5q2Z4UEqUnMJGwb8CxbkjfFf5SYFsJf855LS68vWHw',
+          typeBlueId: 'F9uGVcesweVvK72Uw95r5uoC3N9rK7wEqrLesNF2dg6t',
           attributesAdded: [],
         },
       ],
     },
-    '6d2zv3cUykVpodfq3nHnsJ62sJHjViw66JkmziQAYrRA': {
+    BWyf1rwHSCFApt6cTx1pq758Cwkmf6ip1XdEBg4QnCv8: {
       status: 'dev',
       name: 'Funds Securing Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6d2zv3cUykVpodfq3nHnsJ62sJHjViw66JkmziQAYrRA',
+          typeBlueId: 'BWyf1rwHSCFApt6cTx1pq758Cwkmf6ip1XdEBg4QnCv8',
           attributesAdded: [],
         },
       ],
     },
-    '6xPfgoVRspFpZ1ftEsCFhDQt5vaPN4u9kfdAdzFzh8JS': {
+    '2BGKdGTmrSuS7j7wE2bneyopsfgj5MwLLeU21CodKn4p': {
       status: 'stable',
       name: 'Issue Child PayNote Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6xPfgoVRspFpZ1ftEsCFhDQt5vaPN4u9kfdAdzFzh8JS',
+          typeBlueId: '2BGKdGTmrSuS7j7wE2bneyopsfgj5MwLLeU21CodKn4p',
           attributesAdded: [],
         },
       ],
     },
-    D5CBwemEH71dvFYLwngHXqQb3AfrX7vQ6qQQggA5w4kL: {
+    '5EzstBLEcdv1qNVo8JYzxRd7T6P8fyZ5HrgN2fxz6CdX': {
       status: 'dev',
       name: 'Linked Card Charge and Capture Immediately Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'D5CBwemEH71dvFYLwngHXqQb3AfrX7vQ6qQQggA5w4kL',
+          typeBlueId: '5EzstBLEcdv1qNVo8JYzxRd7T6P8fyZ5HrgN2fxz6CdX',
           attributesAdded: [],
         },
       ],
     },
-    CvGySPArfCvAW8wES6mLHAxW275hVGaWYDGcnmvDroiw: {
+    '8btGPWw748VG2tHnj248YNV6EirmDg8oJWAN5UmzcwEo': {
       status: 'dev',
       name: 'Linked Card Charge Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CvGySPArfCvAW8wES6mLHAxW275hVGaWYDGcnmvDroiw',
+          typeBlueId: '8btGPWw748VG2tHnj248YNV6EirmDg8oJWAN5UmzcwEo',
           attributesAdded: [],
         },
       ],
     },
-    '27m5LHt8BGFbjCtbc8TmpjbRr4C5Yof9ivb95Q1qjGp5': {
+    FRcHiifo1E2aQMx1YEMfD2wBTLFAhX4hHCAr4rAHruCS: {
       status: 'dev',
       name: 'Linked PayNote Start Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '27m5LHt8BGFbjCtbc8TmpjbRr4C5Yof9ivb95Q1qjGp5',
+          typeBlueId: 'FRcHiifo1E2aQMx1YEMfD2wBTLFAhX4hHCAr4rAHruCS',
           attributesAdded: [],
         },
       ],
     },
-    D3oNNKrhuezgtZwNQFVVeYSoQjamdb7cHzeJAitzSnMJ: {
+    '25NBCk2eHaVrp8z8c81y75HAiL55nNZRSZ7uxDsHEGuX': {
       status: 'dev',
       name: 'Linked PayNote Start Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'D3oNNKrhuezgtZwNQFVVeYSoQjamdb7cHzeJAitzSnMJ',
+          typeBlueId: '25NBCk2eHaVrp8z8c81y75HAiL55nNZRSZ7uxDsHEGuX',
           attributesAdded: [],
         },
       ],
     },
-    '136wy9eVvz2GrQpBBFSS3VxGXKjw8xSh5M1GYxgTussB': {
+    BrueWfkUx7usLz6HqUq1vLUZtab8cYcuPuHzthmhip8E: {
       status: 'dev',
       name: 'Linked PayNote Started',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '136wy9eVvz2GrQpBBFSS3VxGXKjw8xSh5M1GYxgTussB',
+          typeBlueId: 'BrueWfkUx7usLz6HqUq1vLUZtab8cYcuPuHzthmhip8E',
           attributesAdded: [],
         },
       ],
     },
-    '2hDRCj9thcDsfKHHNy1hBKZG4fn8pEyWDVsaJQjouHZp': {
+    HY6PWoQGPqoJHmBMZyF8BEkovMzsz1dewfoeCAJ8urpA: {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: '2hDRCj9thcDsfKHHNy1hBKZG4fn8pEyWDVsaJQjouHZp',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'HY6PWoQGPqoJHmBMZyF8BEkovMzsz1dewfoeCAJ8urpA',
           attributesAdded: [],
         },
       ],
     },
-    G7VEB2qKr36H5CUdSCrFsw2LTkpEx7nfgaFWuD3UeFeq: {
+    '44BS4uToUQLVy8cFfUjbxr99ozR6fiAtCtC3Wd38VPwd': {
       status: 'dev',
       name: 'Payee Assignment Confirmed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G7VEB2qKr36H5CUdSCrFsw2LTkpEx7nfgaFWuD3UeFeq',
+          typeBlueId: '44BS4uToUQLVy8cFfUjbxr99ozR6fiAtCtC3Wd38VPwd',
           attributesAdded: [],
         },
       ],
     },
-    '3CuhNQR9wKoJgiFtEagaHcWskzPtsAsGgDwSfcjhSTz3': {
+    '3zCHLCtMCUoM1LiZP7skhLwZ5NGcTmVLQbdfPkDuv4q4': {
       status: 'dev',
       name: 'Payee Assignment Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3CuhNQR9wKoJgiFtEagaHcWskzPtsAsGgDwSfcjhSTz3',
+          typeBlueId: '3zCHLCtMCUoM1LiZP7skhLwZ5NGcTmVLQbdfPkDuv4q4',
           attributesAdded: [],
         },
       ],
     },
-    FJFBLMQjKue73Ls3a3Hm4Bk51CqN4odCxZUwkioLWk8T: {
+    D17BbAFgz2YXvNegams28sxZqtqNKFepEMbPHrfed4bF: {
       status: 'stable',
       name: 'Payee Assignment Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FJFBLMQjKue73Ls3a3Hm4Bk51CqN4odCxZUwkioLWk8T',
+          typeBlueId: 'D17BbAFgz2YXvNegams28sxZqtqNKFepEMbPHrfed4bF',
           attributesAdded: [],
         },
       ],
     },
-    '5vPSqDeCjrrSzKmCyDn3s7C6v1UbwThGCRk9Zc6VYojK': {
+    '7QLdg1jcp7zdZHW8TMek1KRhdhpjmXNyJv83qmMLedkp': {
       status: 'dev',
       name: 'Payment Cancellation Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5vPSqDeCjrrSzKmCyDn3s7C6v1UbwThGCRk9Zc6VYojK',
+          typeBlueId: '7QLdg1jcp7zdZHW8TMek1KRhdhpjmXNyJv83qmMLedkp',
           attributesAdded: [],
         },
       ],
     },
-    BYm2KcRydg8r9LQEWTZhi6r1fTvnJGkxHUzSbZd5wQJZ: {
+    '3PohjSUMX4izceADM8gpy4Mg9988TNPWX9fKGrMBtZ8a': {
       status: 'dev',
       name: 'Payment Cancellation Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BYm2KcRydg8r9LQEWTZhi6r1fTvnJGkxHUzSbZd5wQJZ',
+          typeBlueId: '3PohjSUMX4izceADM8gpy4Mg9988TNPWX9fKGrMBtZ8a',
           attributesAdded: [],
         },
       ],
     },
-    CLCm3e8rHeFTMWuV5A415fZZvVc9Xb9yj2p1eEMyTwrf: {
+    EUw3vUNYpwxKrtvF9FE7jwGzMo7NByVZcLuaTi8Pks7X: {
       status: 'dev',
       name: 'Payment Cancelled Before Completion',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CLCm3e8rHeFTMWuV5A415fZZvVc9Xb9yj2p1eEMyTwrf',
+          typeBlueId: 'EUw3vUNYpwxKrtvF9FE7jwGzMo7NByVZcLuaTi8Pks7X',
           attributesAdded: [],
         },
       ],
     },
-    BaKeiFYCdzpGKobh6oq3y9ZwFA2pVgtCNn5CipfDRPDn: {
+    '5hNfvS7YBGdFfwoUt214LTTk8NSsVETTwDfDTzqcWihu': {
       status: 'dev',
       name: 'Payment Completed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BaKeiFYCdzpGKobh6oq3y9ZwFA2pVgtCNn5CipfDRPDn',
+          typeBlueId: '5hNfvS7YBGdFfwoUt214LTTk8NSsVETTwDfDTzqcWihu',
           attributesAdded: [],
         },
       ],
     },
-    CJXbcUUJuDYcDY63DDWatYNoww5HNyLG9tBiyK4kfqDr: {
+    os4PgmBBxgt26WMaUg4XC4kmHkHygU5WL6PD5bHhShL: {
       status: 'dev',
       name: 'Payment Completion Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CJXbcUUJuDYcDY63DDWatYNoww5HNyLG9tBiyK4kfqDr',
+          typeBlueId: 'os4PgmBBxgt26WMaUg4XC4kmHkHygU5WL6PD5bHhShL',
           attributesAdded: [],
         },
       ],
     },
-    FXoL7smVn5Qr8rWaMiAkJX1tJYFf6pJQNCHyk9YEzsYj: {
+    '6NZSd6JgMDdXikYHCDkeQ6aJsWCvMaznrRWdAaGRxnAL': {
       status: 'dev',
       name: 'Payment Completion Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FXoL7smVn5Qr8rWaMiAkJX1tJYFf6pJQNCHyk9YEzsYj',
+          typeBlueId: '6NZSd6JgMDdXikYHCDkeQ6aJsWCvMaznrRWdAaGRxnAL',
           attributesAdded: [],
         },
       ],
     },
-    CWmwgreYPytk6uMhrPPQtwrEngyoMzmVCHCJwjESKxQe: {
+    WAYPYNWJEBL2TPtMuk8R3HYXcSR1itCizbyQoKwg2bn: {
       status: 'dev',
       name: 'Payment Completion Lock Change Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CWmwgreYPytk6uMhrPPQtwrEngyoMzmVCHCJwjESKxQe',
+          typeBlueId: 'WAYPYNWJEBL2TPtMuk8R3HYXcSR1itCizbyQoKwg2bn',
           attributesAdded: [],
         },
       ],
     },
-    BAmesvVsg5mMyv7ywqNfcKA9heQRAavcXi8UDN7wKnkP: {
+    Gom5w2zMmTCErVF7vgKzSbE1HKv6xfsYzwXJEq3FanhA: {
       status: 'dev',
       name: 'Payment Completion Lock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BAmesvVsg5mMyv7ywqNfcKA9heQRAavcXi8UDN7wKnkP',
+          typeBlueId: 'Gom5w2zMmTCErVF7vgKzSbE1HKv6xfsYzwXJEq3FanhA',
           attributesAdded: [],
         },
       ],
     },
-    ChQAXUw8C752hUQ8TDDjLGnZHWEuw4yXqZTpNR54Soqr: {
+    GnhJBCKaSH7HSDuD2LihE7ds3Dcddfg8ueDEcaC5VV2Q: {
       status: 'dev',
       name: 'Payment Completion Locked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ChQAXUw8C752hUQ8TDDjLGnZHWEuw4yXqZTpNR54Soqr',
+          typeBlueId: 'GnhJBCKaSH7HSDuD2LihE7ds3Dcddfg8ueDEcaC5VV2Q',
           attributesAdded: [],
         },
       ],
     },
-    Ae6M8hQ664pDy73x96xMABj3WnFuH6hkC61vcz8CNUQW: {
+    '9t7hUWWXDow4cJfSuG88zruU6YasQeQz1J8jGwcvwthf': {
       status: 'dev',
       name: 'Payment Completion Unlock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ae6M8hQ664pDy73x96xMABj3WnFuH6hkC61vcz8CNUQW',
+          typeBlueId: '9t7hUWWXDow4cJfSuG88zruU6YasQeQz1J8jGwcvwthf',
           attributesAdded: [],
         },
       ],
     },
-    HWbQL6dGkDfjPDU57aghQmWMtpi3ai9sTX4TmMnA2k3X: {
+    BGqFuh1FHNRvBYfqDegotUCuCkZUyHPi4cMzfzZMEsGH: {
       status: 'dev',
       name: 'Payment Completion Unlocked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HWbQL6dGkDfjPDU57aghQmWMtpi3ai9sTX4TmMnA2k3X',
+          typeBlueId: 'BGqFuh1FHNRvBYfqDegotUCuCkZUyHPi4cMzfzZMEsGH',
           attributesAdded: [],
         },
       ],
     },
-    '5fBQHAnRCh6a5DwzJFV2f31yExvRhsnKNNMcuZnMHXry': {
+    CtbsuXntvrM28GGveCCe4Ks2xKTTmBvkMBAetSqXRCia: {
       status: 'dev',
       name: 'Payment Mandate',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: '5fBQHAnRCh6a5DwzJFV2f31yExvRhsnKNNMcuZnMHXry',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'CtbsuXntvrM28GGveCCe4Ks2xKTTmBvkMBAetSqXRCia',
           attributesAdded: [],
         },
       ],
     },
-    CS8Zf2Nmo9QsvDwvBbTbpq9VL1gJTXC4ix9tzgmHnXvN: {
+    Gs1jHaTTnb8cv6VH6GKwnDAzBPkRjH81wRj28zqkGtz7: {
       status: 'dev',
       name: 'Payment Mandate Attached',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CS8Zf2Nmo9QsvDwvBbTbpq9VL1gJTXC4ix9tzgmHnXvN',
+          typeBlueId: 'Gs1jHaTTnb8cv6VH6GKwnDAzBPkRjH81wRj28zqkGtz7',
           attributesAdded: [],
         },
       ],
     },
-    '2AggJktF7rdGkScmVmf58kzQ6x5SJQBVMq2LtthirY4b': {
+    Bini6FefW5nZTkMuiVtPCbxWPfATrtYWpSDfwEvEcXTp: {
       status: 'dev',
       name: 'Payment Mandate Attachment Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2AggJktF7rdGkScmVmf58kzQ6x5SJQBVMq2LtthirY4b',
+          typeBlueId: 'Bini6FefW5nZTkMuiVtPCbxWPfATrtYWpSDfwEvEcXTp',
           attributesAdded: [],
         },
       ],
     },
-    AnxxLd7NofAKrwNp22fvP4jQ24aAHKKvxsv4aXJgjziP: {
+    '8jsJ7UY8wiQvDtpsjqXvnrQUMhqXZhfF6EKBzhtkUKqo': {
       status: 'dev',
       name: 'Payment Mandate Spend Authorization Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AnxxLd7NofAKrwNp22fvP4jQ24aAHKKvxsv4aXJgjziP',
+          typeBlueId: '8jsJ7UY8wiQvDtpsjqXvnrQUMhqXZhfF6EKBzhtkUKqo',
           attributesAdded: [],
         },
       ],
     },
-    '9h8QgAXNnpK8ekENXhGxvsqk74vXyBvdEbpHetsEYtQb': {
+    F1JQhT1Fxn5QMcvtTUn95qvi7tTggAhv3nvQmHExUTuH: {
       status: 'dev',
       name: 'Payment Mandate Spend Authorization Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9h8QgAXNnpK8ekENXhGxvsqk74vXyBvdEbpHetsEYtQb',
+          typeBlueId: 'F1JQhT1Fxn5QMcvtTUn95qvi7tTggAhv3nvQmHExUTuH',
           attributesAdded: [],
         },
       ],
     },
-    Bsb4uv9m6GU7T8Z6TwXQGZagFcVR8xn4EBNTR5bBZfgv: {
+    '7MrYz5SYkcN9b479w4R4M3JzsgWYuuJBhSfMLwSPdetk': {
       status: 'dev',
       name: 'Payment Mandate Spend Settled',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Bsb4uv9m6GU7T8Z6TwXQGZagFcVR8xn4EBNTR5bBZfgv',
+          typeBlueId: '7MrYz5SYkcN9b479w4R4M3JzsgWYuuJBhSfMLwSPdetk',
           attributesAdded: [],
         },
       ],
     },
-    '5Ef9YNuRSVFdykdjoBVWb5QHSzerHE8RAPaq58ARGrt7': {
+    CNxDfzH62fY9mtj71BTaZZNsyGLpS2RinaB6K34tibbh: {
       status: 'dev',
       name: 'Payment Mandate Spend Settlement Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5Ef9YNuRSVFdykdjoBVWb5QHSzerHE8RAPaq58ARGrt7',
+          typeBlueId: 'CNxDfzH62fY9mtj71BTaZZNsyGLpS2RinaB6K34tibbh',
           attributesAdded: [],
         },
       ],
     },
-    '3JuJT2LrVdb7ZZyjZsEjh1N2hDtBedCrg3NLomPPyGvu': {
+    HsMuLH95bFaoqknkp6z3ZxMZyAmP21Qx9aYBTtc41zES: {
       status: 'dev',
       name: 'Payment Reversal Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3JuJT2LrVdb7ZZyjZsEjh1N2hDtBedCrg3NLomPPyGvu',
+          typeBlueId: 'HsMuLH95bFaoqknkp6z3ZxMZyAmP21Qx9aYBTtc41zES',
           attributesAdded: [],
         },
       ],
     },
-    BzR72tUU9bspQ3JBm54rjg3A7XFJLSuscvYdyw5LWQ7o: {
+    Aa45Pf6wk1T9YFxjxBk7fVRygZk9XQ7FWvXquQyLdGZH: {
       status: 'dev',
       name: 'Payment Reversal Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BzR72tUU9bspQ3JBm54rjg3A7XFJLSuscvYdyw5LWQ7o',
+          typeBlueId: 'Aa45Pf6wk1T9YFxjxBk7fVRygZk9XQ7FWvXquQyLdGZH',
           attributesAdded: [],
         },
       ],
     },
-    '3ZL5qKgNJweUij3KwA6xp4KC1ReZ1AqXTFzhE1hCg5Hd': {
+    '2a2gKUm58bHAhhod7QW8ET32tB1UsNAMcfTCkP6i42TM': {
       status: 'dev',
       name: 'Payment Reversal Lock Change Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3ZL5qKgNJweUij3KwA6xp4KC1ReZ1AqXTFzhE1hCg5Hd',
+          typeBlueId: '2a2gKUm58bHAhhod7QW8ET32tB1UsNAMcfTCkP6i42TM',
           attributesAdded: [],
         },
       ],
     },
-    '8kwErWXi6Ts7gypBEL7EFpegWV43cxQ9EpodWfLTigeJ': {
+    '2qv8FU2sy1vXRuuVFKjr4e564Khe1iT1j9YDTfffK3Ti': {
       status: 'dev',
       name: 'Payment Reversal Lock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8kwErWXi6Ts7gypBEL7EFpegWV43cxQ9EpodWfLTigeJ',
+          typeBlueId: '2qv8FU2sy1vXRuuVFKjr4e564Khe1iT1j9YDTfffK3Ti',
           attributesAdded: [],
         },
       ],
     },
-    '455HeywDQjC8Kh6GtzqmVCRQMUQ2JtXj2sEabUr91CqN': {
+    '4VMcLbCnPdsVT5VozPcgoQhEi9HyxKwoWZw92PdHSBQZ': {
       status: 'dev',
       name: 'Payment Reversal Locked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '455HeywDQjC8Kh6GtzqmVCRQMUQ2JtXj2sEabUr91CqN',
+          typeBlueId: '4VMcLbCnPdsVT5VozPcgoQhEi9HyxKwoWZw92PdHSBQZ',
           attributesAdded: [],
         },
       ],
     },
-    q6TEeYDbn4Vdd5zxDjN4Ddyay31ivB852TZCuL17ULb: {
+    AWvMe8pZ3sK5ihyXirhd3KUyxsJkAJPyARigaj2ujF6F: {
       status: 'dev',
       name: 'Payment Reversal Unlock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'q6TEeYDbn4Vdd5zxDjN4Ddyay31ivB852TZCuL17ULb',
+          typeBlueId: 'AWvMe8pZ3sK5ihyXirhd3KUyxsJkAJPyARigaj2ujF6F',
           attributesAdded: [],
         },
       ],
     },
-    '6sVrGit3FwrSRnVr4kKLk3PJC33mqAPzzuDqbzCvordD': {
+    G2Nsw7CtbAig3r87U1GJSV8Rhvvg86gmS6dwP657ZTNF: {
       status: 'dev',
       name: 'Payment Reversal Unlocked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6sVrGit3FwrSRnVr4kKLk3PJC33mqAPzzuDqbzCvordD',
+          typeBlueId: 'G2Nsw7CtbAig3r87U1GJSV8Rhvvg86gmS6dwP657ZTNF',
           attributesAdded: [],
         },
       ],
     },
-    '2xgUeYahgLZCGnrNaVqsCbwEP9xnsaU8LKk3jcDtx8jw': {
+    BZL11BoCdd5wXZ1XGwPqckiCzfinoVLNUpmFt4cXGEQ8: {
       status: 'dev',
       name: 'Payment Reversed After Completion',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2xgUeYahgLZCGnrNaVqsCbwEP9xnsaU8LKk3jcDtx8jw',
+          typeBlueId: 'BZL11BoCdd5wXZ1XGwPqckiCzfinoVLNUpmFt4cXGEQ8',
           attributesAdded: [],
         },
       ],
     },
-    GS7qK6RBWAKdCFMy6hdeQNgmqeAkw5LrbcktFfnQdAxe: {
+    '65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q': {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: 'GS7qK6RBWAKdCFMy6hdeQNgmqeAkw5LrbcktFfnQdAxe',
+          repositoryVersionIndex: 0,
+          typeBlueId: '65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q',
           attributesAdded: [],
         },
       ],
     },
-    '4xd8eGnNyTRRrMQAgz6nvNtRgpiDthUr8BLs3ugBDKkV': {
+    B2iduV8cAcvAuNCJ7HDZuR5N1YJETbdeohZF1EEXhTZE: {
       status: 'dev',
       name: 'PayNote Acceptance Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4xd8eGnNyTRRrMQAgz6nvNtRgpiDthUr8BLs3ugBDKkV',
+          typeBlueId: 'B2iduV8cAcvAuNCJ7HDZuR5N1YJETbdeohZF1EEXhTZE',
           attributesAdded: [],
         },
       ],
     },
-    AKym7uykt3iv73tEfAP1k9f8dXpbp9i9dZNRhwfwhUYt: {
+    Hcg9rpEFRbEcsVyx2Doq7MHZx9bhP4J32x3jA74AgTz7: {
       status: 'dev',
       name: 'PayNote Accepted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AKym7uykt3iv73tEfAP1k9f8dXpbp9i9dZNRhwfwhUYt',
+          typeBlueId: 'Hcg9rpEFRbEcsVyx2Doq7MHZx9bhP4J32x3jA74AgTz7',
           attributesAdded: [],
         },
       ],
     },
-    HtsPop9z5R2EoW3TLKCSePnQUAj5wqryWuRWV1cwyBTt: {
+    '9ST1DLJxByDzvtdeJt8SFeZadSYokstVbWYcGVXnrEzk': {
       status: 'dev',
       name: 'PayNote Accepted By Client',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HtsPop9z5R2EoW3TLKCSePnQUAj5wqryWuRWV1cwyBTt',
+          typeBlueId: '9ST1DLJxByDzvtdeJt8SFeZadSYokstVbWYcGVXnrEzk',
           attributesAdded: [],
         },
       ],
     },
-    '2FLMQNYESLh8W5ivBYejLnBsS8E5DiD2m8AjNTBK6yVy': {
+    GqsXg52deb5uuCQyUo4XnRWHwPAhpyW7muCpfdnpo4fj: {
       status: 'stable',
       name: 'PayNote Approved',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2FLMQNYESLh8W5ivBYejLnBsS8E5DiD2m8AjNTBK6yVy',
+          typeBlueId: 'GqsXg52deb5uuCQyUo4XnRWHwPAhpyW7muCpfdnpo4fj',
           attributesAdded: [],
         },
       ],
     },
-    j48pW3ti66f4NoABqMAbaMkJKGztzsobPrUfXkVoSvB: {
+    HqAkxbtsXiTe2YVKh3ohbQTQMit7yLrgRS84ttoHpNe9: {
       status: 'stable',
       name: 'PayNote Cancellation Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'j48pW3ti66f4NoABqMAbaMkJKGztzsobPrUfXkVoSvB',
+          typeBlueId: 'HqAkxbtsXiTe2YVKh3ohbQTQMit7yLrgRS84ttoHpNe9',
           attributesAdded: [],
         },
       ],
     },
-    '3NTTDXW9VAaeU1W9s4FshMTZCNemsA5nPBWZgyF8qWpA': {
+    '3RY8mx3eh39FJDi6wBK95ZLr9vq8aXNWy7ynX95hCR8z': {
       status: 'stable',
       name: 'PayNote Cancellation Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3NTTDXW9VAaeU1W9s4FshMTZCNemsA5nPBWZgyF8qWpA',
+          typeBlueId: '3RY8mx3eh39FJDi6wBK95ZLr9vq8aXNWy7ynX95hCR8z',
           attributesAdded: [],
         },
       ],
     },
-    BrrMLE9Gq3p36wSWxTeecJToXGziP2squb6omeb4CEFy: {
+    '8Qtt1QxdAecmYSHjLU9GPQC2NDm8TGnaQvfPz7himXK2': {
       status: 'stable',
       name: 'PayNote Cancelled',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BrrMLE9Gq3p36wSWxTeecJToXGziP2squb6omeb4CEFy',
+          typeBlueId: '8Qtt1QxdAecmYSHjLU9GPQC2NDm8TGnaQvfPz7himXK2',
           attributesAdded: [],
         },
       ],
     },
-    '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW': {
+    FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE: {
       status: 'dev',
       name: 'PayNote Client Decision Discarded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW',
+          typeBlueId: 'FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE',
           attributesAdded: [],
         },
       ],
     },
-    '2JTgRGneJ5yzunYmA1gq8gg1joCgygcsdjjLPuMehJ9i': {
+    '983dg6ddoprdRNVHuwExmWLhA1DpG4Cz4oLYutMxhHvg': {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
-          repositoryVersionIndex: 3,
-          typeBlueId: '2JTgRGneJ5yzunYmA1gq8gg1joCgygcsdjjLPuMehJ9i',
+          repositoryVersionIndex: 0,
+          typeBlueId: '983dg6ddoprdRNVHuwExmWLhA1DpG4Cz4oLYutMxhHvg',
           attributesAdded: [],
         },
       ],
     },
-    '3VLavrr4LCLqo5FV1XxXhxUGryHBzBGQoFKTGWaXv7PM': {
+    GJhhepPZcpJxJjNrFscPYJCaUQN8EgvXVZDobduzhSKy: {
       status: 'dev',
       name: 'PayNote Delivery Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '3VLavrr4LCLqo5FV1XxXhxUGryHBzBGQoFKTGWaXv7PM',
+          typeBlueId: 'GJhhepPZcpJxJjNrFscPYJCaUQN8EgvXVZDobduzhSKy',
           attributesAdded: [],
         },
       ],
     },
-    G7UfGk3acE63TsiGzKM2xdSdW1ZUtmzGuMDypx9dXHVL: {
+    '9XRGf45TaohQEHutFaNYPHkYYe2NWsyXsSsv2UoTfm6L': {
       status: 'stable',
       name: 'PayNote Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'G7UfGk3acE63TsiGzKM2xdSdW1ZUtmzGuMDypx9dXHVL',
+          typeBlueId: '9XRGf45TaohQEHutFaNYPHkYYe2NWsyXsSsv2UoTfm6L',
           attributesAdded: [],
         },
       ],
     },
-    '6EwokAQarCKdRXuU2wpkCyHfXzhr1CgjY5feVomsYJob': {
+    '7jrHNe8HAs3LiLz5hmTZsAHCNwEaVNXQHf5ZomHVyVZC': {
       status: 'dev',
       name: 'PayNote Rejected By Client',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6EwokAQarCKdRXuU2wpkCyHfXzhr1CgjY5feVomsYJob',
+          typeBlueId: '7jrHNe8HAs3LiLz5hmTZsAHCNwEaVNXQHf5ZomHVyVZC',
           attributesAdded: [],
         },
       ],
     },
-    '6TWWiE2AfszYPHtDFcBahzeiTSgsMmaivZbUncyCKcf4': {
+    EK3i61s8rDuLgcTEZVFSctMBe5egvZPyjjGvUoLhwLie: {
       status: 'stable',
       name: 'Reservation Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6TWWiE2AfszYPHtDFcBahzeiTSgsMmaivZbUncyCKcf4',
+          typeBlueId: 'EK3i61s8rDuLgcTEZVFSctMBe5egvZPyjjGvUoLhwLie',
           attributesAdded: [],
         },
       ],
     },
-    E3dhGvVJHtQkqkbX73GCmV8Nhw9wFjxuAr6GUjb78SZQ: {
+    HhyRVknmhGnXhGBT53hKCioV6Roq1gEb14DAR6Gwu8r9: {
       status: 'stable',
       name: 'Reservation Release Declined',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E3dhGvVJHtQkqkbX73GCmV8Nhw9wFjxuAr6GUjb78SZQ',
+          typeBlueId: 'HhyRVknmhGnXhGBT53hKCioV6Roq1gEb14DAR6Gwu8r9',
           attributesAdded: [],
         },
       ],
     },
-    '9YGdHtuBwjtuUYgU7rxEr9eYPiXENcBbLPFwWUqmhSR9': {
+    '9wv1GB7j71PTZFYmatANzxk34KPaCeouB4yc4AxYirrU': {
       status: 'stable',
       name: 'Reservation Release Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9YGdHtuBwjtuUYgU7rxEr9eYPiXENcBbLPFwWUqmhSR9',
+          typeBlueId: '9wv1GB7j71PTZFYmatANzxk34KPaCeouB4yc4AxYirrU',
           attributesAdded: [],
         },
       ],
     },
-    GNtXW3EQSFTwidGNPi2mKTwbGHQENDNUvM2ASkq1Av9Q: {
+    CP7T2PwEUP3xDiT6qMxNacVrigJFMKYFPLZCEkSdoddu: {
       status: 'stable',
       name: 'Reservation Released',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GNtXW3EQSFTwidGNPi2mKTwbGHQENDNUvM2ASkq1Av9Q',
+          typeBlueId: 'CP7T2PwEUP3xDiT6qMxNacVrigJFMKYFPLZCEkSdoddu',
           attributesAdded: [],
         },
       ],
     },
-    HAT49nMdc1VVbgDxTusZ9wRUFFcbw8qx9pjmoZwg59LS: {
+    ApRvaTP7YHK4q4acrZFTtrsRLxqHSiEp4d6vVZ8sGFup: {
       status: 'stable',
       name: 'Reserve Funds and Capture Immediately Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HAT49nMdc1VVbgDxTusZ9wRUFFcbw8qx9pjmoZwg59LS',
+          typeBlueId: 'ApRvaTP7YHK4q4acrZFTtrsRLxqHSiEp4d6vVZ8sGFup',
           attributesAdded: [],
         },
       ],
     },
-    '4iRGNCp5PFihQDjMhCSMxkJq8NEqHqdiq68YPuEPqbZi': {
+    DEmon8pFkVCLcStZFXVz5FyrorbjnKHNdVfyRBNKKLp1: {
       status: 'stable',
       name: 'Reserve Funds Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4iRGNCp5PFihQDjMhCSMxkJq8NEqHqdiq68YPuEPqbZi',
+          typeBlueId: 'DEmon8pFkVCLcStZFXVz5FyrorbjnKHNdVfyRBNKKLp1',
           attributesAdded: [],
         },
       ],
     },
-    GPd6u4dQko5mDzWVgEJaJjsfffaykk29nv74drEM7rR6: {
+    FzBVMWWfDew8fdnxss4ABMm2ESMqS79dBP4fmwA4CtA4: {
       status: 'dev',
       name: 'Reverse After Completion Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GPd6u4dQko5mDzWVgEJaJjsfffaykk29nv74drEM7rR6',
+          typeBlueId: 'FzBVMWWfDew8fdnxss4ABMm2ESMqS79dBP4fmwA4CtA4',
           attributesAdded: [],
         },
       ],
     },
-    '9G6U8wzPxB5WjwMEeHmDGfzwhxok6hk3Usno6ESRETR3': {
+    '8Yvq4VCuntJBda3PDdVi2GEnCpi1UHVUZhmZBt4599aa': {
       status: 'dev',
       name: 'Reverse Card Charge and Capture Immediately Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9G6U8wzPxB5WjwMEeHmDGfzwhxok6hk3Usno6ESRETR3',
+          typeBlueId: '8Yvq4VCuntJBda3PDdVi2GEnCpi1UHVUZhmZBt4599aa',
           attributesAdded: [],
         },
       ],
     },
-    '9mACwX7GPNuwKycefkpa2sNJh3rAXjYuiEuTWfe5fBZf': {
+    '5ZqjnjtJJMxKao4htfHUAJGTbPedxv9HMdELRsXaR8mR': {
       status: 'dev',
       name: 'Reverse Card Charge Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9mACwX7GPNuwKycefkpa2sNJh3rAXjYuiEuTWfe5fBZf',
+          typeBlueId: '5ZqjnjtJJMxKao4htfHUAJGTbPedxv9HMdELRsXaR8mR',
           attributesAdded: [],
         },
       ],
     },
-    CznqsDr7E4sduFbmLQCEMhhtBfGY615JvZ7uPhUtoFRS: {
+    '3LxPRfuHdLUsCMZciUSsFXLyLoJUDjCYreAgFb24zJQr': {
       status: 'dev',
       name: 'Secure Funds Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CznqsDr7E4sduFbmLQCEMhhtBfGY615JvZ7uPhUtoFRS',
+          typeBlueId: '3LxPRfuHdLUsCMZciUSsFXLyLoJUDjCYreAgFb24zJQr',
           attributesAdded: [],
         },
       ],
     },
-    ELN3C1kMSaJ9yEE4Vkd3FRQbEwhgegwjSHA5c4v7hER: {
+    ByF1yfP9y8HBLFWZ6qzYhYnuujUEpEvx4AFUsgKVfjWZ: {
       status: 'stable',
       name: 'Settlement Amount Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'ELN3C1kMSaJ9yEE4Vkd3FRQbEwhgegwjSHA5c4v7hER',
+          typeBlueId: 'ByF1yfP9y8HBLFWZ6qzYhYnuujUEpEvx4AFUsgKVfjWZ',
           attributesAdded: [],
         },
       ],
     },
-    '6eEzoRyTHDWRZn3nuTdivRNbnkM6YwQPVqXWrag5CJZr': {
+    A67ddLVzitXDJTFNC3hg4fp4a52aUHjvtLsKkqE5v3ZH: {
       status: 'stable',
       name: 'Settlement Amount Specified',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6eEzoRyTHDWRZn3nuTdivRNbnkM6YwQPVqXWrag5CJZr',
+          typeBlueId: 'A67ddLVzitXDJTFNC3hg4fp4a52aUHjvtLsKkqE5v3ZH',
           attributesAdded: [],
         },
       ],
     },
-    '7ZQKR5ExFxL3xj9vB5vrYnFP4DCnnPKSGJEcxtEKcDpR': {
+    DaZpPPmySzsqr4TNuxQaQunmNgbcMZCz3amwe57N6pnm: {
       status: 'dev',
       name: 'Start Card Transaction Monitoring Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7ZQKR5ExFxL3xj9vB5vrYnFP4DCnnPKSGJEcxtEKcDpR',
+          typeBlueId: 'DaZpPPmySzsqr4TNuxQaQunmNgbcMZCz3amwe57N6pnm',
           attributesAdded: [],
         },
       ],
     },
-    '23KuRV6NdYxuHeDMJX4cHK4imFDvn552wY4CBTP6k5m8': {
+    '2ZtTQ2b9sFY65w4f4wWYQctRGj9o9ApkRb6tMXyiUqMb': {
       status: 'dev',
       name: 'Transaction Details Update Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '23KuRV6NdYxuHeDMJX4cHK4imFDvn552wY4CBTP6k5m8',
+          typeBlueId: '2ZtTQ2b9sFY65w4f4wWYQctRGj9o9ApkRb6tMXyiUqMb',
           attributesAdded: [],
         },
       ],
     },
-    GoTKbpUrjeonNMKf7zyHm6TbD5tbJdqyRk4Etck1qU8N: {
+    AGmjYB8hJAL9JUR3vsoqktdA7RcivcsjgoGjxQq3RQgj: {
       status: 'dev',
       name: 'Transaction Details Update Lock Change Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GoTKbpUrjeonNMKf7zyHm6TbD5tbJdqyRk4Etck1qU8N',
+          typeBlueId: 'AGmjYB8hJAL9JUR3vsoqktdA7RcivcsjgoGjxQq3RQgj',
           attributesAdded: [],
         },
       ],
     },
-    DLePv5DMMwmjZeEgDcCc8PFTyjT3C9XDDfA7CoM8GKjU: {
+    ARgyNXBQ7CxMxtsnZhyGv62H45uRN4rd7L74RUzyCgcz: {
       status: 'dev',
       name: 'Transaction Details Update Lock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DLePv5DMMwmjZeEgDcCc8PFTyjT3C9XDDfA7CoM8GKjU',
+          typeBlueId: 'ARgyNXBQ7CxMxtsnZhyGv62H45uRN4rd7L74RUzyCgcz',
           attributesAdded: [],
         },
       ],
     },
-    '6qCdP6iHAPsWcA5G2N28tthQnoCGxzJvdjmFRU7JB8m7': {
+    '8rhab2RQZiMZ4zqT85vNKR2zVCk9ZfCXGMLWERMnWF7R': {
       status: 'dev',
       name: 'Transaction Details Update Locked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6qCdP6iHAPsWcA5G2N28tthQnoCGxzJvdjmFRU7JB8m7',
+          typeBlueId: '8rhab2RQZiMZ4zqT85vNKR2zVCk9ZfCXGMLWERMnWF7R',
           attributesAdded: [],
         },
       ],
     },
-    '2kNE5ZeV6v5vzeq6WRAYLmCmdswhkigP5RQWLd8Po7Pc': {
+    '3BD7DPACFH2DZWxs9kb8YCBNypzJYMzctkyu6GZDsf85': {
       status: 'dev',
       name: 'Transaction Details Update Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2kNE5ZeV6v5vzeq6WRAYLmCmdswhkigP5RQWLd8Po7Pc',
+          typeBlueId: '3BD7DPACFH2DZWxs9kb8YCBNypzJYMzctkyu6GZDsf85',
           attributesAdded: [],
         },
       ],
     },
-    CqwUgzcG2PdfPp4aK3XD11eQPmDXKkbPrck5nTpxczof: {
+    B2MMGSbvPhSodiLY7RPngBv9G87VSkgxgC2SF8DzA733: {
       status: 'dev',
       name: 'Transaction Details Update Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CqwUgzcG2PdfPp4aK3XD11eQPmDXKkbPrck5nTpxczof',
+          typeBlueId: 'B2MMGSbvPhSodiLY7RPngBv9G87VSkgxgC2SF8DzA733',
           attributesAdded: [],
         },
       ],
     },
-    '6ehbtZAKxK6XxA53wsANhCSBJVaenKw5TfwBgL63sydP': {
+    FAvCxgQqrzAckkXgEU6UXfnntsq8V1V2tfEiHYtuZBPs: {
       status: 'dev',
       name: 'Transaction Details Update Unlock Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ehbtZAKxK6XxA53wsANhCSBJVaenKw5TfwBgL63sydP',
+          typeBlueId: 'FAvCxgQqrzAckkXgEU6UXfnntsq8V1V2tfEiHYtuZBPs',
           attributesAdded: [],
         },
       ],
     },
-    BDLj2txke2Z35TyNhd4QyNa4C3dtqJcmpti5C5Y6Gvt5: {
+    '9MDjTe2agSVnBooUFpMSzXenPYPgTC7Z4CvTB9nkyCyc': {
       status: 'dev',
       name: 'Transaction Details Update Unlocked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BDLj2txke2Z35TyNhd4QyNa4C3dtqJcmpti5C5Y6Gvt5',
+          typeBlueId: '9MDjTe2agSVnBooUFpMSzXenPYPgTC7Z4CvTB9nkyCyc',
           attributesAdded: [],
         },
       ],
     },
-    '9FTgniVVTmyp3f1Di3dL9c6izKbVEb6XFUnWng1mAiyb': {
+    '28nyzzqFkwjPojUURBiBoHQeGb4B74JGQSe5Ly5zXjK3': {
       status: 'dev',
       name: 'Transaction Details Updated',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9FTgniVVTmyp3f1Di3dL9c6izKbVEb6XFUnWng1mAiyb',
+          typeBlueId: '28nyzzqFkwjPojUURBiBoHQeGb4B74JGQSe5Ly5zXjK3',
           attributesAdded: [],
         },
       ],
     },
-    '8XH1vN2R5tLKQKRz4bJzv1JuEnare6Q4G4A49gpJXceW': {
+    '7zoVbzvzqxvKAcvdbSSxGPR4RxjQ9iNip3WhU52bRBtb': {
       status: 'dev',
       name: 'Transaction Identification Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8XH1vN2R5tLKQKRz4bJzv1JuEnare6Q4G4A49gpJXceW',
+          typeBlueId: '7zoVbzvzqxvKAcvdbSSxGPR4RxjQ9iNip3WhU52bRBtb',
           attributesAdded: [],
         },
       ],
     },
-    FjaxYHKQ3DZ7h6ooFwVwD2Gs2WygLsw33xQ9vMLZzk8H: {
+    BDeXDAG91B72CFtoPcDUk3odhFMBhiueneS1RcM4nbPf: {
       status: 'dev',
       name: 'Transaction Identified',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FjaxYHKQ3DZ7h6ooFwVwD2Gs2WygLsw33xQ9vMLZzk8H',
+          typeBlueId: 'BDeXDAG91B72CFtoPcDUk3odhFMBhiueneS1RcM4nbPf',
           attributesAdded: [],
         },
       ],
     },
-    '4wPjsVSUbGeWCPY2vSBEAsVAt4Vqr1LB1CpAr4XsxApi': {
+    '75FqpZhMunC4H25PrrsmNRCRGoLj5UJ1Ldc4eVsHqjGM': {
       status: 'dev',
       name: 'Transaction Initiated',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4wPjsVSUbGeWCPY2vSBEAsVAt4Vqr1LB1CpAr4XsxApi',
+          typeBlueId: '75FqpZhMunC4H25PrrsmNRCRGoLj5UJ1Ldc4eVsHqjGM',
           attributesAdded: [],
         },
       ],
     },
-    '7zJ55EuAZbwtxHUt8gqKJVmjPpURbUCge9kGeLXprtmy': {
+    AAEsZ5p6qEHZYr4ZP9oFMyYvJkFNbF6miqtnnYYkovTE: {
       status: 'dev',
       name: 'Transaction Initiation Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7zJ55EuAZbwtxHUt8gqKJVmjPpURbUCge9kGeLXprtmy',
+          typeBlueId: 'AAEsZ5p6qEHZYr4ZP9oFMyYvJkFNbF6miqtnnYYkovTE',
           attributesAdded: [],
         },
       ],
     },
-    FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ: {
+    DtMSkzcFRUytFjeQEB5ZSEnu1jewVNMuHbN6sDWKjQ7d: {
       status: 'dev',
       name: 'Transaction Status',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FutWoAEUEb3wkmEm4YP4JGFPtu3B3PQ3m71BmnRFFnsQ',
+          typeBlueId: 'DtMSkzcFRUytFjeQEB5ZSEnu1jewVNMuHbN6sDWKjQ7d',
           attributesAdded: [],
         },
       ],
     },
   },
-} as const;
-const metaWithAliases = {
+};
+const metaWithAliases: {
+  name: string;
+  typesMeta: Record<string, unknown>;
+  aliases: Record<string, string>;
+} = {
   ...meta,
   aliases: blueIds,
-} as const;
+};
 
 export default metaWithAliases;

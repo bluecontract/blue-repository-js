@@ -1,26 +1,25 @@
-export const CdmBaseStaticdataAssetCommonPutCallEnum = {
-  description:
-    'The enumerated values to specify the types of listed derivative options.',
-  name: 'cdm/base/staticdata/asset/common/PutCallEnum',
-  schema: {
-    enum: {
-      items: [
+export const CdmBaseStaticdataAssetCommonPutCallEnum: Record<string, unknown> =
+  {
+    description:
+      'The enumerated values to specify the types of listed derivative options.',
+    name: 'cdm/base/staticdata/asset/common/PutCallEnum',
+    schema: {
+      enum: [
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Call',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Put',
         },
       ],
     },
-  },
-  type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-  },
-} as const;
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+    },
+  };

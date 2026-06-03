@@ -1,24 +1,19 @@
-export const CdmBaseDatetimeBusinessDateRange = {
+export const CdmBaseDatetimeBusinessDateRange: Record<string, unknown> = {
   businessCenters: {
     description:
       'The business center(s), specified either explicitly or by reference to those specified somewhere else in the instance document.\n',
     type: {
-      blueId: 'AaeaS3nBkqHVJTRb23iTwYjbMyikRz6mRz7L5FdHczSH',
+      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
     },
   },
   businessDayConvention: {
     description:
       'The convention for adjusting a date if it would otherwise fall on a day that is not a business day, as specified by an ISDA convention (e.g. Following, Precedent).\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'EP4PK7ibh1EaWh9sLTjFcwVikiRQECurvR5Nb9ZPbJCs',
+      blueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
     },
   },
   description:
@@ -26,14 +21,14 @@ export const CdmBaseDatetimeBusinessDateRange = {
   endDate: {
     description: 'The last date of a date range.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/base/datetime/BusinessDateRange',
   startDate: {
     description: 'The first date of a date range.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

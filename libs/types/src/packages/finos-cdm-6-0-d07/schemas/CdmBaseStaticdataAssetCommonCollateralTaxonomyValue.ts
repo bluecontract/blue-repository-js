@@ -6,38 +6,40 @@ import { CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnumSchema } from '
 import { CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnumSchema } from './CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataAssetCommonCollateralTaxonomyValueSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonCollateralTaxonomyValueSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/CollateralTaxonomyValue'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      eu_EMIR_EligibleCollateral: z
+    zod.object({
+      description: zod.string().optional(),
+      eu_EMIR_EligibleCollateral: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnumSchema
           )
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
-      nonEnumeratedTaxonomyValue: z
-        .array(z.lazy(() => ComRosettaModelFieldWithMetaStringSchema))
+      name: zod.string().optional(),
+      nonEnumeratedTaxonomyValue: zod
+        .array(zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema))
         .min(0)
         .optional(),
-      uk_EMIR_EligibleCollateral: z
+      uk_EMIR_EligibleCollateral: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnumSchema
           )
         )
         .min(0)
         .optional(),
-      us_CFTC_PR_EligibleCollateral: z
+      us_CFTC_PR_EligibleCollateral: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () =>
               CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnumSchema
           )

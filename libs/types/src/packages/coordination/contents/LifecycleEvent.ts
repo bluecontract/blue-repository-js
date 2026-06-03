@@ -1,8 +1,8 @@
-export const LifecycleEvent = {
+export const LifecycleEvent: Record<string, unknown> = {
   description:
-    "Coordination event representing a processor lifecycle transition such as document processing initiation or termination.\nLifecycle Event is distinct from application-level status changes. It is produced or routed by the processor or by\nlifecycle-aware workflow logic to indicate that a processing scope entered a lifecycle phase.\n\nConcrete lifecycle event types should define the specific phase and fields. A lifecycle event may be useful for\ninitialization workflows, audit logs, parent-scope bridging, or user notifications. It should not be confused with the\nBlue Contracts processor's internal marker state, although lifecycle events often correspond to marker writes.\n",
+    'Base event type for processor lifecycle notifications. Lifecycle events describe processor-state transitions such as\ninitialization, termination, bootstrap completion, or failure. They are distinct from domain events such as chat\nmessages or operation requests.\n\nLifecycle events are emitted by processor or workflow infrastructure to make state transitions observable and\nauditable. A Blue document may listen for them through Lifecycle Event Channels or domain-specific coordination\nworkflows, but the event itself remains passive Blue content.\n',
   name: 'Lifecycle Event',
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

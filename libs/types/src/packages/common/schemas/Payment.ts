@@ -3,10 +3,12 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentSchema } from './Document';
 
-export const PaymentSchema = withTypeBlueId(blueIds['Common/Payment'])(
+const zod = z as any;
+
+export const PaymentSchema: any = withTypeBlueId(blueIds['Common/Payment'])(
   DocumentSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

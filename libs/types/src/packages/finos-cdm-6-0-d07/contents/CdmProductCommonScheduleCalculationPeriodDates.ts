@@ -1,16 +1,19 @@
-export const CdmProductCommonScheduleCalculationPeriodDates = {
+export const CdmProductCommonScheduleCalculationPeriodDates: Record<
+  string,
+  unknown
+> = {
   calculationPeriodDatesAdjustments: {
     description:
       'The specification of the business day convention and financial business centers used for adjusting any calculation period date if it would otherwise fall on a day that is not a business day in the specified business center.\n',
     type: {
-      blueId: 'FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd',
+      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
     },
   },
   calculationPeriodFrequency: {
     description:
       'The frequency at which calculation period end dates occur with the regular part of the calculation period schedule and their roll date convention.\n',
     type: {
-      blueId: 'DVb1fCp6T4qAajXVrhWU73Yx25sFe7MdqmytdKoz9LuJ',
+      blueId: 'CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce',
     },
   },
   description:
@@ -19,35 +22,35 @@ export const CdmProductCommonScheduleCalculationPeriodDates = {
     description:
       'The first day of the terms of the trade. This day may be subject to adjustment in accordance with a business day convention.\n',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   firstCompoundingPeriodEndDate: {
     description:
       'The end date of the initial compounding period when compounding is applicable. It must only be specified when the compoundingMethod element is present and not equal to a value of None. This date may be subject to adjustment in accordance with any adjustments specified in calculationPeriodDatesAdjustments.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   firstPeriodStartDate: {
     description:
       'The start date of the calculation period. FpML specifies that for interest rate swaps this date must only be specified if it is not equal to the effective date. It is always specified in the case of equity swaps and credit default swaps with periodic payments. This date may be subject to adjustment in accordance with a business day convention.\n',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   firstRegularPeriodStartDate: {
     description:
       'The start date of the regular part of the calculation period schedule. It must only be specified if there is an initial stub calculation period. This day may be subject to adjustment in accordance with any adjustments specified in calculationPeriodDatesAdjustments.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   lastRegularPeriodEndDate: {
     description:
       'The end date of the regular part of the calculation period schedule. It must only be specified if there is a final stub calculation period. This day may be subject to adjustment in accordance with any adjustments specified in calculationPeriodDatesAdjustments.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/product/common/schedule/CalculationPeriodDates',
@@ -55,14 +58,14 @@ export const CdmProductCommonScheduleCalculationPeriodDates = {
     description:
       'Method to allocate any irregular period remaining after regular periods have been allocated between the effective and termination date.\n',
     type: {
-      blueId: '6oofq5cEqVvBXkWwkQPGzgZJdGR1TRM7i29UzSnVFFVd',
+      blueId: 'HvTJUwtwoF7FUYtZGRhW3CHYRsrhurJcEfFY6YuH4Kaq',
     },
   },
   terminationDate: {
     description:
       'The last day of the terms of the trade. This date may be subject to adjustments in accordance with the business day convention. It can also be specified in relation to another scheduled date (e.g. the last payment date).\n',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
-} as const;
+};

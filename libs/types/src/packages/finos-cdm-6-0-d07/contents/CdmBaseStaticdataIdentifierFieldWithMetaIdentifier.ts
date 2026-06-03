@@ -1,13 +1,16 @@
-export const CdmBaseStaticdataIdentifierFieldWithMetaIdentifier = {
+export const CdmBaseStaticdataIdentifierFieldWithMetaIdentifier: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/staticdata/identifier/FieldWithMetaIdentifier',
   val: {
     type: {
-      blueId: '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ',
+      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
     },
   },
-} as const;
+};

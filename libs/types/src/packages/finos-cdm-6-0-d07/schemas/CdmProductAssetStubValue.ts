@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 import { CdmProductAssetStubFloatingRateSchema } from './CdmProductAssetStubFloatingRate';
 
-export const CdmProductAssetStubValueSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductAssetStubValueSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/StubValue']
 )(
-  z.object({
-    description: z.string().optional(),
-    floatingRate: z
-      .array(z.lazy(() => CdmProductAssetStubFloatingRateSchema))
+  zod.object({
+    description: zod.string().optional(),
+    floatingRate: zod
+      .array(zod.lazy(() => CdmProductAssetStubFloatingRateSchema))
       .min(0)
       .max(2)
       .optional(),
-    name: z.string().optional(),
-    stubAmount: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-    stubRate: z.number().optional(),
+    name: zod.string().optional(),
+    stubAmount: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+    stubRate: zod.number().optional(),
   })
 );
 

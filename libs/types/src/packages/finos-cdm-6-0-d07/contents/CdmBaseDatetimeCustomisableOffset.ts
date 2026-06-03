@@ -1,7 +1,7 @@
-export const CdmBaseDatetimeCustomisableOffset = {
+export const CdmBaseDatetimeCustomisableOffset: Record<string, unknown> = {
   customProvision: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -9,7 +9,7 @@ export const CdmBaseDatetimeCustomisableOffset = {
   name: 'cdm/base/datetime/CustomisableOffset',
   offset: {
     type: {
-      blueId: '5pnk9bH1JJq67GAcpXYjFhhREvjUoveKHs98CBqt9pEq',
+      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
     },
   },
-} as const;
+};

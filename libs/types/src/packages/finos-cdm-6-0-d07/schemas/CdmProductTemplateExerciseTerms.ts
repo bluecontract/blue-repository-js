@@ -12,56 +12,57 @@ import { CdmProductTemplateMultipleExerciseSchema } from './CdmProductTemplateMu
 import { CdmProductTemplateOptionExerciseStyleEnumSchema } from './CdmProductTemplateOptionExerciseStyleEnum';
 import { CdmProductTemplatePartialExerciseSchema } from './CdmProductTemplatePartialExercise';
 
-export const CdmProductTemplateExerciseTermsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseTerms']
-  )(
-    z.object({
-      commencementDate: z
-        .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
-        .optional(),
-      description: z.string().optional(),
-      earliestExerciseTime: z
-        .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
-        .optional(),
-      exerciseDates: z
-        .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDatesSchema)
-        .optional(),
-      exerciseFee: z.lazy(() => CdmProductTemplateExerciseFeeSchema).optional(),
-      exerciseFeeSchedule: z
-        .lazy(() => CdmProductTemplateExerciseFeeScheduleSchema)
-        .optional(),
-      exerciseProcedure: z
-        .lazy(() => CdmProductTemplateExerciseProcedureSchema)
-        .optional(),
-      expirationDate: z
-        .array(z.lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema))
-        .min(0)
-        .optional(),
-      expirationTime: z
-        .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
-        .optional(),
-      expirationTimeType: z.lazy(
-        () => CdmProductTemplateExpirationTimeTypeEnumSchema
-      ),
-      latestExerciseTime: z
-        .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
-        .optional(),
-      multipleExercise: z
-        .lazy(() => CdmProductTemplateMultipleExerciseSchema)
-        .optional(),
-      name: z.string().optional(),
-      partialExercise: z
-        .lazy(() => CdmProductTemplatePartialExerciseSchema)
-        .optional(),
-      relevantUnderlyingDate: z
-        .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDatesSchema)
-        .optional(),
-      style: z
-        .lazy(() => CdmProductTemplateOptionExerciseStyleEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateExerciseTermsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseTerms']
+)(
+  zod.object({
+    commencementDate: zod
+      .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
+      .optional(),
+    description: zod.string().optional(),
+    earliestExerciseTime: zod
+      .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
+      .optional(),
+    exerciseDates: zod
+      .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDatesSchema)
+      .optional(),
+    exerciseFee: zod.lazy(() => CdmProductTemplateExerciseFeeSchema).optional(),
+    exerciseFeeSchedule: zod
+      .lazy(() => CdmProductTemplateExerciseFeeScheduleSchema)
+      .optional(),
+    exerciseProcedure: zod
+      .lazy(() => CdmProductTemplateExerciseProcedureSchema)
+      .optional(),
+    expirationDate: zod
+      .array(zod.lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema))
+      .min(0)
+      .optional(),
+    expirationTime: zod
+      .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
+      .optional(),
+    expirationTimeType: zod.lazy(
+      () => CdmProductTemplateExpirationTimeTypeEnumSchema
+    ),
+    latestExerciseTime: zod
+      .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
+      .optional(),
+    multipleExercise: zod
+      .lazy(() => CdmProductTemplateMultipleExerciseSchema)
+      .optional(),
+    name: zod.string().optional(),
+    partialExercise: zod
+      .lazy(() => CdmProductTemplatePartialExerciseSchema)
+      .optional(),
+    relevantUnderlyingDate: zod
+      .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDatesSchema)
+      .optional(),
+    style: zod
+      .lazy(() => CdmProductTemplateOptionExerciseStyleEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductTemplateExerciseTerms = z.infer<
   typeof CdmProductTemplateExerciseTermsSchema

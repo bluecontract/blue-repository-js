@@ -7,30 +7,32 @@ import { CdmProductCollateralCollateralMarginTypeEnumSchema } from './CdmProduct
 import { CdmProductCollateralCollateralTreatmentSchema } from './CdmProductCollateralCollateralTreatment';
 import { CdmProductCollateralRatingPriorityResolutionEnumSchema } from './CdmProductCollateralRatingPriorityResolutionEnum';
 
-export const CdmProductCollateralEligibleCollateralCriteriaSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralEligibleCollateralCriteriaSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/EligibleCollateralCriteria'
     ]
   )(
-    z.object({
-      appliesTo: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
+    zod.object({
+      appliesTo: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
         .min(0)
         .max(2)
         .optional(),
-      collateralCriteria: z
+      collateralCriteria: zod
         .lazy((): z.ZodTypeAny => CdmProductCollateralCollateralCriteriaSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      ratingPriorityResolution: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      ratingPriorityResolution: zod
         .lazy(() => CdmProductCollateralRatingPriorityResolutionEnumSchema)
         .optional(),
-      restrictTo: z
+      restrictTo: zod
         .lazy(() => CdmProductCollateralCollateralMarginTypeEnumSchema)
         .optional(),
-      treatment: z.lazy(() => CdmProductCollateralCollateralTreatmentSchema),
+      treatment: zod.lazy(() => CdmProductCollateralCollateralTreatmentSchema),
     })
   );
 

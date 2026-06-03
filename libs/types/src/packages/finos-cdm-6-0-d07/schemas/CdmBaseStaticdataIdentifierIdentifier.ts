@@ -5,27 +5,26 @@ import { CdmBaseStaticdataIdentifierAssignedIdentifierSchema } from './CdmBaseSt
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataIdentifierIdentifierSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/identifier/Identifier']
-  )(
-    z.object({
-      assignedIdentifier: z
-        .array(
-          z.lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
-        )
-        .min(1)
-        .optional(),
-      description: z.string().optional(),
-      issuer: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
-      issuerReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
-        )
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataIdentifierIdentifierSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/identifier/Identifier']
+)(
+  zod.object({
+    assignedIdentifier: zod
+      .array(
+        zod.lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
+      )
+      .min(1)
+      .optional(),
+    description: zod.string().optional(),
+    issuer: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
+    issuerReference: zod
+      .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmBaseStaticdataIdentifierIdentifier = z.infer<
   typeof CdmBaseStaticdataIdentifierIdentifierSchema

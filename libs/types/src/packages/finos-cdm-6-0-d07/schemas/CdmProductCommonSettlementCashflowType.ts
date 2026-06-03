@@ -5,22 +5,23 @@ import { CdmObservableAssetCashPriceSchema } from './CdmObservableAssetCashPrice
 import { CdmObservableAssetPriceExpressionEnumSchema } from './CdmObservableAssetPriceExpressionEnum';
 import { CdmProductCommonSettlementScheduledTransferEnumSchema } from './CdmProductCommonSettlementScheduledTransferEnum';
 
-export const CdmProductCommonSettlementCashflowTypeSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/CashflowType']
-  )(
-    z.object({
-      cashflowType: z
-        .lazy(() => CdmProductCommonSettlementScheduledTransferEnumSchema)
-        .optional(),
-      cashPrice: z.lazy(() => CdmObservableAssetCashPriceSchema).optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      priceExpression: z
-        .lazy(() => CdmObservableAssetPriceExpressionEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonSettlementCashflowTypeSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/CashflowType']
+)(
+  zod.object({
+    cashflowType: zod
+      .lazy(() => CdmProductCommonSettlementScheduledTransferEnumSchema)
+      .optional(),
+    cashPrice: zod.lazy(() => CdmObservableAssetCashPriceSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    priceExpression: zod
+      .lazy(() => CdmObservableAssetPriceExpressionEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCommonSettlementCashflowType = z.infer<
   typeof CdmProductCommonSettlementCashflowTypeSchema

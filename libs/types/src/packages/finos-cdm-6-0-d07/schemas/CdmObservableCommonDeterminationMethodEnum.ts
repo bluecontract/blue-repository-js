@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableCommonDeterminationMethodEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableCommonDeterminationMethodEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/common/DeterminationMethodEnum']
   )(
-    z.enum([
+    zod.enum([
       'AgreedInitialPrice',
       'AsSpecifiedInMasterConfirmation',
       'CalculationAgent',

@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const SettlementAmountSpecifiedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SettlementAmountSpecifiedSchema: any = withTypeBlueId(
   blueIds['PayNote/Settlement Amount Specified']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    finalAmount: z.number().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    finalAmount: zod.number().optional(),
+    name: zod.string().optional(),
   })
 );
 

@@ -7,31 +7,33 @@ import { CdmObservableAssetValuationMethodSchema } from './CdmObservableAssetVal
 import { CdmProductCommonSettlementCashSettlementMethodEnumSchema } from './CdmProductCommonSettlementCashSettlementMethodEnum';
 import { CdmProductCommonSettlementValuationDateSchema } from './CdmProductCommonSettlementValuationDate';
 
-export const CdmProductCommonSettlementCashSettlementTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementCashSettlementTermsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/CashSettlementTerms'
     ]
   )(
-    z.object({
-      accruedInterest: z.boolean().optional(),
-      cashSettlementAmount: z
+    zod.object({
+      accruedInterest: zod.boolean().optional(),
+      cashSettlementAmount: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
-      cashSettlementMethod: z
+      cashSettlementMethod: zod
         .lazy(() => CdmProductCommonSettlementCashSettlementMethodEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      fixedSettlement: z.boolean().optional(),
-      name: z.string().optional(),
-      recoveryFactor: z.number().optional(),
-      valuationDate: z
+      description: zod.string().optional(),
+      fixedSettlement: zod.boolean().optional(),
+      name: zod.string().optional(),
+      recoveryFactor: zod.number().optional(),
+      valuationDate: zod
         .lazy(() => CdmProductCommonSettlementValuationDateSchema)
         .optional(),
-      valuationMethod: z
+      valuationMethod: zod
         .lazy(() => CdmObservableAssetValuationMethodSchema)
         .optional(),
-      valuationTime: z
+      valuationTime: zod
         .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
         .optional(),
     })

@@ -1,8 +1,8 @@
-export const Response = {
+export const Response: Record<string, unknown> = {
   description:
     'Broad document family for a response to a request.\nUse the top-level `kind` to describe the specific response,\nsuch as `Legal Review Response`, `Report Delivery`, or `Intake Response`.\n',
   name: 'Response',
   type: {
-    blueId: 'Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8',
+    blueId: 'B62tsckv8aQiyFAchgqgptfB5C6jtDPkS2pLT1h3G793',
   },
-} as const;
+};

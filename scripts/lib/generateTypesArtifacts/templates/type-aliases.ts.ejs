@@ -5,7 +5,7 @@ import <%= pkg.identifier %>BlueIds from './packages/<%= pkg.slug %>/blue-ids';
 <% }); %>
 
 const repositoryTypeAliases = {
-  ...Properties.CORE_TYPE_NAME_TO_BLUE_ID_MAP,
+  ...Properties.DEFAULT_BLUE_TYPE_NAME_TO_BLUE_ID_MAP,
 <% packages.forEach((pkg) => { %>
   ...<%= pkg.identifier %>BlueIds,
 <% }); %>

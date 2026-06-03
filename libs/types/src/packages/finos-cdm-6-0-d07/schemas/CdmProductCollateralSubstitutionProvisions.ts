@@ -3,18 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimePeriodSchema } from './CdmBaseDatetimePeriod';
 
-export const CdmProductCollateralSubstitutionProvisionsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralSubstitutionProvisionsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/SubstitutionProvisions']
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      noticeDeadlineDateTime: z.string().optional(),
-      noticeDeadlinePeriod: z
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      noticeDeadlineDateTime: zod.string().optional(),
+      noticeDeadlinePeriod: zod
         .lazy(() => CdmBaseDatetimePeriodSchema)
         .optional(),
-      numberOfSubstitutionsAllowed: z.number().optional(),
+      numberOfSubstitutionsAllowed: zod.number().optional(),
     })
   );
 

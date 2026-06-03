@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmRegulationTermSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmRegulationTermSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/regulation/Term']
 )(
-  z.object({
-    name: z.string().optional(),
-    unit: z.string(),
-    val: z.string(),
+  zod.object({
+    name: zod.string().optional(),
+    unit: zod.string(),
+    val: zod.string(),
   })
 );
 

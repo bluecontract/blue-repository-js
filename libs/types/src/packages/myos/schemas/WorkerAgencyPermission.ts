@@ -3,12 +3,14 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 
-export const WorkerAgencyPermissionSchema = withTypeBlueId(
+const zod = z as any;
+
+export const WorkerAgencyPermissionSchema: any = withTypeBlueId(
   blueIds['MyOS/Worker Agency Permission']
 )(
-  z.object({
-    name: z.string().optional(),
-    permissions: z.lazy(() => SingleDocumentPermissionSetSchema).optional(),
+  zod.object({
+    name: zod.string().optional(),
+    permissions: zod.lazy(() => SingleDocumentPermissionSetSchema).optional(),
     workerType: blueNodeField().optional(),
   })
 );

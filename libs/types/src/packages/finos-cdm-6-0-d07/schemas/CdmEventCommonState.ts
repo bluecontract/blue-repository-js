@@ -4,16 +4,18 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventPositionPositionStatusEnumSchema } from './CdmEventPositionPositionStatusEnum';
 import { CdmLegaldocumentationCommonClosedStateSchema } from './CdmLegaldocumentationCommonClosedState';
 
-export const CdmEventCommonStateSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonStateSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/State']
 )(
-  z.object({
-    closedState: z
+  zod.object({
+    closedState: zod
       .lazy(() => CdmLegaldocumentationCommonClosedStateSchema)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    positionState: z
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    positionState: zod
       .lazy(() => CdmEventPositionPositionStatusEnumSchema)
       .optional(),
   })

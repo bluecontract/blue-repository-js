@@ -1,20 +1,20 @@
-export const CustomerActionRequested = {
+export const CustomerActionRequested: Record<string, unknown> = {
   actions: {
     description:
-      'List of available user actions for this pending action request.',
+      'Allowed action labels or structured options. Their order is the display/order preference.\n',
     itemType: {
       inputPlaceholder: {
         description:
           'Optional placeholder/help text shown in the action input control.',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       inputRequired: {
         description:
           'Optional flag indicating whether input is required for this action.',
         type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+          blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
         },
       },
       inputSchema: {
@@ -24,44 +24,46 @@ export const CustomerActionRequested = {
       inputTitle: {
         description: 'Optional title displayed above the action input control.',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       label: {
         description:
           'User-facing action label shown in the pending action card.',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       variant: {
         description:
           'Optional button style variant. Supported values: primary | secondary | reject.',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
-    "Request event asking a customer-facing provider, such as a bank or wallet UI, to present one or more actions to the\ncustomer and return the selected response. It is used when a document cannot proceed until a person makes a decision,\nsupplies input, or explicitly confirms/rejects an action.\n\n`title` and `message` describe the pending action. `actions` lists the buttons or choices available to the customer,\neach with label, visual variant, optional input schema, required-input flag, input title, and placeholder text. The\nprovider should render these choices faithfully enough that the customer's response can be interpreted as the intended\naction.\n\nThis request is often used with actor attribution. A response to high-risk actions may need to be attributed to a\nPrincipal Actor and a Browser Session source, rather than an Agent Actor or API Call. The document's Actor Policy or\noperation-specific logic should enforce that distinction.\n",
+    'Event requesting that a customer, user, or participant take an explicit action. This is typically emitted when an\nautomated workflow reaches a point that needs human review, consent, selection, confirmation, or additional input.\n\nThe event should describe the requested action in human-readable form and provide a deterministic list of allowed\nactions. The response should be represented by Customer Action Responded or a domain-specific response event.\n',
   message: {
-    description: 'Human-readable message describing what is expected.',
+    description:
+      'Detailed human-readable explanation of what is being requested and why.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Customer Action Requested',
   title: {
-    description: 'Short title for the pending action.',
+    description:
+      'Title shown to the user or participant for the pending action.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
+    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
   },
-} as const;
+};

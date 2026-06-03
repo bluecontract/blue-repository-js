@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetBasketConstituentSchema } from './CdmObservableAssetBasketConstituent';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmObservableAssetFieldWithMetaBasketConstituentSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFieldWithMetaBasketConstituentSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/FieldWithMetaBasketConstituent'
     ]
   )(
-    z.object({
-      meta: z
+    zod.object({
+      meta: zod
         .lazy((): z.ZodTypeAny => ComRosettaModelMetafieldsMetaFieldsSchema)
         .optional(),
-      name: z.string().optional(),
-      val: z
+      name: zod.string().optional(),
+      val: zod
         .lazy((): z.ZodTypeAny => CdmObservableAssetBasketConstituentSchema)
         .optional(),
     })

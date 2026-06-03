@@ -1,17 +1,12 @@
-export const CdmProductAssetDividendDateReference = {
+export const CdmProductAssetDividendDateReference: Record<string, unknown> = {
   dateReference: {
     description:
       'Specification of the dividend date using an enumeration, with values such as the pay date, the ex-date or the record date.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'BUpou4kA4YDHYorRt8HySKCususevQATeSj9bysNS8AK',
+      blueId: 'Bh6NCuJAY3pXVNvSM2B31NzdPp9zCisTdM2dbrauJJw8',
     },
   },
   description:
@@ -21,7 +16,7 @@ export const CdmProductAssetDividendDateReference = {
     description:
       'Only to be used when SharePayment has been specified in the dividendDateReference element. The number of Currency Business Days following the day on which the Issuer of the Shares pays the relevant dividend to holders of record of the Shares.\n',
     type: {
-      blueId: '5pnk9bH1JJq67GAcpXYjFhhREvjUoveKHs98CBqt9pEq',
+      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
     },
   },
-} as const;
+};

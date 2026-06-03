@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCollateralConcentrationLimitTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralConcentrationLimitTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/ConcentrationLimitTypeEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'Asset',
       'BaseCurrencyEquivalent',
       'IndustrySector',

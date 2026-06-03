@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathNumberBoundSchema } from './CdmBaseMathNumberBound';
 
-export const CdmBaseMathNumberRangeSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathNumberRangeSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/NumberRange']
 )(
-  z.object({
-    description: z.string().optional(),
-    lowerBound: z.lazy(() => CdmBaseMathNumberBoundSchema).optional(),
-    name: z.string().optional(),
-    upperBound: z.lazy(() => CdmBaseMathNumberBoundSchema).optional(),
+  zod.object({
+    description: zod.string().optional(),
+    lowerBound: zod.lazy(() => CdmBaseMathNumberBoundSchema).optional(),
+    name: zod.string().optional(),
+    upperBound: zod.lazy(() => CdmBaseMathNumberBoundSchema).optional(),
   })
 );
 

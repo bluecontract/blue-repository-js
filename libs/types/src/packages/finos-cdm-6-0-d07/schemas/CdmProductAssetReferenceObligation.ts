@@ -6,33 +6,33 @@ import { CdmBaseStaticdataAssetCommonSecuritySchema } from './CdmBaseStaticdataA
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntitySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity';
 
-export const CdmProductAssetReferenceObligationSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/ReferenceObligation']
-  )(
-    z.object({
-      description: z.string().optional(),
-      guarantor: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      guarantorReference: z.string().optional(),
-      loan: z.lazy(() => CdmBaseStaticdataAssetCommonLoanSchema).optional(),
-      name: z.string().optional(),
-      primaryObligor: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      primaryObligorReference: z
-        .lazy(
-          () =>
-            CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntitySchema
-        )
-        .optional(),
-      security: z
-        .lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema)
-        .optional(),
-      standardReferenceObligation: z.boolean().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetReferenceObligationSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/ReferenceObligation']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    guarantor: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    guarantorReference: zod.string().optional(),
+    loan: zod.lazy(() => CdmBaseStaticdataAssetCommonLoanSchema).optional(),
+    name: zod.string().optional(),
+    primaryObligor: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    primaryObligorReference: zod
+      .lazy(
+        () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntitySchema
+      )
+      .optional(),
+    security: zod
+      .lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema)
+      .optional(),
+    standardReferenceObligation: zod.boolean().optional(),
+  })
+);
 
 export type CdmProductAssetReferenceObligation = z.infer<
   typeof CdmProductAssetReferenceObligationSchema

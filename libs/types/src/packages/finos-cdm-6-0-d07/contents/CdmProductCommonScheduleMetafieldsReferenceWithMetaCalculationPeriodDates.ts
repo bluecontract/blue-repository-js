@@ -1,19 +1,21 @@
-export const CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates =
-  {
-    address: {
-      type: {
-        blueId: 'DZcxdcnsm5jzC1CJU9fo6qUsNmG7i4H6LgZ4otSyMwas',
-      },
+export const CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates: Record<
+  string,
+  unknown
+> = {
+  address: {
+    type: {
+      blueId: 'Ha6Tqhjz1UHFLv8HHkvJRZfyUyGhWefXqcUSiETMrniq',
     },
-    externalReference: {
-      type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-      },
+  },
+  externalReference: {
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
-    globalReference: {
-      type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-      },
+  },
+  globalReference: {
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
-    name: 'cdm/product/common/schedule/metafields/ReferenceWithMetaCalculationPeriodDates',
-  } as const;
+  },
+  name: 'cdm/product/common/schedule/metafields/ReferenceWithMetaCalculationPeriodDates',
+};

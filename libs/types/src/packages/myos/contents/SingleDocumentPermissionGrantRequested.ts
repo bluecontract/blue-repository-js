@@ -1,23 +1,23 @@
-export const SingleDocumentPermissionGrantRequested = {
+export const SingleDocumentPermissionGrantRequested: Record<string, unknown> = {
   description:
     'Ask MyOS Admin to grant permisison to document (event emitter) for a concrete target session.',
   name: 'Single Document Permission Grant Requested',
   onBehalfOf: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   permissions: {
     type: {
-      blueId: '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw',
+      blueId: '9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq',
     },
   },
   targetSessionId: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
+    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
   },
-} as const;
+};

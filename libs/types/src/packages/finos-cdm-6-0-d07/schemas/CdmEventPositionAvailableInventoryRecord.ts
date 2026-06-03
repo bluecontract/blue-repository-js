@@ -8,28 +8,30 @@ import { CdmBaseStaticdataPartyPartyRoleSchema } from './CdmBaseStaticdataPartyP
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 import { CdmProductCollateralCollateralProvisionsSchema } from './CdmProductCollateralCollateralProvisions';
 
-export const CdmEventPositionAvailableInventoryRecordSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventPositionAvailableInventoryRecordSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/position/AvailableInventoryRecord']
   )(
-    z.object({
-      collateral: z
-        .array(z.lazy(() => CdmProductCollateralCollateralProvisionsSchema))
+    zod.object({
+      collateral: zod
+        .array(zod.lazy(() => CdmProductCollateralCollateralProvisionsSchema))
         .min(0)
         .optional(),
-      description: z.string().optional(),
-      expirationDateTime: z.string().optional(),
-      identifer: z
+      description: zod.string().optional(),
+      expirationDateTime: zod.string().optional(),
+      identifer: zod
         .lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
         .optional(),
-      interestRate: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
-      name: z.string().optional(),
-      partyRole: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+      interestRate: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
+      name: zod.string().optional(),
+      partyRole: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
         .min(0)
         .optional(),
-      quantity: z.lazy(() => CdmBaseMathQuantitySchema).optional(),
-      security: z
+      quantity: zod.lazy(() => CdmBaseMathQuantitySchema).optional(),
+      security: zod
         .lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema)
         .optional(),
     })

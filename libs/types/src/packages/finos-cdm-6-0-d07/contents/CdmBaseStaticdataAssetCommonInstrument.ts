@@ -1,17 +1,17 @@
-export const CdmBaseStaticdataAssetCommonInstrument = {
+export const CdmBaseStaticdataAssetCommonInstrument: Record<string, unknown> = {
   description:
     'A type of Asset that is issued by one party to one or more others.',
   ListedDerivative: {
     description:
       'A securitized derivative on another asset that is created by an exchange.',
     type: {
-      blueId: '6QXysvk5wKooQQckLijtFXwzL8JzYBViFzRCkYPNJnSX',
+      blueId: 'BRguGmoK69E2QqgFfbDWc1f6YVqxFzv3auepNc48tdFR',
     },
   },
   Loan: {
     description: 'An Asset that represents a loan or borrow obligation.',
     type: {
-      blueId: 'DVipsn2Vc1vxevvyncjA1XjeWrMHt7pCWmHgf444oA6A',
+      blueId: 'ByX5xzV8skV8bxwB7jTPa5FXEzKdm3SxrkmkC22W4nz5',
     },
   },
   name: 'cdm/base/staticdata/asset/common/Instrument',
@@ -19,7 +19,7 @@ export const CdmBaseStaticdataAssetCommonInstrument = {
     description:
       'An Asset that is issued by a party to be held by or transferred to others.',
     type: {
-      blueId: 'AKAF6F23pDRPx5M9gsqtAKXBUf46Vnz1STHsk38YEAWm',
+      blueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
     },
   },
-} as const;
+};

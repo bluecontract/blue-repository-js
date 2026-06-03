@@ -1,13 +1,13 @@
-export const CancelBeforeCompletionRequested = {
+export const CancelBeforeCompletionRequested: Record<string, unknown> = {
   description:
     'A participant requests that the Guarantor cancel the transaction before completion.\n',
   name: 'Cancel Before Completion Requested',
   reason: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
+    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
   },
-} as const;
+};

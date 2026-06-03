@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductCollateralDomesticCurrencyIssuedSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralDomesticCurrencyIssuedSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/DomesticCurrencyIssued']
   )(
-    z.object({
-      domesticCurrencyIssued: z.boolean(),
-      name: z.string().optional(),
+    zod.object({
+      domesticCurrencyIssued: zod.boolean(),
+      name: zod.string().optional(),
     })
   );
 

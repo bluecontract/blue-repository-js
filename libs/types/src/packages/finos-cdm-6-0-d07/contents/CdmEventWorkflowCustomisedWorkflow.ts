@@ -1,35 +1,25 @@
-export const CdmEventWorkflowCustomisedWorkflow = {
+export const CdmEventWorkflowCustomisedWorkflow: Record<string, unknown> = {
   description:
     'In its initial iteration, this class is meant to support the DTCC TIW workflow information.',
   itemName: {
     description:
       'In this initial iteration, this corresponds to the DTCC TIW element name.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   itemValue: {
     description:
       'In this initial iteration, this corresponds to the DTCC value.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/event/workflow/CustomisedWorkflow',
-} as const;
+};

@@ -1,11 +1,14 @@
-export const CdmLegaldocumentationMasterMasterAgreementVariableSet = {
+export const CdmLegaldocumentationMasterMasterAgreementVariableSet: Record<
+  string,
+  unknown
+> = {
   description:
     'Defines a type where additional variables associated to clauses and their variants can be described.',
   name: 'cdm/legaldocumentation/master/MasterAgreementVariableSet',
   val: {
     description: 'The value for this variable',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   variableSet: {
@@ -15,15 +18,10 @@ export const CdmLegaldocumentationMasterMasterAgreementVariableSet = {
       blueId: 'this#0',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

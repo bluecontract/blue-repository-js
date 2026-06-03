@@ -1,4 +1,4 @@
-export const AcceptChangeWorkflow = {
+export const AcceptChangeWorkflow: Record<string, unknown> = {
   description:
     'Applies a previously proposed change and removes its proposal state.',
   name: 'Accept Change Workflow',
@@ -6,7 +6,7 @@ export const AcceptChangeWorkflow = {
     description:
       'Optional postfix used while building proposed change state key.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   steps: {
@@ -14,7 +14,7 @@ export const AcceptChangeWorkflow = {
       {
         entry: {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'prepare',
         },
@@ -22,7 +22,7 @@ export const AcceptChangeWorkflow = {
           asList: {
             args: {
               val: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -31,7 +31,7 @@ export const AcceptChangeWorkflow = {
                   $isKind: {
                     kind: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'list',
                     },
@@ -39,7 +39,7 @@ export const AcceptChangeWorkflow = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -52,7 +52,7 @@ export const AcceptChangeWorkflow = {
                 then: {
                   $var: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'val',
                   },
@@ -63,7 +63,7 @@ export const AcceptChangeWorkflow = {
           asObject: {
             args: {
               val: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -72,7 +72,7 @@ export const AcceptChangeWorkflow = {
                   $isKind: {
                     kind: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'object',
                     },
@@ -80,7 +80,7 @@ export const AcceptChangeWorkflow = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -90,7 +90,7 @@ export const AcceptChangeWorkflow = {
                 else: {
                   $emptyObject: {
                     type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
                     value: true,
                   },
@@ -98,7 +98,7 @@ export const AcceptChangeWorkflow = {
                 then: {
                   $var: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'val',
                   },
@@ -109,7 +109,7 @@ export const AcceptChangeWorkflow = {
           contractKeys: {
             args: {
               contractsMap: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -122,7 +122,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'contractsMap',
                           },
@@ -131,7 +131,7 @@ export const AcceptChangeWorkflow = {
                       function: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'asObject',
                       },
@@ -140,7 +140,7 @@ export const AcceptChangeWorkflow = {
                 },
                 item: {
                   type: {
-                    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                   },
                   value: 'contractKey',
                 },
@@ -152,7 +152,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'contractKey',
                           },
@@ -161,7 +161,7 @@ export const AcceptChangeWorkflow = {
                       function: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'isMetaKey',
                       },
@@ -174,7 +174,7 @@ export const AcceptChangeWorkflow = {
           contractPath: {
             args: {
               key: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -182,14 +182,14 @@ export const AcceptChangeWorkflow = {
                 items: [
                   {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'contracts',
                   },
                   {
                     $var: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'key',
                     },
@@ -201,10 +201,10 @@ export const AcceptChangeWorkflow = {
           hasMatchingRelatedContracts: {
             args: {
               contractKeys: {
-                value: null,
+                description: 'BEX helper argument.',
               },
               section: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             do: {
@@ -216,14 +216,14 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'related',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'relatedMap',
                         },
@@ -242,7 +242,7 @@ export const AcceptChangeWorkflow = {
                                       path: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/relatedContracts',
                                       },
@@ -258,7 +258,7 @@ export const AcceptChangeWorkflow = {
                                     path: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/relatedContracts',
                                     },
@@ -270,7 +270,7 @@ export const AcceptChangeWorkflow = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'asList',
                           },
@@ -283,7 +283,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'related',
                               },
@@ -292,7 +292,7 @@ export const AcceptChangeWorkflow = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'keySetObject',
                           },
@@ -311,7 +311,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'related',
                               },
@@ -320,7 +320,7 @@ export const AcceptChangeWorkflow = {
                           {
                             type: {
                               blueId:
-                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                             },
                             value: 0,
                           },
@@ -329,7 +329,7 @@ export const AcceptChangeWorkflow = {
                     },
                     expr: {
                       type: {
-                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                       },
                       value: true,
                     },
@@ -345,7 +345,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'related',
                               },
@@ -356,7 +356,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'contractKeys',
                               },
@@ -367,7 +367,7 @@ export const AcceptChangeWorkflow = {
                     },
                     expr: {
                       type: {
-                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                       },
                       value: false,
                     },
@@ -384,7 +384,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'relatedMap',
                                 },
@@ -396,7 +396,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'contractKeys',
                               },
@@ -407,7 +407,7 @@ export const AcceptChangeWorkflow = {
                     },
                     expr: {
                       type: {
-                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                       },
                       value: false,
                     },
@@ -421,7 +421,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'contractKeys',
                           },
@@ -429,7 +429,7 @@ export const AcceptChangeWorkflow = {
                         item: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'contractKey',
                         },
@@ -440,7 +440,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractKey',
                                 },
@@ -449,7 +449,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'relatedMap',
                                 },
@@ -467,7 +467,7 @@ export const AcceptChangeWorkflow = {
           invalid: {
             args: {
               reason: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -481,13 +481,13 @@ export const AcceptChangeWorkflow = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'reason',
                       },
                     },
                     type: {
-                      blueId: '8oEU9ysLsGJJeeCDsEgnHbyu8vuWTwogExHmNc7t512n',
+                      blueId: '6jcAKEeVpGCPenpSnfwwamL2iTHBACRXPFQjEDU5pX1y',
                     },
                   },
                 ],
@@ -497,7 +497,7 @@ export const AcceptChangeWorkflow = {
           isContractsPatchEntry: {
             args: {
               entry: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -516,7 +516,7 @@ export const AcceptChangeWorkflow = {
                                     path: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/path',
                                     },
@@ -525,7 +525,7 @@ export const AcceptChangeWorkflow = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '',
                                 },
@@ -536,7 +536,7 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/contracts',
                         },
@@ -556,7 +556,7 @@ export const AcceptChangeWorkflow = {
                                     path: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/path',
                                     },
@@ -565,7 +565,7 @@ export const AcceptChangeWorkflow = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '',
                                 },
@@ -576,7 +576,7 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/contracts/',
                         },
@@ -590,7 +590,7 @@ export const AcceptChangeWorkflow = {
           isMetaKey: {
             args: {
               key: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -603,7 +603,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'key',
                           },
@@ -611,7 +611,7 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'type',
                         },
@@ -625,7 +625,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'key',
                           },
@@ -633,7 +633,7 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'keyType',
                         },
@@ -647,7 +647,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'key',
                           },
@@ -655,7 +655,7 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'valueType',
                         },
@@ -669,7 +669,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'key',
                           },
@@ -677,7 +677,7 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'description',
                         },
@@ -691,7 +691,7 @@ export const AcceptChangeWorkflow = {
           isProposedChangePatchEntry: {
             args: {
               entry: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -707,7 +707,7 @@ export const AcceptChangeWorkflow = {
                               path: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/path',
                               },
@@ -716,7 +716,7 @@ export const AcceptChangeWorkflow = {
                           {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: '',
                           },
@@ -726,7 +726,7 @@ export const AcceptChangeWorkflow = {
                   },
                   {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '/proposedChange',
                   },
@@ -737,7 +737,7 @@ export const AcceptChangeWorkflow = {
           keySetObject: {
             args: {
               keys: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -749,7 +749,7 @@ export const AcceptChangeWorkflow = {
                         $var: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'key',
                         },
@@ -757,7 +757,7 @@ export const AcceptChangeWorkflow = {
                     },
                     val: {
                       type: {
-                        blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                       },
                       value: true,
                     },
@@ -769,7 +769,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'keys',
                           },
@@ -778,7 +778,7 @@ export const AcceptChangeWorkflow = {
                       function: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'asList',
                       },
@@ -786,7 +786,7 @@ export const AcceptChangeWorkflow = {
                   },
                   item: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'key',
                   },
@@ -797,10 +797,10 @@ export const AcceptChangeWorkflow = {
           normalizeSection: {
             args: {
               contractKeys: {
-                value: null,
+                description: 'BEX helper argument.',
               },
               section: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             do: {
@@ -819,7 +819,7 @@ export const AcceptChangeWorkflow = {
                                     path: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/relatedContracts',
                                     },
@@ -835,7 +835,7 @@ export const AcceptChangeWorkflow = {
                                   path: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/relatedContracts',
                                   },
@@ -847,7 +847,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'asList',
                         },
@@ -867,7 +867,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'section',
                                 },
@@ -876,7 +876,7 @@ export const AcceptChangeWorkflow = {
                             function: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'asObject',
                             },
@@ -893,7 +893,7 @@ export const AcceptChangeWorkflow = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'related',
                                         },
@@ -902,7 +902,7 @@ export const AcceptChangeWorkflow = {
                                     {
                                       type: {
                                         blueId:
-                                          '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                          'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                       },
                                       value: 0,
                                     },
@@ -913,7 +913,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractKeys',
                                 },
@@ -922,7 +922,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'related',
                                 },
@@ -931,7 +931,7 @@ export const AcceptChangeWorkflow = {
                           },
                           type: {
                             blueId:
-                              'EQipmtzeTjY7JhgBQWWAhsjBAXsTT2SDu2gv1rXeXSpb',
+                              '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy',
                           },
                         },
                       ],
@@ -951,84 +951,84 @@ export const AcceptChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'postfix',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'proposedPath',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'change',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'requestChangeset',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'sectionChanges',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'documentContracts',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'policy',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'policyEnabled',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'seenSectionKeys',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'seenContractKeys',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'existingContractKeys',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'sectionChangeCount',
                         },
@@ -1041,7 +1041,7 @@ export const AcceptChangeWorkflow = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'proposedPath',
                             },
@@ -1055,7 +1055,7 @@ export const AcceptChangeWorkflow = {
                               $document: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/contracts',
                               },
@@ -1064,7 +1064,7 @@ export const AcceptChangeWorkflow = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'asObject',
                           },
@@ -1080,7 +1080,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'documentContracts',
                                     },
@@ -1089,7 +1089,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractKeys',
                                 },
@@ -1099,7 +1099,7 @@ export const AcceptChangeWorkflow = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'keySetObject',
                           },
@@ -1111,7 +1111,7 @@ export const AcceptChangeWorkflow = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'documentContracts',
                             },
@@ -1119,7 +1119,7 @@ export const AcceptChangeWorkflow = {
                           item: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'contract',
                           },
@@ -1130,7 +1130,7 @@ export const AcceptChangeWorkflow = {
                                 path: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/requireSectionChanges',
                                 },
@@ -1147,7 +1147,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'policy',
                                 },
@@ -1162,7 +1162,7 @@ export const AcceptChangeWorkflow = {
                                       path: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/requireSectionChanges',
                                       },
@@ -1171,7 +1171,7 @@ export const AcceptChangeWorkflow = {
                                   {
                                     type: {
                                       blueId:
-                                        '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                        'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                     },
                                     value: false,
                                   },
@@ -1188,7 +1188,7 @@ export const AcceptChangeWorkflow = {
                               $currentContract: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/postfix',
                               },
@@ -1196,7 +1196,7 @@ export const AcceptChangeWorkflow = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '',
                             },
@@ -1209,7 +1209,7 @@ export const AcceptChangeWorkflow = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/proposedChange',
                             },
@@ -1217,7 +1217,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'postfix',
                               },
@@ -1234,7 +1234,7 @@ export const AcceptChangeWorkflow = {
                                 path: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/changeset',
                                 },
@@ -1244,7 +1244,7 @@ export const AcceptChangeWorkflow = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'asList',
                           },
@@ -1253,7 +1253,7 @@ export const AcceptChangeWorkflow = {
                       sectionChangeCount: {
                         type: {
                           blueId:
-                            '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                            'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                         },
                         value: 0,
                       },
@@ -1266,7 +1266,7 @@ export const AcceptChangeWorkflow = {
                                 path: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/sectionChanges',
                                 },
@@ -1276,7 +1276,7 @@ export const AcceptChangeWorkflow = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'asObject',
                           },
@@ -1286,7 +1286,7 @@ export const AcceptChangeWorkflow = {
                         $emptyObject: {
                           type: {
                             blueId:
-                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                              'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                           },
                           value: true,
                         },
@@ -1295,7 +1295,7 @@ export const AcceptChangeWorkflow = {
                         $emptyObject: {
                           type: {
                             blueId:
-                              '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                              'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                           },
                           value: true,
                         },
@@ -1311,7 +1311,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'change',
                           },
@@ -1327,14 +1327,14 @@ export const AcceptChangeWorkflow = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'no proposed change at',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: ' ',
                                 },
@@ -1342,7 +1342,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'proposedPath',
                                   },
@@ -1354,7 +1354,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'invalid',
                         },
@@ -1371,7 +1371,7 @@ export const AcceptChangeWorkflow = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'policyEnabled',
                             },
@@ -1382,7 +1382,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'requestChangeset',
                                 },
@@ -1390,7 +1390,7 @@ export const AcceptChangeWorkflow = {
                               item: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'entry',
                               },
@@ -1401,7 +1401,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'entry',
                                       },
@@ -1410,7 +1410,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'isContractsPatchEntry',
                                   },
@@ -1427,7 +1427,7 @@ export const AcceptChangeWorkflow = {
                           reason: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value:
                               'changeset cannot modify /contracts when Contracts Change Policy is enabled',
@@ -1436,7 +1436,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'invalid',
                         },
@@ -1452,7 +1452,7 @@ export const AcceptChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'requestChangeset',
                           },
@@ -1460,7 +1460,7 @@ export const AcceptChangeWorkflow = {
                         item: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'entry',
                         },
@@ -1471,7 +1471,7 @@ export const AcceptChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'entry',
                                 },
@@ -1480,7 +1480,7 @@ export const AcceptChangeWorkflow = {
                             function: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'isProposedChangePatchEntry',
                             },
@@ -1494,7 +1494,7 @@ export const AcceptChangeWorkflow = {
                           reason: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'changeset cannot modify /proposedChange',
                           },
@@ -1502,7 +1502,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'invalid',
                         },
@@ -1521,21 +1521,21 @@ export const AcceptChangeWorkflow = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'sectionKey',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractsMap',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractKeys',
                                 },
@@ -1549,7 +1549,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'contractsMap',
                                       },
@@ -1558,7 +1558,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'contractKeys',
                                   },
@@ -1573,7 +1573,7 @@ export const AcceptChangeWorkflow = {
                                         path: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: '/contracts',
                                         },
@@ -1583,7 +1583,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asObject',
                                   },
@@ -1599,7 +1599,7 @@ export const AcceptChangeWorkflow = {
                                           path: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: '/sectionKey',
                                           },
@@ -1608,7 +1608,7 @@ export const AcceptChangeWorkflow = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '',
                                       },
@@ -1627,7 +1627,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -1640,7 +1640,7 @@ export const AcceptChangeWorkflow = {
                                   reason: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value:
                                       'sectionChanges.add is missing sectionKey',
@@ -1649,7 +1649,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -1665,7 +1665,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -1674,7 +1674,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'seenSectionKeys',
                                   },
@@ -1690,7 +1690,7 @@ export const AcceptChangeWorkflow = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value:
                                             'section key duplicated in sectionChanges: ',
@@ -1699,7 +1699,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'sectionKey',
                                           },
@@ -1711,7 +1711,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -1727,7 +1727,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -1736,7 +1736,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'seenSectionKeys',
                                   },
@@ -1744,7 +1744,7 @@ export const AcceptChangeWorkflow = {
                                 val: {
                                   type: {
                                     blueId:
-                                      '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                      'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                   },
                                   value: true,
                                 },
@@ -1761,7 +1761,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -1770,7 +1770,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'existingContractKeys',
                                   },
@@ -1786,7 +1786,7 @@ export const AcceptChangeWorkflow = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value:
                                             'contract key already exists at',
@@ -1794,7 +1794,7 @@ export const AcceptChangeWorkflow = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: ' ',
                                         },
@@ -1805,7 +1805,7 @@ export const AcceptChangeWorkflow = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'sectionKey',
                                                 },
@@ -1814,7 +1814,7 @@ export const AcceptChangeWorkflow = {
                                             function: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'contractPath',
                                             },
@@ -1827,7 +1827,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -1845,7 +1845,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'contractKeys',
                                       },
@@ -1856,7 +1856,7 @@ export const AcceptChangeWorkflow = {
                                         path: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: '/section',
                                         },
@@ -1866,7 +1866,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'hasMatchingRelatedContracts',
                                   },
@@ -1879,7 +1879,7 @@ export const AcceptChangeWorkflow = {
                                   reason: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value:
                                       'relatedContracts must match contracts',
@@ -1888,7 +1888,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -1908,7 +1908,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -1917,7 +1917,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'existingContractKeys',
                                           },
@@ -1933,7 +1933,7 @@ export const AcceptChangeWorkflow = {
                                                 {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value:
                                                     'contract key already exists at',
@@ -1941,7 +1941,7 @@ export const AcceptChangeWorkflow = {
                                                 {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: ' ',
                                                 },
@@ -1952,7 +1952,7 @@ export const AcceptChangeWorkflow = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'contractKey',
                                                         },
@@ -1961,7 +1961,7 @@ export const AcceptChangeWorkflow = {
                                                     function: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'contractPath',
                                                     },
@@ -1974,7 +1974,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'invalid',
                                         },
@@ -1990,7 +1990,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -1999,7 +1999,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'seenContractKeys',
                                           },
@@ -2019,7 +2019,7 @@ export const AcceptChangeWorkflow = {
                                               $var: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'existingSection',
                                               },
@@ -2032,7 +2032,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'existingSection',
                                                   },
@@ -2041,7 +2041,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'sectionKey',
                                                   },
@@ -2061,7 +2061,7 @@ export const AcceptChangeWorkflow = {
                                                 {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value:
                                                     'contract key used by multiple sections in request: ',
@@ -2070,7 +2070,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'contractKey',
                                                   },
@@ -2082,7 +2082,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'invalid',
                                         },
@@ -2098,7 +2098,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -2107,7 +2107,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'seenContractKeys',
                                           },
@@ -2116,7 +2116,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'sectionKey',
                                           },
@@ -2132,7 +2132,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'contractKeys',
                               },
@@ -2140,7 +2140,7 @@ export const AcceptChangeWorkflow = {
                             item: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'contractKey',
                             },
@@ -2155,7 +2155,7 @@ export const AcceptChangeWorkflow = {
                                     op: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'add',
                                     },
@@ -2166,7 +2166,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'contractKey',
                                             },
@@ -2175,7 +2175,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'contractPath',
                                         },
@@ -2187,7 +2187,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -2196,7 +2196,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractsMap',
                                           },
@@ -2214,7 +2214,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'sectionChangeCount',
                                             },
@@ -2222,7 +2222,7 @@ export const AcceptChangeWorkflow = {
                                           {
                                             type: {
                                               blueId:
-                                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                             },
                                             value: 1,
                                           },
@@ -2238,7 +2238,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'contractKeys',
                               },
@@ -2246,7 +2246,7 @@ export const AcceptChangeWorkflow = {
                             item: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'contractKey',
                             },
@@ -2257,7 +2257,7 @@ export const AcceptChangeWorkflow = {
                             op: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'add',
                             },
@@ -2268,7 +2268,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'sectionKey',
                                     },
@@ -2277,7 +2277,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractPath',
                                 },
@@ -2290,7 +2290,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'contractKeys',
                                     },
@@ -2301,7 +2301,7 @@ export const AcceptChangeWorkflow = {
                                       path: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/section',
                                       },
@@ -2311,7 +2311,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'normalizeSection',
                                 },
@@ -2328,7 +2328,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'sectionChangeCount',
                                     },
@@ -2336,7 +2336,7 @@ export const AcceptChangeWorkflow = {
                                   {
                                     type: {
                                       blueId:
-                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                        'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                     },
                                     value: 1,
                                   },
@@ -2357,7 +2357,7 @@ export const AcceptChangeWorkflow = {
                               path: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/add',
                               },
@@ -2367,7 +2367,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'asList',
                         },
@@ -2375,7 +2375,7 @@ export const AcceptChangeWorkflow = {
                     },
                     item: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'entry',
                     },
@@ -2392,35 +2392,35 @@ export const AcceptChangeWorkflow = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'sectionKey',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'existingRelated',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'existingRelatedMap',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractsMap',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractKeys',
                                 },
@@ -2434,7 +2434,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'contractsMap',
                                       },
@@ -2443,7 +2443,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'contractKeys',
                                   },
@@ -2458,7 +2458,7 @@ export const AcceptChangeWorkflow = {
                                         path: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: '/contracts',
                                         },
@@ -2468,7 +2468,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asObject',
                                   },
@@ -2488,7 +2488,7 @@ export const AcceptChangeWorkflow = {
                                                     {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'contracts',
                                                     },
@@ -2496,7 +2496,7 @@ export const AcceptChangeWorkflow = {
                                                       $var: {
                                                         type: {
                                                           blueId:
-                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                         },
                                                         value: 'sectionKey',
                                                       },
@@ -2504,7 +2504,7 @@ export const AcceptChangeWorkflow = {
                                                     {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'relatedContracts',
                                                     },
@@ -2525,7 +2525,7 @@ export const AcceptChangeWorkflow = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'contracts',
                                                   },
@@ -2533,7 +2533,7 @@ export const AcceptChangeWorkflow = {
                                                     $var: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'sectionKey',
                                                     },
@@ -2541,7 +2541,7 @@ export const AcceptChangeWorkflow = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'relatedContracts',
                                                   },
@@ -2556,7 +2556,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asList',
                                   },
@@ -2569,7 +2569,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'existingRelated',
                                       },
@@ -2578,7 +2578,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'keySetObject',
                                   },
@@ -2594,7 +2594,7 @@ export const AcceptChangeWorkflow = {
                                           path: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: '/sectionKey',
                                           },
@@ -2603,7 +2603,7 @@ export const AcceptChangeWorkflow = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '',
                                       },
@@ -2622,7 +2622,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -2635,7 +2635,7 @@ export const AcceptChangeWorkflow = {
                                   reason: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value:
                                       'sectionChanges.modify is missing sectionKey',
@@ -2644,7 +2644,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -2660,7 +2660,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -2669,7 +2669,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'seenSectionKeys',
                                   },
@@ -2685,7 +2685,7 @@ export const AcceptChangeWorkflow = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value:
                                             'section key duplicated in sectionChanges: ',
@@ -2694,7 +2694,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'sectionKey',
                                           },
@@ -2706,7 +2706,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -2722,7 +2722,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -2731,7 +2731,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'seenSectionKeys',
                                   },
@@ -2739,7 +2739,7 @@ export const AcceptChangeWorkflow = {
                                 val: {
                                   type: {
                                     blueId:
-                                      '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                      'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                   },
                                   value: true,
                                 },
@@ -2758,7 +2758,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'contractKeys',
                                       },
@@ -2769,7 +2769,7 @@ export const AcceptChangeWorkflow = {
                                         path: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: '/section',
                                         },
@@ -2779,7 +2779,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'hasMatchingRelatedContracts',
                                   },
@@ -2792,7 +2792,7 @@ export const AcceptChangeWorkflow = {
                                   reason: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value:
                                       'relatedContracts must match contracts',
@@ -2801,7 +2801,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -2821,7 +2821,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -2830,7 +2830,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'seenContractKeys',
                                           },
@@ -2850,7 +2850,7 @@ export const AcceptChangeWorkflow = {
                                               $var: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'existingSection',
                                               },
@@ -2863,7 +2863,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'existingSection',
                                                   },
@@ -2872,7 +2872,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'sectionKey',
                                                   },
@@ -2892,7 +2892,7 @@ export const AcceptChangeWorkflow = {
                                                 {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value:
                                                     'contract key used by multiple sections in request: ',
@@ -2901,7 +2901,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'contractKey',
                                                   },
@@ -2913,7 +2913,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'invalid',
                                         },
@@ -2932,7 +2932,7 @@ export const AcceptChangeWorkflow = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'contractKey',
                                                 },
@@ -2941,7 +2941,7 @@ export const AcceptChangeWorkflow = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'existingContractKeys',
                                                 },
@@ -2955,7 +2955,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'contractKey',
                                                   },
@@ -2964,7 +2964,7 @@ export const AcceptChangeWorkflow = {
                                                   $var: {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'existingRelatedMap',
                                                   },
@@ -2984,7 +2984,7 @@ export const AcceptChangeWorkflow = {
                                                 {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value:
                                                     'contract key already exists at',
@@ -2992,7 +2992,7 @@ export const AcceptChangeWorkflow = {
                                                 {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: ' ',
                                                 },
@@ -3003,7 +3003,7 @@ export const AcceptChangeWorkflow = {
                                                         $var: {
                                                           type: {
                                                             blueId:
-                                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                           },
                                                           value: 'contractKey',
                                                         },
@@ -3012,7 +3012,7 @@ export const AcceptChangeWorkflow = {
                                                     function: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'contractPath',
                                                     },
@@ -3025,7 +3025,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'invalid',
                                         },
@@ -3041,7 +3041,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -3050,7 +3050,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'seenContractKeys',
                                           },
@@ -3059,7 +3059,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'sectionKey',
                                           },
@@ -3075,7 +3075,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'contractKeys',
                               },
@@ -3083,7 +3083,7 @@ export const AcceptChangeWorkflow = {
                             item: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'contractKey',
                             },
@@ -3098,7 +3098,7 @@ export const AcceptChangeWorkflow = {
                                     op: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'add',
                                     },
@@ -3109,7 +3109,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'contractKey',
                                             },
@@ -3118,7 +3118,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'contractPath',
                                         },
@@ -3130,7 +3130,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractKey',
                                           },
@@ -3139,7 +3139,7 @@ export const AcceptChangeWorkflow = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'contractsMap',
                                           },
@@ -3157,7 +3157,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'sectionChangeCount',
                                             },
@@ -3165,7 +3165,7 @@ export const AcceptChangeWorkflow = {
                                           {
                                             type: {
                                               blueId:
-                                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                             },
                                             value: 1,
                                           },
@@ -3181,7 +3181,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'contractKeys',
                               },
@@ -3189,7 +3189,7 @@ export const AcceptChangeWorkflow = {
                             item: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'contractKey',
                             },
@@ -3208,7 +3208,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'contractKeys',
                                             },
@@ -3217,7 +3217,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'oldKey',
                                             },
@@ -3232,7 +3232,7 @@ export const AcceptChangeWorkflow = {
                                             op: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'remove',
                                             },
@@ -3243,7 +3243,7 @@ export const AcceptChangeWorkflow = {
                                                     $var: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'oldKey',
                                                     },
@@ -3252,7 +3252,7 @@ export const AcceptChangeWorkflow = {
                                                 function: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'contractPath',
                                                 },
@@ -3269,7 +3269,7 @@ export const AcceptChangeWorkflow = {
                                                     $var: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value:
                                                         'sectionChangeCount',
@@ -3278,7 +3278,7 @@ export const AcceptChangeWorkflow = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                        'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                                     },
                                                     value: 1,
                                                   },
@@ -3298,7 +3298,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'existingRelated',
                               },
@@ -3306,7 +3306,7 @@ export const AcceptChangeWorkflow = {
                             item: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'oldKey',
                             },
@@ -3317,7 +3317,7 @@ export const AcceptChangeWorkflow = {
                             op: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'add',
                             },
@@ -3328,7 +3328,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'sectionKey',
                                     },
@@ -3337,7 +3337,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractPath',
                                 },
@@ -3350,7 +3350,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'contractKeys',
                                     },
@@ -3361,7 +3361,7 @@ export const AcceptChangeWorkflow = {
                                       path: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/section',
                                       },
@@ -3371,7 +3371,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'normalizeSection',
                                 },
@@ -3388,7 +3388,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'sectionChangeCount',
                                     },
@@ -3396,7 +3396,7 @@ export const AcceptChangeWorkflow = {
                                   {
                                     type: {
                                       blueId:
-                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                        'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                     },
                                     value: 1,
                                   },
@@ -3420,7 +3420,7 @@ export const AcceptChangeWorkflow = {
                                     path: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/modify',
                                     },
@@ -3436,7 +3436,7 @@ export const AcceptChangeWorkflow = {
                                   path: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/modify',
                                   },
@@ -3448,7 +3448,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'asList',
                         },
@@ -3456,7 +3456,7 @@ export const AcceptChangeWorkflow = {
                     },
                     item: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'entry',
                     },
@@ -3473,14 +3473,14 @@ export const AcceptChangeWorkflow = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'sectionKey',
                                 },
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'related',
                                 },
@@ -3501,7 +3501,7 @@ export const AcceptChangeWorkflow = {
                                                     {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'contracts',
                                                     },
@@ -3509,7 +3509,7 @@ export const AcceptChangeWorkflow = {
                                                       $var: {
                                                         type: {
                                                           blueId:
-                                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                         },
                                                         value: 'sectionKey',
                                                       },
@@ -3517,7 +3517,7 @@ export const AcceptChangeWorkflow = {
                                                     {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'relatedContracts',
                                                     },
@@ -3538,7 +3538,7 @@ export const AcceptChangeWorkflow = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'contracts',
                                                   },
@@ -3546,7 +3546,7 @@ export const AcceptChangeWorkflow = {
                                                     $var: {
                                                       type: {
                                                         blueId:
-                                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                       },
                                                       value: 'sectionKey',
                                                     },
@@ -3554,7 +3554,7 @@ export const AcceptChangeWorkflow = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value: 'relatedContracts',
                                                   },
@@ -3569,7 +3569,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asList',
                                   },
@@ -3582,7 +3582,7 @@ export const AcceptChangeWorkflow = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'entry',
                                       },
@@ -3591,7 +3591,7 @@ export const AcceptChangeWorkflow = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKeyForRemove',
                                   },
@@ -3608,7 +3608,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionKey',
                                   },
@@ -3621,7 +3621,7 @@ export const AcceptChangeWorkflow = {
                                   reason: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value:
                                       'sectionChanges.remove is missing sectionKey',
@@ -3630,7 +3630,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'invalid',
                                 },
@@ -3647,7 +3647,7 @@ export const AcceptChangeWorkflow = {
                                     op: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'remove',
                                     },
@@ -3658,7 +3658,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'contractKey',
                                             },
@@ -3667,7 +3667,7 @@ export const AcceptChangeWorkflow = {
                                         function: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'contractPath',
                                         },
@@ -3684,7 +3684,7 @@ export const AcceptChangeWorkflow = {
                                             $var: {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'sectionChangeCount',
                                             },
@@ -3692,7 +3692,7 @@ export const AcceptChangeWorkflow = {
                                           {
                                             type: {
                                               blueId:
-                                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                                'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                             },
                                             value: 1,
                                           },
@@ -3708,7 +3708,7 @@ export const AcceptChangeWorkflow = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'related',
                               },
@@ -3716,7 +3716,7 @@ export const AcceptChangeWorkflow = {
                             item: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'contractKey',
                             },
@@ -3727,7 +3727,7 @@ export const AcceptChangeWorkflow = {
                             op: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'remove',
                             },
@@ -3738,7 +3738,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'sectionKey',
                                     },
@@ -3747,7 +3747,7 @@ export const AcceptChangeWorkflow = {
                                 function: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'contractPath',
                                 },
@@ -3764,7 +3764,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'sectionChangeCount',
                                     },
@@ -3772,7 +3772,7 @@ export const AcceptChangeWorkflow = {
                                   {
                                     type: {
                                       blueId:
-                                        '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                        'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                     },
                                     value: 1,
                                   },
@@ -3796,7 +3796,7 @@ export const AcceptChangeWorkflow = {
                                     path: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/remove',
                                     },
@@ -3812,7 +3812,7 @@ export const AcceptChangeWorkflow = {
                                   path: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/remove',
                                   },
@@ -3824,7 +3824,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'asList',
                         },
@@ -3832,7 +3832,7 @@ export const AcceptChangeWorkflow = {
                     },
                     item: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'entry',
                     },
@@ -3850,7 +3850,7 @@ export const AcceptChangeWorkflow = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'sectionChangeCount',
                                   },
@@ -3860,7 +3860,7 @@ export const AcceptChangeWorkflow = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'requestChangeset',
                                     },
@@ -3872,7 +3872,7 @@ export const AcceptChangeWorkflow = {
                           {
                             type: {
                               blueId:
-                                '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                             },
                             value: 0,
                           },
@@ -3885,7 +3885,7 @@ export const AcceptChangeWorkflow = {
                           reason: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'no changes provided',
                           },
@@ -3893,7 +3893,7 @@ export const AcceptChangeWorkflow = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'invalid',
                         },
@@ -3905,7 +3905,7 @@ export const AcceptChangeWorkflow = {
                   $appendChanges: {
                     $var: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'requestChangeset',
                     },
@@ -3915,7 +3915,7 @@ export const AcceptChangeWorkflow = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'remove',
                     },
@@ -3923,7 +3923,7 @@ export const AcceptChangeWorkflow = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'proposedPath',
                       },
@@ -3936,7 +3936,7 @@ export const AcceptChangeWorkflow = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -3945,7 +3945,7 @@ export const AcceptChangeWorkflow = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -3958,7 +3958,7 @@ export const AcceptChangeWorkflow = {
           sectionKeyForRemove: {
             args: {
               entry: {
-                value: null,
+                description: 'BEX helper argument.',
               },
             },
             expr: {
@@ -3971,7 +3971,7 @@ export const AcceptChangeWorkflow = {
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/sectionKey',
                         },
@@ -3981,7 +3981,7 @@ export const AcceptChangeWorkflow = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'entry',
                       },
@@ -3994,12 +3994,12 @@ export const AcceptChangeWorkflow = {
         },
         name: 'Prepare',
         type: {
-          blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+          blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
         },
       },
     ],
   },
   type: {
-    blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+    blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
   },
-} as const;
+};

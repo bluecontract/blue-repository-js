@@ -2,17 +2,19 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCommonTaxonomyClassificationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonTaxonomyClassificationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/TaxonomyClassification'
     ]
   )(
-    z.object({
-      className: z.string().optional(),
-      name: z.string().optional(),
-      ordinal: z.number().optional(),
-      val: z.string(),
+    zod.object({
+      className: zod.string().optional(),
+      name: zod.string().optional(),
+      ordinal: zod.number().optional(),
+      val: zod.string(),
     })
   );
 

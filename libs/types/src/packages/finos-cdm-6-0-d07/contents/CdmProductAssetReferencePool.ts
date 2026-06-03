@@ -1,4 +1,4 @@
-export const CdmProductAssetReferencePool = {
+export const CdmProductAssetReferencePool: Record<string, unknown> = {
   description:
     'This type contains all the reference pool items to define the reference entity and reference obligation(s) in the basket.\n',
   name: 'cdm/product/asset/ReferencePool',
@@ -6,18 +6,13 @@ export const CdmProductAssetReferencePool = {
     description:
       'This type contains all the constituent weight and reference information.',
     itemType: {
-      blueId: '78hstsoD3xojutwJdHjXPCPrZAeHmmoYTZo4oAjX8BnR',
+      blueId: 'AWwDERDMrCASiqr7n2YEUi5tSny4VTcu6gDZ7vYA6Mb',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

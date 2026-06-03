@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeDaycountDayCountFractionEnumSchema } from './CdmBaseDatetimeDaycountDayCountFractionEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/datetime/daycount/FieldWithMetaDayCountFractionEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod
         .lazy(() => CdmBaseDatetimeDaycountDayCountFractionEnumSchema)
         .optional(),
     })

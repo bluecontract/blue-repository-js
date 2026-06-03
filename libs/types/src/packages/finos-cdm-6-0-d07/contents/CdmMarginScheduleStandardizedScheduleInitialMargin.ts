@@ -1,32 +1,25 @@
-export const CdmMarginScheduleStandardizedScheduleInitialMargin = {
+export const CdmMarginScheduleStandardizedScheduleInitialMargin: Record<
+  string,
+  unknown
+> = {
   name: 'cdm/margin/schedule/StandardizedScheduleInitialMargin',
   netInitialMargin: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   tradeInfo: {
     itemType: {
-      blueId: '2imJjdaxdUbe6MWN6u3gyGVbMBrdbHAfXZWZz7qn6a27',
+      blueId: 'AyHS2v2wXHzgR4ASSkm7Ab98k8dMLwEZKWPPPTXGUcJB',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

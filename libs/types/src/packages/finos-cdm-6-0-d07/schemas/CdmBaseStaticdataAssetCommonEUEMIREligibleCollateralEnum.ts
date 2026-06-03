@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/EU_EMIR_EligibleCollateralEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'EU_EMIRTypeA',
       'EU_EMIRTypeB',
       'EU_EMIRTypeC',

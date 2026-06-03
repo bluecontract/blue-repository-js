@@ -5,25 +5,27 @@ import { CdmBaseDatetimeAdjustableDatesSchema } from './CdmBaseDatetimeAdjustabl
 import { CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema } from './CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate';
 import { CdmBaseDatetimeBusinessDateRangeSchema } from './CdmBaseDatetimeBusinessDateRange';
 
-export const CdmProductCommonSettlementSettlementDateSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementSettlementDateSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/SettlementDate']
   )(
-    z.object({
-      adjustableDates: z
+    zod.object({
+      adjustableDates: zod
         .lazy(() => CdmBaseDatetimeAdjustableDatesSchema)
         .optional(),
-      adjustableOrRelativeDate: z
+      adjustableOrRelativeDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema)
         .optional(),
-      businessDateRange: z
+      businessDateRange: zod
         .lazy(() => CdmBaseDatetimeBusinessDateRangeSchema)
         .optional(),
-      cashSettlementBusinessDays: z.number().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      paymentDelay: z.boolean().optional(),
-      valueDate: z.string().optional(),
+      cashSettlementBusinessDays: zod.number().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      paymentDelay: zod.boolean().optional(),
+      valueDate: zod.string().optional(),
     })
   );
 

@@ -1,44 +1,37 @@
-export const CdmLegaldocumentationCommonUmbrellaAgreement = {
+export const CdmLegaldocumentationCommonUmbrellaAgreement: Record<
+  string,
+  unknown
+> = {
   description:
     'A class to specify a set of legal entities which are part of a legal agreement beyond the two contracting parties to that agreement. This data representation reflects the ISDA Create representation.\n',
   isApplicable: {
     description:
       'The determination of whether Umbrella Agreement terms are Applicable (True), or Not Applicable (False)',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   language: {
     description:
       'The language associated with the umbrella agreement, and which applies to all the parties to the umbrella agreement.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/legaldocumentation/common/UmbrellaAgreement',
   parties: {
     description: 'Underlying principals to the umbrella agreement.',
     itemType: {
-      blueId: 'Ay8eESfxaGKpwyCsv1ZCC9QedmfPTNyL3FGU7pBYVEXM',
+      blueId: '8i9Ncryq3v4GEFNYHazXRPvCCHC9DGTnoSc9f9vqJXoN',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
-} as const;
+};

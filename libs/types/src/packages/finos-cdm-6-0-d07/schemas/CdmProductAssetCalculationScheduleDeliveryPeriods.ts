@@ -5,25 +5,27 @@ import { CdmBaseMathQuantitySchema } from './CdmBaseMathQuantity';
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 import { CdmProductAssetAssetDeliveryProfileSchema } from './CdmProductAssetAssetDeliveryProfile';
 
-export const CdmProductAssetCalculationScheduleDeliveryPeriodsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetCalculationScheduleDeliveryPeriodsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/CalculationScheduleDeliveryPeriods'
     ]
   )(
-    z.object({
-      deliveryCapacity: z.lazy(() => CdmBaseMathQuantitySchema).optional(),
-      description: z.string().optional(),
-      endDate: z.string().optional(),
-      name: z.string().optional(),
-      priceTimeIntervalQuantity: z
+    zod.object({
+      deliveryCapacity: zod.lazy(() => CdmBaseMathQuantitySchema).optional(),
+      description: zod.string().optional(),
+      endDate: zod.string().optional(),
+      name: zod.string().optional(),
+      priceTimeIntervalQuantity: zod
         .lazy(() => CdmObservableAssetPriceSchema)
         .optional(),
-      profile: z
-        .array(z.lazy(() => CdmProductAssetAssetDeliveryProfileSchema))
+      profile: zod
+        .array(zod.lazy(() => CdmProductAssetAssetDeliveryProfileSchema))
         .min(0)
         .optional(),
-      startDate: z.string().optional(),
+      startDate: zod.string().optional(),
     })
   );
 

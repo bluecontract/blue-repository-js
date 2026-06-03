@@ -4,20 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeBusinessDayAdjustmentsSchema } from './CdmBaseDatetimeBusinessDayAdjustments';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseDatetimeAdjustableOrAdjustedDateSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseDatetimeAdjustableOrAdjustedDateSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/AdjustableOrAdjustedDate']
   )(
-    z.object({
-      adjustedDate: z
+    zod.object({
+      adjustedDate: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      dateAdjustments: z
+      dateAdjustments: zod
         .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      unadjustedDate: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      unadjustedDate: zod.string().optional(),
     })
   );
 

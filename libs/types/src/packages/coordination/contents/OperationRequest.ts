@@ -1,27 +1,27 @@
-export const OperationRequest = {
+export const OperationRequest: Record<string, unknown> = {
   allowNewerVersion: {
     description:
-      'Controls concurrent modification handling. When true, processes the operation on the latest document version even if it changed. When false, only processes if the document still has the same blueId as specified.',
+      'Whether the requester allows processing against a document version newer than the one implied by the request context.\nA false value lets workflows reject stale or unexpected document-state transitions.\n',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   description:
-    'Coordination type `Operation Request`. This type is identity-bearing Blue content in the coordination package. It defines the\nsemantic role named by its `name` field and, when used as a contract/event/marker/source/status specialization,\nshould be interpreted according to its declared parent type `none` and its field definitions. The\ndescription is intentionally part of the type identity: changing it changes what this type claims to mean.\n\nA reader should treat this type as a precise domain term, not a loose label. Concrete processors, workflows, and\nuser interfaces should use the type BlueId and the fields declared on this node to decide compatibility, routing,\ndisplay, and audit behavior. If a document needs different semantics, it should define a different type rather\nthan reuse this one with incompatible meaning.\n',
+    'Event payload requesting that a document perform a named operation. Operation Request is the standard shape for\ninvoking document-owned behavior through a Timeline Entry, direct event delivery, or another coordination channel.\n\n`operation` names the requested operation. `request` contains the operation-specific input. `document`, when present,\ncan identify or carry the target document/request context. `allowNewerVersion` indicates whether the sender permits\nthe processor to use a newer document version than the one the sender expected. Actor and source attribution are not\nfields of Operation Request itself; they normally come from the enclosing Timeline Entry or event envelope.\n\nA processor or workflow should not treat Operation Request as authorized merely because it is well-formed. It must\nmatch the operation, check any actor/source policy, validate the request shape expected by the operation, and then run\nthe corresponding handler or workflow.\n',
   document: {
     description:
-      'Specifies the target document for the operation, typically containing the blueId of the document to operate on.',
+      'Optional target document reference, embedded document, or request context supplied by the caller. The operation type\ndefines how this field is interpreted.\n',
   },
   name: 'Operation Request',
   operation: {
     description:
-      'The name of the operation to invoke (must exist on the target).',
+      'Name of the operation being requested. This name is matched against Operation or Sequential Workflow Operation\ncontracts in the processing scope.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   request: {
     description:
-      'Payload for the operation. Shape MUST match the target Operation’s `request` contract (scalars or structured nodes).\n',
+      'Operation-specific payload. Its shape is defined by the requested operation.\n',
   },
-} as const;
+};

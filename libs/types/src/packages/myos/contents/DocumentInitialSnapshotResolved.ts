@@ -1,9 +1,9 @@
-export const DocumentInitialSnapshotResolved = {
+export const DocumentInitialSnapshotResolved: Record<string, unknown> = {
   document: {
     description: 'Initial snapshot of requested document session.',
   },
   name: 'Document Initial Snapshot Resolved',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

@@ -1,32 +1,31 @@
-export const CdmEventCommonMarginCallResponseTypeEnum = {
-  description:
-    'Represents the enumeration values to define the response type to a margin call.',
-  name: 'cdm/event/common/MarginCallResponseTypeEnum',
-  schema: {
-    enum: {
-      items: [
+export const CdmEventCommonMarginCallResponseTypeEnum: Record<string, unknown> =
+  {
+    description:
+      'Represents the enumeration values to define the response type to a margin call.',
+    name: 'cdm/event/common/MarginCallResponseTypeEnum',
+    schema: {
+      enum: [
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'AgreeinFull',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'Dispute',
         },
         {
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
           value: 'PartiallyAgree',
         },
       ],
     },
-  },
-  type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-  },
-} as const;
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+    },
+  };

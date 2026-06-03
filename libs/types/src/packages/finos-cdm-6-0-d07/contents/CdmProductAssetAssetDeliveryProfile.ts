@@ -1,26 +1,21 @@
-export const CdmProductAssetAssetDeliveryProfile = {
+export const CdmProductAssetAssetDeliveryProfile: Record<string, unknown> = {
   bankHolidaysTreatment: {
     description: 'Specifies whether the dates defined include holidays or not.',
     type: {
-      blueId: 'DPWX3TQgadyc2NWPmBWPGsZuwotdkjqzr3AZzY6JgdeY',
+      blueId: '833fsMUyREDfoeWcVvcxsNdLqF3mjxj8sUSJtn7h5aDG',
     },
   },
   block: {
     description:
       'Defines a delivery profile block, including start and end time, days of the week, duration, delivery capacity and price time interval quantity.\n',
     itemType: {
-      blueId: '6Tr6ZRk2ed6Xz94Dfj4ZYH9Z1EnxKkZ2z7uEyNB3Krv',
+      blueId: 'BE8tk1V1aM9RX2EaQdADCudboiUVLdjeqNbgPXMoWXXt',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -28,8 +23,8 @@ export const CdmProductAssetAssetDeliveryProfile = {
   loadType: {
     description: 'Identification of the delivery profile.',
     type: {
-      blueId: 'HzHMSqRjpyrAtbCm2oQg1DY1Bkk5tpeoCGTii8EGuUa9',
+      blueId: '3Cw8RykF4cE5soC5fNPE2vRpWQcT4cwXUTQED5ux8xZ6',
     },
   },
   name: 'cdm/product/asset/AssetDeliveryProfile',
-} as const;
+};

@@ -1,4 +1,4 @@
-export const CdmLegaldocumentationContractAgreement = {
+export const CdmLegaldocumentationContractAgreement: Record<string, unknown> = {
   collateralTransferAgreementElections: {
     description: 'Elections to specify a Collateral Transfer Agreement.',
     type: {
@@ -17,7 +17,7 @@ export const CdmLegaldocumentationContractAgreement = {
   masterAgreementSchedule: {
     description: 'Elections to specify a Master Agreement Schedule.',
     type: {
-      blueId: 'AKSMUzaw181vmfKQvqHV4MsmNu7rSU91j4ckLWhrkFdT',
+      blueId: 'GMD6WsoUkvr8UPZVAk2ciZmosp1rstjA8D6jSBTFkJzm',
     },
   },
   name: 'cdm/legaldocumentation/contract/Agreement',
@@ -31,7 +31,7 @@ export const CdmLegaldocumentationContractAgreement = {
     description:
       'Any additional terms which mainly intend to specify the extraordinary events that may affect a trade and the related contractual rights and obligation of the parties when this happens\n',
     type: {
-      blueId: 'VgMJmdXEfv5xJBtRFPU6x3vPg1JeSyN8rztyutdDdLY',
+      blueId: 'JBQsnuxVFxN3iNMcYdNDDrSvjPZ2uBGXmVMdq9rLwNYn',
     },
   },
-} as const;
+};

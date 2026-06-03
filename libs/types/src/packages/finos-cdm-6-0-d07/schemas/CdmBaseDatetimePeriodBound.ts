@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimePeriodSchema } from './CdmBaseDatetimePeriod';
 
-export const CdmBaseDatetimePeriodBoundSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseDatetimePeriodBoundSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/PeriodBound']
 )(
-  z.object({
-    description: z.string().optional(),
-    inclusive: z.boolean(),
-    name: z.string().optional(),
-    period: z.lazy(() => CdmBaseDatetimePeriodSchema),
+  zod.object({
+    description: zod.string().optional(),
+    inclusive: zod.boolean(),
+    name: zod.string().optional(),
+    period: zod.lazy(() => CdmBaseDatetimePeriodSchema),
   })
 );
 

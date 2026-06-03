@@ -4,24 +4,26 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
 import { CdmProductCommonSettlementPrincipalPaymentSchema } from './CdmProductCommonSettlementPrincipalPayment';
 
-export const CdmProductCommonSettlementPrincipalPaymentScheduleSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPrincipalPaymentScheduleSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/PrincipalPaymentSchedule'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      finalPrincipalPayment: z
+    zod.object({
+      description: zod.string().optional(),
+      finalPrincipalPayment: zod
         .lazy(() => CdmProductCommonSettlementPrincipalPaymentSchema)
         .optional(),
-      initialPrincipalPayment: z
+      initialPrincipalPayment: zod
         .lazy(() => CdmProductCommonSettlementPrincipalPaymentSchema)
         .optional(),
-      intermediatePrincipalPayment: z
+      intermediatePrincipalPayment: zod
         .lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

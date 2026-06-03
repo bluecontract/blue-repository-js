@@ -1,13 +1,16 @@
-export const CdmEventWorkflowFieldWithMetaLimitLevelEnum = {
+export const CdmEventWorkflowFieldWithMetaLimitLevelEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/event/workflow/FieldWithMetaLimitLevelEnum',
   val: {
     type: {
-      blueId: '2BsPgE1jX1a3Hm3bnnC5scsZoqfNiMhN1PxggpSyDJHa',
+      blueId: 'EZdU7ZfikeT9jXmxHjC3ABGRtnYsqhzhoL58Cfo3ojj1',
     },
   },
-} as const;
+};

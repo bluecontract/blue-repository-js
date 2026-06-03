@@ -3,15 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataAssetCommonISOCountryCodeEnumSchema } from './CdmBaseStaticdataAssetCommonISOCountryCodeEnum';
 
-export const CdmProductCollateralIssuerCountryOfOriginSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralIssuerCountryOfOriginSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/IssuerCountryOfOrigin']
   )(
-    z.object({
-      issuerCountryOfOrigin: z.lazy(
+    zod.object({
+      issuerCountryOfOrigin: zod.lazy(
         () => CdmBaseStaticdataAssetCommonISOCountryCodeEnumSchema
       ),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

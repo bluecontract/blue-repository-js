@@ -4,21 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataIdentifierIdentifierSchema } from './CdmBaseStaticdataIdentifierIdentifier';
 import { CdmBaseStaticdataPartyContactInformationSchema } from './CdmBaseStaticdataPartyContactInformation';
 
-export const CdmBaseStaticdataPartyBusinessUnitSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/BusinessUnit']
-  )(
-    z.object({
-      contactInformation: z
-        .lazy(() => CdmBaseStaticdataPartyContactInformationSchema)
-        .optional(),
-      description: z.string().optional(),
-      identifier: z
-        .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyBusinessUnitSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/BusinessUnit']
+)(
+  zod.object({
+    contactInformation: zod
+      .lazy(() => CdmBaseStaticdataPartyContactInformationSchema)
+      .optional(),
+    description: zod.string().optional(),
+    identifier: zod
+      .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmBaseStaticdataPartyBusinessUnit = z.infer<
   typeof CdmBaseStaticdataPartyBusinessUnitSchema

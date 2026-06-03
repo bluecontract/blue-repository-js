@@ -3,17 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmProductCommonSettlementPaymentDiscountingSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPaymentDiscountingSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/settlement/PaymentDiscounting'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      discountFactor: z.number().optional(),
-      name: z.string().optional(),
-      presentValueAmount: z
+    zod.object({
+      description: zod.string().optional(),
+      discountFactor: zod.number().optional(),
+      name: zod.string().optional(),
+      presentValueAmount: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
     })

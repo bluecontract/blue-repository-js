@@ -6,27 +6,28 @@ import { CdmProductTemplateEarlyTerminationProvisionSchema } from './CdmProductT
 import { CdmProductTemplateEvergreenProvisionSchema } from './CdmProductTemplateEvergreenProvision';
 import { CdmProductTemplateExtendibleProvisionSchema } from './CdmProductTemplateExtendibleProvision';
 
-export const CdmProductTemplateTerminationProvisionSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/TerminationProvision']
-  )(
-    z.object({
-      cancelableProvision: z
-        .lazy(() => CdmProductTemplateCancelableProvisionSchema)
-        .optional(),
-      description: z.string().optional(),
-      earlyTerminationProvision: z
-        .lazy(() => CdmProductTemplateEarlyTerminationProvisionSchema)
-        .optional(),
-      evergreenProvision: z
-        .lazy(() => CdmProductTemplateEvergreenProvisionSchema)
-        .optional(),
-      extendibleProvision: z
-        .lazy(() => CdmProductTemplateExtendibleProvisionSchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateTerminationProvisionSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/TerminationProvision']
+)(
+  zod.object({
+    cancelableProvision: zod
+      .lazy(() => CdmProductTemplateCancelableProvisionSchema)
+      .optional(),
+    description: zod.string().optional(),
+    earlyTerminationProvision: zod
+      .lazy(() => CdmProductTemplateEarlyTerminationProvisionSchema)
+      .optional(),
+    evergreenProvision: zod
+      .lazy(() => CdmProductTemplateEvergreenProvisionSchema)
+      .optional(),
+    extendibleProvision: zod
+      .lazy(() => CdmProductTemplateExtendibleProvisionSchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmProductTemplateTerminationProvision = z.infer<
   typeof CdmProductTemplateTerminationProvisionSchema

@@ -1,8 +1,8 @@
-export const BootstrapFailed = {
+export const BootstrapFailed: Record<string, unknown> = {
   name: 'Bootstrap Failed',
   reason: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

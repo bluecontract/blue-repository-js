@@ -2,12 +2,14 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationMasterRepresentationsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterRepresentationsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/Representations']
   )(
-    z.object({
-      name: z.string().optional(),
+    zod.object({
+      name: zod.string().optional(),
     })
   );
 

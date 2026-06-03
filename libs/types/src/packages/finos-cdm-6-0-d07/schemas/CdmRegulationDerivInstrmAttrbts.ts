@@ -3,18 +3,19 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmRegulationUndrlygInstrmSchema } from './CdmRegulationUndrlygInstrm';
 
-export const CdmRegulationDerivInstrmAttrbtsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/regulation/DerivInstrmAttrbts']
-  )(
-    z.object({
-      dlvryTp: z.string(),
-      name: z.string().optional(),
-      pricMltplr: z.string(),
-      undrlygInstrm: z.lazy(() => CdmRegulationUndrlygInstrmSchema),
-      xpryDt: z.string(),
-    })
-  );
+const zod = z as any;
+
+export const CdmRegulationDerivInstrmAttrbtsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/regulation/DerivInstrmAttrbts']
+)(
+  zod.object({
+    dlvryTp: zod.string(),
+    name: zod.string().optional(),
+    pricMltplr: zod.string(),
+    undrlygInstrm: zod.lazy(() => CdmRegulationUndrlygInstrmSchema),
+    xpryDt: zod.string(),
+  })
+);
 
 export type CdmRegulationDerivInstrmAttrbts = z.infer<
   typeof CdmRegulationDerivInstrmAttrbtsSchema

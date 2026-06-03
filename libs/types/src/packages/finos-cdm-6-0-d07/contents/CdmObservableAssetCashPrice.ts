@@ -1,16 +1,11 @@
-export const CdmObservableAssetCashPrice = {
+export const CdmObservableAssetCashPrice: Record<string, unknown> = {
   cashPriceType: {
     description: 'Specifies the type of Cash Price.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'H2xVoXBmfUbQs6cNWFyDcyfWSDbZB2kUQU4av2ty95u8',
+      blueId: '8AJje6F3LQBvFYx4iuQMLA7qkEW1m2oeGabyMjZSLuFU',
     },
   },
   description:
@@ -18,7 +13,7 @@ export const CdmObservableAssetCashPrice = {
   feeType: {
     description: 'Specifies the event type associated with a fee.',
     type: {
-      blueId: 'CEYV9kEtFbGQ1TN5ZdT4jXMZfSQUVyhphKVVYFHwQ1uq',
+      blueId: '2GtrN4UDxwH4P5TqQ8bNcVwjwcdDhjkNovEAYuhpAhJQ',
     },
   },
   name: 'cdm/observable/asset/CashPrice',
@@ -26,7 +21,7 @@ export const CdmObservableAssetCashPrice = {
     description:
       'Specifies a premium when expressed in a way other than an amount, and any required forward starting price definition.\n',
     type: {
-      blueId: '9so5mJWR9jvdKWfaAnMyj5WMAv2TaLmZrmBZxGyLWqMf',
+      blueId: 'BnX8YWGNQEemBPGhMwg9Dn7EZKXy7TKV3Pdoa8bijM8K',
     },
   },
-} as const;
+};

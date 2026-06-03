@@ -1,8 +1,8 @@
-export const PaymentInitiationRequested = {
+export const PaymentInitiationRequested: Record<string, unknown> = {
   amount: {
     description: 'Payment amount in minor units.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   context: {
@@ -11,14 +11,14 @@ export const PaymentInitiationRequested = {
       description:
         'Blue document id identifying the business document this payment is for.',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
   },
   currency: {
     description: 'ISO 4217 currency code.',
     type: {
-      blueId: 'CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc',
+      blueId: 'rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ',
     },
   },
   description:
@@ -27,7 +27,7 @@ export const PaymentInitiationRequested = {
     description:
       'Caller-supplied key identifying one logical initiation attempt.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Payment Initiation Requested',
@@ -36,13 +36,13 @@ export const PaymentInitiationRequested = {
       description:
         'Optional channel bindings keyed by the channel names declared in the PayNote document.\n',
       keyType: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
       type: {
-        blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+        blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
       },
       valueType: {
-        blueId: 'DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr',
+        blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
       },
     },
     description:
@@ -55,10 +55,10 @@ export const PaymentInitiationRequested = {
     description:
       'Prepared recipient reference. At minimum it must carry the opaque token.',
     type: {
-      blueId: '3WA2ppJtUKib2upsEARBgCNJuHXSqHJjm38uLtZf6dNb',
+      blueId: '9aVaJJvfRrGjLZ55HbKbrd4AUgA9RmjEUCxtfCtqodM9',
     },
   },
   type: {
-    blueId: '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg',
+    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
   },
-} as const;
+};

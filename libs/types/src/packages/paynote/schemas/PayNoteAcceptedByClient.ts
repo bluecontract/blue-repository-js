@@ -4,13 +4,15 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { EventSchema } from '../../coordination/schemas/Event';
 
-export const PayNoteAcceptedByClientSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PayNoteAcceptedByClientSchema: any = withTypeBlueId(
   blueIds['PayNote/PayNote Accepted By Client']
 )(
   EventSchema.extend({
-    acceptedAt: z.lazy(() => TimestampSchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    acceptedAt: zod.lazy(() => TimestampSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

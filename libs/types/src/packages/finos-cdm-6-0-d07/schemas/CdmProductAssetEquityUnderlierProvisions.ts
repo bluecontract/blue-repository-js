@@ -3,18 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductAssetEquityUnderlierProvisionsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetEquityUnderlierProvisionsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/EquityUnderlierProvisions']
   )(
-    z.object({
-      componentSecurityIndexAnnexFallback: z.boolean().optional(),
-      localJurisdiction: z
+    zod.object({
+      componentSecurityIndexAnnexFallback: zod.boolean().optional(),
+      localJurisdiction: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      multipleExchangeIndexAnnexFallback: z.boolean().optional(),
-      name: z.string().optional(),
-      relevantJurisdiction: z
+      multipleExchangeIndexAnnexFallback: zod.boolean().optional(),
+      name: zod.string().optional(),
+      relevantJurisdiction: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
     })

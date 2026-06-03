@@ -1,15 +1,16 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ChannelSchema } from '../../core/schemas/Channel';
 
-export const TimelineChannelSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TimelineChannelSchema: any = withTypeBlueId(
   blueIds['Coordination/Timeline Channel']
 )(
-  ChannelSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    timelineId: z.string().optional(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    timelineId: zod.string().optional(),
   })
 );
 

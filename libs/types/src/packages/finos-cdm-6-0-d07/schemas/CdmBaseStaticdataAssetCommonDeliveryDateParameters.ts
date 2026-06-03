@@ -4,25 +4,27 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeAdjustableDateSchema } from './CdmBaseDatetimeAdjustableDate';
 import { CdmBaseDatetimeOffsetSchema } from './CdmBaseDatetimeOffset';
 
-export const CdmBaseStaticdataAssetCommonDeliveryDateParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonDeliveryDateParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/DeliveryDateParameters'
     ]
   )(
-    z.object({
-      deliveryDate: z
+    zod.object({
+      deliveryDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableDateSchema)
         .optional(),
-      deliveryDateExpirationConvention: z
+      deliveryDateExpirationConvention: zod
         .lazy(() => CdmBaseDatetimeOffsetSchema)
         .optional(),
-      deliveryDateRollConvention: z
+      deliveryDateRollConvention: zod
         .lazy(() => CdmBaseDatetimeOffsetSchema)
         .optional(),
-      deliveryNearby: z.lazy(() => CdmBaseDatetimeOffsetSchema).optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      deliveryNearby: zod.lazy(() => CdmBaseDatetimeOffsetSchema).optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

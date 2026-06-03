@@ -1,18 +1,13 @@
-export const CdmProductCollateralAssetAgencyRating = {
+export const CdmProductCollateralAssetAgencyRating: Record<string, unknown> = {
   assetAgencyRating: {
     description:
       'Represents an agency rating based on default risk and creditors claim in event of default associated with specific instrument.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'EFt5vpwMjQFJJ8LHLDpuEqY5R7UNo6zDPqdti3crxcVv',
+      blueId: 'HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU',
     },
   },
   name: 'cdm/product/collateral/AssetAgencyRating',
-} as const;
+};

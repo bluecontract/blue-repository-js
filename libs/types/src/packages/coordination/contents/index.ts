@@ -1,154 +1,124 @@
-import { SequentialWorkflow } from './SequentialWorkflow';
-import { ContractsChangePolicy } from './ContractsChangePolicy';
-import { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
-import { Request } from './Request';
-import { TriggerEvent } from './TriggerEvent';
-import { DocumentSectionChanges } from './DocumentSectionChanges';
-import { ActorPolicy } from './ActorPolicy';
-import { CustomerActionRequested } from './CustomerActionRequested';
-import { Source } from './Source';
-import { TimelineEntry } from './TimelineEntry';
-import { OperationRequest } from './OperationRequest';
-import { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
-import { DocumentRequest } from './DocumentRequest';
-import { Response } from './Response';
-import { APICall } from './APICall';
-import { ComputeDefinition } from './ComputeDefinition';
-import { Event } from './Event';
-import { ChatMessage } from './ChatMessage';
-import { ProposedChangeInvalid } from './ProposedChangeInvalid';
-import { SequentialWorkflowStep } from './SequentialWorkflowStep';
-import { RejectChangeOperation } from './RejectChangeOperation';
-import { Operation } from './Operation';
-import { DocumentBootstrapFailed } from './DocumentBootstrapFailed';
-import { SequentialWorkflowOperation } from './SequentialWorkflowOperation';
-import { CompositeTimelineChannel } from './CompositeTimelineChannel';
-import { Actor } from './Actor';
-import { CustomerActionResponded } from './CustomerActionResponded';
-import { Timeline } from './Timeline';
-import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
-import { TimelineChannel } from './TimelineChannel';
-import { StatusInProgress } from './StatusInProgress';
-import { ChangeRequest } from './ChangeRequest';
-import { DocumentSection } from './DocumentSection';
-import { CustomerConsentRevoked } from './CustomerConsentRevoked';
-import { StatusFailed } from './StatusFailed';
-import { UpdateDocument } from './UpdateDocument';
-import { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
-import { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
-import { StatusPending } from './StatusPending';
-import { AcceptChangeOperation } from './AcceptChangeOperation';
-import { StatusChange } from './StatusChange';
-import { LifecycleEvent } from './LifecycleEvent';
-import { AgentActor } from './AgentActor';
-import { ChangeOperation } from './ChangeOperation';
-import { Compute } from './Compute';
-import { StatusCompleted } from './StatusCompleted';
-import { DocumentStatus } from './DocumentStatus';
 import { PrincipalActor } from './PrincipalActor';
-import { ProposeChangeOperation } from './ProposeChangeOperation';
+import { Operation } from './Operation';
 import { BrowserSession } from './BrowserSession';
+import { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
+import { CustomerActionResponded } from './CustomerActionResponded';
+import { CompositeTimelineChannel } from './CompositeTimelineChannel';
+import { OperationRequest } from './OperationRequest';
+import { Compute } from './Compute';
+import { DocumentBootstrapFailed } from './DocumentBootstrapFailed';
+import { StatusInProgress } from './StatusInProgress';
+import { APICall } from './APICall';
+import { Request } from './Request';
+import { UpdateDocument } from './UpdateDocument';
+import { StatusFailed } from './StatusFailed';
+import { Timeline } from './Timeline';
+import { StatusChange } from './StatusChange';
+import { DocumentRequest } from './DocumentRequest';
+import { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
+import { LifecycleEvent } from './LifecycleEvent';
+import { SequentialWorkflowStep } from './SequentialWorkflowStep';
+import { DocumentStatus } from './DocumentStatus';
+import { TimelineChannel } from './TimelineChannel';
+import { Response } from './Response';
+import { SequentialWorkflowOperation } from './SequentialWorkflowOperation';
+import { StatusCompleted } from './StatusCompleted';
+import { CustomerConsentRevoked } from './CustomerConsentRevoked';
+import { StatusPending } from './StatusPending';
+import { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
+import { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
+import { TriggerEvent } from './TriggerEvent';
+import { ChatMessage } from './ChatMessage';
+import { Event } from './Event';
+import { CustomerActionRequested } from './CustomerActionRequested';
+import { Actor } from './Actor';
+import { ComputeDefinition } from './ComputeDefinition';
+import { AgentActor } from './AgentActor';
+import { TimelineEntry } from './TimelineEntry';
+import { ActorPolicy } from './ActorPolicy';
+import { SequentialWorkflow } from './SequentialWorkflow';
+import { Source } from './Source';
 
-export { SequentialWorkflow } from './SequentialWorkflow';
-export { ContractsChangePolicy } from './ContractsChangePolicy';
-export { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
-export { Request } from './Request';
-export { TriggerEvent } from './TriggerEvent';
-export { DocumentSectionChanges } from './DocumentSectionChanges';
-export { ActorPolicy } from './ActorPolicy';
-export { CustomerActionRequested } from './CustomerActionRequested';
-export { Source } from './Source';
-export { TimelineEntry } from './TimelineEntry';
-export { OperationRequest } from './OperationRequest';
-export { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
-export { DocumentRequest } from './DocumentRequest';
-export { Response } from './Response';
-export { APICall } from './APICall';
-export { ComputeDefinition } from './ComputeDefinition';
-export { Event } from './Event';
-export { ChatMessage } from './ChatMessage';
-export { ProposedChangeInvalid } from './ProposedChangeInvalid';
-export { SequentialWorkflowStep } from './SequentialWorkflowStep';
-export { RejectChangeOperation } from './RejectChangeOperation';
-export { Operation } from './Operation';
-export { DocumentBootstrapFailed } from './DocumentBootstrapFailed';
-export { SequentialWorkflowOperation } from './SequentialWorkflowOperation';
-export { CompositeTimelineChannel } from './CompositeTimelineChannel';
-export { Actor } from './Actor';
-export { CustomerActionResponded } from './CustomerActionResponded';
-export { Timeline } from './Timeline';
-export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
-export { TimelineChannel } from './TimelineChannel';
-export { StatusInProgress } from './StatusInProgress';
-export { ChangeRequest } from './ChangeRequest';
-export { DocumentSection } from './DocumentSection';
-export { CustomerConsentRevoked } from './CustomerConsentRevoked';
-export { StatusFailed } from './StatusFailed';
-export { UpdateDocument } from './UpdateDocument';
-export { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
-export { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
-export { StatusPending } from './StatusPending';
-export { AcceptChangeOperation } from './AcceptChangeOperation';
-export { StatusChange } from './StatusChange';
-export { LifecycleEvent } from './LifecycleEvent';
-export { AgentActor } from './AgentActor';
-export { ChangeOperation } from './ChangeOperation';
-export { Compute } from './Compute';
-export { StatusCompleted } from './StatusCompleted';
-export { DocumentStatus } from './DocumentStatus';
 export { PrincipalActor } from './PrincipalActor';
-export { ProposeChangeOperation } from './ProposeChangeOperation';
+export { Operation } from './Operation';
 export { BrowserSession } from './BrowserSession';
+export { DocumentBootstrapRequested } from './DocumentBootstrapRequested';
+export { CustomerActionResponded } from './CustomerActionResponded';
+export { CompositeTimelineChannel } from './CompositeTimelineChannel';
+export { OperationRequest } from './OperationRequest';
+export { Compute } from './Compute';
+export { DocumentBootstrapFailed } from './DocumentBootstrapFailed';
+export { StatusInProgress } from './StatusInProgress';
+export { APICall } from './APICall';
+export { Request } from './Request';
+export { UpdateDocument } from './UpdateDocument';
+export { StatusFailed } from './StatusFailed';
+export { Timeline } from './Timeline';
+export { StatusChange } from './StatusChange';
+export { DocumentRequest } from './DocumentRequest';
+export { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
+export { LifecycleEvent } from './LifecycleEvent';
+export { SequentialWorkflowStep } from './SequentialWorkflowStep';
+export { DocumentStatus } from './DocumentStatus';
+export { TimelineChannel } from './TimelineChannel';
+export { Response } from './Response';
+export { SequentialWorkflowOperation } from './SequentialWorkflowOperation';
+export { StatusCompleted } from './StatusCompleted';
+export { CustomerConsentRevoked } from './CustomerConsentRevoked';
+export { StatusPending } from './StatusPending';
+export { InformUserAboutPendingAction } from './InformUserAboutPendingAction';
+export { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
+export { TriggerEvent } from './TriggerEvent';
+export { ChatMessage } from './ChatMessage';
+export { Event } from './Event';
+export { CustomerActionRequested } from './CustomerActionRequested';
+export { Actor } from './Actor';
+export { ComputeDefinition } from './ComputeDefinition';
+export { AgentActor } from './AgentActor';
+export { TimelineEntry } from './TimelineEntry';
+export { ActorPolicy } from './ActorPolicy';
+export { SequentialWorkflow } from './SequentialWorkflow';
+export { Source } from './Source';
 
 export const contents: Record<string, unknown> = {
-  '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz': SequentialWorkflow,
-  '2NyPMQjBh9LPugCWq8bAyvsisd6WWhCBQBXyuJswjvPR': ContractsChangePolicy,
-  '3LwvmEfS1ojewVrqihmAHYSduHmwQsSfeg8fQZnqM9wQ': DocumentBootstrapResponded,
-  '3PWiqPYvDfSrPGh1YnuRPGjaXL7YytfBcgfrn9WydqCg': Request,
-  '3Rgcf7G716Y9JhCov4m72m53tqpv3yDpzcBwGrxUaQSJ': TriggerEvent,
-  '3WUHev4EbhT1WUTikdZTPaXnapwvgmepVfV3KzYwJDzh': DocumentSectionChanges,
-  '4cT4usY9ogaFS93DnWrM3uL4orD6VEtNaDVTmPwvSkYM': ActorPolicy,
-  '4GCPHTfduFn3xD6KZuRqS1qEG4mA6Ro3Eey3GKB1VCa3': CustomerActionRequested,
-  '52ECLkcYGohcQEaora7hAbd5ve7Uz85DjE2nEARr55Lk': Source,
-  '6ckC9avECT39tVTZ3iiKC1wRPAmxiS92bZuji4pANZCw': TimelineEntry,
-  '6MWZuzuavJuh9FiPJBN7mgVmAVH8buKN2vRdmm5NjF4T': OperationRequest,
-  '6NYHvtkmfNakoMEpb1ECFBiC2gmQqaD45DXfuTFEGC4Y': InformUserAboutPendingAction,
-  '77wa49Ro2LrktFQGrTGvJw1sRLV2wbrybikJHQA1QRuc': DocumentRequest,
-  '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX': Response,
-  '7Dt3HSHtcQGwkooCctWByNL1mgZnNfAnw2s8BHRx9vDK': APICall,
-  '7PXuvwLmdB8SaN8AYzL9rRE5cPsGJ7tbTn3iZxsisQnH': ComputeDefinition,
-  '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z': Event,
-  '8ffEpcuZ7V1xnrxaW4PFTjBTfKKB6dxVF9HHoc5HqBM1': ChatMessage,
-  '8oEU9ysLsGJJeeCDsEgnHbyu8vuWTwogExHmNc7t512n': ProposedChangeInvalid,
-  '99AomnUQTnL52YVYXwEbGNeKnV6u1cjm73xLFSAt7mwe': SequentialWorkflowStep,
-  '9EdyRb2ssCWhbc1uoNxpS1fygKwSz6392vd8tMhcGcEt': RejectChangeOperation,
-  '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr': Operation,
-  Abuh2wgFh9xPrSuSixT2K7upS9cQVp9YpveABuTKJgg4: DocumentBootstrapFailed,
-  B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS: SequentialWorkflowOperation,
-  ByQY8CFbj5JVoSuoutRmG5wJWfvAidg7q83zsQ3GTgD4: CompositeTimelineChannel,
-  CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd: Actor,
-  DDMHvqmyKrM1PHesWV3rYU454viEkYpzNkywt3fobj9M: CustomerActionResponded,
-  DFycCEHaAuMXptCMxQ4N5M1UW2yyddgi5xa3TPWDTNAZ: Timeline,
-  DRKHv2QVLQneubWYELKCoHcfen76T7KxDk5pdCT9w8Bw: DocumentBootstrapRequested,
-  Dt8xNecxDiSYZAcmpWjPJhFwWMZ2gwgdLKK5wVE8566n: TimelineChannel,
-  E6jaeVfFuyjB4YEZyp7fvUt8AJ7BmKr8WAM9oGDmhMbM: StatusInProgress,
-  Em6YA77iVnnRaScCrkZr9C9VkQF14i2pk5fA8KNiHS41: ChangeRequest,
-  EQipmtzeTjY7JhgBQWWAhsjBAXsTT2SDu2gv1rXeXSpb: DocumentSection,
-  FGgYcn3phzJUoBfDJzV1QxeGKGbaH7zUEj1trRbBpmmJ: CustomerConsentRevoked,
-  Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs: StatusFailed,
-  FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ: UpdateDocument,
-  FZcw2teui9fx29nn8eSX9YiePZPxfWPJYCjnyVX1iWc1: DocumentSectionChangeEntry,
-  G7uhpNRg1akaZN1TMYdxbrYsdk324G4KjLDvP671ULmK: DocumentBootstrapCompleted,
-  Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79: StatusPending,
-  GTLbwh5uUUHSoxVv6NcUneYmoryfPSBbcFejj9UX96Nt: AcceptChangeOperation,
-  GXbF9ycv87y69kutDUmACbmeme7dGBSPw47fMQefvDPx: StatusChange,
-  HjjcpRqJHBk3gjiyrNNmBPhcpXdnAzU7UfsG2CAR5yMZ: LifecycleEvent,
-  HokwnQS9btAnSkJ4CuTqydH98mtsYj1SnCGTrRQh47Rw: AgentActor,
-  HvZZ3XFVNQvq8ca5XLrMmkwHZrDUTz68dstkAQHU3Aj4: ChangeOperation,
-  MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ: Compute,
-  Pzdwn6mQJT2qFDaF4V1dzpcyu4ejRqDv8neLPnbHRGi: StatusCompleted,
-  QHoUCCVhepZWQnSo9VfZCJWbSwyA9TuT65tBZMVtnRX: DocumentStatus,
-  QpJs5D2xRNzmEqXvra312z1fXkyyJehdJUs4ZTwUnD3: PrincipalActor,
-  vWt8Hw4xjk6KuL6uz9726d9xazaKvYWAthdAyXH4by8: ProposeChangeOperation,
-  Xh1LE67PgvpB6S9cRoGLkCsYSc6c1uCxqmp5oMfDxXE: BrowserSession,
+  '23cWKG6LF47H1G3EfhV5dmEYtxkNaqLWgFDxEurdc6Ef': PrincipalActor,
+  '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66': Operation,
+  '3Po1wgu2yeXWQGMncYqhDFAd39MkqQR5JG8sJqntzmoX': BrowserSession,
+  '3Uch8WXAZXUnHiWYF1Y2KaDBnfAFyUbZoDkeoPRYHZWC': DocumentBootstrapRequested,
+  '3z3AhCpsFML9BhsStAPdJX1Da78fsB5ofRm9ooi1Co7X': CustomerActionResponded,
+  '4FE7wU8cnFsb7gEcgQk8vTGYZHLqvJH6Yjsv2TXovgr2': CompositeTimelineChannel,
+  '4KTmYtrEE7AALwixVdiXnMCq6No9h8cvHyD2a521jgAg': OperationRequest,
+  '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ': Compute,
+  '56TiLrjbTYk4MTyAieZZd7cHdBahyWd3Xwgqet6scyA7': DocumentBootstrapFailed,
+  '5BQB6Hsr3qxMsZikHdqd2LGeKdQafEQ4jo6TBqm9JZuB': StatusInProgress,
+  '5tLUE25DSPGgtQtYVTYYskg3Ppz1DQwLqXqyedHebWvT': APICall,
+  '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw': Request,
+  '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U': UpdateDocument,
+  '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh': StatusFailed,
+  '7wUHmjDmM9suCSX1HPL7NZncfwPmMmXq2vfSVBmRLgAu': Timeline,
+  '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV': StatusChange,
+  '8SXKDBF7Gmzcn9BwH3GxwUJMBCm8P7QJmXNyJpyreNUF': DocumentRequest,
+  '8uKK7ZN1vXtEoAM6bUxm3oYNzFk6VZLX6mbeae2yVPnJ': DocumentBootstrapResponded,
+  '9hcgdYgUJCreSiiSnEMVAXsf7iWui13JW96gfwauA73J': LifecycleEvent,
+  '9oGn8V6FSVcJYhRfuHRShfWjiHBUqzxVi9StGtHZNfev': SequentialWorkflowStep,
+  '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z': DocumentStatus,
+  AKRPLotcnGLq7gQRj3jHcfAkxkwaJpmxNXpC3G22GQQz: TimelineChannel,
+  AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk: Response,
+  AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz: SequentialWorkflowOperation,
+  BEc6aieqN1iaXT2bNQVag1a1cGygZCLCjXf3mvupetNg: StatusCompleted,
+  BffmfCSM6r3GgrQU9XK3Qaj83gw4H8rfa1N7gXuab1ma: CustomerConsentRevoked,
+  CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS: StatusPending,
+  CVBPRqppe6uUhBQMcw8SVxqLwjBX7TwufMHwoCjnAqFv: InformUserAboutPendingAction,
+  CWnfwB18AdJ6iMbpNjKdfoeAUL17APxKUoMBQuisNLnB: DocumentBootstrapCompleted,
+  Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK: TriggerEvent,
+  EhWWtyoGRsxWp6Ur63ijxxjsjYcshexSqTmedCaiptA2: ChatMessage,
+  ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5: Event,
+  GiYeALCPtyczfXB2fmX4HRn1TmE9Mn44Y3dFBNeZNdAb: CustomerActionRequested,
+  GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7: Actor,
+  HifMgFGBgsqstDFZ2kXeQ45LVKXQMP52fV8TqeN6Z1j3: ComputeDefinition,
+  HooLPpmtC3Rf6jJ2eGGr4SyBbi2XYPzYBm4UpuzYke6D: AgentActor,
+  HtPs8QJAUfc25fKanzLFjAqjbbhyFjDErYxjKdTCwARV: TimelineEntry,
+  JCidqCzkd1o5aWkkDTzj6niugkn7oWxFUnSHaya4GbEj: ActorPolicy,
+  MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv: SequentialWorkflow,
+  Qm35f9xFUH84i745uPMj5jjMX1oCCG79aeSfHViipxG: Source,
 };

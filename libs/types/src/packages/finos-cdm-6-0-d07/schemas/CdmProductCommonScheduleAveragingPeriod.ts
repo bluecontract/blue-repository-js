@@ -6,24 +6,26 @@ import { CdmBaseDatetimeDateTimeListSchema } from './CdmBaseDatetimeDateTimeList
 import { CdmObservableEventFieldWithMetaMarketDisruptionEnumSchema } from './CdmObservableEventFieldWithMetaMarketDisruptionEnum';
 import { CdmProductCommonScheduleAveragingObservationListSchema } from './CdmProductCommonScheduleAveragingObservationList';
 
-export const CdmProductCommonScheduleAveragingPeriodSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleAveragingPeriodSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/AveragingPeriod']
   )(
-    z.object({
-      averagingDateTimes: z
+    zod.object({
+      averagingDateTimes: zod
         .lazy(() => CdmBaseDatetimeDateTimeListSchema)
         .optional(),
-      averagingObservations: z
+      averagingObservations: zod
         .lazy(() => CdmProductCommonScheduleAveragingObservationListSchema)
         .optional(),
-      description: z.string().optional(),
-      marketDisruption: z
+      description: zod.string().optional(),
+      marketDisruption: zod
         .lazy(() => CdmObservableEventFieldWithMetaMarketDisruptionEnumSchema)
         .optional(),
-      name: z.string().optional(),
-      schedule: z
-        .array(z.lazy(() => CdmBaseDatetimeAveragingScheduleSchema))
+      name: zod.string().optional(),
+      schedule: zod
+        .array(zod.lazy(() => CdmBaseDatetimeAveragingScheduleSchema))
         .min(0)
         .optional(),
     })

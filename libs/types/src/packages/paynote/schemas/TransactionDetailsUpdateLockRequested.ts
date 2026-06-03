@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const TransactionDetailsUpdateLockRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TransactionDetailsUpdateLockRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Transaction Details Update Lock Requested']
 )(
   RequestSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

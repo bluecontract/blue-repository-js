@@ -3,16 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const CallOperationRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CallOperationRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Call Operation Requested']
 )(
   RequestSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    onBehalfOf: z.string().optional(),
-    operation: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    onBehalfOf: zod.string().optional(),
+    operation: zod.string().optional(),
     request: blueNodeField().optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

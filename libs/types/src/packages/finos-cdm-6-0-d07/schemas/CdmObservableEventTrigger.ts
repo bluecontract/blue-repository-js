@@ -7,27 +7,31 @@ import { CdmObservableEventMetafieldsReferenceWithMetaCreditEventsSchema } from 
 import { CdmObservableEventTriggerTimeTypeEnumSchema } from './CdmObservableEventTriggerTimeTypeEnum';
 import { CdmObservableEventTriggerTypeEnumSchema } from './CdmObservableEventTriggerTypeEnum';
 
-export const CdmObservableEventTriggerSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableEventTriggerSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/Trigger']
 )(
-  z.object({
-    creditEvents: z.lazy(() => CdmObservableEventCreditEventsSchema).optional(),
-    creditEventsReference: z
+  zod.object({
+    creditEvents: zod
+      .lazy(() => CdmObservableEventCreditEventsSchema)
+      .optional(),
+    creditEventsReference: zod
       .lazy(
         () => CdmObservableEventMetafieldsReferenceWithMetaCreditEventsSchema
       )
       .optional(),
-    description: z.string().optional(),
-    level: z
-      .array(z.lazy(() => CdmObservableAssetPriceScheduleSchema))
+    description: zod.string().optional(),
+    level: zod
+      .array(zod.lazy(() => CdmObservableAssetPriceScheduleSchema))
       .min(0)
       .max(2)
       .optional(),
-    name: z.string().optional(),
-    triggerTimeType: z
+    name: zod.string().optional(),
+    triggerTimeType: zod
       .lazy(() => CdmObservableEventTriggerTimeTypeEnumSchema)
       .optional(),
-    triggerType: z
+    triggerType: zod
       .lazy(() => CdmObservableEventTriggerTypeEnumSchema)
       .optional(),
   })

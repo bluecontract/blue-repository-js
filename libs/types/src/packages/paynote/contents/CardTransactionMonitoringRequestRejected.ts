@@ -1,34 +1,35 @@
-export const CardTransactionMonitoringRequestRejected = {
-  description: 'Notification that card transaction monitoring was rejected.',
-  events: {
-    itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+export const CardTransactionMonitoringRequestRejected: Record<string, unknown> =
+  {
+    description: 'Notification that card transaction monitoring was rejected.',
+    events: {
+      itemType: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
+      type: {
+        blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
+      },
+    },
+    name: 'Card Transaction Monitoring Request Rejected',
+    reason: {
+      description: 'Reason monitoring was rejected.',
+      type: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
+    },
+    rejectedAt: {
+      description:
+        'Timestamp (microseconds since epoch) when monitoring was rejected.',
+      type: {
+        blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
+      },
+    },
+    targetMerchantId: {
+      description: 'External merchant identifier requested for monitoring.',
+      type: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
     },
-  },
-  name: 'Card Transaction Monitoring Request Rejected',
-  reason: {
-    description: 'Reason monitoring was rejected.',
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
-  rejectedAt: {
-    description:
-      'Timestamp (microseconds since epoch) when monitoring was rejected.',
-    type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-    },
-  },
-  targetMerchantId: {
-    description: 'External merchant identifier requested for monitoring.',
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
-  type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
-  },
-} as const;
+  };

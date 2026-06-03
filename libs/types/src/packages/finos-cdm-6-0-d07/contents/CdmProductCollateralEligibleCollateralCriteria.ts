@@ -1,33 +1,26 @@
-export const CdmProductCollateralEligibleCollateralCriteria = {
+export const CdmProductCollateralEligibleCollateralCriteria: Record<
+  string,
+  unknown
+> = {
   appliesTo: {
     description:
       'Specifies which of the two counterparties the criteria applies to (either one or both counterparties). This attribute is optional, in case the applicable party is already specified elsewhere within a party election.\n',
     itemType: {
-      blueId: '6x12g8enT8MoRfSx5A65GDeBhgNsaewRCdXG5hsioGmL',
+      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
     },
     schema: {
-      maxItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      maxItems: 2,
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   collateralCriteria: {
     description:
       'The specific criteria that applies. It can be created using AND, OR and NOT logic, and both asset and issuer characteristics.\n',
     type: {
-      blueId: 'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#0',
+      blueId: 'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#1',
     },
   },
   description:
@@ -37,29 +30,24 @@ export const CdmProductCollateralEligibleCollateralCriteria = {
     description:
       'Denotes which Criteria has priority if more than one agency rating applies.',
     type: {
-      blueId: 'EM2cuboURhKvNDFYAA6NaucjpnUHYb2s4CKVEyrAt3nK',
+      blueId: 'HN2xCyqgWdVYt6ta4R5o6we7NmT9i49Jn2V5R4V9BoCD',
     },
   },
   restrictTo: {
     description:
       'Restrict the criteria to only apply to a specific type of margin, ie IM or VM.',
     type: {
-      blueId: 'S4kLcw9up81q3TNVMZRCthznJz71LuEpiPLPWh1MJ87',
+      blueId: '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ',
     },
   },
   treatment: {
     description:
       'Identifies the treatment of specified collateral, e.g., haircuts,holding limits or exclusions.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'BL9z4RShUcNi4oWpkU2pgnaKF2vGwrxjpJBWWMAUruzN',
+      blueId: '3J8QUqU5781wEZ91F9Y7a1CUz2EihFL2b3SWBCB1FBth',
     },
   },
-} as const;
+};

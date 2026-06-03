@@ -2,15 +2,17 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationCsaCollateralTransferAgreementElectionsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCsaCollateralTransferAgreementElectionsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/csa/CollateralTransferAgreementElections'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

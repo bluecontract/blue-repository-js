@@ -1,18 +1,13 @@
-export const CdmProductCollateralNegativeCriteria = {
+export const CdmProductCollateralNegativeCriteria: Record<string, unknown> = {
   description:
     'Used to apply a NOT logic condition to a single Collateral Criteria.',
   name: 'cdm/product/collateral/NegativeCriteria',
   negativeCriteria: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'this#0',
+      blueId: 'this#1',
     },
   },
-} as const;
+};

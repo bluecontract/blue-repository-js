@@ -5,31 +5,32 @@ import { CdmBaseStaticdataAssetCommonAssetIdentifierSchema } from './CdmBaseStat
 import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataAssetCommonTaxonomy';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmBaseStaticdataAssetCommonAssetBaseSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/AssetBase']
-  )(
-    z.object({
-      description: z.string().optional(),
-      exchange: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
-        .min(1)
-        .optional(),
-      isExchangeListed: z.boolean().optional(),
-      name: z.string().optional(),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
-        .min(0)
-        .optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
-        .min(0)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonAssetBaseSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/AssetBase']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    exchange: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    identifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      .min(1)
+      .optional(),
+    isExchangeListed: zod.boolean().optional(),
+    name: zod.string().optional(),
+    relatedExchange: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      .min(0)
+      .optional(),
+    taxonomy: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      .min(0)
+      .optional(),
+  })
+);
 
 export type CdmBaseStaticdataAssetCommonAssetBase = z.infer<
   typeof CdmBaseStaticdataAssetCommonAssetBaseSchema

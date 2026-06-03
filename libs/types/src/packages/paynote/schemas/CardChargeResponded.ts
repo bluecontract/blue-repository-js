@@ -3,15 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const CardChargeRespondedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardChargeRespondedSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Charge Responded']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paymentMandateDocumentId: z.string().optional(),
-    reason: z.string().optional(),
-    status: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentMandateDocumentId: zod.string().optional(),
+    reason: zod.string().optional(),
+    status: zod.string().optional(),
   })
 );
 

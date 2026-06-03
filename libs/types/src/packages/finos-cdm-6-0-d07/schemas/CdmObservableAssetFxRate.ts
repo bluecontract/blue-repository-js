@@ -3,16 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetQuotedCurrencyPairSchema } from './CdmObservableAssetQuotedCurrencyPair';
 
-export const CdmObservableAssetFxRateSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetFxRateSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/FxRate']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    quotedCurrencyPair: z.lazy(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    quotedCurrencyPair: zod.lazy(
       () => CdmObservableAssetQuotedCurrencyPairSchema
     ),
-    rate: z.number().optional(),
+    rate: zod.number().optional(),
   })
 );
 

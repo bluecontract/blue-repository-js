@@ -3,15 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventCommonCallTypeEnumSchema } from './CdmEventCommonCallTypeEnum';
 
-export const CdmEventCommonMarginCallInstructionTypeSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventCommonMarginCallInstructionTypeSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/common/MarginCallInstructionType']
   )(
-    z.object({
-      callType: z.lazy(() => CdmEventCommonCallTypeEnumSchema),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      visibilityIndicator: z.boolean().optional(),
+    zod.object({
+      callType: zod.lazy(() => CdmEventCommonCallTypeEnumSchema),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      visibilityIndicator: zod.boolean().optional(),
     })
   );
 

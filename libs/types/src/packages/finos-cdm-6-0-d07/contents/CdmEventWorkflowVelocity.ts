@@ -1,13 +1,13 @@
-export const CdmEventWorkflowVelocity = {
+export const CdmEventWorkflowVelocity: Record<string, unknown> = {
   name: 'cdm/event/workflow/Velocity',
   period: {
     type: {
-      blueId: '5XHHdiRH8TMfQjroSueRJHdrffKowum2j3MNEz6MZLZr',
+      blueId: 'GNrP38tyPnaCEFuGcFscbFEJhuVkgbjD2h7HMSS7WKq2',
     },
   },
   periodMultiplier: {
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
-} as const;
+};

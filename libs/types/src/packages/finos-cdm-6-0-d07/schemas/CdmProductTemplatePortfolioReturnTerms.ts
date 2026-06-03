@@ -11,67 +11,65 @@ import { CdmProductAssetPriceReturnTermsSchema } from './CdmProductAssetPriceRet
 import { CdmProductAssetVarianceReturnTermsSchema } from './CdmProductAssetVarianceReturnTerms';
 import { CdmProductAssetVolatilityReturnTermsSchema } from './CdmProductAssetVolatilityReturnTerms';
 
-export const CdmProductTemplatePortfolioReturnTermsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PortfolioReturnTerms']
-  )(
-    z.object({
-      correlationReturnTerms: z
-        .lazy(() => CdmProductAssetCorrelationReturnTermsSchema)
-        .optional(),
-      description: z.string().optional(),
-      dividendReturnTerms: z
-        .lazy(() => CdmProductAssetDividendReturnTermsSchema)
-        .optional(),
-      finalValuationPrice: z
-        .array(
-          z.lazy(
-            () =>
-              CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-          )
+const zod = z as any;
+
+export const CdmProductTemplatePortfolioReturnTermsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/PortfolioReturnTerms']
+)(
+  zod.object({
+    correlationReturnTerms: zod
+      .lazy(() => CdmProductAssetCorrelationReturnTermsSchema)
+      .optional(),
+    description: zod.string().optional(),
+    dividendReturnTerms: zod
+      .lazy(() => CdmProductAssetDividendReturnTermsSchema)
+      .optional(),
+    finalValuationPrice: zod
+      .array(
+        zod.lazy(
+          () => CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
         )
-        .min(0)
-        .optional(),
-      initialValuationPrice: z
-        .array(
-          z.lazy(
-            () =>
-              CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-          )
+      )
+      .min(0)
+      .optional(),
+    initialValuationPrice: zod
+      .array(
+        zod.lazy(
+          () => CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
         )
-        .min(0)
-        .optional(),
-      interimValuationPrice: z
-        .array(
-          z.lazy(
-            () =>
-              CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
-          )
+      )
+      .min(0)
+      .optional(),
+    interimValuationPrice: zod
+      .array(
+        zod.lazy(
+          () => CdmObservableAssetMetafieldsReferenceWithMetaPriceScheduleSchema
         )
-        .min(0)
-        .optional(),
-      name: z.string().optional(),
-      payerReceiver: z.lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema),
-      priceReturnTerms: z
-        .lazy(() => CdmProductAssetPriceReturnTermsSchema)
-        .optional(),
-      quantity: z
-        .lazy(
-          () =>
-            CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantityScheduleSchema
-        )
-        .optional(),
-      underlier: z.lazy(
-        () => CdmObservableAssetMetafieldsReferenceWithMetaObservableSchema
-      ),
-      varianceReturnTerms: z
-        .lazy(() => CdmProductAssetVarianceReturnTermsSchema)
-        .optional(),
-      volatilityReturnTerms: z
-        .lazy(() => CdmProductAssetVolatilityReturnTermsSchema)
-        .optional(),
-    })
-  );
+      )
+      .min(0)
+      .optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod.lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema),
+    priceReturnTerms: zod
+      .lazy(() => CdmProductAssetPriceReturnTermsSchema)
+      .optional(),
+    quantity: zod
+      .lazy(
+        () =>
+          CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantityScheduleSchema
+      )
+      .optional(),
+    underlier: zod.lazy(
+      () => CdmObservableAssetMetafieldsReferenceWithMetaObservableSchema
+    ),
+    varianceReturnTerms: zod
+      .lazy(() => CdmProductAssetVarianceReturnTermsSchema)
+      .optional(),
+    volatilityReturnTerms: zod
+      .lazy(() => CdmProductAssetVolatilityReturnTermsSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductTemplatePortfolioReturnTerms = z.infer<
   typeof CdmProductTemplatePortfolioReturnTermsSchema

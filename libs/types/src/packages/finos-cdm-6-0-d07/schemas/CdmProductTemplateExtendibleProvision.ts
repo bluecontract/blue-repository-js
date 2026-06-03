@@ -10,45 +10,46 @@ import { CdmProductTemplateExerciseNoticeSchema } from './CdmProductTemplateExer
 import { CdmProductTemplateExerciseTermsSchema } from './CdmProductTemplateExerciseTerms';
 import { CdmProductTemplateExtendibleProvisionAdjustedDatesSchema } from './CdmProductTemplateExtendibleProvisionAdjustedDates';
 
-export const CdmProductTemplateExtendibleProvisionSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExtendibleProvision']
-  )(
-    z.object({
-      buyer: z
-        .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
-        .optional(),
-      callingParty: z
-        .lazy(() => CdmProductTemplateCallingPartyEnumSchema)
-        .optional(),
-      description: z.string().optional(),
-      exerciseNotice: z
-        .lazy(() => CdmProductTemplateExerciseNoticeSchema)
-        .optional(),
-      exerciseTerms: z.lazy(() => CdmProductTemplateExerciseTermsSchema),
-      extendibleProvisionAdjustedDates: z
-        .lazy(() => CdmProductTemplateExtendibleProvisionAdjustedDatesSchema)
-        .optional(),
-      extensionPeriod: z
-        .lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
-        .optional(),
-      extensionTerm: z
-        .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
-        .optional(),
-      followUpConfirmation: z.boolean().optional(),
-      name: z.string().optional(),
-      noticeDeadlineDateTime: z.string().optional(),
-      noticeDeadlinePeriod: z
-        .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
-        .optional(),
-      seller: z
-        .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
-        .optional(),
-      singlePartyOption: z
-        .lazy(() => CdmBaseStaticdataPartyPartyRoleSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateExtendibleProvisionSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExtendibleProvision']
+)(
+  zod.object({
+    buyer: zod
+      .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
+      .optional(),
+    callingParty: zod
+      .lazy(() => CdmProductTemplateCallingPartyEnumSchema)
+      .optional(),
+    description: zod.string().optional(),
+    exerciseNotice: zod
+      .lazy(() => CdmProductTemplateExerciseNoticeSchema)
+      .optional(),
+    exerciseTerms: zod.lazy(() => CdmProductTemplateExerciseTermsSchema),
+    extendibleProvisionAdjustedDates: zod
+      .lazy(() => CdmProductTemplateExtendibleProvisionAdjustedDatesSchema)
+      .optional(),
+    extensionPeriod: zod
+      .lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
+      .optional(),
+    extensionTerm: zod
+      .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
+      .optional(),
+    followUpConfirmation: zod.boolean().optional(),
+    name: zod.string().optional(),
+    noticeDeadlineDateTime: zod.string().optional(),
+    noticeDeadlinePeriod: zod
+      .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
+      .optional(),
+    seller: zod
+      .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
+      .optional(),
+    singlePartyOption: zod
+      .lazy(() => CdmBaseStaticdataPartyPartyRoleSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductTemplateExtendibleProvision = z.infer<
   typeof CdmProductTemplateExtendibleProvisionSchema

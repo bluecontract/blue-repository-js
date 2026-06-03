@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { SequentialWorkflowStepSchema } from './SequentialWorkflowStep';
 
-export const TriggerEventSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TriggerEventSchema: any = withTypeBlueId(
   blueIds['Coordination/Trigger Event']
 )(
   SequentialWorkflowStepSchema.extend({
-    description: z.string().optional(),
+    description: zod.string().optional(),
     event: blueNodeField().optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

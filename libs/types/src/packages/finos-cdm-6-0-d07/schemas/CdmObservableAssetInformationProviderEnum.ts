@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetInformationProviderEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetInformationProviderEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/InformationProviderEnum']
   )(
-    z.enum([
+    zod.enum([
       'AssocBanksSingapore',
       'BancoCentralChile',
       'BankOfCanada',

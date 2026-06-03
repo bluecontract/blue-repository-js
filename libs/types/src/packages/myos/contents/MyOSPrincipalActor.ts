@@ -1,13 +1,13 @@
-export const MyOSPrincipalActor = {
+export const MyOSPrincipalActor: Record<string, unknown> = {
   accountId: {
     description: 'MyOS account ID of the principal.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description: 'MyOS-specific principal actor specialization.',
   name: 'MyOS Principal Actor',
   type: {
-    blueId: 'QpJs5D2xRNzmEqXvra312z1fXkyyJehdJUs4ZTwUnD3',
+    blueId: '23cWKG6LF47H1G3EfhV5dmEYtxkNaqLWgFDxEurdc6Ef',
   },
-} as const;
+};

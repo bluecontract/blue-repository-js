@@ -4,12 +4,16 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { ActorSchema } from '../../coordination/schemas/Actor';
 import { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 
-export const AgentActorSchema = withTypeBlueId(blueIds['MyOS/Agent Actor'])(
+const zod = z as any;
+
+export const AgentActorSchema: any = withTypeBlueId(
+  blueIds['MyOS/Agent Actor']
+)(
   ActorSchema.extend({
-    agentRef: z.lazy(() => MyOSDocumentSessionReferenceSchema).optional(),
-    delegation: z.lazy(() => MyOSDocumentSessionReferenceSchema).optional(),
-    name: z.string().optional(),
-    onBehalfOf: z.string().optional(),
+    agentRef: zod.lazy(() => MyOSDocumentSessionReferenceSchema).optional(),
+    delegation: zod.lazy(() => MyOSDocumentSessionReferenceSchema).optional(),
+    name: zod.string().optional(),
+    onBehalfOf: zod.string().optional(),
   })
 );
 

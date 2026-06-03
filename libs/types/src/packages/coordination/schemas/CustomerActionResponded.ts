@@ -4,15 +4,17 @@ import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { ResponseSchema } from './Response';
 
-export const CustomerActionRespondedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CustomerActionRespondedSchema: any = withTypeBlueId(
   blueIds['Coordination/Customer Action Responded']
 )(
   ResponseSchema.extend({
-    actionLabel: z.string().optional(),
-    description: z.string().optional(),
+    actionLabel: zod.string().optional(),
+    description: zod.string().optional(),
     input: blueNodeField().optional(),
-    name: z.string().optional(),
-    respondedAt: z.lazy(() => TimestampSchema).optional(),
+    name: zod.string().optional(),
+    respondedAt: zod.lazy(() => TimestampSchema).optional(),
   })
 );
 

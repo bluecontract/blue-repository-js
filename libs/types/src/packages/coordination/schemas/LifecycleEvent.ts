@@ -3,12 +3,14 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { EventSchema } from './Event';
 
-export const LifecycleEventSchema = withTypeBlueId(
+const zod = z as any;
+
+export const LifecycleEventSchema: any = withTypeBlueId(
   blueIds['Coordination/Lifecycle Event']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

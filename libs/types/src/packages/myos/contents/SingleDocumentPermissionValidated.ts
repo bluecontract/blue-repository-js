@@ -1,7 +1,7 @@
-export const SingleDocumentPermissionValidated = {
+export const SingleDocumentPermissionValidated: Record<string, unknown> = {
   description: 'Emitted on initialise when local shape checks pass.',
   name: 'Single Document Permission Validated',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

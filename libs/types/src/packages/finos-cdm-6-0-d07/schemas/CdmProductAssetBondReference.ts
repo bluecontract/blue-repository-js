@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataAssetCommonSecuritySchema } from './CdmBaseStaticdataAssetCommonSecurity';
 import { CdmProductAssetFixedRateSpecificationSchema } from './CdmProductAssetFixedRateSpecification';
 
-export const CdmProductAssetBondReferenceSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductAssetBondReferenceSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/BondReference']
 )(
-  z.object({
-    bond: z.lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema),
-    conditionPrecedentBond: z.boolean(),
-    couponRate: z
+  zod.object({
+    bond: zod.lazy(() => CdmBaseStaticdataAssetCommonSecuritySchema),
+    conditionPrecedentBond: zod.boolean(),
+    couponRate: zod
       .lazy(() => CdmProductAssetFixedRateSpecificationSchema)
       .optional(),
-    description: z.string().optional(),
-    discrepancyClause: z.boolean().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    discrepancyClause: zod.boolean().optional(),
+    name: zod.string().optional(),
   })
 );
 

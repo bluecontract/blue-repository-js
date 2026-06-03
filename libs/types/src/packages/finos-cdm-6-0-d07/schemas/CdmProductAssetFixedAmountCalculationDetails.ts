@@ -4,22 +4,24 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 import { CdmProductCommonScheduleCalculationPeriodBaseSchema } from './CdmProductCommonScheduleCalculationPeriodBase';
 
-export const CdmProductAssetFixedAmountCalculationDetailsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFixedAmountCalculationDetailsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/FixedAmountCalculationDetails']
   )(
-    z.object({
-      calculatedAmount: z.number(),
-      calculationPeriod: z.lazy(
+    zod.object({
+      calculatedAmount: zod.number(),
+      calculationPeriod: zod.lazy(
         () => CdmProductCommonScheduleCalculationPeriodBaseSchema
       ),
-      calculationPeriodNotionalAmount: z.lazy(
+      calculationPeriodNotionalAmount: zod.lazy(
         () => CdmObservableAssetMoneySchema
       ),
-      description: z.string().optional(),
-      fixedRate: z.number(),
-      name: z.string().optional(),
-      yearFraction: z.number(),
+      description: zod.string().optional(),
+      fixedRate: zod.number(),
+      name: zod.string().optional(),
+      yearFraction: zod.number(),
     })
   );
 

@@ -1,13 +1,13 @@
-export const PaymentCompletionLocked = {
+export const PaymentCompletionLocked: Record<string, unknown> = {
   description:
     'Payment completion was locked. Subsequent completion attempts must be rejected until explicitly unlocked.\n',
   lockedAt: {
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   name: 'Payment Completion Locked',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

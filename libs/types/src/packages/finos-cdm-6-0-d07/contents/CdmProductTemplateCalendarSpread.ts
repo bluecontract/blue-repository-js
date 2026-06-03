@@ -1,17 +1,12 @@
-export const CdmProductTemplateCalendarSpread = {
+export const CdmProductTemplateCalendarSpread: Record<string, unknown> = {
   description: 'A type for defining a calendar spread feature.',
   expirationDateTwo: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   name: 'cdm/product/template/CalendarSpread',
-} as const;
+};

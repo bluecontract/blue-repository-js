@@ -4,19 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventCommonCorporateActionSchema } from './CdmEventCommonCorporateAction';
 import { CdmEventCommonCreditEventSchema } from './CdmEventCommonCreditEvent';
 
-export const CdmEventCommonObservationEventSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ObservationEvent']
-  )(
-    z.object({
-      corporateAction: z
-        .lazy(() => CdmEventCommonCorporateActionSchema)
-        .optional(),
-      creditEvent: z.lazy(() => CdmEventCommonCreditEventSchema).optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonObservationEventSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ObservationEvent']
+)(
+  zod.object({
+    corporateAction: zod
+      .lazy(() => CdmEventCommonCorporateActionSchema)
+      .optional(),
+    creditEvent: zod.lazy(() => CdmEventCommonCreditEventSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmEventCommonObservationEvent = z.infer<
   typeof CdmEventCommonObservationEventSchema

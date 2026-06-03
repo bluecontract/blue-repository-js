@@ -4,14 +4,16 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventCommonRecordAmountTypeEnumSchema } from './CdmEventCommonRecordAmountTypeEnum';
 import { CdmEventCommonTransferSchema } from './CdmEventCommonTransfer';
 
-export const CdmEventCommonBillingSummarySchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonBillingSummarySchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/BillingSummary']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    summaryAmountType: z.lazy(() => CdmEventCommonRecordAmountTypeEnumSchema),
-    summaryTransfer: z.lazy(() => CdmEventCommonTransferSchema).optional(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    summaryAmountType: zod.lazy(() => CdmEventCommonRecordAmountTypeEnumSchema),
+    summaryTransfer: zod.lazy(() => CdmEventCommonTransferSchema).optional(),
   })
 );
 

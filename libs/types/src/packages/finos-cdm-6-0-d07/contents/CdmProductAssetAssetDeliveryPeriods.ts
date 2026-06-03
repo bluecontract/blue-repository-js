@@ -1,10 +1,10 @@
-export const CdmProductAssetAssetDeliveryPeriods = {
+export const CdmProductAssetAssetDeliveryPeriods: Record<string, unknown> = {
   description:
     'Defines the periods of delivery, including the delivery profile.',
   endDate: {
     description: 'Delivery end date',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/product/asset/AssetDeliveryPeriods',
@@ -12,24 +12,19 @@ export const CdmProductAssetAssetDeliveryPeriods = {
     description:
       'Defines the delivery profile of the asset, including the load type and the delivery intervals.',
     itemType: {
-      blueId: 'G3hrrr7rcs6ZtCze1xXjYezVbZ6rTuYfog2nrcJZ7fTN',
+      blueId: 'E8QF9EBMdnTPHUuRgEqvQUvGm75ReZB3zjKJB7BSjt7z',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   startDate: {
     description: 'Delivery start date',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

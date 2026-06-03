@@ -1,4 +1,4 @@
-export const TargetDocumentSessionStarted = {
+export const TargetDocumentSessionStarted: Record<string, unknown> = {
   document: {
     description:
       'The final, canonicalized document state with all timelineIds filled in.',
@@ -6,11 +6,11 @@ export const TargetDocumentSessionStarted = {
   initiatorSessionIds: {
     description: 'Session IDs created for the bootstrap initiator (caller)',
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   name: 'Target Document Session Started',
-} as const;
+};

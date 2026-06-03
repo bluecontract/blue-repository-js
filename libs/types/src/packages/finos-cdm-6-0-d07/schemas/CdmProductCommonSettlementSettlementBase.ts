@@ -9,32 +9,34 @@ import { CdmProductCommonSettlementStandardSettlementStyleEnumSchema } from './C
 import { CdmProductCommonSettlementTransferSettlementEnumSchema } from './CdmProductCommonSettlementTransferSettlementEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductCommonSettlementSettlementBaseSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementSettlementBaseSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/SettlementBase']
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      settlementCentre: z
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      settlementCentre: zod
         .lazy(() => CdmProductCommonSettlementSettlementCentreEnumSchema)
         .optional(),
-      settlementCurrency: z
+      settlementCurrency: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      settlementDate: z
+      settlementDate: zod
         .lazy(() => CdmProductCommonSettlementSettlementDateSchema)
         .optional(),
-      settlementProvision: z
+      settlementProvision: zod
         .lazy(() => CdmProductCommonSettlementSettlementProvisionSchema)
         .optional(),
-      settlementType: z.lazy(
+      settlementType: zod.lazy(
         () => CdmProductCommonSettlementSettlementTypeEnumSchema
       ),
-      standardSettlementStyle: z
+      standardSettlementStyle: zod
         .lazy(() => CdmProductCommonSettlementStandardSettlementStyleEnumSchema)
         .optional(),
-      transferSettlementType: z
+      transferSettlementType: zod
         .lazy(() => CdmProductCommonSettlementTransferSettlementEnumSchema)
         .optional(),
     })

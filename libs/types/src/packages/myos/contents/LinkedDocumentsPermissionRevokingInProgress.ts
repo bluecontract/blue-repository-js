@@ -1,22 +1,25 @@
-export const LinkedDocumentsPermissionRevokingInProgress = {
+export const LinkedDocumentsPermissionRevokingInProgress: Record<
+  string,
+  unknown
+> = {
   description: 'MyOS Admin has started revoking this LDPG.',
   links: {
     type: {
-      blueId: '75CyJPe82hSjV9T2tsir5R3343vhqvG41w2EzFhCp5Y9',
+      blueId: 'DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn',
     },
   },
   name: 'Linked Documents Permission Revoking in Progress',
   reason: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   targetSessionId: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

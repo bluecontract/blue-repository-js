@@ -7,21 +7,23 @@ import { CdmObservableAssetFieldWithMetaInterestRateIndexSchema } from './CdmObs
 import { CdmObservableAssetForeignExchangeRateIndexSchema } from './CdmObservableAssetForeignExchangeRateIndex';
 import { CdmObservableAssetOtherIndexSchema } from './CdmObservableAssetOtherIndex';
 
-export const CdmObservableAssetIndexSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetIndexSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/Index']
 )(
-  z.object({
-    CreditIndex: z.lazy(() => CdmObservableAssetCreditIndexSchema).optional(),
-    description: z.string().optional(),
-    EquityIndex: z.lazy(() => CdmObservableAssetEquityIndexSchema).optional(),
-    ForeignExchangeRateIndex: z
+  zod.object({
+    CreditIndex: zod.lazy(() => CdmObservableAssetCreditIndexSchema).optional(),
+    description: zod.string().optional(),
+    EquityIndex: zod.lazy(() => CdmObservableAssetEquityIndexSchema).optional(),
+    ForeignExchangeRateIndex: zod
       .lazy(() => CdmObservableAssetForeignExchangeRateIndexSchema)
       .optional(),
-    InterestRateIndex: z
+    InterestRateIndex: zod
       .lazy(() => CdmObservableAssetFieldWithMetaInterestRateIndexSchema)
       .optional(),
-    name: z.string().optional(),
-    OtherIndex: z.lazy(() => CdmObservableAssetOtherIndexSchema).optional(),
+    name: zod.string().optional(),
+    OtherIndex: zod.lazy(() => CdmObservableAssetOtherIndexSchema).optional(),
   })
 );
 

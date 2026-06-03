@@ -1,16 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { MarkerSchema } from '../../core/schemas/Marker';
 
-export const ComputeDefinitionSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ComputeDefinitionSchema: any = withTypeBlueId(
   blueIds['Coordination/Compute Definition']
 )(
-  MarkerSchema.extend({
-    constants: z.record(z.string(), blueNodeField()).optional(),
-    description: z.string().optional(),
-    functions: z.record(z.string(), blueNodeField()).optional(),
-    name: z.string().optional(),
+  zod.object({
+    constants: zod.record(zod.string(), blueNodeField()).optional(),
+    description: zod.string().optional(),
+    functions: zod.record(zod.string(), blueNodeField()).optional(),
+    name: zod.string().optional(),
   })
 );
 

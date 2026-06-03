@@ -2,14 +2,16 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const ParticipantActivationStateSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ParticipantActivationStateSchema: any = withTypeBlueId(
   blueIds['MyOS/Participant Activation State']
 )(
-  z.object({
-    accountStatus: z.string().optional(),
-    description: z.string().optional(),
-    errorMessage: z.string().optional(),
-    name: z.string().optional(),
+  zod.object({
+    accountStatus: zod.string().optional(),
+    description: zod.string().optional(),
+    errorMessage: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

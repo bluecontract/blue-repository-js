@@ -3,12 +3,14 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const DocumentInitialSnapshotUnresolvedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentInitialSnapshotUnresolvedSchema: any = withTypeBlueId(
   blueIds['MyOS/Document Initial Snapshot Unresolved']
 )(
   ResponseSchema.extend({
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

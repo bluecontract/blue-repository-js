@@ -3,19 +3,21 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductTemplateCancellationEventSchema } from './CdmProductTemplateCancellationEvent';
 
-export const CdmProductTemplateCancelableProvisionAdjustedDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateCancelableProvisionAdjustedDatesSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/template/CancelableProvisionAdjustedDates'
     ]
   )(
-    z.object({
-      cancellationEvent: z
-        .array(z.lazy(() => CdmProductTemplateCancellationEventSchema))
+    zod.object({
+      cancellationEvent: zod
+        .array(zod.lazy(() => CdmProductTemplateCancellationEventSchema))
         .min(1)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

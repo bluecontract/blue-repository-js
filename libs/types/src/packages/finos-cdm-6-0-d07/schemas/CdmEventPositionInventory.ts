@@ -3,16 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventPositionInventoryRecordSchema } from './CdmEventPositionInventoryRecord';
 
-export const CdmEventPositionInventorySchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventPositionInventorySchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/position/Inventory']
 )(
-  z.object({
-    description: z.string().optional(),
-    inventoryRecord: z
-      .array(z.lazy(() => CdmEventPositionInventoryRecordSchema))
+  zod.object({
+    description: zod.string().optional(),
+    inventoryRecord: zod
+      .array(zod.lazy(() => CdmEventPositionInventoryRecordSchema))
       .min(0)
       .optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

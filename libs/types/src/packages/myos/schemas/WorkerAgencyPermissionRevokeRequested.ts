@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const WorkerAgencyPermissionRevokeRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const WorkerAgencyPermissionRevokeRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Worker Agency Permission Revoke Requested']
 )(
   RequestSchema.extend({
-    description: z.string().optional(),
-    grantDocumentId: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    description: zod.string().optional(),
+    grantDocumentId: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

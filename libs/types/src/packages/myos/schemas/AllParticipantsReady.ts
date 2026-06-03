@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const AllParticipantsReadySchema = withTypeBlueId(
+const zod = z as any;
+
+export const AllParticipantsReadySchema: any = withTypeBlueId(
   blueIds['MyOS/All Participants Ready']
 )(
-  z.object({
-    name: z.string().optional(),
+  zod.object({
+    name: zod.string().optional(),
   })
 );
 

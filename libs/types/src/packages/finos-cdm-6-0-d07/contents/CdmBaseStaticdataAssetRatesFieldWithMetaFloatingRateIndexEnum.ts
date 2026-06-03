@@ -1,13 +1,16 @@
-export const CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum = {
+export const CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/staticdata/asset/rates/FieldWithMetaFloatingRateIndexEnum',
   val: {
     type: {
-      blueId: 'AygoLHtsrgUkWFxjVtQsDYzEn5EbXUEt8avHzLQsUUVZ',
+      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
     },
   },
-} as const;
+};

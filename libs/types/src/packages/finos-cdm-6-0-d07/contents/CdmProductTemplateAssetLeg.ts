@@ -1,16 +1,11 @@
-export const CdmProductTemplateAssetLeg = {
+export const CdmProductTemplateAssetLeg: Record<string, unknown> = {
   deliveryMethod: {
     description: 'Specifies a delivery method for the security transaction.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'FRoMknL5tLocYSiFfWHQdaNh9P69TCfagyqaUDB7r1fx',
+      blueId: '6LWhigVjjAUUSFhmA6HbeNXAPPtSPD97nTeiyR7yRQCn',
     },
   },
   description: 'Defines each asset movement of an asset payout.',
@@ -19,15 +14,10 @@ export const CdmProductTemplateAssetLeg = {
     description:
       'Specifies the settlement date of securities.  In a repo transaction the purchase date would always be the effective date as specified under Economic Terms, the repurchase date would always be the termination date as specified under Economic Terms.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
-} as const;
+};

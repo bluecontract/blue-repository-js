@@ -1,9 +1,9 @@
-export const CardTransactionDetails = {
+export const CardTransactionDetails: Record<string, unknown> = {
   authorizationCode: {
     description:
       'ISO 8583 DE38 Authorization Identification Response (authorization code).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -13,19 +13,19 @@ export const CardTransactionDetails = {
     description:
       'ISO 8583 DE37 Retrieval Reference Number (RRN) for cross-network traceability.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   systemTraceAuditNumber: {
     description: 'ISO 8583 DE11 System Trace Audit Number (STAN).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   transmissionDateTime: {
     description: 'ISO 8583 DE7 Transmission Date and Time (MMDDhhmmss).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

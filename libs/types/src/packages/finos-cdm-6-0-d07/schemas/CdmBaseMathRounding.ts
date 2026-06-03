@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathRoundingDirectionEnumSchema } from './CdmBaseMathRoundingDirectionEnum';
 
-export const CdmBaseMathRoundingSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathRoundingSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/Rounding']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    precision: z.number().optional(),
-    roundingDirection: z.lazy(() => CdmBaseMathRoundingDirectionEnumSchema),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    precision: zod.number().optional(),
+    roundingDirection: zod.lazy(() => CdmBaseMathRoundingDirectionEnumSchema),
   })
 );
 

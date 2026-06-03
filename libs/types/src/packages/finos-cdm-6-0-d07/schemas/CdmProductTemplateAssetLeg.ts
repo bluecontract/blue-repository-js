@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeAdjustableOrRelativeDateSchema } from './CdmBaseDatetimeAdjustableOrRelativeDate';
 import { CdmProductCommonSettlementDeliveryMethodEnumSchema } from './CdmProductCommonSettlementDeliveryMethodEnum';
 
-export const CdmProductTemplateAssetLegSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateAssetLegSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/AssetLeg']
 )(
-  z.object({
-    deliveryMethod: z.lazy(
+  zod.object({
+    deliveryMethod: zod.lazy(
       () => CdmProductCommonSettlementDeliveryMethodEnumSchema
     ),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    settlementDate: z.lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    settlementDate: zod.lazy(
+      () => CdmBaseDatetimeAdjustableOrRelativeDateSchema
+    ),
   })
 );
 

@@ -1,14 +1,16 @@
-export const CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum =
-  {
-    meta: {
-      type: {
-        blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
-      },
+export const CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum: Record<
+  string,
+  unknown
+> = {
+  meta: {
+    type: {
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
-    name: 'cdm/legaldocumentation/master/FieldWithMetaMasterConfirmationAnnexTypeEnum',
-    val: {
-      type: {
-        blueId: '3umcSYDhotX3cidttq9vwUAQsUwH1ciFwBQHaKs6b248',
-      },
+  },
+  name: 'cdm/legaldocumentation/master/FieldWithMetaMasterConfirmationAnnexTypeEnum',
+  val: {
+    type: {
+      blueId: 'Ge5XthGPax9Pcox4Sg4TN3G8GY41YZjZQjFbGESHPqiV',
     },
-  } as const;
+  },
+};

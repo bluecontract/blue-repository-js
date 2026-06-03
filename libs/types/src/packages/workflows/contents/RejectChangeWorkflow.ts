@@ -1,4 +1,4 @@
-export const RejectChangeWorkflow = {
+export const RejectChangeWorkflow: Record<string, unknown> = {
   description:
     'Discards a previously proposed change by removing its proposal state.',
   name: 'Reject Change Workflow',
@@ -6,7 +6,7 @@ export const RejectChangeWorkflow = {
     description:
       'Optional postfix used while building proposed change state key.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   steps: {
@@ -20,13 +20,13 @@ export const RejectChangeWorkflow = {
                   items: [
                     {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'postfix',
                     },
                     {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'proposedPath',
                     },
@@ -40,7 +40,7 @@ export const RejectChangeWorkflow = {
                           $currentContract: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: '/postfix',
                           },
@@ -48,7 +48,7 @@ export const RejectChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '',
                         },
@@ -61,7 +61,7 @@ export const RejectChangeWorkflow = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/proposedChange',
                         },
@@ -69,7 +69,7 @@ export const RejectChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'postfix',
                           },
@@ -90,7 +90,7 @@ export const RejectChangeWorkflow = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'proposedPath',
                           },
@@ -112,14 +112,14 @@ export const RejectChangeWorkflow = {
                               {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'no proposed change at',
                               },
                               {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: ' ',
                               },
@@ -127,7 +127,7 @@ export const RejectChangeWorkflow = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'proposedPath',
                                 },
@@ -137,7 +137,7 @@ export const RejectChangeWorkflow = {
                         },
                         type: {
                           blueId:
-                            '8oEU9ysLsGJJeeCDsEgnHbyu8vuWTwogExHmNc7t512n',
+                            '6jcAKEeVpGCPenpSnfwwamL2iTHBACRXPFQjEDU5pX1y',
                         },
                       },
                     ],
@@ -149,14 +149,14 @@ export const RejectChangeWorkflow = {
               $appendChange: {
                 op: {
                   type: {
-                    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                   },
                   value: 'remove',
                 },
                 path: {
                   $var: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'proposedPath',
                   },
@@ -168,7 +168,7 @@ export const RejectChangeWorkflow = {
                 changeset: {
                   $changeset: {
                     type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
                     value: true,
                   },
@@ -176,7 +176,7 @@ export const RejectChangeWorkflow = {
                 events: {
                   $events: {
                     type: {
-                      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
                     value: true,
                   },
@@ -187,12 +187,12 @@ export const RejectChangeWorkflow = {
         },
         name: 'Prepare',
         type: {
-          blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+          blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
         },
       },
     ],
   },
   type: {
-    blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+    blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
   },
-} as const;
+};

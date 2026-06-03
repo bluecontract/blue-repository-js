@@ -4,21 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataPartyAncillaryRoleEnumSchema } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmBaseStaticdataPartyAncillaryEntitySchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/AncillaryEntity']
-  )(
-    z.object({
-      ancillaryParty: z
-        .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
-        .optional(),
-      description: z.string().optional(),
-      legalEntity: z
-        .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyAncillaryEntitySchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/AncillaryEntity']
+)(
+  zod.object({
+    ancillaryParty: zod
+      .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
+      .optional(),
+    description: zod.string().optional(),
+    legalEntity: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmBaseStaticdataPartyAncillaryEntity = z.infer<
   typeof CdmBaseStaticdataPartyAncillaryEntitySchema

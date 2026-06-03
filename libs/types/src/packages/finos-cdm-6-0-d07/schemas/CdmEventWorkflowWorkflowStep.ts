@@ -16,53 +16,59 @@ import { CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStepSchema } from '.
 import { CdmEventWorkflowWorkflowStateSchema } from './CdmEventWorkflowWorkflowState';
 import { CdmEventWorkflowWorkflowStepApprovalSchema } from './CdmEventWorkflowWorkflowStepApproval';
 
-export const CdmEventWorkflowWorkflowStepSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventWorkflowWorkflowStepSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/WorkflowStep']
 )(
-  z.object({
-    account: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyAccountSchema))
+  zod.object({
+    account: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyAccountSchema))
       .min(0)
       .optional(),
-    action: z.lazy(() => CdmEventCommonActionEnumSchema).optional(),
-    approval: z
-      .array(z.lazy(() => CdmEventWorkflowWorkflowStepApprovalSchema))
+    action: zod.lazy(() => CdmEventCommonActionEnumSchema).optional(),
+    approval: zod
+      .array(zod.lazy(() => CdmEventWorkflowWorkflowStepApprovalSchema))
       .min(0)
       .optional(),
-    businessEvent: z.lazy(() => CdmEventCommonBusinessEventSchema).optional(),
-    counterpartyPositionBusinessEvent: z
+    businessEvent: zod.lazy(() => CdmEventCommonBusinessEventSchema).optional(),
+    counterpartyPositionBusinessEvent: zod
       .lazy(() => CdmEventCommonCounterpartyPositionBusinessEventSchema)
       .optional(),
-    creditLimitInformation: z
+    creditLimitInformation: zod
       .lazy(() => CdmEventWorkflowCreditLimitInformationSchema)
       .optional(),
-    description: z.string().optional(),
-    eventIdentifier: z
-      .array(z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
+    description: zod.string().optional(),
+    eventIdentifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
       .min(1)
       .optional(),
-    lineage: z.lazy(() => CdmEventCommonLineageSchema).optional(),
-    messageInformation: z
+    lineage: zod.lazy(() => CdmEventCommonLineageSchema).optional(),
+    messageInformation: zod
       .lazy(() => CdmEventWorkflowMessageInformationSchema)
       .optional(),
-    name: z.string().optional(),
-    nextEvent: z.lazy(() => CdmEventWorkflowEventInstructionSchema).optional(),
-    party: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyPartySchema))
-      .min(0)
-      .optional(),
-    previousWorkflowStep: z
-      .lazy(() => CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStepSchema)
-      .optional(),
-    proposedEvent: z
+    name: zod.string().optional(),
+    nextEvent: zod
       .lazy(() => CdmEventWorkflowEventInstructionSchema)
       .optional(),
-    rejected: z.boolean().optional(),
-    timestamp: z
-      .array(z.lazy(() => CdmEventWorkflowEventTimestampSchema))
+    party: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartySchema))
+      .min(0)
+      .optional(),
+    previousWorkflowStep: zod
+      .lazy(() => CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStepSchema)
+      .optional(),
+    proposedEvent: zod
+      .lazy(() => CdmEventWorkflowEventInstructionSchema)
+      .optional(),
+    rejected: zod.boolean().optional(),
+    timestamp: zod
+      .array(zod.lazy(() => CdmEventWorkflowEventTimestampSchema))
       .min(1)
       .optional(),
-    workflowState: z.lazy(() => CdmEventWorkflowWorkflowStateSchema).optional(),
+    workflowState: zod
+      .lazy(() => CdmEventWorkflowWorkflowStateSchema)
+      .optional(),
   })
 );
 

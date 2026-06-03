@@ -1,15 +1,16 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { MarkerSchema } from '../../core/schemas/Marker';
 
-export const OperationSchema = withTypeBlueId(
+const zod = z as any;
+
+export const OperationSchema: any = withTypeBlueId(
   blueIds['Coordination/Operation']
 )(
-  MarkerSchema.extend({
-    channel: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+  zod.object({
+    channel: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
     request: blueNodeField().optional(),
   })
 );

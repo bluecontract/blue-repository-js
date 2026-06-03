@@ -6,27 +6,29 @@ import { CdmProductAssetBasketReferenceInformationSchema } from './CdmProductAss
 import { CdmProductAssetReferenceInformationSchema } from './CdmProductAssetReferenceInformation';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductAssetGeneralTermsSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductAssetGeneralTermsSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/GeneralTerms']
 )(
-  z.object({
-    additionalTerm: z
-      .array(z.lazy(() => ComRosettaModelFieldWithMetaStringSchema))
+  zod.object({
+    additionalTerm: zod
+      .array(zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema))
       .min(0)
       .optional(),
-    basketReferenceInformation: z
+    basketReferenceInformation: zod
       .lazy(() => CdmProductAssetBasketReferenceInformationSchema)
       .optional(),
-    description: z.string().optional(),
-    indexReferenceInformation: z
+    description: zod.string().optional(),
+    indexReferenceInformation: zod
       .lazy(() => CdmObservableAssetCreditIndexSchema)
       .optional(),
-    modifiedEquityDelivery: z.boolean().optional(),
-    name: z.string().optional(),
-    referenceInformation: z
+    modifiedEquityDelivery: zod.boolean().optional(),
+    name: zod.string().optional(),
+    referenceInformation: zod
       .lazy(() => CdmProductAssetReferenceInformationSchema)
       .optional(),
-    substitution: z.boolean().optional(),
+    substitution: zod.boolean().optional(),
   })
 );
 

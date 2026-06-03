@@ -104,7 +104,7 @@ describe('unknown type references', () => {
 
     expect(source).toContain("import { BetaSchema } from './Beta';");
     expect(source).toContain(
-      'next: z.lazy((): z.ZodTypeAny => BetaSchema).optional()',
+      'next: zod.lazy((): z.ZodTypeAny => BetaSchema).optional()',
     );
   });
 });

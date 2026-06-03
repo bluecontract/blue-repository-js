@@ -6,26 +6,28 @@ import { CdmObservableAssetCreditNotationMismatchResolutionEnumSchema } from './
 import { CdmObservableAssetCreditRatingAgencyEnumSchema } from './CdmObservableAssetCreditRatingAgencyEnum';
 import { CdmObservableAssetFieldWithMetaCreditNotationSchema } from './CdmObservableAssetFieldWithMetaCreditNotation';
 
-export const CdmObservableAssetMultipleCreditNotationsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetMultipleCreditNotationsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/MultipleCreditNotations']
   )(
-    z.object({
-      condition: z.lazy(() => CdmBaseMathQuantifierEnumSchema),
-      creditNotation: z
+    zod.object({
+      condition: zod.lazy(() => CdmBaseMathQuantifierEnumSchema),
+      creditNotation: zod
         .array(
-          z.lazy(() => CdmObservableAssetFieldWithMetaCreditNotationSchema)
+          zod.lazy(() => CdmObservableAssetFieldWithMetaCreditNotationSchema)
         )
         .min(2)
         .optional(),
-      description: z.string().optional(),
-      mismatchResolution: z
+      description: zod.string().optional(),
+      mismatchResolution: zod
         .lazy(
           () => CdmObservableAssetCreditNotationMismatchResolutionEnumSchema
         )
         .optional(),
-      name: z.string().optional(),
-      referenceAgency: z
+      name: zod.string().optional(),
+      referenceAgency: zod
         .lazy(() => CdmObservableAssetCreditRatingAgencyEnumSchema)
         .optional(),
     })

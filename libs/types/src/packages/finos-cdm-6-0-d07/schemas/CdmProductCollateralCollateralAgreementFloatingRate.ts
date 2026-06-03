@@ -5,30 +5,32 @@ import { CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema } 
 import { CdmProductAssetSpreadScheduleSchema } from './CdmProductAssetSpreadSchedule';
 import { CdmProductTemplateStrikeScheduleSchema } from './CdmProductTemplateStrikeSchedule';
 
-export const CdmProductCollateralCollateralAgreementFloatingRateSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralAgreementFloatingRateSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralAgreementFloatingRate'
     ]
   )(
-    z.object({
-      capRateSchedule: z
+    zod.object({
+      capRateSchedule: zod
         .lazy(() => CdmProductTemplateStrikeScheduleSchema)
         .optional(),
-      compressibleSpread: z.boolean(),
-      description: z.string().optional(),
-      floorRateSchedule: z
+      compressibleSpread: zod.boolean(),
+      description: zod.string().optional(),
+      floorRateSchedule: zod
         .lazy(() => CdmProductTemplateStrikeScheduleSchema)
         .optional(),
-      name: z.string().optional(),
-      negativeInterest: z.boolean(),
-      rateOption: z
+      name: zod.string().optional(),
+      negativeInterest: zod.boolean(),
+      rateOption: zod
         .lazy(
           () =>
             CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema
         )
         .optional(),
-      spreadSchedule: z
+      spreadSchedule: zod
         .lazy(() => CdmProductAssetSpreadScheduleSchema)
         .optional(),
     })

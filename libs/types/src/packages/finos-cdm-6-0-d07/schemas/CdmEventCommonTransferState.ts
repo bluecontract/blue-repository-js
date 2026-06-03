@@ -4,14 +4,16 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventCommonTransferSchema } from './CdmEventCommonTransfer';
 import { CdmEventCommonTransferStatusEnumSchema } from './CdmEventCommonTransferStatusEnum';
 
-export const CdmEventCommonTransferStateSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonTransferStateSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/TransferState']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    transfer: z.lazy(() => CdmEventCommonTransferSchema),
-    transferStatus: z
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    transfer: zod.lazy(() => CdmEventCommonTransferSchema),
+    transferStatus: zod
       .lazy(() => CdmEventCommonTransferStatusEnumSchema)
       .optional(),
   })

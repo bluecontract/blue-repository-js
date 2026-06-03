@@ -6,20 +6,22 @@ import { CdmBaseMathDatedValueSchema } from './CdmBaseMathDatedValue';
 import { CdmBaseMathMeasureSchema } from './CdmBaseMathMeasure';
 import { CdmBaseMathUnitTypeSchema } from './CdmBaseMathUnitType';
 
-export const CdmBaseMathQuantityScheduleSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathQuantityScheduleSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/QuantitySchedule']
 )(
-  z.object({
-    datedValue: z
-      .array(z.lazy(() => CdmBaseMathDatedValueSchema))
+  zod.object({
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
       .min(0)
       .optional(),
-    description: z.string().optional(),
-    frequency: z.lazy(() => CdmBaseDatetimeFrequencySchema).optional(),
-    multiplier: z.lazy(() => CdmBaseMathMeasureSchema).optional(),
-    name: z.string().optional(),
-    unit: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-    val: z.number().optional(),
+    description: zod.string().optional(),
+    frequency: zod.lazy(() => CdmBaseDatetimeFrequencySchema).optional(),
+    multiplier: zod.lazy(() => CdmBaseMathMeasureSchema).optional(),
+    name: zod.string().optional(),
+    unit: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    val: zod.number().optional(),
   })
 );
 

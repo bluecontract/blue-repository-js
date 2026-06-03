@@ -3,11 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { EventSchema } from './Event';
 
-export const RequestSchema = withTypeBlueId(blueIds['Coordination/Request'])(
+const zod = z as any;
+
+export const RequestSchema: any = withTypeBlueId(
+  blueIds['Coordination/Request']
+)(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    requestId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    requestId: zod.string().optional(),
   })
 );
 

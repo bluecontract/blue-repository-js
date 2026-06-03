@@ -11,41 +11,43 @@ import { CdmProductCommonSettlementStandardSettlementStyleEnumSchema } from './C
 import { CdmProductCommonSettlementTransferSettlementEnumSchema } from './CdmProductCommonSettlementTransferSettlementEnum';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductCommonSettlementSettlementTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementSettlementTermsSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/SettlementTerms']
   )(
-    z.object({
-      cashSettlementTerms: z
+    zod.object({
+      cashSettlementTerms: zod
         .array(
-          z.lazy(() => CdmProductCommonSettlementCashSettlementTermsSchema)
+          zod.lazy(() => CdmProductCommonSettlementCashSettlementTermsSchema)
         )
         .min(0)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      physicalSettlementTerms: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      physicalSettlementTerms: zod
         .lazy(() => CdmProductCommonSettlementPhysicalSettlementTermsSchema)
         .optional(),
-      settlementCentre: z
+      settlementCentre: zod
         .lazy(() => CdmProductCommonSettlementSettlementCentreEnumSchema)
         .optional(),
-      settlementCurrency: z
+      settlementCurrency: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      settlementDate: z
+      settlementDate: zod
         .lazy(() => CdmProductCommonSettlementSettlementDateSchema)
         .optional(),
-      settlementProvision: z
+      settlementProvision: zod
         .lazy(() => CdmProductCommonSettlementSettlementProvisionSchema)
         .optional(),
-      settlementType: z
+      settlementType: zod
         .lazy(() => CdmProductCommonSettlementSettlementTypeEnumSchema)
         .optional(),
-      standardSettlementStyle: z
+      standardSettlementStyle: zod
         .lazy(() => CdmProductCommonSettlementStandardSettlementStyleEnumSchema)
         .optional(),
-      transferSettlementType: z
+      transferSettlementType: zod
         .lazy(() => CdmProductCommonSettlementTransferSettlementEnumSchema)
         .optional(),
     })

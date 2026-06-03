@@ -5,27 +5,28 @@ import { CdmBaseStaticdataPartyPartySchema } from './CdmBaseStaticdataPartyParty
 import { CdmEventCommonBillingRecordSchema } from './CdmEventCommonBillingRecord';
 import { CdmEventCommonBillingSummarySchema } from './CdmEventCommonBillingSummary';
 
-export const CdmEventCommonSecurityLendingInvoiceSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/SecurityLendingInvoice']
-  )(
-    z.object({
-      billingEndDate: z.string(),
-      billingRecord: z
-        .array(z.lazy(() => CdmEventCommonBillingRecordSchema))
-        .min(1)
-        .optional(),
-      billingStartDate: z.string(),
-      billingSummary: z
-        .array(z.lazy(() => CdmEventCommonBillingSummarySchema))
-        .min(1)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      receivingParty: z.lazy(() => CdmBaseStaticdataPartyPartySchema),
-      sendingParty: z.lazy(() => CdmBaseStaticdataPartyPartySchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonSecurityLendingInvoiceSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/SecurityLendingInvoice']
+)(
+  zod.object({
+    billingEndDate: zod.string(),
+    billingRecord: zod
+      .array(zod.lazy(() => CdmEventCommonBillingRecordSchema))
+      .min(1)
+      .optional(),
+    billingStartDate: zod.string(),
+    billingSummary: zod
+      .array(zod.lazy(() => CdmEventCommonBillingSummarySchema))
+      .min(1)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    receivingParty: zod.lazy(() => CdmBaseStaticdataPartyPartySchema),
+    sendingParty: zod.lazy(() => CdmBaseStaticdataPartyPartySchema),
+  })
+);
 
 export type CdmEventCommonSecurityLendingInvoice = z.infer<
   typeof CdmEventCommonSecurityLendingInvoiceSchema

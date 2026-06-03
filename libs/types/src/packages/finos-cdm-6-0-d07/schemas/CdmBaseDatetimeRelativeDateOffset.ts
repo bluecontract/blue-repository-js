@@ -8,33 +8,34 @@ import { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema } from 
 import { CdmBaseDatetimePeriodEnumSchema } from './CdmBaseDatetimePeriodEnum';
 import { ComRosettaModelMetafieldsReferenceWithMetaStringSchema } from './ComRosettaModelMetafieldsReferenceWithMetaString';
 
-export const CdmBaseDatetimeRelativeDateOffsetSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/RelativeDateOffset']
-  )(
-    z.object({
-      adjustedDate: z.string().optional(),
-      businessCenters: z
-        .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
-        .optional(),
-      businessCentersReference: z
-        .lazy(
-          () => CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema
-        )
-        .optional(),
-      businessDayConvention: z.lazy(
-        () => CdmBaseDatetimeBusinessDayConventionEnumSchema
-      ),
-      dateRelativeTo: z
-        .lazy(() => ComRosettaModelMetafieldsReferenceWithMetaStringSchema)
-        .optional(),
-      dayType: z.lazy(() => CdmBaseDatetimeDayTypeEnumSchema).optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      period: z.lazy(() => CdmBaseDatetimePeriodEnumSchema).optional(),
-      periodMultiplier: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseDatetimeRelativeDateOffsetSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/RelativeDateOffset']
+)(
+  zod.object({
+    adjustedDate: zod.string().optional(),
+    businessCenters: zod
+      .lazy(() => CdmBaseDatetimeBusinessCentersSchema)
+      .optional(),
+    businessCentersReference: zod
+      .lazy(
+        () => CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema
+      )
+      .optional(),
+    businessDayConvention: zod.lazy(
+      () => CdmBaseDatetimeBusinessDayConventionEnumSchema
+    ),
+    dateRelativeTo: zod
+      .lazy(() => ComRosettaModelMetafieldsReferenceWithMetaStringSchema)
+      .optional(),
+    dayType: zod.lazy(() => CdmBaseDatetimeDayTypeEnumSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    period: zod.lazy(() => CdmBaseDatetimePeriodEnumSchema).optional(),
+    periodMultiplier: zod.number().optional(),
+  })
+);
 
 export type CdmBaseDatetimeRelativeDateOffset = z.infer<
   typeof CdmBaseDatetimeRelativeDateOffsetSchema

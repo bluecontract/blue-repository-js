@@ -2,12 +2,14 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmRegulationQtySchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmRegulationQtySchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/regulation/Qty']
 )(
-  z.object({
-    name: z.string().optional(),
-    unit: z.string(),
+  zod.object({
+    name: zod.string().optional(),
+    unit: zod.string(),
   })
 );
 

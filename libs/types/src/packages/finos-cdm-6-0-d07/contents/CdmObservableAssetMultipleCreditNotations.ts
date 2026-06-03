@@ -1,47 +1,40 @@
-export const CdmObservableAssetMultipleCreditNotations = {
+export const CdmObservableAssetMultipleCreditNotations: Record<
+  string,
+  unknown
+> = {
   condition: {
     description:
       'An enumerated element, to qualify whether All or Any credit notation applies.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '63nKry6nGnCtyHC4B341Sun8eUejEvoq7JeK4A4AY7Er',
+      blueId: '5AmXPpNccrpoL5H4BBSk9y2QfnizHY6JKgXqaHJTHgvy',
     },
   },
   creditNotation: {
     description: 'At least two credit notations much be specified.',
     itemType: {
-      blueId: 'GxtMQNerdSTaQX4ik747BJde7hdaCUGQs5gCyGs4THE',
+      blueId: '3a31df2HdfB7EqRbM2D5wwBaTaVC1tUemQ66F91P16xS',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 2,
-      },
+      minItems: 2,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
     "Represetns a class to specify multiple credit notations alongside a conditional 'any' or 'all' qualifier.",
   mismatchResolution: {
     type: {
-      blueId: '8jUUnEg4y5rth3zGXqPDihqz397GjFwaQQYfvUR7VVKU',
+      blueId: 'DRzBA7DNKGx3x57DdS7v8C2BBHL55ia9a7Sqzx7r5Qr7',
     },
   },
   name: 'cdm/observable/asset/MultipleCreditNotations',
   referenceAgency: {
     type: {
-      blueId: 'BFNEhsfLPvMSawMY6Q3SUpNzPsjYgQEKYmUQrD92UE4r',
+      blueId: 'D1H3C3xAMJv2XQNBYfethSUKDH7kngUkefwbzLwVLW1i',
     },
   },
-} as const;
+};

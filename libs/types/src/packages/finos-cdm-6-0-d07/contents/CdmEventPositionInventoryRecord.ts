@@ -1,34 +1,24 @@
-export const CdmEventPositionInventoryRecord = {
+export const CdmEventPositionInventoryRecord: Record<string, unknown> = {
   description:
     'An individual piece of inventory. This represents a single security.',
   identifer: {
     description:
       'Unique identifier for this record. This can be used to uniquely identify a specific piece of inventory.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'CNZP6GsTZi731ekV62fUVAXc2yL9DVbiHje2LSX8DmWf',
+      blueId: 'HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU',
     },
   },
   name: 'cdm/event/position/InventoryRecord',
   security: {
     description: 'The security details.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'AKAF6F23pDRPx5M9gsqtAKXBUf46Vnz1STHsk38YEAWm',
+      blueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
     },
   },
-} as const;
+};

@@ -1,4 +1,4 @@
-export const CdmProductCollateralCollateralCriteria = {
+export const CdmProductCollateralCollateralCriteria: Record<string, unknown> = {
   AllCriteria: {
     description:
       'Enables two or more Collateral Criteria to be combined using AND logic.',
@@ -10,56 +10,56 @@ export const CdmProductCollateralCollateralCriteria = {
     description:
       'Enables two or more Collateral Criteria to be combined using OR logic.',
     type: {
-      blueId: 'this#3',
+      blueId: 'this#0',
     },
   },
   AssetAgencyRating: {
     description: 'Criteria is the agency rating(s) of the collateral asset.',
     type: {
-      blueId: '3Z7Qd4nvD5kznK6ReEW6jkdThhTmUXZjY8dXKEUBgqXx',
+      blueId: '4wRJXUzN8uTkKFeHycmg5s4LPtKSpfJSj9cRXHx5JAsi',
     },
   },
   AssetCountryOfOrigin: {
     description: 'Criteria is the collateral asset country of origin.',
     type: {
-      blueId: 'Fdf7nwnsHtnk24Wpyw2jqDFq5rEd7WLR39X6EQnoWsmU',
+      blueId: 'FCuNiKfbXacwA5Cb4PtQoxUqheV4siYC6kq5GkcmGBvM',
     },
   },
   AssetMaturity: {
     description:
       'Criteria is the maturity characteristics of the collateral asset.',
     type: {
-      blueId: '7xRHcjREGdk4hE9MrxxaotTFeaL3wGTBBs3Ez8K8o259',
+      blueId: 'DvHC67ebizujZAhviEeMQ82ZhicijkGL6dTdyk24smo3',
     },
   },
   AssetType: {
     description: 'Criteria is the asset type of the collateral.',
     type: {
-      blueId: 'DBnAMusnqCBb9qkA5usvmPTb27HNy5VzKi8JoTrgPoRV',
+      blueId: 'AjHv57wVryq4YK8oodLNAT95JAYhuGRRiKk7hhX93LLi',
     },
   },
   CollateralIssuerType: {
     description: 'Criteria is the type of entity issuing the asset.',
     type: {
-      blueId: 'DiuzkpaQqLNDsehNb5xLTrFkVqpEqS9ZGtqTJ2fBzhvm',
+      blueId: 'GL9FygufGouoWPdbzaZ4SKyuRahWMAUxZ5q3bFMSWnRj',
     },
   },
   CollateralTaxonomy: {
     description: 'Criteria is the taxonomy characteristics of an collateral.',
     type: {
-      blueId: 'H4qZFJo3XTXtRYCdhTukmA5mA72cU1icWF7LyydKrfPT',
+      blueId: '6FkJxLK4KiPuQ7LHqQDvpGSeaWMVr5dw4g2K9mBrnybJ',
     },
   },
   CounterpartyOwnIssuePermitted: {
     description: 'Criteria includes collateral issued by the counterparty.',
     type: {
-      blueId: 'EUQ9MJibMGwCC7weff1GEUA2cy4bvdFoqaAJx4ySahKL',
+      blueId: 'BSxC7wcq6PvdbEFuVkkBrzKz4bFBiG8He3PZk9SqFFeQ',
     },
   },
   CurrencyCodeEnum: {
     description: 'Criteria is the denominated currency of the collateral.',
     type: {
-      blueId: '8BnAu36c4Gt6aVwBhawFckQGNkLaZsPodbBkQd7GpV8V',
+      blueId: 'Gb5ryH6JKgjNLySafKo7tXkb9PRgaQkWHcSibFZ96AbP',
     },
   },
   description:
@@ -68,45 +68,45 @@ export const CdmProductCollateralCollateralCriteria = {
     description:
       'Criteria is that collateral must be denominated in the domestic currency of the issuer.',
     type: {
-      blueId: 'H32BQcu8EWs2WztGEuCPiGD6VGEtRwNB7CPsoE8MX25p',
+      blueId: 'GSqFLxJkjPptdZcwACBFg4PMYhDwpuNcRBdKtNHgs4Wn',
     },
   },
   Index: {
     description:
       'Criteria is that the collateral is a constituent of a specific index.',
     type: {
-      blueId: '9uQM3zoMTMLZFipKa1PU3Z1YndVH7avxgSGLXms3GVF3',
+      blueId: 'FtoRYZujAAg27pRyk4p13wRUXC9JWtWMkcjiAZULxMWP',
     },
   },
   IssuerAgencyRating: {
     description: 'Criteria is the agency rating(s) of the issuer.',
     type: {
-      blueId: 'HKeLnZoECFzBPxtPse5jEjzWuTQvvvURtKimZSBSdAzL',
+      blueId: 'BQF5ff4etcuh9njP6VFEZiHKExrKnVkMbMrfqE7wkWHq',
     },
   },
   IssuerCountryOfOrigin: {
     description: 'Criteria is the issuing entity country of origin.',
     type: {
-      blueId: '5vbt3yqCDAPHfDtrqySHEMgZbgECnD13NMCkT8ndvRME',
+      blueId: '9qB83hxGqypCsEF6MKyZFWjg9t2VMnqgDMywCd2LCh6z',
     },
   },
   IssuerName: {
     description: 'Criteria is a specific named issuer entity.',
     type: {
-      blueId: 'B7KUAgvBkpwEWEYnisJG6iRRicpw2LC4MuxeYzxhMh9y',
+      blueId: '9bkUNZgKaw1Cro32d1MxEwS5ZxRXwMi6iFvMNGxgekBC',
     },
   },
   ListingExchange: {
     description:
       'Criteria is that the collateral is listed on a specific exchange.',
     type: {
-      blueId: 'DBagP8NcuSpNGeJTMciJspmiVKhEvpxenhq1VwyxA9yu',
+      blueId: 'BzgPMJPnH7Cq2NK4PkNTKXVrpY3u3BUxB9jjvKLAxpq8',
     },
   },
   ListingSector: {
     description: 'Criteria is the industry sector of the collateral asset.',
     type: {
-      blueId: '7AfyjzzZ8Y9CSKTQ3jRNBeoosewUEsqKoK4tfANwmDuR',
+      blueId: '2sRSP8xV5oTb6nySDWzH4ZcHxhHkKtMgqw73G2Y7kwC8',
     },
   },
   name: 'cdm/product/collateral/CollateralCriteria',
@@ -114,20 +114,20 @@ export const CdmProductCollateralCollateralCriteria = {
     description:
       'Enables a single Collateral Criteria to be excluded using NOT logic.',
     type: {
-      blueId: 'this#1',
+      blueId: 'this#3',
     },
   },
   SovereignAgencyRating: {
     description:
       'Criteria is the agency rating(s) of the country of the issuer.',
     type: {
-      blueId: 'E3BwAcnw9Vo2sDe14rdt76sD8KTECTPFQHhFqUu5Weoe',
+      blueId: '8tRrLY27bAdfQuvV7dnmS5iQ1QW6VFmjUB7KsaAjNpQv',
     },
   },
   SpecificAsset: {
     description: 'Criteria is a specifically identified asset',
     type: {
-      blueId: 'EjBk15nz62KvMKiydMXvoDBt48tV6rBpEhuKBW5QABxM',
+      blueId: '2Gr3Akes7mjaFvgw48PJ56oasjq7iSukKYHpJJZcCwCS',
     },
   },
-} as const;
+};

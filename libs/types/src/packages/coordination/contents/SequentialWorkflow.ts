@@ -1,18 +1,18 @@
-export const SequentialWorkflow = {
+export const SequentialWorkflow: Record<string, unknown> = {
   description:
-    "Handler contract that implements deterministic workflow logic by executing a list of workflow steps in order after the\nbound channel delivers a matching event. Sequential Workflow is the coordination workhorse: it lets a document express\nbehavior as Blue content, run computation steps, apply document updates, and emit follow-up events while still using\nthe Blue Contracts processor for patch validation, cascades, checkpoints, generalization, and gas.\n\nEach step receives the same triggering event, the current contract context, and the results of earlier steps. Step\nresults are keyed by step name when a name is supplied. Steps are evaluated sequentially, so later steps can read\nearlier step outputs. When an Update Document step previews or applies patches, later workflow steps must see the\nupdated working document state according to the host processor's working-document semantics; the final document commit\nstill occurs through the Blue Contracts processor and must preserve type soundness.\n\nWorkflow steps are not arbitrary side effects. Compute steps read and return data. Update Document steps request\npatches. Trigger Event steps request event emission. Evaluate is a deterministic escape hatch. The handler's\nobservable effects are buffered and applied by the processor in the contract-result order defined by Blue Contracts.\n",
+    "Handler contract that executes an ordered list of workflow steps after its bound channel delivers an event. Sequential\nWorkflow is the standard coordination runtime for expressing document-owned logic without embedding host code. It\nreads the channelized payload, runs each step in order, records step results under step names when applicable, and\nreturns processor effects such as patches, triggered events, explicit gas, or termination requests.\n\nThe workflow is sequential: later steps can read earlier step results through `$steps` and can observe prior Update\nDocument steps through the workflow's working document. The working document should be frozen/snapshot-backed and\nadvanced by the same patch, conformance, dynamic generalization, and Type Generalization Policy rules that the Blue\nContracts processor will use at commit time. This gives read-your-writes behavior without materializing the entire\ndocument as mutable state.\n\nSequential Workflow does not weaken the Blue Contracts processor model. Patches are still applied through Update\nDocument. Events are still emitted through Trigger Event or result emission. Boundary rules, reserved-key protection,\npost-patch type soundness, generalization, Document Update cascades, checkpoints, and gas accounting remain processor\nresponsibilities. The workflow only provides a deterministic authoring/runtime structure for arranging these steps.\n",
   name: 'Sequential Workflow',
   steps: {
     description:
-      'Ordered workflow steps. List order is execution order. Each step may read prior named step results. Mutation-producing\nsteps must use processor patch/event mechanisms rather than hidden side effects.\n',
+      'Ordered list of workflow steps. The list order is execution order. A step may expose a named result for later steps,\nbut actual document mutation and event routing still occur through processor-defined effect application.\n',
     itemType: {
-      blueId: '99AomnUQTnL52YVYXwEbGNeKnV6u1cjm73xLFSAt7mwe',
+      blueId: '9oGn8V6FSVcJYhRfuHRShfWjiHBUqzxVi9StGtHZNfev',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   type: {
-    blueId: '9ZE5pGjtSGJgWJG7iAVz4iPEz5CatceX3yb3qp5MpAKJ',
+    blueId: '7X46P3Q6FJrogqKrBXTALpqzkieyyiQeatnqLvWzAPXE',
   },
-} as const;
+};

@@ -5,24 +5,26 @@ import { CdmBaseDatetimeDayOfWeekEnumSchema } from './CdmBaseDatetimeDayOfWeekEn
 import { CdmBaseMathQuantitySchema } from './CdmBaseMathQuantity';
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 
-export const CdmProductAssetAssetDeliveryProfileBlockSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetAssetDeliveryProfileBlockSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/AssetDeliveryProfileBlock']
   )(
-    z.object({
-      dayOfWeek: z
-        .array(z.lazy(() => CdmBaseDatetimeDayOfWeekEnumSchema))
+    zod.object({
+      dayOfWeek: zod
+        .array(zod.lazy(() => CdmBaseDatetimeDayOfWeekEnumSchema))
         .min(0)
         .max(7)
         .optional(),
-      deliveryCapacity: z.lazy(() => CdmBaseMathQuantitySchema).optional(),
-      description: z.string().optional(),
-      endTime: z.string().optional(),
-      name: z.string().optional(),
-      priceTimeIntervalQuantity: z
+      deliveryCapacity: zod.lazy(() => CdmBaseMathQuantitySchema).optional(),
+      description: zod.string().optional(),
+      endTime: zod.string().optional(),
+      name: zod.string().optional(),
+      priceTimeIntervalQuantity: zod
         .lazy(() => CdmObservableAssetPriceSchema)
         .optional(),
-      startTime: z.string().optional(),
+      startTime: zod.string().optional(),
     })
   );
 

@@ -1,9 +1,9 @@
-export const CdmProductCollateralConcentrationLimit = {
+export const CdmProductCollateralConcentrationLimit: Record<string, unknown> = {
   concentrationLimitCriteria: {
     description:
       'Specifies a set of criteria to describe the assets that the concentration limits apply to.',
     type: {
-      blueId: 'Ag7HvtBnwEeKkpZQ17isCMUnXuFik93kdftfxJN8ih6h',
+      blueId: '7YP39rZ8BWEkzLnifnowdqDWusgdTtoaAQADyndrMtvU',
     },
   },
   description:
@@ -13,14 +13,14 @@ export const CdmProductCollateralConcentrationLimit = {
     description:
       'Specifies the perecentage of collateral limit represented as a decimal number - example 25% is 0.25.',
     type: {
-      blueId: 'HeV5hUrnbKo6ccs1jqoxC5k85Qng7uvpVxMGApHXK7nN',
+      blueId: '6YPBFzb6J5zZWUx1H7SSeJNLQWwAzYsVjRxgdkFZMVrn',
     },
   },
   valueLimit: {
     description:
       'Specifies the value of collateral limit represented as a range.',
     type: {
-      blueId: 'DKKgVj4h6rghgaMZrdFzPJpGQfNdR8YrcHenPgFkvjQ1',
+      blueId: '4NGaBXKBS6QDTeN9ZdQEgWHvYg1Kd3Dqr86Xs9BpVh7A',
     },
   },
-} as const;
+};

@@ -8,35 +8,37 @@ import { CdmBaseDatetimeRoundingFrequencyEnumSchema } from './CdmBaseDatetimeRou
 import { CdmBaseMathRoundingSchema } from './CdmBaseMathRounding';
 import { CdmProductCollateralCollateralAgreementFloatingRateSchema } from './CdmProductCollateralCollateralAgreementFloatingRate';
 
-export const CdmProductCollateralCollateralInterestCalculationParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralInterestCalculationParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralInterestCalculationParameters'
     ]
   )(
-    z.object({
-      compoundingBusinessCenter: z
-        .array(z.lazy(() => CdmBaseDatetimeBusinessCenterEnumSchema))
+    zod.object({
+      compoundingBusinessCenter: zod
+        .array(zod.lazy(() => CdmBaseDatetimeBusinessCenterEnumSchema))
         .min(0)
         .optional(),
-      compoundingType: z
+      compoundingType: zod
         .lazy(() => CdmBaseDatetimeCompoundingTypeEnumSchema)
         .optional(),
-      dayCountFraction: z.lazy(
+      dayCountFraction: zod.lazy(
         () => CdmBaseDatetimeDaycountDayCountFractionEnumSchema
       ),
-      description: z.string().optional(),
-      fixedRate: z.number().optional(),
-      floatingRate: z
+      description: zod.string().optional(),
+      fixedRate: zod.number().optional(),
+      floatingRate: zod
         .lazy(() => CdmProductCollateralCollateralAgreementFloatingRateSchema)
         .optional(),
-      inBaseCurrency: z.boolean(),
-      name: z.string().optional(),
-      rounding: z.lazy(() => CdmBaseMathRoundingSchema).optional(),
-      roundingFrequency: z
+      inBaseCurrency: zod.boolean(),
+      name: zod.string().optional(),
+      rounding: zod.lazy(() => CdmBaseMathRoundingSchema).optional(),
+      roundingFrequency: zod
         .lazy(() => CdmBaseDatetimeRoundingFrequencyEnumSchema)
         .optional(),
-      withholdingTaxRate: z.number().optional(),
+      withholdingTaxRate: zod.number().optional(),
     })
   );
 

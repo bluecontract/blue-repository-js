@@ -1,27 +1,22 @@
-export const CdmProductAssetGeneralTerms = {
+export const CdmProductAssetGeneralTerms: Record<string, unknown> = {
   additionalTerm: {
     description:
       'This attribute is used for representing information contained in the Additional Terms field of the 2003 Master Credit Derivatives confirm.\n',
     itemType: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   basketReferenceInformation: {
     description:
       'This attribute contains all the terms relevant to defining the Credit Default Swap Basket.',
     type: {
-      blueId: '2hzofepdHmrqpLHQwtRqdcJ6PoT2WXfk69YAGwBuwZhX',
+      blueId: 'axuXmPNwYdajJqoyfRBqGLYdVR7pu272ceY2KqBq9nB',
     },
   },
   description:
@@ -30,14 +25,14 @@ export const CdmProductAssetGeneralTerms = {
     description:
       'This attribute contains all the terms relevant to the underlying Index.',
     type: {
-      blueId: 'DEx8mELrNiMvJnmN1WRhZbyCiZRmtgBjuJXyfcSztf4h',
+      blueId: 'EXhnZXqvEcgXZrY2VK9WqgZz87y5NwxZ4axscyrAeSBv',
     },
   },
   modifiedEquityDelivery: {
     description:
       "Value of this attribute set to 'true' indicates that modified equity delivery is applicable.",
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/product/asset/GeneralTerms',
@@ -45,14 +40,14 @@ export const CdmProductAssetGeneralTerms = {
     description:
       'This attribute contains all the terms relevant to defining the reference entity and reference obligation(s).',
     type: {
-      blueId: 'HDWPv3g9U1KUdNNbF554aWveShvcV6UnPnH8HQGqtppM',
+      blueId: '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f',
     },
   },
   substitution: {
     description:
       "Value of this attribute set to 'true' indicates that substitution is applicable.",
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
-} as const;
+};

@@ -3,15 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const SubscriptionToSessionRevokedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SubscriptionToSessionRevokedSchema: any = withTypeBlueId(
   blueIds['MyOS/Subscription to Session Revoked']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    subscriptionId: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
+    subscriptionId: zod.string().optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

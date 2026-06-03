@@ -1,7 +1,7 @@
-export const Currency = {
+export const Currency: Record<string, unknown> = {
   description: 'ISO 4217 currency code (e.g., USD, EUR).',
   name: 'Currency',
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

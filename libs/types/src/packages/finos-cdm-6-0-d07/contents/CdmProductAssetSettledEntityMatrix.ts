@@ -1,17 +1,12 @@
-export const CdmProductAssetSettledEntityMatrix = {
+export const CdmProductAssetSettledEntityMatrix: Record<string, unknown> = {
   description: 'A class to specify the Relevant Settled Entity Matrix.',
   matrixSource: {
     description: 'Relevant settled entity matrix source.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2HJVG7XkuEXr46byHb52g7WoYmwwfUGky6XyUDF7Wjgq',
+      blueId: 'BPH2yXsmaVJzV83dHZy9t4ZxLRN8JyMueAXWyLF15CnU',
     },
   },
   name: 'cdm/product/asset/SettledEntityMatrix',
@@ -19,7 +14,7 @@ export const CdmProductAssetSettledEntityMatrix = {
     description:
       'Specifies the publication date of the applicable version of the matrix. When this element is omitted, the Standard Terms Supplement defines rules for which version of the matrix is applicable.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

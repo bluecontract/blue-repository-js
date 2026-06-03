@@ -1,9 +1,9 @@
-export const CdmEventWorkflowWorkflowState = {
+export const CdmEventWorkflowWorkflowState: Record<string, unknown> = {
   comment: {
     description:
       'A comment field to be associated with the workflow, e.g. to specify why a transaction event was rejected by a party.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -13,39 +13,29 @@ export const CdmEventWorkflowWorkflowState = {
     description:
       'Workflow data that is specific to certain market participants and is expressed as part of the CDM in a very generic manner, which can be party-specific. The initial use cases have been derived from the CME clearing and the DTCC TIW submissions.\n',
     itemType: {
-      blueId: 'FmwzzAFmqGuCenMT7mzAuGYDNJaYPsnDg5cWKFkHnjwL',
+      blueId: 'HL2ZcMwczuHgPoUL75nm9XG9rZy6XeFMmzGuuWfqxkya',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   warehouseIdentity: {
     description:
       'The identity of the warehouse, if any, that is executing that workflow step.',
     type: {
-      blueId: '98XAqUNzZkNVqqaqfN3uL863kyUvoPoeaj1C6t8TcBcc',
+      blueId: '6exizYh6WdJdboTXU5vG7ZycT7oysGTNWCBaBzuWkBBs',
     },
   },
   workflowStatus: {
     description: 'The workflow status indicator, e.g. Accepted, Rejected, ...',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'Cqsvhr2yBW9tghAQNKR3XDYzG1BtRFwCBgpQ7zz5iuXo',
+      blueId: 'BvJRype2zWVijuwSinejW5FK4QMppv6EphZ6CPresR4s',
     },
   },
-} as const;
+};

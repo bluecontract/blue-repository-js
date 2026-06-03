@@ -3,9 +3,11 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
 
-export const LinkedDocumentsPermissionSetSchema = withTypeBlueId(
+const zod = z as any;
+
+export const LinkedDocumentsPermissionSetSchema: any = withTypeBlueId(
   blueIds['MyOS/Linked Documents Permission Set']
-)(z.object({}).catchall(z.lazy(() => SingleDocumentPermissionSetSchema)));
+)(zod.object({}).catchall(zod.lazy(() => SingleDocumentPermissionSetSchema)));
 
 export type LinkedDocumentsPermissionSet = z.infer<
   typeof LinkedDocumentsPermissionSetSchema

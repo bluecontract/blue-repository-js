@@ -2,14 +2,16 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const MyOSDocumentSessionReferenceSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSDocumentSessionReferenceSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Document Session Reference']
 )(
-  z.object({
-    description: z.string().optional(),
-    documentId: z.string().optional(),
-    name: z.string().optional(),
-    sessionId: z.string().optional(),
+  zod.object({
+    description: zod.string().optional(),
+    documentId: zod.string().optional(),
+    name: zod.string().optional(),
+    sessionId: zod.string().optional(),
   })
 );
 

@@ -2,17 +2,19 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmEventWorkflowCreditLimitUtilisationPositionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventWorkflowCreditLimitUtilisationPositionSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/event/workflow/CreditLimitUtilisationPosition'
     ]
   )(
-    z.object({
-      global: z.number().optional(),
-      longPosition: z.number().optional(),
-      name: z.string().optional(),
-      shortPosition: z.number().optional(),
+    zod.object({
+      global: zod.number().optional(),
+      longPosition: zod.number().optional(),
+      name: zod.string().optional(),
+      shortPosition: zod.number().optional(),
     })
   );
 

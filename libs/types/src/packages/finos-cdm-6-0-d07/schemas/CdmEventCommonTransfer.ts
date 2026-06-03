@@ -10,31 +10,33 @@ import { CdmEventCommonResetSchema } from './CdmEventCommonReset';
 import { CdmEventCommonTransferExpressionSchema } from './CdmEventCommonTransferExpression';
 import { CdmProductTemplateMetafieldsReferenceWithMetaPayoutSchema } from './CdmProductTemplateMetafieldsReferenceWithMetaPayout';
 
-export const CdmEventCommonTransferSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonTransferSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/Transfer']
 )(
-  z.object({
-    asset: z.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema).optional(),
-    description: z.string().optional(),
-    identifier: z
+  zod.object({
+    asset: zod.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema).optional(),
+    description: zod.string().optional(),
+    identifier: zod
       .array(
-        z.lazy(() => CdmBaseStaticdataIdentifierFieldWithMetaIdentifierSchema)
+        zod.lazy(() => CdmBaseStaticdataIdentifierFieldWithMetaIdentifierSchema)
       )
       .min(0)
       .optional(),
-    name: z.string().optional(),
-    payerReceiver: z.lazy(
+    name: zod.string().optional(),
+    payerReceiver: zod.lazy(
       () => CdmBaseStaticdataPartyPartyReferencePayerReceiverSchema
     ),
-    quantity: z.lazy(() => CdmBaseMathNonNegativeQuantitySchema).optional(),
-    resetOrigin: z.lazy(() => CdmEventCommonResetSchema).optional(),
-    settlementDate: z
+    quantity: zod.lazy(() => CdmBaseMathNonNegativeQuantitySchema).optional(),
+    resetOrigin: zod.lazy(() => CdmEventCommonResetSchema).optional(),
+    settlementDate: zod
       .lazy(() => CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema)
       .optional(),
-    settlementOrigin: z
+    settlementOrigin: zod
       .lazy(() => CdmProductTemplateMetafieldsReferenceWithMetaPayoutSchema)
       .optional(),
-    transferExpression: z.lazy(() => CdmEventCommonTransferExpressionSchema),
+    transferExpression: zod.lazy(() => CdmEventCommonTransferExpressionSchema),
   })
 );
 

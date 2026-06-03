@@ -5,32 +5,34 @@ import { CdmBaseStaticdataPartyCounterpartyRoleEnumSchema } from './CdmBaseStati
 import { CdmLegaldocumentationMasterClauseSchema } from './CdmLegaldocumentationMasterClause';
 import { CdmLegaldocumentationMasterExtraordinaryEventsSchema } from './CdmLegaldocumentationMasterExtraordinaryEvents';
 
-export const CdmLegaldocumentationMasterUnderlierSubstitutionProvisionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterUnderlierSubstitutionProvisionSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/UnderlierSubstitutionProvision'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      disputingParty: z
+    zod.object({
+      description: zod.string().optional(),
+      disputingParty: zod
         .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
         .optional(),
-      name: z.string().optional(),
-      substitutionBeSpokeTerms: z
+      name: zod.string().optional(),
+      substitutionBeSpokeTerms: zod
         .array(
-          z.lazy((): z.ZodTypeAny => CdmLegaldocumentationMasterClauseSchema)
+          zod.lazy((): z.ZodTypeAny => CdmLegaldocumentationMasterClauseSchema)
         )
         .min(0)
         .optional(),
-      substitutionTriggerEvents: z
+      substitutionTriggerEvents: zod
         .array(
-          z.lazy(() => CdmLegaldocumentationMasterExtraordinaryEventsSchema)
+          zod.lazy(() => CdmLegaldocumentationMasterExtraordinaryEventsSchema)
         )
         .min(0)
         .optional(),
-      whoMaySubstitute: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
+      whoMaySubstitute: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
         .min(1)
         .max(2)
         .optional(),

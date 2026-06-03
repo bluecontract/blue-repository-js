@@ -1,17 +1,12 @@
-export const CdmProductCollateralIssuerName = {
+export const CdmProductCollateralIssuerName: Record<string, unknown> = {
   issuerName: {
     description: 'Specifies the issuing entity name or LEI.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o',
+      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
     },
   },
   name: 'cdm/product/collateral/IssuerName',
-} as const;
+};

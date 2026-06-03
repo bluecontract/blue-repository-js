@@ -4,12 +4,14 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentSchema } from './Document';
 import { DocumentAnchorsSchema } from './DocumentAnchors';
 
-export const SpaceSchema = withTypeBlueId(blueIds['Common/Space'])(
+const zod = z as any;
+
+export const SpaceSchema: any = withTypeBlueId(blueIds['Common/Space'])(
   DocumentSchema.extend({
-    anchors: z.lazy(() => DocumentAnchorsSchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    website: z.string().optional(),
+    anchors: zod.lazy(() => DocumentAnchorsSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    website: zod.string().optional(),
   })
 );
 

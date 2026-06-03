@@ -1,17 +1,15 @@
-export const CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment = {
+export const CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment: Record<
+  string,
+  unknown
+> = {
   businessDayConvention: {
     description:
       'Override business date convention. This takes precedence over leg level information.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'EP4PK7ibh1EaWh9sLTjFcwVikiRQECurvR5Nb9ZPbJCs',
+      blueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
     },
   },
   description:
@@ -20,29 +18,19 @@ export const CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment = {
   relevantUnderlyingDateReference: {
     description: 'Reference to the unadjusted cancellation effective dates.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2JofigEJD6epctAhG3VgunrLaPXKzTDmRyfSZzpFHEkS',
+      blueId: 'F2nvaUqNbFKSuzYyyhRM8m7PgfFhFvkDbejeQWX9jYCs',
     },
   },
   swapStreamReference: {
     description: 'Reference to the leg, where date adjustments may apply.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '9s7DmteKxA3yXxQB2nMZpieJDgH1HyVyhHrufLuusW3Z',
+      blueId: '2U7YP6Ym1jX4mFm5GexJ4F3psZB836JfxHmp6MF1dcAF',
     },
   },
-} as const;
+};

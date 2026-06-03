@@ -6,34 +6,36 @@ import { CdmBaseDatetimeBusinessDayAdjustmentsSchema } from './CdmBaseDatetimeBu
 import { CdmBaseDatetimeCalculationPeriodFrequencySchema } from './CdmBaseDatetimeCalculationPeriodFrequency';
 import { CdmProductCommonScheduleStubPeriodTypeEnumSchema } from './CdmProductCommonScheduleStubPeriodTypeEnum';
 
-export const CdmProductCommonScheduleCalculationPeriodDatesSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleCalculationPeriodDatesSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/CalculationPeriodDates'
     ]
   )(
-    z.object({
-      calculationPeriodDatesAdjustments: z
+    zod.object({
+      calculationPeriodDatesAdjustments: zod
         .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
         .optional(),
-      calculationPeriodFrequency: z
+      calculationPeriodFrequency: zod
         .lazy(() => CdmBaseDatetimeCalculationPeriodFrequencySchema)
         .optional(),
-      description: z.string().optional(),
-      effectiveDate: z
+      description: zod.string().optional(),
+      effectiveDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
         .optional(),
-      firstCompoundingPeriodEndDate: z.string().optional(),
-      firstPeriodStartDate: z
+      firstCompoundingPeriodEndDate: zod.string().optional(),
+      firstPeriodStartDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
         .optional(),
-      firstRegularPeriodStartDate: z.string().optional(),
-      lastRegularPeriodEndDate: z.string().optional(),
-      name: z.string().optional(),
-      stubPeriodType: z
+      firstRegularPeriodStartDate: zod.string().optional(),
+      lastRegularPeriodEndDate: zod.string().optional(),
+      name: zod.string().optional(),
+      stubPeriodType: zod
         .lazy(() => CdmProductCommonScheduleStubPeriodTypeEnumSchema)
         .optional(),
-      terminationDate: z
+      terminationDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
         .optional(),
     })

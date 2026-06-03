@@ -3,12 +3,14 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const DocumentInitialSnapshotRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentInitialSnapshotRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Document Initial Snapshot Requested']
 )(
   RequestSchema.extend({
-    name: z.string().optional(),
-    sourceSessionId: z.string().optional(),
+    name: zod.string().optional(),
+    sourceSessionId: zod.string().optional(),
   })
 );
 

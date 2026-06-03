@@ -1,9 +1,9 @@
-export const CdmBaseStaticdataPartyBusinessUnit = {
+export const CdmBaseStaticdataPartyBusinessUnit: Record<string, unknown> = {
   contactInformation: {
     description:
       'The contact information for such business unit, when different from the contact information associated with the party.\n',
     type: {
-      blueId: '8K3bpBAvaZu9SQSpibF46XfDiBxveFTBYFEXySs3rjsP',
+      blueId: '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A',
     },
   },
   description: 'A class to specify an organizational unit.',
@@ -11,8 +11,8 @@ export const CdmBaseStaticdataPartyBusinessUnit = {
     description:
       'An identifier used to uniquely identify the organizational unit',
     type: {
-      blueId: '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ',
+      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
     },
   },
   name: 'cdm/base/staticdata/party/BusinessUnit',
-} as const;
+};

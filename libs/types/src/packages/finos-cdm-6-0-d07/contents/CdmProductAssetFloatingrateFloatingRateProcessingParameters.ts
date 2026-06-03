@@ -1,8 +1,11 @@
-export const CdmProductAssetFloatingrateFloatingRateProcessingParameters = {
+export const CdmProductAssetFloatingrateFloatingRateProcessingParameters: Record<
+  string,
+  unknown
+> = {
   capRate: {
     description: 'capt to be applied to the floating rate.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   description:
@@ -10,45 +13,45 @@ export const CdmProductAssetFloatingrateFloatingRateProcessingParameters = {
   floorRate: {
     description: 'floor to be applied to the floating rate.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   initialRate: {
     description: 'The rate to be applied for the initial period.',
     type: {
-      blueId: 'wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543',
+      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
     },
   },
   multiplier: {
     description: 'floating rate multiplier.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/product/asset/floatingrate/FloatingRateProcessingParameters',
   negativeTreatment: {
     description: 'How to handle negative interest rates.',
     type: {
-      blueId: 'CyvEqKQpGL1tCK33KuVNmoqqfPY41YR2zXaxhgsjDER2',
+      blueId: 'BsWNiWBWBcPvxq7gbRKXCVo4xpJ1fYXPvWNafB7Bvxzt',
     },
   },
   rounding: {
     description: 'THe final rate rounding to be applied.',
     type: {
-      blueId: 'ArfQ58kSzN4QkRNkhhMYbmgBrEGPrnnSSA4sgC1Stoho',
+      blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
     },
   },
   spread: {
     description: 'spread to be added to the floating rate.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   treatment: {
     description:
       'US rate treatment (Bond Equivalent Yield or Money Market Yield, if applicable.',
     type: {
-      blueId: '8GhAUMM1Z2VZSQY9oufxMtUgDuQ5iTuBVYEYrjnYQBBt',
+      blueId: '6vYpwpDGdaR6pbtzmJTTxmLwiWsbwBhhaiecmRbLMtix',
     },
   },
-} as const;
+};

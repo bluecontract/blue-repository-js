@@ -5,26 +5,28 @@ import { CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnumSchema } from './CdmB
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataPartyAccountSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyAccountSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/Account']
 )(
-  z.object({
-    accountBeneficiary: z
+  zod.object({
+    accountBeneficiary: zod
       .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
       .optional(),
-    accountName: z
+    accountName: zod
       .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
       .optional(),
-    accountNumber: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-    accountType: z
+    accountNumber: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+    accountType: zod
       .lazy(() => CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnumSchema)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    partyReference: z
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    partyReference: zod
       .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
       .optional(),
-    servicingParty: z
+    servicingParty: zod
       .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
       .optional(),
   })

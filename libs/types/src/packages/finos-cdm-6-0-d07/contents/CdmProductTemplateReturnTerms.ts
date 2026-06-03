@@ -1,9 +1,9 @@
-export const CdmProductTemplateReturnTerms = {
+export const CdmProductTemplateReturnTerms: Record<string, unknown> = {
   correlationReturnTerms: {
     description:
       'Return terms based upon the observed correlation between the components of the underlying basket.',
     type: {
-      blueId: 'HqY3kSqV1NfLvT5YLvitQ5Nq1sktFe6oA5AqyQC1j9jT',
+      blueId: 'EwvxCeweE6NzDi8idFivNwZ9joYB35RKBbzvwypsqnAR',
     },
   },
   description: 'Specifies the type of return of a performance payout.',
@@ -11,28 +11,28 @@ export const CdmProductTemplateReturnTerms = {
     description:
       'Return terms based upon dividend payments associated to the underlier.',
     type: {
-      blueId: '7h8FScnN4pQLHjNkSJKae9Pz8U5rCRfseiLcscSpZTss',
+      blueId: 'J8EZbmYAMd5iEdiJDjh3B8Pk6R4eAXrQdryNuThytk1B',
     },
   },
   name: 'cdm/product/template/ReturnTerms',
   priceReturnTerms: {
     description: "Return terms based upon the underlier's observed price.",
     type: {
-      blueId: '7YFwQGbWnfaZ3YgwzGGgdBhyDppvFGTH2LibSGzdhSnH',
+      blueId: 'JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv',
     },
   },
   varianceReturnTerms: {
     description:
       "Return terms based upon the observed variance of the underlier's price.",
     type: {
-      blueId: 'DyvMnYXfQRGwqfP9Kybg1qYNhMuFyGyMpw3x1vAopkmX',
+      blueId: '7mdyTJMV5CfZFGwVGuYsu7jWpiqsAjBJWPPuvhpsR7Lu',
     },
   },
   volatilityReturnTerms: {
     description:
       "Return terms based upon the observed volatility of the underlier's price.",
     type: {
-      blueId: '3e4M5cnE53HFtp4uJHoNYZeL1Vwo4xTDK6XJh5tNRiGb',
+      blueId: '3BXRxsxyT6CgqYyNVM6wZNBwCaCAARu7VCvmQoCkn18s',
     },
   },
-} as const;
+};

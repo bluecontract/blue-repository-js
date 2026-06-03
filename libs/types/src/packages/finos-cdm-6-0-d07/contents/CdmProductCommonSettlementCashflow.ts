@@ -1,24 +1,19 @@
-export const CdmProductCommonSettlementCashflow = {
+export const CdmProductCommonSettlementCashflow: Record<string, unknown> = {
   asset: {
     description:
       'Represents the object that is subject to the transfer, it could be an asset or a reference.',
     type: {
-      blueId: 'B3bsNNAr8QJpJA8r84kgZrHLE5PZREBGxXWYJdtaDRJ7',
+      blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
     },
   },
   cashflowType: {
     description:
       'The qualification of the type of cashflow, e.g. brokerage fee, premium, upfront fee etc. Particularly relevant when it cannot be inferred directly through lineage.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'Ccm42B9pqHXvdGEKGXbippze1ftyBoJLzTcK6oXCTx1s',
+      blueId: 'GArm2fDK1vopaSHjgRguRRS1k6GiHBGUifjuhdbJEfg',
     },
   },
   description:
@@ -28,35 +23,30 @@ export const CdmProductCommonSettlementCashflow = {
     description:
       'Specifies who pays / receives the cashflow, though a normalised Party1 / Party2 enumerator.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3',
+      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
     },
   },
   paymentDiscounting: {
     description:
       'FpML specifies the FpML PaymentDiscounting.model group for representing the discounting elements that can be associated with a payment.\n',
     type: {
-      blueId: 'J8ZU2YWmzTrtbSkNs5DysuLN5tLJDjMJg7Ca32VEAQqW',
+      blueId: '9dkTzBV6xqQ9LmULZCPBAZi5Afj3tZytwUtqXc1iccwt',
     },
   },
   quantity: {
     description:
       'Represents the amount of the asset to be transferred. The cashflow amount is always a positive number, as the cashflow direction is implied by the payer/receiver attribute.\n',
     type: {
-      blueId: 'BbfKyr9mpdQ8cuNvCP78fS2o4Rc7gQZ1GdcbnyD6grzK',
+      blueId: 'BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd',
     },
   },
   settlementDate: {
     description: 'Represents the date on which the transfer to due.',
     type: {
-      blueId: 'BwTCpPFhSqEbgjkUmssmzp1ig5hb3QSdGhqroiTDsJvJ',
+      blueId: '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF',
     },
   },
-} as const;
+};

@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmEventPositionAvailableInventoryTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventPositionAvailableInventoryTypeEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/position/AvailableInventoryTypeEnum']
   )(
-    z.enum(['AvailableToLend', 'RequestToBorrow'] as [
+    zod.enum(['AvailableToLend', 'RequestToBorrow'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

@@ -1,9 +1,9 @@
-export const CdmEventCommonState = {
+export const CdmEventCommonState: Record<string, unknown> = {
   closedState: {
     description:
       "Represents the qualification of what led to the trade's closure alongside the dates on which this closure took effect.\n",
     type: {
-      blueId: '3FwnfmPe8axs9Sr2iFvR9Qg5tKQmQpQYDYFksE9EHFxF',
+      blueId: 'HFnvdnbcm5FbHRjXNW9KZ6x5LzJhCDhTuXtU3tDamXrQ',
     },
   },
   description:
@@ -13,7 +13,7 @@ export const CdmEventCommonState = {
     description:
       'Identifies the state of the position, to distinguish if just executed, formed, already settled, closed, etc.',
     type: {
-      blueId: 'H8eopTmsWExtp1LBnrmRgLseBswCZb7FcMX44dWKFNQd',
+      blueId: 'CtjNKoKQ8S3xNPyMY6GXJKQAAfjxpTQmdDgLUNE3iAJM',
     },
   },
-} as const;
+};

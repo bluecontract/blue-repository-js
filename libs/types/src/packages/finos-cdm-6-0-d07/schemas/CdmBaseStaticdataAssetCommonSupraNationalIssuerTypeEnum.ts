@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/SupraNationalIssuerTypeEnum'
     ]
   )(
-    z.enum(['InternationalOrganisation', 'MultilateralBank'] as [
+    zod.enum(['InternationalOrganisation', 'MultilateralBank'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

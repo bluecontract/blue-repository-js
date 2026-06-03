@@ -1,17 +1,12 @@
-export const CdmBaseDatetimeAveragingSchedule = {
+export const CdmBaseDatetimeAveragingSchedule: Record<string, unknown> = {
   averagingPeriodFrequency: {
     description:
       'The frequency at which averaging period occurs with the regular part of the valuation schedule and their roll date convention.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DVb1fCp6T4qAajXVrhWU73Yx25sFe7MdqmytdKoz9LuJ',
+      blueId: 'CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce',
     },
   },
   description:
@@ -19,30 +14,20 @@ export const CdmBaseDatetimeAveragingSchedule = {
   endDate: {
     description: 'Date on which this period ends.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/base/datetime/AveragingSchedule',
   startDate: {
     description: 'Date on which this period begins.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

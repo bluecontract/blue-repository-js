@@ -4,22 +4,24 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeAdjustableOrRelativeDateSchema } from './CdmBaseDatetimeAdjustableOrRelativeDate';
 import { CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
 
-export const CdmProductCommonSchedulePaymentDateScheduleSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSchedulePaymentDateScheduleSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/PaymentDateSchedule']
   )(
-    z.object({
-      description: z.string().optional(),
-      finalPaymentDate: z
+    zod.object({
+      description: zod.string().optional(),
+      finalPaymentDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
         .optional(),
-      interimPaymentDates: z
+      interimPaymentDates: zod
         .array(
-          z.lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
+          zod.lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

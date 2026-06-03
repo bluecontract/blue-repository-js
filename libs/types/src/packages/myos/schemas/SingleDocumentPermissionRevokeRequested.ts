@@ -3,16 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const SingleDocumentPermissionRevokeRequestedSchema = withTypeBlueId(
-  blueIds['MyOS/Single Document Permission Revoke Requested']
-)(
-  RequestSchema.extend({
-    description: z.string().optional(),
-    grantDocumentId: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-  })
-);
+const zod = z as any;
+
+export const SingleDocumentPermissionRevokeRequestedSchema: any =
+  withTypeBlueId(blueIds['MyOS/Single Document Permission Revoke Requested'])(
+    RequestSchema.extend({
+      description: zod.string().optional(),
+      grantDocumentId: zod.string().optional(),
+      name: zod.string().optional(),
+      reason: zod.string().optional(),
+    })
+  );
 
 export type SingleDocumentPermissionRevokeRequested = z.infer<
   typeof SingleDocumentPermissionRevokeRequestedSchema

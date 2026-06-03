@@ -4,17 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimePeriodSchema } from './CdmBaseDatetimePeriod';
 import { CdmProductCollateralAverageTradingVolumeMethodologyEnumSchema } from './CdmProductCollateralAverageTradingVolumeMethodologyEnum';
 
-export const CdmProductCollateralAverageTradingVolumeSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralAverageTradingVolumeSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/AverageTradingVolume']
   )(
-    z.object({
-      description: z.string().optional(),
-      methodology: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      methodology: zod.lazy(
         () => CdmProductCollateralAverageTradingVolumeMethodologyEnumSchema
       ),
-      name: z.string().optional(),
-      period: z.lazy(() => CdmBaseDatetimePeriodSchema),
+      name: zod.string().optional(),
+      period: zod.lazy(() => CdmBaseDatetimePeriodSchema),
     })
   );
 

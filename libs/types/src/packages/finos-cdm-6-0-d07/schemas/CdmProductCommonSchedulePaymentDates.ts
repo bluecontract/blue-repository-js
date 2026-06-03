@@ -7,28 +7,29 @@ import { CdmBaseDatetimeOffsetSchema } from './CdmBaseDatetimeOffset';
 import { CdmProductCommonSchedulePaymentDateScheduleSchema } from './CdmProductCommonSchedulePaymentDateSchedule';
 import { CdmProductCommonSchedulePayRelativeToEnumSchema } from './CdmProductCommonSchedulePayRelativeToEnum';
 
-export const CdmProductCommonSchedulePaymentDatesSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/PaymentDates']
-  )(
-    z.object({
-      description: z.string().optional(),
-      firstPaymentDate: z.string().optional(),
-      lastRegularPaymentDate: z.string().optional(),
-      name: z.string().optional(),
-      paymentDatesAdjustments: z
-        .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
-        .optional(),
-      paymentDateSchedule: z
-        .lazy(() => CdmProductCommonSchedulePaymentDateScheduleSchema)
-        .optional(),
-      paymentDaysOffset: z.lazy(() => CdmBaseDatetimeOffsetSchema).optional(),
-      paymentFrequency: z.lazy(() => CdmBaseDatetimeFrequencySchema).optional(),
-      payRelativeTo: z
-        .lazy(() => CdmProductCommonSchedulePayRelativeToEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonSchedulePaymentDatesSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/PaymentDates']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    firstPaymentDate: zod.string().optional(),
+    lastRegularPaymentDate: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentDatesAdjustments: zod
+      .lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema)
+      .optional(),
+    paymentDateSchedule: zod
+      .lazy(() => CdmProductCommonSchedulePaymentDateScheduleSchema)
+      .optional(),
+    paymentDaysOffset: zod.lazy(() => CdmBaseDatetimeOffsetSchema).optional(),
+    paymentFrequency: zod.lazy(() => CdmBaseDatetimeFrequencySchema).optional(),
+    payRelativeTo: zod
+      .lazy(() => CdmProductCommonSchedulePayRelativeToEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCommonSchedulePaymentDates = z.infer<
   typeof CdmProductCommonSchedulePaymentDatesSchema

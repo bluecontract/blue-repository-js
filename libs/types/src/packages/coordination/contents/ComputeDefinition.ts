@@ -1,22 +1,22 @@
-export const ComputeDefinition = {
+export const ComputeDefinition: Record<string, unknown> = {
   constants: {
     description:
-      'Named constants available through `$const`. Keys are constant names; values are arbitrary Blue values.\n',
+      'Literal named constants available to functions or referencing Compute steps through `$const`. Constant names are\nstatic identifiers and must not use reserved Blue language keys.\n',
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
   },
   description:
-    'Reusable package of BEX constants and functions for Coordination/Compute steps. A Compute Definition lets several\nworkflow steps share deterministic logic while keeping that logic in Blue content rather than in a host-language module\nor source string. A Compute step may reference this definition and choose an `entry` function, or it may use local\nfunctions and constants directly.\n\n`constants` is a dictionary of literal or structured Blue values available through `$const`. `functions` is a dictionary\nof named BEX function definitions. A function may declare arguments, evaluate statements, return a value, and use\nconstants or other permitted functions according to the BEX specification. Functions must be deterministic, bounded,\nand gas-metered just like inline compute programs.\n\nThis type intentionally treats function bodies and operators as data. Their exact Blue structure is identity-bearing.\nThe type does not attempt to model every BEX operator as field-level schema; the BEX processor and BEX conformance\nfixtures define the executable semantics. A reader should understand that a Compute Definition is a reusable, hashed,\ninspectable compute library embedded in the document.\n',
+    "Reusable BEX definition containing constants and functions that can be referenced by Compute steps. A Compute\nDefinition lets a document keep shared deterministic logic in one place while still representing that logic as Blue\ndata that affects document identity.\n\nConstants are literal values accessed with `$const`. Functions are named BEX programs with optional static Blue\nargument patterns. Definitions do not execute by themselves; a Compute step selects an entry function or imports the\ndefinition's functions/constants into its compilation context.\n\nBecause this node is part of identity, changing a function body, argument pattern, constant, or description changes\nthe definition's BlueId and therefore changes the semantic identity of documents that reference it.\n",
   functions: {
     description:
-      'Named reusable BEX functions. Keys are function names; values are function definitions.',
+      'Named BEX functions. Each function may declare argument patterns and either an `expr` or `do` body. Functions are\ndeterministic and have no ambient side effects.\n',
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
   },
   name: 'Compute Definition',
   type: {
-    blueId: '7QACj919YMRvFCTELCf6jfQTp41RVhtHdE6bPazLUZQ6',
+    blueId: '6zqbYGDGrMv5ReuEsjyzyyjjuqVnqDZxtY7RsPXdBTNy',
   },
-} as const;
+};

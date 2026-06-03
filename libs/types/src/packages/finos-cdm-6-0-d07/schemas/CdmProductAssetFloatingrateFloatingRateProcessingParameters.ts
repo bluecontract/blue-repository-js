@@ -6,25 +6,27 @@ import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 import { CdmProductAssetNegativeInterestRateTreatmentEnumSchema } from './CdmProductAssetNegativeInterestRateTreatmentEnum';
 import { CdmProductAssetRateTreatmentEnumSchema } from './CdmProductAssetRateTreatmentEnum';
 
-export const CdmProductAssetFloatingrateFloatingRateProcessingParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFloatingrateFloatingRateProcessingParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/floatingrate/FloatingRateProcessingParameters'
     ]
   )(
-    z.object({
-      capRate: z.number().optional(),
-      description: z.string().optional(),
-      floorRate: z.number().optional(),
-      initialRate: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
-      multiplier: z.number().optional(),
-      name: z.string().optional(),
-      negativeTreatment: z
+    zod.object({
+      capRate: zod.number().optional(),
+      description: zod.string().optional(),
+      floorRate: zod.number().optional(),
+      initialRate: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
+      multiplier: zod.number().optional(),
+      name: zod.string().optional(),
+      negativeTreatment: zod
         .lazy(() => CdmProductAssetNegativeInterestRateTreatmentEnumSchema)
         .optional(),
-      rounding: z.lazy(() => CdmBaseMathRoundingSchema).optional(),
-      spread: z.number().optional(),
-      treatment: z
+      rounding: zod.lazy(() => CdmBaseMathRoundingSchema).optional(),
+      spread: zod.number().optional(),
+      treatment: zod
         .lazy(() => CdmProductAssetRateTreatmentEnumSchema)
         .optional(),
     })

@@ -6,26 +6,28 @@ import { CdmBaseStaticdataAssetCommonCommodityReferenceFrameworkSchema } from '.
 import { CdmBaseStaticdataAssetCommonPriceSourceSchema } from './CdmBaseStaticdataAssetCommonPriceSource';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataAssetCommonCommodityProductDefinitionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonCommodityProductDefinitionSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/CommodityProductDefinition'
     ]
   )(
-    z.object({
-      commodityInfoPublisher: z
+    zod.object({
+      commodityInfoPublisher: zod
         .lazy(
           () =>
             CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnumSchema
         )
         .optional(),
-      description: z.string().optional(),
-      exchangeId: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-      name: z.string().optional(),
-      priceSource: z
+      description: zod.string().optional(),
+      exchangeId: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+      name: zod.string().optional(),
+      priceSource: zod
         .lazy(() => CdmBaseStaticdataAssetCommonPriceSourceSchema)
         .optional(),
-      referenceFramework: z.lazy(
+      referenceFramework: zod.lazy(
         () => CdmBaseStaticdataAssetCommonCommodityReferenceFrameworkSchema
       ),
     })

@@ -4,20 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCommonScheduleAveragingPeriodSchema } from './CdmProductCommonScheduleAveragingPeriod';
 import { CdmProductTemplateAveragingInOutEnumSchema } from './CdmProductTemplateAveragingInOutEnum';
 
-export const CdmProductTemplateAsianSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateAsianSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/Asian']
 )(
-  z.object({
-    averagingInOut: z.lazy(() => CdmProductTemplateAveragingInOutEnumSchema),
-    averagingPeriodIn: z
+  zod.object({
+    averagingInOut: zod.lazy(() => CdmProductTemplateAveragingInOutEnumSchema),
+    averagingPeriodIn: zod
       .lazy(() => CdmProductCommonScheduleAveragingPeriodSchema)
       .optional(),
-    averagingPeriodOut: z
+    averagingPeriodOut: zod
       .lazy(() => CdmProductCommonScheduleAveragingPeriodSchema)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    strikeFactor: z.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    strikeFactor: zod.number().optional(),
   })
 );
 

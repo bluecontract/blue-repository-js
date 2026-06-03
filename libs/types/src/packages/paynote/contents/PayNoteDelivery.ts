@@ -1,34 +1,34 @@
-export const PayNoteDelivery = {
+export const PayNoteDelivery: Record<string, unknown> = {
   cardTransactionDetails: {
     description:
       'Card network identifiers used to match processor and issuer records.',
     type: {
-      blueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+      blueId: 'DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV',
     },
   },
   clientAcceptedAt: {
     description: 'Timestamp when the client accepted.',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   clientDecisionStatus: {
     description: 'Client decision (pending, accepted, rejected).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   clientRejectedAt: {
     description: 'Timestamp when the client rejected.',
     type: {
-      blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+      blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
     },
   },
   contracts: {
     acceptPayNote: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'payNoteDeliverer',
       },
@@ -36,18 +36,18 @@ export const PayNoteDelivery = {
         acceptedAt: {
           description: 'Timestamp when the client accepted.',
           type: {
-            blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+            blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
           },
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     acceptPayNoteImpl: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'acceptPayNote',
       },
@@ -56,7 +56,7 @@ export const PayNoteDelivery = {
           {
             entry: {
               type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
               },
               value: 'accept',
             },
@@ -71,70 +71,70 @@ export const PayNoteDelivery = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'acceptedAt',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'currentDecisionStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'alreadyDecided',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'transactionStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'canAccept',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'discardReason',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextDecisionStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextAcceptedAt',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextDeliveryStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextDeliveryError',
                             },
@@ -148,7 +148,7 @@ export const PayNoteDelivery = {
                                   $event: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/message/request/acceptedAt',
                                   },
@@ -157,7 +157,7 @@ export const PayNoteDelivery = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'asText',
                               },
@@ -173,7 +173,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'currentDecisionStatus',
                                         },
@@ -181,7 +181,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'accepted',
                                       },
@@ -195,7 +195,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'currentDecisionStatus',
                                         },
@@ -203,7 +203,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'rejected',
                                       },
@@ -223,7 +223,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'transactionStatus',
                                         },
@@ -231,7 +231,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'identified',
                                       },
@@ -245,7 +245,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'currentDecisionStatus',
                                         },
@@ -253,7 +253,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'pending',
                                       },
@@ -270,7 +270,7 @@ export const PayNoteDelivery = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/clientDecisionStatus',
                                   },
@@ -279,7 +279,7 @@ export const PayNoteDelivery = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'asText',
                               },
@@ -291,7 +291,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canAccept',
                                 },
@@ -302,7 +302,7 @@ export const PayNoteDelivery = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'alreadyDecided',
                                     },
@@ -316,7 +316,7 @@ export const PayNoteDelivery = {
                                               $var: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'transactionStatus',
                                               },
@@ -324,7 +324,7 @@ export const PayNoteDelivery = {
                                             {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'failed',
                                             },
@@ -334,14 +334,14 @@ export const PayNoteDelivery = {
                                       else: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'Transaction not identified',
                                       },
                                       then: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value:
                                           'Transaction identification failed',
@@ -354,14 +354,14 @@ export const PayNoteDelivery = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'PayNote already',
                                         },
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: ' ',
                                         },
@@ -369,7 +369,7 @@ export const PayNoteDelivery = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'currentDecisionStatus',
                                           },
@@ -382,7 +382,7 @@ export const PayNoteDelivery = {
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '',
                               },
@@ -394,7 +394,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canAccept',
                                 },
@@ -406,7 +406,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/clientAcceptedAt',
                                       },
@@ -415,7 +415,7 @@ export const PayNoteDelivery = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asText',
                                   },
@@ -425,7 +425,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'acceptedAt',
                                 },
@@ -438,7 +438,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canAccept',
                                 },
@@ -450,7 +450,7 @@ export const PayNoteDelivery = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'currentDecisionStatus',
                                       },
@@ -459,7 +459,7 @@ export const PayNoteDelivery = {
                                   else: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'pending',
                                   },
@@ -467,7 +467,7 @@ export const PayNoteDelivery = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'currentDecisionStatus',
                                     },
@@ -477,7 +477,7 @@ export const PayNoteDelivery = {
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'accepted',
                               },
@@ -489,7 +489,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canAccept',
                                 },
@@ -501,7 +501,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/deliveryError',
                                       },
@@ -510,7 +510,7 @@ export const PayNoteDelivery = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asText',
                                   },
@@ -519,7 +519,7 @@ export const PayNoteDelivery = {
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '',
                               },
@@ -531,7 +531,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canAccept',
                                 },
@@ -543,7 +543,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/deliveryStatus',
                                       },
@@ -552,13 +552,13 @@ export const PayNoteDelivery = {
                                       mode: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'pending',
                                       },
                                       type: {
                                         blueId:
-                                          'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                                          'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
                                       },
                                     },
                                   ],
@@ -568,13 +568,13 @@ export const PayNoteDelivery = {
                                 mode: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'terminated',
                                 },
                                 type: {
                                   blueId:
-                                    'Pzdwn6mQJT2qFDaF4V1dzpcyu4ejRqDv8neLPnbHRGi',
+                                    'BEc6aieqN1iaXT2bNQVag1a1cGygZCLCjXf3mvupetNg',
                                 },
                               },
                             },
@@ -586,7 +586,7 @@ export const PayNoteDelivery = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/transactionIdentificationStatus',
                                   },
@@ -595,7 +595,7 @@ export const PayNoteDelivery = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'asText',
                               },
@@ -609,14 +609,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/clientDecisionStatus',
                         },
@@ -624,7 +624,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextDecisionStatus',
                           },
@@ -636,14 +636,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/clientAcceptedAt',
                         },
@@ -651,7 +651,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextAcceptedAt',
                           },
@@ -663,14 +663,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/deliveryStatus',
                         },
@@ -678,7 +678,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextDeliveryStatus',
                           },
@@ -690,14 +690,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/deliveryError',
                         },
@@ -705,7 +705,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextDeliveryError',
                           },
@@ -718,7 +718,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'canAccept',
                           },
@@ -730,7 +730,7 @@ export const PayNoteDelivery = {
                                 decision: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'accepted',
                                 },
@@ -738,7 +738,7 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'acceptedAt',
                                   },
@@ -747,14 +747,14 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'discardReason',
                                   },
                                 },
                                 type: {
                                   blueId:
-                                    '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW',
+                                    'FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE',
                                 },
                               },
                             },
@@ -768,14 +768,14 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'acceptedAt',
                                   },
                                 },
                                 type: {
                                   blueId:
-                                    'HtsPop9z5R2EoW3TLKCSePnQUAj5wqryWuRWV1cwyBTt',
+                                    '9ST1DLJxByDzvtdeJt8SFeZadSYokstVbWYcGVXnrEzk',
                                 },
                               },
                             },
@@ -784,7 +784,7 @@ export const PayNoteDelivery = {
                                 $document: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/payNoteBootstrapRequest',
                                 },
@@ -800,7 +800,7 @@ export const PayNoteDelivery = {
                           $changeset: {
                             type: {
                               blueId:
-                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                             },
                             value: true,
                           },
@@ -809,7 +809,7 @@ export const PayNoteDelivery = {
                           $events: {
                             type: {
                               blueId:
-                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                             },
                             value: true,
                           },
@@ -822,7 +822,7 @@ export const PayNoteDelivery = {
               asText: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -832,7 +832,7 @@ export const PayNoteDelivery = {
                         kind: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'text',
                         },
@@ -840,7 +840,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'val',
                           },
@@ -849,7 +849,7 @@ export const PayNoteDelivery = {
                     },
                     else: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '',
                     },
@@ -857,7 +857,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -868,19 +868,19 @@ export const PayNoteDelivery = {
             },
             name: 'CaptureAcceptanceTimestamp',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
     initialize: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'initLifecycleChannel',
       },
@@ -892,38 +892,38 @@ export const PayNoteDelivery = {
                 {
                   op: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '/deliveryStatus',
                   },
                   val: {
                     type: {
-                      blueId: 'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                      blueId: 'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
                     },
                   },
                 },
                 {
                   op: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '/transactionIdentificationStatus',
                   },
                   val: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'pending',
                   },
@@ -931,19 +931,19 @@ export const PayNoteDelivery = {
                 {
                   op: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '/clientDecisionStatus',
                   },
                   val: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'pending',
                   },
@@ -951,19 +951,19 @@ export const PayNoteDelivery = {
                 {
                   op: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '/deliveryError',
                   },
                   val: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '',
                   },
@@ -972,42 +972,42 @@ export const PayNoteDelivery = {
             },
             name: 'Initialize Delivery State',
             type: {
-              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     initLifecycleChannel: {
       event: {
         type: {
-          blueId: 'BrpmpNt5JkapeUvPqYcxgXZrHNZX3R757dRwuXXdfNM2',
+          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
         },
       },
       type: {
-        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
+        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
       },
     },
     payNoteDeliverer: {
       description: 'Participant delivering and reporting status (e.g., bank).',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     payNoteSender: {
       description:
         'Participant submitting the PayNote delivery (merchant or processor).',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     rejectPayNote: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'payNoteDeliverer',
       },
@@ -1015,24 +1015,24 @@ export const PayNoteDelivery = {
         reason: {
           description: 'Optional rejection reason.',
           type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+            blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
           },
         },
         rejectedAt: {
           description: 'Timestamp when the client rejected.',
           type: {
-            blueId: 'GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs',
+            blueId: '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk',
           },
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     rejectPayNoteImpl: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'rejectPayNote',
       },
@@ -1041,7 +1041,7 @@ export const PayNoteDelivery = {
           {
             entry: {
               type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
               },
               value: 'reject',
             },
@@ -1049,7 +1049,7 @@ export const PayNoteDelivery = {
               asText: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -1059,7 +1059,7 @@ export const PayNoteDelivery = {
                         kind: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'text',
                         },
@@ -1067,7 +1067,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'val',
                           },
@@ -1076,7 +1076,7 @@ export const PayNoteDelivery = {
                     },
                     else: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '',
                     },
@@ -1084,7 +1084,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -1102,84 +1102,84 @@ export const PayNoteDelivery = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'request',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'safeReason',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'rejectedAt',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'currentDecisionStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'alreadyDecided',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'transactionStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'canReject',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'discardReason',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextDecisionStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextRejectedAt',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextDeliveryStatus',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'nextDeliveryError',
                             },
@@ -1196,7 +1196,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'currentDecisionStatus',
                                         },
@@ -1204,7 +1204,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'accepted',
                                       },
@@ -1218,7 +1218,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'currentDecisionStatus',
                                         },
@@ -1226,7 +1226,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'rejected',
                                       },
@@ -1246,7 +1246,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'transactionStatus',
                                         },
@@ -1254,7 +1254,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'identified',
                                       },
@@ -1268,7 +1268,7 @@ export const PayNoteDelivery = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'currentDecisionStatus',
                                         },
@@ -1276,7 +1276,7 @@ export const PayNoteDelivery = {
                                       {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'pending',
                                       },
@@ -1293,7 +1293,7 @@ export const PayNoteDelivery = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/clientDecisionStatus',
                                   },
@@ -1302,7 +1302,7 @@ export const PayNoteDelivery = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'asText',
                               },
@@ -1314,7 +1314,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canReject',
                                 },
@@ -1325,7 +1325,7 @@ export const PayNoteDelivery = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'alreadyDecided',
                                     },
@@ -1339,7 +1339,7 @@ export const PayNoteDelivery = {
                                               $var: {
                                                 type: {
                                                   blueId:
-                                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                 },
                                                 value: 'transactionStatus',
                                               },
@@ -1347,7 +1347,7 @@ export const PayNoteDelivery = {
                                             {
                                               type: {
                                                 blueId:
-                                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                               },
                                               value: 'failed',
                                             },
@@ -1357,14 +1357,14 @@ export const PayNoteDelivery = {
                                       else: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'Transaction not identified',
                                       },
                                       then: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value:
                                           'Transaction identification failed',
@@ -1377,14 +1377,14 @@ export const PayNoteDelivery = {
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'PayNote already',
                                         },
                                         {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: ' ',
                                         },
@@ -1392,7 +1392,7 @@ export const PayNoteDelivery = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'currentDecisionStatus',
                                           },
@@ -1405,7 +1405,7 @@ export const PayNoteDelivery = {
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '',
                               },
@@ -1417,7 +1417,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canReject',
                                 },
@@ -1429,7 +1429,7 @@ export const PayNoteDelivery = {
                                       $var: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'currentDecisionStatus',
                                       },
@@ -1438,7 +1438,7 @@ export const PayNoteDelivery = {
                                   else: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'pending',
                                   },
@@ -1446,7 +1446,7 @@ export const PayNoteDelivery = {
                                     $var: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'currentDecisionStatus',
                                     },
@@ -1456,7 +1456,7 @@ export const PayNoteDelivery = {
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'rejected',
                               },
@@ -1468,7 +1468,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canReject',
                                 },
@@ -1480,7 +1480,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/deliveryError',
                                       },
@@ -1489,7 +1489,7 @@ export const PayNoteDelivery = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asText',
                                   },
@@ -1499,7 +1499,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'safeReason',
                                 },
@@ -1512,7 +1512,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canReject',
                                 },
@@ -1524,7 +1524,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/deliveryStatus',
                                       },
@@ -1533,13 +1533,13 @@ export const PayNoteDelivery = {
                                       mode: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'pending',
                                       },
                                       type: {
                                         blueId:
-                                          'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                                          'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
                                       },
                                     },
                                   ],
@@ -1549,13 +1549,13 @@ export const PayNoteDelivery = {
                                 mode: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'terminated',
                                 },
                                 type: {
                                   blueId:
-                                    'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                                    '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
                                 },
                               },
                             },
@@ -1566,7 +1566,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'canReject',
                                 },
@@ -1578,7 +1578,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/clientRejectedAt',
                                       },
@@ -1587,7 +1587,7 @@ export const PayNoteDelivery = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asText',
                                   },
@@ -1597,7 +1597,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'rejectedAt',
                                 },
@@ -1611,7 +1611,7 @@ export const PayNoteDelivery = {
                                   $event: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/message/request/rejectedAt',
                                   },
@@ -1620,7 +1620,7 @@ export const PayNoteDelivery = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'asText',
                               },
@@ -1630,7 +1630,7 @@ export const PayNoteDelivery = {
                             $event: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/message/request',
                             },
@@ -1642,7 +1642,7 @@ export const PayNoteDelivery = {
                                   kind: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'text',
                                   },
@@ -1650,7 +1650,7 @@ export const PayNoteDelivery = {
                                     $event: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: '/message/request',
                                     },
@@ -1664,7 +1664,7 @@ export const PayNoteDelivery = {
                                       $event: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: '/message/request/reason',
                                       },
@@ -1673,7 +1673,7 @@ export const PayNoteDelivery = {
                                   function: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'asText',
                                   },
@@ -1683,7 +1683,7 @@ export const PayNoteDelivery = {
                                 $event: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/message/request',
                                 },
@@ -1697,7 +1697,7 @@ export const PayNoteDelivery = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/transactionIdentificationStatus',
                                   },
@@ -1706,7 +1706,7 @@ export const PayNoteDelivery = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'asText',
                               },
@@ -1720,14 +1720,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/clientDecisionStatus',
                         },
@@ -1735,7 +1735,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextDecisionStatus',
                           },
@@ -1747,14 +1747,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/clientRejectedAt',
                         },
@@ -1762,7 +1762,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextRejectedAt',
                           },
@@ -1774,14 +1774,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/deliveryStatus',
                         },
@@ -1789,7 +1789,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextDeliveryStatus',
                           },
@@ -1801,14 +1801,14 @@ export const PayNoteDelivery = {
                         op: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'replace',
                         },
                         path: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/deliveryError',
                         },
@@ -1816,7 +1816,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'nextDeliveryError',
                           },
@@ -1829,7 +1829,7 @@ export const PayNoteDelivery = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'canReject',
                           },
@@ -1841,7 +1841,7 @@ export const PayNoteDelivery = {
                                 decision: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'rejected',
                                 },
@@ -1849,7 +1849,7 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'rejectedAt',
                                   },
@@ -1858,14 +1858,14 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'discardReason',
                                   },
                                 },
                                 type: {
                                   blueId:
-                                    '8hhTj5tHF6SorKyCXtkyr6cendUne9A6eYJ225dJjLJW',
+                                    'FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE',
                                 },
                               },
                             },
@@ -1879,7 +1879,7 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'safeReason',
                                   },
@@ -1888,14 +1888,14 @@ export const PayNoteDelivery = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'rejectedAt',
                                   },
                                 },
                                 type: {
                                   blueId:
-                                    '6EwokAQarCKdRXuU2wpkCyHfXzhr1CgjY5feVomsYJob',
+                                    '7jrHNe8HAs3LiLz5hmTZsAHCNwEaVNXQHf5ZomHVyVZC',
                                 },
                               },
                             },
@@ -1909,7 +1909,7 @@ export const PayNoteDelivery = {
                           $changeset: {
                             type: {
                               blueId:
-                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                             },
                             value: true,
                           },
@@ -1918,7 +1918,7 @@ export const PayNoteDelivery = {
                           $events: {
                             type: {
                               blueId:
-                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                             },
                             value: true,
                           },
@@ -1931,36 +1931,36 @@ export const PayNoteDelivery = {
             },
             name: 'CaptureRejectionReason',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
     reportDeliveryError: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'payNoteDeliverer',
       },
       request: {
         description: 'Delivery error reason.',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     reportDeliveryErrorImpl: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'reportDeliveryError',
       },
@@ -1978,7 +1978,7 @@ export const PayNoteDelivery = {
                             kind: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'text',
                             },
@@ -1986,7 +1986,7 @@ export const PayNoteDelivery = {
                               $event: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/message/request',
                               },
@@ -1996,7 +1996,7 @@ export const PayNoteDelivery = {
                         else: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '',
                         },
@@ -2004,7 +2004,7 @@ export const PayNoteDelivery = {
                           $event: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: '/message/request',
                           },
@@ -2020,13 +2020,13 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'reason',
                       },
                     },
                     type: {
-                      blueId: '3VLavrr4LCLqo5FV1XxXhxUGryHBzBGQoFKTGWaXv7PM',
+                      blueId: 'GJhhepPZcpJxJjNrFscPYJCaUQN8EgvXVZDobduzhSKy',
                     },
                   },
                 },
@@ -2034,13 +2034,13 @@ export const PayNoteDelivery = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/deliveryStatus',
                     },
@@ -2048,12 +2048,12 @@ export const PayNoteDelivery = {
                       mode: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'terminated',
                       },
                       type: {
-                        blueId: 'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                        blueId: '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
                       },
                     },
                   },
@@ -2062,13 +2062,13 @@ export const PayNoteDelivery = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/deliveryError',
                     },
@@ -2076,7 +2076,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'reason',
                       },
@@ -2089,7 +2089,7 @@ export const PayNoteDelivery = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -2098,7 +2098,7 @@ export const PayNoteDelivery = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -2109,36 +2109,36 @@ export const PayNoteDelivery = {
             },
             name: 'CaptureDeliveryFailureReason',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
     updateTransactionIdentificationStatus: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'payNoteDeliverer',
       },
       request: {
         description: 'True when the transaction is identified.',
         type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+          blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     updateTransactionIdentificationStatusImpl: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'updateTransactionIdentificationStatus',
       },
@@ -2154,42 +2154,42 @@ export const PayNoteDelivery = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'identified',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'currentStatus',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'canUpdate',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'nextIdentificationStatus',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'nextDeliveryStatus',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'nextDeliveryError',
                         },
@@ -2207,7 +2207,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value:
                                           '/transactionIdentificationStatus',
@@ -2216,7 +2216,7 @@ export const PayNoteDelivery = {
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'identified',
                                     },
@@ -2230,7 +2230,7 @@ export const PayNoteDelivery = {
                                       $document: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value:
                                           '/transactionIdentificationStatus',
@@ -2239,7 +2239,7 @@ export const PayNoteDelivery = {
                                     {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'failed',
                                     },
@@ -2254,7 +2254,7 @@ export const PayNoteDelivery = {
                         $document: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/transactionIdentificationStatus',
                         },
@@ -2266,7 +2266,7 @@ export const PayNoteDelivery = {
                               $event: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/message/request',
                               },
@@ -2274,7 +2274,7 @@ export const PayNoteDelivery = {
                             {
                               type: {
                                 blueId:
-                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                  'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                               },
                               value: true,
                             },
@@ -2287,7 +2287,7 @@ export const PayNoteDelivery = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'canUpdate',
                             },
@@ -2299,7 +2299,7 @@ export const PayNoteDelivery = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/deliveryError',
                                   },
@@ -2307,7 +2307,7 @@ export const PayNoteDelivery = {
                                 {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '',
                                 },
@@ -2320,7 +2320,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'identified',
                                 },
@@ -2328,14 +2328,14 @@ export const PayNoteDelivery = {
                               else: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'Transaction identification failed',
                               },
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '',
                               },
@@ -2349,7 +2349,7 @@ export const PayNoteDelivery = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'canUpdate',
                             },
@@ -2361,7 +2361,7 @@ export const PayNoteDelivery = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/deliveryStatus',
                                   },
@@ -2370,13 +2370,13 @@ export const PayNoteDelivery = {
                                   mode: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'pending',
                                   },
                                   type: {
                                     blueId:
-                                      'Gqcw51QJT9NStqo2ka3E76tQ8UZie33F4yqdjwskav79',
+                                      'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
                                   },
                                 },
                               ],
@@ -2388,7 +2388,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'identified',
                                 },
@@ -2397,26 +2397,26 @@ export const PayNoteDelivery = {
                                 mode: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'terminated',
                                 },
                                 type: {
                                   blueId:
-                                    'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                                    '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
                                 },
                               },
                               then: {
                                 mode: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'active',
                                 },
                                 type: {
                                   blueId:
-                                    'E6jaeVfFuyjB4YEZyp7fvUt8AJ7BmKr8WAM9oGDmhMbM',
+                                    '5BQB6Hsr3qxMsZikHdqd2LGeKdQafEQ4jo6TBqm9JZuB',
                                 },
                               },
                             },
@@ -2429,7 +2429,7 @@ export const PayNoteDelivery = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'canUpdate',
                             },
@@ -2438,7 +2438,7 @@ export const PayNoteDelivery = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'currentStatus',
                             },
@@ -2449,7 +2449,7 @@ export const PayNoteDelivery = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'identified',
                                 },
@@ -2457,14 +2457,14 @@ export const PayNoteDelivery = {
                               else: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'failed',
                               },
                               then: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'identified',
                               },
@@ -2479,13 +2479,13 @@ export const PayNoteDelivery = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/transactionIdentificationStatus',
                     },
@@ -2493,7 +2493,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'nextIdentificationStatus',
                       },
@@ -2504,13 +2504,13 @@ export const PayNoteDelivery = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/deliveryStatus',
                     },
@@ -2518,7 +2518,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'nextDeliveryStatus',
                       },
@@ -2529,13 +2529,13 @@ export const PayNoteDelivery = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/deliveryError',
                     },
@@ -2543,7 +2543,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'nextDeliveryError',
                       },
@@ -2556,7 +2556,7 @@ export const PayNoteDelivery = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'canUpdate',
                       },
@@ -2569,7 +2569,7 @@ export const PayNoteDelivery = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'identified',
                               },
@@ -2580,7 +2580,7 @@ export const PayNoteDelivery = {
                                   $appendEvent: {
                                     type: {
                                       blueId:
-                                        '8XH1vN2R5tLKQKRz4bJzv1JuEnare6Q4G4A49gpJXceW',
+                                        '7zoVbzvzqxvKAcvdbSSxGPR4RxjQ9iNip3WhU52bRBtb',
                                     },
                                   },
                                 },
@@ -2592,7 +2592,7 @@ export const PayNoteDelivery = {
                                   $appendEvent: {
                                     type: {
                                       blueId:
-                                        'FjaxYHKQ3DZ7h6ooFwVwD2Gs2WygLsw33xQ9vMLZzk8H',
+                                        'BDeXDAG91B72CFtoPcDUk3odhFMBhiueneS1RcM4nbPf',
                                     },
                                   },
                                 },
@@ -2610,7 +2610,7 @@ export const PayNoteDelivery = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -2619,7 +2619,7 @@ export const PayNoteDelivery = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -2630,26 +2630,26 @@ export const PayNoteDelivery = {
             },
             name: 'ClassifyIdentificationResult',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
   },
   deliveryError: {
     description: 'Error message when delivery fails.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   deliveryStatus: {
     description: 'High-level delivery status.',
     type: {
-      blueId: 'QHoUCCVhepZWQnSo9VfZCJWbSwyA9TuT65tBZMVtnRX',
+      blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
     },
   },
   description:
@@ -2660,28 +2660,28 @@ export const PayNoteDelivery = {
       'Optional Payment Mandate bootstrap request details for Delivery flows that require mandate attachment before proposal exposure.',
     document: {
       type: {
-        blueId: '5fBQHAnRCh6a5DwzJFV2f31yExvRhsnKNNMcuZnMHXry',
+        blueId: 'CtbsuXntvrM28GGveCCe4Ks2xKTTmBvkMBAetSqXRCia',
       },
     },
     type: {
-      blueId: 'DRKHv2QVLQneubWYELKCoHcfen76T7KxDk5pdCT9w8Bw',
+      blueId: '3Uch8WXAZXUnHiWYF1Y2KaDBnfAFyUbZoDkeoPRYHZWC',
     },
   },
   payNoteBootstrapRequest: {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: 'GS7qK6RBWAKdCFMy6hdeQNgmqeAkw5LrbcktFfnQdAxe',
+        blueId: '65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q',
       },
     },
     type: {
-      blueId: 'DRKHv2QVLQneubWYELKCoHcfen76T7KxDk5pdCT9w8Bw',
+      blueId: '3Uch8WXAZXUnHiWYF1Y2KaDBnfAFyUbZoDkeoPRYHZWC',
     },
   },
   transactionIdentificationStatus: {
     description: 'Identification state (pending, identified, failed).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

@@ -1,32 +1,22 @@
-export const CdmProductCollateralAssetMaturity = {
+export const CdmProductCollateralAssetMaturity: Record<string, unknown> = {
   maturityRange: {
     description: 'Represents a filter based on the underlying asset maturity.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '9U8DjGW5C9KDiofbqRSgjUGn8zzm279fFRHZ1W9VNLoD',
+      blueId: 'Gnv2JatHomC6ZL7YnSSsr5b8Qx1hWWGYFQocqArJgJCj',
     },
   },
   maturityType: {
     description:
       'Specifies whether the maturity range is the remaining or original maturity.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4FEgZ2S5mgNGfwpTRngN5cA9QySYVkoZyRvstY7sKH9x',
+      blueId: '4M9RAThHXP4VWteUq2nq2RyirfHaGCinAVabk8gf2AYC',
     },
   },
   name: 'cdm/product/collateral/AssetMaturity',
-} as const;
+};

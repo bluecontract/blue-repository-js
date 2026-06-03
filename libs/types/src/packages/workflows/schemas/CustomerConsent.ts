@@ -1,40 +1,39 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
 import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
 
-export const CustomerConsentSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CustomerConsentSchema: any = withTypeBlueId(
   blueIds['Workflows/Customer Consent']
 )(
-  z.object({
-    consentDetails: z.record(z.string(), z.string()).optional(),
-    consentKind: z.string().optional(),
-    consentStatus: z.string().optional(),
-    contracts: z
+  zod.object({
+    consentDetails: zod.record(zod.string(), zod.string()).optional(),
+    consentKind: zod.string().optional(),
+    consentStatus: zod.string().optional(),
+    contracts: zod
       .object({
-        granteeChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        granterChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        guarantorChannel: z.lazy(() => MyOSTimelineChannelSchema).optional(),
-        initialize: z.lazy(() => SequentialWorkflowSchema).optional(),
-        initLifecycleChannel: z
-          .lazy(() => LifecycleEventChannelSchema)
-          .optional(),
-        revokeConsent: z.lazy(() => OperationSchema).optional(),
-        revokeConsentImpl: z
+        granteeChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        granterChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        guarantorChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        initLifecycleChannel: blueNodeField().optional(),
+        revokeConsent: zod.lazy(() => OperationSchema).optional(),
+        revokeConsentImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)
           .optional(),
       })
       .optional(),
-    description: z.string().optional(),
-    grantedAt: z.lazy(() => TimestampSchema).optional(),
-    name: z.string().optional(),
-    revocationReason: z.string().optional(),
-    revokedAt: z.lazy(() => TimestampSchema).optional(),
+    description: zod.string().optional(),
+    grantedAt: zod.lazy(() => TimestampSchema).optional(),
+    name: zod.string().optional(),
+    revocationReason: zod.string().optional(),
+    revokedAt: zod.lazy(() => TimestampSchema).optional(),
   })
 );
 

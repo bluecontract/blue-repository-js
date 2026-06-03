@@ -1,21 +1,19 @@
-export const CdmProductCommonScheduleAveragingObservationList = {
+export const CdmProductCommonScheduleAveragingObservationList: Record<
+  string,
+  unknown
+> = {
   averagingObservation: {
     description: 'A single weighted averaging observation.',
     itemType: {
-      blueId: 'ESLgkpXCoVxwQbnAPvgczaFCG8BevyuAr7HkFo9WThDR',
+      blueId: '6BCHpCe7FxvsdKprgbdq44ovxXH55YFYtLRFtqQ4KyeE',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description: 'An unordered list of weighted averaging observations.',
   name: 'cdm/product/common/schedule/AveragingObservationList',
-} as const;
+};

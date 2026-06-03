@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const WorkerSessionStartingSchema = withTypeBlueId(
+const zod = z as any;
+
+export const WorkerSessionStartingSchema: any = withTypeBlueId(
   blueIds['MyOS/Worker Session Starting']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    granteeDocumentId: z.string().optional(),
-    name: z.string().optional(),
-    targetDocumentType: z.string().optional(),
+    description: zod.string().optional(),
+    granteeDocumentId: zod.string().optional(),
+    name: zod.string().optional(),
+    targetDocumentType: zod.string().optional(),
   })
 );
 

@@ -1,27 +1,22 @@
-export const CdmProductTemplateAsian = {
+export const CdmProductTemplateAsian: Record<string, unknown> = {
   averagingInOut: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7TNdG2Z7nw9MPJJnRN9AWntYxxBDXatd9BRy86A9zjep',
+      blueId: 'Bp5wh9hxR98RaErYfLT3GHtCA5Z4HjFmNg4EABQ26PAc',
     },
   },
   averagingPeriodIn: {
     description: 'The averaging in period.',
     type: {
-      blueId: '9hxbzdeXPKQQGVKqPfSXbF69HWKHGiPzMLHRa4vh62dM',
+      blueId: 'GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9',
     },
   },
   averagingPeriodOut: {
     description: 'The averaging out period.',
     type: {
-      blueId: '9hxbzdeXPKQQGVKqPfSXbF69HWKHGiPzMLHRa4vh62dM',
+      blueId: 'GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9',
     },
   },
   description: 'As per ISDA 2002 Definitions.',
@@ -29,7 +24,7 @@ export const CdmProductTemplateAsian = {
   strikeFactor: {
     description: 'The factor of strike.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

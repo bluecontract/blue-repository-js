@@ -19,74 +19,76 @@ import { CdmProductCommonScheduleRateScheduleSchema } from './CdmProductCommonSc
 import { CdmProductTemplateStrikeScheduleSchema } from './CdmProductTemplateStrikeSchedule';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmProductAssetInflationRateSpecificationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetInflationRateSpecificationSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/InflationRateSpecification']
   )(
-    z.object({
-      averagingMethod: z
+    zod.object({
+      averagingMethod: zod
         .lazy(() => CdmBaseMathAveragingWeightingMethodEnumSchema)
         .optional(),
-      calculationMethod: z
+      calculationMethod: zod
         .lazy(
           () =>
             CdmObservableAssetCalculatedrateInflationCalculationMethodEnumSchema
         )
         .optional(),
-      calculationParameters: z
+      calculationParameters: zod
         .lazy(
           () =>
             CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema
         )
         .optional(),
-      calculationStyle: z
+      calculationStyle: zod
         .lazy(
           () =>
             CdmObservableAssetCalculatedrateInflationCalculationStyleEnumSchema
         )
         .optional(),
-      capRateSchedule: z
+      capRateSchedule: zod
         .lazy(() => CdmProductTemplateStrikeScheduleSchema)
         .optional(),
-      description: z.string().optional(),
-      fallbackBondApplicable: z.boolean(),
-      fallbackRate: z
+      description: zod.string().optional(),
+      fallbackBondApplicable: zod.boolean(),
+      fallbackRate: zod
         .lazy(
           () => CdmObservableAssetCalculatedrateFallbackRateParametersSchema
         )
         .optional(),
-      finalPrincipalExchangeCalculation: z
+      finalPrincipalExchangeCalculation: zod
         .lazy(() => CdmProductAssetFinalPrincipalExchangeCalculationEnumSchema)
         .optional(),
-      finalRateRounding: z.lazy(() => CdmBaseMathRoundingSchema).optional(),
-      floatingRateMultiplierSchedule: z
+      finalRateRounding: zod.lazy(() => CdmBaseMathRoundingSchema).optional(),
+      floatingRateMultiplierSchedule: zod
         .lazy(() => CdmProductCommonScheduleRateScheduleSchema)
         .optional(),
-      floorRateSchedule: z
+      floorRateSchedule: zod
         .lazy(() => CdmProductTemplateStrikeScheduleSchema)
         .optional(),
-      indexSource: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-      inflationLag: z.lazy(() => CdmBaseDatetimeOffsetSchema),
-      initialIndexLevel: z.number().optional(),
-      initialRate: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
-      interpolationMethod: z.lazy(
+      indexSource: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+      inflationLag: zod.lazy(() => CdmBaseDatetimeOffsetSchema),
+      initialIndexLevel: zod.number().optional(),
+      initialRate: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
+      interpolationMethod: zod.lazy(
         () => CdmObservableAssetFieldWithMetaInterpolationMethodEnumSchema
       ),
-      mainPublication: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-      name: z.string().optional(),
-      negativeInterestRateTreatment: z
+      mainPublication: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+      name: zod.string().optional(),
+      negativeInterestRateTreatment: zod
         .lazy(() => CdmProductAssetNegativeInterestRateTreatmentEnumSchema)
         .optional(),
-      rateOption: z
+      rateOption: zod
         .lazy(
           () =>
             CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndexSchema
         )
         .optional(),
-      rateTreatment: z
+      rateTreatment: zod
         .lazy(() => CdmProductAssetRateTreatmentEnumSchema)
         .optional(),
-      spreadSchedule: z
+      spreadSchedule: zod
         .lazy(() => CdmProductAssetSpreadScheduleSchema)
         .optional(),
     })

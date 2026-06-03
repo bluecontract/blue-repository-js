@@ -9,35 +9,36 @@ import { CdmProductCommonSettlementPrincipalPaymentsSchema } from './CdmProductC
 import { CdmProductCommonSettlementResolvablePriceQuantitySchema } from './CdmProductCommonSettlementResolvablePriceQuantity';
 import { CdmProductCommonSettlementSettlementTermsSchema } from './CdmProductCommonSettlementSettlementTerms';
 
-export const CdmProductAssetCreditDefaultPayoutSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/CreditDefaultPayout']
-  )(
-    z.object({
-      description: z.string().optional(),
-      generalTerms: z.lazy(() => CdmProductAssetGeneralTermsSchema),
-      name: z.string().optional(),
-      payerReceiver: z
-        .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
-        .optional(),
-      priceQuantity: z
-        .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
-        .optional(),
-      principalPayment: z
-        .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
-        .optional(),
-      protectionTerms: z
-        .array(z.lazy(() => CdmProductAssetProtectionTermsSchema))
-        .min(0)
-        .optional(),
-      settlementTerms: z
-        .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
-        .optional(),
-      transactedPrice: z
-        .lazy(() => CdmObservableAssetTransactedPriceSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetCreditDefaultPayoutSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/CreditDefaultPayout']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    generalTerms: zod.lazy(() => CdmProductAssetGeneralTermsSchema),
+    name: zod.string().optional(),
+    payerReceiver: zod
+      .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
+      .optional(),
+    priceQuantity: zod
+      .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
+      .optional(),
+    principalPayment: zod
+      .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
+      .optional(),
+    protectionTerms: zod
+      .array(zod.lazy(() => CdmProductAssetProtectionTermsSchema))
+      .min(0)
+      .optional(),
+    settlementTerms: zod
+      .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+    transactedPrice: zod
+      .lazy(() => CdmObservableAssetTransactedPriceSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductAssetCreditDefaultPayout = z.infer<
   typeof CdmProductAssetCreditDefaultPayoutSchema

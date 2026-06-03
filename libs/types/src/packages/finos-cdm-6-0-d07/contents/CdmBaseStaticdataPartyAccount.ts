@@ -1,34 +1,29 @@
-export const CdmBaseStaticdataPartyAccount = {
+export const CdmBaseStaticdataPartyAccount: Record<string, unknown> = {
   accountBeneficiary: {
     description: 'A reference to the party beneficiary of the account.',
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
   accountName: {
     description: 'The name by which the account is known.',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   accountNumber: {
     description: 'The account number.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   accountType: {
     description: 'The type of account, e.g. client, house.',
     type: {
-      blueId: 'HWaoVtND9cNy4h58tMGuWiynD42VByHqrEfXft6ogrRr',
+      blueId: '4ziQZYSMsRBGw2UcuWWBCV7f3BDZdr6LRtdVLEavoHaw',
     },
   },
   description:
@@ -37,14 +32,14 @@ export const CdmBaseStaticdataPartyAccount = {
   partyReference: {
     description: 'A reference to the party to which the account refers to.',
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
   servicingParty: {
     description:
       'The reference to the legal entity that services the account, i.e. in the books of which the account is held.',
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
-} as const;
+};

@@ -1,37 +1,38 @@
-export const TimelineEntry = {
+export const TimelineEntry: Record<string, unknown> = {
   actor: {
     description:
-      "Attribution of who or what caused this entry. This field is the provider's claim about principal versus agent action\nand is the basis for Actor Policy enforcement and audit. It should be a Coordination/Actor specialization.\n",
+      "Provider's attribution of the actor responsible for this entry. This should be a Coordination/Actor specialization,\nsuch as Principal Actor or Agent Actor. Actor attribution supports audit and Actor Policy enforcement.\n",
     type: {
-      blueId: 'CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd',
+      blueId: 'GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7',
     },
   },
   description:
-    "A Timeline Entry is one immutable event in an append-only Timeline. It records a message produced by the timeline\nowner or an authorized actor, links to the previous entry, carries a provider-assigned timestamp, and includes actor and\nsource attribution. The entry is a Blue document, so its BlueId is a content address over the entry fields. The\n`prevEntry` link creates a hash chain: modifying any historical entry changes its BlueId and breaks verification for\nall subsequent entries that reference it.\n\nThe `timeline` field identifies the timeline and provider context to which the entry belongs. The `timestamp` is an\ninteger microsecond timestamp, generally assigned by the Timeline Provider. Timestamps establish deterministic ordering\nacross entries. Within a single timeline they should be monotonically increasing according to the provider's rules. In\nmulti-timeline documents, processors sort candidate entries by timestamp and deterministic tie-breakers such as channel\nkey and provider-specific ordering fields. Completeness guarantees from providers are necessary before processors treat\nthe ordering as complete.\n\nThe `message` field is the actual Blue event content being delivered to documents, such as an Operation Request, Status\nChange, Chat Message, or domain-specific action. The `actor` field attributes the entry to a principal, agent, or\nspecialized actor. The optional `source` field records how the request reached the provider, such as browser session,\nAPI call, document request, or blockchain transaction. A processor should never infer actor/source semantics from the\nmessage body when these fields are present; the provider's attribution is the auditable claim.\n",
+    "A Timeline Entry is one immutable entry in an append-only Timeline. It records a Blue message, the timeline it belongs\nto, the previous entry reference, the provider-assigned or provider-recorded timestamp, and attribution fields such\nas actor and source. Its BlueId is a content address over this data. If entries use `prevEntry`, each entry commits to\nthe BlueId of its predecessor, creating a tamper-evident chain: changing an old entry changes its BlueId and breaks\nevery later `prevEntry` link.\n\nA Timeline Entry is not automatically a document operation. It is a stored statement or action on a timeline. A Blue\ndocument may consume it through a Timeline Channel, but other applications may use the same timeline for audit,\nmessaging, public announcements, personal storage, signed receipts, or other purposes. The provider does not need to\nknow why the message was written. The provider's claims are about append authorization, identity/source attribution,\ntimestamp/order, storage, and completeness.\n\n`timestamp` is used for deterministic ordering. For managed providers it is typically microseconds since Unix epoch\nand must respect all outstanding completeness guarantees. For blockchain-backed timelines it may be derived from\nfinalized block timestamps and may have lower precision. When multiple entries have the same timestamp, processing\nenvironments must use deterministic tie-breakers such as channel key and provider-specific finalized order.\n\n`message` is the Blue payload. It may be an Operation Request, Chat Message, Status Change, customer response,\ndomain-specific event, or any other Blue node. `actor` says who or what the provider attributes the entry to.\n`source` says how the message reached the provider. Blue documents should evaluate actor/source policy from these\nfields rather than guessing from the message body.\n",
   message: {
     description:
-      'The event payload recorded in this entry. It may be any Blue node, but concrete Timeline Channels and workflows usually\nexpect a subtype of Coordination/Event such as Operation Request, Chat Message, Status Change, or a domain event.\n',
+      'Blue payload recorded in this entry. The provider stores the message but generally does not validate it against every\npossible consuming document. Document processors and domain-specific channels decide whether a message is relevant and\nvalid for a given document.\n',
   },
   name: 'Timeline Entry',
   prevEntry: {
     description:
-      "Reference to the previous Timeline Entry in the same timeline. The first entry may omit this field or use an explicit\nprovider-defined beginning marker. Every later entry should reference the BlueId of its immediate predecessor. This\ncreates the tamper-evident chain: modifying a historical entry changes that entry's BlueId and invalidates the\n`prevEntry` reference held by its successor.\n",
+      "Reference to the previous entry in the same timeline. The first entry may omit this field or use a provider-defined\nbeginning marker. Later entries should reference the predecessor's BlueId, forming the timeline hash chain and making\nhistorical tampering detectable.\n",
   },
   source: {
     description:
-      'Optional provenance of how the action reached the provider, such as Browser Session, API Call, Document Request, or\nblockchain transaction. Source complements actor attribution and can be used by policy rules.\n',
+      "Optional provider's attribution of the source through which the entry was submitted, such as Browser Session, API\nCall, Document Request, blockchain transaction, or provider-specific source type. Source complements actor; it does\nnot replace actor.\n",
   },
   timeline: {
-    description: 'The timeline this entry belongs to.',
+    description:
+      'Timeline to which this entry belongs. This should be sufficient, together with provider-specific fields on concrete\ntimeline types, for readers to query the provider or storage mechanism for neighboring entries and completeness\nproofs.\n',
     type: {
-      blueId: 'DFycCEHaAuMXptCMxQ4N5M1UW2yyddgi5xa3TPWDTNAZ',
+      blueId: '7wUHmjDmM9suCSX1HPL7NZncfwPmMmXq2vfSVBmRLgAu',
     },
   },
   timestamp: {
     description:
-      'Provider-assigned integer timestamp in microseconds since Unix epoch unless a concrete timeline provider defines a\nstricter compatible representation. The timestamp is used for deterministic ordering across entries and for provider\ncompleteness guarantees. Once a provider guarantees no entries before T, future entries must be assigned timestamps\ngreater than or equal to T.\n',
+      'Provider-assigned or provider-recorded integer timestamp, commonly microseconds since Unix epoch. It establishes\nentry order and is the value used in completeness guarantees. Future entries accepted after a completeness guarantee\nfor T must not receive timestamps less than T.\n',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
-} as const;
+};

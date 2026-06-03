@@ -8,25 +8,26 @@ import { CdmBaseStaticdataPartyPayerReceiverSchema } from './CdmBaseStaticdataPa
 import { CdmProductCommonSettlementCashflowTypeSchema } from './CdmProductCommonSettlementCashflowType';
 import { CdmProductCommonSettlementPaymentDiscountingSchema } from './CdmProductCommonSettlementPaymentDiscounting';
 
-export const CdmProductCommonSettlementCashflowSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/Cashflow']
-  )(
-    z.object({
-      asset: z.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema).optional(),
-      cashflowType: z.lazy(() => CdmProductCommonSettlementCashflowTypeSchema),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      payerReceiver: z.lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema),
-      paymentDiscounting: z
-        .lazy(() => CdmProductCommonSettlementPaymentDiscountingSchema)
-        .optional(),
-      quantity: z.lazy(() => CdmBaseMathNonNegativeQuantitySchema).optional(),
-      settlementDate: z
-        .lazy(() => CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonSettlementCashflowSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/Cashflow']
+)(
+  zod.object({
+    asset: zod.lazy(() => CdmBaseStaticdataAssetCommonAssetSchema).optional(),
+    cashflowType: zod.lazy(() => CdmProductCommonSettlementCashflowTypeSchema),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod.lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema),
+    paymentDiscounting: zod
+      .lazy(() => CdmProductCommonSettlementPaymentDiscountingSchema)
+      .optional(),
+    quantity: zod.lazy(() => CdmBaseMathNonNegativeQuantitySchema).optional(),
+    settlementDate: zod
+      .lazy(() => CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDateSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCommonSettlementCashflow = z.infer<
   typeof CdmProductCommonSettlementCashflowSchema

@@ -4,19 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PaymentMandateSpendAuthorizationRespondedSchema = withTypeBlueId(
-  blueIds['PayNote/Payment Mandate Spend Authorization Responded']
-)(
-  ResponseSchema.extend({
-    authorizationId: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    remainingAmountMinor: z.number().optional(),
-    respondedAt: z.lazy(() => TimestampSchema).optional(),
-    status: z.string().optional(),
-  })
-);
+const zod = z as any;
+
+export const PaymentMandateSpendAuthorizationRespondedSchema: any =
+  withTypeBlueId(
+    blueIds['PayNote/Payment Mandate Spend Authorization Responded']
+  )(
+    ResponseSchema.extend({
+      authorizationId: zod.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      reason: zod.string().optional(),
+      remainingAmountMinor: zod.number().optional(),
+      respondedAt: zod.lazy(() => TimestampSchema).optional(),
+      status: zod.string().optional(),
+    })
+  );
 
 export type PaymentMandateSpendAuthorizationResponded = z.infer<
   typeof PaymentMandateSpendAuthorizationRespondedSchema

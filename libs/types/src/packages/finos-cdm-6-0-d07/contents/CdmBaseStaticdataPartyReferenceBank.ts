@@ -1,4 +1,4 @@
-export const CdmBaseStaticdataPartyReferenceBank = {
+export const CdmBaseStaticdataPartyReferenceBank: Record<string, unknown> = {
   description:
     'A class to describe an institution (party) identified by means of a coding scheme and an optional name.',
   name: 'cdm/base/staticdata/party/ReferenceBank',
@@ -6,22 +6,17 @@ export const CdmBaseStaticdataPartyReferenceBank = {
     description:
       'An institution (party) identifier, e.g. a bank identifier code (BIC). FpML specifies a referenceBankIdScheme.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   referenceBankName: {
     description:
       'The name of the institution (party). A free format string. FpML does not define usage rules for the element.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

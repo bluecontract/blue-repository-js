@@ -1,16 +1,16 @@
-export const CdmObservableAssetObservable = {
+export const CdmObservableAssetObservable: Record<string, unknown> = {
   Asset: {
     description:
       'The object to be observed is an Asset, ie something that can be owned and transferred in the financial markets.\n',
     type: {
-      blueId: 'B3bsNNAr8QJpJA8r84kgZrHLE5PZREBGxXWYJdtaDRJ7',
+      blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
     },
   },
   Basket: {
     description:
       'The object to be observed is a Basket, ie a collection of Observables with an identifier and optional weightings.\n',
     type: {
-      blueId: 'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#2',
+      blueId: '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#0',
     },
   },
   description:
@@ -19,8 +19,8 @@ export const CdmObservableAssetObservable = {
     description:
       'The object to be observed is an Index, ie an observable computed on the prices, rates or valuations of a number of assets.\n',
     type: {
-      blueId: '9uQM3zoMTMLZFipKa1PU3Z1YndVH7avxgSGLXms3GVF3',
+      blueId: 'FtoRYZujAAg27pRyk4p13wRUXC9JWtWMkcjiAZULxMWP',
     },
   },
   name: 'cdm/observable/asset/Observable',
-} as const;
+};

@@ -4,22 +4,24 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
 import { CdmProductAssetFPVFinalPriceElectionFallbackEnumSchema } from './CdmProductAssetFPVFinalPriceElectionFallbackEnum';
 
-export const CdmProductAssetValuationTermsSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductAssetValuationTermsSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/ValuationTerms']
 )(
-  z.object({
-    componentSecurityIndexAnnexFallback: z.boolean().optional(),
-    dividendValuationDates: z
+  zod.object({
+    componentSecurityIndexAnnexFallback: zod.boolean().optional(),
+    dividendValuationDates: zod
       .lazy(() => CdmBaseDatetimeAdjustableRelativeOrPeriodicDatesSchema)
       .optional(),
-    fPVFinalPriceElectionFallback: z
+    fPVFinalPriceElectionFallback: zod
       .lazy(() => CdmProductAssetFPVFinalPriceElectionFallbackEnumSchema)
       .optional(),
-    futuresPriceValuation: z.boolean().optional(),
-    multipleExchangeIndexAnnexFallback: z.boolean().optional(),
-    name: z.string().optional(),
-    numberOfValuationDates: z.number().optional(),
-    optionsPriceValuation: z.boolean().optional(),
+    futuresPriceValuation: zod.boolean().optional(),
+    multipleExchangeIndexAnnexFallback: zod.boolean().optional(),
+    name: zod.string().optional(),
+    numberOfValuationDates: zod.number().optional(),
+    optionsPriceValuation: zod.boolean().optional(),
   })
 );
 

@@ -1,20 +1,15 @@
-export const CdmProductTemplateAssetPayout = {
+export const CdmProductTemplateAssetPayout: Record<string, unknown> = {
   assetLeg: {
     description:
       'Defines each asset movement as a buy/sell at different dates, typically 1 near leg and 1 far leg in a securities financing transaction.\n',
     itemType: {
-      blueId: 'HXa76EzxhXAHLP3yM8iCLC171STC5PBQPhnX4ghaUW4g',
+      blueId: '4xmZ7ro4SjPB1Qqi1VDv8EsMmJHKedpeQsvvYum9u8Sn',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -23,14 +18,14 @@ export const CdmProductTemplateAssetPayout = {
     description:
       'Specifies the terms under which dividends received by the borrower are passed through to the lender.',
     type: {
-      blueId: 'GWSnFb8ZSatiW9mUTcxJWEZCkQ5KmTdEqcJ45uRZ1P81',
+      blueId: 'J4xjdbvJ317WkqdXSfzxaATEcgGQkHQ7btViXDULfhK5',
     },
   },
   minimumFee: {
     description:
       'A contractual minimum amount which the borrower will pay, regardless of the duration of the loan. A mechanism for making sure that a trade generates enough income.\n',
     type: {
-      blueId: '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE',
+      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
     },
   },
   name: 'cdm/product/template/AssetPayout',
@@ -38,48 +33,43 @@ export const CdmProductTemplateAssetPayout = {
     description:
       'Canonical representation of the payer and receiver parties applicable to each payout leg.',
     type: {
-      blueId: 'Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3',
+      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
     },
   },
   priceQuantity: {
     description:
       "Each payout leg must implement the quantity concept as a 'resolvable' type, which allows for different payout legs to be linked to each other (e.g. in the case of cross-curreny products).\n",
     type: {
-      blueId: 'F4ihqR7D44ZpGGutb98mpsdE6QNtkrVZM4oiK6Vuzcsy',
+      blueId: '7nSxNdghnPkGBbyqzqUELC5UcBMNfLdrCr4oXbav2d3J',
     },
   },
   principalPayment: {
     description:
       'The specification of the principal exchange. Optional as only applicable in the case of cross-currency or zero-coupon swaps with a final payment.\n',
     type: {
-      blueId: '79fSZCgPXnnm5bsD9s4XCQXn5MaCb8UAVq6ybHFbLdpq',
+      blueId: '8VsQE5PSzyWWApw5Ykfum97vLPNoa36BemLUMHimzMb5',
     },
   },
   settlementTerms: {
     description:
       'Each payout leg must specifies its settlement terms, including the delivery type (i.e. cash vs physical, and their respective terms), the transfer type (DvP etc.) and settlement date, if any.\n',
     type: {
-      blueId: '7zkmbj4175pTZ3exYCBnCyVdiSaAT2SEfkxhDTus8iLY',
+      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
     },
   },
   tradeType: {
     description: 'The trade type, eg repurchase transaction or buy/sell-back.',
     type: {
-      blueId: 'H9K4V7vLZdWh8Vfqst6t9NiRAX6Ho6M8oZqFtojWhczK',
+      blueId: '8X2WFbGTFXVbc8c7DytjqFNpyyEVGtXoNV8b14t6tRsk',
     },
   },
   underlier: {
     description: 'Specifies the Purchased Asset, usually a Security.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'B3bsNNAr8QJpJA8r84kgZrHLE5PZREBGxXWYJdtaDRJ7',
+      blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
     },
   },
-} as const;
+};

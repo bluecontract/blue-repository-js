@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableEventShareExtraordinaryEventEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableEventShareExtraordinaryEventEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/event/ShareExtraordinaryEventEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'AlternativeObligation',
       'CalculationAgent',
       'CancellationAndPayment',

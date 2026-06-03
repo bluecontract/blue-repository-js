@@ -7,29 +7,30 @@ import { CdmBaseStaticdataPartyCounterpartyRoleEnumSchema } from './CdmBaseStati
 import { CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
 import { CdmProductCommonScheduleAmountScheduleSchema } from './CdmProductCommonScheduleAmountSchedule';
 
-export const CdmProductTemplateExerciseFeeScheduleSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseFeeSchedule']
-  )(
-    z.object({
-      description: z.string().optional(),
-      feeAmountSchedule: z
-        .lazy(() => CdmProductCommonScheduleAmountScheduleSchema)
-        .optional(),
-      feePaymentDate: z.lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema),
-      feeRateSchedule: z.lazy(() => CdmBaseMathScheduleSchema).optional(),
-      name: z.string().optional(),
-      notionalReference: z.lazy(
-        () => CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema
-      ),
-      payer: z
-        .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
-        .optional(),
-      receiver: z
-        .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductTemplateExerciseFeeScheduleSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/template/ExerciseFeeSchedule']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    feeAmountSchedule: zod
+      .lazy(() => CdmProductCommonScheduleAmountScheduleSchema)
+      .optional(),
+    feePaymentDate: zod.lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema),
+    feeRateSchedule: zod.lazy(() => CdmBaseMathScheduleSchema).optional(),
+    name: zod.string().optional(),
+    notionalReference: zod.lazy(
+      () => CdmObservableAssetMetafieldsReferenceWithMetaMoneySchema
+    ),
+    payer: zod
+      .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
+      .optional(),
+    receiver: zod
+      .lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductTemplateExerciseFeeSchedule = z.infer<
   typeof CdmProductTemplateExerciseFeeScheduleSchema

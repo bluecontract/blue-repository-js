@@ -7,37 +7,41 @@ import { CdmBaseStaticdataAssetCommonPutCallEnumSchema } from './CdmBaseStaticda
 import { CdmBaseStaticdataAssetCommonTaxonomySchema } from './CdmBaseStaticdataAssetCommonTaxonomy';
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 
-export const CdmBaseStaticdataAssetCommonListedDerivativeSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataAssetCommonListedDerivativeSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/asset/common/ListedDerivative'
     ]
   )(
-    z.object({
-      deliveryTerm: z.string().optional(),
-      description: z.string().optional(),
-      exchange: z
+    zod.object({
+      deliveryTerm: zod.string().optional(),
+      description: zod.string().optional(),
+      exchange: zod
         .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
         .optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      identifier: zod
+        .array(
+          zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema)
+        )
         .min(1)
         .optional(),
-      instrumentType: z
+      instrumentType: zod
         .lazy(() => CdmBaseStaticdataAssetCommonInstrumentTypeEnumSchema)
         .optional(),
-      isExchangeListed: z.boolean().optional(),
-      name: z.string().optional(),
-      optionType: z
+      isExchangeListed: zod.boolean().optional(),
+      name: zod.string().optional(),
+      optionType: zod
         .lazy(() => CdmBaseStaticdataAssetCommonPutCallEnumSchema)
         .optional(),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      relatedExchange: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
         .min(0)
         .optional(),
-      strike: z.number().optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      strike: zod.number().optional(),
+      taxonomy: zod
+        .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
         .min(0)
         .optional(),
     })

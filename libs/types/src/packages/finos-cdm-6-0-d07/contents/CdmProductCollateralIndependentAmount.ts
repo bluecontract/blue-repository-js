@@ -1,4 +1,4 @@
-export const CdmProductCollateralIndependentAmount = {
+export const CdmProductCollateralIndependentAmount: Record<string, unknown> = {
   description:
     'A class specifying the Independent Amount as the combination of a payer/receiver, a payment amount, a payment date and an associated payment calculation rule.\n',
   name: 'cdm/product/collateral/IndependentAmount',
@@ -6,46 +6,41 @@ export const CdmProductCollateralIndependentAmount = {
     description:
       'A reference to the account responsible for making the payments defined by this structure.',
     type: {
-      blueId: 'HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX',
+      blueId: 'HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi',
     },
   },
   payerPartyReference: {
     description:
       'The party responsible for making the payments defined by this structure.',
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
   paymentDetail: {
     description:
       'An attribute that specifies a payment as the combination of a payment amount, a payment date and an associated payment calculation rule.\n',
     itemType: {
-      blueId: '2iax3ewikmufx2SGAqv9teMyfvSypMUiCfrvrNVxSRwy',
+      blueId: 'DekzGsQAbNvqbqgomWQkf83asiULvd7vJKgEzRsTBfFf',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 1,
-      },
+      minItems: 1,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   receiverAccountReference: {
     description:
       'A reference to the account that receives the payments corresponding to this structure.',
     type: {
-      blueId: 'HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX',
+      blueId: 'HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi',
     },
   },
   receiverPartyReference: {
     description:
       'The party that receives the payments corresponding to this structure.',
     type: {
-      blueId: 'GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik',
+      blueId: 'Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr',
     },
   },
-} as const;
+};

@@ -1,21 +1,21 @@
-export const CdmObservableEventFeaturePayment = {
+export const CdmObservableEventFeaturePayment: Record<string, unknown> = {
   amount: {
     description: 'The monetary quantity in currency units.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   currency: {
     description: 'The currency in which an amount is denominated.',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   description: 'Payment made following trigger occurrence.',
   levelPercentage: {
     description: 'The trigger level percentage.',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/observable/event/FeaturePayment',
@@ -23,27 +23,22 @@ export const CdmObservableEventFeaturePayment = {
     description:
       "This attribute doesn't exist as part of the FpML construct, which makes use of the PayerReceiver.model group.",
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '5jMMKaokSyc3P5cYsiGHgYgok3sYf3J1f3Cq4Ue2LX4C',
+      blueId: '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs',
     },
   },
   paymentDate: {
     description: 'The feature payment date.',
     type: {
-      blueId: '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd',
+      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
     },
   },
   time: {
     description: 'The feature payment time.',
     type: {
-      blueId: '5SHUer2m9Wrjeo45qpWiGeBoKwQ2Z66Waz5zaTwYcJUp',
+      blueId: '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv',
     },
   },
-} as const;
+};

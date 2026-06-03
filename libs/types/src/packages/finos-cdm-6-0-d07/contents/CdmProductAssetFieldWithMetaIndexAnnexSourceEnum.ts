@@ -1,13 +1,16 @@
-export const CdmProductAssetFieldWithMetaIndexAnnexSourceEnum = {
+export const CdmProductAssetFieldWithMetaIndexAnnexSourceEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/product/asset/FieldWithMetaIndexAnnexSourceEnum',
   val: {
     type: {
-      blueId: '966esNeqYwpoFQgb847YHKee3fozzSrJhnCs1532odLB',
+      blueId: '2Ma1dyndNGQoSoTdwyFuZ8bbJcqQ1FbMXQMSHeWyjoao',
     },
   },
-} as const;
+};

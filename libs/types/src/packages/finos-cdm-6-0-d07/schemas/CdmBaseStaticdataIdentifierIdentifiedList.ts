@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataIdentifierIdentifierSchema } from './CdmBaseStaticdataIdentifierIdentifier';
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 
-export const CdmBaseStaticdataIdentifierIdentifiedListSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataIdentifierIdentifiedListSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/identifier/IdentifiedList']
   )(
-    z.object({
-      componentId: z
-        .array(z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
+    zod.object({
+      componentId: zod
+        .array(zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema))
         .min(2)
         .optional(),
-      description: z.string().optional(),
-      listId: z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema),
-      name: z.string().optional(),
-      price: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
+      description: zod.string().optional(),
+      listId: zod.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema),
+      name: zod.string().optional(),
+      price: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
     })
   );
 

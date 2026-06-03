@@ -3,12 +3,14 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PaymentCancelledBeforeCompletionSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentCancelledBeforeCompletionSchema: any = withTypeBlueId(
   blueIds['PayNote/Payment Cancelled Before Completion']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

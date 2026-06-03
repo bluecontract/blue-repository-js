@@ -4,16 +4,18 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 import { CdmObservableEventObservationIdentifierSchema } from './CdmObservableEventObservationIdentifier';
 
-export const CdmObservableEventObservationSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableEventObservationSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/Observation']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    observationIdentifier: z.lazy(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    observationIdentifier: zod.lazy(
       () => CdmObservableEventObservationIdentifierSchema
     ),
-    observedValue: z.lazy(() => CdmObservableAssetPriceSchema),
+    observedValue: zod.lazy(() => CdmObservableAssetPriceSchema),
   })
 );
 

@@ -1,55 +1,46 @@
-export const CdmObservableEventObservationIdentifier = {
-  description:
-    'Defines the parameters needed to uniquely identify a piece of data among the population of all available market data.\n',
-  determinationMethodology: {
+export const CdmObservableEventObservationIdentifier: Record<string, unknown> =
+  {
     description:
-      'Specifies the method according to which an amount or a date is determined.',
-    type: {
-      blueId: 'AVTGwC6XTdPNBYpCUxUf5Agcpf2Z8whRs2N8aNRbffDr',
-    },
-  },
-  informationSource: {
-    description:
-      'Represents where the market data published and should be observed.',
-    type: {
-      blueId: '4ewTgKPXq5xDsrR3GStD5tHN6FnPdeZXUQ5JDo5tkqZc',
-    },
-  },
-  name: 'cdm/observable/event/ObservationIdentifier',
-  observable: {
-    description:
-      'Represents the asset or rate to which the observation relates.',
-    schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
+      'Defines the parameters needed to uniquely identify a piece of data among the population of all available market data.\n',
+    determinationMethodology: {
+      description:
+        'Specifies the method according to which an amount or a date is determined.',
+      type: {
+        blueId: '4Gy7A4j9sYhPf8Eqd9dXLdUFBWPHMDXxiV4n5VNAsmQF',
       },
     },
-    type: {
-      blueId: 'Hb4wmAVuJwiD8UV5Stp7MdchNt2tK1QCEE5tBFxE5F9A',
-    },
-  },
-  observationDate: {
-    description:
-      'Specifies the date value to use when resolving the market data.',
-    schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
+    informationSource: {
+      description:
+        'Represents where the market data published and should be observed.',
+      type: {
+        blueId: '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y',
       },
     },
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    name: 'cdm/observable/event/ObservationIdentifier',
+    observable: {
+      description:
+        'Represents the asset or rate to which the observation relates.',
+      schema: {
+        required: true,
+      },
+      type: {
+        blueId: 'xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS',
+      },
     },
-  },
-  observationTime: {
-    description: 'Represents the time and time-zone.',
-    type: {
-      blueId: 'FTUwPbNf3h5HEXFU1GenFhKNQoZGkBe5zAWAf3ZnpvrK',
+    observationDate: {
+      description:
+        'Specifies the date value to use when resolving the market data.',
+      schema: {
+        required: true,
+      },
+      type: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
     },
-  },
-} as const;
+    observationTime: {
+      description: 'Represents the time and time-zone.',
+      type: {
+        blueId: 'A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92',
+      },
+    },
+  };

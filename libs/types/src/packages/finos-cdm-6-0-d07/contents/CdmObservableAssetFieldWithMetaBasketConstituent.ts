@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaBasketConstituent = {
+export const CdmObservableAssetFieldWithMetaBasketConstituent: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaBasketConstituent',
   val: {
     type: {
-      blueId: 'this#1',
+      blueId: 'this#2',
     },
   },
-} as const;
+};

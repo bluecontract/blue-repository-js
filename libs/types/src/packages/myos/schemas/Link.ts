@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const LinkSchema = withTypeBlueId(blueIds['MyOS/Link'])(
-  z.object({
-    anchor: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+const zod = z as any;
+
+export const LinkSchema: any = withTypeBlueId(blueIds['MyOS/Link'])(
+  zod.object({
+    anchor: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

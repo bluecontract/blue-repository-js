@@ -6,33 +6,35 @@ import { CdmProductAssetFloatingrateFloatingRateProcessingDetailsSchema } from '
 import { CdmProductAssetFloatingrateFloatingRateSettingDetailsSchema } from './CdmProductAssetFloatingrateFloatingRateSettingDetails';
 import { CdmProductCommonScheduleCalculationPeriodBaseSchema } from './CdmProductCommonScheduleCalculationPeriodBase';
 
-export const CdmProductAssetFloatingrateFloatingAmountCalculationDetailsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFloatingrateFloatingAmountCalculationDetailsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/floatingrate/FloatingAmountCalculationDetails'
     ]
   )(
-    z.object({
-      appliedRate: z.number(),
-      calculatedAmount: z.number(),
-      calculationPeriod: z.lazy(
+    zod.object({
+      appliedRate: zod.number(),
+      calculatedAmount: zod.number(),
+      calculationPeriod: zod.lazy(
         () => CdmProductCommonScheduleCalculationPeriodBaseSchema
       ),
-      calculationPeriodNotionalAmount: z.lazy(
+      calculationPeriodNotionalAmount: zod.lazy(
         () => CdmObservableAssetMoneySchema
       ),
-      description: z.string().optional(),
-      floatingRate: z
+      description: zod.string().optional(),
+      floatingRate: zod
         .lazy(() => CdmProductAssetFloatingrateFloatingRateSettingDetailsSchema)
         .optional(),
-      name: z.string().optional(),
-      processingDetails: z
+      name: zod.string().optional(),
+      processingDetails: zod
         .lazy(
           () => CdmProductAssetFloatingrateFloatingRateProcessingDetailsSchema
         )
         .optional(),
-      spreadExclusiveCalculatedAMount: z.number(),
-      yearFraction: z.number(),
+      spreadExclusiveCalculatedAMount: zod.number(),
+      yearFraction: zod.number(),
     })
   );
 

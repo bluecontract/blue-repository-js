@@ -1,15 +1,18 @@
-export const CdmObservableAssetCalculatedrateObservationShiftCalculation = {
+export const CdmObservableAssetCalculatedrateObservationShiftCalculation: Record<
+  string,
+  unknown
+> = {
   additionalBusinessDays: {
     description: 'Any additional business days that be applicable.',
     type: {
-      blueId: 'AaeaS3nBkqHVJTRb23iTwYjbMyikRz6mRz7L5FdHczSH',
+      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
     },
   },
   calculationBase: {
     description:
       'Whether the rate is calculated in advance, in arrears, or relative to a reset date.',
     type: {
-      blueId: 'BNn2MDf54qJ4KLiE7sTpeS2BokqPqPz5hsVNwwRVfrwF',
+      blueId: '2W3rHTz4L7GBmVkiESoY8puS9uU1rTGL2SfpTGJy2kse',
     },
   },
   description:
@@ -18,7 +21,7 @@ export const CdmObservableAssetCalculatedrateObservationShiftCalculation = {
   offsetDays: {
     description: 'The number of days of observation shift.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
-} as const;
+};

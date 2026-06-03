@@ -3,19 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventWorkflowEventTimestampQualificationEnumSchema } from './CdmEventWorkflowEventTimestampQualificationEnum';
 
-export const CdmEventWorkflowEventTimestampSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/EventTimestamp']
-  )(
-    z.object({
-      dateTime: z.string(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      qualification: z.lazy(
-        () => CdmEventWorkflowEventTimestampQualificationEnumSchema
-      ),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventWorkflowEventTimestampSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/EventTimestamp']
+)(
+  zod.object({
+    dateTime: zod.string(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    qualification: zod.lazy(
+      () => CdmEventWorkflowEventTimestampQualificationEnumSchema
+    ),
+  })
+);
 
 export type CdmEventWorkflowEventTimestamp = z.infer<
   typeof CdmEventWorkflowEventTimestampSchema

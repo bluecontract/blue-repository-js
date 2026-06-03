@@ -5,23 +5,25 @@ import { CdmBaseDatetimeBusinessDayConventionEnumSchema } from './CdmBaseDatetim
 import { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDatesSchema } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates';
 import { CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayoutSchema } from './CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout';
 
-export const CdmProductCommonScheduleFinalCalculationPeriodDateAdjustmentSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonScheduleFinalCalculationPeriodDateAdjustmentSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/common/schedule/FinalCalculationPeriodDateAdjustment'
     ]
   )(
-    z.object({
-      businessDayConvention: z.lazy(
+    zod.object({
+      businessDayConvention: zod.lazy(
         () => CdmBaseDatetimeBusinessDayConventionEnumSchema
       ),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      relevantUnderlyingDateReference: z.lazy(
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      relevantUnderlyingDateReference: zod.lazy(
         () =>
           CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDatesSchema
       ),
-      swapStreamReference: z.lazy(
+      swapStreamReference: zod.lazy(
         () => CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayoutSchema
       ),
     })

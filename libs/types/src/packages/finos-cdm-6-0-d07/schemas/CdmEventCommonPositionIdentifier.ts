@@ -6,30 +6,29 @@ import { CdmBaseStaticdataIdentifierTradeIdentifierTypeEnumSchema } from './CdmB
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmEventCommonPositionIdentifierSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/PositionIdentifier']
-  )(
-    z.object({
-      assignedIdentifier: z
-        .array(
-          z.lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
-        )
-        .min(1)
-        .optional(),
-      description: z.string().optional(),
-      identifierType: z
-        .lazy(() => CdmBaseStaticdataIdentifierTradeIdentifierTypeEnumSchema)
-        .optional(),
-      issuer: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
-      issuerReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
-        )
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonPositionIdentifierSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/PositionIdentifier']
+)(
+  zod.object({
+    assignedIdentifier: zod
+      .array(
+        zod.lazy(() => CdmBaseStaticdataIdentifierAssignedIdentifierSchema)
+      )
+      .min(1)
+      .optional(),
+    description: zod.string().optional(),
+    identifierType: zod
+      .lazy(() => CdmBaseStaticdataIdentifierTradeIdentifierTypeEnumSchema)
+      .optional(),
+    issuer: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
+    issuerReference: zod
+      .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmEventCommonPositionIdentifier = z.infer<
   typeof CdmEventCommonPositionIdentifierSchema

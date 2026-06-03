@@ -1,16 +1,16 @@
-export const CdmProductTemplateTransferableProduct = {
+export const CdmProductTemplateTransferableProduct: Record<string, unknown> = {
   Cash: {
     description:
       'An Asset that consists solely of a monetary holding in a currency.',
     type: {
-      blueId: 'DHpHHdiJGEagTPm7Y9Vz6cdsbKwjXg8HjJkoUjpRra2Y',
+      blueId: 'G6NQsm1Wur914oo6eCsazG77Y4gjnkMAZw1cSEieEBTV',
     },
   },
   Commodity: {
     description:
       'An Asset comprised of raw or refined materials or agricultural products, eg gold, oil or wheat.',
     type: {
-      blueId: 'H5njvRER8CjtGtwUC4FooQuqnXpt8hpw2oZAAAuCW8Dn',
+      blueId: 'VrWJzqq3ogdc8MhQ87P7nugRkiYR7sK4XS7wQzTvce3',
     },
   },
   description:
@@ -19,30 +19,25 @@ export const CdmProductTemplateTransferableProduct = {
     description:
       'An Asset that exists only in digital form, eg Bitcoin or Ethereum; excludes the digital representation of other Assets.\n',
     type: {
-      blueId: 'GekwBuYCVfkr4sCyWTFmw8QtYrXx7zDE8G5YwHkaRVL',
+      blueId: '7rybfxmxNUFUfZGaK3oX9W3kqCWh8zNvXJgUAjrfayPZ',
     },
   },
   economicTerms: {
     description:
       'The price forming features, including payouts and provisions.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'this#4',
+      blueId: 'this#6',
     },
   },
   Instrument: {
     description:
       'An asset that is issued by one party to one or more others; Instrument is also a choice data type.',
     type: {
-      blueId: 'J1Lgg2ajU8Qy4mgpL5ELeryh9L63Mk2B9paZPCz5bsp8',
+      blueId: '6pomFByRysSRpLwQEWHeqiGU8sc3DrBMjCiuHEuQ1iPB',
     },
   },
   name: 'cdm/product/template/TransferableProduct',
-} as const;
+};

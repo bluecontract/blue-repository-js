@@ -1,15 +1,15 @@
-export const Request = {
+export const Request: Record<string, unknown> = {
   description:
-    "Base event type for a specific, trackable request made by one participant, document, service, or timeline actor to\nanother. A Request carries a caller-generated `requestId` so that responses, checkpoints, user-interface prompts, and\naudit trails can correlate later activity back to the original request.\n\nRequest is intended for workflows where the recipient may respond asynchronously or where multiple similar requests may\nbe in flight. The `requestId` should be unique within the caller's relevant conversation or timeline. It is not\nnecessarily globally unique unless the surrounding protocol makes it so. A Response should copy the relevant requestId\ninto its correlation structure.\n\nConcrete Request subtypes define the actual payload and authorization semantics. For example, an Operation Request\ninvokes a named document operation; a Document Bootstrap Requested event asks a participant to create a new document;\na Customer Action Requested event asks a bank or UI provider to obtain a user's decision.\n",
+    'Base event/content type for request objects that can be paired with responses. A Request identifies an intent or\nquestion that another participant, document, provider, or workflow may answer.\n\n`requestId` is the stable correlation key. It should be unique in the relevant conversation, timeline, operation, or\ndocument scope so that responses and follow-up events can refer back to the original request deterministically.\n',
   name: 'Request',
   requestId: {
     description:
-      'A caller-generated ID for this specific request. This ID is used by the recipient to correlate their response.\n',
+      'Stable request correlation identifier. It is not necessarily globally unique, but it should be unique in the scope or\nconversation where responses are matched.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

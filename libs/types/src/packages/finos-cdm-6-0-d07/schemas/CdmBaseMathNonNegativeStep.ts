@@ -2,14 +2,16 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseMathNonNegativeStepSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathNonNegativeStepSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/NonNegativeStep']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    stepDate: z.string(),
-    stepValue: z.number(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    stepDate: zod.string(),
+    stepValue: zod.number(),
   })
 );
 

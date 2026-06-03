@@ -4,19 +4,21 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathAveragingCalculationMethodEnumSchema } from './CdmBaseMathAveragingCalculationMethodEnum';
 import { CdmObservableCommonDeterminationMethodEnumSchema } from './CdmObservableCommonDeterminationMethodEnum';
 
-export const CdmObservableEventDeterminationMethodologySchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableEventDeterminationMethodologySchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/DeterminationMethodology']
   )(
-    z.object({
-      averagingMethod: z
+    zod.object({
+      averagingMethod: zod
         .lazy(() => CdmBaseMathAveragingCalculationMethodEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      determinationMethod: z
+      description: zod.string().optional(),
+      determinationMethod: zod
         .lazy(() => CdmObservableCommonDeterminationMethodEnumSchema)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

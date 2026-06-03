@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ParticipantSchema } from './Participant';
 
-export const ParticipantActivatedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ParticipantActivatedSchema: any = withTypeBlueId(
   blueIds['MyOS/Participant Activated']
 )(
-  z.object({
-    channelName: z.string().optional(),
-    name: z.string().optional(),
-    participant: z.lazy(() => ParticipantSchema).optional(),
+  zod.object({
+    channelName: zod.string().optional(),
+    name: zod.string().optional(),
+    participant: zod.lazy(() => ParticipantSchema).optional(),
   })
 );
 

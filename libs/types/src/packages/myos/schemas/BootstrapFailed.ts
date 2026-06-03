@@ -2,12 +2,14 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const BootstrapFailedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const BootstrapFailedSchema: any = withTypeBlueId(
   blueIds['MyOS/Bootstrap Failed']
 )(
-  z.object({
-    name: z.string().optional(),
-    reason: z.string().optional(),
+  zod.object({
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

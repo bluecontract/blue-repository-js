@@ -4,16 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetCreditNotationSchema } from './CdmObservableAssetCreditNotation';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmObservableAssetFieldWithMetaCreditNotationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFieldWithMetaCreditNotationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/FieldWithMetaCreditNotation'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmObservableAssetCreditNotationSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod.lazy(() => CdmObservableAssetCreditNotationSchema).optional(),
     })
   );
 

@@ -1,3216 +1,3215 @@
-import { CdmProductCollateralConcentrationLimitTypeEnum } from './CdmProductCollateralConcentrationLimitTypeEnum';
-import { CdmProductTemplateExerciseNoticeGiverEnum } from './CdmProductTemplateExerciseNoticeGiverEnum';
-import { CdmProductAssetCalculationScheduleDeliveryPeriods } from './CdmProductAssetCalculationScheduleDeliveryPeriods';
-import { CdmBaseStaticdataPartyPersonIdentifier } from './CdmBaseStaticdataPartyPersonIdentifier';
-import { CdmEventCommonAssetTransferTypeEnum } from './CdmEventCommonAssetTransferTypeEnum';
-import { CdmEventCommonReset } from './CdmEventCommonReset';
-import { ComRosettaModelLibMetaKey } from './ComRosettaModelLibMetaKey';
-import { CdmLegaldocumentationCommonGoverningLawEnum } from './CdmLegaldocumentationCommonGoverningLawEnum';
-import { CdmEventWorkflowEventTimestamp } from './CdmEventWorkflowEventTimestamp';
-import { CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum';
-import { CdmBaseDatetimeRelativeDates } from './CdmBaseDatetimeRelativeDates';
-import { CdmEventWorkflowLimitLevelEnum } from './CdmEventWorkflowLimitLevelEnum';
-import { CdmEventCommonCorporateActionTypeEnum } from './CdmEventCommonCorporateActionTypeEnum';
-import { CdmLegaldocumentationMasterDeterminationRolesAndTerms } from './CdmLegaldocumentationMasterDeterminationRolesAndTerms';
-import { CdmRegulationFinInstrmGnlAttrbts } from './CdmRegulationFinInstrmGnlAttrbts';
-import { CdmProductAssetFloatingRateSpecification } from './CdmProductAssetFloatingRateSpecification';
-import { CdmLegaldocumentationCommonOtherAgreementTerms } from './CdmLegaldocumentationCommonOtherAgreementTerms';
-import { CdmProductAssetVolatilityCapFloor } from './CdmProductAssetVolatilityCapFloor';
-import { CdmObservableAssetFieldWithMetaQuotedCurrencyPair } from './CdmObservableAssetFieldWithMetaQuotedCurrencyPair';
-import { CdmLegaldocumentationCommonResource } from './CdmLegaldocumentationCommonResource';
-import { CdmObservableAssetFieldWithMetaSettlementRateOptionEnum } from './CdmObservableAssetFieldWithMetaSettlementRateOptionEnum';
-import { CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum } from './CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum';
-import { CdmProductAssetBasketReferenceInformation } from './CdmProductAssetBasketReferenceInformation';
-import { CdmProductCommonSettlementPaymentDetail } from './CdmProductCommonSettlementPaymentDetail';
-import { CdmMarginScheduleStandardizedScheduleTradeInfo } from './CdmMarginScheduleStandardizedScheduleTradeInfo';
-import { CdmProductTemplateAveragingStrikeFeature } from './CdmProductTemplateAveragingStrikeFeature';
-import { CdmProductCommonScheduleObservationDate } from './CdmProductCommonScheduleObservationDate';
-import { CdmBaseStaticdataAssetCommonTaxonomyValue } from './CdmBaseStaticdataAssetCommonTaxonomyValue';
-import { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates';
-import { CdmObservableAssetInflationIndex } from './CdmObservableAssetInflationIndex';
-import { CdmBaseStaticdataAssetCommonCommodityReferenceFramework } from './CdmBaseStaticdataAssetCommonCommodityReferenceFramework';
-import { CdmRegulationAcctOwnr } from './CdmRegulationAcctOwnr';
-import { CdmProductTemplateManualExercise } from './CdmProductTemplateManualExercise';
-import { CdmProductAssetDividendPeriod } from './CdmProductAssetDividendPeriod';
-import { ComRosettaModelMetafieldsReferenceWithMetaString } from './ComRosettaModelMetafieldsReferenceWithMetaString';
-import { CdmBaseStaticdataPartyAccount } from './CdmBaseStaticdataPartyAccount';
-import { CdmEventPositionAvailableInventoryTypeEnum } from './CdmEventPositionAvailableInventoryTypeEnum';
-import { CdmProductCollateralContactElection } from './CdmProductCollateralContactElection';
-import { CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity';
-import { CdmRegulationSwpIn } from './CdmRegulationSwpIn';
-import { CdmBaseDatetimeAdjustableOrRelativeDate } from './CdmBaseDatetimeAdjustableOrRelativeDate';
-import { CdmBaseMathQuantity } from './CdmBaseMathQuantity';
-import { CdmBaseStaticdataAssetCommonProductTaxonomy } from './CdmBaseStaticdataAssetCommonProductTaxonomy';
-import { CdmBaseDatetimeRelativeDateOffset } from './CdmBaseDatetimeRelativeDateOffset';
-import { CdmProductAssetRateSpecification } from './CdmProductAssetRateSpecification';
-import { CdmBaseDatetimeFieldWithMetaBusinessCenterEnum } from './CdmBaseDatetimeFieldWithMetaBusinessCenterEnum';
-import { CdmProductCommonSettlementQuantityMultiplier } from './CdmProductCommonSettlementQuantityMultiplier';
-import { CdmObservableAssetCreditNotation } from './CdmObservableAssetCreditNotation';
-import { CdmObservableAssetCalculatedrateObservationShiftCalculation } from './CdmObservableAssetCalculatedrateObservationShiftCalculation';
-import { CdmRegulationBuyr } from './CdmRegulationBuyr';
-import { CdmProductCommonSettlementFixedPrice } from './CdmProductCommonSettlementFixedPrice';
-import { CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum } from './CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum';
-import { CdmLegaldocumentationCommonContractualTermsSupplement } from './CdmLegaldocumentationCommonContractualTermsSupplement';
-import { CdmBaseMathNonNegativeQuantitySchedule } from './CdmBaseMathNonNegativeQuantitySchedule';
-import { CdmEventCommonCorporateAction } from './CdmEventCommonCorporateAction';
-import { CdmBaseStaticdataAssetCommonDeliveryDateParameters } from './CdmBaseStaticdataAssetCommonDeliveryDateParameters';
-import { CdmProductTemplatePartialExercise } from './CdmProductTemplatePartialExercise';
-import { CdmProductAssetVolatilityReturnTerms } from './CdmProductAssetVolatilityReturnTerms';
-import { CdmProductCommonScheduleObservationDates } from './CdmProductCommonScheduleObservationDates';
-import { CdmObservableAssetReferenceSwapCurve } from './CdmObservableAssetReferenceSwapCurve';
-import { CdmBaseStaticdataIdentifierFieldWithMetaIdentifier } from './CdmBaseStaticdataIdentifierFieldWithMetaIdentifier';
-import { CdmRegulationId } from './CdmRegulationId';
-import { CdmProductCommonSettlementValuationDate } from './CdmProductCommonSettlementValuationDate';
-import { CdmBaseStaticdataAssetCommonDebtEconomics } from './CdmBaseStaticdataAssetCommonDebtEconomics';
-import { CdmLegaldocumentationCommonClosedState } from './CdmLegaldocumentationCommonClosedState';
-import { CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum } from './CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum';
-import { CdmBaseStaticdataPartyPayerReceiverEnum } from './CdmBaseStaticdataPartyPayerReceiverEnum';
-import { CdmBaseStaticdataAssetCommonCollateralTaxonomyValue } from './CdmBaseStaticdataAssetCommonCollateralTaxonomyValue';
-import { CdmObservableAssetSettlementRateOption } from './CdmObservableAssetSettlementRateOption';
-import { CdmProductAssetDiscountingMethod } from './CdmProductAssetDiscountingMethod';
-import { CdmProductCollateralEligibleCollateralSpecification } from './CdmProductCollateralEligibleCollateralSpecification';
-import { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments';
-import { CdmObservableAssetPriceQuantity } from './CdmObservableAssetPriceQuantity';
-import { CdmEventPositionContractBase } from './CdmEventPositionContractBase';
-import { CdmLegaldocumentationMasterMasterAgreementClause } from './CdmLegaldocumentationMasterMasterAgreementClause';
-import { CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum';
-import { CdmProductTemplateOptionalEarlyTerminationAdjustedDates } from './CdmProductTemplateOptionalEarlyTerminationAdjustedDates';
-import { CdmEventCommonValuationSourceEnum } from './CdmEventCommonValuationSourceEnum';
-import { CdmProductCollateralIndependentAmount } from './CdmProductCollateralIndependentAmount';
-import { CdmProductCommonScheduleRateSchedule } from './CdmProductCommonScheduleRateSchedule';
-import { CdmProductAssetVarianceCapFloor } from './CdmProductAssetVarianceCapFloor';
-import { CdmBaseMathNonNegativeStep } from './CdmBaseMathNonNegativeStep';
-import { CdmObservableAssetCreditNotationBoundaryEnum } from './CdmObservableAssetCreditNotationBoundaryEnum';
-import { CdmBaseStaticdataAssetCommonAssetIdTypeEnum } from './CdmBaseStaticdataAssetCommonAssetIdTypeEnum';
-import { CdmObservableAssetMultipleValuationDates } from './CdmObservableAssetMultipleValuationDates';
-import { CdmProductCommonScheduleResetDates } from './CdmProductCommonScheduleResetDates';
-import { CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum';
-import { CdmBaseStaticdataPartyNaturalPersonRole } from './CdmBaseStaticdataPartyNaturalPersonRole';
-import { CdmBaseDatetimeAdjustableDates } from './CdmBaseDatetimeAdjustableDates';
-import { CdmProductAssetFixedAmountCalculationDetails } from './CdmProductAssetFixedAmountCalculationDetails';
-import { CdmProductCommonScheduleCalculationPeriodBase } from './CdmProductCommonScheduleCalculationPeriodBase';
-import { CdmProductTemplateMandatoryEarlyTermination } from './CdmProductTemplateMandatoryEarlyTermination';
-import { CdmProductCommonScheduleObservationTerms } from './CdmProductCommonScheduleObservationTerms';
-import { CdmLegaldocumentationCommonCreditSupportProviderTermsEnum } from './CdmLegaldocumentationCommonCreditSupportProviderTermsEnum';
-import { CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair } from './CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair';
-import { CdmBaseStaticdataPartyCounterparty } from './CdmBaseStaticdataPartyCounterparty';
-import { CdmObservableCommonDeterminationMethodEnum } from './CdmObservableCommonDeterminationMethodEnum';
-import { CdmProductTemplateStrikeSpread } from './CdmProductTemplateStrikeSpread';
-import { CdmProductCommonSettlementPhysicalSettlementPeriod } from './CdmProductCommonSettlementPhysicalSettlementPeriod';
-import { CdmProductCollateralAssetAgencyRating } from './CdmProductCollateralAssetAgencyRating';
-import { CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum';
-import { CdmProductTemplateExpirationTimeTypeEnum } from './CdmProductTemplateExpirationTimeTypeEnum';
-import { CdmLegaldocumentationMasterClause } from './CdmLegaldocumentationMasterClause';
-import { CdmProductAssetFixedRateSpecification } from './CdmProductAssetFixedRateSpecification';
-import { CdmObservableAssetValuationSource } from './CdmObservableAssetValuationSource';
-import { CdmBaseStaticdataPartyRelatedParty } from './CdmBaseStaticdataPartyRelatedParty';
-import { CdmProductTemplateAssetPayout } from './CdmProductTemplateAssetPayout';
-import { CdmProductTemplatePassThrough } from './CdmProductTemplatePassThrough';
-import { CdmEventCommonObservationEvent } from './CdmEventCommonObservationEvent';
-import { CdmBaseDatetimeTimeUnitEnum } from './CdmBaseDatetimeTimeUnitEnum';
-import { CdmObservableAssetInformationSource } from './CdmObservableAssetInformationSource';
-import { CdmBaseStaticdataAssetCommonMaturityTypeEnum } from './CdmBaseStaticdataAssetCommonMaturityTypeEnum';
-import { CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum';
-import { CdmProductCommonSettlementPrincipalPaymentSchedule } from './CdmProductCommonSettlementPrincipalPaymentSchedule';
-import { CdmBaseMathDatedValue } from './CdmBaseMathDatedValue';
-import { CdmBaseDatetimeAveragingSchedule } from './CdmBaseDatetimeAveragingSchedule';
-import { CdmProductAssetDividendDateReference } from './CdmProductAssetDividendDateReference';
-import { CdmBaseStaticdataAssetCommonAssetClassEnum } from './CdmBaseStaticdataAssetCommonAssetClassEnum';
-import { CdmEventCommonIndexTransitionInstruction } from './CdmEventCommonIndexTransitionInstruction';
-import { CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum } from './CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum';
-import { CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum } from './CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum';
-import { CdmProductAssetValuationTerms } from './CdmProductAssetValuationTerms';
-import { CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum } from './CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum';
-import { CdmProductTemplateEarlyTerminationEvent } from './CdmProductTemplateEarlyTerminationEvent';
-import { CdmProductAssetFloatingrateFloatingRateSettingDetails } from './CdmProductAssetFloatingrateFloatingRateSettingDetails';
-import { CdmProductCommonScheduleDateRelativeToCalculationPeriodDates } from './CdmProductCommonScheduleDateRelativeToCalculationPeriodDates';
-import { CdmEventPositionCounterpartyPosition } from './CdmEventPositionCounterpartyPosition';
-import { CdmObservableAssetValuationPostponement } from './CdmObservableAssetValuationPostponement';
-import { CdmBaseDatetimeAdjustableDate } from './CdmBaseDatetimeAdjustableDate';
-import { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters';
-import { CdmProductAssetReturnTypeEnum } from './CdmProductAssetReturnTypeEnum';
-import { CdmEventCommonObservationInstruction } from './CdmEventCommonObservationInstruction';
-import { CdmProductCollateralCollateral } from './CdmProductCollateralCollateral';
-import { CdmProductCommonScheduleStubPeriod } from './CdmProductCommonScheduleStubPeriod';
-import { CdmEventCommonRegIMRoleEnum } from './CdmEventCommonRegIMRoleEnum';
-import { CdmProductCommonSettlementPercentageRule } from './CdmProductCommonSettlementPercentageRule';
-import { CdmProductTemplateFxFeature } from './CdmProductTemplateFxFeature';
-import { CdmBaseStaticdataAssetCommonCreditRiskEnum } from './CdmBaseStaticdataAssetCommonCreditRiskEnum';
-import { CdmProductTemplateCalculationSchedule } from './CdmProductTemplateCalculationSchedule';
-import { CdmBaseMathAveragingCalculationMethodEnum } from './CdmBaseMathAveragingCalculationMethodEnum';
-import { CdmBaseStaticdataPartyBusinessUnit } from './CdmBaseStaticdataPartyBusinessUnit';
-import { CdmEventCommonRecordAmountTypeEnum } from './CdmEventCommonRecordAmountTypeEnum';
-import { CdmProductCollateralEligibleCollateralCriteria } from './CdmProductCollateralEligibleCollateralCriteria';
-import { CdmObservableAssetFieldWithMetaInformationProviderEnum } from './CdmObservableAssetFieldWithMetaInformationProviderEnum';
-import { CdmEventCommonSplitInstruction } from './CdmEventCommonSplitInstruction';
-import { CdmEventCommonExerciseInstruction } from './CdmEventCommonExerciseInstruction';
-import { CdmEventCommonPrimitiveInstruction } from './CdmEventCommonPrimitiveInstruction';
-import { CdmProductTemplateExtendibleProvisionAdjustedDates } from './CdmProductTemplateExtendibleProvisionAdjustedDates';
-import { CdmProductCommonSettlementSettlementProvision } from './CdmProductCommonSettlementSettlementProvision';
-import { CdmBaseStaticdataPartyAncillaryEntity } from './CdmBaseStaticdataPartyAncillaryEntity';
-import { CdmProductTemplateMetafieldsReferenceWithMetaPayout } from './CdmProductTemplateMetafieldsReferenceWithMetaPayout';
-import { CdmEventWorkflowLimitApplicable } from './CdmEventWorkflowLimitApplicable';
-import { CdmLegaldocumentationCommonTerminationCurrencyConditionEnum } from './CdmLegaldocumentationCommonTerminationCurrencyConditionEnum';
-import { CdmLegaldocumentationMasterEquityAdditionalTerms } from './CdmLegaldocumentationMasterEquityAdditionalTerms';
-import { CdmProductCommonSettlementCashSettlementMethodEnum } from './CdmProductCommonSettlementCashSettlementMethodEnum';
-import { CdmProductCollateralAverageTradingVolume } from './CdmProductCollateralAverageTradingVolume';
-import { CdmEventCommonQuantityChangeInstruction } from './CdmEventCommonQuantityChangeInstruction';
-import { CdmProductTemplateCalendarSpread } from './CdmProductTemplateCalendarSpread';
-import { CdmProductTemplateCancelableProvisionAdjustedDates } from './CdmProductTemplateCancelableProvisionAdjustedDates';
-import { CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum';
-import { CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum } from './CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum';
-import { CdmRegulationNew } from './CdmRegulationNew';
-import { CdmRegulationTx } from './CdmRegulationTx';
-import { CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms } from './CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms';
-import { CdmRegulationExctgPrsn } from './CdmRegulationExctgPrsn';
-import { CdmObservableAssetQuotationStyleEnum } from './CdmObservableAssetQuotationStyleEnum';
-import { CdmProductCommonScheduleObservationSchedule } from './CdmProductCommonScheduleObservationSchedule';
-import { CdmObservableAssetCalculationAgent } from './CdmObservableAssetCalculationAgent';
-import { CdmEventCommonCounterpartyPositionState } from './CdmEventCommonCounterpartyPositionState';
-import { CdmLegaldocumentationCommonContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonContractualSupplementTypeEnum';
-import { CdmBaseStaticdataPartyPartyReferencePayerReceiver } from './CdmBaseStaticdataPartyPartyReferencePayerReceiver';
-import { CdmProductCollateralSubstitutionProvisions } from './CdmProductCollateralSubstitutionProvisions';
-import { CdmObservableEventGracePeriodExtension } from './CdmObservableEventGracePeriodExtension';
-import { CdmProductCommonScheduleCalculationPeriod } from './CdmProductCommonScheduleCalculationPeriod';
-import { CdmObservableAssetIndexBase } from './CdmObservableAssetIndexBase';
-import { CdmEventWorkflowCreditLimitUtilisationPosition } from './CdmEventWorkflowCreditLimitUtilisationPosition';
-import { CdmObservableAssetMakeWholeAmount } from './CdmObservableAssetMakeWholeAmount';
-import { CdmEventCommonPerformanceTransferTypeEnum } from './CdmEventCommonPerformanceTransferTypeEnum';
-import { CdmEventCommonTradeIdentifier } from './CdmEventCommonTradeIdentifier';
-import { CdmBaseMathCompareOp } from './CdmBaseMathCompareOp';
-import { CdmBaseDatetimeCompoundingTypeEnum } from './CdmBaseDatetimeCompoundingTypeEnum';
-import { CdmObservableAssetPriceExpressionEnum } from './CdmObservableAssetPriceExpressionEnum';
-import { CdmObservableAssetMultipleDebtTypes } from './CdmObservableAssetMultipleDebtTypes';
-import { CdmBaseDatetimeOffset } from './CdmBaseDatetimeOffset';
-import { CdmObservableEventTriggerEvent } from './CdmObservableEventTriggerEvent';
-import { CdmObservableAssetMoney } from './CdmObservableAssetMoney';
-import { CdmBaseDatetimePeriod } from './CdmBaseDatetimePeriod';
-import { CdmProductTemplateMandatoryEarlyTerminationAdjustedDates } from './CdmProductTemplateMandatoryEarlyTerminationAdjustedDates';
-import { CdmProductCollateralCollateralInterestParameters } from './CdmProductCollateralCollateralInterestParameters';
-import { CdmObservableCommonTimeTypeEnum } from './CdmObservableCommonTimeTypeEnum';
-import { CdmProductCollateralCollateralValuationTreatment } from './CdmProductCollateralCollateralValuationTreatment';
-import { CdmLegaldocumentationCommonContractualDefinitionsEnum } from './CdmLegaldocumentationCommonContractualDefinitionsEnum';
-import { CdmBaseDatetimeDayTypeEnum } from './CdmBaseDatetimeDayTypeEnum';
-import { CdmProductCollateralIssuerCountryOfOrigin } from './CdmProductCollateralIssuerCountryOfOrigin';
-import { CdmProductCommonScheduleLag } from './CdmProductCommonScheduleLag';
-import { CdmObservableAssetFloatingRateIndex } from './CdmObservableAssetFloatingRateIndex';
-import { CdmProductCommonSettlementCommodityPriceReturnTerms } from './CdmProductCommonSettlementCommodityPriceReturnTerms';
-import { CdmProductCommonSchedulePaymentCalculationPeriod } from './CdmProductCommonSchedulePaymentCalculationPeriod';
-import { CdmBaseDatetimePeriodTimeEnum } from './CdmBaseDatetimePeriodTimeEnum';
-import { CdmEventPositionAvailableInventory } from './CdmEventPositionAvailableInventory';
-import { CdmEventCommonCollateralPortfolio } from './CdmEventCommonCollateralPortfolio';
-import { CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018 } from './CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018';
-import { CdmBaseStaticdataAssetCommonInstrumentTypeEnum } from './CdmBaseStaticdataAssetCommonInstrumentTypeEnum';
-import { CdmBaseMathQuantifierEnum } from './CdmBaseMathQuantifierEnum';
-import { CdmRegulationDerivInstrmAttrbts } from './CdmRegulationDerivInstrmAttrbts';
-import { CdmProductCollateralInterestAmountApplication } from './CdmProductCollateralInterestAmountApplication';
-import { CdmObservableAssetTransactedPrice } from './CdmObservableAssetTransactedPrice';
-import { CdmObservableAssetValuationDates } from './CdmObservableAssetValuationDates';
-import { CdmBaseStaticdataPartyParty } from './CdmBaseStaticdataPartyParty';
-import { CdmObservableAssetEquityIndex } from './CdmObservableAssetEquityIndex';
-import { CdmObservableAssetCsaTypeEnum } from './CdmObservableAssetCsaTypeEnum';
-import { CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum } from './CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum';
-import { CdmBaseStaticdataAssetCommonEquityTypeEnum } from './CdmBaseStaticdataAssetCommonEquityTypeEnum';
-import { CdmEventCommonValuationTypeEnum } from './CdmEventCommonValuationTypeEnum';
-import { CdmLegaldocumentationMasterMasterConfirmationBase } from './CdmLegaldocumentationMasterMasterConfirmationBase';
-import { CdmBaseMathQuantitySchedule } from './CdmBaseMathQuantitySchedule';
-import { CdmEventCommonHaircutIndicatorEnum } from './CdmEventCommonHaircutIndicatorEnum';
-import { CdmObservableAssetCalculatedrateObservationParameters } from './CdmObservableAssetCalculatedrateObservationParameters';
-import { CdmObservableAssetFieldWithMetaObservable } from './CdmObservableAssetFieldWithMetaObservable';
-import { CdmProductTemplateExtensionEvent } from './CdmProductTemplateExtensionEvent';
-import { CdmProductTemplateCancellationEvent } from './CdmProductTemplateCancellationEvent';
-import { CdmEventCommonPartyChangeInstruction } from './CdmEventCommonPartyChangeInstruction';
-import { CdmObservableEventShareExtraordinaryEventEnum } from './CdmObservableEventShareExtraordinaryEventEnum';
-import { CdmBaseDatetimeDateList } from './CdmBaseDatetimeDateList';
-import { CdmBaseDatetimeDateTimeList } from './CdmBaseDatetimeDateTimeList';
-import { CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep } from './CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep';
-import { CdmProductTemplateStrikeSchedule } from './CdmProductTemplateStrikeSchedule';
-import { CdmObservableAssetCommodityReferencePriceEnum } from './CdmObservableAssetCommodityReferencePriceEnum';
-import { CdmBaseStaticdataPartyLegalEntity } from './CdmBaseStaticdataPartyLegalEntity';
-import { CdmProductCommonScheduleStubPeriodTypeEnum } from './CdmProductCommonScheduleStubPeriodTypeEnum';
-import { CdmProductAssetBoundedVariance } from './CdmProductAssetBoundedVariance';
-import { CdmProductCommonSettlementSettlementTypeEnum } from './CdmProductCommonSettlementSettlementTypeEnum';
-import { CdmBaseStaticdataAssetCommonAssetBase } from './CdmBaseStaticdataAssetCommonAssetBase';
-import { CdmProductCommonSchedulePaymentDateSchedule } from './CdmProductCommonSchedulePaymentDateSchedule';
-import { CdmProductCommonSettlementAssetFlowBase } from './CdmProductCommonSettlementAssetFlowBase';
-import { CdmBaseStaticdataAssetCommonListedDerivative } from './CdmBaseStaticdataAssetCommonListedDerivative';
-import { CdmProductTemplateOptionalEarlyTermination } from './CdmProductTemplateOptionalEarlyTermination';
-import { CdmEventCommonMarginCallActionEnum } from './CdmEventCommonMarginCallActionEnum';
-import { CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent } from './CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent';
-import { CdmMarginScheduleStandardizedSchedule } from './CdmMarginScheduleStandardizedSchedule';
-import { CdmProductAssetAssetDeliveryProfileBlock } from './CdmProductAssetAssetDeliveryProfileBlock';
-import { CdmMarginScheduleStandardizedScheduleInitialMargin } from './CdmMarginScheduleStandardizedScheduleInitialMargin';
-import { CdmBaseStaticdataIdentifierLocationIdentifier } from './CdmBaseStaticdataIdentifierLocationIdentifier';
-import { CdmEventCommonScheduledTransfer } from './CdmEventCommonScheduledTransfer';
-import { CdmProductCommonSettlementShapingProvision } from './CdmProductCommonSettlementShapingProvision';
-import { CdmEventCommonMarginCallResponse } from './CdmEventCommonMarginCallResponse';
-import { CdmLegaldocumentationCommonResourceTypeEnum } from './CdmLegaldocumentationCommonResourceTypeEnum';
-import { CdmBaseStaticdataPartyReferenceBank } from './CdmBaseStaticdataPartyReferenceBank';
-import { CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights } from './CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights';
-import { CdmBaseStaticdataPartyAccountTypeEnum } from './CdmBaseStaticdataPartyAccountTypeEnum';
-import { CdmBaseStaticdataPartyCounterpartyRoleEnum } from './CdmBaseStaticdataPartyCounterpartyRoleEnum';
-import { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate';
-import { CdmBaseStaticdataPartyAncillaryRoleEnum } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
-import { CdmProductTemplateFixedPricePayout } from './CdmProductTemplateFixedPricePayout';
-import { CdmEventCommonContractDetails } from './CdmEventCommonContractDetails';
-import { CdmBaseMathSchedule } from './CdmBaseMathSchedule';
-import { CdmObservableAssetCreditNotations } from './CdmObservableAssetCreditNotations';
-import { CdmEventWorkflowCreditLimitUtilisation } from './CdmEventWorkflowCreditLimitUtilisation';
-import { CdmProductAssetReferencePoolItem } from './CdmProductAssetReferencePoolItem';
-import { CdmProductCommonSettlementPrincipalPayments } from './CdmProductCommonSettlementPrincipalPayments';
-import { CdmEventPositionAggregationParameters } from './CdmEventPositionAggregationParameters';
-import { CdmProductCollateralListingSector } from './CdmProductCollateralListingSector';
-import { CdmBaseStaticdataAssetCommonDebtPrincipalEnum } from './CdmBaseStaticdataAssetCommonDebtPrincipalEnum';
-import { CdmBaseStaticdataPartyTelephoneTypeEnum } from './CdmBaseStaticdataPartyTelephoneTypeEnum';
-import { CdmProductAssetDiscountingTypeEnum } from './CdmProductAssetDiscountingTypeEnum';
-import { CdmLegaldocumentationCommonSpecifiedEntityTermsEnum } from './CdmLegaldocumentationCommonSpecifiedEntityTermsEnum';
-import { CdmBaseMathMeasureBase } from './CdmBaseMathMeasureBase';
-import { CdmProductAssetFutureValueAmount } from './CdmProductAssetFutureValueAmount';
-import { CdmRegulationTerm } from './CdmRegulationTerm';
-import { CdmObservableAssetMetafieldsReferenceWithMetaObservable } from './CdmObservableAssetMetafieldsReferenceWithMetaObservable';
-import { CdmProductCollateralCollateralInterestHandlingEnum } from './CdmProductCollateralCollateralInterestHandlingEnum';
-import { CdmProductAssetDividendReturnTerms } from './CdmProductAssetDividendReturnTerms';
-import { CdmProductCommonScheduleFxLinkedNotionalAmount } from './CdmProductCommonScheduleFxLinkedNotionalAmount';
-import { CdmEventPositionAvailableInventoryRecord } from './CdmEventPositionAvailableInventoryRecord';
-import { CdmBaseStaticdataAssetCommonPriceSource } from './CdmBaseStaticdataAssetCommonPriceSource';
-import { CdmProductCollateralMetafieldsReferenceWithMetaCollateral } from './CdmProductCollateralMetafieldsReferenceWithMetaCollateral';
-import { CdmProductTemplateCallingPartyEnum } from './CdmProductTemplateCallingPartyEnum';
-import { CdmProductCollateralConcentrationLimit } from './CdmProductCollateralConcentrationLimit';
-import { CdmLegaldocumentationMasterIndexAdjustmentEvents } from './CdmLegaldocumentationMasterIndexAdjustmentEvents';
-import { CdmProductTemplateAutomaticExercise } from './CdmProductTemplateAutomaticExercise';
-import { CdmProductTemplateMarginTypeEnum } from './CdmProductTemplateMarginTypeEnum';
-import { CdmEventCommonEventIntentEnum } from './CdmEventCommonEventIntentEnum';
-import { CdmProductTemplateTradableProduct } from './CdmProductTemplateTradableProduct';
-import { CdmObservableEventMetafieldsReferenceWithMetaCreditEvents } from './CdmObservableEventMetafieldsReferenceWithMetaCreditEvents';
-import { CdmBaseMathArithmeticOperationEnum } from './CdmBaseMathArithmeticOperationEnum';
-import { CdmObservableAssetFroFloatingRateIndexDefinition } from './CdmObservableAssetFroFloatingRateIndexDefinition';
-import { CdmEventPositionInventoryRecord } from './CdmEventPositionInventoryRecord';
-import { CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum';
-import { CdmProductCollateralEligibleCollateralSpecificationInstruction } from './CdmProductCollateralEligibleCollateralSpecificationInstruction';
-import { CdmProductTemplateAveragingInOutEnum } from './CdmProductTemplateAveragingInOutEnum';
-import { CdmBaseMathUnitType } from './CdmBaseMathUnitType';
-import { CdmObservableAssetPriceSchedule } from './CdmObservableAssetPriceSchedule';
-import { CdmEventWorkflowFieldWithMetaLimitLevelEnum } from './CdmEventWorkflowFieldWithMetaLimitLevelEnum';
-import { CdmProductCommonScheduleCalculationPeriodData } from './CdmProductCommonScheduleCalculationPeriodData';
-import { CdmObservableAssetCalculatedrateInflationCalculationMethodEnum } from './CdmObservableAssetCalculatedrateInflationCalculationMethodEnum';
-import { CdmEventCommonBillingInstruction } from './CdmEventCommonBillingInstruction';
-import { CdmProductCollateralAssetMaturity } from './CdmProductCollateralAssetMaturity';
-import { CdmProductCommonSettlementStandardSettlementStyleEnum } from './CdmProductCommonSettlementStandardSettlementStyleEnum';
-import { CdmProductAssetPriceReturnTerms } from './CdmProductAssetPriceReturnTerms';
-import { CdmProductCommonSettlementSettlementTerms } from './CdmProductCommonSettlementSettlementTerms';
-import { CdmBaseStaticdataAssetCreditObligations } from './CdmBaseStaticdataAssetCreditObligations';
-import { CdmLegaldocumentationMasterMasterAgreementClauseVariant } from './CdmLegaldocumentationMasterMasterAgreementClauseVariant';
-import { CdmObservableEventFailureToPay } from './CdmObservableEventFailureToPay';
-import { CdmProductAssetGeneralTerms } from './CdmProductAssetGeneralTerms';
-import { CdmEventPositionMetafieldsReferenceWithMetaPortfolioState } from './CdmEventPositionMetafieldsReferenceWithMetaPortfolioState';
-import { CdmProductCommonScheduleDateRelativeToValuationDates } from './CdmProductCommonScheduleDateRelativeToValuationDates';
-import { CdmEventCommonMetafieldsReferenceWithMetaTrade } from './CdmEventCommonMetafieldsReferenceWithMetaTrade';
-import { CdmBaseStaticdataAssetCommonCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonCurrencyCodeEnum';
-import { CdmRegulationSwpOut } from './CdmRegulationSwpOut';
-import { CdmProductCommonSettlementFxFixingDate } from './CdmProductCommonSettlementFxFixingDate';
-import { CdmBaseStaticdataIdentifierIdentifier } from './CdmBaseStaticdataIdentifierIdentifier';
+import { CdmObservableEventIndexEventConsequenceEnum } from './CdmObservableEventIndexEventConsequenceEnum';
 import { CdmObservableAssetSingleValuationDate } from './CdmObservableAssetSingleValuationDate';
-import { CdmObservableAssetCalculatedrateFallbackRateParameters } from './CdmObservableAssetCalculatedrateFallbackRateParameters';
-import { CdmLegaldocumentationMasterEquityCorporateEvents } from './CdmLegaldocumentationMasterEquityCorporateEvents';
-import { CdmBaseStaticdataPartyPartyRole } from './CdmBaseStaticdataPartyPartyRole';
-import { CdmProductAssetRateTreatmentEnum } from './CdmProductAssetRateTreatmentEnum';
-import { CdmObservableAssetCalculatedrateCalculationMethodEnum } from './CdmObservableAssetCalculatedrateCalculationMethodEnum';
-import { CdmProductCollateralCheckEligibilityResult } from './CdmProductCollateralCheckEligibilityResult';
-import { CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule';
-import { CdmLegaldocumentationCommonLegalAgreementBase } from './CdmLegaldocumentationCommonLegalAgreementBase';
-import { CdmBaseDatetimePeriodExtendedEnum } from './CdmBaseDatetimePeriodExtendedEnum';
-import { CdmObservableAssetCreditNotationMismatchResolutionEnum } from './CdmObservableAssetCreditNotationMismatchResolutionEnum';
-import { CdmBaseStaticdataPartyContactInformation } from './CdmBaseStaticdataPartyContactInformation';
-import { CdmBaseStaticdataAssetCommonProductIdTypeEnum } from './CdmBaseStaticdataAssetCommonProductIdTypeEnum';
-import { CdmObservableAssetFieldWithMetaPriceSchedule } from './CdmObservableAssetFieldWithMetaPriceSchedule';
-import { CdmEventWorkflowEventInstruction } from './CdmEventWorkflowEventInstruction';
-import { CdmBaseStaticdataIdentifierIdentifiedList } from './CdmBaseStaticdataIdentifierIdentifiedList';
-import { CdmProductAssetFinalPrincipalExchangeCalculationEnum } from './CdmProductAssetFinalPrincipalExchangeCalculationEnum';
-import { CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum } from './CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum';
-import { CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum';
-import { CdmObservableEventFieldWithMetaRestructuringEnum } from './CdmObservableEventFieldWithMetaRestructuringEnum';
-import { CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates';
-import { CdmObservableAssetRateObservation } from './CdmObservableAssetRateObservation';
-import { CdmBaseStaticdataAssetCommonAssetTypeEnum } from './CdmBaseStaticdataAssetCommonAssetTypeEnum';
-import { CdmBaseDatetimeAdjustableOrRelativeDates } from './CdmBaseDatetimeAdjustableOrRelativeDates';
-import { CdmEventCommonBusinessEvent } from './CdmEventCommonBusinessEvent';
-import { CdmProductAssetFloatingrateFloatingRateProcessingParameters } from './CdmProductAssetFloatingrateFloatingRateProcessingParameters';
-import { CdmEventCommonExerciseEvent } from './CdmEventCommonExerciseEvent';
-import { CdmObservableAssetQuotationSideEnum } from './CdmObservableAssetQuotationSideEnum';
-import { CdmEventCommonContractFormationInstruction } from './CdmEventCommonContractFormationInstruction';
-import { CdmLegaldocumentationMasterExtraordinaryEvents } from './CdmLegaldocumentationMasterExtraordinaryEvents';
-import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson';
-import { CdmObservableAssetFallbackReferencePrice } from './CdmObservableAssetFallbackReferencePrice';
-import { CdmProductAssetCreditDefaultPayout } from './CdmProductAssetCreditDefaultPayout';
-import { CdmLegaldocumentationCommonLegalAgreementIdentification } from './CdmLegaldocumentationCommonLegalAgreementIdentification';
-import { CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum';
-import { CdmProductCollateralDeliveryAmount } from './CdmProductCollateralDeliveryAmount';
-import { CdmBaseStaticdataAssetCommonDebtInterestEnum } from './CdmBaseStaticdataAssetCommonDebtInterestEnum';
-import { CdmRegulationInvstmtDcsnPrsn } from './CdmRegulationInvstmtDcsnPrsn';
-import { CdmProductCommonScheduleStubCalculationPeriodAmount } from './CdmProductCommonScheduleStubCalculationPeriodAmount';
-import { CdmBaseStaticdataAssetCommonDebtType } from './CdmBaseStaticdataAssetCommonDebtType';
-import { CdmLegaldocumentationCommonExecutionLocationEnum } from './CdmLegaldocumentationCommonExecutionLocationEnum';
-import { CdmEventCommonValuationInstruction } from './CdmEventCommonValuationInstruction';
+import { CdmProductCommonSettlementCommodityPriceReturnTerms } from './CdmProductCommonSettlementCommodityPriceReturnTerms';
+import { CdmLegaldocumentationCommonLegalAgreementTypeEnum } from './CdmLegaldocumentationCommonLegalAgreementTypeEnum';
+import { CdmObservableEventTrigger } from './CdmObservableEventTrigger';
+import { CdmProductCommonSchedulePaymentDateSchedule } from './CdmProductCommonSchedulePaymentDateSchedule';
+import { CdmEventPositionPosition } from './CdmEventPositionPosition';
+import { CdmEventCommonPartyChangeInstruction } from './CdmEventCommonPartyChangeInstruction';
 import { CdmProductCommonSchedulePaymentDates } from './CdmProductCommonSchedulePaymentDates';
-import { CdmBaseStaticdataAssetRatesInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesInflationRateIndexEnum';
-import { CdmProductAssetIndexAnnexSourceEnum } from './CdmProductAssetIndexAnnexSourceEnum';
-import { CdmObservableAssetFroFloatingRateIndexIdentification } from './CdmObservableAssetFroFloatingRateIndexIdentification';
-import { CdmEventPositionPortfolioState } from './CdmEventPositionPortfolioState';
-import { CdmLegaldocumentationMasterMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationTypeEnum';
-import { CdmEventCommonTransfer } from './CdmEventCommonTransfer';
-import { CdmEventWorkflowWarehouseIdentityEnum } from './CdmEventWorkflowWarehouseIdentityEnum';
-import { CdmProductAssetReferenceObligation } from './CdmProductAssetReferenceObligation';
-import { CdmBaseStaticdataPartyPartyContactInformation } from './CdmBaseStaticdataPartyPartyContactInformation';
-import { CdmObservableEventRestructuring } from './CdmObservableEventRestructuring';
-import { CdmEventCommonCreditEvent } from './CdmEventCommonCreditEvent';
-import { CdmProductCommonSettlementPrincipalPayment } from './CdmProductCommonSettlementPrincipalPayment';
-import { CdmProductAssetForeignExchange } from './CdmProductAssetForeignExchange';
-import { CdmProductAssetReferencePool } from './CdmProductAssetReferencePool';
-import { CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier } from './CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier';
-import { CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio } from './CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio';
-import { CdmProductCommonScheduleAveragingPeriod } from './CdmProductCommonScheduleAveragingPeriod';
-import { CdmBaseStaticdataAssetCommonTaxonomy } from './CdmBaseStaticdataAssetCommonTaxonomy';
-import { CdmObservableEventObservationIdentifier } from './CdmObservableEventObservationIdentifier';
-import { CdmObservableAssetForeignExchangeRateIndex } from './CdmObservableAssetForeignExchangeRateIndex';
-import { CdmObservableAssetFieldWithMetaInterestRateIndex } from './CdmObservableAssetFieldWithMetaInterestRateIndex';
-import { CdmObservableAssetFroFloatingRateIndexStyleEnum } from './CdmObservableAssetFroFloatingRateIndexStyleEnum';
-import { CdmEventCommonTermsChangeInstruction } from './CdmEventCommonTermsChangeInstruction';
-import { CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout } from './CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout';
-import { CdmObservableAssetInformationProviderEnum } from './CdmObservableAssetInformationProviderEnum';
-import { CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum';
-import { CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement } from './CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement';
-import { CdmObservableAssetPremiumExpression } from './CdmObservableAssetPremiumExpression';
-import { CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType';
-import { CdmProductTemplateTerminationProvision } from './CdmProductTemplateTerminationProvision';
-import { CdmEventWorkflowCustomisedWorkflow } from './CdmEventWorkflowCustomisedWorkflow';
-import { CdmBaseDatetimePeriodRange } from './CdmBaseDatetimePeriodRange';
-import { CdmProductAssetCreditSeniorityEnum } from './CdmProductAssetCreditSeniorityEnum';
-import { CdmObservableAssetIndex } from './CdmObservableAssetIndex';
-import { CdmObservableAssetCalculatedrateCalculationShiftMethodEnum } from './CdmObservableAssetCalculatedrateCalculationShiftMethodEnum';
-import { CdmEventCommonCollateralBalance } from './CdmEventCommonCollateralBalance';
-import { CdmProductTemplateExerciseProcedure } from './CdmProductTemplateExerciseProcedure';
-import { CdmBaseMathMeasureSchedule } from './CdmBaseMathMeasureSchedule';
-import { CdmEventCommonTransferStatusEnum } from './CdmEventCommonTransferStatusEnum';
-import { CdmObservableAssetCalculatedrateCalculatedRateObservations } from './CdmObservableAssetCalculatedrateCalculatedRateObservations';
-import { CdmProductAssetFloatingrateFloatingRateProcessingDetails } from './CdmProductAssetFloatingrateFloatingRateProcessingDetails';
-import { CdmEventCommonMarginCallExposure } from './CdmEventCommonMarginCallExposure';
-import { CdmBaseDatetimePeriodicDates } from './CdmBaseDatetimePeriodicDates';
-import { CdmEventCommonAffirmationStatusEnum } from './CdmEventCommonAffirmationStatusEnum';
-import { CdmProductCommonSettlementPayoutBase } from './CdmProductCommonSettlementPayoutBase';
-import { CdmBaseDatetimeBusinessCenters } from './CdmBaseDatetimeBusinessCenters';
-import { CdmProductCollateralDistributionAndInterestPayment } from './CdmProductCollateralDistributionAndInterestPayment';
-import { CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum';
-import { CdmEventPositionSecurityLocate } from './CdmEventPositionSecurityLocate';
-import { CdmProductAssetNonCashDividendTreatmentEnum } from './CdmProductAssetNonCashDividendTreatmentEnum';
-import { CdmRegulationRefRate } from './CdmRegulationRefRate';
-import { CdmEventWorkflowVelocity } from './CdmEventWorkflowVelocity';
-import { CdmProductAssetRollSourceCalendarEnum } from './CdmProductAssetRollSourceCalendarEnum';
-import { CdmObservableAssetValuationMethod } from './CdmObservableAssetValuationMethod';
-import { CdmProductCommonScheduleDateRelativeToPaymentDates } from './CdmProductCommonScheduleDateRelativeToPaymentDates';
-import { CdmProductAssetFloatingAmountEvents } from './CdmProductAssetFloatingAmountEvents';
-import { CdmProductTemplateConstituentWeight } from './CdmProductTemplateConstituentWeight';
-import { CdmEventCommonPriceTimingEnum } from './CdmEventCommonPriceTimingEnum';
-import { CdmLegaldocumentationCsaCreditSupportAgreementElections } from './CdmLegaldocumentationCsaCreditSupportAgreementElections';
-import { CdmEventCommonPositionEventIntentEnum } from './CdmEventCommonPositionEventIntentEnum';
-import { CdmProductCollateralConcentrationLimitCriteria } from './CdmProductCollateralConcentrationLimitCriteria';
-import { CdmBaseDatetimePeriodEnum } from './CdmBaseDatetimePeriodEnum';
-import { CdmEventCommonExecutionDetails } from './CdmEventCommonExecutionDetails';
+import { CdmLegaldocumentationContractAgreement } from './CdmLegaldocumentationContractAgreement';
+import { CdmProductAssetDividendDateReference } from './CdmProductAssetDividendDateReference';
+import { CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum';
+import { CdmProductTemplateExerciseFee } from './CdmProductTemplateExerciseFee';
+import { CdmEventCommonTransferExpression } from './CdmEventCommonTransferExpression';
+import { CdmObservableAssetMetafieldsReferenceWithMetaObservable } from './CdmObservableAssetMetafieldsReferenceWithMetaObservable';
+import { CdmEventPositionAggregationParameters } from './CdmEventPositionAggregationParameters';
+import { CdmObservableAssetPriceQuantity } from './CdmObservableAssetPriceQuantity';
+import { CdmLegaldocumentationMasterDeterminationRolesAndTerms } from './CdmLegaldocumentationMasterDeterminationRolesAndTerms';
+import { CdmBaseDatetimeAdjustableOrRelativeDate } from './CdmBaseDatetimeAdjustableOrRelativeDate';
 import { CdmProductTemplateOptionStrike } from './CdmProductTemplateOptionStrike';
+import { CdmBaseStaticdataPartyPersonIdentifierTypeEnum } from './CdmBaseStaticdataPartyPersonIdentifierTypeEnum';
 import { CdmBaseMathAveragingCalculationMethod } from './CdmBaseMathAveragingCalculationMethod';
+import { CdmProductCollateralSpecificAsset } from './CdmProductCollateralSpecificAsset';
+import { CdmObservableAssetFeeTypeEnum } from './CdmObservableAssetFeeTypeEnum';
+import { CdmProductTemplateExpirationTimeTypeEnum } from './CdmProductTemplateExpirationTimeTypeEnum';
+import { CdmBaseStaticdataPartyPartyReferencePayerReceiver } from './CdmBaseStaticdataPartyPartyReferencePayerReceiver';
+import { CdmProductAssetIndexAnnexSourceEnum } from './CdmProductAssetIndexAnnexSourceEnum';
+import { CdmProductCommonSettlementPricingDates } from './CdmProductCommonSettlementPricingDates';
+import { CdmProductAssetAdditionalFixedPayments } from './CdmProductAssetAdditionalFixedPayments';
+import { CdmProductAssetVarianceCapFloor } from './CdmProductAssetVarianceCapFloor';
+import { CdmObservableEventRestructuringEnum } from './CdmObservableEventRestructuringEnum';
+import { CdmObservableAssetFroFloatingRateIndexIdentification } from './CdmObservableAssetFroFloatingRateIndexIdentification';
+import { CdmProductTemplateManualExercise } from './CdmProductTemplateManualExercise';
+import { CdmLegaldocumentationCommonMatrixTypeEnum } from './CdmLegaldocumentationCommonMatrixTypeEnum';
+import { CdmProductCommonSettlementSettlementTerms } from './CdmProductCommonSettlementSettlementTerms';
+import { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
+import { CdmObservableAssetReferenceSwapCurve } from './CdmObservableAssetReferenceSwapCurve';
+import { CdmProductCommonScheduleResetDates } from './CdmProductCommonScheduleResetDates';
+import { CdmProductCollateralListingSector } from './CdmProductCollateralListingSector';
+import { CdmBaseStaticdataAssetCommonDebtSeniorityEnum } from './CdmBaseStaticdataAssetCommonDebtSeniorityEnum';
+import { CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum } from './CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum';
+import { CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout } from './CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout';
+import { CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule } from './CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule';
+import { CdmEventPositionAvailableInventoryRecord } from './CdmEventPositionAvailableInventoryRecord';
+import { CdmLegaldocumentationCommonSpecifiedEntityClauseEnum } from './CdmLegaldocumentationCommonSpecifiedEntityClauseEnum';
+import { CdmObservableAssetTransactedPrice } from './CdmObservableAssetTransactedPrice';
+import { CdmBaseStaticdataPartyContactInformation } from './CdmBaseStaticdataPartyContactInformation';
+import { CdmObservableAssetCalculatedrateObservationPeriodDatesEnum } from './CdmObservableAssetCalculatedrateObservationPeriodDatesEnum';
+import { CdmBaseMathAveragingWeightingMethodEnum } from './CdmBaseMathAveragingWeightingMethodEnum';
+import { CdmRegulationOthr } from './CdmRegulationOthr';
+import { CdmMarginScheduleStandardizedSchedule } from './CdmMarginScheduleStandardizedSchedule';
+import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity';
+import { CdmEventCommonBillingRecord } from './CdmEventCommonBillingRecord';
+import { CdmMarginScheduleStandardizedScheduleInitialMargin } from './CdmMarginScheduleStandardizedScheduleInitialMargin';
+import { CdmEventCommonExecutionDetails } from './CdmEventCommonExecutionDetails';
+import { CdmLegaldocumentationCommonUmbrellaAgreement } from './CdmLegaldocumentationCommonUmbrellaAgreement';
+import { CdmObservableAssetFieldWithMetaObservable } from './CdmObservableAssetFieldWithMetaObservable';
+import { CdmEventCommonValuation } from './CdmEventCommonValuation';
+import { CdmObservableAssetQuoteBasisEnum } from './CdmObservableAssetQuoteBasisEnum';
+import { CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018 } from './CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018';
+import { CdmObservableAssetFieldWithMetaCreditNotation } from './CdmObservableAssetFieldWithMetaCreditNotation';
+import { CdmProductAssetVolatilityReturnTerms } from './CdmProductAssetVolatilityReturnTerms';
+import { CdmProductAssetReturnTermsBase } from './CdmProductAssetReturnTermsBase';
+import { CdmProductAssetLoadTypeEnum } from './CdmProductAssetLoadTypeEnum';
+import { ComRosettaModelLibMetaKey } from './ComRosettaModelLibMetaKey';
+import { CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates';
+import { CdmProductAssetGeneralTerms } from './CdmProductAssetGeneralTerms';
+import { CdmProductAssetReferenceInformation } from './CdmProductAssetReferenceInformation';
+import { CdmEventCommonEventIntentEnum } from './CdmEventCommonEventIntentEnum';
+import { CdmBaseStaticdataPartyAncillaryParty } from './CdmBaseStaticdataPartyAncillaryParty';
+import { CdmProductCommonSettlementShapingProvision } from './CdmProductCommonSettlementShapingProvision';
+import { CdmProductCollateralEligibleCollateralCriteria } from './CdmProductCollateralEligibleCollateralCriteria';
+import { CdmProductCommonSettlementStandardSettlementStyleEnum } from './CdmProductCommonSettlementStandardSettlementStyleEnum';
+import { CdmEventWorkflowWorkflowStepApproval } from './CdmEventWorkflowWorkflowStepApproval';
+import { CdmLegaldocumentationCommonResourceLength } from './CdmLegaldocumentationCommonResourceLength';
+import { CdmProductCollateralDistributionAndInterestPayment } from './CdmProductCollateralDistributionAndInterestPayment';
+import { CdmRegulationRefRate } from './CdmRegulationRefRate';
+import { CdmObservableAssetFxRate } from './CdmObservableAssetFxRate';
+import { CdmProductCollateralCollateralTreatment } from './CdmProductCollateralCollateralTreatment';
+import { CdmBaseStaticdataAssetCreditObligationCategoryEnum } from './CdmBaseStaticdataAssetCreditObligationCategoryEnum';
+import { CdmProductCollateralCheckEligibilityResult } from './CdmProductCollateralCheckEligibilityResult';
+import { CdmBaseDatetimeCommodityBusinessCalendarEnum } from './CdmBaseDatetimeCommodityBusinessCalendarEnum';
+import { CdmProductTemplateReturnTerms } from './CdmProductTemplateReturnTerms';
+import { CdmBaseMathQuantityChangeDirectionEnum } from './CdmBaseMathQuantityChangeDirectionEnum';
+import { CdmObservableAssetInflationIndex } from './CdmObservableAssetInflationIndex';
+import { CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule';
+import { CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier } from './CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier';
+import { CdmObservableAssetForeignExchangeRateIndex } from './CdmObservableAssetForeignExchangeRateIndex';
+import { CdmEventCommonConfirmationStatusEnum } from './CdmEventCommonConfirmationStatusEnum';
+import { CdmObservableAssetCurve } from './CdmObservableAssetCurve';
+import { CdmObservableAssetCalculatedrateInflationCalculationMethodEnum } from './CdmObservableAssetCalculatedrateInflationCalculationMethodEnum';
+import { CdmBaseStaticdataPartyAccountTypeEnum } from './CdmBaseStaticdataPartyAccountTypeEnum';
+import { CdmProductAssetValuationTerms } from './CdmProductAssetValuationTerms';
+import { CdmBaseStaticdataPartyParty } from './CdmBaseStaticdataPartyParty';
+import { CdmBaseStaticdataAssetCommonCommodityReferenceFramework } from './CdmBaseStaticdataAssetCommonCommodityReferenceFramework';
+import { CdmLegaldocumentationCommonContractualTermsSupplement } from './CdmLegaldocumentationCommonContractualTermsSupplement';
+import { CdmProductCommonSettlementCashflow } from './CdmProductCommonSettlementCashflow';
+import { CdmObservableEventCreditEvents } from './CdmObservableEventCreditEvents';
+import { CdmProductTemplateEarlyTerminationEvent } from './CdmProductTemplateEarlyTerminationEvent';
+import { CdmProductCommonSettlementFixedPrice } from './CdmProductCommonSettlementFixedPrice';
+import { CdmBaseStaticdataPartyPayerReceiver } from './CdmBaseStaticdataPartyPayerReceiver';
+import { CdmObservableAssetCalculatedrateCalculatedRateDetails } from './CdmObservableAssetCalculatedrateCalculatedRateDetails';
+import { CdmProductCommonSettlementPaymentRule } from './CdmProductCommonSettlementPaymentRule';
+import { CdmBaseStaticdataAssetCommonCommodityProductDefinition } from './CdmBaseStaticdataAssetCommonCommodityProductDefinition';
+import { CdmBaseStaticdataAssetCommonCollateralTaxonomyValue } from './CdmBaseStaticdataAssetCommonCollateralTaxonomyValue';
+import { CdmProductTemplatePassThrough } from './CdmProductTemplatePassThrough';
+import { CdmProductAssetSettledEntityMatrix } from './CdmProductAssetSettledEntityMatrix';
+import { CdmObservableAssetCalculatedrateCalculatedRateObservations } from './CdmObservableAssetCalculatedrateCalculatedRateObservations';
+import { CdmLegaldocumentationCommonResource } from './CdmLegaldocumentationCommonResource';
+import { CdmObservableAssetCalculatedrateCalculationShiftMethodEnum } from './CdmObservableAssetCalculatedrateCalculationShiftMethodEnum';
+import { CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio } from './CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio';
+import { CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum } from './CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum';
+import { CdmProductAssetDividendPeriodEnum } from './CdmProductAssetDividendPeriodEnum';
+import { CdmBaseDatetimeAdjustableRelativeOrPeriodicDates } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
+import { CdmBaseStaticdataAssetCommonPutCallEnum } from './CdmBaseStaticdataAssetCommonPutCallEnum';
+import { CdmObservableAssetSettlementRateOption } from './CdmObservableAssetSettlementRateOption';
+import { CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex } from './CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex';
+import { CdmObservableEventDeterminationMethodology } from './CdmObservableEventDeterminationMethodology';
+import { CdmObservableCommonTimeTypeEnum } from './CdmObservableCommonTimeTypeEnum';
+import { CdmProductCommonSettlementPhysicalSettlementTerms } from './CdmProductCommonSettlementPhysicalSettlementTerms';
+import { CdmBaseDatetimeRelativeDateOffset } from './CdmBaseDatetimeRelativeDateOffset';
+import { CdmLegaldocumentationCommonAgreementTerms } from './CdmLegaldocumentationCommonAgreementTerms';
+import { CdmEventCommonScheduledTransfer } from './CdmEventCommonScheduledTransfer';
+import { CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms';
+import { CdmBaseStaticdataAssetCommonMaturityTypeEnum } from './CdmBaseStaticdataAssetCommonMaturityTypeEnum';
+import { CdmBaseDatetimeBusinessCenterTime } from './CdmBaseDatetimeBusinessCenterTime';
+import { CdmProductCommonScheduleObservationSchedule } from './CdmProductCommonScheduleObservationSchedule';
+import { CdmBaseMathMoneyRange } from './CdmBaseMathMoneyRange';
+import { CdmObservableAssetCommodityReferencePriceEnum } from './CdmObservableAssetCommodityReferencePriceEnum';
+import { CdmProductAssetFloatingRateDefinition } from './CdmProductAssetFloatingRateDefinition';
+import { CdmBaseStaticdataIdentifierFieldWithMetaIdentifier } from './CdmBaseStaticdataIdentifierFieldWithMetaIdentifier';
+import { CdmEventCommonPrimitiveInstruction } from './CdmEventCommonPrimitiveInstruction';
+import { CdmEventCommonExerciseInstruction } from './CdmEventCommonExerciseInstruction';
+import { CdmEventCommonSplitInstruction } from './CdmEventCommonSplitInstruction';
+import { CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule';
+import { CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum';
+import { CdmProductAssetCalculationScheduleDeliveryPeriods } from './CdmProductAssetCalculationScheduleDeliveryPeriods';
+import { CdmProductCollateralAssetAgencyRating } from './CdmProductCollateralAssetAgencyRating';
+import { CdmProductCommonScheduleWeeklyRollConventionEnum } from './CdmProductCommonScheduleWeeklyRollConventionEnum';
+import { CdmProductTemplateAssetLeg } from './CdmProductTemplateAssetLeg';
+import { CdmLegaldocumentationCommonSpecifiedEntityTermsEnum } from './CdmLegaldocumentationCommonSpecifiedEntityTermsEnum';
+import { CdmBaseStaticdataAssetCommonTaxonomyClassification } from './CdmBaseStaticdataAssetCommonTaxonomyClassification';
+import { CdmBaseStaticdataAssetCommonProductTaxonomy } from './CdmBaseStaticdataAssetCommonProductTaxonomy';
+import { CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum';
+import { CdmBaseStaticdataAssetCommonDeliveryDateParameters } from './CdmBaseStaticdataAssetCommonDeliveryDateParameters';
+import { CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms';
+import { CdmBaseMathRoundingDirectionEnum } from './CdmBaseMathRoundingDirectionEnum';
+import { CdmProductAssetDividendPaymentDate } from './CdmProductAssetDividendPaymentDate';
+import { CdmLegaldocumentationCommonCreditSupportProviderTermsEnum } from './CdmLegaldocumentationCommonCreditSupportProviderTermsEnum';
+import { CdmLegaldocumentationCommonLengthUnitEnum } from './CdmLegaldocumentationCommonLengthUnitEnum';
+import { CdmObservableAssetPriceTypeEnum } from './CdmObservableAssetPriceTypeEnum';
+import { CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum } from './CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum';
+import { CdmBaseStaticdataPartyCounterparty } from './CdmBaseStaticdataPartyCounterparty';
+import { CdmObservableAssetFxRateSourceFixing } from './CdmObservableAssetFxRateSourceFixing';
+import { CdmProductAssetDividendEntitlementEnum } from './CdmProductAssetDividendEntitlementEnum';
+import { CdmBaseMathQuantifierEnum } from './CdmBaseMathQuantifierEnum';
+import { CdmProductAssetFloatingAmountEvents } from './CdmProductAssetFloatingAmountEvents';
+import { CdmProductAssetInterestShortFall } from './CdmProductAssetInterestShortFall';
+import { CdmRegulationSwp } from './CdmRegulationSwp';
+import { CdmObservableAssetMetafieldsReferenceWithMetaRateObservation } from './CdmObservableAssetMetafieldsReferenceWithMetaRateObservation';
+import { CdmEventCommonCreditEventTypeEnum } from './CdmEventCommonCreditEventTypeEnum';
+import { CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep } from './CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep';
+import { CdmProductTemplateStrikeSpread } from './CdmProductTemplateStrikeSpread';
+import { CdmProductAssetBoundedCorrelation } from './CdmProductAssetBoundedCorrelation';
+import { CdmObservableAssetFloatingRateIndex } from './CdmObservableAssetFloatingRateIndex';
+import { CdmBaseDatetimeAdjustableDates } from './CdmBaseDatetimeAdjustableDates';
+import { CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates';
+import { CdmProductTemplateTradableProduct } from './CdmProductTemplateTradableProduct';
+import { CdmBaseStaticdataAssetCommonAssetIdTypeEnum } from './CdmBaseStaticdataAssetCommonAssetIdTypeEnum';
+import { CdmEventWorkflowCreditLimitInformation } from './CdmEventWorkflowCreditLimitInformation';
+import { CdmProductTemplateAsian } from './CdmProductTemplateAsian';
+import { CdmObservableAssetCalculatedrateCalculationMethodEnum } from './CdmObservableAssetCalculatedrateCalculationMethodEnum';
+import { CdmLegaldocumentationCommonAddressForNotices } from './CdmLegaldocumentationCommonAddressForNotices';
+import { CdmProductCollateralMetafieldsReferenceWithMetaCollateral } from './CdmProductCollateralMetafieldsReferenceWithMetaCollateral';
+import { CdmProductAssetFloatingRate } from './CdmProductAssetFloatingRate';
+import { CdmObservableAssetFieldWithMetaPriceSchedule } from './CdmObservableAssetFieldWithMetaPriceSchedule';
+import { CdmProductAssetSpreadCalculationMethodEnum } from './CdmProductAssetSpreadCalculationMethodEnum';
+import { CdmObservableAssetCalculatedrateObservationShiftCalculation } from './CdmObservableAssetCalculatedrateObservationShiftCalculation';
+import { CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType } from './CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType';
+import { CdmBaseStaticdataAssetCommonSecurity } from './CdmBaseStaticdataAssetCommonSecurity';
+import { CdmEventPositionPortfolioState } from './CdmEventPositionPortfolioState';
+import { CdmProductCommonScheduleStubCalculationPeriodAmount } from './CdmProductCommonScheduleStubCalculationPeriodAmount';
+import { CdmProductTemplateExerciseFeeSchedule } from './CdmProductTemplateExerciseFeeSchedule';
+import { CdmLegaldocumentationMasterExtraordinaryEvents } from './CdmLegaldocumentationMasterExtraordinaryEvents';
+import { CdmBaseStaticdataAssetCommonAsset } from './CdmBaseStaticdataAssetCommonAsset';
+import { CdmProductAssetBondReference } from './CdmProductAssetBondReference';
+import { CdmEventPositionPortfolio } from './CdmEventPositionPortfolio';
+import { CdmBaseDatetimeRollConventionEnum } from './CdmBaseDatetimeRollConventionEnum';
+import { CdmBaseStaticdataAssetCommonIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonIssuerTypeEnum';
+import { CdmEventCommonBillingInstruction } from './CdmEventCommonBillingInstruction';
+import { CdmObservableAssetInformationSource } from './CdmObservableAssetInformationSource';
+import { CdmBaseStaticdataPartyAncillaryEntity } from './CdmBaseStaticdataPartyAncillaryEntity';
+import { CdmEventCommonClearingInstruction } from './CdmEventCommonClearingInstruction';
+import { CdmProductCommonSettlementSettlementCentreEnum } from './CdmProductCommonSettlementSettlementCentreEnum';
+import { CdmObservableEventFeaturePayment } from './CdmObservableEventFeaturePayment';
+import { CdmBaseDatetimeFrequency } from './CdmBaseDatetimeFrequency';
+import { CdmBaseMathNonNegativeStep } from './CdmBaseMathNonNegativeStep';
+import { CdmEventWorkflowWorkflow } from './CdmEventWorkflowWorkflow';
+import { CdmEventCommonPositionIdentifier } from './CdmEventCommonPositionIdentifier';
+import { CdmObservableAssetInterpolationMethodEnum } from './CdmObservableAssetInterpolationMethodEnum';
+import { CdmProductCommonScheduleWeightedAveragingObservation } from './CdmProductCommonScheduleWeightedAveragingObservation';
+import { CdmProductTemplateKnock } from './CdmProductTemplateKnock';
+import { CdmBaseStaticdataAssetCommonDebtPrincipalEnum } from './CdmBaseStaticdataAssetCommonDebtPrincipalEnum';
+import { CdmProductAssetRealisedVarianceMethodEnum } from './CdmProductAssetRealisedVarianceMethodEnum';
+import { CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum';
+import { CdmObservableAssetCashCollateralValuationMethod } from './CdmObservableAssetCashCollateralValuationMethod';
+import { CdmProductAssetFPVFinalPriceElectionFallbackEnum } from './CdmProductAssetFPVFinalPriceElectionFallbackEnum';
+import { CdmLegaldocumentationMasterMasterConfirmationBase } from './CdmLegaldocumentationMasterMasterConfirmationBase';
+import { CdmProductAssetReferencePair } from './CdmProductAssetReferencePair';
+import { CdmBaseStaticdataAssetRatesInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesInflationRateIndexEnum';
+import { CdmLegaldocumentationCommonResourceTypeEnum } from './CdmLegaldocumentationCommonResourceTypeEnum';
+import { CdmEventWorkflowWarehouseIdentityEnum } from './CdmEventWorkflowWarehouseIdentityEnum';
+import { CdmProductTemplateConstituentWeight } from './CdmProductTemplateConstituentWeight';
+import { CdmBaseStaticdataAssetCommonCollateralTaxonomy } from './CdmBaseStaticdataAssetCommonCollateralTaxonomy';
+import { CdmProductTemplateAutomaticExercise } from './CdmProductTemplateAutomaticExercise';
+import { CdmProductCollateralAverageTradingVolume } from './CdmProductCollateralAverageTradingVolume';
+import { CdmEventPositionInventoryRecord } from './CdmEventPositionInventoryRecord';
+import { CdmLegaldocumentationCommonContractualMatrix } from './CdmLegaldocumentationCommonContractualMatrix';
+import { CdmProductAssetInterestRatePayout } from './CdmProductAssetInterestRatePayout';
+import { CdmProductCollateralCollateral } from './CdmProductCollateralCollateral';
+import { CdmProductCollateralCollateralValuationTreatment } from './CdmProductCollateralCollateralValuationTreatment';
+import { CdmEventWorkflowCreditLimitUtilisation } from './CdmEventWorkflowCreditLimitUtilisation';
+import { CdmObservableAssetCalculatedrateFallbackRateParameters } from './CdmObservableAssetCalculatedrateFallbackRateParameters';
+import { CdmBaseStaticdataPartyBusinessUnit } from './CdmBaseStaticdataPartyBusinessUnit';
+import { CdmRegulationQty } from './CdmRegulationQty';
+import { CdmBaseStaticdataPartyLegalEntity } from './CdmBaseStaticdataPartyLegalEntity';
+import { CdmProductCommonSettlementDeliveryMethodEnum } from './CdmProductCommonSettlementDeliveryMethodEnum';
+import { CdmObservableAssetIndexBase } from './CdmObservableAssetIndexBase';
+import { CdmProductTemplatePassThroughItem } from './CdmProductTemplatePassThroughItem';
+import { CdmProductAssetProtectionTerms } from './CdmProductAssetProtectionTerms';
+import { CdmObservableAssetBasket } from './CdmObservableAssetBasket';
 import { CdmObservableAssetFieldWithMetaBasketConstituent } from './CdmObservableAssetFieldWithMetaBasketConstituent';
 import { CdmObservableAssetBasketConstituent } from './CdmObservableAssetBasketConstituent';
-import { CdmObservableAssetBasket } from './CdmObservableAssetBasket';
-import { CdmBaseStaticdataAssetCommonSecurity } from './CdmBaseStaticdataAssetCommonSecurity';
-import { CdmLegaldocumentationMasterMasterAgreementSchedule } from './CdmLegaldocumentationMasterMasterAgreementSchedule';
-import { CdmBaseMathCapacityUnitEnum } from './CdmBaseMathCapacityUnitEnum';
-import { CdmBaseDatetimeBusinessDateRange } from './CdmBaseDatetimeBusinessDateRange';
-import { CdmEventCommonPositionIdentifier } from './CdmEventCommonPositionIdentifier';
-import { CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule';
-import { CdmLegaldocumentationMasterMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterMasterAgreementTypeEnum';
-import { CdmEventCommonCalculateTransferInstruction } from './CdmEventCommonCalculateTransferInstruction';
-import { CdmBaseStaticdataAssetCommonTaxonomyClassification } from './CdmBaseStaticdataAssetCommonTaxonomyClassification';
-import { CdmEventWorkflowMessageInformation } from './CdmEventWorkflowMessageInformation';
-import { CdmBaseMathRounding } from './CdmBaseMathRounding';
-import { CdmEventCommonCallTypeEnum } from './CdmEventCommonCallTypeEnum';
-import { CdmObservableAssetFxRateSourceFixing } from './CdmObservableAssetFxRateSourceFixing';
-import { CdmObservableAssetCalculatedrateOffsetCalculation } from './CdmObservableAssetCalculatedrateOffsetCalculation';
-import { CdmBaseMathNumberBound } from './CdmBaseMathNumberBound';
-import { CdmBaseStaticdataPartyBuyerSeller } from './CdmBaseStaticdataPartyBuyerSeller';
-import { CdmProductTemplateEarlyTerminationProvision } from './CdmProductTemplateEarlyTerminationProvision';
-import { CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum';
-import { CdmBaseMathWeatherUnitEnum } from './CdmBaseMathWeatherUnitEnum';
-import { CdmProductAssetFloatingRate } from './CdmProductAssetFloatingRate';
-import { CdmObservableEventDeterminationMethodology } from './CdmObservableEventDeterminationMethodology';
-import { CdmEventCommonState } from './CdmEventCommonState';
-import { CdmLegaldocumentationCommonClosedStateEnum } from './CdmLegaldocumentationCommonClosedStateEnum';
-import { CdmLegaldocumentationCommonUmbrellaAgreementEntity } from './CdmLegaldocumentationCommonUmbrellaAgreementEntity';
-import { CdmBaseDatetimeBusinessCenterTime } from './CdmBaseDatetimeBusinessCenterTime';
-import { CdmBaseStaticdataAssetRatesFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFloatingRateIndexEnum';
-import { CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms';
-import { CdmProductAssetTranche } from './CdmProductAssetTranche';
-import { CdmBaseStaticdataAssetCommonAsset } from './CdmBaseStaticdataAssetCommonAsset';
-import { CdmEventWorkflowCreditLimitTypeEnum } from './CdmEventWorkflowCreditLimitTypeEnum';
-import { CdmBaseStaticdataPartyEntityTypeEnum } from './CdmBaseStaticdataPartyEntityTypeEnum';
-import { CdmProductCommonSettlementComputedAmount } from './CdmProductCommonSettlementComputedAmount';
-import { CdmObservableAssetMetafieldsReferenceWithMetaMoney } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
-import { CdmObservableAssetCalculatedrateFloatingRateCalculationParameters } from './CdmObservableAssetCalculatedrateFloatingRateCalculationParameters';
-import { CdmProductCollateralIssuerName } from './CdmProductCollateralIssuerName';
-import { CdmEventCommonMetafieldsReferenceWithMetaContractDetails } from './CdmEventCommonMetafieldsReferenceWithMetaContractDetails';
-import { CdmProductCollateralDeliveryAmountElectionEnum } from './CdmProductCollateralDeliveryAmountElectionEnum';
-import { CdmEventWorkflowWorkflowStep } from './CdmEventWorkflowWorkflowStep';
-import { CdmProductAssetSpreadSchedule } from './CdmProductAssetSpreadSchedule';
-import { CdmBaseMathNonNegativeQuantity } from './CdmBaseMathNonNegativeQuantity';
-import { CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification } from './CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification';
-import { CdmBaseMathMeasure } from './CdmBaseMathMeasure';
-import { CdmObservableEventTriggerTimeTypeEnum } from './CdmObservableEventTriggerTimeTypeEnum';
-import { CdmProductTemplateBarrier } from './CdmProductTemplateBarrier';
-import { CdmRegulationFinInstrmRptgTxRpt } from './CdmRegulationFinInstrmRptgTxRpt';
-import { CdmObservableAssetCreditRatingAgencyEnum } from './CdmObservableAssetCreditRatingAgencyEnum';
-import { CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum';
-import { CdmObservableAssetCreditRatingCreditWatchEnum } from './CdmObservableAssetCreditRatingCreditWatchEnum';
-import { CdmObservableEventIndexEventConsequenceEnum } from './CdmObservableEventIndexEventConsequenceEnum';
-import { CdmObservableEventPubliclyAvailableInformation } from './CdmObservableEventPubliclyAvailableInformation';
-import { CdmProductAssetFloatingRateBase } from './CdmProductAssetFloatingRateBase';
-import { CdmEventCommonExecutionInstruction } from './CdmEventCommonExecutionInstruction';
-import { CdmProductCollateralCollateralTreatment } from './CdmProductCollateralCollateralTreatment';
-import { CdmLegaldocumentationMasterFxAdditionalTerms } from './CdmLegaldocumentationMasterFxAdditionalTerms';
-import { CdmProductCollateralEligibilityQuery } from './CdmProductCollateralEligibilityQuery';
-import { CdmObservableAssetCalculatedrateObservationPeriodDatesEnum } from './CdmObservableAssetCalculatedrateObservationPeriodDatesEnum';
-import { CdmLegaldocumentationMasterRepresentations } from './CdmLegaldocumentationMasterRepresentations';
-import { CdmObservableAssetCreditRatingOutlookEnum } from './CdmObservableAssetCreditRatingOutlookEnum';
-import { CdmObservableAssetPriceComposite } from './CdmObservableAssetPriceComposite';
-import { CdmProductCommonSettlementSettlementDate } from './CdmProductCommonSettlementSettlementDate';
-import { CdmProductCommonScheduleFxLinkedNotionalSchedule } from './CdmProductCommonScheduleFxLinkedNotionalSchedule';
-import { CdmEventCommonMarginCallResponseTypeEnum } from './CdmEventCommonMarginCallResponseTypeEnum';
-import { CdmEventCommonLineage } from './CdmEventCommonLineage';
-import { CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum } from './CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum';
-import { CdmBaseDatetimeCalculationFrequency } from './CdmBaseDatetimeCalculationFrequency';
-import { CdmProductTemplateComposite } from './CdmProductTemplateComposite';
-import { CdmEventPositionPortfolio } from './CdmEventPositionPortfolio';
-import { CdmProductAssetDividendDateReferenceEnum } from './CdmProductAssetDividendDateReferenceEnum';
-import { CdmRegulationPric } from './CdmRegulationPric';
-import { CdmObservableAssetPriceOperandEnum } from './CdmObservableAssetPriceOperandEnum';
-import { CdmRegulationUndrlygInstrm } from './CdmRegulationUndrlygInstrm';
-import { CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule } from './CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule';
-import { CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate } from './CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate';
-import { CdmProductCommonScheduleAveragingObservationList } from './CdmProductCommonScheduleAveragingObservationList';
-import { CdmEventCommonMarginCallIssuance } from './CdmEventCommonMarginCallIssuance';
-import { CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum';
-import { CdmObservableAssetPriceTypeEnum } from './CdmObservableAssetPriceTypeEnum';
-import { CdmObservableAssetOtherIndex } from './CdmObservableAssetOtherIndex';
-import { CdmProductTemplatePortfolioReturnTerms } from './CdmProductTemplatePortfolioReturnTerms';
-import { CdmProductAssetReferencePair } from './CdmProductAssetReferencePair';
-import { CdmObservableAssetInterestRateIndex } from './CdmObservableAssetInterestRateIndex';
-import { CdmProductAssetProtectionTerms } from './CdmProductAssetProtectionTerms';
-import { CdmObservableAssetSwapCurveValuation } from './CdmObservableAssetSwapCurveValuation';
-import { CdmProductAssetStubFloatingRate } from './CdmProductAssetStubFloatingRate';
-import { CdmProductCommonSettlementCashflowType } from './CdmProductCommonSettlementCashflowType';
-import { CdmLegaldocumentationCommonUmbrellaAgreement } from './CdmLegaldocumentationCommonUmbrellaAgreement';
-import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity';
-import { CdmProductAssetInterestRatePayout } from './CdmProductAssetInterestRatePayout';
-import { CdmObservableAssetFeeTypeEnum } from './CdmObservableAssetFeeTypeEnum';
-import { CdmEventCommonTransferState } from './CdmEventCommonTransferState';
-import { CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum } from './CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum';
-import { CdmEventCommonResetInstruction } from './CdmEventCommonResetInstruction';
-import { CdmBaseStaticdataPartyTelephoneNumber } from './CdmBaseStaticdataPartyTelephoneNumber';
-import { CdmProductAssetDividendCompositionEnum } from './CdmProductAssetDividendCompositionEnum';
-import { CdmProductTemplateExerciseTerms } from './CdmProductTemplateExerciseTerms';
-import { CdmEventCommonExposure } from './CdmEventCommonExposure';
-import { CdmObservableAssetInterestRateCurve } from './CdmObservableAssetInterestRateCurve';
-import { CdmEventCommonTransferInstruction } from './CdmEventCommonTransferInstruction';
-import { CdmProductTemplateKnock } from './CdmProductTemplateKnock';
-import { CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum';
-import { CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails } from './CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails';
-import { CdmProductTemplateCancelableProvision } from './CdmProductTemplateCancelableProvision';
-import { CdmProductCollateralCollateralAgreementFloatingRate } from './CdmProductCollateralCollateralAgreementFloatingRate';
-import { CdmEventCommonMarginCallInstructionType } from './CdmEventCommonMarginCallInstructionType';
-import { CdmProductCommonScheduleParametricDates } from './CdmProductCommonScheduleParametricDates';
-import { CdmLegaldocumentationCsaSecurityAgreementElections } from './CdmLegaldocumentationCsaSecurityAgreementElections';
-import { CdmBaseStaticdataIdentifierAssignedIdentifier } from './CdmBaseStaticdataIdentifierAssignedIdentifier';
-import { CdmBaseDatetimeAdjustableRelativeOrPeriodicDates } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
-import { CdmEventWorkflowWorkflowStatusEnum } from './CdmEventWorkflowWorkflowStatusEnum';
-import { CdmObservableAssetQuotedCurrencyPair } from './CdmObservableAssetQuotedCurrencyPair';
-import { CdmLegaldocumentationCommonLegalAgreementPublisherEnum } from './CdmLegaldocumentationCommonLegalAgreementPublisherEnum';
-import { CdmObservableAssetCalculatedrateCalculatedRateDetails } from './CdmObservableAssetCalculatedrateCalculatedRateDetails';
-import { CdmProductCommonSettlementLoanParticipation } from './CdmProductCommonSettlementLoanParticipation';
-import { CdmBaseStaticdataPartyPartyIdentifierTypeEnum } from './CdmBaseStaticdataPartyPartyIdentifierTypeEnum';
-import { CdmProductTemplateSchedulePeriod } from './CdmProductTemplateSchedulePeriod';
-import { CdmProductAssetDividendPeriodEnum } from './CdmProductAssetDividendPeriodEnum';
-import { CdmLegaldocumentationCommonSpecifiedEntityClauseEnum } from './CdmLegaldocumentationCommonSpecifiedEntityClauseEnum';
-import { CdmProductCollateralCreditSupportAgreementTypeEnum } from './CdmProductCollateralCreditSupportAgreementTypeEnum';
-import { CdmBaseMathQuantityChangeDirectionEnum } from './CdmBaseMathQuantityChangeDirectionEnum';
-import { CdmProductAssetDividendEntitlementEnum } from './CdmProductAssetDividendEntitlementEnum';
-import { CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex } from './CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex';
-import { CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment } from './CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment';
-import { CdmBaseStaticdataPartyPayerReceiver } from './CdmBaseStaticdataPartyPayerReceiver';
-import { CdmProductAssetNegativeInterestRateTreatmentEnum } from './CdmProductAssetNegativeInterestRateTreatmentEnum';
-import { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
-import { CdmEventCommonBillingSummary } from './CdmEventCommonBillingSummary';
-import { CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum';
-import { CdmBaseStaticdataAssetCommonISOCountryCodeEnum } from './CdmBaseStaticdataAssetCommonISOCountryCodeEnum';
-import { CdmBaseStaticdataAssetCreditObligationCategoryEnum } from './CdmBaseStaticdataAssetCreditObligationCategoryEnum';
-import { CdmProductCollateralListingExchange } from './CdmProductCollateralListingExchange';
-import { CdmBaseStaticdataAssetCommonAssetType } from './CdmBaseStaticdataAssetCommonAssetType';
-import { CdmProductCollateralAverageTradingVolumeMethodologyEnum } from './CdmProductCollateralAverageTradingVolumeMethodologyEnum';
-import { CdmObservableAssetMultipleCreditNotations } from './CdmObservableAssetMultipleCreditNotations';
-import { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum';
-import { CdmObservableAssetCreditIndex } from './CdmObservableAssetCreditIndex';
+import { CdmBaseStaticdataAssetCommonInstrument } from './CdmBaseStaticdataAssetCommonInstrument';
+import { ComRosettaModelMetafieldsReferenceWithMetaString } from './ComRosettaModelMetafieldsReferenceWithMetaString';
+import { CdmBaseStaticdataPartyCounterpartyRoleEnum } from './CdmBaseStaticdataPartyCounterpartyRoleEnum';
+import { CdmProductAssetRateSpecification } from './CdmProductAssetRateSpecification';
+import { CdmRegulationSchmeNm } from './CdmRegulationSchmeNm';
+import { CdmObservableAssetCsaTypeEnum } from './CdmObservableAssetCsaTypeEnum';
+import { CdmProductAssetRateTreatmentEnum } from './CdmProductAssetRateTreatmentEnum';
+import { CdmProductCommonSchedulePayRelativeToEnum } from './CdmProductCommonSchedulePayRelativeToEnum';
+import { CdmProductAssetFloatingrateFloatingRateProcessingParameters } from './CdmProductAssetFloatingrateFloatingRateProcessingParameters';
+import { CdmProductAssetDividendCurrency } from './CdmProductAssetDividendCurrency';
+import { CdmProductTemplateStrikeSchedule } from './CdmProductTemplateStrikeSchedule';
+import { CdmBaseMathNumberRange } from './CdmBaseMathNumberRange';
+import { CdmEventCommonTradeIdentifier } from './CdmEventCommonTradeIdentifier';
+import { CdmProductAssetAssetDeliveryPeriods } from './CdmProductAssetAssetDeliveryPeriods';
+import { CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum } from './CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum';
+import { CdmBaseDatetimeDateList } from './CdmBaseDatetimeDateList';
 import { CdmProductAssetAssetDeliveryInformation } from './CdmProductAssetAssetDeliveryInformation';
-import { CdmProductCollateralCollateralInterestHandlingParameters } from './CdmProductCollateralCollateralInterestHandlingParameters';
-import { CdmProductTemplateAveragingCalculation } from './CdmProductTemplateAveragingCalculation';
-import { CdmProductTemplateStrategyFeature } from './CdmProductTemplateStrategyFeature';
-import { CdmProductCommonSettlementTransferSettlementEnum } from './CdmProductCommonSettlementTransferSettlementEnum';
-import { CdmBaseStaticdataAssetCommonCash } from './CdmBaseStaticdataAssetCommonCash';
+import { CdmProductCommonSettlementSettlementTypeEnum } from './CdmProductCommonSettlementSettlementTypeEnum';
+import { CdmProductAssetDayDistributionEnum } from './CdmProductAssetDayDistributionEnum';
+import { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters';
+import { CdmObservableAssetPriceSourceDisruption } from './CdmObservableAssetPriceSourceDisruption';
+import { CdmEventCommonMarginCallResponseAction } from './CdmEventCommonMarginCallResponseAction';
+import { CdmProductCommonScheduleCalculationPeriodDates } from './CdmProductCommonScheduleCalculationPeriodDates';
+import { CdmProductCommonScheduleRateSchedule } from './CdmProductCommonScheduleRateSchedule';
+import { CdmObservableAssetMoney } from './CdmObservableAssetMoney';
+import { CdmBaseStaticdataAssetCommonAssetTypeEnum } from './CdmBaseStaticdataAssetCommonAssetTypeEnum';
+import { CdmObservableAssetFieldWithMetaQuotedCurrencyPair } from './CdmObservableAssetFieldWithMetaQuotedCurrencyPair';
+import { CdmEventCommonCollateralPortfolio } from './CdmEventCommonCollateralPortfolio';
+import { CdmLegaldocumentationMasterIndexAdjustmentEvents } from './CdmLegaldocumentationMasterIndexAdjustmentEvents';
+import { CdmBaseStaticdataPartyTelephoneNumber } from './CdmBaseStaticdataPartyTelephoneNumber';
+import { CdmProductCollateralInterestAmountApplication } from './CdmProductCollateralInterestAmountApplication';
+import { CdmProductTemplateExtensionEvent } from './CdmProductTemplateExtensionEvent';
+import { CdmEventWorkflowLimitApplicable } from './CdmEventWorkflowLimitApplicable';
+import { CdmBaseStaticdataAssetCommonDebtEconomics } from './CdmBaseStaticdataAssetCommonDebtEconomics';
+import { CdmEventCommonMarginCallInstructionType } from './CdmEventCommonMarginCallInstructionType';
+import { CdmProductAssetVarianceReturnTerms } from './CdmProductAssetVarianceReturnTerms';
+import { CdmRegulationNew } from './CdmRegulationNew';
+import { CdmRegulationTx } from './CdmRegulationTx';
+import { CdmProductCommonSettlementResolvablePriceQuantity } from './CdmProductCommonSettlementResolvablePriceQuantity';
+import { CdmLegaldocumentationCommonLegalAgreementIdentification } from './CdmLegaldocumentationCommonLegalAgreementIdentification';
+import { CdmBaseStaticdataPartyTelephoneTypeEnum } from './CdmBaseStaticdataPartyTelephoneTypeEnum';
+import { CdmProductCommonSettlementSettlementDate } from './CdmProductCommonSettlementSettlementDate';
+import { CdmProductAssetFloatingRateSpecification } from './CdmProductAssetFloatingRateSpecification';
+import { ComRosettaModelMetafieldsMetaFields } from './ComRosettaModelMetafieldsMetaFields';
+import { CdmEventCommonTradePricingReport } from './CdmEventCommonTradePricingReport';
+import { CdmBaseStaticdataAssetCommonDigitalAsset } from './CdmBaseStaticdataAssetCommonDigitalAsset';
+import { CdmBaseStaticdataAssetCommonAssetClassEnum } from './CdmBaseStaticdataAssetCommonAssetClassEnum';
+import { CdmEventCommonObservationEvent } from './CdmEventCommonObservationEvent';
+import { CdmLegaldocumentationMasterMasterAgreementClauseVariant } from './CdmLegaldocumentationMasterMasterAgreementClauseVariant';
 import { CdmLegaldocumentationMasterMasterAgreementVariableSet } from './CdmLegaldocumentationMasterMasterAgreementVariableSet';
-import { CdmBaseStaticdataAssetCommonCollateralIssuerType } from './CdmBaseStaticdataAssetCommonCollateralIssuerType';
-import { CdmBaseMathMoneyRange } from './CdmBaseMathMoneyRange';
-import { CdmRegulationSngl } from './CdmRegulationSngl';
-import { CdmEventCommonRegMarginTypeEnum } from './CdmEventCommonRegMarginTypeEnum';
-import { CdmProductCommonScheduleResetRelativeToEnum } from './CdmProductCommonScheduleResetRelativeToEnum';
-import { CdmBaseDatetimeAdjustedRelativeDateOffset } from './CdmBaseDatetimeAdjustedRelativeDateOffset';
-import { CdmEventCommonInstruction } from './CdmEventCommonInstruction';
-import { CdmEventCommonTrade } from './CdmEventCommonTrade';
-import { CdmProductCollateralCollateralCriteriaBase } from './CdmProductCollateralCollateralCriteriaBase';
-import { CdmObservableAssetCurve } from './CdmObservableAssetCurve';
-import { CdmProductCommonScheduleResetFrequency } from './CdmProductCommonScheduleResetFrequency';
+import { CdmProductAssetNonCashDividendTreatmentEnum } from './CdmProductAssetNonCashDividendTreatmentEnum';
+import { CdmProductCollateralConcentrationLimitCriteria } from './CdmProductCollateralConcentrationLimitCriteria';
+import { CdmProductAssetStubFloatingRate } from './CdmProductAssetStubFloatingRate';
+import { CdmEventCommonExecutionTypeEnum } from './CdmEventCommonExecutionTypeEnum';
 import { CdmProductAssetBankHolidayTreatmentEnum } from './CdmProductAssetBankHolidayTreatmentEnum';
-import { CdmRegulationSwp } from './CdmRegulationSwp';
-import { CdmObservableAssetCreditRatingDebt } from './CdmObservableAssetCreditRatingDebt';
-import { CdmLegaldocumentationCommonContractualMatrix } from './CdmLegaldocumentationCommonContractualMatrix';
-import { CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates } from './CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates';
+import { CdmProductCommonScheduleDateRelativeToCalculationPeriodDates } from './CdmProductCommonScheduleDateRelativeToCalculationPeriodDates';
+import { CdmProductCollateralCreditSupportAgreementTypeEnum } from './CdmProductCollateralCreditSupportAgreementTypeEnum';
+import { CdmObservableAssetCashPriceTypeEnum } from './CdmObservableAssetCashPriceTypeEnum';
+import { CdmObservableAssetFroFloatingRateIndexDefinition } from './CdmObservableAssetFroFloatingRateIndexDefinition';
+import { CdmLegaldocumentationMasterMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationTypeEnum';
+import { CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement } from './CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement';
+import { CdmProductCommonSettlementRollFeature } from './CdmProductCommonSettlementRollFeature';
+import { CdmProductTemplateMultipleExercise } from './CdmProductTemplateMultipleExercise';
+import { CdmProductTemplateOptionTypeEnum } from './CdmProductTemplateOptionTypeEnum';
+import { CdmLegaldocumentationMasterEquityCorporateEvents } from './CdmLegaldocumentationMasterEquityCorporateEvents';
+import { CdmLegaldocumentationCommonTerminationCurrencyConditionEnum } from './CdmLegaldocumentationCommonTerminationCurrencyConditionEnum';
+import { CdmProductTemplateExtendibleProvision } from './CdmProductTemplateExtendibleProvision';
+import { CdmBaseMathArithmeticOperationEnum } from './CdmBaseMathArithmeticOperationEnum';
+import { CdmEventPositionAvailableInventory } from './CdmEventPositionAvailableInventory';
+import { CdmBaseStaticdataAssetCreditObligations } from './CdmBaseStaticdataAssetCreditObligations';
+import { CdmLegaldocumentationCommonUmbrellaAgreementEntity } from './CdmLegaldocumentationCommonUmbrellaAgreementEntity';
+import { CdmObservableAssetFieldWithMetaSettlementRateOptionEnum } from './CdmObservableAssetFieldWithMetaSettlementRateOptionEnum';
+import { CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum';
+import { CdmProductAssetFutureValueAmount } from './CdmProductAssetFutureValueAmount';
+import { CdmEventCommonCollateralBalance } from './CdmEventCommonCollateralBalance';
+import { CdmEventCommonMarginCallExposure } from './CdmEventCommonMarginCallExposure';
+import { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments';
+import { CdmBaseStaticdataPartyPartyContactInformation } from './CdmBaseStaticdataPartyPartyContactInformation';
+import { CdmEventCommonInstructionFunctionEnum } from './CdmEventCommonInstructionFunctionEnum';
+import { CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum';
+import { CdmRegulationIndx } from './CdmRegulationIndx';
+import { CdmObservableAssetFxInformationSource } from './CdmObservableAssetFxInformationSource';
+import { CdmObservableAssetCreditRatingOutlookEnum } from './CdmObservableAssetCreditRatingOutlookEnum';
+import { CdmProductCollateralSovereignAgencyRating } from './CdmProductCollateralSovereignAgencyRating';
+import { CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum } from './CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum';
+import { CdmLegaldocumentationCommonOtherAgreement } from './CdmLegaldocumentationCommonOtherAgreement';
+import { CdmEventCommonObservationInstruction } from './CdmEventCommonObservationInstruction';
 import { CdmProductTemplateProduct } from './CdmProductTemplateProduct';
 import { CdmProductTemplatePerformancePayout } from './CdmProductTemplatePerformancePayout';
-import { CdmProductTemplateNonTransferableProduct } from './CdmProductTemplateNonTransferableProduct';
-import { CdmProductTemplatePayout } from './CdmProductTemplatePayout';
-import { CdmProductTemplateEconomicTerms } from './CdmProductTemplateEconomicTerms';
-import { CdmProductTemplateUnderlier } from './CdmProductTemplateUnderlier';
-import { CdmProductAssetCommodityPayout } from './CdmProductAssetCommodityPayout';
-import { CdmProductTemplateOptionPayout } from './CdmProductTemplateOptionPayout';
 import { CdmProductTemplateSettlementPayout } from './CdmProductTemplateSettlementPayout';
+import { CdmProductTemplateUnderlier } from './CdmProductTemplateUnderlier';
+import { CdmProductTemplateNonTransferableProduct } from './CdmProductTemplateNonTransferableProduct';
+import { CdmProductAssetCommodityPayout } from './CdmProductAssetCommodityPayout';
+import { CdmProductTemplateEconomicTerms } from './CdmProductTemplateEconomicTerms';
+import { CdmProductTemplateOptionPayout } from './CdmProductTemplateOptionPayout';
 import { CdmProductTemplateTransferableProduct } from './CdmProductTemplateTransferableProduct';
-import { CdmProductCommonSettlementPCDeliverableObligationCharac } from './CdmProductCommonSettlementPCDeliverableObligationCharac';
-import { CdmBaseStaticdataPartyNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyNaturalPersonRoleEnum';
-import { CdmProductTemplateExerciseNotice } from './CdmProductTemplateExerciseNotice';
-import { CdmMarginScheduleStandardizedScheduleProductClassEnum } from './CdmMarginScheduleStandardizedScheduleProductClassEnum';
-import { CdmProductTemplateStrike } from './CdmProductTemplateStrike';
-import { CdmBaseDatetimeCalculationPeriodFrequency } from './CdmBaseDatetimeCalculationPeriodFrequency';
-import { CdmBaseStaticdataAssetCommonLoan } from './CdmBaseStaticdataAssetCommonLoan';
-import { CdmEventWorkflowWorkflow } from './CdmEventWorkflowWorkflow';
-import { CdmEventCommonSecurityLendingInvoice } from './CdmEventCommonSecurityLendingInvoice';
-import { CdmProductAssetSettledEntityMatrixSourceEnum } from './CdmProductAssetSettledEntityMatrixSourceEnum';
-import { CdmEventCommonMetafieldsReferenceWithMetaTradeState } from './CdmEventCommonMetafieldsReferenceWithMetaTradeState';
-import { CdmObservableAssetQuoteBasisEnum } from './CdmObservableAssetQuoteBasisEnum';
-import { CdmProductAssetVarianceReturnTerms } from './CdmProductAssetVarianceReturnTerms';
-import { CdmBaseStaticdataAssetCommonPutCallEnum } from './CdmBaseStaticdataAssetCommonPutCallEnum';
-import { CdmProductAssetFloatingRateDefinition } from './CdmProductAssetFloatingRateDefinition';
-import { CdmEventCommonMarginCallBase } from './CdmEventCommonMarginCallBase';
-import { ComRosettaModelLibMetaReference } from './ComRosettaModelLibMetaReference';
-import { CdmRegulationNm } from './CdmRegulationNm';
-import { CdmProductCollateralCollateralTypeEnum } from './CdmProductCollateralCollateralTypeEnum';
-import { ComRosettaModelMetafieldsMetaFields } from './ComRosettaModelMetafieldsMetaFields';
-import { CdmRegulationOrdrTrnsmssn } from './CdmRegulationOrdrTrnsmssn';
-import { CdmProductCollateralSovereignAgencyRating } from './CdmProductCollateralSovereignAgencyRating';
-import { CdmProductTemplateOptionExerciseStyleEnum } from './CdmProductTemplateOptionExerciseStyleEnum';
-import { CdmProductCommonSettlementPhysicalSettlementTerms } from './CdmProductCommonSettlementPhysicalSettlementTerms';
-import { CdmProductAssetSpreadScheduleTypeEnum } from './CdmProductAssetSpreadScheduleTypeEnum';
-import { CdmProductAssetRealisedVarianceMethodEnum } from './CdmProductAssetRealisedVarianceMethodEnum';
-import { CdmBaseStaticdataAssetCommonDebtSeniorityEnum } from './CdmBaseStaticdataAssetCommonDebtSeniorityEnum';
-import { CdmRegulationAddtlAttrbts } from './CdmRegulationAddtlAttrbts';
-import { CdmProductAssetBondReference } from './CdmProductAssetBondReference';
-import { CdmObservableAssetCashPrice } from './CdmObservableAssetCashPrice';
-import { CdmProductCommonSettlementSettlementCentreEnum } from './CdmProductCommonSettlementSettlementCentreEnum';
-import { CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType';
-import { CdmProductCollateralAgencyRatingCriteria } from './CdmProductCollateralAgencyRatingCriteria';
-import { CdmBaseStaticdataAssetCommonAssetIdentifier } from './CdmBaseStaticdataAssetCommonAssetIdentifier';
-import { CdmRegulationPrsn } from './CdmRegulationPrsn';
-import { CdmProductCollateralSpecificAsset } from './CdmProductCollateralSpecificAsset';
-import { CdmProductAssetInflationRateSpecification } from './CdmProductAssetInflationRateSpecification';
-import { CdmProductCommonSettlementSettlementBase } from './CdmProductCommonSettlementSettlementBase';
-import { CdmEventCommonTradePricingReport } from './CdmEventCommonTradePricingReport';
-import { CdmProductCollateralRatingPriorityResolutionEnum } from './CdmProductCollateralRatingPriorityResolutionEnum';
-import { CdmProductTemplateRepoDurationEnum } from './CdmProductTemplateRepoDurationEnum';
-import { CdmBaseDatetimeAdjustableOrAdjustedDate } from './CdmBaseDatetimeAdjustableOrAdjustedDate';
-import { CdmBaseStaticdataPartyPartyRoleEnum } from './CdmBaseStaticdataPartyPartyRoleEnum';
-import { CdmProductCommonSettlementPricingDates } from './CdmProductCommonSettlementPricingDates';
-import { CdmBaseDatetimeBusinessDayConventionEnum } from './CdmBaseDatetimeBusinessDayConventionEnum';
-import { CdmObservableEventTriggerTypeEnum } from './CdmObservableEventTriggerTypeEnum';
-import { CdmLegaldocumentationCommonResourceLength } from './CdmLegaldocumentationCommonResourceLength';
-import { CdmProductCommonScheduleWeightedAveragingObservation } from './CdmProductCommonScheduleWeightedAveragingObservation';
-import { CdmProductAssetFloatingrateFloatingAmountCalculationDetails } from './CdmProductAssetFloatingrateFloatingAmountCalculationDetails';
-import { CdmEventCommonCollateralStatusEnum } from './CdmEventCommonCollateralStatusEnum';
-import { CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms';
-import { CdmObservableEventFieldWithMetaMarketDisruptionEnum } from './CdmObservableEventFieldWithMetaMarketDisruptionEnum';
-import { CdmEventWorkflowCreditLimitInformation } from './CdmEventWorkflowCreditLimitInformation';
-import { CdmProductCollateralCounterpartyOwnIssuePermitted } from './CdmProductCollateralCounterpartyOwnIssuePermitted';
-import { CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum } from './CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum';
-import { CdmProductAssetStubValue } from './CdmProductAssetStubValue';
-import { CdmLegaldocumentationContractAgreement } from './CdmLegaldocumentationContractAgreement';
-import { CdmLegaldocumentationMasterAdditionalDisruptionEvents } from './CdmLegaldocumentationMasterAdditionalDisruptionEvents';
-import { CdmProductCommonScheduleInitialFixingDate } from './CdmProductCommonScheduleInitialFixingDate';
-import { CdmObservableAssetInterpolationMethodEnum } from './CdmObservableAssetInterpolationMethodEnum';
-import { CdmProductAssetFPVFinalPriceElectionFallbackEnum } from './CdmProductAssetFPVFinalPriceElectionFallbackEnum';
-import { CdmObservableAssetFxInformationSource } from './CdmObservableAssetFxInformationSource';
-import { CdmProductAssetInterestShortfallCapEnum } from './CdmProductAssetInterestShortfallCapEnum';
-import { CdmObservableEventTrigger } from './CdmObservableEventTrigger';
-import { CdmProductCommonSettlementResolvablePriceQuantity } from './CdmProductCommonSettlementResolvablePriceQuantity';
-import { CdmBaseStaticdataAssetCreditSpecifiedCurrency } from './CdmBaseStaticdataAssetCreditSpecifiedCurrency';
-import { ComRosettaModelFieldWithMetaString } from './ComRosettaModelFieldWithMetaString';
-import { CdmProductCollateralReturnAmount } from './CdmProductCollateralReturnAmount';
-import { CdmLegaldocumentationCommonAgreementName } from './CdmLegaldocumentationCommonAgreementName';
-import { CdmEventWorkflowEventTimestampQualificationEnum } from './CdmEventWorkflowEventTimestampQualificationEnum';
-import { CdmBaseStaticdataPartyPartyIdentifier } from './CdmBaseStaticdataPartyPartyIdentifier';
-import { CdmEventCommonTransferExpression } from './CdmEventCommonTransferExpression';
-import { CdmProductAssetDayDistributionEnum } from './CdmProductAssetDayDistributionEnum';
-import { CdmProductCollateralAssetCountryOfOrigin } from './CdmProductCollateralAssetCountryOfOrigin';
-import { CdmProductCommonScheduleAmountSchedule } from './CdmProductCommonScheduleAmountSchedule';
-import { CdmLegaldocumentationCommonAddressForNotices } from './CdmLegaldocumentationCommonAddressForNotices';
-import { CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates';
-import { CdmBaseMathAveragingWeightingMethodEnum } from './CdmBaseMathAveragingWeightingMethodEnum';
-import { CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType } from './CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType';
-import { CdmObservableAssetFroFloatingRateIndexCalculationDefaults } from './CdmObservableAssetFroFloatingRateIndexCalculationDefaults';
-import { CdmProductAssetCashflowRepresentation } from './CdmProductAssetCashflowRepresentation';
-import { CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum';
-import { CdmEventWorkflowWorkflowState } from './CdmEventWorkflowWorkflowState';
-import { CdmEventWorkflowLimitApplicableExtended } from './CdmEventWorkflowLimitApplicableExtended';
-import { CdmProductTemplateExercisePeriod } from './CdmProductTemplateExercisePeriod';
-import { CdmEventCommonInstructionFunctionEnum } from './CdmEventCommonInstructionFunctionEnum';
-import { CdmEventCommonConfirmationStatusEnum } from './CdmEventCommonConfirmationStatusEnum';
-import { CdmBaseStaticdataPartyPersonIdentifierTypeEnum } from './CdmBaseStaticdataPartyPersonIdentifierTypeEnum';
-import { CdmObservableAssetFxSettlementRateSource } from './CdmObservableAssetFxSettlementRateSource';
-import { CdmEventWorkflowPartyCustomisedWorkflow } from './CdmEventWorkflowPartyCustomisedWorkflow';
-import { CdmProductAssetReturnTermsBase } from './CdmProductAssetReturnTermsBase';
-import { CdmProductCommonSettlementRollFeature } from './CdmProductCommonSettlementRollFeature';
-import { CdmProductTemplateQuanto } from './CdmProductTemplateQuanto';
-import { CdmProductCommonNotionalAdjustmentEnum } from './CdmProductCommonNotionalAdjustmentEnum';
-import { CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum';
-import { CdmRegulationDocument } from './CdmRegulationDocument';
-import { CdmProductCollateralCollateralCriteria } from './CdmProductCollateralCollateralCriteria';
-import { CdmProductCollateralNegativeCriteria } from './CdmProductCollateralNegativeCriteria';
-import { CdmProductCollateralAllCriteria } from './CdmProductCollateralAllCriteria';
-import { CdmProductCollateralAnyCriteria } from './CdmProductCollateralAnyCriteria';
-import { CdmObservableEventMetafieldsReferenceWithMetaObservation } from './CdmObservableEventMetafieldsReferenceWithMetaObservation';
-import { CdmProductCommonSettlementDeliveryMethodEnum } from './CdmProductCommonSettlementDeliveryMethodEnum';
-import { CdmEventCommonCreditEventTypeEnum } from './CdmEventCommonCreditEventTypeEnum';
-import { CdmProductAssetDividendPaymentDate } from './CdmProductAssetDividendPaymentDate';
-import { CdmProductCommonScheduleWeeklyRollConventionEnum } from './CdmProductCommonScheduleWeeklyRollConventionEnum';
-import { CdmEventCommonValuation } from './CdmEventCommonValuation';
-import { CdmObservableEventObservation } from './CdmObservableEventObservation';
-import { CdmBaseDatetimeTimeZone } from './CdmBaseDatetimeTimeZone';
-import { CdmObservableAssetFieldWithMetaInterpolationMethodEnum } from './CdmObservableAssetFieldWithMetaInterpolationMethodEnum';
-import { CdmBaseMathFinancialUnitEnum } from './CdmBaseMathFinancialUnitEnum';
-import { CdmObservableAssetSettlementRateOptionEnum } from './CdmObservableAssetSettlementRateOptionEnum';
-import { CdmObservableAssetMetafieldsReferenceWithMetaRateObservation } from './CdmObservableAssetMetafieldsReferenceWithMetaRateObservation';
-import { CdmEventCommonBillingSummaryInstruction } from './CdmEventCommonBillingSummaryInstruction';
-import { CdmLegaldocumentationCsaCollateralTransferAgreementElections } from './CdmLegaldocumentationCsaCollateralTransferAgreementElections';
+import { CdmProductTemplatePayout } from './CdmProductTemplatePayout';
+import { CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate } from './CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate';
+import { CdmRegulationFinInstrmGnlAttrbts } from './CdmRegulationFinInstrmGnlAttrbts';
+import { CdmProductCommonSettlementPrincipalPayments } from './CdmProductCommonSettlementPrincipalPayments';
+import { CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum } from './CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum';
+import { CdmRegulationSwpIn } from './CdmRegulationSwpIn';
+import { CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum';
+import { CdmObservableAssetInterestRateCurve } from './CdmObservableAssetInterestRateCurve';
+import { CdmProductTemplateAssetPayoutTradeTypeEnum } from './CdmProductTemplateAssetPayoutTradeTypeEnum';
+import { CdmProductTemplateStrategyFeature } from './CdmProductTemplateStrategyFeature';
+import { CdmEventCommonResetInstruction } from './CdmEventCommonResetInstruction';
 import { CdmBaseDatetimeBusinessDayAdjustments } from './CdmBaseDatetimeBusinessDayAdjustments';
-import { CdmEventCommonStockSplitInstruction } from './CdmEventCommonStockSplitInstruction';
+import { CdmObservableAssetQuotationRateTypeEnum } from './CdmObservableAssetQuotationRateTypeEnum';
+import { CdmObservableAssetMultipleCreditNotations } from './CdmObservableAssetMultipleCreditNotations';
+import { CdmProductCommonScheduleObservationDates } from './CdmProductCommonScheduleObservationDates';
+import { CdmProductCollateralEligibleCollateralSpecification } from './CdmProductCollateralEligibleCollateralSpecification';
+import { CdmLegaldocumentationMasterEquityAdditionalTerms } from './CdmLegaldocumentationMasterEquityAdditionalTerms';
+import { CdmProductCollateralConcentrationLimitTypeEnum } from './CdmProductCollateralConcentrationLimitTypeEnum';
+import { CdmEventWorkflowMessageInformation } from './CdmEventWorkflowMessageInformation';
+import { CdmObservableAssetFroFloatingRateIndexStyleEnum } from './CdmObservableAssetFroFloatingRateIndexStyleEnum';
+import { CdmEventWorkflowEventTimestampQualificationEnum } from './CdmEventWorkflowEventTimestampQualificationEnum';
+import { CdmRegulationInvstmtDcsnPrsn } from './CdmRegulationInvstmtDcsnPrsn';
+import { CdmProductCollateralIssuerName } from './CdmProductCollateralIssuerName';
+import { CdmBaseStaticdataPartyPartyIdentifier } from './CdmBaseStaticdataPartyPartyIdentifier';
+import { CdmObservableAssetMakeWholeAmount } from './CdmObservableAssetMakeWholeAmount';
+import { CdmEventCommonMarginCallActionEnum } from './CdmEventCommonMarginCallActionEnum';
+import { CdmProductCommonSettlementPaymentDiscounting } from './CdmProductCommonSettlementPaymentDiscounting';
+import { CdmLegaldocumentationCommonExecutionLocationEnum } from './CdmLegaldocumentationCommonExecutionLocationEnum';
+import { CdmProductAssetStubValue } from './CdmProductAssetStubValue';
+import { CdmBaseMathMoneyBound } from './CdmBaseMathMoneyBound';
+import { CdmObservableAssetValuationMethodEnum } from './CdmObservableAssetValuationMethodEnum';
+import { CdmEventCommonTransferState } from './CdmEventCommonTransferState';
+import { CdmProductCollateralAverageTradingVolumeMethodologyEnum } from './CdmProductCollateralAverageTradingVolumeMethodologyEnum';
+import { CdmBaseMathMeasureSchedule } from './CdmBaseMathMeasureSchedule';
+import { CdmProductCollateralCollateralAgreementFloatingRate } from './CdmProductCollateralCollateralAgreementFloatingRate';
+import { CdmBaseStaticdataPartyNaturalPersonRole } from './CdmBaseStaticdataPartyNaturalPersonRole';
+import { CdmProductCommonSettlementScheduledTransferEnum } from './CdmProductCommonSettlementScheduledTransferEnum';
+import { CdmProductTemplateEarlyTerminationProvision } from './CdmProductTemplateEarlyTerminationProvision';
+import { CdmLegaldocumentationMasterAdditionalDisruptionEvents } from './CdmLegaldocumentationMasterAdditionalDisruptionEvents';
+import { CdmLegaldocumentationCommonLegalAgreement } from './CdmLegaldocumentationCommonLegalAgreement';
+import { CdmObservableAssetFroFloatingRateIndexCalculationDefaults } from './CdmObservableAssetFroFloatingRateIndexCalculationDefaults';
+import { CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification } from './CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification';
+import { CdmBaseStaticdataAssetCommonTaxonomy } from './CdmBaseStaticdataAssetCommonTaxonomy';
+import { CdmProductCommonScheduleObservationTerms } from './CdmProductCommonScheduleObservationTerms';
+import { CdmEventCommonCollateralPosition } from './CdmEventCommonCollateralPosition';
+import { CdmBaseStaticdataAssetCommonISOCountryCodeEnum } from './CdmBaseStaticdataAssetCommonISOCountryCodeEnum';
+import { CdmProductCollateralIssuerCountryOfOrigin } from './CdmProductCollateralIssuerCountryOfOrigin';
+import { CdmObservableAssetFieldWithMetaInterestRateIndex } from './CdmObservableAssetFieldWithMetaInterestRateIndex';
+import { CdmEventCommonMetafieldsReferenceWithMetaContractDetails } from './CdmEventCommonMetafieldsReferenceWithMetaContractDetails';
+import { CdmProductTemplateOptionalEarlyTermination } from './CdmProductTemplateOptionalEarlyTermination';
+import { CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum';
+import { CdmProductAssetFixedRateSpecification } from './CdmProductAssetFixedRateSpecification';
+import { CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent } from './CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent';
+import { CdmProductCollateralContactElection } from './CdmProductCollateralContactElection';
+import { CdmBaseStaticdataIdentifierIdentifier } from './CdmBaseStaticdataIdentifierIdentifier';
+import { CdmBaseStaticdataAssetCommonDebtType } from './CdmBaseStaticdataAssetCommonDebtType';
+import { CdmObservableEventTriggerTimeTypeEnum } from './CdmObservableEventTriggerTimeTypeEnum';
+import { CdmBaseStaticdataPartyReferenceBank } from './CdmBaseStaticdataPartyReferenceBank';
+import { CdmProductCommonSettlementPrincipalPayment } from './CdmProductCommonSettlementPrincipalPayment';
+import { CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum';
+import { CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum } from './CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum';
+import { CdmProductCollateralCollateralMarginTypeEnum } from './CdmProductCollateralCollateralMarginTypeEnum';
+import { CdmBaseMathDatedValue } from './CdmBaseMathDatedValue';
+import { CdmEventWorkflowEventInstruction } from './CdmEventWorkflowEventInstruction';
+import { CdmObservableEventMetafieldsReferenceWithMetaObservation } from './CdmObservableEventMetafieldsReferenceWithMetaObservation';
+import { CdmBaseStaticdataPartyNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyNaturalPersonRoleEnum';
+import { CdmBaseDatetimeTimeZone } from './CdmBaseDatetimeTimeZone';
+import { CdmProductCommonScheduleCalculationPeriodData } from './CdmProductCommonScheduleCalculationPeriodData';
+import { CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum } from './CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum';
+import { CdmEventPositionAvailableInventoryTypeEnum } from './CdmEventPositionAvailableInventoryTypeEnum';
+import { CdmRegulationPric } from './CdmRegulationPric';
+import { CdmObservableAssetSettlementRateOptionEnum } from './CdmObservableAssetSettlementRateOptionEnum';
+import { CdmObservableAssetInterestRateIndex } from './CdmObservableAssetInterestRateIndex';
+import { CdmProductAssetRollSourceCalendarEnum } from './CdmProductAssetRollSourceCalendarEnum';
+import { CdmProductCollateralConcentrationLimit } from './CdmProductCollateralConcentrationLimit';
+import { CdmProductAssetFloatingRateBase } from './CdmProductAssetFloatingRateBase';
+import { CdmObservableAssetDividendApplicability } from './CdmObservableAssetDividendApplicability';
+import { CdmLegaldocumentationCsaCreditSupportAgreementElections } from './CdmLegaldocumentationCsaCreditSupportAgreementElections';
+import { CdmProductCommonSchedulePaymentCalculationPeriod } from './CdmProductCommonSchedulePaymentCalculationPeriod';
+import { CdmProductAssetCreditDefaultPayout } from './CdmProductAssetCreditDefaultPayout';
+import { CdmObservableAssetQuotationSideEnum } from './CdmObservableAssetQuotationSideEnum';
+import { CdmProductAssetTranche } from './CdmProductAssetTranche';
+import { CdmBaseDatetimeAdjustableOrRelativeDates } from './CdmBaseDatetimeAdjustableOrRelativeDates';
+import { CdmBaseStaticdataAssetCommonAssetType } from './CdmBaseStaticdataAssetCommonAssetType';
+import { CdmEventCommonPriceTimingEnum } from './CdmEventCommonPriceTimingEnum';
+import { CdmLegaldocumentationMasterMasterAgreementClause } from './CdmLegaldocumentationMasterMasterAgreementClause';
+import { CdmProductCommonScheduleDateRelativeToValuationDates } from './CdmProductCommonScheduleDateRelativeToValuationDates';
+import { CdmEventCommonRecordAmountTypeEnum } from './CdmEventCommonRecordAmountTypeEnum';
+import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson';
+import { CdmProductCommonSettlementPayoutBase } from './CdmProductCommonSettlementPayoutBase';
+import { CdmBaseDatetimeDateRange } from './CdmBaseDatetimeDateRange';
+import { CdmObservableAssetMultipleDebtTypes } from './CdmObservableAssetMultipleDebtTypes';
+import { CdmBaseStaticdataAssetCommonFundProductTypeEnum } from './CdmBaseStaticdataAssetCommonFundProductTypeEnum';
+import { CdmBaseStaticdataAssetCommonDebtClassEnum } from './CdmBaseStaticdataAssetCommonDebtClassEnum';
+import { CdmProductCollateralDeliveryAmountElectionEnum } from './CdmProductCollateralDeliveryAmountElectionEnum';
+import { CdmProductCollateralCollateralInterestCalculationParameters } from './CdmProductCollateralCollateralInterestCalculationParameters';
+import { CdmEventCommonLineage } from './CdmEventCommonLineage';
+import { CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails } from './CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails';
+import { CdmEventCommonCreditEvent } from './CdmEventCommonCreditEvent';
+import { CdmRegulationAddtlAttrbts } from './CdmRegulationAddtlAttrbts';
+import { CdmProductAssetFinalPrincipalExchangeCalculationEnum } from './CdmProductAssetFinalPrincipalExchangeCalculationEnum';
+import { CdmObservableEventCreditEventNotice } from './CdmObservableEventCreditEventNotice';
+import { CdmProductAssetReferencePoolItem } from './CdmProductAssetReferencePoolItem';
+import { CdmBaseMathMeasureBase } from './CdmBaseMathMeasureBase';
+import { CdmObservableAssetFxSpotRateSource } from './CdmObservableAssetFxSpotRateSource';
+import { CdmObservableAssetRateObservation } from './CdmObservableAssetRateObservation';
+import { CdmProductAssetBasketReferenceInformation } from './CdmProductAssetBasketReferenceInformation';
+import { CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair } from './CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair';
+import { CdmProductCollateralCollateralInterestNotification } from './CdmProductCollateralCollateralInterestNotification';
+import { CdmObservableAssetPriceOperandEnum } from './CdmObservableAssetPriceOperandEnum';
+import { CdmMarginScheduleStandardizedScheduleTradeInfo } from './CdmMarginScheduleStandardizedScheduleTradeInfo';
+import { CdmBaseStaticdataPartyPayerReceiverEnum } from './CdmBaseStaticdataPartyPayerReceiverEnum';
+import { CdmBaseDatetimeDayOfWeekEnum } from './CdmBaseDatetimeDayOfWeekEnum';
+import { CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum';
+import { CdmProductTemplateExerciseNoticeGiverEnum } from './CdmProductTemplateExerciseNoticeGiverEnum';
+import { CdmEventWorkflowVelocity } from './CdmEventWorkflowVelocity';
+import { CdmBaseStaticdataAssetCommonAssetIdentifier } from './CdmBaseStaticdataAssetCommonAssetIdentifier';
+import { CdmProductTemplateMetafieldsReferenceWithMetaPayout } from './CdmProductTemplateMetafieldsReferenceWithMetaPayout';
+import { CdmLegaldocumentationCommonContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonContractualSupplementTypeEnum';
+import { CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum';
+import { CdmLegaldocumentationMasterUnderlierSubstitutionProvision } from './CdmLegaldocumentationMasterUnderlierSubstitutionProvision';
+import { CdmProductAssetSpreadSchedule } from './CdmProductAssetSpreadSchedule';
+import { CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum } from './CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum';
+import { CdmProductCommonSettlementComputedAmount } from './CdmProductCommonSettlementComputedAmount';
+import { CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum } from './CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum';
+import { CdmProductTemplateCalendarSpread } from './CdmProductTemplateCalendarSpread';
+import { CdmProductAssetAssetDeliveryProfileBlock } from './CdmProductAssetAssetDeliveryProfileBlock';
+import { CdmProductCommonScheduleResetRelativeToEnum } from './CdmProductCommonScheduleResetRelativeToEnum';
+import { CdmProductCommonSettlementCashSettlementMethodEnum } from './CdmProductCommonSettlementCashSettlementMethodEnum';
+import { CdmProductAssetDividendDateReferenceEnum } from './CdmProductAssetDividendDateReferenceEnum';
+import { CdmEventCommonHaircutIndicatorEnum } from './CdmEventCommonHaircutIndicatorEnum';
+import { CdmRegulationTerm } from './CdmRegulationTerm';
+import { CdmEventPositionContractBase } from './CdmEventPositionContractBase';
+import { CdmLegaldocumentationMasterFxAdditionalTerms } from './CdmLegaldocumentationMasterFxAdditionalTerms';
+import { CdmBaseDatetimePeriodExtendedEnum } from './CdmBaseDatetimePeriodExtendedEnum';
+import { CdmProductTemplateTradeLot } from './CdmProductTemplateTradeLot';
+import { CdmBaseStaticdataPartyAddress } from './CdmBaseStaticdataPartyAddress';
+import { CdmProductAssetSettledEntityMatrixSourceEnum } from './CdmProductAssetSettledEntityMatrixSourceEnum';
+import { CdmProductCollateralEligibleCollateralSpecificationInstruction } from './CdmProductCollateralEligibleCollateralSpecificationInstruction';
+import { CdmLegaldocumentationMasterRepresentations } from './CdmLegaldocumentationMasterRepresentations';
+import { CdmObservableAssetPremiumExpression } from './CdmObservableAssetPremiumExpression';
+import { CdmRegulationNm } from './CdmRegulationNm';
+import { CdmBaseMathNonNegativeQuantity } from './CdmBaseMathNonNegativeQuantity';
+import { CdmProductTemplateAveragingInOutEnum } from './CdmProductTemplateAveragingInOutEnum';
+import { CdmProductTemplatePartialExercise } from './CdmProductTemplatePartialExercise';
+import { CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum } from './CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum';
+import { CdmProductCollateralIssuerAgencyRating } from './CdmProductCollateralIssuerAgencyRating';
+import { CdmProductCommonScheduleFxLinkedNotionalSchedule } from './CdmProductCommonScheduleFxLinkedNotionalSchedule';
+import { CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum } from './CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum';
+import { CdmBaseStaticdataAssetCommonListedDerivative } from './CdmBaseStaticdataAssetCommonListedDerivative';
+import { CdmProductCommonSettlementTransferSettlementEnum } from './CdmProductCommonSettlementTransferSettlementEnum';
+import { CdmProductAssetNegativeInterestRateTreatmentEnum } from './CdmProductAssetNegativeInterestRateTreatmentEnum';
+import { CdmProductCollateralCounterpartyOwnIssuePermitted } from './CdmProductCollateralCounterpartyOwnIssuePermitted';
+import { CdmEventPositionInventory } from './CdmEventPositionInventory';
+import { CdmObservableEventGracePeriodExtension } from './CdmObservableEventGracePeriodExtension';
+import { CdmLegaldocumentationCommonAgreementName } from './CdmLegaldocumentationCommonAgreementName';
+import { CdmProductAssetReferenceObligation } from './CdmProductAssetReferenceObligation';
+import { CdmEventWorkflowWorkflowStatusEnum } from './CdmEventWorkflowWorkflowStatusEnum';
+import { CdmMarginScheduleStandardizedScheduleProductClassEnum } from './CdmMarginScheduleStandardizedScheduleProductClassEnum';
+import { CdmProductCollateralIndependentAmount } from './CdmProductCollateralIndependentAmount';
+import { CdmProductCommonScheduleCalculationPeriod } from './CdmProductCommonScheduleCalculationPeriod';
+import { CdmProductTemplateBarrier } from './CdmProductTemplateBarrier';
+import { CdmBaseMathRounding } from './CdmBaseMathRounding';
+import { CdmRegulationSellr } from './CdmRegulationSellr';
+import { CdmObservableAssetInformationProviderEnum } from './CdmObservableAssetInformationProviderEnum';
+import { CdmBaseStaticdataAssetCommonLoan } from './CdmBaseStaticdataAssetCommonLoan';
+import { CdmObservableAssetCalculatedrateFloatingRateCalculationParameters } from './CdmObservableAssetCalculatedrateFloatingRateCalculationParameters';
+import { CdmProductCollateralListingExchange } from './CdmProductCollateralListingExchange';
+import { CdmObservableAssetPerformanceValuationDates } from './CdmObservableAssetPerformanceValuationDates';
+import { CdmEventCommonReset } from './CdmEventCommonReset';
+import { CdmBaseStaticdataPartyAncillaryRoleEnum } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
+import { CdmEventCommonExerciseEvent } from './CdmEventCommonExerciseEvent';
+import { CdmEventCommonMetafieldsReferenceWithMetaTrade } from './CdmEventCommonMetafieldsReferenceWithMetaTrade';
+import { CdmEventCommonExposure } from './CdmEventCommonExposure';
+import { CdmProductTemplateMandatoryEarlyTermination } from './CdmProductTemplateMandatoryEarlyTermination';
+import { CdmObservableEventObservation } from './CdmObservableEventObservation';
+import { CdmBaseStaticdataAssetCommonCreditRiskEnum } from './CdmBaseStaticdataAssetCommonCreditRiskEnum';
+import { CdmEventCommonRegMarginTypeEnum } from './CdmEventCommonRegMarginTypeEnum';
+import { CdmProductTemplateAssetPayout } from './CdmProductTemplateAssetPayout';
+import { CdmProductTemplateSchedulePeriod } from './CdmProductTemplateSchedulePeriod';
+import { CdmProductCommonSettlementPhysicalSettlementPeriod } from './CdmProductCommonSettlementPhysicalSettlementPeriod';
+import { CdmEventCommonExecutionInstruction } from './CdmEventCommonExecutionInstruction';
+import { CdmBaseStaticdataIdentifierLocationIdentifier } from './CdmBaseStaticdataIdentifierLocationIdentifier';
+import { CdmEventCommonCorporateAction } from './CdmEventCommonCorporateAction';
 import { CdmMarginScheduleStandardizedScheduleAssetClassEnum } from './CdmMarginScheduleStandardizedScheduleAssetClassEnum';
+import { CdmBaseDatetimeAdjustableOrAdjustedDate } from './CdmBaseDatetimeAdjustableOrAdjustedDate';
+import { CdmProductTemplateCancelableProvisionAdjustedDates } from './CdmProductTemplateCancelableProvisionAdjustedDates';
+import { CdmEventCommonTransferStatusEnum } from './CdmEventCommonTransferStatusEnum';
+import { CdmProductCommonSettlementPCDeliverableObligationCharac } from './CdmProductCommonSettlementPCDeliverableObligationCharac';
+import { CdmBaseStaticdataAssetCommonInstrumentBase } from './CdmBaseStaticdataAssetCommonInstrumentBase';
+import { CdmEventCommonQuantityChangeInstruction } from './CdmEventCommonQuantityChangeInstruction';
+import { CdmEventCommonReturnInstruction } from './CdmEventCommonReturnInstruction';
+import { CdmProductCommonScheduleDateRelativeToPaymentDates } from './CdmProductCommonScheduleDateRelativeToPaymentDates';
+import { CdmBaseStaticdataAssetCommonDebtInterestEnum } from './CdmBaseStaticdataAssetCommonDebtInterestEnum';
+import { CdmBaseDatetimeCalculationPeriodFrequency } from './CdmBaseDatetimeCalculationPeriodFrequency';
+import { CdmBaseStaticdataPartyRelatedParty } from './CdmBaseStaticdataPartyRelatedParty';
+import { CdmObservableEventMarketDisruptionEnum } from './CdmObservableEventMarketDisruptionEnum';
+import { CdmProductTemplateEvergreenProvision } from './CdmProductTemplateEvergreenProvision';
+import { CdmObservableEventShareExtraordinaryEventEnum } from './CdmObservableEventShareExtraordinaryEventEnum';
+import { CdmLegaldocumentationCsaSecurityAgreementElections } from './CdmLegaldocumentationCsaSecurityAgreementElections';
+import { CdmLegaldocumentationCommonContractualDefinitionsEnum } from './CdmLegaldocumentationCommonContractualDefinitionsEnum';
+import { CdmProductAssetDiscountingMethod } from './CdmProductAssetDiscountingMethod';
+import { CdmBaseDatetimeAveragingSchedule } from './CdmBaseDatetimeAveragingSchedule';
+import { CdmEventWorkflowCreditLimitTypeEnum } from './CdmEventWorkflowCreditLimitTypeEnum';
+import { CdmObservableEventRestructuring } from './CdmObservableEventRestructuring';
+import { CdmEventPositionPositionStatusEnum } from './CdmEventPositionPositionStatusEnum';
+import { CdmBaseStaticdataAssetCommonTaxonomySourceEnum } from './CdmBaseStaticdataAssetCommonTaxonomySourceEnum';
+import { CdmBaseMathNumberBound } from './CdmBaseMathNumberBound';
+import { CdmLegaldocumentationCommonMatrixTermEnum } from './CdmLegaldocumentationCommonMatrixTermEnum';
+import { CdmProductAssetDividendPayoutRatio } from './CdmProductAssetDividendPayoutRatio';
+import { CdmRegulationPrsn } from './CdmRegulationPrsn';
+import { CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum';
+import { CdmObservableAssetCreditRatingAgencyEnum } from './CdmObservableAssetCreditRatingAgencyEnum';
+import { CdmRegulationBuyr } from './CdmRegulationBuyr';
+import { CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms } from './CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms';
+import { CdmEventCommonMarginCallIssuance } from './CdmEventCommonMarginCallIssuance';
+import { CdmBaseMathAveragingCalculationMethodEnum } from './CdmBaseMathAveragingCalculationMethodEnum';
+import { CdmBaseMathRoundingModeEnum } from './CdmBaseMathRoundingModeEnum';
+import { CdmEventCommonRegIMRoleEnum } from './CdmEventCommonRegIMRoleEnum';
+import { CdmEventCommonMarginCallResponseTypeEnum } from './CdmEventCommonMarginCallResponseTypeEnum';
+import { CdmLegaldocumentationCommonLegalAgreementBase } from './CdmLegaldocumentationCommonLegalAgreementBase';
+import { CdmProductAssetBoundedVariance } from './CdmProductAssetBoundedVariance';
+import { CdmProductTemplateComposite } from './CdmProductTemplateComposite';
+import { CdmBaseMathQuantitySchedule } from './CdmBaseMathQuantitySchedule';
+import { CdmProductCommonSettlementAssetFlowBase } from './CdmProductCommonSettlementAssetFlowBase';
+import { CdmProductCommonSettlementPaymentDetail } from './CdmProductCommonSettlementPaymentDetail';
+import { CdmBaseMathWeatherUnitEnum } from './CdmBaseMathWeatherUnitEnum';
+import { CdmBaseMathQuantity } from './CdmBaseMathQuantity';
+import { CdmBaseDatetimeCalculationFrequency } from './CdmBaseDatetimeCalculationFrequency';
+import { CdmEventCommonContractFormationInstruction } from './CdmEventCommonContractFormationInstruction';
+import { CdmObservableAssetPriceExpressionEnum } from './CdmObservableAssetPriceExpressionEnum';
+import { CdmEventWorkflowCreditLimitUtilisationPosition } from './CdmEventWorkflowCreditLimitUtilisationPosition';
+import { CdmEventPositionCounterpartyPosition } from './CdmEventPositionCounterpartyPosition';
+import { CdmBaseMathUnitType } from './CdmBaseMathUnitType';
+import { CdmProductCommonSettlementQuantityMultiplier } from './CdmProductCommonSettlementQuantityMultiplier';
+import { CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum';
+import { CdmObservableAssetCalculatedrateObservationParameters } from './CdmObservableAssetCalculatedrateObservationParameters';
+import { CdmLegaldocumentationCommonOtherAgreementTerms } from './CdmLegaldocumentationCommonOtherAgreementTerms';
+import { CdmBaseDatetimePeriodEnum } from './CdmBaseDatetimePeriodEnum';
+import { CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum';
+import { CdmEventWorkflowWorkflowStep } from './CdmEventWorkflowWorkflowStep';
+import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
+import { CdmProductCollateralAlternativeToInterestAmountEnum } from './CdmProductCollateralAlternativeToInterestAmountEnum';
+import { CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights } from './CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights';
+import { CdmBaseStaticdataIdentifierIdentifiedList } from './CdmBaseStaticdataIdentifierIdentifiedList';
+import { CdmProductTemplateExtendibleProvisionAdjustedDates } from './CdmProductTemplateExtendibleProvisionAdjustedDates';
+import { CdmBaseStaticdataPartyReferenceBanks } from './CdmBaseStaticdataPartyReferenceBanks';
+import { CdmObservableAssetCreditNotationMismatchResolutionEnum } from './CdmObservableAssetCreditNotationMismatchResolutionEnum';
+import { CdmEventCommonBillingRecordInstruction } from './CdmEventCommonBillingRecordInstruction';
+import { CdmEventWorkflowEventTimestamp } from './CdmEventWorkflowEventTimestamp';
+import { CdmProductAssetCashflowRepresentation } from './CdmProductAssetCashflowRepresentation';
+import { CdmBaseDatetimePeriodBound } from './CdmBaseDatetimePeriodBound';
+import { CdmRegulationSwpOut } from './CdmRegulationSwpOut';
+import { CdmBaseDatetimeFieldWithMetaTimeZone } from './CdmBaseDatetimeFieldWithMetaTimeZone';
+import { CdmProductCollateralAssetMaturity } from './CdmProductCollateralAssetMaturity';
+import { CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum } from './CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum';
 import { CdmEventCommonActionEnum } from './CdmEventCommonActionEnum';
+import { CdmProductAssetFixedAmountCalculationDetails } from './CdmProductAssetFixedAmountCalculationDetails';
+import { CdmBaseDatetimeRelativeDates } from './CdmBaseDatetimeRelativeDates';
+import { CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity';
+import { CdmBaseStaticdataPartyNaturalPerson } from './CdmBaseStaticdataPartyNaturalPerson';
+import { CdmBaseStaticdataAssetCommonEquityTypeEnum } from './CdmBaseStaticdataAssetCommonEquityTypeEnum';
+import { CdmProductTemplatePortfolioReturnTerms } from './CdmProductTemplatePortfolioReturnTerms';
+import { CdmProductTemplateOptionExerciseStyleEnum } from './CdmProductTemplateOptionExerciseStyleEnum';
 import { CdmProductTemplateMetafieldsReferenceWithMetaOptionPayout } from './CdmProductTemplateMetafieldsReferenceWithMetaOptionPayout';
 import { CdmProductAssetAssetDeliveryProfile } from './CdmProductAssetAssetDeliveryProfile';
-import { CdmEventWorkflowWorkflowStepApproval } from './CdmEventWorkflowWorkflowStepApproval';
-import { CdmProductAssetSettledEntityMatrix } from './CdmProductAssetSettledEntityMatrix';
-import { CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum } from './CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum';
-import { CdmLegaldocumentationMasterEquityMasterConfirmation } from './CdmLegaldocumentationMasterEquityMasterConfirmation';
-import { CdmObservableAssetPerformanceValuationDates } from './CdmObservableAssetPerformanceValuationDates';
-import { CdmObservableAssetFroFloatingRateIndexCategoryEnum } from './CdmObservableAssetFroFloatingRateIndexCategoryEnum';
-import { CdmProductTemplateMultipleExercise } from './CdmProductTemplateMultipleExercise';
-import { CdmProductAssetSpreadCalculationMethodEnum } from './CdmProductAssetSpreadCalculationMethodEnum';
-import { CdmBaseStaticdataAssetCommonInstrumentBase } from './CdmBaseStaticdataAssetCommonInstrumentBase';
-import { CdmBaseStaticdataAssetCommonDebtClassEnum } from './CdmBaseStaticdataAssetCommonDebtClassEnum';
-import { CdmRegulationQty } from './CdmRegulationQty';
-import { CdmObservableAssetValuationMethodEnum } from './CdmObservableAssetValuationMethodEnum';
-import { CdmProductCommonSchedulePayRelativeToEnum } from './CdmProductCommonSchedulePayRelativeToEnum';
-import { CdmLegaldocumentationCommonLegalAgreementTypeEnum } from './CdmLegaldocumentationCommonLegalAgreementTypeEnum';
-import { CdmBaseStaticdataAssetCommonDigitalAsset } from './CdmBaseStaticdataAssetCommonDigitalAsset';
-import { CdmObservableEventFeaturePayment } from './CdmObservableEventFeaturePayment';
-import { CdmBaseDatetimeDaycountDayCountFractionEnum } from './CdmBaseDatetimeDaycountDayCountFractionEnum';
-import { CdmProductCommonSettlementCashSettlementTerms } from './CdmProductCommonSettlementCashSettlementTerms';
-import { CdmBaseMathRoundingDirectionEnum } from './CdmBaseMathRoundingDirectionEnum';
-import { CdmObservableAssetCalculatedrateInflationCalculationStyleEnum } from './CdmObservableAssetCalculatedrateInflationCalculationStyleEnum';
-import { CdmProductAssetFieldWithMetaIndexAnnexSourceEnum } from './CdmProductAssetFieldWithMetaIndexAnnexSourceEnum';
-import { CdmEventCommonCounterpartyPositionBusinessEvent } from './CdmEventCommonCounterpartyPositionBusinessEvent';
-import { CdmProductAssetFloatingAmountProvisions } from './CdmProductAssetFloatingAmountProvisions';
-import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
-import { CdmBaseStaticdataAssetCommonCommodityProductDefinition } from './CdmBaseStaticdataAssetCommonCommodityProductDefinition';
-import { CdmBaseStaticdataPartyNaturalPerson } from './CdmBaseStaticdataPartyNaturalPerson';
-import { CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum } from './CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum';
-import { CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum } from './CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum';
-import { CdmBaseStaticdataAssetCommonIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonIssuerTypeEnum';
-import { CdmRegulationIndx } from './CdmRegulationIndx';
-import { CdmEventCommonMarginCallResponseAction } from './CdmEventCommonMarginCallResponseAction';
-import { CdmBaseDatetimeRollConventionEnum } from './CdmBaseDatetimeRollConventionEnum';
-import { CdmObservableAssetFxRate } from './CdmObservableAssetFxRate';
-import { CdmObservableAssetCashCollateralValuationMethod } from './CdmObservableAssetCashCollateralValuationMethod';
-import { CdmObservableEventRestructuringEnum } from './CdmObservableEventRestructuringEnum';
-import { CdmProductTemplateDividendTerms } from './CdmProductTemplateDividendTerms';
-import { CdmProductCollateralCollateralInterestCalculationParameters } from './CdmProductCollateralCollateralInterestCalculationParameters';
-import { CdmObservableAssetPartyDeterminationEnum } from './CdmObservableAssetPartyDeterminationEnum';
-import { CdmObservableAssetQuotationRateTypeEnum } from './CdmObservableAssetQuotationRateTypeEnum';
-import { CdmLegaldocumentationCommonMatrixTypeEnum } from './CdmLegaldocumentationCommonMatrixTypeEnum';
-import { CdmObservableAssetFieldWithMetaCreditNotation } from './CdmObservableAssetFieldWithMetaCreditNotation';
-import { CdmBaseStaticdataPartyAncillaryParty } from './CdmBaseStaticdataPartyAncillaryParty';
-import { CdmBaseDatetimeCommodityBusinessCalendarEnum } from './CdmBaseDatetimeCommodityBusinessCalendarEnum';
-import { CdmLegaldocumentationCommonLengthUnitEnum } from './CdmLegaldocumentationCommonLengthUnitEnum';
-import { CdmObservableAssetCashPriceTypeEnum } from './CdmObservableAssetCashPriceTypeEnum';
-import { CdmProductCollateralDomesticCurrencyIssued } from './CdmProductCollateralDomesticCurrencyIssued';
-import { CdmBaseStaticdataAssetCommonCollateralTaxonomy } from './CdmBaseStaticdataAssetCommonCollateralTaxonomy';
-import { CdmEventCommonBillingRecordInstruction } from './CdmEventCommonBillingRecordInstruction';
-import { CdmProductTemplateReturnTerms } from './CdmProductTemplateReturnTerms';
-import { CdmProductTemplateAsian } from './CdmProductTemplateAsian';
-import { CdmBaseStaticdataAssetCommonCommodity } from './CdmBaseStaticdataAssetCommonCommodity';
-import { CdmProductCommonSettlementScheduledTransferEnum } from './CdmProductCommonSettlementScheduledTransferEnum';
-import { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum';
-import { CdmEventPositionPositionStatusEnum } from './CdmEventPositionPositionStatusEnum';
-import { CdmProductTemplateAssetPayoutTradeTypeEnum } from './CdmProductTemplateAssetPayoutTradeTypeEnum';
-import { CdmObservableAssetObservable } from './CdmObservableAssetObservable';
-import { CdmEventPositionPosition } from './CdmEventPositionPosition';
-import { CdmBaseStaticdataAssetCommonFundProductTypeEnum } from './CdmBaseStaticdataAssetCommonFundProductTypeEnum';
-import { CdmRegulationSchmeNm } from './CdmRegulationSchmeNm';
-import { CdmProductAssetReferenceInformation } from './CdmProductAssetReferenceInformation';
-import { CdmProductAssetAdditionalFixedPayments } from './CdmProductAssetAdditionalFixedPayments';
-import { CdmEventCommonExecutionTypeEnum } from './CdmEventCommonExecutionTypeEnum';
-import { CdmBaseMathNumberRange } from './CdmBaseMathNumberRange';
-import { CdmBaseDatetimeDayOfWeekEnum } from './CdmBaseDatetimeDayOfWeekEnum';
+import { CdmObservableAssetFieldWithMetaInterpolationMethodEnum } from './CdmObservableAssetFieldWithMetaInterpolationMethodEnum';
 import { CdmBaseDatetimeCustomisableOffset } from './CdmBaseDatetimeCustomisableOffset';
-import { CdmProductTemplateExerciseFeeSchedule } from './CdmProductTemplateExerciseFeeSchedule';
-import { CdmProductAssetCompoundingMethodEnum } from './CdmProductAssetCompoundingMethodEnum';
-import { CdmProductAssetAssetDeliveryPeriods } from './CdmProductAssetAssetDeliveryPeriods';
-import { CdmBaseStaticdataPartyAddress } from './CdmBaseStaticdataPartyAddress';
-import { CdmProductCollateralIssuerAgencyRating } from './CdmProductCollateralIssuerAgencyRating';
-import { CdmProductAssetDividendAmountTypeEnum } from './CdmProductAssetDividendAmountTypeEnum';
-import { CdmLegaldocumentationCommonOtherAgreement } from './CdmLegaldocumentationCommonOtherAgreement';
-import { CdmEventCommonReturnInstruction } from './CdmEventCommonReturnInstruction';
-import { CdmProductCommonScheduleCalculationPeriodDates } from './CdmProductCommonScheduleCalculationPeriodDates';
-import { CdmObservableAssetFxSpotRateSource } from './CdmObservableAssetFxSpotRateSource';
-import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount';
-import { CdmBaseMathMoneyBound } from './CdmBaseMathMoneyBound';
-import { CdmProductTemplatePassThroughItem } from './CdmProductTemplatePassThroughItem';
-import { CdmProductAssetCorrelationReturnTerms } from './CdmProductAssetCorrelationReturnTerms';
-import { CdmProductTemplateEvergreenProvision } from './CdmProductTemplateEvergreenProvision';
-import { CdmEventCommonClearingInstruction } from './CdmEventCommonClearingInstruction';
-import { CdmBaseDatetimeRoundingFrequencyEnum } from './CdmBaseDatetimeRoundingFrequencyEnum';
-import { CdmProductCommonSettlementCashflow } from './CdmProductCommonSettlementCashflow';
-import { CdmProductCollateralCollateralInterestNotification } from './CdmProductCollateralCollateralInterestNotification';
-import { CdmProductTemplateExerciseFee } from './CdmProductTemplateExerciseFee';
-import { CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum';
-import { CdmObservableEventCreditEvents } from './CdmObservableEventCreditEvents';
-import { CdmProductCollateralAlternativeToInterestAmountEnum } from './CdmProductCollateralAlternativeToInterestAmountEnum';
-import { CdmEventPositionInventory } from './CdmEventPositionInventory';
-import { CdmProductTemplateAssetLeg } from './CdmProductTemplateAssetLeg';
-import { CdmProductAssetDividendCurrency } from './CdmProductAssetDividendCurrency';
-import { CdmObservableAssetPriceSourceDisruption } from './CdmObservableAssetPriceSourceDisruption';
-import { CdmBaseStaticdataAssetCreditNotDomesticCurrency } from './CdmBaseStaticdataAssetCreditNotDomesticCurrency';
-import { CdmLegaldocumentationCommonAgreementTerms } from './CdmLegaldocumentationCommonAgreementTerms';
-import { CdmRegulationSellr } from './CdmRegulationSellr';
-import { CdmProductAssetLoadTypeEnum } from './CdmProductAssetLoadTypeEnum';
-import { CdmProductCommonSettlementDeliverableObligations } from './CdmProductCommonSettlementDeliverableObligations';
-import { CdmBaseDatetimeDateRange } from './CdmBaseDatetimeDateRange';
-import { CdmBaseStaticdataAssetCommonInstrument } from './CdmBaseStaticdataAssetCommonInstrument';
-import { CdmRegulationOthr } from './CdmRegulationOthr';
-import { CdmProductTemplateOptionTypeEnum } from './CdmProductTemplateOptionTypeEnum';
-import { CdmBaseMathRoundingModeEnum } from './CdmBaseMathRoundingModeEnum';
-import { CdmEventCommonTradeState } from './CdmEventCommonTradeState';
-import { CdmProductCommonSettlementPaymentDiscounting } from './CdmProductCommonSettlementPaymentDiscounting';
-import { CdmLegaldocumentationCommonMatrixTermEnum } from './CdmLegaldocumentationCommonMatrixTermEnum';
-import { CdmBaseStaticdataPartyReferenceBanks } from './CdmBaseStaticdataPartyReferenceBanks';
-import { CdmBaseStaticdataAssetCommonTaxonomySourceEnum } from './CdmBaseStaticdataAssetCommonTaxonomySourceEnum';
-import { CdmBaseDatetimeFrequency } from './CdmBaseDatetimeFrequency';
-import { CdmBaseDatetimePeriodBound } from './CdmBaseDatetimePeriodBound';
-import { CdmProductTemplateOptionFeature } from './CdmProductTemplateOptionFeature';
-import { CdmObservableAssetDividendApplicability } from './CdmObservableAssetDividendApplicability';
-import { CdmProductAssetEquityUnderlierProvisions } from './CdmProductAssetEquityUnderlierProvisions';
-import { CdmLegaldocumentationMasterUnderlierSubstitutionProvision } from './CdmLegaldocumentationMasterUnderlierSubstitutionProvision';
-import { CdmBaseStaticdataAssetCommonProductIdentifier } from './CdmBaseStaticdataAssetCommonProductIdentifier';
-import { CdmProductAssetDividendPayoutRatio } from './CdmProductAssetDividendPayoutRatio';
-import { CdmRegulationFinInstrm } from './CdmRegulationFinInstrm';
-import { CdmObservableEventCreditEventNotice } from './CdmObservableEventCreditEventNotice';
-import { CdmProductCommonSettlementPaymentRule } from './CdmProductCommonSettlementPaymentRule';
+import { CdmProductAssetSpreadScheduleTypeEnum } from './CdmProductAssetSpreadScheduleTypeEnum';
+import { CdmObservableAssetEquityIndex } from './CdmObservableAssetEquityIndex';
+import { CdmProductAssetDiscountingTypeEnum } from './CdmProductAssetDiscountingTypeEnum';
+import { CdmProductCommonSettlementValuationDate } from './CdmProductCommonSettlementValuationDate';
+import { CdmProductCollateralCollateralInterestHandlingParameters } from './CdmProductCollateralCollateralInterestHandlingParameters';
+import { CdmProductAssetForeignExchange } from './CdmProductAssetForeignExchange';
+import { CdmObservableAssetCashPrice } from './CdmObservableAssetCashPrice';
+import { CdmEventCommonMarginCallBase } from './CdmEventCommonMarginCallBase';
 import { CdmProductCollateralCollateralProvisions } from './CdmProductCollateralCollateralProvisions';
-import { CdmBaseDatetimeFieldWithMetaTimeZone } from './CdmBaseDatetimeFieldWithMetaTimeZone';
-import { CdmEventCommonCollateralPosition } from './CdmEventCommonCollateralPosition';
-import { CdmProductCollateralCollateralMarginTypeEnum } from './CdmProductCollateralCollateralMarginTypeEnum';
-import { CdmProductAssetInterestShortFall } from './CdmProductAssetInterestShortFall';
+import { CdmEventCommonCounterpartyPositionState } from './CdmEventCommonCounterpartyPositionState';
+import { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate';
+import { CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum } from './CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum';
+import { CdmObservableAssetCreditNotationBoundaryEnum } from './CdmObservableAssetCreditNotationBoundaryEnum';
+import { CdmEventCommonBusinessEvent } from './CdmEventCommonBusinessEvent';
+import { CdmObservableAssetPriceComposite } from './CdmObservableAssetPriceComposite';
+import { CdmBaseStaticdataAssetCommonInstrumentTypeEnum } from './CdmBaseStaticdataAssetCommonInstrumentTypeEnum';
+import { CdmBaseStaticdataAssetCommonTaxonomyValue } from './CdmBaseStaticdataAssetCommonTaxonomyValue';
+import { CdmProductTemplateMandatoryEarlyTerminationAdjustedDates } from './CdmProductTemplateMandatoryEarlyTerminationAdjustedDates';
+import { CdmBaseStaticdataAssetCommonProductIdTypeEnum } from './CdmBaseStaticdataAssetCommonProductIdTypeEnum';
+import { CdmObservableAssetMetafieldsReferenceWithMetaMoney } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
+import { CdmBaseDatetimeDayTypeEnum } from './CdmBaseDatetimeDayTypeEnum';
+import { CdmEventCommonTransferInstruction } from './CdmEventCommonTransferInstruction';
+import { CdmProductAssetDividendAmountTypeEnum } from './CdmProductAssetDividendAmountTypeEnum';
+import { CdmProductAssetDividendPeriod } from './CdmProductAssetDividendPeriod';
+import { CdmEventCommonMetafieldsReferenceWithMetaTradeState } from './CdmEventCommonMetafieldsReferenceWithMetaTradeState';
+import { CdmProductCollateralEligibilityQuery } from './CdmProductCollateralEligibilityQuery';
+import { CdmProductCollateralCollateralCriteriaBase } from './CdmProductCollateralCollateralCriteriaBase';
+import { CdmObservableAssetCreditNotation } from './CdmObservableAssetCreditNotation';
+import { CdmBaseMathCompareOp } from './CdmBaseMathCompareOp';
+import { CdmProductAssetFieldWithMetaIndexAnnexSourceEnum } from './CdmProductAssetFieldWithMetaIndexAnnexSourceEnum';
+import { CdmProductCommonSettlementPrincipalPaymentSchedule } from './CdmProductCommonSettlementPrincipalPaymentSchedule';
+import { CdmEventCommonIndexTransitionInstruction } from './CdmEventCommonIndexTransitionInstruction';
+import { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum';
+import { CdmObservableEventTriggerTypeEnum } from './CdmObservableEventTriggerTypeEnum';
+import { CdmBaseDatetimeFieldWithMetaBusinessCenterEnum } from './CdmBaseDatetimeFieldWithMetaBusinessCenterEnum';
+import { CdmBaseDatetimeTimeUnitEnum } from './CdmBaseDatetimeTimeUnitEnum';
+import { CdmProductAssetReturnTypeEnum } from './CdmProductAssetReturnTypeEnum';
+import { CdmProductAssetCorrelationReturnTerms } from './CdmProductAssetCorrelationReturnTerms';
+import { CdmObservableAssetCreditIndex } from './CdmObservableAssetCreditIndex';
+import { CdmObservableEventPubliclyAvailableInformation } from './CdmObservableEventPubliclyAvailableInformation';
+import { CdmProductCommonScheduleParametricDates } from './CdmProductCommonScheduleParametricDates';
+import { CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum';
+import { CdmEventCommonValuationInstruction } from './CdmEventCommonValuationInstruction';
+import { CdmEventWorkflowLimitApplicableExtended } from './CdmEventWorkflowLimitApplicableExtended';
+import { CdmEventWorkflowLimitLevelEnum } from './CdmEventWorkflowLimitLevelEnum';
+import { CdmProductCollateralCollateralInterestParameters } from './CdmProductCollateralCollateralInterestParameters';
+import { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates';
+import { CdmEventPositionSecurityLocate } from './CdmEventPositionSecurityLocate';
+import { CdmObservableCommonDeterminationMethodEnum } from './CdmObservableCommonDeterminationMethodEnum';
+import { CdmLegaldocumentationCommonGoverningLawEnum } from './CdmLegaldocumentationCommonGoverningLawEnum';
+import { CdmObservableAssetPriceSchedule } from './CdmObservableAssetPriceSchedule';
+import { CdmObservableAssetCreditNotations } from './CdmObservableAssetCreditNotations';
+import { CdmObservableAssetCalculationAgent } from './CdmObservableAssetCalculationAgent';
+import { CdmProductTemplateMarginTypeEnum } from './CdmProductTemplateMarginTypeEnum';
+import { CdmRegulationUndrlygInstrm } from './CdmRegulationUndrlygInstrm';
+import { CdmObservableAssetValuationSource } from './CdmObservableAssetValuationSource';
+import { CdmProductCollateralAssetCountryOfOrigin } from './CdmProductCollateralAssetCountryOfOrigin';
+import { CdmEventCommonTermsChangeInstruction } from './CdmEventCommonTermsChangeInstruction';
+import { CdmProductCommonSettlementCashSettlementTerms } from './CdmProductCommonSettlementCashSettlementTerms';
+import { CdmBaseStaticdataAssetRatesFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFloatingRateIndexEnum';
+import { CdmBaseMathNonNegativeQuantitySchedule } from './CdmBaseMathNonNegativeQuantitySchedule';
+import { CdmRegulationFinInstrmRptgTxRpt } from './CdmRegulationFinInstrmRptgTxRpt';
+import { CdmObservableAssetQuotedCurrencyPair } from './CdmObservableAssetQuotedCurrencyPair';
+import { CdmEventPositionMetafieldsReferenceWithMetaPortfolioState } from './CdmEventPositionMetafieldsReferenceWithMetaPortfolioState';
+import { CdmObservableEventFieldWithMetaMarketDisruptionEnum } from './CdmObservableEventFieldWithMetaMarketDisruptionEnum';
+import { CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment } from './CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment';
+import { CdmObservableAssetCalculatedrateOffsetCalculation } from './CdmObservableAssetCalculatedrateOffsetCalculation';
+import { CdmProductTemplateTerminationProvision } from './CdmProductTemplateTerminationProvision';
+import { CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum } from './CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum';
+import { CdmProductAssetFloatingrateFloatingRateSettingDetails } from './CdmProductAssetFloatingrateFloatingRateSettingDetails';
+import { CdmProductCommonSettlementSettlementBase } from './CdmProductCommonSettlementSettlementBase';
+import { CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum';
+import { CdmObservableAssetValuationPostponement } from './CdmObservableAssetValuationPostponement';
+import { CdmObservableAssetFallbackReferencePrice } from './CdmObservableAssetFallbackReferencePrice';
+import { CdmObservableAssetIndex } from './CdmObservableAssetIndex';
 import { CdmBaseDatetimeBusinessCenterEnum } from './CdmBaseDatetimeBusinessCenterEnum';
-import { CdmEventCommonBillingRecord } from './CdmEventCommonBillingRecord';
-import { CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum';
-import { CdmObservableEventMarketDisruptionEnum } from './CdmObservableEventMarketDisruptionEnum';
-import { CdmObservableAssetPremiumTypeEnum } from './CdmObservableAssetPremiumTypeEnum';
-import { CdmLegaldocumentationMasterTransactionAdditionalTerms } from './CdmLegaldocumentationMasterTransactionAdditionalTerms';
-import { CdmProductAssetBoundedCorrelation } from './CdmProductAssetBoundedCorrelation';
+import { CdmProductCommonNotionalAdjustmentEnum } from './CdmProductCommonNotionalAdjustmentEnum';
+import { CdmEventCommonPositionEventIntentEnum } from './CdmEventCommonPositionEventIntentEnum';
+import { CdmBaseDatetimeRoundingFrequencyEnum } from './CdmBaseDatetimeRoundingFrequencyEnum';
+import { CdmObservableEventMetafieldsReferenceWithMetaCreditEvents } from './CdmObservableEventMetafieldsReferenceWithMetaCreditEvents';
+import { CdmProductAssetInflationRateSpecification } from './CdmProductAssetInflationRateSpecification';
+import { CdmBaseMathSchedule } from './CdmBaseMathSchedule';
+import { CdmLegaldocumentationCsaCollateralTransferAgreementElections } from './CdmLegaldocumentationCsaCollateralTransferAgreementElections';
+import { CdmEventCommonCallTypeEnum } from './CdmEventCommonCallTypeEnum';
+import { CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates } from './CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates';
+import { CdmProductCommonSettlementLoanParticipation } from './CdmProductCommonSettlementLoanParticipation';
+import { CdmProductAssetEquityUnderlierProvisions } from './CdmProductAssetEquityUnderlierProvisions';
+import { CdmBaseMathCapacityUnitEnum } from './CdmBaseMathCapacityUnitEnum';
+import { CdmBaseDatetimePeriod } from './CdmBaseDatetimePeriod';
+import { CdmEventCommonMarginCallResponse } from './CdmEventCommonMarginCallResponse';
+import { CdmBaseDatetimeDaycountDayCountFractionEnum } from './CdmBaseDatetimeDaycountDayCountFractionEnum';
+import { CdmEventCommonContractDetails } from './CdmEventCommonContractDetails';
+import { CdmObservableAssetValuationMethod } from './CdmObservableAssetValuationMethod';
+import { CdmBaseStaticdataAssetCommonCash } from './CdmBaseStaticdataAssetCommonCash';
+import { CdmBaseMathFinancialUnitEnum } from './CdmBaseMathFinancialUnitEnum';
+import { CdmProductCollateralSubstitutionProvisions } from './CdmProductCollateralSubstitutionProvisions';
+import { CdmRegulationId } from './CdmRegulationId';
+import { CdmLegaldocumentationMasterEquityMasterConfirmation } from './CdmLegaldocumentationMasterEquityMasterConfirmation';
+import { CdmProductTemplateExerciseProcedure } from './CdmProductTemplateExerciseProcedure';
+import { CdmProductTemplateAveragingCalculation } from './CdmProductTemplateAveragingCalculation';
+import { CdmBaseDatetimeAdjustedRelativeDateOffset } from './CdmBaseDatetimeAdjustedRelativeDateOffset';
+import { CdmEventCommonStockSplitInstruction } from './CdmEventCommonStockSplitInstruction';
+import { CdmEventCommonAffirmationStatusEnum } from './CdmEventCommonAffirmationStatusEnum';
+import { CdmProductCommonSettlementCashflowType } from './CdmProductCommonSettlementCashflowType';
+import { CdmBaseStaticdataAssetCommonCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonCurrencyCodeEnum';
+import { CdmProductTemplateCalculationSchedule } from './CdmProductTemplateCalculationSchedule';
+import { CdmBaseDatetimeOffset } from './CdmBaseDatetimeOffset';
+import { CdmProductAssetFloatingAmountProvisions } from './CdmProductAssetFloatingAmountProvisions';
+import { CdmProductCommonScheduleStubPeriod } from './CdmProductCommonScheduleStubPeriod';
+import { CdmBaseMathMeasure } from './CdmBaseMathMeasure';
+import { CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum';
+import { CdmEventCommonInstruction } from './CdmEventCommonInstruction';
+import { CdmProductCommonScheduleAveragingPeriod } from './CdmProductCommonScheduleAveragingPeriod';
+import { CdmObservableAssetPartyDeterminationEnum } from './CdmObservableAssetPartyDeterminationEnum';
+import { CdmEventCommonCorporateActionTypeEnum } from './CdmEventCommonCorporateActionTypeEnum';
+import { CdmBaseStaticdataAssetCommonProductIdentifier } from './CdmBaseStaticdataAssetCommonProductIdentifier';
+import { CdmBaseStaticdataAssetCreditSpecifiedCurrency } from './CdmBaseStaticdataAssetCreditSpecifiedCurrency';
+import { CdmEventCommonTrade } from './CdmEventCommonTrade';
+import { CdmProductTemplateOptionalEarlyTerminationAdjustedDates } from './CdmProductTemplateOptionalEarlyTerminationAdjustedDates';
+import { CdmProductCommonScheduleResetFrequency } from './CdmProductCommonScheduleResetFrequency';
+import { CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType';
+import { CdmBaseDatetimeAdjustableDate } from './CdmBaseDatetimeAdjustableDate';
+import { CdmBaseStaticdataAssetCommonCollateralIssuerType } from './CdmBaseStaticdataAssetCommonCollateralIssuerType';
 import { CdmObservableAssetPrice } from './CdmObservableAssetPrice';
-import { CdmLegaldocumentationCommonLegalAgreement } from './CdmLegaldocumentationCommonLegalAgreement';
-import { CdmProductTemplateExtendibleProvision } from './CdmProductTemplateExtendibleProvision';
-import { CdmProductTemplateTradeLot } from './CdmProductTemplateTradeLot';
-import { CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum } from './CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum';
+import { CdmLegaldocumentationMasterMasterAgreementSchedule } from './CdmLegaldocumentationMasterMasterAgreementSchedule';
+import { CdmBaseStaticdataAssetCreditNotDomesticCurrency } from './CdmBaseStaticdataAssetCreditNotDomesticCurrency';
+import { CdmBaseDatetimePeriodTimeEnum } from './CdmBaseDatetimePeriodTimeEnum';
+import { CdmBaseDatetimePeriodRange } from './CdmBaseDatetimePeriodRange';
+import { CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum } from './CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum';
+import { CdmProductCommonSettlementPercentageRule } from './CdmProductCommonSettlementPercentageRule';
+import { CdmProductTemplateCancellationEvent } from './CdmProductTemplateCancellationEvent';
+import { CdmProductCommonSettlementFxFixingDate } from './CdmProductCommonSettlementFxFixingDate';
+import { CdmProductCollateralDomesticCurrencyIssued } from './CdmProductCollateralDomesticCurrencyIssued';
+import { CdmObservableEventTriggerEvent } from './CdmObservableEventTriggerEvent';
+import { CdmProductAssetInterestShortfallCapEnum } from './CdmProductAssetInterestShortfallCapEnum';
+import { CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum';
+import { CdmEventCommonValuationSourceEnum } from './CdmEventCommonValuationSourceEnum';
+import { CdmProductCommonScheduleAveragingObservationList } from './CdmProductCommonScheduleAveragingObservationList';
+import { CdmObservableAssetFxSettlementRateSource } from './CdmObservableAssetFxSettlementRateSource';
+import { CdmBaseDatetimeCompoundingTypeEnum } from './CdmBaseDatetimeCompoundingTypeEnum';
+import { CdmEventCommonSecurityLendingInvoice } from './CdmEventCommonSecurityLendingInvoice';
+import { CdmProductAssetVolatilityCapFloor } from './CdmProductAssetVolatilityCapFloor';
+import { CdmObservableAssetOtherIndex } from './CdmObservableAssetOtherIndex';
+import { CdmEventWorkflowWorkflowState } from './CdmEventWorkflowWorkflowState';
+import { CdmEventCommonBillingSummaryInstruction } from './CdmEventCommonBillingSummaryInstruction';
+import { CdmLegaldocumentationCommonClosedStateEnum } from './CdmLegaldocumentationCommonClosedStateEnum';
+import { CdmRegulationDerivInstrmAttrbts } from './CdmRegulationDerivInstrmAttrbts';
+import { CdmProductCommonScheduleLag } from './CdmProductCommonScheduleLag';
+import { CdmBaseDatetimeBusinessCenters } from './CdmBaseDatetimeBusinessCenters';
+import { CdmBaseDatetimeDateTimeList } from './CdmBaseDatetimeDateTimeList';
+import { CdmBaseStaticdataPartyPartyRoleEnum } from './CdmBaseStaticdataPartyPartyRoleEnum';
+import { CdmEventCommonAssetTransferTypeEnum } from './CdmEventCommonAssetTransferTypeEnum';
+import { CdmProductTemplateStrike } from './CdmProductTemplateStrike';
+import { CdmObservableAssetCreditRatingDebt } from './CdmObservableAssetCreditRatingDebt';
+import { ComRosettaModelLibMetaReference } from './ComRosettaModelLibMetaReference';
+import { CdmBaseStaticdataPartyBuyerSeller } from './CdmBaseStaticdataPartyBuyerSeller';
+import { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum';
+import { CdmObservableAssetCalculatedrateInflationCalculationStyleEnum } from './CdmObservableAssetCalculatedrateInflationCalculationStyleEnum';
+import { CdmObservableAssetCreditRatingCreditWatchEnum } from './CdmObservableAssetCreditRatingCreditWatchEnum';
+import { CdmRegulationSngl } from './CdmRegulationSngl';
+import { CdmBaseStaticdataPartyAccount } from './CdmBaseStaticdataPartyAccount';
+import { CdmEventCommonState } from './CdmEventCommonState';
+import { CdmEventCommonPerformanceTransferTypeEnum } from './CdmEventCommonPerformanceTransferTypeEnum';
+import { CdmEventCommonBillingSummary } from './CdmEventCommonBillingSummary';
+import { CdmLegaldocumentationCommonClosedState } from './CdmLegaldocumentationCommonClosedState';
+import { CdmLegaldocumentationCommonLegalAgreementPublisherEnum } from './CdmLegaldocumentationCommonLegalAgreementPublisherEnum';
+import { CdmProductCollateralAnyCriteria } from './CdmProductCollateralAnyCriteria';
+import { CdmProductCollateralCollateralCriteria } from './CdmProductCollateralCollateralCriteria';
+import { CdmProductCollateralAllCriteria } from './CdmProductCollateralAllCriteria';
+import { CdmProductCollateralNegativeCriteria } from './CdmProductCollateralNegativeCriteria';
+import { CdmProductTemplateFixedPricePayout } from './CdmProductTemplateFixedPricePayout';
+import { CdmProductCommonScheduleCalculationPeriodBase } from './CdmProductCommonScheduleCalculationPeriodBase';
+import { CdmProductTemplateQuanto } from './CdmProductTemplateQuanto';
+import { CdmProductCollateralDeliveryAmount } from './CdmProductCollateralDeliveryAmount';
+import { CdmEventWorkflowPartyCustomisedWorkflow } from './CdmEventWorkflowPartyCustomisedWorkflow';
+import { CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType';
+import { CdmEventCommonCounterpartyPositionBusinessEvent } from './CdmEventCommonCounterpartyPositionBusinessEvent';
+import { CdmProductCollateralRatingPriorityResolutionEnum } from './CdmProductCollateralRatingPriorityResolutionEnum';
+import { CdmProductAssetDividendCompositionEnum } from './CdmProductAssetDividendCompositionEnum';
+import { CdmLegaldocumentationMasterClause } from './CdmLegaldocumentationMasterClause';
+import { CdmProductCollateralCollateralTypeEnum } from './CdmProductCollateralCollateralTypeEnum';
+import { CdmBaseDatetimeBusinessDateRange } from './CdmBaseDatetimeBusinessDateRange';
+import { CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum';
+import { CdmProductCollateralReturnAmount } from './CdmProductCollateralReturnAmount';
+import { CdmProductTemplateFxFeature } from './CdmProductTemplateFxFeature';
+import { CdmBaseStaticdataPartyPartyRole } from './CdmBaseStaticdataPartyPartyRole';
+import { CdmEventCommonValuationTypeEnum } from './CdmEventCommonValuationTypeEnum';
+import { CdmObservableEventObservationIdentifier } from './CdmObservableEventObservationIdentifier';
+import { CdmObservableAssetPremiumTypeEnum } from './CdmObservableAssetPremiumTypeEnum';
+import { CdmProductTemplateRepoDurationEnum } from './CdmProductTemplateRepoDurationEnum';
+import { ComRosettaModelFieldWithMetaString } from './ComRosettaModelFieldWithMetaString';
+import { CdmObservableEventFailureToPay } from './CdmObservableEventFailureToPay';
+import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount';
+import { CdmProductAssetCreditSeniorityEnum } from './CdmProductAssetCreditSeniorityEnum';
+import { CdmBaseStaticdataPartyPersonIdentifier } from './CdmBaseStaticdataPartyPersonIdentifier';
+import { CdmEventCommonTransfer } from './CdmEventCommonTransfer';
+import { CdmBaseStaticdataIdentifierAssignedIdentifier } from './CdmBaseStaticdataIdentifierAssignedIdentifier';
+import { CdmProductTemplateExercisePeriod } from './CdmProductTemplateExercisePeriod';
+import { CdmProductTemplateCallingPartyEnum } from './CdmProductTemplateCallingPartyEnum';
+import { CdmRegulationFinInstrm } from './CdmRegulationFinInstrm';
+import { CdmProductCommonScheduleStubPeriodTypeEnum } from './CdmProductCommonScheduleStubPeriodTypeEnum';
+import { CdmProductCollateralAgencyRatingCriteria } from './CdmProductCollateralAgencyRatingCriteria';
+import { CdmBaseStaticdataPartyEntityTypeEnum } from './CdmBaseStaticdataPartyEntityTypeEnum';
+import { CdmEventCommonTradeState } from './CdmEventCommonTradeState';
+import { CdmProductTemplateAveragingStrikeFeature } from './CdmProductTemplateAveragingStrikeFeature';
+import { CdmObservableAssetMultipleValuationDates } from './CdmObservableAssetMultipleValuationDates';
+import { CdmBaseStaticdataAssetCommonPriceSource } from './CdmBaseStaticdataAssetCommonPriceSource';
+import { CdmEventWorkflowCustomisedWorkflow } from './CdmEventWorkflowCustomisedWorkflow';
+import { CdmProductAssetCompoundingMethodEnum } from './CdmProductAssetCompoundingMethodEnum';
+import { CdmProductTemplateOptionFeature } from './CdmProductTemplateOptionFeature';
+import { CdmRegulationOrdrTrnsmssn } from './CdmRegulationOrdrTrnsmssn';
+import { CdmProductCommonScheduleFxLinkedNotionalAmount } from './CdmProductCommonScheduleFxLinkedNotionalAmount';
+import { CdmProductTemplateExerciseTerms } from './CdmProductTemplateExerciseTerms';
+import { CdmEventCommonCalculateTransferInstruction } from './CdmEventCommonCalculateTransferInstruction';
+import { CdmProductCommonScheduleAmountSchedule } from './CdmProductCommonScheduleAmountSchedule';
+import { CdmProductTemplateDividendTerms } from './CdmProductTemplateDividendTerms';
+import { CdmProductAssetFloatingrateFloatingRateProcessingDetails } from './CdmProductAssetFloatingrateFloatingRateProcessingDetails';
+import { CdmRegulationDocument } from './CdmRegulationDocument';
+import { CdmProductAssetDividendReturnTerms } from './CdmProductAssetDividendReturnTerms';
+import { CdmProductAssetPriceReturnTerms } from './CdmProductAssetPriceReturnTerms';
+import { CdmBaseDatetimePeriodicDates } from './CdmBaseDatetimePeriodicDates';
+import { CdmLegaldocumentationMasterTransactionAdditionalTerms } from './CdmLegaldocumentationMasterTransactionAdditionalTerms';
+import { CdmProductAssetFloatingrateFloatingAmountCalculationDetails } from './CdmProductAssetFloatingrateFloatingAmountCalculationDetails';
+import { CdmProductTemplateExerciseNotice } from './CdmProductTemplateExerciseNotice';
+import { CdmBaseStaticdataAssetCommonAssetBase } from './CdmBaseStaticdataAssetCommonAssetBase';
+import { CdmBaseStaticdataPartyPartyIdentifierTypeEnum } from './CdmBaseStaticdataPartyPartyIdentifierTypeEnum';
+import { CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum';
+import { CdmProductCommonScheduleObservationDate } from './CdmProductCommonScheduleObservationDate';
+import { CdmObservableAssetFieldWithMetaInformationProviderEnum } from './CdmObservableAssetFieldWithMetaInformationProviderEnum';
+import { CdmProductAssetReferencePool } from './CdmProductAssetReferencePool';
+import { CdmEventCommonCollateralStatusEnum } from './CdmEventCommonCollateralStatusEnum';
+import { CdmProductCommonSettlementDeliverableObligations } from './CdmProductCommonSettlementDeliverableObligations';
+import { CdmProductCollateralCollateralInterestHandlingEnum } from './CdmProductCollateralCollateralInterestHandlingEnum';
+import { CdmProductTemplateCancelableProvision } from './CdmProductTemplateCancelableProvision';
+import { CdmLegaldocumentationMasterMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterMasterAgreementTypeEnum';
+import { CdmRegulationExctgPrsn } from './CdmRegulationExctgPrsn';
+import { CdmObservableAssetSwapCurveValuation } from './CdmObservableAssetSwapCurveValuation';
+import { CdmObservableAssetValuationDates } from './CdmObservableAssetValuationDates';
+import { CdmBaseDatetimeBusinessDayConventionEnum } from './CdmBaseDatetimeBusinessDayConventionEnum';
+import { CdmEventWorkflowFieldWithMetaLimitLevelEnum } from './CdmEventWorkflowFieldWithMetaLimitLevelEnum';
+import { CdmRegulationAcctOwnr } from './CdmRegulationAcctOwnr';
+import { CdmObservableAssetFroFloatingRateIndexCategoryEnum } from './CdmObservableAssetFroFloatingRateIndexCategoryEnum';
+import { CdmObservableEventFieldWithMetaRestructuringEnum } from './CdmObservableEventFieldWithMetaRestructuringEnum';
+import { CdmBaseStaticdataAssetCommonCommodity } from './CdmBaseStaticdataAssetCommonCommodity';
+import { CdmObservableAssetQuotationStyleEnum } from './CdmObservableAssetQuotationStyleEnum';
+import { CdmProductCommonSettlementSettlementProvision } from './CdmProductCommonSettlementSettlementProvision';
+import { CdmObservableAssetObservable } from './CdmObservableAssetObservable';
+import { CdmProductCommonScheduleInitialFixingDate } from './CdmProductCommonScheduleInitialFixingDate';
 
-export { CdmProductCollateralConcentrationLimitTypeEnum } from './CdmProductCollateralConcentrationLimitTypeEnum';
-export { CdmProductTemplateExerciseNoticeGiverEnum } from './CdmProductTemplateExerciseNoticeGiverEnum';
-export { CdmProductAssetCalculationScheduleDeliveryPeriods } from './CdmProductAssetCalculationScheduleDeliveryPeriods';
-export { CdmBaseStaticdataPartyPersonIdentifier } from './CdmBaseStaticdataPartyPersonIdentifier';
-export { CdmEventCommonAssetTransferTypeEnum } from './CdmEventCommonAssetTransferTypeEnum';
-export { CdmEventCommonReset } from './CdmEventCommonReset';
-export { ComRosettaModelLibMetaKey } from './ComRosettaModelLibMetaKey';
-export { CdmLegaldocumentationCommonGoverningLawEnum } from './CdmLegaldocumentationCommonGoverningLawEnum';
-export { CdmEventWorkflowEventTimestamp } from './CdmEventWorkflowEventTimestamp';
-export { CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum';
-export { CdmBaseDatetimeRelativeDates } from './CdmBaseDatetimeRelativeDates';
-export { CdmEventWorkflowLimitLevelEnum } from './CdmEventWorkflowLimitLevelEnum';
-export { CdmEventCommonCorporateActionTypeEnum } from './CdmEventCommonCorporateActionTypeEnum';
-export { CdmLegaldocumentationMasterDeterminationRolesAndTerms } from './CdmLegaldocumentationMasterDeterminationRolesAndTerms';
-export { CdmRegulationFinInstrmGnlAttrbts } from './CdmRegulationFinInstrmGnlAttrbts';
-export { CdmProductAssetFloatingRateSpecification } from './CdmProductAssetFloatingRateSpecification';
-export { CdmLegaldocumentationCommonOtherAgreementTerms } from './CdmLegaldocumentationCommonOtherAgreementTerms';
-export { CdmProductAssetVolatilityCapFloor } from './CdmProductAssetVolatilityCapFloor';
-export { CdmObservableAssetFieldWithMetaQuotedCurrencyPair } from './CdmObservableAssetFieldWithMetaQuotedCurrencyPair';
-export { CdmLegaldocumentationCommonResource } from './CdmLegaldocumentationCommonResource';
-export { CdmObservableAssetFieldWithMetaSettlementRateOptionEnum } from './CdmObservableAssetFieldWithMetaSettlementRateOptionEnum';
-export { CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum } from './CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum';
-export { CdmProductAssetBasketReferenceInformation } from './CdmProductAssetBasketReferenceInformation';
-export { CdmProductCommonSettlementPaymentDetail } from './CdmProductCommonSettlementPaymentDetail';
-export { CdmMarginScheduleStandardizedScheduleTradeInfo } from './CdmMarginScheduleStandardizedScheduleTradeInfo';
-export { CdmProductTemplateAveragingStrikeFeature } from './CdmProductTemplateAveragingStrikeFeature';
-export { CdmProductCommonScheduleObservationDate } from './CdmProductCommonScheduleObservationDate';
-export { CdmBaseStaticdataAssetCommonTaxonomyValue } from './CdmBaseStaticdataAssetCommonTaxonomyValue';
-export { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates';
-export { CdmObservableAssetInflationIndex } from './CdmObservableAssetInflationIndex';
-export { CdmBaseStaticdataAssetCommonCommodityReferenceFramework } from './CdmBaseStaticdataAssetCommonCommodityReferenceFramework';
-export { CdmRegulationAcctOwnr } from './CdmRegulationAcctOwnr';
-export { CdmProductTemplateManualExercise } from './CdmProductTemplateManualExercise';
-export { CdmProductAssetDividendPeriod } from './CdmProductAssetDividendPeriod';
-export { ComRosettaModelMetafieldsReferenceWithMetaString } from './ComRosettaModelMetafieldsReferenceWithMetaString';
-export { CdmBaseStaticdataPartyAccount } from './CdmBaseStaticdataPartyAccount';
-export { CdmEventPositionAvailableInventoryTypeEnum } from './CdmEventPositionAvailableInventoryTypeEnum';
-export { CdmProductCollateralContactElection } from './CdmProductCollateralContactElection';
-export { CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity';
-export { CdmRegulationSwpIn } from './CdmRegulationSwpIn';
-export { CdmBaseDatetimeAdjustableOrRelativeDate } from './CdmBaseDatetimeAdjustableOrRelativeDate';
-export { CdmBaseMathQuantity } from './CdmBaseMathQuantity';
-export { CdmBaseStaticdataAssetCommonProductTaxonomy } from './CdmBaseStaticdataAssetCommonProductTaxonomy';
-export { CdmBaseDatetimeRelativeDateOffset } from './CdmBaseDatetimeRelativeDateOffset';
-export { CdmProductAssetRateSpecification } from './CdmProductAssetRateSpecification';
-export { CdmBaseDatetimeFieldWithMetaBusinessCenterEnum } from './CdmBaseDatetimeFieldWithMetaBusinessCenterEnum';
-export { CdmProductCommonSettlementQuantityMultiplier } from './CdmProductCommonSettlementQuantityMultiplier';
-export { CdmObservableAssetCreditNotation } from './CdmObservableAssetCreditNotation';
-export { CdmObservableAssetCalculatedrateObservationShiftCalculation } from './CdmObservableAssetCalculatedrateObservationShiftCalculation';
-export { CdmRegulationBuyr } from './CdmRegulationBuyr';
-export { CdmProductCommonSettlementFixedPrice } from './CdmProductCommonSettlementFixedPrice';
-export { CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum } from './CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum';
-export { CdmLegaldocumentationCommonContractualTermsSupplement } from './CdmLegaldocumentationCommonContractualTermsSupplement';
-export { CdmBaseMathNonNegativeQuantitySchedule } from './CdmBaseMathNonNegativeQuantitySchedule';
-export { CdmEventCommonCorporateAction } from './CdmEventCommonCorporateAction';
-export { CdmBaseStaticdataAssetCommonDeliveryDateParameters } from './CdmBaseStaticdataAssetCommonDeliveryDateParameters';
-export { CdmProductTemplatePartialExercise } from './CdmProductTemplatePartialExercise';
-export { CdmProductAssetVolatilityReturnTerms } from './CdmProductAssetVolatilityReturnTerms';
-export { CdmProductCommonScheduleObservationDates } from './CdmProductCommonScheduleObservationDates';
-export { CdmObservableAssetReferenceSwapCurve } from './CdmObservableAssetReferenceSwapCurve';
-export { CdmBaseStaticdataIdentifierFieldWithMetaIdentifier } from './CdmBaseStaticdataIdentifierFieldWithMetaIdentifier';
-export { CdmRegulationId } from './CdmRegulationId';
-export { CdmProductCommonSettlementValuationDate } from './CdmProductCommonSettlementValuationDate';
-export { CdmBaseStaticdataAssetCommonDebtEconomics } from './CdmBaseStaticdataAssetCommonDebtEconomics';
-export { CdmLegaldocumentationCommonClosedState } from './CdmLegaldocumentationCommonClosedState';
-export { CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum } from './CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum';
-export { CdmBaseStaticdataPartyPayerReceiverEnum } from './CdmBaseStaticdataPartyPayerReceiverEnum';
-export { CdmBaseStaticdataAssetCommonCollateralTaxonomyValue } from './CdmBaseStaticdataAssetCommonCollateralTaxonomyValue';
-export { CdmObservableAssetSettlementRateOption } from './CdmObservableAssetSettlementRateOption';
-export { CdmProductAssetDiscountingMethod } from './CdmProductAssetDiscountingMethod';
-export { CdmProductCollateralEligibleCollateralSpecification } from './CdmProductCollateralEligibleCollateralSpecification';
-export { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments';
-export { CdmObservableAssetPriceQuantity } from './CdmObservableAssetPriceQuantity';
-export { CdmEventPositionContractBase } from './CdmEventPositionContractBase';
-export { CdmLegaldocumentationMasterMasterAgreementClause } from './CdmLegaldocumentationMasterMasterAgreementClause';
-export { CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum';
-export { CdmProductTemplateOptionalEarlyTerminationAdjustedDates } from './CdmProductTemplateOptionalEarlyTerminationAdjustedDates';
-export { CdmEventCommonValuationSourceEnum } from './CdmEventCommonValuationSourceEnum';
-export { CdmProductCollateralIndependentAmount } from './CdmProductCollateralIndependentAmount';
-export { CdmProductCommonScheduleRateSchedule } from './CdmProductCommonScheduleRateSchedule';
-export { CdmProductAssetVarianceCapFloor } from './CdmProductAssetVarianceCapFloor';
-export { CdmBaseMathNonNegativeStep } from './CdmBaseMathNonNegativeStep';
-export { CdmObservableAssetCreditNotationBoundaryEnum } from './CdmObservableAssetCreditNotationBoundaryEnum';
-export { CdmBaseStaticdataAssetCommonAssetIdTypeEnum } from './CdmBaseStaticdataAssetCommonAssetIdTypeEnum';
-export { CdmObservableAssetMultipleValuationDates } from './CdmObservableAssetMultipleValuationDates';
-export { CdmProductCommonScheduleResetDates } from './CdmProductCommonScheduleResetDates';
-export { CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum';
-export { CdmBaseStaticdataPartyNaturalPersonRole } from './CdmBaseStaticdataPartyNaturalPersonRole';
-export { CdmBaseDatetimeAdjustableDates } from './CdmBaseDatetimeAdjustableDates';
-export { CdmProductAssetFixedAmountCalculationDetails } from './CdmProductAssetFixedAmountCalculationDetails';
-export { CdmProductCommonScheduleCalculationPeriodBase } from './CdmProductCommonScheduleCalculationPeriodBase';
-export { CdmProductTemplateMandatoryEarlyTermination } from './CdmProductTemplateMandatoryEarlyTermination';
-export { CdmProductCommonScheduleObservationTerms } from './CdmProductCommonScheduleObservationTerms';
-export { CdmLegaldocumentationCommonCreditSupportProviderTermsEnum } from './CdmLegaldocumentationCommonCreditSupportProviderTermsEnum';
-export { CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair } from './CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair';
-export { CdmBaseStaticdataPartyCounterparty } from './CdmBaseStaticdataPartyCounterparty';
-export { CdmObservableCommonDeterminationMethodEnum } from './CdmObservableCommonDeterminationMethodEnum';
-export { CdmProductTemplateStrikeSpread } from './CdmProductTemplateStrikeSpread';
-export { CdmProductCommonSettlementPhysicalSettlementPeriod } from './CdmProductCommonSettlementPhysicalSettlementPeriod';
-export { CdmProductCollateralAssetAgencyRating } from './CdmProductCollateralAssetAgencyRating';
-export { CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum';
-export { CdmProductTemplateExpirationTimeTypeEnum } from './CdmProductTemplateExpirationTimeTypeEnum';
-export { CdmLegaldocumentationMasterClause } from './CdmLegaldocumentationMasterClause';
-export { CdmProductAssetFixedRateSpecification } from './CdmProductAssetFixedRateSpecification';
-export { CdmObservableAssetValuationSource } from './CdmObservableAssetValuationSource';
-export { CdmBaseStaticdataPartyRelatedParty } from './CdmBaseStaticdataPartyRelatedParty';
-export { CdmProductTemplateAssetPayout } from './CdmProductTemplateAssetPayout';
-export { CdmProductTemplatePassThrough } from './CdmProductTemplatePassThrough';
-export { CdmEventCommonObservationEvent } from './CdmEventCommonObservationEvent';
-export { CdmBaseDatetimeTimeUnitEnum } from './CdmBaseDatetimeTimeUnitEnum';
-export { CdmObservableAssetInformationSource } from './CdmObservableAssetInformationSource';
-export { CdmBaseStaticdataAssetCommonMaturityTypeEnum } from './CdmBaseStaticdataAssetCommonMaturityTypeEnum';
-export { CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum';
-export { CdmProductCommonSettlementPrincipalPaymentSchedule } from './CdmProductCommonSettlementPrincipalPaymentSchedule';
-export { CdmBaseMathDatedValue } from './CdmBaseMathDatedValue';
-export { CdmBaseDatetimeAveragingSchedule } from './CdmBaseDatetimeAveragingSchedule';
-export { CdmProductAssetDividendDateReference } from './CdmProductAssetDividendDateReference';
-export { CdmBaseStaticdataAssetCommonAssetClassEnum } from './CdmBaseStaticdataAssetCommonAssetClassEnum';
-export { CdmEventCommonIndexTransitionInstruction } from './CdmEventCommonIndexTransitionInstruction';
-export { CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum } from './CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum';
-export { CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum } from './CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum';
-export { CdmProductAssetValuationTerms } from './CdmProductAssetValuationTerms';
-export { CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum } from './CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum';
-export { CdmProductTemplateEarlyTerminationEvent } from './CdmProductTemplateEarlyTerminationEvent';
-export { CdmProductAssetFloatingrateFloatingRateSettingDetails } from './CdmProductAssetFloatingrateFloatingRateSettingDetails';
-export { CdmProductCommonScheduleDateRelativeToCalculationPeriodDates } from './CdmProductCommonScheduleDateRelativeToCalculationPeriodDates';
-export { CdmEventPositionCounterpartyPosition } from './CdmEventPositionCounterpartyPosition';
-export { CdmObservableAssetValuationPostponement } from './CdmObservableAssetValuationPostponement';
-export { CdmBaseDatetimeAdjustableDate } from './CdmBaseDatetimeAdjustableDate';
-export { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters';
-export { CdmProductAssetReturnTypeEnum } from './CdmProductAssetReturnTypeEnum';
-export { CdmEventCommonObservationInstruction } from './CdmEventCommonObservationInstruction';
-export { CdmProductCollateralCollateral } from './CdmProductCollateralCollateral';
-export { CdmProductCommonScheduleStubPeriod } from './CdmProductCommonScheduleStubPeriod';
-export { CdmEventCommonRegIMRoleEnum } from './CdmEventCommonRegIMRoleEnum';
-export { CdmProductCommonSettlementPercentageRule } from './CdmProductCommonSettlementPercentageRule';
-export { CdmProductTemplateFxFeature } from './CdmProductTemplateFxFeature';
-export { CdmBaseStaticdataAssetCommonCreditRiskEnum } from './CdmBaseStaticdataAssetCommonCreditRiskEnum';
-export { CdmProductTemplateCalculationSchedule } from './CdmProductTemplateCalculationSchedule';
-export { CdmBaseMathAveragingCalculationMethodEnum } from './CdmBaseMathAveragingCalculationMethodEnum';
-export { CdmBaseStaticdataPartyBusinessUnit } from './CdmBaseStaticdataPartyBusinessUnit';
-export { CdmEventCommonRecordAmountTypeEnum } from './CdmEventCommonRecordAmountTypeEnum';
-export { CdmProductCollateralEligibleCollateralCriteria } from './CdmProductCollateralEligibleCollateralCriteria';
-export { CdmObservableAssetFieldWithMetaInformationProviderEnum } from './CdmObservableAssetFieldWithMetaInformationProviderEnum';
-export { CdmEventCommonSplitInstruction } from './CdmEventCommonSplitInstruction';
-export { CdmEventCommonExerciseInstruction } from './CdmEventCommonExerciseInstruction';
-export { CdmEventCommonPrimitiveInstruction } from './CdmEventCommonPrimitiveInstruction';
-export { CdmProductTemplateExtendibleProvisionAdjustedDates } from './CdmProductTemplateExtendibleProvisionAdjustedDates';
-export { CdmProductCommonSettlementSettlementProvision } from './CdmProductCommonSettlementSettlementProvision';
-export { CdmBaseStaticdataPartyAncillaryEntity } from './CdmBaseStaticdataPartyAncillaryEntity';
-export { CdmProductTemplateMetafieldsReferenceWithMetaPayout } from './CdmProductTemplateMetafieldsReferenceWithMetaPayout';
-export { CdmEventWorkflowLimitApplicable } from './CdmEventWorkflowLimitApplicable';
-export { CdmLegaldocumentationCommonTerminationCurrencyConditionEnum } from './CdmLegaldocumentationCommonTerminationCurrencyConditionEnum';
-export { CdmLegaldocumentationMasterEquityAdditionalTerms } from './CdmLegaldocumentationMasterEquityAdditionalTerms';
-export { CdmProductCommonSettlementCashSettlementMethodEnum } from './CdmProductCommonSettlementCashSettlementMethodEnum';
-export { CdmProductCollateralAverageTradingVolume } from './CdmProductCollateralAverageTradingVolume';
-export { CdmEventCommonQuantityChangeInstruction } from './CdmEventCommonQuantityChangeInstruction';
-export { CdmProductTemplateCalendarSpread } from './CdmProductTemplateCalendarSpread';
-export { CdmProductTemplateCancelableProvisionAdjustedDates } from './CdmProductTemplateCancelableProvisionAdjustedDates';
-export { CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum';
-export { CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum } from './CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum';
-export { CdmRegulationNew } from './CdmRegulationNew';
-export { CdmRegulationTx } from './CdmRegulationTx';
-export { CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms } from './CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms';
-export { CdmRegulationExctgPrsn } from './CdmRegulationExctgPrsn';
-export { CdmObservableAssetQuotationStyleEnum } from './CdmObservableAssetQuotationStyleEnum';
-export { CdmProductCommonScheduleObservationSchedule } from './CdmProductCommonScheduleObservationSchedule';
-export { CdmObservableAssetCalculationAgent } from './CdmObservableAssetCalculationAgent';
-export { CdmEventCommonCounterpartyPositionState } from './CdmEventCommonCounterpartyPositionState';
-export { CdmLegaldocumentationCommonContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonContractualSupplementTypeEnum';
-export { CdmBaseStaticdataPartyPartyReferencePayerReceiver } from './CdmBaseStaticdataPartyPartyReferencePayerReceiver';
-export { CdmProductCollateralSubstitutionProvisions } from './CdmProductCollateralSubstitutionProvisions';
-export { CdmObservableEventGracePeriodExtension } from './CdmObservableEventGracePeriodExtension';
-export { CdmProductCommonScheduleCalculationPeriod } from './CdmProductCommonScheduleCalculationPeriod';
-export { CdmObservableAssetIndexBase } from './CdmObservableAssetIndexBase';
-export { CdmEventWorkflowCreditLimitUtilisationPosition } from './CdmEventWorkflowCreditLimitUtilisationPosition';
-export { CdmObservableAssetMakeWholeAmount } from './CdmObservableAssetMakeWholeAmount';
-export { CdmEventCommonPerformanceTransferTypeEnum } from './CdmEventCommonPerformanceTransferTypeEnum';
-export { CdmEventCommonTradeIdentifier } from './CdmEventCommonTradeIdentifier';
-export { CdmBaseMathCompareOp } from './CdmBaseMathCompareOp';
-export { CdmBaseDatetimeCompoundingTypeEnum } from './CdmBaseDatetimeCompoundingTypeEnum';
-export { CdmObservableAssetPriceExpressionEnum } from './CdmObservableAssetPriceExpressionEnum';
-export { CdmObservableAssetMultipleDebtTypes } from './CdmObservableAssetMultipleDebtTypes';
-export { CdmBaseDatetimeOffset } from './CdmBaseDatetimeOffset';
-export { CdmObservableEventTriggerEvent } from './CdmObservableEventTriggerEvent';
-export { CdmObservableAssetMoney } from './CdmObservableAssetMoney';
-export { CdmBaseDatetimePeriod } from './CdmBaseDatetimePeriod';
-export { CdmProductTemplateMandatoryEarlyTerminationAdjustedDates } from './CdmProductTemplateMandatoryEarlyTerminationAdjustedDates';
-export { CdmProductCollateralCollateralInterestParameters } from './CdmProductCollateralCollateralInterestParameters';
-export { CdmObservableCommonTimeTypeEnum } from './CdmObservableCommonTimeTypeEnum';
-export { CdmProductCollateralCollateralValuationTreatment } from './CdmProductCollateralCollateralValuationTreatment';
-export { CdmLegaldocumentationCommonContractualDefinitionsEnum } from './CdmLegaldocumentationCommonContractualDefinitionsEnum';
-export { CdmBaseDatetimeDayTypeEnum } from './CdmBaseDatetimeDayTypeEnum';
-export { CdmProductCollateralIssuerCountryOfOrigin } from './CdmProductCollateralIssuerCountryOfOrigin';
-export { CdmProductCommonScheduleLag } from './CdmProductCommonScheduleLag';
-export { CdmObservableAssetFloatingRateIndex } from './CdmObservableAssetFloatingRateIndex';
-export { CdmProductCommonSettlementCommodityPriceReturnTerms } from './CdmProductCommonSettlementCommodityPriceReturnTerms';
-export { CdmProductCommonSchedulePaymentCalculationPeriod } from './CdmProductCommonSchedulePaymentCalculationPeriod';
-export { CdmBaseDatetimePeriodTimeEnum } from './CdmBaseDatetimePeriodTimeEnum';
-export { CdmEventPositionAvailableInventory } from './CdmEventPositionAvailableInventory';
-export { CdmEventCommonCollateralPortfolio } from './CdmEventCommonCollateralPortfolio';
-export { CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018 } from './CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018';
-export { CdmBaseStaticdataAssetCommonInstrumentTypeEnum } from './CdmBaseStaticdataAssetCommonInstrumentTypeEnum';
-export { CdmBaseMathQuantifierEnum } from './CdmBaseMathQuantifierEnum';
-export { CdmRegulationDerivInstrmAttrbts } from './CdmRegulationDerivInstrmAttrbts';
-export { CdmProductCollateralInterestAmountApplication } from './CdmProductCollateralInterestAmountApplication';
-export { CdmObservableAssetTransactedPrice } from './CdmObservableAssetTransactedPrice';
-export { CdmObservableAssetValuationDates } from './CdmObservableAssetValuationDates';
-export { CdmBaseStaticdataPartyParty } from './CdmBaseStaticdataPartyParty';
-export { CdmObservableAssetEquityIndex } from './CdmObservableAssetEquityIndex';
-export { CdmObservableAssetCsaTypeEnum } from './CdmObservableAssetCsaTypeEnum';
-export { CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum } from './CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum';
-export { CdmBaseStaticdataAssetCommonEquityTypeEnum } from './CdmBaseStaticdataAssetCommonEquityTypeEnum';
-export { CdmEventCommonValuationTypeEnum } from './CdmEventCommonValuationTypeEnum';
-export { CdmLegaldocumentationMasterMasterConfirmationBase } from './CdmLegaldocumentationMasterMasterConfirmationBase';
-export { CdmBaseMathQuantitySchedule } from './CdmBaseMathQuantitySchedule';
-export { CdmEventCommonHaircutIndicatorEnum } from './CdmEventCommonHaircutIndicatorEnum';
-export { CdmObservableAssetCalculatedrateObservationParameters } from './CdmObservableAssetCalculatedrateObservationParameters';
-export { CdmObservableAssetFieldWithMetaObservable } from './CdmObservableAssetFieldWithMetaObservable';
-export { CdmProductTemplateExtensionEvent } from './CdmProductTemplateExtensionEvent';
-export { CdmProductTemplateCancellationEvent } from './CdmProductTemplateCancellationEvent';
-export { CdmEventCommonPartyChangeInstruction } from './CdmEventCommonPartyChangeInstruction';
-export { CdmObservableEventShareExtraordinaryEventEnum } from './CdmObservableEventShareExtraordinaryEventEnum';
-export { CdmBaseDatetimeDateList } from './CdmBaseDatetimeDateList';
-export { CdmBaseDatetimeDateTimeList } from './CdmBaseDatetimeDateTimeList';
-export { CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep } from './CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep';
-export { CdmProductTemplateStrikeSchedule } from './CdmProductTemplateStrikeSchedule';
-export { CdmObservableAssetCommodityReferencePriceEnum } from './CdmObservableAssetCommodityReferencePriceEnum';
-export { CdmBaseStaticdataPartyLegalEntity } from './CdmBaseStaticdataPartyLegalEntity';
-export { CdmProductCommonScheduleStubPeriodTypeEnum } from './CdmProductCommonScheduleStubPeriodTypeEnum';
-export { CdmProductAssetBoundedVariance } from './CdmProductAssetBoundedVariance';
-export { CdmProductCommonSettlementSettlementTypeEnum } from './CdmProductCommonSettlementSettlementTypeEnum';
-export { CdmBaseStaticdataAssetCommonAssetBase } from './CdmBaseStaticdataAssetCommonAssetBase';
-export { CdmProductCommonSchedulePaymentDateSchedule } from './CdmProductCommonSchedulePaymentDateSchedule';
-export { CdmProductCommonSettlementAssetFlowBase } from './CdmProductCommonSettlementAssetFlowBase';
-export { CdmBaseStaticdataAssetCommonListedDerivative } from './CdmBaseStaticdataAssetCommonListedDerivative';
-export { CdmProductTemplateOptionalEarlyTermination } from './CdmProductTemplateOptionalEarlyTermination';
-export { CdmEventCommonMarginCallActionEnum } from './CdmEventCommonMarginCallActionEnum';
-export { CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent } from './CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent';
-export { CdmMarginScheduleStandardizedSchedule } from './CdmMarginScheduleStandardizedSchedule';
-export { CdmProductAssetAssetDeliveryProfileBlock } from './CdmProductAssetAssetDeliveryProfileBlock';
-export { CdmMarginScheduleStandardizedScheduleInitialMargin } from './CdmMarginScheduleStandardizedScheduleInitialMargin';
-export { CdmBaseStaticdataIdentifierLocationIdentifier } from './CdmBaseStaticdataIdentifierLocationIdentifier';
-export { CdmEventCommonScheduledTransfer } from './CdmEventCommonScheduledTransfer';
-export { CdmProductCommonSettlementShapingProvision } from './CdmProductCommonSettlementShapingProvision';
-export { CdmEventCommonMarginCallResponse } from './CdmEventCommonMarginCallResponse';
-export { CdmLegaldocumentationCommonResourceTypeEnum } from './CdmLegaldocumentationCommonResourceTypeEnum';
-export { CdmBaseStaticdataPartyReferenceBank } from './CdmBaseStaticdataPartyReferenceBank';
-export { CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights } from './CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights';
-export { CdmBaseStaticdataPartyAccountTypeEnum } from './CdmBaseStaticdataPartyAccountTypeEnum';
-export { CdmBaseStaticdataPartyCounterpartyRoleEnum } from './CdmBaseStaticdataPartyCounterpartyRoleEnum';
-export { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate';
-export { CdmBaseStaticdataPartyAncillaryRoleEnum } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
-export { CdmProductTemplateFixedPricePayout } from './CdmProductTemplateFixedPricePayout';
-export { CdmEventCommonContractDetails } from './CdmEventCommonContractDetails';
-export { CdmBaseMathSchedule } from './CdmBaseMathSchedule';
-export { CdmObservableAssetCreditNotations } from './CdmObservableAssetCreditNotations';
-export { CdmEventWorkflowCreditLimitUtilisation } from './CdmEventWorkflowCreditLimitUtilisation';
-export { CdmProductAssetReferencePoolItem } from './CdmProductAssetReferencePoolItem';
-export { CdmProductCommonSettlementPrincipalPayments } from './CdmProductCommonSettlementPrincipalPayments';
-export { CdmEventPositionAggregationParameters } from './CdmEventPositionAggregationParameters';
-export { CdmProductCollateralListingSector } from './CdmProductCollateralListingSector';
-export { CdmBaseStaticdataAssetCommonDebtPrincipalEnum } from './CdmBaseStaticdataAssetCommonDebtPrincipalEnum';
-export { CdmBaseStaticdataPartyTelephoneTypeEnum } from './CdmBaseStaticdataPartyTelephoneTypeEnum';
-export { CdmProductAssetDiscountingTypeEnum } from './CdmProductAssetDiscountingTypeEnum';
-export { CdmLegaldocumentationCommonSpecifiedEntityTermsEnum } from './CdmLegaldocumentationCommonSpecifiedEntityTermsEnum';
-export { CdmBaseMathMeasureBase } from './CdmBaseMathMeasureBase';
-export { CdmProductAssetFutureValueAmount } from './CdmProductAssetFutureValueAmount';
-export { CdmRegulationTerm } from './CdmRegulationTerm';
-export { CdmObservableAssetMetafieldsReferenceWithMetaObservable } from './CdmObservableAssetMetafieldsReferenceWithMetaObservable';
-export { CdmProductCollateralCollateralInterestHandlingEnum } from './CdmProductCollateralCollateralInterestHandlingEnum';
-export { CdmProductAssetDividendReturnTerms } from './CdmProductAssetDividendReturnTerms';
-export { CdmProductCommonScheduleFxLinkedNotionalAmount } from './CdmProductCommonScheduleFxLinkedNotionalAmount';
-export { CdmEventPositionAvailableInventoryRecord } from './CdmEventPositionAvailableInventoryRecord';
-export { CdmBaseStaticdataAssetCommonPriceSource } from './CdmBaseStaticdataAssetCommonPriceSource';
-export { CdmProductCollateralMetafieldsReferenceWithMetaCollateral } from './CdmProductCollateralMetafieldsReferenceWithMetaCollateral';
-export { CdmProductTemplateCallingPartyEnum } from './CdmProductTemplateCallingPartyEnum';
-export { CdmProductCollateralConcentrationLimit } from './CdmProductCollateralConcentrationLimit';
-export { CdmLegaldocumentationMasterIndexAdjustmentEvents } from './CdmLegaldocumentationMasterIndexAdjustmentEvents';
-export { CdmProductTemplateAutomaticExercise } from './CdmProductTemplateAutomaticExercise';
-export { CdmProductTemplateMarginTypeEnum } from './CdmProductTemplateMarginTypeEnum';
-export { CdmEventCommonEventIntentEnum } from './CdmEventCommonEventIntentEnum';
-export { CdmProductTemplateTradableProduct } from './CdmProductTemplateTradableProduct';
-export { CdmObservableEventMetafieldsReferenceWithMetaCreditEvents } from './CdmObservableEventMetafieldsReferenceWithMetaCreditEvents';
-export { CdmBaseMathArithmeticOperationEnum } from './CdmBaseMathArithmeticOperationEnum';
-export { CdmObservableAssetFroFloatingRateIndexDefinition } from './CdmObservableAssetFroFloatingRateIndexDefinition';
-export { CdmEventPositionInventoryRecord } from './CdmEventPositionInventoryRecord';
-export { CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum';
-export { CdmProductCollateralEligibleCollateralSpecificationInstruction } from './CdmProductCollateralEligibleCollateralSpecificationInstruction';
-export { CdmProductTemplateAveragingInOutEnum } from './CdmProductTemplateAveragingInOutEnum';
-export { CdmBaseMathUnitType } from './CdmBaseMathUnitType';
-export { CdmObservableAssetPriceSchedule } from './CdmObservableAssetPriceSchedule';
-export { CdmEventWorkflowFieldWithMetaLimitLevelEnum } from './CdmEventWorkflowFieldWithMetaLimitLevelEnum';
-export { CdmProductCommonScheduleCalculationPeriodData } from './CdmProductCommonScheduleCalculationPeriodData';
-export { CdmObservableAssetCalculatedrateInflationCalculationMethodEnum } from './CdmObservableAssetCalculatedrateInflationCalculationMethodEnum';
-export { CdmEventCommonBillingInstruction } from './CdmEventCommonBillingInstruction';
-export { CdmProductCollateralAssetMaturity } from './CdmProductCollateralAssetMaturity';
-export { CdmProductCommonSettlementStandardSettlementStyleEnum } from './CdmProductCommonSettlementStandardSettlementStyleEnum';
-export { CdmProductAssetPriceReturnTerms } from './CdmProductAssetPriceReturnTerms';
-export { CdmProductCommonSettlementSettlementTerms } from './CdmProductCommonSettlementSettlementTerms';
-export { CdmBaseStaticdataAssetCreditObligations } from './CdmBaseStaticdataAssetCreditObligations';
-export { CdmLegaldocumentationMasterMasterAgreementClauseVariant } from './CdmLegaldocumentationMasterMasterAgreementClauseVariant';
-export { CdmObservableEventFailureToPay } from './CdmObservableEventFailureToPay';
-export { CdmProductAssetGeneralTerms } from './CdmProductAssetGeneralTerms';
-export { CdmEventPositionMetafieldsReferenceWithMetaPortfolioState } from './CdmEventPositionMetafieldsReferenceWithMetaPortfolioState';
-export { CdmProductCommonScheduleDateRelativeToValuationDates } from './CdmProductCommonScheduleDateRelativeToValuationDates';
-export { CdmEventCommonMetafieldsReferenceWithMetaTrade } from './CdmEventCommonMetafieldsReferenceWithMetaTrade';
-export { CdmBaseStaticdataAssetCommonCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonCurrencyCodeEnum';
-export { CdmRegulationSwpOut } from './CdmRegulationSwpOut';
-export { CdmProductCommonSettlementFxFixingDate } from './CdmProductCommonSettlementFxFixingDate';
-export { CdmBaseStaticdataIdentifierIdentifier } from './CdmBaseStaticdataIdentifierIdentifier';
+export { CdmObservableEventIndexEventConsequenceEnum } from './CdmObservableEventIndexEventConsequenceEnum';
 export { CdmObservableAssetSingleValuationDate } from './CdmObservableAssetSingleValuationDate';
-export { CdmObservableAssetCalculatedrateFallbackRateParameters } from './CdmObservableAssetCalculatedrateFallbackRateParameters';
-export { CdmLegaldocumentationMasterEquityCorporateEvents } from './CdmLegaldocumentationMasterEquityCorporateEvents';
-export { CdmBaseStaticdataPartyPartyRole } from './CdmBaseStaticdataPartyPartyRole';
-export { CdmProductAssetRateTreatmentEnum } from './CdmProductAssetRateTreatmentEnum';
-export { CdmObservableAssetCalculatedrateCalculationMethodEnum } from './CdmObservableAssetCalculatedrateCalculationMethodEnum';
-export { CdmProductCollateralCheckEligibilityResult } from './CdmProductCollateralCheckEligibilityResult';
-export { CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule';
-export { CdmLegaldocumentationCommonLegalAgreementBase } from './CdmLegaldocumentationCommonLegalAgreementBase';
-export { CdmBaseDatetimePeriodExtendedEnum } from './CdmBaseDatetimePeriodExtendedEnum';
-export { CdmObservableAssetCreditNotationMismatchResolutionEnum } from './CdmObservableAssetCreditNotationMismatchResolutionEnum';
-export { CdmBaseStaticdataPartyContactInformation } from './CdmBaseStaticdataPartyContactInformation';
-export { CdmBaseStaticdataAssetCommonProductIdTypeEnum } from './CdmBaseStaticdataAssetCommonProductIdTypeEnum';
-export { CdmObservableAssetFieldWithMetaPriceSchedule } from './CdmObservableAssetFieldWithMetaPriceSchedule';
-export { CdmEventWorkflowEventInstruction } from './CdmEventWorkflowEventInstruction';
-export { CdmBaseStaticdataIdentifierIdentifiedList } from './CdmBaseStaticdataIdentifierIdentifiedList';
-export { CdmProductAssetFinalPrincipalExchangeCalculationEnum } from './CdmProductAssetFinalPrincipalExchangeCalculationEnum';
-export { CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum } from './CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum';
-export { CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum';
-export { CdmObservableEventFieldWithMetaRestructuringEnum } from './CdmObservableEventFieldWithMetaRestructuringEnum';
-export { CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates';
-export { CdmObservableAssetRateObservation } from './CdmObservableAssetRateObservation';
-export { CdmBaseStaticdataAssetCommonAssetTypeEnum } from './CdmBaseStaticdataAssetCommonAssetTypeEnum';
-export { CdmBaseDatetimeAdjustableOrRelativeDates } from './CdmBaseDatetimeAdjustableOrRelativeDates';
-export { CdmEventCommonBusinessEvent } from './CdmEventCommonBusinessEvent';
-export { CdmProductAssetFloatingrateFloatingRateProcessingParameters } from './CdmProductAssetFloatingrateFloatingRateProcessingParameters';
-export { CdmEventCommonExerciseEvent } from './CdmEventCommonExerciseEvent';
-export { CdmObservableAssetQuotationSideEnum } from './CdmObservableAssetQuotationSideEnum';
-export { CdmEventCommonContractFormationInstruction } from './CdmEventCommonContractFormationInstruction';
-export { CdmLegaldocumentationMasterExtraordinaryEvents } from './CdmLegaldocumentationMasterExtraordinaryEvents';
-export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson';
-export { CdmObservableAssetFallbackReferencePrice } from './CdmObservableAssetFallbackReferencePrice';
-export { CdmProductAssetCreditDefaultPayout } from './CdmProductAssetCreditDefaultPayout';
-export { CdmLegaldocumentationCommonLegalAgreementIdentification } from './CdmLegaldocumentationCommonLegalAgreementIdentification';
-export { CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum';
-export { CdmProductCollateralDeliveryAmount } from './CdmProductCollateralDeliveryAmount';
-export { CdmBaseStaticdataAssetCommonDebtInterestEnum } from './CdmBaseStaticdataAssetCommonDebtInterestEnum';
-export { CdmRegulationInvstmtDcsnPrsn } from './CdmRegulationInvstmtDcsnPrsn';
-export { CdmProductCommonScheduleStubCalculationPeriodAmount } from './CdmProductCommonScheduleStubCalculationPeriodAmount';
-export { CdmBaseStaticdataAssetCommonDebtType } from './CdmBaseStaticdataAssetCommonDebtType';
-export { CdmLegaldocumentationCommonExecutionLocationEnum } from './CdmLegaldocumentationCommonExecutionLocationEnum';
-export { CdmEventCommonValuationInstruction } from './CdmEventCommonValuationInstruction';
+export { CdmProductCommonSettlementCommodityPriceReturnTerms } from './CdmProductCommonSettlementCommodityPriceReturnTerms';
+export { CdmLegaldocumentationCommonLegalAgreementTypeEnum } from './CdmLegaldocumentationCommonLegalAgreementTypeEnum';
+export { CdmObservableEventTrigger } from './CdmObservableEventTrigger';
+export { CdmProductCommonSchedulePaymentDateSchedule } from './CdmProductCommonSchedulePaymentDateSchedule';
+export { CdmEventPositionPosition } from './CdmEventPositionPosition';
+export { CdmEventCommonPartyChangeInstruction } from './CdmEventCommonPartyChangeInstruction';
 export { CdmProductCommonSchedulePaymentDates } from './CdmProductCommonSchedulePaymentDates';
-export { CdmBaseStaticdataAssetRatesInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesInflationRateIndexEnum';
-export { CdmProductAssetIndexAnnexSourceEnum } from './CdmProductAssetIndexAnnexSourceEnum';
-export { CdmObservableAssetFroFloatingRateIndexIdentification } from './CdmObservableAssetFroFloatingRateIndexIdentification';
-export { CdmEventPositionPortfolioState } from './CdmEventPositionPortfolioState';
-export { CdmLegaldocumentationMasterMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationTypeEnum';
-export { CdmEventCommonTransfer } from './CdmEventCommonTransfer';
-export { CdmEventWorkflowWarehouseIdentityEnum } from './CdmEventWorkflowWarehouseIdentityEnum';
-export { CdmProductAssetReferenceObligation } from './CdmProductAssetReferenceObligation';
-export { CdmBaseStaticdataPartyPartyContactInformation } from './CdmBaseStaticdataPartyPartyContactInformation';
-export { CdmObservableEventRestructuring } from './CdmObservableEventRestructuring';
-export { CdmEventCommonCreditEvent } from './CdmEventCommonCreditEvent';
-export { CdmProductCommonSettlementPrincipalPayment } from './CdmProductCommonSettlementPrincipalPayment';
-export { CdmProductAssetForeignExchange } from './CdmProductAssetForeignExchange';
-export { CdmProductAssetReferencePool } from './CdmProductAssetReferencePool';
-export { CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier } from './CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier';
-export { CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio } from './CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio';
-export { CdmProductCommonScheduleAveragingPeriod } from './CdmProductCommonScheduleAveragingPeriod';
-export { CdmBaseStaticdataAssetCommonTaxonomy } from './CdmBaseStaticdataAssetCommonTaxonomy';
-export { CdmObservableEventObservationIdentifier } from './CdmObservableEventObservationIdentifier';
-export { CdmObservableAssetForeignExchangeRateIndex } from './CdmObservableAssetForeignExchangeRateIndex';
-export { CdmObservableAssetFieldWithMetaInterestRateIndex } from './CdmObservableAssetFieldWithMetaInterestRateIndex';
-export { CdmObservableAssetFroFloatingRateIndexStyleEnum } from './CdmObservableAssetFroFloatingRateIndexStyleEnum';
-export { CdmEventCommonTermsChangeInstruction } from './CdmEventCommonTermsChangeInstruction';
-export { CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout } from './CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout';
-export { CdmObservableAssetInformationProviderEnum } from './CdmObservableAssetInformationProviderEnum';
-export { CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum';
-export { CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement } from './CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement';
-export { CdmObservableAssetPremiumExpression } from './CdmObservableAssetPremiumExpression';
-export { CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType';
-export { CdmProductTemplateTerminationProvision } from './CdmProductTemplateTerminationProvision';
-export { CdmEventWorkflowCustomisedWorkflow } from './CdmEventWorkflowCustomisedWorkflow';
-export { CdmBaseDatetimePeriodRange } from './CdmBaseDatetimePeriodRange';
-export { CdmProductAssetCreditSeniorityEnum } from './CdmProductAssetCreditSeniorityEnum';
-export { CdmObservableAssetIndex } from './CdmObservableAssetIndex';
-export { CdmObservableAssetCalculatedrateCalculationShiftMethodEnum } from './CdmObservableAssetCalculatedrateCalculationShiftMethodEnum';
-export { CdmEventCommonCollateralBalance } from './CdmEventCommonCollateralBalance';
-export { CdmProductTemplateExerciseProcedure } from './CdmProductTemplateExerciseProcedure';
-export { CdmBaseMathMeasureSchedule } from './CdmBaseMathMeasureSchedule';
-export { CdmEventCommonTransferStatusEnum } from './CdmEventCommonTransferStatusEnum';
-export { CdmObservableAssetCalculatedrateCalculatedRateObservations } from './CdmObservableAssetCalculatedrateCalculatedRateObservations';
-export { CdmProductAssetFloatingrateFloatingRateProcessingDetails } from './CdmProductAssetFloatingrateFloatingRateProcessingDetails';
-export { CdmEventCommonMarginCallExposure } from './CdmEventCommonMarginCallExposure';
-export { CdmBaseDatetimePeriodicDates } from './CdmBaseDatetimePeriodicDates';
-export { CdmEventCommonAffirmationStatusEnum } from './CdmEventCommonAffirmationStatusEnum';
-export { CdmProductCommonSettlementPayoutBase } from './CdmProductCommonSettlementPayoutBase';
-export { CdmBaseDatetimeBusinessCenters } from './CdmBaseDatetimeBusinessCenters';
-export { CdmProductCollateralDistributionAndInterestPayment } from './CdmProductCollateralDistributionAndInterestPayment';
-export { CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum';
-export { CdmEventPositionSecurityLocate } from './CdmEventPositionSecurityLocate';
-export { CdmProductAssetNonCashDividendTreatmentEnum } from './CdmProductAssetNonCashDividendTreatmentEnum';
-export { CdmRegulationRefRate } from './CdmRegulationRefRate';
-export { CdmEventWorkflowVelocity } from './CdmEventWorkflowVelocity';
-export { CdmProductAssetRollSourceCalendarEnum } from './CdmProductAssetRollSourceCalendarEnum';
-export { CdmObservableAssetValuationMethod } from './CdmObservableAssetValuationMethod';
-export { CdmProductCommonScheduleDateRelativeToPaymentDates } from './CdmProductCommonScheduleDateRelativeToPaymentDates';
-export { CdmProductAssetFloatingAmountEvents } from './CdmProductAssetFloatingAmountEvents';
-export { CdmProductTemplateConstituentWeight } from './CdmProductTemplateConstituentWeight';
-export { CdmEventCommonPriceTimingEnum } from './CdmEventCommonPriceTimingEnum';
-export { CdmLegaldocumentationCsaCreditSupportAgreementElections } from './CdmLegaldocumentationCsaCreditSupportAgreementElections';
-export { CdmEventCommonPositionEventIntentEnum } from './CdmEventCommonPositionEventIntentEnum';
-export { CdmProductCollateralConcentrationLimitCriteria } from './CdmProductCollateralConcentrationLimitCriteria';
-export { CdmBaseDatetimePeriodEnum } from './CdmBaseDatetimePeriodEnum';
-export { CdmEventCommonExecutionDetails } from './CdmEventCommonExecutionDetails';
+export { CdmLegaldocumentationContractAgreement } from './CdmLegaldocumentationContractAgreement';
+export { CdmProductAssetDividendDateReference } from './CdmProductAssetDividendDateReference';
+export { CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum';
+export { CdmProductTemplateExerciseFee } from './CdmProductTemplateExerciseFee';
+export { CdmEventCommonTransferExpression } from './CdmEventCommonTransferExpression';
+export { CdmObservableAssetMetafieldsReferenceWithMetaObservable } from './CdmObservableAssetMetafieldsReferenceWithMetaObservable';
+export { CdmEventPositionAggregationParameters } from './CdmEventPositionAggregationParameters';
+export { CdmObservableAssetPriceQuantity } from './CdmObservableAssetPriceQuantity';
+export { CdmLegaldocumentationMasterDeterminationRolesAndTerms } from './CdmLegaldocumentationMasterDeterminationRolesAndTerms';
+export { CdmBaseDatetimeAdjustableOrRelativeDate } from './CdmBaseDatetimeAdjustableOrRelativeDate';
 export { CdmProductTemplateOptionStrike } from './CdmProductTemplateOptionStrike';
+export { CdmBaseStaticdataPartyPersonIdentifierTypeEnum } from './CdmBaseStaticdataPartyPersonIdentifierTypeEnum';
 export { CdmBaseMathAveragingCalculationMethod } from './CdmBaseMathAveragingCalculationMethod';
+export { CdmProductCollateralSpecificAsset } from './CdmProductCollateralSpecificAsset';
+export { CdmObservableAssetFeeTypeEnum } from './CdmObservableAssetFeeTypeEnum';
+export { CdmProductTemplateExpirationTimeTypeEnum } from './CdmProductTemplateExpirationTimeTypeEnum';
+export { CdmBaseStaticdataPartyPartyReferencePayerReceiver } from './CdmBaseStaticdataPartyPartyReferencePayerReceiver';
+export { CdmProductAssetIndexAnnexSourceEnum } from './CdmProductAssetIndexAnnexSourceEnum';
+export { CdmProductCommonSettlementPricingDates } from './CdmProductCommonSettlementPricingDates';
+export { CdmProductAssetAdditionalFixedPayments } from './CdmProductAssetAdditionalFixedPayments';
+export { CdmProductAssetVarianceCapFloor } from './CdmProductAssetVarianceCapFloor';
+export { CdmObservableEventRestructuringEnum } from './CdmObservableEventRestructuringEnum';
+export { CdmObservableAssetFroFloatingRateIndexIdentification } from './CdmObservableAssetFroFloatingRateIndexIdentification';
+export { CdmProductTemplateManualExercise } from './CdmProductTemplateManualExercise';
+export { CdmLegaldocumentationCommonMatrixTypeEnum } from './CdmLegaldocumentationCommonMatrixTypeEnum';
+export { CdmProductCommonSettlementSettlementTerms } from './CdmProductCommonSettlementSettlementTerms';
+export { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
+export { CdmObservableAssetReferenceSwapCurve } from './CdmObservableAssetReferenceSwapCurve';
+export { CdmProductCommonScheduleResetDates } from './CdmProductCommonScheduleResetDates';
+export { CdmProductCollateralListingSector } from './CdmProductCollateralListingSector';
+export { CdmBaseStaticdataAssetCommonDebtSeniorityEnum } from './CdmBaseStaticdataAssetCommonDebtSeniorityEnum';
+export { CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum } from './CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum';
+export { CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout } from './CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout';
+export { CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule } from './CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule';
+export { CdmEventPositionAvailableInventoryRecord } from './CdmEventPositionAvailableInventoryRecord';
+export { CdmLegaldocumentationCommonSpecifiedEntityClauseEnum } from './CdmLegaldocumentationCommonSpecifiedEntityClauseEnum';
+export { CdmObservableAssetTransactedPrice } from './CdmObservableAssetTransactedPrice';
+export { CdmBaseStaticdataPartyContactInformation } from './CdmBaseStaticdataPartyContactInformation';
+export { CdmObservableAssetCalculatedrateObservationPeriodDatesEnum } from './CdmObservableAssetCalculatedrateObservationPeriodDatesEnum';
+export { CdmBaseMathAveragingWeightingMethodEnum } from './CdmBaseMathAveragingWeightingMethodEnum';
+export { CdmRegulationOthr } from './CdmRegulationOthr';
+export { CdmMarginScheduleStandardizedSchedule } from './CdmMarginScheduleStandardizedSchedule';
+export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity';
+export { CdmEventCommonBillingRecord } from './CdmEventCommonBillingRecord';
+export { CdmMarginScheduleStandardizedScheduleInitialMargin } from './CdmMarginScheduleStandardizedScheduleInitialMargin';
+export { CdmEventCommonExecutionDetails } from './CdmEventCommonExecutionDetails';
+export { CdmLegaldocumentationCommonUmbrellaAgreement } from './CdmLegaldocumentationCommonUmbrellaAgreement';
+export { CdmObservableAssetFieldWithMetaObservable } from './CdmObservableAssetFieldWithMetaObservable';
+export { CdmEventCommonValuation } from './CdmEventCommonValuation';
+export { CdmObservableAssetQuoteBasisEnum } from './CdmObservableAssetQuoteBasisEnum';
+export { CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018 } from './CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018';
+export { CdmObservableAssetFieldWithMetaCreditNotation } from './CdmObservableAssetFieldWithMetaCreditNotation';
+export { CdmProductAssetVolatilityReturnTerms } from './CdmProductAssetVolatilityReturnTerms';
+export { CdmProductAssetReturnTermsBase } from './CdmProductAssetReturnTermsBase';
+export { CdmProductAssetLoadTypeEnum } from './CdmProductAssetLoadTypeEnum';
+export { ComRosettaModelLibMetaKey } from './ComRosettaModelLibMetaKey';
+export { CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates';
+export { CdmProductAssetGeneralTerms } from './CdmProductAssetGeneralTerms';
+export { CdmProductAssetReferenceInformation } from './CdmProductAssetReferenceInformation';
+export { CdmEventCommonEventIntentEnum } from './CdmEventCommonEventIntentEnum';
+export { CdmBaseStaticdataPartyAncillaryParty } from './CdmBaseStaticdataPartyAncillaryParty';
+export { CdmProductCommonSettlementShapingProvision } from './CdmProductCommonSettlementShapingProvision';
+export { CdmProductCollateralEligibleCollateralCriteria } from './CdmProductCollateralEligibleCollateralCriteria';
+export { CdmProductCommonSettlementStandardSettlementStyleEnum } from './CdmProductCommonSettlementStandardSettlementStyleEnum';
+export { CdmEventWorkflowWorkflowStepApproval } from './CdmEventWorkflowWorkflowStepApproval';
+export { CdmLegaldocumentationCommonResourceLength } from './CdmLegaldocumentationCommonResourceLength';
+export { CdmProductCollateralDistributionAndInterestPayment } from './CdmProductCollateralDistributionAndInterestPayment';
+export { CdmRegulationRefRate } from './CdmRegulationRefRate';
+export { CdmObservableAssetFxRate } from './CdmObservableAssetFxRate';
+export { CdmProductCollateralCollateralTreatment } from './CdmProductCollateralCollateralTreatment';
+export { CdmBaseStaticdataAssetCreditObligationCategoryEnum } from './CdmBaseStaticdataAssetCreditObligationCategoryEnum';
+export { CdmProductCollateralCheckEligibilityResult } from './CdmProductCollateralCheckEligibilityResult';
+export { CdmBaseDatetimeCommodityBusinessCalendarEnum } from './CdmBaseDatetimeCommodityBusinessCalendarEnum';
+export { CdmProductTemplateReturnTerms } from './CdmProductTemplateReturnTerms';
+export { CdmBaseMathQuantityChangeDirectionEnum } from './CdmBaseMathQuantityChangeDirectionEnum';
+export { CdmObservableAssetInflationIndex } from './CdmObservableAssetInflationIndex';
+export { CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule';
+export { CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier } from './CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier';
+export { CdmObservableAssetForeignExchangeRateIndex } from './CdmObservableAssetForeignExchangeRateIndex';
+export { CdmEventCommonConfirmationStatusEnum } from './CdmEventCommonConfirmationStatusEnum';
+export { CdmObservableAssetCurve } from './CdmObservableAssetCurve';
+export { CdmObservableAssetCalculatedrateInflationCalculationMethodEnum } from './CdmObservableAssetCalculatedrateInflationCalculationMethodEnum';
+export { CdmBaseStaticdataPartyAccountTypeEnum } from './CdmBaseStaticdataPartyAccountTypeEnum';
+export { CdmProductAssetValuationTerms } from './CdmProductAssetValuationTerms';
+export { CdmBaseStaticdataPartyParty } from './CdmBaseStaticdataPartyParty';
+export { CdmBaseStaticdataAssetCommonCommodityReferenceFramework } from './CdmBaseStaticdataAssetCommonCommodityReferenceFramework';
+export { CdmLegaldocumentationCommonContractualTermsSupplement } from './CdmLegaldocumentationCommonContractualTermsSupplement';
+export { CdmProductCommonSettlementCashflow } from './CdmProductCommonSettlementCashflow';
+export { CdmObservableEventCreditEvents } from './CdmObservableEventCreditEvents';
+export { CdmProductTemplateEarlyTerminationEvent } from './CdmProductTemplateEarlyTerminationEvent';
+export { CdmProductCommonSettlementFixedPrice } from './CdmProductCommonSettlementFixedPrice';
+export { CdmBaseStaticdataPartyPayerReceiver } from './CdmBaseStaticdataPartyPayerReceiver';
+export { CdmObservableAssetCalculatedrateCalculatedRateDetails } from './CdmObservableAssetCalculatedrateCalculatedRateDetails';
+export { CdmProductCommonSettlementPaymentRule } from './CdmProductCommonSettlementPaymentRule';
+export { CdmBaseStaticdataAssetCommonCommodityProductDefinition } from './CdmBaseStaticdataAssetCommonCommodityProductDefinition';
+export { CdmBaseStaticdataAssetCommonCollateralTaxonomyValue } from './CdmBaseStaticdataAssetCommonCollateralTaxonomyValue';
+export { CdmProductTemplatePassThrough } from './CdmProductTemplatePassThrough';
+export { CdmProductAssetSettledEntityMatrix } from './CdmProductAssetSettledEntityMatrix';
+export { CdmObservableAssetCalculatedrateCalculatedRateObservations } from './CdmObservableAssetCalculatedrateCalculatedRateObservations';
+export { CdmLegaldocumentationCommonResource } from './CdmLegaldocumentationCommonResource';
+export { CdmObservableAssetCalculatedrateCalculationShiftMethodEnum } from './CdmObservableAssetCalculatedrateCalculationShiftMethodEnum';
+export { CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio } from './CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio';
+export { CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum } from './CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum';
+export { CdmProductAssetDividendPeriodEnum } from './CdmProductAssetDividendPeriodEnum';
+export { CdmBaseDatetimeAdjustableRelativeOrPeriodicDates } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
+export { CdmBaseStaticdataAssetCommonPutCallEnum } from './CdmBaseStaticdataAssetCommonPutCallEnum';
+export { CdmObservableAssetSettlementRateOption } from './CdmObservableAssetSettlementRateOption';
+export { CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex } from './CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex';
+export { CdmObservableEventDeterminationMethodology } from './CdmObservableEventDeterminationMethodology';
+export { CdmObservableCommonTimeTypeEnum } from './CdmObservableCommonTimeTypeEnum';
+export { CdmProductCommonSettlementPhysicalSettlementTerms } from './CdmProductCommonSettlementPhysicalSettlementTerms';
+export { CdmBaseDatetimeRelativeDateOffset } from './CdmBaseDatetimeRelativeDateOffset';
+export { CdmLegaldocumentationCommonAgreementTerms } from './CdmLegaldocumentationCommonAgreementTerms';
+export { CdmEventCommonScheduledTransfer } from './CdmEventCommonScheduledTransfer';
+export { CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms';
+export { CdmBaseStaticdataAssetCommonMaturityTypeEnum } from './CdmBaseStaticdataAssetCommonMaturityTypeEnum';
+export { CdmBaseDatetimeBusinessCenterTime } from './CdmBaseDatetimeBusinessCenterTime';
+export { CdmProductCommonScheduleObservationSchedule } from './CdmProductCommonScheduleObservationSchedule';
+export { CdmBaseMathMoneyRange } from './CdmBaseMathMoneyRange';
+export { CdmObservableAssetCommodityReferencePriceEnum } from './CdmObservableAssetCommodityReferencePriceEnum';
+export { CdmProductAssetFloatingRateDefinition } from './CdmProductAssetFloatingRateDefinition';
+export { CdmBaseStaticdataIdentifierFieldWithMetaIdentifier } from './CdmBaseStaticdataIdentifierFieldWithMetaIdentifier';
+export { CdmEventCommonPrimitiveInstruction } from './CdmEventCommonPrimitiveInstruction';
+export { CdmEventCommonExerciseInstruction } from './CdmEventCommonExerciseInstruction';
+export { CdmEventCommonSplitInstruction } from './CdmEventCommonSplitInstruction';
+export { CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule';
+export { CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum';
+export { CdmProductAssetCalculationScheduleDeliveryPeriods } from './CdmProductAssetCalculationScheduleDeliveryPeriods';
+export { CdmProductCollateralAssetAgencyRating } from './CdmProductCollateralAssetAgencyRating';
+export { CdmProductCommonScheduleWeeklyRollConventionEnum } from './CdmProductCommonScheduleWeeklyRollConventionEnum';
+export { CdmProductTemplateAssetLeg } from './CdmProductTemplateAssetLeg';
+export { CdmLegaldocumentationCommonSpecifiedEntityTermsEnum } from './CdmLegaldocumentationCommonSpecifiedEntityTermsEnum';
+export { CdmBaseStaticdataAssetCommonTaxonomyClassification } from './CdmBaseStaticdataAssetCommonTaxonomyClassification';
+export { CdmBaseStaticdataAssetCommonProductTaxonomy } from './CdmBaseStaticdataAssetCommonProductTaxonomy';
+export { CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum';
+export { CdmBaseStaticdataAssetCommonDeliveryDateParameters } from './CdmBaseStaticdataAssetCommonDeliveryDateParameters';
+export { CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms';
+export { CdmBaseMathRoundingDirectionEnum } from './CdmBaseMathRoundingDirectionEnum';
+export { CdmProductAssetDividendPaymentDate } from './CdmProductAssetDividendPaymentDate';
+export { CdmLegaldocumentationCommonCreditSupportProviderTermsEnum } from './CdmLegaldocumentationCommonCreditSupportProviderTermsEnum';
+export { CdmLegaldocumentationCommonLengthUnitEnum } from './CdmLegaldocumentationCommonLengthUnitEnum';
+export { CdmObservableAssetPriceTypeEnum } from './CdmObservableAssetPriceTypeEnum';
+export { CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum } from './CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum';
+export { CdmBaseStaticdataPartyCounterparty } from './CdmBaseStaticdataPartyCounterparty';
+export { CdmObservableAssetFxRateSourceFixing } from './CdmObservableAssetFxRateSourceFixing';
+export { CdmProductAssetDividendEntitlementEnum } from './CdmProductAssetDividendEntitlementEnum';
+export { CdmBaseMathQuantifierEnum } from './CdmBaseMathQuantifierEnum';
+export { CdmProductAssetFloatingAmountEvents } from './CdmProductAssetFloatingAmountEvents';
+export { CdmProductAssetInterestShortFall } from './CdmProductAssetInterestShortFall';
+export { CdmRegulationSwp } from './CdmRegulationSwp';
+export { CdmObservableAssetMetafieldsReferenceWithMetaRateObservation } from './CdmObservableAssetMetafieldsReferenceWithMetaRateObservation';
+export { CdmEventCommonCreditEventTypeEnum } from './CdmEventCommonCreditEventTypeEnum';
+export { CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep } from './CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep';
+export { CdmProductTemplateStrikeSpread } from './CdmProductTemplateStrikeSpread';
+export { CdmProductAssetBoundedCorrelation } from './CdmProductAssetBoundedCorrelation';
+export { CdmObservableAssetFloatingRateIndex } from './CdmObservableAssetFloatingRateIndex';
+export { CdmBaseDatetimeAdjustableDates } from './CdmBaseDatetimeAdjustableDates';
+export { CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates';
+export { CdmProductTemplateTradableProduct } from './CdmProductTemplateTradableProduct';
+export { CdmBaseStaticdataAssetCommonAssetIdTypeEnum } from './CdmBaseStaticdataAssetCommonAssetIdTypeEnum';
+export { CdmEventWorkflowCreditLimitInformation } from './CdmEventWorkflowCreditLimitInformation';
+export { CdmProductTemplateAsian } from './CdmProductTemplateAsian';
+export { CdmObservableAssetCalculatedrateCalculationMethodEnum } from './CdmObservableAssetCalculatedrateCalculationMethodEnum';
+export { CdmLegaldocumentationCommonAddressForNotices } from './CdmLegaldocumentationCommonAddressForNotices';
+export { CdmProductCollateralMetafieldsReferenceWithMetaCollateral } from './CdmProductCollateralMetafieldsReferenceWithMetaCollateral';
+export { CdmProductAssetFloatingRate } from './CdmProductAssetFloatingRate';
+export { CdmObservableAssetFieldWithMetaPriceSchedule } from './CdmObservableAssetFieldWithMetaPriceSchedule';
+export { CdmProductAssetSpreadCalculationMethodEnum } from './CdmProductAssetSpreadCalculationMethodEnum';
+export { CdmObservableAssetCalculatedrateObservationShiftCalculation } from './CdmObservableAssetCalculatedrateObservationShiftCalculation';
+export { CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType } from './CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType';
+export { CdmBaseStaticdataAssetCommonSecurity } from './CdmBaseStaticdataAssetCommonSecurity';
+export { CdmEventPositionPortfolioState } from './CdmEventPositionPortfolioState';
+export { CdmProductCommonScheduleStubCalculationPeriodAmount } from './CdmProductCommonScheduleStubCalculationPeriodAmount';
+export { CdmProductTemplateExerciseFeeSchedule } from './CdmProductTemplateExerciseFeeSchedule';
+export { CdmLegaldocumentationMasterExtraordinaryEvents } from './CdmLegaldocumentationMasterExtraordinaryEvents';
+export { CdmBaseStaticdataAssetCommonAsset } from './CdmBaseStaticdataAssetCommonAsset';
+export { CdmProductAssetBondReference } from './CdmProductAssetBondReference';
+export { CdmEventPositionPortfolio } from './CdmEventPositionPortfolio';
+export { CdmBaseDatetimeRollConventionEnum } from './CdmBaseDatetimeRollConventionEnum';
+export { CdmBaseStaticdataAssetCommonIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonIssuerTypeEnum';
+export { CdmEventCommonBillingInstruction } from './CdmEventCommonBillingInstruction';
+export { CdmObservableAssetInformationSource } from './CdmObservableAssetInformationSource';
+export { CdmBaseStaticdataPartyAncillaryEntity } from './CdmBaseStaticdataPartyAncillaryEntity';
+export { CdmEventCommonClearingInstruction } from './CdmEventCommonClearingInstruction';
+export { CdmProductCommonSettlementSettlementCentreEnum } from './CdmProductCommonSettlementSettlementCentreEnum';
+export { CdmObservableEventFeaturePayment } from './CdmObservableEventFeaturePayment';
+export { CdmBaseDatetimeFrequency } from './CdmBaseDatetimeFrequency';
+export { CdmBaseMathNonNegativeStep } from './CdmBaseMathNonNegativeStep';
+export { CdmEventWorkflowWorkflow } from './CdmEventWorkflowWorkflow';
+export { CdmEventCommonPositionIdentifier } from './CdmEventCommonPositionIdentifier';
+export { CdmObservableAssetInterpolationMethodEnum } from './CdmObservableAssetInterpolationMethodEnum';
+export { CdmProductCommonScheduleWeightedAveragingObservation } from './CdmProductCommonScheduleWeightedAveragingObservation';
+export { CdmProductTemplateKnock } from './CdmProductTemplateKnock';
+export { CdmBaseStaticdataAssetCommonDebtPrincipalEnum } from './CdmBaseStaticdataAssetCommonDebtPrincipalEnum';
+export { CdmProductAssetRealisedVarianceMethodEnum } from './CdmProductAssetRealisedVarianceMethodEnum';
+export { CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum';
+export { CdmObservableAssetCashCollateralValuationMethod } from './CdmObservableAssetCashCollateralValuationMethod';
+export { CdmProductAssetFPVFinalPriceElectionFallbackEnum } from './CdmProductAssetFPVFinalPriceElectionFallbackEnum';
+export { CdmLegaldocumentationMasterMasterConfirmationBase } from './CdmLegaldocumentationMasterMasterConfirmationBase';
+export { CdmProductAssetReferencePair } from './CdmProductAssetReferencePair';
+export { CdmBaseStaticdataAssetRatesInflationRateIndexEnum } from './CdmBaseStaticdataAssetRatesInflationRateIndexEnum';
+export { CdmLegaldocumentationCommonResourceTypeEnum } from './CdmLegaldocumentationCommonResourceTypeEnum';
+export { CdmEventWorkflowWarehouseIdentityEnum } from './CdmEventWorkflowWarehouseIdentityEnum';
+export { CdmProductTemplateConstituentWeight } from './CdmProductTemplateConstituentWeight';
+export { CdmBaseStaticdataAssetCommonCollateralTaxonomy } from './CdmBaseStaticdataAssetCommonCollateralTaxonomy';
+export { CdmProductTemplateAutomaticExercise } from './CdmProductTemplateAutomaticExercise';
+export { CdmProductCollateralAverageTradingVolume } from './CdmProductCollateralAverageTradingVolume';
+export { CdmEventPositionInventoryRecord } from './CdmEventPositionInventoryRecord';
+export { CdmLegaldocumentationCommonContractualMatrix } from './CdmLegaldocumentationCommonContractualMatrix';
+export { CdmProductAssetInterestRatePayout } from './CdmProductAssetInterestRatePayout';
+export { CdmProductCollateralCollateral } from './CdmProductCollateralCollateral';
+export { CdmProductCollateralCollateralValuationTreatment } from './CdmProductCollateralCollateralValuationTreatment';
+export { CdmEventWorkflowCreditLimitUtilisation } from './CdmEventWorkflowCreditLimitUtilisation';
+export { CdmObservableAssetCalculatedrateFallbackRateParameters } from './CdmObservableAssetCalculatedrateFallbackRateParameters';
+export { CdmBaseStaticdataPartyBusinessUnit } from './CdmBaseStaticdataPartyBusinessUnit';
+export { CdmRegulationQty } from './CdmRegulationQty';
+export { CdmBaseStaticdataPartyLegalEntity } from './CdmBaseStaticdataPartyLegalEntity';
+export { CdmProductCommonSettlementDeliveryMethodEnum } from './CdmProductCommonSettlementDeliveryMethodEnum';
+export { CdmObservableAssetIndexBase } from './CdmObservableAssetIndexBase';
+export { CdmProductTemplatePassThroughItem } from './CdmProductTemplatePassThroughItem';
+export { CdmProductAssetProtectionTerms } from './CdmProductAssetProtectionTerms';
+export { CdmObservableAssetBasket } from './CdmObservableAssetBasket';
 export { CdmObservableAssetFieldWithMetaBasketConstituent } from './CdmObservableAssetFieldWithMetaBasketConstituent';
 export { CdmObservableAssetBasketConstituent } from './CdmObservableAssetBasketConstituent';
-export { CdmObservableAssetBasket } from './CdmObservableAssetBasket';
-export { CdmBaseStaticdataAssetCommonSecurity } from './CdmBaseStaticdataAssetCommonSecurity';
-export { CdmLegaldocumentationMasterMasterAgreementSchedule } from './CdmLegaldocumentationMasterMasterAgreementSchedule';
-export { CdmBaseMathCapacityUnitEnum } from './CdmBaseMathCapacityUnitEnum';
-export { CdmBaseDatetimeBusinessDateRange } from './CdmBaseDatetimeBusinessDateRange';
-export { CdmEventCommonPositionIdentifier } from './CdmEventCommonPositionIdentifier';
-export { CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule } from './CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule';
-export { CdmLegaldocumentationMasterMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterMasterAgreementTypeEnum';
-export { CdmEventCommonCalculateTransferInstruction } from './CdmEventCommonCalculateTransferInstruction';
-export { CdmBaseStaticdataAssetCommonTaxonomyClassification } from './CdmBaseStaticdataAssetCommonTaxonomyClassification';
-export { CdmEventWorkflowMessageInformation } from './CdmEventWorkflowMessageInformation';
-export { CdmBaseMathRounding } from './CdmBaseMathRounding';
-export { CdmEventCommonCallTypeEnum } from './CdmEventCommonCallTypeEnum';
-export { CdmObservableAssetFxRateSourceFixing } from './CdmObservableAssetFxRateSourceFixing';
-export { CdmObservableAssetCalculatedrateOffsetCalculation } from './CdmObservableAssetCalculatedrateOffsetCalculation';
-export { CdmBaseMathNumberBound } from './CdmBaseMathNumberBound';
-export { CdmBaseStaticdataPartyBuyerSeller } from './CdmBaseStaticdataPartyBuyerSeller';
-export { CdmProductTemplateEarlyTerminationProvision } from './CdmProductTemplateEarlyTerminationProvision';
-export { CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum';
-export { CdmBaseMathWeatherUnitEnum } from './CdmBaseMathWeatherUnitEnum';
-export { CdmProductAssetFloatingRate } from './CdmProductAssetFloatingRate';
-export { CdmObservableEventDeterminationMethodology } from './CdmObservableEventDeterminationMethodology';
-export { CdmEventCommonState } from './CdmEventCommonState';
-export { CdmLegaldocumentationCommonClosedStateEnum } from './CdmLegaldocumentationCommonClosedStateEnum';
-export { CdmLegaldocumentationCommonUmbrellaAgreementEntity } from './CdmLegaldocumentationCommonUmbrellaAgreementEntity';
-export { CdmBaseDatetimeBusinessCenterTime } from './CdmBaseDatetimeBusinessCenterTime';
-export { CdmBaseStaticdataAssetRatesFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFloatingRateIndexEnum';
-export { CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms';
-export { CdmProductAssetTranche } from './CdmProductAssetTranche';
-export { CdmBaseStaticdataAssetCommonAsset } from './CdmBaseStaticdataAssetCommonAsset';
-export { CdmEventWorkflowCreditLimitTypeEnum } from './CdmEventWorkflowCreditLimitTypeEnum';
-export { CdmBaseStaticdataPartyEntityTypeEnum } from './CdmBaseStaticdataPartyEntityTypeEnum';
-export { CdmProductCommonSettlementComputedAmount } from './CdmProductCommonSettlementComputedAmount';
-export { CdmObservableAssetMetafieldsReferenceWithMetaMoney } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
-export { CdmObservableAssetCalculatedrateFloatingRateCalculationParameters } from './CdmObservableAssetCalculatedrateFloatingRateCalculationParameters';
-export { CdmProductCollateralIssuerName } from './CdmProductCollateralIssuerName';
-export { CdmEventCommonMetafieldsReferenceWithMetaContractDetails } from './CdmEventCommonMetafieldsReferenceWithMetaContractDetails';
-export { CdmProductCollateralDeliveryAmountElectionEnum } from './CdmProductCollateralDeliveryAmountElectionEnum';
-export { CdmEventWorkflowWorkflowStep } from './CdmEventWorkflowWorkflowStep';
-export { CdmProductAssetSpreadSchedule } from './CdmProductAssetSpreadSchedule';
-export { CdmBaseMathNonNegativeQuantity } from './CdmBaseMathNonNegativeQuantity';
-export { CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification } from './CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification';
-export { CdmBaseMathMeasure } from './CdmBaseMathMeasure';
-export { CdmObservableEventTriggerTimeTypeEnum } from './CdmObservableEventTriggerTimeTypeEnum';
-export { CdmProductTemplateBarrier } from './CdmProductTemplateBarrier';
-export { CdmRegulationFinInstrmRptgTxRpt } from './CdmRegulationFinInstrmRptgTxRpt';
-export { CdmObservableAssetCreditRatingAgencyEnum } from './CdmObservableAssetCreditRatingAgencyEnum';
-export { CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum';
-export { CdmObservableAssetCreditRatingCreditWatchEnum } from './CdmObservableAssetCreditRatingCreditWatchEnum';
-export { CdmObservableEventIndexEventConsequenceEnum } from './CdmObservableEventIndexEventConsequenceEnum';
-export { CdmObservableEventPubliclyAvailableInformation } from './CdmObservableEventPubliclyAvailableInformation';
-export { CdmProductAssetFloatingRateBase } from './CdmProductAssetFloatingRateBase';
-export { CdmEventCommonExecutionInstruction } from './CdmEventCommonExecutionInstruction';
-export { CdmProductCollateralCollateralTreatment } from './CdmProductCollateralCollateralTreatment';
-export { CdmLegaldocumentationMasterFxAdditionalTerms } from './CdmLegaldocumentationMasterFxAdditionalTerms';
-export { CdmProductCollateralEligibilityQuery } from './CdmProductCollateralEligibilityQuery';
-export { CdmObservableAssetCalculatedrateObservationPeriodDatesEnum } from './CdmObservableAssetCalculatedrateObservationPeriodDatesEnum';
-export { CdmLegaldocumentationMasterRepresentations } from './CdmLegaldocumentationMasterRepresentations';
-export { CdmObservableAssetCreditRatingOutlookEnum } from './CdmObservableAssetCreditRatingOutlookEnum';
-export { CdmObservableAssetPriceComposite } from './CdmObservableAssetPriceComposite';
-export { CdmProductCommonSettlementSettlementDate } from './CdmProductCommonSettlementSettlementDate';
-export { CdmProductCommonScheduleFxLinkedNotionalSchedule } from './CdmProductCommonScheduleFxLinkedNotionalSchedule';
-export { CdmEventCommonMarginCallResponseTypeEnum } from './CdmEventCommonMarginCallResponseTypeEnum';
-export { CdmEventCommonLineage } from './CdmEventCommonLineage';
-export { CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum } from './CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum';
-export { CdmBaseDatetimeCalculationFrequency } from './CdmBaseDatetimeCalculationFrequency';
-export { CdmProductTemplateComposite } from './CdmProductTemplateComposite';
-export { CdmEventPositionPortfolio } from './CdmEventPositionPortfolio';
-export { CdmProductAssetDividendDateReferenceEnum } from './CdmProductAssetDividendDateReferenceEnum';
-export { CdmRegulationPric } from './CdmRegulationPric';
-export { CdmObservableAssetPriceOperandEnum } from './CdmObservableAssetPriceOperandEnum';
-export { CdmRegulationUndrlygInstrm } from './CdmRegulationUndrlygInstrm';
-export { CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule } from './CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule';
-export { CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate } from './CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate';
-export { CdmProductCommonScheduleAveragingObservationList } from './CdmProductCommonScheduleAveragingObservationList';
-export { CdmEventCommonMarginCallIssuance } from './CdmEventCommonMarginCallIssuance';
-export { CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum';
-export { CdmObservableAssetPriceTypeEnum } from './CdmObservableAssetPriceTypeEnum';
-export { CdmObservableAssetOtherIndex } from './CdmObservableAssetOtherIndex';
-export { CdmProductTemplatePortfolioReturnTerms } from './CdmProductTemplatePortfolioReturnTerms';
-export { CdmProductAssetReferencePair } from './CdmProductAssetReferencePair';
-export { CdmObservableAssetInterestRateIndex } from './CdmObservableAssetInterestRateIndex';
-export { CdmProductAssetProtectionTerms } from './CdmProductAssetProtectionTerms';
-export { CdmObservableAssetSwapCurveValuation } from './CdmObservableAssetSwapCurveValuation';
-export { CdmProductAssetStubFloatingRate } from './CdmProductAssetStubFloatingRate';
-export { CdmProductCommonSettlementCashflowType } from './CdmProductCommonSettlementCashflowType';
-export { CdmLegaldocumentationCommonUmbrellaAgreement } from './CdmLegaldocumentationCommonUmbrellaAgreement';
-export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity';
-export { CdmProductAssetInterestRatePayout } from './CdmProductAssetInterestRatePayout';
-export { CdmObservableAssetFeeTypeEnum } from './CdmObservableAssetFeeTypeEnum';
-export { CdmEventCommonTransferState } from './CdmEventCommonTransferState';
-export { CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum } from './CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum';
-export { CdmEventCommonResetInstruction } from './CdmEventCommonResetInstruction';
-export { CdmBaseStaticdataPartyTelephoneNumber } from './CdmBaseStaticdataPartyTelephoneNumber';
-export { CdmProductAssetDividendCompositionEnum } from './CdmProductAssetDividendCompositionEnum';
-export { CdmProductTemplateExerciseTerms } from './CdmProductTemplateExerciseTerms';
-export { CdmEventCommonExposure } from './CdmEventCommonExposure';
-export { CdmObservableAssetInterestRateCurve } from './CdmObservableAssetInterestRateCurve';
-export { CdmEventCommonTransferInstruction } from './CdmEventCommonTransferInstruction';
-export { CdmProductTemplateKnock } from './CdmProductTemplateKnock';
-export { CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum';
-export { CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails } from './CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails';
-export { CdmProductTemplateCancelableProvision } from './CdmProductTemplateCancelableProvision';
-export { CdmProductCollateralCollateralAgreementFloatingRate } from './CdmProductCollateralCollateralAgreementFloatingRate';
-export { CdmEventCommonMarginCallInstructionType } from './CdmEventCommonMarginCallInstructionType';
-export { CdmProductCommonScheduleParametricDates } from './CdmProductCommonScheduleParametricDates';
-export { CdmLegaldocumentationCsaSecurityAgreementElections } from './CdmLegaldocumentationCsaSecurityAgreementElections';
-export { CdmBaseStaticdataIdentifierAssignedIdentifier } from './CdmBaseStaticdataIdentifierAssignedIdentifier';
-export { CdmBaseDatetimeAdjustableRelativeOrPeriodicDates } from './CdmBaseDatetimeAdjustableRelativeOrPeriodicDates';
-export { CdmEventWorkflowWorkflowStatusEnum } from './CdmEventWorkflowWorkflowStatusEnum';
-export { CdmObservableAssetQuotedCurrencyPair } from './CdmObservableAssetQuotedCurrencyPair';
-export { CdmLegaldocumentationCommonLegalAgreementPublisherEnum } from './CdmLegaldocumentationCommonLegalAgreementPublisherEnum';
-export { CdmObservableAssetCalculatedrateCalculatedRateDetails } from './CdmObservableAssetCalculatedrateCalculatedRateDetails';
-export { CdmProductCommonSettlementLoanParticipation } from './CdmProductCommonSettlementLoanParticipation';
-export { CdmBaseStaticdataPartyPartyIdentifierTypeEnum } from './CdmBaseStaticdataPartyPartyIdentifierTypeEnum';
-export { CdmProductTemplateSchedulePeriod } from './CdmProductTemplateSchedulePeriod';
-export { CdmProductAssetDividendPeriodEnum } from './CdmProductAssetDividendPeriodEnum';
-export { CdmLegaldocumentationCommonSpecifiedEntityClauseEnum } from './CdmLegaldocumentationCommonSpecifiedEntityClauseEnum';
-export { CdmProductCollateralCreditSupportAgreementTypeEnum } from './CdmProductCollateralCreditSupportAgreementTypeEnum';
-export { CdmBaseMathQuantityChangeDirectionEnum } from './CdmBaseMathQuantityChangeDirectionEnum';
-export { CdmProductAssetDividendEntitlementEnum } from './CdmProductAssetDividendEntitlementEnum';
-export { CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex } from './CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex';
-export { CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment } from './CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment';
-export { CdmBaseStaticdataPartyPayerReceiver } from './CdmBaseStaticdataPartyPayerReceiver';
-export { CdmProductAssetNegativeInterestRateTreatmentEnum } from './CdmProductAssetNegativeInterestRateTreatmentEnum';
-export { CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum';
-export { CdmEventCommonBillingSummary } from './CdmEventCommonBillingSummary';
-export { CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum';
-export { CdmBaseStaticdataAssetCommonISOCountryCodeEnum } from './CdmBaseStaticdataAssetCommonISOCountryCodeEnum';
-export { CdmBaseStaticdataAssetCreditObligationCategoryEnum } from './CdmBaseStaticdataAssetCreditObligationCategoryEnum';
-export { CdmProductCollateralListingExchange } from './CdmProductCollateralListingExchange';
-export { CdmBaseStaticdataAssetCommonAssetType } from './CdmBaseStaticdataAssetCommonAssetType';
-export { CdmProductCollateralAverageTradingVolumeMethodologyEnum } from './CdmProductCollateralAverageTradingVolumeMethodologyEnum';
-export { CdmObservableAssetMultipleCreditNotations } from './CdmObservableAssetMultipleCreditNotations';
-export { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum';
-export { CdmObservableAssetCreditIndex } from './CdmObservableAssetCreditIndex';
+export { CdmBaseStaticdataAssetCommonInstrument } from './CdmBaseStaticdataAssetCommonInstrument';
+export { ComRosettaModelMetafieldsReferenceWithMetaString } from './ComRosettaModelMetafieldsReferenceWithMetaString';
+export { CdmBaseStaticdataPartyCounterpartyRoleEnum } from './CdmBaseStaticdataPartyCounterpartyRoleEnum';
+export { CdmProductAssetRateSpecification } from './CdmProductAssetRateSpecification';
+export { CdmRegulationSchmeNm } from './CdmRegulationSchmeNm';
+export { CdmObservableAssetCsaTypeEnum } from './CdmObservableAssetCsaTypeEnum';
+export { CdmProductAssetRateTreatmentEnum } from './CdmProductAssetRateTreatmentEnum';
+export { CdmProductCommonSchedulePayRelativeToEnum } from './CdmProductCommonSchedulePayRelativeToEnum';
+export { CdmProductAssetFloatingrateFloatingRateProcessingParameters } from './CdmProductAssetFloatingrateFloatingRateProcessingParameters';
+export { CdmProductAssetDividendCurrency } from './CdmProductAssetDividendCurrency';
+export { CdmProductTemplateStrikeSchedule } from './CdmProductTemplateStrikeSchedule';
+export { CdmBaseMathNumberRange } from './CdmBaseMathNumberRange';
+export { CdmEventCommonTradeIdentifier } from './CdmEventCommonTradeIdentifier';
+export { CdmProductAssetAssetDeliveryPeriods } from './CdmProductAssetAssetDeliveryPeriods';
+export { CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum } from './CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum';
+export { CdmBaseDatetimeDateList } from './CdmBaseDatetimeDateList';
 export { CdmProductAssetAssetDeliveryInformation } from './CdmProductAssetAssetDeliveryInformation';
-export { CdmProductCollateralCollateralInterestHandlingParameters } from './CdmProductCollateralCollateralInterestHandlingParameters';
-export { CdmProductTemplateAveragingCalculation } from './CdmProductTemplateAveragingCalculation';
-export { CdmProductTemplateStrategyFeature } from './CdmProductTemplateStrategyFeature';
-export { CdmProductCommonSettlementTransferSettlementEnum } from './CdmProductCommonSettlementTransferSettlementEnum';
-export { CdmBaseStaticdataAssetCommonCash } from './CdmBaseStaticdataAssetCommonCash';
+export { CdmProductCommonSettlementSettlementTypeEnum } from './CdmProductCommonSettlementSettlementTypeEnum';
+export { CdmProductAssetDayDistributionEnum } from './CdmProductAssetDayDistributionEnum';
+export { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters';
+export { CdmObservableAssetPriceSourceDisruption } from './CdmObservableAssetPriceSourceDisruption';
+export { CdmEventCommonMarginCallResponseAction } from './CdmEventCommonMarginCallResponseAction';
+export { CdmProductCommonScheduleCalculationPeriodDates } from './CdmProductCommonScheduleCalculationPeriodDates';
+export { CdmProductCommonScheduleRateSchedule } from './CdmProductCommonScheduleRateSchedule';
+export { CdmObservableAssetMoney } from './CdmObservableAssetMoney';
+export { CdmBaseStaticdataAssetCommonAssetTypeEnum } from './CdmBaseStaticdataAssetCommonAssetTypeEnum';
+export { CdmObservableAssetFieldWithMetaQuotedCurrencyPair } from './CdmObservableAssetFieldWithMetaQuotedCurrencyPair';
+export { CdmEventCommonCollateralPortfolio } from './CdmEventCommonCollateralPortfolio';
+export { CdmLegaldocumentationMasterIndexAdjustmentEvents } from './CdmLegaldocumentationMasterIndexAdjustmentEvents';
+export { CdmBaseStaticdataPartyTelephoneNumber } from './CdmBaseStaticdataPartyTelephoneNumber';
+export { CdmProductCollateralInterestAmountApplication } from './CdmProductCollateralInterestAmountApplication';
+export { CdmProductTemplateExtensionEvent } from './CdmProductTemplateExtensionEvent';
+export { CdmEventWorkflowLimitApplicable } from './CdmEventWorkflowLimitApplicable';
+export { CdmBaseStaticdataAssetCommonDebtEconomics } from './CdmBaseStaticdataAssetCommonDebtEconomics';
+export { CdmEventCommonMarginCallInstructionType } from './CdmEventCommonMarginCallInstructionType';
+export { CdmProductAssetVarianceReturnTerms } from './CdmProductAssetVarianceReturnTerms';
+export { CdmRegulationNew } from './CdmRegulationNew';
+export { CdmRegulationTx } from './CdmRegulationTx';
+export { CdmProductCommonSettlementResolvablePriceQuantity } from './CdmProductCommonSettlementResolvablePriceQuantity';
+export { CdmLegaldocumentationCommonLegalAgreementIdentification } from './CdmLegaldocumentationCommonLegalAgreementIdentification';
+export { CdmBaseStaticdataPartyTelephoneTypeEnum } from './CdmBaseStaticdataPartyTelephoneTypeEnum';
+export { CdmProductCommonSettlementSettlementDate } from './CdmProductCommonSettlementSettlementDate';
+export { CdmProductAssetFloatingRateSpecification } from './CdmProductAssetFloatingRateSpecification';
+export { ComRosettaModelMetafieldsMetaFields } from './ComRosettaModelMetafieldsMetaFields';
+export { CdmEventCommonTradePricingReport } from './CdmEventCommonTradePricingReport';
+export { CdmBaseStaticdataAssetCommonDigitalAsset } from './CdmBaseStaticdataAssetCommonDigitalAsset';
+export { CdmBaseStaticdataAssetCommonAssetClassEnum } from './CdmBaseStaticdataAssetCommonAssetClassEnum';
+export { CdmEventCommonObservationEvent } from './CdmEventCommonObservationEvent';
+export { CdmLegaldocumentationMasterMasterAgreementClauseVariant } from './CdmLegaldocumentationMasterMasterAgreementClauseVariant';
 export { CdmLegaldocumentationMasterMasterAgreementVariableSet } from './CdmLegaldocumentationMasterMasterAgreementVariableSet';
-export { CdmBaseStaticdataAssetCommonCollateralIssuerType } from './CdmBaseStaticdataAssetCommonCollateralIssuerType';
-export { CdmBaseMathMoneyRange } from './CdmBaseMathMoneyRange';
-export { CdmRegulationSngl } from './CdmRegulationSngl';
-export { CdmEventCommonRegMarginTypeEnum } from './CdmEventCommonRegMarginTypeEnum';
-export { CdmProductCommonScheduleResetRelativeToEnum } from './CdmProductCommonScheduleResetRelativeToEnum';
-export { CdmBaseDatetimeAdjustedRelativeDateOffset } from './CdmBaseDatetimeAdjustedRelativeDateOffset';
-export { CdmEventCommonInstruction } from './CdmEventCommonInstruction';
-export { CdmEventCommonTrade } from './CdmEventCommonTrade';
-export { CdmProductCollateralCollateralCriteriaBase } from './CdmProductCollateralCollateralCriteriaBase';
-export { CdmObservableAssetCurve } from './CdmObservableAssetCurve';
-export { CdmProductCommonScheduleResetFrequency } from './CdmProductCommonScheduleResetFrequency';
+export { CdmProductAssetNonCashDividendTreatmentEnum } from './CdmProductAssetNonCashDividendTreatmentEnum';
+export { CdmProductCollateralConcentrationLimitCriteria } from './CdmProductCollateralConcentrationLimitCriteria';
+export { CdmProductAssetStubFloatingRate } from './CdmProductAssetStubFloatingRate';
+export { CdmEventCommonExecutionTypeEnum } from './CdmEventCommonExecutionTypeEnum';
 export { CdmProductAssetBankHolidayTreatmentEnum } from './CdmProductAssetBankHolidayTreatmentEnum';
-export { CdmRegulationSwp } from './CdmRegulationSwp';
-export { CdmObservableAssetCreditRatingDebt } from './CdmObservableAssetCreditRatingDebt';
-export { CdmLegaldocumentationCommonContractualMatrix } from './CdmLegaldocumentationCommonContractualMatrix';
-export { CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates } from './CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates';
+export { CdmProductCommonScheduleDateRelativeToCalculationPeriodDates } from './CdmProductCommonScheduleDateRelativeToCalculationPeriodDates';
+export { CdmProductCollateralCreditSupportAgreementTypeEnum } from './CdmProductCollateralCreditSupportAgreementTypeEnum';
+export { CdmObservableAssetCashPriceTypeEnum } from './CdmObservableAssetCashPriceTypeEnum';
+export { CdmObservableAssetFroFloatingRateIndexDefinition } from './CdmObservableAssetFroFloatingRateIndexDefinition';
+export { CdmLegaldocumentationMasterMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationTypeEnum';
+export { CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement } from './CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement';
+export { CdmProductCommonSettlementRollFeature } from './CdmProductCommonSettlementRollFeature';
+export { CdmProductTemplateMultipleExercise } from './CdmProductTemplateMultipleExercise';
+export { CdmProductTemplateOptionTypeEnum } from './CdmProductTemplateOptionTypeEnum';
+export { CdmLegaldocumentationMasterEquityCorporateEvents } from './CdmLegaldocumentationMasterEquityCorporateEvents';
+export { CdmLegaldocumentationCommonTerminationCurrencyConditionEnum } from './CdmLegaldocumentationCommonTerminationCurrencyConditionEnum';
+export { CdmProductTemplateExtendibleProvision } from './CdmProductTemplateExtendibleProvision';
+export { CdmBaseMathArithmeticOperationEnum } from './CdmBaseMathArithmeticOperationEnum';
+export { CdmEventPositionAvailableInventory } from './CdmEventPositionAvailableInventory';
+export { CdmBaseStaticdataAssetCreditObligations } from './CdmBaseStaticdataAssetCreditObligations';
+export { CdmLegaldocumentationCommonUmbrellaAgreementEntity } from './CdmLegaldocumentationCommonUmbrellaAgreementEntity';
+export { CdmObservableAssetFieldWithMetaSettlementRateOptionEnum } from './CdmObservableAssetFieldWithMetaSettlementRateOptionEnum';
+export { CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum';
+export { CdmProductAssetFutureValueAmount } from './CdmProductAssetFutureValueAmount';
+export { CdmEventCommonCollateralBalance } from './CdmEventCommonCollateralBalance';
+export { CdmEventCommonMarginCallExposure } from './CdmEventCommonMarginCallExposure';
+export { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments';
+export { CdmBaseStaticdataPartyPartyContactInformation } from './CdmBaseStaticdataPartyPartyContactInformation';
+export { CdmEventCommonInstructionFunctionEnum } from './CdmEventCommonInstructionFunctionEnum';
+export { CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum';
+export { CdmRegulationIndx } from './CdmRegulationIndx';
+export { CdmObservableAssetFxInformationSource } from './CdmObservableAssetFxInformationSource';
+export { CdmObservableAssetCreditRatingOutlookEnum } from './CdmObservableAssetCreditRatingOutlookEnum';
+export { CdmProductCollateralSovereignAgencyRating } from './CdmProductCollateralSovereignAgencyRating';
+export { CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum } from './CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum';
+export { CdmLegaldocumentationCommonOtherAgreement } from './CdmLegaldocumentationCommonOtherAgreement';
+export { CdmEventCommonObservationInstruction } from './CdmEventCommonObservationInstruction';
 export { CdmProductTemplateProduct } from './CdmProductTemplateProduct';
 export { CdmProductTemplatePerformancePayout } from './CdmProductTemplatePerformancePayout';
-export { CdmProductTemplateNonTransferableProduct } from './CdmProductTemplateNonTransferableProduct';
-export { CdmProductTemplatePayout } from './CdmProductTemplatePayout';
-export { CdmProductTemplateEconomicTerms } from './CdmProductTemplateEconomicTerms';
-export { CdmProductTemplateUnderlier } from './CdmProductTemplateUnderlier';
-export { CdmProductAssetCommodityPayout } from './CdmProductAssetCommodityPayout';
-export { CdmProductTemplateOptionPayout } from './CdmProductTemplateOptionPayout';
 export { CdmProductTemplateSettlementPayout } from './CdmProductTemplateSettlementPayout';
+export { CdmProductTemplateUnderlier } from './CdmProductTemplateUnderlier';
+export { CdmProductTemplateNonTransferableProduct } from './CdmProductTemplateNonTransferableProduct';
+export { CdmProductAssetCommodityPayout } from './CdmProductAssetCommodityPayout';
+export { CdmProductTemplateEconomicTerms } from './CdmProductTemplateEconomicTerms';
+export { CdmProductTemplateOptionPayout } from './CdmProductTemplateOptionPayout';
 export { CdmProductTemplateTransferableProduct } from './CdmProductTemplateTransferableProduct';
-export { CdmProductCommonSettlementPCDeliverableObligationCharac } from './CdmProductCommonSettlementPCDeliverableObligationCharac';
-export { CdmBaseStaticdataPartyNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyNaturalPersonRoleEnum';
-export { CdmProductTemplateExerciseNotice } from './CdmProductTemplateExerciseNotice';
-export { CdmMarginScheduleStandardizedScheduleProductClassEnum } from './CdmMarginScheduleStandardizedScheduleProductClassEnum';
-export { CdmProductTemplateStrike } from './CdmProductTemplateStrike';
-export { CdmBaseDatetimeCalculationPeriodFrequency } from './CdmBaseDatetimeCalculationPeriodFrequency';
-export { CdmBaseStaticdataAssetCommonLoan } from './CdmBaseStaticdataAssetCommonLoan';
-export { CdmEventWorkflowWorkflow } from './CdmEventWorkflowWorkflow';
-export { CdmEventCommonSecurityLendingInvoice } from './CdmEventCommonSecurityLendingInvoice';
-export { CdmProductAssetSettledEntityMatrixSourceEnum } from './CdmProductAssetSettledEntityMatrixSourceEnum';
-export { CdmEventCommonMetafieldsReferenceWithMetaTradeState } from './CdmEventCommonMetafieldsReferenceWithMetaTradeState';
-export { CdmObservableAssetQuoteBasisEnum } from './CdmObservableAssetQuoteBasisEnum';
-export { CdmProductAssetVarianceReturnTerms } from './CdmProductAssetVarianceReturnTerms';
-export { CdmBaseStaticdataAssetCommonPutCallEnum } from './CdmBaseStaticdataAssetCommonPutCallEnum';
-export { CdmProductAssetFloatingRateDefinition } from './CdmProductAssetFloatingRateDefinition';
-export { CdmEventCommonMarginCallBase } from './CdmEventCommonMarginCallBase';
-export { ComRosettaModelLibMetaReference } from './ComRosettaModelLibMetaReference';
-export { CdmRegulationNm } from './CdmRegulationNm';
-export { CdmProductCollateralCollateralTypeEnum } from './CdmProductCollateralCollateralTypeEnum';
-export { ComRosettaModelMetafieldsMetaFields } from './ComRosettaModelMetafieldsMetaFields';
-export { CdmRegulationOrdrTrnsmssn } from './CdmRegulationOrdrTrnsmssn';
-export { CdmProductCollateralSovereignAgencyRating } from './CdmProductCollateralSovereignAgencyRating';
-export { CdmProductTemplateOptionExerciseStyleEnum } from './CdmProductTemplateOptionExerciseStyleEnum';
-export { CdmProductCommonSettlementPhysicalSettlementTerms } from './CdmProductCommonSettlementPhysicalSettlementTerms';
-export { CdmProductAssetSpreadScheduleTypeEnum } from './CdmProductAssetSpreadScheduleTypeEnum';
-export { CdmProductAssetRealisedVarianceMethodEnum } from './CdmProductAssetRealisedVarianceMethodEnum';
-export { CdmBaseStaticdataAssetCommonDebtSeniorityEnum } from './CdmBaseStaticdataAssetCommonDebtSeniorityEnum';
-export { CdmRegulationAddtlAttrbts } from './CdmRegulationAddtlAttrbts';
-export { CdmProductAssetBondReference } from './CdmProductAssetBondReference';
-export { CdmObservableAssetCashPrice } from './CdmObservableAssetCashPrice';
-export { CdmProductCommonSettlementSettlementCentreEnum } from './CdmProductCommonSettlementSettlementCentreEnum';
-export { CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType';
-export { CdmProductCollateralAgencyRatingCriteria } from './CdmProductCollateralAgencyRatingCriteria';
-export { CdmBaseStaticdataAssetCommonAssetIdentifier } from './CdmBaseStaticdataAssetCommonAssetIdentifier';
-export { CdmRegulationPrsn } from './CdmRegulationPrsn';
-export { CdmProductCollateralSpecificAsset } from './CdmProductCollateralSpecificAsset';
-export { CdmProductAssetInflationRateSpecification } from './CdmProductAssetInflationRateSpecification';
-export { CdmProductCommonSettlementSettlementBase } from './CdmProductCommonSettlementSettlementBase';
-export { CdmEventCommonTradePricingReport } from './CdmEventCommonTradePricingReport';
-export { CdmProductCollateralRatingPriorityResolutionEnum } from './CdmProductCollateralRatingPriorityResolutionEnum';
-export { CdmProductTemplateRepoDurationEnum } from './CdmProductTemplateRepoDurationEnum';
-export { CdmBaseDatetimeAdjustableOrAdjustedDate } from './CdmBaseDatetimeAdjustableOrAdjustedDate';
-export { CdmBaseStaticdataPartyPartyRoleEnum } from './CdmBaseStaticdataPartyPartyRoleEnum';
-export { CdmProductCommonSettlementPricingDates } from './CdmProductCommonSettlementPricingDates';
-export { CdmBaseDatetimeBusinessDayConventionEnum } from './CdmBaseDatetimeBusinessDayConventionEnum';
-export { CdmObservableEventTriggerTypeEnum } from './CdmObservableEventTriggerTypeEnum';
-export { CdmLegaldocumentationCommonResourceLength } from './CdmLegaldocumentationCommonResourceLength';
-export { CdmProductCommonScheduleWeightedAveragingObservation } from './CdmProductCommonScheduleWeightedAveragingObservation';
-export { CdmProductAssetFloatingrateFloatingAmountCalculationDetails } from './CdmProductAssetFloatingrateFloatingAmountCalculationDetails';
-export { CdmEventCommonCollateralStatusEnum } from './CdmEventCommonCollateralStatusEnum';
-export { CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms';
-export { CdmObservableEventFieldWithMetaMarketDisruptionEnum } from './CdmObservableEventFieldWithMetaMarketDisruptionEnum';
-export { CdmEventWorkflowCreditLimitInformation } from './CdmEventWorkflowCreditLimitInformation';
-export { CdmProductCollateralCounterpartyOwnIssuePermitted } from './CdmProductCollateralCounterpartyOwnIssuePermitted';
-export { CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum } from './CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum';
-export { CdmProductAssetStubValue } from './CdmProductAssetStubValue';
-export { CdmLegaldocumentationContractAgreement } from './CdmLegaldocumentationContractAgreement';
-export { CdmLegaldocumentationMasterAdditionalDisruptionEvents } from './CdmLegaldocumentationMasterAdditionalDisruptionEvents';
-export { CdmProductCommonScheduleInitialFixingDate } from './CdmProductCommonScheduleInitialFixingDate';
-export { CdmObservableAssetInterpolationMethodEnum } from './CdmObservableAssetInterpolationMethodEnum';
-export { CdmProductAssetFPVFinalPriceElectionFallbackEnum } from './CdmProductAssetFPVFinalPriceElectionFallbackEnum';
-export { CdmObservableAssetFxInformationSource } from './CdmObservableAssetFxInformationSource';
-export { CdmProductAssetInterestShortfallCapEnum } from './CdmProductAssetInterestShortfallCapEnum';
-export { CdmObservableEventTrigger } from './CdmObservableEventTrigger';
-export { CdmProductCommonSettlementResolvablePriceQuantity } from './CdmProductCommonSettlementResolvablePriceQuantity';
-export { CdmBaseStaticdataAssetCreditSpecifiedCurrency } from './CdmBaseStaticdataAssetCreditSpecifiedCurrency';
-export { ComRosettaModelFieldWithMetaString } from './ComRosettaModelFieldWithMetaString';
-export { CdmProductCollateralReturnAmount } from './CdmProductCollateralReturnAmount';
-export { CdmLegaldocumentationCommonAgreementName } from './CdmLegaldocumentationCommonAgreementName';
-export { CdmEventWorkflowEventTimestampQualificationEnum } from './CdmEventWorkflowEventTimestampQualificationEnum';
-export { CdmBaseStaticdataPartyPartyIdentifier } from './CdmBaseStaticdataPartyPartyIdentifier';
-export { CdmEventCommonTransferExpression } from './CdmEventCommonTransferExpression';
-export { CdmProductAssetDayDistributionEnum } from './CdmProductAssetDayDistributionEnum';
-export { CdmProductCollateralAssetCountryOfOrigin } from './CdmProductCollateralAssetCountryOfOrigin';
-export { CdmProductCommonScheduleAmountSchedule } from './CdmProductCommonScheduleAmountSchedule';
-export { CdmLegaldocumentationCommonAddressForNotices } from './CdmLegaldocumentationCommonAddressForNotices';
-export { CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates } from './CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates';
-export { CdmBaseMathAveragingWeightingMethodEnum } from './CdmBaseMathAveragingWeightingMethodEnum';
-export { CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType } from './CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType';
-export { CdmObservableAssetFroFloatingRateIndexCalculationDefaults } from './CdmObservableAssetFroFloatingRateIndexCalculationDefaults';
-export { CdmProductAssetCashflowRepresentation } from './CdmProductAssetCashflowRepresentation';
-export { CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum';
-export { CdmEventWorkflowWorkflowState } from './CdmEventWorkflowWorkflowState';
-export { CdmEventWorkflowLimitApplicableExtended } from './CdmEventWorkflowLimitApplicableExtended';
-export { CdmProductTemplateExercisePeriod } from './CdmProductTemplateExercisePeriod';
-export { CdmEventCommonInstructionFunctionEnum } from './CdmEventCommonInstructionFunctionEnum';
-export { CdmEventCommonConfirmationStatusEnum } from './CdmEventCommonConfirmationStatusEnum';
-export { CdmBaseStaticdataPartyPersonIdentifierTypeEnum } from './CdmBaseStaticdataPartyPersonIdentifierTypeEnum';
-export { CdmObservableAssetFxSettlementRateSource } from './CdmObservableAssetFxSettlementRateSource';
-export { CdmEventWorkflowPartyCustomisedWorkflow } from './CdmEventWorkflowPartyCustomisedWorkflow';
-export { CdmProductAssetReturnTermsBase } from './CdmProductAssetReturnTermsBase';
-export { CdmProductCommonSettlementRollFeature } from './CdmProductCommonSettlementRollFeature';
-export { CdmProductTemplateQuanto } from './CdmProductTemplateQuanto';
-export { CdmProductCommonNotionalAdjustmentEnum } from './CdmProductCommonNotionalAdjustmentEnum';
-export { CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum';
-export { CdmRegulationDocument } from './CdmRegulationDocument';
-export { CdmProductCollateralCollateralCriteria } from './CdmProductCollateralCollateralCriteria';
-export { CdmProductCollateralNegativeCriteria } from './CdmProductCollateralNegativeCriteria';
-export { CdmProductCollateralAllCriteria } from './CdmProductCollateralAllCriteria';
-export { CdmProductCollateralAnyCriteria } from './CdmProductCollateralAnyCriteria';
-export { CdmObservableEventMetafieldsReferenceWithMetaObservation } from './CdmObservableEventMetafieldsReferenceWithMetaObservation';
-export { CdmProductCommonSettlementDeliveryMethodEnum } from './CdmProductCommonSettlementDeliveryMethodEnum';
-export { CdmEventCommonCreditEventTypeEnum } from './CdmEventCommonCreditEventTypeEnum';
-export { CdmProductAssetDividendPaymentDate } from './CdmProductAssetDividendPaymentDate';
-export { CdmProductCommonScheduleWeeklyRollConventionEnum } from './CdmProductCommonScheduleWeeklyRollConventionEnum';
-export { CdmEventCommonValuation } from './CdmEventCommonValuation';
-export { CdmObservableEventObservation } from './CdmObservableEventObservation';
-export { CdmBaseDatetimeTimeZone } from './CdmBaseDatetimeTimeZone';
-export { CdmObservableAssetFieldWithMetaInterpolationMethodEnum } from './CdmObservableAssetFieldWithMetaInterpolationMethodEnum';
-export { CdmBaseMathFinancialUnitEnum } from './CdmBaseMathFinancialUnitEnum';
-export { CdmObservableAssetSettlementRateOptionEnum } from './CdmObservableAssetSettlementRateOptionEnum';
-export { CdmObservableAssetMetafieldsReferenceWithMetaRateObservation } from './CdmObservableAssetMetafieldsReferenceWithMetaRateObservation';
-export { CdmEventCommonBillingSummaryInstruction } from './CdmEventCommonBillingSummaryInstruction';
-export { CdmLegaldocumentationCsaCollateralTransferAgreementElections } from './CdmLegaldocumentationCsaCollateralTransferAgreementElections';
+export { CdmProductTemplatePayout } from './CdmProductTemplatePayout';
+export { CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate } from './CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate';
+export { CdmRegulationFinInstrmGnlAttrbts } from './CdmRegulationFinInstrmGnlAttrbts';
+export { CdmProductCommonSettlementPrincipalPayments } from './CdmProductCommonSettlementPrincipalPayments';
+export { CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum } from './CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum';
+export { CdmRegulationSwpIn } from './CdmRegulationSwpIn';
+export { CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum';
+export { CdmObservableAssetInterestRateCurve } from './CdmObservableAssetInterestRateCurve';
+export { CdmProductTemplateAssetPayoutTradeTypeEnum } from './CdmProductTemplateAssetPayoutTradeTypeEnum';
+export { CdmProductTemplateStrategyFeature } from './CdmProductTemplateStrategyFeature';
+export { CdmEventCommonResetInstruction } from './CdmEventCommonResetInstruction';
 export { CdmBaseDatetimeBusinessDayAdjustments } from './CdmBaseDatetimeBusinessDayAdjustments';
-export { CdmEventCommonStockSplitInstruction } from './CdmEventCommonStockSplitInstruction';
+export { CdmObservableAssetQuotationRateTypeEnum } from './CdmObservableAssetQuotationRateTypeEnum';
+export { CdmObservableAssetMultipleCreditNotations } from './CdmObservableAssetMultipleCreditNotations';
+export { CdmProductCommonScheduleObservationDates } from './CdmProductCommonScheduleObservationDates';
+export { CdmProductCollateralEligibleCollateralSpecification } from './CdmProductCollateralEligibleCollateralSpecification';
+export { CdmLegaldocumentationMasterEquityAdditionalTerms } from './CdmLegaldocumentationMasterEquityAdditionalTerms';
+export { CdmProductCollateralConcentrationLimitTypeEnum } from './CdmProductCollateralConcentrationLimitTypeEnum';
+export { CdmEventWorkflowMessageInformation } from './CdmEventWorkflowMessageInformation';
+export { CdmObservableAssetFroFloatingRateIndexStyleEnum } from './CdmObservableAssetFroFloatingRateIndexStyleEnum';
+export { CdmEventWorkflowEventTimestampQualificationEnum } from './CdmEventWorkflowEventTimestampQualificationEnum';
+export { CdmRegulationInvstmtDcsnPrsn } from './CdmRegulationInvstmtDcsnPrsn';
+export { CdmProductCollateralIssuerName } from './CdmProductCollateralIssuerName';
+export { CdmBaseStaticdataPartyPartyIdentifier } from './CdmBaseStaticdataPartyPartyIdentifier';
+export { CdmObservableAssetMakeWholeAmount } from './CdmObservableAssetMakeWholeAmount';
+export { CdmEventCommonMarginCallActionEnum } from './CdmEventCommonMarginCallActionEnum';
+export { CdmProductCommonSettlementPaymentDiscounting } from './CdmProductCommonSettlementPaymentDiscounting';
+export { CdmLegaldocumentationCommonExecutionLocationEnum } from './CdmLegaldocumentationCommonExecutionLocationEnum';
+export { CdmProductAssetStubValue } from './CdmProductAssetStubValue';
+export { CdmBaseMathMoneyBound } from './CdmBaseMathMoneyBound';
+export { CdmObservableAssetValuationMethodEnum } from './CdmObservableAssetValuationMethodEnum';
+export { CdmEventCommonTransferState } from './CdmEventCommonTransferState';
+export { CdmProductCollateralAverageTradingVolumeMethodologyEnum } from './CdmProductCollateralAverageTradingVolumeMethodologyEnum';
+export { CdmBaseMathMeasureSchedule } from './CdmBaseMathMeasureSchedule';
+export { CdmProductCollateralCollateralAgreementFloatingRate } from './CdmProductCollateralCollateralAgreementFloatingRate';
+export { CdmBaseStaticdataPartyNaturalPersonRole } from './CdmBaseStaticdataPartyNaturalPersonRole';
+export { CdmProductCommonSettlementScheduledTransferEnum } from './CdmProductCommonSettlementScheduledTransferEnum';
+export { CdmProductTemplateEarlyTerminationProvision } from './CdmProductTemplateEarlyTerminationProvision';
+export { CdmLegaldocumentationMasterAdditionalDisruptionEvents } from './CdmLegaldocumentationMasterAdditionalDisruptionEvents';
+export { CdmLegaldocumentationCommonLegalAgreement } from './CdmLegaldocumentationCommonLegalAgreement';
+export { CdmObservableAssetFroFloatingRateIndexCalculationDefaults } from './CdmObservableAssetFroFloatingRateIndexCalculationDefaults';
+export { CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification } from './CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification';
+export { CdmBaseStaticdataAssetCommonTaxonomy } from './CdmBaseStaticdataAssetCommonTaxonomy';
+export { CdmProductCommonScheduleObservationTerms } from './CdmProductCommonScheduleObservationTerms';
+export { CdmEventCommonCollateralPosition } from './CdmEventCommonCollateralPosition';
+export { CdmBaseStaticdataAssetCommonISOCountryCodeEnum } from './CdmBaseStaticdataAssetCommonISOCountryCodeEnum';
+export { CdmProductCollateralIssuerCountryOfOrigin } from './CdmProductCollateralIssuerCountryOfOrigin';
+export { CdmObservableAssetFieldWithMetaInterestRateIndex } from './CdmObservableAssetFieldWithMetaInterestRateIndex';
+export { CdmEventCommonMetafieldsReferenceWithMetaContractDetails } from './CdmEventCommonMetafieldsReferenceWithMetaContractDetails';
+export { CdmProductTemplateOptionalEarlyTermination } from './CdmProductTemplateOptionalEarlyTermination';
+export { CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum';
+export { CdmProductAssetFixedRateSpecification } from './CdmProductAssetFixedRateSpecification';
+export { CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent } from './CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent';
+export { CdmProductCollateralContactElection } from './CdmProductCollateralContactElection';
+export { CdmBaseStaticdataIdentifierIdentifier } from './CdmBaseStaticdataIdentifierIdentifier';
+export { CdmBaseStaticdataAssetCommonDebtType } from './CdmBaseStaticdataAssetCommonDebtType';
+export { CdmObservableEventTriggerTimeTypeEnum } from './CdmObservableEventTriggerTimeTypeEnum';
+export { CdmBaseStaticdataPartyReferenceBank } from './CdmBaseStaticdataPartyReferenceBank';
+export { CdmProductCommonSettlementPrincipalPayment } from './CdmProductCommonSettlementPrincipalPayment';
+export { CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum';
+export { CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum } from './CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum';
+export { CdmProductCollateralCollateralMarginTypeEnum } from './CdmProductCollateralCollateralMarginTypeEnum';
+export { CdmBaseMathDatedValue } from './CdmBaseMathDatedValue';
+export { CdmEventWorkflowEventInstruction } from './CdmEventWorkflowEventInstruction';
+export { CdmObservableEventMetafieldsReferenceWithMetaObservation } from './CdmObservableEventMetafieldsReferenceWithMetaObservation';
+export { CdmBaseStaticdataPartyNaturalPersonRoleEnum } from './CdmBaseStaticdataPartyNaturalPersonRoleEnum';
+export { CdmBaseDatetimeTimeZone } from './CdmBaseDatetimeTimeZone';
+export { CdmProductCommonScheduleCalculationPeriodData } from './CdmProductCommonScheduleCalculationPeriodData';
+export { CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum } from './CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum';
+export { CdmEventPositionAvailableInventoryTypeEnum } from './CdmEventPositionAvailableInventoryTypeEnum';
+export { CdmRegulationPric } from './CdmRegulationPric';
+export { CdmObservableAssetSettlementRateOptionEnum } from './CdmObservableAssetSettlementRateOptionEnum';
+export { CdmObservableAssetInterestRateIndex } from './CdmObservableAssetInterestRateIndex';
+export { CdmProductAssetRollSourceCalendarEnum } from './CdmProductAssetRollSourceCalendarEnum';
+export { CdmProductCollateralConcentrationLimit } from './CdmProductCollateralConcentrationLimit';
+export { CdmProductAssetFloatingRateBase } from './CdmProductAssetFloatingRateBase';
+export { CdmObservableAssetDividendApplicability } from './CdmObservableAssetDividendApplicability';
+export { CdmLegaldocumentationCsaCreditSupportAgreementElections } from './CdmLegaldocumentationCsaCreditSupportAgreementElections';
+export { CdmProductCommonSchedulePaymentCalculationPeriod } from './CdmProductCommonSchedulePaymentCalculationPeriod';
+export { CdmProductAssetCreditDefaultPayout } from './CdmProductAssetCreditDefaultPayout';
+export { CdmObservableAssetQuotationSideEnum } from './CdmObservableAssetQuotationSideEnum';
+export { CdmProductAssetTranche } from './CdmProductAssetTranche';
+export { CdmBaseDatetimeAdjustableOrRelativeDates } from './CdmBaseDatetimeAdjustableOrRelativeDates';
+export { CdmBaseStaticdataAssetCommonAssetType } from './CdmBaseStaticdataAssetCommonAssetType';
+export { CdmEventCommonPriceTimingEnum } from './CdmEventCommonPriceTimingEnum';
+export { CdmLegaldocumentationMasterMasterAgreementClause } from './CdmLegaldocumentationMasterMasterAgreementClause';
+export { CdmProductCommonScheduleDateRelativeToValuationDates } from './CdmProductCommonScheduleDateRelativeToValuationDates';
+export { CdmEventCommonRecordAmountTypeEnum } from './CdmEventCommonRecordAmountTypeEnum';
+export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson';
+export { CdmProductCommonSettlementPayoutBase } from './CdmProductCommonSettlementPayoutBase';
+export { CdmBaseDatetimeDateRange } from './CdmBaseDatetimeDateRange';
+export { CdmObservableAssetMultipleDebtTypes } from './CdmObservableAssetMultipleDebtTypes';
+export { CdmBaseStaticdataAssetCommonFundProductTypeEnum } from './CdmBaseStaticdataAssetCommonFundProductTypeEnum';
+export { CdmBaseStaticdataAssetCommonDebtClassEnum } from './CdmBaseStaticdataAssetCommonDebtClassEnum';
+export { CdmProductCollateralDeliveryAmountElectionEnum } from './CdmProductCollateralDeliveryAmountElectionEnum';
+export { CdmProductCollateralCollateralInterestCalculationParameters } from './CdmProductCollateralCollateralInterestCalculationParameters';
+export { CdmEventCommonLineage } from './CdmEventCommonLineage';
+export { CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails } from './CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails';
+export { CdmEventCommonCreditEvent } from './CdmEventCommonCreditEvent';
+export { CdmRegulationAddtlAttrbts } from './CdmRegulationAddtlAttrbts';
+export { CdmProductAssetFinalPrincipalExchangeCalculationEnum } from './CdmProductAssetFinalPrincipalExchangeCalculationEnum';
+export { CdmObservableEventCreditEventNotice } from './CdmObservableEventCreditEventNotice';
+export { CdmProductAssetReferencePoolItem } from './CdmProductAssetReferencePoolItem';
+export { CdmBaseMathMeasureBase } from './CdmBaseMathMeasureBase';
+export { CdmObservableAssetFxSpotRateSource } from './CdmObservableAssetFxSpotRateSource';
+export { CdmObservableAssetRateObservation } from './CdmObservableAssetRateObservation';
+export { CdmProductAssetBasketReferenceInformation } from './CdmProductAssetBasketReferenceInformation';
+export { CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair } from './CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair';
+export { CdmProductCollateralCollateralInterestNotification } from './CdmProductCollateralCollateralInterestNotification';
+export { CdmObservableAssetPriceOperandEnum } from './CdmObservableAssetPriceOperandEnum';
+export { CdmMarginScheduleStandardizedScheduleTradeInfo } from './CdmMarginScheduleStandardizedScheduleTradeInfo';
+export { CdmBaseStaticdataPartyPayerReceiverEnum } from './CdmBaseStaticdataPartyPayerReceiverEnum';
+export { CdmBaseDatetimeDayOfWeekEnum } from './CdmBaseDatetimeDayOfWeekEnum';
+export { CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum';
+export { CdmProductTemplateExerciseNoticeGiverEnum } from './CdmProductTemplateExerciseNoticeGiverEnum';
+export { CdmEventWorkflowVelocity } from './CdmEventWorkflowVelocity';
+export { CdmBaseStaticdataAssetCommonAssetIdentifier } from './CdmBaseStaticdataAssetCommonAssetIdentifier';
+export { CdmProductTemplateMetafieldsReferenceWithMetaPayout } from './CdmProductTemplateMetafieldsReferenceWithMetaPayout';
+export { CdmLegaldocumentationCommonContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonContractualSupplementTypeEnum';
+export { CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum';
+export { CdmLegaldocumentationMasterUnderlierSubstitutionProvision } from './CdmLegaldocumentationMasterUnderlierSubstitutionProvision';
+export { CdmProductAssetSpreadSchedule } from './CdmProductAssetSpreadSchedule';
+export { CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum } from './CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum';
+export { CdmProductCommonSettlementComputedAmount } from './CdmProductCommonSettlementComputedAmount';
+export { CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum } from './CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum';
+export { CdmProductTemplateCalendarSpread } from './CdmProductTemplateCalendarSpread';
+export { CdmProductAssetAssetDeliveryProfileBlock } from './CdmProductAssetAssetDeliveryProfileBlock';
+export { CdmProductCommonScheduleResetRelativeToEnum } from './CdmProductCommonScheduleResetRelativeToEnum';
+export { CdmProductCommonSettlementCashSettlementMethodEnum } from './CdmProductCommonSettlementCashSettlementMethodEnum';
+export { CdmProductAssetDividendDateReferenceEnum } from './CdmProductAssetDividendDateReferenceEnum';
+export { CdmEventCommonHaircutIndicatorEnum } from './CdmEventCommonHaircutIndicatorEnum';
+export { CdmRegulationTerm } from './CdmRegulationTerm';
+export { CdmEventPositionContractBase } from './CdmEventPositionContractBase';
+export { CdmLegaldocumentationMasterFxAdditionalTerms } from './CdmLegaldocumentationMasterFxAdditionalTerms';
+export { CdmBaseDatetimePeriodExtendedEnum } from './CdmBaseDatetimePeriodExtendedEnum';
+export { CdmProductTemplateTradeLot } from './CdmProductTemplateTradeLot';
+export { CdmBaseStaticdataPartyAddress } from './CdmBaseStaticdataPartyAddress';
+export { CdmProductAssetSettledEntityMatrixSourceEnum } from './CdmProductAssetSettledEntityMatrixSourceEnum';
+export { CdmProductCollateralEligibleCollateralSpecificationInstruction } from './CdmProductCollateralEligibleCollateralSpecificationInstruction';
+export { CdmLegaldocumentationMasterRepresentations } from './CdmLegaldocumentationMasterRepresentations';
+export { CdmObservableAssetPremiumExpression } from './CdmObservableAssetPremiumExpression';
+export { CdmRegulationNm } from './CdmRegulationNm';
+export { CdmBaseMathNonNegativeQuantity } from './CdmBaseMathNonNegativeQuantity';
+export { CdmProductTemplateAveragingInOutEnum } from './CdmProductTemplateAveragingInOutEnum';
+export { CdmProductTemplatePartialExercise } from './CdmProductTemplatePartialExercise';
+export { CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum } from './CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum';
+export { CdmProductCollateralIssuerAgencyRating } from './CdmProductCollateralIssuerAgencyRating';
+export { CdmProductCommonScheduleFxLinkedNotionalSchedule } from './CdmProductCommonScheduleFxLinkedNotionalSchedule';
+export { CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum } from './CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum';
+export { CdmBaseStaticdataAssetCommonListedDerivative } from './CdmBaseStaticdataAssetCommonListedDerivative';
+export { CdmProductCommonSettlementTransferSettlementEnum } from './CdmProductCommonSettlementTransferSettlementEnum';
+export { CdmProductAssetNegativeInterestRateTreatmentEnum } from './CdmProductAssetNegativeInterestRateTreatmentEnum';
+export { CdmProductCollateralCounterpartyOwnIssuePermitted } from './CdmProductCollateralCounterpartyOwnIssuePermitted';
+export { CdmEventPositionInventory } from './CdmEventPositionInventory';
+export { CdmObservableEventGracePeriodExtension } from './CdmObservableEventGracePeriodExtension';
+export { CdmLegaldocumentationCommonAgreementName } from './CdmLegaldocumentationCommonAgreementName';
+export { CdmProductAssetReferenceObligation } from './CdmProductAssetReferenceObligation';
+export { CdmEventWorkflowWorkflowStatusEnum } from './CdmEventWorkflowWorkflowStatusEnum';
+export { CdmMarginScheduleStandardizedScheduleProductClassEnum } from './CdmMarginScheduleStandardizedScheduleProductClassEnum';
+export { CdmProductCollateralIndependentAmount } from './CdmProductCollateralIndependentAmount';
+export { CdmProductCommonScheduleCalculationPeriod } from './CdmProductCommonScheduleCalculationPeriod';
+export { CdmProductTemplateBarrier } from './CdmProductTemplateBarrier';
+export { CdmBaseMathRounding } from './CdmBaseMathRounding';
+export { CdmRegulationSellr } from './CdmRegulationSellr';
+export { CdmObservableAssetInformationProviderEnum } from './CdmObservableAssetInformationProviderEnum';
+export { CdmBaseStaticdataAssetCommonLoan } from './CdmBaseStaticdataAssetCommonLoan';
+export { CdmObservableAssetCalculatedrateFloatingRateCalculationParameters } from './CdmObservableAssetCalculatedrateFloatingRateCalculationParameters';
+export { CdmProductCollateralListingExchange } from './CdmProductCollateralListingExchange';
+export { CdmObservableAssetPerformanceValuationDates } from './CdmObservableAssetPerformanceValuationDates';
+export { CdmEventCommonReset } from './CdmEventCommonReset';
+export { CdmBaseStaticdataPartyAncillaryRoleEnum } from './CdmBaseStaticdataPartyAncillaryRoleEnum';
+export { CdmEventCommonExerciseEvent } from './CdmEventCommonExerciseEvent';
+export { CdmEventCommonMetafieldsReferenceWithMetaTrade } from './CdmEventCommonMetafieldsReferenceWithMetaTrade';
+export { CdmEventCommonExposure } from './CdmEventCommonExposure';
+export { CdmProductTemplateMandatoryEarlyTermination } from './CdmProductTemplateMandatoryEarlyTermination';
+export { CdmObservableEventObservation } from './CdmObservableEventObservation';
+export { CdmBaseStaticdataAssetCommonCreditRiskEnum } from './CdmBaseStaticdataAssetCommonCreditRiskEnum';
+export { CdmEventCommonRegMarginTypeEnum } from './CdmEventCommonRegMarginTypeEnum';
+export { CdmProductTemplateAssetPayout } from './CdmProductTemplateAssetPayout';
+export { CdmProductTemplateSchedulePeriod } from './CdmProductTemplateSchedulePeriod';
+export { CdmProductCommonSettlementPhysicalSettlementPeriod } from './CdmProductCommonSettlementPhysicalSettlementPeriod';
+export { CdmEventCommonExecutionInstruction } from './CdmEventCommonExecutionInstruction';
+export { CdmBaseStaticdataIdentifierLocationIdentifier } from './CdmBaseStaticdataIdentifierLocationIdentifier';
+export { CdmEventCommonCorporateAction } from './CdmEventCommonCorporateAction';
 export { CdmMarginScheduleStandardizedScheduleAssetClassEnum } from './CdmMarginScheduleStandardizedScheduleAssetClassEnum';
+export { CdmBaseDatetimeAdjustableOrAdjustedDate } from './CdmBaseDatetimeAdjustableOrAdjustedDate';
+export { CdmProductTemplateCancelableProvisionAdjustedDates } from './CdmProductTemplateCancelableProvisionAdjustedDates';
+export { CdmEventCommonTransferStatusEnum } from './CdmEventCommonTransferStatusEnum';
+export { CdmProductCommonSettlementPCDeliverableObligationCharac } from './CdmProductCommonSettlementPCDeliverableObligationCharac';
+export { CdmBaseStaticdataAssetCommonInstrumentBase } from './CdmBaseStaticdataAssetCommonInstrumentBase';
+export { CdmEventCommonQuantityChangeInstruction } from './CdmEventCommonQuantityChangeInstruction';
+export { CdmEventCommonReturnInstruction } from './CdmEventCommonReturnInstruction';
+export { CdmProductCommonScheduleDateRelativeToPaymentDates } from './CdmProductCommonScheduleDateRelativeToPaymentDates';
+export { CdmBaseStaticdataAssetCommonDebtInterestEnum } from './CdmBaseStaticdataAssetCommonDebtInterestEnum';
+export { CdmBaseDatetimeCalculationPeriodFrequency } from './CdmBaseDatetimeCalculationPeriodFrequency';
+export { CdmBaseStaticdataPartyRelatedParty } from './CdmBaseStaticdataPartyRelatedParty';
+export { CdmObservableEventMarketDisruptionEnum } from './CdmObservableEventMarketDisruptionEnum';
+export { CdmProductTemplateEvergreenProvision } from './CdmProductTemplateEvergreenProvision';
+export { CdmObservableEventShareExtraordinaryEventEnum } from './CdmObservableEventShareExtraordinaryEventEnum';
+export { CdmLegaldocumentationCsaSecurityAgreementElections } from './CdmLegaldocumentationCsaSecurityAgreementElections';
+export { CdmLegaldocumentationCommonContractualDefinitionsEnum } from './CdmLegaldocumentationCommonContractualDefinitionsEnum';
+export { CdmProductAssetDiscountingMethod } from './CdmProductAssetDiscountingMethod';
+export { CdmBaseDatetimeAveragingSchedule } from './CdmBaseDatetimeAveragingSchedule';
+export { CdmEventWorkflowCreditLimitTypeEnum } from './CdmEventWorkflowCreditLimitTypeEnum';
+export { CdmObservableEventRestructuring } from './CdmObservableEventRestructuring';
+export { CdmEventPositionPositionStatusEnum } from './CdmEventPositionPositionStatusEnum';
+export { CdmBaseStaticdataAssetCommonTaxonomySourceEnum } from './CdmBaseStaticdataAssetCommonTaxonomySourceEnum';
+export { CdmBaseMathNumberBound } from './CdmBaseMathNumberBound';
+export { CdmLegaldocumentationCommonMatrixTermEnum } from './CdmLegaldocumentationCommonMatrixTermEnum';
+export { CdmProductAssetDividendPayoutRatio } from './CdmProductAssetDividendPayoutRatio';
+export { CdmRegulationPrsn } from './CdmRegulationPrsn';
+export { CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum';
+export { CdmObservableAssetCreditRatingAgencyEnum } from './CdmObservableAssetCreditRatingAgencyEnum';
+export { CdmRegulationBuyr } from './CdmRegulationBuyr';
+export { CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms } from './CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms';
+export { CdmEventCommonMarginCallIssuance } from './CdmEventCommonMarginCallIssuance';
+export { CdmBaseMathAveragingCalculationMethodEnum } from './CdmBaseMathAveragingCalculationMethodEnum';
+export { CdmBaseMathRoundingModeEnum } from './CdmBaseMathRoundingModeEnum';
+export { CdmEventCommonRegIMRoleEnum } from './CdmEventCommonRegIMRoleEnum';
+export { CdmEventCommonMarginCallResponseTypeEnum } from './CdmEventCommonMarginCallResponseTypeEnum';
+export { CdmLegaldocumentationCommonLegalAgreementBase } from './CdmLegaldocumentationCommonLegalAgreementBase';
+export { CdmProductAssetBoundedVariance } from './CdmProductAssetBoundedVariance';
+export { CdmProductTemplateComposite } from './CdmProductTemplateComposite';
+export { CdmBaseMathQuantitySchedule } from './CdmBaseMathQuantitySchedule';
+export { CdmProductCommonSettlementAssetFlowBase } from './CdmProductCommonSettlementAssetFlowBase';
+export { CdmProductCommonSettlementPaymentDetail } from './CdmProductCommonSettlementPaymentDetail';
+export { CdmBaseMathWeatherUnitEnum } from './CdmBaseMathWeatherUnitEnum';
+export { CdmBaseMathQuantity } from './CdmBaseMathQuantity';
+export { CdmBaseDatetimeCalculationFrequency } from './CdmBaseDatetimeCalculationFrequency';
+export { CdmEventCommonContractFormationInstruction } from './CdmEventCommonContractFormationInstruction';
+export { CdmObservableAssetPriceExpressionEnum } from './CdmObservableAssetPriceExpressionEnum';
+export { CdmEventWorkflowCreditLimitUtilisationPosition } from './CdmEventWorkflowCreditLimitUtilisationPosition';
+export { CdmEventPositionCounterpartyPosition } from './CdmEventPositionCounterpartyPosition';
+export { CdmBaseMathUnitType } from './CdmBaseMathUnitType';
+export { CdmProductCommonSettlementQuantityMultiplier } from './CdmProductCommonSettlementQuantityMultiplier';
+export { CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum';
+export { CdmObservableAssetCalculatedrateObservationParameters } from './CdmObservableAssetCalculatedrateObservationParameters';
+export { CdmLegaldocumentationCommonOtherAgreementTerms } from './CdmLegaldocumentationCommonOtherAgreementTerms';
+export { CdmBaseDatetimePeriodEnum } from './CdmBaseDatetimePeriodEnum';
+export { CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum';
+export { CdmEventWorkflowWorkflowStep } from './CdmEventWorkflowWorkflowStep';
+export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
+export { CdmProductCollateralAlternativeToInterestAmountEnum } from './CdmProductCollateralAlternativeToInterestAmountEnum';
+export { CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights } from './CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights';
+export { CdmBaseStaticdataIdentifierIdentifiedList } from './CdmBaseStaticdataIdentifierIdentifiedList';
+export { CdmProductTemplateExtendibleProvisionAdjustedDates } from './CdmProductTemplateExtendibleProvisionAdjustedDates';
+export { CdmBaseStaticdataPartyReferenceBanks } from './CdmBaseStaticdataPartyReferenceBanks';
+export { CdmObservableAssetCreditNotationMismatchResolutionEnum } from './CdmObservableAssetCreditNotationMismatchResolutionEnum';
+export { CdmEventCommonBillingRecordInstruction } from './CdmEventCommonBillingRecordInstruction';
+export { CdmEventWorkflowEventTimestamp } from './CdmEventWorkflowEventTimestamp';
+export { CdmProductAssetCashflowRepresentation } from './CdmProductAssetCashflowRepresentation';
+export { CdmBaseDatetimePeriodBound } from './CdmBaseDatetimePeriodBound';
+export { CdmRegulationSwpOut } from './CdmRegulationSwpOut';
+export { CdmBaseDatetimeFieldWithMetaTimeZone } from './CdmBaseDatetimeFieldWithMetaTimeZone';
+export { CdmProductCollateralAssetMaturity } from './CdmProductCollateralAssetMaturity';
+export { CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum } from './CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum';
 export { CdmEventCommonActionEnum } from './CdmEventCommonActionEnum';
+export { CdmProductAssetFixedAmountCalculationDetails } from './CdmProductAssetFixedAmountCalculationDetails';
+export { CdmBaseDatetimeRelativeDates } from './CdmBaseDatetimeRelativeDates';
+export { CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity } from './CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity';
+export { CdmBaseStaticdataPartyNaturalPerson } from './CdmBaseStaticdataPartyNaturalPerson';
+export { CdmBaseStaticdataAssetCommonEquityTypeEnum } from './CdmBaseStaticdataAssetCommonEquityTypeEnum';
+export { CdmProductTemplatePortfolioReturnTerms } from './CdmProductTemplatePortfolioReturnTerms';
+export { CdmProductTemplateOptionExerciseStyleEnum } from './CdmProductTemplateOptionExerciseStyleEnum';
 export { CdmProductTemplateMetafieldsReferenceWithMetaOptionPayout } from './CdmProductTemplateMetafieldsReferenceWithMetaOptionPayout';
 export { CdmProductAssetAssetDeliveryProfile } from './CdmProductAssetAssetDeliveryProfile';
-export { CdmEventWorkflowWorkflowStepApproval } from './CdmEventWorkflowWorkflowStepApproval';
-export { CdmProductAssetSettledEntityMatrix } from './CdmProductAssetSettledEntityMatrix';
-export { CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum } from './CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum';
-export { CdmLegaldocumentationMasterEquityMasterConfirmation } from './CdmLegaldocumentationMasterEquityMasterConfirmation';
-export { CdmObservableAssetPerformanceValuationDates } from './CdmObservableAssetPerformanceValuationDates';
-export { CdmObservableAssetFroFloatingRateIndexCategoryEnum } from './CdmObservableAssetFroFloatingRateIndexCategoryEnum';
-export { CdmProductTemplateMultipleExercise } from './CdmProductTemplateMultipleExercise';
-export { CdmProductAssetSpreadCalculationMethodEnum } from './CdmProductAssetSpreadCalculationMethodEnum';
-export { CdmBaseStaticdataAssetCommonInstrumentBase } from './CdmBaseStaticdataAssetCommonInstrumentBase';
-export { CdmBaseStaticdataAssetCommonDebtClassEnum } from './CdmBaseStaticdataAssetCommonDebtClassEnum';
-export { CdmRegulationQty } from './CdmRegulationQty';
-export { CdmObservableAssetValuationMethodEnum } from './CdmObservableAssetValuationMethodEnum';
-export { CdmProductCommonSchedulePayRelativeToEnum } from './CdmProductCommonSchedulePayRelativeToEnum';
-export { CdmLegaldocumentationCommonLegalAgreementTypeEnum } from './CdmLegaldocumentationCommonLegalAgreementTypeEnum';
-export { CdmBaseStaticdataAssetCommonDigitalAsset } from './CdmBaseStaticdataAssetCommonDigitalAsset';
-export { CdmObservableEventFeaturePayment } from './CdmObservableEventFeaturePayment';
-export { CdmBaseDatetimeDaycountDayCountFractionEnum } from './CdmBaseDatetimeDaycountDayCountFractionEnum';
-export { CdmProductCommonSettlementCashSettlementTerms } from './CdmProductCommonSettlementCashSettlementTerms';
-export { CdmBaseMathRoundingDirectionEnum } from './CdmBaseMathRoundingDirectionEnum';
-export { CdmObservableAssetCalculatedrateInflationCalculationStyleEnum } from './CdmObservableAssetCalculatedrateInflationCalculationStyleEnum';
-export { CdmProductAssetFieldWithMetaIndexAnnexSourceEnum } from './CdmProductAssetFieldWithMetaIndexAnnexSourceEnum';
-export { CdmEventCommonCounterpartyPositionBusinessEvent } from './CdmEventCommonCounterpartyPositionBusinessEvent';
-export { CdmProductAssetFloatingAmountProvisions } from './CdmProductAssetFloatingAmountProvisions';
-export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
-export { CdmBaseStaticdataAssetCommonCommodityProductDefinition } from './CdmBaseStaticdataAssetCommonCommodityProductDefinition';
-export { CdmBaseStaticdataPartyNaturalPerson } from './CdmBaseStaticdataPartyNaturalPerson';
-export { CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum } from './CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum';
-export { CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum } from './CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum';
-export { CdmBaseStaticdataAssetCommonIssuerTypeEnum } from './CdmBaseStaticdataAssetCommonIssuerTypeEnum';
-export { CdmRegulationIndx } from './CdmRegulationIndx';
-export { CdmEventCommonMarginCallResponseAction } from './CdmEventCommonMarginCallResponseAction';
-export { CdmBaseDatetimeRollConventionEnum } from './CdmBaseDatetimeRollConventionEnum';
-export { CdmObservableAssetFxRate } from './CdmObservableAssetFxRate';
-export { CdmObservableAssetCashCollateralValuationMethod } from './CdmObservableAssetCashCollateralValuationMethod';
-export { CdmObservableEventRestructuringEnum } from './CdmObservableEventRestructuringEnum';
-export { CdmProductTemplateDividendTerms } from './CdmProductTemplateDividendTerms';
-export { CdmProductCollateralCollateralInterestCalculationParameters } from './CdmProductCollateralCollateralInterestCalculationParameters';
-export { CdmObservableAssetPartyDeterminationEnum } from './CdmObservableAssetPartyDeterminationEnum';
-export { CdmObservableAssetQuotationRateTypeEnum } from './CdmObservableAssetQuotationRateTypeEnum';
-export { CdmLegaldocumentationCommonMatrixTypeEnum } from './CdmLegaldocumentationCommonMatrixTypeEnum';
-export { CdmObservableAssetFieldWithMetaCreditNotation } from './CdmObservableAssetFieldWithMetaCreditNotation';
-export { CdmBaseStaticdataPartyAncillaryParty } from './CdmBaseStaticdataPartyAncillaryParty';
-export { CdmBaseDatetimeCommodityBusinessCalendarEnum } from './CdmBaseDatetimeCommodityBusinessCalendarEnum';
-export { CdmLegaldocumentationCommonLengthUnitEnum } from './CdmLegaldocumentationCommonLengthUnitEnum';
-export { CdmObservableAssetCashPriceTypeEnum } from './CdmObservableAssetCashPriceTypeEnum';
-export { CdmProductCollateralDomesticCurrencyIssued } from './CdmProductCollateralDomesticCurrencyIssued';
-export { CdmBaseStaticdataAssetCommonCollateralTaxonomy } from './CdmBaseStaticdataAssetCommonCollateralTaxonomy';
-export { CdmEventCommonBillingRecordInstruction } from './CdmEventCommonBillingRecordInstruction';
-export { CdmProductTemplateReturnTerms } from './CdmProductTemplateReturnTerms';
-export { CdmProductTemplateAsian } from './CdmProductTemplateAsian';
-export { CdmBaseStaticdataAssetCommonCommodity } from './CdmBaseStaticdataAssetCommonCommodity';
-export { CdmProductCommonSettlementScheduledTransferEnum } from './CdmProductCommonSettlementScheduledTransferEnum';
-export { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum';
-export { CdmEventPositionPositionStatusEnum } from './CdmEventPositionPositionStatusEnum';
-export { CdmProductTemplateAssetPayoutTradeTypeEnum } from './CdmProductTemplateAssetPayoutTradeTypeEnum';
-export { CdmObservableAssetObservable } from './CdmObservableAssetObservable';
-export { CdmEventPositionPosition } from './CdmEventPositionPosition';
-export { CdmBaseStaticdataAssetCommonFundProductTypeEnum } from './CdmBaseStaticdataAssetCommonFundProductTypeEnum';
-export { CdmRegulationSchmeNm } from './CdmRegulationSchmeNm';
-export { CdmProductAssetReferenceInformation } from './CdmProductAssetReferenceInformation';
-export { CdmProductAssetAdditionalFixedPayments } from './CdmProductAssetAdditionalFixedPayments';
-export { CdmEventCommonExecutionTypeEnum } from './CdmEventCommonExecutionTypeEnum';
-export { CdmBaseMathNumberRange } from './CdmBaseMathNumberRange';
-export { CdmBaseDatetimeDayOfWeekEnum } from './CdmBaseDatetimeDayOfWeekEnum';
+export { CdmObservableAssetFieldWithMetaInterpolationMethodEnum } from './CdmObservableAssetFieldWithMetaInterpolationMethodEnum';
 export { CdmBaseDatetimeCustomisableOffset } from './CdmBaseDatetimeCustomisableOffset';
-export { CdmProductTemplateExerciseFeeSchedule } from './CdmProductTemplateExerciseFeeSchedule';
-export { CdmProductAssetCompoundingMethodEnum } from './CdmProductAssetCompoundingMethodEnum';
-export { CdmProductAssetAssetDeliveryPeriods } from './CdmProductAssetAssetDeliveryPeriods';
-export { CdmBaseStaticdataPartyAddress } from './CdmBaseStaticdataPartyAddress';
-export { CdmProductCollateralIssuerAgencyRating } from './CdmProductCollateralIssuerAgencyRating';
-export { CdmProductAssetDividendAmountTypeEnum } from './CdmProductAssetDividendAmountTypeEnum';
-export { CdmLegaldocumentationCommonOtherAgreement } from './CdmLegaldocumentationCommonOtherAgreement';
-export { CdmEventCommonReturnInstruction } from './CdmEventCommonReturnInstruction';
-export { CdmProductCommonScheduleCalculationPeriodDates } from './CdmProductCommonScheduleCalculationPeriodDates';
-export { CdmObservableAssetFxSpotRateSource } from './CdmObservableAssetFxSpotRateSource';
-export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount';
-export { CdmBaseMathMoneyBound } from './CdmBaseMathMoneyBound';
-export { CdmProductTemplatePassThroughItem } from './CdmProductTemplatePassThroughItem';
-export { CdmProductAssetCorrelationReturnTerms } from './CdmProductAssetCorrelationReturnTerms';
-export { CdmProductTemplateEvergreenProvision } from './CdmProductTemplateEvergreenProvision';
-export { CdmEventCommonClearingInstruction } from './CdmEventCommonClearingInstruction';
-export { CdmBaseDatetimeRoundingFrequencyEnum } from './CdmBaseDatetimeRoundingFrequencyEnum';
-export { CdmProductCommonSettlementCashflow } from './CdmProductCommonSettlementCashflow';
-export { CdmProductCollateralCollateralInterestNotification } from './CdmProductCollateralCollateralInterestNotification';
-export { CdmProductTemplateExerciseFee } from './CdmProductTemplateExerciseFee';
-export { CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum } from './CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum';
-export { CdmObservableEventCreditEvents } from './CdmObservableEventCreditEvents';
-export { CdmProductCollateralAlternativeToInterestAmountEnum } from './CdmProductCollateralAlternativeToInterestAmountEnum';
-export { CdmEventPositionInventory } from './CdmEventPositionInventory';
-export { CdmProductTemplateAssetLeg } from './CdmProductTemplateAssetLeg';
-export { CdmProductAssetDividendCurrency } from './CdmProductAssetDividendCurrency';
-export { CdmObservableAssetPriceSourceDisruption } from './CdmObservableAssetPriceSourceDisruption';
-export { CdmBaseStaticdataAssetCreditNotDomesticCurrency } from './CdmBaseStaticdataAssetCreditNotDomesticCurrency';
-export { CdmLegaldocumentationCommonAgreementTerms } from './CdmLegaldocumentationCommonAgreementTerms';
-export { CdmRegulationSellr } from './CdmRegulationSellr';
-export { CdmProductAssetLoadTypeEnum } from './CdmProductAssetLoadTypeEnum';
-export { CdmProductCommonSettlementDeliverableObligations } from './CdmProductCommonSettlementDeliverableObligations';
-export { CdmBaseDatetimeDateRange } from './CdmBaseDatetimeDateRange';
-export { CdmBaseStaticdataAssetCommonInstrument } from './CdmBaseStaticdataAssetCommonInstrument';
-export { CdmRegulationOthr } from './CdmRegulationOthr';
-export { CdmProductTemplateOptionTypeEnum } from './CdmProductTemplateOptionTypeEnum';
-export { CdmBaseMathRoundingModeEnum } from './CdmBaseMathRoundingModeEnum';
-export { CdmEventCommonTradeState } from './CdmEventCommonTradeState';
-export { CdmProductCommonSettlementPaymentDiscounting } from './CdmProductCommonSettlementPaymentDiscounting';
-export { CdmLegaldocumentationCommonMatrixTermEnum } from './CdmLegaldocumentationCommonMatrixTermEnum';
-export { CdmBaseStaticdataPartyReferenceBanks } from './CdmBaseStaticdataPartyReferenceBanks';
-export { CdmBaseStaticdataAssetCommonTaxonomySourceEnum } from './CdmBaseStaticdataAssetCommonTaxonomySourceEnum';
-export { CdmBaseDatetimeFrequency } from './CdmBaseDatetimeFrequency';
-export { CdmBaseDatetimePeriodBound } from './CdmBaseDatetimePeriodBound';
-export { CdmProductTemplateOptionFeature } from './CdmProductTemplateOptionFeature';
-export { CdmObservableAssetDividendApplicability } from './CdmObservableAssetDividendApplicability';
-export { CdmProductAssetEquityUnderlierProvisions } from './CdmProductAssetEquityUnderlierProvisions';
-export { CdmLegaldocumentationMasterUnderlierSubstitutionProvision } from './CdmLegaldocumentationMasterUnderlierSubstitutionProvision';
-export { CdmBaseStaticdataAssetCommonProductIdentifier } from './CdmBaseStaticdataAssetCommonProductIdentifier';
-export { CdmProductAssetDividendPayoutRatio } from './CdmProductAssetDividendPayoutRatio';
-export { CdmRegulationFinInstrm } from './CdmRegulationFinInstrm';
-export { CdmObservableEventCreditEventNotice } from './CdmObservableEventCreditEventNotice';
-export { CdmProductCommonSettlementPaymentRule } from './CdmProductCommonSettlementPaymentRule';
+export { CdmProductAssetSpreadScheduleTypeEnum } from './CdmProductAssetSpreadScheduleTypeEnum';
+export { CdmObservableAssetEquityIndex } from './CdmObservableAssetEquityIndex';
+export { CdmProductAssetDiscountingTypeEnum } from './CdmProductAssetDiscountingTypeEnum';
+export { CdmProductCommonSettlementValuationDate } from './CdmProductCommonSettlementValuationDate';
+export { CdmProductCollateralCollateralInterestHandlingParameters } from './CdmProductCollateralCollateralInterestHandlingParameters';
+export { CdmProductAssetForeignExchange } from './CdmProductAssetForeignExchange';
+export { CdmObservableAssetCashPrice } from './CdmObservableAssetCashPrice';
+export { CdmEventCommonMarginCallBase } from './CdmEventCommonMarginCallBase';
 export { CdmProductCollateralCollateralProvisions } from './CdmProductCollateralCollateralProvisions';
-export { CdmBaseDatetimeFieldWithMetaTimeZone } from './CdmBaseDatetimeFieldWithMetaTimeZone';
-export { CdmEventCommonCollateralPosition } from './CdmEventCommonCollateralPosition';
-export { CdmProductCollateralCollateralMarginTypeEnum } from './CdmProductCollateralCollateralMarginTypeEnum';
-export { CdmProductAssetInterestShortFall } from './CdmProductAssetInterestShortFall';
+export { CdmEventCommonCounterpartyPositionState } from './CdmEventCommonCounterpartyPositionState';
+export { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate';
+export { CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum } from './CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum';
+export { CdmObservableAssetCreditNotationBoundaryEnum } from './CdmObservableAssetCreditNotationBoundaryEnum';
+export { CdmEventCommonBusinessEvent } from './CdmEventCommonBusinessEvent';
+export { CdmObservableAssetPriceComposite } from './CdmObservableAssetPriceComposite';
+export { CdmBaseStaticdataAssetCommonInstrumentTypeEnum } from './CdmBaseStaticdataAssetCommonInstrumentTypeEnum';
+export { CdmBaseStaticdataAssetCommonTaxonomyValue } from './CdmBaseStaticdataAssetCommonTaxonomyValue';
+export { CdmProductTemplateMandatoryEarlyTerminationAdjustedDates } from './CdmProductTemplateMandatoryEarlyTerminationAdjustedDates';
+export { CdmBaseStaticdataAssetCommonProductIdTypeEnum } from './CdmBaseStaticdataAssetCommonProductIdTypeEnum';
+export { CdmObservableAssetMetafieldsReferenceWithMetaMoney } from './CdmObservableAssetMetafieldsReferenceWithMetaMoney';
+export { CdmBaseDatetimeDayTypeEnum } from './CdmBaseDatetimeDayTypeEnum';
+export { CdmEventCommonTransferInstruction } from './CdmEventCommonTransferInstruction';
+export { CdmProductAssetDividendAmountTypeEnum } from './CdmProductAssetDividendAmountTypeEnum';
+export { CdmProductAssetDividendPeriod } from './CdmProductAssetDividendPeriod';
+export { CdmEventCommonMetafieldsReferenceWithMetaTradeState } from './CdmEventCommonMetafieldsReferenceWithMetaTradeState';
+export { CdmProductCollateralEligibilityQuery } from './CdmProductCollateralEligibilityQuery';
+export { CdmProductCollateralCollateralCriteriaBase } from './CdmProductCollateralCollateralCriteriaBase';
+export { CdmObservableAssetCreditNotation } from './CdmObservableAssetCreditNotation';
+export { CdmBaseMathCompareOp } from './CdmBaseMathCompareOp';
+export { CdmProductAssetFieldWithMetaIndexAnnexSourceEnum } from './CdmProductAssetFieldWithMetaIndexAnnexSourceEnum';
+export { CdmProductCommonSettlementPrincipalPaymentSchedule } from './CdmProductCommonSettlementPrincipalPaymentSchedule';
+export { CdmEventCommonIndexTransitionInstruction } from './CdmEventCommonIndexTransitionInstruction';
+export { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum';
+export { CdmObservableEventTriggerTypeEnum } from './CdmObservableEventTriggerTypeEnum';
+export { CdmBaseDatetimeFieldWithMetaBusinessCenterEnum } from './CdmBaseDatetimeFieldWithMetaBusinessCenterEnum';
+export { CdmBaseDatetimeTimeUnitEnum } from './CdmBaseDatetimeTimeUnitEnum';
+export { CdmProductAssetReturnTypeEnum } from './CdmProductAssetReturnTypeEnum';
+export { CdmProductAssetCorrelationReturnTerms } from './CdmProductAssetCorrelationReturnTerms';
+export { CdmObservableAssetCreditIndex } from './CdmObservableAssetCreditIndex';
+export { CdmObservableEventPubliclyAvailableInformation } from './CdmObservableEventPubliclyAvailableInformation';
+export { CdmProductCommonScheduleParametricDates } from './CdmProductCommonScheduleParametricDates';
+export { CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum } from './CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum';
+export { CdmEventCommonValuationInstruction } from './CdmEventCommonValuationInstruction';
+export { CdmEventWorkflowLimitApplicableExtended } from './CdmEventWorkflowLimitApplicableExtended';
+export { CdmEventWorkflowLimitLevelEnum } from './CdmEventWorkflowLimitLevelEnum';
+export { CdmProductCollateralCollateralInterestParameters } from './CdmProductCollateralCollateralInterestParameters';
+export { CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates } from './CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates';
+export { CdmEventPositionSecurityLocate } from './CdmEventPositionSecurityLocate';
+export { CdmObservableCommonDeterminationMethodEnum } from './CdmObservableCommonDeterminationMethodEnum';
+export { CdmLegaldocumentationCommonGoverningLawEnum } from './CdmLegaldocumentationCommonGoverningLawEnum';
+export { CdmObservableAssetPriceSchedule } from './CdmObservableAssetPriceSchedule';
+export { CdmObservableAssetCreditNotations } from './CdmObservableAssetCreditNotations';
+export { CdmObservableAssetCalculationAgent } from './CdmObservableAssetCalculationAgent';
+export { CdmProductTemplateMarginTypeEnum } from './CdmProductTemplateMarginTypeEnum';
+export { CdmRegulationUndrlygInstrm } from './CdmRegulationUndrlygInstrm';
+export { CdmObservableAssetValuationSource } from './CdmObservableAssetValuationSource';
+export { CdmProductCollateralAssetCountryOfOrigin } from './CdmProductCollateralAssetCountryOfOrigin';
+export { CdmEventCommonTermsChangeInstruction } from './CdmEventCommonTermsChangeInstruction';
+export { CdmProductCommonSettlementCashSettlementTerms } from './CdmProductCommonSettlementCashSettlementTerms';
+export { CdmBaseStaticdataAssetRatesFloatingRateIndexEnum } from './CdmBaseStaticdataAssetRatesFloatingRateIndexEnum';
+export { CdmBaseMathNonNegativeQuantitySchedule } from './CdmBaseMathNonNegativeQuantitySchedule';
+export { CdmRegulationFinInstrmRptgTxRpt } from './CdmRegulationFinInstrmRptgTxRpt';
+export { CdmObservableAssetQuotedCurrencyPair } from './CdmObservableAssetQuotedCurrencyPair';
+export { CdmEventPositionMetafieldsReferenceWithMetaPortfolioState } from './CdmEventPositionMetafieldsReferenceWithMetaPortfolioState';
+export { CdmObservableEventFieldWithMetaMarketDisruptionEnum } from './CdmObservableEventFieldWithMetaMarketDisruptionEnum';
+export { CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment } from './CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment';
+export { CdmObservableAssetCalculatedrateOffsetCalculation } from './CdmObservableAssetCalculatedrateOffsetCalculation';
+export { CdmProductTemplateTerminationProvision } from './CdmProductTemplateTerminationProvision';
+export { CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum } from './CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum';
+export { CdmProductAssetFloatingrateFloatingRateSettingDetails } from './CdmProductAssetFloatingrateFloatingRateSettingDetails';
+export { CdmProductCommonSettlementSettlementBase } from './CdmProductCommonSettlementSettlementBase';
+export { CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum } from './CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum';
+export { CdmObservableAssetValuationPostponement } from './CdmObservableAssetValuationPostponement';
+export { CdmObservableAssetFallbackReferencePrice } from './CdmObservableAssetFallbackReferencePrice';
+export { CdmObservableAssetIndex } from './CdmObservableAssetIndex';
 export { CdmBaseDatetimeBusinessCenterEnum } from './CdmBaseDatetimeBusinessCenterEnum';
-export { CdmEventCommonBillingRecord } from './CdmEventCommonBillingRecord';
-export { CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum } from './CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum';
-export { CdmObservableEventMarketDisruptionEnum } from './CdmObservableEventMarketDisruptionEnum';
-export { CdmObservableAssetPremiumTypeEnum } from './CdmObservableAssetPremiumTypeEnum';
-export { CdmLegaldocumentationMasterTransactionAdditionalTerms } from './CdmLegaldocumentationMasterTransactionAdditionalTerms';
-export { CdmProductAssetBoundedCorrelation } from './CdmProductAssetBoundedCorrelation';
+export { CdmProductCommonNotionalAdjustmentEnum } from './CdmProductCommonNotionalAdjustmentEnum';
+export { CdmEventCommonPositionEventIntentEnum } from './CdmEventCommonPositionEventIntentEnum';
+export { CdmBaseDatetimeRoundingFrequencyEnum } from './CdmBaseDatetimeRoundingFrequencyEnum';
+export { CdmObservableEventMetafieldsReferenceWithMetaCreditEvents } from './CdmObservableEventMetafieldsReferenceWithMetaCreditEvents';
+export { CdmProductAssetInflationRateSpecification } from './CdmProductAssetInflationRateSpecification';
+export { CdmBaseMathSchedule } from './CdmBaseMathSchedule';
+export { CdmLegaldocumentationCsaCollateralTransferAgreementElections } from './CdmLegaldocumentationCsaCollateralTransferAgreementElections';
+export { CdmEventCommonCallTypeEnum } from './CdmEventCommonCallTypeEnum';
+export { CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates } from './CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates';
+export { CdmProductCommonSettlementLoanParticipation } from './CdmProductCommonSettlementLoanParticipation';
+export { CdmProductAssetEquityUnderlierProvisions } from './CdmProductAssetEquityUnderlierProvisions';
+export { CdmBaseMathCapacityUnitEnum } from './CdmBaseMathCapacityUnitEnum';
+export { CdmBaseDatetimePeriod } from './CdmBaseDatetimePeriod';
+export { CdmEventCommonMarginCallResponse } from './CdmEventCommonMarginCallResponse';
+export { CdmBaseDatetimeDaycountDayCountFractionEnum } from './CdmBaseDatetimeDaycountDayCountFractionEnum';
+export { CdmEventCommonContractDetails } from './CdmEventCommonContractDetails';
+export { CdmObservableAssetValuationMethod } from './CdmObservableAssetValuationMethod';
+export { CdmBaseStaticdataAssetCommonCash } from './CdmBaseStaticdataAssetCommonCash';
+export { CdmBaseMathFinancialUnitEnum } from './CdmBaseMathFinancialUnitEnum';
+export { CdmProductCollateralSubstitutionProvisions } from './CdmProductCollateralSubstitutionProvisions';
+export { CdmRegulationId } from './CdmRegulationId';
+export { CdmLegaldocumentationMasterEquityMasterConfirmation } from './CdmLegaldocumentationMasterEquityMasterConfirmation';
+export { CdmProductTemplateExerciseProcedure } from './CdmProductTemplateExerciseProcedure';
+export { CdmProductTemplateAveragingCalculation } from './CdmProductTemplateAveragingCalculation';
+export { CdmBaseDatetimeAdjustedRelativeDateOffset } from './CdmBaseDatetimeAdjustedRelativeDateOffset';
+export { CdmEventCommonStockSplitInstruction } from './CdmEventCommonStockSplitInstruction';
+export { CdmEventCommonAffirmationStatusEnum } from './CdmEventCommonAffirmationStatusEnum';
+export { CdmProductCommonSettlementCashflowType } from './CdmProductCommonSettlementCashflowType';
+export { CdmBaseStaticdataAssetCommonCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonCurrencyCodeEnum';
+export { CdmProductTemplateCalculationSchedule } from './CdmProductTemplateCalculationSchedule';
+export { CdmBaseDatetimeOffset } from './CdmBaseDatetimeOffset';
+export { CdmProductAssetFloatingAmountProvisions } from './CdmProductAssetFloatingAmountProvisions';
+export { CdmProductCommonScheduleStubPeriod } from './CdmProductCommonScheduleStubPeriod';
+export { CdmBaseMathMeasure } from './CdmBaseMathMeasure';
+export { CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum } from './CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum';
+export { CdmEventCommonInstruction } from './CdmEventCommonInstruction';
+export { CdmProductCommonScheduleAveragingPeriod } from './CdmProductCommonScheduleAveragingPeriod';
+export { CdmObservableAssetPartyDeterminationEnum } from './CdmObservableAssetPartyDeterminationEnum';
+export { CdmEventCommonCorporateActionTypeEnum } from './CdmEventCommonCorporateActionTypeEnum';
+export { CdmBaseStaticdataAssetCommonProductIdentifier } from './CdmBaseStaticdataAssetCommonProductIdentifier';
+export { CdmBaseStaticdataAssetCreditSpecifiedCurrency } from './CdmBaseStaticdataAssetCreditSpecifiedCurrency';
+export { CdmEventCommonTrade } from './CdmEventCommonTrade';
+export { CdmProductTemplateOptionalEarlyTerminationAdjustedDates } from './CdmProductTemplateOptionalEarlyTerminationAdjustedDates';
+export { CdmProductCommonScheduleResetFrequency } from './CdmProductCommonScheduleResetFrequency';
+export { CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType';
+export { CdmBaseDatetimeAdjustableDate } from './CdmBaseDatetimeAdjustableDate';
+export { CdmBaseStaticdataAssetCommonCollateralIssuerType } from './CdmBaseStaticdataAssetCommonCollateralIssuerType';
 export { CdmObservableAssetPrice } from './CdmObservableAssetPrice';
-export { CdmLegaldocumentationCommonLegalAgreement } from './CdmLegaldocumentationCommonLegalAgreement';
-export { CdmProductTemplateExtendibleProvision } from './CdmProductTemplateExtendibleProvision';
-export { CdmProductTemplateTradeLot } from './CdmProductTemplateTradeLot';
-export { CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum } from './CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum';
+export { CdmLegaldocumentationMasterMasterAgreementSchedule } from './CdmLegaldocumentationMasterMasterAgreementSchedule';
+export { CdmBaseStaticdataAssetCreditNotDomesticCurrency } from './CdmBaseStaticdataAssetCreditNotDomesticCurrency';
+export { CdmBaseDatetimePeriodTimeEnum } from './CdmBaseDatetimePeriodTimeEnum';
+export { CdmBaseDatetimePeriodRange } from './CdmBaseDatetimePeriodRange';
+export { CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum } from './CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum';
+export { CdmProductCommonSettlementPercentageRule } from './CdmProductCommonSettlementPercentageRule';
+export { CdmProductTemplateCancellationEvent } from './CdmProductTemplateCancellationEvent';
+export { CdmProductCommonSettlementFxFixingDate } from './CdmProductCommonSettlementFxFixingDate';
+export { CdmProductCollateralDomesticCurrencyIssued } from './CdmProductCollateralDomesticCurrencyIssued';
+export { CdmObservableEventTriggerEvent } from './CdmObservableEventTriggerEvent';
+export { CdmProductAssetInterestShortfallCapEnum } from './CdmProductAssetInterestShortfallCapEnum';
+export { CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum } from './CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum';
+export { CdmEventCommonValuationSourceEnum } from './CdmEventCommonValuationSourceEnum';
+export { CdmProductCommonScheduleAveragingObservationList } from './CdmProductCommonScheduleAveragingObservationList';
+export { CdmObservableAssetFxSettlementRateSource } from './CdmObservableAssetFxSettlementRateSource';
+export { CdmBaseDatetimeCompoundingTypeEnum } from './CdmBaseDatetimeCompoundingTypeEnum';
+export { CdmEventCommonSecurityLendingInvoice } from './CdmEventCommonSecurityLendingInvoice';
+export { CdmProductAssetVolatilityCapFloor } from './CdmProductAssetVolatilityCapFloor';
+export { CdmObservableAssetOtherIndex } from './CdmObservableAssetOtherIndex';
+export { CdmEventWorkflowWorkflowState } from './CdmEventWorkflowWorkflowState';
+export { CdmEventCommonBillingSummaryInstruction } from './CdmEventCommonBillingSummaryInstruction';
+export { CdmLegaldocumentationCommonClosedStateEnum } from './CdmLegaldocumentationCommonClosedStateEnum';
+export { CdmRegulationDerivInstrmAttrbts } from './CdmRegulationDerivInstrmAttrbts';
+export { CdmProductCommonScheduleLag } from './CdmProductCommonScheduleLag';
+export { CdmBaseDatetimeBusinessCenters } from './CdmBaseDatetimeBusinessCenters';
+export { CdmBaseDatetimeDateTimeList } from './CdmBaseDatetimeDateTimeList';
+export { CdmBaseStaticdataPartyPartyRoleEnum } from './CdmBaseStaticdataPartyPartyRoleEnum';
+export { CdmEventCommonAssetTransferTypeEnum } from './CdmEventCommonAssetTransferTypeEnum';
+export { CdmProductTemplateStrike } from './CdmProductTemplateStrike';
+export { CdmObservableAssetCreditRatingDebt } from './CdmObservableAssetCreditRatingDebt';
+export { ComRosettaModelLibMetaReference } from './ComRosettaModelLibMetaReference';
+export { CdmBaseStaticdataPartyBuyerSeller } from './CdmBaseStaticdataPartyBuyerSeller';
+export { CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum } from './CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum';
+export { CdmObservableAssetCalculatedrateInflationCalculationStyleEnum } from './CdmObservableAssetCalculatedrateInflationCalculationStyleEnum';
+export { CdmObservableAssetCreditRatingCreditWatchEnum } from './CdmObservableAssetCreditRatingCreditWatchEnum';
+export { CdmRegulationSngl } from './CdmRegulationSngl';
+export { CdmBaseStaticdataPartyAccount } from './CdmBaseStaticdataPartyAccount';
+export { CdmEventCommonState } from './CdmEventCommonState';
+export { CdmEventCommonPerformanceTransferTypeEnum } from './CdmEventCommonPerformanceTransferTypeEnum';
+export { CdmEventCommonBillingSummary } from './CdmEventCommonBillingSummary';
+export { CdmLegaldocumentationCommonClosedState } from './CdmLegaldocumentationCommonClosedState';
+export { CdmLegaldocumentationCommonLegalAgreementPublisherEnum } from './CdmLegaldocumentationCommonLegalAgreementPublisherEnum';
+export { CdmProductCollateralAnyCriteria } from './CdmProductCollateralAnyCriteria';
+export { CdmProductCollateralCollateralCriteria } from './CdmProductCollateralCollateralCriteria';
+export { CdmProductCollateralAllCriteria } from './CdmProductCollateralAllCriteria';
+export { CdmProductCollateralNegativeCriteria } from './CdmProductCollateralNegativeCriteria';
+export { CdmProductTemplateFixedPricePayout } from './CdmProductTemplateFixedPricePayout';
+export { CdmProductCommonScheduleCalculationPeriodBase } from './CdmProductCommonScheduleCalculationPeriodBase';
+export { CdmProductTemplateQuanto } from './CdmProductTemplateQuanto';
+export { CdmProductCollateralDeliveryAmount } from './CdmProductCollateralDeliveryAmount';
+export { CdmEventWorkflowPartyCustomisedWorkflow } from './CdmEventWorkflowPartyCustomisedWorkflow';
+export { CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType } from './CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType';
+export { CdmEventCommonCounterpartyPositionBusinessEvent } from './CdmEventCommonCounterpartyPositionBusinessEvent';
+export { CdmProductCollateralRatingPriorityResolutionEnum } from './CdmProductCollateralRatingPriorityResolutionEnum';
+export { CdmProductAssetDividendCompositionEnum } from './CdmProductAssetDividendCompositionEnum';
+export { CdmLegaldocumentationMasterClause } from './CdmLegaldocumentationMasterClause';
+export { CdmProductCollateralCollateralTypeEnum } from './CdmProductCollateralCollateralTypeEnum';
+export { CdmBaseDatetimeBusinessDateRange } from './CdmBaseDatetimeBusinessDateRange';
+export { CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum } from './CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum';
+export { CdmProductCollateralReturnAmount } from './CdmProductCollateralReturnAmount';
+export { CdmProductTemplateFxFeature } from './CdmProductTemplateFxFeature';
+export { CdmBaseStaticdataPartyPartyRole } from './CdmBaseStaticdataPartyPartyRole';
+export { CdmEventCommonValuationTypeEnum } from './CdmEventCommonValuationTypeEnum';
+export { CdmObservableEventObservationIdentifier } from './CdmObservableEventObservationIdentifier';
+export { CdmObservableAssetPremiumTypeEnum } from './CdmObservableAssetPremiumTypeEnum';
+export { CdmProductTemplateRepoDurationEnum } from './CdmProductTemplateRepoDurationEnum';
+export { ComRosettaModelFieldWithMetaString } from './ComRosettaModelFieldWithMetaString';
+export { CdmObservableEventFailureToPay } from './CdmObservableEventFailureToPay';
+export { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount';
+export { CdmProductAssetCreditSeniorityEnum } from './CdmProductAssetCreditSeniorityEnum';
+export { CdmBaseStaticdataPartyPersonIdentifier } from './CdmBaseStaticdataPartyPersonIdentifier';
+export { CdmEventCommonTransfer } from './CdmEventCommonTransfer';
+export { CdmBaseStaticdataIdentifierAssignedIdentifier } from './CdmBaseStaticdataIdentifierAssignedIdentifier';
+export { CdmProductTemplateExercisePeriod } from './CdmProductTemplateExercisePeriod';
+export { CdmProductTemplateCallingPartyEnum } from './CdmProductTemplateCallingPartyEnum';
+export { CdmRegulationFinInstrm } from './CdmRegulationFinInstrm';
+export { CdmProductCommonScheduleStubPeriodTypeEnum } from './CdmProductCommonScheduleStubPeriodTypeEnum';
+export { CdmProductCollateralAgencyRatingCriteria } from './CdmProductCollateralAgencyRatingCriteria';
+export { CdmBaseStaticdataPartyEntityTypeEnum } from './CdmBaseStaticdataPartyEntityTypeEnum';
+export { CdmEventCommonTradeState } from './CdmEventCommonTradeState';
+export { CdmProductTemplateAveragingStrikeFeature } from './CdmProductTemplateAveragingStrikeFeature';
+export { CdmObservableAssetMultipleValuationDates } from './CdmObservableAssetMultipleValuationDates';
+export { CdmBaseStaticdataAssetCommonPriceSource } from './CdmBaseStaticdataAssetCommonPriceSource';
+export { CdmEventWorkflowCustomisedWorkflow } from './CdmEventWorkflowCustomisedWorkflow';
+export { CdmProductAssetCompoundingMethodEnum } from './CdmProductAssetCompoundingMethodEnum';
+export { CdmProductTemplateOptionFeature } from './CdmProductTemplateOptionFeature';
+export { CdmRegulationOrdrTrnsmssn } from './CdmRegulationOrdrTrnsmssn';
+export { CdmProductCommonScheduleFxLinkedNotionalAmount } from './CdmProductCommonScheduleFxLinkedNotionalAmount';
+export { CdmProductTemplateExerciseTerms } from './CdmProductTemplateExerciseTerms';
+export { CdmEventCommonCalculateTransferInstruction } from './CdmEventCommonCalculateTransferInstruction';
+export { CdmProductCommonScheduleAmountSchedule } from './CdmProductCommonScheduleAmountSchedule';
+export { CdmProductTemplateDividendTerms } from './CdmProductTemplateDividendTerms';
+export { CdmProductAssetFloatingrateFloatingRateProcessingDetails } from './CdmProductAssetFloatingrateFloatingRateProcessingDetails';
+export { CdmRegulationDocument } from './CdmRegulationDocument';
+export { CdmProductAssetDividendReturnTerms } from './CdmProductAssetDividendReturnTerms';
+export { CdmProductAssetPriceReturnTerms } from './CdmProductAssetPriceReturnTerms';
+export { CdmBaseDatetimePeriodicDates } from './CdmBaseDatetimePeriodicDates';
+export { CdmLegaldocumentationMasterTransactionAdditionalTerms } from './CdmLegaldocumentationMasterTransactionAdditionalTerms';
+export { CdmProductAssetFloatingrateFloatingAmountCalculationDetails } from './CdmProductAssetFloatingrateFloatingAmountCalculationDetails';
+export { CdmProductTemplateExerciseNotice } from './CdmProductTemplateExerciseNotice';
+export { CdmBaseStaticdataAssetCommonAssetBase } from './CdmBaseStaticdataAssetCommonAssetBase';
+export { CdmBaseStaticdataPartyPartyIdentifierTypeEnum } from './CdmBaseStaticdataPartyPartyIdentifierTypeEnum';
+export { CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum } from './CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum';
+export { CdmProductCommonScheduleObservationDate } from './CdmProductCommonScheduleObservationDate';
+export { CdmObservableAssetFieldWithMetaInformationProviderEnum } from './CdmObservableAssetFieldWithMetaInformationProviderEnum';
+export { CdmProductAssetReferencePool } from './CdmProductAssetReferencePool';
+export { CdmEventCommonCollateralStatusEnum } from './CdmEventCommonCollateralStatusEnum';
+export { CdmProductCommonSettlementDeliverableObligations } from './CdmProductCommonSettlementDeliverableObligations';
+export { CdmProductCollateralCollateralInterestHandlingEnum } from './CdmProductCollateralCollateralInterestHandlingEnum';
+export { CdmProductTemplateCancelableProvision } from './CdmProductTemplateCancelableProvision';
+export { CdmLegaldocumentationMasterMasterAgreementTypeEnum } from './CdmLegaldocumentationMasterMasterAgreementTypeEnum';
+export { CdmRegulationExctgPrsn } from './CdmRegulationExctgPrsn';
+export { CdmObservableAssetSwapCurveValuation } from './CdmObservableAssetSwapCurveValuation';
+export { CdmObservableAssetValuationDates } from './CdmObservableAssetValuationDates';
+export { CdmBaseDatetimeBusinessDayConventionEnum } from './CdmBaseDatetimeBusinessDayConventionEnum';
+export { CdmEventWorkflowFieldWithMetaLimitLevelEnum } from './CdmEventWorkflowFieldWithMetaLimitLevelEnum';
+export { CdmRegulationAcctOwnr } from './CdmRegulationAcctOwnr';
+export { CdmObservableAssetFroFloatingRateIndexCategoryEnum } from './CdmObservableAssetFroFloatingRateIndexCategoryEnum';
+export { CdmObservableEventFieldWithMetaRestructuringEnum } from './CdmObservableEventFieldWithMetaRestructuringEnum';
+export { CdmBaseStaticdataAssetCommonCommodity } from './CdmBaseStaticdataAssetCommonCommodity';
+export { CdmObservableAssetQuotationStyleEnum } from './CdmObservableAssetQuotationStyleEnum';
+export { CdmProductCommonSettlementSettlementProvision } from './CdmProductCommonSettlementSettlementProvision';
+export { CdmObservableAssetObservable } from './CdmObservableAssetObservable';
+export { CdmProductCommonScheduleInitialFixingDate } from './CdmProductCommonScheduleInitialFixingDate';
 
 export const contents: Record<string, unknown> = {
-  '12eAkteKQP3QRJHzFcoKpMYpGiRWkbuRMJSY7ZSMmsBi':
-    CdmProductCollateralConcentrationLimitTypeEnum,
-  '12Vk9Vr4K8mMX1W8Wzr5LhciVWUSW5eLT6swkA7rmYQF':
-    CdmProductTemplateExerciseNoticeGiverEnum,
-  '136mCFHby12JarZJeWoUUxHWR7a7DAi5bJW6dEaTmy1c':
-    CdmProductAssetCalculationScheduleDeliveryPeriods,
-  '137V6nzc2EYMvMNiSoeM36TQTSfPuL5rp8pjRkrno11f':
-    CdmBaseStaticdataPartyPersonIdentifier,
-  '14FpJ1vaYbMpoyCkuQj7hbGcbtaDHt82Sbm1qh8P81wH':
-    CdmEventCommonAssetTransferTypeEnum,
-  '14sVVTzSacMzHornDaXpUxvVuwj3EZYsDLgepvsmbGW7': CdmEventCommonReset,
-  '24GKTJcRDZ4QRLVkFjFWdWkoGbNLiYvcfVyFPvapMLkx': ComRosettaModelLibMetaKey,
-  '28gUYx1HzG6py2PmTBRca9g3wdwdcVnEHvzAZX7PGUUG':
-    CdmLegaldocumentationCommonGoverningLawEnum,
-  '29Bam3D6qfaY6wWG9a8BVSCbVzvz6r97xkbk4nU7aU7U':
-    CdmEventWorkflowEventTimestamp,
-  '2Azf3HadXRbAMWVQbVu4rbKPBmEghSoifFhxZC2Pc8hM':
-    CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum,
-  '2B96QnMxNfXMKPboSVa6Jpe7kf5J5A31gxoB2B9cNLjJ': CdmBaseDatetimeRelativeDates,
-  '2BsPgE1jX1a3Hm3bnnC5scsZoqfNiMhN1PxggpSyDJHa':
-    CdmEventWorkflowLimitLevelEnum,
-  '2BvXwm2PJoPCvRz7g8DFbxuMwvaXy1mHq7Tnw2QmQAn6':
-    CdmEventCommonCorporateActionTypeEnum,
+  '12z8itumtMLpP3nE32bH5sneayWtT3viPrN58UPt7BkV':
+    CdmObservableEventIndexEventConsequenceEnum,
+  '14czdjerkJ6X1HwgQE2RFvCte476RbB2aWmpUby9D7bG':
+    CdmObservableAssetSingleValuationDate,
+  '14FV7tMj4HrFn5mGMxp1ip6AhhhvTsLR6FH1eXyL6Ts9':
+    CdmProductCommonSettlementCommodityPriceReturnTerms,
+  '1xkXx62AuJPeBWbqXe9my7R6wp5KHPpRYMPgfh4Md8s':
+    CdmLegaldocumentationCommonLegalAgreementTypeEnum,
+  '21pozsBPMtA8xJQ77VahQiEpCbG8nV3ryR8r5xgX4sQP': CdmObservableEventTrigger,
+  '21vD19q8M9BVLcNChK9mx3GcJ7VRagziHdvCXtj5AFCk':
+    CdmProductCommonSchedulePaymentDateSchedule,
+  '22Lbahf1cGvTSTcW83aFHjBwGYU4D8XJ4Nmupa8TNRJH': CdmEventPositionPosition,
+  '23BvjXEenVrVtJqaEg2dcrfEDjwqbfn2AbohdEQC5q54':
+    CdmEventCommonPartyChangeInstruction,
+  '23fb9HBYcZQ8enTm83iVQjixyTrHqNc5G1ANtAbB1ixz':
+    CdmProductCommonSchedulePaymentDates,
+  '24XR8iGVZsSMcRtHNgWSpYEEza3KosniTayAxz2hnncm':
+    CdmLegaldocumentationContractAgreement,
+  '27h9XhtCRRX1w8W56vcSY2T14PTbGigcrhbRWGDy7fKe':
+    CdmProductAssetDividendDateReference,
+  '27svQFwe6bB27frVyJ6e6Nx85ok2AeWiaJyYCwEwdVF4':
+    CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum,
+  '287wM7CqpP1RTW7bu4j4pUa7QdEuXGE6E186mu2bhovh': CdmProductTemplateExerciseFee,
+  '28K8jWekKx6AFsw5haFZg81uADTmzkkgCKQErSng8jXd':
+    CdmEventCommonTransferExpression,
+  '29tRf6HKyJ5PZ7qSgJmiEnuDwSx7xXy8vHzP4X2PfJU8':
+    CdmObservableAssetMetafieldsReferenceWithMetaObservable,
+  '2AjMswvvUFa65tb2E1fgtkxxgJ7ReLj17xorwjbb8wAb':
+    CdmEventPositionAggregationParameters,
+  '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8':
+    CdmObservableAssetPriceQuantity,
   '2CBRVBHp8NK926NLXhHSWTgFBfRXppF92DVzGUsaWnb5':
     CdmLegaldocumentationMasterDeterminationRolesAndTerms,
-  '2CibfSNr9fgCU28YroYKvUvh4as3ggUB9FsfNBXNpvKu':
-    CdmRegulationFinInstrmGnlAttrbts,
-  '2EMfLJYhLWvzUA3EhndQzxjEwTJz1JeAYUNjZDJL66PJ':
-    CdmProductAssetFloatingRateSpecification,
-  '2ENM8iDfj2xSZqxnz1eMD7PWGF5e5yeBadxubUoZe6BX':
-    CdmLegaldocumentationCommonOtherAgreementTerms,
-  '2FArPnEgeydac33KBUck7sDiK4rQpun7wismexFXyRmD':
-    CdmProductAssetVolatilityCapFloor,
-  '2FZHZ5RzsW7awysoaorCfmAnZGtxLTf6BLoT23v3CUbx':
-    CdmObservableAssetFieldWithMetaQuotedCurrencyPair,
-  '2fzQ4bmVx18K4uraBPwsuECfabcNN1YjL3czhxh3Da7k':
-    CdmLegaldocumentationCommonResource,
-  '2gfQWVQFHUKLQjAkfCvcbJNDyzFEQ8nZxo6gzLu3iBbF':
-    CdmObservableAssetFieldWithMetaSettlementRateOptionEnum,
-  '2HJVG7XkuEXr46byHb52g7WoYmwwfUGky6XyUDF7Wjgq':
-    CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum,
-  '2hzofepdHmrqpLHQwtRqdcJ6PoT2WXfk69YAGwBuwZhX':
-    CdmProductAssetBasketReferenceInformation,
-  '2iax3ewikmufx2SGAqv9teMyfvSypMUiCfrvrNVxSRwy':
-    CdmProductCommonSettlementPaymentDetail,
-  '2imJjdaxdUbe6MWN6u3gyGVbMBrdbHAfXZWZz7qn6a27':
-    CdmMarginScheduleStandardizedScheduleTradeInfo,
-  '2ivieRnuYvgJa1vamkzsA1moey8Co6QwbcHzZLJtw432':
-    CdmProductTemplateAveragingStrikeFeature,
-  '2jeU259hBuPLHL5wYMHnutcujA2porimr9ETLQNUcyCc':
-    CdmProductCommonScheduleObservationDate,
-  '2JHuzDshr7hYFEXcgPfEiDuNuEyzHXv79pWqZqYa5FCQ':
-    CdmBaseStaticdataAssetCommonTaxonomyValue,
-  '2JofigEJD6epctAhG3VgunrLaPXKzTDmRyfSZzpFHEkS':
-    CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates,
-  '2K2y4HCSe3GYtg8okRPpYgcJdTtQXHQ25mihbE8Paa6u':
-    CdmObservableAssetInflationIndex,
-  '2LPZuZ9LPiKM2aCEuPCrJLd9Ui3gKomr2qL3fVuqDuMP':
-    CdmBaseStaticdataAssetCommonCommodityReferenceFramework,
-  '2Midawi9zUfJvcpA1goJXVsvZDiVfwMTkFWPqYK18DH5': CdmRegulationAcctOwnr,
-  '2N8WqdA3bWZaDeAy5nB7wit1jTvBeB4gLKqwL2dDqu4a':
-    CdmProductTemplateManualExercise,
-  '2nm92VnYrhXCMzyc33qGyg5j5Jyb1yNPyTfHecpCuyVE': CdmProductAssetDividendPeriod,
-  '2NmzfUpHRVGHJtBNJodPdDCxDTwixoJpKAWSpVNE9ema':
-    ComRosettaModelMetafieldsReferenceWithMetaString,
-  '2redquTFoM18tjds3NfGQwUYCvsE2KxUExBUqKyf3rJX': CdmBaseStaticdataPartyAccount,
-  '2RFeesvWLv2qoVxFe5jTLyoVYdZHmyW9dnfWhJjwf53k':
-    CdmEventPositionAvailableInventoryTypeEnum,
-  '2SCDqYNfqg2Ef6R5QB9F1V7RLuuBbGUCoc6LnFrM1jwp':
-    CdmProductCollateralContactElection,
-  '2SgkFqRu6tSRS1M4vnbT4GFgWFQXoGgkmpiYTmqafTNK':
-    CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity,
-  '2T3hoZUtEHPP41LrKUi7cCiEHCk8AwUskHa4sVvsm6GD': CdmRegulationSwpIn,
-  '2tGygxV5BThuWavpJ3T6K3Atw5u4bJZT1Wb2Nxk798dd':
+  '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R':
     CdmBaseDatetimeAdjustableOrRelativeDate,
-  '2uPPgn1ZsbovDfjRb1d8M9YmmgEnNo9UeG1VEz2wceY3': CdmBaseMathQuantity,
-  '2VvT5a944fY15VZhySKrqEWBUHdaz3WdLPPyU9TEVSQC':
-    CdmBaseStaticdataAssetCommonProductTaxonomy,
-  '2wAd2mDukRH6r2YEZ4kU9e1fcUYpGHT8ZJEwFZFkKaCL':
-    CdmBaseDatetimeRelativeDateOffset,
-  '2WkEpRF5iUYJyCn1j83Cdfs6zeRh6Wn1FLXwQCMU5EpE':
-    CdmProductAssetRateSpecification,
-  '2Y1JVjnbbb22zrKVYtvVRfAkqMEsujAWoUHytGJxuprQ':
-    CdmBaseDatetimeFieldWithMetaBusinessCenterEnum,
-  '2yGhR6zH9SnskKV4Btr1vhB3CY3iuq5hAcGtRNAZWJK3':
-    CdmProductCommonSettlementQuantityMultiplier,
-  '32asBc8ZWx9istLdot48ciBYnh6kd2GHf6nLVWkjkA8Z':
-    CdmObservableAssetCreditNotation,
-  '3Ab8ff8vHj6yZniQHU1kEyVi2DQyjvhXFPTFikY4ayof':
-    CdmObservableAssetCalculatedrateObservationShiftCalculation,
-  '3aE6erdTtbhjt2mHbmzNNZUUARddk4ptbRvmzW71PMPB': CdmRegulationBuyr,
-  '3ahFTRDyW1vZN9J2RUwVpic72VhPCPqMVDvfoRzNAiFv':
-    CdmProductCommonSettlementFixedPrice,
-  '3AioqoWbYGgXHexocZKRw4s5DTNfC3QMNGuVvTzLmk7n':
-    CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum,
-  '3apKhKP5xQpMoT4sNuUZ78eq9rVCkEASywdq4Fwcq1Pr':
-    CdmLegaldocumentationCommonContractualTermsSupplement,
-  '3aukDRc2UqShaPzsHHg8ry28kkvETMb95rfAeM65GH1Q':
-    CdmBaseMathNonNegativeQuantitySchedule,
-  '3cW9DCrH3S9RbC5r5ufGus2ntS4cJjxaa7gnHbEmCnT3': CdmEventCommonCorporateAction,
-  '3DArzNi9wjXXGVfHSEMaFHEhe4PbD2PeV6vtuVM4PpMm':
-    CdmBaseStaticdataAssetCommonDeliveryDateParameters,
-  '3DEqhNWWEiUQB1fLiPm2kEPVVpQNPPb4ygac1EcsPw5C':
-    CdmProductTemplatePartialExercise,
-  '3e4M5cnE53HFtp4uJHoNYZeL1Vwo4xTDK6XJh5tNRiGb':
-    CdmProductAssetVolatilityReturnTerms,
-  '3eEv8a1ur5GmtEdvqCS9sTFEgTzz1ffcWEvBcZfTMy2h':
-    CdmProductCommonScheduleObservationDates,
-  '3ePuoisseC1LPtuzJDr9A1SpUkuyfzKiDPwFQS4DtH7h':
-    CdmObservableAssetReferenceSwapCurve,
-  '3eTtCxBt24us9TCBr18msWJzdN7HeDk1d6J1ycAcQ5YJ':
-    CdmBaseStaticdataIdentifierFieldWithMetaIdentifier,
-  '3f4WiUJG3FhvWWyDoRyCBQcSoCNhmwkWYRRFeKfXoe4J': CdmRegulationId,
-  '3FPEtqo9ZEbsCjRxeVSxiRbvCVP9ZM2mJRpkmc7uyEvM':
-    CdmProductCommonSettlementValuationDate,
-  '3FVbfvSZd1U3oZCBpPH9cRkbM4Ef9NXGE6jVV4jLCedz':
-    CdmBaseStaticdataAssetCommonDebtEconomics,
-  '3FwnfmPe8axs9Sr2iFvR9Qg5tKQmQpQYDYFksE9EHFxF':
-    CdmLegaldocumentationCommonClosedState,
-  '3gNMcA1zQ2qk1wNF4NwznJBFvez8ZP8niUMhZ97yvAEF':
-    CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum,
-  '3h5wRr1PRsH4WePSXwrdNrRnbGYxzTUTdLMKCpegAmi8':
-    CdmBaseStaticdataPartyPayerReceiverEnum,
-  '3HrgPHYwkPSXNE4DHc2FFPAowGK3N5VQRnhAg2oYufpe':
-    CdmBaseStaticdataAssetCommonCollateralTaxonomyValue,
-  '3iMwczqZ5hCmimZgAMWak1MiTjPqmNqxhKbiCnuKhHiD':
-    CdmObservableAssetSettlementRateOption,
-  '3K4A6xNiQ9Kzu5Qm4GacSdzEutFxAdniaFS2YvFUaSMa':
-    CdmProductAssetDiscountingMethod,
-  '3L89wYhXf68oUZTeBkXQnsfBZCox4PN1dZWV9BcQzfdu':
-    CdmProductCollateralEligibleCollateralSpecification,
-  '3LPKhzVGjkHFZMKRZJovvBn66KELQss6RiFVVDaqjC4c':
-    CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments,
-  '3M3Dq9Mg9Eq1zojVRM5ZJVz9nV2VfXFeSLB6TnvKozYs':
-    CdmObservableAssetPriceQuantity,
-  '3mtxL1pBoXkjuTxeX9scwFvV5Aojb66cJmej6pndkJWD': CdmEventPositionContractBase,
-  '3N7EgkSRxjnYvZ2ERBeP5kVt5dr65FiuYYh8NGNQ35t2':
-    CdmLegaldocumentationMasterMasterAgreementClause,
-  '3ogLgKzrgp38r1n3NkU7CtA1DcL4gyLuTT9mAegThW7k':
-    CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum,
-  '3pSmHpeb9yUjkpUmFmAS4nUVy9QvuKFFwPLxuN8Yjv7W':
-    CdmProductTemplateOptionalEarlyTerminationAdjustedDates,
-  '3qgdUWu7raBQuXg5poKvwjaHsLprDJhjEdxa8ZcXbCMD':
-    CdmEventCommonValuationSourceEnum,
-  '3RjPAV7XDWbonvs8Tan8M9CcFfX9XTnBrDec54oyL7rv':
-    CdmProductCollateralIndependentAmount,
-  '3ScAWMceSndUiR2vHtzZGzPGccvuNjx7L5TmQVXQ9AYf':
-    CdmProductCommonScheduleRateSchedule,
-  '3tApr9XRthnu91mUaWPjYs5ywdrhGSFHV3jDycqYLtHL':
-    CdmProductAssetVarianceCapFloor,
-  '3tHmP4cU3vsQunFDGwaDERxB8ZVg7AVLYj29XjgxbaNd': CdmBaseMathNonNegativeStep,
-  '3tMLCZ3MJxBYvVqoBVK5jgsre5azRP9dXQk3ek6NGhQE':
-    CdmObservableAssetCreditNotationBoundaryEnum,
-  '3TWoeGYJX3t5xD73ccA1wDeoWbGqpwVhJ4qVR2p4v3Gs':
-    CdmBaseStaticdataAssetCommonAssetIdTypeEnum,
-  '3TzCHW48PK6kL5s7n3x7jyA7VmeiJJ9D2JgzR53cTcPe':
-    CdmObservableAssetMultipleValuationDates,
-  '3UjvYgL77sb6K36nNvsdpE4Hyt82LgNWcuWKqhKzh6to':
-    CdmProductCommonScheduleResetDates,
-  '3umcSYDhotX3cidttq9vwUAQsUwH1ciFwBQHaKs6b248':
-    CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum,
-  '3uQqaX7x6W6DWTjsoQ1nPnUqxSnb3hwfBUfB75JAtaZJ':
-    CdmBaseStaticdataPartyNaturalPersonRole,
-  '3UQyaunu7noHsnkXtFNJHuwdv1AH6Uq6MZ1bZSHN9hYW':
-    CdmBaseDatetimeAdjustableDates,
-  '3vj6ssPFj4gjJ2GtTYcG7fYFup3n4kMFQnCR3byzuLkR':
-    CdmProductAssetFixedAmountCalculationDetails,
-  '3VwhGwLL7XV8qQMng9XQDytu3E4oEQBmpePGJqopB4yb':
-    CdmProductCommonScheduleCalculationPeriodBase,
-  '3Wj1feGDTKdrryudkfw1ks2dViWQTUZT7ef7RbJ2a2w9':
-    CdmProductTemplateMandatoryEarlyTermination,
-  '3wwdVKCEN7pSLG9mPnXFiizaAo59qz2yQnNHrzGhT59K':
-    CdmProductCommonScheduleObservationTerms,
-  '3wxUxQ84F797fYARR8X6Eo2XFCB944hauuSNuQmcXggJ':
-    CdmLegaldocumentationCommonCreditSupportProviderTermsEnum,
-  '3X1BxSYgvTeSDYHTZnCPcsWXcGAqhEu9B5XmTv8mUH1v':
-    CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair,
-  '3xDGPtjud4dCVNF9Swm1X7WoCse6gMziwHGvUnp1h3EK':
-    CdmBaseStaticdataPartyCounterparty,
-  '3y75YW3Xvg26b63Etnyf7EmxBfhFMUEgAhimCGQ2jyab':
-    CdmObservableCommonDeterminationMethodEnum,
-  '3YR2sV7tFdGrtX699mGysL4mGGEkjpmBPfpeyYXKnQjU':
-    CdmProductTemplateStrikeSpread,
-  '3Z1haGAuv4YLmGkJjXiSsx5csxv4vCKiyoyVtNfbZ6Ww':
-    CdmProductCommonSettlementPhysicalSettlementPeriod,
-  '3Z7Qd4nvD5kznK6ReEW6jkdThhTmUXZjY8dXKEUBgqXx':
-    CdmProductCollateralAssetAgencyRating,
-  '3zkV5sdhebtWXg2afUDkU9JwMtUwvnFXdnvGJS4MwSXr':
-    CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum,
-  '41zKqJF8nsUVGAhnPCpFjsuqNBTNH75h3UWaZJQ1duMg':
+  '2dSkgwb8hLPVxQFwzcY81Rz3doMpbjGnxxouhx3k8wJ2':
+    CdmProductTemplateOptionStrike,
+  '2DvCCVBpSHMw3EiuFp3MYB9YQpwrSYx4jvwkNtoq3jx9':
+    CdmBaseStaticdataPartyPersonIdentifierTypeEnum,
+  '2EzRuguKzzQR2u8dtQqTXe7ATvUruro1jyD4Hc8MHaJk':
+    CdmBaseMathAveragingCalculationMethod,
+  '2Gr3Akes7mjaFvgw48PJ56oasjq7iSukKYHpJJZcCwCS':
+    CdmProductCollateralSpecificAsset,
+  '2GtrN4UDxwH4P5TqQ8bNcVwjwcdDhjkNovEAYuhpAhJQ': CdmObservableAssetFeeTypeEnum,
+  '2LeVjwPpBKrVtg3zHwoBYJoNvx1Hset4WEYcxiPcPMxA':
     CdmProductTemplateExpirationTimeTypeEnum,
-  '44Vi7jQyj5Xitt2LqNBTBiKbLULnniytnNKHM2Q27NFs#0':
-    CdmLegaldocumentationMasterClause,
-  '46SWDPN5nuL9ZzDydHQsubnAhiJ9bTSAdCTzFqR4v3uz':
-    CdmProductAssetFixedRateSpecification,
-  '47H6pRnGpeWU8CvBFZH3noy3Tkc3X5qKNLzj1PkiBoxL':
-    CdmObservableAssetValuationSource,
-  '49qBetBBtcupafRpn91bK11BuJmHBAUsRXrc7UoZYMbo':
-    CdmBaseStaticdataPartyRelatedParty,
-  '4CuK7zsyx6DKDM2yuq991XfZ1PC48uiEZFZNsp1F4tMZ': CdmProductTemplateAssetPayout,
-  '4d4qPzCq4LAzZkhP87mw5hoXewnyCnGKrdjgtMcZYXWc': CdmProductTemplatePassThrough,
-  '4E5yCo7XYTiKuuHHwr5uzwASRLaQSQREJNNpmiGAGT3N':
-    CdmEventCommonObservationEvent,
-  '4egpcbMVQjh4aJRd37GGhenWeaUWgc6X7ySNZw3uxHd2': CdmBaseDatetimeTimeUnitEnum,
-  '4ewTgKPXq5xDsrR3GStD5tHN6FnPdeZXUQ5JDo5tkqZc':
-    CdmObservableAssetInformationSource,
-  '4FEgZ2S5mgNGfwpTRngN5cA9QySYVkoZyRvstY7sKH9x':
-    CdmBaseStaticdataAssetCommonMaturityTypeEnum,
-  '4FF87GVL4rfENXZ1E4J9DU3xpkfVLVGmfJySWqeorhS5':
-    CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum,
-  '4FTqK6vYmEpdwWnDuD2EjcJ7sLWWdhgeB2duLV8aA5bC':
-    CdmProductCommonSettlementPrincipalPaymentSchedule,
-  '4Goc1Ax7PdSp2KoLBDYnqrtvCeRBneZD8E97GQazSXQv': CdmBaseMathDatedValue,
-  '4gPZWnb1vTp42ssUQer9eA7aUVRjtisHDCL1LhrNuH44':
-    CdmBaseDatetimeAveragingSchedule,
-  '4gtwm1ndbcupZZhmUktf8yr4opV2kyAfwauYoMthJWqH':
-    CdmProductAssetDividendDateReference,
-  '4gwWtTHkdAAdqikxU182Yp5LKQnusRffi5xWuWCEKVxK':
-    CdmBaseStaticdataAssetCommonAssetClassEnum,
-  '4h8Hk4G2qP8cK5WAMzdQNkMdsPkLH7teFQRJqhe7VAh4':
-    CdmEventCommonIndexTransitionInstruction,
-  '4i3WZ6muDQ6NE6m8F9Xeuh3VH2ZcyjVNMCPWDkjEBtPz':
-    CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum,
-  '4jGK1XJ5V4ZC8QhCScrxssdJY2ocrqSf5He7TPL6E6sE':
-    CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum,
-  '4mhmBno4oM75kHALfSudGb7kWTYN5GN8J5C6WqRoX6fv': CdmProductAssetValuationTerms,
-  '4mpErrGaQgDKSpphXbwY9BbsiJ1pApWHTA8KfMbzQbbJ':
-    CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum,
-  '4n5WuJ3pxb3PuTwkKoXzfT7yaA7CeDwExT7qkMjxU8eb':
-    CdmProductTemplateEarlyTerminationEvent,
-  '4Nyffqeo3KW7MXuPbXExtEv3Rym5Eutspbx5HHitiKoC':
-    CdmProductAssetFloatingrateFloatingRateSettingDetails,
-  '4o5d36vxkXs3Qdn8xQqyihG3a6eaDaNsQ8gKqkZoUWSK':
-    CdmProductCommonScheduleDateRelativeToCalculationPeriodDates,
-  '4pkLwzBQctB2qVDMb1UAtQuhPbBpChuWnEEdq4AQcznd':
-    CdmEventPositionCounterpartyPosition,
-  '4qEkQfDu8oCghp1oSzQpCCV54KiEzfWX7fbKB9doJUtM':
-    CdmObservableAssetValuationPostponement,
-  '4Ro4tKrST2yaBWNytCjLJMhx3DMoAXwqU1W6HBKrnfRn': CdmBaseDatetimeAdjustableDate,
-  '4rV1yRtzeWP1SgQcDCpH4suo5UMbYFANCbKcwXZWtfQv':
-    CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters,
-  '4SvjRC1Thybv7EN6BqY9TGmSF2x7zK9ixyYS8UCempKF': CdmProductAssetReturnTypeEnum,
-  '4TiZGE3EKm8kGwGtipCB7SEXRoitCDwxdB8rCyr6mRsC':
-    CdmEventCommonObservationInstruction,
-  '4TmMsyAdoN2Np4C6v3ypajqNSQXAgmDT7v2FYpcc7DY7':
-    CdmProductCollateralCollateral,
-  '4TTL4gJb5c5Ph8vm7n74shdG3HTtVXP4jKfvM1mJ9dGi':
-    CdmProductCommonScheduleStubPeriod,
-  '4uJVRvwwVNEj9rBzrw3MG5hDWu6VEQFjKX3TkVNmZtxQ': CdmEventCommonRegIMRoleEnum,
-  '4uSK8CTQBqbG69cx8nFuQsvcD7Weh5Dxu4368t6wLeZe':
-    CdmProductCommonSettlementPercentageRule,
-  '4vFVJ5RzFY4D7trKTFXSjcQJv9vQk2V1fzpSsA4MHF3u': CdmProductTemplateFxFeature,
-  '4vgWSAqEkzGf7yiQ9rsm3s5Nk6Ncj4iT16wxhQXAwe8y':
-    CdmBaseStaticdataAssetCommonCreditRiskEnum,
-  '4W1R4RHyg7dDwmQXUBPtdq2118vcYaxmhXXpAsyJ45iG':
-    CdmProductTemplateCalculationSchedule,
-  '4W3FMfAf11hDkmCcU5z9e73aZtzoh9ZyM9gN7himsoy2':
-    CdmBaseMathAveragingCalculationMethodEnum,
-  '4wK85f9dMypnjbUUmXb66JUEiKd6uhgWc8Eg1rx4exS4':
-    CdmBaseStaticdataPartyBusinessUnit,
-  '4Wn9bRiHpqcy5PwHNSLRprPvX37tuFs1nCqq9WQfmLGF':
-    CdmEventCommonRecordAmountTypeEnum,
-  '4wYLbmNHssjvkRwDS66pb73SsDArUAfMW2BHtj2dZEkZ':
-    CdmProductCollateralEligibleCollateralCriteria,
-  '4XRAbTxyhpi3g9jM47PSnx6GCzjXS7KbDW8rWLRyKGjA':
-    CdmObservableAssetFieldWithMetaInformationProviderEnum,
-  '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#0':
-    CdmEventCommonSplitInstruction,
-  '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#1':
-    CdmEventCommonExerciseInstruction,
-  '4yfMXXge3teCjj71FXMHvQg2VBoSXVHt7hWUutxQ7v4x#2':
-    CdmEventCommonPrimitiveInstruction,
-  '4YkGkyxKKm3k8Cp3fDdgnjWyruPT4JUACTFh2tkSUy3Q':
-    CdmProductTemplateExtendibleProvisionAdjustedDates,
-  '4ZRat5NKcUmJRnQwyF3q1SUzsaJbhHUXrEPGq7p8SRcj':
-    CdmProductCommonSettlementSettlementProvision,
-  '51nNpi3cxfsuvq28FACnE28gdaAJusoNwcHqTKcQAgPj':
-    CdmBaseStaticdataPartyAncillaryEntity,
-  '529d4eeRPqjy1E5t4zWJpWVA2HKzpHHLCXrsg3D3pMZQ':
-    CdmProductTemplateMetafieldsReferenceWithMetaPayout,
-  '53AbkCoJHgxqgWGG6v2TSpY2qeaLG862cAjoiiYDzv1L':
-    CdmEventWorkflowLimitApplicable,
-  '53mYkzn4YVZUhVSm7oRqND1THNrHx9iJ7DNHGT7Pse9x':
-    CdmLegaldocumentationCommonTerminationCurrencyConditionEnum,
-  '568nwfoghuyvUdxUYEk7LMjQo15F8tTxJN7yDtW9bmi6':
-    CdmLegaldocumentationMasterEquityAdditionalTerms,
-  '56d1q7spHaAFPp9dywxuqec2NvTpBDCMa4ztph6Anuo5':
-    CdmProductCommonSettlementCashSettlementMethodEnum,
-  '58o5oEHw5suowY8qW1qPwFwvjEWhvEosaggAnTkfqHUm':
-    CdmProductCollateralAverageTradingVolume,
-  '5b6HW7a1ekzpFv4yM48pejFPmaWgcnYYnPgwgiXz8cgk':
-    CdmEventCommonQuantityChangeInstruction,
-  '5BRV3dENe3YELEAA7xMEUBRjjigptKH5g74xXLVJzSQt':
-    CdmProductTemplateCalendarSpread,
-  '5bwTE9f1nJUBqj4vqvFo7c4i18afULFEC5FeQM5nzXkr':
-    CdmProductTemplateCancelableProvisionAdjustedDates,
-  '5CZGuPh2NgVWkxTTTqHn4LykAwKTXqtg83oWxA6HPX8j':
-    CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum,
-  '5Dtu3pEFyiD2KsqxowhubHTHw758PbJQU3gY7JfV51ou':
-    CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum,
-  '5escwe4iATiixbpkVsC5bgMF6yMNwffv9q8Sjf2uL1MB#0': CdmRegulationNew,
-  '5escwe4iATiixbpkVsC5bgMF6yMNwffv9q8Sjf2uL1MB#1': CdmRegulationTx,
-  '5F15MHyVL82YVLdpKtyeyJTtHvbHtqQDKZj8NkhWm8hd':
-    CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms,
-  '5GH5b3hqDNFtdYyKYrrsT7yR5dbQz89rdseFTBATZBzE': CdmRegulationExctgPrsn,
-  '5GwsMwbaX4fp4AD7NMb1rr8z8WDVafnPXTBwsagyzx2':
-    CdmObservableAssetQuotationStyleEnum,
-  '5HyA1BrsbksXL8qZtKjnV98GEFdqbjYkQRaHW2XuXupL':
-    CdmProductCommonScheduleObservationSchedule,
-  '5j3wvfjXc4HawVrDneYuxTD3C2At3QwdvEBK7LxSw24q':
-    CdmObservableAssetCalculationAgent,
-  '5J6Xvc5wFYpUHdUb6UeB9296nV6NEZu3TW92cnZ8Jou2':
-    CdmEventCommonCounterpartyPositionState,
-  '5JbcXku8tos98BGy9mMDtCZ5CRhRzUb7oGjCW73eLqcZ':
-    CdmLegaldocumentationCommonContractualSupplementTypeEnum,
-  '5jMMKaokSyc3P5cYsiGHgYgok3sYf3J1f3Cq4Ue2LX4C':
+  '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs':
     CdmBaseStaticdataPartyPartyReferencePayerReceiver,
-  '5jNLBK4JBUbp17MKjC98nsw6G8uvTkkc3hMW1Ao1P8Kw':
-    CdmProductCollateralSubstitutionProvisions,
-  '5JU838ptsuP3xhN8DLcMeENsfzy6eK4qD4QJETiXAH5h':
-    CdmObservableEventGracePeriodExtension,
-  '5Lq5NnUDQc1VYTrSN1ydpnZwyrjq2SofswjFANgehFem':
-    CdmProductCommonScheduleCalculationPeriod,
-  '5mJyH3fk9daCZNjHN5gVMnpg4zEt5Nu2GWky6QSkHKZG': CdmObservableAssetIndexBase,
-  '5mSFBLKEbHuJRnrmTEjggEtTrLgU7NJhaz9tcKqiJVZy':
-    CdmEventWorkflowCreditLimitUtilisationPosition,
-  '5N7r2T8zJNb9icnFAz3pNxwh7pMydKvTZyuGcLFAC4Jd':
-    CdmObservableAssetMakeWholeAmount,
-  '5nAc77Zk7DnMxDwNvokqJKAF6KWnvCgo18NsZFnBQPjH':
-    CdmEventCommonPerformanceTransferTypeEnum,
-  '5NL7sLmwPvsGQHH4cx5g8ajq8wbZMimREKKDky2KMRFQ': CdmEventCommonTradeIdentifier,
-  '5oGrpkhQus7oBFaHwckJJTedha1WXN8M4PE2uvTL5kM8': CdmBaseMathCompareOp,
-  '5ojsHNF1jNcdgizZKEHoVtM4tCrpwCnSYbccLWJLnS5A':
-    CdmBaseDatetimeCompoundingTypeEnum,
-  '5oss5vAthfdDyx4i1CUcAgeHxzWsk2SCDGWtrZ76qZzi':
-    CdmObservableAssetPriceExpressionEnum,
-  '5PFLZB36WnuYf12r9mcZZHtgkGG8orG4mKYXZUf2T2L8':
-    CdmObservableAssetMultipleDebtTypes,
-  '5pnk9bH1JJq67GAcpXYjFhhREvjUoveKHs98CBqt9pEq': CdmBaseDatetimeOffset,
-  '5q7Te3Mgou1kKCrZx5Xwb2rPekcJF6cL81MN9mfRkjxf':
-    CdmObservableEventTriggerEvent,
-  '5RCy7NwpdTs7j96evsc93hof8nESXDM5u4q3ykG6dXvE': CdmObservableAssetMoney,
-  '5rdYwkwGdndCoYmQi9MNzw9SKQZsr68igDgyYFgvNzmh': CdmBaseDatetimePeriod,
-  '5rLfe9XaZJN6C7Emyi4zRZrov1SdCdCb8wmVVLRNhwEo':
-    CdmProductTemplateMandatoryEarlyTerminationAdjustedDates,
-  '5rPzzyeLok543pSmRaRgtJQh7E6qcVWqmPgrgji6Avv2':
-    CdmProductCollateralCollateralInterestParameters,
-  '5SHUer2m9Wrjeo45qpWiGeBoKwQ2Z66Waz5zaTwYcJUp':
-    CdmObservableCommonTimeTypeEnum,
-  '5tTMFMnH6nTLVpswR4BaaD9sD5W22HSgJu5F8iTop8AS':
-    CdmProductCollateralCollateralValuationTreatment,
-  '5txXuuQEYq3DRJtqa9g5CMLyFXyChsrbeA6Q8sruRz3e':
-    CdmLegaldocumentationCommonContractualDefinitionsEnum,
-  '5TzmGki42MGuPUhmSXFrfufu3WDLpyQMvv91eWXoxniX': CdmBaseDatetimeDayTypeEnum,
-  '5vbt3yqCDAPHfDtrqySHEMgZbgECnD13NMCkT8ndvRME':
-    CdmProductCollateralIssuerCountryOfOrigin,
-  '5vk3XbD6dScT1eaY9grEq8mtTaaaAM5g7kjvCTk7s5a5': CdmProductCommonScheduleLag,
-  '5wT2z1zzPQuYcm3mfixA2omkencs18E7UbtVshA7VV91':
-    CdmObservableAssetFloatingRateIndex,
-  '5x1sDH43jpfnxCpn7SxGocGurJQPFSuhA9VqKTEj3p4y':
-    CdmProductCommonSettlementCommodityPriceReturnTerms,
-  '5X3D2ENebv1d9zFVGd1EdB4mT992xV4BvQ4xjuwktuNK':
-    CdmProductCommonSchedulePaymentCalculationPeriod,
-  '5XHHdiRH8TMfQjroSueRJHdrffKowum2j3MNEz6MZLZr': CdmBaseDatetimePeriodTimeEnum,
-  '5XqSaDHYYoCm6CbhKtjCg411iW28d94bCQv3Dzssm85r':
-    CdmEventPositionAvailableInventory,
-  '5zV9UAvEAPPoJE8p76hiGGxkbAdmTYVYyCXFALa1MFCS':
-    CdmEventCommonCollateralPortfolio,
-  '61QpsnPyqxJkJwdii4SY7Y9HVY5eZRkuUd3jUcvL5aub':
-    CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018,
-  '62KT7CCANTnUvju5nRQRPnwuRqsRPapXwdQJjLqhyo8C':
-    CdmBaseStaticdataAssetCommonInstrumentTypeEnum,
-  '63nKry6nGnCtyHC4B341Sun8eUejEvoq7JeK4A4AY7Er': CdmBaseMathQuantifierEnum,
-  '64GDGQPRbi64gBYYU2bn3xS8o4snUE3Xkyj4KZMP7iiP':
-    CdmRegulationDerivInstrmAttrbts,
-  '64gfjSEPVGo67KbDGZX2jznDz7yJ8jdjLU64hFY297xY':
-    CdmProductCollateralInterestAmountApplication,
-  '65FKmZoG2ihwTo3rzTDNSxkKZagb2Cf5Yd4XZz9V9hRT':
+  '2Ma1dyndNGQoSoTdwyFuZ8bbJcqQ1FbMXQMSHeWyjoao':
+    CdmProductAssetIndexAnnexSourceEnum,
+  '2MAF9GVz5RtZKjkk4so3hxRXrU2WZSs92BQ1bUeT9CDa':
+    CdmProductCommonSettlementPricingDates,
+  '2MBY3n1ccqVv3XyWrmGJ6dB87YtvzCaNGTvwyiDrVjdn':
+    CdmProductAssetAdditionalFixedPayments,
+  '2mLzkHwpaH6DYE1kmEHmQzEUUPMt4HSJJx2cMn6WEJJL':
+    CdmProductAssetVarianceCapFloor,
+  '2nbojqENR7xMarP4TbXNuLgBPVLDgA4Jf6RYtJTucwte':
+    CdmObservableEventRestructuringEnum,
+  '2NHDTBFFfyusp7iNLi7PU4AMTA1BCZ8H6rJRL8xJboP9':
+    CdmObservableAssetFroFloatingRateIndexIdentification,
+  '2PgTgt4qH9bmia6Zfzyn13BPBa6T1NX5cpy1x7F86H9N':
+    CdmProductTemplateManualExercise,
+  '2q1k6XA3Pp2HSmogbNojZ7iaaia4yLRxkEHhC2Dnj3Rm':
+    CdmLegaldocumentationCommonMatrixTypeEnum,
+  '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m':
+    CdmProductCommonSettlementSettlementTerms,
+  '2qVsAJiDNKtcYeoPmttQzFLH44MsczpvMvQ9ZQvwUW6Z':
+    CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum,
+  '2sDB91wA63tF5EXtQR9UbQQnyGu7CqG5AHbYURVxLHNc':
+    CdmObservableAssetReferenceSwapCurve,
+  '2smAatQQw7CLfmf1HYvJs7niaBG5fYmRvaYQFZzbxFyF':
+    CdmProductCommonScheduleResetDates,
+  '2sRSP8xV5oTb6nySDWzH4ZcHxhHkKtMgqw73G2Y7kwC8':
+    CdmProductCollateralListingSector,
+  '2T9bE3hBaZbmmKhFKA3Vw77BMH3N5vRZDgjh4BBTWvuS':
+    CdmBaseStaticdataAssetCommonDebtSeniorityEnum,
+  '2U5utSJ8k2ZUUAhQ55aoZL8AB4QWHroS2oQQx7uBhvdk':
+    CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum,
+  '2U7YP6Ym1jX4mFm5GexJ4F3psZB836JfxHmp6MF1dcAF':
+    CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout,
+  '2Uog2mdWokkHVaMVWG2ZhXCKPdQtauRk7oxemYRLn9hy':
+    CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule,
+  '2V4dGZWz8cuGsz2de8Z56U5MbYQwAFwUMekoMx6KF9MR':
+    CdmEventPositionAvailableInventoryRecord,
+  '2vjyHHweohchsUQ7vzRWYnkpZEn1AcEHAqi83TmYW23F':
+    CdmLegaldocumentationCommonSpecifiedEntityClauseEnum,
+  '2VoGuVXkABhTyi7xKubFr6JzJfGRVE4L71H1o3KouEtk':
     CdmObservableAssetTransactedPrice,
-  '66zVckdam9PFW8teq1v55hAb2SjzvqkkKJKB5VKKrrkT':
-    CdmObservableAssetValuationDates,
-  '694bqGLce4g9XrBubcFXs81gNNsvVTGK3msPSdNsj5jD': CdmBaseStaticdataPartyParty,
-  '69jx9rXicruZGKCBH22y3ssVo8rTB3rDWeNgDh7qhAET': CdmObservableAssetEquityIndex,
-  '6aL4Uv72Kn3HLmR96RGbWs3RSBXaDcEwYRYpCFoCFJ1s': CdmObservableAssetCsaTypeEnum,
-  '6BMwav4uPAPxHDeLGeAJfRnPnXj8bbdd7czs69vEFKGe':
+  '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A':
+    CdmBaseStaticdataPartyContactInformation,
+  '2W3rHTz4L7GBmVkiESoY8puS9uU1rTGL2SfpTGJy2kse':
+    CdmObservableAssetCalculatedrateObservationPeriodDatesEnum,
+  '2Xm4KS94SVHHV9NjHpmazjMW6ALPBBv1ALbx2bE3B7K5':
+    CdmBaseMathAveragingWeightingMethodEnum,
+  '2xwAHyjVuSzA57dVQJAEcfr7Eg6P3Ms4XxwPwQwPQsAK': CdmRegulationOthr,
+  '2xXTVFJJC2AthhSszyY4ca794zXYkKYyEqir5EjFU4Zm':
+    CdmMarginScheduleStandardizedSchedule,
+  '2y5oTswWqzzAdz3YW657fXdmY8ENhbHAEWBxJwfmi5f3':
+    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity,
+  '2zMRqKefYonWQ8EuyFg2YU4i4zB7SE1Yph91R4PEy7WW': CdmEventCommonBillingRecord,
+  '31LuHdvewSLrx6VphDocTHZpRiRxE7vw5HywfyoE5xsE':
+    CdmMarginScheduleStandardizedScheduleInitialMargin,
+  '34vDDjWK88raLcbwzsk1RG6XiYVNqS2twvW2mBVySxxe':
+    CdmEventCommonExecutionDetails,
+  '34yZnruVzk2TWwJj25VXtQ6vJsyoHWmMQdFWUBQGYp1x':
+    CdmLegaldocumentationCommonUmbrellaAgreement,
+  '356TLY4h2f86ko6g3UzBMXTWaCaZ9zdRXa3zrGiVTQrL':
+    CdmObservableAssetFieldWithMetaObservable,
+  '35r3StzAH6Qus8FCSpiCqqUrKHx9d4SYBCL2gEecgCJq': CdmEventCommonValuation,
+  '38MJMyCWnyrfancwTmzba2YAVR4YfwGbKcnfueN32RCR':
+    CdmObservableAssetQuoteBasisEnum,
+  '39XeVq1TJts5ATQmUwpB8HKruLr5jxWH4BxrT8gtkSa9':
+    CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018,
+  '3a31df2HdfB7EqRbM2D5wwBaTaVC1tUemQ66F91P16xS':
+    CdmObservableAssetFieldWithMetaCreditNotation,
+  '3BXRxsxyT6CgqYyNVM6wZNBwCaCAARu7VCvmQoCkn18s':
+    CdmProductAssetVolatilityReturnTerms,
+  '3cc9F6sZrvGSPkpHcHkSujKHWjLXZrjjdEdMNX1ityZd':
+    CdmProductAssetReturnTermsBase,
+  '3Cw8RykF4cE5soC5fNPE2vRpWQcT4cwXUTQED5ux8xZ6': CdmProductAssetLoadTypeEnum,
+  '3dJskTcZWkGvVvc2CnvQkC12gkgaSGjZ8ix7XR2XxxjR': ComRosettaModelLibMetaKey,
+  '3dRUSDjJdgNWK1v7xMqD4sANMTcNwBMxpGLaLVPaZk4D':
+    CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates,
+  '3DSVTtZYj7KKPwr2oTs7ERknxwH4pXMvk9G1H7LkPkyr': CdmProductAssetGeneralTerms,
+  '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f':
+    CdmProductAssetReferenceInformation,
+  '3eSk21DN6a3UUApaPYyPtqi3HPeLX7zYga6PMuXULqNa': CdmEventCommonEventIntentEnum,
+  '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4':
+    CdmBaseStaticdataPartyAncillaryParty,
+  '3fNfpR7yecM7ZSSL3mC6i4VWFehcFtvJ1FFQd1SsATpi':
+    CdmProductCommonSettlementShapingProvision,
+  '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6':
+    CdmProductCollateralEligibleCollateralCriteria,
+  '3gvWJxrxUUD4bdYMUZb5GWjJwHqshsA9ncx7VngcWSQG':
+    CdmProductCommonSettlementStandardSettlementStyleEnum,
+  '3hc2fs3hNHSJTJ1K3BXvZXCq4XHj7rRGhvfo62XddQin':
+    CdmEventWorkflowWorkflowStepApproval,
+  '3HwpSv5LnJqxEq379qzBShVAkqrJkDsW1ysGVeXzwd6B':
+    CdmLegaldocumentationCommonResourceLength,
+  '3i98p29gyoZ1j352vAmuPHEtinsZgRDfRmRT4oCRAjh7':
+    CdmProductCollateralDistributionAndInterestPayment,
+  '3iGK8rtshZDYPEKjPLJb7aYsVc2cBa7Pnkc4Nr1vLoZt': CdmRegulationRefRate,
+  '3j6sxnQ7QgWXvufbYN59akG5xPy8Sz1wg8Lr1nR32iFw': CdmObservableAssetFxRate,
+  '3J8QUqU5781wEZ91F9Y7a1CUz2EihFL2b3SWBCB1FBth':
+    CdmProductCollateralCollateralTreatment,
+  '3kqHna3Z2FVYvPx85aDFr4WH2NPEmuQhrh8XXzbkQosH':
+    CdmBaseStaticdataAssetCreditObligationCategoryEnum,
+  '3M9i21vmhfQSWy2BnUDTVM3gUywbEnZ6SaPXvrvFAYTN':
+    CdmProductCollateralCheckEligibilityResult,
+  '3nrMEw5ojL2L4nx9YC3c3c4ANcs6gAFKkas7RgDE5Ao2':
+    CdmBaseDatetimeCommodityBusinessCalendarEnum,
+  '3pA66XRhiAooUuGarBuys5JR2iwpE3DN1FJh1ToZzDfu': CdmProductTemplateReturnTerms,
+  '3PEKcTxZjwjadkRHkdE5cLAN5jWQkiSt4SmaU1mwZbgZ':
+    CdmBaseMathQuantityChangeDirectionEnum,
+  '3PW2wc587i1dSwdY8mw99sh8auYBiNqWChG6tCKiMGS6':
+    CdmObservableAssetInflationIndex,
+  '3QpANvMr6891ZuV6c8Yze7qcCyqbKRhy9zqwHuMkw8FP':
+    CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule,
+  '3QYsrTuj8NArStHVg4Bkwnj3LgYz2Rd52Xq4psjQm74A':
+    CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier,
+  '3r42QBCBADZWzkxMBCQkvH3c6M3c1raWTFgLjoCsjZoe':
+    CdmObservableAssetForeignExchangeRateIndex,
+  '3rCwZx3mRa8Z3ZECBEL7GM4gEwf8NnjrvaktzD83D13b':
+    CdmEventCommonConfirmationStatusEnum,
+  '3RnDS9BkyGXnmPcVrtU9vHuk1ioPRchsKsKfZ2yvvdvp': CdmObservableAssetCurve,
+  '3RT4aqPB3gGbtKfrgwy1KQmMu48NpwSTvJX4tykc6r2F':
+    CdmObservableAssetCalculatedrateInflationCalculationMethodEnum,
+  '3RvMJskqcUvhXZBqQuGuqyxWNuVgQf51kdCaBEzensYx':
+    CdmBaseStaticdataPartyAccountTypeEnum,
+  '3RVpuPyLZTsRz9wSfRCjDrY84adxxkZBQaYM8p28MYpK': CdmProductAssetValuationTerms,
+  '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy': CdmBaseStaticdataPartyParty,
+  '3Szwd2qmGpb984rriz5Yia1VSkVLPrvXGSTv9qhsFyQf':
+    CdmBaseStaticdataAssetCommonCommodityReferenceFramework,
+  '3USYNWwBjwfneMFPfLEAygbecRdE9pmiE6VzumZMpdRQ':
+    CdmLegaldocumentationCommonContractualTermsSupplement,
+  '3vRMCGh2M3Ggi4kWVbmZ85TLuo1A54NFwDCbhvAZt9XA':
+    CdmProductCommonSettlementCashflow,
+  '3VWXt9VeCTwLSaTRa6KebXPdyz4Gy3Xwf33wBbvgbeqo':
+    CdmObservableEventCreditEvents,
+  '3wSwzEEsW9wqLsvHavDA1EwFMzMefG38hhcM1BgdrLr9':
+    CdmProductTemplateEarlyTerminationEvent,
+  '3WvaxijQwR1ELLMK9QtedoyNZ1wy9YZrGnGe2wvdpVWk':
+    CdmProductCommonSettlementFixedPrice,
+  '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT':
+    CdmBaseStaticdataPartyPayerReceiver,
+  '3xtXK1YdVmKnwdTBo6WKzcZ4cthkLD6Cotrd9TGebUpn':
+    CdmObservableAssetCalculatedrateCalculatedRateDetails,
+  '3YeAtbFamK5F5iKzyL3iNd6gFidd9BmNNPL6HqrJVqgu':
+    CdmProductCommonSettlementPaymentRule,
+  '42E8LjfyrvfiY3rzFn9ktgxtEHdG6eXmK5CyYGHUkotU':
+    CdmBaseStaticdataAssetCommonCommodityProductDefinition,
+  '46LCCSVXKexPjXtAyPSyNEvZuzGR66uVP8ccRPSrwJhs':
+    CdmBaseStaticdataAssetCommonCollateralTaxonomyValue,
+  '48DkPx7UNHrRug36JutQfuqHBiEgcCS2XZiEbFZ4xi4q': CdmProductTemplatePassThrough,
+  '4A1qUaufcqcuzgYMrhKzobEdbwF774fdj4o1nwgmxUdJ':
+    CdmProductAssetSettledEntityMatrix,
+  '4A7KRZp8xfcHRGGZtVf7xSp75Hu97uNM4dk6MD5ezR9W':
+    CdmObservableAssetCalculatedrateCalculatedRateObservations,
+  '4anwVBorXr81GoC4Wkf4trYWror3mSXbzukXdYgwmG7N':
+    CdmLegaldocumentationCommonResource,
+  '4B3Gz2f94wTHNuSEpR6eCBJGvdrLhfaVFwGYDJriKbnh':
+    CdmObservableAssetCalculatedrateCalculationShiftMethodEnum,
+  '4BrXNc4oFsUfnFzm3uWTqNmgivGhZJRmaoxvb8kK9xiw':
+    CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio,
+  '4buYFvhK8MygP1T8vKFuNofU4rApmaG5WxpnBQWE5LXs':
     CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum,
-  '6CG21iTqgkhkNe8QKj5A9BYagGYdz7YVNXQ1WK7UZtZG':
-    CdmBaseStaticdataAssetCommonEquityTypeEnum,
-  '6d1G7oKbQHMycN2DpoiwfRUVYVHqAbkSg12MQas8Qbc5':
-    CdmEventCommonValuationTypeEnum,
+  '4Dvzid1TBuLFxwiAp8Wd2pdhRLvMpCoGBe9D6fba8eVg':
+    CdmProductAssetDividendPeriodEnum,
+  '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg':
+    CdmBaseDatetimeAdjustableRelativeOrPeriodicDates,
+  '4fBHTQQgpt7zfCdmZdM8xKEqaXQv24aeBbn7p8bid744':
+    CdmBaseStaticdataAssetCommonPutCallEnum,
+  '4fDBuDhuDX6EwGXzGFCqTDbxE4JukhE8mVQ8BFtq5d3j':
+    CdmObservableAssetSettlementRateOption,
+  '4G54JBxkdxEwLZwmqaWCK5bKJB6A4GG18uBgBUKxJ4am':
+    CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex,
+  '4Gy7A4j9sYhPf8Eqd9dXLdUFBWPHMDXxiV4n5VNAsmQF':
+    CdmObservableEventDeterminationMethodology,
+  '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv':
+    CdmObservableCommonTimeTypeEnum,
+  '4HwR25LkwrYYmgCxQfJaEUfML14hfQADHRnF6nmUfUtR':
+    CdmProductCommonSettlementPhysicalSettlementTerms,
+  '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z':
+    CdmBaseDatetimeRelativeDateOffset,
+  '4KjkUNqNW52EyuCcnzPCbMA8tfR6qRi9jXUsZ3s5vFTv':
+    CdmLegaldocumentationCommonAgreementTerms,
+  '4L9Uam1XY7h4ygfK9tdFjDPMNsNEn9NAVvoGNsHvGfWD':
+    CdmEventCommonScheduledTransfer,
+  '4LxF2iZVCWETVa5Sk6jK2WAVLX1SD7WaPtmgesb4xuBC':
+    CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms,
+  '4M9RAThHXP4VWteUq2nq2RyirfHaGCinAVabk8gf2AYC':
+    CdmBaseStaticdataAssetCommonMaturityTypeEnum,
+  '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j':
+    CdmBaseDatetimeBusinessCenterTime,
+  '4mtcJBY3NiPAmBruiozFAPqC5nhTXezbGrPZnsfcxeAR':
+    CdmProductCommonScheduleObservationSchedule,
+  '4NGaBXKBS6QDTeN9ZdQEgWHvYg1Kd3Dqr86Xs9BpVh7A': CdmBaseMathMoneyRange,
+  '4omrk7WjD1yjwjt3edKCzksnAKX38duEcsLE2esZpg6q':
+    CdmObservableAssetCommodityReferencePriceEnum,
+  '4oxb1sguUNq2AqF4ycCwRJPs6eJL47WfUqhjsxJXRZNa':
+    CdmProductAssetFloatingRateDefinition,
+  '4PPUed4wa5yh6Po87HFZQNZmaedjsuVfFRs2XCHbzciY':
+    CdmBaseStaticdataIdentifierFieldWithMetaIdentifier,
+  '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#0':
+    CdmEventCommonPrimitiveInstruction,
+  '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#1':
+    CdmEventCommonExerciseInstruction,
+  '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#2':
+    CdmEventCommonSplitInstruction,
+  '4u9YFPkqCriFw9Nz1fytvh7d9BRSRKqqQKDjqfPsqaD5':
+    CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule,
+  '4uCFVBTnzc9vzmmzLSyG6TPxegT1i7fGFyiwSkSAhNNW':
+    CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum,
+  '4VSDgMR93vRjmusHhPRNXjdGuVnxrN3FBojT35y2b6cd':
+    CdmProductAssetCalculationScheduleDeliveryPeriods,
+  '4wRJXUzN8uTkKFeHycmg5s4LPtKSpfJSj9cRXHx5JAsi':
+    CdmProductCollateralAssetAgencyRating,
+  '4X8F2gmBL4p3H4RQFALaRrLn3E4tnCr4a7kQgN7NmnWV':
+    CdmProductCommonScheduleWeeklyRollConventionEnum,
+  '4xmZ7ro4SjPB1Qqi1VDv8EsMmJHKedpeQsvvYum9u8Sn': CdmProductTemplateAssetLeg,
+  '4ye56L9in1qinh2cpAHGxVWkoWGLGzRyNgsSzA4P1Kvf':
+    CdmLegaldocumentationCommonSpecifiedEntityTermsEnum,
+  '4yg3H6YAUTCit6hxRnAEyVQGYTMFm4nGL1gMyQpvzmZ5':
+    CdmBaseStaticdataAssetCommonTaxonomyClassification,
+  '4Yp9gtVpX1NNhVLvRCpFGS3MvbUnmDXUmuAKSDYaTNWN':
+    CdmBaseStaticdataAssetCommonProductTaxonomy,
+  '4ziQZYSMsRBGw2UcuWWBCV7f3BDZdr6LRtdVLEavoHaw':
+    CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum,
+  '4ZskTzTzcVURodZiz2Xe1cU3ryAzGu9uwsf7Nc5DU4tA':
+    CdmBaseStaticdataAssetCommonDeliveryDateParameters,
+  '4zZq26rs1RRNTjwdwvbyZZAbRe3y2EykE2PtTne7suWB':
+    CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms,
+  '53mxbAPQ46Wh3prwQvdFjRpUKwN5aa2yN3YLYMRZotEK':
+    CdmBaseMathRoundingDirectionEnum,
+  '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7':
+    CdmProductAssetDividendPaymentDate,
+  '55eAMVBDrc97nSg81oZ8CAjTfKe1nT7pk36qGrAdm3zF':
+    CdmLegaldocumentationCommonCreditSupportProviderTermsEnum,
+  '55gwzrtwt8NQXzuzesGej1NAFoZdqtmqMGguHuuJAZJN':
+    CdmLegaldocumentationCommonLengthUnitEnum,
+  '57TNhfCPohyptzE8EPedTDH19ZH7MkzMEo4S8VWeQ9Ck':
+    CdmObservableAssetPriceTypeEnum,
+  '587iDHMkRt71kZVCzE5o3zXzWprHzypcRd91TYbQnSpE':
+    CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum,
+  '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x':
+    CdmBaseStaticdataPartyCounterparty,
+  '59cfrRQLPJncH1tkA8gcjLTVBbBRu2ex63nqTvfmmwoz':
+    CdmObservableAssetFxRateSourceFixing,
+  '5A3hCLVC8huTr312Z9ddi2snvyWozZsHadHLetvYe31g':
+    CdmProductAssetDividendEntitlementEnum,
+  '5AmXPpNccrpoL5H4BBSk9y2QfnizHY6JKgXqaHJTHgvy': CdmBaseMathQuantifierEnum,
+  '5arWKUo6ZdrsnkGXoVp8CVH4YWcUpQsCZ1EdqkBn5py5':
+    CdmProductAssetFloatingAmountEvents,
+  '5dGWGFZAUi1PKkhPU7YyqpjKufXV7BQNEntUPbgE8HZS':
+    CdmProductAssetInterestShortFall,
+  '5EjZim32Eqda6ddZQRiibshQCRikGFQeJc8nvxDo9bjc': CdmRegulationSwp,
+  '5ELPXXGetNc7L1KzToiwonniwtgkJ3BHxxLYZiFDy22x':
+    CdmObservableAssetMetafieldsReferenceWithMetaRateObservation,
+  '5fy8DQMQDgMbPNnMB9zmKJVXYJWdVuBKFNuYz87LZ6S9':
+    CdmEventCommonCreditEventTypeEnum,
+  '5FztK8LEabxgM4scSQjt3nPYnDnrndC8WDtkrCKtWy5e':
+    CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep,
+  '5ge8BnjNZtu74pTtnhLvWJ7ud6SPTwyz1TmpHomfonoo':
+    CdmProductTemplateStrikeSpread,
+  '5h378nRjo3jm7Ls8JJ42cmd4XHzLYLu8A6TzQsDDM4f3':
+    CdmProductAssetBoundedCorrelation,
+  '5HGCdXL7A44CctEHzdmFoxAvfxHpCB2myr1mHPM1b72K':
+    CdmObservableAssetFloatingRateIndex,
+  '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA':
+    CdmBaseDatetimeAdjustableDates,
+  '5kML8V9qeDP2N3N3L173vbHKEbT1tjwLQ89bXgwhB2jf':
+    CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates,
+  '5L5ELtTjqEroydK4qXv9bitzL5wJ8yY6yjAhFum13A7U':
+    CdmProductTemplateTradableProduct,
+  '5mbfUkBFTEYhKyTf1DNksGFTiyJzZooRyUog7hBoYzHC':
+    CdmBaseStaticdataAssetCommonAssetIdTypeEnum,
+  '5MhstayLq1JLa2NHwkVTfhEPNG54pMxBdyN7fZ7dzvx6':
+    CdmEventWorkflowCreditLimitInformation,
+  '5NmgrQaeHqWvPdpEvNrGu7kkR4UF38A8c7p9tVrF1G41': CdmProductTemplateAsian,
+  '5noQvmG1G1xXrG8SxnbN37mhXkXDttDg7VNkk4vHoTMt':
+    CdmObservableAssetCalculatedrateCalculationMethodEnum,
+  '5NxschaoZUezk2BPbZj7X7nhfYwLz97EWLXacfYbzGHh':
+    CdmLegaldocumentationCommonAddressForNotices,
+  '5okT4PBEHijywnb7jBieEoVCyGTRkhzDmbMEDnxtpD92':
+    CdmProductCollateralMetafieldsReferenceWithMetaCollateral,
+  '5oZ8oDvcos6sGR3oh3ta6MA4X2qAUnyWcWnAEFRFJg7x': CdmProductAssetFloatingRate,
+  '5P1iV2VHBfC9AHhxAxN9sAUaoXTBP5jKaV5KMwJEtLvz':
+    CdmObservableAssetFieldWithMetaPriceSchedule,
+  '5PZmtNnUvmoYu5wdHEd1a3Ng2sZcZ76qmfmNG6hoFS61':
+    CdmProductAssetSpreadCalculationMethodEnum,
+  '5qPopZ2RMbhbDtd5XmtdT1QCkFussYRLiFeUPqAWCd9a':
+    CdmObservableAssetCalculatedrateObservationShiftCalculation,
+  '5qsyiVpwMMJ634uApJQwMnZmrry7x6MHoaMJeGxdb5Bq':
+    CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType,
+  '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY':
+    CdmBaseStaticdataAssetCommonSecurity,
+  '5rZCg68iGGiKxNzqKGrKhdGvwvL65GzoawTiePj97t9T':
+    CdmEventPositionPortfolioState,
+  '5TF8P1YZtVnW4MLUB8XNfNU9ypzqPgDVZtNQasAEi6BJ':
+    CdmProductCommonScheduleStubCalculationPeriodAmount,
+  '5tK1F6AqKSKAHYjvgz5cGCNx6EQGZTimozK4y9mc1wWx':
+    CdmProductTemplateExerciseFeeSchedule,
+  '5TwYH1UDWUhzBQmxrWFhK5phemNwZXmScWVwCZNB72rU':
+    CdmLegaldocumentationMasterExtraordinaryEvents,
+  '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo':
+    CdmBaseStaticdataAssetCommonAsset,
+  '5UTtrYJXRQ91C3zHV1ASggKdKMGxrvDbyUoqY7HwknPB': CdmProductAssetBondReference,
+  '5uwV9tJmkwW5rZ6mfKRco97dQEw9rwznJePYQbLyAJco': CdmEventPositionPortfolio,
+  '5vi7aU3GvfLQ4xDo1Ud6tENVfH6eddFwtnAbqXHuxMfi':
+    CdmBaseDatetimeRollConventionEnum,
+  '5Vqz5iZWg2FYRz1e6qJVm5q3vRS2ML19JPjvEpZ4bYtu':
+    CdmBaseStaticdataAssetCommonIssuerTypeEnum,
+  '5W5vjs214raXHjKjnhu1xesDsR28cGgcqUEJZdPcnm9u':
+    CdmEventCommonBillingInstruction,
+  '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y':
+    CdmObservableAssetInformationSource,
+  '5xa7EuQoL6MHLEkfe2xUYenDRD52BrW1dDcJHWhB4zFP':
+    CdmBaseStaticdataPartyAncillaryEntity,
+  '5ZkYvwfLfiF71H4xx4uG96T64QSNJTzuohdaDKaDJbbY':
+    CdmEventCommonClearingInstruction,
+  '645oAr2atS3TekcTBduwAeUSH7aauAokbEg66ZLpz4YE':
+    CdmProductCommonSettlementSettlementCentreEnum,
+  '658or3kYtUm56ELDk8VvoiAT7agLsP99UNrYUqXPMWyp':
+    CdmObservableEventFeaturePayment,
+  '66A3jW7LyiNtMy7z2YQQFpSs2dyBatQtY1MXhCSnvNPC': CdmBaseDatetimeFrequency,
+  '68KbNxL8Zk6injt7KEzchnGU1s7jEBrrdNTEayuTNdzA': CdmBaseMathNonNegativeStep,
+  '69BAj8p5rA9BuAUmQM81t6H6n2keSWdJxMXhZQqzaotS': CdmEventWorkflowWorkflow,
+  '69nLFfiGcCWNuTn9H9eiEcBwsXuqgNxxqgB7X8X9XaSz':
+    CdmEventCommonPositionIdentifier,
+  '69SohrhYgsRTiHcPmh9GwadYoxt1kJgmJ3e2nrCajFHt':
+    CdmObservableAssetInterpolationMethodEnum,
+  '6BCHpCe7FxvsdKprgbdq44ovxXH55YFYtLRFtqQ4KyeE':
+    CdmProductCommonScheduleWeightedAveragingObservation,
+  '6BETyPG5V4U1TUp5rVWo3V4V47SDx9g18ekbAAYhpp4U': CdmProductTemplateKnock,
+  '6BJ4CubLVSgwchKqdWjX3bW3sPCa6dktMHc8CJzQM6HT':
+    CdmBaseStaticdataAssetCommonDebtPrincipalEnum,
+  '6bttAkwgoE4wCcbzrxpxn9QC6RyNAX7D58kev7GDsGiS':
+    CdmProductAssetRealisedVarianceMethodEnum,
+  '6C5cWr4to9ATnkFbP7DRXtMUZfGVzou2g22vC7vYgdLG':
+    CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum,
+  '6C5T6HNc1xggFbuGGNXtXJ2qeiBiqRvHGvNJdJA3sW6q':
+    CdmObservableAssetCashCollateralValuationMethod,
+  '6ddJUitXi5N7MkKNmyabHzuZ6qhZC3kt5EZJoEPpmr2P':
+    CdmProductAssetFPVFinalPriceElectionFallbackEnum,
   '6DgaHaSzK3ETUNrcEqTZUXkvS2nrBSrCTCJBLAqDEPsy':
     CdmLegaldocumentationMasterMasterConfirmationBase,
-  '6dk5GwNi2WVW1WtdQX75yiMvujuqv21d4kneiqK6QKzT': CdmBaseMathQuantitySchedule,
-  '6dsiwJuR69CVpGRuRqj3ymfDhYpGGDRtLQLHmTZMqGC':
-    CdmEventCommonHaircutIndicatorEnum,
-  '6e8bWMLWmAugBkofJStEGzazoGnD7NkWaWK1zPbK4zCP':
-    CdmObservableAssetCalculatedrateObservationParameters,
-  '6E8HRHJPNpbSaPQoLzzGEaJf6en5naXtbaNeGZ7ar9b1':
-    CdmObservableAssetFieldWithMetaObservable,
-  '6egBPp2kV6N2Nsr2wJ4x1cygyeyacb8ybmRmite4dDKm':
-    CdmProductTemplateExtensionEvent,
-  '6eP5udkrBCHMkFQYgYuVDdkQys7PjPXJzCoczGrwv5G1':
-    CdmProductTemplateCancellationEvent,
-  '6ExYXjmvyeVTNcjUV1RhKjrEdJZrXuqeMggJ4UV4BiDX':
-    CdmEventCommonPartyChangeInstruction,
-  '6F51Eo9CeCcpo2FgVGKKsS5rBRpqpkyo1WoTxMfYUwZZ':
-    CdmObservableEventShareExtraordinaryEventEnum,
-  '6FERZPz42ZzYn2R9FbEZtJ4sscsq9wYcg9tANknRZjnM': CdmBaseDatetimeDateList,
-  '6geCuQi9d7Zffp3p3nxFjJBawUz6oUHKH19RmptB9h3H': CdmBaseDatetimeDateTimeList,
-  '6HKfs5P29obpmgCujF88CdGns3p8Udb8sHA6m99noVZw':
-    CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep,
-  '6ktRd3DjxSYyCKanDCXymsiwCRfvE8Nmdg6Hr6nRsGLs':
-    CdmProductTemplateStrikeSchedule,
-  '6nB2ZhwxV9UTUVbUSndGEBkqYemsbhs9sXZEWJ6heeYA':
-    CdmObservableAssetCommodityReferencePriceEnum,
-  '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o':
-    CdmBaseStaticdataPartyLegalEntity,
-  '6oofq5cEqVvBXkWwkQPGzgZJdGR1TRM7i29UzSnVFFVd':
-    CdmProductCommonScheduleStubPeriodTypeEnum,
-  '6P8aTS33Up5mmto9DnUZz5ACxLVmLywWGuVqNKfHX8uK':
-    CdmProductAssetBoundedVariance,
-  '6PaHnEA3rYitZ2JKHenwQog3g7ZAfxruJMGQcpWCEDFK':
-    CdmProductCommonSettlementSettlementTypeEnum,
-  '6pVLqA5jCBFn1xFmznDn8hRDyzaHRvRQ5XjxvAEEXKy1':
-    CdmBaseStaticdataAssetCommonAssetBase,
-  '6q21RVmQN33ataLNzF7toqxk33ACgLu2ai2zbmpPrgaW':
-    CdmProductCommonSchedulePaymentDateSchedule,
-  '6QVHrqvDdhrztaqgMzWNPogaPn1tM5Kq3cPyMJnzAoZr':
-    CdmProductCommonSettlementAssetFlowBase,
-  '6QXysvk5wKooQQckLijtFXwzL8JzYBViFzRCkYPNJnSX':
-    CdmBaseStaticdataAssetCommonListedDerivative,
-  '6r9HC6aEvzHgbMXoGSQrFYX4t5gd7479xixcJs4h3ot1':
-    CdmProductTemplateOptionalEarlyTermination,
-  '6tjVZ5NjLm5HQgsKdMnRgy9TgumvEg9qnjDmMth7np6R':
-    CdmEventCommonMarginCallActionEnum,
-  '6tLPRxaKr8kikEkfnoFn5a6CqY61ckSNTb2NLzfWwRb7':
-    CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent,
-  '6ToNNPaPv4BRxC69FF1nCdsrm54iDJm6GPiRYRYnt2Ev':
-    CdmMarginScheduleStandardizedSchedule,
-  '6Tr6ZRk2ed6Xz94Dfj4ZYH9Z1EnxKkZ2z7uEyNB3Krv':
-    CdmProductAssetAssetDeliveryProfileBlock,
-  '6TYrLCivDmD4vVBbMHT9QvJcAbGwJTQJw2ZeD8VYpqKz':
-    CdmMarginScheduleStandardizedScheduleInitialMargin,
-  '6U2c4eAmwS4qmrPVZRhZQJXRs75a2JGrkQBHr3xRuRXe':
-    CdmBaseStaticdataIdentifierLocationIdentifier,
-  '6u2SSYbiL1wde49f5mpDzE76eiZkyF3yeZ7WL3j6RnBZ':
-    CdmEventCommonScheduledTransfer,
-  '6ujxkamD9qS94hfxbcFpvQanjfpKtgYotribjwqvMsL':
-    CdmProductCommonSettlementShapingProvision,
-  '6uUKa3KvHi9m8CmvHFfmNhUiSoQkBre2rAx55EMNRfbG':
-    CdmEventCommonMarginCallResponse,
-  '6v9zzNRv4mEw925bbbUR2shJzVQvBRNmns9iVZBqhzjt':
+  '6dgH4biBE9pfYSSx3pD7kWuYHhmxVmVGoHckDDNdqz85': CdmProductAssetReferencePair,
+  '6DRWaqGdw8CTwRo3fMjKm3geyesH3QBat4P1SeqvgNLc':
+    CdmBaseStaticdataAssetRatesInflationRateIndexEnum,
+  '6Eina6hrt9KKXg8ZTfhCSwwcHkxjXe8HVdHFo6X8toya':
     CdmLegaldocumentationCommonResourceTypeEnum,
-  '6vvQAa2n4pBkXLzf2nm13fChPvmaGmYx9naGFczd8n7a':
-    CdmBaseStaticdataPartyReferenceBank,
-  '6WADf5sCCR4MuRuJ5iHs5dpqWw4n3fPXnjuqN86S26rw':
-    CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights,
-  '6wko9wDGMgxzo9xtP73GZpXho6rT5ZcrZ1RgAhSpjBwA':
-    CdmBaseStaticdataPartyAccountTypeEnum,
-  '6x12g8enT8MoRfSx5A65GDeBhgNsaewRCdXG5hsioGmL':
-    CdmBaseStaticdataPartyCounterpartyRoleEnum,
-  '6y41K737Kb28nfUX28CtjAbV1gqD7wSHtrmzVTF36QH6':
-    CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate,
-  '6Z3jsP3QVXumTdQMGZVcCDRNn3n62xjfZLNEHaZeDWmb':
-    CdmBaseStaticdataPartyAncillaryRoleEnum,
-  '6ZDCQKZdsUezXkYv4TiQ9upHiNBjJ7MQMpjtwK64HMf2':
-    CdmProductTemplateFixedPricePayout,
-  '73jkwTbyMo2KXQaySh2bPD7JZbKKWQBJYofeJMMprsr2': CdmEventCommonContractDetails,
-  '73UaBEmPjNZQT7mUS7Rdnxb9fLcnfsn84MCkvVALW3vw': CdmBaseMathSchedule,
-  '741YYkEZ3LbnGoBjp5zMiLiToHK93h9yRdxRAEQeWYvx':
-    CdmObservableAssetCreditNotations,
-  '78EQYkDkf7rGpcLm6EChjXZahyPjkpNnuPg5fpQ2FQEk':
+  '6exizYh6WdJdboTXU5vG7ZycT7oysGTNWCBaBzuWkBBs':
+    CdmEventWorkflowWarehouseIdentityEnum,
+  '6eYoofdAibUdi9DT8tvNo7PNJF1DxZcM4UrQwinBs3mk':
+    CdmProductTemplateConstituentWeight,
+  '6FkJxLK4KiPuQ7LHqQDvpGSeaWMVr5dw4g2K9mBrnybJ':
+    CdmBaseStaticdataAssetCommonCollateralTaxonomy,
+  '6fnDZS1zqAsqg6ScqF5Y7LEwCWQtuBpB621ZXfC9ocuy':
+    CdmProductTemplateAutomaticExercise,
+  '6fscFVW5aHmtMRKjEQ93zMSWd6uq8CvM8i8Zkvtjbm5d':
+    CdmProductCollateralAverageTradingVolume,
+  '6ixYuBhfiWQfvWDH1SyBRA2mJcRzpiH3SWomNPu3paz1':
+    CdmEventPositionInventoryRecord,
+  '6jcZ9zLDpCUUHnubcVFKvtCrbSEVir51vkUuHYoQEtTv':
+    CdmLegaldocumentationCommonContractualMatrix,
+  '6JEZ2eR6XbPr27we4enAnhEA3t33WcEUzQSnH1uFWQ5Q':
+    CdmProductAssetInterestRatePayout,
+  '6jhHzxNcd11YEG9a9f1yBWhmm5qpzmbZ6E7JEqHpPj7r':
+    CdmProductCollateralCollateral,
+  '6jPEeuHYwc7SYkDRExZS37FF7KdHg9uaHEasdRpFFvGN':
+    CdmProductCollateralCollateralValuationTreatment,
+  '6jrB2pq8NLHiipfLLWQHfSy6DxQvWsHdiVcQ4VP3BUFy':
     CdmEventWorkflowCreditLimitUtilisation,
-  '78hstsoD3xojutwJdHjXPCPrZAeHmmoYTZo4oAjX8BnR':
-    CdmProductAssetReferencePoolItem,
-  '79fSZCgPXnnm5bsD9s4XCQXn5MaCb8UAVq6ybHFbLdpq':
-    CdmProductCommonSettlementPrincipalPayments,
-  '79YpRF1QvMBEWLGAWkLqBGPQXzuJpz5nxGxrBNrJ7bAY':
-    CdmEventPositionAggregationParameters,
-  '7AfyjzzZ8Y9CSKTQ3jRNBeoosewUEsqKoK4tfANwmDuR':
-    CdmProductCollateralListingSector,
-  '7amP8mEsUdLRShji4Z8rjnewniyvxfvsXM3DW9cmZ4ei':
-    CdmBaseStaticdataAssetCommonDebtPrincipalEnum,
-  '7baagyYQ5pks4axcyWu1AiqBmHkoMoc6PrF7XpeGCaE3':
-    CdmBaseStaticdataPartyTelephoneTypeEnum,
-  '7BRQPc5ga1LQPaFUJpmc5huifPeUuZvVsyovgsxm1TSx':
-    CdmProductAssetDiscountingTypeEnum,
-  '7bvotppQD6qAT2nJAzisWtzQZEZhpXWNPUVV744PQmR5':
-    CdmLegaldocumentationCommonSpecifiedEntityTermsEnum,
-  '7CW8TfgwDk8nYxmthrZy3Ypyf7C2UGco8X9dxdfWmJdU': CdmBaseMathMeasureBase,
-  '7dEpdwMAhKecY1UWLsDtUvYvxQgWGnNrAQJjcKd76hSv':
-    CdmProductAssetFutureValueAmount,
-  '7emp1LEhZ1y3VEERHEsAEa4npZSpiVUDeFQob2LpBkhG': CdmRegulationTerm,
-  '7Ezn98bzTDBSzbTRQf8yvx7zNsbGwp4w3rfb12fsiBwz':
-    CdmObservableAssetMetafieldsReferenceWithMetaObservable,
-  '7fK6wnRWpFjqpe79nBuP5Y5x5DnXYGWkx1G6G3hmnf47':
-    CdmProductCollateralCollateralInterestHandlingEnum,
-  '7h8FScnN4pQLHjNkSJKae9Pz8U5rCRfseiLcscSpZTss':
-    CdmProductAssetDividendReturnTerms,
-  '7HjksLDGh6YzfTHkRQ2USZ5teJDX6vUpijbCQZwrYeSN':
-    CdmProductCommonScheduleFxLinkedNotionalAmount,
-  '7i3shwTd6gctk8tdQbYYwNjTUuVQxFY8Fj6NUeADMeaq':
-    CdmEventPositionAvailableInventoryRecord,
-  '7iVrwmxYPhEys3U1gW5XuLq4fFt7XbEdv4H1TSLxucq6':
-    CdmBaseStaticdataAssetCommonPriceSource,
-  '7j2afftZwsKVHvwsGny36DeHZyszQTNjaKddY3EUPFWP':
-    CdmProductCollateralMetafieldsReferenceWithMetaCollateral,
-  '7JgCzWgxDq22P8AyrrUkykevhpTvXY5s46gDXHG4aBwP':
-    CdmProductTemplateCallingPartyEnum,
-  '7JhDBQ8P99z1vkjs3NtSrZYQwsbwwMPjU8BSR4sjD7c5':
-    CdmProductCollateralConcentrationLimit,
+  '6KNQgESYt6L53eckR5BrECbH1phWdXFMzZATcAzK9NLy':
+    CdmObservableAssetCalculatedrateFallbackRateParameters,
+  '6L9P51qVV3HH366DyCCXDxSEYLtr6zN1bAMebbiK5iW1':
+    CdmBaseStaticdataPartyBusinessUnit,
+  '6LfAdgL3H4Evj6cxAmHvohUbKGvi8hMjCW2VA7FCmp2f': CdmRegulationQty,
+  '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS':
+    CdmBaseStaticdataPartyLegalEntity,
+  '6LWhigVjjAUUSFhmA6HbeNXAPPtSPD97nTeiyR7yRQCn':
+    CdmProductCommonSettlementDeliveryMethodEnum,
+  '6MigHz3STyVUpn4VU9UoVTrxz2mfJ7oPf6w3suDvW8z4': CdmObservableAssetIndexBase,
+  '6NM4Yn28gaQ8DzULANDLBBiyvCGXsVB8yFf3ZfqfPgCJ':
+    CdmProductTemplatePassThroughItem,
+  '6p917qiqhcPsLDv4c6fcokZDb38SkP1i69kThgdzHgBY':
+    CdmProductAssetProtectionTerms,
+  '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#0': CdmObservableAssetBasket,
+  '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#1':
+    CdmObservableAssetFieldWithMetaBasketConstituent,
+  '6PMgqftTq3a4SNfZQb4xXg2MUd6m8xZRWGy9aGWS9W8C#2':
+    CdmObservableAssetBasketConstituent,
+  '6pomFByRysSRpLwQEWHeqiGU8sc3DrBMjCiuHEuQ1iPB':
+    CdmBaseStaticdataAssetCommonInstrument,
+  '6r7X1t4mk8pzhtyij1QDYaoMrseQxsRdHuJTw8dJaEk2':
+    ComRosettaModelMetafieldsReferenceWithMetaString,
+  '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG':
+    CdmBaseStaticdataPartyCounterpartyRoleEnum,
+  '6sGfKpzEcNGWsWw9v54bkUTJDbBHqbhEeJFCsf6tUhXf':
+    CdmProductAssetRateSpecification,
+  '6sHTanKcHB14wiXCFtoehJEB7HWsy21ExqHEvQYtw7NP': CdmRegulationSchmeNm,
+  '6UyMCLhWc1ZAqEfpnAbByw5F6GWt5hg25X2o3HVmZfGn': CdmObservableAssetCsaTypeEnum,
+  '6vYpwpDGdaR6pbtzmJTTxmLwiWsbwBhhaiecmRbLMtix':
+    CdmProductAssetRateTreatmentEnum,
+  '6w9Y1wNfyQCQMPw3tuPpDbjFcKki2M2zaFeTRXCgcGfF':
+    CdmProductCommonSchedulePayRelativeToEnum,
+  '6xhUj24tdK3fZ5cyajqu3YGHmhotZzzXE5P1CxK4E7uu':
+    CdmProductAssetFloatingrateFloatingRateProcessingParameters,
+  '6YjggFTd8yUypLgjeUwSiJGZvfraozN2PjZBK4Q8KLQ6':
+    CdmProductAssetDividendCurrency,
+  '6YLNUc4mUyAXJnpaEm2W4KAfb1HUCDcrXqv7KetjrbwH':
+    CdmProductTemplateStrikeSchedule,
+  '6YPBFzb6J5zZWUx1H7SSeJNLQWwAzYsVjRxgdkFZMVrn': CdmBaseMathNumberRange,
+  '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU': CdmEventCommonTradeIdentifier,
+  '6ZsZcTEaVYcHQtEkhsQLm4rfmMsNHjFRR3oPX9j9T5rP':
+    CdmProductAssetAssetDeliveryPeriods,
+  '73DfnZhYH3dTmicn8zMHsthj9qQ6K9XEB5KLdtiJSK7u':
+    CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum,
+  '75qSo7DxMh9MksCdoEnKxduHVLunj1pn42TvPFdxTgN8': CdmBaseDatetimeDateList,
+  '78abSDet2v5nbbeXAmoFZG2ZcMhk4674b2vrAKGT3yiu':
+    CdmProductAssetAssetDeliveryInformation,
+  '796x89gqZi8yLKhDwKArGYcCuCbixQw7PQhuDpancqMn':
+    CdmProductCommonSettlementSettlementTypeEnum,
+  '7aBrcowDER57iJ1dKZQ3YqngDZfz6eNHJExw8Egww997':
+    CdmProductAssetDayDistributionEnum,
+  '7ACnecbuWHtBLYhrw8BaioS3DSUQFiDskjpaDNspEmof':
+    CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters,
+  '7B7UekmPAs7VxgX8jAooMTn1cRUmS94ja5eiFSvuGp8L':
+    CdmObservableAssetPriceSourceDisruption,
+  '7D3ayms1ts4uASMX9CDoM8rNqDQe4wV1tFypq41nC7Pd':
+    CdmEventCommonMarginCallResponseAction,
+  '7dK86pbyNfhuuigQR5bQueaqH68Sqze66Qwad2m64rxg':
+    CdmProductCommonScheduleCalculationPeriodDates,
+  '7EEvMt9emT8iceX5fpLkggKJmrok2qeWHbESwueZHstB':
+    CdmProductCommonScheduleRateSchedule,
+  '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy': CdmObservableAssetMoney,
+  '7FL7vGvhvZLCWZZPR1Eyoc1iJ69A3jcSF95meBVxT4Qe':
+    CdmBaseStaticdataAssetCommonAssetTypeEnum,
+  '7gVW4FqUTJb8Nv4aMbSXumbRtc7MKhNqxdk3LPMZx6Qh':
+    CdmObservableAssetFieldWithMetaQuotedCurrencyPair,
+  '7hZg754vaDMZPnXQ2cJ35bvJ8EeQtSssdsyhPk3WSW5x':
+    CdmEventCommonCollateralPortfolio,
   '7JpyU9NCehqGC5gStraNS8fct7zmgk7CRM3sBXoxQPwD':
     CdmLegaldocumentationMasterIndexAdjustmentEvents,
-  '7JsYEgXkXn7dqsmdqpe5ABe62ZQGPbkU5NSp8dTwtLAA':
-    CdmProductTemplateAutomaticExercise,
-  '7KrSJK8LLai4ZexQz5d8ZSJSE3qocTA5XDmz3i9UNJe2':
-    CdmProductTemplateMarginTypeEnum,
-  '7LGs1cSGANHMycsBA9QoTJgdxMMVCPo5KnmfspkQtue5': CdmEventCommonEventIntentEnum,
-  '7NAeEvw67mqergRTy5KQA52oFxHHa8GFwsojp9Laqfiv':
-    CdmProductTemplateTradableProduct,
-  '7nuxJCjc51f4w1EhUb9R9P4L5uBQELSPjqdBhMothJ2G':
-    CdmObservableEventMetafieldsReferenceWithMetaCreditEvents,
-  '7PeesYPnoTZrVwovaiKPhiXVvtX9xYNf8gSPTGKzBsaF':
-    CdmBaseMathArithmeticOperationEnum,
-  '7qaTZ8Xc3MHy9jpCRnc5mKPG1jU61ZHGMtwZhgBu5tQy':
-    CdmObservableAssetFroFloatingRateIndexDefinition,
-  '7RagTg1Tpw9L7gAaRss9AXVYT3D7jC9KKyQgQe2nzpkB':
-    CdmEventPositionInventoryRecord,
-  '7rst54neQ5PNXRSMpnStomSJWqxhAZTpudLpEvW79pY9':
-    CdmBaseStaticdataAssetCommonUSCFTCPREligibleCollateralEnum,
-  '7SZ3Np81ht94V1CujqhpiyFZFHojhPKCRtHnfChNWjyq':
-    CdmProductCollateralEligibleCollateralSpecificationInstruction,
-  '7TNdG2Z7nw9MPJJnRN9AWntYxxBDXatd9BRy86A9zjep':
-    CdmProductTemplateAveragingInOutEnum,
-  '7UDCVn3tDYHeQBU818n6bFdccjBeDPrc6GddKWkT4WDu': CdmBaseMathUnitType,
-  '7ujhwBZKKYZ8KFEFNUSPTPcy8E1hFRJJzhgaX3ZgJGY5':
-    CdmObservableAssetPriceSchedule,
-  '7VnSHn8rstQhmaLbXZA83RTKM3Kcjw68ebKhohRvD2mA':
-    CdmEventWorkflowFieldWithMetaLimitLevelEnum,
-  '7vwHYRPc5UsNRrLwCSTCUnBaDSvw6C495mDPvTrmsiNe':
-    CdmProductCommonScheduleCalculationPeriodData,
-  '7wtF6zpuWsqFREVYvoqU88XF6uZLVezmX7j7mdccphG8':
-    CdmObservableAssetCalculatedrateInflationCalculationMethodEnum,
-  '7xfB6U2pnWXbkxPK3W2Q7fHZqYxzn8mWRNpgnJMho5t8':
-    CdmEventCommonBillingInstruction,
-  '7xRHcjREGdk4hE9MrxxaotTFeaL3wGTBBs3Ez8K8o259':
-    CdmProductCollateralAssetMaturity,
-  '7YFjahYdHYHERXt79M9mLJ1qKNxQPm89ieLFXUZ2KcwA':
-    CdmProductCommonSettlementStandardSettlementStyleEnum,
-  '7YFwQGbWnfaZ3YgwzGGgdBhyDppvFGTH2LibSGzdhSnH':
-    CdmProductAssetPriceReturnTerms,
-  '7zkmbj4175pTZ3exYCBnCyVdiSaAT2SEfkxhDTus8iLY':
-    CdmProductCommonSettlementSettlementTerms,
-  '81CgZwLx8Rj95fxGdWZWogMwu49Nt63P7S4jVVGzbbNd':
-    CdmBaseStaticdataAssetCreditObligations,
-  '82sz4bxrB4XdaHpf6yNEZZyFnSqicJknQE13QAy4QvNx':
+  '7kBg2fFNHjAkhkMGJPiz8uovR4bTqF6RJzCUk6YKB2Aq':
+    CdmBaseStaticdataPartyTelephoneNumber,
+  '7kes2FB65JuXjGdz6Lp6zhm95qL5DTCjDxCKwSm8USPV':
+    CdmProductCollateralInterestAmountApplication,
+  '7kPFEKFtejzTGGDA1frQXvH2u9EU6WsGUUqNESpNkKVH':
+    CdmProductTemplateExtensionEvent,
+  '7kTQtXqJDXrzKy4Qi8KccDimTXajinKszZDzGGAVE3Fe':
+    CdmEventWorkflowLimitApplicable,
+  '7Lf9XXZdBaTwDFPQsXLZfcyiVkKhfJ2GJcKZFMkQ7mNX':
+    CdmBaseStaticdataAssetCommonDebtEconomics,
+  '7LjiKLT6mqi1aN28PDZP7RC1BCddoDdaZRX5HQSggkHK':
+    CdmEventCommonMarginCallInstructionType,
+  '7mdyTJMV5CfZFGwVGuYsu7jWpiqsAjBJWPPuvhpsR7Lu':
+    CdmProductAssetVarianceReturnTerms,
+  '7nPHq44WkgzcmatogSGoahnTBmfbTfRpaG1YBa7e8RcQ#0': CdmRegulationNew,
+  '7nPHq44WkgzcmatogSGoahnTBmfbTfRpaG1YBa7e8RcQ#1': CdmRegulationTx,
+  '7nSxNdghnPkGBbyqzqUELC5UcBMNfLdrCr4oXbav2d3J':
+    CdmProductCommonSettlementResolvablePriceQuantity,
+  '7p7rsMrLJRwnskaTsetTmKypk1jyyLVvR6JTdJNYeFNf':
+    CdmLegaldocumentationCommonLegalAgreementIdentification,
+  '7PAPLMPSmka7bG7227fzRv3qSgjt72t52HW5JbZddX1w':
+    CdmBaseStaticdataPartyTelephoneTypeEnum,
+  '7Q5F1XxXtAWfQfrSL8T366Bz2JLxc3qFWWnR7Xazhgvx':
+    CdmProductCommonSettlementSettlementDate,
+  '7Qg4XRChRagWG1WXXQ6SxKQFUAWi38ZztLZRLJigyUr8':
+    CdmProductAssetFloatingRateSpecification,
+  '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj':
+    ComRosettaModelMetafieldsMetaFields,
+  '7RF4XftJyc9vK9ZmWCJeaHhcyEAv7nfiBYWQ95m9R24Y':
+    CdmEventCommonTradePricingReport,
+  '7rybfxmxNUFUfZGaK3oX9W3kqCWh8zNvXJgUAjrfayPZ':
+    CdmBaseStaticdataAssetCommonDigitalAsset,
+  '7TQnexn6ZGhptp1EP3RxiJM3434J7VHgDn7cvqXRvfvh':
+    CdmBaseStaticdataAssetCommonAssetClassEnum,
+  '7UyroNcHi5ggaDeDqgACDvjixoTVqZyHPUiNuGcK3gXq':
+    CdmEventCommonObservationEvent,
+  '7wLk2adpUVoD6AqqF85TpGzcSum1hoSQ8TeAhfcmdpmH':
     CdmLegaldocumentationMasterMasterAgreementClauseVariant,
-  '841NMvSM9PQqKJH7bDVnLgUotN9taubNFzdxbkbjNLnK':
-    CdmObservableEventFailureToPay,
-  '8688b9SPeJc34d4CJykTKUnQpiSqJQDX6zUE4m6DiHh3': CdmProductAssetGeneralTerms,
-  '8ahLvM8228zmLQwX87iqop1DsD6pV5ZmzmGw6VQ6cL3j':
-    CdmEventPositionMetafieldsReferenceWithMetaPortfolioState,
-  '8anXaV9kfWdcakaHM9sbDkkkXhFwYtAELJDCmQDjZ9wU':
-    CdmProductCommonScheduleDateRelativeToValuationDates,
-  '8BmnK6T9mumAJYKndXNUZva1zqE9Ud8sbdK7Es4Dnmto':
-    CdmEventCommonMetafieldsReferenceWithMetaTrade,
-  '8BnAu36c4Gt6aVwBhawFckQGNkLaZsPodbBkQd7GpV8V':
-    CdmBaseStaticdataAssetCommonCurrencyCodeEnum,
-  '8Dw97kNp5Jao28zFYWCpReQahB3h93YosQEdCZLjdkEV': CdmRegulationSwpOut,
-  '8eCwVe8o3HJ59kXXDpmZNzc3nFwUj5KV4TtcM7LbwaRA':
-    CdmProductCommonSettlementFxFixingDate,
-  '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ':
-    CdmBaseStaticdataIdentifierIdentifier,
-  '8EqwdQrn5Dw7AHtUZT6rtQFm2KyamTxrfc8dzdBkyRcU':
-    CdmObservableAssetSingleValuationDate,
-  '8ewDoZepMSiSGwyUFm3RC7ALebYhyNao67da6AsyiLFA':
-    CdmObservableAssetCalculatedrateFallbackRateParameters,
+  '7x2TozKfF6tLZmiLa8mcLTM76BnCwyDrjFPBihcxGx5K#0':
+    CdmLegaldocumentationMasterMasterAgreementVariableSet,
+  '7X5DcG9JMYrcW7XQWvsmFc2zX3uk1rsikycU2gBnKSyV':
+    CdmProductAssetNonCashDividendTreatmentEnum,
+  '7YP39rZ8BWEkzLnifnowdqDWusgdTtoaAQADyndrMtvU':
+    CdmProductCollateralConcentrationLimitCriteria,
+  '822rbnqRheYsGdSxwqfBNQRrUQGbug5bDb8Kdoz9UbSH':
+    CdmProductAssetStubFloatingRate,
+  '82AwW4L6L3Hb2HAxzeRUzisvXkEvVu1AaKYAjJ657nnt':
+    CdmEventCommonExecutionTypeEnum,
+  '833fsMUyREDfoeWcVvcxsNdLqF3mjxj8sUSJtn7h5aDG':
+    CdmProductAssetBankHolidayTreatmentEnum,
+  '8a1MTndCYSZYYLgqPZewqnR4VyMuKN2TSytKifycuYRQ':
+    CdmProductCommonScheduleDateRelativeToCalculationPeriodDates,
+  '8AGPnyrJ2WJVLWcdLebte5zu9TkzmSqbARfQEuGmSmDD':
+    CdmProductCollateralCreditSupportAgreementTypeEnum,
+  '8AJje6F3LQBvFYx4iuQMLA7qkEW1m2oeGabyMjZSLuFU':
+    CdmObservableAssetCashPriceTypeEnum,
+  '8cQvKoNWKBBYhoiZMn3MsZL1PgvMDDmeeSsr4MQuDxAN':
+    CdmObservableAssetFroFloatingRateIndexDefinition,
+  '8CUt8DbZ5NEvW1nUfgiy523gcBrNzqqdRSQrzwY3u5Vu':
+    CdmLegaldocumentationMasterMasterConfirmationTypeEnum,
+  '8d7t77eoZznGXdoKdpQK6QFJcZuzZrjj3VtBPGBQ4sUm':
+    CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement,
+  '8egmsgTVVkTcqNTDUm9EaLcKVzmRTw5uiK4S3zrc88BH':
+    CdmProductCommonSettlementRollFeature,
+  '8eLP8HxgpSvj1vyxDJXMhDpMcQU696aKo5Uvz1mt9Q1S':
+    CdmProductTemplateMultipleExercise,
+  '8ErhA2L9qAVdWjMVzZuXRSZDWRC2HdhAZCUsa4qbaya4':
+    CdmProductTemplateOptionTypeEnum,
   '8eyJdEjEPGbFnR2mLmiXtvsj5zsq51J2BKrRERr4rfQH':
     CdmLegaldocumentationMasterEquityCorporateEvents,
-  '8fXEqMXsnZAuwSFKfhiksmAPnV7yvaxSbmwgTbGrN75M':
-    CdmBaseStaticdataPartyPartyRole,
-  '8GhAUMM1Z2VZSQY9oufxMtUgDuQ5iTuBVYEYrjnYQBBt':
-    CdmProductAssetRateTreatmentEnum,
-  '8Gym5rgFDbWfvgkK1dRFec8LLZbBhsMaKQsfgziFhHan':
-    CdmObservableAssetCalculatedrateCalculationMethodEnum,
-  '8HEhkXnXfJhyvURQJyvVSY9RQ1RChe4ZsT8pcSGCwLWc':
-    CdmProductCollateralCheckEligibilityResult,
-  '8hR8iAKvHAwmBTKxfHuhZUDeDWMp3H16GudiMXMGZqbv':
-    CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule,
-  '8J3C4rdvxDeNySQAyEy4m9sDnUTPA9iyb9cU9dV8oFF6':
-    CdmLegaldocumentationCommonLegalAgreementBase,
-  '8JrXfrP1RKiRgkbKoCnDi4yAzTEQHNJTFGXAwiNB1Rov':
-    CdmBaseDatetimePeriodExtendedEnum,
-  '8jUUnEg4y5rth3zGXqPDihqz397GjFwaQQYfvUR7VVKU':
-    CdmObservableAssetCreditNotationMismatchResolutionEnum,
-  '8K3bpBAvaZu9SQSpibF46XfDiBxveFTBYFEXySs3rjsP':
-    CdmBaseStaticdataPartyContactInformation,
-  '8K6WNDwrEvM8ZWoTxdgirRUPiBgvFUgxXyuKj4jCxmKm':
-    CdmBaseStaticdataAssetCommonProductIdTypeEnum,
-  '8M8p7J9e17R96KGxd8hWDz34b3w8981GYsa4TGJtPhNG':
-    CdmObservableAssetFieldWithMetaPriceSchedule,
-  '8miTVbK5NJxxVBWQ7jeftLfg8P7YfMa3Ksi8a3XDJJ6':
-    CdmEventWorkflowEventInstruction,
-  '8MnuJdVvYHPDMwmMys25jzVcinAGzNijc9wRSzKdQaS3':
-    CdmBaseStaticdataIdentifierIdentifiedList,
-  '8msKPRtLbjwYbGSWkXSUbT1ZRqy31FsfvB3pDj12CYrj':
-    CdmProductAssetFinalPrincipalExchangeCalculationEnum,
-  '8msnyrNccCP7gT7FBgDZjFm4uqHXKgBd3d78zcAtFrBu':
-    CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum,
-  '8MxHUdKpCt28QyKKNvn72MyyHZ1rJdZmCz9jpzbzXfR8':
-    CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum,
-  '8nmbwhMz1vxgssSgz1Fpj1Acf2tKDiXSEx1nprSHWZV8':
-    CdmObservableEventFieldWithMetaRestructuringEnum,
-  '8NNNz18sSETdae4uM2DzFCgUaZuSYVrut2KQHj6E2q46':
-    CdmProductCommonScheduleMetafieldsReferenceWithMetaPaymentDates,
-  '8ozLJtusb6qjQQvGNBr3CSm5GrpkBW1qH3gderp3Jrog':
-    CdmObservableAssetRateObservation,
-  '8pEtwrEnUXP8pCx6Madi5B3qyA2oDyHVfxyVjkX8qhL2':
-    CdmBaseStaticdataAssetCommonAssetTypeEnum,
-  '8PKDuaLpjNXiaiuAt3sN69jDVCEBaEXv2LsUjsa8MMZS':
-    CdmBaseDatetimeAdjustableOrRelativeDates,
-  '8qWdT3E5NidUckPJrWGmAnsexmocYp7EofAQ2FAmaTPs': CdmEventCommonBusinessEvent,
-  '8qzg72AeYj2iiu6z9Le3h4TKysg4qnoMf4fda8wiSkPn':
-    CdmProductAssetFloatingrateFloatingRateProcessingParameters,
-  '8rgtsvs6w6qZz1PrkVBt2E7HaV2wh8X43gQe1J1P7TCj': CdmEventCommonExerciseEvent,
-  '8rvM94HuSxVEjNh7NmWuk8pKTjeiV7uTrwNqUX9zsDaU':
-    CdmObservableAssetQuotationSideEnum,
-  '8sWBuDCNB5CU2KAPqM9MbS1YnWs7XXXHSwBZ3u9wkBgX':
-    CdmEventCommonContractFormationInstruction,
-  '8sYH7XQbWpcyvuYLn11bRuqsxJQgkVtzqWfC8JayJXre':
-    CdmLegaldocumentationMasterExtraordinaryEvents,
-  '8Trmrr2auNXC1rSUVpofHGpAnufdc2zUsGwJ1Jx44Cp6':
-    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson,
-  '8u75ZsfFENxuuWeFUM4VVj4pAdSd8NHQ4HucWy2U6LrX':
-    CdmObservableAssetFallbackReferencePrice,
-  '8urUwRupxFQSg44fuqHiVELRztwhJH1CyMTbTSkKSFEA':
-    CdmProductAssetCreditDefaultPayout,
-  '8w1bMmBxMPwfqicGZQvJc2KRac3pHCk1BFR3rzdBpzUx':
-    CdmLegaldocumentationCommonLegalAgreementIdentification,
-  '8We3ifRCJDJwmBVXuSehPTJrLYivWwUDmGZ6pd5yqKLF':
-    CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum,
-  '8WSVgLvQLqBZPfmneqoMN3uQVAz6N5xkrPQBmDUkzdzX':
-    CdmProductCollateralDeliveryAmount,
-  '8XrxPP2rP3zwDTjRoHPp75ydfxNSwRdzq7SDXWdu6wkm':
-    CdmBaseStaticdataAssetCommonDebtInterestEnum,
-  '8YBEPRD6BeGxpiyzcHu23gtC1XJcfqMM5Vn8HyG134Lz': CdmRegulationInvstmtDcsnPrsn,
-  '8zaTiZzQWmHuDkVfG5pqQfJPSbt7shdT3KzVHLNtpYEA':
-    CdmProductCommonScheduleStubCalculationPeriodAmount,
-  '8zRMsseB4URcb7VtWt5Lk3W3aftmSFekTiuo4Ab3orEP':
-    CdmBaseStaticdataAssetCommonDebtType,
-  '8zxPrGpNdV8RXvND2vW7jBAK56wBonsNYwbDiEaiasdP':
-    CdmLegaldocumentationCommonExecutionLocationEnum,
-  '8ZzaFzKBw64vzQDiMvQmnvkqQceABGeE2Tg7Hv49brUQ':
-    CdmEventCommonValuationInstruction,
-  '913TgdFLeMHEAXnndV1KuUqmoxUtRjXn8X8JRX4n632b':
-    CdmProductCommonSchedulePaymentDates,
-  '91hZREKUiWsHQdnBssNUwUcNjEcnqiuhNdzVEmFNhhmd':
-    CdmBaseStaticdataAssetRatesInflationRateIndexEnum,
-  '966esNeqYwpoFQgb847YHKee3fozzSrJhnCs1532odLB':
-    CdmProductAssetIndexAnnexSourceEnum,
-  '96T2JgQE4VDra6h3ycZ6kq7so3h7TVScf8cEw5kbkkq4':
-    CdmObservableAssetFroFloatingRateIndexIdentification,
-  '96TUPsr1vKCN1d5SygGFrJqPYHxmvcL3JLE7RqaakpTg':
-    CdmEventPositionPortfolioState,
-  '97UVa5ekPsBLkaKpPUJB2jUiwbdDuJjNYSLWuLgfQNgp':
-    CdmLegaldocumentationMasterMasterConfirmationTypeEnum,
-  '98eFnr7F52GRnD9gADRtEuqZMPpuZCmesaDMrQ7wS8Xk': CdmEventCommonTransfer,
-  '98XAqUNzZkNVqqaqfN3uL863kyUvoPoeaj1C6t8TcBcc':
-    CdmEventWorkflowWarehouseIdentityEnum,
-  '9Ad9BQPwszkJzQsWNjXKRKHseE3BgBEg5Jcb66mt5qGV':
-    CdmProductAssetReferenceObligation,
-  '9bBnotjYVoTpiPp618XfsvChy9sMkorNRd8X1hGQVM7o':
-    CdmBaseStaticdataPartyPartyContactInformation,
-  '9CCmvz3XrLCmtbjeACPQa5Rbn3V7RkiquALmSzJ9dLTV':
-    CdmObservableEventRestructuring,
-  '9cRutV8nPCZ2C48bBwAY4oDTiYNr1ig82uHvSf4tZjHf': CdmEventCommonCreditEvent,
-  '9cWWHV5DRe4SuejnEf6PBEsFWjw5RA8u3n2yKvLwXzMS':
-    CdmProductCommonSettlementPrincipalPayment,
-  '9fg2VP16HfxmxtjeZutwPjya1nGg6zAhShf72sfYynLa':
-    CdmProductAssetForeignExchange,
-  '9FLEZ3hoqXBNGzWS96voDe9xUfnPW3V6ah4Rf5UuethY': CdmProductAssetReferencePool,
-  '9gcVCXTLD6bbDcef1Qvc2g9DyAZyLQN9aQuT7xkM2Qy9':
-    CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier,
-  '9hmSFPZtTqFUhhBwuNHQvS49fmooEgKt1nnxJeNPUFY3':
-    CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolio,
-  '9hxbzdeXPKQQGVKqPfSXbF69HWKHGiPzMLHRa4vh62dM':
-    CdmProductCommonScheduleAveragingPeriod,
-  '9iqdbfahQtNXNenCSE8hAFbq298MVvdACauLx1FZWRQt':
-    CdmBaseStaticdataAssetCommonTaxonomy,
-  '9KXvG7maDiQ34ZWLG3PFbh8mX8zubdxajYg63XxeMUHa':
-    CdmObservableEventObservationIdentifier,
-  '9MJsMkavMQapBs1dYUW5H2rFfdgrUA78Ttyxc1G9yHkv':
-    CdmObservableAssetForeignExchangeRateIndex,
-  '9NuX39eGBeGjQU9qFkJnqaMBLFBXyF3Qq2zwXtJKPvro':
-    CdmObservableAssetFieldWithMetaInterestRateIndex,
-  '9oK7sdYVedByaGENq67wFqNA3Nqzunehwby4acgNNce6':
-    CdmObservableAssetFroFloatingRateIndexStyleEnum,
-  '9RwGQUii5VWniPgSYepeWwC1kxvZFDkzF6A5wK9ESXLW':
-    CdmEventCommonTermsChangeInstruction,
-  '9s7DmteKxA3yXxQB2nMZpieJDgH1HyVyhHrufLuusW3Z':
-    CdmProductAssetMetafieldsReferenceWithMetaInterestRatePayout,
-  '9SbzsCyyrBbtfyrpVNNoTN5WhstJwnUvNnjX6pFenBBp':
-    CdmObservableAssetInformationProviderEnum,
-  '9SEUQrSK7ewpiykS84gvowEErbpYgoX5vEhGy89i4FTd':
-    CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum,
-  '9Sgsf7rKtkk3txxbTriyWaPPryyctCqx4hxMCFPS8AyU':
-    CdmLegaldocumentationCommonMetafieldsReferenceWithMetaLegalAgreement,
-  '9so5mJWR9jvdKWfaAnMyj5WMAv2TaLmZrmBZxGyLWqMf':
-    CdmObservableAssetPremiumExpression,
-  '9SwjQNQUerVoGrpV9dTTUrUcN92HvFBECzoBUN3J9pjJ':
-    CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType,
-  '9TkgobVuFAyf4FySwjWfMwU2Vem42ccyJHArhuMETnvE':
-    CdmProductTemplateTerminationProvision,
-  '9To4fnNdzSDWsi6bJQXF3mF5qrWL3Z512YNM4QAgavMg':
-    CdmEventWorkflowCustomisedWorkflow,
-  '9U8DjGW5C9KDiofbqRSgjUGn8zzm279fFRHZ1W9VNLoD': CdmBaseDatetimePeriodRange,
-  '9uDWp1q9YxCE1cTdRRJoNvBwAY8sF71RbqWxaA3Xiwh':
-    CdmProductAssetCreditSeniorityEnum,
-  '9uQM3zoMTMLZFipKa1PU3Z1YndVH7avxgSGLXms3GVF3': CdmObservableAssetIndex,
-  '9WHGhfPmPC3ogGPkexgmVsjUKxezrnHX2V4i8fPrqEM':
-    CdmObservableAssetCalculatedrateCalculationShiftMethodEnum,
-  '9XXCYnAKStGGQJv82Q3iAt6L217E7QCFrotX9UUHC84P':
+  '8fyiEEfhkg9F3ovSugXkHETAhUT6cbG8QTzxvV31T8jm':
+    CdmLegaldocumentationCommonTerminationCurrencyConditionEnum,
+  '8g6Aj993L9mK5RLmqSBfVURYxXXrLK1LeswPCY4wBeSe':
+    CdmProductTemplateExtendibleProvision,
+  '8G8JMx9Qw4DFmuzKHtJVfUGbY57zaKc4EsT77wyLek9y':
+    CdmBaseMathArithmeticOperationEnum,
+  '8gNG5f8FJbRxhdf2sZeitv3B3z4WF4YQTxzMJL1RU2Mb':
+    CdmEventPositionAvailableInventory,
+  '8hht48mGH2ZK8VFHr71MXDR5Mrge37JSMeCJn1DTKdxt':
+    CdmBaseStaticdataAssetCreditObligations,
+  '8i9Ncryq3v4GEFNYHazXRPvCCHC9DGTnoSc9f9vqJXoN':
+    CdmLegaldocumentationCommonUmbrellaAgreementEntity,
+  '8iH51R45gmWCtNjqrR63GErLSs4TeUXk51R7D4ky3NDz':
+    CdmObservableAssetFieldWithMetaSettlementRateOptionEnum,
+  '8JiSzKwsUM83StApPmxZgggZyHQCSUvE6Fy23XWLQHUB':
+    CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum,
+  '8KR7WNN1kPD6WbWLzqQ3tozV5eP1w3ioLjp9aTZLW14L':
+    CdmProductAssetFutureValueAmount,
+  '8nANyRzbRdjuTq7qNZchzDJ4XYqZ8HWYinBX4dWM6NAV':
     CdmEventCommonCollateralBalance,
-  '9z3w1uRxwTdjEC98TsWyE2nFgxyAzTrvZBEBQiHUqoUp':
-    CdmProductTemplateExerciseProcedure,
-  '9ZwUPPMUKxgNGs4D8BffqeBVQw834LMvoYNoYrHmKWcG': CdmBaseMathMeasureSchedule,
-  A34Y1hbdkfTp159ccYU6dWyPMcb7T2yb5WeUyjbVuDVZ:
-    CdmEventCommonTransferStatusEnum,
-  A3LiTUf3Z3kxSCVRG8KUG4b1N4trvuPs1rXWQ2wDLxTD:
-    CdmObservableAssetCalculatedrateCalculatedRateObservations,
-  A4wWX8jkgKvvqEesWt98ZquGHUZwQv42BCV1VfTQ3xWp:
-    CdmProductAssetFloatingrateFloatingRateProcessingDetails,
-  'A6TXpRc2pwcrcevpAeFov8KwBeHqv2S128cwKYfERM5K#0':
+  '8nEcYjH4ixVg7JfABg3dqYi9nqpHYwCrdcXfWzfmtnkd#0':
     CdmEventCommonMarginCallExposure,
-  A7n4Qooqj58rSepqdAnqh6w3cUZ2grnNMz4KXt1znNND: CdmBaseDatetimePeriodicDates,
-  A9LgPmzptBkZ2aoGKzFdFNyrkP7yQoKpGFDRRy2QHAJV:
-    CdmEventCommonAffirmationStatusEnum,
-  AACYsunmjj2NwkmbQNtZGz6ucL362oYrJR4mWh7ADhqK:
-    CdmProductCommonSettlementPayoutBase,
-  AaeaS3nBkqHVJTRb23iTwYjbMyikRz6mRz7L5FdHczSH: CdmBaseDatetimeBusinessCenters,
-  ABc6qnhxyapptzFA4KdSazTxrmr1Xf5LaKiVA7d9Zzgu:
-    CdmProductCollateralDistributionAndInterestPayment,
-  ABknki16oPwUDYoEVUFzYPxboxn2iwssEg2ST1wCz9sA:
+  '8ob5XfEjggmQWCgVGZrrfihRpPpUr2yZ4MepyJHJvZ4C':
+    CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessDayAdjustments,
+  '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR':
+    CdmBaseStaticdataPartyPartyContactInformation,
+  '8p1vMWCA7VEoeAswXYP9yUFGd3HxbVB48WeGbQNmrJYw':
+    CdmEventCommonInstructionFunctionEnum,
+  '8PqFpFTcFhXD8jv7MGaW7zx9isCBxvU2dYAKLW7yU6tM':
+    CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum,
+  '8QRJrGUFmKzsaoBkwKWPd9tQK2zyZV2LcezMZ66M3Cr1': CdmRegulationIndx,
+  '8RaYn7dAapW3dFmuG6AwXr5mpv24qXUMLg5Y8yn3ULA4':
+    CdmObservableAssetFxInformationSource,
+  '8STyBvSNBUVRcziJ5ApHvpPRYRvyJTGTsrM6RAFpGJE':
+    CdmObservableAssetCreditRatingOutlookEnum,
+  '8tRrLY27bAdfQuvV7dnmS5iQ1QW6VFmjUB7KsaAjNpQv':
+    CdmProductCollateralSovereignAgencyRating,
+  '8TYiPxS12nea35y6YR9jrThpiNyYMJgNPgJCd6hF3T1i':
+    CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum,
+  '8u8RRRaPSjvteWaRcrpDfgP6uCdhaSyC9WgLTyGotjCH':
+    CdmLegaldocumentationCommonOtherAgreement,
+  '8UoUJDRFiVPok3ABp8K2j4QuwD6Mn5jbUhmPukGth8rV':
+    CdmEventCommonObservationInstruction,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#0': CdmProductTemplateProduct,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#1':
+    CdmProductTemplatePerformancePayout,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#2':
+    CdmProductTemplateSettlementPayout,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#3': CdmProductTemplateUnderlier,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4':
+    CdmProductTemplateNonTransferableProduct,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#5':
+    CdmProductAssetCommodityPayout,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#6':
+    CdmProductTemplateEconomicTerms,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#7':
+    CdmProductTemplateOptionPayout,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#8':
+    CdmProductTemplateTransferableProduct,
+  '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#9': CdmProductTemplatePayout,
+  '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF':
+    CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate,
+  '8VKLe5YFMNREPES73PCMyATqUbr8SexStcAoUJHdcGEE':
+    CdmRegulationFinInstrmGnlAttrbts,
+  '8VsQE5PSzyWWApw5Ykfum97vLPNoa36BemLUMHimzMb5':
+    CdmProductCommonSettlementPrincipalPayments,
+  '8wd3KgpKHHveFneuumsbLT96wJ6Zfa7Aq8rJ2JP7kcBL':
+    CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum,
+  '8wDzaj8nhdMn9sTJMrWq1siNiVWLq5NQ6cURKPYNN86F': CdmRegulationSwpIn,
+  '8Wj1ScUWE2jG7vPb1vgp6xRgqJ4EbYyCS9n2CbaCYTSY':
     CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum,
-  ABWcZnb8tDCZpPvBSWChTAtPtn8pr8B9iaDKGTazMvde: CdmEventPositionSecurityLocate,
-  Ac1dFPFVTVYmkEvcK2s53fVPu24ZEec5HFv1Sb43RD4t:
-    CdmProductAssetNonCashDividendTreatmentEnum,
-  AcEgwB4h9wHoHeS5UXLfAN76wwkUSG2T7F7gwHYjW2mr: CdmRegulationRefRate,
-  ACjVrd9M4uVUxaFUuoq8puE5GX9w3TWnMxGNJCW8BGdo: CdmEventWorkflowVelocity,
-  ACsXLxAEZUyN5kmAjEy5ZdkU7y9Vu2cB3BYqYHLTopZY:
+  '8wSm9S7Vp4q2gTRjpiHXeveAoWJb4WwMcfGPdNhN7TJv':
+    CdmObservableAssetInterestRateCurve,
+  '8X2WFbGTFXVbc8c7DytjqFNpyyEVGtXoNV8b14t6tRsk':
+    CdmProductTemplateAssetPayoutTradeTypeEnum,
+  '8Y5hzBqBHEUiwLTnEj3w34yWp3pZ7s2RiBzE2Mi9or3v':
+    CdmProductTemplateStrategyFeature,
+  '8yJJHXbkr87FPBmSyeeUAyCyN3LVuUaUmGL9rTQ9nzC8':
+    CdmEventCommonResetInstruction,
+  '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq':
+    CdmBaseDatetimeBusinessDayAdjustments,
+  '8zos93F6Rp44xvm8FYMXKw5xnQKEUMyY6UNchYmnn968':
+    CdmObservableAssetQuotationRateTypeEnum,
+  '8Zxjn3QHqYieQ4XTe55zZnRoVGJUea245LGooM18oqK2':
+    CdmObservableAssetMultipleCreditNotations,
+  '93jNg58r6VkSD6oX2SzTDJrVHFDWVgDA28zPR4rQJS4F':
+    CdmProductCommonScheduleObservationDates,
+  '95Kqzip4NxUfKxtGutCfDtBUDLMZhWmnm6jhQZJtfzXj':
+    CdmProductCollateralEligibleCollateralSpecification,
+  '95T825bQFLe9KC4B7yuQzPWcdNpg4muWrPiQjsK914F3':
+    CdmLegaldocumentationMasterEquityAdditionalTerms,
+  '97mmS2fJNEvvd9MB3p3a9VwsSgF8QN5MXMCg3hQhQ9EG':
+    CdmProductCollateralConcentrationLimitTypeEnum,
+  '98dPVuFQFzp6TPmhAh6zjz4zFp8sdg597uHrfF3ztLkP':
+    CdmEventWorkflowMessageInformation,
+  '98SyBWL9ENVd5hF1HHdCKz8RG35SmSdrNx9Dh2tPj9AK':
+    CdmObservableAssetFroFloatingRateIndexStyleEnum,
+  '98uPvPckZ92oJWmjF6PjWKjL2AQpfcZkKBFUSXjnaWdu':
+    CdmEventWorkflowEventTimestampQualificationEnum,
+  '9aWzcazT96cuBgu8aeqXmWbGmtbVKjeBYG4ZKYcd3zCS': CdmRegulationInvstmtDcsnPrsn,
+  '9bkUNZgKaw1Cro32d1MxEwS5ZxRXwMi6iFvMNGxgekBC':
+    CdmProductCollateralIssuerName,
+  '9cfoNdV96xTzev5mSMGvEn7aYQWsjw2BsB7p8HG2KVYx':
+    CdmBaseStaticdataPartyPartyIdentifier,
+  '9cFYfvN7xbbc43QhKiCviJrNrMQbUP3XZPyc3x2B7CFB':
+    CdmObservableAssetMakeWholeAmount,
+  '9CwCB3Fnvz24SzGuu8TbsuxrVJz8FFCvQCzGsfUyEjHK':
+    CdmEventCommonMarginCallActionEnum,
+  '9dkTzBV6xqQ9LmULZCPBAZi5Afj3tZytwUtqXc1iccwt':
+    CdmProductCommonSettlementPaymentDiscounting,
+  '9dLtbVyZnKc2oNincBJmQCsy1WxLSSEybcdCJjn5TYm9':
+    CdmLegaldocumentationCommonExecutionLocationEnum,
+  '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij': CdmProductAssetStubValue,
+  '9fGt41es96nHUb6cGZZBa26G29o9ywchRk5rjx5ri8gp': CdmBaseMathMoneyBound,
+  '9Hdb7PQKx6QSKmvMRcDsHuTCkar1FKjhxc3gFZY4hgWE':
+    CdmObservableAssetValuationMethodEnum,
+  '9HPCH457X3P45F4b4BRLZZYtzUtV2TFY3DmCKNCJL7DZ': CdmEventCommonTransferState,
+  '9ievDTbZij3cJJ9jg1P1QCr6ezKnnV7LPCaYa9ghiPQK':
+    CdmProductCollateralAverageTradingVolumeMethodologyEnum,
+  '9iUkF9gsuXLuwMBgKBgapjbetLX7PzRtP9ee3m9Awamv': CdmBaseMathMeasureSchedule,
+  '9je4gdfYWh5s9PxZCf36xymmiBGd59PHPrBapq7pnGVf':
+    CdmProductCollateralCollateralAgreementFloatingRate,
+  '9jMFqKdmgCwgQBzfKNbUAGoTLobW3aCoWXv25TRM7oHp':
+    CdmBaseStaticdataPartyNaturalPersonRole,
+  '9k43VLjjoSJbXKM7aCSjBTinwWFf8sRDogVJbsM2JjjR':
+    CdmProductCommonSettlementScheduledTransferEnum,
+  '9K4QJAeRZGFPrjmc6aqWztkSzi2pqrKf43HC1nEtwp46':
+    CdmProductTemplateEarlyTerminationProvision,
+  '9k6rT7iiYXbFohPsdojsVuAV5SSxQxhoLfFzFwh9CtQy':
+    CdmLegaldocumentationMasterAdditionalDisruptionEvents,
+  '9LAToUm7ugSfrCZWL6KmTwi7jAEoXH8TcNNGxr34YvFc#0':
+    CdmLegaldocumentationCommonLegalAgreement,
+  '9LjQgXLW5xCQTuGhVNkiuZsj7avYufhHx2dAav9z1WxS':
+    CdmObservableAssetFroFloatingRateIndexCalculationDefaults,
+  '9MuxTNnqdBfc2jXWLVxrcXeAQkmmc3aoj2AuNQ46RBnh':
+    CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification,
+  '9MYk7MRYjbMWPHe7v3WexZqePowTL8eRrW8TmNNEtzQJ':
+    CdmBaseStaticdataAssetCommonTaxonomy,
+  '9pJEidhmAUQebdR3uTioauH2mNHR8RLS9r7xaB9vxpRd':
+    CdmProductCommonScheduleObservationTerms,
+  '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT':
+    CdmEventCommonCollateralPosition,
+  '9ppB13T87oA9HL9NWZr6pkLmcjb1HmUAgzVGS7yDyttw':
+    CdmBaseStaticdataAssetCommonISOCountryCodeEnum,
+  '9qB83hxGqypCsEF6MKyZFWjg9t2VMnqgDMywCd2LCh6z':
+    CdmProductCollateralIssuerCountryOfOrigin,
+  '9QkWzeLcgPCCJUappiHJdN2AEyj6ZnCAsxX668fGGgG5':
+    CdmObservableAssetFieldWithMetaInterestRateIndex,
+  '9QvPaXwgMX4bfTdirhDyje4sXJhxGdfrXikFFGpngwAb':
+    CdmEventCommonMetafieldsReferenceWithMetaContractDetails,
+  '9qZESRoTw3JVrvChnNta2oj5TcTb7RV9ijcSRtnuCQvs':
+    CdmProductTemplateOptionalEarlyTermination,
+  '9rvLaroTfdZSpfMcA8dBg3zpJu9MmRcN4mqeMUJpWPZB':
+    CdmBaseStaticdataPartyFieldWithMetaNaturalPersonRoleEnum,
+  '9svusKr6LvCBhk7gV6JsbPAwwXWASiSTahN4JPrDC5rH':
+    CdmProductAssetFixedRateSpecification,
+  '9TCszX7p3useiqzNm9UPp1AMdorfkHLknXYXqEVsE2N8':
+    CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent,
+  '9TmPYroGmuj6v7x9aMMV97Hqg4a4xhW19VqhcavbmgRL':
+    CdmProductCollateralContactElection,
+  '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv':
+    CdmBaseStaticdataIdentifierIdentifier,
+  '9vqkkCNnmKd3FB5tMAKKYenwq2i3mYyHmgYdPKKqkZ8U':
+    CdmBaseStaticdataAssetCommonDebtType,
+  '9VsQvLxQQRJfFp1j9v2evTD4tnmTZzxJFZGRrDLRXRNj':
+    CdmObservableEventTriggerTimeTypeEnum,
+  '9w3yZ13uv2onHnWSmTEKqfVrjkKHHBuryHdKhMswV6it':
+    CdmBaseStaticdataPartyReferenceBank,
+  '9XUMDnSJjmK5Kqp5BL268vZoXGmEQAMCFTKbJVVwuPbB':
+    CdmProductCommonSettlementPrincipalPayment,
+  '9YDcX7WZdjBgo7K9Kss1FBKB5BJLedbkwzY5f4DdFZ48':
+    CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum,
+  '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq':
+    CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum,
+  '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ':
+    CdmProductCollateralCollateralMarginTypeEnum,
+  '9zYcb3FcpfuBbxSMqUwSRoYJ3gPs7Nv1qeZUmFvVniPL': CdmBaseMathDatedValue,
+  A1jYzNcEp75NaNXNyvEb5S2noXSa3PnFck4qj5Cdvuvs:
+    CdmEventWorkflowEventInstruction,
+  A2eu6mCquL2q8sKhpvBAfkp3b6uAG8GdE22hHTvvQEMi:
+    CdmObservableEventMetafieldsReferenceWithMetaObservation,
+  A4UUWtjEmLLX2CyaoMPRZ3X1Ea55w5TbqgueoeTHNvEs:
+    CdmBaseStaticdataPartyNaturalPersonRoleEnum,
+  A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92: CdmBaseDatetimeTimeZone,
+  A8TvjwnZQGaerbL4hKYYEZJYcaVL7fv6uvShyjZLGhoW:
+    CdmProductCommonScheduleCalculationPeriodData,
+  AA7nW2FUcjuuyrgpc3ytfvoUQ34Ux6RFfNyLuHmnYxJU:
+    CdmLegaldocumentationCommonCreditSupportDocumentTermsEnum,
+  aBFCJu2rgHDvt2e9kS3mCjQEMuVFbBnupxJkHCP32WV:
+    CdmEventPositionAvailableInventoryTypeEnum,
+  'AbfDrU3fgSd82Mgi4iEoZ41s3qXFqRnSTETansBbw9HF#0': CdmRegulationPric,
+  AC1Ks1QsNocGMbEcoyG6AAtphUMjU2nH9ByiwJVAPxWW:
+    CdmObservableAssetSettlementRateOptionEnum,
+  ADajEoGA7ikQhVMsqRiRuiY11MeoVJc66Wkb2WYmzsr3:
+    CdmObservableAssetInterestRateIndex,
+  AdBXeocSsEm9rv2JA8A8svrtozRHrQt3xCeTWXxANydN:
     CdmProductAssetRollSourceCalendarEnum,
-  AdF7VVSQD7g6WDw7T1ERRvh2LyUa1x3ViWqt4xqRh9tj:
-    CdmObservableAssetValuationMethod,
-  AeiUZ17pKAByiRrS6p1GH2RgKqQbh5a2F9SJ2rTsr2bE:
-    CdmProductCommonScheduleDateRelativeToPaymentDates,
-  AfcYntvhQ2t2vgDhAMWwSr5ppeynG2uGcXJKuBR3wzw7:
-    CdmProductAssetFloatingAmountEvents,
-  AfmdCkcHzUmPq2oxE9uum8nnnL5nm62GZ5s2wsr1oobp:
-    CdmProductTemplateConstituentWeight,
-  AfmZhLuxXWB5bhr9ojzoNAja5XJ5XKyWjjKQdzhS4tvs: CdmEventCommonPriceTimingEnum,
+  ADNePctyfUS9D2wfp8ho1wmncZkAMrobNLpZ1gcNK8Wt:
+    CdmProductCollateralConcentrationLimit,
+  AEj3LejPJxMDLSPh9wzuLb2u9HnXwqiUBJv4HnuBMZoS: CdmProductAssetFloatingRateBase,
+  AfKweapaqsU79LG9ZWn4qFZmKFXJo7xvzr7cVxixP86u:
+    CdmObservableAssetDividendApplicability,
   AFqCxRJfD2r6VuMtdAaQUzB1354VrRcR3KdvEnUz8US6:
     CdmLegaldocumentationCsaCreditSupportAgreementElections,
-  AFqxQfgMVPciFz41pKMubsG7wUWhEhMwAoy3bZ9AzEKY:
-    CdmEventCommonPositionEventIntentEnum,
-  Ag7HvtBnwEeKkpZQ17isCMUnXuFik93kdftfxJN8ih6h:
-    CdmProductCollateralConcentrationLimitCriteria,
-  AgkY1rP5TjBiYR6gsYzEm1vgFaYxyUc6Lt3pwuRsWx8F: CdmBaseDatetimePeriodEnum,
-  AgMJ76KMYXbdeYrEq5PfQtesuf5rxVkbspBBciEBpYux: CdmEventCommonExecutionDetails,
-  Ah265ohZqxFXsWTp62UC3yWMvZAwGymx5y9Hu55yG4MN: CdmProductTemplateOptionStrike,
-  AhJDsRsjAqd5ThJefWvZsh3Zp5VREyt5SvAhpzMNhZMz:
-    CdmBaseMathAveragingCalculationMethod,
-  'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#0':
-    CdmObservableAssetFieldWithMetaBasketConstituent,
-  'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#1':
-    CdmObservableAssetBasketConstituent,
-  'AkAb6u8YnWb99n5t6qK9FdajYM7ggv4DnbqMgxevFWm8#2': CdmObservableAssetBasket,
-  AKAF6F23pDRPx5M9gsqtAKXBUf46Vnz1STHsk38YEAWm:
-    CdmBaseStaticdataAssetCommonSecurity,
-  AKSMUzaw181vmfKQvqHV4MsmNu7rSU91j4ckLWhrkFdT:
-    CdmLegaldocumentationMasterMasterAgreementSchedule,
-  ANaFxPMcbPKw8USLSD7mcUeT9DBz5q9BkYYt9GMjvDMz: CdmBaseMathCapacityUnitEnum,
-  ANtReDKQ2SuFnWeerTjR3U9Voqzy5V6qqQgX7JtosAi6:
-    CdmBaseDatetimeBusinessDateRange,
-  AnXrCwduqixvTNugK5Dsyr9upeRqJtsTmmvnvRrEjA7k:
-    CdmEventCommonPositionIdentifier,
-  aox7Y6mfMBx71DQngCd45QQNaCFw5yiNGb7U3XJD7r2:
-    CdmBaseMathMetafieldsReferenceWithMetaNonNegativeQuantitySchedule,
-  Ap1qb3ywVUxeRiWE3DybbLoY6b6Nwbkyf9ME4rE4KEMX:
-    CdmLegaldocumentationMasterMasterAgreementTypeEnum,
-  APFczLgPo3ATLpUGVzXPPU14GjwHCm9tPJDFDwjJCXWh:
-    CdmEventCommonCalculateTransferInstruction,
-  ApvPCwWxoPQoZrrkARTha8wjMC3hEvoFrjkU36rfoyeh:
-    CdmBaseStaticdataAssetCommonTaxonomyClassification,
-  AqS1brpf2w2Q425LEFsrQQKPZHrParp6fMbzm7hy1cqV:
-    CdmEventWorkflowMessageInformation,
-  ArfQ58kSzN4QkRNkhhMYbmgBrEGPrnnSSA4sgC1Stoho: CdmBaseMathRounding,
-  ArrXGPispsyEryoQo3F2re4vbxjj2xjYyQyBjvDQ36dd: CdmEventCommonCallTypeEnum,
-  ArWyqfsfZyH5kHrUojjHkMRYz5Eun9yWVTvdqwTPbwpB:
-    CdmObservableAssetFxRateSourceFixing,
-  As6wv4pz5jg38xpxx4xowPAz7wfQoARSJ7tYUGcEAZSj:
-    CdmObservableAssetCalculatedrateOffsetCalculation,
-  AT5JtWQz9LEbYiYD2utqkpNY5Kg4aUBGiVFJZ5Vuhj9S: CdmBaseMathNumberBound,
-  ATD4mngyB7ULwUSU6DbEMVcLMyFeZxXRKDJrTsFAJ1dx:
-    CdmBaseStaticdataPartyBuyerSeller,
-  ATdAeszcXw1uFWsWdnzsyBx1vs22fznFDA5f664ZSGnW:
-    CdmProductTemplateEarlyTerminationProvision,
-  ATRquhefedUFSWUpWKJTWMqSXbQ5oeXqJjWsFxU4zXvd:
-    CdmLegaldocumentationMasterMasterAgreementClauseIdentifierEnum,
-  aUWGFpq6gwDP6zaku6dz6bnhGWzX5a3YSgTLJzSqXiL: CdmBaseMathWeatherUnitEnum,
-  AVat3RrkCKPwq5tdXB5kqbsA321NrwR1NP6QvGN1ag9s: CdmProductAssetFloatingRate,
-  AVTGwC6XTdPNBYpCUxUf5Agcpf2Z8whRs2N8aNRbffDr:
-    CdmObservableEventDeterminationMethodology,
-  AWNewCb8jDEbBUtfpqBitVftxPaEyRa5nkUc3446e8NA: CdmEventCommonState,
-  AxtAGhrVfdEab1B2endnkUSwdQci3yBfHnPi7r21fKgG:
-    CdmLegaldocumentationCommonClosedStateEnum,
-  Ay8eESfxaGKpwyCsv1ZCC9QedmfPTNyL3FGU7pBYVEXM:
-    CdmLegaldocumentationCommonUmbrellaAgreementEntity,
-  AYcPv3zXSTKojz4MpYi8KWL5Z9TVBuzNzHmzsZe3cYcC:
-    CdmBaseDatetimeBusinessCenterTime,
-  AygoLHtsrgUkWFxjVtQsDYzEn5EbXUEt8avHzLQsUUVZ:
-    CdmBaseStaticdataAssetRatesFloatingRateIndexEnum,
-  AZ5TAtN5poY1sFC8CQEDKukTVaTP7itawDyHn3a1MtBq:
-    CdmProductCommonSettlementMetafieldsReferenceWithMetaPhysicalSettlementTerms,
-  AzjDeg6NcvxKrLxiwH4AdjVNhMtWHj2BHfTGYmY7NVrP: CdmProductAssetTranche,
-  B3bsNNAr8QJpJA8r84kgZrHLE5PZREBGxXWYJdtaDRJ7:
-    CdmBaseStaticdataAssetCommonAsset,
-  B56ozkEmANXmnwGKZwUCnfN6mpja8ytvV9aTBgmCyYtw:
-    CdmEventWorkflowCreditLimitTypeEnum,
-  B5aA6nWfmxJdP3f6kFCyqBA41CUzn6mmhyqnqdQ2yQi7:
-    CdmBaseStaticdataPartyEntityTypeEnum,
-  B6jumk3FUsgHPFi2jhgxri51dHbhYGBYzMNKjWYtosTm:
-    CdmProductCommonSettlementComputedAmount,
-  B6z4sPE6mbrDKZ212dEzdy8bC6F5DNgR8Eh4KK623JA:
-    CdmObservableAssetMetafieldsReferenceWithMetaMoney,
-  B7KJroezbBh48oEcEjQn6jGLYdXUKPwEMnSuKkCujhV8:
-    CdmObservableAssetCalculatedrateFloatingRateCalculationParameters,
-  B7KUAgvBkpwEWEYnisJG6iRRicpw2LC4MuxeYzxhMh9y: CdmProductCollateralIssuerName,
-  B8n9R5augGxzewv3AeZA4bBhgHYizX9BW45egn8ua3br:
-    CdmEventCommonMetafieldsReferenceWithMetaContractDetails,
-  B9b96SYnsgwBPG9yHVVuip7q1ccRhp3uVXxr8cwVkBWb:
+  AGSb42ioNbHLTCP12AbmMbhsiH4CTHve73GmjTCTJtcR:
+    CdmProductCommonSchedulePaymentCalculationPeriod,
+  AgZcx5eJYcy6vzz9NejmvMBuMpzza4tjH2bEtMYNkMVD:
+    CdmProductAssetCreditDefaultPayout,
+  AH1BY9EazwZmuZ6LcxCKPZSzsejRaRpRinAqLmVsFTgc:
+    CdmObservableAssetQuotationSideEnum,
+  AhnjPV8YNPhbAjozktmjeX2wDwUvX9j1SLMv3rUYCvk3: CdmProductAssetTranche,
+  AiYMNnHZT7DJNXi1wScVgJSGHkgj5i6eH6jUgQoxX9Bw:
+    CdmBaseDatetimeAdjustableOrRelativeDates,
+  AjHv57wVryq4YK8oodLNAT95JAYhuGRRiKk7hhX93LLi:
+    CdmBaseStaticdataAssetCommonAssetType,
+  AKxcCwdA28GyqV4bAANz5gwr1mkuBEft7TkK7FwJkEew: CdmEventCommonPriceTimingEnum,
+  ALTxMwzmSAWeMbuzsF2tmt5uiyupRXVdsbuT3oYEtq4a:
+    CdmLegaldocumentationMasterMasterAgreementClause,
+  Amvx9G3h2wHURbQkfGuuEwHYch5CWjYiD1ooToEb9FAn:
+    CdmProductCommonScheduleDateRelativeToValuationDates,
+  AnFR5nwdiQukWW9YeZRmgTparyPvgRKghypvgvUWqU1c:
+    CdmEventCommonRecordAmountTypeEnum,
+  AqRajqKToreHabAHCgT66Zc87qk24EdQSawSThmGb9Eu:
+    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaNaturalPerson,
+  ARbkpkeADfYoKeiyty5x9mD3gRHk9537e2q8tBS1SrqM:
+    CdmProductCommonSettlementPayoutBase,
+  ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM: CdmBaseDatetimeDateRange,
+  ARtKwcQKppAKVf5WDJvuwGatLemZ18RcJsXU23W4RfH8:
+    CdmObservableAssetMultipleDebtTypes,
+  As4LSyzdsEDrcBhhNCQ78eXDcY41rjgBoZJZenTJ2J7F:
+    CdmBaseStaticdataAssetCommonFundProductTypeEnum,
+  ASAPTC3f63jq934hhnLQ4c9BNLF9RtGVn3iLdv8L37LU:
+    CdmBaseStaticdataAssetCommonDebtClassEnum,
+  ASFFM9ufg5x7Gsa379ue1XqS24UGxKLYAdFAPeQif8Zh:
     CdmProductCollateralDeliveryAmountElectionEnum,
-  BAy5Lg47k6suMJXPgRrjQuGU6tZqZzABdrA4M3Rvv142: CdmEventWorkflowWorkflowStep,
-  BB9KuWeeD17dQmZbr44QJkSjv1PV3rNCJgH848EEaCyJ: CdmProductAssetSpreadSchedule,
-  BbfKyr9mpdQ8cuNvCP78fS2o4Rc7gQZ1GdcbnyD6grzK: CdmBaseMathNonNegativeQuantity,
-  BBgcbEXC2m59J1z1f2zctaxNzuEUosaMi3HLNPPMLwAt:
-    CdmProductAssetMetafieldsReferenceWithMetaFixedRateSpecification,
-  BCRUUCDz5YoH72WRdFUdE8hpNrxmqAyK6QzZdV91WaHp: CdmBaseMathMeasure,
-  BDRmKW7BVJYNZXDyKP5S625t8NyJmgQDWfRw8Mjzizgd:
-    CdmObservableEventTriggerTimeTypeEnum,
-  BEbFVsDjqqvf3dVeshgGzf9rW4xPdk4DnECxRAcKSJ3M: CdmProductTemplateBarrier,
-  BfKLQH4QVw4S4wzQKmy5dHE6Cv1nwWZFPDQov8mdWQhT: CdmRegulationFinInstrmRptgTxRpt,
-  BFNEhsfLPvMSawMY6Q3SUpNzPsjYgQEKYmUQrD92UE4r:
-    CdmObservableAssetCreditRatingAgencyEnum,
-  BgAaUQrWcUNA3jJZ7gzBjTpU3T4Htfxaga8q7QxR6WUA:
-    CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum,
-  BgVnixZS6aAn2Xvg2wyoxaFLhL4nCdoLXTihMhmw4p8R:
-    CdmObservableAssetCreditRatingCreditWatchEnum,
-  BHYPNp3oAgUMuAWFmLUF4tjwQpm7LpWwt6gZVmtqXwyv:
-    CdmObservableEventIndexEventConsequenceEnum,
-  BiHXzuMF85zKCgU4f3BJ2Si1sps8uCqcRrB2XxMrhTPq:
-    CdmObservableEventPubliclyAvailableInformation,
-  BjA7tiVvew9kmoLb6h8x1ARy9pGqjoid3GzEK7wTAjPe: CdmProductAssetFloatingRateBase,
-  BjTwLDK7HwHXyVMxzicMA3VkVKfqaJbiEBPWQc2zogzw:
-    CdmEventCommonExecutionInstruction,
-  BL9z4RShUcNi4oWpkU2pgnaKF2vGwrxjpJBWWMAUruzN:
-    CdmProductCollateralCollateralTreatment,
+  ATaY9YDiFkKfTkbxTfZ7LyFzaz3P294UgpPFzLNMMNhE:
+    CdmProductCollateralCollateralInterestCalculationParameters,
+  AU5SZ3DHqRdpqT1JPJ9S96fTUWv7kU2ofDC4zNRK6quM: CdmEventCommonLineage,
+  AveBbPNcyiENsH8aGj4xhEY7GkX7xuoVApDW87Er969J:
+    CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails,
+  AVPqeTe3UbwZW8Fbubbmr4aPptrhVekU6a5UqnSKNLfH: CdmEventCommonCreditEvent,
+  Avs2j3Cu7pPm5XZLVwYQ6SAEzUqvm8fnxQ3NWGaneps6: CdmRegulationAddtlAttrbts,
+  AwBvNeQkdx5SBB1b5oih7GqzBqUwUFskHKoPF7zMgqxz:
+    CdmProductAssetFinalPrincipalExchangeCalculationEnum,
+  AWhnPfrvzFRQCvzfQY8CZB6Xp8Eknw8gcnAg53xtbBwj:
+    CdmObservableEventCreditEventNotice,
+  AWwDERDMrCASiqr7n2YEUi5tSny4VTcu6gDZ7vYA6Mb: CdmProductAssetReferencePoolItem,
+  AwzjFS4L3p8CS3Duc2TcZNSvcwY6WewWPLRK4pNSpEge: CdmBaseMathMeasureBase,
+  AxAyn6UgyoJj9YDT4soz7eYpmhL8U6kEzFxGMonZgxcg:
+    CdmObservableAssetFxSpotRateSource,
+  AxRtbapEBZySZ4EiPgeQy1TunP6re28X7ipk2brY6NJV:
+    CdmObservableAssetRateObservation,
+  axuXmPNwYdajJqoyfRBqGLYdVR7pu272ceY2KqBq9nB:
+    CdmProductAssetBasketReferenceInformation,
+  AyEBp4Mbar43fuYsMicvQsPWCtvzqv7kEt3G9UEdSbHx:
+    CdmObservableAssetMetafieldsReferenceWithMetaQuotedCurrencyPair,
+  AYFPdhUATGeD5Kaw7pwDQbqnwnGZ2DyM7rk1rVn4M1uM:
+    CdmProductCollateralCollateralInterestNotification,
+  AYFWVGAm6RijsVmJ8UzknPTSr57LT6zv3HLbBwiqWeQn:
+    CdmObservableAssetPriceOperandEnum,
+  AyHS2v2wXHzgR4ASSkm7Ab98k8dMLwEZKWPPPTXGUcJB:
+    CdmMarginScheduleStandardizedScheduleTradeInfo,
+  AYi3oguzR4Utfj7hc4duXgvb2M7SapBbYpq8SyJbHghs:
+    CdmBaseStaticdataPartyPayerReceiverEnum,
+  AYNVNBQsDmS46NA7kfw7jh6eh8DBspyMyDd1bzyBmDG5: CdmBaseDatetimeDayOfWeekEnum,
+  AzXN6ztsTLkCn7bM8QH8xfhjrtrr3MVYuhKiVM2y7JUe:
+    CdmBaseStaticdataAssetCommonUKEMIREligibleCollateralEnum,
+  B1vhPUsx48HVhqzgCrbzrCdTrzUxEiaHYjyp5gsErLd9:
+    CdmProductTemplateExerciseNoticeGiverEnum,
+  B2QkNd6opHqfsBrrTAsNeuzDJGQoGukZ6M3oQ254E6ag: CdmEventWorkflowVelocity,
+  B4oXDUH9jELDatvZSw3oWXtJefJ4ixYawEjxBMqSerth:
+    CdmBaseStaticdataAssetCommonAssetIdentifier,
+  B5Jakr9Bd7eaMZzThRtLAaP1ZnjC3yngwZjL4GXVZW7P:
+    CdmProductTemplateMetafieldsReferenceWithMetaPayout,
+  B68gARDj25MKrfCetdMJ4VkSs38arw6Bqr2TPDnbwyBD:
+    CdmLegaldocumentationCommonContractualSupplementTypeEnum,
+  B6yDYwTa5XyjC3ke1cVr21qBLMFJWDovsExQd3Y68pHj:
+    CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum,
+  B7HxeT3Xft46tT5ze4mQnBq7hxyLkZUxSGkgRhMoPRuJ:
+    CdmLegaldocumentationMasterUnderlierSubstitutionProvision,
+  BbmQzuzA7aBEkeWMx9NniHvZEqR3bPsBJzX8iyyokN7A: CdmProductAssetSpreadSchedule,
+  BC6YqUyfhqQhwNKk7o8C8MyYcmHWnGk8RJ3Q5Fijn3TW:
+    CdmBaseStaticdataAssetCommonMoneyMarketTypeEnum,
+  BDhRUc68Brq8ongRzTRuhXJ5ZwMKhFYca1YMMPB1A4AT:
+    CdmProductCommonSettlementComputedAmount,
+  BdSsHq2ECAAYgerYX9wpYFfPWLUAANHLG2TAEt8BiCNC:
+    CdmBaseStaticdataAssetCommonDeliveryNearbyTypeEnum,
+  Be5gaN5HPKz2EcJiToRx6MH2goHMeGvXvwQWamg73gYh:
+    CdmProductTemplateCalendarSpread,
+  BE8tk1V1aM9RX2EaQdADCudboiUVLdjeqNbgPXMoWXXt:
+    CdmProductAssetAssetDeliveryProfileBlock,
+  BeEMYYKgbMhxWfYP2PwjXqrWw9s2qJ5j7iptwHErctFb:
+    CdmProductCommonScheduleResetRelativeToEnum,
+  BFK7Kwvvqbbpshj96TundhGbsBuspSgCDzv732RGP6aJ:
+    CdmProductCommonSettlementCashSettlementMethodEnum,
+  Bh6NCuJAY3pXVNvSM2B31NzdPp9zCisTdM2dbrauJJw8:
+    CdmProductAssetDividendDateReferenceEnum,
+  BhcAc9aom3oN5CJ2MVXmyyUEeSBLxX3PgyuKursXD5hQ:
+    CdmEventCommonHaircutIndicatorEnum,
+  BjVwAr1pYp3ZQh3wtJi2zXxjpqqqyBzNjp9m1ZpZVP15: CdmRegulationTerm,
+  BkMb8vLvnJKd2uBNbPk8QJCpmMbYGV8HNkhUbEsM5p81: CdmEventPositionContractBase,
   BLcaRJ2SjxR7oB14E6Suf1722kgvEQ8vdXcTuTM6SxNg:
     CdmLegaldocumentationMasterFxAdditionalTerms,
-  BnjZSXrPHPuuzDKnKtzYoNPSNR9RwaZyNpnHHx1MnsY8:
-    CdmProductCollateralEligibilityQuery,
-  BNn2MDf54qJ4KLiE7sTpeS2BokqPqPz5hsVNwwRVfrwF:
-    CdmObservableAssetCalculatedrateObservationPeriodDatesEnum,
+  BLwQ9sW7unThpYZC3TVs8YtMmiAoZ4NVGjVRppu4gm7x:
+    CdmBaseDatetimePeriodExtendedEnum,
+  BmdnVkDXfdg2N2r7qgbCGTcmvRVJJCeGYWgqPEVPtqns: CdmProductTemplateTradeLot,
+  BMokXsNGeVbH3hGbewvBy1NG4V2DoVoJ7LRURPqGQ2Hz: CdmBaseStaticdataPartyAddress,
+  BMRn1GaLgfQuHBa1zsfT1sd7aCFhqKxoBzmieXMWqy17:
+    CdmProductAssetSettledEntityMatrixSourceEnum,
+  BMz1AMPiyGb3jJWUQ9jgpmXc5r6rkWQqcXyHJjegvEEu:
+    CdmProductCollateralEligibleCollateralSpecificationInstruction,
   BNwNQ6TkYDn3nzSVHofp2yxshKNkpDVyyKJASA2mjKaN:
     CdmLegaldocumentationMasterRepresentations,
-  BnWttcLPfpaqYUTyq7j6NHVPGJv1W1SJxLuyCksLQ9xE:
-    CdmObservableAssetCreditRatingOutlookEnum,
-  BoD5XyrRXadR1NLz2BSQ2UQ34JUbjZPKbt59eNzTqx6N:
-    CdmObservableAssetPriceComposite,
-  BpU6xJSR2z5NwXmV5bD8YQ9JC6fwfmHdoqNcxYGeucmQ:
-    CdmProductCommonSettlementSettlementDate,
-  BReQt7q6C5537Y3nyWefx79E61Eegxm6K7xrLwVrEmHp:
+  BnX8YWGNQEemBPGhMwg9Dn7EZKXy7TKV3Pdoa8bijM8K:
+    CdmObservableAssetPremiumExpression,
+  Bnyu2YsX3C75feLrApJur1wxc78rkg6UmHvj7zoZSsV8: CdmRegulationNm,
+  BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd: CdmBaseMathNonNegativeQuantity,
+  Bp5wh9hxR98RaErYfLT3GHtCA5Z4HjFmNg4EABQ26PAc:
+    CdmProductTemplateAveragingInOutEnum,
+  BpdSpKc8R5gAnDZQF7eJYbRNetxpvv1r1XSY9dh1LTaC:
+    CdmProductTemplatePartialExercise,
+  BPH2yXsmaVJzV83dHZy9t4ZxLRN8JyMueAXWyLF15CnU:
+    CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum,
+  BQF5ff4etcuh9njP6VFEZiHKExrKnVkMbMrfqE7wkWHq:
+    CdmProductCollateralIssuerAgencyRating,
+  BRCQiBi9STYfKiP9KdPDPjoyi46W34fzykNMzGBP1YFT:
     CdmProductCommonScheduleFxLinkedNotionalSchedule,
-  Bstw5ouUce1eNCyQGqvChydQAQAAkrG2DdvUA8dVbdYT:
-    CdmEventCommonMarginCallResponseTypeEnum,
-  BSWGnuEuyVaWENR6s4Aj98zry3uTZBX1uQHBAwY83v16: CdmEventCommonLineage,
-  BtnLfx11x5MLsz1yoyY1HQ3iFLL3LRZzsXX9sNuK3X6Q:
-    CdmProductAssetFloatingrateFloatingRateIndexProcessingTypeEnum,
-  BTY81xfhqyEEMs1ZiVvEnaRbfLvALxLiEYU9aNdedseZ:
-    CdmBaseDatetimeCalculationFrequency,
-  BujYvKmwMpKf1xPsjKG4tarjNAHNuBDrzcS9MthAgsXw: CdmProductTemplateComposite,
-  BUNxoowt97aMvGEavQkPkCd4nHQTtcamT9JJzvXpyHKd: CdmEventPositionPortfolio,
-  BUpou4kA4YDHYorRt8HySKCususevQATeSj9bysNS8AK:
-    CdmProductAssetDividendDateReferenceEnum,
-  'BUq3VPPkQHRHG7roNyDNCeLNzQfLSsPoSqiRQgbDnCdv#0': CdmRegulationPric,
-  BVwHNgkrszdwh7BMc66NPQwh2gQsFJvJJQE7F88TBxwV:
-    CdmObservableAssetPriceOperandEnum,
-  BVyMiCqaVYHQWWuyvwivy7Wvm49w2nuhJV25PpEaxm23: CdmRegulationUndrlygInstrm,
-  BwqVRaSdNEfKjjtV8yGLCFuEEKSyzFJGiBUyEEVkD25:
-    CdmObservableAssetMetafieldsReferenceWithMetaPriceSchedule,
-  BwTCpPFhSqEbgjkUmssmzp1ig5hb3QSdGhqroiTDsJvJ:
-    CdmBaseDatetimeAdjustableOrAdjustedOrRelativeDate,
-  BXbBNHYXNsAs17oYsKYnKjD8RK186gXxjiPPnFzNiVVU:
-    CdmProductCommonScheduleAveragingObservationList,
-  BXBZ8pcf9CM5xyavpLypzqjDRy7y7Gr6pt9efFiLniFC:
-    CdmEventCommonMarginCallIssuance,
-  ByfckK7AWY3YWapMTruTAWXvgAmfacrawZvg5LmjhND3:
-    CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum,
-  C1BmErqx6smbQokFqorQp8PqoSsJWkSGu3M3mD78tJAq: CdmObservableAssetPriceTypeEnum,
-  C1fmUXxsuQZKB9pnb77XYeC8nw26iYVpjkTRaG1dchYX: CdmObservableAssetOtherIndex,
-  C2yrjwk7TcgoNvD5fnRnG7esNmaqnM1fKRrGAGhNBewD:
-    CdmProductTemplatePortfolioReturnTerms,
-  C44nC78rjDLbXVjfppMUZMnRAhZJU9me93bNLYMajtUz: CdmProductAssetReferencePair,
-  C4ggqArmWWYiuaePZaGFxFhaaidYckVeowufcqR1WPKu:
-    CdmObservableAssetInterestRateIndex,
-  C6peWW2cNzfWSj33MN1qibTwdFUkKrMXLu4XCNZwRqLv: CdmProductAssetProtectionTerms,
-  C9EPdpPrzh5V9xD3tEvsVVTXiTnJY6xu9LYzmuhxErxD:
-    CdmObservableAssetSwapCurveValuation,
-  CAKY5ifWX2fXVm7watWiPNQV4WEpGGKux4YmFmLEfodd: CdmProductAssetStubFloatingRate,
-  Ccm42B9pqHXvdGEKGXbippze1ftyBoJLzTcK6oXCTx1s:
-    CdmProductCommonSettlementCashflowType,
-  CdXm9LZqmWgFFgpoHDNCBYp7kGANguTUS1Zshm9tf4HF:
-    CdmLegaldocumentationCommonUmbrellaAgreement,
-  CEiSj56t3pfX2pXr4xSE9ejLoG6NgvSmjdYCMPxiNCRK:
-    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaLegalEntity,
-  CEPYQUQEyD1UJSztEdRDbm5tx1WpgfhmqDCG9g7zJdRm:
-    CdmProductAssetInterestRatePayout,
-  CEYV9kEtFbGQ1TN5ZdT4jXMZfSQUVyhphKVVYFHwQ1uq: CdmObservableAssetFeeTypeEnum,
-  CFc6Qd17SJME5NRgGX5E2JvDaLCdH3FFGafnxKTvqrdw: CdmEventCommonTransferState,
-  CFEktjfDYZuSwRvSqRUCwDkDa6kpoBHKx93zLdD4TNHr:
-    CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum,
-  CGgHYqeKaTiPo5dk5t6JAnpqatYqufkEN4kTzTqXnZJ4: CdmEventCommonResetInstruction,
-  CGwZNWTLoCkGLH5yAn2EKVGseTWXNNNk34hFwFugDRnt:
-    CdmBaseStaticdataPartyTelephoneNumber,
-  ChCPF5QmbcAobXbvs9K4wvqSwzqR7kRvufRyresyq2Rj:
-    CdmProductAssetDividendCompositionEnum,
-  Chheuq1dPEWCj7bsdGkRo52qY4nscUb7oURn3FKrqFtS: CdmProductTemplateExerciseTerms,
-  CixZxDsRYNoZ2VQAdXvETFbZ3JHGQqFYi5Q5xdevtMKX: CdmEventCommonExposure,
-  CjLhV9zXsEPWjij1Hz3NWZZVtDmXET3xVwB1i8gzL7SX:
-    CdmObservableAssetInterestRateCurve,
-  CJvucYnLjJ6YQyYuspTnZJGLBaDpLV8VYMdDgadAmjNF:
-    CdmEventCommonTransferInstruction,
-  CL3hBXyGabfmMpYHcZYWQxP93Xs1YFHL6AcsrLfzFqtB: CdmProductTemplateKnock,
-  CMj4N8cXj9KS7aPG8P3F4vssfTBZeLnDFZmyyy71gWdu:
-    CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum,
-  CMP6Shj6SxTXkHaZATbUmY9anEdJwQH5tnPfbddySWBo:
-    CdmEventCommonMetafieldsReferenceWithMetaExecutionDetails,
-  CmrgcyG3eBXu1VywrDkV1pqtQ2sRfaYXfDqFSuPDN6Qh:
-    CdmProductTemplateCancelableProvision,
-  CmSrznzVLE1Cqum7Xx5TArrxUTDcNSUH9UDm1PLDZWeB:
-    CdmProductCollateralCollateralAgreementFloatingRate,
-  CN1YqoktYc73VUJTbsBfBBFsVz5duttYrP8g2ME4Sfzp:
-    CdmEventCommonMarginCallInstructionType,
-  CnFPWcJf9xSTq4FLwvkKAXcrxAjrdDmjq7gzPjKyC2MN:
-    CdmProductCommonScheduleParametricDates,
+  BRdxjWnBGUSh37id1GM71wzr5JbVB7YUZknt2qh1GRd5:
+    CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum,
+  BRguGmoK69E2QqgFfbDWc1f6YVqxFzv3auepNc48tdFR:
+    CdmBaseStaticdataAssetCommonListedDerivative,
+  BSQDJMfPWXBaqWYWPJCUYYLzftmLKsUbi3EyLhuh7Mr1:
+    CdmProductCommonSettlementTransferSettlementEnum,
+  BsWNiWBWBcPvxq7gbRKXCVo4xpJ1fYXPvWNafB7Bvxzt:
+    CdmProductAssetNegativeInterestRateTreatmentEnum,
+  BSxC7wcq6PvdbEFuVkkBrzKz4bFBiG8He3PZk9SqFFeQ:
+    CdmProductCollateralCounterpartyOwnIssuePermitted,
+  BTewRSf9MC2WLXoWSxonQnNA9mncZSiYdnUB4odA6MN9: CdmEventPositionInventory,
+  BTysZP1WpL4z9tsQazV1uF7AmmG5ZiX4Q8ABMpMSnfCW:
+    CdmObservableEventGracePeriodExtension,
+  BU5zwrVyY7wwfteRD7Vdaj9pWLX2CSnscAydsqWAUXjk:
+    CdmLegaldocumentationCommonAgreementName,
+  Bv5sBf6gMTS32hBro1iBzhNmGnSuqD84Wfc4EqRV4Whg:
+    CdmProductAssetReferenceObligation,
+  BvJRype2zWVijuwSinejW5FK4QMppv6EphZ6CPresR4s:
+    CdmEventWorkflowWorkflowStatusEnum,
+  BwbqfunwwJxSMfQD4CEUJ2Ab4AqzjMTjpeSCF3E1NLYx:
+    CdmMarginScheduleStandardizedScheduleProductClassEnum,
+  Bx6RbJH85Gh7BbnBoSUaTvzqwCNheMpjmwzdouE6UJz:
+    CdmProductCollateralIndependentAmount,
+  BXpC64gmuFbvh5L5cvC2KjCgBSBYvePrnA5wcL1K4rFT:
+    CdmProductCommonScheduleCalculationPeriod,
+  BY44nAmZ3yv6hAhiK1EG57TXEZNquFC8QoiMLUBELm2h: CdmProductTemplateBarrier,
+  BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj: CdmBaseMathRounding,
+  BYr7BukA73s6xgYtaFZi9nyu9YegpSmpt2B825iLKpBm: CdmRegulationSellr,
+  Byw4nUAhk4eWhAxnnEkCp1oMG5Acyg7nvG75MFXFjASY:
+    CdmObservableAssetInformationProviderEnum,
+  ByX5xzV8skV8bxwB7jTPa5FXEzKdm3SxrkmkC22W4nz5:
+    CdmBaseStaticdataAssetCommonLoan,
+  BzAmRPH81HKGy6cSBQMksdVVxBpKtdVhJKSbFqKiErQP:
+    CdmObservableAssetCalculatedrateFloatingRateCalculationParameters,
+  BzgPMJPnH7Cq2NK4PkNTKXVrpY3u3BUxB9jjvKLAxpq8:
+    CdmProductCollateralListingExchange,
+  BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx:
+    CdmObservableAssetPerformanceValuationDates,
+  C2cq6aR7yoFg7jn9vV3wrTukUrevaRzkBo4PeSWP5die: CdmEventCommonReset,
+  C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN:
+    CdmBaseStaticdataPartyAncillaryRoleEnum,
+  C4t841uYAz7R5kNxJsYAeKiyFsyBQFp3wRvMihrEeHiA: CdmEventCommonExerciseEvent,
+  C5nADRBcWM2dKjXzJRRmahbypM7x2DUsv7Mxpuc9uPRu:
+    CdmEventCommonMetafieldsReferenceWithMetaTrade,
+  C679ZMU8EZmaa6vaEdfxHjNQD8fM5PUBNsXR3ZQJUxio: CdmEventCommonExposure,
+  C6BHM5uzagsmiKxWqshqYj8ZhE13jTZuXKcAaJG5Lbsh:
+    CdmProductTemplateMandatoryEarlyTermination,
+  C6Yp749VzC7SApKQGjPSUFxLD5E445bVciFGiaHHE4pi: CdmObservableEventObservation,
+  C86NQuRAaVy32AX779AyrsbMw7Q2wQQu35dN3MbdAtEL:
+    CdmBaseStaticdataAssetCommonCreditRiskEnum,
+  C9KJZWTduUXk4iocTB63NwBs7xirNjChn9pPZsyhbhHL: CdmEventCommonRegMarginTypeEnum,
+  CaDUz9AY1EXhFRYQN73HdC98mAe18bh4BxACMShr4JNB: CdmProductTemplateAssetPayout,
+  CAWuQnv8ErBNebNAhWCC5XXHxx49GA2Yi9eaWFTXcij1:
+    CdmProductTemplateSchedulePeriod,
+  CBd7ZWKAnVWWTwFSHphamHTzqi86dtsgpe4aNTpHVHMe:
+    CdmProductCommonSettlementPhysicalSettlementPeriod,
+  CBTSmXARftQib1Z7xkk5BvzFCwYNVs56io1CySzwVRv6:
+    CdmEventCommonExecutionInstruction,
+  Cc6abtfBMYGmbDzKaDhnZfAxERd36qMiuHyDbE1wWuuQ:
+    CdmBaseStaticdataIdentifierLocationIdentifier,
+  Cd5dfDZ2vya9EXadanoFVVizmTtXVyCD3eetnLfjKM7R: CdmEventCommonCorporateAction,
+  CDbwJvzYyrQ7afEJRFR8x1ii8sk11Es3z1e62dbNj2rU:
+    CdmMarginScheduleStandardizedScheduleAssetClassEnum,
+  CdgiECBjpwU7k35HhiQi9JBRDcAEBJDGnCGvMjE3KMxX:
+    CdmBaseDatetimeAdjustableOrAdjustedDate,
+  CDsiMFyUmtAL1XNKLh9LcCjvCTRpiHNkgWZs3PvwAQYZ:
+    CdmProductTemplateCancelableProvisionAdjustedDates,
+  CffZN3WjvV7L4yuq8gPxEorKZMGZzCxYzuaCyW5GRsfn:
+    CdmEventCommonTransferStatusEnum,
+  CfL1c8JN1WqjG49j7D1R5Sb4acqi6yrgcRdEo3jHGKMR:
+    CdmProductCommonSettlementPCDeliverableObligationCharac,
+  CfZVt2o3BMybSUEVcmhUtaaj3dFxbw8HDBEaFu9yyrTm:
+    CdmBaseStaticdataAssetCommonInstrumentBase,
+  CGh8Ro5bj5zb6exK9S5PSK14D7LfDgmyq2CmshhZHCav:
+    CdmEventCommonQuantityChangeInstruction,
+  CHEdUbdvTiHGF4JCJFKNu57aubrgQGWDnj36TaxaftB4: CdmEventCommonReturnInstruction,
+  Cjg8S7jVCYAEjpd8qzXY28Qmn2YJWnHx1emVGo6DF4ro:
+    CdmProductCommonScheduleDateRelativeToPaymentDates,
+  CKeQ92fWPg4Y5pBNbpKczdPnPQQ8erD4GHJk9jUQJ2bD:
+    CdmBaseStaticdataAssetCommonDebtInterestEnum,
+  CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce:
+    CdmBaseDatetimeCalculationPeriodFrequency,
+  Ckw9v2wXUokJbSTvCdt5Q8XQuPvLbUCCx6JaAoaUpDGt:
+    CdmBaseStaticdataPartyRelatedParty,
+  Cm6CtKyZMW81X3HmtPtvXLE5EpvBpSEnyVK5Th2bmQ3v:
+    CdmObservableEventMarketDisruptionEnum,
+  CMm4iPYPHqRhURXoiwZTTM4mvuLvUGKoBVRb6e2NhZEa:
+    CdmProductTemplateEvergreenProvision,
+  CMxZE5qhdNQfLUUyDEzXKqCWuy42NTHNxfgVPFBmduvr:
+    CdmObservableEventShareExtraordinaryEventEnum,
   CnYXLeD1YSPzKRkCdgumsMyS2pGwY5z3KFHu8tmbu9oc:
     CdmLegaldocumentationCsaSecurityAgreementElections,
-  CNZP6GsTZi731ekV62fUVAXc2yL9DVbiHje2LSX8DmWf:
-    CdmBaseStaticdataIdentifierAssignedIdentifier,
-  Cpbn2utZQopvuh7pdxe4hrg9S6CvTTqwa6hLYZRihZRr:
-    CdmBaseDatetimeAdjustableRelativeOrPeriodicDates,
-  Cqsvhr2yBW9tghAQNKR3XDYzG1BtRFwCBgpQ7zz5iuXo:
-    CdmEventWorkflowWorkflowStatusEnum,
-  CRDQNtXNJmEa2569YsarVn2w4uDdGJfuoMsGA37B3aci:
-    CdmObservableAssetQuotedCurrencyPair,
-  CRozp4MyQcRb718xLH5WdVCyDSyimrwJKNMFoWND29qS:
-    CdmLegaldocumentationCommonLegalAgreementPublisherEnum,
-  CrPVPZLyLfrUHufFAw5BvtRgXXaqECqrHbdmTXfVK6sd:
-    CdmObservableAssetCalculatedrateCalculatedRateDetails,
-  CSA4yBTRY5RmGSiiVcNmFcriFgUvvzUBaRzbignT7fcZ:
-    CdmProductCommonSettlementLoanParticipation,
-  CtYQqMrkLRGoYSHCKUDDnqB3MYRfBuTgo1ccTwdeo5qV:
-    CdmBaseStaticdataPartyPartyIdentifierTypeEnum,
-  CUr5jr5noh86g6Ljvib2NKFYTBBK5zc36XB5Xv6Wy4v1:
-    CdmProductTemplateSchedulePeriod,
-  CUrYmDpSDF4EJz6dwV7Y4bsg12J8srR6T6zijqvRfZh3:
-    CdmProductAssetDividendPeriodEnum,
-  CvE5BfFWsqRpy2bhRv2TsRqEsM2Ve6nwcumAr2uZ1BDx:
-    CdmLegaldocumentationCommonSpecifiedEntityClauseEnum,
-  CvgQkLkTY3wpBq3P2xqK9it4xHe69wrRbrazq7FNNLci:
-    CdmProductCollateralCreditSupportAgreementTypeEnum,
-  CVMkWffJ7quAiCT1yuTA9Yfe2iFwZdCBMRUkJAvQowDL:
-    CdmBaseMathQuantityChangeDirectionEnum,
-  CVotzT95LfpnY2dTRZM7sgw142QseC5qSBhosJ1xtHbK:
-    CdmProductAssetDividendEntitlementEnum,
-  CwpYZPmQdRGD5hBExM6HNqoCwdcXsK3bbUFxDHPbYjFs:
-    CdmObservableAssetMetafieldsReferenceWithMetaInterestRateIndex,
-  CwVqcagqRU8u2uYQ7UX2DhBEktwSuwCNdvLc92FdhUm6:
-    CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment,
-  Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3:
-    CdmBaseStaticdataPartyPayerReceiver,
-  CyvEqKQpGL1tCK33KuVNmoqqfPY41YR2zXaxhgsjDER2:
-    CdmProductAssetNegativeInterestRateTreatmentEnum,
-  D1NQDMjhdP9hVZMeu9eipm9vH3aGJP3Zn1Ea8snMVxam:
-    CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum,
-  D5c4Z8okogMsZ9ZgPhXhrjcP4DG8tnDr7tGQGW22454v: CdmEventCommonBillingSummary,
-  D6dSn6AsPGjD2zwCwNeCcF8gQWc73EsG3MsXx7RRtpHK:
+  CQzTbWm83XYnnNf8Z5x9G7WakNb7E4nLLZqNgDki1J2p:
+    CdmLegaldocumentationCommonContractualDefinitionsEnum,
+  Cr2qn4kdXt3AhEMg3m3yXpBXDDPzHwdy72ZZKWK8a1y7:
+    CdmProductAssetDiscountingMethod,
+  CR9L4SVmKAvSmKh2xUfY6RvyAg4XL3BwDYCeqWk8ejn8:
+    CdmBaseDatetimeAveragingSchedule,
+  CRo3EU8CPpKHNiGvaX5xb9nGp7qqfXDNxyuzxdjqhqUP:
+    CdmEventWorkflowCreditLimitTypeEnum,
+  CTdbPvJCySH7c1fo91jyuTmUVte9C47K3AKTScxXfHEe: CdmObservableEventRestructuring,
+  CtjNKoKQ8S3xNPyMY6GXJKQAAfjxpTQmdDgLUNE3iAJM:
+    CdmEventPositionPositionStatusEnum,
+  CUzMUxNcMqZb1GuDaw2n29RnNcaPce9HrpKAyz8gT2m8:
+    CdmBaseStaticdataAssetCommonTaxonomySourceEnum,
+  CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq: CdmBaseMathNumberBound,
+  Cx27wd1NsZNkmCvmLdCFXNsL3u2k25coNe5ESEWgV3px:
+    CdmLegaldocumentationCommonMatrixTermEnum,
+  CXNX5xUoDwJxfTwLJdwkuXkNThirm3BpXK2QCH6kBkeu:
+    CdmProductAssetDividendPayoutRatio,
+  CyNw28ZuCZFruvDWiNYs7yzqKEpzdtRFQFErS383wQQn: CdmRegulationPrsn,
+  CZWJZLLr3HQs8VCBUxDWXabvSf6Q3319JdxR7Apv4ijg:
+    CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum,
+  D1H3C3xAMJv2XQNBYfethSUKDH7kngUkefwbzLwVLW1i:
+    CdmObservableAssetCreditRatingAgencyEnum,
+  D47eyKS7yewPVC5jUEbouYutWpSrDF1kdJ1AVrcHsRd4: CdmRegulationBuyr,
+  D5MVAPQZZQMZXFW2noGBFFgRgvJ2sLSL8SKwphof8rd4:
+    CdmProductAssetMetafieldsReferenceWithMetaProtectionTerms,
+  D6KzTrAtJgtar4KhLVeopPRGn169Q4jxU7U1Kp2N2CEy:
+    CdmEventCommonMarginCallIssuance,
+  D8BAM3Ef8YgktLMNJZg82NyQjEWkwYXQ2pZYpzsXPtnQ:
+    CdmBaseMathAveragingCalculationMethodEnum,
+  D9YY1v2J14dSGr9FSvTV3S7cVD8933KNkDtMjV3Len2A: CdmBaseMathRoundingModeEnum,
+  DbDuU56mMCeHMmfAJPu7gVNzKPqsoCbfKMA4B2f7KJob: CdmEventCommonRegIMRoleEnum,
+  DCBUG67sRjRXZ7Yi8KP7GaYSeAqW5NamG77yzUifTiX5:
+    CdmEventCommonMarginCallResponseTypeEnum,
+  DcgdSd4HsySv1Kjs3mmHtjdobShDTmMi1HHGXnxFpUAb:
+    CdmLegaldocumentationCommonLegalAgreementBase,
+  DCKZsuug7AQ1eNWGKNHVPELUTjey85wne3B6xqsewUYF: CdmProductAssetBoundedVariance,
+  DCnYs1WEp3CCC7chsbsbVHV4Z3Lc4szZSdG7Cp5A3DfU: CdmProductTemplateComposite,
+  DDPEJCtbjCK4fCy5ZwmHdduie29MQdvdscPV38q6HwfM: CdmBaseMathQuantitySchedule,
+  DDpzEiQvyGjc3WViRctaB8EJPZHGTbbpLManidhjUsxW:
+    CdmProductCommonSettlementAssetFlowBase,
+  DekzGsQAbNvqbqgomWQkf83asiULvd7vJKgEzRsTBfFf:
+    CdmProductCommonSettlementPaymentDetail,
+  DePEyNHqpBtxPVrPYXSKuWt1ugb339xn92ZXP2uKKUgY: CdmBaseMathWeatherUnitEnum,
+  DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR: CdmBaseMathQuantity,
+  DgNkH6r165bjLKnYWiVE6o2FPj5mEztGpd21mfsiyDXA:
+    CdmBaseDatetimeCalculationFrequency,
+  DGsbtTnVqKahxQWYvWbmGWFYBqtFfWxbBr5DuADrAFqK:
+    CdmEventCommonContractFormationInstruction,
+  DGw3j3EkTUgoJb9WQD39BfVPHsqnL4bXU5uXCMnmCe3v:
+    CdmObservableAssetPriceExpressionEnum,
+  DhHQHqqp2Z9sKdNPDi7Zcxze2V3FZafnK1rKbVaWWDHE:
+    CdmEventWorkflowCreditLimitUtilisationPosition,
+  DhpZ3SZe34Pz3xJLcAS74rHhgZSez7ZvQx3yqmXcYA8r:
+    CdmEventPositionCounterpartyPosition,
+  DJ7mNRisRDzwiXVunMHLfDzvMqVHiQo2iHab3fCmxUL7: CdmBaseMathUnitType,
+  DJFB2Tj6nmeKEJudCnrcJLRjTfjdUDQDmosfijnNhHrg:
+    CdmProductCommonSettlementQuantityMultiplier,
+  DkpHjXSPYeeAymNJRnod9AFWqxCfj21de5396nJX3jb5:
     CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum,
-  DAxrfnnD9436ZRpQ3FGCM1i7Xq8brfqBB5cYxBuSuyag:
-    CdmBaseStaticdataAssetCommonISOCountryCodeEnum,
-  DAXvwiRxSepN3dRd7rdTfVGH5bP2Dpu4LcczjjaFEy3s:
-    CdmBaseStaticdataAssetCreditObligationCategoryEnum,
-  DBagP8NcuSpNGeJTMciJspmiVKhEvpxenhq1VwyxA9yu:
-    CdmProductCollateralListingExchange,
-  DBnAMusnqCBb9qkA5usvmPTb27HNy5VzKi8JoTrgPoRV:
-    CdmBaseStaticdataAssetCommonAssetType,
-  DBtNQnoS2ASiapYrVYocF4KmKjybYa5xQcvCQqGs2B69:
-    CdmProductCollateralAverageTradingVolumeMethodologyEnum,
-  DcUTaEYM4WWvLRoDutDM6dukE5ZErd9Nm1ke8SZwWUp9:
-    CdmObservableAssetMultipleCreditNotations,
-  Dd2beZG11x8F2zfZyRG7m81qHdArX5iUKEK3RnpUCBiz:
-    CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum,
-  DEx8mELrNiMvJnmN1WRhZbyCiZRmtgBjuJXyfcSztf4h: CdmObservableAssetCreditIndex,
-  DFCwxwyJL859yeqbrr3oY7vncLWeadysD9VJGA6LGJgK:
-    CdmProductAssetAssetDeliveryInformation,
-  DFfVKuUpQ3nKk6osGBkvUZ2FSvR8myNQj2QHsn5GFzo4:
-    CdmProductCollateralCollateralInterestHandlingParameters,
-  DgMT9GvGPfVpoxATLX7UH2QtPrCD7csg3P5rdgiQxAUg:
-    CdmProductTemplateAveragingCalculation,
-  DgYhTvKZWcbsWAJhHrAdY7ihYDMtyVr2mPxUjDnwHkUN:
-    CdmProductTemplateStrategyFeature,
-  Dh5YZ8UboebnzAaX4XPDYtGbPzNfaHDzsrZX9Nocp8CM:
-    CdmProductCommonSettlementTransferSettlementEnum,
-  DHpHHdiJGEagTPm7Y9Vz6cdsbKwjXg8HjJkoUjpRra2Y:
-    CdmBaseStaticdataAssetCommonCash,
-  'Di6SFxkKQMc6nqT3aGU1YqGGEZxoqde2cDU2V2RUauq9#0':
-    CdmLegaldocumentationMasterMasterAgreementVariableSet,
-  DiuzkpaQqLNDsehNb5xLTrFkVqpEqS9ZGtqTJ2fBzhvm:
-    CdmBaseStaticdataAssetCommonCollateralIssuerType,
-  DKKgVj4h6rghgaMZrdFzPJpGQfNdR8YrcHenPgFkvjQ1: CdmBaseMathMoneyRange,
-  DKSYtGQVeGfDCYPvWG3sDggvoZMojMdvZHwHechNkWWZ: CdmRegulationSngl,
-  DLLoN3NFnWwpjGzEuobQDyZqPUSbRS8jddLaQZw9eq9B: CdmEventCommonRegMarginTypeEnum,
-  Dm9PM5TwaH54z4a5ziQoapPuuwNsvRFCZkEYx2ZFiegM:
-    CdmProductCommonScheduleResetRelativeToEnum,
-  DMeQ9ECaWbb3DdSYMpZmd7xvFu5cGC4dptRizNCch8D2:
-    CdmBaseDatetimeAdjustedRelativeDateOffset,
-  DmjvxxGktgvt2rg94yzABomuVAXUs5cCj4GRYGt8yxhr: CdmEventCommonInstruction,
-  DMPg8sNY4NvsU9grh9o2Bbqy9F7wFkLkA74Z5g8pwNNk: CdmEventCommonTrade,
-  DNrLYMzUypd54LsHQ7fuTGkHeaucAd3AmcgDyB9DXPaY:
-    CdmProductCollateralCollateralCriteriaBase,
-  DP9vzie9YSXjQYMDVQb3TFeYN1on5KA4A37wPREYWq2C: CdmObservableAssetCurve,
-  DpTSHTppc3xwy2ybJQxiZTCtQk19AUWX1Rca92nyrjHQ:
-    CdmProductCommonScheduleResetFrequency,
-  DPWX3TQgadyc2NWPmBWPGsZuwotdkjqzr3AZzY6JgdeY:
-    CdmProductAssetBankHolidayTreatmentEnum,
-  DQ1ZuZ8UYNPHqFcdVn6TqSrr3Stdugj4GzTRnARu5M53: CdmRegulationSwp,
-  DqC2oNjEyRAjmb6kubvmJ5ppLVuekBouV87Zjnvc289g:
-    CdmObservableAssetCreditRatingDebt,
-  DqGobrtxaAEaszyaxnf1T8PaYqNexwwc7b6EHDQcFsQG:
-    CdmLegaldocumentationCommonContractualMatrix,
-  DQP2qi6gwFxKtKMataRY4XdJdpe3v4MNCv43aURbDBPn:
-    CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#0': CdmProductTemplateProduct,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#1':
-    CdmProductTemplatePerformancePayout,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#2':
-    CdmProductTemplateNonTransferableProduct,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#3': CdmProductTemplatePayout,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#4':
-    CdmProductTemplateEconomicTerms,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#5': CdmProductTemplateUnderlier,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#6':
-    CdmProductAssetCommodityPayout,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#7':
-    CdmProductTemplateOptionPayout,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#8':
-    CdmProductTemplateSettlementPayout,
-  'DQtAbxe1tLy9aRaawabAsHzDGXiQUiSvjt76ym1myncb#9':
-    CdmProductTemplateTransferableProduct,
-  DRkD8HVscRs6KUaFJvG9NfY3w4CcbbHbGTZjFrUtDL9Y:
-    CdmProductCommonSettlementPCDeliverableObligationCharac,
-  DRXnENhi2PPC41zdWCTei38nBDnGJAHhGw77pHSaZu9R:
-    CdmBaseStaticdataPartyNaturalPersonRoleEnum,
-  DRzHnd5fFvvt3FAGunPM7qFcwB1KgFPJn8D7zyBankMz:
-    CdmProductTemplateExerciseNotice,
-  DtAjQji5fMaopUpWiA8ZrmHUiTEFdYPhtvujqB9CMLc3:
-    CdmMarginScheduleStandardizedScheduleProductClassEnum,
-  DTjpaA5nNPtRc9cjg3pKvtYra986CsXi7yi6mkfQ6cCN: CdmProductTemplateStrike,
-  DVb1fCp6T4qAajXVrhWU73Yx25sFe7MdqmytdKoz9LuJ:
-    CdmBaseDatetimeCalculationPeriodFrequency,
-  DVipsn2Vc1vxevvyncjA1XjeWrMHt7pCWmHgf444oA6A:
-    CdmBaseStaticdataAssetCommonLoan,
-  DVtFVNsGALqE4V9Un3ftDWwJ51qkUXqwoi53xU1DCDcZ: CdmEventWorkflowWorkflow,
-  DWrVb467npLJhtqWXL5jedbqPvpecQLcHXJFKAwmoYKg:
-    CdmEventCommonSecurityLendingInvoice,
-  Dwv7F3TApZyy78ART4sz8g3mMZvHV3rwAjVXeG9vxviY:
-    CdmProductAssetSettledEntityMatrixSourceEnum,
-  DXhfNgQ1Hmipx5YJVPFZLYTAfk5vomh4ywYmSZX1ChyJ:
-    CdmEventCommonMetafieldsReferenceWithMetaTradeState,
-  DYuwgUPfQXXLvHYN9CkQCk14eheznpsJXzEVZupjdJdD:
-    CdmObservableAssetQuoteBasisEnum,
-  DyvMnYXfQRGwqfP9Kybg1qYNhMuFyGyMpw3x1vAopkmX:
-    CdmProductAssetVarianceReturnTerms,
-  DyW8PoZ3SG5vrDUuHR4Yc12WC9QiAkuptxKhotnQqSSC:
-    CdmBaseStaticdataAssetCommonPutCallEnum,
-  DZ3QQaSdFmgFJ78DH9tSdAoquu9tGTmUiKpyntACFVwX:
-    CdmProductAssetFloatingRateDefinition,
-  DZahcmhDuPiP5rvn1PkdAsfSa4FbHepF3J6MUZbNZRrB: CdmEventCommonMarginCallBase,
-  DZcxdcnsm5jzC1CJU9fo6qUsNmG7i4H6LgZ4otSyMwas: ComRosettaModelLibMetaReference,
-  DZdnkAMDLkRVqy6xSZjUpZSFPATDK7GBQSknpso93uax: CdmRegulationNm,
-  DZPehsWDuPxFb1C3cSpumhHsTjexDKRzrbgBgFDfYLKH:
-    CdmProductCollateralCollateralTypeEnum,
-  DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk:
-    ComRosettaModelMetafieldsMetaFields,
-  E2D4RQHe2Jrvc7V7HKEDA9JsHhpAZx9S896oDvTHgi9v: CdmRegulationOrdrTrnsmssn,
-  E3BwAcnw9Vo2sDe14rdt76sD8KTECTPFQHhFqUu5Weoe:
-    CdmProductCollateralSovereignAgencyRating,
-  E4R8utNSd78UCdxdMrishhhpVuyncUtJGCKUfNBVnBqu:
-    CdmProductTemplateOptionExerciseStyleEnum,
-  E4Zcf9acqN6Mw1bpD2Joc5sWAQXChRtmorCBtr7tPWf3:
-    CdmProductCommonSettlementPhysicalSettlementTerms,
-  E5MxGtJaFFNZDf6ekGwAefBGRTzwccbYECFDpCS7Ztgw:
-    CdmProductAssetSpreadScheduleTypeEnum,
-  E6NzqHc6ART6mrFaiHBHZQdpeKND6nhvC8RWNuBEmiqc:
-    CdmProductAssetRealisedVarianceMethodEnum,
-  E6Tfme4krXS9rATBWNUAkF3zodjRvrY68ugTnUpjH7da:
-    CdmBaseStaticdataAssetCommonDebtSeniorityEnum,
-  E7oLhGAsFNjqjmhJsUSRdndnofi3eoLvC8TzLEgS7Ajd: CdmRegulationAddtlAttrbts,
-  E7YUir3XYc6p222k9M2DUYKNK573NXkhiQkA9SfScEJv: CdmProductAssetBondReference,
-  EBxPTGdUnubTi1nPQX8vJqTa8Q5FX7fvkCdtYQrZyUdg: CdmObservableAssetCashPrice,
-  EdmhbyH7xsBGyqV7bbekHDFWNScUciKyPKEuEsTbVHam:
-    CdmProductCommonSettlementSettlementCentreEnum,
-  EfNf2MwwCBqn8fqvmXa6jpnxUBnNyuLoB2day7wtu4mk:
-    CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType,
-  EFt5vpwMjQFJJ8LHLDpuEqY5R7UNo6zDPqdti3crxcVv:
-    CdmProductCollateralAgencyRatingCriteria,
-  EFYo6JAQMRJEAg6yzzafESRVFXGTiNSjmy9ehctCH3Y4:
-    CdmBaseStaticdataAssetCommonAssetIdentifier,
-  EHJBg7p3U5yUbBzkHyVcMUrwbPSn3FVeaRERg67YinMz: CdmRegulationPrsn,
-  EjBk15nz62KvMKiydMXvoDBt48tV6rBpEhuKBW5QABxM:
-    CdmProductCollateralSpecificAsset,
-  EjsFU4aMgFpnjbnat7xVhaXFrniJ8sabV7w3XFBgP3C3:
-    CdmProductAssetInflationRateSpecification,
-  eKGLgkZSes6kGqQ8XSphsvzmYrXGH8BYreDDqVQiE26:
-    CdmProductCommonSettlementSettlementBase,
-  EkwCZJVkbvyuxajEsGZpbJ7VXpXvUkhnSAEFVUNjVeB5:
-    CdmEventCommonTradePricingReport,
-  EM2cuboURhKvNDFYAA6NaucjpnUHYb2s4CKVEyrAt3nK:
-    CdmProductCollateralRatingPriorityResolutionEnum,
-  Em6kmmUkkT5JMxFuFBF4pMuY4Do9HDE1HCkz2RifWreo:
-    CdmProductTemplateRepoDurationEnum,
-  EMewkrxSUCQddjXsDB5V833VQJGmxV68bbryLqrUJfKz:
-    CdmBaseDatetimeAdjustableOrAdjustedDate,
-  EncqNSCrVYMkox9haeHEq66bWJTaR3vwubufrZkZzB4:
-    CdmBaseStaticdataPartyPartyRoleEnum,
-  ENR8ZMb3BXhAA9nevcEyKgFFFrZ2fgr7kuxCniYTsx1w:
-    CdmProductCommonSettlementPricingDates,
-  EP4PK7ibh1EaWh9sLTjFcwVikiRQECurvR5Nb9ZPbJCs:
-    CdmBaseDatetimeBusinessDayConventionEnum,
-  EQg8oK2XCYwAPXBQbQ25PHut48x4LXJQsYqgXoaEtcRq:
-    CdmObservableEventTriggerTypeEnum,
-  EsaEdPrqBuTPDTW68YziAqcjM8vg4cypYktMjidE6dQe:
-    CdmLegaldocumentationCommonResourceLength,
-  ESLgkpXCoVxwQbnAPvgczaFCG8BevyuAr7HkFo9WThDR:
-    CdmProductCommonScheduleWeightedAveragingObservation,
-  EsmTXkqcph5RVz2zTb6zvTt1xj9SQCBKMxiTaQQypHqp:
-    CdmProductAssetFloatingrateFloatingAmountCalculationDetails,
-  ET5sToBGwmEYMrixxQtBQCXUeukfnnYAJugSx43kxbwm:
-    CdmEventCommonCollateralStatusEnum,
-  Eud1PpiZWvCUx1fnCMC8CwsLqPdmoGhibUuZ6Xrxayic:
-    CdmProductCommonSettlementMetafieldsReferenceWithMetaCashSettlementTerms,
-  EuGpRedX58TPU3i5qZ6LxsNcbEJmKoGSNL6ivqwkFYgj:
-    CdmObservableEventFieldWithMetaMarketDisruptionEnum,
-  EUhKix96qBRpb8cnMTF8gcMWJy2C8uLuSVgDDmiWB82j:
-    CdmEventWorkflowCreditLimitInformation,
-  EUQ9MJibMGwCC7weff1GEUA2cy4bvdFoqaAJx4ySahKL:
-    CdmProductCollateralCounterpartyOwnIssuePermitted,
-  EvqvkLHSgg23hZpBiCkngAjwG8xuBKGiDCpbDgMpS97G:
-    CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum,
-  Ew8cBFQJEiMm5RgVmJg1Cmvyjbi29rZ1Rcv7oQrsSSYR: CdmProductAssetStubValue,
-  EwFdHo4Jxu4HXFdAczFttPDMuiJhjdR3ukBBNCTdxBUJ:
-    CdmLegaldocumentationContractAgreement,
-  EWRf98rx4nuLswzBWueTYEraywCRrEzoC9xLLRZXEinG:
-    CdmLegaldocumentationMasterAdditionalDisruptionEvents,
-  Ez5s9tbfPdmp7LcecKGYBeQLLSQFq5JghRb2yZTgTQTo:
-    CdmProductCommonScheduleInitialFixingDate,
-  EZCcXSeu6Mk3Bc3Qcno1DBgEKRoJ1xsTQUDczkFSE6g8:
-    CdmObservableAssetInterpolationMethodEnum,
-  EzG7sUjQ1nt9FsGH9rGXPtygd5B7hpbtNNK57CxGS247:
-    CdmProductAssetFPVFinalPriceElectionFallbackEnum,
-  F1apuBfHekENK3SqhCbhgdcHymV6jcuhFhC45BZhuy9J:
-    CdmObservableAssetFxInformationSource,
-  F4ABm6Sk4m5YjceKSAfEmsyYDkQG4Zm6byLLXq9kdSpM:
-    CdmProductAssetInterestShortfallCapEnum,
-  F4aQKt7CSGvhjKJxn6Eq7qh8eWsMhiWdGoPrRMMpNknC: CdmObservableEventTrigger,
-  F4ihqR7D44ZpGGutb98mpsdE6QNtkrVZM4oiK6Vuzcsy:
-    CdmProductCommonSettlementResolvablePriceQuantity,
-  F4jfVFVy1pLV3NpgzaiQY7F7vgzXzekentUSL7cHykj8:
-    CdmBaseStaticdataAssetCreditSpecifiedCurrency,
-  F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY:
-    ComRosettaModelFieldWithMetaString,
-  F5KpA82QSi1KJJu5Y1QFYm3KVvYrsajy5CANvijdTquA:
-    CdmProductCollateralReturnAmount,
-  F7fkku2HrNQ5jSPUdK2yWnWFShTMYUFJh1xqKudc3NLg:
-    CdmLegaldocumentationCommonAgreementName,
-  F7xhVYtqhoLA4Xk12rbQC3UUXbJBcxj2VRtwQUxpn251:
-    CdmEventWorkflowEventTimestampQualificationEnum,
-  F9QyJcHdFeo31fUAc165RhT6gR1XEBxazkp5cgYo4DAF:
-    CdmBaseStaticdataPartyPartyIdentifier,
-  FcygtYNeeqry73mriebsFBhtXNtXX2ULZyMgcESYBSyY:
-    CdmEventCommonTransferExpression,
-  FD6kLg2xwgd3jdCKhBv6qFv2EqCJPcQbjUm5b9XKmQDg:
-    CdmProductAssetDayDistributionEnum,
-  Fdf7nwnsHtnk24Wpyw2jqDFq5rEd7WLR39X6EQnoWsmU:
-    CdmProductCollateralAssetCountryOfOrigin,
-  FDhYdNTtaLCVNSezF95Ys51ECzH3L89vhhaxYFDFUP6w:
-    CdmProductCommonScheduleAmountSchedule,
-  FdxEpwBVWWvKrLVJFiCY2ChgGSz5yA1uMFC8F5cEd7CR:
-    CdmLegaldocumentationCommonAddressForNotices,
-  FeNrqxwS32kNzjXs7HqrxtfK9N58r3zNtk2U2uKgXJQU:
-    CdmProductCommonScheduleMetafieldsReferenceWithMetaCalculationPeriodDates,
-  FEzG5SmK13XNnh3kh51FRzCSuQLhC7M8Cugva3kwKFkG:
-    CdmBaseMathAveragingWeightingMethodEnum,
-  FFRnQiL3bCrcgQFbQM9Gf4yzfqkiSnx9SMqfCAdxckut:
-    CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType,
-  ffUyq1uLJr9pnbCbPGb4K1JcnKnJuaoqQNJkQwfCi9N:
-    CdmObservableAssetFroFloatingRateIndexCalculationDefaults,
-  FG2jLxQvPs3SKvJ3Jmg6mN7bHSMMac1ZBTWtVvnHP8M7:
+  DKxKbxnu2Fwsa8UzqKbgTU29eJKTYiwMNoJTqTNZLM6p:
+    CdmObservableAssetCalculatedrateObservationParameters,
+  DLLTGYKnoD2U92utJW3eUJCc4mmSgtMnRGcepG9e2dps:
+    CdmLegaldocumentationCommonOtherAgreementTerms,
+  DLZBHc2QwPj4my2QeZffRBsJxbqMSJzN3PScqxr9C1Yj: CdmBaseDatetimePeriodEnum,
+  DntsTXHGwUWVz7qTBeVzcb1XUkrUGTNzhHREc9jpBLF7:
+    CdmBaseStaticdataAssetCommonSupraNationalIssuerTypeEnum,
+  DocYqREg9o4T2rhZSgBc4WNY8RpRSEM9zXWkDh65v5Z7: CdmEventWorkflowWorkflowStep,
+  Doqu2fdYiHUWbSaMDHL5YoyEeuzbTrSjqbT1ZLqmB1Cr:
+    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty,
+  DpVYkkJKuVne3rcRtkfcsA1c5rBQibEFY4ujWCibD9jS:
+    CdmProductCollateralAlternativeToInterestAmountEnum,
+  DQ56S8AUX7XtvjkfZSuzYpayNS38eibZb5PEpsrperoP:
+    CdmObservableAssetCalculatedrateCalculatedRateObservationDatesAndWeights,
+  Dq7xVZaLz1ofmKsUodtSSbe6YGxaRdCtP5HM1pKU8RHF:
+    CdmBaseStaticdataIdentifierIdentifiedList,
+  DQQrQuJKE7UsmUgxYPbLeQ8cKAW52kt3TeHJBj752tYF:
+    CdmProductTemplateExtendibleProvisionAdjustedDates,
+  Dr7s6cFbs9aSU7RTFMQNVdpt9CuuUy3nRKpnUmXo3cbD:
+    CdmBaseStaticdataPartyReferenceBanks,
+  DRzBA7DNKGx3x57DdS7v8C2BBHL55ia9a7Sqzx7r5Qr7:
+    CdmObservableAssetCreditNotationMismatchResolutionEnum,
+  DsCUffxSDY6GA5gzndifSLMQRghvnkjFraENE8pUUmzA:
+    CdmEventCommonBillingRecordInstruction,
+  DSJDCMX9fWnAZqseXHzuc3NWEvtct9Ay1D8XqV7Cz8sb: CdmEventWorkflowEventTimestamp,
+  DTtWhJnXuoKubPMxQyji2Nw7Ci2mGd6RoJWN5EbzReoR:
     CdmProductAssetCashflowRepresentation,
-  FgeGQiLz9TJQSYENK3T48kJAnBoypPpJTdxNttHXYVSj:
-    CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum,
-  FjbFhrFxtxs3sDqZwM29eQWswygXu1ogCT2Pi2U4mQRp: CdmEventWorkflowWorkflowState,
-  FkagaCXwpvV1bHkAtUqKKkwuyNj7BX5UnEfwfHeDHvuv:
-    CdmEventWorkflowLimitApplicableExtended,
-  FKfCuPahjxDovRJtwwh6TYBHD86Z1mi3jBbEP6dW91gZ:
-    CdmProductTemplateExercisePeriod,
-  fKPDzutMwno59HhJG23YycNn4iwE4yFTS17R3MkzbT5:
-    CdmEventCommonInstructionFunctionEnum,
-  FkVKJHod7pqUSpYVBLN3NXQjh65FZKScBP6WoBY1o86o:
-    CdmEventCommonConfirmationStatusEnum,
-  FMkLv6qXtSm7J9WiqjortpggKS64LbdJJWwyPv81h7V3:
-    CdmBaseStaticdataPartyPersonIdentifierTypeEnum,
-  FmLtwXC2QV65Ns3nmhjxLXoKCP4AuGj1rv5iMdcqmUmC:
-    CdmObservableAssetFxSettlementRateSource,
-  FmwzzAFmqGuCenMT7mzAuGYDNJaYPsnDg5cWKFkHnjwL:
-    CdmEventWorkflowPartyCustomisedWorkflow,
-  FMz7cW1KAAZd9MhEa5hUpryh8Xj1masTxFKjK7XUo6Re: CdmProductAssetReturnTermsBase,
-  FnPP6UpBmzGuofUSjyTEcZkfz1AefAVsm79a4yyozJZS:
-    CdmProductCommonSettlementRollFeature,
-  FP3Z6B5EZbM6cJbRUXnbPHiNqwLhR5XncUa3C9U1okK5: CdmProductTemplateQuanto,
-  FP5233evs7ZPmt4TtJViFwDZ7XUgyXmKmP7WGgjrSKtp:
-    CdmProductCommonNotionalAdjustmentEnum,
-  FpHDJapzgLvakFXFV8ZtQe1CcZ7aBKpmPLKLwWkp2tRd:
-    CdmLegaldocumentationCommonFieldWithMetaMatrixTypeEnum,
-  FqQmwTFY4AP5Fj5sBr9KSRM3jJXSkDdD5HqWF1F73qvx: CdmRegulationDocument,
-  'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#0':
-    CdmProductCollateralCollateralCriteria,
-  'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#1':
-    CdmProductCollateralNegativeCriteria,
-  'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#2':
-    CdmProductCollateralAllCriteria,
-  'FriZV1WqZYyqDSVgQuWAWwgxAjAcBjGrzBtX5z1e7ZFZ#3':
-    CdmProductCollateralAnyCriteria,
-  FrLAdW4sDG6MpoBXdBATgMkuuGm9pecAaarCRhvnCb2F:
-    CdmObservableEventMetafieldsReferenceWithMetaObservation,
-  FRoMknL5tLocYSiFfWHQdaNh9P69TCfagyqaUDB7r1fx:
-    CdmProductCommonSettlementDeliveryMethodEnum,
-  FRSvW86AnukqsUtioAtNxLvGvH8hBV3m6J2YV3egXjjV:
-    CdmEventCommonCreditEventTypeEnum,
-  FschfMdbVginzubUZdVVEtooCLzhymBvnVnHpkmdgsfE:
-    CdmProductAssetDividendPaymentDate,
-  fSHW6Drrbqfcs6E2UTodamRcqyfSTBkYTsnXEqbno3m:
-    CdmProductCommonScheduleWeeklyRollConventionEnum,
-  FsvHni5Yw2kgwi13MLfPDm1kxtkAxtwNuT3wJNMwYWjB: CdmEventCommonValuation,
-  FTknYeDBE8m3vDi6uLPgcH5j3YeR6NduZGwBrVmho2qs: CdmObservableEventObservation,
-  FTUwPbNf3h5HEXFU1GenFhKNQoZGkBe5zAWAf3ZnpvrK: CdmBaseDatetimeTimeZone,
-  FUZQmvWkXE16AV15YKc9DANRQNrg2wMz8MDdtcPfnPjc:
+  DtV3Ngp9MSk1v1Wcbq82ZaJHv5dkHz2XFfpccV8mzgXP: CdmBaseDatetimePeriodBound,
+  Du8Dj1mUc32NnorgGE844tyffuiu6gfALcLKPPS9mZKL: CdmRegulationSwpOut,
+  DuGS3hb9QASiMfVarVtXqrw8YdvHS99bzooo3dinungf:
+    CdmBaseDatetimeFieldWithMetaTimeZone,
+  DvHC67ebizujZAhviEeMQ82ZhicijkGL6dTdyk24smo3:
+    CdmProductCollateralAssetMaturity,
+  DvnafttCVMzGEcQC34ARZkLMZfgEVv5CcjPrtA2b5f3L:
+    CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum,
+  DW7rU2G1aVFJWe4AguEb2Usk8YfFAXvUzqiNDKzFurHz: CdmEventCommonActionEnum,
+  DWiJVyeaSktJL6mTLvKLC2nxdiKY3CWQfU91sHJ2wtuc:
+    CdmProductAssetFixedAmountCalculationDetails,
+  DXynKUQNFZU7oUmvsh7mUrjs7JL5RKXrrmkH9hZr99CL: CdmBaseDatetimeRelativeDates,
+  Dyqr7TA1HN5EcvzLV8Yzj2SDcBRhKaKqVGCBXkTfUDZZ:
+    CdmProductCommonSettlementMetafieldsReferenceWithMetaResolvablePriceQuantity,
+  Dz8x4hxN4LrnwACtSYMSryByQKNPMssYkK9899oiNbyh:
+    CdmBaseStaticdataPartyNaturalPerson,
+  DZstXEXxF1iHJunLqdgbypWWK6H28QwVCtxJRbMUDpza:
+    CdmBaseStaticdataAssetCommonEquityTypeEnum,
+  E51UFE2FEkY3QMB4wW2zNBSjHwzSoUThQsP37iRWRLuD:
+    CdmProductTemplatePortfolioReturnTerms,
+  E7G8rbJWZbrsWYs4MwRaciyoqUH3qB2cKFMgynJ8Jide:
+    CdmProductTemplateOptionExerciseStyleEnum,
+  E8kNFVq5rjJaDyLo4StMphfzm1hmN8457CXWNFQVj2iH:
+    CdmProductTemplateMetafieldsReferenceWithMetaOptionPayout,
+  E8QF9EBMdnTPHUuRgEqvQUvGm75ReZB3zjKJB7BSjt7z:
+    CdmProductAssetAssetDeliveryProfile,
+  Ea14T9qt8BFXsBnenzGNrbYsLa1CRPUUK1ChYX6Zo5dK:
     CdmObservableAssetFieldWithMetaInterpolationMethodEnum,
-  FWBc9MZLyNP1UHpkesLTwX4uMpnMK6Tjr5QZnhvs2WRB: CdmBaseMathFinancialUnitEnum,
-  FWDtHcje7vk2DT9i83ydGLBfFw8w7RmzGbaZaLknALuS:
-    CdmObservableAssetSettlementRateOptionEnum,
-  fx4LQnhJaV8s5Joj7TDWyvEhsFX5aHaLQe3VAVAU8FC:
-    CdmObservableAssetMetafieldsReferenceWithMetaRateObservation,
-  FXouY2iD5yAkGjtQpRoJkLoD46rKCnoTQKrRcsQBaJjx:
-    CdmEventCommonBillingSummaryInstruction,
+  EaaCUoNmXLQTY4MPLncXFmVQqSS88MhbwvejcfJKUAdS:
+    CdmBaseDatetimeCustomisableOffset,
+  EakZSquKh6nNrGeVqD4Jn7fEVe48f55oM2KdN21fjZhY:
+    CdmProductAssetSpreadScheduleTypeEnum,
+  EArWxvBkePDwUEtKBhh6BFEHXRgqmUAiHbHAVCW9EWu4: CdmObservableAssetEquityIndex,
+  EbjHFpZTcuFSaUzQnoeLBnQ5parZksPwCnkTUkahrgmy:
+    CdmProductAssetDiscountingTypeEnum,
+  Ec6MmK2TGnYoMytTLHEDcnQGwA2y427JhgfBex5P61Ax:
+    CdmProductCommonSettlementValuationDate,
+  EcvzpLymGTG2HkooovYn4sPFjmSFWGF1uM1CeM6FfNgz:
+    CdmProductCollateralCollateralInterestHandlingParameters,
+  EdjmRMLoCGVJpgxbL5wiR6MA6JpvcTiLAu3PTiGCn8ci: CdmProductAssetForeignExchange,
+  EdLKjCfief3mhGVbVnHDpyHDKbTXHYqXoaTKtcn9EjDL: CdmObservableAssetCashPrice,
+  Ee3C3vqSeFDzzP16yujSkrhc9JNvgdr2F2DYyVzGjfaG: CdmEventCommonMarginCallBase,
+  EE9ddWepUCVpA88PcNq8buPwyuFbJawoqrJwAAwpCjcx:
+    CdmProductCollateralCollateralProvisions,
+  EEF9WbKw9D9wtisDhW8324FJ2E947ssWHTCgh83EtSwA:
+    CdmEventCommonCounterpartyPositionState,
+  EEy3XcQkPgCWJbBTZ5xCt324t2pFRJU6q9odJm19McMd:
+    CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDate,
+  Ef7JSbybnYTf6DGe3sD3EoBBngjeauFZcUey5CPfgotg:
+    CdmObservableAssetFroFloatingRateIndexCalculationMethodEnum,
+  EGpvPDYUy6WpBH4kNy693iBCzvTxxufSoJNuPsWaeJnc:
+    CdmObservableAssetCreditNotationBoundaryEnum,
+  EhgUPTjNky8ntLuNCUAumwbyM9VxFbf2HcZ4Pkp2cfsM: CdmEventCommonBusinessEvent,
+  EjBpyo5KGACQ7knjNw98Y71wwTCGfQn96DouM8q8m7Gu:
+    CdmObservableAssetPriceComposite,
+  EmkPx4XLJeffJqq9EbwZicZCxqAhVBpDz1vu6eP1oTYj:
+    CdmBaseStaticdataAssetCommonInstrumentTypeEnum,
+  EnoVKrrGFyBuE513RQdZXz4EPFgLMoR13a5djKi32gB9:
+    CdmBaseStaticdataAssetCommonTaxonomyValue,
+  ENSK1BSQZtUz73JC51Ww2axF9BMWqhkBEE9AzutJiqoH:
+    CdmProductTemplateMandatoryEarlyTerminationAdjustedDates,
+  Eo87ZezRqLBDT3fRPNRexD992udkMVK8vj65DfWNoF4b:
+    CdmBaseStaticdataAssetCommonProductIdTypeEnum,
+  EP1r4ouVVbfJhEazX6iBArCJYk3u6aP7hwxJSGLBFbet:
+    CdmObservableAssetMetafieldsReferenceWithMetaMoney,
+  EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq: CdmBaseDatetimeDayTypeEnum,
+  EPw23JvyLZR41DTM3xD1zG4onVhCwLqBoQYZN27eS27R:
+    CdmEventCommonTransferInstruction,
+  EPZXT4tSSu6F1Bgi8FKpq43oaSVqFr8Um1HXaoK25VVE:
+    CdmProductAssetDividendAmountTypeEnum,
+  EQ1DnA2mvWsTZJUqo9NJBj9AF7uJYZXPRwQw2ZUqpqQC: CdmProductAssetDividendPeriod,
+  EQ41UGrPkUeaUNXD9QmELA1aEoVBtx9tVzgQZ5Tp1rMT:
+    CdmEventCommonMetafieldsReferenceWithMetaTradeState,
+  EqeLySr1GukguPVVt5XqDUVQFVenWZYySiuo6qQbQ3pT:
+    CdmProductCollateralEligibilityQuery,
+  EQwUBWQNzAfwaD546noV7pi1eo589s6uaDsRWdx2YCMX:
+    CdmProductCollateralCollateralCriteriaBase,
+  EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1:
+    CdmObservableAssetCreditNotation,
+  ERgfFXDHh7Wgme2CrDN4aVQ74wSP6ER4PpBe7JdQRPct: CdmBaseMathCompareOp,
+  Ertdu3BkSJQ4wFYEPS4YyzEkSnGfu7XaooXCfRXXXENY:
+    CdmProductAssetFieldWithMetaIndexAnnexSourceEnum,
+  Esmmz6HUDCJAgn44LSSCvC1CCKuZW9U22nKNF4fXwkjv:
+    CdmProductCommonSettlementPrincipalPaymentSchedule,
+  ESVYFHhwAEbDfHx7VpnDSeYjKbYM1yz22iidmSJwTbPR:
+    CdmEventCommonIndexTransitionInstruction,
+  Et7RmFhXC1S5FYbAYAkgpkUfwspKqhDrsG1K89ev7DVu:
+    CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexTypeEnum,
+  Etd1jjtUSJfgtR9oe5rJxj387pjT2ZNMQG9kipLjW5hj:
+    CdmObservableEventTriggerTypeEnum,
+  EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy:
+    CdmBaseDatetimeFieldWithMetaBusinessCenterEnum,
+  Evebus71x5rCJiCAsgwRLqNJttzXHHUTbxXnJfjFWjpG: CdmBaseDatetimeTimeUnitEnum,
+  EvqKp8C4TsU58D4ZoFC8ba55Fdq8Qeka9NmEAAuioCk3: CdmProductAssetReturnTypeEnum,
+  EwvxCeweE6NzDi8idFivNwZ9joYB35RKBbzvwypsqnAR:
+    CdmProductAssetCorrelationReturnTerms,
+  EXhnZXqvEcgXZrY2VK9WqgZz87y5NwxZ4axscyrAeSBv: CdmObservableAssetCreditIndex,
+  EY9iPDd22LwArn4MV9fUHUqkd2gX1guSkAntckHs1xYa:
+    CdmObservableEventPubliclyAvailableInformation,
+  EYbEZSe5HQWGHhD1r1THTXaZHW6xpyBn5zsupY3usXJ4:
+    CdmProductCommonScheduleParametricDates,
+  Eyc8B8F3y2KnRoznB2hdpowXLuoWSHAkCnr3veTzM2Lc:
+    CdmLegaldocumentationCommonFieldWithMetaMatrixTermEnum,
+  EYHsr3QdfZNKZWjh2MH65Run9WHCSMwVoQabxHFou3oX:
+    CdmEventCommonValuationInstruction,
+  EYpcaUBjmYVc34MF2zDCr15B8fCMH1Lrnw2Zq1zPU4TS:
+    CdmEventWorkflowLimitApplicableExtended,
+  EZdU7ZfikeT9jXmxHjC3ABGRtnYsqhzhoL58Cfo3ojj1: CdmEventWorkflowLimitLevelEnum,
+  F248AjhdVnADUz9CQXosVKujLgoTFeRXayYnkVuaof5T:
+    CdmProductCollateralCollateralInterestParameters,
+  F2nvaUqNbFKSuzYyyhRM8m7PgfFhFvkDbejeQWX9jYCs:
+    CdmBaseDatetimeMetafieldsReferenceWithMetaAdjustableOrRelativeDates,
+  F2Wt1EDZnfiFP4epJAKj86zS8AfxfM9y6A37JnsMLx5j: CdmEventPositionSecurityLocate,
+  F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH:
+    CdmObservableCommonDeterminationMethodEnum,
+  F6XBKSmZ9oSyV7jNgy8VWvvVG1HtjMoByYPxs4837cbw:
+    CdmLegaldocumentationCommonGoverningLawEnum,
+  F7QahhLQE8sqX4t6NBvj5SDbcCWwr9pBdZDMZaqg7mSx: CdmObservableAssetPriceSchedule,
+  F93Z49WPhvseXnmUoYUCWkT5Eg6S4PQfSsy5s4SZkNoz:
+    CdmObservableAssetCreditNotations,
+  FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau:
+    CdmObservableAssetCalculationAgent,
+  FaWYhMbHHgHX1o1pCiT3R4zJ8b5g9ywJSEChRJD9m3hL:
+    CdmProductTemplateMarginTypeEnum,
+  FaYSdGaujuranVkQXU82UtdDR1Gfq9L7YpR3JXGx7dZt: CdmRegulationUndrlygInstrm,
+  FCKyQt9cG2gZA2twmB2EjomRWASZunsNMVkfDRtdJCDd:
+    CdmObservableAssetValuationSource,
+  FCuNiKfbXacwA5Cb4PtQoxUqheV4siYC6kq5GkcmGBvM:
+    CdmProductCollateralAssetCountryOfOrigin,
+  FF9Z3uZqajrrPRisojyAFgTfoSsZRLq3qzqR19xY3meW:
+    CdmEventCommonTermsChangeInstruction,
+  Fffk6F9WofKSKmkg6i3ft1dNq2tPApbqbMZjguK1xFX8:
+    CdmProductCommonSettlementCashSettlementTerms,
+  Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF:
+    CdmBaseStaticdataAssetRatesFloatingRateIndexEnum,
+  FgPwQQd53zyxFZAVWWuQLMY8QcPYNzeupku9hKxvYNob:
+    CdmBaseMathNonNegativeQuantitySchedule,
+  FGw3uzcfaLXE48TDaEuANFJZ3XL3kJ8QvApSUhqzHsXo: CdmRegulationFinInstrmRptgTxRpt,
+  Fh47tZBtYn2vAYUQFPhW9yfe2PQ2jNgj4jqnT8kVqWGm:
+    CdmObservableAssetQuotedCurrencyPair,
+  FiGnX5GAARt1cJzgo4BT3oAxDUqkYktySnbp28d47HxS:
+    CdmEventPositionMetafieldsReferenceWithMetaPortfolioState,
+  FjySLYZUdztPrBskVvWtnCvGs6KZVkZWrLsrrLpotMYG:
+    CdmObservableEventFieldWithMetaMarketDisruptionEnum,
+  FLLBtJA3uBehX7mffS1DNAvuAgzQmL3tLBCtQL9xQRBY:
+    CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment,
+  FNvJ5Bykw9Ak2JRJJJ1nizpUFbufUY7ciCjGoMLUAQzA:
+    CdmObservableAssetCalculatedrateOffsetCalculation,
+  FpTrBfyCdqmzaN9ByjGQj2bxPZQnpJ2hHCYSkTgoJhtF:
+    CdmProductTemplateTerminationProvision,
+  FPz2gxL3hhBbrKzsyDHCfd6NPDNRZN4HckQY4e1gj5u9:
+    CdmLegaldocumentationCommonFieldWithMetaGoverningLawEnum,
+  FQsK7NhvbG8qLJfMS4tZVLVuJeB4Le9vPFtixb7kDC47:
+    CdmProductAssetFloatingrateFloatingRateSettingDetails,
+  FRNg4ydc3F8rvwrqYRg8u7vigXiWiCjXAY9CFHc61QKA:
+    CdmProductCommonSettlementSettlementBase,
+  FrXtTcZdci7tGHhDi1HXMnBCW5ZREz3QTn3enyNDgvxE:
+    CdmLegaldocumentationMasterMasterAgreementVariantIdentifierEnum,
+  FSNs7wPUozqjz5B6qRf7FwdstVC9R3vaMucjkk4PqKXW:
+    CdmObservableAssetValuationPostponement,
+  FSP23sNY1FGeadmmkSZjmqWKdkoLdCoMqZ3eBePPS9N8:
+    CdmObservableAssetFallbackReferencePrice,
+  FtoRYZujAAg27pRyk4p13wRUXC9JWtWMkcjiAZULxMWP: CdmObservableAssetIndex,
+  Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL:
+    CdmBaseDatetimeBusinessCenterEnum,
+  Fu36EUGcA7u8BqhZftYyUEUqgrd4mi4LXffiZx7DXTvo:
+    CdmProductCommonNotionalAdjustmentEnum,
+  FurdrKKKE4EKbMMyMvsWgSGLYyqPxhjTKSZcJDKD777K:
+    CdmEventCommonPositionEventIntentEnum,
+  Fw3wLbrcadtqbe88BTTnN3TZSgcXPzyHjjPvsic6NY2P:
+    CdmBaseDatetimeRoundingFrequencyEnum,
+  FWcQmx5gu2ihsKm9K2BYniLmbetQeMxPF6ZpzM3uVXXD:
+    CdmObservableEventMetafieldsReferenceWithMetaCreditEvents,
+  FWV3Br4aKDWruqfn5vhLVt6xEv37srRU5k5YncDQvGnz:
+    CdmProductAssetInflationRateSpecification,
+  FYo7TjN1ZyQhoK2ypBWjmiE2Q6gyQ13fpHnTWBZdEdi2: CdmBaseMathSchedule,
   Fz2tnWG78N5RC4kx47Wbt87FHmqDVEUaQwx1vKzH8X53:
     CdmLegaldocumentationCsaCollateralTransferAgreementElections,
-  FzKfYNd8fJo646njaxmU3TVbk5BD8txQXnt5NUm8V7sd:
-    CdmBaseDatetimeBusinessDayAdjustments,
-  FzQcp26M2wWMZ8oAGjQMCQdvRGbamTTNF788oeS8mRAo:
-    CdmEventCommonStockSplitInstruction,
-  FzucpKNGdebaXt16BhwDALjdEj7H13SwFXddZjsqxHvk:
-    CdmMarginScheduleStandardizedScheduleAssetClassEnum,
-  FZv8rcp2vixvrFz76oD9XQQi3AkBXSWz2YSBg7zgTZbx: CdmEventCommonActionEnum,
-  G3CzbfYpxoJLYRFaNem1FoCEK8YU8gE9Xy8ESCNoAr5e:
-    CdmProductTemplateMetafieldsReferenceWithMetaOptionPayout,
-  G3hrrr7rcs6ZtCze1xXjYezVbZ6rTuYfog2nrcJZ7fTN:
-    CdmProductAssetAssetDeliveryProfile,
-  G4jFdkwRjRnQEpGMrZtySGdPr3tRWJd7bh65nxK1Pp8N:
-    CdmEventWorkflowWorkflowStepApproval,
-  G6d8KNyxd48FEiAucE5KdoV7bwfdvPoygUV2xZVmPHeZ:
-    CdmProductAssetSettledEntityMatrix,
-  G7K82XJ1MNdo3T8yPiSDcb6H8yyWjbQwdH4WSJGPGWWx:
-    CdmProductCollateralFieldWithMetaCreditSupportAgreementTypeEnum,
+  Fz4NTo1FbXH16J8EfuEn4VzfYkcagg6FsmDXL49ce7H: CdmEventCommonCallTypeEnum,
+  FZijMkQPrtZQaEQjCE7pXzh3u7cK2CoCy2dG3PDmNQc6:
+    CdmObservableAssetMetafieldsReferenceWithMetaPerformanceValuationDates,
+  G14P9maXfUePjqhHWmNFfQEWPG5NJ18iL3rpGBMoLyDZ:
+    CdmProductCommonSettlementLoanParticipation,
+  G2uPrFU4uNeXsrT1Qauu3GMgFXeHpGU8yyPtUKRD4kr3:
+    CdmProductAssetEquityUnderlierProvisions,
+  g4vkocaqQK6FYK1ys61BBsp11Y2Daj3aPCffWwm5Egq: CdmBaseMathCapacityUnitEnum,
+  G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY: CdmBaseDatetimePeriod,
+  G5qfFX27BDWryZJLHxvyt5oNLEsFedJBwWzVhUDN4nQR:
+    CdmEventCommonMarginCallResponse,
+  G5reDMTj2A64oDwXZBaNeRgFEhAtZMkWvkJcte51qHiJ:
+    CdmBaseDatetimeDaycountDayCountFractionEnum,
+  G6a8EHMCBFTctoKK7wpHrSKyqmnPqZLuyEMGhXiaHYzB: CdmEventCommonContractDetails,
+  G6B4zpZqUNxW8aaqxnCjbpzHwcszJHv47qgoCSRLg9FS:
+    CdmObservableAssetValuationMethod,
+  G6NQsm1Wur914oo6eCsazG77Y4gjnkMAZw1cSEieEBTV:
+    CdmBaseStaticdataAssetCommonCash,
+  G6nxZBJqZZ3cY44FGfFfpKCDEC1JqqauJ8rcR7H1niTr: CdmBaseMathFinancialUnitEnum,
+  G6wTgdqazh3P4ppaphmfLKqmekudYnsS5TDSKnzhiCYi:
+    CdmProductCollateralSubstitutionProvisions,
+  G7k1Tk3cb59mR6bbpEGUCpLLZpWszEjL9odkebn25QBq: CdmRegulationId,
   G7QNTAF4CHNyrEV1HRJJHQXd5KMBRK1ddd4XLSJSKVWe:
     CdmLegaldocumentationMasterEquityMasterConfirmation,
-  G7RBkCYuRGtWRTgXUrQzXRkYF1PaULGgHp8KeH6spT6k:
-    CdmObservableAssetPerformanceValuationDates,
-  G9npdgFMDFvJBGT5mnkkLXcQPMFyryX9eZkBmAupDwzK:
-    CdmObservableAssetFroFloatingRateIndexCategoryEnum,
-  Ga3XHeXbo3fH52RQovQsWvQ4WdEQTmW3YJFW4w9QRjqE:
-    CdmProductTemplateMultipleExercise,
-  GaAg8q3PSay1AwNrPupAHeyXJ8umRSUtc4civJtymJVs:
-    CdmProductAssetSpreadCalculationMethodEnum,
-  GACsbchJtx8HFpVjdmgs6rPWwZiNXGuFqV5WWHWzGumH:
-    CdmBaseStaticdataAssetCommonInstrumentBase,
-  Gc9TLaZnGNEqejv5pHhE4uD3fJKegqfQCT1Wo76Ca5wx:
-    CdmBaseStaticdataAssetCommonDebtClassEnum,
-  GCcHv8RLUEgahAAWFcRgRTb784jyA3pUR884URcEurcp: CdmRegulationQty,
-  GdU62xtHbp3vNgepv4Uup6pJ6aTD2aWwLiwoktktLLBX:
-    CdmObservableAssetValuationMethodEnum,
-  GduyNWwKbvbkvqDp8epxCYREJb39YMi8nSs2ctyUMCXF:
-    CdmProductCommonSchedulePayRelativeToEnum,
-  GeHvZrkuseiXsj542Qn9FKQA1nJMimyARrdb5L7wtar2:
-    CdmLegaldocumentationCommonLegalAgreementTypeEnum,
-  GekwBuYCVfkr4sCyWTFmw8QtYrXx7zDE8G5YwHkaRVL:
-    CdmBaseStaticdataAssetCommonDigitalAsset,
-  GEqVXdfmyLaRbcY72PwcZzu8xtsZVwesLZCTFcqN59mA:
-    CdmObservableEventFeaturePayment,
-  Gg7yf6CJg1QvGhkZFmdUsZR7t1wfdN4PpLPrymefw2Yx:
-    CdmBaseDatetimeDaycountDayCountFractionEnum,
-  Gitr4e5rQ7kpdhDKFvTuGDoxwkjHoVtwLL3mfUEf5BLa:
-    CdmProductCommonSettlementCashSettlementTerms,
-  GiWBNc37iwwMQdVLNNuNgT9Sz81v1zvwUB1G98aPvqa4:
-    CdmBaseMathRoundingDirectionEnum,
-  GJjsf6Jkta38B3Y4Fyk7DJm2wJwfrHKthki9RDxBCKfq:
-    CdmObservableAssetCalculatedrateInflationCalculationStyleEnum,
-  GknZ9cDpboEQXHMijEuoMgXTb2P8Gyu81nfwr5bBAP8B:
-    CdmProductAssetFieldWithMetaIndexAnnexSourceEnum,
-  Gm1bbskyhwzzc6X2nYgZ7F5WWwWhBVgSMLYpJsp7y8PY:
-    CdmEventCommonCounterpartyPositionBusinessEvent,
-  GMkA62ZBwre9RPW2n4w7eTR8b5JAYucewf6zjRxusAjQ:
+  G7wUufVEcg9HCHxDMWdxfs1AaqKxx29vqAa8aBEKkQ8Q:
+    CdmProductTemplateExerciseProcedure,
+  G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ:
+    CdmProductTemplateAveragingCalculation,
+  GagRkiFg7C2PG1ce2M6QYaKL99fY3TTLH3DBbZp4Fduc:
+    CdmBaseDatetimeAdjustedRelativeDateOffset,
+  GAPYEKW715oyitUYJp6oG8TJQrZ3oHrfHbahRSWKXVAm:
+    CdmEventCommonStockSplitInstruction,
+  GaQ1ieWhk2E2fW4etzuQbWGUxDQvA7SeT6XT4nunJLWi:
+    CdmEventCommonAffirmationStatusEnum,
+  GArm2fDK1vopaSHjgRguRRS1k6GiHBGUifjuhdbJEfg:
+    CdmProductCommonSettlementCashflowType,
+  Gb5ryH6JKgjNLySafKo7tXkb9PRgaQkWHcSibFZ96AbP:
+    CdmBaseStaticdataAssetCommonCurrencyCodeEnum,
+  GbAmo8bxznHkBwFWFP6JMXCQEsWMyu9iKFV2KtBqH1rP:
+    CdmProductTemplateCalculationSchedule,
+  GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ: CdmBaseDatetimeOffset,
+  Gd3N5B2Q5Fb7AXEaXfe3iXtXmHuAUXDYpfeqAF9fULPd:
     CdmProductAssetFloatingAmountProvisions,
-  GnY3garuhYiHPrATUwY5JKQmZJPACHzjobkgXbmNJCik:
-    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty,
-  Gos89VTGy6DvLCuG5yT2kFBYMxBpaCGwUTNsNWRo54yH:
-    CdmBaseStaticdataAssetCommonCommodityProductDefinition,
-  GPJrucxvdtQQxaNZByVgHcHLEAux1TNC7KL1JdEdBgLF:
-    CdmBaseStaticdataPartyNaturalPerson,
-  GpLEdBS7Wo3gH26kSqsDLo7RudnuHCXQQear34hMXeV7:
-    CdmBaseStaticdataAssetCommonCommodityInformationPublisherEnum,
-  GpoU5yGYF1qd5qSfQLpFsNBGnJXEaP3fZZTzmmiqWEte:
-    CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum,
-  GsGAdnX5acwQtmYsn3WQTMmsvfnjFYsndL1pHPqocW1s:
-    CdmBaseStaticdataAssetCommonIssuerTypeEnum,
-  GSr9GFBnxJ593ATrkLyLwdp2hjwqr3CpAxjR7PVvjrSX: CdmRegulationIndx,
-  GU4SDGPhFNx3W3BPgnnyiavM6ynheQGXz7dupfTVjWyj:
-    CdmEventCommonMarginCallResponseAction,
-  GuCCvmuEa9YVo21GL55jX27P3w1AYG7GA6XRTzThccjb:
-    CdmBaseDatetimeRollConventionEnum,
-  GUt1SUo6dMPSuntNueHZRjt3nrrab2xJB86nBLGRQrEY: CdmObservableAssetFxRate,
-  GVEAhEaPG7w5cDrNpAj5J7xLgZSdAVqV1YBZqXyyrj7m:
-    CdmObservableAssetCashCollateralValuationMethod,
-  GVjv34nbkQTtiTyxF1YaWKj1CzAkkX7yeirLncT6H8h8:
-    CdmObservableEventRestructuringEnum,
-  GWSnFb8ZSatiW9mUTcxJWEZCkQ5KmTdEqcJ45uRZ1P81: CdmProductTemplateDividendTerms,
-  GwW6uGFK3Akqa3zGHwGsdS5Ejo1HHYia3YVdNX9wxpAU:
-    CdmProductCollateralCollateralInterestCalculationParameters,
-  Gx6tnCEperfB7Xg7wHbZx5dSuf9AEGb5zk5PdoPPbSKQ:
+  GDsReUUBoQqUk4nzm4MUFgBzwihcp99Xt2hYSukxTdPp:
+    CdmProductCommonScheduleStubPeriod,
+  GdxjH3XMfuhBXiciCVsrgQC7QGBiz2DTWMg4SUHSMJTi: CdmBaseMathMeasure,
+  Ge5XthGPax9Pcox4Sg4TN3G8GY41YZjZQjFbGESHPqiV:
+    CdmLegaldocumentationMasterMasterConfirmationAnnexTypeEnum,
+  GEHuJ1Fk1jSrDMfbynCACW1dsPVuMhSkjFbkitJU37Qp: CdmEventCommonInstruction,
+  GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9:
+    CdmProductCommonScheduleAveragingPeriod,
+  GEZ4BVRUpw6ZgUyioiUUFgX7KRu1BLBoubvwFuS6XdFd:
     CdmObservableAssetPartyDeterminationEnum,
-  GxBLq28MxAyJ2dmLBBURqHrK8qZuSmpxRR19gZsCJG7Y:
-    CdmObservableAssetQuotationRateTypeEnum,
-  GXq1sStyP4yc76EdyvPejrtY3e5bHp7P1zWkSawDZneM:
-    CdmLegaldocumentationCommonMatrixTypeEnum,
-  GxtMQNerdSTaQX4ik747BJde7hdaCUGQs5gCyGs4THE:
-    CdmObservableAssetFieldWithMetaCreditNotation,
-  gyjCjxW6qhXCC455CPDLkx4ccUz75HgdRL21KfMsdMs:
-    CdmBaseStaticdataPartyAncillaryParty,
-  H1brAJ4DsQvt9MbnoyYuq5L7Z5nJJ5rxyrfmYTDXT7VJ:
-    CdmBaseDatetimeCommodityBusinessCalendarEnum,
-  H1cpAvAZcBXBrWSby7gNSkMZhqb2aZQZu6eTk7fAzab9:
-    CdmLegaldocumentationCommonLengthUnitEnum,
-  H2xVoXBmfUbQs6cNWFyDcyfWSDbZB2kUQU4av2ty95u8:
-    CdmObservableAssetCashPriceTypeEnum,
-  H32BQcu8EWs2WztGEuCPiGD6VGEtRwNB7CPsoE8MX25p:
-    CdmProductCollateralDomesticCurrencyIssued,
-  H4qZFJo3XTXtRYCdhTukmA5mA72cU1icWF7LyydKrfPT:
-    CdmBaseStaticdataAssetCommonCollateralTaxonomy,
-  H4SNQ2RMiX7HVAo7y3Mqdb6vmQUYJX2dEMYpjGXUAWcX:
-    CdmEventCommonBillingRecordInstruction,
-  H4YFmRdPDQurJuk9z7qEXdhRpcSgEWjT8SA5CmHuzJvC: CdmProductTemplateReturnTerms,
-  H5B7PvZ4UumP4QHzn5bVRpT2DxM3Cu8De5f9wQwrZZ13: CdmProductTemplateAsian,
-  H5njvRER8CjtGtwUC4FooQuqnXpt8hpw2oZAAAuCW8Dn:
-    CdmBaseStaticdataAssetCommonCommodity,
-  H7iPS6CrsvGu1PXNutZkgqEEQDC4jBXCMGkL1Ku6TxLf:
-    CdmProductCommonSettlementScheduledTransferEnum,
-  H7rMTsaH3T57Fy2L1PGAZycjKRZJrPhoiVWH8wKQZXZB:
-    CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum,
-  H8eopTmsWExtp1LBnrmRgLseBswCZb7FcMX44dWKFNQd:
-    CdmEventPositionPositionStatusEnum,
-  H9K4V7vLZdWh8Vfqst6t9NiRAX6Ho6M8oZqFtojWhczK:
-    CdmProductTemplateAssetPayoutTradeTypeEnum,
-  Hb4wmAVuJwiD8UV5Stp7MdchNt2tK1QCEE5tBFxE5F9A: CdmObservableAssetObservable,
-  HbEa5JnvDWdeSRPvvAFuriDHdfE4gteVmh5RoPeY8QN8: CdmEventPositionPosition,
-  HCjRKFns6xhAbeXFMGXkGdJv7QjQ42YLS3H2KTtjprU3:
-    CdmBaseStaticdataAssetCommonFundProductTypeEnum,
-  HdczVmReriwEJcH4QKu8zRPfiatW6tmAm71DbNp161hr: CdmRegulationSchmeNm,
-  HDWPv3g9U1KUdNNbF554aWveShvcV6UnPnH8HQGqtppM:
-    CdmProductAssetReferenceInformation,
-  HeB8cgyKQTeXcVdVnsFpiWBGgXUAfpUPUwPFBPY7JU6H:
-    CdmProductAssetAdditionalFixedPayments,
-  HEn2fsPSsyYtggnb2vhQ7afyPMTHJnpQRj7VE6DCDUNk: CdmEventCommonExecutionTypeEnum,
-  HeV5hUrnbKo6ccs1jqoxC5k85Qng7uvpVxMGApHXK7nN: CdmBaseMathNumberRange,
-  HF3CKQiKCRyZGK1Um3jMYPpiothNepYg5tDmY7KzPphK: CdmBaseDatetimeDayOfWeekEnum,
-  HF3m5gt9EEbudTKjeLeqgptEHRPniWju6A4n1YYAUejj:
-    CdmBaseDatetimeCustomisableOffset,
-  HHomVWgkz7HLWPaQxw8dHHS3rvajLUUT7cGBX398BLaw:
-    CdmProductTemplateExerciseFeeSchedule,
-  HiGUe6GomANJoTCv9K4kKoGwPWphKP2zCh4VE9B1syGk:
-    CdmProductAssetCompoundingMethodEnum,
-  HjxX213km4XYV1mYvnDzqdcve8BuM63aN1sJ8oe1TbYc:
-    CdmProductAssetAssetDeliveryPeriods,
-  Hk5B9aTGsoWURT33pKwD1Dx8TudcUZHgrK1oKGmLKRnJ: CdmBaseStaticdataPartyAddress,
-  HKeLnZoECFzBPxtPse5jEjzWuTQvvvURtKimZSBSdAzL:
-    CdmProductCollateralIssuerAgencyRating,
-  HKJnSoksJBRW2rZ8dJKqPrqMNKwbSMWak8yFAgbBniu6:
-    CdmProductAssetDividendAmountTypeEnum,
-  HkkhGdGGb9rAcTm7MfWZzCLyJzxjQZGcff5L2LmUwr9S:
-    CdmLegaldocumentationCommonOtherAgreement,
-  HKQMWBrXhV2XfYjyXebnyRrgnmenTn2sd5jzfe9BKyr7: CdmEventCommonReturnInstruction,
-  HNqe2eLHMNHdTJAqM3zJLo9SBP9LgZu1vfSbhQ9KX51v:
-    CdmProductCommonScheduleCalculationPeriodDates,
-  HnwRAqr1R2aXWUnkBsKcZ8yNRHPCmQTAVm6griWqkRce:
-    CdmObservableAssetFxSpotRateSource,
-  HQT4a6mn7V2UkpeZMUtsntaJUxLAPKdHrjNwJP4dzxQX:
-    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount,
-  HqUegcGfdAEK5srxpQGsXa5P43vCM9hADmhrJX7ii9fi: CdmBaseMathMoneyBound,
-  Hqwa8X7pvMZZRLdwwa5Cj15xwqMknn63xJyvR4RdpXvF:
-    CdmProductTemplatePassThroughItem,
-  HqY3kSqV1NfLvT5YLvitQ5Nq1sktFe6oA5AqyQC1j9jT:
-    CdmProductAssetCorrelationReturnTerms,
-  HRvhJg5k7JKhCKUjPBe3dA2sJs8mUa8XXAKisLbesC3m:
-    CdmProductTemplateEvergreenProvision,
-  HRwaQ2c9fB55QNhRMMhu2q79V8gaMJaqAM2sofveHeP2:
-    CdmEventCommonClearingInstruction,
-  HsMcUzdZLtswDJ9XExanUTbjYaQ6n5UmH2JZ7RQkHNzR:
-    CdmBaseDatetimeRoundingFrequencyEnum,
-  HSzaYj4NHo8yQEzxs9i6136jxrgSGM3ETvCGRjWRNBbe:
-    CdmProductCommonSettlementCashflow,
-  Hu2GxR5c7eMm5dFy9t6mhrBCQP9G6EdyEPDUz7TUV7Co:
-    CdmProductCollateralCollateralInterestNotification,
-  HvQDymCJPSYfbPyJRe3bcnP2z9wwXwLNLr39Fe2JNjXK: CdmProductTemplateExerciseFee,
-  HWaoVtND9cNy4h58tMGuWiynD42VByHqrEfXft6ogrRr:
-    CdmBaseStaticdataPartyFieldWithMetaAccountTypeEnum,
-  HWbAdp28QNY1ehyUyubaSbcB8FhMbDv3qp7poZxNn9mM: CdmObservableEventCreditEvents,
-  HwuWMb3tTYLKx27eGnZD5LB4TVdV6iz8fUGmWx1zqM21:
-    CdmProductCollateralAlternativeToInterestAmountEnum,
-  HwwB2B9ieWdwirXKrPSjxx9FeZbNK5uqN78Fquk7XRK2: CdmEventPositionInventory,
-  HXa76EzxhXAHLP3yM8iCLC171STC5PBQPhnX4ghaUW4g: CdmProductTemplateAssetLeg,
-  HXFJiXPaDjND3jSjnioKon2K8cUjyf3aWi2kEsfB8FU4: CdmProductAssetDividendCurrency,
-  HXr8kdL38en5pwXowLj5Q3Zm1ZazRrhbNVRosgr5VrV9:
-    CdmObservableAssetPriceSourceDisruption,
-  HY6fzoqXYcLxugpqJYdA99VPgHSFJ1NTXKfDtKLSj8fk:
-    CdmBaseStaticdataAssetCreditNotDomesticCurrency,
-  HyGbxWb5gZabiVhZkNgTGw4LRVjYgdzF3HEJdyeTtuvM:
-    CdmLegaldocumentationCommonAgreementTerms,
-  HzcHUHF1xsByJ4YwDfte8JR64TXZwA6AMYVTEAyQwbRE: CdmRegulationSellr,
-  HzHMSqRjpyrAtbCm2oQg1DY1Bkk5tpeoCGTii8EGuUa9: CdmProductAssetLoadTypeEnum,
-  Hzvh7SeAByhG3miYtQ9HRosLr6vfMQWfTTrrFpxLAd9s:
-    CdmProductCommonSettlementDeliverableObligations,
-  HzWZdNo2fx1o4EhUXn1aUnQgTLJm9PASFfSrNzJzLiT8: CdmBaseDatetimeDateRange,
-  J1Lgg2ajU8Qy4mgpL5ELeryh9L63Mk2B9paZPCz5bsp8:
-    CdmBaseStaticdataAssetCommonInstrument,
-  J3fYik4rPisN3CPxe58U3DcMcwjzE6rQTNE9q3kXLCPn: CdmRegulationOthr,
-  J4ZdDBZPY9VTNearpD8S9gntq7sM6egJXSCgbUSuBopC:
-    CdmProductTemplateOptionTypeEnum,
-  J8qh3m8ZL5ifRQhM8Vjoki2nGhcdXhkzvzX7MkCeP5pj: CdmBaseMathRoundingModeEnum,
-  J8SrPWrtbe4J2GJXdDo51yKLW7GpaZmwrtGnvLKFRArQ: CdmEventCommonTradeState,
-  J8ZU2YWmzTrtbSkNs5DysuLN5tLJDjMJg7Ca32VEAQqW:
-    CdmProductCommonSettlementPaymentDiscounting,
-  JARXei1DForaTSYxUytManRt7d74D93e3QDyu2rYa62M:
-    CdmLegaldocumentationCommonMatrixTermEnum,
-  JCCsntcYSJvUuuRsTPmhRoozDmZLnnfrSSnkfe8pBCnq:
-    CdmBaseStaticdataPartyReferenceBanks,
-  JCJ9MNesX9TGLQYptUpXZV8MhajfmB9tBsCwmJAg1q3K:
-    CdmBaseStaticdataAssetCommonTaxonomySourceEnum,
-  JCn7SJcxSE4UKZYvi2YchB4nwjTsdYKvhCc7RnYogigz: CdmBaseDatetimeFrequency,
-  jdGLLmYcPH1SJmGWnGeTDz2mBFp1xR8wP48NG8gskcH: CdmBaseDatetimePeriodBound,
-  JDGRPFj4wNXyhxtXXFrhaCacWSCaiZeP3YHSLDZxPpj1: CdmProductTemplateOptionFeature,
-  JDNuetaPzRJ1YcnfGUCcHqTorc5byg7A9rwtFg9X6MZg:
-    CdmObservableAssetDividendApplicability,
-  Jo6daPzLZmva9P2h4WZUsuU1uvgGPFixiCYarEPe9ts:
-    CdmProductAssetEquityUnderlierProvisions,
-  JZupLwwpyJMf2c6XtxhFCk4JMDgSqUU2yV2sQNgX7xu:
-    CdmLegaldocumentationMasterUnderlierSubstitutionProvision,
-  K1T3rxTw4qgMTWWXRK65HvnRu9dEGYUj1dnWgD8wJyS:
+  GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR:
+    CdmEventCommonCorporateActionTypeEnum,
+  GFVh22HvpZREhKsn8HDuBiUrwRScVzwx6ZnNNmZrisx9:
     CdmBaseStaticdataAssetCommonProductIdentifier,
-  KDqBQDTNYga8X7NLQ7JAEt4WfKWsizZQbLLCPtaLiAL:
-    CdmProductAssetDividendPayoutRatio,
-  kLfZhAvkAh8wK55kKLDNzrrUYScHA3iDAvQxXMzfg29: CdmRegulationFinInstrm,
-  MYhc6gGsaViuAUK2NFHroGDTxJMNRTGbXn7tJw4k8Rf:
-    CdmObservableEventCreditEventNotice,
-  N9dqrkkDsXewQqjzkzMPPFBSGpAGbdj5Nya3g9ZDPtp:
-    CdmProductCommonSettlementPaymentRule,
-  otvEhr2nsePtQK4XNps2jE29Fd9hQtnEiPi9j3sssCi:
-    CdmProductCollateralCollateralProvisions,
-  rB8EXnktzaQ1oDqNjTTbY6Wub1oWxsU4bXUUGA32yMY:
-    CdmBaseDatetimeFieldWithMetaTimeZone,
-  RkQ9hssWBiUyn4LiaktzsRVjx76PDv5qNq4T8YionjL: CdmEventCommonCollateralPosition,
-  S4kLcw9up81q3TNVMZRCthznJz71LuEpiPLPWh1MJ87:
-    CdmProductCollateralCollateralMarginTypeEnum,
-  sfaJ5JP9gKaCYXxiJ6wnxfEBWk7QSjUi1UW4TauKx4R: CdmProductAssetInterestShortFall,
-  T68z84ntdBb19juBApDyMAndAVUzzmotTGUTuJnHV3D:
-    CdmBaseDatetimeBusinessCenterEnum,
-  u2MbP3uz3Mn5cpDkvucuBvQGAkXiEd8swnBN5DdAkMg: CdmEventCommonBillingRecord,
-  uri72eSXHNadMdx367eVwLSSA5rqrou8jwm3NGJ1u3K:
-    CdmBaseStaticdataIdentifierCommodityLocationIdentifierTypeEnum,
-  uUenBfK6DiEGeZWysD2Hj8epQYj7yTPH1iKfF2bAtT7:
-    CdmObservableEventMarketDisruptionEnum,
-  V3Wp7L7rEDxbgbj92BVzYAqyLjSQQWBdwRqiyHtAuu9:
+  GgYvaTiQsh1xn3XTCrAaxQ7jizAVYyU7EnLPR5eZdVUp:
+    CdmBaseStaticdataAssetCreditSpecifiedCurrency,
+  GHKfcNGEW4jfWBhqCesd1ZbQ2ZJvDnS1YMm2UZ2ZZNZG: CdmEventCommonTrade,
+  GjM8odwxuvdr9Y58M4jULKzxi93AmZuKSFfkTFsJ7cYx:
+    CdmProductTemplateOptionalEarlyTerminationAdjustedDates,
+  GKgPYhw21hXmUrUfE9bywu62WWdBcnVYxyDjjx8DND8f:
+    CdmProductCommonScheduleResetFrequency,
+  GKXmRwDfJrtMQq78SdC8CuCaCqc3Fq99jNHShLFH3CFi:
+    CdmBaseStaticdataAssetCommonQuasiGovernmentIssuerType,
+  GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi: CdmBaseDatetimeAdjustableDate,
+  GL9FygufGouoWPdbzaZ4SKyuRahWMAUxZ5q3bFMSWnRj:
+    CdmBaseStaticdataAssetCommonCollateralIssuerType,
+  GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm: CdmObservableAssetPrice,
+  GMD6WsoUkvr8UPZVAk2ciZmosp1rstjA8D6jSBTFkJzm:
+    CdmLegaldocumentationMasterMasterAgreementSchedule,
+  GMpNRbtpXncDuLhyddMFw2W43rpm8H6AVYkoczBix3tG:
+    CdmBaseStaticdataAssetCreditNotDomesticCurrency,
+  GNrP38tyPnaCEFuGcFscbFEJhuVkgbjD2h7HMSS7WKq2: CdmBaseDatetimePeriodTimeEnum,
+  Gnv2JatHomC6ZL7YnSSsr5b8Qx1hWWGYFQocqArJgJCj: CdmBaseDatetimePeriodRange,
+  GPbJZLwy1LyEN9r8a3LkR1UD8WgNNEjAhcG6gxpRbWzK:
+    CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum,
+  GqKSKHCa6D8xbrMJnRibPtb1dXGasKD1awv2Ubini8GT:
+    CdmProductCommonSettlementPercentageRule,
+  GqYrmY5dMSWXRFKtVLctnrBGJy893E8Gbj3pe5kFN7w:
+    CdmProductTemplateCancellationEvent,
+  GsdSDZrs9XevoM9WdLLncZ1DTMsjbcSjcPyPt8z2XBWj:
+    CdmProductCommonSettlementFxFixingDate,
+  GSqFLxJkjPptdZcwACBFg4PMYhDwpuNcRBdKtNHgs4Wn:
+    CdmProductCollateralDomesticCurrencyIssued,
+  GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC: CdmObservableEventTriggerEvent,
+  GtGzeeGr59oZMBK4qT628HxyPEj3ux2JxtFjbU8GTbuN:
+    CdmProductAssetInterestShortfallCapEnum,
+  Gu97NnLopxnvJeTi1J3ygTVWYehmh6xiwRabP93c6Y8r:
+    CdmBaseStaticdataAssetCommonISOCurrencyCodeEnum,
+  GV6VzVBrD9mNeCdw21SuF8iXDvMQGY5KsZFTLB9dh5aZ:
+    CdmEventCommonValuationSourceEnum,
+  GVFbbaLLLxVnRS8pEFt4Pwr3VMsXjMm2nM6PdGfDenD3:
+    CdmProductCommonScheduleAveragingObservationList,
+  GVLFiYcKvhpQsRySPjAnN9GhoocdasLdpFcxrHBBs3SB:
+    CdmObservableAssetFxSettlementRateSource,
+  GvNXAYyGbJwhZ1D7jxhPLtLsKVTeAZor6SgFatG9UvMa:
+    CdmBaseDatetimeCompoundingTypeEnum,
+  GvXkW9qPM5UsXhKy6zRjhXxHpmcYaTCpkA3q2xmQuGxZ:
+    CdmEventCommonSecurityLendingInvoice,
+  GxggG4PmBLZC3tQQEfAUNmomUmcbfT2ZjjQZzWL55dng:
+    CdmProductAssetVolatilityCapFloor,
+  GXtabg3erarMspr34yVya2Ybpw1LUGLXNHdWCkovVNAA: CdmObservableAssetOtherIndex,
+  GZHhbuAMJUxPqZ627VF6tcc7Jky7YaBT1ctEWpw3De4m: CdmEventWorkflowWorkflowState,
+  GzR7cbwzNiQXhjYVBoCoZjjS5gQuW2pqty2pX2zHCkJ7:
+    CdmEventCommonBillingSummaryInstruction,
+  H4Q9vZBMs955sVKjew3tU5xKipMXrqJNyTf7MDqQvRjH:
+    CdmLegaldocumentationCommonClosedStateEnum,
+  H4qXNCgRHrt2vNW5Ck9VynMAfvyCFYzUwMSSZWpuPRyL: CdmRegulationDerivInstrmAttrbts,
+  H52wAsRZktjp4tpCZgu6wnQMFaksvVT2T9gxSHdZjSbg: CdmProductCommonScheduleLag,
+  H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti: CdmBaseDatetimeBusinessCenters,
+  H5D8BrpdPx4G3A74ypfsUrC27hh6pjWVeJD3s6bkSu7e: CdmBaseDatetimeDateTimeList,
+  H6gWEiw9pVTmNQVvvZzt7KcBJ1Ub6wMyaVh3zbM7qCkM:
+    CdmBaseStaticdataPartyPartyRoleEnum,
+  H7BQ5tsetxzrnYgPhyG3s5vGJptCu5BD9tAGJm6R6UUp:
+    CdmEventCommonAssetTransferTypeEnum,
+  H7eZouArq1oyXs52mV5ZcafixuEA7B8eTRVyaQZ6FDox: CdmProductTemplateStrike,
+  H8A5EpXYgdKnD1FhyTni2vHEnBp15QF3Y1Hk9y72CfzJ:
+    CdmObservableAssetCreditRatingDebt,
+  Ha6Tqhjz1UHFLv8HHkvJRZfyUyGhWefXqcUSiETMrniq: ComRosettaModelLibMetaReference,
+  HA8fmtXcNJxs3hXa88H9PHchDg6hgAFvto4VVdW1aZmf:
+    CdmBaseStaticdataPartyBuyerSeller,
+  HaEz2HuxrPwUkAPyfLmet7k7WuJfH6KjErdWuSXuJE71:
+    CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationTypeEnum,
+  HAi9mCEW8j9oop8P3eGhgP2n9tVbXqrtCWnF77msRpK4:
+    CdmObservableAssetCalculatedrateInflationCalculationStyleEnum,
+  HaWzE4gbbhGKXJnQA29vkDyfHSkhDsje8H82PYwV2Phr:
+    CdmObservableAssetCreditRatingCreditWatchEnum,
+  HBLtWnWoBNq2J8Z6DEVz3GUac4po9oBJgoYmPZSkT27k: CdmRegulationSngl,
+  HCfJUUx9k8N8QqUgtRQZDaSkcsnmcWrN6CsVeT5ViMfM: CdmBaseStaticdataPartyAccount,
+  HcvuPprC3CbAxkBiEwkiWsJzW5pVqZ7occ8cncqAtQR: CdmEventCommonState,
+  HCvuuD7chfLnfNLrGsb6jCRU56ynTit3RvVgZcRpjqCP:
+    CdmEventCommonPerformanceTransferTypeEnum,
+  hDUXATg8yvnWEPHNH63w5HzgAKwLoFeQGGn6JTqWHsw: CdmEventCommonBillingSummary,
+  HFnvdnbcm5FbHRjXNW9KZ6x5LzJhCDhTuXtU3tDamXrQ:
+    CdmLegaldocumentationCommonClosedState,
+  HGBC71V1WUat7dy4BrSGTr2RgCAN75RmLY4EUC3WmHtm:
+    CdmLegaldocumentationCommonLegalAgreementPublisherEnum,
+  'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#0':
+    CdmProductCollateralAnyCriteria,
+  'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#1':
+    CdmProductCollateralCollateralCriteria,
+  'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#2':
+    CdmProductCollateralAllCriteria,
+  'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#3':
+    CdmProductCollateralNegativeCriteria,
+  HGZMKY1yoBjBujWhaTqwBYYsw3GkD4w8Wc9G6D6nrDaa:
+    CdmProductTemplateFixedPricePayout,
+  HjEmRrvzUJGJ8GfKAGdbcnZbK68UnqsEfHnP7fQL2aXu:
+    CdmProductCommonScheduleCalculationPeriodBase,
+  Hkq47ArK1FdesDuspFiSZKL2AMTNWMyH2tNfymLamXvR: CdmProductTemplateQuanto,
+  HKVLiaT4w9torwoHkj96Mx7aKTg2Hav87Wintsd8TvXU:
+    CdmProductCollateralDeliveryAmount,
+  HL2ZcMwczuHgPoUL75nm9XG9rZy6XeFMmzGuuWfqxkya:
+    CdmEventWorkflowPartyCustomisedWorkflow,
+  HLEkFY88ouS3waVvxxHJE5z23k1PYJGizdrHbYYg1rGp:
+    CdmBaseStaticdataAssetCommonRegionalGovernmentIssuerType,
+  HmAtnSZuDe4ifp5cQh4JwWZmz7AEJjddmWkQ7QEmTjEv:
+    CdmEventCommonCounterpartyPositionBusinessEvent,
+  HN2xCyqgWdVYt6ta4R5o6we7NmT9i49Jn2V5R4V9BoCD:
+    CdmProductCollateralRatingPriorityResolutionEnum,
+  HN4sqTAXi2pGFVHbV6MLLdW3RgQ9Qq4thhJ9rWVsexks:
+    CdmProductAssetDividendCompositionEnum,
+  'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0':
+    CdmLegaldocumentationMasterClause,
+  HNcaEBRQkyoWFVGH1rA32NFXn4vu5wVaftRYmaKr4FMa:
+    CdmProductCollateralCollateralTypeEnum,
+  HNjhMn7WT4JjM4LH3CAB6FzPpLMvur9mQW6knri1HnTg:
+    CdmBaseDatetimeBusinessDateRange,
+  HnmNxnPfmCYsrrcW4ZHfLPh81wfJNCf4xE2hqXeuzSgu:
+    CdmLegaldocumentationCommonFieldWithMetaContractualSupplementTypeEnum,
+  HpBh6DxVn5k45kpY9oDbqGhBWE3eEphzgwottdc68x3B:
+    CdmProductCollateralReturnAmount,
+  HPRsaReKQuhsZQyFweRGJshuiWo9hd1r6CsmkM6iPQnN: CdmProductTemplateFxFeature,
+  Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm: CdmBaseStaticdataPartyPartyRole,
+  HsG4xRp4HQZoXBBj6gQLY1cHS5gQpBY9GJeaUjGbd97Z: CdmEventCommonValuationTypeEnum,
+  HsL4LyTBaWKTLfoBBFsckiquH2hkGP3QRC7x8z6S4s2L:
+    CdmObservableEventObservationIdentifier,
+  HsnQM55utMJ2MK1JFiAmmg7CVx7NSKY33Ecru99LtN2H:
     CdmObservableAssetPremiumTypeEnum,
-  VgMJmdXEfv5xJBtRFPU6x3vPg1JeSyN8rztyutdDdLY:
+  HT169Rk7tLNc9M1FuEaAZZtqo54zHh2xfJ2Sp9vugGV3:
+    CdmProductTemplateRepoDurationEnum,
+  HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg:
+    ComRosettaModelFieldWithMetaString,
+  HTuXbgSEpM5XerhmFWMb4d5MBP6ixLzjeJKEuNq6pZ2n: CdmObservableEventFailureToPay,
+  HtZnJJw9C1Sg3ZZnEs8UKM65tyQLQcsMEQcVGZJx34Hi:
+    CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccount,
+  Hu5VnYpz7ZCRzsMjDtVxSVoN2RK42N3T3a1rvcvnMAyV:
+    CdmProductAssetCreditSeniorityEnum,
+  HU9UvBYP6JQj6JsSUxAzJ1j8s9qEtMMq6JEmcjiChryk:
+    CdmBaseStaticdataPartyPersonIdentifier,
+  Huf4W2NzpakJVTTdkhKJriEVabT1NBezmnyTJB9Wt2Vs: CdmEventCommonTransfer,
+  HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU:
+    CdmBaseStaticdataIdentifierAssignedIdentifier,
+  HUVjH3KGpFwoVaPyrgN35iMi95ckgPM1rjoMfUvcfmNe:
+    CdmProductTemplateExercisePeriod,
+  HvCMubnrJNvp3fupXZTsjTSXTE6Hx1m47cYMbRkQVWRQ:
+    CdmProductTemplateCallingPartyEnum,
+  HvRvtYT6FnHr42G7nsiDHeXpPGgvFLtoazqsLEYL5gNa: CdmRegulationFinInstrm,
+  HvTJUwtwoF7FUYtZGRhW3CHYRsrhurJcEfFY6YuH4Kaq:
+    CdmProductCommonScheduleStubPeriodTypeEnum,
+  HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU:
+    CdmProductCollateralAgencyRatingCriteria,
+  HwqBkWFGaGHyDnDyqqp3Exgm9NRyzpNMvF1N6UtAJeGi:
+    CdmBaseStaticdataPartyEntityTypeEnum,
+  HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd: CdmEventCommonTradeState,
+  HxYQ9z6xDVRw63wB5M3kiknebJ9fvTEFsXwtbJPtXRRD:
+    CdmProductTemplateAveragingStrikeFeature,
+  HyKWLzqSMdXydTHsC9zJwdiVi6KcdZVngY9WJ5PV3xMR:
+    CdmObservableAssetMultipleValuationDates,
+  HyV2GLWDgCxkJJ2KRpuvtTdGurQejk4MXEKSi2vu8aKN:
+    CdmBaseStaticdataAssetCommonPriceSource,
+  HZmoSFgPTJDpgvQbhrw415z735PsqkkNK7AhockdXE35:
+    CdmEventWorkflowCustomisedWorkflow,
+  HzNNten2ctS1XjUDRet8Qr7Nq3sh6vfsJBS3d1gH1JVH:
+    CdmProductAssetCompoundingMethodEnum,
+  iFRGjqPC6ijQF491otn9biLkPW4na25mmZ7gGtFn2Fj: CdmProductTemplateOptionFeature,
+  ih2SVSx6Uk2K2w79prjoTJxTTBVLXjU1jfZWiKtWVz4: CdmRegulationOrdrTrnsmssn,
+  J1E3aP2gHFG6xXmDZbkh3v4aXuN62czNKzQgw9T41sdB:
+    CdmProductCommonScheduleFxLinkedNotionalAmount,
+  J1G2hQLDGZ1gu2re4Z6NCNRA3Ze9S9LM51pbnxyzozLq: CdmProductTemplateExerciseTerms,
+  J3qzEabcpDNDy884Jd998xkJpMR5zFZJuiaxAq95ZLLx:
+    CdmEventCommonCalculateTransferInstruction,
+  J4wqPRqUgot11KtycNoGqM9u43KZrNSvWHAbzBSR4WNS:
+    CdmProductCommonScheduleAmountSchedule,
+  J4xjdbvJ317WkqdXSfzxaATEcgGQkHQ7btViXDULfhK5: CdmProductTemplateDividendTerms,
+  J69Sz4Uv6ctiB4mjnSwqhxeCfdaxH8nDcKbss99wExLC:
+    CdmProductAssetFloatingrateFloatingRateProcessingDetails,
+  J7cGS2ULhJNntQQ71zGFdzAiBmqwNpHRp6huPsfDKKtt: CdmRegulationDocument,
+  J8EZbmYAMd5iEdiJDjh3B8Pk6R4eAXrQdryNuThytk1B:
+    CdmProductAssetDividendReturnTerms,
+  JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv: CdmProductAssetPriceReturnTerms,
+  JBENwei996PNTBkNZUR1ojomCwz48ULaZEJoeaXxukmT: CdmBaseDatetimePeriodicDates,
+  JBQsnuxVFxN3iNMcYdNDDrSvjPZ2uBGXmVMdq9rLwNYn:
     CdmLegaldocumentationMasterTransactionAdditionalTerms,
-  VHha4CybnXvTZ9WjbHZHgkHWN8Rdh964hfPSj1Tb5yi:
-    CdmProductAssetBoundedCorrelation,
-  wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543: CdmObservableAssetPrice,
-  'wvWoY9SJeRuG4p44dmwhpRcK5q7gCLULWqjwhDHDWbM#0':
-    CdmLegaldocumentationCommonLegalAgreement,
-  X7icfoV6dj3szD5tQnt8vHJD7WqBQ86TXpN5cDpvPu7:
-    CdmProductTemplateExtendibleProvision,
-  ZLG4da8C48xHnYaRKjAQoKys4k2Y2XufFG4HGCeTAwU: CdmProductTemplateTradeLot,
-  ZRQoGVDtnXG3DMztqxmZoXT8DTZM1bAdtyW3JLZzS25:
-    CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum,
+  JBVrcovreAULjudjM8h3ZNKFRpz44Df8UvgAKWXwK6sa:
+    CdmProductAssetFloatingrateFloatingAmountCalculationDetails,
+  JC1AzddnU2E4ioTzwsgW9ohgnrfpQQusp6hRq412YjUZ:
+    CdmProductTemplateExerciseNotice,
+  JCEmAFppnRAGm6rWtFQLD8vdHx8yV6aob51V3iP4UKFa:
+    CdmBaseStaticdataAssetCommonAssetBase,
+  JCXuAtNHkVPfjzG8gXbgiwoAYAmMiB2EfaSy8qU3iqtz:
+    CdmBaseStaticdataPartyPartyIdentifierTypeEnum,
+  JD6nBEcv7VVBDthKMnQ7bjvFeFys3igpBt4jJgWKqU6q:
+    CdmBaseStaticdataAssetCommonEUEMIREligibleCollateralEnum,
+  JDFk4bjDaXiaZiEkLkoPoa66bJWLrnTJB59D2KofE1yE:
+    CdmProductCommonScheduleObservationDate,
+  JMdjF7BkL7hgbzHsPDqk4D7tgaZ98wirqwFPWCQBuvs:
+    CdmObservableAssetFieldWithMetaInformationProviderEnum,
+  rgdUZuvv5BLqYZSUay5yfjqPvRRqkZ9bhihtJLpcBKN: CdmProductAssetReferencePool,
+  ScqKZW3m5Vk4Ht3xpASxxv9euZM32FQPYjE6PbCZEHc:
+    CdmEventCommonCollateralStatusEnum,
+  siew7R9pM49xxdDdrA2tnaBp8jSYtkNG6esorJcxELg:
+    CdmProductCommonSettlementDeliverableObligations,
+  sKqpZrkqt2VYmFSkbB7RRDetUKe7PJhYfsksQL6utY4:
+    CdmProductCollateralCollateralInterestHandlingEnum,
+  sVFMtj5ZT137eKRyfVL1QifzgJDfQ2Jcm4PkY5CVWd5:
+    CdmProductTemplateCancelableProvision,
+  tC1wwJYkPfwpsdrur65zifZokmE1Kzb4gNtdNXBTLut:
+    CdmLegaldocumentationMasterMasterAgreementTypeEnum,
+  Tu5nRRqGCYvPv1JfDkUiceaDiRxNSCT7gT7SQx2GA5Z: CdmRegulationExctgPrsn,
+  TuUaQmwiwbNnpZ2No6iRHWhHTr63186fYNv8REBGMWB:
+    CdmObservableAssetSwapCurveValuation,
+  UcvnGWBznJQMKxTqZfWEzoJ4bovdXYkn8PTxfrA9Kxt: CdmObservableAssetValuationDates,
+  UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ:
+    CdmBaseDatetimeBusinessDayConventionEnum,
+  umfXQbzquU2FEApASMDmHC7pUrpJatVHuKZmEBofQ7g:
+    CdmEventWorkflowFieldWithMetaLimitLevelEnum,
+  UtoHX84Jf14Vt8tqUwNyELWR28U4cEGWMm5MnHPKLpi: CdmRegulationAcctOwnr,
+  uyCbFUtyiur98B8jKgwwDdT7g5AQzSgfK77hjbHKgXm:
+    CdmObservableAssetFroFloatingRateIndexCategoryEnum,
+  vFG54w9Xw7FthPkNNnfst9e9Nf2BmRqjAGcxUSz7WPS:
+    CdmObservableEventFieldWithMetaRestructuringEnum,
+  VrWJzqq3ogdc8MhQ87P7nugRkiYR7sK4XS7wQzTvce3:
+    CdmBaseStaticdataAssetCommonCommodity,
+  VVDNkAFA8n1iP8XHiNgLYMtF7r3mfFkx4P4nqUhsDYH:
+    CdmObservableAssetQuotationStyleEnum,
+  wNGmmHNkPh47VcmdJFAFyWS5mS1W5PvRW9UW2h3YWFW:
+    CdmProductCommonSettlementSettlementProvision,
+  xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS: CdmObservableAssetObservable,
+  y6unn9zuC4eqixnmkEKxXhareLao3FvJgXeACGbLHaA:
+    CdmProductCommonScheduleInitialFixingDate,
 };

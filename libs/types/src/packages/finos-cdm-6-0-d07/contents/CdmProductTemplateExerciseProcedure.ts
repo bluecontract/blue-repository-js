@@ -1,9 +1,9 @@
-export const CdmProductTemplateExerciseProcedure = {
+export const CdmProductTemplateExerciseProcedure: Record<string, unknown> = {
   automaticExercise: {
     description:
       'If automatic is specified, then the notional amount of the underlying swap not previously exercised under the swaption will be automatically exercised at the expiration time on the expiration date if at such time the buyer is in-the-money, provided that the difference between the settlement rate and the fixed rate under the relevant underlying swap is not less than the specified threshold rate. The term in-the-money is assumed to have the meaning defining in the 2000 ISDA Definitions, Section 17.4 In-the-money.\n',
     type: {
-      blueId: '7JsYEgXkXn7dqsmdqpe5ABe62ZQGPbkU5NSp8dTwtLAA',
+      blueId: '6fnDZS1zqAsqg6ScqF5Y7LEwCWQtuBpB621ZXfC9ocuy',
     },
   },
   description:
@@ -12,29 +12,24 @@ export const CdmProductTemplateExerciseProcedure = {
     description:
       "A flag to indicate whether follow-up confirmation of exercise (written or electronic) is required following telephonic notice by the buyer to the seller or seller's agent.\n",
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   limitedRightToConfirm: {
     description:
       'Has the meaning defined as part of the 1997 ISDA Government Bond Option Definitions, section 4.5 Limited Right to Confirm Exercise. If present, (i) the Seller may request the Buyer to confirm its intent if not done on or before the expiration time on the Expiration date (ii) specific rules will apply in relation to the settlement mode.\n',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   manualExercise: {
     description:
       "Specifies that the notice of exercise must be given by the buyer to the seller or seller's agent.",
     type: {
-      blueId: '2N8WqdA3bWZaDeAy5nB7wit1jTvBeB4gLKqwL2dDqu4a',
+      blueId: '2PgTgt4qH9bmia6Zfzyn13BPBa6T1NX5cpy1x7F86H9N',
     },
   },
   name: 'cdm/product/template/ExerciseProcedure',
@@ -42,7 +37,7 @@ export const CdmProductTemplateExerciseProcedure = {
     description:
       'Typically applicable to the physical settlement of bond and convertible bond options. If present, means that the party required to deliver the bonds will divide those to be delivered as notifying party desires to facilitate delivery obligations.\n',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
-} as const;
+};

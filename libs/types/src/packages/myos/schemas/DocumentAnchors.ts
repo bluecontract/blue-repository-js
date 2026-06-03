@@ -3,8 +3,10 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentAnchorSchema } from './DocumentAnchor';
 
-export const DocumentAnchorsSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentAnchorsSchema: any = withTypeBlueId(
   blueIds['MyOS/Document Anchors']
-)(z.object({}).catchall(z.lazy(() => DocumentAnchorSchema)));
+)(zod.object({}).catchall(zod.lazy(() => DocumentAnchorSchema)));
 
 export type DocumentAnchors = z.infer<typeof DocumentAnchorsSchema>;

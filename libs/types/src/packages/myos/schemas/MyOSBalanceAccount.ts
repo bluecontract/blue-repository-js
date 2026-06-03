@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const MyOSBalanceAccountSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSBalanceAccountSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Balance Account']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    token: z.string().optional(),
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    token: zod.string().optional(),
   })
 );
 

@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetSettlementRateOptionEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetSettlementRateOptionEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/SettlementRateOptionEnum']
   )(
-    z.enum([
+    zod.enum([
       'ARS.BNAR/ARS01',
       'ARS.EMTA.INDICATIVE.SURVEY.RATE/ARS04',
       'ARS.EMTA.INDUSTRY.SURVEY.RATE/ARS03',

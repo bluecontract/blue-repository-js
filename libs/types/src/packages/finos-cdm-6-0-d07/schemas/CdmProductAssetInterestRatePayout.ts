@@ -18,66 +18,67 @@ import { CdmProductCommonSettlementPrincipalPaymentsSchema } from './CdmProductC
 import { CdmProductCommonSettlementResolvablePriceQuantitySchema } from './CdmProductCommonSettlementResolvablePriceQuantity';
 import { CdmProductCommonSettlementSettlementTermsSchema } from './CdmProductCommonSettlementSettlementTerms';
 
-export const CdmProductAssetInterestRatePayoutSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/InterestRatePayout']
-  )(
-    z.object({
-      bondReference: z
-        .lazy(() => CdmProductAssetBondReferenceSchema)
-        .optional(),
-      calculationPeriodDates: z
-        .lazy(() => CdmProductCommonScheduleCalculationPeriodDatesSchema)
-        .optional(),
-      cashflowRepresentation: z
-        .lazy(() => CdmProductAssetCashflowRepresentationSchema)
-        .optional(),
-      compoundingMethod: z
-        .lazy(() => CdmProductAssetCompoundingMethodEnumSchema)
-        .optional(),
-      dayCountFraction: z
-        .lazy(
-          () => CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnumSchema
-        )
-        .optional(),
-      description: z.string().optional(),
-      discountingMethod: z
-        .lazy(() => CdmProductAssetDiscountingMethodSchema)
-        .optional(),
-      fixedAmount: z.string().optional(),
-      floatingAmount: z.string().optional(),
-      name: z.string().optional(),
-      payerReceiver: z
-        .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
-        .optional(),
-      paymentDate: z.lazy(() => CdmBaseDatetimeAdjustableDateSchema).optional(),
-      paymentDates: z
-        .lazy(() => CdmProductCommonSchedulePaymentDatesSchema)
-        .optional(),
-      paymentDelay: z.boolean().optional(),
-      priceQuantity: z
-        .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
-        .optional(),
-      principalPayment: z
-        .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
-        .optional(),
-      rateSpecification: z
-        .lazy(() => CdmProductAssetRateSpecificationSchema)
-        .optional(),
-      resetDates: z
-        .lazy(() => CdmProductCommonScheduleResetDatesSchema)
-        .optional(),
-      settlementTerms: z
-        .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
-        .optional(),
-      spreadCalculationMethod: z
-        .lazy(() => CdmProductAssetSpreadCalculationMethodEnumSchema)
-        .optional(),
-      stubPeriod: z
-        .lazy(() => CdmProductCommonScheduleStubPeriodSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetInterestRatePayoutSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/InterestRatePayout']
+)(
+  zod.object({
+    bondReference: zod
+      .lazy(() => CdmProductAssetBondReferenceSchema)
+      .optional(),
+    calculationPeriodDates: zod
+      .lazy(() => CdmProductCommonScheduleCalculationPeriodDatesSchema)
+      .optional(),
+    cashflowRepresentation: zod
+      .lazy(() => CdmProductAssetCashflowRepresentationSchema)
+      .optional(),
+    compoundingMethod: zod
+      .lazy(() => CdmProductAssetCompoundingMethodEnumSchema)
+      .optional(),
+    dayCountFraction: zod
+      .lazy(
+        () => CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnumSchema
+      )
+      .optional(),
+    description: zod.string().optional(),
+    discountingMethod: zod
+      .lazy(() => CdmProductAssetDiscountingMethodSchema)
+      .optional(),
+    fixedAmount: zod.string().optional(),
+    floatingAmount: zod.string().optional(),
+    name: zod.string().optional(),
+    payerReceiver: zod
+      .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
+      .optional(),
+    paymentDate: zod.lazy(() => CdmBaseDatetimeAdjustableDateSchema).optional(),
+    paymentDates: zod
+      .lazy(() => CdmProductCommonSchedulePaymentDatesSchema)
+      .optional(),
+    paymentDelay: zod.boolean().optional(),
+    priceQuantity: zod
+      .lazy(() => CdmProductCommonSettlementResolvablePriceQuantitySchema)
+      .optional(),
+    principalPayment: zod
+      .lazy(() => CdmProductCommonSettlementPrincipalPaymentsSchema)
+      .optional(),
+    rateSpecification: zod
+      .lazy(() => CdmProductAssetRateSpecificationSchema)
+      .optional(),
+    resetDates: zod
+      .lazy(() => CdmProductCommonScheduleResetDatesSchema)
+      .optional(),
+    settlementTerms: zod
+      .lazy(() => CdmProductCommonSettlementSettlementTermsSchema)
+      .optional(),
+    spreadCalculationMethod: zod
+      .lazy(() => CdmProductAssetSpreadCalculationMethodEnumSchema)
+      .optional(),
+    stubPeriod: zod
+      .lazy(() => CdmProductCommonScheduleStubPeriodSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductAssetInterestRatePayout = z.infer<
   typeof CdmProductAssetInterestRatePayoutSchema

@@ -1,59 +1,59 @@
-export const DocumentSessionBootstrap = {
+export const DocumentSessionBootstrap: Record<string, unknown> = {
   avatarUrl: {
     description:
       'Uploaded avatar URL propagated to the bootstrapped target sessions',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   bootstrapError: {
     description: 'Error message explaining bootstrap failure',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   bootstrapStatus: {
     description: 'Overall bootstrap process status',
     type: {
-      blueId: 'QHoUCCVhepZWQnSo9VfZCJWbSwyA9TuT65tBZMVtnRX',
+      blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
     },
   },
   capabilities: {
     description:
       'Optional MyOS Admin capability contracts to attach (participantsOrchestration, sessionInteraction, workerAgency)',
     keyType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   channelBindings: {
     description: 'Maps channel names to participant identifiers',
     keyType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: 'DcoJyCh7XXxy1nR5xjy7qfkUgQ1GiZnKKSxh8DJusBSr',
+      blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
     },
   },
   contracts: {
     handleBootstrapFailed: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'triggeredEventsChannel',
       },
       event: {
         type: {
-          blueId: '9iEADVdqxqgacF3GAZVMFZu4m5ywuNpsGzButLUNkPWo',
+          blueId: 'FaZorE1FNvj9ar6rxL8jHRNYQ6WYo4hERoE35v7A5DnL',
         },
       },
       steps: {
@@ -65,21 +65,13 @@ export const DocumentSessionBootstrap = {
                   $if: {
                     cond: {
                       $not: {
-                        $is: {
-                          node: {
-                            $event: {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: '/',
-                            },
-                          },
-                          pattern: {
+                        $exists: {
+                          $event: {
                             type: {
                               blueId:
-                                '9iEADVdqxqgacF3GAZVMFZu4m5ywuNpsGzButLUNkPWo',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
+                            value: '/reason',
                           },
                         },
                       },
@@ -104,13 +96,13 @@ export const DocumentSessionBootstrap = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/bootstrapError',
                     },
@@ -118,7 +110,7 @@ export const DocumentSessionBootstrap = {
                       $event: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: '/reason',
                       },
@@ -131,16 +123,16 @@ export const DocumentSessionBootstrap = {
                       mode: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'terminated',
                       },
                       type: {
-                        blueId: 'Fh7VjkS1XTg9BzQWBQrvD9ePLUEZVR86FAhVbttw1Wxs',
+                        blueId: '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
                       },
                     },
                     type: {
-                      blueId: 'GXbF9ycv87y69kutDUmACbmeme7dGBSPw47fMQefvDPx',
+                      blueId: '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV',
                     },
                   },
                 },
@@ -150,7 +142,7 @@ export const DocumentSessionBootstrap = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -159,7 +151,7 @@ export const DocumentSessionBootstrap = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -170,25 +162,25 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Error And Emit Failure',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     handleParticipantResolved: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'triggeredEventsChannel',
       },
       event: {
         type: {
-          blueId: 'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
+          blueId: 'BswjhjkdTDksVCcc8ijoU2RWcPam7Rphcecc67HJjZRi',
         },
       },
       steps: {
@@ -200,21 +192,13 @@ export const DocumentSessionBootstrap = {
                   $if: {
                     cond: {
                       $not: {
-                        $is: {
-                          node: {
-                            $event: {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: '/',
-                            },
-                          },
-                          pattern: {
+                        $exists: {
+                          $event: {
                             type: {
                               blueId:
-                                'EQVu8aZyp5ivTyKpSm8ueVsDLgprfcrHzr5QWdH1p6Cz',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
+                            value: '/channelName',
                           },
                         },
                       },
@@ -242,14 +226,14 @@ export const DocumentSessionBootstrap = {
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'channelName',
                         },
                         {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'accountStatus',
                         },
@@ -263,7 +247,7 @@ export const DocumentSessionBootstrap = {
                               $event: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: '/participant/status/accountStatus',
                               },
@@ -271,7 +255,7 @@ export const DocumentSessionBootstrap = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'Unknown',
                             },
@@ -282,7 +266,7 @@ export const DocumentSessionBootstrap = {
                         $event: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: '/channelName',
                         },
@@ -294,7 +278,7 @@ export const DocumentSessionBootstrap = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
@@ -304,7 +288,7 @@ export const DocumentSessionBootstrap = {
                           {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'participantsState',
                           },
@@ -312,7 +296,7 @@ export const DocumentSessionBootstrap = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'channelName',
                             },
@@ -325,7 +309,7 @@ export const DocumentSessionBootstrap = {
                         $var: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'accountStatus',
                         },
@@ -333,7 +317,7 @@ export const DocumentSessionBootstrap = {
                       errorMessage: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: '',
                       },
@@ -346,7 +330,7 @@ export const DocumentSessionBootstrap = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -357,106 +341,51 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Participant State',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     handleStatusChange: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'triggeredEventsChannel',
       },
       event: {
         type: {
-          blueId: 'GXbF9ycv87y69kutDUmACbmeme7dGBSPw47fMQefvDPx',
+          blueId: '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV',
         },
       },
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $if: {
-                    cond: {
-                      $not: {
-                        $is: {
-                          node: {
-                            $event: {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: '/',
-                            },
-                          },
-                          pattern: {
-                            type: {
-                              blueId:
-                                'GXbF9ycv87y69kutDUmACbmeme7dGBSPw47fMQefvDPx',
-                            },
-                          },
-                        },
-                      },
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    then: {
-                      items: [
-                        {
-                          $return: {
-                            changeset: {
-                              items: [],
-                            },
-                            events: {
-                              items: [],
-                            },
-                          },
-                        },
-                      ],
-                    },
+                    value: 'replace',
                   },
-                },
-                {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                      },
-                      value: 'replace',
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                      },
-                      value: '/bootstrapStatus',
-                    },
-                    val: {
-                      $event: {
-                        type: {
-                          blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                        },
-                        value: '/status',
-                      },
-                    },
+                    value: '/bootstrapStatus',
                   },
-                },
-                {
-                  $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-                        },
-                        value: true,
+                  val: {
+                    $event: {
+                      type: {
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
+                      value: '/status',
                     },
                   },
                 },
@@ -464,25 +393,25 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Bootstrap Status',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     handleTargetDocumentSessionStarted: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'triggeredEventsChannel',
       },
       event: {
         type: {
-          blueId: 'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
+          blueId: '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN',
         },
       },
       steps: {
@@ -494,21 +423,13 @@ export const DocumentSessionBootstrap = {
                   $if: {
                     cond: {
                       $not: {
-                        $is: {
-                          node: {
-                            $event: {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: '/',
-                            },
-                          },
-                          pattern: {
+                        $exists: {
+                          $event: {
                             type: {
                               blueId:
-                                'FoHDf4WzS4idtPc8rWwVFFvALQ27WzMHxPdXovy7DH4p',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
+                            value: '/initiatorSessionIds',
                           },
                         },
                       },
@@ -533,13 +454,13 @@ export const DocumentSessionBootstrap = {
                   $appendChange: {
                     op: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'replace',
                     },
                     path: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: '/initiatorSessionIds',
                     },
@@ -547,7 +468,7 @@ export const DocumentSessionBootstrap = {
                       $event: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: '/initiatorSessionIds',
                       },
@@ -560,16 +481,16 @@ export const DocumentSessionBootstrap = {
                       mode: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'terminated',
                       },
                       type: {
-                        blueId: 'Pzdwn6mQJT2qFDaF4V1dzpcyu4ejRqDv8neLPnbHRGi',
+                        blueId: 'BEc6aieqN1iaXT2bNQVag1a1cGygZCLCjXf3mvupetNg',
                       },
                     },
                     type: {
-                      blueId: 'GXbF9ycv87y69kutDUmACbmeme7dGBSPw47fMQefvDPx',
+                      blueId: '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV',
                     },
                   },
                 },
@@ -579,7 +500,7 @@ export const DocumentSessionBootstrap = {
                       $changeset: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -588,7 +509,7 @@ export const DocumentSessionBootstrap = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -599,19 +520,19 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Update Initiator Session And Emit Completion',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     initHandler: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'lifecycle',
       },
@@ -623,19 +544,19 @@ export const DocumentSessionBootstrap = {
                 {
                   op: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: 'replace',
                   },
                   path: {
                     type: {
-                      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
                     value: '/bootstrapStatus',
                   },
                   val: {
                     type: {
-                      blueId: 'E6jaeVfFuyjB4YEZyp7fvUt8AJ7BmKr8WAM9oGDmhMbM',
+                      blueId: '5BQB6Hsr3qxMsZikHdqd2LGeKdQafEQ4jo6TBqm9JZuB',
                     },
                   },
                 },
@@ -643,28 +564,28 @@ export const DocumentSessionBootstrap = {
             },
             name: 'Initialize Bootstrap Status',
             type: {
-              blueId: 'FuD8hYGXvwBJGBzXhFB6DVtWHawt8hbpM6yT94H4p7cZ',
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
     lifecycle: {
       event: {
         type: {
-          blueId: 'BrpmpNt5JkapeUvPqYcxgXZrHNZX3R757dRwuXXdfNM2',
+          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
         },
       },
       type: {
-        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
+        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
       },
     },
     triggeredEventsChannel: {
       type: {
-        blueId: 'C77W4kVGcxL7Mkx9WL9QESPEFFL2GzWAe647s1Efprt',
+        blueId: '5HwxfbwRBCxG8xYpowWkCPC9akqUSKV7So2M4QHEmLsZ',
       },
     },
   },
@@ -677,7 +598,7 @@ export const DocumentSessionBootstrap = {
     defaultMessage: {
       description: 'Default invitation message sent to all participants',
       type: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
     description:
@@ -685,39 +606,39 @@ export const DocumentSessionBootstrap = {
     perChannel: {
       description: 'Per-channel custom invitation messages',
       keyType: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
       type: {
-        blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+        blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
       },
       valueType: {
-        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
       },
     },
   },
   initiatorSessionIds: {
     description: 'Session IDs created for the bootstrap initiator (caller)',
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   name: 'Document Session Bootstrap',
   participantsState: {
     description: 'Maps channel names to participant activation tracking',
     keyType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: 'CocmZUt2K7LuGukwuPSAFC7EFo5HZonozAm4tUsSmuFB',
+      blueId: 'ASa82RtPSXwdys7M5Xs5s3brTjYgJmQqJt2uyraQGrNA',
     },
   },
   type: {
-    blueId: 'Gm9rGd9RJMvBcPCwN7ybywVAtMAAngeAB82DZ2cQ6bAE',
+    blueId: 'FMWYekdjwkDnoM2YfHmwuUATHZovSgmDEvSVTmyVmbHc',
   },
-} as const;
+};

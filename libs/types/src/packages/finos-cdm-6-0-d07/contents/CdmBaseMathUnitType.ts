@@ -1,16 +1,16 @@
-export const CdmBaseMathUnitType = {
+export const CdmBaseMathUnitType: Record<string, unknown> = {
   capacityUnit: {
     description:
       'Provides an enumerated value for a capacity unit, generally used in the context of defining quantities for commodities.\n',
     type: {
-      blueId: 'ANaFxPMcbPKw8USLSD7mcUeT9DBz5q9BkYYt9GMjvDMz',
+      blueId: 'g4vkocaqQK6FYK1ys61BBsp11Y2Daj3aPCffWwm5Egq',
     },
   },
   currency: {
     description:
       'Defines the currency to be used as a unit for a price, quantity, or other purpose.',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   description:
@@ -19,7 +19,7 @@ export const CdmBaseMathUnitType = {
     description:
       'Provides an enumerated value for financial units, generally used in the context of defining quantities for securities.\n',
     type: {
-      blueId: 'FWBc9MZLyNP1UHpkesLTwX4uMpnMK6Tjr5QZnhvs2WRB',
+      blueId: 'G6nxZBJqZZ3cY44FGfFfpKCDEC1JqqauJ8rcR7H1niTr',
     },
   },
   name: 'cdm/base/math/UnitType',
@@ -27,7 +27,7 @@ export const CdmBaseMathUnitType = {
     description:
       'Provides an enumerated values for a weather unit, generally used in the context of defining quantities for commodities.\n',
     type: {
-      blueId: 'aUWGFpq6gwDP6zaku6dz6bnhGWzX5a3YSgTLJzSqXiL',
+      blueId: 'DePEyNHqpBtxPVrPYXSKuWt1ugb339xn92ZXP2uKKUgY',
     },
   },
-} as const;
+};

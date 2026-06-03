@@ -5,17 +5,19 @@ import { CdmBaseDatetimeAdjustableOrRelativeDateSchema } from './CdmBaseDatetime
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 import { CdmProductCommonSettlementPaymentRuleSchema } from './CdmProductCommonSettlementPaymentRule';
 
-export const CdmProductCommonSettlementPaymentDetailSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPaymentDetailSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/PaymentDetail']
   )(
-    z.object({
-      name: z.string().optional(),
-      paymentAmount: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-      paymentDate: z
+    zod.object({
+      name: zod.string().optional(),
+      paymentAmount: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+      paymentDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
         .optional(),
-      paymentRule: z.lazy(() => CdmProductCommonSettlementPaymentRuleSchema),
+      paymentRule: zod.lazy(() => CdmProductCommonSettlementPaymentRuleSchema),
     })
   );
 

@@ -4,15 +4,17 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { RequestSchema } from '../../coordination/schemas/Request';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 
-export const CardTransactionCaptureLockRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionCaptureLockRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction Capture Lock Requested']
 )(
   RequestSchema.extend({
-    cardTransactionDetails: z
+    cardTransactionDetails: zod
       .lazy(() => CardTransactionDetailsSchema)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

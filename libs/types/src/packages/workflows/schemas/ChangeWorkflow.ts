@@ -1,16 +1,18 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { ChangeRequestSchema } from '../../coordination/schemas/ChangeRequest';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
+import { ChangeRequestSchema } from './ChangeRequest';
 
-export const ChangeWorkflowSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ChangeWorkflowSchema: any = withTypeBlueId(
   blueIds['Workflows/Change Workflow']
 )(
   SequentialWorkflowOperationSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    request: z.lazy(() => ChangeRequestSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    request: zod.lazy(() => ChangeRequestSchema).optional(),
     steps: blueNodeField().optional(),
   })
 );

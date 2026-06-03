@@ -1,104 +1,69 @@
-export const CdmProductCollateralEligibilityQuery = {
+export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
   agencyRating: {
     description:
       'The agency rating based on default risk and creditors claim in event of default associated with specific instrument.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'EFt5vpwMjQFJJ8LHLDpuEqY5R7UNo6zDPqdti3crxcVv',
+      blueId: 'HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU',
     },
   },
   assetCountryOfOrigin: {
     description: 'The asset country of origin.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DAxrfnnD9436ZRpQ3FGCM1i7Xq8brfqBB5cYxBuSuyag',
+      blueId: '9ppB13T87oA9HL9NWZr6pkLmcjb1HmUAgzVGS7yDyttw',
     },
   },
   collateralAssetType: {
     description: 'The asset product type.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DBnAMusnqCBb9qkA5usvmPTb27HNy5VzKi8JoTrgPoRV',
+      blueId: 'AjHv57wVryq4YK8oodLNAT95JAYhuGRRiKk7hhX93LLi',
     },
   },
   denominatedCurrency: {
     description: 'The underlying asset denominated currency.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '8BnAu36c4Gt6aVwBhawFckQGNkLaZsPodbBkQd7GpV8V',
+      blueId: 'Gb5ryH6JKgjNLySafKo7tXkb9PRgaQkWHcSibFZ96AbP',
     },
   },
   description: 'Query to check against an EligibleCollateralSpecification',
   issuerName: {
     description: 'Specifies the issuing entity name or LEI.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '6NmyTe5CqfuusJQg46VWDV5a5FXqiZnkQmXduwAjC73o',
+      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
     },
   },
   issuerType: {
     description:
       'Represents a filter based on the type of entity issuing the asset.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DiuzkpaQqLNDsehNb5xLTrFkVqpEqS9ZGtqTJ2fBzhvm',
+      blueId: 'GL9FygufGouoWPdbzaZ4SKyuRahWMAUxZ5q3bFMSWnRj',
     },
   },
   maturity: {
     description: 'Maturity in years',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   name: 'cdm/product/collateral/EligibilityQuery',
-} as const;
+};

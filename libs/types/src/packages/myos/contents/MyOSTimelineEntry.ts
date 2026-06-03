@@ -1,13 +1,13 @@
-export const MyOSTimelineEntry = {
+export const MyOSTimelineEntry: Record<string, unknown> = {
   description:
     'MyOS-specific timeline entry with account and email information',
   name: 'MyOS Timeline Entry',
   timeline: {
     type: {
-      blueId: '12b7StrRyA33gnKbKcBQZqfLUYTnBoiQFFN3MsDRYp4Y',
+      blueId: '9TnFznYnqWWjHhGzcKngTLfq1a2H4sVd5EM4vfek2ec5',
     },
   },
   type: {
-    blueId: '6ckC9avECT39tVTZ3iiKC1wRPAmxiS92bZuji4pANZCw',
+    blueId: 'HtPs8QJAUfc25fKanzLFjAqjbbhyFjDErYxjKdTCwARV',
   },
-} as const;
+};

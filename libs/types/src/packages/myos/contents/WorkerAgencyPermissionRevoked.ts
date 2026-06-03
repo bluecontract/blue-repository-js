@@ -1,7 +1,7 @@
-export const WorkerAgencyPermissionRevoked = {
+export const WorkerAgencyPermissionRevoked: Record<string, unknown> = {
   description: 'Rights granted by this WAG have been retracted.',
   name: 'Worker Agency Permission Revoked',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

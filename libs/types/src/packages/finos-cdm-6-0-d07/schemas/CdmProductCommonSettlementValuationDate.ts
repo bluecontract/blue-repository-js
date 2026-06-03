@@ -7,26 +7,28 @@ import { CdmObservableAssetMultipleValuationDatesSchema } from './CdmObservableA
 import { CdmObservableAssetSingleValuationDateSchema } from './CdmObservableAssetSingleValuationDate';
 import { CdmProductCommonSettlementFxFixingDateSchema } from './CdmProductCommonSettlementFxFixingDate';
 
-export const CdmProductCommonSettlementValuationDateSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementValuationDateSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/ValuationDate']
   )(
-    z.object({
-      description: z.string().optional(),
-      fxFixingDate: z
+    zod.object({
+      description: zod.string().optional(),
+      fxFixingDate: zod
         .lazy(() => CdmProductCommonSettlementFxFixingDateSchema)
         .optional(),
-      fxFixingSchedule: z
+      fxFixingSchedule: zod
         .lazy(() => CdmBaseDatetimeAdjustableDatesSchema)
         .optional(),
-      multipleValuationDates: z
+      multipleValuationDates: zod
         .lazy(() => CdmObservableAssetMultipleValuationDatesSchema)
         .optional(),
-      name: z.string().optional(),
-      singleValuationDate: z
+      name: zod.string().optional(),
+      singleValuationDate: zod
         .lazy(() => CdmObservableAssetSingleValuationDateSchema)
         .optional(),
-      valuationDate: z
+      valuationDate: zod
         .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
         .optional(),
     })

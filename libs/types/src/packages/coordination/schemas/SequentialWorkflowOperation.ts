@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { SequentialWorkflowSchema } from './SequentialWorkflow';
 
-export const SequentialWorkflowOperationSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SequentialWorkflowOperationSchema: any = withTypeBlueId(
   blueIds['Coordination/Sequential Workflow Operation']
 )(
   SequentialWorkflowSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    operation: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    operation: zod.string().optional(),
   })
 );
 

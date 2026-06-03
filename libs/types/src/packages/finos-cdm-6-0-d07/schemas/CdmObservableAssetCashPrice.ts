@@ -5,15 +5,17 @@ import { CdmObservableAssetCashPriceTypeEnumSchema } from './CdmObservableAssetC
 import { CdmObservableAssetFeeTypeEnumSchema } from './CdmObservableAssetFeeTypeEnum';
 import { CdmObservableAssetPremiumExpressionSchema } from './CdmObservableAssetPremiumExpression';
 
-export const CdmObservableAssetCashPriceSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetCashPriceSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CashPrice']
 )(
-  z.object({
-    cashPriceType: z.lazy(() => CdmObservableAssetCashPriceTypeEnumSchema),
-    description: z.string().optional(),
-    feeType: z.lazy(() => CdmObservableAssetFeeTypeEnumSchema).optional(),
-    name: z.string().optional(),
-    premiumExpression: z
+  zod.object({
+    cashPriceType: zod.lazy(() => CdmObservableAssetCashPriceTypeEnumSchema),
+    description: zod.string().optional(),
+    feeType: zod.lazy(() => CdmObservableAssetFeeTypeEnumSchema).optional(),
+    name: zod.string().optional(),
+    premiumExpression: zod
       .lazy(() => CdmObservableAssetPremiumExpressionSchema)
       .optional(),
   })

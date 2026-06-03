@@ -1,13 +1,16 @@
-export const CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum = {
+export const CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/datetime/FieldWithMetaCommodityBusinessCalendarEnum',
   val: {
     type: {
-      blueId: 'H1brAJ4DsQvt9MbnoyYuq5L7Z5nJJ5rxyrfmYTDXT7VJ',
+      blueId: '3nrMEw5ojL2L4nx9YC3c3c4ANcs6gAFKkas7RgDE5Ao2',
     },
   },
-} as const;
+};

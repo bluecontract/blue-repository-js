@@ -1,26 +1,27 @@
-export const CdmProductCommonScheduleResetRelativeToEnum = {
+export const CdmProductCommonScheduleResetRelativeToEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'The enumerated values to specify whether resets occur relative to the first or last day of a calculation period.\n',
   name: 'cdm/product/common/schedule/ResetRelativeToEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CalculationPeriodEndDate',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'CalculationPeriodStartDate',
+        value: 'CalculationPeriodEndDate',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'CalculationPeriodStartDate',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

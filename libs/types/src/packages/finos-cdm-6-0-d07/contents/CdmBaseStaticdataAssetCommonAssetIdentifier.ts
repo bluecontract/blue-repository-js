@@ -1,34 +1,27 @@
-export const CdmBaseStaticdataAssetCommonAssetIdentifier = {
+export const CdmBaseStaticdataAssetCommonAssetIdentifier: Record<
+  string,
+  unknown
+> = {
   description:
     'The unique identifier for an Asset, specified using an Asset Identifier Type enumerator.',
   identifier: {
     description: 'The identifier value.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   identifierType: {
     description:
       'Defines the symbology source of the Asset Identifier, eg CUSIP, ISIN, etc.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '3TWoeGYJX3t5xD73ccA1wDeoWbGqpwVhJ4qVR2p4v3Gs',
+      blueId: '5mbfUkBFTEYhKyTf1DNksGFTiyJzZooRyUog7hBoYzHC',
     },
   },
   name: 'cdm/base/staticdata/asset/common/AssetIdentifier',
-} as const;
+};

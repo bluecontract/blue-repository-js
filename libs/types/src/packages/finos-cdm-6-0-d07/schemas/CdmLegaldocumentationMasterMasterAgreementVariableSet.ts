@@ -2,19 +2,21 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationMasterMasterAgreementVariableSetSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterMasterAgreementVariableSetSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/MasterAgreementVariableSet'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      val: z.string().optional(),
-      variableSet: z
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      val: zod.string().optional(),
+      variableSet: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny =>
               CdmLegaldocumentationMasterMasterAgreementVariableSetSchema
           )

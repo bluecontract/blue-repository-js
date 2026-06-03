@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmProductAssetFPVFinalPriceElectionFallbackEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFPVFinalPriceElectionFallbackEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/FPVFinalPriceElectionFallbackEnum'
     ]
   )(
-    z.enum(['FPVClose', 'FPVHedgeExecution'] as [
+    zod.enum(['FPVClose', 'FPVHedgeExecution'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

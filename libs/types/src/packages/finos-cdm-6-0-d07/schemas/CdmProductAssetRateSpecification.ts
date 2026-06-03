@@ -5,24 +5,25 @@ import { CdmProductAssetFixedRateSpecificationSchema } from './CdmProductAssetFi
 import { CdmProductAssetFloatingRateSpecificationSchema } from './CdmProductAssetFloatingRateSpecification';
 import { CdmProductAssetInflationRateSpecificationSchema } from './CdmProductAssetInflationRateSpecification';
 
-export const CdmProductAssetRateSpecificationSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/RateSpecification']
-  )(
-    z.object({
-      description: z.string().optional(),
-      FixedRateSpecification: z
-        .lazy(() => CdmProductAssetFixedRateSpecificationSchema)
-        .optional(),
-      FloatingRateSpecification: z
-        .lazy(() => CdmProductAssetFloatingRateSpecificationSchema)
-        .optional(),
-      InflationRateSpecification: z
-        .lazy(() => CdmProductAssetInflationRateSpecificationSchema)
-        .optional(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetRateSpecificationSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/RateSpecification']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    FixedRateSpecification: zod
+      .lazy(() => CdmProductAssetFixedRateSpecificationSchema)
+      .optional(),
+    FloatingRateSpecification: zod
+      .lazy(() => CdmProductAssetFloatingRateSpecificationSchema)
+      .optional(),
+    InflationRateSpecification: zod
+      .lazy(() => CdmProductAssetInflationRateSpecificationSchema)
+      .optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmProductAssetRateSpecification = z.infer<
   typeof CdmProductAssetRateSpecificationSchema

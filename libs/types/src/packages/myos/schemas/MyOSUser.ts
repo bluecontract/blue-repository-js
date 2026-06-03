@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const MyOSUserSchema = withTypeBlueId(blueIds['MyOS/MyOS User'])(
-  z.object({
-    accountId: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+const zod = z as any;
+
+export const MyOSUserSchema: any = withTypeBlueId(blueIds['MyOS/MyOS User'])(
+  zod.object({
+    accountId: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

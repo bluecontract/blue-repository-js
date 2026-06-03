@@ -4,16 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductAssetSpreadScheduleTypeEnumSchema } from './CdmProductAssetSpreadScheduleTypeEnum';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmProductAssetFieldWithMetaSpreadScheduleTypeEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductAssetFieldWithMetaSpreadScheduleTypeEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/asset/FieldWithMetaSpreadScheduleTypeEnum'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmProductAssetSpreadScheduleTypeEnumSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod
+        .lazy(() => CdmProductAssetSpreadScheduleTypeEnumSchema)
+        .optional(),
     })
   );
 

@@ -1,14 +1,15 @@
-export const AgentActor = {
+export const AgentActor: Record<string, unknown> = {
   description:
-    'Actor specialization representing a non-human, delegated, automated, or AI-driven actor acting under authority granted\nby another actor. An Agent Actor is not the principal; it is an automation participant operating on behalf of a\nprincipal according to delegation rules maintained by a Timeline Provider, identity provider, platform, or other trust\nanchor. This distinction is critical for safe AI-agent participation: the document can allow routine operations to be\nautomated while still requiring principal authorization for high-risk operations.\n\nThe `onBehalfOf` field identifies the actor whose authority the agent is using. Concrete agent types should add\nidentity-bearing fields describing the agent, the delegation document or grant, the permitted scope of action, the\nprovider that verified the delegation, and any session or execution context useful for audit. A document processor or\nactor policy can then classify the event as delegated automation and decide whether the specific operation is allowed.\n\nAgent Actor does not imply that every action by the agent is valid. The Timeline Provider is expected to reject agent\nentries outside the delegation it recognizes, and Blue documents may independently enforce stricter actor policies. The\nvalue of this type is verifiable attribution: observers can see that an action was automated, trace the principal on\nwhose behalf it was taken, and inspect the delegation chain without pretending the agent was the principal.\n',
+    "Actor specialization for a non-human, automated, delegated, or AI-assisted actor. An Agent Actor means the event\nsource attributes the action to automation operating on behalf of another actor rather than to the principal acting\ndirectly. This distinction is fundamental for safe automation: routine operations may be delegated to agents, while\nsensitive operations may require direct principal action.\n\nA Timeline Provider or event source is not expected to understand every Blue document that may later consume the\nentry, and it is not responsible for deciding whether the message is valid for a particular document. Its role is to\nauthenticate and authorize the party that appends to the timeline under the provider's own rules, record the actor\nattribution it can verify, preserve the entry, assign ordering information, and provide completeness/finality\nguarantees. A provider may verify that an agent has permission to append to a timeline or act for an account under a\ndelegated credential, but Blue documents independently enforce their own Actor Policy and operation rules.\n\nThe `onBehalfOf` field identifies the principal or actor whose authority is being used. Concrete agent types should\nadd fields that make the delegation auditable: agent identity, session reference, delegation document, allowed scope,\nissuing provider, revocation context, or model/runtime details where appropriate. The goal is not to pretend that the\nagent is a human; the goal is to make automation explicit, attributable, auditable, and policy-checkable.\n",
   name: 'Agent Actor',
   onBehalfOf: {
-    description: 'Actor whose authority this agent is using.',
+    description:
+      'Actor on whose behalf this agent is acting. This should normally be a Principal Actor or provider-specific principal\nreference. It is an attribution field, not a standalone authorization grant. A document should still check its own\npolicies before accepting the requested operation.\n',
     type: {
-      blueId: 'CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd',
+      blueId: 'GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7',
     },
   },
   type: {
-    blueId: 'CFPWz2TX7a1xq6xZYnx93Cu7MqEdMzumr3Zgnx6TrVtd',
+    blueId: 'GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7',
   },
-} as const;
+};

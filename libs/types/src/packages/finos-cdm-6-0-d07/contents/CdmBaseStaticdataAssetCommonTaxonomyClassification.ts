@@ -1,9 +1,12 @@
-export const CdmBaseStaticdataAssetCommonTaxonomyClassification = {
+export const CdmBaseStaticdataAssetCommonTaxonomyClassification: Record<
+  string,
+  unknown
+> = {
   className: {
     description:
       'The name defined by the classification system for a specific attribute in the taxonomy',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'cdm/base/staticdata/asset/common/TaxonomyClassification',
@@ -11,22 +14,17 @@ export const CdmBaseStaticdataAssetCommonTaxonomyClassification = {
     description:
       'In the case of multi-layered hierarchical classification systems such as commodity classification, the layer the value and className occupy in the classification hierarchy, where 1 represents the top-layer.\n',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   val: {
     description:
       'The value set by the taxonomy that is specific to the className attribute.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

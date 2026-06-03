@@ -3,19 +3,20 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmLegaldocumentationCommonClosedStateEnumSchema } from './CdmLegaldocumentationCommonClosedStateEnum';
 
-export const CdmLegaldocumentationCommonClosedStateSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/ClosedState']
-  )(
-    z.object({
-      activityDate: z.string(),
-      description: z.string().optional(),
-      effectiveDate: z.string().optional(),
-      lastPaymentDate: z.string().optional(),
-      name: z.string().optional(),
-      state: z.lazy(() => CdmLegaldocumentationCommonClosedStateEnumSchema),
-    })
-  );
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonClosedStateSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/ClosedState']
+)(
+  zod.object({
+    activityDate: zod.string(),
+    description: zod.string().optional(),
+    effectiveDate: zod.string().optional(),
+    lastPaymentDate: zod.string().optional(),
+    name: zod.string().optional(),
+    state: zod.lazy(() => CdmLegaldocumentationCommonClosedStateEnumSchema),
+  })
+);
 
 export type CdmLegaldocumentationCommonClosedState = z.infer<
   typeof CdmLegaldocumentationCommonClosedStateSchema

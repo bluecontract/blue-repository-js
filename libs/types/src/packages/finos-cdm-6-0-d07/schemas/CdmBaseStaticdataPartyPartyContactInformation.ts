@@ -6,30 +6,32 @@ import { CdmBaseStaticdataPartyContactInformationSchema } from './CdmBaseStaticd
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { CdmBaseStaticdataPartyNaturalPersonSchema } from './CdmBaseStaticdataPartyNaturalPerson';
 
-export const CdmBaseStaticdataPartyPartyContactInformationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyPartyContactInformationSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/party/PartyContactInformation'
     ]
   )(
-    z.object({
-      additionalInformation: z.string().optional(),
-      businessUnit: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyBusinessUnitSchema))
+    zod.object({
+      additionalInformation: zod.string().optional(),
+      businessUnit: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyBusinessUnitSchema))
         .min(0)
         .optional(),
-      contactInformation: z
+      contactInformation: zod
         .lazy(() => CdmBaseStaticdataPartyContactInformationSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      partyReference: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      partyReference: zod
         .lazy(
           () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
         )
         .optional(),
-      person: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyNaturalPersonSchema))
+      person: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyNaturalPersonSchema))
         .min(0)
         .optional(),
     })

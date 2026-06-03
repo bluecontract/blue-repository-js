@@ -47,10 +47,10 @@ describe('schema compiler special fields', () => {
     }
     const source = schemaFiles[onlyPath];
 
-    expect(source).toContain('name: z.string().optional()');
-    expect(source).toContain('description: z.string().optional()');
-    expect(source).toContain('contracts: z.object(');
-    expect(source).toContain('channel: z.string().optional()');
+    expect(source).toContain('name: zod.string().optional()');
+    expect(source).toContain('description: zod.string().optional()');
+    expect(source).toContain('contracts: zod.object(');
+    expect(source).toContain('channel: zod.string().optional()');
     expect(source).toContain('request: blueNodeField().optional()');
   });
 
@@ -127,12 +127,12 @@ describe('schema compiler special fields', () => {
     }
     const source = schemaFiles[onlyPath];
 
-    expect(source).toContain('count: z.number()');
-    expect(source).not.toContain('count: z.number().optional()');
+    expect(source).toContain('count: zod.number()');
+    expect(source).not.toContain('count: zod.number().optional()');
     expect(source).toContain(
-      'status: z.enum(["open","closed"] as [string, ...string[]]).optional()',
+      'status: zod.enum(["open","closed"] as [string, ...string[]]).optional()',
     );
-    expect(source).toContain('tags: z.array(z.string()).min(1).max(3).optional()');
+    expect(source).toContain('tags: zod.array(zod.string()).min(1).max(3).optional()');
   });
 
   it('applies root enum schema metadata', () => {
@@ -177,7 +177,7 @@ describe('schema compiler special fields', () => {
     }
 
     expect(schemaFiles[onlyPath]).toContain(
-      'z.enum(["a","b"] as [string, ...string[]]) as unknown as z.ZodObject<any>',
+      'zod.enum(["a","b"] as [string, ...string[]]) as unknown as z.ZodObject<any>',
     );
   });
 });

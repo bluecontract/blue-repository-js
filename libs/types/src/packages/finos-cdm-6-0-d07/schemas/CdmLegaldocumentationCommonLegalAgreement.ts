@@ -9,26 +9,30 @@ import { CdmLegaldocumentationCommonLegalAgreementIdentificationSchema } from '.
 import { CdmLegaldocumentationCommonResourceSchema } from './CdmLegaldocumentationCommonResource';
 import { CdmLegaldocumentationCommonUmbrellaAgreementSchema } from './CdmLegaldocumentationCommonUmbrellaAgreement';
 
-export const CdmLegaldocumentationCommonLegalAgreementSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonLegalAgreementSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/LegalAgreement']
   )(
-    z.object({
-      agreementDate: z.string().optional(),
-      agreementTerms: z
+    zod.object({
+      agreementDate: zod.string().optional(),
+      agreementTerms: zod
         .lazy(
           (): z.ZodTypeAny => CdmLegaldocumentationCommonAgreementTermsSchema
         )
         .optional(),
-      attachment: z
+      attachment: zod
         .array(
-          z.lazy((): z.ZodTypeAny => CdmLegaldocumentationCommonResourceSchema)
+          zod.lazy(
+            (): z.ZodTypeAny => CdmLegaldocumentationCommonResourceSchema
+          )
         )
         .min(0)
         .optional(),
-      contractualParty: z
+      contractualParty: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny =>
               CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
           )
@@ -36,38 +40,38 @@ export const CdmLegaldocumentationCommonLegalAgreementSchema: z.ZodTypeAny =
         .min(2)
         .max(2)
         .optional(),
-      description: z.string().optional(),
-      effectiveDate: z.string().optional(),
-      identifier: z
+      description: zod.string().optional(),
+      effectiveDate: zod.string().optional(),
+      identifier: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny => CdmBaseStaticdataIdentifierIdentifierSchema
           )
         )
         .min(0)
         .optional(),
-      legalAgreementIdentification: z
+      legalAgreementIdentification: zod
         .lazy(
           (): z.ZodTypeAny =>
             CdmLegaldocumentationCommonLegalAgreementIdentificationSchema
         )
         .optional(),
-      name: z.string().optional(),
-      otherParty: z
+      name: zod.string().optional(),
+      otherParty: zod
         .array(
-          z.lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartyRoleSchema)
+          zod.lazy((): z.ZodTypeAny => CdmBaseStaticdataPartyPartyRoleSchema)
         )
         .min(0)
         .optional(),
-      relatedAgreements: z
+      relatedAgreements: zod
         .array(
-          z.lazy(
+          zod.lazy(
             (): z.ZodTypeAny => CdmLegaldocumentationCommonLegalAgreementSchema
           )
         )
         .min(0)
         .optional(),
-      umbrellaAgreement: z
+      umbrellaAgreement: zod
         .lazy(
           (): z.ZodTypeAny => CdmLegaldocumentationCommonUmbrellaAgreementSchema
         )

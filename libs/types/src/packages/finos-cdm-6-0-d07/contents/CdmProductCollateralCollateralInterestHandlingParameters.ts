@@ -1,29 +1,32 @@
-export const CdmProductCollateralCollateralInterestHandlingParameters = {
+export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
+  string,
+  unknown
+> = {
   accrueInterestOnUnsettledInterest: {
     description:
       'Indicates whether interest accruing on unsettled interest amount is included (continues to be accrued) in the following period.\n',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   alternativeProvision: {
     description:
       'Specifies an alternative to interest amount, when the alternative provision clause is specified.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   alternativeToInterestAmount: {
     description: 'Specifies the alternative to interest amounts.',
     type: {
-      blueId: 'HwuWMb3tTYLKx27eGnZD5LB4TVdV6iz8fUGmWx1zqM21',
+      blueId: 'DpVYkkJKuVne3rcRtkfcsA1c5rBQibEFY4ujWCibD9jS',
     },
   },
   cutoffTime: {
     description:
       'Specifies the time of day that interest needs to be confirmed by.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -32,43 +35,33 @@ export const CdmProductCollateralCollateralInterestHandlingParameters = {
     description:
       'Indicates whether or not to include the open interest accrual in the margin calculation.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   interestAmountApplication: {
     description:
       'The application of Interest Amount with respect to the Delivery Amount and the Return Amount.',
     type: {
-      blueId: '64gfjSEPVGo67KbDGZX2jznDz7yJ8jdjLU64hFY297xY',
+      blueId: '7kes2FB65JuXjGdz6Lp6zhm95qL5DTCjDxCKwSm8USPV',
     },
   },
   interestPaymentHandling: {
     description: 'Specifies how the collateral interest is to be handled.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7fK6wnRWpFjqpe79nBuP5Y5x5DnXYGWkx1G6G3hmnf47',
+      blueId: 'sKqpZrkqt2VYmFSkbB7RRDetUKe7PJhYfsksQL6utY4',
     },
   },
   interestRolloverLimit: {
     description:
       'Specifies the level below which the interest will be rolled over.',
     type: {
-      blueId: 'AT5JtWQz9LEbYiYD2utqkpNY5Kg4aUBGiVFJZ5Vuhj9S',
+      blueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
     },
   },
   name: 'cdm/product/collateral/CollateralInterestHandlingParameters',
@@ -76,90 +69,65 @@ export const CdmProductCollateralCollateralInterestHandlingParameters = {
     description:
       "Indicates whether the interest amount may be offset against any margin call deliver or return amounts?   (aka 'net payments' indicator).\n",
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   netPostedAndHeldInterest: {
     description:
       'Indicates whether to net Held and Posted Interest Payments (i.e. whether interest payable for a period can be netted with interest receivable).\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   notification: {
     description: 'Specifies the terms describing notification requirements.',
     type: {
-      blueId: 'Hu2GxR5c7eMm5dFy9t6mhrBCQP9G6EdyEPDUz7TUV7Co',
+      blueId: 'AYFPdhUATGeD5Kaw7pwDQbqnwnGZ2DyM7rk1rVn4M1uM',
     },
   },
   onFullReturn: {
     description:
       'Indicates the option that accrued interest should be calculated and distributed when a full return of collateral occurs.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   onPartialReturn: {
     description:
       'Indicates the option that accrued interest should be calculated and distributed when a partial return collateral occurs.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   paymentBusinessCenter: {
     description: 'Specifies applicable business centers for payments.',
     itemType: {
-      blueId: 'T68z84ntdBb19juBApDyMAndAVUzzmotTGUTuJnHV3D',
+      blueId: 'Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   writeoffLimit: {
     description:
       'Specifies the level below which the interest will be written off; if omitted write-off is not applicable.',
     type: {
-      blueId: 'AT5JtWQz9LEbYiYD2utqkpNY5Kg4aUBGiVFJZ5Vuhj9S',
+      blueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
     },
   },
-} as const;
+};

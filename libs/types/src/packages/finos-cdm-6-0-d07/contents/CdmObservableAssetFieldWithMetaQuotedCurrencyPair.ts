@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaQuotedCurrencyPair = {
+export const CdmObservableAssetFieldWithMetaQuotedCurrencyPair: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaQuotedCurrencyPair',
   val: {
     type: {
-      blueId: 'CRDQNtXNJmEa2569YsarVn2w4uDdGJfuoMsGA37B3aci',
+      blueId: 'Fh47tZBtYn2vAYUQFPhW9yfe2PQ2jNgj4jqnT8kVqWGm',
     },
   },
-} as const;
+};

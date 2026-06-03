@@ -8,33 +8,35 @@ import { CdmProductCollateralCollateralMarginTypeEnumSchema } from './CdmProduct
 import { CdmProductCollateralConcentrationLimitTypeEnumSchema } from './CdmProductCollateralConcentrationLimitTypeEnum';
 import { CdmProductCollateralRatingPriorityResolutionEnumSchema } from './CdmProductCollateralRatingPriorityResolutionEnum';
 
-export const CdmProductCollateralConcentrationLimitCriteriaSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralConcentrationLimitCriteriaSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/ConcentrationLimitCriteria'
     ]
   )(
-    z.object({
-      appliesTo: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
+    zod.object({
+      appliesTo: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartyRoleEnumSchema))
         .min(0)
         .max(2)
         .optional(),
-      averageTradingVolume: z
+      averageTradingVolume: zod
         .lazy(() => CdmProductCollateralAverageTradingVolumeSchema)
         .optional(),
-      collateralCriteria: z
+      collateralCriteria: zod
         .lazy((): z.ZodTypeAny => CdmProductCollateralCollateralCriteriaSchema)
         .optional(),
-      concentrationLimitType: z
+      concentrationLimitType: zod
         .lazy(() => CdmProductCollateralConcentrationLimitTypeEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      ratingPriorityResolution: z
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      ratingPriorityResolution: zod
         .lazy(() => CdmProductCollateralRatingPriorityResolutionEnumSchema)
         .optional(),
-      restrictTo: z
+      restrictTo: zod
         .lazy(() => CdmProductCollateralCollateralMarginTypeEnumSchema)
         .optional(),
     })

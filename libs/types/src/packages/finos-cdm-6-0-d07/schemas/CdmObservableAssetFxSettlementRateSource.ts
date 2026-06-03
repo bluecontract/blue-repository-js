@@ -4,17 +4,19 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetFxInformationSourceSchema } from './CdmObservableAssetFxInformationSource';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmObservableAssetFxSettlementRateSourceSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFxSettlementRateSourceSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/FxSettlementRateSource']
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      nonstandardSettlementRate: z
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      nonstandardSettlementRate: zod
         .lazy(() => CdmObservableAssetFxInformationSourceSchema)
         .optional(),
-      settlementRateOption: z
+      settlementRateOption: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
     })

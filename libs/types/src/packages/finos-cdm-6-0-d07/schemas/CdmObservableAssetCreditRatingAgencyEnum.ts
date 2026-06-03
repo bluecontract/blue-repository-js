@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetCreditRatingAgencyEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCreditRatingAgencyEnumSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CreditRatingAgencyEnum']
   )(
-    z.enum([
+    zod.enum([
       'AMBest',
       'CBRS',
       'DBRS',

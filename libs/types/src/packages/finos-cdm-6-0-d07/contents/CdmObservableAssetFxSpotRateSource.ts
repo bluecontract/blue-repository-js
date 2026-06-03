@@ -1,4 +1,4 @@
-export const CdmObservableAssetFxSpotRateSource = {
+export const CdmObservableAssetFxSpotRateSource: Record<string, unknown> = {
   description:
     'A class defining the rate source and fixing time for an FX rate.',
   name: 'cdm/observable/asset/FxSpotRateSource',
@@ -6,22 +6,17 @@ export const CdmObservableAssetFxSpotRateSource = {
     description:
       'The primary source for where the rate observation will occur. Will typically be either a page or a reference bank published rate.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4ewTgKPXq5xDsrR3GStD5tHN6FnPdeZXUQ5JDo5tkqZc',
+      blueId: '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y',
     },
   },
   secondarySource: {
     description:
       'An alternative, or secondary, source for where the rate observation will occur. Will typically be either a page or a reference bank published rate.\n',
     type: {
-      blueId: '4ewTgKPXq5xDsrR3GStD5tHN6FnPdeZXUQ5JDo5tkqZc',
+      blueId: '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y',
     },
   },
-} as const;
+};

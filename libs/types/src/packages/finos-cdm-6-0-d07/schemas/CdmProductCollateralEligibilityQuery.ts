@@ -8,32 +8,33 @@ import { CdmBaseStaticdataAssetCommonISOCountryCodeEnumSchema } from './CdmBaseS
 import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPartyLegalEntity';
 import { CdmProductCollateralAgencyRatingCriteriaSchema } from './CdmProductCollateralAgencyRatingCriteria';
 
-export const CdmProductCollateralEligibilityQuerySchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/EligibilityQuery']
-  )(
-    z.object({
-      agencyRating: z.lazy(
-        () => CdmProductCollateralAgencyRatingCriteriaSchema
-      ),
-      assetCountryOfOrigin: z.lazy(
-        () => CdmBaseStaticdataAssetCommonISOCountryCodeEnumSchema
-      ),
-      collateralAssetType: z.lazy(
-        () => CdmBaseStaticdataAssetCommonAssetTypeSchema
-      ),
-      denominatedCurrency: z.lazy(
-        () => CdmBaseStaticdataAssetCommonCurrencyCodeEnumSchema
-      ),
-      description: z.string().optional(),
-      issuerName: z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema),
-      issuerType: z.lazy(
-        () => CdmBaseStaticdataAssetCommonCollateralIssuerTypeSchema
-      ),
-      maturity: z.number(),
-      name: z.string().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCollateralEligibilityQuerySchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/EligibilityQuery']
+)(
+  zod.object({
+    agencyRating: zod.lazy(
+      () => CdmProductCollateralAgencyRatingCriteriaSchema
+    ),
+    assetCountryOfOrigin: zod.lazy(
+      () => CdmBaseStaticdataAssetCommonISOCountryCodeEnumSchema
+    ),
+    collateralAssetType: zod.lazy(
+      () => CdmBaseStaticdataAssetCommonAssetTypeSchema
+    ),
+    denominatedCurrency: zod.lazy(
+      () => CdmBaseStaticdataAssetCommonCurrencyCodeEnumSchema
+    ),
+    description: zod.string().optional(),
+    issuerName: zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema),
+    issuerType: zod.lazy(
+      () => CdmBaseStaticdataAssetCommonCollateralIssuerTypeSchema
+    ),
+    maturity: zod.number(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmProductCollateralEligibilityQuery = z.infer<
   typeof CdmProductCollateralEligibilityQuerySchema

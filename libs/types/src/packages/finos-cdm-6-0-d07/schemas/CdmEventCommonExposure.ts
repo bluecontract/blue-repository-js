@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmEventPositionMetafieldsReferenceWithMetaPortfolioStateSchema } from './CdmEventPositionMetafieldsReferenceWithMetaPortfolioState';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmEventCommonExposureSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonExposureSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/Exposure']
 )(
-  z.object({
-    aggregateValue: z.lazy(() => CdmObservableAssetMoneySchema),
-    calculationDateTime: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    tradePortfolio: z.lazy(
+  zod.object({
+    aggregateValue: zod.lazy(() => CdmObservableAssetMoneySchema),
+    calculationDateTime: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    tradePortfolio: zod.lazy(
       () => CdmEventPositionMetafieldsReferenceWithMetaPortfolioStateSchema
     ),
-    valuationDateTime: z.string(),
+    valuationDateTime: zod.string(),
   })
 );
 

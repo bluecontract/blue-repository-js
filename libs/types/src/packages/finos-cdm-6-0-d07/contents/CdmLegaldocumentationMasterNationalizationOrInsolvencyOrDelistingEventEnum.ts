@@ -1,27 +1,27 @@
-export const CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum =
-  {
-    description:
-      'Defines the consequences of nationalization, insolvency and delisting events relating to the underlying.',
-    name: 'cdm/legaldocumentation/master/NationalizationOrInsolvencyOrDelistingEventEnum',
-    schema: {
-      enum: {
-        items: [
-          {
-            type: {
-              blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-            },
-            value: 'CancellationAndPayment',
-          },
-          {
-            type: {
-              blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-            },
-            value: 'NegotiatedCloseout',
-          },
-        ],
+export const CdmLegaldocumentationMasterNationalizationOrInsolvencyOrDelistingEventEnum: Record<
+  string,
+  unknown
+> = {
+  description:
+    'Defines the consequences of nationalization, insolvency and delisting events relating to the underlying.',
+  name: 'cdm/legaldocumentation/master/NationalizationOrInsolvencyOrDelistingEventEnum',
+  schema: {
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'CancellationAndPayment',
       },
-    },
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  } as const;
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+        },
+        value: 'NegotiatedCloseout',
+      },
+    ],
+  },
+  type: {
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+  },
+};

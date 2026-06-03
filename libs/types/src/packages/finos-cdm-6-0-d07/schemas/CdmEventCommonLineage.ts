@@ -5,30 +5,34 @@ import { CdmEventCommonMetafieldsReferenceWithMetaTradeSchema } from './CdmEvent
 import { CdmEventPositionMetafieldsReferenceWithMetaPortfolioStateSchema } from './CdmEventPositionMetafieldsReferenceWithMetaPortfolioState';
 import { CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStepSchema } from './CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStep';
 
-export const CdmEventCommonLineageSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonLineageSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/Lineage']
 )(
-  z.object({
-    description: z.string().optional(),
-    eventReference: z
+  zod.object({
+    description: zod.string().optional(),
+    eventReference: zod
       .array(
-        z.lazy(
+        zod.lazy(
           () => CdmEventWorkflowMetafieldsReferenceWithMetaWorkflowStepSchema
         )
       )
       .min(0)
       .optional(),
-    name: z.string().optional(),
-    portfolioStateReference: z
+    name: zod.string().optional(),
+    portfolioStateReference: zod
       .array(
-        z.lazy(
+        zod.lazy(
           () => CdmEventPositionMetafieldsReferenceWithMetaPortfolioStateSchema
         )
       )
       .min(0)
       .optional(),
-    tradeReference: z
-      .array(z.lazy(() => CdmEventCommonMetafieldsReferenceWithMetaTradeSchema))
+    tradeReference: zod
+      .array(
+        zod.lazy(() => CdmEventCommonMetafieldsReferenceWithMetaTradeSchema)
+      )
       .min(0)
       .optional(),
   })

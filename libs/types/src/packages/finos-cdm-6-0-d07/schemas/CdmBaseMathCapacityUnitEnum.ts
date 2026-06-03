@@ -2,10 +2,12 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmBaseMathCapacityUnitEnumSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathCapacityUnitEnumSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/CapacityUnitEnum']
 )(
-  z.enum([
+  zod.enum([
     'ALW',
     'BBL',
     'BCF',

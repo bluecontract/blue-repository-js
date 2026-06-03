@@ -6,22 +6,23 @@ import { CdmBaseMathDatedValueSchema } from './CdmBaseMathDatedValue';
 import { CdmBaseMathMeasureSchema } from './CdmBaseMathMeasure';
 import { CdmBaseMathUnitTypeSchema } from './CdmBaseMathUnitType';
 
-export const CdmBaseMathNonNegativeQuantityScheduleSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/math/NonNegativeQuantitySchedule']
-  )(
-    z.object({
-      datedValue: z
-        .array(z.lazy(() => CdmBaseMathDatedValueSchema))
-        .min(0)
-        .optional(),
-      frequency: z.lazy(() => CdmBaseDatetimeFrequencySchema).optional(),
-      multiplier: z.lazy(() => CdmBaseMathMeasureSchema).optional(),
-      name: z.string().optional(),
-      unit: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-      val: z.number().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseMathNonNegativeQuantityScheduleSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/math/NonNegativeQuantitySchedule']
+)(
+  zod.object({
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
+      .min(0)
+      .optional(),
+    frequency: zod.lazy(() => CdmBaseDatetimeFrequencySchema).optional(),
+    multiplier: zod.lazy(() => CdmBaseMathMeasureSchema).optional(),
+    name: zod.string().optional(),
+    unit: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    val: zod.number().optional(),
+  })
+);
 
 export type CdmBaseMathNonNegativeQuantitySchedule = z.infer<
   typeof CdmBaseMathNonNegativeQuantityScheduleSchema

@@ -1,35 +1,25 @@
-export const CdmProductTemplateCancellationEvent = {
+export const CdmProductTemplateCancellationEvent: Record<string, unknown> = {
   adjustedEarlyTerminationDate: {
     description:
       'The early termination date that is applicable if an early termination provision is exercised. This date should already be adjusted for any applicable business day convention.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   adjustedExerciseDate: {
     description:
       'The date on which option exercise takes place. This date should already be adjusted for any applicable business day convention.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
     'The adjusted dates for a specific cancellation date, including the adjusted exercise date and adjusted termination date.\n',
   name: 'cdm/product/template/CancellationEvent',
-} as const;
+};

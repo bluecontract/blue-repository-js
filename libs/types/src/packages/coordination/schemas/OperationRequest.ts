@@ -2,15 +2,17 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 
-export const OperationRequestSchema = withTypeBlueId(
+const zod = z as any;
+
+export const OperationRequestSchema: any = withTypeBlueId(
   blueIds['Coordination/Operation Request']
 )(
-  z.object({
-    allowNewerVersion: z.boolean().optional(),
-    description: z.string().optional(),
+  zod.object({
+    allowNewerVersion: zod.boolean().optional(),
+    description: zod.string().optional(),
     document: blueNodeField().optional(),
-    name: z.string().optional(),
-    operation: z.string().optional(),
+    name: zod.string().optional(),
+    operation: zod.string().optional(),
     request: blueNodeField().optional(),
   })
 );

@@ -1,7 +1,7 @@
-export const TransactionIdentified = {
+export const TransactionIdentified: Record<string, unknown> = {
   description: 'The deliverer identified the card transaction.',
   name: 'Transaction Identified',
   type: {
-    blueId: '7ugyHm8fpgvQx6pbLcW8cRNLBVDBExCp2iSYgd82ak6z',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

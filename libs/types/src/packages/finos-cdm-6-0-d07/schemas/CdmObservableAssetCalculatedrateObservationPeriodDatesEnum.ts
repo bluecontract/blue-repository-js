@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmObservableAssetCalculatedrateObservationPeriodDatesEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCalculatedrateObservationPeriodDatesEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/calculatedrate/ObservationPeriodDatesEnum'
     ]
   )(
-    z.enum(['FixingDate', 'SetInAdvance', 'Standard'] as [
+    zod.enum(['FixingDate', 'SetInAdvance', 'Standard'] as [
       string,
       ...string[]
     ]) as unknown as z.ZodObject<any>

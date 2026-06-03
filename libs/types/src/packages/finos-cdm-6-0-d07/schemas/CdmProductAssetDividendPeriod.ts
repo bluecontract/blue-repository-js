@@ -6,25 +6,33 @@ import { CdmBaseDatetimeBusinessDayAdjustmentsSchema } from './CdmBaseDatetimeBu
 import { CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituentSchema } from './CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituent';
 import { CdmProductAssetDividendPaymentDateSchema } from './CdmProductAssetDividendPaymentDate';
 
-export const CdmProductAssetDividendPeriodSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductAssetDividendPeriodSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/DividendPeriod']
 )(
-  z.object({
-    basketConstituent: z
+  zod.object({
+    basketConstituent: zod
       .lazy(
         () =>
           CdmObservableAssetMetafieldsReferenceWithMetaBasketConstituentSchema
       )
       .optional(),
-    dateAdjustments: z.lazy(() => CdmBaseDatetimeBusinessDayAdjustmentsSchema),
-    description: z.string().optional(),
-    dividendPaymentDate: z.lazy(() => CdmProductAssetDividendPaymentDateSchema),
-    dividendValuationDate: z
+    dateAdjustments: zod.lazy(
+      () => CdmBaseDatetimeBusinessDayAdjustmentsSchema
+    ),
+    description: zod.string().optional(),
+    dividendPaymentDate: zod.lazy(
+      () => CdmProductAssetDividendPaymentDateSchema
+    ),
+    dividendValuationDate: zod
       .lazy(() => CdmBaseDatetimeAdjustableOrRelativeDateSchema)
       .optional(),
-    endDate: z.lazy(() => CdmProductAssetDividendPaymentDateSchema).optional(),
-    name: z.string().optional(),
-    startDate: z
+    endDate: zod
+      .lazy(() => CdmProductAssetDividendPaymentDateSchema)
+      .optional(),
+    name: zod.string().optional(),
+    startDate: zod
       .lazy(() => CdmProductAssetDividendPaymentDateSchema)
       .optional(),
   })

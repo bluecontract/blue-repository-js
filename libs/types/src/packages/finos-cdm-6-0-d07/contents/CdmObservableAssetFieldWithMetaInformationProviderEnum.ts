@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaInformationProviderEnum = {
+export const CdmObservableAssetFieldWithMetaInformationProviderEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaInformationProviderEnum',
   val: {
     type: {
-      blueId: '9SbzsCyyrBbtfyrpVNNoTN5WhstJwnUvNnjX6pFenBBp',
+      blueId: 'Byw4nUAhk4eWhAxnnEkCp1oMG5Acyg7nvG75MFXFjASY',
     },
   },
-} as const;
+};

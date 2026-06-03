@@ -1,14 +1,15 @@
-export const DocumentBootstrapCompleted = {
+export const DocumentBootstrapCompleted: Record<string, unknown> = {
   description:
-    "Response event indicating that a requested document bootstrap succeeded. The `documentId` identifies the newly created\nor registered document instance according to the surrounding storage or provider system.\n\nCompletion means the bootstrap provider believes the document has been created and is ready for further interaction.\nThe exact meaning of `documentId` is application-defined: it may be a BlueId, session ID, storage key, timeline entry,\nprovider URI, or another stable identifier. Consumers should use the provider's documented lookup rules.\n",
+    'Lifecycle/coordination event indicating that a requested document bootstrap completed successfully. It records the\nresulting document identifier so the requester can continue interacting with the new document or session.\n',
   documentId: {
-    description: 'Document ID of the bootstrapped document.',
+    description:
+      'Identifier, reference, or BlueId of the bootstrapped document/session, according to the bootstrap runtime.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Document Bootstrap Completed',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

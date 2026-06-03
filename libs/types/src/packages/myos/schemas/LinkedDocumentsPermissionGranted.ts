@@ -4,15 +4,17 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
 
-export const LinkedDocumentsPermissionGrantedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const LinkedDocumentsPermissionGrantedSchema: any = withTypeBlueId(
   blueIds['MyOS/Linked Documents Permission Granted']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    grantDocumentId: z.string().optional(),
-    links: z.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
-    name: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    grantDocumentId: zod.string().optional(),
+    links: zod.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
+    name: zod.string().optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

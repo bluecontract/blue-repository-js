@@ -3,17 +3,21 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmBaseStaticdataPartyAddressSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseStaticdataPartyAddressSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/staticdata/party/Address']
 )(
-  z.object({
-    city: z.string().optional(),
-    country: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema).optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    postalCode: z.string().optional(),
-    state: z.string().optional(),
-    street: z.array(z.string()).min(1).optional(),
+  zod.object({
+    city: zod.string().optional(),
+    country: zod
+      .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    postalCode: zod.string().optional(),
+    state: zod.string().optional(),
+    street: zod.array(zod.string()).min(1).optional(),
   })
 );
 

@@ -5,35 +5,35 @@ import { CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema } from './CdmBaseD
 import { CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnumSchema } from './CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum';
 import { CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema } from './CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCenters';
 
-export const CdmBaseDatetimeBusinessCentersSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/BusinessCenters']
-  )(
-    z.object({
-      businessCenter: z
-        .array(
-          z.lazy(() => CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema)
+const zod = z as any;
+
+export const CdmBaseDatetimeBusinessCentersSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/BusinessCenters']
+)(
+  zod.object({
+    businessCenter: zod
+      .array(
+        zod.lazy(() => CdmBaseDatetimeFieldWithMetaBusinessCenterEnumSchema)
+      )
+      .min(0)
+      .optional(),
+    businessCentersReference: zod
+      .lazy(
+        () => CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema
+      )
+      .optional(),
+    commodityBusinessCalendar: zod
+      .array(
+        zod.lazy(
+          () => CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnumSchema
         )
-        .min(0)
-        .optional(),
-      businessCentersReference: z
-        .lazy(
-          () => CdmBaseDatetimeMetafieldsReferenceWithMetaBusinessCentersSchema
-        )
-        .optional(),
-      commodityBusinessCalendar: z
-        .array(
-          z.lazy(
-            () =>
-              CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnumSchema
-          )
-        )
-        .min(0)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-    })
-  );
+      )
+      .min(0)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+  })
+);
 
 export type CdmBaseDatetimeBusinessCenters = z.infer<
   typeof CdmBaseDatetimeBusinessCentersSchema

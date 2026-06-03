@@ -1,29 +1,19 @@
-export const CdmRegulationSwp = {
+export const CdmRegulationSwp: Record<string, unknown> = {
   name: 'cdm/regulation/Swp',
   swpIn: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '2T3hoZUtEHPP41LrKUi7cCiEHCk8AwUskHa4sVvsm6GD',
+      blueId: '8wDzaj8nhdMn9sTJMrWq1siNiVWLq5NQ6cURKPYNN86F',
     },
   },
   swpOut: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '8Dw97kNp5Jao28zFYWCpReQahB3h93YosQEdCZLjdkEV',
+      blueId: 'Du8Dj1mUc32NnorgGE844tyffuiu6gfALcLKPPS9mZKL',
     },
   },
-} as const;
+};

@@ -4,18 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseMathDatedValueSchema } from './CdmBaseMathDatedValue';
 import { CdmBaseMathUnitTypeSchema } from './CdmBaseMathUnitType';
 
-export const CdmBaseMathMeasureScheduleSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmBaseMathMeasureScheduleSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/base/math/MeasureSchedule']
 )(
-  z.object({
-    datedValue: z
-      .array(z.lazy(() => CdmBaseMathDatedValueSchema))
+  zod.object({
+    datedValue: zod
+      .array(zod.lazy(() => CdmBaseMathDatedValueSchema))
       .min(0)
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    unit: z.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
-    val: z.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    unit: zod.lazy(() => CdmBaseMathUnitTypeSchema).optional(),
+    val: zod.number().optional(),
   })
 );
 

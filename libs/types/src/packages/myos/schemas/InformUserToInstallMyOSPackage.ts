@@ -3,15 +3,17 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { MyOSPackageSchema } from './MyOSPackage';
 
-export const InformUserToInstallMyOSPackageSchema = withTypeBlueId(
+const zod = z as any;
+
+export const InformUserToInstallMyOSPackageSchema: any = withTypeBlueId(
   blueIds['MyOS/Inform User To Install MyOS Package']
 )(
-  z.object({
-    description: z.string().optional(),
-    message: z.string().optional(),
-    name: z.string().optional(),
-    package: z.lazy(() => MyOSPackageSchema).optional(),
-    title: z.string().optional(),
+  zod.object({
+    description: zod.string().optional(),
+    message: zod.string().optional(),
+    name: zod.string().optional(),
+    package: zod.lazy(() => MyOSPackageSchema).optional(),
+    title: zod.string().optional(),
   })
 );
 

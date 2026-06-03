@@ -1,8 +1,8 @@
-export const PayNoteAccepted = {
+export const PayNoteAccepted: Record<string, unknown> = {
   description:
     'The Guarantor accepted this PayNote as governing the referenced transaction.',
   name: 'PayNote Accepted',
   type: {
-    blueId: '7aeKdDTceCVYDtyYZRdK7eQ8UU6PWn6X26Uea3XrGZdX',
+    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
   },
-} as const;
+};

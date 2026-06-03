@@ -5,22 +5,26 @@ import { CdmMarginScheduleStandardizedScheduleAssetClassEnumSchema } from './Cdm
 import { CdmMarginScheduleStandardizedScheduleProductClassEnumSchema } from './CdmMarginScheduleStandardizedScheduleProductClassEnum';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmMarginScheduleStandardizedScheduleTradeInfoSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmMarginScheduleStandardizedScheduleTradeInfoSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/margin/schedule/StandardizedScheduleTradeInfo'
     ]
   )(
-    z.object({
-      assetClass: z
+    zod.object({
+      assetClass: zod
         .lazy(() => CdmMarginScheduleStandardizedScheduleAssetClassEnumSchema)
         .optional(),
-      grossInitialMargin: z
+      grossInitialMargin: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
-      markToMarketValue: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-      name: z.string().optional(),
-      productClass: z
+      markToMarketValue: zod
+        .lazy(() => CdmObservableAssetMoneySchema)
+        .optional(),
+      name: zod.string().optional(),
+      productClass: zod
         .lazy(() => CdmMarginScheduleStandardizedScheduleProductClassEnumSchema)
         .optional(),
     })

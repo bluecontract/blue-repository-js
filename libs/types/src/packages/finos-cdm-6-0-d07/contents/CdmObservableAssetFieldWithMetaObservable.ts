@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaObservable = {
+export const CdmObservableAssetFieldWithMetaObservable: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaObservable',
   val: {
     type: {
-      blueId: 'Hb4wmAVuJwiD8UV5Stp7MdchNt2tK1QCEE5tBFxE5F9A',
+      blueId: 'xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS',
     },
   },
-} as const;
+};

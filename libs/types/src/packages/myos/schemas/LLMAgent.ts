@@ -3,10 +3,12 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { AgentSchema } from './Agent';
 
-export const LLMAgentSchema = withTypeBlueId(blueIds['MyOS/LLM Agent'])(
+const zod = z as any;
+
+export const LLMAgentSchema: any = withTypeBlueId(blueIds['MyOS/LLM Agent'])(
   AgentSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

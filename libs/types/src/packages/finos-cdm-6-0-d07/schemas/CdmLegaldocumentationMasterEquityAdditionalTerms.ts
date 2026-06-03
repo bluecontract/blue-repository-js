@@ -5,27 +5,29 @@ import { CdmLegaldocumentationMasterDeterminationRolesAndTermsSchema } from './C
 import { CdmLegaldocumentationMasterExtraordinaryEventsSchema } from './CdmLegaldocumentationMasterExtraordinaryEvents';
 import { CdmLegaldocumentationMasterUnderlierSubstitutionProvisionSchema } from './CdmLegaldocumentationMasterUnderlierSubstitutionProvision';
 
-export const CdmLegaldocumentationMasterEquityAdditionalTermsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterEquityAdditionalTermsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/EquityAdditionalTerms'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      determinationTerms: z
+    zod.object({
+      description: zod.string().optional(),
+      determinationTerms: zod
         .array(
-          z.lazy(
+          zod.lazy(
             () => CdmLegaldocumentationMasterDeterminationRolesAndTermsSchema
           )
         )
         .min(1)
         .optional(),
-      extraordinaryEvents: z
+      extraordinaryEvents: zod
         .lazy(() => CdmLegaldocumentationMasterExtraordinaryEventsSchema)
         .optional(),
-      name: z.string().optional(),
-      substitutionProvision: z
+      name: zod.string().optional(),
+      substitutionProvision: zod
         .lazy(
           () => CdmLegaldocumentationMasterUnderlierSubstitutionProvisionSchema
         )

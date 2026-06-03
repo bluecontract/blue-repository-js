@@ -1,38 +1,28 @@
-export const CdmEventCommonCollateralPortfolio = {
+export const CdmEventCommonCollateralPortfolio: Record<string, unknown> = {
   collateralBalance: {
     description:
       'Represents the populated or calculated collateral aggregate balance amount for the collateral portfolio.',
     itemType: {
-      blueId: '9XXCYnAKStGGQJv82Q3iAt6L217E7QCFrotX9UUHC84P',
+      blueId: '8nANyRzbRdjuTq7qNZchzDJ4XYqZ8HWYinBX4dWM6NAV',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   collateralPosition: {
     description:
       'Specifies the individual components of the collateral positions in the collateral portfolio.',
     itemType: {
-      blueId: 'RkQ9hssWBiUyn4LiaktzsRVjx76PDv5qNq4T8YionjL',
+      blueId: '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
@@ -41,7 +31,7 @@ export const CdmEventCommonCollateralPortfolio = {
     description:
       'The specification of a legal agreement between two parties governing the collateral relationship such as Credit Support Agreement or Collateral Transfer Agreement etc. (NB: this can be provided by reference to a global key for each LegalAgreement object).\n',
     type: {
-      blueId: '9Sgsf7rKtkk3txxbTriyWaPPryyctCqx4hxMCFPS8AyU',
+      blueId: '8d7t77eoZznGXdoKdpQK6QFJcZuzZrjj3VtBPGBQ4sUm',
     },
   },
   name: 'cdm/event/common/CollateralPortfolio',
@@ -49,7 +39,7 @@ export const CdmEventCommonCollateralPortfolio = {
     description:
       'Specifies a unique identifier for a set of collateral positions in a portfolio.',
     type: {
-      blueId: '8eDineGwQr2VXBeVEPbnJZvEcNhDbLu8HtmubDT6RBoZ',
+      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
     },
   },
-} as const;
+};

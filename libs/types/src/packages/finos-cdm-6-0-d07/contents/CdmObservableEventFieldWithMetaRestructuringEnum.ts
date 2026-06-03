@@ -1,13 +1,16 @@
-export const CdmObservableEventFieldWithMetaRestructuringEnum = {
+export const CdmObservableEventFieldWithMetaRestructuringEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/event/FieldWithMetaRestructuringEnum',
   val: {
     type: {
-      blueId: 'GVjv34nbkQTtiTyxF1YaWKj1CzAkkX7yeirLncT6H8h8',
+      blueId: '2nbojqENR7xMarP4TbXNuLgBPVLDgA4Jf6RYtJTucwte',
     },
   },
-} as const;
+};

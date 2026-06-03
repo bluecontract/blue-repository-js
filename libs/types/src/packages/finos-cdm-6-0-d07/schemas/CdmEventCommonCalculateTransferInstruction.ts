@@ -7,26 +7,28 @@ import { CdmEventCommonResetSchema } from './CdmEventCommonReset';
 import { CdmEventCommonTradeStateSchema } from './CdmEventCommonTradeState';
 import { CdmProductTemplateMetafieldsReferenceWithMetaPayoutSchema } from './CdmProductTemplateMetafieldsReferenceWithMetaPayout';
 
-export const CdmEventCommonCalculateTransferInstructionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventCommonCalculateTransferInstructionSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/common/CalculateTransferInstruction']
   )(
-    z.object({
-      date: z.string().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      payerReceiver: z
+    zod.object({
+      date: zod.string().optional(),
+      description: zod.string().optional(),
+      name: zod.string().optional(),
+      payerReceiver: zod
         .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
         .optional(),
-      payout: z.lazy(
+      payout: zod.lazy(
         () => CdmProductTemplateMetafieldsReferenceWithMetaPayoutSchema
       ),
-      quantity: z.lazy(() => CdmBaseMathQuantitySchema).optional(),
-      resets: z
-        .array(z.lazy(() => CdmEventCommonResetSchema))
+      quantity: zod.lazy(() => CdmBaseMathQuantitySchema).optional(),
+      resets: zod
+        .array(zod.lazy(() => CdmEventCommonResetSchema))
         .min(0)
         .optional(),
-      tradeState: z.lazy(() => CdmEventCommonTradeStateSchema),
+      tradeState: zod.lazy(() => CdmEventCommonTradeStateSchema),
     })
   );
 

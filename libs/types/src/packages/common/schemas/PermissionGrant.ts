@@ -3,12 +3,14 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentSchema } from './Document';
 
-export const PermissionGrantSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PermissionGrantSchema: any = withTypeBlueId(
   blueIds['Common/PermissionGrant']
 )(
   DocumentSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

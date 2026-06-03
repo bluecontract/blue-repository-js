@@ -7,31 +7,33 @@ import { CdmEventWorkflowFieldWithMetaLimitLevelEnumSchema } from './CdmEventWor
 import { CdmEventWorkflowVelocitySchema } from './CdmEventWorkflowVelocity';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmEventWorkflowLimitApplicableExtendedSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmEventWorkflowLimitApplicableExtendedSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/LimitApplicableExtended']
   )(
-    z.object({
-      amountRemaining: z.number().optional(),
-      amountUtilized: z.number().optional(),
-      clipSize: z.number().optional(),
-      currency: z
+    zod.object({
+      amountRemaining: zod.number().optional(),
+      amountUtilized: zod.number().optional(),
+      clipSize: zod.number().optional(),
+      currency: zod
         .lazy(() => ComRosettaModelFieldWithMetaStringSchema)
         .optional(),
-      description: z.string().optional(),
-      limitAmount: z.number().optional(),
-      limitImpactDueToTrade: z.number().optional(),
-      limitLevel: z
+      description: zod.string().optional(),
+      limitAmount: zod.number().optional(),
+      limitImpactDueToTrade: zod.number().optional(),
+      limitLevel: zod
         .lazy(() => CdmEventWorkflowFieldWithMetaLimitLevelEnumSchema)
         .optional(),
-      limitType: z
+      limitType: zod
         .lazy(() => CdmEventWorkflowFieldWithMetaCreditLimitTypeEnumSchema)
         .optional(),
-      name: z.string().optional(),
-      utilization: z
+      name: zod.string().optional(),
+      utilization: zod
         .lazy(() => CdmEventWorkflowCreditLimitUtilisationSchema)
         .optional(),
-      velocity: z.lazy(() => CdmEventWorkflowVelocitySchema).optional(),
+      velocity: zod.lazy(() => CdmEventWorkflowVelocitySchema).optional(),
     })
   );
 

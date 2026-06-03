@@ -4,17 +4,20 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
 
-export const LinkedDocumentsPermissionRevokingInProgressSchema = withTypeBlueId(
-  blueIds['MyOS/Linked Documents Permission Revoking in Progress']
-)(
-  ResponseSchema.extend({
-    description: z.string().optional(),
-    links: z.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    targetSessionId: z.string().optional(),
-  })
-);
+const zod = z as any;
+
+export const LinkedDocumentsPermissionRevokingInProgressSchema: any =
+  withTypeBlueId(
+    blueIds['MyOS/Linked Documents Permission Revoking in Progress']
+  )(
+    ResponseSchema.extend({
+      description: zod.string().optional(),
+      links: zod.lazy(() => LinkedDocumentsPermissionSetSchema).optional(),
+      name: zod.string().optional(),
+      reason: zod.string().optional(),
+      targetSessionId: zod.string().optional(),
+    })
+  );
 
 export type LinkedDocumentsPermissionRevokingInProgress = z.infer<
   typeof LinkedDocumentsPermissionRevokingInProgressSchema

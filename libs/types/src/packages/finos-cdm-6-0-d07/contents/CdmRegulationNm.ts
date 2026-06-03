@@ -1,29 +1,19 @@
-export const CdmRegulationNm = {
+export const CdmRegulationNm: Record<string, unknown> = {
   name: 'cdm/regulation/Nm',
   refRate: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'AcEgwB4h9wHoHeS5UXLfAN76wwkUSG2T7F7gwHYjW2mr',
+      blueId: '3iGK8rtshZDYPEKjPLJb7aYsVc2cBa7Pnkc4Nr1vLoZt',
     },
   },
   term: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7emp1LEhZ1y3VEERHEsAEa4npZSpiVUDeFQob2LpBkhG',
+      blueId: 'BjVwAr1pYp3ZQh3wtJi2zXxjpqqqyBzNjp9m1ZpZVP15',
     },
   },
-} as const;
+};

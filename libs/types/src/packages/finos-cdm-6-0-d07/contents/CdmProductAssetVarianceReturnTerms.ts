@@ -1,55 +1,55 @@
-export const CdmProductAssetVarianceReturnTerms = {
+export const CdmProductAssetVarianceReturnTerms: Record<string, unknown> = {
   annualizationFactor: {
     description:
       'This specifies the numerator of an annualization factor. Frequently this number is equal to the number of observations of prices in a year e.g. 252.\n',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   dividendApplicability: {
     description: 'The parameters which define whether dividends are applicable',
     type: {
-      blueId: 'JDNuetaPzRJ1YcnfGUCcHqTorc5byg7A9rwtFg9X6MZg',
+      blueId: 'AfKweapaqsU79LG9ZWn4qFZmKFXJo7xvzr7cVxixP86u',
     },
   },
   equityUnderlierProvisions: {
     description:
       'Contains Equity Underlyer provisions regarding jurisdiction and fallbacks.',
     type: {
-      blueId: 'Jo6daPzLZmva9P2h4WZUsuU1uvgGPFixiCYarEPe9ts',
+      blueId: 'G2uPrFU4uNeXsrT1Qauu3GMgFXeHpGU8yyPtUKRD4kr3',
     },
   },
   exchangeTradedContractNearest: {
     description: 'Specification of the exchange traded contract nearest.',
     type: {
-      blueId: '7Ezn98bzTDBSzbTRQf8yvx7zNsbGwp4w3rfb12fsiBwz',
+      blueId: '29tRf6HKyJ5PZ7qSgJmiEnuDwSx7xXy8vHzP4X2PfJU8',
     },
   },
   expectedN: {
     description: 'Expected number of trading days.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   initialLevel: {
     description:
       'Contract will strike off this initial level. Providing just the initialLevel without initialLevelSource, infers that this is AgreedInitialPrice - a specified Initial Index Level.\n',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   initialLevelSource: {
     description:
       'In this context, this is AgreedInitialPrice - a specified Initial Index Level.',
     type: {
-      blueId: '3y75YW3Xvg26b63Etnyf7EmxBfhFMUEgAhimCGQ2jyab',
+      blueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
     },
   },
   meanAdjustment: {
     description:
       'Specifies whether Mean Adjustment is applicable or not in the calculation of the Realized Volatility, Variance or Correlation\n',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/product/asset/VarianceReturnTerms',
@@ -57,54 +57,54 @@ export const CdmProductAssetVarianceReturnTerms = {
     description:
       "Performance calculation, in accordance with Part 1 Section 12 of the 2018 ISDA CDM Equity Confirmation for Security Equity Swap, Para 75. 'Equity Performance'. Cumulative performance is used as a notional multiplier factor on both legs of an Equity Swap.\n",
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   sharePriceDividendAdjustment: {
     description:
       'Indicates whether the price of shares is adjusted for dividends or not.',
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   valuationTerms: {
     description: 'Contains all non-date valuation information.',
     type: {
-      blueId: '4mhmBno4oM75kHALfSudGb7kWTYN5GN8J5C6WqRoX6fv',
+      blueId: '3RVpuPyLZTsRz9wSfRCjDrY84adxxkZBQaYM8p28MYpK',
     },
   },
   varianceCapFloor: {
     description:
       'Contains possible barriers for variance products, both variance-based and underlier price based',
     type: {
-      blueId: '3tApr9XRthnu91mUaWPjYs5ywdrhGSFHV3jDycqYLtHL',
+      blueId: '2mLzkHwpaH6DYE1kmEHmQzEUUPMt4HSJJx2cMn6WEJJL',
     },
   },
   varianceStrikePrice: {
     description:
       'Variance Strike Price in accordance with the ISDA 2011 Equity Derivatives Definitions.',
     type: {
-      blueId: 'wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543',
+      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
     },
   },
   vegaNotionalAmount: {
     description:
       'Vega Notional represents the approximate gain/loss at maturity for a 1% difference between RVol (realised vol) and KVol (strike vol). It does not necessarily represent the Vega Risk of the trade.\n',
     type: {
-      blueId: '3aukDRc2UqShaPzsHHg8ry28kkvETMb95rfAeM65GH1Q',
+      blueId: 'FgPwQQd53zyxFZAVWWuQLMY8QcPYNzeupku9hKxvYNob',
     },
   },
   volatilityCapFloor: {
     description: 'Contains containing volatility-based barriers',
     type: {
-      blueId: '2FArPnEgeydac33KBUck7sDiK4rQpun7wismexFXyRmD',
+      blueId: 'GxggG4PmBLZC3tQQEfAUNmomUmcbfT2ZjjQZzWL55dng',
     },
   },
   volatilityStrikePrice: {
     description:
       'Volatility Strike Price in accordance with the ISDA 2011 Equity Derivatives Definitions.',
     type: {
-      blueId: 'wuC3RHpv6ahucWwxTgdeQyeUP8ecWQQqgMvSpx3Z543',
+      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
     },
   },
-} as const;
+};

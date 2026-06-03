@@ -6,38 +6,39 @@ import { CdmObservableEventCreditEventNoticeSchema } from './CdmObservableEventC
 import { CdmObservableEventFailureToPaySchema } from './CdmObservableEventFailureToPay';
 import { CdmObservableEventRestructuringSchema } from './CdmObservableEventRestructuring';
 
-export const CdmObservableEventCreditEventsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/CreditEvents']
-  )(
-    z.object({
-      bankruptcy: z.boolean().optional(),
-      creditEventNotice: z
-        .lazy(() => CdmObservableEventCreditEventNoticeSchema)
-        .optional(),
-      defaultRequirement: z
-        .lazy(() => CdmObservableAssetMoneySchema)
-        .optional(),
-      description: z.string().optional(),
-      distressedRatingsDowngrade: z.boolean().optional(),
-      failureToPay: z
-        .lazy(() => CdmObservableEventFailureToPaySchema)
-        .optional(),
-      failureToPayInterest: z.boolean().optional(),
-      failureToPayPrincipal: z.boolean().optional(),
-      governmentalIntervention: z.boolean().optional(),
-      impliedWritedown: z.boolean().optional(),
-      maturityExtension: z.boolean().optional(),
-      name: z.string().optional(),
-      obligationAcceleration: z.boolean().optional(),
-      obligationDefault: z.boolean().optional(),
-      repudiationMoratorium: z.boolean().optional(),
-      restructuring: z
-        .lazy(() => CdmObservableEventRestructuringSchema)
-        .optional(),
-      writedown: z.boolean().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmObservableEventCreditEventsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/event/CreditEvents']
+)(
+  zod.object({
+    bankruptcy: zod.boolean().optional(),
+    creditEventNotice: zod
+      .lazy(() => CdmObservableEventCreditEventNoticeSchema)
+      .optional(),
+    defaultRequirement: zod
+      .lazy(() => CdmObservableAssetMoneySchema)
+      .optional(),
+    description: zod.string().optional(),
+    distressedRatingsDowngrade: zod.boolean().optional(),
+    failureToPay: zod
+      .lazy(() => CdmObservableEventFailureToPaySchema)
+      .optional(),
+    failureToPayInterest: zod.boolean().optional(),
+    failureToPayPrincipal: zod.boolean().optional(),
+    governmentalIntervention: zod.boolean().optional(),
+    impliedWritedown: zod.boolean().optional(),
+    maturityExtension: zod.boolean().optional(),
+    name: zod.string().optional(),
+    obligationAcceleration: zod.boolean().optional(),
+    obligationDefault: zod.boolean().optional(),
+    repudiationMoratorium: zod.boolean().optional(),
+    restructuring: zod
+      .lazy(() => CdmObservableEventRestructuringSchema)
+      .optional(),
+    writedown: zod.boolean().optional(),
+  })
+);
 
 export type CdmObservableEventCreditEvents = z.infer<
   typeof CdmObservableEventCreditEventsSchema

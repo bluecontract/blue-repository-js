@@ -4,13 +4,15 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { TimelineEntrySchema } from '../../coordination/schemas/TimelineEntry';
 import { MyOSTimelineSchema } from './MyOSTimeline';
 
-export const MyOSTimelineEntrySchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSTimelineEntrySchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Timeline Entry']
 )(
   TimelineEntrySchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    timeline: z.lazy(() => MyOSTimelineSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    timeline: zod.lazy(() => MyOSTimelineSchema).optional(),
   })
 );
 

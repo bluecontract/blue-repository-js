@@ -3,21 +3,23 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmProductCollateralCollateralInterestParametersSchema } from './CdmProductCollateralCollateralInterestParameters';
 
-export const CdmProductCollateralDistributionAndInterestPaymentSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralDistributionAndInterestPaymentSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/DistributionAndInterestPayment'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      interestParameters: z
+    zod.object({
+      description: zod.string().optional(),
+      interestParameters: zod
         .array(
-          z.lazy(() => CdmProductCollateralCollateralInterestParametersSchema)
+          zod.lazy(() => CdmProductCollateralCollateralInterestParametersSchema)
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

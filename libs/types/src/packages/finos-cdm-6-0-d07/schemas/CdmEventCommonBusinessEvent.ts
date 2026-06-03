@@ -7,28 +7,30 @@ import { CdmEventCommonEventIntentEnumSchema } from './CdmEventCommonEventIntent
 import { CdmEventCommonInstructionSchema } from './CdmEventCommonInstruction';
 import { CdmEventCommonTradeStateSchema } from './CdmEventCommonTradeState';
 
-export const CdmEventCommonBusinessEventSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonBusinessEventSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/BusinessEvent']
 )(
-  z.object({
-    after: z
-      .array(z.lazy(() => CdmEventCommonTradeStateSchema))
+  zod.object({
+    after: zod
+      .array(zod.lazy(() => CdmEventCommonTradeStateSchema))
       .min(0)
       .optional(),
-    corporateActionIntent: z
+    corporateActionIntent: zod
       .lazy(() => CdmEventCommonCorporateActionTypeEnumSchema)
       .optional(),
-    description: z.string().optional(),
-    effectiveDate: z.string().optional(),
-    eventDate: z.string().optional(),
-    eventQualifier: z.string().optional(),
-    instruction: z
-      .array(z.lazy(() => CdmEventCommonInstructionSchema))
+    description: zod.string().optional(),
+    effectiveDate: zod.string().optional(),
+    eventDate: zod.string().optional(),
+    eventQualifier: zod.string().optional(),
+    instruction: zod
+      .array(zod.lazy(() => CdmEventCommonInstructionSchema))
       .min(0)
       .optional(),
-    intent: z.lazy(() => CdmEventCommonEventIntentEnumSchema).optional(),
-    name: z.string().optional(),
-    packageInformation: z
+    intent: zod.lazy(() => CdmEventCommonEventIntentEnumSchema).optional(),
+    name: zod.string().optional(),
+    packageInformation: zod
       .lazy(() => CdmBaseStaticdataIdentifierIdentifiedListSchema)
       .optional(),
   })

@@ -2,17 +2,19 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmEventCommonExerciseEventSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonExerciseEventSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/ExerciseEvent']
 )(
-  z.object({
-    adjustedCashSettlementPaymentDate: z.string().optional(),
-    adjustedCashSettlementValuationDate: z.string().optional(),
-    adjustedExerciseDate: z.string(),
-    adjustedExerciseFeePaymentDate: z.string().optional(),
-    adjustedRelevantSwapEffectiveDate: z.string(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+  zod.object({
+    adjustedCashSettlementPaymentDate: zod.string().optional(),
+    adjustedCashSettlementValuationDate: zod.string().optional(),
+    adjustedExerciseDate: zod.string(),
+    adjustedExerciseFeePaymentDate: zod.string().optional(),
+    adjustedRelevantSwapEffectiveDate: zod.string(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

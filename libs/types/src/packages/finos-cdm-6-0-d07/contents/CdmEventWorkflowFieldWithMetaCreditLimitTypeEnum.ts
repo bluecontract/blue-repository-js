@@ -1,13 +1,16 @@
-export const CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum = {
+export const CdmEventWorkflowFieldWithMetaCreditLimitTypeEnum: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/event/workflow/FieldWithMetaCreditLimitTypeEnum',
   val: {
     type: {
-      blueId: 'B56ozkEmANXmnwGKZwUCnfN6mpja8ytvV9aTBgmCyYtw',
+      blueId: 'CRo3EU8CPpKHNiGvaX5xb9nGp7qqfXDNxyuzxdjqhqUP',
     },
   },
-} as const;
+};

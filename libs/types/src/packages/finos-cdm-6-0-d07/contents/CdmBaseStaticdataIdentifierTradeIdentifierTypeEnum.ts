@@ -1,26 +1,27 @@
-export const CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum = {
+export const CdmBaseStaticdataIdentifierTradeIdentifierTypeEnum: Record<
+  string,
+  unknown
+> = {
   description:
     'Defines the enumerated values to specify the nature of a trade identifier.',
   name: 'cdm/base/staticdata/identifier/TradeIdentifierTypeEnum',
   schema: {
-    enum: {
-      items: [
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'UniqueSwapIdentifier',
+    enum: [
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-        {
-          type: {
-            blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-          },
-          value: 'UniqueTransactionIdentifier',
+        value: 'UniqueSwapIdentifier',
+      },
+      {
+        type: {
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
-      ],
-    },
+        value: 'UniqueTransactionIdentifier',
+      },
+    ],
   },
   type: {
-    blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+    blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
   },
-} as const;
+};

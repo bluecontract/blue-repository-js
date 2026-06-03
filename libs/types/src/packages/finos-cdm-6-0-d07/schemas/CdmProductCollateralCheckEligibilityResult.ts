@@ -5,24 +5,26 @@ import { CdmProductCollateralEligibilityQuerySchema } from './CdmProductCollater
 import { CdmProductCollateralEligibleCollateralCriteriaSchema } from './CdmProductCollateralEligibleCollateralCriteria';
 import { CdmProductCollateralEligibleCollateralSpecificationSchema } from './CdmProductCollateralEligibleCollateralSpecification';
 
-export const CdmProductCollateralCheckEligibilityResultSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCheckEligibilityResultSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/CheckEligibilityResult']
   )(
-    z.object({
-      description: z.string().optional(),
-      eligibilityQuery: z.lazy(
+    zod.object({
+      description: zod.string().optional(),
+      eligibilityQuery: zod.lazy(
         () => CdmProductCollateralEligibilityQuerySchema
       ),
-      isEligible: z.boolean(),
-      matchingEligibleCriteria: z
+      isEligible: zod.boolean(),
+      matchingEligibleCriteria: zod
         .array(
-          z.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
+          zod.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
         )
         .min(0)
         .optional(),
-      name: z.string().optional(),
-      specification: z.lazy(
+      name: zod.string().optional(),
+      specification: zod.lazy(
         () => CdmProductCollateralEligibleCollateralSpecificationSchema
       ),
     })

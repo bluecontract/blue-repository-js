@@ -11,48 +11,54 @@ import { CdmProductAssetReferenceInformationSchema } from './CdmProductAssetRefe
 import { CdmProductAssetSettledEntityMatrixSchema } from './CdmProductAssetSettledEntityMatrix';
 import { CdmProductAssetTrancheSchema } from './CdmProductAssetTranche';
 
-export const CdmObservableAssetCreditIndexSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmObservableAssetCreditIndexSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/CreditIndex']
 )(
-  z.object({
-    assetClass: z
+  zod.object({
+    assetClass: zod
       .lazy(() => CdmBaseStaticdataAssetCommonAssetClassEnumSchema)
       .optional(),
-    description: z.string().optional(),
-    exchange: z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema).optional(),
-    excludedReferenceEntity: z
-      .array(z.lazy(() => CdmProductAssetReferenceInformationSchema))
+    description: zod.string().optional(),
+    exchange: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    excludedReferenceEntity: zod
+      .array(zod.lazy(() => CdmProductAssetReferenceInformationSchema))
       .min(0)
       .optional(),
-    identifier: z
-      .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+    identifier: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
       .min(1)
       .optional(),
-    indexAnnexDate: z.string().optional(),
-    indexAnnexSource: z
+    indexAnnexDate: zod.string().optional(),
+    indexAnnexSource: zod
       .lazy(() => CdmProductAssetFieldWithMetaIndexAnnexSourceEnumSchema)
       .optional(),
-    indexAnnexVersion: z.number().optional(),
-    indexFactor: z.number().optional(),
-    indexSeries: z.number().optional(),
-    isExchangeListed: z.boolean().optional(),
-    name: z.string().optional(),
-    provider: z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema).optional(),
-    relatedExchange: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+    indexAnnexVersion: zod.number().optional(),
+    indexFactor: zod.number().optional(),
+    indexSeries: zod.number().optional(),
+    isExchangeListed: zod.boolean().optional(),
+    name: zod.string().optional(),
+    provider: zod
+      .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
+      .optional(),
+    relatedExchange: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
       .min(0)
       .optional(),
-    seniority: z
+    seniority: zod
       .lazy(() => CdmProductAssetCreditSeniorityEnumSchema)
       .optional(),
-    settledEntityMatrix: z
+    settledEntityMatrix: zod
       .lazy(() => CdmProductAssetSettledEntityMatrixSchema)
       .optional(),
-    taxonomy: z
-      .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+    taxonomy: zod
+      .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
       .min(0)
       .optional(),
-    tranche: z.lazy(() => CdmProductAssetTrancheSchema).optional(),
+    tranche: zod.lazy(() => CdmProductAssetTrancheSchema).optional(),
   })
 );
 

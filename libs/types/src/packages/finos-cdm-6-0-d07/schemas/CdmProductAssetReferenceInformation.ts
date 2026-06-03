@@ -5,26 +5,27 @@ import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPart
 import { CdmObservableAssetPriceSchema } from './CdmObservableAssetPrice';
 import { CdmProductAssetReferenceObligationSchema } from './CdmProductAssetReferenceObligation';
 
-export const CdmProductAssetReferenceInformationSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/ReferenceInformation']
-  )(
-    z.object({
-      allGuarantees: z.boolean().optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      noReferenceObligation: z.boolean().optional(),
-      referenceEntity: z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema),
-      referenceObligation: z
-        .array(z.lazy(() => CdmProductAssetReferenceObligationSchema))
-        .min(0)
-        .optional(),
-      referencePolicy: z.boolean().optional(),
-      referencePrice: z.lazy(() => CdmObservableAssetPriceSchema).optional(),
-      securedList: z.boolean().optional(),
-      unknownReferenceObligation: z.boolean().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetReferenceInformationSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/ReferenceInformation']
+)(
+  zod.object({
+    allGuarantees: zod.boolean().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    noReferenceObligation: zod.boolean().optional(),
+    referenceEntity: zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema),
+    referenceObligation: zod
+      .array(zod.lazy(() => CdmProductAssetReferenceObligationSchema))
+      .min(0)
+      .optional(),
+    referencePolicy: zod.boolean().optional(),
+    referencePrice: zod.lazy(() => CdmObservableAssetPriceSchema).optional(),
+    securedList: zod.boolean().optional(),
+    unknownReferenceObligation: zod.boolean().optional(),
+  })
+);
 
 export type CdmProductAssetReferenceInformation = z.infer<
   typeof CdmProductAssetReferenceInformationSchema

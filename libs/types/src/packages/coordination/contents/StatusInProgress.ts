@@ -1,14 +1,14 @@
-export const StatusInProgress = {
+export const StatusInProgress: Record<string, unknown> = {
   description:
-    'Document Status specialization for active processing. Status In Progress means the document is in its main operational\nphase and may continue to accept events, update state, emit requests, wait for responses, and process embedded scopes.\n\nThis status is appropriate for workflows that involve multiple sequential or asynchronous steps over time. It does not\nimply success or failure; it means the document has work underway and has not reached a final application-level state.\n',
+    'Concrete Document Status meaning work has started and is actively being processed, but no terminal success or failure has been reached. The fixed mode is `inProgress`.\n',
   mode: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     value: 'active',
   },
   name: 'Status In Progress',
   type: {
-    blueId: 'QHoUCCVhepZWQnSo9VfZCJWbSwyA9TuT65tBZMVtnRX',
+    blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
   },
-} as const;
+};

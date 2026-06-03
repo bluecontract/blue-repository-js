@@ -6,25 +6,29 @@ import { CdmObservableAssetCalculationAgentSchema } from './CdmObservableAssetCa
 import { CdmProductCommonSettlementSettlementTermsSchema } from './CdmProductCommonSettlementSettlementTerms';
 import { CdmProductTemplateMandatoryEarlyTerminationAdjustedDatesSchema } from './CdmProductTemplateMandatoryEarlyTerminationAdjustedDates';
 
-export const CdmProductTemplateMandatoryEarlyTerminationSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductTemplateMandatoryEarlyTerminationSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/template/MandatoryEarlyTermination']
   )(
-    z.object({
-      calculationAgent: z.lazy(() => CdmObservableAssetCalculationAgentSchema),
-      cashSettlement: z.lazy(
+    zod.object({
+      calculationAgent: zod.lazy(
+        () => CdmObservableAssetCalculationAgentSchema
+      ),
+      cashSettlement: zod.lazy(
         () => CdmProductCommonSettlementSettlementTermsSchema
       ),
-      description: z.string().optional(),
-      mandatoryEarlyTerminationAdjustedDates: z
+      description: zod.string().optional(),
+      mandatoryEarlyTerminationAdjustedDates: zod
         .lazy(
           () => CdmProductTemplateMandatoryEarlyTerminationAdjustedDatesSchema
         )
         .optional(),
-      mandatoryEarlyTerminationDate: z.lazy(
+      mandatoryEarlyTerminationDate: zod.lazy(
         () => CdmBaseDatetimeAdjustableDateSchema
       ),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

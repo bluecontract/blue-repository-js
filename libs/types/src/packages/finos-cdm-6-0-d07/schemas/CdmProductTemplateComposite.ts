@@ -6,22 +6,24 @@ import { CdmBaseDatetimeRelativeDateOffsetSchema } from './CdmBaseDatetimeRelati
 import { CdmObservableAssetFxSpotRateSourceSchema } from './CdmObservableAssetFxSpotRateSource';
 import { CdmObservableCommonDeterminationMethodEnumSchema } from './CdmObservableCommonDeterminationMethodEnum';
 
-export const CdmProductTemplateCompositeSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateCompositeSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/Composite']
 )(
-  z.object({
-    description: z.string().optional(),
-    determinationMethod: z
+  zod.object({
+    description: zod.string().optional(),
+    determinationMethod: zod
       .lazy(() => CdmObservableCommonDeterminationMethodEnumSchema)
       .optional(),
-    fixingTime: z
+    fixingTime: zod
       .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
       .optional(),
-    fxSpotRateSource: z
+    fxSpotRateSource: zod
       .lazy(() => CdmObservableAssetFxSpotRateSourceSchema)
       .optional(),
-    name: z.string().optional(),
-    relativeDate: z
+    name: zod.string().optional(),
+    relativeDate: zod
       .lazy(() => CdmBaseDatetimeRelativeDateOffsetSchema)
       .optional(),
   })

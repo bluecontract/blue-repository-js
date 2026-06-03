@@ -1,16 +1,14 @@
-export const CdmLegaldocumentationCommonContractualTermsSupplement = {
+export const CdmLegaldocumentationCommonContractualTermsSupplement: Record<
+  string,
+  unknown
+> = {
   contractualTermsSupplementType: {
     description: 'Identifies the form of applicable contractual supplement.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'FgeGQiLz9TJQSYENK3T48kJAnBoypPpJTdxNttHXYVSj',
+      blueId: 'HnmNxnPfmCYsrrcW4ZHfLPh81wfJNCf4xE2hqXeuzSgu',
     },
   },
   description:
@@ -20,7 +18,7 @@ export const CdmLegaldocumentationCommonContractualTermsSupplement = {
     description:
       'Specifies the publication date of the applicable version of the contractual supplement.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

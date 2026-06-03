@@ -1,32 +1,32 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { ChannelSchema } from '../../core/schemas/Channel';
 import { AgentSchema } from './Agent';
 import { AnchorAutomationTemplateSchema } from './AnchorAutomationTemplate';
 
-export const MyOSPackageSchema = withTypeBlueId(blueIds['MyOS/MyOS Package'])(
+const zod = z as any;
+
+export const MyOSPackageSchema: any = withTypeBlueId(
+  blueIds['MyOS/MyOS Package']
+)(
   AgentSchema.extend({
-    agentStoreDescription: z.string().optional(),
-    automationTemplate: z.lazy(() => AnchorAutomationTemplateSchema).optional(),
-    capabilities: z.record(z.string(), z.boolean()).optional(),
-    channelBindings: z
-      .record(
-        z.string(),
-        z.lazy(() => ChannelSchema)
-      )
+    agentStoreDescription: zod.string().optional(),
+    automationTemplate: zod
+      .lazy(() => AnchorAutomationTemplateSchema)
       .optional(),
-    description: z.string().optional(),
+    capabilities: zod.record(zod.string(), zod.boolean()).optional(),
+    channelBindings: zod.record(zod.string(), blueNodeField()).optional(),
+    description: zod.string().optional(),
     document: blueNodeField().optional(),
-    initialMessages: z
+    initialMessages: zod
       .object({
-        defaultMessage: z.string().optional(),
-        description: z.string().optional(),
-        perChannel: z.record(z.string(), z.string()).optional(),
+        defaultMessage: zod.string().optional(),
+        description: zod.string().optional(),
+        perChannel: zod.record(zod.string(), zod.string()).optional(),
       })
       .optional(),
-    installerChannel: z.string().optional(),
-    name: z.string().optional(),
+    installerChannel: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

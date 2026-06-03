@@ -5,23 +5,25 @@ import { CurrencySchema } from '../../common/schemas/Currency';
 import { RequestSchema } from '../../coordination/schemas/Request';
 import { MyOSUserSchema } from './MyOSUser';
 
-export const PaymentTargetPreparationRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentTargetPreparationRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Payment Target Preparation Requested']
 )(
   RequestSchema.extend({
-    allowedPayer: z.lazy(() => MyOSUserSchema).optional(),
-    amount: z.number().optional(),
-    context: z
+    allowedPayer: zod.lazy(() => MyOSUserSchema).optional(),
+    amount: zod.number().optional(),
+    context: zod
       .object({
-        description: z.string().optional(),
-        documentId: z.string().optional(),
+        description: zod.string().optional(),
+        documentId: zod.string().optional(),
       })
       .optional(),
-    currency: z.lazy(() => CurrencySchema).optional(),
-    description: z.string().optional(),
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
     expectedPaynote: blueNodeField().optional(),
-    expiresAt: z.string().optional(),
-    name: z.string().optional(),
+    expiresAt: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

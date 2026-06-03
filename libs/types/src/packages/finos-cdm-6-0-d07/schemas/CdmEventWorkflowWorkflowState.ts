@@ -5,21 +5,23 @@ import { CdmEventWorkflowPartyCustomisedWorkflowSchema } from './CdmEventWorkflo
 import { CdmEventWorkflowWarehouseIdentityEnumSchema } from './CdmEventWorkflowWarehouseIdentityEnum';
 import { CdmEventWorkflowWorkflowStatusEnumSchema } from './CdmEventWorkflowWorkflowStatusEnum';
 
-export const CdmEventWorkflowWorkflowStateSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventWorkflowWorkflowStateSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/workflow/WorkflowState']
 )(
-  z.object({
-    comment: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    partyCustomisedWorkflow: z
-      .array(z.lazy(() => CdmEventWorkflowPartyCustomisedWorkflowSchema))
+  zod.object({
+    comment: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    partyCustomisedWorkflow: zod
+      .array(zod.lazy(() => CdmEventWorkflowPartyCustomisedWorkflowSchema))
       .min(0)
       .optional(),
-    warehouseIdentity: z
+    warehouseIdentity: zod
       .lazy(() => CdmEventWorkflowWarehouseIdentityEnumSchema)
       .optional(),
-    workflowStatus: z.lazy(() => CdmEventWorkflowWorkflowStatusEnumSchema),
+    workflowStatus: zod.lazy(() => CdmEventWorkflowWorkflowStatusEnumSchema),
   })
 );
 

@@ -8,28 +8,30 @@ import { CdmEventCommonTradeSchema } from './CdmEventCommonTrade';
 import { CdmEventCommonTransferStateSchema } from './CdmEventCommonTransferState';
 import { CdmEventCommonValuationSchema } from './CdmEventCommonValuation';
 
-export const CdmEventCommonTradeStateSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonTradeStateSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/TradeState']
 )(
-  z.object({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    observationHistory: z
-      .array(z.lazy(() => CdmEventCommonObservationEventSchema))
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    observationHistory: zod
+      .array(zod.lazy(() => CdmEventCommonObservationEventSchema))
       .min(0)
       .optional(),
-    resetHistory: z
-      .array(z.lazy(() => CdmEventCommonResetSchema))
+    resetHistory: zod
+      .array(zod.lazy(() => CdmEventCommonResetSchema))
       .min(0)
       .optional(),
-    state: z.lazy(() => CdmEventCommonStateSchema).optional(),
-    trade: z.lazy(() => CdmEventCommonTradeSchema),
-    transferHistory: z
-      .array(z.lazy(() => CdmEventCommonTransferStateSchema))
+    state: zod.lazy(() => CdmEventCommonStateSchema).optional(),
+    trade: zod.lazy(() => CdmEventCommonTradeSchema),
+    transferHistory: zod
+      .array(zod.lazy(() => CdmEventCommonTransferStateSchema))
       .min(0)
       .optional(),
-    valuationHistory: z
-      .array(z.lazy(() => CdmEventCommonValuationSchema))
+    valuationHistory: zod
+      .array(zod.lazy(() => CdmEventCommonValuationSchema))
       .min(0)
       .optional(),
   })

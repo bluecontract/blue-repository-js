@@ -1,13 +1,16 @@
-export const CdmObservableAssetFieldWithMetaCreditNotation = {
+export const CdmObservableAssetFieldWithMetaCreditNotation: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaCreditNotation',
   val: {
     type: {
-      blueId: '32asBc8ZWx9istLdot48ciBYnh6kd2GHf6nLVWkjkA8Z',
+      blueId: 'EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1',
     },
   },
-} as const;
+};

@@ -4,16 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataIdentifierIdentifierSchema } from './CdmBaseStaticdataIdentifierIdentifier';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmBaseStaticdataIdentifierFieldWithMetaIdentifierSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmBaseStaticdataIdentifierFieldWithMetaIdentifierSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/base/staticdata/identifier/FieldWithMetaIdentifier'
     ]
   )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema).optional(),
+    zod.object({
+      meta: zod
+        .lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema)
+        .optional(),
+      name: zod.string().optional(),
+      val: zod
+        .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
+        .optional(),
     })
   );
 

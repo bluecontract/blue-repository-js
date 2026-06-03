@@ -16,57 +16,59 @@ import { CdmProductTemplateNonTransferableProductSchema } from './CdmProductTemp
 import { CdmProductTemplateTradeLotSchema } from './CdmProductTemplateTradeLot';
 import { ComRosettaModelFieldWithMetaStringSchema } from './ComRosettaModelFieldWithMetaString';
 
-export const CdmEventCommonTradeSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmEventCommonTradeSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/event/common/Trade']
 )(
-  z.object({
-    account: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyAccountSchema))
+  zod.object({
+    account: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyAccountSchema))
       .min(0)
       .optional(),
-    adjustment: z
+    adjustment: zod
       .lazy(() => CdmProductCommonNotionalAdjustmentEnumSchema)
       .optional(),
-    ancillaryParty: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyAncillaryPartySchema))
+    ancillaryParty: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyAncillaryPartySchema))
       .min(0)
       .optional(),
-    clearedDate: z.string().optional(),
-    collateral: z.lazy(() => CdmProductCollateralCollateralSchema).optional(),
-    contractDetails: z
+    clearedDate: zod.string().optional(),
+    collateral: zod.lazy(() => CdmProductCollateralCollateralSchema).optional(),
+    contractDetails: zod
       .lazy(() => CdmEventCommonContractDetailsSchema)
       .optional(),
-    counterparty: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
+    counterparty: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyCounterpartySchema))
       .min(2)
       .max(2)
       .optional(),
-    description: z.string().optional(),
-    executionDetails: z
+    description: zod.string().optional(),
+    executionDetails: zod
       .lazy(() => CdmEventCommonExecutionDetailsSchema)
       .optional(),
-    name: z.string().optional(),
-    party: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyPartySchema))
+    name: zod.string().optional(),
+    party: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartySchema))
       .min(0)
       .optional(),
-    partyRole: z
-      .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+    partyRole: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
       .min(0)
       .optional(),
-    product: z
+    product: zod
       .lazy((): z.ZodTypeAny => CdmProductTemplateNonTransferableProductSchema)
       .optional(),
-    tradeDate: z.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
-    tradeIdentifier: z
-      .array(z.lazy(() => CdmEventCommonTradeIdentifierSchema))
+    tradeDate: zod.lazy(() => ComRosettaModelFieldWithMetaStringSchema),
+    tradeIdentifier: zod
+      .array(zod.lazy(() => CdmEventCommonTradeIdentifierSchema))
       .min(1)
       .optional(),
-    tradeLot: z
-      .array(z.lazy(() => CdmProductTemplateTradeLotSchema))
+    tradeLot: zod
+      .array(zod.lazy(() => CdmProductTemplateTradeLotSchema))
       .min(1)
       .optional(),
-    tradeTime: z
+    tradeTime: zod
       .lazy(() => CdmBaseDatetimeFieldWithMetaTimeZoneSchema)
       .optional(),
   })

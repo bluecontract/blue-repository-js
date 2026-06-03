@@ -1,21 +1,34 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { MarkerSchema } from '../../core/schemas/Marker';
 
-export const ActorPolicySchema = withTypeBlueId(
+const zod = z as any;
+
+export const ActorPolicySchema: any = withTypeBlueId(
   blueIds['Coordination/Actor Policy']
 )(
-  MarkerSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    operations: z
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    operations: zod
       .record(
-        z.string(),
-        z.object({
-          excludeSource: z.string().optional(),
-          requiresActor: z.string().optional(),
-          requiresSource: z.string().optional(),
+        zod.string(),
+        zod.object({
+          excludeSource: zod
+            .enum(['browserSession', 'apiCall', 'documentRequest'] as [
+              string,
+              ...string[]
+            ])
+            .optional(),
+          requiresActor: zod
+            .enum(['principal', 'agent', 'any'] as [string, ...string[]])
+            .optional(),
+          requiresSource: zod
+            .enum(['browserSession', 'apiCall', 'documentRequest'] as [
+              string,
+              ...string[]
+            ])
+            .optional(),
         })
       )
       .optional(),

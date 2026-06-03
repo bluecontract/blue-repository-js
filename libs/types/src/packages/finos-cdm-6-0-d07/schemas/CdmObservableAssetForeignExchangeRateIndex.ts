@@ -8,42 +8,46 @@ import { CdmBaseStaticdataPartyLegalEntitySchema } from './CdmBaseStaticdataPart
 import { CdmObservableAssetFieldWithMetaQuotedCurrencyPairSchema } from './CdmObservableAssetFieldWithMetaQuotedCurrencyPair';
 import { CdmObservableAssetInformationSourceSchema } from './CdmObservableAssetInformationSource';
 
-export const CdmObservableAssetForeignExchangeRateIndexSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetForeignExchangeRateIndexSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/ForeignExchangeRateIndex']
   )(
-    z.object({
-      assetClass: z
+    zod.object({
+      assetClass: zod
         .lazy(() => CdmBaseStaticdataAssetCommonAssetClassEnumSchema)
         .optional(),
-      description: z.string().optional(),
-      exchange: z
+      description: zod.string().optional(),
+      exchange: zod
         .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
         .optional(),
-      identifier: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema))
+      identifier: zod
+        .array(
+          zod.lazy(() => CdmBaseStaticdataAssetCommonAssetIdentifierSchema)
+        )
         .min(1)
         .optional(),
-      isExchangeListed: z.boolean().optional(),
-      name: z.string().optional(),
-      primaryFxSpotRateSource: z.lazy(
+      isExchangeListed: zod.boolean().optional(),
+      name: zod.string().optional(),
+      primaryFxSpotRateSource: zod.lazy(
         () => CdmObservableAssetInformationSourceSchema
       ),
-      provider: z
+      provider: zod
         .lazy(() => CdmBaseStaticdataPartyLegalEntitySchema)
         .optional(),
-      quotedCurrencyPair: z.lazy(
+      quotedCurrencyPair: zod.lazy(
         () => CdmObservableAssetFieldWithMetaQuotedCurrencyPairSchema
       ),
-      relatedExchange: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
+      relatedExchange: zod
+        .array(zod.lazy(() => CdmBaseStaticdataPartyLegalEntitySchema))
         .min(0)
         .optional(),
-      secondaryFxSpotRateSource: z
+      secondaryFxSpotRateSource: zod
         .lazy(() => CdmObservableAssetInformationSourceSchema)
         .optional(),
-      taxonomy: z
-        .array(z.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
+      taxonomy: zod
+        .array(zod.lazy(() => CdmBaseStaticdataAssetCommonTaxonomySchema))
         .min(0)
         .optional(),
     })

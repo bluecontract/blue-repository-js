@@ -5,22 +5,24 @@ import { CdmBaseDatetimeBusinessCenterTimeSchema } from './CdmBaseDatetimeBusine
 import { CdmObservableAssetFxRateSchema } from './CdmObservableAssetFxRate';
 import { CdmObservableAssetFxSpotRateSourceSchema } from './CdmObservableAssetFxSpotRateSource';
 
-export const CdmProductTemplateQuantoSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductTemplateQuantoSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/template/Quanto']
 )(
-  z.object({
-    description: z.string().optional(),
-    fixingTime: z
+  zod.object({
+    description: zod.string().optional(),
+    fixingTime: zod
       .lazy(() => CdmBaseDatetimeBusinessCenterTimeSchema)
       .optional(),
-    fxRate: z
-      .array(z.lazy(() => CdmObservableAssetFxRateSchema))
+    fxRate: zod
+      .array(zod.lazy(() => CdmObservableAssetFxRateSchema))
       .min(0)
       .optional(),
-    fxSpotRateSource: z
+    fxSpotRateSource: zod
       .lazy(() => CdmObservableAssetFxSpotRateSourceSchema)
       .optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

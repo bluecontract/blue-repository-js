@@ -4,21 +4,22 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeOffsetSchema } from './CdmBaseDatetimeOffset';
 import { CdmProductAssetRollSourceCalendarEnumSchema } from './CdmProductAssetRollSourceCalendarEnum';
 
-export const CdmProductCommonSettlementRollFeatureSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/RollFeature']
-  )(
-    z.object({
-      deliveryDateRollConvention: z
-        .lazy(() => CdmBaseDatetimeOffsetSchema)
-        .optional(),
-      description: z.string().optional(),
-      name: z.string().optional(),
-      rollSourceCalendar: z
-        .lazy(() => CdmProductAssetRollSourceCalendarEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCommonSettlementRollFeatureSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/RollFeature']
+)(
+  zod.object({
+    deliveryDateRollConvention: zod
+      .lazy(() => CdmBaseDatetimeOffsetSchema)
+      .optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    rollSourceCalendar: zod
+      .lazy(() => CdmProductAssetRollSourceCalendarEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCommonSettlementRollFeature = z.infer<
   typeof CdmProductCommonSettlementRollFeatureSchema

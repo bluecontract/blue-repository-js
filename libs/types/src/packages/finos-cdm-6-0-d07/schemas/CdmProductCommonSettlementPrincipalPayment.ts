@@ -5,22 +5,24 @@ import { CdmBaseDatetimeAdjustableDateSchema } from './CdmBaseDatetimeAdjustable
 import { CdmBaseStaticdataPartyPayerReceiverSchema } from './CdmBaseStaticdataPartyPayerReceiver';
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 
-export const CdmProductCommonSettlementPrincipalPaymentSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCommonSettlementPrincipalPaymentSchema: any =
   withTypeBlueId(
     blueIds['FINOS-CDM-6.0-d07/cdm/product/common/settlement/PrincipalPayment']
   )(
-    z.object({
-      description: z.string().optional(),
-      discountFactor: z.number().optional(),
-      name: z.string().optional(),
-      payerReceiver: z
+    zod.object({
+      description: zod.string().optional(),
+      discountFactor: zod.number().optional(),
+      name: zod.string().optional(),
+      payerReceiver: zod
         .lazy(() => CdmBaseStaticdataPartyPayerReceiverSchema)
         .optional(),
-      presentValuePrincipalAmount: z
+      presentValuePrincipalAmount: zod
         .lazy(() => CdmObservableAssetMoneySchema)
         .optional(),
-      principalAmount: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-      principalPaymentDate: z
+      principalAmount: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+      principalPaymentDate: zod
         .lazy(() => CdmBaseDatetimeAdjustableDateSchema)
         .optional(),
     })

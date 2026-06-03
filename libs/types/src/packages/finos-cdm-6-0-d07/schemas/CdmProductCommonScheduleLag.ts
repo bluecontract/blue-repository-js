@@ -3,16 +3,18 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeOffsetSchema } from './CdmBaseDatetimeOffset';
 
-export const CdmProductCommonScheduleLagSchema: z.ZodTypeAny = withTypeBlueId(
+const zod = z as any;
+
+export const CdmProductCommonScheduleLagSchema: any = withTypeBlueId(
   blueIds['FINOS-CDM-6.0-d07/cdm/product/common/schedule/Lag']
 )(
-  z.object({
-    description: z.string().optional(),
-    firstObservationDateOffset: z
+  zod.object({
+    description: zod.string().optional(),
+    firstObservationDateOffset: zod
       .lazy(() => CdmBaseDatetimeOffsetSchema)
       .optional(),
-    lagDuration: z.lazy(() => CdmBaseDatetimeOffsetSchema),
-    name: z.string().optional(),
+    lagDuration: zod.lazy(() => CdmBaseDatetimeOffsetSchema),
+    name: zod.string().optional(),
   })
 );
 

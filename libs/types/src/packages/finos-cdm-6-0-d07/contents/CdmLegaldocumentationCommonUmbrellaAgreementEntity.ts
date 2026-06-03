@@ -1,21 +1,19 @@
-export const CdmLegaldocumentationCommonUmbrellaAgreementEntity = {
+export const CdmLegaldocumentationCommonUmbrellaAgreementEntity: Record<
+  string,
+  unknown
+> = {
   description:
     'A class to specify the legal entities that are part of the umbrella agreement.',
   entityId: {
     description: 'A legal entity identifier (e.g. RED entity code).',
     itemType: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   name: 'cdm/legaldocumentation/common/UmbrellaAgreementEntity',
@@ -23,7 +21,7 @@ export const CdmLegaldocumentationCommonUmbrellaAgreementEntity = {
     description:
       'The terms that might be associated with each party to the umbrella agreement.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const LinkedPayNoteStartedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const LinkedPayNoteStartedSchema: any = withTypeBlueId(
   blueIds['PayNote/Linked PayNote Started']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    payNoteDocumentId: z.string().optional(),
-    payNoteSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    payNoteDocumentId: zod.string().optional(),
+    payNoteSessionId: zod.string().optional(),
   })
 );
 

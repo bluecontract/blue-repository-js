@@ -4,16 +4,17 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseDatetimeTimeZoneSchema } from './CdmBaseDatetimeTimeZone';
 import { ComRosettaModelMetafieldsMetaFieldsSchema } from './ComRosettaModelMetafieldsMetaFields';
 
-export const CdmBaseDatetimeFieldWithMetaTimeZoneSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/FieldWithMetaTimeZone']
-  )(
-    z.object({
-      meta: z.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
-      name: z.string().optional(),
-      val: z.lazy(() => CdmBaseDatetimeTimeZoneSchema).optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmBaseDatetimeFieldWithMetaTimeZoneSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/datetime/FieldWithMetaTimeZone']
+)(
+  zod.object({
+    meta: zod.lazy(() => ComRosettaModelMetafieldsMetaFieldsSchema).optional(),
+    name: zod.string().optional(),
+    val: zod.lazy(() => CdmBaseDatetimeTimeZoneSchema).optional(),
+  })
+);
 
 export type CdmBaseDatetimeFieldWithMetaTimeZone = z.infer<
   typeof CdmBaseDatetimeFieldWithMetaTimeZoneSchema

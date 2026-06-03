@@ -1,4 +1,4 @@
-export const DocumentTypeLink = {
+export const DocumentTypeLink: Record<string, unknown> = {
   description:
     'Link targeting any document of a specific Blue type. Enables dynamic discovery where the platform resolves to a concrete instance at runtime.',
   documentType: {
@@ -6,6 +6,6 @@ export const DocumentTypeLink = {
   },
   name: 'Document Type Link',
   type: {
-    blueId: 'D2ERUvbpn6R6PR7hjFsGofwQsu9bkRfc6wbSYHcfJtMD',
+    blueId: '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP',
   },
-} as const;
+};

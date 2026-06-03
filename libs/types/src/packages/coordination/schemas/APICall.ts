@@ -3,11 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { SourceSchema } from './Source';
 
-export const APICallSchema = withTypeBlueId(blueIds['Coordination/API Call'])(
+const zod = z as any;
+
+export const APICallSchema: any = withTypeBlueId(
+  blueIds['Coordination/API Call']
+)(
   SourceSchema.extend({
-    apiKeyId: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    apiKeyId: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

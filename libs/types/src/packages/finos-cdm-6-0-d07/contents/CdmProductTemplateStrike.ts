@@ -1,8 +1,8 @@
-export const CdmProductTemplateStrike = {
+export const CdmProductTemplateStrike: Record<string, unknown> = {
   buyer: {
     description: 'The buyer of the option.',
     type: {
-      blueId: '3h5wRr1PRsH4WePSXwrdNrRnbGYxzTUTdLMKCpegAmi8',
+      blueId: 'AYi3oguzR4Utfj7hc4duXgvb2M7SapBbYpq8SyJbHghs',
     },
   },
   description: 'A class describing a single cap or floor rate.',
@@ -10,21 +10,16 @@ export const CdmProductTemplateStrike = {
   seller: {
     description: 'The party that has sold.',
     type: {
-      blueId: '3h5wRr1PRsH4WePSXwrdNrRnbGYxzTUTdLMKCpegAmi8',
+      blueId: 'AYi3oguzR4Utfj7hc4duXgvb2M7SapBbYpq8SyJbHghs',
     },
   },
   strikeRate: {
     description: 'The rate for a cap or floor.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};

@@ -14,65 +14,65 @@ import { CdmLegaldocumentationCommonAgreementNameSchema } from './CdmLegaldocume
 import { CdmObservableAssetMoneySchema } from './CdmObservableAssetMoney';
 import { CdmProductCollateralEligibleCollateralCriteriaSchema } from './CdmProductCollateralEligibleCollateralCriteria';
 
-export const CdmEventCommonMarginCallIssuanceSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/event/common/MarginCallIssuance']
-  )(
-    z.object({
-      agreementMinimumTransferAmount: z
-        .lazy(() => CdmObservableAssetMoneySchema)
-        .optional(),
-      agreementRounding: z.lazy(() => CdmObservableAssetMoneySchema).optional(),
-      agreementThreshold: z
-        .lazy(() => CdmObservableAssetMoneySchema)
-        .optional(),
-      baseCurrencyExposure: z
-        .lazy((): z.ZodTypeAny => CdmEventCommonMarginCallExposureSchema)
-        .optional(),
-      callAgreementType: z
-        .lazy(() => CdmLegaldocumentationCommonAgreementNameSchema)
-        .optional(),
-      callAmountInBaseCurrency: z.lazy(() => CdmObservableAssetMoneySchema),
-      callIdentifier: z
-        .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
-        .optional(),
-      clearingBroker: z
-        .lazy(() => CdmBaseStaticdataPartyPartySchema)
-        .optional(),
-      collateralPortfolio: z
-        .lazy(
-          () =>
-            CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema
-        )
-        .optional(),
-      description: z.string().optional(),
-      independentAmountBalance: z
-        .lazy(() => CdmEventCommonCollateralBalanceSchema)
-        .optional(),
-      instructionType: z
-        .lazy(() => CdmEventCommonMarginCallInstructionTypeSchema)
-        .optional(),
-      name: z.string().optional(),
-      party: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartySchema))
-        .min(0)
-        .optional(),
-      partyRole: z
-        .array(z.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
-        .min(0)
-        .optional(),
-      recallNonCashCollateralDescription: z
-        .array(
-          z.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
-        )
-        .min(0)
-        .optional(),
-      regIMRole: z.lazy(() => CdmEventCommonRegIMRoleEnumSchema).optional(),
-      regMarginType: z
-        .lazy(() => CdmEventCommonRegMarginTypeEnumSchema)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmEventCommonMarginCallIssuanceSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/event/common/MarginCallIssuance']
+)(
+  zod.object({
+    agreementMinimumTransferAmount: zod
+      .lazy(() => CdmObservableAssetMoneySchema)
+      .optional(),
+    agreementRounding: zod.lazy(() => CdmObservableAssetMoneySchema).optional(),
+    agreementThreshold: zod
+      .lazy(() => CdmObservableAssetMoneySchema)
+      .optional(),
+    baseCurrencyExposure: zod
+      .lazy((): z.ZodTypeAny => CdmEventCommonMarginCallExposureSchema)
+      .optional(),
+    callAgreementType: zod
+      .lazy(() => CdmLegaldocumentationCommonAgreementNameSchema)
+      .optional(),
+    callAmountInBaseCurrency: zod.lazy(() => CdmObservableAssetMoneySchema),
+    callIdentifier: zod
+      .lazy(() => CdmBaseStaticdataIdentifierIdentifierSchema)
+      .optional(),
+    clearingBroker: zod
+      .lazy(() => CdmBaseStaticdataPartyPartySchema)
+      .optional(),
+    collateralPortfolio: zod
+      .lazy(
+        () => CdmEventCommonMetafieldsReferenceWithMetaCollateralPortfolioSchema
+      )
+      .optional(),
+    description: zod.string().optional(),
+    independentAmountBalance: zod
+      .lazy(() => CdmEventCommonCollateralBalanceSchema)
+      .optional(),
+    instructionType: zod
+      .lazy(() => CdmEventCommonMarginCallInstructionTypeSchema)
+      .optional(),
+    name: zod.string().optional(),
+    party: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartySchema))
+      .min(0)
+      .optional(),
+    partyRole: zod
+      .array(zod.lazy(() => CdmBaseStaticdataPartyPartyRoleSchema))
+      .min(0)
+      .optional(),
+    recallNonCashCollateralDescription: zod
+      .array(
+        zod.lazy(() => CdmProductCollateralEligibleCollateralCriteriaSchema)
+      )
+      .min(0)
+      .optional(),
+    regIMRole: zod.lazy(() => CdmEventCommonRegIMRoleEnumSchema).optional(),
+    regMarginType: zod
+      .lazy(() => CdmEventCommonRegMarginTypeEnumSchema)
+      .optional(),
+  })
+);
 
 export type CdmEventCommonMarginCallIssuance = z.infer<
   typeof CdmEventCommonMarginCallIssuanceSchema

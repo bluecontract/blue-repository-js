@@ -1,17 +1,12 @@
-export const CdmProductTemplateAveragingCalculation = {
+export const CdmProductTemplateAveragingCalculation: Record<string, unknown> = {
   averagingMethod: {
     description:
       'Specifies enumerations for the type of averaging calculation.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'AhJDsRsjAqd5ThJefWvZsh3Zp5VREyt5SvAhpzMNhZMz',
+      blueId: '2EzRuguKzzQR2u8dtQqTXe7ATvUruro1jyD4Hc8MHaJk',
     },
   },
   description:
@@ -20,15 +15,10 @@ export const CdmProductTemplateAveragingCalculation = {
   precision: {
     description: 'Rounding applied to the average calculation.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'ArfQ58kSzN4QkRNkhhMYbmgBrEGPrnnSSA4sgC1Stoho',
+      blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
     },
   },
-} as const;
+};

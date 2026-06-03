@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ActorSchema } from '../../coordination/schemas/Actor';
 
-export const PrincipalActorSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PrincipalActorSchema: any = withTypeBlueId(
   blueIds['MyOS/Principal Actor']
 )(
   ActorSchema.extend({
-    accountId: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    accountId: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

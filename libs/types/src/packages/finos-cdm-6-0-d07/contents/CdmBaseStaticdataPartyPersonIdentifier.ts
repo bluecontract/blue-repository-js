@@ -1,9 +1,9 @@
-export const CdmBaseStaticdataPartyPersonIdentifier = {
+export const CdmBaseStaticdataPartyPersonIdentifier: Record<string, unknown> = {
   country: {
     description:
       'The ISO 3166 standard code for the country issuing the identifier.',
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   description:
@@ -12,22 +12,17 @@ export const CdmBaseStaticdataPartyPersonIdentifier = {
     description:
       'Provides an identifier associated with a person. The identifier is unique within the public source specified in the source attribute.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'F5GfdsSNcjLAm9anbfMQqxdxAFonErhU5UXFbQzq1zXY',
+      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
     },
   },
   identifierType: {
     description: 'Defines the source of the identifier.',
     type: {
-      blueId: 'FMkLv6qXtSm7J9WiqjortpggKS64LbdJJWwyPv81h7V3',
+      blueId: '2DvCCVBpSHMw3EiuFp3MYB9YQpwrSYx4jvwkNtoq3jx9',
     },
   },
   name: 'cdm/base/staticdata/party/PersonIdentifier',
-} as const;
+};

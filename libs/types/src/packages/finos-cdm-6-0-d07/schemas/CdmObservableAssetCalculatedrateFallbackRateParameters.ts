@@ -4,26 +4,28 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema } from './CdmBaseStaticdataAssetRatesFloatingRateIndexEnum';
 import { CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema } from './CdmObservableAssetCalculatedrateFloatingRateCalculationParameters';
 
-export const CdmObservableAssetCalculatedrateFallbackRateParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetCalculatedrateFallbackRateParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/calculatedrate/FallbackRateParameters'
     ]
   )(
-    z.object({
-      calculationParameters: z
+    zod.object({
+      calculationParameters: zod
         .lazy(
           () =>
             CdmObservableAssetCalculatedrateFloatingRateCalculationParametersSchema
         )
         .optional(),
-      description: z.string().optional(),
-      effectiveDate: z.string().optional(),
-      floatingRateIndex: z.lazy(
+      description: zod.string().optional(),
+      effectiveDate: zod.string().optional(),
+      floatingRateIndex: zod.lazy(
         () => CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema
       ),
-      name: z.string().optional(),
-      spreadAdjustment: z.number().optional(),
+      name: zod.string().optional(),
+      spreadAdjustment: zod.number().optional(),
     })
   );
 

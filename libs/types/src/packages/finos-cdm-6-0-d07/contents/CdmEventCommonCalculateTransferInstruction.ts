@@ -1,7 +1,10 @@
-export const CdmEventCommonCalculateTransferInstruction = {
+export const CdmEventCommonCalculateTransferInstruction: Record<
+  string,
+  unknown
+> = {
   date: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -9,56 +12,41 @@ export const CdmEventCommonCalculateTransferInstruction = {
   name: 'cdm/event/common/CalculateTransferInstruction',
   payerReceiver: {
     type: {
-      blueId: 'Cx2eHN58eqWKXnZwn6JDYBzAfG95QSEAWjQhbX1R5An3',
+      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
     },
   },
   payout: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '529d4eeRPqjy1E5t4zWJpWVA2HKzpHHLCXrsg3D3pMZQ',
+      blueId: 'B5Jakr9Bd7eaMZzThRtLAaP1ZnjC3yngwZjL4GXVZW7P',
     },
   },
   quantity: {
     description:
       'Specifies quantity amount returned if not the full amount from the TradeState, e.g. partial return',
     type: {
-      blueId: '2uPPgn1ZsbovDfjRb1d8M9YmmgEnNo9UeG1VEz2wceY3',
+      blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
     },
   },
   resets: {
     itemType: {
-      blueId: '14sVVTzSacMzHornDaXpUxvVuwj3EZYsDLgepvsmbGW7',
+      blueId: 'C2cq6aR7yoFg7jn9vV3wrTukUrevaRzkBo4PeSWP5die',
     },
     schema: {
-      minItems: {
-        type: {
-          blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-        },
-        value: 0,
-      },
+      minItems: 0,
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   tradeState: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: 'J8SrPWrtbe4J2GJXdDo51yKLW7GpaZmwrtGnvLKFRArQ',
+      blueId: 'HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd',
     },
   },
-} as const;
+};

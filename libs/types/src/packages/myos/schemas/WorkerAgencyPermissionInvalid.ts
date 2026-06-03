@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const WorkerAgencyPermissionInvalidSchema = withTypeBlueId(
+const zod = z as any;
+
+export const WorkerAgencyPermissionInvalidSchema: any = withTypeBlueId(
   blueIds['MyOS/Worker Agency Permission Invalid']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    issues: z.array(z.string()).optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    issues: zod.array(zod.string()).optional(),
+    name: zod.string().optional(),
   })
 );
 

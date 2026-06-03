@@ -1,9 +1,9 @@
-export const CdmProductCollateralDeliveryAmount = {
+export const CdmProductCollateralDeliveryAmount: Record<string, unknown> = {
   customElection: {
     description:
       'The custom election that might be specified by the parties to the agreement.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -12,7 +12,7 @@ export const CdmProductCollateralDeliveryAmount = {
   standardElection: {
     description: 'The standard election as specified by an enumeration.',
     type: {
-      blueId: 'B9b96SYnsgwBPG9yHVVuip7q1ccRhp3uVXxr8cwVkBWb',
+      blueId: 'ASFFM9ufg5x7Gsa379ue1XqS24UGxKLYAdFAPeQif8Zh',
     },
   },
-} as const;
+};

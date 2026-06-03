@@ -1,31 +1,31 @@
-export const SingleDocumentPermissionGrantToAccount = {
+export const SingleDocumentPermissionGrantToAccount: Record<string, unknown> = {
   contracts: {
     granteeChannel: {
       description: 'Grantee’s timeline',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     granterChannel: {
       description: 'Granter/owner’s timeline',
       type: {
-        blueId: '9gQuMoLckgwgvAfx1X8tzdHwMNfRcraG96PfT5TDbXeh',
+        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
       },
     },
     initLifecycleChannel: {
       event: {
         type: {
-          blueId: 'BrpmpNt5JkapeUvPqYcxgXZrHNZX3R757dRwuXXdfNM2',
+          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
         },
       },
       type: {
-        blueId: 'H2aCCTUcLMTJozWkn7HPUjyFBFxamraw1q8DyWk87zxr',
+        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
       },
     },
     revoke: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'revokeAccessChannel',
       },
@@ -34,11 +34,11 @@ export const SingleDocumentPermissionGrantToAccount = {
       request: {
         description: 'Optional human-readable reason',
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       type: {
-        blueId: '9Fu3Rjq8hNKnZS71ZU8RXBBupZEa7Wb8z44GtzfSwjbr',
+        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
       },
     },
     revokeAccessChannel: {
@@ -46,13 +46,13 @@ export const SingleDocumentPermissionGrantToAccount = {
         items: [
           {
             type: {
-              blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+              blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
             },
             value: 'granterChannel',
           },
           {
             type: {
-              blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+              blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
             },
             value: 'granteeChannel',
           },
@@ -61,13 +61,13 @@ export const SingleDocumentPermissionGrantToAccount = {
       description:
         'Either grant side can invoke revoke on this grant document.',
       type: {
-        blueId: 'ByQY8CFbj5JVoSuoutRmG5wJWfvAidg7q83zsQ3GTgD4',
+        blueId: '4FE7wU8cnFsb7gEcgQk8vTGYZHLqvJH6Yjsv2TXovgr2',
       },
     },
     revokeImpl: {
       operation: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'revoke',
       },
@@ -82,13 +82,13 @@ export const SingleDocumentPermissionGrantToAccount = {
                       $event: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: '/message/request',
                       },
                     },
                     type: {
-                      blueId: '2nRHhR7JeMKzs5wPKV6GMwbxbyvts5Boynzv6yNJxnQz',
+                      blueId: '5Jtu4jN8svHxkJkkkZdDQLVzk6vjxE4Reo4VTw4rwrn9',
                     },
                   },
                 },
@@ -98,7 +98,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                       $events: {
                         type: {
                           blueId:
-                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                         },
                         value: true,
                       },
@@ -109,19 +109,19 @@ export const SingleDocumentPermissionGrantToAccount = {
             },
             name: 'EmitRevokeRequested',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: 'B5mVH4caQv9Hmzeb5ZmCtzYomooFzTdoCQ4mZVwHY3MS',
+        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
       },
     },
     validateOnInit: {
       channel: {
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
         value: 'initLifecycleChannel',
       },
@@ -130,7 +130,7 @@ export const SingleDocumentPermissionGrantToAccount = {
           {
             entry: {
               type: {
-                blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
               },
               value: 'validate',
             },
@@ -138,7 +138,7 @@ export const SingleDocumentPermissionGrantToAccount = {
               asList: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -148,7 +148,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                         kind: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'list',
                         },
@@ -156,7 +156,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                           $var: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'val',
                           },
@@ -170,7 +170,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                       $var: {
                         type: {
                           blueId:
-                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                         },
                         value: 'val',
                       },
@@ -181,7 +181,7 @@ export const SingleDocumentPermissionGrantToAccount = {
               hasBadSingleOps: {
                 args: {
                   ops: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -193,7 +193,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                             $var: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'ops',
                             },
@@ -202,7 +202,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                         function: {
                           type: {
                             blueId:
-                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                           },
                           value: 'asList',
                         },
@@ -210,7 +210,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                     },
                     item: {
                       type: {
-                        blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
                       value: 'opName',
                     },
@@ -222,7 +222,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               $var: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'opName',
                               },
@@ -231,7 +231,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                           function: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'isNonEmptyText',
                           },
@@ -244,7 +244,7 @@ export const SingleDocumentPermissionGrantToAccount = {
               isNonEmptyText: {
                 args: {
                   val: {
-                    value: null,
+                    description: 'BEX helper argument.',
                   },
                 },
                 expr: {
@@ -255,33 +255,29 @@ export const SingleDocumentPermissionGrantToAccount = {
                           kind: {
                             type: {
                               blueId:
-                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
                             value: 'text',
                           },
                           val: {
-                            $unwrap: {
-                              $var: {
-                                type: {
-                                  blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                                },
-                                value: 'val',
+                            $var: {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
+                              value: 'val',
                             },
                           },
                         },
                       },
                       {
                         $truthy: {
-                          $unwrap: {
-                            $var: {
-                              type: {
-                                blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-                              },
-                              value: 'val',
+                          $var: {
+                            type: {
+                              blueId:
+                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                             },
+                            value: 'val',
                           },
                         },
                       },
@@ -299,49 +295,49 @@ export const SingleDocumentPermissionGrantToAccount = {
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'issues',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'target',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'granterId',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'granteeId',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'perms',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'singleOps',
                             },
                             {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: 'hasSingle',
                             },
@@ -352,7 +348,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                             $document: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/contracts/granteeChannel/accountId',
                             },
@@ -361,7 +357,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                             $document: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/contracts/granterChannel/accountId',
                             },
@@ -377,7 +373,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                           $var: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: 'singleOps',
                                           },
@@ -386,7 +382,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                       function: {
                                         type: {
                                           blueId:
-                                            'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                         },
                                         value: 'asList',
                                       },
@@ -396,7 +392,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                 {
                                   type: {
                                     blueId:
-                                      '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                      'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                   },
                                   value: 0,
                                 },
@@ -410,7 +406,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                             $document: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/permissions',
                             },
@@ -422,7 +418,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                   $document: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: '/permissions/singleOps',
                                   },
@@ -435,7 +431,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                 $document: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: '/permissions/singleOps',
                                 },
@@ -446,7 +442,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                             $document: {
                               type: {
                                 blueId:
-                                  'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                               },
                               value: '/targetSessionId',
                             },
@@ -464,7 +460,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'target',
                                   },
@@ -473,7 +469,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'isNonEmptyText',
                               },
@@ -491,7 +487,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -501,7 +497,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'targetSessionId is missing or invalid',
@@ -528,7 +524,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'granterId',
                                   },
@@ -537,7 +533,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'isNonEmptyText',
                               },
@@ -555,7 +551,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -565,7 +561,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'granterChannel must be bound to an accountId',
@@ -592,7 +588,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'granteeId',
                                   },
@@ -601,7 +597,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               function: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'isNonEmptyText',
                               },
@@ -619,7 +615,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -629,7 +625,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'granteeChannel must be bound to an accountId',
@@ -654,7 +650,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               kind: {
                                 type: {
                                   blueId:
-                                    'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                 },
                                 value: 'object',
                               },
@@ -662,7 +658,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                 $var: {
                                   type: {
                                     blueId:
-                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                   },
                                   value: 'perms',
                                 },
@@ -683,7 +679,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                           path: {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value: '/read',
                                           },
@@ -692,7 +688,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                       {
                                         type: {
                                           blueId:
-                                            '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                         },
                                         value: true,
                                       },
@@ -710,7 +706,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'issues',
                                                 },
@@ -720,7 +716,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value:
                                                       'permissions.read must be true for SDPG',
@@ -746,7 +742,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'singleOps',
                                         },
@@ -755,7 +751,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                     function: {
                                       type: {
                                         blueId:
-                                          'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                          'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                       },
                                       value: 'hasBadSingleOps',
                                     },
@@ -772,7 +768,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'issues',
                                                 },
@@ -782,7 +778,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value:
                                                       'permissions.singleOps must contain only non-empty strings',
@@ -813,7 +809,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                 path: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: '/allOps',
                                                 },
@@ -822,7 +818,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                             {
                                               type: {
                                                 blueId:
-                                                  '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                                  'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                                               },
                                               value: true,
                                             },
@@ -833,7 +829,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'hasSingle',
                                         },
@@ -852,7 +848,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                 $var: {
                                                   type: {
                                                     blueId:
-                                                      'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                      'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                   },
                                                   value: 'issues',
                                                 },
@@ -862,7 +858,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                                   {
                                                     type: {
                                                       blueId:
-                                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                                     },
                                                     value:
                                                       'permissions.allOps=true and permissions.singleOps are mutually exclusive',
@@ -892,7 +888,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                         $var: {
                                           type: {
                                             blueId:
-                                              'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                              'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                           },
                                           value: 'issues',
                                         },
@@ -902,7 +898,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                           {
                                             type: {
                                               blueId:
-                                                'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                             },
                                             value:
                                               'permissions block is missing',
@@ -929,7 +925,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'issues',
                                   },
@@ -938,7 +934,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               {
                                 type: {
                                   blueId:
-                                    '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+                                    'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
                                 },
                                 value: 0,
                               },
@@ -951,7 +947,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                               $appendEvent: {
                                 type: {
                                   blueId:
-                                    '6EYcrXJUBiocfFddndoEx1RdAnXuGr3XTxwGoBDdv5x6',
+                                    '6rJFGtfmUHZyspx5UNtUvSjNn89XqmBHzmMRiQHjhPX3',
                                 },
                               },
                             },
@@ -965,14 +961,14 @@ export const SingleDocumentPermissionGrantToAccount = {
                                   $var: {
                                     type: {
                                       blueId:
-                                        'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+                                        'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                                     },
                                     value: 'issues',
                                   },
                                 },
                                 type: {
                                   blueId:
-                                    'HTd3TkLwKaALYryVRrwnTTnF3rUzF5yrqzKg2ChrcaE9',
+                                    '7BEbHgR3h4y9HDLvxnKSMyGZZqYnA8Jm2cFuTMjDuCJg',
                                 },
                               },
                             },
@@ -986,7 +982,7 @@ export const SingleDocumentPermissionGrantToAccount = {
                           $events: {
                             type: {
                               blueId:
-                                '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+                                'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                             },
                             value: true,
                           },
@@ -999,13 +995,13 @@ export const SingleDocumentPermissionGrantToAccount = {
             },
             name: 'ValidateBasicShape',
             type: {
-              blueId: 'MXnjrsiUgKPkinuRCVXEmnsBJhESt7HYZQPJH1eJvnJ',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
       },
       type: {
-        blueId: '26w2LGCpoFHqcEpb22oJRodHCTew398PGc1WMLRevxqz',
+        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
       },
     },
   },
@@ -1013,7 +1009,7 @@ export const SingleDocumentPermissionGrantToAccount = {
     description:
       'Optional. If set, MyOS should evaluate authority using this document session as the principal (instead of granter accountId).',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Single Document Permission Grant To Account',
@@ -1021,16 +1017,16 @@ export const SingleDocumentPermissionGrantToAccount = {
     description:
       'Rights to grant on the target session (READ required; allOps and singleOps are mutually exclusive; singleOps is optional but must be non-empty if provided).',
     type: {
-      blueId: '5cZ3J1QiMJEJV4FV5kfSkeG2oJmweWCyJo3v2TSc3Xuw',
+      blueId: '9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq',
     },
   },
   targetSessionId: {
     description: 'Target document session id to grant access to',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: 'Gm9rGd9RJMvBcPCwN7ybywVAtMAAngeAB82DZ2cQ6bAE',
+    blueId: 'FMWYekdjwkDnoM2YfHmwuUATHZovSgmDEvSVTmyVmbHc',
   },
-} as const;
+};

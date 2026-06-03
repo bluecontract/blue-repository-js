@@ -5,39 +5,36 @@ import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema } from '
 import { CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema } from './CdmBaseStaticdataPartyMetafieldsReferenceWithMetaParty';
 import { CdmProductCommonSettlementPaymentDetailSchema } from './CdmProductCommonSettlementPaymentDetail';
 
-export const CdmProductCollateralIndependentAmountSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/IndependentAmount']
-  )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
-      payerAccountReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema
-        )
-        .optional(),
-      payerPartyReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
-        )
-        .optional(),
-      paymentDetail: z
-        .array(z.lazy(() => CdmProductCommonSettlementPaymentDetailSchema))
-        .min(1)
-        .optional(),
-      receiverAccountReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema
-        )
-        .optional(),
-      receiverPartyReference: z
-        .lazy(
-          () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema
-        )
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductCollateralIndependentAmountSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/collateral/IndependentAmount']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    payerAccountReference: zod
+      .lazy(
+        () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema
+      )
+      .optional(),
+    payerPartyReference: zod
+      .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
+      .optional(),
+    paymentDetail: zod
+      .array(zod.lazy(() => CdmProductCommonSettlementPaymentDetailSchema))
+      .min(1)
+      .optional(),
+    receiverAccountReference: zod
+      .lazy(
+        () => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaAccountSchema
+      )
+      .optional(),
+    receiverPartyReference: zod
+      .lazy(() => CdmBaseStaticdataPartyMetafieldsReferenceWithMetaPartySchema)
+      .optional(),
+  })
+);
 
 export type CdmProductCollateralIndependentAmount = z.infer<
   typeof CdmProductCollateralIndependentAmountSchema

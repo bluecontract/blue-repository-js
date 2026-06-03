@@ -3,13 +3,15 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PayeeAssignmentConfirmedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PayeeAssignmentConfirmedSchema: any = withTypeBlueId(
   blueIds['PayNote/Payee Assignment Confirmed']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    payeeRef: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    payeeRef: zod.string().optional(),
   })
 );
 

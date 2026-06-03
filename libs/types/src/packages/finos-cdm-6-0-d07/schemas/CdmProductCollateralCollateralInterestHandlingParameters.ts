@@ -8,43 +8,45 @@ import { CdmProductCollateralCollateralInterestHandlingEnumSchema } from './CdmP
 import { CdmProductCollateralCollateralInterestNotificationSchema } from './CdmProductCollateralCollateralInterestNotification';
 import { CdmProductCollateralInterestAmountApplicationSchema } from './CdmProductCollateralInterestAmountApplication';
 
-export const CdmProductCollateralCollateralInterestHandlingParametersSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmProductCollateralCollateralInterestHandlingParametersSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/product/collateral/CollateralInterestHandlingParameters'
     ]
   )(
-    z.object({
-      accrueInterestOnUnsettledInterest: z.boolean().optional(),
-      alternativeProvision: z.string().optional(),
-      alternativeToInterestAmount: z
+    zod.object({
+      accrueInterestOnUnsettledInterest: zod.boolean().optional(),
+      alternativeProvision: zod.string().optional(),
+      alternativeToInterestAmount: zod
         .lazy(() => CdmProductCollateralAlternativeToInterestAmountEnumSchema)
         .optional(),
-      cutoffTime: z.string().optional(),
-      description: z.string().optional(),
-      includeAccrualInMarginCalc: z.boolean(),
-      interestAmountApplication: z
+      cutoffTime: zod.string().optional(),
+      description: zod.string().optional(),
+      includeAccrualInMarginCalc: zod.boolean(),
+      interestAmountApplication: zod
         .lazy(() => CdmProductCollateralInterestAmountApplicationSchema)
         .optional(),
-      interestPaymentHandling: z.lazy(
+      interestPaymentHandling: zod.lazy(
         () => CdmProductCollateralCollateralInterestHandlingEnumSchema
       ),
-      interestRolloverLimit: z
+      interestRolloverLimit: zod
         .lazy(() => CdmBaseMathNumberBoundSchema)
         .optional(),
-      name: z.string().optional(),
-      netInterestWithMarginCalls: z.boolean(),
-      netPostedAndHeldInterest: z.boolean(),
-      notification: z
+      name: zod.string().optional(),
+      netInterestWithMarginCalls: zod.boolean(),
+      netPostedAndHeldInterest: zod.boolean(),
+      notification: zod
         .lazy(() => CdmProductCollateralCollateralInterestNotificationSchema)
         .optional(),
-      onFullReturn: z.boolean(),
-      onPartialReturn: z.boolean(),
-      paymentBusinessCenter: z
-        .array(z.lazy(() => CdmBaseDatetimeBusinessCenterEnumSchema))
+      onFullReturn: zod.boolean(),
+      onPartialReturn: zod.boolean(),
+      paymentBusinessCenter: zod
+        .array(zod.lazy(() => CdmBaseDatetimeBusinessCenterEnumSchema))
         .min(0)
         .optional(),
-      writeoffLimit: z.lazy(() => CdmBaseMathNumberBoundSchema).optional(),
+      writeoffLimit: zod.lazy(() => CdmBaseMathNumberBoundSchema).optional(),
     })
   );
 

@@ -2,15 +2,17 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationMasterIndexAdjustmentEventsSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationMasterIndexAdjustmentEventsSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/master/IndexAdjustmentEvents'
     ]
   )(
-    z.object({
-      description: z.string().optional(),
-      name: z.string().optional(),
+    zod.object({
+      description: zod.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

@@ -1,13 +1,13 @@
-export const CdmObservableAssetCurve = {
+export const CdmObservableAssetCurve: Record<string, unknown> = {
   commodityCurve: {
     type: {
-      blueId: 'GpoU5yGYF1qd5qSfQLpFsNBGnJXEaP3fZZTzmmiqWEte',
+      blueId: 'GPbJZLwy1LyEN9r8a3LkR1UD8WgNNEjAhcG6gxpRbWzK',
     },
   },
   interestRateCurve: {
     type: {
-      blueId: 'CjLhV9zXsEPWjij1Hz3NWZZVtDmXET3xVwB1i8gzL7SX',
+      blueId: '8wSm9S7Vp4q2gTRjpiHXeveAoWJb4WwMcfGPdNhN7TJv',
     },
   },
   name: 'cdm/observable/asset/Curve',
-} as const;
+};

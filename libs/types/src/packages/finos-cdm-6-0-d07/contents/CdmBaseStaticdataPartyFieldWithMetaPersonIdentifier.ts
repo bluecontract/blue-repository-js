@@ -1,13 +1,16 @@
-export const CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier = {
+export const CdmBaseStaticdataPartyFieldWithMetaPersonIdentifier: Record<
+  string,
+  unknown
+> = {
   meta: {
     type: {
-      blueId: 'DzqRwbzhBeAEsqWnJKowFX2zDp5bnxRrGuECR18ePGLk',
+      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
     },
   },
   name: 'cdm/base/staticdata/party/FieldWithMetaPersonIdentifier',
   val: {
     type: {
-      blueId: '137V6nzc2EYMvMNiSoeM36TQTSfPuL5rp8pjRkrno11f',
+      blueId: 'HU9UvBYP6JQj6JsSUxAzJ1j8s9qEtMMq6JEmcjiChryk',
     },
   },
-} as const;
+};

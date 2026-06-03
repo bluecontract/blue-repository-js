@@ -11,51 +11,52 @@ import { CdmProductAssetDividendPeriodSchema } from './CdmProductAssetDividendPe
 import { CdmProductAssetDividendPeriodEnumSchema } from './CdmProductAssetDividendPeriodEnum';
 import { CdmProductAssetNonCashDividendTreatmentEnumSchema } from './CdmProductAssetNonCashDividendTreatmentEnum';
 
-export const CdmProductAssetDividendReturnTermsSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/DividendReturnTerms']
-  )(
-    z.object({
-      description: z.string().optional(),
-      dividendAmountType: z
-        .lazy(() => CdmProductAssetDividendAmountTypeEnumSchema)
-        .optional(),
-      dividendComposition: z
-        .lazy(() => CdmProductAssetDividendCompositionEnumSchema)
-        .optional(),
-      dividendCurrency: z
-        .lazy(() => CdmProductAssetDividendCurrencySchema)
-        .optional(),
-      dividendEntitlement: z
-        .lazy(() => CdmProductAssetDividendEntitlementEnumSchema)
-        .optional(),
-      dividendPayoutRatio: z
-        .array(z.lazy(() => CdmProductAssetDividendPayoutRatioSchema))
-        .min(0)
-        .optional(),
-      dividendPeriod: z
-        .array(z.lazy(() => CdmProductAssetDividendPeriodSchema))
-        .min(0)
-        .optional(),
-      dividendReinvestment: z.boolean().optional(),
-      excessDividendAmount: z
-        .lazy(() => CdmProductAssetDividendAmountTypeEnumSchema)
-        .optional(),
-      extraordinaryDividendsParty: z
-        .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
-        .optional(),
-      firstOrSecondPeriod: z
-        .lazy(() => CdmProductAssetDividendPeriodEnumSchema)
-        .optional(),
-      materialDividend: z.boolean().optional(),
-      name: z.string().optional(),
-      nonCashDividendTreatment: z
-        .lazy(() => CdmProductAssetNonCashDividendTreatmentEnumSchema)
-        .optional(),
-      performance: z.string().optional(),
-      specialDividends: z.boolean().optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetDividendReturnTermsSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/DividendReturnTerms']
+)(
+  zod.object({
+    description: zod.string().optional(),
+    dividendAmountType: zod
+      .lazy(() => CdmProductAssetDividendAmountTypeEnumSchema)
+      .optional(),
+    dividendComposition: zod
+      .lazy(() => CdmProductAssetDividendCompositionEnumSchema)
+      .optional(),
+    dividendCurrency: zod
+      .lazy(() => CdmProductAssetDividendCurrencySchema)
+      .optional(),
+    dividendEntitlement: zod
+      .lazy(() => CdmProductAssetDividendEntitlementEnumSchema)
+      .optional(),
+    dividendPayoutRatio: zod
+      .array(zod.lazy(() => CdmProductAssetDividendPayoutRatioSchema))
+      .min(0)
+      .optional(),
+    dividendPeriod: zod
+      .array(zod.lazy(() => CdmProductAssetDividendPeriodSchema))
+      .min(0)
+      .optional(),
+    dividendReinvestment: zod.boolean().optional(),
+    excessDividendAmount: zod
+      .lazy(() => CdmProductAssetDividendAmountTypeEnumSchema)
+      .optional(),
+    extraordinaryDividendsParty: zod
+      .lazy(() => CdmBaseStaticdataPartyAncillaryRoleEnumSchema)
+      .optional(),
+    firstOrSecondPeriod: zod
+      .lazy(() => CdmProductAssetDividendPeriodEnumSchema)
+      .optional(),
+    materialDividend: zod.boolean().optional(),
+    name: zod.string().optional(),
+    nonCashDividendTreatment: zod
+      .lazy(() => CdmProductAssetNonCashDividendTreatmentEnumSchema)
+      .optional(),
+    performance: zod.string().optional(),
+    specialDividends: zod.boolean().optional(),
+  })
+);
 
 export type CdmProductAssetDividendReturnTerms = z.infer<
   typeof CdmProductAssetDividendReturnTermsSchema

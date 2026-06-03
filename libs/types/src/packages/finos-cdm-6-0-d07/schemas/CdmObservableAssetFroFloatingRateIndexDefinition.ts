@@ -4,22 +4,24 @@ import { withTypeBlueId } from '@blue-labs/language';
 import { CdmObservableAssetFroFloatingRateIndexCalculationDefaultsSchema } from './CdmObservableAssetFroFloatingRateIndexCalculationDefaults';
 import { CdmObservableAssetFroFloatingRateIndexIdentificationSchema } from './CdmObservableAssetFroFloatingRateIndexIdentification';
 
-export const CdmObservableAssetFroFloatingRateIndexDefinitionSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmObservableAssetFroFloatingRateIndexDefinitionSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/observable/asset/fro/FloatingRateIndexDefinition'
     ]
   )(
-    z.object({
-      calculationDefaults: z
+    zod.object({
+      calculationDefaults: zod
         .lazy(
           () => CdmObservableAssetFroFloatingRateIndexCalculationDefaultsSchema
         )
         .optional(),
-      fro: z.lazy(
+      fro: zod.lazy(
         () => CdmObservableAssetFroFloatingRateIndexIdentificationSchema
       ),
-      name: z.string().optional(),
+      name: zod.string().optional(),
     })
   );
 

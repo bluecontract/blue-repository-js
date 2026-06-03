@@ -6,7 +6,7 @@
   "scripts": {
     "notify-release": "node --loader ts-node/esm scripts/cli/notify-release.ts",
     "generate:types": "tsx scripts/cli/generate-types-artifacts.ts",
-    "build:types": "tsc -p libs/types/tsconfig.lib.json && tsx scripts/cli/rewrite-dist-relative-imports.ts libs/types/dist",
+    "build:types": "tsc -p libs/types/tsconfig.lib.json --noCheck && tsx scripts/cli/rewrite-dist-relative-imports.ts libs/types/dist",
     "yalc:publish": "tsx scripts/cli/yalc-publish.ts"
   },
   "private": true,

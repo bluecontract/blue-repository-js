@@ -1,18 +1,16 @@
-export const CdmProductCollateralDomesticCurrencyIssued = {
+export const CdmProductCollateralDomesticCurrencyIssued: Record<
+  string,
+  unknown
+> = {
   domesticCurrencyIssued: {
     description:
       'Identifies that the Security must be denominated in the domestic currency of the issuer.',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
     },
   },
   name: 'cdm/product/collateral/DomesticCurrencyIssued',
-} as const;
+};

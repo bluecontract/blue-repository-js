@@ -2,13 +2,15 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CdmLegaldocumentationCommonSpecifiedEntityClauseEnumSchema: z.ZodTypeAny =
+const zod = z as any;
+
+export const CdmLegaldocumentationCommonSpecifiedEntityClauseEnumSchema: any =
   withTypeBlueId(
     blueIds[
       'FINOS-CDM-6.0-d07/cdm/legaldocumentation/common/SpecifiedEntityClauseEnum'
     ]
   )(
-    z.enum([
+    zod.enum([
       'Bankruptcy',
       'CreditEventUponMerger',
       'CrossDefault',

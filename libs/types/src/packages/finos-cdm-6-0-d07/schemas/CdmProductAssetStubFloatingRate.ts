@@ -8,37 +8,38 @@ import { CdmProductAssetRateTreatmentEnumSchema } from './CdmProductAssetRateTre
 import { CdmProductAssetSpreadScheduleSchema } from './CdmProductAssetSpreadSchedule';
 import { CdmProductTemplateStrikeScheduleSchema } from './CdmProductTemplateStrikeSchedule';
 
-export const CdmProductAssetStubFloatingRateSchema: z.ZodTypeAny =
-  withTypeBlueId(
-    blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/StubFloatingRate']
-  )(
-    z.object({
-      capRateSchedule: z
-        .array(z.lazy(() => CdmProductTemplateStrikeScheduleSchema))
-        .min(0)
-        .optional(),
-      description: z.string().optional(),
-      floatingRateIndex: z.lazy(
-        () => CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema
-      ),
-      floatingRateMultiplierSchedule: z
-        .lazy(() => CdmBaseMathScheduleSchema)
-        .optional(),
-      floorRateSchedule: z
-        .array(z.lazy(() => CdmProductTemplateStrikeScheduleSchema))
-        .min(0)
-        .optional(),
-      indexTenor: z.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
-      name: z.string().optional(),
-      rateTreatment: z
-        .lazy(() => CdmProductAssetRateTreatmentEnumSchema)
-        .optional(),
-      spreadSchedule: z
-        .array(z.lazy(() => CdmProductAssetSpreadScheduleSchema))
-        .min(0)
-        .optional(),
-    })
-  );
+const zod = z as any;
+
+export const CdmProductAssetStubFloatingRateSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/product/asset/StubFloatingRate']
+)(
+  zod.object({
+    capRateSchedule: zod
+      .array(zod.lazy(() => CdmProductTemplateStrikeScheduleSchema))
+      .min(0)
+      .optional(),
+    description: zod.string().optional(),
+    floatingRateIndex: zod.lazy(
+      () => CdmBaseStaticdataAssetRatesFloatingRateIndexEnumSchema
+    ),
+    floatingRateMultiplierSchedule: zod
+      .lazy(() => CdmBaseMathScheduleSchema)
+      .optional(),
+    floorRateSchedule: zod
+      .array(zod.lazy(() => CdmProductTemplateStrikeScheduleSchema))
+      .min(0)
+      .optional(),
+    indexTenor: zod.lazy(() => CdmBaseDatetimePeriodSchema).optional(),
+    name: zod.string().optional(),
+    rateTreatment: zod
+      .lazy(() => CdmProductAssetRateTreatmentEnumSchema)
+      .optional(),
+    spreadSchedule: zod
+      .array(zod.lazy(() => CdmProductAssetSpreadScheduleSchema))
+      .min(0)
+      .optional(),
+  })
+);
 
 export type CdmProductAssetStubFloatingRate = z.infer<
   typeof CdmProductAssetStubFloatingRateSchema

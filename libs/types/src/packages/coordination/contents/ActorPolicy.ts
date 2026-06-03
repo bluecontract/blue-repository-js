@@ -1,40 +1,107 @@
-export const ActorPolicy = {
+export const ActorPolicy: Record<string, unknown> = {
   description:
-    "Processor-visible policy marker that constrains which actor and source categories may invoke named operations. Actor\nPolicy is intended to make actor attribution actionable. It lets a document say, for example, that authorizing funds,\ncapturing funds, cancelling a binding agreement, or changing sensitive contract terms must be performed by a principal\nactor, while lower-risk operations such as adding notes or requesting information may be performed by either a\nprincipal or an agent.\n\nThe policy is keyed by operation name. Each entry may require an actor category, require a source category, and/or\nexclude a source category. `requiresActor` is typically `principal`, `agent`, or `any`. `requiresSource` and\n`excludeSource` are source-class constraints such as `browserSession`, `apiCall`, or `documentRequest`. Provider- or\napplication-specific policies may refine these broad categories using specialized actor or source types, for example a\nUI Principal Actor with strong authentication or an API Principal Actor tied to a particular credential.\n\nActor Policy is a marker: it does not itself handle events or emit patches. A supported operation/channel runtime reads\nit when evaluating an Operation Request or other event. If the incoming event's actor or source does not meet the\npolicy for the requested operation, the operation is rejected or treated as invalid according to the hosting processor\nand channel semantics. This marker should be used to preserve human oversight while still allowing safe delegated\nautomation.\n",
+    "Processor-visible policy marker that constrains which actor and source categories may invoke named operations. Actor\nPolicy turns actor/source attribution into enforceable workflow rules. It lets a document require direct principal\naction for sensitive operations such as authorization, capture, cancellation, consent, or contract amendment, while\npermitting delegated agents or API calls for lower-risk operations such as adding notes, requesting information, or\npreparing drafts.\n\nThe policy is keyed by operation name. Each operation entry can constrain the actor category with `requiresActor`,\nrequire a source category with `requiresSource`, and/or reject a source category with `excludeSource`. The core\nactor categories are `principal`, `agent`, and `any`. The core source categories are `browserSession`, `apiCall`, and\n`documentRequest`. These are intentionally broad categories. Domain-specific policies may refine them by requiring\na specialized actor or source type in the operation runtime, such as a strongly authenticated browser session or a\nprovider-specific agent delegation.\n\nActor Policy is a marker. It does not handle events, issue patches, or inspect timelines by itself. A supported\noperation channel/runtime reads it when evaluating an Operation Request or comparable event. If the event's actor or\nsource does not satisfy the operation's policy, the operation is rejected or the scope terminates according to the\nhosting processor's rules. Timeline Providers are not responsible for enforcing this document policy; they provide\ninfrastructure, attribution, append authorization, ordering, storage, and completeness guarantees. Blue documents use\nActor Policy to decide how to interpret those attributed entries.\n",
   name: 'Actor Policy',
   operations: {
     description:
-      'Per-operation actor/source constraints keyed by operation name.',
+      'Per-operation constraints keyed by operation name. Each operation value may specify actor/source requirements.\nMissing fields mean this policy marker does not constrain that dimension for the operation.\n',
     keyType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: 'G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj',
+      blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
       excludeSource: {
         description:
-          'Disallowed source category ("browserSession" | "apiCall" | "documentRequest").',
+          'Disallowed source category for the operation. This can prohibit a category even when the actor is otherwise\nacceptable. For example, an operation may allow any actor but exclude `apiCall` to require a non-API source.\n',
+        schema: {
+          enum: [
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'browserSession',
+            },
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'apiCall',
+            },
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'documentRequest',
+            },
+          ],
+        },
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       requiresActor: {
-        description: 'Required actor category ("principal" | "agent" | "any").',
+        description:
+          'Required actor category for the operation. `principal` means the actor must be a Principal Actor or compatible\nsubtype. `agent` means the actor must be an Agent Actor or compatible subtype. `any` means the operation does\nnot restrict the actor category at this policy level, though the operation runtime may still apply stricter\nrules.\n',
+        schema: {
+          enum: [
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'principal',
+            },
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'agent',
+            },
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'any',
+            },
+          ],
+        },
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
       requiresSource: {
         description:
-          'Required source category ("browserSession" | "apiCall" | "documentRequest").',
+          'Required source category for the operation. `browserSession` requires an interactive UI/source session,\n`apiCall` requires a programmatic API source, and `documentRequest` requires a request originating from another\nBlue document or document session. Omit this field when the policy does not require a particular source.\n',
+        schema: {
+          enum: [
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'browserSession',
+            },
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'apiCall',
+            },
+            {
+              type: {
+                blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+              },
+              value: 'documentRequest',
+            },
+          ],
+        },
         type: {
-          blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
         },
       },
     },
   },
   type: {
-    blueId: '7QACj919YMRvFCTELCf6jfQTp41RVhtHdE6bPazLUZQ6',
+    blueId: '6zqbYGDGrMv5ReuEsjyzyyjjuqVnqDZxtY7RsPXdBTNy',
   },
-} as const;
+};

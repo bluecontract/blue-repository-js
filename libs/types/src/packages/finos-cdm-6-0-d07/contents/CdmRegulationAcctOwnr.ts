@@ -1,16 +1,11 @@
-export const CdmRegulationAcctOwnr = {
+export const CdmRegulationAcctOwnr: Record<string, unknown> = {
   id: {
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '3f4WiUJG3FhvWWyDoRyCBQcSoCNhmwkWYRRFeKfXoe4J',
+      blueId: 'G7k1Tk3cb59mR6bbpEGUCpLLZpWszEjL9odkebn25QBq',
     },
   },
   name: 'cdm/regulation/AcctOwnr',
-} as const;
+};

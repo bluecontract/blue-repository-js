@@ -1,16 +1,16 @@
-export const CdmProductAssetDividendPayoutRatio = {
+export const CdmProductAssetDividendPayoutRatio: Record<string, unknown> = {
   basketConstituent: {
     description:
       'In the case of a basket underlier, specifies to which component of the basket this particular set of dividend payout ratios correspond.\n',
     type: {
-      blueId: '6tLPRxaKr8kikEkfnoFn5a6CqY61ckSNTb2NLzfWwRb7',
+      blueId: '9TCszX7p3useiqzNm9UPp1AMdorfkHLknXYXqEVsE2N8',
     },
   },
   cashRatio: {
     description:
       'Specifies the cash actual dividend payout ratio associated with the equity underlier. A ratio of 90% should be expressed at 0.90.\n',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   description:
@@ -20,22 +20,17 @@ export const CdmProductAssetDividendPayoutRatio = {
     description:
       'Specifies the non cash actual dividend payout ratio associated with the equity underlier. A ratio of 90% should be expressed at 0.90.\n',
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
   totalRatio: {
     description:
       'Specifies the total actual dividend payout ratio associated with the equity underlier. A ratio of 90% should be expressed at 0.90.\n',
     schema: {
-      required: {
-        type: {
-          blueId: '4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u',
-        },
-        value: true,
-      },
+      required: true,
     },
     type: {
-      blueId: '7pwXmXYCJtWnd348c2JQGBkm9C4renmZRwxbfaypsx5y',
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
     },
   },
-} as const;
+};
