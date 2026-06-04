@@ -1,3 +1,7 @@
+## 1.2.3 (2026-06-04)
+
+This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
+
 ## 1.2.2 (2026-06-03)
 
 This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
