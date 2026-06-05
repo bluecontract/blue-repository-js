@@ -319,6 +319,45 @@ export const WorkerAgencyPermissionGrant: Record<string, unknown> = {
                   items: [
                     {
                       $let: {
+                        order: {
+                          items: [
+                            {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                              },
+                              value: 'issues',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                              },
+                              value: 'seenWorkerTypes',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                              },
+                              value: 'granterId',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                              },
+                              value: 'granteeDocumentId',
+                            },
+                            {
+                              type: {
+                                blueId:
+                                  'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                              },
+                              value: 'permissionsList',
+                            },
+                          ],
+                        },
                         vars: {
                           granteeDocumentId: {
                             $document: {

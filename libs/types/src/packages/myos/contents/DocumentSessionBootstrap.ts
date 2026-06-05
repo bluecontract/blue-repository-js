@@ -62,37 +62,6 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
             do: {
               items: [
                 {
-                  $if: {
-                    cond: {
-                      $not: {
-                        $exists: {
-                          $event: {
-                            type: {
-                              blueId:
-                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                            },
-                            value: '/reason',
-                          },
-                        },
-                      },
-                    },
-                    then: {
-                      items: [
-                        {
-                          $return: {
-                            changeset: {
-                              items: [],
-                            },
-                            events: {
-                              items: [],
-                            },
-                          },
-                        },
-                      ],
-                    },
-                  },
-                },
-                {
                   $appendChange: {
                     op: {
                       type: {
@@ -188,37 +157,6 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
           {
             do: {
               items: [
-                {
-                  $if: {
-                    cond: {
-                      $not: {
-                        $exists: {
-                          $event: {
-                            type: {
-                              blueId:
-                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                            },
-                            value: '/channelName',
-                          },
-                        },
-                      },
-                    },
-                    then: {
-                      items: [
-                        {
-                          $return: {
-                            changeset: {
-                              items: [],
-                            },
-                            events: {
-                              items: [],
-                            },
-                          },
-                        },
-                      ],
-                    },
-                  },
-                },
                 {
                   $let: {
                     order: {
@@ -365,27 +303,43 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                    },
-                    value: '/bootstrapStatus',
-                  },
-                  val: {
-                    $event: {
+                  $appendChange: {
+                    op: {
                       type: {
                         blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
-                      value: '/status',
+                      value: 'replace',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                      },
+                      value: '/bootstrapStatus',
+                    },
+                    val: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                        },
+                        value: '/status',
+                      },
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+                        },
+                        value: true,
+                      },
                     },
                   },
                 },
@@ -393,7 +347,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
             },
             name: 'Update Bootstrap Status',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
@@ -419,37 +373,6 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
           {
             do: {
               items: [
-                {
-                  $if: {
-                    cond: {
-                      $not: {
-                        $exists: {
-                          $event: {
-                            type: {
-                              blueId:
-                                'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                            },
-                            value: '/initiatorSessionIds',
-                          },
-                        },
-                      },
-                    },
-                    then: {
-                      items: [
-                        {
-                          $return: {
-                            changeset: {
-                              items: [],
-                            },
-                            events: {
-                              items: [],
-                            },
-                          },
-                        },
-                      ],
-                    },
-                  },
-                },
                 {
                   $appendChange: {
                     op: {

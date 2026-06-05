@@ -124,17 +124,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '8oFuJoaLFnEYDnGxAF5h8aRVJDYrCRU5ae2NgGdyNuKp': {
-      status: 'stable',
-      name: 'Chat GPT Connector Agent',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '8oFuJoaLFnEYDnGxAF5h8aRVJDYrCRU5ae2NgGdyNuKp',
-          attributesAdded: [],
-        },
-      ],
-    },
     HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: {
       status: 'stable',
       name: 'Document Anchor',
@@ -212,13 +201,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '86VLQYhHvWcBqKuy8LvBxHGDBwtW68zK2Pb8uUXazMoC': {
+    '2dBmPQaE1M3vCs75rg3ksDuBLwBP7qAujt189F2t8ZNi': {
       status: 'stable',
       name: 'Document Session Bootstrap',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '86VLQYhHvWcBqKuy8LvBxHGDBwtW68zK2Pb8uUXazMoC',
+          typeBlueId: '2dBmPQaE1M3vCs75rg3ksDuBLwBP7qAujt189F2t8ZNi',
           attributesAdded: [],
         },
       ],
@@ -267,24 +256,24 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '14HJjMexrCjNLdaqdaTrByotfkDnCjbztbg45iu6gRtu': {
+    '9xWDERguu2qHQbNsnp3oqVos9otazHfd51DXLnLsDU3D': {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Account',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '14HJjMexrCjNLdaqdaTrByotfkDnCjbztbg45iu6gRtu',
+          repositoryVersionIndex: 0,
+          typeBlueId: '9xWDERguu2qHQbNsnp3oqVos9otazHfd51DXLnLsDU3D',
           attributesAdded: [],
         },
       ],
     },
-    K86ZYdvBpaVTwL22iy6QKpXRVPJqWQ5T2dn8NuNmLhP: {
+    '5oupQbnbuoBTUDvTSy58EKZkra3cBjvAcdiZSLchcwiv': {
       status: 'dev',
       name: 'Linked Documents Permission Grant To Document',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: 'K86ZYdvBpaVTwL22iy6QKpXRVPJqWQ5T2dn8NuNmLhP',
+          repositoryVersionIndex: 0,
+          typeBlueId: '5oupQbnbuoBTUDvTSy58EKZkra3cBjvAcdiZSLchcwiv',
           attributesAdded: [],
         },
       ],
@@ -789,7 +778,7 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
       name: 'Single Document Permission Grant To Account',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: 'FxpvkuGSyrxhhvn8uToqkS33oiprrbTLBWLn2bWg8TqP',
           attributesAdded: [],
         },
@@ -800,7 +789,7 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
       name: 'Single Document Permission Grant To Document',
       versions: [
         {
-          repositoryVersionIndex: 1,
+          repositoryVersionIndex: 0,
           typeBlueId: '5VgEnZgpBjkyNiRjwdgjR6fvAWY4DnuSEWfT5dH5ZWPZ',
           attributesAdded: [],
         },
@@ -993,13 +982,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '9aVYTL2dSwzd88Bq8hLVn5gTUfXUkhzTGRpMhBii91EA': {
+    Biu1tXvUm4CpghgorjFVaqYAkSfkP1cKKenHuuFCTNhv: {
       status: 'dev',
       name: 'Worker Agency Permission Grant',
       versions: [
         {
-          repositoryVersionIndex: 1,
-          typeBlueId: '9aVYTL2dSwzd88Bq8hLVn5gTUfXUkhzTGRpMhBii91EA',
+          repositoryVersionIndex: 0,
+          typeBlueId: 'Biu1tXvUm4CpghgorjFVaqYAkSfkP1cKKenHuuFCTNhv',
           attributesAdded: [],
         },
       ],

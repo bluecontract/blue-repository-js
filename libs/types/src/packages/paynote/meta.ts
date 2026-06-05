@@ -168,13 +168,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '5aVPumax9MbaaEVd1kyZEoTu2vtZHDffWP8R1ALP7vV': {
+    A6bAqjnAo59pHui4s6mbCCQuQ6fdPGFTFbzCmAsocYLD: {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '5aVPumax9MbaaEVd1kyZEoTu2vtZHDffWP8R1ALP7vV',
+          typeBlueId: 'A6bAqjnAo59pHui4s6mbCCQuQ6fdPGFTFbzCmAsocYLD',
           attributesAdded: [],
         },
       ],
@@ -377,13 +377,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    HY6PWoQGPqoJHmBMZyF8BEkovMzsz1dewfoeCAJ8urpA: {
+    '56Db6p1NbBntQfP3sRxez7h1npf7WcirMT6Yjtfrob6g': {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'HY6PWoQGPqoJHmBMZyF8BEkovMzsz1dewfoeCAJ8urpA',
+          typeBlueId: '56Db6p1NbBntQfP3sRxez7h1npf7WcirMT6Yjtfrob6g',
           attributesAdded: [],
         },
       ],
@@ -707,13 +707,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q': {
+    Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj: {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q',
+          typeBlueId: 'Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj',
           attributesAdded: [],
         },
       ],
@@ -806,13 +806,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '983dg6ddoprdRNVHuwExmWLhA1DpG4Cz4oLYutMxhHvg': {
+    EdpKpT95646KGDTcMhd7FouMwdEVHS2WuhvEmLwCzd81: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '983dg6ddoprdRNVHuwExmWLhA1DpG4Cz4oLYutMxhHvg',
+          typeBlueId: 'EdpKpT95646KGDTcMhd7FouMwdEVHS2WuhvEmLwCzd81',
           attributesAdded: [],
         },
       ],

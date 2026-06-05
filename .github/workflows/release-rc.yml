@@ -55,7 +55,7 @@ jobs:
       - name: Verify RC package version
         run: |
           VERSION="$(node -p "require('./libs/types/package.json').version")"
-          test "$VERSION" = "2.0.0-rc.0"
+          test "$VERSION" = "2.0.0-rc.1"
 
       - name: Publish RC packages
         run: npx nx release publish --projects=@blue-repository/types --tag next --first-release --verbose

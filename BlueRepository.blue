@@ -33479,60 +33479,6 @@ packages:
             attributesAdded: []
       - status: stable
         content:
-          name: Chat GPT Connector Agent
-          description: Lets the owner prompt installation of a provided MyOS Package.
-          type:
-            blueId: 8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc
-          contracts:
-            ownerChannel:
-              type:
-                blueId: DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg
-            startWorker:
-              description: Prompt the user to install a provided MyOS Package
-              type:
-                blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
-              channel:
-                type:
-                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                value: ownerChannel
-              request:
-                package:
-                  description: MyOS Package
-                  type:
-                    blueId: FX9yvQWAiZMMwnUF1vY1HMumJNNg7ENP7ETxha1kvWkn
-            startWorkerImpl:
-              type:
-                blueId: AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz
-              operation:
-                type:
-                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                value: startWorker
-              steps:
-                items:
-                  - name: Emit Install Prompt
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa
-                      title:
-                        type:
-                          blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                        value: ChatGPT is requesting permission to launch a new agent
-                      message:
-                        type:
-                          blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                        value: A package has been prepared for you. Review and install.
-                      package:
-                        type:
-                          blueId: FX9yvQWAiZMMwnUF1vY1HMumJNNg7ENP7ETxha1kvWkn
-                        value: ${event.message.request.package}
-        versions:
-          - repositoryVersionIndex: 0
-            typeBlueId: 8oFuJoaLFnEYDnGxAF5h8aRVJDYrCRU5ae2NgGdyNuKp
-            attributesAdded: []
-      - status: stable
-        content:
           name: Document Anchor
           description: Each anchor declares a semantic purpose and may optionally provide a template recommendation for linking documents.
           template:
@@ -33676,21 +33622,6 @@ packages:
                       blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
                     do:
                       items:
-                        - $if:
-                            cond:
-                              $not:
-                                $exists:
-                                  $event:
-                                    type:
-                                      blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                                    value: /channelName
-                            then:
-                              items:
-                                - $return:
-                                    changeset:
-                                      items: []
-                                    events:
-                                      items: []
                         - $let:
                             order:
                               items:
@@ -33764,21 +33695,6 @@ packages:
                       blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
                     do:
                       items:
-                        - $if:
-                            cond:
-                              $not:
-                                $exists:
-                                  $event:
-                                    type:
-                                      blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                                    value: /initiatorSessionIds
-                            then:
-                              items:
-                                - $return:
-                                    changeset:
-                                      items: []
-                                    events:
-                                      items: []
                         - $appendChange:
                             op:
                               type:
@@ -33831,21 +33747,6 @@ packages:
                       blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
                     do:
                       items:
-                        - $if:
-                            cond:
-                              $not:
-                                $exists:
-                                  $event:
-                                    type:
-                                      blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                                    value: /reason
-                            then:
-                              items:
-                                - $return:
-                                    changeset:
-                                      items: []
-                                    events:
-                                      items: []
                         - $appendChange:
                             op:
                               type:
@@ -33895,22 +33796,29 @@ packages:
                 items:
                   - name: Update Bootstrap Status
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /bootstrapStatus
-                          val:
-                            $event:
+                        - $appendChange:
+                            op:
                               type:
                                 blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                              value: /status
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /bootstrapStatus
+                            val:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /status
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
           document:
             description: Target Blue document to be bootstrapped
           avatarUrl:
@@ -33971,7 +33879,7 @@ packages:
               blueId: ASa82RtPSXwdys7M5Xs5s3brTjYgJmQqJt2uyraQGrNA
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 86VLQYhHvWcBqKuy8LvBxHGDBwtW68zK2Pb8uUXazMoC
+            typeBlueId: 2dBmPQaE1M3vCs75rg3ksDuBLwBP7qAujt189F2t8ZNi
             attributesAdded: []
       - status: stable
         content:
@@ -34280,6 +34188,26 @@ packages:
                         do:
                           items:
                             - $let:
+                                order:
+                                  items:
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: issues
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: target
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: granterId
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: granteeId
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: links
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: anchorCount
                                 vars:
                                   issues:
                                     items: []
@@ -34731,8 +34659,8 @@ packages:
             type:
               blueId: DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn
         versions:
-          - repositoryVersionIndex: 1
-            typeBlueId: 14HJjMexrCjNLdaqdaTrByotfkDnCjbztbg45iu6gRtu
+          - repositoryVersionIndex: 0
+            typeBlueId: 9xWDERguu2qHQbNsnp3oqVos9otazHfd51DXLnLsDU3D
             attributesAdded: []
       - status: dev
         content:
@@ -34976,6 +34904,26 @@ packages:
                                   events:
                                     items: []
                             - $let:
+                                order:
+                                  items:
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: issues
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: target
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: granterId
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: granteeDocumentId
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: links
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: anchorCount
                                 vars:
                                   issues:
                                     items: []
@@ -35435,8 +35383,8 @@ packages:
             type:
               blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
         versions:
-          - repositoryVersionIndex: 1
-            typeBlueId: K86ZYdvBpaVTwL22iy6QKpXRVPJqWQ5T2dn8NuNmLhP
+          - repositoryVersionIndex: 0
+            typeBlueId: 5oupQbnbuoBTUDvTSy58EKZkra3cBjvAcdiZSLchcwiv
             attributesAdded: []
       - status: dev
         content:
@@ -36801,7 +36749,7 @@ packages:
             type:
               blueId: 9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: FxpvkuGSyrxhhvn8uToqkS33oiprrbTLBWLn2bWg8TqP
             attributesAdded: []
       - status: dev
@@ -37316,7 +37264,7 @@ packages:
             type:
               blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
         versions:
-          - repositoryVersionIndex: 1
+          - repositoryVersionIndex: 0
             typeBlueId: 5VgEnZgpBjkyNiRjwdgjR6fvAWY4DnuSEWfT5dH5ZWPZ
             attributesAdded: []
       - status: dev
@@ -37844,6 +37792,23 @@ packages:
                         do:
                           items:
                             - $let:
+                                order:
+                                  items:
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: issues
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: seenWorkerTypes
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: granterId
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: granteeDocumentId
+                                    - type:
+                                        blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                      value: permissionsList
                                 vars:
                                   issues:
                                     items: []
@@ -38467,8 +38432,8 @@ packages:
             itemType:
               blueId: GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH
         versions:
-          - repositoryVersionIndex: 1
-            typeBlueId: 9aVYTL2dSwzd88Bq8hLVn5gTUfXUkhzTGRpMhBii91EA
+          - repositoryVersionIndex: 0
+            typeBlueId: Biu1tXvUm4CpghgorjFVaqYAkSfkP1cKKenHuuFCTNhv
             attributesAdded: []
       - status: stable
         content:
@@ -38920,13 +38885,13 @@ packages:
           name: Card Transaction PayNote
           description: PayNote tied to a specific card transaction via ISO scheme identifiers.
           type:
-            blueId: 65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q
+            blueId: Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj
           cardTransactionDetails:
             type:
               blueId: DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 5aVPumax9MbaaEVd1kyZEoTu2vtZHDffWP8R1ALP7vV
+            typeBlueId: A6bAqjnAo59pHui4s6mbCCQuQ6fdPGFTFbzCmAsocYLD
             attributesAdded: []
       - status: dev
         content:
@@ -39223,10 +39188,10 @@ packages:
           name: Merchant To Customer PayNote
           description: Base PayNote where payer is merchant and payee is customer. Bank sets/validates payer channel bindings.
           type:
-            blueId: 65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q
+            blueId: Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: HY6PWoQGPqoJHmBMZyF8BEkovMzsz1dewfoeCAJ8urpA
+            typeBlueId: 56Db6p1NbBntQfP3sRxez7h1npf7WcirMT6Yjtfrob6g
             attributesAdded: []
       - status: dev
         content:
@@ -42817,12 +42782,23 @@ packages:
                             value: Failed
                   - name: Emit Transaction Initiation Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: AAEsZ5p6qEHZYr4ZP9oFMyYvJkFNbF6miqtnnYYkovTE
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: AAEsZ5p6qEHZYr4ZP9oFMyYvJkFNbF6miqtnnYYkovTE
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             confirmPayeeAssignment:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43018,12 +42994,23 @@ packages:
                 items:
                   - name: Emit Payee Assignment Rejected
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 3zCHLCtMCUoM1LiZP7skhLwZ5NGcTmVLQbdfPkDuv4q4
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 3zCHLCtMCUoM1LiZP7skhLwZ5NGcTmVLQbdfPkDuv4q4
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             confirmTransactionDetailsUpdated:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43231,12 +43218,23 @@ packages:
                 items:
                   - name: Emit Transaction Details Update Rejected
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 3BD7DPACFH2DZWxs9kb8YCBNypzJYMzctkyu6GZDsf85
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 3BD7DPACFH2DZWxs9kb8YCBNypzJYMzctkyu6GZDsf85
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failTransactionDetailsUpdate:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43258,12 +43256,23 @@ packages:
                 items:
                   - name: Emit Transaction Details Update Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 2ZtTQ2b9sFY65w4f4wWYQctRGj9o9ApkRb6tMXyiUqMb
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 2ZtTQ2b9sFY65w4f4wWYQctRGj9o9ApkRb6tMXyiUqMb
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             secureFunds:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43283,41 +43292,57 @@ packages:
                 value: secureFunds
               steps:
                 items:
-                  - name: Update Secured Amount
+                  - name: SecureFunds
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /status
+                            val:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: Secured
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /amount/secured
+                            val:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/amountSecured
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /status
-                          val:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: Secured
-                        - op:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /amount/secured
-                          val:
-                            $event: /message/request/amountSecured
-                  - name: Emit Funds Secured
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: BRCYCbhWLNL4eV9PPiXyR9jD5vUwZJM1QzVRitbzgttG
-                      amountSecured:
-                        $event: /message/request/amountSecured
+                              blueId: BRCYCbhWLNL4eV9PPiXyR9jD5vUwZJM1QzVRitbzgttG
+                            amountSecured:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/amountSecured
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             declineSecureFunds:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43356,12 +43381,23 @@ packages:
                             value: Rejected
                   - name: Emit Funds Securing Declined
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: F9uGVcesweVvK72Uw95r5uoC3N9rK7wEqrLesNF2dg6t
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: F9uGVcesweVvK72Uw95r5uoC3N9rK7wEqrLesNF2dg6t
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failSecureFunds:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43400,12 +43436,23 @@ packages:
                             value: Failed
                   - name: Emit Funds Securing Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: BWyf1rwHSCFApt6cTx1pq758Cwkmf6ip1XdEBg4QnCv8
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: BWyf1rwHSCFApt6cTx1pq758Cwkmf6ip1XdEBg4QnCv8
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             completePayment:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43425,41 +43472,57 @@ packages:
                 value: completePayment
               steps:
                 items:
-                  - name: Update Completed Amount
+                  - name: CompletePayment
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /status
+                            val:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: Completed
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /amount/completed
+                            val:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/amountCompleted
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /status
-                          val:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: Completed
-                        - op:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /amount/completed
-                          val:
-                            $event: /message/request/amountCompleted
-                  - name: Emit Payment Completed
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 5hNfvS7YBGdFfwoUt214LTTk8NSsVETTwDfDTzqcWihu
-                      amountCompleted:
-                        $event: /message/request/amountCompleted
+                              blueId: 5hNfvS7YBGdFfwoUt214LTTk8NSsVETTwDfDTzqcWihu
+                            amountCompleted:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/amountCompleted
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             declineCompletePayment:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43498,12 +43561,23 @@ packages:
                             value: Rejected
                   - name: Emit Payment Completion Declined
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: os4PgmBBxgt26WMaUg4XC4kmHkHygU5WL6PD5bHhShL
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: os4PgmBBxgt26WMaUg4XC4kmHkHygU5WL6PD5bHhShL
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failCompletePayment:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43542,12 +43616,23 @@ packages:
                             value: Failed
                   - name: Emit Payment Completion Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 6NZSd6JgMDdXikYHCDkeQ6aJsWCvMaznrRWdAaGRxnAL
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 6NZSd6JgMDdXikYHCDkeQ6aJsWCvMaznrRWdAaGRxnAL
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             cancelBeforeCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43628,12 +43713,23 @@ packages:
                             value: Rejected
                   - name: Emit Payment Cancellation Declined
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 7QLdg1jcp7zdZHW8TMek1KRhdhpjmXNyJv83qmMLedkp
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 7QLdg1jcp7zdZHW8TMek1KRhdhpjmXNyJv83qmMLedkp
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failCancelBeforeCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43672,12 +43768,23 @@ packages:
                             value: Failed
                   - name: Emit Payment Cancellation Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 3PohjSUMX4izceADM8gpy4Mg9988TNPWX9fKGrMBtZ8a
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 3PohjSUMX4izceADM8gpy4Mg9988TNPWX9fKGrMBtZ8a
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             reverseAfterCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43697,41 +43804,57 @@ packages:
                 value: reverseAfterCompletion
               steps:
                 items:
-                  - name: Update Reversed Amount
+                  - name: ReverseAfterCompletion
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /status
+                            val:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: Reversed
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /amount/reversed
+                            val:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/amountReversed
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /status
-                          val:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: Reversed
-                        - op:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /amount/reversed
-                          val:
-                            $event: /message/request/amountReversed
-                  - name: Emit Payment Reversed After Completion
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: BZL11BoCdd5wXZ1XGwPqckiCzfinoVLNUpmFt4cXGEQ8
-                      amountReversed:
-                        $event: /message/request/amountReversed
+                              blueId: BZL11BoCdd5wXZ1XGwPqckiCzfinoVLNUpmFt4cXGEQ8
+                            amountReversed:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/amountReversed
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             declineReverseAfterCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43770,12 +43893,23 @@ packages:
                             value: Rejected
                   - name: Emit Payment Reversal Declined
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: HsMuLH95bFaoqknkp6z3ZxMZyAmP21Qx9aYBTtc41zES
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: HsMuLH95bFaoqknkp6z3ZxMZyAmP21Qx9aYBTtc41zES
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failReverseAfterCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43814,12 +43948,23 @@ packages:
                             value: Failed
                   - name: Emit Payment Reversal Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: Aa45Pf6wk1T9YFxjxBk7fVRygZk9XQ7FWvXquQyLdGZH
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: Aa45Pf6wk1T9YFxjxBk7fVRygZk9XQ7FWvXquQyLdGZH
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             resolveFinalAmount:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43839,29 +43984,44 @@ packages:
                 value: resolveFinalAmount
               steps:
                 items:
-                  - name: Update Final Amount
+                  - name: ResolveFinalAmount
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /amount/finalResolved
+                            val:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/finalAmount
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /amount/finalResolved
-                          val:
-                            $event: /message/request/finalAmount
-                  - name: Emit Final Amount Resolved
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: wi22d16wHycXs4G9op3SEHvcR2rK3JTedywGewUt27F
-                      finalAmount:
-                        $event: /message/request/finalAmount
+                              blueId: wi22d16wHycXs4G9op3SEHvcR2rK3JTedywGewUt27F
+                            finalAmount:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/finalAmount
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             rejectFinalAmountResolution:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43883,12 +44043,23 @@ packages:
                 items:
                   - name: Emit Final Amount Resolution Rejected
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 72A3S6dDAqoMPUbC1EUUoCCsnfecvpS1L3cYevSydsai
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 72A3S6dDAqoMPUbC1EUUoCCsnfecvpS1L3cYevSydsai
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             lockPaymentCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43908,31 +44079,43 @@ packages:
                 value: lockPaymentCompletion
               steps:
                 items:
-                  - name: Enable Completion Lock
+                  - name: LockPaymentCompletion
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /controls/completionLocked
+                            val:
+                              type:
+                                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                              value: true
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /controls/completionLocked
-                          val:
-                            type:
-                              blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
-                            value: true
-                  - name: Emit Payment Completion Locked
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: GnhJBCKaSH7HSDuD2LihE7ds3Dcddfg8ueDEcaC5VV2Q
-                      lockedAt:
-                        $event: /message/request/lockedAt
+                              blueId: GnhJBCKaSH7HSDuD2LihE7ds3Dcddfg8ueDEcaC5VV2Q
+                            lockedAt:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/lockedAt
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             unlockPaymentCompletion:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43952,31 +44135,43 @@ packages:
                 value: unlockPaymentCompletion
               steps:
                 items:
-                  - name: Disable Completion Lock
+                  - name: UnlockPaymentCompletion
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /controls/completionLocked
+                            val:
+                              type:
+                                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                              value: false
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /controls/completionLocked
-                          val:
-                            type:
-                              blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
-                            value: false
-                  - name: Emit Payment Completion Unlocked
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: BGqFuh1FHNRvBYfqDegotUCuCkZUyHPi4cMzfzZMEsGH
-                      unlockedAt:
-                        $event: /message/request/unlockedAt
+                              blueId: BGqFuh1FHNRvBYfqDegotUCuCkZUyHPi4cMzfzZMEsGH
+                            unlockedAt:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/unlockedAt
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failPaymentCompletionLockChange:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -43998,12 +44193,23 @@ packages:
                 items:
                   - name: Emit Payment Completion Lock Change Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: WAYPYNWJEBL2TPtMuk8R3HYXcSR1itCizbyQoKwg2bn
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: WAYPYNWJEBL2TPtMuk8R3HYXcSR1itCizbyQoKwg2bn
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             lockPaymentReversal:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -44023,31 +44229,43 @@ packages:
                 value: lockPaymentReversal
               steps:
                 items:
-                  - name: Enable Reversal Lock
+                  - name: LockPaymentReversal
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /controls/reversalLocked
+                            val:
+                              type:
+                                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                              value: true
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /controls/reversalLocked
-                          val:
-                            type:
-                              blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
-                            value: true
-                  - name: Emit Payment Reversal Locked
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 4VMcLbCnPdsVT5VozPcgoQhEi9HyxKwoWZw92PdHSBQZ
-                      lockedAt:
-                        $event: /message/request/lockedAt
+                              blueId: 4VMcLbCnPdsVT5VozPcgoQhEi9HyxKwoWZw92PdHSBQZ
+                            lockedAt:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/lockedAt
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             unlockPaymentReversal:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -44067,31 +44285,43 @@ packages:
                 value: unlockPaymentReversal
               steps:
                 items:
-                  - name: Disable Reversal Lock
+                  - name: UnlockPaymentReversal
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /controls/reversalLocked
+                            val:
+                              type:
+                                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                              value: false
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /controls/reversalLocked
-                          val:
-                            type:
-                              blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
-                            value: false
-                  - name: Emit Payment Reversal Unlocked
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: G2Nsw7CtbAig3r87U1GJSV8Rhvvg86gmS6dwP657ZTNF
-                      unlockedAt:
-                        $event: /message/request/unlockedAt
+                              blueId: G2Nsw7CtbAig3r87U1GJSV8Rhvvg86gmS6dwP657ZTNF
+                            unlockedAt:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/unlockedAt
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failPaymentReversalLockChange:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -44113,12 +44343,23 @@ packages:
                 items:
                   - name: Emit Payment Reversal Lock Change Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 2a2gKUm58bHAhhod7QW8ET32tB1UsNAMcfTCkP6i42TM
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: 2a2gKUm58bHAhhod7QW8ET32tB1UsNAMcfTCkP6i42TM
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             lockTransactionDetailsUpdate:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -44138,31 +44379,43 @@ packages:
                 value: lockTransactionDetailsUpdate
               steps:
                 items:
-                  - name: Enable Transaction Details Update Lock
+                  - name: LockTransactionDetailsUpdate
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /controls/transactionDetailsUpdateLocked
+                            val:
+                              type:
+                                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                              value: true
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /controls/transactionDetailsUpdateLocked
-                          val:
-                            type:
-                              blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
-                            value: true
-                  - name: Emit Transaction Details Update Locked
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 8rhab2RQZiMZ4zqT85vNKR2zVCk9ZfCXGMLWERMnWF7R
-                      lockedAt:
-                        $event: /message/request/lockedAt
+                              blueId: 8rhab2RQZiMZ4zqT85vNKR2zVCk9ZfCXGMLWERMnWF7R
+                            lockedAt:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/lockedAt
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             unlockTransactionDetailsUpdate:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -44182,31 +44435,43 @@ packages:
                 value: unlockTransactionDetailsUpdate
               steps:
                 items:
-                  - name: Disable Transaction Details Update Lock
+                  - name: UnlockTransactionDetailsUpdate
                     type:
-                      blueId: 6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U
-                    changeset:
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
                       items:
-                        - op:
+                        - $appendChange:
+                            op:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: replace
+                            path:
+                              type:
+                                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                              value: /controls/transactionDetailsUpdateLocked
+                            val:
+                              type:
+                                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                              value: false
+                        - $appendEvent:
                             type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: replace
-                          path:
-                            type:
-                              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
-                            value: /controls/transactionDetailsUpdateLocked
-                          val:
-                            type:
-                              blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
-                            value: false
-                  - name: Emit Transaction Details Update Unlocked
-                    type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: 9MDjTe2agSVnBooUFpMSzXenPYPgTC7Z4CvTB9nkyCyc
-                      unlockedAt:
-                        $event: /message/request/unlockedAt
+                              blueId: 9MDjTe2agSVnBooUFpMSzXenPYPgTC7Z4CvTB9nkyCyc
+                            unlockedAt:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/unlockedAt
+                        - $return:
+                            changeset:
+                              $changeset:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
             failTransactionDetailsUpdateLockChange:
               type:
                 blueId: 316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66
@@ -44228,12 +44493,23 @@ packages:
                 items:
                   - name: Emit Transaction Details Update Lock Change Failed
                     type:
-                      blueId: Dg3nc6K9P7AWn4K1dpGCAKG3YXJjsUWRhG3YxfqyLTeK
-                    event:
-                      type:
-                        blueId: AGmjYB8hJAL9JUR3vsoqktdA7RcivcsjgoGjxQq3RQgj
-                      reason:
-                        $event: /message/request/reason
+                      blueId: 4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ
+                    do:
+                      items:
+                        - $appendEvent:
+                            type:
+                              blueId: AGmjYB8hJAL9JUR3vsoqktdA7RcivcsjgoGjxQq3RQgj
+                            reason:
+                              $event:
+                                type:
+                                  blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+                                value: /message/request/reason
+                        - $return:
+                            events:
+                              $events:
+                                type:
+                                  blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
+                                value: true
           kind:
             type:
               blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
@@ -44300,7 +44576,7 @@ packages:
                 blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q
+            typeBlueId: Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj
             attributesAdded: []
       - status: dev
         content:
@@ -45757,7 +46033,7 @@ packages:
               blueId: 3Uch8WXAZXUnHiWYF1Y2KaDBnfAFyUbZoDkeoPRYHZWC
             document:
               type:
-                blueId: 65VJYRpw1HsFXXrG3n9jff3DnRgkzqbM8P73SVPszG3q
+                blueId: Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj
           paymentMandateBootstrapRequest:
             description: Optional Payment Mandate bootstrap request details for Delivery flows that require mandate attachment before proposal exposure.
             type:
@@ -45795,7 +46071,7 @@ packages:
               blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
         versions:
           - repositoryVersionIndex: 0
-            typeBlueId: 983dg6ddoprdRNVHuwExmWLhA1DpG4Cz4oLYutMxhHvg
+            typeBlueId: EdpKpT95646KGDTcMhd7FouMwdEVHS2WuhvEmLwCzd81
             attributesAdded: []
       - status: dev
         content:
@@ -50999,5 +51275,4 @@ packages:
             typeBlueId: 33PFufGhLW51jVunAcpxYPj4tj4TwqXEinLnnqJNjTJm
             attributesAdded: []
 repositoryVersions:
-  - HmvAb9nKvmSQnJtaMoRfxHqiXmNEJACfuPDvW4StkuDz
-  - FBFYKUBVpZRJMwh8pVyuJo78wAe46m6XDjmLF2jMKnSp
+  - kAbuXDJSCta46DEKLdA6om4Na1juH7BTZG257wGhAJQ

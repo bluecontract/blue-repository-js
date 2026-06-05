@@ -16,8 +16,6 @@ export const blueIds = {
     'E4E5omD4zCzisFfJdF4iXrfe3RDAdNW4Kc5Fr5EQN4iV',
   'MyOS/Call Operation Responded':
     'Cm4GjXHCv2s4zEhfqd15xTX2PwvAYSBzvYFkqaxfGfyF',
-  'MyOS/Chat GPT Connector Agent':
-    '8oFuJoaLFnEYDnGxAF5h8aRVJDYrCRU5ae2NgGdyNuKp',
   'MyOS/Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
   'MyOS/Document Anchors': '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF',
   'MyOS/Document Initial Snapshot Requested':
@@ -29,7 +27,7 @@ export const blueIds = {
   'MyOS/Document Link': 'CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh',
   'MyOS/Document Links': 'HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX',
   'MyOS/Document Session Bootstrap':
-    '86VLQYhHvWcBqKuy8LvBxHGDBwtW68zK2Pb8uUXazMoC',
+    '2dBmPQaE1M3vCs75rg3ksDuBLwBP7qAujt189F2t8ZNi',
   'MyOS/Document Type Link': '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm',
   'MyOS/Inform User To Install MyOS Package':
     'B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa',
@@ -37,9 +35,9 @@ export const blueIds = {
   'MyOS/Linked Documents Permission Grant Requested':
     '7MTCgNo4iWnxoVhqJytiApkZYmrDPRZWUeCBPtfhZJma',
   'MyOS/Linked Documents Permission Grant To Account':
-    '14HJjMexrCjNLdaqdaTrByotfkDnCjbztbg45iu6gRtu',
+    '9xWDERguu2qHQbNsnp3oqVos9otazHfd51DXLnLsDU3D',
   'MyOS/Linked Documents Permission Grant To Document':
-    'K86ZYdvBpaVTwL22iy6QKpXRVPJqWQ5T2dn8NuNmLhP',
+    '5oupQbnbuoBTUDvTSy58EKZkra3cBjvAcdiZSLchcwiv',
   'MyOS/Linked Documents Permission Granted':
     '3BWjDhnmpr8KeWsbW2wQhMZbHpznEGGqtiWWncGD3g9C',
   'MyOS/Linked Documents Permission Granting in Progress':
@@ -146,7 +144,7 @@ export const blueIds = {
   'MyOS/Worker Agency Permission':
     'GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH',
   'MyOS/Worker Agency Permission Grant':
-    '9aVYTL2dSwzd88Bq8hLVn5gTUfXUkhzTGRpMhBii91EA',
+    'Biu1tXvUm4CpghgorjFVaqYAkSfkP1cKKenHuuFCTNhv',
   'MyOS/Worker Agency Permission Grant Requested':
     'EZsC5otrFgURBbXJaGZ7Ngs1JoJfHnrGVhzfPkJ3Q9QB',
   'MyOS/Worker Agency Permission Granted':

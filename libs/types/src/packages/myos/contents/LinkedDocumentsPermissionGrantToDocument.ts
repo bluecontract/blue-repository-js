@@ -445,6 +445,52 @@ export const LinkedDocumentsPermissionGrantToDocument: Record<string, unknown> =
                       },
                       {
                         $let: {
+                          order: {
+                            items: [
+                              {
+                                type: {
+                                  blueId:
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                                },
+                                value: 'issues',
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                                },
+                                value: 'target',
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                                },
+                                value: 'granterId',
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                                },
+                                value: 'granteeDocumentId',
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                                },
+                                value: 'links',
+                              },
+                              {
+                                type: {
+                                  blueId:
+                                    'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                                },
+                                value: 'anchorCount',
+                              },
+                            ],
+                          },
                           vars: {
                             anchorCount: {
                               type: {

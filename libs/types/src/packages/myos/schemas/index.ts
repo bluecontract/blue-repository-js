@@ -10,7 +10,6 @@ import { CallOperationAcceptedSchema } from './CallOperationAccepted';
 import { CallOperationFailedSchema } from './CallOperationFailed';
 import { CallOperationRequestedSchema } from './CallOperationRequested';
 import { CallOperationRespondedSchema } from './CallOperationResponded';
-import { ChatGPTConnectorAgentSchema } from './ChatGPTConnectorAgent';
 import { DocumentAnchorSchema } from './DocumentAnchor';
 import { DocumentAnchorsSchema } from './DocumentAnchors';
 import { DocumentInitialSnapshotRequestedSchema } from './DocumentInitialSnapshotRequested';
@@ -112,7 +111,6 @@ export { CallOperationAcceptedSchema } from './CallOperationAccepted';
 export { CallOperationFailedSchema } from './CallOperationFailed';
 export { CallOperationRequestedSchema } from './CallOperationRequested';
 export { CallOperationRespondedSchema } from './CallOperationResponded';
-export { ChatGPTConnectorAgentSchema } from './ChatGPTConnectorAgent';
 export { DocumentAnchorSchema } from './DocumentAnchor';
 export { DocumentAnchorsSchema } from './DocumentAnchors';
 export { DocumentInitialSnapshotRequestedSchema } from './DocumentInitialSnapshotRequested';
@@ -218,7 +216,6 @@ export const schemas: Record<string, ZodTypeAny> = {
   '9PH8Hi8uwuUXerpg4FY2cYUeytYuAnuU1SLT2KQsnuU8': CallOperationFailedSchema,
   E4E5omD4zCzisFfJdF4iXrfe3RDAdNW4Kc5Fr5EQN4iV: CallOperationRequestedSchema,
   Cm4GjXHCv2s4zEhfqd15xTX2PwvAYSBzvYFkqaxfGfyF: CallOperationRespondedSchema,
-  '8oFuJoaLFnEYDnGxAF5h8aRVJDYrCRU5ae2NgGdyNuKp': ChatGPTConnectorAgentSchema,
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: DocumentAnchorSchema,
   '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF': DocumentAnchorsSchema,
   '7A9voN4Bu8X7XhsvMT8ToP9Zdxj9Mnrp8MnfWfZCEwsq':
@@ -229,7 +226,7 @@ export const schemas: Record<string, ZodTypeAny> = {
     DocumentInitialSnapshotUnresolvedSchema,
   CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh: DocumentLinkSchema,
   HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX: DocumentLinksSchema,
-  '86VLQYhHvWcBqKuy8LvBxHGDBwtW68zK2Pb8uUXazMoC':
+  '2dBmPQaE1M3vCs75rg3ksDuBLwBP7qAujt189F2t8ZNi':
     DocumentSessionBootstrapSchema,
   '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm': DocumentTypeLinkSchema,
   B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa:
@@ -237,9 +234,9 @@ export const schemas: Record<string, ZodTypeAny> = {
   '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP': LinkSchema,
   '7MTCgNo4iWnxoVhqJytiApkZYmrDPRZWUeCBPtfhZJma':
     LinkedDocumentsPermissionGrantRequestedSchema,
-  '14HJjMexrCjNLdaqdaTrByotfkDnCjbztbg45iu6gRtu':
+  '9xWDERguu2qHQbNsnp3oqVos9otazHfd51DXLnLsDU3D':
     LinkedDocumentsPermissionGrantToAccountSchema,
-  K86ZYdvBpaVTwL22iy6QKpXRVPJqWQ5T2dn8NuNmLhP:
+  '5oupQbnbuoBTUDvTSy58EKZkra3cBjvAcdiZSLchcwiv':
     LinkedDocumentsPermissionGrantToDocumentSchema,
   '3BWjDhnmpr8KeWsbW2wQhMZbHpznEGGqtiWWncGD3g9C':
     LinkedDocumentsPermissionGrantedSchema,
@@ -342,7 +339,7 @@ export const schemas: Record<string, ZodTypeAny> = {
   '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN':
     TargetDocumentSessionStartedSchema,
   GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH: WorkerAgencyPermissionSchema,
-  '9aVYTL2dSwzd88Bq8hLVn5gTUfXUkhzTGRpMhBii91EA':
+  Biu1tXvUm4CpghgorjFVaqYAkSfkP1cKKenHuuFCTNhv:
     WorkerAgencyPermissionGrantSchema,
   EZsC5otrFgURBbXJaGZ7Ngs1JoJfHnrGVhzfPkJ3Q9QB:
     WorkerAgencyPermissionGrantRequestedSchema,
