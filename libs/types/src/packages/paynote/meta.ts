@@ -168,13 +168,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    A6bAqjnAo59pHui4s6mbCCQuQ6fdPGFTFbzCmAsocYLD: {
+    '2hS59JMnNLk7RxR8P6YrEU4vcFDZRyGFUYDoqunuRCoR': {
       status: 'dev',
       name: 'Card Transaction PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'A6bAqjnAo59pHui4s6mbCCQuQ6fdPGFTFbzCmAsocYLD',
+          typeBlueId: '2hS59JMnNLk7RxR8P6YrEU4vcFDZRyGFUYDoqunuRCoR',
           attributesAdded: [],
         },
       ],
@@ -377,13 +377,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '56Db6p1NbBntQfP3sRxez7h1npf7WcirMT6Yjtfrob6g': {
+    EzHXBDH1qMKUa8CRVwLbmHrSZZBEfZWvMNYyEnSuLLsF: {
       status: 'dev',
       name: 'Merchant To Customer PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '56Db6p1NbBntQfP3sRxez7h1npf7WcirMT6Yjtfrob6g',
+          typeBlueId: 'EzHXBDH1qMKUa8CRVwLbmHrSZZBEfZWvMNYyEnSuLLsF',
           attributesAdded: [],
         },
       ],
@@ -542,13 +542,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    CtbsuXntvrM28GGveCCe4Ks2xKTTmBvkMBAetSqXRCia: {
+    CGQTbEzX4HVwRKhD8qc9pSEgmVPJFRf5ermrcasyiu3P: {
       status: 'dev',
       name: 'Payment Mandate',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'CtbsuXntvrM28GGveCCe4Ks2xKTTmBvkMBAetSqXRCia',
+          typeBlueId: 'CGQTbEzX4HVwRKhD8qc9pSEgmVPJFRf5ermrcasyiu3P',
           attributesAdded: [],
         },
       ],
@@ -707,13 +707,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj: {
+    BKG9wBym4uT1s1Zd62mhVVNPshWpDf8Dgt6oqgTJMPCV: {
       status: 'dev',
       name: 'PayNote',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hx5PCkdi3YRJd9yn8NZmy2awB2PZiaj8vjsSzJG6GFaj',
+          typeBlueId: 'BKG9wBym4uT1s1Zd62mhVVNPshWpDf8Dgt6oqgTJMPCV',
           attributesAdded: [],
         },
       ],
@@ -806,13 +806,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    EdpKpT95646KGDTcMhd7FouMwdEVHS2WuhvEmLwCzd81: {
+    EBVUtjFi2vMrdLXL3bKET1daRicUEgRXcYRDr8U1mX7T: {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EdpKpT95646KGDTcMhd7FouMwdEVHS2WuhvEmLwCzd81',
+          typeBlueId: 'EBVUtjFi2vMrdLXL3bKET1daRicUEgRXcYRDr8U1mX7T',
           attributesAdded: [],
         },
       ],

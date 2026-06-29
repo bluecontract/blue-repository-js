@@ -2,10 +2,14 @@ export const blueIds = {
   'Coordination/Actor': 'GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7',
   'Coordination/Actor Policy': 'JCidqCzkd1o5aWkkDTzj6niugkn7oWxFUnSHaya4GbEj',
   'Coordination/Agent Actor': 'HooLPpmtC3Rf6jJ2eGGr4SyBbi2XYPzYBm4UpuzYke6D',
+  'Coordination/All Timelines Channel':
+    'G8nAyzhkoFiXhXUV4Jv4hwsivv4x8ACpJX7JNbK9idgg',
   'Coordination/API Call': '5tLUE25DSPGgtQtYVTYYskg3Ppz1DQwLqXqyedHebWvT',
   'Coordination/Browser Session':
     '3Po1wgu2yeXWQGMncYqhDFAd39MkqQR5JG8sJqntzmoX',
-  'Coordination/Chat Message': 'EhWWtyoGRsxWp6Ur63ijxxjsjYcshexSqTmedCaiptA2',
+  'Coordination/Chat Message': '3GFJTYsNFHWqoWaMoXbmuNkNFwso6R1aPhN8f98yYaGR',
+  'Coordination/Chat Workflow Operation':
+    'G889Jtx4DZPf5QkaEVNoQVUa4mA6EPzfbpT32ArvRhBv',
   'Coordination/Composite Timeline Channel':
     '4FE7wU8cnFsb7gEcgQk8vTGYZHLqvJH6Yjsv2TXovgr2',
   'Coordination/Compute': '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
@@ -34,7 +38,7 @@ export const blueIds = {
     'CVBPRqppe6uUhBQMcw8SVxqLwjBX7TwufMHwoCjnAqFv',
   'Coordination/Lifecycle Event':
     '9hcgdYgUJCreSiiSnEMVAXsf7iWui13JW96gfwauA73J',
-  'Coordination/Operation': '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+  'Coordination/Operation': 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
   'Coordination/Operation Request':
     '4KTmYtrEE7AALwixVdiXnMCq6No9h8cvHyD2a521jgAg',
   'Coordination/Principal Actor':
@@ -44,7 +48,7 @@ export const blueIds = {
   'Coordination/Sequential Workflow':
     'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
   'Coordination/Sequential Workflow Operation':
-    'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+    'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
   'Coordination/Sequential Workflow Step':
     '9oGn8V6FSVcJYhRfuHRShfWjiHBUqzxVi9StGtHZNfev',
   'Coordination/Source': 'Qm35f9xFUH84i745uPMj5jjMX1oCCG79aeSfHViipxG',

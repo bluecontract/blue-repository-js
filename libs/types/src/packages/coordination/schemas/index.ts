@@ -2,9 +2,11 @@ import type { ZodTypeAny } from 'zod';
 import { ActorSchema } from './Actor';
 import { ActorPolicySchema } from './ActorPolicy';
 import { AgentActorSchema } from './AgentActor';
+import { AllTimelinesChannelSchema } from './AllTimelinesChannel';
 import { APICallSchema } from './APICall';
 import { BrowserSessionSchema } from './BrowserSession';
 import { ChatMessageSchema } from './ChatMessage';
+import { ChatWorkflowOperationSchema } from './ChatWorkflowOperation';
 import { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
 import { ComputeSchema } from './Compute';
 import { ComputeDefinitionSchema } from './ComputeDefinition';
@@ -43,9 +45,11 @@ import { UpdateDocumentSchema } from './UpdateDocument';
 export { ActorSchema } from './Actor';
 export { ActorPolicySchema } from './ActorPolicy';
 export { AgentActorSchema } from './AgentActor';
+export { AllTimelinesChannelSchema } from './AllTimelinesChannel';
 export { APICallSchema } from './APICall';
 export { BrowserSessionSchema } from './BrowserSession';
 export { ChatMessageSchema } from './ChatMessage';
+export { ChatWorkflowOperationSchema } from './ChatWorkflowOperation';
 export { CompositeTimelineChannelSchema } from './CompositeTimelineChannel';
 export { ComputeSchema } from './Compute';
 export { ComputeDefinitionSchema } from './ComputeDefinition';
@@ -85,9 +89,11 @@ export const schemas: Record<string, ZodTypeAny> = {
   GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7: ActorSchema,
   JCidqCzkd1o5aWkkDTzj6niugkn7oWxFUnSHaya4GbEj: ActorPolicySchema,
   HooLPpmtC3Rf6jJ2eGGr4SyBbi2XYPzYBm4UpuzYke6D: AgentActorSchema,
+  G8nAyzhkoFiXhXUV4Jv4hwsivv4x8ACpJX7JNbK9idgg: AllTimelinesChannelSchema,
   '5tLUE25DSPGgtQtYVTYYskg3Ppz1DQwLqXqyedHebWvT': APICallSchema,
   '3Po1wgu2yeXWQGMncYqhDFAd39MkqQR5JG8sJqntzmoX': BrowserSessionSchema,
-  EhWWtyoGRsxWp6Ur63ijxxjsjYcshexSqTmedCaiptA2: ChatMessageSchema,
+  '3GFJTYsNFHWqoWaMoXbmuNkNFwso6R1aPhN8f98yYaGR': ChatMessageSchema,
+  G889Jtx4DZPf5QkaEVNoQVUa4mA6EPzfbpT32ArvRhBv: ChatWorkflowOperationSchema,
   '4FE7wU8cnFsb7gEcgQk8vTGYZHLqvJH6Yjsv2TXovgr2':
     CompositeTimelineChannelSchema,
   '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ': ComputeSchema,
@@ -108,13 +114,13 @@ export const schemas: Record<string, ZodTypeAny> = {
   CVBPRqppe6uUhBQMcw8SVxqLwjBX7TwufMHwoCjnAqFv:
     InformUserAboutPendingActionSchema,
   '9hcgdYgUJCreSiiSnEMVAXsf7iWui13JW96gfwauA73J': LifecycleEventSchema,
-  '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66': OperationSchema,
+  wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym: OperationSchema,
   '4KTmYtrEE7AALwixVdiXnMCq6No9h8cvHyD2a521jgAg': OperationRequestSchema,
   '23cWKG6LF47H1G3EfhV5dmEYtxkNaqLWgFDxEurdc6Ef': PrincipalActorSchema,
   '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw': RequestSchema,
   AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk: ResponseSchema,
   MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv: SequentialWorkflowSchema,
-  AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz:
+  CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF:
     SequentialWorkflowOperationSchema,
   '9oGn8V6FSVcJYhRfuHRShfWjiHBUqzxVi9StGtHZNfev': SequentialWorkflowStepSchema,
   Qm35f9xFUH84i745uPMj5jjMX1oCCG79aeSfHViipxG: SourceSchema,

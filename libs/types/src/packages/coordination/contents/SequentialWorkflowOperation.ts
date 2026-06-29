@@ -1,15 +1,18 @@
 export const SequentialWorkflowOperation: Record<string, unknown> = {
   description:
-    'Operation contract whose implementation is a Sequential Workflow. It connects a named operation request to a workflow\nhandler: when the configured channel accepts an event for the operation, the workflow steps run deterministically and\nproduce processor effects.\n\nThis type is useful for common document-owned behavior such as submitting a request, validating inputs, building a\nchangeset with Compute, applying it with Update Document, and emitting follow-up events. It keeps operation logic in\nBlue content so the operation can be inspected, versioned, hashed, and transported with the document.\n',
+    "Concrete Operation handler whose implementation is an ordered Sequential Workflow. Because Operation extends Handler,\na Sequential Workflow Operation is discovered and invoked as a same-scope handler bound to its channel.\n\nA Sequential Workflow Operation is still invoked like any other Operation: callers post an Operation Request naming\nthe operation contract key; the request payload must conform to this operation's request shape; and the message must\narrive through the operation's channel. The workflow then runs the declared steps deterministically and returns effects\nsuch as triggered events or document updates through the Blue Contracts processor.\n\nUse this for document-owned behavior where the operation interface and implementation should live together in a single\ncontract entry. A plain Operation can still declare the operation interface when a runtime or document chooses to bind\nthe implementation separately.\n",
   name: 'Sequential Workflow Operation',
-  operation: {
+  steps: {
     description:
-      'Operation metadata for this workflow operation, including request shape and channel binding. Concrete runtimes may\ninline this or reference a same-scope Operation contract.\n',
+      'Append-only ordered workflow steps to run when this operation is invoked. The steps have the same semantics as steps\nin a Sequential Workflow: Compute steps compute data, Update Document steps request processor-managed patches, and\nTrigger Event steps emit Blue events. The processor remains responsible for validation, patch application, event\nrouting, deterministic ordering, gas, and post-patch type soundness.\n\nThe append-only merge policy preserves inherited workflow prefixes. Subtypes and concrete documents may append\nadditional steps, but must not replace, reorder, or positionally overlay inherited steps.\n',
+    itemType: {
+      blueId: '9oGn8V6FSVcJYhRfuHRShfWjiHBUqzxVi9StGtHZNfev',
+    },
     type: {
-      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   type: {
-    blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+    blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
   },
 };

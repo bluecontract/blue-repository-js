@@ -36,6 +36,17 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
+    G8nAyzhkoFiXhXUV4Jv4hwsivv4x8ACpJX7JNbK9idgg: {
+      status: 'stable',
+      name: 'All Timelines Channel',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'G8nAyzhkoFiXhXUV4Jv4hwsivv4x8ACpJX7JNbK9idgg',
+          attributesAdded: [],
+        },
+      ],
+    },
     '5tLUE25DSPGgtQtYVTYYskg3Ppz1DQwLqXqyedHebWvT': {
       status: 'stable',
       name: 'API Call',
@@ -58,13 +69,24 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    EhWWtyoGRsxWp6Ur63ijxxjsjYcshexSqTmedCaiptA2: {
+    '3GFJTYsNFHWqoWaMoXbmuNkNFwso6R1aPhN8f98yYaGR': {
       status: 'stable',
       name: 'Chat Message',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EhWWtyoGRsxWp6Ur63ijxxjsjYcshexSqTmedCaiptA2',
+          typeBlueId: '3GFJTYsNFHWqoWaMoXbmuNkNFwso6R1aPhN8f98yYaGR',
+          attributesAdded: [],
+        },
+      ],
+    },
+    G889Jtx4DZPf5QkaEVNoQVUa4mA6EPzfbpT32ArvRhBv: {
+      status: 'stable',
+      name: 'Chat Workflow Operation',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'G889Jtx4DZPf5QkaEVNoQVUa4mA6EPzfbpT32ArvRhBv',
           attributesAdded: [],
         },
       ],
@@ -234,13 +256,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66': {
+    wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym: {
       status: 'stable',
       name: 'Operation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+          typeBlueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
           attributesAdded: [],
         },
       ],
@@ -300,13 +322,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz: {
+    CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF: {
       status: 'stable',
       name: 'Sequential Workflow Operation',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+          typeBlueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
           attributesAdded: [],
         },
       ],

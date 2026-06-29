@@ -8,6 +8,6 @@ export const ChangeOperation: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+    blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
   },
 };

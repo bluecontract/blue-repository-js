@@ -46,7 +46,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     acceptPayNoteImpl: {
@@ -102,7 +102,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     cancelBeforeCompletion: {
@@ -118,7 +118,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     cancelBeforeCompletionImpl: {
@@ -174,7 +174,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     completePayment: {
@@ -190,7 +190,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     completePaymentImpl: {
@@ -253,6 +253,35 @@ export const PayNote: Record<string, unknown> = {
                   },
                 },
                 {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+            name: 'Update Completed Amount',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            type: {
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
+            },
+          },
+          {
+            do: {
+              items: [
+                {
                   $appendEvent: {
                     amountCompleted: {
                       $event: {
@@ -270,15 +299,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -292,7 +312,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'CompletePayment',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Payment Completed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -300,7 +332,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     confirmPayeeAssignment: {
@@ -316,7 +348,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     confirmPayeeAssignmentImpl: {
@@ -639,7 +671,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     confirmTransactionDetailsUpdated: {
@@ -655,7 +687,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     confirmTransactionDetailsUpdatedImpl: {
@@ -1003,7 +1035,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     declineCancelBeforeCompletion: {
@@ -1019,7 +1051,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     declineCancelBeforeCompletionImpl: {
@@ -1095,7 +1127,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Cancellation Declined',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1103,7 +1147,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     declineCompletePayment: {
@@ -1119,7 +1163,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     declineCompletePaymentImpl: {
@@ -1195,7 +1239,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Completion Declined',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1203,7 +1259,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     declineReverseAfterCompletion: {
@@ -1219,7 +1275,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     declineReverseAfterCompletionImpl: {
@@ -1295,7 +1351,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Reversal Declined',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1303,7 +1371,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     declineSecureFunds: {
@@ -1319,7 +1387,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     declineSecureFundsImpl: {
@@ -1395,7 +1463,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Funds Securing Declined',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1403,7 +1483,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failCancelBeforeCompletion: {
@@ -1419,7 +1499,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failCancelBeforeCompletionImpl: {
@@ -1495,7 +1575,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Cancellation Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1503,7 +1595,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failCompletePayment: {
@@ -1519,7 +1611,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failCompletePaymentImpl: {
@@ -1595,7 +1687,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Completion Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1603,7 +1707,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failPaymentCompletionLockChange: {
@@ -1619,7 +1723,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failPaymentCompletionLockChangeImpl: {
@@ -1665,7 +1769,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Completion Lock Change Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1673,7 +1789,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failPaymentReversalLockChange: {
@@ -1689,7 +1805,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failPaymentReversalLockChangeImpl: {
@@ -1735,7 +1851,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Reversal Lock Change Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1743,7 +1871,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failReverseAfterCompletion: {
@@ -1759,7 +1887,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failReverseAfterCompletionImpl: {
@@ -1835,7 +1963,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payment Reversal Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1843,7 +1983,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failSecureFunds: {
@@ -1859,7 +1999,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failSecureFundsImpl: {
@@ -1935,7 +2075,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Funds Securing Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -1943,7 +2095,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failTransactionDetailsUpdate: {
@@ -1959,7 +2111,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failTransactionDetailsUpdateImpl: {
@@ -2005,7 +2157,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Transaction Details Update Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -2013,7 +2177,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     failTransactionDetailsUpdateLockChange: {
@@ -2029,7 +2193,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     failTransactionDetailsUpdateLockChangeImpl: {
@@ -2075,7 +2239,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Transaction Details Update Lock Change Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -2083,7 +2259,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     guarantorChannel: {
@@ -2577,7 +2753,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     lockPaymentCompletionImpl: {
@@ -2590,30 +2766,38 @@ export const PayNote: Record<string, unknown> = {
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: 'replace',
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: '/controls/completionLocked',
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    val: {
-                      type: {
-                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                      },
-                      value: true,
+                    value: '/controls/completionLocked',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
+                    value: true,
                   },
                 },
+              ],
+            },
+            name: 'Enable Completion Lock',
+            type: {
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+            },
+          },
+          {
+            do: {
+              items: [
                 {
                   $appendEvent: {
                     lockedAt: {
@@ -2632,15 +2816,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -2654,7 +2829,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'LockPaymentCompletion',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Payment Completion Locked',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -2662,7 +2849,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     lockPaymentReversal: {
@@ -2678,7 +2865,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     lockPaymentReversalImpl: {
@@ -2691,30 +2878,38 @@ export const PayNote: Record<string, unknown> = {
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: 'replace',
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: '/controls/reversalLocked',
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    val: {
-                      type: {
-                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                      },
-                      value: true,
+                    value: '/controls/reversalLocked',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
+                    value: true,
                   },
                 },
+              ],
+            },
+            name: 'Enable Reversal Lock',
+            type: {
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+            },
+          },
+          {
+            do: {
+              items: [
                 {
                   $appendEvent: {
                     lockedAt: {
@@ -2733,15 +2928,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -2755,7 +2941,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'LockPaymentReversal',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Payment Reversal Locked',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -2763,7 +2961,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     lockTransactionDetailsUpdate: {
@@ -2779,7 +2977,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     lockTransactionDetailsUpdateImpl: {
@@ -2792,30 +2990,38 @@ export const PayNote: Record<string, unknown> = {
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: 'replace',
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: '/controls/transactionDetailsUpdateLocked',
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    val: {
-                      type: {
-                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                      },
-                      value: true,
+                    value: '/controls/transactionDetailsUpdateLocked',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
+                    value: true,
                   },
                 },
+              ],
+            },
+            name: 'Enable Transaction Details Update Lock',
+            type: {
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+            },
+          },
+          {
+            do: {
+              items: [
                 {
                   $appendEvent: {
                     lockedAt: {
@@ -2834,15 +3040,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -2856,7 +3053,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'LockTransactionDetailsUpdate',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Transaction Details Update Locked',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -2864,7 +3073,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     payeeChannel: {
@@ -2890,7 +3099,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     recordTransactionInitiatedImpl: {
@@ -3331,7 +3540,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     recordTransactionInitiationFailed: {
@@ -3347,7 +3556,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     recordTransactionInitiationFailedImpl: {
@@ -3423,7 +3632,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Transaction Initiation Failed',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -3431,7 +3652,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     rejectFinalAmountResolution: {
@@ -3447,7 +3668,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     rejectFinalAmountResolutionImpl: {
@@ -3493,7 +3714,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Final Amount Resolution Rejected',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -3501,7 +3734,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     rejectPayeeAssignment: {
@@ -3517,7 +3750,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     rejectPayeeAssignmentImpl: {
@@ -3563,7 +3796,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Payee Assignment Rejected',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -3571,7 +3816,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     rejectPayNote: {
@@ -3587,7 +3832,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     rejectPayNoteImpl: {
@@ -3720,7 +3965,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     rejectTransactionDetailsUpdate: {
@@ -3736,7 +3981,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     rejectTransactionDetailsUpdateImpl: {
@@ -3782,7 +4027,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             name: 'Emit Transaction Details Update Rejected',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -3790,7 +4047,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     resolveFinalAmount: {
@@ -3806,7 +4063,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     resolveFinalAmountImpl: {
@@ -3847,6 +4104,35 @@ export const PayNote: Record<string, unknown> = {
                   },
                 },
                 {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+            name: 'Update Final Amount',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            type: {
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
+            },
+          },
+          {
+            do: {
+              items: [
+                {
                   $appendEvent: {
                     finalAmount: {
                       $event: {
@@ -3864,15 +4150,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -3886,7 +4163,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'ResolveFinalAmount',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Final Amount Resolved',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -3894,7 +4183,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     reverseAfterCompletion: {
@@ -3910,7 +4199,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     reverseAfterCompletionImpl: {
@@ -3973,6 +4262,35 @@ export const PayNote: Record<string, unknown> = {
                   },
                 },
                 {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+            name: 'Update Reversed Amount',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            type: {
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
+            },
+          },
+          {
+            do: {
+              items: [
+                {
                   $appendEvent: {
                     amountReversed: {
                       $event: {
@@ -3990,15 +4308,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -4012,7 +4321,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'ReverseAfterCompletion',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Payment Reversed After Completion',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -4020,7 +4341,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     search: {
@@ -4049,7 +4370,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     secureFundsImpl: {
@@ -4112,6 +4433,35 @@ export const PayNote: Record<string, unknown> = {
                   },
                 },
                 {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+                        },
+                        value: true,
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+            name: 'Update Secured Amount',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            type: {
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
+            },
+          },
+          {
+            do: {
+              items: [
+                {
                   $appendEvent: {
                     amountSecured: {
                       $event: {
@@ -4129,15 +4479,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -4151,7 +4492,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'SecureFunds',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Funds Secured',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -4159,7 +4512,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     unlockPaymentCompletion: {
@@ -4175,7 +4528,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     unlockPaymentCompletionImpl: {
@@ -4188,30 +4541,38 @@ export const PayNote: Record<string, unknown> = {
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: 'replace',
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: '/controls/completionLocked',
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    val: {
-                      type: {
-                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                      },
-                      value: false,
+                    value: '/controls/completionLocked',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
+                    value: false,
                   },
                 },
+              ],
+            },
+            name: 'Disable Completion Lock',
+            type: {
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+            },
+          },
+          {
+            do: {
+              items: [
                 {
                   $appendEvent: {
                     type: {
@@ -4230,15 +4591,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -4252,7 +4604,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'UnlockPaymentCompletion',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Payment Completion Unlocked',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -4260,7 +4624,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     unlockPaymentReversal: {
@@ -4276,7 +4640,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     unlockPaymentReversalImpl: {
@@ -4289,30 +4653,38 @@ export const PayNote: Record<string, unknown> = {
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: 'replace',
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: '/controls/reversalLocked',
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    val: {
-                      type: {
-                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                      },
-                      value: false,
+                    value: '/controls/reversalLocked',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
+                    value: false,
                   },
                 },
+              ],
+            },
+            name: 'Disable Reversal Lock',
+            type: {
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+            },
+          },
+          {
+            do: {
+              items: [
                 {
                   $appendEvent: {
                     type: {
@@ -4331,15 +4703,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -4353,7 +4716,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'UnlockPaymentReversal',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Payment Reversal Unlocked',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -4361,7 +4736,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     unlockTransactionDetailsUpdate: {
@@ -4377,7 +4752,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     unlockTransactionDetailsUpdateImpl: {
@@ -4390,30 +4765,38 @@ export const PayNote: Record<string, unknown> = {
       steps: {
         items: [
           {
-            do: {
+            changeset: {
               items: [
                 {
-                  $appendChange: {
-                    op: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: 'replace',
+                  op: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    path: {
-                      type: {
-                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                      },
-                      value: '/controls/transactionDetailsUpdateLocked',
+                    value: 'replace',
+                  },
+                  path: {
+                    type: {
+                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                     },
-                    val: {
-                      type: {
-                        blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                      },
-                      value: false,
+                    value: '/controls/transactionDetailsUpdateLocked',
+                  },
+                  val: {
+                    type: {
+                      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
                     },
+                    value: false,
                   },
                 },
+              ],
+            },
+            name: 'Disable Transaction Details Update Lock',
+            type: {
+              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+            },
+          },
+          {
+            do: {
+              items: [
                 {
                   $appendEvent: {
                     type: {
@@ -4432,15 +4815,6 @@ export const PayNote: Record<string, unknown> = {
                 },
                 {
                   $return: {
-                    changeset: {
-                      $changeset: {
-                        type: {
-                          blueId:
-                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
-                        },
-                        value: true,
-                      },
-                    },
                     events: {
                       $events: {
                         type: {
@@ -4454,7 +4828,19 @@ export const PayNote: Record<string, unknown> = {
                 },
               ],
             },
-            name: 'UnlockTransactionDetailsUpdate',
+            emitEvents: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
+            name: 'Emit Transaction Details Update Unlocked',
+            returnResult: {
+              type: {
+                blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+              },
+              value: true,
+            },
             type: {
               blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
@@ -4462,7 +4848,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
   },

@@ -17,7 +17,7 @@ export const MyOSAdminBase: Record<string, unknown> = {
       description:
         'The standard, required operation for MyOS Admin to deliver events.',
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     myOsAdminUpdateImpl: {
@@ -56,7 +56,7 @@ export const MyOSAdminBase: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
   },

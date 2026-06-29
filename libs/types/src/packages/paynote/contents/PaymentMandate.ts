@@ -222,7 +222,7 @@ export const PaymentMandate: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     authorizeSpendImpl: {
@@ -2306,7 +2306,7 @@ export const PaymentMandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     granteeChannel: {
@@ -2393,7 +2393,7 @@ export const PaymentMandate: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     settleSpendImpl: {
@@ -4800,7 +4800,7 @@ export const PaymentMandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
   },

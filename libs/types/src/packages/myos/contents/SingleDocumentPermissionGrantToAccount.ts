@@ -38,7 +38,7 @@ export const SingleDocumentPermissionGrantToAccount: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: '316voisXnp8BqLs7BNjjypfn3UG2FSpgFxS6pFqHbf66',
+        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
       },
     },
     revokeAccessChannel: {
@@ -115,7 +115,7 @@ export const SingleDocumentPermissionGrantToAccount: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'AWnvWVtp3g7B67iM6ZFETo1zri5yVikh8i53Q6PAPkqz',
+        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
       },
     },
     validateOnInit: {
@@ -1027,6 +1027,6 @@ export const SingleDocumentPermissionGrantToAccount: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: 'FMWYekdjwkDnoM2YfHmwuUATHZovSgmDEvSVTmyVmbHc',
+    blueId: 'cjPVQ6sifei7ryEsdwVhsYgHRXiAWMvaoQvrRo6LYRY',
   },
 };

@@ -9,6 +9,13 @@ export const ChatMessage: Record<string, unknown> = {
     },
   },
   name: 'Chat Message',
+  replyTo: {
+    description:
+      'Optional timeline entry this chat message replies to or comments on. In concrete documents this may be represented\nby the full Timeline Entry object or by a BlueId reference to that entry.\n',
+    type: {
+      blueId: 'HtPs8QJAUfc25fKanzLFjAqjbbhyFjDErYxjKdTCwARV',
+    },
+  },
   type: {
     blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
