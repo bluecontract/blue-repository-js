@@ -41,7 +41,13 @@ type ResolvedBase =
   | { kind: 'primitive'; blueId: string; primitive: string }
   | { kind: 'list'; blueId: string }
   | { kind: 'dictionary'; blueId: string }
-  | { kind: 'type'; blueId: string; safeName: string; importPath: string }
+  | {
+      kind: 'type';
+      blueId: string;
+      safeName: string;
+      schemaReference: string;
+      importPath: string;
+    }
   | { kind: 'runtime'; blueId: string }
   | null;
 
@@ -111,7 +117,12 @@ export class PackageSchemaBuilder {
     if (base?.kind !== 'type' || !base.importPath) {
       return;
     }
-    imports.add(`import { ${base.safeName}Schema } from '${base.importPath}';`);
+    const exportedSchema = `${base.safeName}Schema`;
+    const importedSchema =
+      base.schemaReference === exportedSchema
+        ? exportedSchema
+        : `${exportedSchema} as ${base.schemaReference}`;
+    imports.add(`import { ${importedSchema} } from '${base.importPath}';`);
   }
 
   private buildRootSchema(
@@ -179,7 +190,7 @@ export class PackageSchemaBuilder {
     if (base?.kind === 'type') {
       const rootSchema = this.applySchemaMetadata(
         {
-          expr: `${base.safeName}Schema.extend(${fieldResults.shape})`,
+          expr: `${base.schemaReference}.extend(${fieldResults.shape})`,
           usesZ: fieldResults.usesZ,
           usesBlueNode: fieldResults.usesBlueNode,
           kind: 'other',
@@ -732,11 +743,20 @@ export class PackageSchemaBuilder {
       this.throwUnknownType(rawRef, ['type']);
     }
     const safe = toIdentifier(base.typeName, base.blueId);
+    const currentSafe = toIdentifier(info.typeName, info.blueId);
+    const schemaReference =
+      safe === currentSafe ? `Base${safe}Schema` : `${safe}Schema`;
     const importPath =
       base.packageName === this.packageName
         ? `./${safe}`
         : `../../${base.packageName}/schemas/${safe}`;
-    return { kind: 'type', blueId: baseId, safeName: safe, importPath };
+    return {
+      kind: 'type',
+      blueId: baseId,
+      safeName: safe,
+      schemaReference,
+      importPath,
+    };
   }
 
   private resolveBlueId(ref: string): string | undefined {

@@ -36,6 +36,16 @@ packages:
           - repositoryVersionIndex: 0
             typeBlueId: conversation-composite-timeline-channel-v0
             attributesAdded: []
+      - status: stable
+        content:
+          name: Principal Actor
+          displayName:
+            type:
+              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: conversation-principal-actor-v0
+            attributesAdded: []
   - name: MyOS
     types:
       - status: stable
@@ -52,6 +62,18 @@ packages:
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: myos-document-session-bootstrap-v0
+            attributesAdded: []
+      - status: stable
+        content:
+          name: Principal Actor
+          type:
+            blueId: conversation-principal-actor-v0
+          accountId:
+            type:
+              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: myos-principal-actor-v0
             attributesAdded: []
   - name: Super Cool Package
     types:
