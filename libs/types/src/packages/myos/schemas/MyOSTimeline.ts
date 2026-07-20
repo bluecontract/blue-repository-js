@@ -9,7 +9,6 @@ export const MyOSTimelineSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Timeline']
 )(
   TimelineSchema.extend({
-    accountId: zod.string().optional(),
     description: zod.string().optional(),
     name: zod.string().optional(),
   })

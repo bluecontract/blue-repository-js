@@ -1,6 +1,6 @@
 export const StatusCompleted: Record<string, unknown> = {
   description:
-    'Concrete Document Status meaning the relevant workflow, document bootstrap, customer action, or operation has completed successfully. The fixed mode is `completed`.\n',
+    'Concrete Document Status meaning the relevant workflow, document bootstrap, customer action, or operation completed successfully. The fixed mode is `terminated`; the concrete type distinguishes successful completion.\n',
   mode: {
     type: {
       blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
@@ -9,6 +9,6 @@ export const StatusCompleted: Record<string, unknown> = {
   },
   name: 'Status Completed',
   type: {
-    blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
+    blueId: '6aAJEFVdFAgLVre8azY4YZQnNiv2FkXJpdpGAYSHiNrY',
   },
 };

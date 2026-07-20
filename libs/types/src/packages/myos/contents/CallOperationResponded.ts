@@ -4,7 +4,7 @@ export const CallOperationResponded: Record<string, unknown> = {
   events: {
     description: 'Operation Response events',
     itemType: {
-      blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
+      blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
@@ -12,6 +12,6 @@ export const CallOperationResponded: Record<string, unknown> = {
   },
   name: 'Call Operation Responded',
   type: {
-    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
+    blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
   },
 };

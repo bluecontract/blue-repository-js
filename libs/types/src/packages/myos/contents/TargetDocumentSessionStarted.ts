@@ -13,4 +13,7 @@ export const TargetDocumentSessionStarted: Record<string, unknown> = {
     },
   },
   name: 'Target Document Session Started',
+  type: {
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
+  },
 };

@@ -32,20 +32,20 @@ export { RejectChangeOperationSchema } from './RejectChangeOperation';
 export { RejectChangeWorkflowSchema } from './RejectChangeWorkflow';
 
 export const schemas: Record<string, ZodTypeAny> = {
-  F8yzCwY9qUvLmBtoJFshSpwepjNB9VZdbqdBmZ2USqN: AcceptChangeOperationSchema,
-  Ax4Z2wn5NyUqNm8XVoPvc37iSiJg5fYHDAGgkGmdKNz1: AcceptChangeWorkflowSchema,
-  '2GU1BcpX5YZRi9unTpM2ma9jq2gqmeAAN7sxL5N9zdYx': ChangeOperationSchema,
+  AQiBjYvNGNupbn8GoAVjJD3GytsuktbfUJ8EXxm24uiX: AcceptChangeOperationSchema,
+  '9Ke8Cm7sbxbdezqTBsHYAgKqsncGSsF1MQPhT8Lh7R4a': AcceptChangeWorkflowSchema,
+  AKkQ1Sq3MRCEoDNv4FjEpx3Dn72DuM4DTVJNCJsSs1Ai: ChangeOperationSchema,
   '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU': ChangeRequestSchema,
-  '2rYpSjRi9FhYFkymGBM6GJbJ1aqxrUVfe6wJVLGXgyge': ChangeWorkflowSchema,
+  J4N7XgGHAwMZJGJ4SkWuUHmTfKvsSHvSsbAduEsriARk: ChangeWorkflowSchema,
   CECcZ2xesYWUD4qZNFzDWYjWoMU6W55jEEoJHK8MWZct: ContractsChangePolicySchema,
-  J5Y635XgMzHfDBE7zthvPE7bX7Zhb4Qux1d9vqTnHksQ: CustomerConsentSchema,
+  A3ARRUeBEDuZMTs7SN62agmNKd41i1ZZDRtsGWDhuSro: CustomerConsentSchema,
   '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy': DocumentSectionSchema,
   '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX':
     DocumentSectionChangeEntrySchema,
   '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc': DocumentSectionChangesSchema,
-  '8HQK7y79nm3M3cRCnM3gCWEbS6PqurBCqcYPoaWgKD84': ProposeChangeOperationSchema,
-  D46msJi1VAwKc9ANScqNsoCFGuXkcodMaPGWKXg77uPj: ProposeChangeWorkflowSchema,
+  '6KfyYR3LoTKJLsgPkmYkXacY7JMPvTjJUeqtJXXfVHMr': ProposeChangeOperationSchema,
+  '8vYuJh8cJGWzYHFG5z42LCpx219obwXWc2Z9D1CJ5bJa': ProposeChangeWorkflowSchema,
   '6jcAKEeVpGCPenpSnfwwamL2iTHBACRXPFQjEDU5pX1y': ProposedChangeInvalidSchema,
-  '2KuL6JGr5dMpdw1YgcoDkFNDW4h86LgBQBWCejqFeUvE': RejectChangeOperationSchema,
-  '4GBqF7ko9oN34RAFL9uY5tx7R8FFP8idM1VaBKiXA1Tb': RejectChangeWorkflowSchema,
+  J3eHxcp4f3sKC2zohWMWLo5AvWAi2DJiNBPkExd1EhvU: RejectChangeOperationSchema,
+  '9pyaCAF3GguLmRNGwhVLhXNqpvPsTtLpSdEuZCPpvRoT': RejectChangeWorkflowSchema,
 };

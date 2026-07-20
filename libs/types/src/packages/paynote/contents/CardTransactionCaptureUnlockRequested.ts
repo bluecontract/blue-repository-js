@@ -8,6 +8,6 @@ export const CardTransactionCaptureUnlockRequested: Record<string, unknown> = {
     'Request to the card issuer to process any following card transaction capture requests.',
   name: 'Card Transaction Capture Unlock Requested',
   type: {
-    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
 };

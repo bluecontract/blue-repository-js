@@ -6,6 +6,6 @@ export const PayNoteCancellationRequested: Record<string, unknown> = {
     'The Payer requests to cancel PayNote that is Approved but not yet\nReserved or Captured.\n',
   name: 'PayNote Cancellation Requested',
   type: {
-    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
 };

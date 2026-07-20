@@ -6,7 +6,7 @@ export const StatusChange: Record<string, unknown> = {
     description:
       'New status value. Usually a Document Status specialization such as Status Pending, Status In Progress, Status\nCompleted, or Status Failed.\n',
     type: {
-      blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
+      blueId: '6aAJEFVdFAgLVre8azY4YZQnNiv2FkXJpdpGAYSHiNrY',
     },
   },
   type: {

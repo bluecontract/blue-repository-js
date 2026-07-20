@@ -7,7 +7,6 @@ export const blueIds = {
   'Common/Document Anchors': '5UhQNW5kxq9QrAkjnajrGV7B4nN5Cun6puDNkqUyxF4e',
   'Common/Named Event': 'AJXU1CbY6HmjCknkWm1ng2pGvStRPzhs3jq4WWLVwWLK',
   'Common/Payment': 'HSvngEMxS34qTVo3TNufgbR7pLcZY9gq94FNLdHeGKaZ',
-  'Common/PermissionGrant': 'EqJ715y2fFsWhgBRXg5X9GDBxrkEsdend14hHmSsD8Ma',
   'Common/Profile': 'DDAmA9UAt9mPSwLfBN95yLy3MPrvsC2tjGPcAYaxoWHc',
   'Common/Record': '3jiCk56nE5ULAqAWz6ANyVexCtr8PR54TEogRNECT61z',
   'Common/Relationship': 'F7LgS1HLXL7CBP3D1LW8ncdfn1euZWBBbQ63pMbfFG1n',

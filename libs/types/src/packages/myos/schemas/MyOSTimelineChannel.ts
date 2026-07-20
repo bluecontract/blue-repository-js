@@ -2,6 +2,7 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimelineChannelSchema } from '../../coordination/schemas/TimelineChannel';
+import { MyOSTimelineSchema } from './MyOSTimeline';
 
 const zod = z as any;
 
@@ -13,6 +14,7 @@ export const MyOSTimelineChannelSchema: any = withTypeBlueId(
     description: zod.string().optional(),
     email: zod.string().optional(),
     name: zod.string().optional(),
+    timeline: zod.lazy(() => MyOSTimelineSchema).optional(),
   })
 );
 

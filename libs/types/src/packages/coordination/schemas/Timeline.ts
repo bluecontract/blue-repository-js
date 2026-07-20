@@ -10,7 +10,7 @@ export const TimelineSchema: any = withTypeBlueId(
   zod.object({
     description: zod.string().optional(),
     name: zod.string().optional(),
-    timelineId: zod.string().optional(),
+    timelineId: zod.string(),
   })
 );
 

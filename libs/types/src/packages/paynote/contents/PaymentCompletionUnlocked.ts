@@ -3,7 +3,7 @@ export const PaymentCompletionUnlocked: Record<string, unknown> = {
     'Payment completion was unlocked. Subsequent completion attempts may now be processed again.\n',
   name: 'Payment Completion Unlocked',
   type: {
-    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
+    blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
   },
   unlockedAt: {
     type: {

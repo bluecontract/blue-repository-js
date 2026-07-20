@@ -1,28 +1,28 @@
 export const blueIds = {
   'Workflows/Accept Change Operation':
-    'F8yzCwY9qUvLmBtoJFshSpwepjNB9VZdbqdBmZ2USqN',
+    'AQiBjYvNGNupbn8GoAVjJD3GytsuktbfUJ8EXxm24uiX',
   'Workflows/Accept Change Workflow':
-    'Ax4Z2wn5NyUqNm8XVoPvc37iSiJg5fYHDAGgkGmdKNz1',
-  'Workflows/Change Operation': '2GU1BcpX5YZRi9unTpM2ma9jq2gqmeAAN7sxL5N9zdYx',
+    '9Ke8Cm7sbxbdezqTBsHYAgKqsncGSsF1MQPhT8Lh7R4a',
+  'Workflows/Change Operation': 'AKkQ1Sq3MRCEoDNv4FjEpx3Dn72DuM4DTVJNCJsSs1Ai',
   'Workflows/Change Request': '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU',
-  'Workflows/Change Workflow': '2rYpSjRi9FhYFkymGBM6GJbJ1aqxrUVfe6wJVLGXgyge',
+  'Workflows/Change Workflow': 'J4N7XgGHAwMZJGJ4SkWuUHmTfKvsSHvSsbAduEsriARk',
   'Workflows/Contracts Change Policy':
     'CECcZ2xesYWUD4qZNFzDWYjWoMU6W55jEEoJHK8MWZct',
-  'Workflows/Customer Consent': 'J5Y635XgMzHfDBE7zthvPE7bX7Zhb4Qux1d9vqTnHksQ',
+  'Workflows/Customer Consent': 'A3ARRUeBEDuZMTs7SN62agmNKd41i1ZZDRtsGWDhuSro',
   'Workflows/Document Section': '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy',
   'Workflows/Document Section Change Entry':
     '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX',
   'Workflows/Document Section Changes':
     '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc',
   'Workflows/Propose Change Operation':
-    '8HQK7y79nm3M3cRCnM3gCWEbS6PqurBCqcYPoaWgKD84',
+    '6KfyYR3LoTKJLsgPkmYkXacY7JMPvTjJUeqtJXXfVHMr',
   'Workflows/Propose Change Workflow':
-    'D46msJi1VAwKc9ANScqNsoCFGuXkcodMaPGWKXg77uPj',
+    '8vYuJh8cJGWzYHFG5z42LCpx219obwXWc2Z9D1CJ5bJa',
   'Workflows/Proposed Change Invalid':
     '6jcAKEeVpGCPenpSnfwwamL2iTHBACRXPFQjEDU5pX1y',
   'Workflows/Reject Change Operation':
-    '2KuL6JGr5dMpdw1YgcoDkFNDW4h86LgBQBWCejqFeUvE',
+    'J3eHxcp4f3sKC2zohWMWLo5AvWAi2DJiNBPkExd1EhvU',
   'Workflows/Reject Change Workflow':
-    '4GBqF7ko9oN34RAFL9uY5tx7R8FFP8idM1VaBKiXA1Tb',
+    '9pyaCAF3GguLmRNGwhVLhXNqpvPsTtLpSdEuZCPpvRoT',
 } as const;
 export default blueIds;

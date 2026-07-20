@@ -3,6 +3,6 @@ export const PaymentInitiationAccepted: Record<string, unknown> = {
     'Result emitted after MyOS Admin accepts a payment initiation request.',
   name: 'Payment Initiation Accepted',
   type: {
-    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
+    blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
   },
 };

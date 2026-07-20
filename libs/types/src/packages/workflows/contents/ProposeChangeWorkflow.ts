@@ -299,6 +299,6 @@ export const ProposeChangeWorkflow: Record<string, unknown> = {
     ],
   },
   type: {
-    blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+    blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
   },
 };

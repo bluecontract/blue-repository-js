@@ -13,7 +13,12 @@ export const MyOSTimelineChannel: Record<string, unknown> = {
     },
   },
   name: 'MyOS Timeline Channel',
+  timeline: {
+    type: {
+      blueId: '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3',
+    },
+  },
   type: {
-    blueId: 'AKRPLotcnGLq7gQRj3jHcfAkxkwaJpmxNXpC3G22GQQz',
+    blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
   },
 };

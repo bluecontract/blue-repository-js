@@ -80,17 +80,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    EqJ715y2fFsWhgBRXg5X9GDBxrkEsdend14hHmSsD8Ma: {
-      status: 'dev',
-      name: 'PermissionGrant',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'EqJ715y2fFsWhgBRXg5X9GDBxrkEsdend14hHmSsD8Ma',
-          attributesAdded: [],
-        },
-      ],
-    },
     DDAmA9UAt9mPSwLfBN95yLy3MPrvsC2tjGPcAYaxoWHc: {
       status: 'dev',
       name: 'Profile',

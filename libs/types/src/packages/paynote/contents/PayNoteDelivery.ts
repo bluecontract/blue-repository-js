@@ -41,7 +41,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     acceptPayNoteImpl: {
@@ -558,7 +558,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                       },
                                       type: {
                                         blueId:
-                                          'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
+                                          'DUU68ikPqLZ9NwsUGzkCZ92abAUz51ihcZBTJQEty6E1',
                                       },
                                     },
                                   ],
@@ -574,7 +574,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                 },
                                 type: {
                                   blueId:
-                                    'BEc6aieqN1iaXT2bNQVag1a1cGygZCLCjXf3mvupetNg',
+                                    '8LNqtg237MFe1zKdG3eWftMXtFTgVtyvrxgZkHcXYkC1',
                                 },
                               },
                             },
@@ -874,7 +874,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
     initialize: {
@@ -904,7 +904,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                   },
                   val: {
                     type: {
-                      blueId: 'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
+                      blueId: 'DUU68ikPqLZ9NwsUGzkCZ92abAUz51ihcZBTJQEty6E1',
                     },
                   },
                 },
@@ -994,14 +994,14 @@ export const PayNoteDelivery: Record<string, unknown> = {
     payNoteDeliverer: {
       description: 'Participant delivering and reporting status (e.g., bank).',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     payNoteSender: {
       description:
         'Participant submitting the PayNote delivery (merchant or processor).',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     rejectPayNote: {
@@ -1026,7 +1026,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     rejectPayNoteImpl: {
@@ -1539,7 +1539,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                       },
                                       type: {
                                         blueId:
-                                          'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
+                                          'DUU68ikPqLZ9NwsUGzkCZ92abAUz51ihcZBTJQEty6E1',
                                       },
                                     },
                                   ],
@@ -1555,7 +1555,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                 },
                                 type: {
                                   blueId:
-                                    '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
+                                    '3kguQFJvHMnCfrg4Bmqt81EZg6qeht8Cs6tEjNDxTkyB',
                                 },
                               },
                             },
@@ -1937,7 +1937,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
     reportDeliveryError: {
@@ -1954,7 +1954,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     reportDeliveryErrorImpl: {
@@ -2053,7 +2053,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                         value: 'terminated',
                       },
                       type: {
-                        blueId: '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
+                        blueId: '3kguQFJvHMnCfrg4Bmqt81EZg6qeht8Cs6tEjNDxTkyB',
                       },
                     },
                   },
@@ -2115,7 +2115,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
     updateTransactionIdentificationStatus: {
@@ -2132,7 +2132,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     updateTransactionIdentificationStatusImpl: {
@@ -2376,7 +2376,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                   },
                                   type: {
                                     blueId:
-                                      'CE3FgdBrYRhs4Vvz93ArW8TvzWgQvouEyuJ72bGiidXS',
+                                      'DUU68ikPqLZ9NwsUGzkCZ92abAUz51ihcZBTJQEty6E1',
                                   },
                                 },
                               ],
@@ -2403,7 +2403,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                 },
                                 type: {
                                   blueId:
-                                    '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
+                                    '3kguQFJvHMnCfrg4Bmqt81EZg6qeht8Cs6tEjNDxTkyB',
                                 },
                               },
                               then: {
@@ -2416,7 +2416,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
                                 },
                                 type: {
                                   blueId:
-                                    '5BQB6Hsr3qxMsZikHdqd2LGeKdQafEQ4jo6TBqm9JZuB',
+                                    'G5KJnJLaUCSvz4BaZAMNJAgxtfxssb64oWWJXsDW3Uoy',
                                 },
                               },
                             },
@@ -2636,7 +2636,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
   },
@@ -2649,7 +2649,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
   deliveryStatus: {
     description: 'High-level delivery status.',
     type: {
-      blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
+      blueId: '9Q7nZyiFKJyzxH6c6EWHsHsqQ8arUYtyrAUgwv9paoxe',
     },
   },
   description:
@@ -2660,22 +2660,22 @@ export const PayNoteDelivery: Record<string, unknown> = {
       'Optional Payment Mandate bootstrap request details for Delivery flows that require mandate attachment before proposal exposure.',
     document: {
       type: {
-        blueId: 'CGQTbEzX4HVwRKhD8qc9pSEgmVPJFRf5ermrcasyiu3P',
+        blueId: 'Zp9XUGFr6S4MPcfMarmfWo3uE8Bsh4UzUsgMNcKbh6V',
       },
     },
     type: {
-      blueId: '3Uch8WXAZXUnHiWYF1Y2KaDBnfAFyUbZoDkeoPRYHZWC',
+      blueId: '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt',
     },
   },
   payNoteBootstrapRequest: {
     description: 'PayNote bootstrap request details.',
     document: {
       type: {
-        blueId: 'BKG9wBym4uT1s1Zd62mhVVNPshWpDf8Dgt6oqgTJMPCV',
+        blueId: '3QhCg6W39VGD66E7by4yNop1UYH198xEbVpqYcjLaatL',
       },
     },
     type: {
-      blueId: '3Uch8WXAZXUnHiWYF1Y2KaDBnfAFyUbZoDkeoPRYHZWC',
+      blueId: '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt',
     },
   },
   transactionIdentificationStatus: {

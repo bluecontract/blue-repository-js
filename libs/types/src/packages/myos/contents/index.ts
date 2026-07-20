@@ -1,336 +1,205 @@
-import { SubscribeToSessionRequested } from './SubscribeToSessionRequested';
-import { PaymentInitiationRequested } from './PaymentInitiationRequested';
-import { WorkerAgencyPermissionGranted } from './WorkerAgencyPermissionGranted';
+import { MyOSSessionSubscriptionRequested } from './MyOSSessionSubscriptionRequested';
+import { PaymentInitiated } from './PaymentInitiated';
+import { MyOSTimeline } from './MyOSTimeline';
+import { DocumentInitialSnapshotUnresolved } from './DocumentInitialSnapshotUnresolved';
+import { PaymentTargetPreparationRequested } from './PaymentTargetPreparationRequested';
 import { MyOSAgentChannel } from './MyOSAgentChannel';
-import { LinkedDocumentsPermissionGranted } from './LinkedDocumentsPermissionGranted';
+import { DocumentInitialSnapshotResolved } from './DocumentInitialSnapshotResolved';
+import { ParticipantResolved } from './ParticipantResolved';
 import { MyOSDocumentSessionReference } from './MyOSDocumentSessionReference';
-import { WorkerAgencyPermissionGrant } from './WorkerAgencyPermissionGrant';
-import { LinkedDocumentsPermissionRevoked } from './LinkedDocumentsPermissionRevoked';
-import { MyOSWorkerAgency } from './MyOSWorkerAgency';
-import { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
-import { SingleDocumentPermissionRevokeRequested } from './SingleDocumentPermissionRevokeRequested';
+import { MyOSAdminActor } from './MyOSAdminActor';
+import { MyOSSessionSubscriptionMandate } from './MyOSSessionSubscriptionMandate';
+import { CallOperationRequested } from './CallOperationRequested';
 import { DocumentTypeLink } from './DocumentTypeLink';
-import { LinkedDocumentsPermissionGrantingInProgress } from './LinkedDocumentsPermissionGrantingInProgress';
+import { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
 import { Link } from './Link';
-import { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
+import { MyOSSessionSubscriptionFilter } from './MyOSSessionSubscriptionFilter';
 import { MyOSAgent } from './MyOSAgent';
-import { PrincipalActor } from './PrincipalActor';
-import { AgentActor } from './AgentActor';
 import { DocumentAnchors } from './DocumentAnchors';
-import { SingleDocumentPermissionValidated } from './SingleDocumentPermissionValidated';
 import { MyOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
-import { LinkedDocumentsPermissionGrantToDocument } from './LinkedDocumentsPermissionGrantToDocument';
-import { DocumentInitialSnapshotRequested } from './DocumentInitialSnapshotRequested';
-import { SingleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
-import { SingleDocumentPermissionRevoked } from './SingleDocumentPermissionRevoked';
-import { SubscriptionToSessionFailed } from './SubscriptionToSessionFailed';
-import { LinkedDocumentsPermissionGrantRequested } from './LinkedDocumentsPermissionGrantRequested';
-import { PaymentTargetPreparationFailed } from './PaymentTargetPreparationFailed';
 import { SessionEpochAdvanced } from './SessionEpochAdvanced';
-import { RemovingParticipantRequested } from './RemovingParticipantRequested';
-import { MyOSTimelineEntry } from './MyOSTimelineEntry';
 import { SubscriptionUpdate } from './SubscriptionUpdate';
-import { AnchorAutomationTemplate } from './AnchorAutomationTemplate';
-import { AddingParticipantResponded } from './AddingParticipantResponded';
-import { WorkerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected';
+import { MyOSOperationCallRequested } from './MyOSOperationCallRequested';
+import { MyOSAdminBase } from './MyOSAdminBase';
+import { DocumentInitialSnapshotRequested } from './DocumentInitialSnapshotRequested';
 import { Agent } from './Agent';
 import { MyOSSessionLink } from './MyOSSessionLink';
 import { MyOSBalanceAccount } from './MyOSBalanceAccount';
-import { DocumentInitialSnapshotResolved } from './DocumentInitialSnapshotResolved';
-import { PaymentInitiationRejected } from './PaymentInitiationRejected';
-import { SingleDocumentPermissionSet } from './SingleDocumentPermissionSet';
-import { CallOperationAccepted } from './CallOperationAccepted';
-import { WorkerSessionStarting } from './WorkerSessionStarting';
-import { SingleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
-import { CallOperationFailed } from './CallOperationFailed';
-import { MyOSTimeline } from './MyOSTimeline';
-import { SingleDocumentPermissionRejected } from './SingleDocumentPermissionRejected';
-import { WorkerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissionRevokingInProgress';
 import { SearchContract } from './SearchContract';
 import { ParticipantActivated } from './ParticipantActivated';
+import { CallOperationResponded } from './CallOperationResponded';
 import { ParticipantActivationState } from './ParticipantActivationState';
-import { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
-import { WorkerAgencyPermissionInvalid } from './WorkerAgencyPermissionInvalid';
-import { InformUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
+import { RemovingParticipantRequested } from './RemovingParticipantRequested';
 import { Participant } from './Participant';
-import { DocumentInitialSnapshotUnresolved } from './DocumentInitialSnapshotUnresolved';
-import { LinkedDocumentsPermissionRejected } from './LinkedDocumentsPermissionRejected';
-import { SingleDocumentPermissionGranted } from './SingleDocumentPermissionGranted';
-import { LinkedDocumentsPermissionRevokeRequested } from './LinkedDocumentsPermissionRevokeRequested';
-import { AddingParticipantRequested } from './AddingParticipantRequested';
+import { PrincipalActor } from './PrincipalActor';
+import { MyOSSessionSubscriptionStarted } from './MyOSSessionSubscriptionStarted';
+import { AllParticipantsReady } from './AllParticipantsReady';
 import { MyOSAgentEvent } from './MyOSAgentEvent';
-import { ParticipantResolved } from './ParticipantResolved';
+import { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 import { MyOSAgentActor } from './MyOSAgentActor';
+import { MyOSDocumentOperationMandate } from './MyOSDocumentOperationMandate';
 import { MyOSSessionInteraction } from './MyOSSessionInteraction';
 import { DocumentLink } from './DocumentLink';
-import { MyOSAdminBase } from './MyOSAdminBase';
-import { CallOperationResponded } from './CallOperationResponded';
-import { LinkedDocumentsPermissionInvalid } from './LinkedDocumentsPermissionInvalid';
 import { MyOSUser } from './MyOSUser';
-import { LinkedDocumentsPermissionRevokingInProgress } from './LinkedDocumentsPermissionRevokingInProgress';
-import { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
-import { PaymentInitiated } from './PaymentInitiated';
 import { LLMAgent } from './LLMAgent';
-import { LinkedDocumentsPermissionSet } from './LinkedDocumentsPermissionSet';
-import { SingleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
-import { SingleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
-import { MyOSTimelineChannel } from './MyOSTimelineChannel';
-import { CallOperationRequested } from './CallOperationRequested';
-import { LinkedDocumentsPermissionGrantToAccount } from './LinkedDocumentsPermissionGrantToAccount';
-import { SingleDocumentPermissionGrantResponded } from './SingleDocumentPermissionGrantResponded';
-import { PaymentTargetPreparationRequested } from './PaymentTargetPreparationRequested';
-import { SingleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
-import { WorkerAgencyPermissionGrantRequested } from './WorkerAgencyPermissionGrantRequested';
-import { BootstrapFailed } from './BootstrapFailed';
-import { AllParticipantsReady } from './AllParticipantsReady';
-import { RemovingParticipantResponded } from './RemovingParticipantResponded';
-import { StartWorkerSessionRequested } from './StartWorkerSessionRequested';
-import { MyOSPackage } from './MyOSPackage';
-import { MyOSPrincipalActor } from './MyOSPrincipalActor';
-import { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
-import { WorkerAgencyPermissionRevokeRequested } from './WorkerAgencyPermissionRevokeRequested';
-import { WorkerAgencyPermissionGrantingInProgress } from './WorkerAgencyPermissionGrantingInProgress';
+import { MyOSSessionSubscriptionUpdate } from './MyOSSessionSubscriptionUpdate';
 import { PaymentTargetPrepared } from './PaymentTargetPrepared';
-import { WorkerAgencyPermission } from './WorkerAgencyPermission';
-import { LinkedDocumentsPermissionValidated } from './LinkedDocumentsPermissionValidated';
+import { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
+import { CallOperationFailed } from './CallOperationFailed';
+import { PaymentInitiationRejected } from './PaymentInitiationRejected';
+import { AddingParticipantResponded } from './AddingParticipantResponded';
+import { SubscriptionToSessionFailed } from './SubscriptionToSessionFailed';
+import { MyOSTimelineChannel } from './MyOSTimelineChannel';
+import { CallOperationAccepted } from './CallOperationAccepted';
+import { PaymentInitiationRequested } from './PaymentInitiationRequested';
+import { BootstrapFailed } from './BootstrapFailed';
+import { SubscribeToSessionRequested } from './SubscribeToSessionRequested';
+import { PaymentInitiationAccepted } from './PaymentInitiationAccepted';
+import { AddingParticipantRequested } from './AddingParticipantRequested';
+import { PaymentTargetPreparationFailed } from './PaymentTargetPreparationFailed';
 import { DocumentLinks } from './DocumentLinks';
 import { DocumentAnchor } from './DocumentAnchor';
-import { WorkerAgencyPermissionValidated } from './WorkerAgencyPermissionValidated';
-import { PaymentInitiationAccepted } from './PaymentInitiationAccepted';
-import { WorkerAgencyPermissionRevoked } from './WorkerAgencyPermissionRevoked';
+import { RemovingParticipantResponded } from './RemovingParticipantResponded';
+import { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
+import { MyOSDocumentBootstrapMandate } from './MyOSDocumentBootstrapMandate';
+import { MyOSSessionSubscriptionEnded } from './MyOSSessionSubscriptionEnded';
 
-export { SubscribeToSessionRequested } from './SubscribeToSessionRequested';
-export { PaymentInitiationRequested } from './PaymentInitiationRequested';
-export { WorkerAgencyPermissionGranted } from './WorkerAgencyPermissionGranted';
+export { MyOSSessionSubscriptionRequested } from './MyOSSessionSubscriptionRequested';
+export { PaymentInitiated } from './PaymentInitiated';
+export { MyOSTimeline } from './MyOSTimeline';
+export { DocumentInitialSnapshotUnresolved } from './DocumentInitialSnapshotUnresolved';
+export { PaymentTargetPreparationRequested } from './PaymentTargetPreparationRequested';
 export { MyOSAgentChannel } from './MyOSAgentChannel';
-export { LinkedDocumentsPermissionGranted } from './LinkedDocumentsPermissionGranted';
+export { DocumentInitialSnapshotResolved } from './DocumentInitialSnapshotResolved';
+export { ParticipantResolved } from './ParticipantResolved';
 export { MyOSDocumentSessionReference } from './MyOSDocumentSessionReference';
-export { WorkerAgencyPermissionGrant } from './WorkerAgencyPermissionGrant';
-export { LinkedDocumentsPermissionRevoked } from './LinkedDocumentsPermissionRevoked';
-export { MyOSWorkerAgency } from './MyOSWorkerAgency';
-export { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
-export { SingleDocumentPermissionRevokeRequested } from './SingleDocumentPermissionRevokeRequested';
+export { MyOSAdminActor } from './MyOSAdminActor';
+export { MyOSSessionSubscriptionMandate } from './MyOSSessionSubscriptionMandate';
+export { CallOperationRequested } from './CallOperationRequested';
 export { DocumentTypeLink } from './DocumentTypeLink';
-export { LinkedDocumentsPermissionGrantingInProgress } from './LinkedDocumentsPermissionGrantingInProgress';
+export { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
 export { Link } from './Link';
-export { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
+export { MyOSSessionSubscriptionFilter } from './MyOSSessionSubscriptionFilter';
 export { MyOSAgent } from './MyOSAgent';
-export { PrincipalActor } from './PrincipalActor';
-export { AgentActor } from './AgentActor';
 export { DocumentAnchors } from './DocumentAnchors';
-export { SingleDocumentPermissionValidated } from './SingleDocumentPermissionValidated';
 export { MyOSParticipantsOrchestration } from './MyOSParticipantsOrchestration';
-export { LinkedDocumentsPermissionGrantToDocument } from './LinkedDocumentsPermissionGrantToDocument';
-export { DocumentInitialSnapshotRequested } from './DocumentInitialSnapshotRequested';
-export { SingleDocumentPermissionInvalid } from './SingleDocumentPermissionInvalid';
-export { SingleDocumentPermissionRevoked } from './SingleDocumentPermissionRevoked';
-export { SubscriptionToSessionFailed } from './SubscriptionToSessionFailed';
-export { LinkedDocumentsPermissionGrantRequested } from './LinkedDocumentsPermissionGrantRequested';
-export { PaymentTargetPreparationFailed } from './PaymentTargetPreparationFailed';
 export { SessionEpochAdvanced } from './SessionEpochAdvanced';
-export { RemovingParticipantRequested } from './RemovingParticipantRequested';
-export { MyOSTimelineEntry } from './MyOSTimelineEntry';
 export { SubscriptionUpdate } from './SubscriptionUpdate';
-export { AnchorAutomationTemplate } from './AnchorAutomationTemplate';
-export { AddingParticipantResponded } from './AddingParticipantResponded';
-export { WorkerAgencyPermissionRejected } from './WorkerAgencyPermissionRejected';
+export { MyOSOperationCallRequested } from './MyOSOperationCallRequested';
+export { MyOSAdminBase } from './MyOSAdminBase';
+export { DocumentInitialSnapshotRequested } from './DocumentInitialSnapshotRequested';
 export { Agent } from './Agent';
 export { MyOSSessionLink } from './MyOSSessionLink';
 export { MyOSBalanceAccount } from './MyOSBalanceAccount';
-export { DocumentInitialSnapshotResolved } from './DocumentInitialSnapshotResolved';
-export { PaymentInitiationRejected } from './PaymentInitiationRejected';
-export { SingleDocumentPermissionSet } from './SingleDocumentPermissionSet';
-export { CallOperationAccepted } from './CallOperationAccepted';
-export { WorkerSessionStarting } from './WorkerSessionStarting';
-export { SingleDocumentPermissionGrantToAccount } from './SingleDocumentPermissionGrantToAccount';
-export { CallOperationFailed } from './CallOperationFailed';
-export { MyOSTimeline } from './MyOSTimeline';
-export { SingleDocumentPermissionRejected } from './SingleDocumentPermissionRejected';
-export { WorkerAgencyPermissionRevokingInProgress } from './WorkerAgencyPermissionRevokingInProgress';
 export { SearchContract } from './SearchContract';
 export { ParticipantActivated } from './ParticipantActivated';
+export { CallOperationResponded } from './CallOperationResponded';
 export { ParticipantActivationState } from './ParticipantActivationState';
-export { DocumentSessionBootstrap } from './DocumentSessionBootstrap';
-export { WorkerAgencyPermissionInvalid } from './WorkerAgencyPermissionInvalid';
-export { InformUserToInstallMyOSPackage } from './InformUserToInstallMyOSPackage';
+export { RemovingParticipantRequested } from './RemovingParticipantRequested';
 export { Participant } from './Participant';
-export { DocumentInitialSnapshotUnresolved } from './DocumentInitialSnapshotUnresolved';
-export { LinkedDocumentsPermissionRejected } from './LinkedDocumentsPermissionRejected';
-export { SingleDocumentPermissionGranted } from './SingleDocumentPermissionGranted';
-export { LinkedDocumentsPermissionRevokeRequested } from './LinkedDocumentsPermissionRevokeRequested';
-export { AddingParticipantRequested } from './AddingParticipantRequested';
+export { PrincipalActor } from './PrincipalActor';
+export { MyOSSessionSubscriptionStarted } from './MyOSSessionSubscriptionStarted';
+export { AllParticipantsReady } from './AllParticipantsReady';
 export { MyOSAgentEvent } from './MyOSAgentEvent';
-export { ParticipantResolved } from './ParticipantResolved';
+export { SubscriptionToSessionRevoked } from './SubscriptionToSessionRevoked';
 export { MyOSAgentActor } from './MyOSAgentActor';
+export { MyOSDocumentOperationMandate } from './MyOSDocumentOperationMandate';
 export { MyOSSessionInteraction } from './MyOSSessionInteraction';
 export { DocumentLink } from './DocumentLink';
-export { MyOSAdminBase } from './MyOSAdminBase';
-export { CallOperationResponded } from './CallOperationResponded';
-export { LinkedDocumentsPermissionInvalid } from './LinkedDocumentsPermissionInvalid';
 export { MyOSUser } from './MyOSUser';
-export { LinkedDocumentsPermissionRevokingInProgress } from './LinkedDocumentsPermissionRevokingInProgress';
-export { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
-export { PaymentInitiated } from './PaymentInitiated';
 export { LLMAgent } from './LLMAgent';
-export { LinkedDocumentsPermissionSet } from './LinkedDocumentsPermissionSet';
-export { SingleDocumentPermissionGrantingInProgress } from './SingleDocumentPermissionGrantingInProgress';
-export { SingleDocumentPermissionGrantToDocument } from './SingleDocumentPermissionGrantToDocument';
-export { MyOSTimelineChannel } from './MyOSTimelineChannel';
-export { CallOperationRequested } from './CallOperationRequested';
-export { LinkedDocumentsPermissionGrantToAccount } from './LinkedDocumentsPermissionGrantToAccount';
-export { SingleDocumentPermissionGrantResponded } from './SingleDocumentPermissionGrantResponded';
-export { PaymentTargetPreparationRequested } from './PaymentTargetPreparationRequested';
-export { SingleDocumentPermissionRevokingInProgress } from './SingleDocumentPermissionRevokingInProgress';
-export { WorkerAgencyPermissionGrantRequested } from './WorkerAgencyPermissionGrantRequested';
-export { BootstrapFailed } from './BootstrapFailed';
-export { AllParticipantsReady } from './AllParticipantsReady';
-export { RemovingParticipantResponded } from './RemovingParticipantResponded';
-export { StartWorkerSessionRequested } from './StartWorkerSessionRequested';
-export { MyOSPackage } from './MyOSPackage';
-export { MyOSPrincipalActor } from './MyOSPrincipalActor';
-export { SingleDocumentPermissionGrantRequested } from './SingleDocumentPermissionGrantRequested';
-export { WorkerAgencyPermissionRevokeRequested } from './WorkerAgencyPermissionRevokeRequested';
-export { WorkerAgencyPermissionGrantingInProgress } from './WorkerAgencyPermissionGrantingInProgress';
+export { MyOSSessionSubscriptionUpdate } from './MyOSSessionSubscriptionUpdate';
 export { PaymentTargetPrepared } from './PaymentTargetPrepared';
-export { WorkerAgencyPermission } from './WorkerAgencyPermission';
-export { LinkedDocumentsPermissionValidated } from './LinkedDocumentsPermissionValidated';
+export { SubscriptionToSessionInitiated } from './SubscriptionToSessionInitiated';
+export { CallOperationFailed } from './CallOperationFailed';
+export { PaymentInitiationRejected } from './PaymentInitiationRejected';
+export { AddingParticipantResponded } from './AddingParticipantResponded';
+export { SubscriptionToSessionFailed } from './SubscriptionToSessionFailed';
+export { MyOSTimelineChannel } from './MyOSTimelineChannel';
+export { CallOperationAccepted } from './CallOperationAccepted';
+export { PaymentInitiationRequested } from './PaymentInitiationRequested';
+export { BootstrapFailed } from './BootstrapFailed';
+export { SubscribeToSessionRequested } from './SubscribeToSessionRequested';
+export { PaymentInitiationAccepted } from './PaymentInitiationAccepted';
+export { AddingParticipantRequested } from './AddingParticipantRequested';
+export { PaymentTargetPreparationFailed } from './PaymentTargetPreparationFailed';
 export { DocumentLinks } from './DocumentLinks';
 export { DocumentAnchor } from './DocumentAnchor';
-export { WorkerAgencyPermissionValidated } from './WorkerAgencyPermissionValidated';
-export { PaymentInitiationAccepted } from './PaymentInitiationAccepted';
-export { WorkerAgencyPermissionRevoked } from './WorkerAgencyPermissionRevoked';
+export { RemovingParticipantResponded } from './RemovingParticipantResponded';
+export { TargetDocumentSessionStarted } from './TargetDocumentSessionStarted';
+export { MyOSDocumentBootstrapMandate } from './MyOSDocumentBootstrapMandate';
+export { MyOSSessionSubscriptionEnded } from './MyOSSessionSubscriptionEnded';
 
 export const contents: Record<string, unknown> = {
-  '26txGATfFsYPSqn4rBNz2PTooVYNz6v9wt6drM7aPzh1': SubscribeToSessionRequested,
-  '27Ab9oZDYKH8d4aXMuSoesnnPjpFk2344PKmzbZNEMv1': PaymentInitiationRequested,
-  '2gARs6NQxJvmooDXL6dc7DPny9xthbGfJL32jr3Jm2Xw': WorkerAgencyPermissionGranted,
+  '1mEVkutZ851ZTcXPnhC44vg9cgzZj31NfU99KvbYq98':
+    MyOSSessionSubscriptionRequested,
+  '2B5GfyYAMpB2qa9AebDQCyorMi311v8bZLjXn6fsDPPw': PaymentInitiated,
+  '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3': MyOSTimeline,
+  '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred':
+    DocumentInitialSnapshotUnresolved,
+  '2WpHsa3QF9eZttnm7jb3k7t3CEbz7iJKYjCMS7h4Ps7Z':
+    PaymentTargetPreparationRequested,
   '2YzZXsXxQSeCKZ4Qrptrdrf9gy4Hwrfdvh8gpakpnDBL': MyOSAgentChannel,
-  '3BWjDhnmpr8KeWsbW2wQhMZbHpznEGGqtiWWncGD3g9C':
-    LinkedDocumentsPermissionGranted,
+  '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2':
+    DocumentInitialSnapshotResolved,
+  '3cujh2pNfS1bvc1L5eWhLaaeBepXjByWZ75XF5erArKU': ParticipantResolved,
   '3FcyLzeWjTqmYYg1Tmqu2en4SKfYbCFn8Shf3gDxo9xK': MyOSDocumentSessionReference,
-  '3WVJvijwpp2paoRJHaLKJkaTmfWKaUrysfrFANkExCFH': WorkerAgencyPermissionGrant,
-  '41sbnfmpH1CZV21HwtNZtJiDw7ojLX1Fnkw6rpR1yw3a':
-    LinkedDocumentsPermissionRevoked,
-  '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgency,
-  '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN': TargetDocumentSessionStarted,
-  '5Jtu4jN8svHxkJkkkZdDQLVzk6vjxE4Reo4VTw4rwrn9':
-    SingleDocumentPermissionRevokeRequested,
+  '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm': MyOSAdminActor,
+  '4zjwHNN6UDSevHfuz264WsyWNSsRc2bC25KpXU4d988B':
+    MyOSSessionSubscriptionMandate,
+  '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo': CallOperationRequested,
   '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm': DocumentTypeLink,
-  '68GzR4FMz8CpGnNA8hKsdjBmbachEn59NPGAjt16LUfe':
-    LinkedDocumentsPermissionGrantingInProgress,
+  '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB': DocumentSessionBootstrap,
   '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP': Link,
-  '6ewyxdBpb5oNdVSBkXZSDK6aUaAnzc2ad453V7vjXHu6': SubscriptionToSessionRevoked,
+  '6fj4VDzQZwkBBPsYP4DGeSPbnHCQmX11PG3Vtk9pLRMF': MyOSSessionSubscriptionFilter,
   '6Fxxx58U6WKzA4WQPCLPmMMCCEb9QLFYdb8yMLZDVdXL': MyOSAgent,
-  '6G8JLcJ9bT9VnThaxt4ZRDQYSrKiaYiByppnPiyhdNCW': PrincipalActor,
-  '6HbWNKhkmhQMDxVww1mvQpvSy33G7anaeWPUohj3g1bC': AgentActor,
   '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF': DocumentAnchors,
-  '6rJFGtfmUHZyspx5UNtUvSjNn89XqmBHzmMRiQHjhPX3':
-    SingleDocumentPermissionValidated,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU': MyOSParticipantsOrchestration,
-  '74ATu9uWcuAAUjMQJ6VHWApVa4WuyqRwpBNm47VhKKWi':
-    LinkedDocumentsPermissionGrantToDocument,
-  '7A9voN4Bu8X7XhsvMT8ToP9Zdxj9Mnrp8MnfWfZCEwsq':
-    DocumentInitialSnapshotRequested,
-  '7BEbHgR3h4y9HDLvxnKSMyGZZqYnA8Jm2cFuTMjDuCJg':
-    SingleDocumentPermissionInvalid,
-  '7Crww1rpdmSRAN5qhyX7PCrsKRpeCKmhkdN7zvC7PUw':
-    SingleDocumentPermissionRevoked,
-  '7Gm8HH81u9FDLmDXQvfGYLZsbyKCcoaJsfwM8o4y2wws': SubscriptionToSessionFailed,
-  '7MTCgNo4iWnxoVhqJytiApkZYmrDPRZWUeCBPtfhZJma':
-    LinkedDocumentsPermissionGrantRequested,
-  '7ov2LtAu257ETtdWgw7aMTYHypK9yKnswb8MZH9QCSRG':
-    PaymentTargetPreparationFailed,
   '7WJnGdq3txEhXb6P2vXLAMUhPBCWQzHsz416cDfKGcUm': SessionEpochAdvanced,
-  '89DqHza36mvWnBgbqWi2ttccLd5LZBCbTDxjQyEwvAxf': RemovingParticipantRequested,
-  '89jLhpA5iqiRuSLgvYKZirtczaxjwSXRkL9Q7GhxwPCu': MyOSTimelineEntry,
   '8afv356wxUZxou95jDEYEgp5dL6VmnpFmYUjx3aDuFXi': SubscriptionUpdate,
-  '8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga': AnchorAutomationTemplate,
-  '8FUHrY9AzHbSvEMMPQn1H1ckFS94eL4LucpY5wXXCex2': AddingParticipantResponded,
-  '8peU5ESm5XGhihLNdB59zsipFt6HsDQ9q4DpdNoQ1Q38':
-    WorkerAgencyPermissionRejected,
+  '8fSvEL47NFBSYEFSRNfDpx6qWXHr1T6bNfimrcZ1JR9w': MyOSOperationCallRequested,
+  '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq': MyOSAdminBase,
+  '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi':
+    DocumentInitialSnapshotRequested,
   '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc': Agent,
   '8WDRmnnsa796qcz2VcYNiua5xdH8BFXbKq94NxUYviyE': MyOSSessionLink,
   '9aVaJJvfRrGjLZ55HbKbrd4AUgA9RmjEUCxtfCtqodM9': MyOSBalanceAccount,
-  '9gkE6ybqoLeFGySKvhWmAM9K6ARCWEeBoyEDY6jw8X3U':
-    DocumentInitialSnapshotResolved,
-  '9HDoFXbw9nUMLFdm9XmaUpcji51rL7brWBU1aFdRyCZg': PaymentInitiationRejected,
-  '9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq': SingleDocumentPermissionSet,
-  '9LGSHaRb9LsRx9DxMzj4LmSSWuUYQXNHEXupK4PJn2VR': CallOperationAccepted,
-  '9M6p6bQaBWNZYcfFccYwYQkS4QA31h3vkUEsJSVTPqdt': WorkerSessionStarting,
-  '9P4Wq4Yr2K95zEkDvX56SU2V7SnFMrrwwt3sZ46QAQxW':
-    SingleDocumentPermissionGrantToAccount,
-  '9PH8Hi8uwuUXerpg4FY2cYUeytYuAnuU1SLT2KQsnuU8': CallOperationFailed,
-  '9TnFznYnqWWjHhGzcKngTLfq1a2H4sVd5EM4vfek2ec5': MyOSTimeline,
-  '9Z1H8t76uK3ixSpEMkKqT2xwZxXSgjbgoJSxchFXtW1V':
-    SingleDocumentPermissionRejected,
-  Aa41QanfXXraDaSAWXeh86RnktmonoaxMUajwNqcWabJ:
-    WorkerAgencyPermissionRevokingInProgress,
   ACDXskXQ1cmM9uN8UCRKgH7fEHzqUW5XzyjKgsxgdujs: SearchContract,
   AegvYi855FTYVE4WJ5pbUaF3LzNFsM71cpkwVbQ6yQYA: ParticipantActivated,
+  AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c: CallOperationResponded,
   ASa82RtPSXwdys7M5Xs5s3brTjYgJmQqJt2uyraQGrNA: ParticipantActivationState,
-  AXm2gfBJnCdfyMsHuLKSZGJXDuZSPct9uZrU44Pxfuh1: DocumentSessionBootstrap,
-  B1RnGH4azPberZAn1F3YrP5c2sGV939EpruSPBD2Kc1u: WorkerAgencyPermissionInvalid,
-  B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa: InformUserToInstallMyOSPackage,
+  BcSFAt3ZtG3CdpNzKUKBodvz9cux8kwtbNNNPrrhYSja: RemovingParticipantRequested,
   BDWxt7xTGsK2mZKinCxD4hENHUUfEtupZPtaYzwLmKJm: Participant,
-  Bf61oBnvwND8vaGaNRPUN5jTahmej3G5NqBujgrttBgS:
-    DocumentInitialSnapshotUnresolved,
-  BfjJ2xceqvneBqEHLGS5bMXiYeaQgbRbgRzBfYR4KZAJ:
-    LinkedDocumentsPermissionRejected,
-  BhoidQSUZC9uh8KHbkVEU87DhWgDRjH1mcKdgksTfmmf: SingleDocumentPermissionGranted,
-  BKyVzxDr2rJp7weHvuzyrgSJ42ATwN3SizPchqu7QMVc:
-    LinkedDocumentsPermissionRevokeRequested,
-  BmERQxQSUDw8vTBAR32U9XBcFGjdVfUfpfUhCm1xsxVV: AddingParticipantRequested,
+  BeUkW9h7yKH5DBgzTjF52u4PwYu9J9EmLZ5WaYZWnZuB: PrincipalActor,
+  BGhd3kZMEMd8Yv8nqnqfLngaUEAn5WkbPjPsS6o3U7mg: MyOSSessionSubscriptionStarted,
+  BiV8zZSESjpgVqjsEXNYuzk54PUZYp69UtQhxrxK3vYC: AllParticipantsReady,
   BsNKTXtCKag31WrdujJg7PSqD4rWg9b57DqHPq14Tpn7: MyOSAgentEvent,
-  BswjhjkdTDksVCcc8ijoU2RWcPam7Rphcecc67HJjZRi: ParticipantResolved,
+  BzThvgTJD2zLX2wLFToLFRgs5KUvw7x3shCsmyxJ54pP: SubscriptionToSessionRevoked,
   C2Fyt8obT6QR8WWFCPF5G36VXZLwzaM1SLtMKKAp4pwd: MyOSAgentActor,
+  C7dtw8ZHpD93BBpL528WPq8W4xWvjnUisH9Ew8SQQ6fW: MyOSDocumentOperationMandate,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: MyOSSessionInteraction,
   CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh: DocumentLink,
-  cjPVQ6sifei7ryEsdwVhsYgHRXiAWMvaoQvrRo6LYRY: MyOSAdminBase,
-  Cm4GjXHCv2s4zEhfqd15xTX2PwvAYSBzvYFkqaxfGfyF: CallOperationResponded,
-  Cm9gL7QQ4CDhi18VKg5PfK11Xy6CLVJawoa88BTTy9ZU:
-    LinkedDocumentsPermissionInvalid,
   Cw952SXno2SWR9HL8EwUxWGeioRjxHjCd7G7uFAwC9kN: MyOSUser,
-  D5W2KYUFW1EYvFnevH4wWBwpXJbkYwpuX8NAhujrKspP:
-    LinkedDocumentsPermissionRevokingInProgress,
-  D7h7D4D5yqrWfcw9xFLdu7T89jAox3WqTFxjojSewKbc: SubscriptionToSessionInitiated,
-  DHqXopSXGku6L9dZCavpWgPyza6XjFXGDisVumLMrNkw: PaymentInitiated,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgent,
-  DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn: LinkedDocumentsPermissionSet,
-  Duis7QaVJkoKiQ5v9HEroE47AST1pi5zJGcVkgFiie8N:
-    SingleDocumentPermissionGrantingInProgress,
-  DuS8JXr8UZwXXkZwCk1eRS1d9UZyC5e8KXQNiv8h4vHd:
-    SingleDocumentPermissionGrantToDocument,
-  DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg: MyOSTimelineChannel,
-  E4E5omD4zCzisFfJdF4iXrfe3RDAdNW4Kc5Fr5EQN4iV: CallOperationRequested,
-  EjXvZmBzbpZeTnVzA7fkTqpi35ExPQoELBz3ws84DJAx:
-    LinkedDocumentsPermissionGrantToAccount,
-  EMeTTNatzYw9VUFK1NuUnJgrLaeJK3QAqDPaEEjuH7s3:
-    SingleDocumentPermissionGrantResponded,
-  EQbhZiFJ15SPAP7VhdgX5YvfEgobZPuAUp6ddDoY3EBf:
-    PaymentTargetPreparationRequested,
-  EXVwAGdA1kyuAy3PzJPwGxQXeqocP9aLarWXrkTPivbZ:
-    SingleDocumentPermissionRevokingInProgress,
-  EZsC5otrFgURBbXJaGZ7Ngs1JoJfHnrGVhzfPkJ3Q9QB:
-    WorkerAgencyPermissionGrantRequested,
-  FaZorE1FNvj9ar6rxL8jHRNYQ6WYo4hERoE35v7A5DnL: BootstrapFailed,
-  Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: AllParticipantsReady,
-  FRgzcswtDMu4uMomhtDgrCnH94TGbTbaE5ur3zKZn6v7: RemovingParticipantResponded,
-  FWgJ8eninbRZvg2SWY4VxbfpvZvRxseALoAvwTu9bqVr: StartWorkerSessionRequested,
-  FX9yvQWAiZMMwnUF1vY1HMumJNNg7ENP7ETxha1kvWkn: MyOSPackage,
-  G6EVpoRpQQb6f93eZtJPqDRAK47D1RXvUAmbXvhpsL6Y: MyOSPrincipalActor,
-  Gdq4pzoEH32VQWBS4SwzUenYvWZHodLYVxd48WLLyLXz:
-    SingleDocumentPermissionGrantRequested,
-  GeNaTohvYFC1xu9RLJS1buzqj1JpqyernRsvJiTiSTTY:
-    WorkerAgencyPermissionRevokeRequested,
-  GFWQTwkX47Ak8VtxuiqLmqKhPo417JnyE69jyEqKYseK:
-    WorkerAgencyPermissionGrantingInProgress,
-  GhnaLupM1b6ns5AQh6HYCrfi22ZKd5GFFMPkrYM5q6b9: PaymentTargetPrepared,
-  GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH: WorkerAgencyPermission,
-  Gqf8h8GKR98kdptTXPABstPSc5ezuKGRsTQ8w1QDcSnQ:
-    LinkedDocumentsPermissionValidated,
+  EkNokZ4svfJ4Xhza5qNxm285pcRHXhZvA97KZKYf8cyb: MyOSSessionSubscriptionUpdate,
+  EZQPqDj5iDyHzM6DQE11Z2NwcPNSPx34v9SMyXsrwe6h: PaymentTargetPrepared,
+  FdzN1H5Qe7CRbcXVeqD7PfJJ5TH6cxgHd3FRcNjvRJzk: SubscriptionToSessionInitiated,
+  FFXVAea2mRHoJq3PRdmz5cXG8eETqx4yr5KCbeTxhEqB: CallOperationFailed,
+  FLozmcCXEUsKNT86fixLbrdy9Dy4yn7jn6eftQuHpK8B: PaymentInitiationRejected,
+  FoJDXJsUjhiDU8pVxF7TzxE3qh1EvLKyoHQG41WaTTGB: AddingParticipantResponded,
+  FqL1t69VjbKdAmffjxV5o1dAJooKyQ6vxdpsmbavFFia: SubscriptionToSessionFailed,
+  FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH: MyOSTimelineChannel,
+  GacCAN4FEa7u3e7Qmm9997PYHwHmkGDCnSdYEfAVcZxh: CallOperationAccepted,
+  GDdBCk7v1URZXU6fpno5UhKkLZQzniaQ3of83Wr5yQVM: PaymentInitiationRequested,
+  GiwuMm3gtbi79CVSUtHGZmpUnQma7EK6A17G9PRmh6jK: BootstrapFailed,
+  GjCreNEXcoBSwyXnWtXbtDMJdtm9nKo8MJeVpn3633WC: SubscribeToSessionRequested,
+  GLKfKi29WiEb2Hq87Zj6hfJXXV6TpDXtGprdpNbk2dxq: PaymentInitiationAccepted,
+  HEBuC9grhoHisjpjXHAgg2RZ494YHj4nKJWq7pQS6BxH: AddingParticipantRequested,
+  HKvJdxfZDY7agMAH8Z5pjhd4iB8mrTNRRhG1QEnEFRgd: PaymentTargetPreparationFailed,
   HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX: DocumentLinks,
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: DocumentAnchor,
-  J7ssmNEa6YpxrLFTqZfwgD4uiz3cSyNLNaC4WbnLEhj7: WorkerAgencyPermissionValidated,
-  theUsA9gT88zXXPPqnyeft1Zy77EAA9nD2t6YgfPSgF: PaymentInitiationAccepted,
-  X446Tm19S6csScutxaRp1Bo6gH3v3Vwq7nzHkWJg9ab: WorkerAgencyPermissionRevoked,
+  HV36fBXcdWce4WhfG6dxSZmtRMQoNaNLNpHgxc2PakuN: RemovingParticipantResponded,
+  J9a8qD8javfYK6nRDq9YZRA8LDuzZzq7QS7DB73Pm4Lv: TargetDocumentSessionStarted,
+  JA8Yi7KW2jjDqqExAbWbCCfZw2mu8Q7VXwEvMHVezusF: MyOSDocumentBootstrapMandate,
+  V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp: MyOSSessionSubscriptionEnded,
 };

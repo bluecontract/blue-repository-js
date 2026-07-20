@@ -10,4 +10,7 @@ export const ParticipantResolved: Record<string, unknown> = {
       blueId: 'BDWxt7xTGsK2mZKinCxD4hENHUUfEtupZPtaYzwLmKJm',
     },
   },
+  type: {
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
+  },
 };

@@ -6,7 +6,6 @@ import { DocumentAnchorSchema } from './DocumentAnchor';
 import { DocumentAnchorsSchema } from './DocumentAnchors';
 import { NamedEventSchema } from './NamedEvent';
 import { PaymentSchema } from './Payment';
-import { PermissionGrantSchema } from './PermissionGrant';
 import { ProfileSchema } from './Profile';
 import { RecordSchema } from './Record';
 import { RelationshipSchema } from './Relationship';
@@ -24,7 +23,6 @@ export { DocumentAnchorSchema } from './DocumentAnchor';
 export { DocumentAnchorsSchema } from './DocumentAnchors';
 export { NamedEventSchema } from './NamedEvent';
 export { PaymentSchema } from './Payment';
-export { PermissionGrantSchema } from './PermissionGrant';
 export { ProfileSchema } from './Profile';
 export { RecordSchema } from './Record';
 export { RelationshipSchema } from './Relationship';
@@ -43,7 +41,6 @@ export const schemas: Record<string, ZodTypeAny> = {
   '5UhQNW5kxq9QrAkjnajrGV7B4nN5Cun6puDNkqUyxF4e': DocumentAnchorsSchema,
   AJXU1CbY6HmjCknkWm1ng2pGvStRPzhs3jq4WWLVwWLK: NamedEventSchema,
   HSvngEMxS34qTVo3TNufgbR7pLcZY9gq94FNLdHeGKaZ: PaymentSchema,
-  EqJ715y2fFsWhgBRXg5X9GDBxrkEsdend14hHmSsD8Ma: PermissionGrantSchema,
   DDAmA9UAt9mPSwLfBN95yLy3MPrvsC2tjGPcAYaxoWHc: ProfileSchema,
   '3jiCk56nE5ULAqAWz6ANyVexCtr8PR54TEogRNECT61z': RecordSchema,
   F7LgS1HLXL7CBP3D1LW8ncdfn1euZWBBbQ63pMbfFG1n: RelationshipSchema,

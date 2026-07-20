@@ -218,11 +218,11 @@ export const PaymentMandate: Record<string, unknown> = {
         'Validate a charge attempt against mandate policy and reserve capacity.',
       request: {
         type: {
-          blueId: '8jsJ7UY8wiQvDtpsjqXvnrQUMhqXZhfF6EKBzhtkUKqo',
+          blueId: '5c5mfwYpEs3LLawHVLWJVUFTgqdSMGBCHG6iPaTmqefJ',
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     authorizeSpendImpl: {
@@ -2065,7 +2065,7 @@ export const PaymentMandate: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'F1JQhT1Fxn5QMcvtTUn95qvi7tTggAhv3nvQmHExUTuH',
+                      blueId: 'Cg8SSdLksJdyWoGcFvq4VvoGwMkcQY88rNdcA9qc734j',
                     },
                   },
                 },
@@ -2306,27 +2306,27 @@ export const PaymentMandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
     granteeChannel: {
       description:
         'Grantee timeline channel (party allowed to use the mandate).',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     granterChannel: {
       description: 'Granting party timeline channel.',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     guarantorChannel: {
       description:
         'Bank/admin channel executing mandate checks and settlement updates.',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     initialize: {
@@ -2389,11 +2389,11 @@ export const PaymentMandate: Record<string, unknown> = {
         'Apply final reserve/capture deltas for a previously authorized charge attempt.',
       request: {
         type: {
-          blueId: '7MrYz5SYkcN9b479w4R4M3JzsgWYuuJBhSfMLwSPdetk',
+          blueId: '12zhLzvXiUjVQsbNQGRRZk15M1fc2WcohZ8Nbz7Wmd1m',
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     settleSpendImpl: {
@@ -4559,7 +4559,7 @@ export const PaymentMandate: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'CNxDfzH62fY9mtj71BTaZZNsyGLpS2RinaB6K34tibbh',
+                      blueId: 'AyxFRqp7CDgStXG1ATYUBmAVD62QAF3S3ZV867Q9iBAk',
                     },
                   },
                 },
@@ -4800,7 +4800,7 @@ export const PaymentMandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
   },

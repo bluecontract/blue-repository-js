@@ -15,12 +15,12 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
   bootstrapStatus: {
     description: 'Overall bootstrap process status',
     type: {
-      blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
+      blueId: '9Q7nZyiFKJyzxH6c6EWHsHsqQ8arUYtyrAUgwv9paoxe',
     },
   },
   capabilities: {
     description:
-      'Optional MyOS Admin capability contracts to attach (participantsOrchestration, sessionInteraction, workerAgency)',
+      'Optional MyOS Admin capability contracts to attach (participantsOrchestration, sessionInteraction)',
     keyType: {
       blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
@@ -53,7 +53,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
       },
       event: {
         type: {
-          blueId: 'FaZorE1FNvj9ar6rxL8jHRNYQ6WYo4hERoE35v7A5DnL',
+          blueId: 'GiwuMm3gtbi79CVSUtHGZmpUnQma7EK6A17G9PRmh6jK',
         },
       },
       steps: {
@@ -128,11 +128,11 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
                         value: 'terminated',
                       },
                       type: {
-                        blueId: '6tenJidVxJRDqxtYM4xGs6fxD2E7MVvGQwv5rF4HnGsh',
+                        blueId: '3kguQFJvHMnCfrg4Bmqt81EZg6qeht8Cs6tEjNDxTkyB',
                       },
                     },
                     type: {
-                      blueId: '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV',
+                      blueId: '3wCtHNjVZc4JKbbbvfctdMYLB5VjMNEePgWLMLSdFbdv',
                     },
                   },
                 },
@@ -180,7 +180,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
       },
       event: {
         type: {
-          blueId: 'BswjhjkdTDksVCcc8ijoU2RWcPam7Rphcecc67HJjZRi',
+          blueId: '3cujh2pNfS1bvc1L5eWhLaaeBepXjByWZ75XF5erArKU',
         },
       },
       steps: {
@@ -359,33 +359,49 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
       },
       event: {
         type: {
-          blueId: '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV',
+          blueId: '3wCtHNjVZc4JKbbbvfctdMYLB5VjMNEePgWLMLSdFbdv',
         },
       },
       steps: {
         items: [
           {
-            changeset: {
+            do: {
               items: [
                 {
-                  op: {
-                    type: {
-                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                    },
-                    value: 'replace',
-                  },
-                  path: {
-                    type: {
-                      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-                    },
-                    value: '/bootstrapStatus',
-                  },
-                  val: {
-                    $event: {
+                  $appendChange: {
+                    op: {
                       type: {
                         blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
                       },
-                      value: '/status',
+                      value: 'replace',
+                    },
+                    path: {
+                      type: {
+                        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                      },
+                      value: '/bootstrapStatus',
+                    },
+                    val: {
+                      $event: {
+                        type: {
+                          blueId:
+                            'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+                        },
+                        value: '/status',
+                      },
+                    },
+                  },
+                },
+                {
+                  $return: {
+                    changeset: {
+                      $changeset: {
+                        type: {
+                          blueId:
+                            'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+                        },
+                        value: true,
+                      },
                     },
                   },
                 },
@@ -393,7 +409,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
             },
             name: 'Update Bootstrap Status',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ',
             },
           },
         ],
@@ -411,7 +427,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
       },
       event: {
         type: {
-          blueId: '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN',
+          blueId: 'J9a8qD8javfYK6nRDq9YZRA8LDuzZzq7QS7DB73Pm4Lv',
         },
       },
       steps: {
@@ -486,11 +502,11 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
                         value: 'terminated',
                       },
                       type: {
-                        blueId: 'BEc6aieqN1iaXT2bNQVag1a1cGygZCLCjXf3mvupetNg',
+                        blueId: '8LNqtg237MFe1zKdG3eWftMXtFTgVtyvrxgZkHcXYkC1',
                       },
                     },
                     type: {
-                      blueId: '8crrz93vvovMkh91qyLj6ajwEDAZw1DdTZ3NBjK6jaqV',
+                      blueId: '3wCtHNjVZc4JKbbbvfctdMYLB5VjMNEePgWLMLSdFbdv',
                     },
                   },
                 },
@@ -556,7 +572,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
                   },
                   val: {
                     type: {
-                      blueId: '5BQB6Hsr3qxMsZikHdqd2LGeKdQafEQ4jo6TBqm9JZuB',
+                      blueId: 'G5KJnJLaUCSvz4BaZAMNJAgxtfxssb64oWWJXsDW3Uoy',
                     },
                   },
                 },
@@ -639,6 +655,6 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: 'cjPVQ6sifei7ryEsdwVhsYgHRXiAWMvaoQvrRo6LYRY',
+    blueId: '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq',
   },
 };

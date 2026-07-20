@@ -11,7 +11,6 @@ import { DocumentAnchor } from './DocumentAnchor';
 import { Task } from './Task';
 import { Profile } from './Profile';
 import { Service } from './Service';
-import { PermissionGrant } from './PermissionGrant';
 import { Relationship } from './Relationship';
 import { Payment } from './Payment';
 import { Currency } from './Currency';
@@ -29,7 +28,6 @@ export { DocumentAnchor } from './DocumentAnchor';
 export { Task } from './Task';
 export { Profile } from './Profile';
 export { Service } from './Service';
-export { PermissionGrant } from './PermissionGrant';
 export { Relationship } from './Relationship';
 export { Payment } from './Payment';
 export { Currency } from './Currency';
@@ -48,7 +46,6 @@ export const contents: Record<string, unknown> = {
   Bv2m44vKZdG4tekaEBmCTQTDAvhBjnojy8sbPKZYTe9V: Task,
   DDAmA9UAt9mPSwLfBN95yLy3MPrvsC2tjGPcAYaxoWHc: Profile,
   EC4hx8cFZ9JwWCnECdoPPatsHb4sAq6QEhDLcHCcAo3t: Service,
-  EqJ715y2fFsWhgBRXg5X9GDBxrkEsdend14hHmSsD8Ma: PermissionGrant,
   F7LgS1HLXL7CBP3D1LW8ncdfn1euZWBBbQ63pMbfFG1n: Relationship,
   HSvngEMxS34qTVo3TNufgbR7pLcZY9gq94FNLdHeGKaZ: Payment,
   rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ: Currency,

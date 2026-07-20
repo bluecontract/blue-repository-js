@@ -3,24 +3,24 @@ import blueIds from './blue-ids';
 const meta: { name: string; typesMeta: Record<string, unknown> } = {
   name: 'MyOS',
   typesMeta: {
-    BmERQxQSUDw8vTBAR32U9XBcFGjdVfUfpfUhCm1xsxVV: {
+    HEBuC9grhoHisjpjXHAgg2RZ494YHj4nKJWq7pQS6BxH: {
       status: 'stable',
       name: 'Adding Participant Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BmERQxQSUDw8vTBAR32U9XBcFGjdVfUfpfUhCm1xsxVV',
+          typeBlueId: 'HEBuC9grhoHisjpjXHAgg2RZ494YHj4nKJWq7pQS6BxH',
           attributesAdded: [],
         },
       ],
     },
-    '8FUHrY9AzHbSvEMMPQn1H1ckFS94eL4LucpY5wXXCex2': {
+    FoJDXJsUjhiDU8pVxF7TzxE3qh1EvLKyoHQG41WaTTGB: {
       status: 'stable',
       name: 'Adding Participant Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '8FUHrY9AzHbSvEMMPQn1H1ckFS94eL4LucpY5wXXCex2',
+          typeBlueId: 'FoJDXJsUjhiDU8pVxF7TzxE3qh1EvLKyoHQG41WaTTGB',
           attributesAdded: [],
         },
       ],
@@ -36,90 +36,68 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '6HbWNKhkmhQMDxVww1mvQpvSy33G7anaeWPUohj3g1bC': {
-      status: 'stable',
-      name: 'Agent Actor',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6HbWNKhkmhQMDxVww1mvQpvSy33G7anaeWPUohj3g1bC',
-          attributesAdded: [],
-        },
-      ],
-    },
-    Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: {
+    BiV8zZSESjpgVqjsEXNYuzk54PUZYp69UtQhxrxK3vYC: {
       status: 'stable',
       name: 'All Participants Ready',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC',
+          typeBlueId: 'BiV8zZSESjpgVqjsEXNYuzk54PUZYp69UtQhxrxK3vYC',
           attributesAdded: [],
         },
       ],
     },
-    '8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga': {
-      status: 'stable',
-      name: 'Anchor Automation Template',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga',
-          attributesAdded: [],
-        },
-      ],
-    },
-    FaZorE1FNvj9ar6rxL8jHRNYQ6WYo4hERoE35v7A5DnL: {
+    GiwuMm3gtbi79CVSUtHGZmpUnQma7EK6A17G9PRmh6jK: {
       status: 'stable',
       name: 'Bootstrap Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FaZorE1FNvj9ar6rxL8jHRNYQ6WYo4hERoE35v7A5DnL',
+          typeBlueId: 'GiwuMm3gtbi79CVSUtHGZmpUnQma7EK6A17G9PRmh6jK',
           attributesAdded: [],
         },
       ],
     },
-    '9LGSHaRb9LsRx9DxMzj4LmSSWuUYQXNHEXupK4PJn2VR': {
+    GacCAN4FEa7u3e7Qmm9997PYHwHmkGDCnSdYEfAVcZxh: {
       status: 'stable',
       name: 'Call Operation Accepted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9LGSHaRb9LsRx9DxMzj4LmSSWuUYQXNHEXupK4PJn2VR',
+          typeBlueId: 'GacCAN4FEa7u3e7Qmm9997PYHwHmkGDCnSdYEfAVcZxh',
           attributesAdded: [],
         },
       ],
     },
-    '9PH8Hi8uwuUXerpg4FY2cYUeytYuAnuU1SLT2KQsnuU8': {
+    FFXVAea2mRHoJq3PRdmz5cXG8eETqx4yr5KCbeTxhEqB: {
       status: 'stable',
       name: 'Call Operation Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9PH8Hi8uwuUXerpg4FY2cYUeytYuAnuU1SLT2KQsnuU8',
+          typeBlueId: 'FFXVAea2mRHoJq3PRdmz5cXG8eETqx4yr5KCbeTxhEqB',
           attributesAdded: [],
         },
       ],
     },
-    E4E5omD4zCzisFfJdF4iXrfe3RDAdNW4Kc5Fr5EQN4iV: {
+    '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo': {
       status: 'stable',
       name: 'Call Operation Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'E4E5omD4zCzisFfJdF4iXrfe3RDAdNW4Kc5Fr5EQN4iV',
+          typeBlueId: '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo',
           attributesAdded: [],
         },
       ],
     },
-    Cm4GjXHCv2s4zEhfqd15xTX2PwvAYSBzvYFkqaxfGfyF: {
+    AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c: {
       status: 'stable',
       name: 'Call Operation Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Cm4GjXHCv2s4zEhfqd15xTX2PwvAYSBzvYFkqaxfGfyF',
+          typeBlueId: 'AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c',
           attributesAdded: [],
         },
       ],
@@ -146,35 +124,35 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '7A9voN4Bu8X7XhsvMT8ToP9Zdxj9Mnrp8MnfWfZCEwsq': {
+    '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi': {
       status: 'stable',
       name: 'Document Initial Snapshot Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7A9voN4Bu8X7XhsvMT8ToP9Zdxj9Mnrp8MnfWfZCEwsq',
+          typeBlueId: '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi',
           attributesAdded: [],
         },
       ],
     },
-    '9gkE6ybqoLeFGySKvhWmAM9K6ARCWEeBoyEDY6jw8X3U': {
+    '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2': {
       status: 'stable',
       name: 'Document Initial Snapshot Resolved',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9gkE6ybqoLeFGySKvhWmAM9K6ARCWEeBoyEDY6jw8X3U',
+          typeBlueId: '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2',
           attributesAdded: [],
         },
       ],
     },
-    Bf61oBnvwND8vaGaNRPUN5jTahmej3G5NqBujgrttBgS: {
+    '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred': {
       status: 'stable',
       name: 'Document Initial Snapshot Unresolved',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Bf61oBnvwND8vaGaNRPUN5jTahmej3G5NqBujgrttBgS',
+          typeBlueId: '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred',
           attributesAdded: [],
         },
       ],
@@ -201,13 +179,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    AXm2gfBJnCdfyMsHuLKSZGJXDuZSPct9uZrU44Pxfuh1: {
+    '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB': {
       status: 'stable',
       name: 'Document Session Bootstrap',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'AXm2gfBJnCdfyMsHuLKSZGJXDuZSPct9uZrU44Pxfuh1',
+          typeBlueId: '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB',
           attributesAdded: [],
         },
       ],
@@ -223,17 +201,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa: {
-      status: 'stable',
-      name: 'Inform User To Install MyOS Package',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa',
-          attributesAdded: [],
-        },
-      ],
-    },
     '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP': {
       status: 'stable',
       name: 'Link',
@@ -241,138 +208,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '7MTCgNo4iWnxoVhqJytiApkZYmrDPRZWUeCBPtfhZJma': {
-      status: 'dev',
-      name: 'Linked Documents Permission Grant Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '7MTCgNo4iWnxoVhqJytiApkZYmrDPRZWUeCBPtfhZJma',
-          attributesAdded: [],
-        },
-      ],
-    },
-    EjXvZmBzbpZeTnVzA7fkTqpi35ExPQoELBz3ws84DJAx: {
-      status: 'dev',
-      name: 'Linked Documents Permission Grant To Account',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'EjXvZmBzbpZeTnVzA7fkTqpi35ExPQoELBz3ws84DJAx',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '74ATu9uWcuAAUjMQJ6VHWApVa4WuyqRwpBNm47VhKKWi': {
-      status: 'dev',
-      name: 'Linked Documents Permission Grant To Document',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '74ATu9uWcuAAUjMQJ6VHWApVa4WuyqRwpBNm47VhKKWi',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '3BWjDhnmpr8KeWsbW2wQhMZbHpznEGGqtiWWncGD3g9C': {
-      status: 'dev',
-      name: 'Linked Documents Permission Granted',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '3BWjDhnmpr8KeWsbW2wQhMZbHpznEGGqtiWWncGD3g9C',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '68GzR4FMz8CpGnNA8hKsdjBmbachEn59NPGAjt16LUfe': {
-      status: 'dev',
-      name: 'Linked Documents Permission Granting in Progress',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '68GzR4FMz8CpGnNA8hKsdjBmbachEn59NPGAjt16LUfe',
-          attributesAdded: [],
-        },
-      ],
-    },
-    Cm9gL7QQ4CDhi18VKg5PfK11Xy6CLVJawoa88BTTy9ZU: {
-      status: 'dev',
-      name: 'Linked Documents Permission Invalid',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Cm9gL7QQ4CDhi18VKg5PfK11Xy6CLVJawoa88BTTy9ZU',
-          attributesAdded: [],
-        },
-      ],
-    },
-    BfjJ2xceqvneBqEHLGS5bMXiYeaQgbRbgRzBfYR4KZAJ: {
-      status: 'dev',
-      name: 'Linked Documents Permission Rejected',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'BfjJ2xceqvneBqEHLGS5bMXiYeaQgbRbgRzBfYR4KZAJ',
-          attributesAdded: [],
-        },
-      ],
-    },
-    BKyVzxDr2rJp7weHvuzyrgSJ42ATwN3SizPchqu7QMVc: {
-      status: 'dev',
-      name: 'Linked Documents Permission Revoke Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'BKyVzxDr2rJp7weHvuzyrgSJ42ATwN3SizPchqu7QMVc',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '41sbnfmpH1CZV21HwtNZtJiDw7ojLX1Fnkw6rpR1yw3a': {
-      status: 'dev',
-      name: 'Linked Documents Permission Revoked',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '41sbnfmpH1CZV21HwtNZtJiDw7ojLX1Fnkw6rpR1yw3a',
-          attributesAdded: [],
-        },
-      ],
-    },
-    D5W2KYUFW1EYvFnevH4wWBwpXJbkYwpuX8NAhujrKspP: {
-      status: 'dev',
-      name: 'Linked Documents Permission Revoking in Progress',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'D5W2KYUFW1EYvFnevH4wWBwpXJbkYwpuX8NAhujrKspP',
-          attributesAdded: [],
-        },
-      ],
-    },
-    DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn: {
-      status: 'dev',
-      name: 'Linked Documents Permission Set',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn',
-          attributesAdded: [],
-        },
-      ],
-    },
-    Gqf8h8GKR98kdptTXPABstPSc5ezuKGRsTQ8w1QDcSnQ: {
-      status: 'dev',
-      name: 'Linked Documents Permission Validated',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Gqf8h8GKR98kdptTXPABstPSc5ezuKGRsTQ8w1QDcSnQ',
           attributesAdded: [],
         },
       ],
@@ -388,13 +223,24 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    cjPVQ6sifei7ryEsdwVhsYgHRXiAWMvaoQvrRo6LYRY: {
+    '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm': {
+      status: 'stable',
+      name: 'MyOS Admin Actor',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq': {
       status: 'stable',
       name: 'MyOS Admin Base',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'cjPVQ6sifei7ryEsdwVhsYgHRXiAWMvaoQvrRo6LYRY',
+          typeBlueId: '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq',
           attributesAdded: [],
         },
       ],
@@ -454,6 +300,28 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
+    JA8Yi7KW2jjDqqExAbWbCCfZw2mu8Q7VXwEvMHVezusF: {
+      status: 'stable',
+      name: 'MyOS Document Bootstrap Mandate',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'JA8Yi7KW2jjDqqExAbWbCCfZw2mu8Q7VXwEvMHVezusF',
+          attributesAdded: [],
+        },
+      ],
+    },
+    C7dtw8ZHpD93BBpL528WPq8W4xWvjnUisH9Ew8SQQ6fW: {
+      status: 'stable',
+      name: 'MyOS Document Operation Mandate',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'C7dtw8ZHpD93BBpL528WPq8W4xWvjnUisH9Ew8SQQ6fW',
+          attributesAdded: [],
+        },
+      ],
+    },
     '3FcyLzeWjTqmYYg1Tmqu2en4SKfYbCFn8Shf3gDxo9xK': {
       status: 'stable',
       name: 'MyOS Document Session Reference',
@@ -465,13 +333,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    FX9yvQWAiZMMwnUF1vY1HMumJNNg7ENP7ETxha1kvWkn: {
+    '8fSvEL47NFBSYEFSRNfDpx6qWXHr1T6bNfimrcZ1JR9w': {
       status: 'stable',
-      name: 'MyOS Package',
+      name: 'MyOS Operation Call Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FX9yvQWAiZMMwnUF1vY1HMumJNNg7ENP7ETxha1kvWkn',
+          typeBlueId: '8fSvEL47NFBSYEFSRNfDpx6qWXHr1T6bNfimrcZ1JR9w',
           attributesAdded: [],
         },
       ],
@@ -483,17 +351,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
-          attributesAdded: [],
-        },
-      ],
-    },
-    G6EVpoRpQQb6f93eZtJPqDRAK47D1RXvUAmbXvhpsL6Y: {
-      status: 'dev',
-      name: 'MyOS Principal Actor',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'G6EVpoRpQQb6f93eZtJPqDRAK47D1RXvUAmbXvhpsL6Y',
           attributesAdded: [],
         },
       ],
@@ -520,35 +377,90 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '9TnFznYnqWWjHhGzcKngTLfq1a2H4sVd5EM4vfek2ec5': {
+    V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp: {
+      status: 'stable',
+      name: 'MyOS Session Subscription Ended',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '6fj4VDzQZwkBBPsYP4DGeSPbnHCQmX11PG3Vtk9pLRMF': {
+      status: 'stable',
+      name: 'MyOS Session Subscription Filter',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '6fj4VDzQZwkBBPsYP4DGeSPbnHCQmX11PG3Vtk9pLRMF',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '4zjwHNN6UDSevHfuz264WsyWNSsRc2bC25KpXU4d988B': {
+      status: 'stable',
+      name: 'MyOS Session Subscription Mandate',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '4zjwHNN6UDSevHfuz264WsyWNSsRc2bC25KpXU4d988B',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '1mEVkutZ851ZTcXPnhC44vg9cgzZj31NfU99KvbYq98': {
+      status: 'stable',
+      name: 'MyOS Session Subscription Requested',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: '1mEVkutZ851ZTcXPnhC44vg9cgzZj31NfU99KvbYq98',
+          attributesAdded: [],
+        },
+      ],
+    },
+    BGhd3kZMEMd8Yv8nqnqfLngaUEAn5WkbPjPsS6o3U7mg: {
+      status: 'stable',
+      name: 'MyOS Session Subscription Started',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'BGhd3kZMEMd8Yv8nqnqfLngaUEAn5WkbPjPsS6o3U7mg',
+          attributesAdded: [],
+        },
+      ],
+    },
+    EkNokZ4svfJ4Xhza5qNxm285pcRHXhZvA97KZKYf8cyb: {
+      status: 'stable',
+      name: 'MyOS Session Subscription Update',
+      versions: [
+        {
+          repositoryVersionIndex: 0,
+          typeBlueId: 'EkNokZ4svfJ4Xhza5qNxm285pcRHXhZvA97KZKYf8cyb',
+          attributesAdded: [],
+        },
+      ],
+    },
+    '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3': {
       status: 'stable',
       name: 'MyOS Timeline',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9TnFznYnqWWjHhGzcKngTLfq1a2H4sVd5EM4vfek2ec5',
+          typeBlueId: '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3',
           attributesAdded: [],
         },
       ],
     },
-    DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg: {
+    FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH: {
       status: 'stable',
       name: 'MyOS Timeline Channel',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '89jLhpA5iqiRuSLgvYKZirtczaxjwSXRkL9Q7GhxwPCu': {
-      status: 'stable',
-      name: 'MyOS Timeline Entry',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '89jLhpA5iqiRuSLgvYKZirtczaxjwSXRkL9Q7GhxwPCu',
+          typeBlueId: 'FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH',
           attributesAdded: [],
         },
       ],
@@ -560,17 +472,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'Cw952SXno2SWR9HL8EwUxWGeioRjxHjCd7G7uFAwC9kN',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': {
-      status: 'stable',
-      name: 'MyOS Worker Agency',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1',
           attributesAdded: [],
         },
       ],
@@ -608,123 +509,123 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    BswjhjkdTDksVCcc8ijoU2RWcPam7Rphcecc67HJjZRi: {
+    '3cujh2pNfS1bvc1L5eWhLaaeBepXjByWZ75XF5erArKU': {
       status: 'stable',
       name: 'Participant Resolved',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'BswjhjkdTDksVCcc8ijoU2RWcPam7Rphcecc67HJjZRi',
+          typeBlueId: '3cujh2pNfS1bvc1L5eWhLaaeBepXjByWZ75XF5erArKU',
           attributesAdded: [],
         },
       ],
     },
-    DHqXopSXGku6L9dZCavpWgPyza6XjFXGDisVumLMrNkw: {
+    '2B5GfyYAMpB2qa9AebDQCyorMi311v8bZLjXn6fsDPPw': {
       status: 'dev',
       name: 'Payment Initiated',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DHqXopSXGku6L9dZCavpWgPyza6XjFXGDisVumLMrNkw',
+          typeBlueId: '2B5GfyYAMpB2qa9AebDQCyorMi311v8bZLjXn6fsDPPw',
           attributesAdded: [],
         },
       ],
     },
-    theUsA9gT88zXXPPqnyeft1Zy77EAA9nD2t6YgfPSgF: {
+    GLKfKi29WiEb2Hq87Zj6hfJXXV6TpDXtGprdpNbk2dxq: {
       status: 'dev',
       name: 'Payment Initiation Accepted',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'theUsA9gT88zXXPPqnyeft1Zy77EAA9nD2t6YgfPSgF',
+          typeBlueId: 'GLKfKi29WiEb2Hq87Zj6hfJXXV6TpDXtGprdpNbk2dxq',
           attributesAdded: [],
         },
       ],
     },
-    '9HDoFXbw9nUMLFdm9XmaUpcji51rL7brWBU1aFdRyCZg': {
+    FLozmcCXEUsKNT86fixLbrdy9Dy4yn7jn6eftQuHpK8B: {
       status: 'dev',
       name: 'Payment Initiation Rejected',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9HDoFXbw9nUMLFdm9XmaUpcji51rL7brWBU1aFdRyCZg',
+          typeBlueId: 'FLozmcCXEUsKNT86fixLbrdy9Dy4yn7jn6eftQuHpK8B',
           attributesAdded: [],
         },
       ],
     },
-    '27Ab9oZDYKH8d4aXMuSoesnnPjpFk2344PKmzbZNEMv1': {
+    GDdBCk7v1URZXU6fpno5UhKkLZQzniaQ3of83Wr5yQVM: {
       status: 'dev',
       name: 'Payment Initiation Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '27Ab9oZDYKH8d4aXMuSoesnnPjpFk2344PKmzbZNEMv1',
+          typeBlueId: 'GDdBCk7v1URZXU6fpno5UhKkLZQzniaQ3of83Wr5yQVM',
           attributesAdded: [],
         },
       ],
     },
-    '7ov2LtAu257ETtdWgw7aMTYHypK9yKnswb8MZH9QCSRG': {
+    HKvJdxfZDY7agMAH8Z5pjhd4iB8mrTNRRhG1QEnEFRgd: {
       status: 'dev',
       name: 'Payment Target Preparation Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7ov2LtAu257ETtdWgw7aMTYHypK9yKnswb8MZH9QCSRG',
+          typeBlueId: 'HKvJdxfZDY7agMAH8Z5pjhd4iB8mrTNRRhG1QEnEFRgd',
           attributesAdded: [],
         },
       ],
     },
-    EQbhZiFJ15SPAP7VhdgX5YvfEgobZPuAUp6ddDoY3EBf: {
+    '2WpHsa3QF9eZttnm7jb3k7t3CEbz7iJKYjCMS7h4Ps7Z': {
       status: 'dev',
       name: 'Payment Target Preparation Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'EQbhZiFJ15SPAP7VhdgX5YvfEgobZPuAUp6ddDoY3EBf',
+          typeBlueId: '2WpHsa3QF9eZttnm7jb3k7t3CEbz7iJKYjCMS7h4Ps7Z',
           attributesAdded: [],
         },
       ],
     },
-    GhnaLupM1b6ns5AQh6HYCrfi22ZKd5GFFMPkrYM5q6b9: {
+    EZQPqDj5iDyHzM6DQE11Z2NwcPNSPx34v9SMyXsrwe6h: {
       status: 'dev',
       name: 'Payment Target Prepared',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'GhnaLupM1b6ns5AQh6HYCrfi22ZKd5GFFMPkrYM5q6b9',
+          typeBlueId: 'EZQPqDj5iDyHzM6DQE11Z2NwcPNSPx34v9SMyXsrwe6h',
           attributesAdded: [],
         },
       ],
     },
-    '6G8JLcJ9bT9VnThaxt4ZRDQYSrKiaYiByppnPiyhdNCW': {
+    BeUkW9h7yKH5DBgzTjF52u4PwYu9J9EmLZ5WaYZWnZuB: {
       status: 'stable',
       name: 'Principal Actor',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6G8JLcJ9bT9VnThaxt4ZRDQYSrKiaYiByppnPiyhdNCW',
+          typeBlueId: 'BeUkW9h7yKH5DBgzTjF52u4PwYu9J9EmLZ5WaYZWnZuB',
           attributesAdded: [],
         },
       ],
     },
-    '89DqHza36mvWnBgbqWi2ttccLd5LZBCbTDxjQyEwvAxf': {
+    BcSFAt3ZtG3CdpNzKUKBodvz9cux8kwtbNNNPrrhYSja: {
       status: 'stable',
       name: 'Removing Participant Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '89DqHza36mvWnBgbqWi2ttccLd5LZBCbTDxjQyEwvAxf',
+          typeBlueId: 'BcSFAt3ZtG3CdpNzKUKBodvz9cux8kwtbNNNPrrhYSja',
           attributesAdded: [],
         },
       ],
     },
-    FRgzcswtDMu4uMomhtDgrCnH94TGbTbaE5ur3zKZn6v7: {
+    HV36fBXcdWce4WhfG6dxSZmtRMQoNaNLNpHgxc2PakuN: {
       status: 'stable',
       name: 'Removing Participant Responded',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'FRgzcswtDMu4uMomhtDgrCnH94TGbTbaE5ur3zKZn6v7',
+          typeBlueId: 'HV36fBXcdWce4WhfG6dxSZmtRMQoNaNLNpHgxc2PakuN',
           attributesAdded: [],
         },
       ],
@@ -751,200 +652,46 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    Gdq4pzoEH32VQWBS4SwzUenYvWZHodLYVxd48WLLyLXz: {
-      status: 'stable',
-      name: 'Single Document Permission Grant Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Gdq4pzoEH32VQWBS4SwzUenYvWZHodLYVxd48WLLyLXz',
-          attributesAdded: [],
-        },
-      ],
-    },
-    EMeTTNatzYw9VUFK1NuUnJgrLaeJK3QAqDPaEEjuH7s3: {
-      status: 'stable',
-      name: 'Single Document Permission Grant Responded',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'EMeTTNatzYw9VUFK1NuUnJgrLaeJK3QAqDPaEEjuH7s3',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '9P4Wq4Yr2K95zEkDvX56SU2V7SnFMrrwwt3sZ46QAQxW': {
-      status: 'dev',
-      name: 'Single Document Permission Grant To Account',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9P4Wq4Yr2K95zEkDvX56SU2V7SnFMrrwwt3sZ46QAQxW',
-          attributesAdded: [],
-        },
-      ],
-    },
-    DuS8JXr8UZwXXkZwCk1eRS1d9UZyC5e8KXQNiv8h4vHd: {
-      status: 'dev',
-      name: 'Single Document Permission Grant To Document',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'DuS8JXr8UZwXXkZwCk1eRS1d9UZyC5e8KXQNiv8h4vHd',
-          attributesAdded: [],
-        },
-      ],
-    },
-    BhoidQSUZC9uh8KHbkVEU87DhWgDRjH1mcKdgksTfmmf: {
-      status: 'dev',
-      name: 'Single Document Permission Granted',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'BhoidQSUZC9uh8KHbkVEU87DhWgDRjH1mcKdgksTfmmf',
-          attributesAdded: [],
-        },
-      ],
-    },
-    Duis7QaVJkoKiQ5v9HEroE47AST1pi5zJGcVkgFiie8N: {
-      status: 'stable',
-      name: 'Single Document Permission Granting in Progress',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Duis7QaVJkoKiQ5v9HEroE47AST1pi5zJGcVkgFiie8N',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '7BEbHgR3h4y9HDLvxnKSMyGZZqYnA8Jm2cFuTMjDuCJg': {
-      status: 'stable',
-      name: 'Single Document Permission Invalid',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '7BEbHgR3h4y9HDLvxnKSMyGZZqYnA8Jm2cFuTMjDuCJg',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '9Z1H8t76uK3ixSpEMkKqT2xwZxXSgjbgoJSxchFXtW1V': {
-      status: 'stable',
-      name: 'Single Document Permission Rejected',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9Z1H8t76uK3ixSpEMkKqT2xwZxXSgjbgoJSxchFXtW1V',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '5Jtu4jN8svHxkJkkkZdDQLVzk6vjxE4Reo4VTw4rwrn9': {
-      status: 'dev',
-      name: 'Single Document Permission Revoke Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '5Jtu4jN8svHxkJkkkZdDQLVzk6vjxE4Reo4VTw4rwrn9',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '7Crww1rpdmSRAN5qhyX7PCrsKRpeCKmhkdN7zvC7PUw': {
-      status: 'stable',
-      name: 'Single Document Permission Revoked',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '7Crww1rpdmSRAN5qhyX7PCrsKRpeCKmhkdN7zvC7PUw',
-          attributesAdded: [],
-        },
-      ],
-    },
-    EXVwAGdA1kyuAy3PzJPwGxQXeqocP9aLarWXrkTPivbZ: {
-      status: 'stable',
-      name: 'Single Document Permission Revoking in Progress',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'EXVwAGdA1kyuAy3PzJPwGxQXeqocP9aLarWXrkTPivbZ',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq': {
-      status: 'stable',
-      name: 'Single Document Permission Set',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '6rJFGtfmUHZyspx5UNtUvSjNn89XqmBHzmMRiQHjhPX3': {
-      status: 'stable',
-      name: 'Single Document Permission Validated',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6rJFGtfmUHZyspx5UNtUvSjNn89XqmBHzmMRiQHjhPX3',
-          attributesAdded: [],
-        },
-      ],
-    },
-    FWgJ8eninbRZvg2SWY4VxbfpvZvRxseALoAvwTu9bqVr: {
-      status: 'stable',
-      name: 'Start Worker Session Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'FWgJ8eninbRZvg2SWY4VxbfpvZvRxseALoAvwTu9bqVr',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '26txGATfFsYPSqn4rBNz2PTooVYNz6v9wt6drM7aPzh1': {
+    GjCreNEXcoBSwyXnWtXbtDMJdtm9nKo8MJeVpn3633WC: {
       status: 'stable',
       name: 'Subscribe to Session Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '26txGATfFsYPSqn4rBNz2PTooVYNz6v9wt6drM7aPzh1',
+          typeBlueId: 'GjCreNEXcoBSwyXnWtXbtDMJdtm9nKo8MJeVpn3633WC',
           attributesAdded: [],
         },
       ],
     },
-    '7Gm8HH81u9FDLmDXQvfGYLZsbyKCcoaJsfwM8o4y2wws': {
+    FqL1t69VjbKdAmffjxV5o1dAJooKyQ6vxdpsmbavFFia: {
       status: 'stable',
       name: 'Subscription to Session Failed',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '7Gm8HH81u9FDLmDXQvfGYLZsbyKCcoaJsfwM8o4y2wws',
+          typeBlueId: 'FqL1t69VjbKdAmffjxV5o1dAJooKyQ6vxdpsmbavFFia',
           attributesAdded: [],
         },
       ],
     },
-    D7h7D4D5yqrWfcw9xFLdu7T89jAox3WqTFxjojSewKbc: {
+    FdzN1H5Qe7CRbcXVeqD7PfJJ5TH6cxgHd3FRcNjvRJzk: {
       status: 'stable',
       name: 'Subscription to Session Initiated',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'D7h7D4D5yqrWfcw9xFLdu7T89jAox3WqTFxjojSewKbc',
+          typeBlueId: 'FdzN1H5Qe7CRbcXVeqD7PfJJ5TH6cxgHd3FRcNjvRJzk',
           attributesAdded: [],
         },
       ],
     },
-    '6ewyxdBpb5oNdVSBkXZSDK6aUaAnzc2ad453V7vjXHu6': {
+    BzThvgTJD2zLX2wLFToLFRgs5KUvw7x3shCsmyxJ54pP: {
       status: 'stable',
       name: 'Subscription to Session Revoked',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '6ewyxdBpb5oNdVSBkXZSDK6aUaAnzc2ad453V7vjXHu6',
+          typeBlueId: 'BzThvgTJD2zLX2wLFToLFRgs5KUvw7x3shCsmyxJ54pP',
           attributesAdded: [],
         },
       ],
@@ -960,145 +707,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN': {
+    J9a8qD8javfYK6nRDq9YZRA8LDuzZzq7QS7DB73Pm4Lv: {
       status: 'stable',
       name: 'Target Document Session Started',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN',
-          attributesAdded: [],
-        },
-      ],
-    },
-    GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH: {
-      status: 'stable',
-      name: 'Worker Agency Permission',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '3WVJvijwpp2paoRJHaLKJkaTmfWKaUrysfrFANkExCFH': {
-      status: 'dev',
-      name: 'Worker Agency Permission Grant',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '3WVJvijwpp2paoRJHaLKJkaTmfWKaUrysfrFANkExCFH',
-          attributesAdded: [],
-        },
-      ],
-    },
-    EZsC5otrFgURBbXJaGZ7Ngs1JoJfHnrGVhzfPkJ3Q9QB: {
-      status: 'stable',
-      name: 'Worker Agency Permission Grant Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'EZsC5otrFgURBbXJaGZ7Ngs1JoJfHnrGVhzfPkJ3Q9QB',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '2gARs6NQxJvmooDXL6dc7DPny9xthbGfJL32jr3Jm2Xw': {
-      status: 'dev',
-      name: 'Worker Agency Permission Granted',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '2gARs6NQxJvmooDXL6dc7DPny9xthbGfJL32jr3Jm2Xw',
-          attributesAdded: [],
-        },
-      ],
-    },
-    GFWQTwkX47Ak8VtxuiqLmqKhPo417JnyE69jyEqKYseK: {
-      status: 'stable',
-      name: 'Worker Agency Permission Granting in Progress',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'GFWQTwkX47Ak8VtxuiqLmqKhPo417JnyE69jyEqKYseK',
-          attributesAdded: [],
-        },
-      ],
-    },
-    B1RnGH4azPberZAn1F3YrP5c2sGV939EpruSPBD2Kc1u: {
-      status: 'stable',
-      name: 'Worker Agency Permission Invalid',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'B1RnGH4azPberZAn1F3YrP5c2sGV939EpruSPBD2Kc1u',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '8peU5ESm5XGhihLNdB59zsipFt6HsDQ9q4DpdNoQ1Q38': {
-      status: 'stable',
-      name: 'Worker Agency Permission Rejected',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '8peU5ESm5XGhihLNdB59zsipFt6HsDQ9q4DpdNoQ1Q38',
-          attributesAdded: [],
-        },
-      ],
-    },
-    GeNaTohvYFC1xu9RLJS1buzqj1JpqyernRsvJiTiSTTY: {
-      status: 'dev',
-      name: 'Worker Agency Permission Revoke Requested',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'GeNaTohvYFC1xu9RLJS1buzqj1JpqyernRsvJiTiSTTY',
-          attributesAdded: [],
-        },
-      ],
-    },
-    X446Tm19S6csScutxaRp1Bo6gH3v3Vwq7nzHkWJg9ab: {
-      status: 'stable',
-      name: 'Worker Agency Permission Revoked',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'X446Tm19S6csScutxaRp1Bo6gH3v3Vwq7nzHkWJg9ab',
-          attributesAdded: [],
-        },
-      ],
-    },
-    Aa41QanfXXraDaSAWXeh86RnktmonoaxMUajwNqcWabJ: {
-      status: 'stable',
-      name: 'Worker Agency Permission Revoking in Progress',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Aa41QanfXXraDaSAWXeh86RnktmonoaxMUajwNqcWabJ',
-          attributesAdded: [],
-        },
-      ],
-    },
-    J7ssmNEa6YpxrLFTqZfwgD4uiz3cSyNLNaC4WbnLEhj7: {
-      status: 'stable',
-      name: 'Worker Agency Permission Validated',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'J7ssmNEa6YpxrLFTqZfwgD4uiz3cSyNLNaC4WbnLEhj7',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '9M6p6bQaBWNZYcfFccYwYQkS4QA31h3vkUEsJSVTPqdt': {
-      status: 'stable',
-      name: 'Worker Session Starting',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9M6p6bQaBWNZYcfFccYwYQkS4QA31h3vkUEsJSVTPqdt',
+          typeBlueId: 'J9a8qD8javfYK6nRDq9YZRA8LDuzZzq7QS7DB73Pm4Lv',
           attributesAdded: [],
         },
       ],

@@ -7,6 +7,6 @@ export const TransactionDetailsUpdateRequested: Record<string, unknown> = {
       'Opaque transaction details payload proposed by the participant.',
   },
   type: {
-    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
 };

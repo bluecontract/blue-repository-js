@@ -29,20 +29,20 @@ export const CustomerConsent: Record<string, unknown> = {
     granteeChannel: {
       description: 'Grantee (e.g., merchant MyOS timeline).',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     granterChannel: {
       description:
         'Granter (customer represented by the bank; customer has no MyOS account).',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     guarantorChannel: {
       description: 'Bank/admin channel.',
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
       },
     },
     initialize: {
@@ -145,7 +145,7 @@ export const CustomerConsent: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
       },
     },
     revokeConsentImpl: {
@@ -420,7 +420,7 @@ export const CustomerConsent: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
   },

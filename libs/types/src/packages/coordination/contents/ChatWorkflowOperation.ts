@@ -5,7 +5,7 @@ export const ChatWorkflowOperation: Record<string, unknown> = {
   request: {
     description: 'Chat message payload.',
     type: {
-      blueId: '3GFJTYsNFHWqoWaMoXbmuNkNFwso6R1aPhN8f98yYaGR',
+      blueId: 'FJt9ktsssczQeT3sRjMM83zbxy9jd9ZdS8ogKS8MTqvf',
     },
   },
   steps: {
@@ -37,6 +37,6 @@ export const ChatWorkflowOperation: Record<string, unknown> = {
     ],
   },
   type: {
-    blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+    blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
   },
 };

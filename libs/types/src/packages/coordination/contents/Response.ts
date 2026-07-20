@@ -1,28 +1,18 @@
 export const Response: Record<string, unknown> = {
   description:
-    'Base event/content type for responses to requests. A Response links back to a Request through `inResponseTo` and may\nbe specialized by concrete response types that define status, result, error, payload, or participant-specific fields.\n\nResponse is intentionally generic. It provides correlation semantics only; domain workflows decide whether the\nresponse is accepted, whether it completes a pending action, and what document changes or events follow.\n',
+    'A Message that answers a Request. A single Request may receive multiple Responses, including responses from several participants or successive responses from one participant. A Response does not by itself perform an operation unless its concrete type and enclosing document contracts define that behavior.\n',
   inResponseTo: {
     description:
-      'Reference or request identifier for the request being answered. Concrete response types may require a full Request\nnode, a requestId text value, or another deterministic correlation object.\n',
+      'Required reference to the exact Coordination/Request occurrence answered by this Response.\n',
+    schema: {
+      required: true,
+    },
     type: {
-      description:
-        'A structured reference linking this response back to the original action and trigger.',
-      incomingEvent: {
-        description:
-          'An event which initiated the entire workflow. Normally just blueId of it.',
-      },
-      name: 'Correlation',
-      requestId: {
-        description:
-          "The 'requestId' from the specific Request event this is a response to.",
-        type: {
-          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
-        },
-      },
+      blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
     },
   },
   name: 'Response',
   type: {
-    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
+    blueId: '768MxgQEHnLSkedHWHtjj43mAjH361Zf6pKZgVxi5po3',
   },
 };

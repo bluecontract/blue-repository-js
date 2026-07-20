@@ -1,6 +1,6 @@
 export const SequentialWorkflowOperation: Record<string, unknown> = {
   description:
-    "Concrete Operation handler whose implementation is an ordered Sequential Workflow. Because Operation extends Handler,\na Sequential Workflow Operation is discovered and invoked as a same-scope handler bound to its channel.\n\nA Sequential Workflow Operation is still invoked like any other Operation: callers post an Operation Request naming\nthe operation contract key; the request payload must conform to this operation's request shape; and the message must\narrive through the operation's channel. The workflow then runs the declared steps deterministically and returns effects\nsuch as triggered events or document updates through the Blue Contracts processor.\n\nUse this for document-owned behavior where the operation interface and implementation should live together in a single\ncontract entry. A plain Operation can still declare the operation interface when a runtime or document chooses to bind\nthe implementation separately.\n",
+    "Concrete Operation handler whose implementation is an ordered Sequential Workflow. Because Operation extends Handler,\na Sequential Workflow Operation is discovered and invoked as a same-scope handler bound to its channel.\n\nA Sequential Workflow Operation is still invoked like any other Operation: callers post an Operation Request naming\nthe operation contract key and its effective channel, and the request payload must conform to this operation's request\nshape. The request may be accepted through a different eligible source channel. A supporting processor routes it to\nthe operation's effective channel while preserving source-channel checkpoint semantics. The workflow then runs the\ndeclared steps deterministically and returns effects such as triggered events or document updates through the Blue\nContracts processor.\n\nUse this for document-owned behavior where the operation interface and implementation should live together in a single\ncontract entry. A plain Operation can still declare the operation interface when a runtime or document chooses to bind\nthe implementation separately.\n",
   name: 'Sequential Workflow Operation',
   steps: {
     description:
@@ -13,6 +13,6 @@ export const SequentialWorkflowOperation: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
+    blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
   },
 };

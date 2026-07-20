@@ -8,6 +8,6 @@ export const CompletePaymentRequested: Record<string, unknown> = {
     'A participant requests that the Guarantor finalize the payment.',
   name: 'Complete Payment Requested',
   type: {
-    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
 };

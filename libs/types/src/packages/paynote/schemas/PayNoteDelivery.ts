@@ -1,13 +1,13 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
+import { DocumentBootstrapRequestedSchema } from '../../bootstrap/schemas/DocumentBootstrapRequested';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { DocumentBootstrapRequestedSchema } from '../../coordination/schemas/DocumentBootstrapRequested';
 import { DocumentStatusSchema } from '../../coordination/schemas/DocumentStatus';
 import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
-import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
+import { TimelineChannelSchema } from '../../coordination/schemas/TimelineChannel';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 
 const zod = z as any;
@@ -30,8 +30,8 @@ export const PayNoteDeliverySchema: any = withTypeBlueId(
           .optional(),
         initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
         initLifecycleChannel: blueNodeField().optional(),
-        payNoteDeliverer: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
-        payNoteSender: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        payNoteDeliverer: zod.lazy(() => TimelineChannelSchema).optional(),
+        payNoteSender: zod.lazy(() => TimelineChannelSchema).optional(),
         rejectPayNote: zod.lazy(() => OperationSchema).optional(),
         rejectPayNoteImpl: zod
           .lazy(() => SequentialWorkflowOperationSchema)

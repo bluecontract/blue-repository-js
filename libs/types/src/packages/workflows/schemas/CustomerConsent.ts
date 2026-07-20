@@ -5,7 +5,7 @@ import { TimestampSchema } from '../../common/schemas/Timestamp';
 import { OperationSchema } from '../../coordination/schemas/Operation';
 import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
-import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
+import { TimelineChannelSchema } from '../../coordination/schemas/TimelineChannel';
 
 const zod = z as any;
 
@@ -18,9 +18,9 @@ export const CustomerConsentSchema: any = withTypeBlueId(
     consentStatus: zod.string().optional(),
     contracts: zod
       .object({
-        granteeChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
-        granterChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
-        guarantorChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        granteeChannel: zod.lazy(() => TimelineChannelSchema).optional(),
+        granterChannel: zod.lazy(() => TimelineChannelSchema).optional(),
+        guarantorChannel: zod.lazy(() => TimelineChannelSchema).optional(),
         initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
         initLifecycleChannel: blueNodeField().optional(),
         revokeConsent: zod.lazy(() => OperationSchema).optional(),

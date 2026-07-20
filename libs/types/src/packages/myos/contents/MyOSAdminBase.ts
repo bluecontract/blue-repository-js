@@ -1,10 +1,20 @@
 export const MyOSAdminBase: Record<string, unknown> = {
   contracts: {
     myOsAdminChannel: {
+      actor: {
+        type: {
+          blueId: '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm',
+        },
+      },
       description:
-        'MyOS Admin (accountId=0) — posts operational progress/decisions via myOsAdminUpdate',
+        'MyOS Admin channel for operational progress and decisions delivered through myOsAdminUpdate.',
+      timeline: {
+        type: {
+          blueId: '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3',
+        },
+      },
       type: {
-        blueId: 'DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg',
+        blueId: 'FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH',
       },
     },
     myOsAdminUpdate: {
@@ -16,17 +26,13 @@ export const MyOSAdminBase: Record<string, unknown> = {
       },
       description:
         'The standard, required operation for MyOS Admin to deliver events.',
-      type: {
-        blueId: 'wGksq5vE8TroTr6StteHDnMx9mJKqT7dHoYT9bEddym',
-      },
-    },
-    myOsAdminUpdateImpl: {
-      description: 'Implementation that re-emits the provided events',
-      operation: {
-        type: {
-          blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      request: {
+        itemType: {
+          blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
         },
-        value: 'myOsAdminUpdate',
+        type: {
+          blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
+        },
       },
       steps: {
         items: [
@@ -56,7 +62,7 @@ export const MyOSAdminBase: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'CXotTNTYxqqSgDBzTGJjbLVvsjrxJMgmJZaC1rA826CF',
+        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
       },
     },
   },

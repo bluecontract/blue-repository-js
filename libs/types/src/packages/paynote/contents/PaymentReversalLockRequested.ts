@@ -8,6 +8,6 @@ export const PaymentReversalLockRequested: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: '67WiBLmgNLGfxz7EcReXicgopEBUqYcX6mFGe6YRXatw',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
 };

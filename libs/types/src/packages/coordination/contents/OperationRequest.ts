@@ -1,27 +1,40 @@
 export const OperationRequest: Record<string, unknown> = {
-  allowNewerVersion: {
-    description:
-      'Whether the requester allows processing against a document version newer than the one implied by the request context.\nA false value lets workflows reject stale or unexpected document-state transitions.\n',
+  channel: {
+    description: 'Required effective target channel key.',
+    schema: {
+      required: true,
+    },
     type: {
-      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
-    'Event payload requesting that a document perform a named operation. Operation Request is the standard shape for\ninvoking document-owned behavior through a Timeline Entry, direct event delivery, or another coordination channel.\n\n`operation` names the requested operation. `request` contains the operation-specific input. `document`, when present,\ncan identify or carry the target document/request context. `allowNewerVersion` indicates whether the sender permits\nthe processor to use a newer document version than the one the sender expected. Actor and source attribution are not\nfields of Operation Request itself; they normally come from the enclosing Timeline Entry or event envelope.\n\nA processor or workflow should not treat Operation Request as authorized merely because it is well-formed. It must\nmatch the operation, check any actor/source policy, validate the request shape expected by the operation, and then run\nthe corresponding handler or workflow.\n',
+    'Request to invoke one named operation through one effective channel. The enclosing Timeline Entry supplies actor attribution and any mandate-backed authority. A feeder verifies source-channel eligibility, mandate authority, and document-version constraints before passing the entry to a processor.\n',
   document: {
     description:
-      'Optional target document reference, embedded document, or request context supplied by the caller. The operation type\ndefines how this field is interpreted.\n',
+      'Optional current target document state on which the invocation is based. The value may be materialized or represented by an equivalent pure BlueId reference.\n',
   },
   name: 'Operation Request',
   operation: {
-    description:
-      'Name of the operation being requested. This name is matched against Operation or Sequential Workflow Operation\ncontracts in the processing scope.\n',
+    description: 'Required operation contract key/name to invoke.',
+    schema: {
+      required: true,
+    },
     type: {
       blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   request: {
+    description: 'Operation-specific request payload.',
+  },
+  requireExactDocumentVersion: {
     description:
-      'Operation-specific payload. Its shape is defined by the requested operation.\n',
+      "When true, the feeder passes the request only if document equals the current target state. When false or absent, a newer state may be accepted according to the feeder's document-version eligibility policy.\n",
+    type: {
+      blueId: 'AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2',
+    },
+  },
+  type: {
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
 };

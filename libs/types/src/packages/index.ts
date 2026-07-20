@@ -1,6 +1,9 @@
+export { default as bootstrap } from './bootstrap/index';
 export { default as common } from './common/index';
 export { default as coordination } from './coordination/index';
 export { default as finos_cdm_6_0_d07 } from './finos-cdm-6-0-d07/index';
+export { default as mandate } from './mandate/index';
 export { default as myos } from './myos/index';
 export { default as paynote } from './paynote/index';
+export { default as sessioninteraction } from './sessioninteraction/index';
 export { default as workflows } from './workflows/index';

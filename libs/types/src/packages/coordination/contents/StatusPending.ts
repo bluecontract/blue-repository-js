@@ -9,6 +9,6 @@ export const StatusPending: Record<string, unknown> = {
   },
   name: 'Status Pending',
   type: {
-    blueId: '9rzc7B4yEw9gVuuaoFbRUpfajTPuxBLecVWkmHuBSg7z',
+    blueId: '6aAJEFVdFAgLVre8azY4YZQnNiv2FkXJpdpGAYSHiNrY',
   },
 };

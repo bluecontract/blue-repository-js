@@ -2,9 +2,7 @@ import type { ZodTypeAny } from 'zod';
 import { AddingParticipantRequestedSchema } from './AddingParticipantRequested';
 import { AddingParticipantRespondedSchema } from './AddingParticipantResponded';
 import { AgentSchema } from './Agent';
-import { AgentActorSchema } from './AgentActor';
 import { AllParticipantsReadySchema } from './AllParticipantsReady';
-import { AnchorAutomationTemplateSchema } from './AnchorAutomationTemplate';
 import { BootstrapFailedSchema } from './BootstrapFailed';
 import { CallOperationAcceptedSchema } from './CallOperationAccepted';
 import { CallOperationFailedSchema } from './CallOperationFailed';
@@ -19,38 +17,31 @@ import { DocumentLinkSchema } from './DocumentLink';
 import { DocumentLinksSchema } from './DocumentLinks';
 import { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
 import { DocumentTypeLinkSchema } from './DocumentTypeLink';
-import { InformUserToInstallMyOSPackageSchema } from './InformUserToInstallMyOSPackage';
 import { LinkSchema } from './Link';
-import { LinkedDocumentsPermissionGrantRequestedSchema } from './LinkedDocumentsPermissionGrantRequested';
-import { LinkedDocumentsPermissionGrantToAccountSchema } from './LinkedDocumentsPermissionGrantToAccount';
-import { LinkedDocumentsPermissionGrantToDocumentSchema } from './LinkedDocumentsPermissionGrantToDocument';
-import { LinkedDocumentsPermissionGrantedSchema } from './LinkedDocumentsPermissionGranted';
-import { LinkedDocumentsPermissionGrantingInProgressSchema } from './LinkedDocumentsPermissionGrantingInProgress';
-import { LinkedDocumentsPermissionInvalidSchema } from './LinkedDocumentsPermissionInvalid';
-import { LinkedDocumentsPermissionRejectedSchema } from './LinkedDocumentsPermissionRejected';
-import { LinkedDocumentsPermissionRevokeRequestedSchema } from './LinkedDocumentsPermissionRevokeRequested';
-import { LinkedDocumentsPermissionRevokedSchema } from './LinkedDocumentsPermissionRevoked';
-import { LinkedDocumentsPermissionRevokingInProgressSchema } from './LinkedDocumentsPermissionRevokingInProgress';
-import { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
-import { LinkedDocumentsPermissionValidatedSchema } from './LinkedDocumentsPermissionValidated';
 import { LLMAgentSchema } from './LLMAgent';
+import { MyOSAdminActorSchema } from './MyOSAdminActor';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { MyOSAgentSchema } from './MyOSAgent';
 import { MyOSAgentActorSchema } from './MyOSAgentActor';
 import { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 import { MyOSAgentEventSchema } from './MyOSAgentEvent';
 import { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
+import { MyOSDocumentBootstrapMandateSchema } from './MyOSDocumentBootstrapMandate';
+import { MyOSDocumentOperationMandateSchema } from './MyOSDocumentOperationMandate';
 import { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
-import { MyOSPackageSchema } from './MyOSPackage';
+import { MyOSOperationCallRequestedSchema } from './MyOSOperationCallRequested';
 import { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
-import { MyOSPrincipalActorSchema } from './MyOSPrincipalActor';
 import { MyOSSessionInteractionSchema } from './MyOSSessionInteraction';
 import { MyOSSessionLinkSchema } from './MyOSSessionLink';
+import { MyOSSessionSubscriptionEndedSchema } from './MyOSSessionSubscriptionEnded';
+import { MyOSSessionSubscriptionFilterSchema } from './MyOSSessionSubscriptionFilter';
+import { MyOSSessionSubscriptionMandateSchema } from './MyOSSessionSubscriptionMandate';
+import { MyOSSessionSubscriptionRequestedSchema } from './MyOSSessionSubscriptionRequested';
+import { MyOSSessionSubscriptionStartedSchema } from './MyOSSessionSubscriptionStarted';
+import { MyOSSessionSubscriptionUpdateSchema } from './MyOSSessionSubscriptionUpdate';
 import { MyOSTimelineSchema } from './MyOSTimeline';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
-import { MyOSTimelineEntrySchema } from './MyOSTimelineEntry';
 import { MyOSUserSchema } from './MyOSUser';
-import { MyOSWorkerAgencySchema } from './MyOSWorkerAgency';
 import { ParticipantSchema } from './Participant';
 import { ParticipantActivatedSchema } from './ParticipantActivated';
 import { ParticipantActivationStateSchema } from './ParticipantActivationState';
@@ -67,45 +58,17 @@ import { RemovingParticipantRequestedSchema } from './RemovingParticipantRequest
 import { RemovingParticipantRespondedSchema } from './RemovingParticipantResponded';
 import { SearchContractSchema } from './SearchContract';
 import { SessionEpochAdvancedSchema } from './SessionEpochAdvanced';
-import { SingleDocumentPermissionGrantRequestedSchema } from './SingleDocumentPermissionGrantRequested';
-import { SingleDocumentPermissionGrantRespondedSchema } from './SingleDocumentPermissionGrantResponded';
-import { SingleDocumentPermissionGrantToAccountSchema } from './SingleDocumentPermissionGrantToAccount';
-import { SingleDocumentPermissionGrantToDocumentSchema } from './SingleDocumentPermissionGrantToDocument';
-import { SingleDocumentPermissionGrantedSchema } from './SingleDocumentPermissionGranted';
-import { SingleDocumentPermissionGrantingInProgressSchema } from './SingleDocumentPermissionGrantingInProgress';
-import { SingleDocumentPermissionInvalidSchema } from './SingleDocumentPermissionInvalid';
-import { SingleDocumentPermissionRejectedSchema } from './SingleDocumentPermissionRejected';
-import { SingleDocumentPermissionRevokeRequestedSchema } from './SingleDocumentPermissionRevokeRequested';
-import { SingleDocumentPermissionRevokedSchema } from './SingleDocumentPermissionRevoked';
-import { SingleDocumentPermissionRevokingInProgressSchema } from './SingleDocumentPermissionRevokingInProgress';
-import { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
-import { SingleDocumentPermissionValidatedSchema } from './SingleDocumentPermissionValidated';
-import { StartWorkerSessionRequestedSchema } from './StartWorkerSessionRequested';
 import { SubscribeToSessionRequestedSchema } from './SubscribeToSessionRequested';
 import { SubscriptionToSessionFailedSchema } from './SubscriptionToSessionFailed';
 import { SubscriptionToSessionInitiatedSchema } from './SubscriptionToSessionInitiated';
 import { SubscriptionToSessionRevokedSchema } from './SubscriptionToSessionRevoked';
 import { SubscriptionUpdateSchema } from './SubscriptionUpdate';
 import { TargetDocumentSessionStartedSchema } from './TargetDocumentSessionStarted';
-import { WorkerAgencyPermissionSchema } from './WorkerAgencyPermission';
-import { WorkerAgencyPermissionGrantSchema } from './WorkerAgencyPermissionGrant';
-import { WorkerAgencyPermissionGrantRequestedSchema } from './WorkerAgencyPermissionGrantRequested';
-import { WorkerAgencyPermissionGrantedSchema } from './WorkerAgencyPermissionGranted';
-import { WorkerAgencyPermissionGrantingInProgressSchema } from './WorkerAgencyPermissionGrantingInProgress';
-import { WorkerAgencyPermissionInvalidSchema } from './WorkerAgencyPermissionInvalid';
-import { WorkerAgencyPermissionRejectedSchema } from './WorkerAgencyPermissionRejected';
-import { WorkerAgencyPermissionRevokeRequestedSchema } from './WorkerAgencyPermissionRevokeRequested';
-import { WorkerAgencyPermissionRevokedSchema } from './WorkerAgencyPermissionRevoked';
-import { WorkerAgencyPermissionRevokingInProgressSchema } from './WorkerAgencyPermissionRevokingInProgress';
-import { WorkerAgencyPermissionValidatedSchema } from './WorkerAgencyPermissionValidated';
-import { WorkerSessionStartingSchema } from './WorkerSessionStarting';
 
 export { AddingParticipantRequestedSchema } from './AddingParticipantRequested';
 export { AddingParticipantRespondedSchema } from './AddingParticipantResponded';
 export { AgentSchema } from './Agent';
-export { AgentActorSchema } from './AgentActor';
 export { AllParticipantsReadySchema } from './AllParticipantsReady';
-export { AnchorAutomationTemplateSchema } from './AnchorAutomationTemplate';
 export { BootstrapFailedSchema } from './BootstrapFailed';
 export { CallOperationAcceptedSchema } from './CallOperationAccepted';
 export { CallOperationFailedSchema } from './CallOperationFailed';
@@ -120,38 +83,31 @@ export { DocumentLinkSchema } from './DocumentLink';
 export { DocumentLinksSchema } from './DocumentLinks';
 export { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
 export { DocumentTypeLinkSchema } from './DocumentTypeLink';
-export { InformUserToInstallMyOSPackageSchema } from './InformUserToInstallMyOSPackage';
 export { LinkSchema } from './Link';
-export { LinkedDocumentsPermissionGrantRequestedSchema } from './LinkedDocumentsPermissionGrantRequested';
-export { LinkedDocumentsPermissionGrantToAccountSchema } from './LinkedDocumentsPermissionGrantToAccount';
-export { LinkedDocumentsPermissionGrantToDocumentSchema } from './LinkedDocumentsPermissionGrantToDocument';
-export { LinkedDocumentsPermissionGrantedSchema } from './LinkedDocumentsPermissionGranted';
-export { LinkedDocumentsPermissionGrantingInProgressSchema } from './LinkedDocumentsPermissionGrantingInProgress';
-export { LinkedDocumentsPermissionInvalidSchema } from './LinkedDocumentsPermissionInvalid';
-export { LinkedDocumentsPermissionRejectedSchema } from './LinkedDocumentsPermissionRejected';
-export { LinkedDocumentsPermissionRevokeRequestedSchema } from './LinkedDocumentsPermissionRevokeRequested';
-export { LinkedDocumentsPermissionRevokedSchema } from './LinkedDocumentsPermissionRevoked';
-export { LinkedDocumentsPermissionRevokingInProgressSchema } from './LinkedDocumentsPermissionRevokingInProgress';
-export { LinkedDocumentsPermissionSetSchema } from './LinkedDocumentsPermissionSet';
-export { LinkedDocumentsPermissionValidatedSchema } from './LinkedDocumentsPermissionValidated';
 export { LLMAgentSchema } from './LLMAgent';
+export { MyOSAdminActorSchema } from './MyOSAdminActor';
 export { MyOSAdminBaseSchema } from './MyOSAdminBase';
 export { MyOSAgentSchema } from './MyOSAgent';
 export { MyOSAgentActorSchema } from './MyOSAgentActor';
 export { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 export { MyOSAgentEventSchema } from './MyOSAgentEvent';
 export { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
+export { MyOSDocumentBootstrapMandateSchema } from './MyOSDocumentBootstrapMandate';
+export { MyOSDocumentOperationMandateSchema } from './MyOSDocumentOperationMandate';
 export { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
-export { MyOSPackageSchema } from './MyOSPackage';
+export { MyOSOperationCallRequestedSchema } from './MyOSOperationCallRequested';
 export { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
-export { MyOSPrincipalActorSchema } from './MyOSPrincipalActor';
 export { MyOSSessionInteractionSchema } from './MyOSSessionInteraction';
 export { MyOSSessionLinkSchema } from './MyOSSessionLink';
+export { MyOSSessionSubscriptionEndedSchema } from './MyOSSessionSubscriptionEnded';
+export { MyOSSessionSubscriptionFilterSchema } from './MyOSSessionSubscriptionFilter';
+export { MyOSSessionSubscriptionMandateSchema } from './MyOSSessionSubscriptionMandate';
+export { MyOSSessionSubscriptionRequestedSchema } from './MyOSSessionSubscriptionRequested';
+export { MyOSSessionSubscriptionStartedSchema } from './MyOSSessionSubscriptionStarted';
+export { MyOSSessionSubscriptionUpdateSchema } from './MyOSSessionSubscriptionUpdate';
 export { MyOSTimelineSchema } from './MyOSTimeline';
 export { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
-export { MyOSTimelineEntrySchema } from './MyOSTimelineEntry';
 export { MyOSUserSchema } from './MyOSUser';
-export { MyOSWorkerAgencySchema } from './MyOSWorkerAgency';
 export { ParticipantSchema } from './Participant';
 export { ParticipantActivatedSchema } from './ParticipantActivated';
 export { ParticipantActivationStateSchema } from './ParticipantActivationState';
@@ -168,195 +124,105 @@ export { RemovingParticipantRequestedSchema } from './RemovingParticipantRequest
 export { RemovingParticipantRespondedSchema } from './RemovingParticipantResponded';
 export { SearchContractSchema } from './SearchContract';
 export { SessionEpochAdvancedSchema } from './SessionEpochAdvanced';
-export { SingleDocumentPermissionGrantRequestedSchema } from './SingleDocumentPermissionGrantRequested';
-export { SingleDocumentPermissionGrantRespondedSchema } from './SingleDocumentPermissionGrantResponded';
-export { SingleDocumentPermissionGrantToAccountSchema } from './SingleDocumentPermissionGrantToAccount';
-export { SingleDocumentPermissionGrantToDocumentSchema } from './SingleDocumentPermissionGrantToDocument';
-export { SingleDocumentPermissionGrantedSchema } from './SingleDocumentPermissionGranted';
-export { SingleDocumentPermissionGrantingInProgressSchema } from './SingleDocumentPermissionGrantingInProgress';
-export { SingleDocumentPermissionInvalidSchema } from './SingleDocumentPermissionInvalid';
-export { SingleDocumentPermissionRejectedSchema } from './SingleDocumentPermissionRejected';
-export { SingleDocumentPermissionRevokeRequestedSchema } from './SingleDocumentPermissionRevokeRequested';
-export { SingleDocumentPermissionRevokedSchema } from './SingleDocumentPermissionRevoked';
-export { SingleDocumentPermissionRevokingInProgressSchema } from './SingleDocumentPermissionRevokingInProgress';
-export { SingleDocumentPermissionSetSchema } from './SingleDocumentPermissionSet';
-export { SingleDocumentPermissionValidatedSchema } from './SingleDocumentPermissionValidated';
-export { StartWorkerSessionRequestedSchema } from './StartWorkerSessionRequested';
 export { SubscribeToSessionRequestedSchema } from './SubscribeToSessionRequested';
 export { SubscriptionToSessionFailedSchema } from './SubscriptionToSessionFailed';
 export { SubscriptionToSessionInitiatedSchema } from './SubscriptionToSessionInitiated';
 export { SubscriptionToSessionRevokedSchema } from './SubscriptionToSessionRevoked';
 export { SubscriptionUpdateSchema } from './SubscriptionUpdate';
 export { TargetDocumentSessionStartedSchema } from './TargetDocumentSessionStarted';
-export { WorkerAgencyPermissionSchema } from './WorkerAgencyPermission';
-export { WorkerAgencyPermissionGrantSchema } from './WorkerAgencyPermissionGrant';
-export { WorkerAgencyPermissionGrantRequestedSchema } from './WorkerAgencyPermissionGrantRequested';
-export { WorkerAgencyPermissionGrantedSchema } from './WorkerAgencyPermissionGranted';
-export { WorkerAgencyPermissionGrantingInProgressSchema } from './WorkerAgencyPermissionGrantingInProgress';
-export { WorkerAgencyPermissionInvalidSchema } from './WorkerAgencyPermissionInvalid';
-export { WorkerAgencyPermissionRejectedSchema } from './WorkerAgencyPermissionRejected';
-export { WorkerAgencyPermissionRevokeRequestedSchema } from './WorkerAgencyPermissionRevokeRequested';
-export { WorkerAgencyPermissionRevokedSchema } from './WorkerAgencyPermissionRevoked';
-export { WorkerAgencyPermissionRevokingInProgressSchema } from './WorkerAgencyPermissionRevokingInProgress';
-export { WorkerAgencyPermissionValidatedSchema } from './WorkerAgencyPermissionValidated';
-export { WorkerSessionStartingSchema } from './WorkerSessionStarting';
 
 export const schemas: Record<string, ZodTypeAny> = {
-  BmERQxQSUDw8vTBAR32U9XBcFGjdVfUfpfUhCm1xsxVV:
+  HEBuC9grhoHisjpjXHAgg2RZ494YHj4nKJWq7pQS6BxH:
     AddingParticipantRequestedSchema,
-  '8FUHrY9AzHbSvEMMPQn1H1ckFS94eL4LucpY5wXXCex2':
+  FoJDXJsUjhiDU8pVxF7TzxE3qh1EvLKyoHQG41WaTTGB:
     AddingParticipantRespondedSchema,
   '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc': AgentSchema,
-  '6HbWNKhkmhQMDxVww1mvQpvSy33G7anaeWPUohj3g1bC': AgentActorSchema,
-  Ff61TKzxLStjvfMksRNUBif2PRJGJM6XvmTqSf3M76wC: AllParticipantsReadySchema,
-  '8eyv5ogjHbTqUeaJKWHMenLs3MaCnpGSQkbPrCqvk2Ga':
-    AnchorAutomationTemplateSchema,
-  FaZorE1FNvj9ar6rxL8jHRNYQ6WYo4hERoE35v7A5DnL: BootstrapFailedSchema,
-  '9LGSHaRb9LsRx9DxMzj4LmSSWuUYQXNHEXupK4PJn2VR': CallOperationAcceptedSchema,
-  '9PH8Hi8uwuUXerpg4FY2cYUeytYuAnuU1SLT2KQsnuU8': CallOperationFailedSchema,
-  E4E5omD4zCzisFfJdF4iXrfe3RDAdNW4Kc5Fr5EQN4iV: CallOperationRequestedSchema,
-  Cm4GjXHCv2s4zEhfqd15xTX2PwvAYSBzvYFkqaxfGfyF: CallOperationRespondedSchema,
+  BiV8zZSESjpgVqjsEXNYuzk54PUZYp69UtQhxrxK3vYC: AllParticipantsReadySchema,
+  GiwuMm3gtbi79CVSUtHGZmpUnQma7EK6A17G9PRmh6jK: BootstrapFailedSchema,
+  GacCAN4FEa7u3e7Qmm9997PYHwHmkGDCnSdYEfAVcZxh: CallOperationAcceptedSchema,
+  FFXVAea2mRHoJq3PRdmz5cXG8eETqx4yr5KCbeTxhEqB: CallOperationFailedSchema,
+  '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo': CallOperationRequestedSchema,
+  AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c: CallOperationRespondedSchema,
   HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: DocumentAnchorSchema,
   '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF': DocumentAnchorsSchema,
-  '7A9voN4Bu8X7XhsvMT8ToP9Zdxj9Mnrp8MnfWfZCEwsq':
+  '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi':
     DocumentInitialSnapshotRequestedSchema,
-  '9gkE6ybqoLeFGySKvhWmAM9K6ARCWEeBoyEDY6jw8X3U':
+  '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2':
     DocumentInitialSnapshotResolvedSchema,
-  Bf61oBnvwND8vaGaNRPUN5jTahmej3G5NqBujgrttBgS:
+  '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred':
     DocumentInitialSnapshotUnresolvedSchema,
   CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh: DocumentLinkSchema,
   HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX: DocumentLinksSchema,
-  AXm2gfBJnCdfyMsHuLKSZGJXDuZSPct9uZrU44Pxfuh1: DocumentSessionBootstrapSchema,
+  '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB':
+    DocumentSessionBootstrapSchema,
   '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm': DocumentTypeLinkSchema,
-  B7HmEAQxcEvr6CPyXwPZGLVGYcddcaajrDKgt5eEubQa:
-    InformUserToInstallMyOSPackageSchema,
   '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP': LinkSchema,
-  '7MTCgNo4iWnxoVhqJytiApkZYmrDPRZWUeCBPtfhZJma':
-    LinkedDocumentsPermissionGrantRequestedSchema,
-  EjXvZmBzbpZeTnVzA7fkTqpi35ExPQoELBz3ws84DJAx:
-    LinkedDocumentsPermissionGrantToAccountSchema,
-  '74ATu9uWcuAAUjMQJ6VHWApVa4WuyqRwpBNm47VhKKWi':
-    LinkedDocumentsPermissionGrantToDocumentSchema,
-  '3BWjDhnmpr8KeWsbW2wQhMZbHpznEGGqtiWWncGD3g9C':
-    LinkedDocumentsPermissionGrantedSchema,
-  '68GzR4FMz8CpGnNA8hKsdjBmbachEn59NPGAjt16LUfe':
-    LinkedDocumentsPermissionGrantingInProgressSchema,
-  Cm9gL7QQ4CDhi18VKg5PfK11Xy6CLVJawoa88BTTy9ZU:
-    LinkedDocumentsPermissionInvalidSchema,
-  BfjJ2xceqvneBqEHLGS5bMXiYeaQgbRbgRzBfYR4KZAJ:
-    LinkedDocumentsPermissionRejectedSchema,
-  BKyVzxDr2rJp7weHvuzyrgSJ42ATwN3SizPchqu7QMVc:
-    LinkedDocumentsPermissionRevokeRequestedSchema,
-  '41sbnfmpH1CZV21HwtNZtJiDw7ojLX1Fnkw6rpR1yw3a':
-    LinkedDocumentsPermissionRevokedSchema,
-  D5W2KYUFW1EYvFnevH4wWBwpXJbkYwpuX8NAhujrKspP:
-    LinkedDocumentsPermissionRevokingInProgressSchema,
-  DsDibGYwridS8uYoUcwFbBHa49UFAA7MtLNboXrXudmn:
-    LinkedDocumentsPermissionSetSchema,
-  Gqf8h8GKR98kdptTXPABstPSc5ezuKGRsTQ8w1QDcSnQ:
-    LinkedDocumentsPermissionValidatedSchema,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
-  cjPVQ6sifei7ryEsdwVhsYgHRXiAWMvaoQvrRo6LYRY: MyOSAdminBaseSchema,
+  '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm': MyOSAdminActorSchema,
+  '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq': MyOSAdminBaseSchema,
   '6Fxxx58U6WKzA4WQPCLPmMMCCEb9QLFYdb8yMLZDVdXL': MyOSAgentSchema,
   C2Fyt8obT6QR8WWFCPF5G36VXZLwzaM1SLtMKKAp4pwd: MyOSAgentActorSchema,
   '2YzZXsXxQSeCKZ4Qrptrdrf9gy4Hwrfdvh8gpakpnDBL': MyOSAgentChannelSchema,
   BsNKTXtCKag31WrdujJg7PSqD4rWg9b57DqHPq14Tpn7: MyOSAgentEventSchema,
   '9aVaJJvfRrGjLZ55HbKbrd4AUgA9RmjEUCxtfCtqodM9': MyOSBalanceAccountSchema,
+  JA8Yi7KW2jjDqqExAbWbCCfZw2mu8Q7VXwEvMHVezusF:
+    MyOSDocumentBootstrapMandateSchema,
+  C7dtw8ZHpD93BBpL528WPq8W4xWvjnUisH9Ew8SQQ6fW:
+    MyOSDocumentOperationMandateSchema,
   '3FcyLzeWjTqmYYg1Tmqu2en4SKfYbCFn8Shf3gDxo9xK':
     MyOSDocumentSessionReferenceSchema,
-  FX9yvQWAiZMMwnUF1vY1HMumJNNg7ENP7ETxha1kvWkn: MyOSPackageSchema,
+  '8fSvEL47NFBSYEFSRNfDpx6qWXHr1T6bNfimrcZ1JR9w':
+    MyOSOperationCallRequestedSchema,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU':
     MyOSParticipantsOrchestrationSchema,
-  G6EVpoRpQQb6f93eZtJPqDRAK47D1RXvUAmbXvhpsL6Y: MyOSPrincipalActorSchema,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: MyOSSessionInteractionSchema,
   '8WDRmnnsa796qcz2VcYNiua5xdH8BFXbKq94NxUYviyE': MyOSSessionLinkSchema,
-  '9TnFznYnqWWjHhGzcKngTLfq1a2H4sVd5EM4vfek2ec5': MyOSTimelineSchema,
-  DwLMXCJcg3AL4GHW1SjraxoNDPpswXH6RHsx4fNDT6rg: MyOSTimelineChannelSchema,
-  '89jLhpA5iqiRuSLgvYKZirtczaxjwSXRkL9Q7GhxwPCu': MyOSTimelineEntrySchema,
+  V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp:
+    MyOSSessionSubscriptionEndedSchema,
+  '6fj4VDzQZwkBBPsYP4DGeSPbnHCQmX11PG3Vtk9pLRMF':
+    MyOSSessionSubscriptionFilterSchema,
+  '4zjwHNN6UDSevHfuz264WsyWNSsRc2bC25KpXU4d988B':
+    MyOSSessionSubscriptionMandateSchema,
+  '1mEVkutZ851ZTcXPnhC44vg9cgzZj31NfU99KvbYq98':
+    MyOSSessionSubscriptionRequestedSchema,
+  BGhd3kZMEMd8Yv8nqnqfLngaUEAn5WkbPjPsS6o3U7mg:
+    MyOSSessionSubscriptionStartedSchema,
+  EkNokZ4svfJ4Xhza5qNxm285pcRHXhZvA97KZKYf8cyb:
+    MyOSSessionSubscriptionUpdateSchema,
+  '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3': MyOSTimelineSchema,
+  FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH: MyOSTimelineChannelSchema,
   Cw952SXno2SWR9HL8EwUxWGeioRjxHjCd7G7uFAwC9kN: MyOSUserSchema,
-  '4Lix4AKXvBDvrwxw2htSdYFKxL4wugEQzqoSEYet5Dh1': MyOSWorkerAgencySchema,
   BDWxt7xTGsK2mZKinCxD4hENHUUfEtupZPtaYzwLmKJm: ParticipantSchema,
   AegvYi855FTYVE4WJ5pbUaF3LzNFsM71cpkwVbQ6yQYA: ParticipantActivatedSchema,
   ASa82RtPSXwdys7M5Xs5s3brTjYgJmQqJt2uyraQGrNA:
     ParticipantActivationStateSchema,
-  BswjhjkdTDksVCcc8ijoU2RWcPam7Rphcecc67HJjZRi: ParticipantResolvedSchema,
-  DHqXopSXGku6L9dZCavpWgPyza6XjFXGDisVumLMrNkw: PaymentInitiatedSchema,
-  theUsA9gT88zXXPPqnyeft1Zy77EAA9nD2t6YgfPSgF: PaymentInitiationAcceptedSchema,
-  '9HDoFXbw9nUMLFdm9XmaUpcji51rL7brWBU1aFdRyCZg':
-    PaymentInitiationRejectedSchema,
-  '27Ab9oZDYKH8d4aXMuSoesnnPjpFk2344PKmzbZNEMv1':
+  '3cujh2pNfS1bvc1L5eWhLaaeBepXjByWZ75XF5erArKU': ParticipantResolvedSchema,
+  '2B5GfyYAMpB2qa9AebDQCyorMi311v8bZLjXn6fsDPPw': PaymentInitiatedSchema,
+  GLKfKi29WiEb2Hq87Zj6hfJXXV6TpDXtGprdpNbk2dxq: PaymentInitiationAcceptedSchema,
+  FLozmcCXEUsKNT86fixLbrdy9Dy4yn7jn6eftQuHpK8B: PaymentInitiationRejectedSchema,
+  GDdBCk7v1URZXU6fpno5UhKkLZQzniaQ3of83Wr5yQVM:
     PaymentInitiationRequestedSchema,
-  '7ov2LtAu257ETtdWgw7aMTYHypK9yKnswb8MZH9QCSRG':
+  HKvJdxfZDY7agMAH8Z5pjhd4iB8mrTNRRhG1QEnEFRgd:
     PaymentTargetPreparationFailedSchema,
-  EQbhZiFJ15SPAP7VhdgX5YvfEgobZPuAUp6ddDoY3EBf:
+  '2WpHsa3QF9eZttnm7jb3k7t3CEbz7iJKYjCMS7h4Ps7Z':
     PaymentTargetPreparationRequestedSchema,
-  GhnaLupM1b6ns5AQh6HYCrfi22ZKd5GFFMPkrYM5q6b9: PaymentTargetPreparedSchema,
-  '6G8JLcJ9bT9VnThaxt4ZRDQYSrKiaYiByppnPiyhdNCW': PrincipalActorSchema,
-  '89DqHza36mvWnBgbqWi2ttccLd5LZBCbTDxjQyEwvAxf':
+  EZQPqDj5iDyHzM6DQE11Z2NwcPNSPx34v9SMyXsrwe6h: PaymentTargetPreparedSchema,
+  BeUkW9h7yKH5DBgzTjF52u4PwYu9J9EmLZ5WaYZWnZuB: PrincipalActorSchema,
+  BcSFAt3ZtG3CdpNzKUKBodvz9cux8kwtbNNNPrrhYSja:
     RemovingParticipantRequestedSchema,
-  FRgzcswtDMu4uMomhtDgrCnH94TGbTbaE5ur3zKZn6v7:
+  HV36fBXcdWce4WhfG6dxSZmtRMQoNaNLNpHgxc2PakuN:
     RemovingParticipantRespondedSchema,
   ACDXskXQ1cmM9uN8UCRKgH7fEHzqUW5XzyjKgsxgdujs: SearchContractSchema,
   '7WJnGdq3txEhXb6P2vXLAMUhPBCWQzHsz416cDfKGcUm': SessionEpochAdvancedSchema,
-  Gdq4pzoEH32VQWBS4SwzUenYvWZHodLYVxd48WLLyLXz:
-    SingleDocumentPermissionGrantRequestedSchema,
-  EMeTTNatzYw9VUFK1NuUnJgrLaeJK3QAqDPaEEjuH7s3:
-    SingleDocumentPermissionGrantRespondedSchema,
-  '9P4Wq4Yr2K95zEkDvX56SU2V7SnFMrrwwt3sZ46QAQxW':
-    SingleDocumentPermissionGrantToAccountSchema,
-  DuS8JXr8UZwXXkZwCk1eRS1d9UZyC5e8KXQNiv8h4vHd:
-    SingleDocumentPermissionGrantToDocumentSchema,
-  BhoidQSUZC9uh8KHbkVEU87DhWgDRjH1mcKdgksTfmmf:
-    SingleDocumentPermissionGrantedSchema,
-  Duis7QaVJkoKiQ5v9HEroE47AST1pi5zJGcVkgFiie8N:
-    SingleDocumentPermissionGrantingInProgressSchema,
-  '7BEbHgR3h4y9HDLvxnKSMyGZZqYnA8Jm2cFuTMjDuCJg':
-    SingleDocumentPermissionInvalidSchema,
-  '9Z1H8t76uK3ixSpEMkKqT2xwZxXSgjbgoJSxchFXtW1V':
-    SingleDocumentPermissionRejectedSchema,
-  '5Jtu4jN8svHxkJkkkZdDQLVzk6vjxE4Reo4VTw4rwrn9':
-    SingleDocumentPermissionRevokeRequestedSchema,
-  '7Crww1rpdmSRAN5qhyX7PCrsKRpeCKmhkdN7zvC7PUw':
-    SingleDocumentPermissionRevokedSchema,
-  EXVwAGdA1kyuAy3PzJPwGxQXeqocP9aLarWXrkTPivbZ:
-    SingleDocumentPermissionRevokingInProgressSchema,
-  '9L2spAU6UyAkHicQ4vEqeWWoaEEndi1iVdt8Vdbpi4Yq':
-    SingleDocumentPermissionSetSchema,
-  '6rJFGtfmUHZyspx5UNtUvSjNn89XqmBHzmMRiQHjhPX3':
-    SingleDocumentPermissionValidatedSchema,
-  FWgJ8eninbRZvg2SWY4VxbfpvZvRxseALoAvwTu9bqVr:
-    StartWorkerSessionRequestedSchema,
-  '26txGATfFsYPSqn4rBNz2PTooVYNz6v9wt6drM7aPzh1':
+  GjCreNEXcoBSwyXnWtXbtDMJdtm9nKo8MJeVpn3633WC:
     SubscribeToSessionRequestedSchema,
-  '7Gm8HH81u9FDLmDXQvfGYLZsbyKCcoaJsfwM8o4y2wws':
+  FqL1t69VjbKdAmffjxV5o1dAJooKyQ6vxdpsmbavFFia:
     SubscriptionToSessionFailedSchema,
-  D7h7D4D5yqrWfcw9xFLdu7T89jAox3WqTFxjojSewKbc:
+  FdzN1H5Qe7CRbcXVeqD7PfJJ5TH6cxgHd3FRcNjvRJzk:
     SubscriptionToSessionInitiatedSchema,
-  '6ewyxdBpb5oNdVSBkXZSDK6aUaAnzc2ad453V7vjXHu6':
+  BzThvgTJD2zLX2wLFToLFRgs5KUvw7x3shCsmyxJ54pP:
     SubscriptionToSessionRevokedSchema,
   '8afv356wxUZxou95jDEYEgp5dL6VmnpFmYUjx3aDuFXi': SubscriptionUpdateSchema,
-  '4RvVyoEwATa2dtpRRoXbnRLbizq2vqeeMQVmqUrCd8JN':
+  J9a8qD8javfYK6nRDq9YZRA8LDuzZzq7QS7DB73Pm4Lv:
     TargetDocumentSessionStartedSchema,
-  GjxBN2eRsYCbipBAFk2eRneiDSs5rWS7eUzZBpPHz2JH: WorkerAgencyPermissionSchema,
-  '3WVJvijwpp2paoRJHaLKJkaTmfWKaUrysfrFANkExCFH':
-    WorkerAgencyPermissionGrantSchema,
-  EZsC5otrFgURBbXJaGZ7Ngs1JoJfHnrGVhzfPkJ3Q9QB:
-    WorkerAgencyPermissionGrantRequestedSchema,
-  '2gARs6NQxJvmooDXL6dc7DPny9xthbGfJL32jr3Jm2Xw':
-    WorkerAgencyPermissionGrantedSchema,
-  GFWQTwkX47Ak8VtxuiqLmqKhPo417JnyE69jyEqKYseK:
-    WorkerAgencyPermissionGrantingInProgressSchema,
-  B1RnGH4azPberZAn1F3YrP5c2sGV939EpruSPBD2Kc1u:
-    WorkerAgencyPermissionInvalidSchema,
-  '8peU5ESm5XGhihLNdB59zsipFt6HsDQ9q4DpdNoQ1Q38':
-    WorkerAgencyPermissionRejectedSchema,
-  GeNaTohvYFC1xu9RLJS1buzqj1JpqyernRsvJiTiSTTY:
-    WorkerAgencyPermissionRevokeRequestedSchema,
-  X446Tm19S6csScutxaRp1Bo6gH3v3Vwq7nzHkWJg9ab:
-    WorkerAgencyPermissionRevokedSchema,
-  Aa41QanfXXraDaSAWXeh86RnktmonoaxMUajwNqcWabJ:
-    WorkerAgencyPermissionRevokingInProgressSchema,
-  J7ssmNEa6YpxrLFTqZfwgD4uiz3cSyNLNaC4WbnLEhj7:
-    WorkerAgencyPermissionValidatedSchema,
-  '9M6p6bQaBWNZYcfFccYwYQkS4QA31h3vkUEsJSVTPqdt': WorkerSessionStartingSchema,
 };

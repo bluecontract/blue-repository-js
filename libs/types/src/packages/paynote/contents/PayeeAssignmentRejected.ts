@@ -7,6 +7,6 @@ export const PayeeAssignmentRejected: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: 'AQqdPmtKmB5VNH4rEbeKcRxsVStTTbJhS4fVF8wiTZrk',
+    blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
   },
 };

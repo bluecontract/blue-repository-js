@@ -1,17 +1,16 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { EventSchema } from './Event';
+import { MessageSchema } from './Message';
 
 const zod = z as any;
 
 export const RequestSchema: any = withTypeBlueId(
   blueIds['Coordination/Request']
 )(
-  EventSchema.extend({
+  MessageSchema.extend({
     description: zod.string().optional(),
     name: zod.string().optional(),
-    requestId: zod.string().optional(),
   })
 );
 

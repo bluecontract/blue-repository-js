@@ -1,22 +1,18 @@
 export const ChatMessage: Record<string, unknown> = {
   description:
-    'Human-readable coordination event. Chat Message records text intended for participants or auditors when no more\nspecific machine-actionable event type is required.\n\nThe `message` text is identity-bearing exactly as authored. If the message is stored in a Timeline Entry, actor,\nsource, timestamp, and provider completeness belong to the enclosing Timeline Entry. Use concrete operation or status\nevent types when workflow logic must react to structured fields rather than free text.\n',
+    'Free-text Message for humans. Chat Message records text intended for\nparticipants or auditors when no structured, machine-actionable Message type\nis required.\n\nAs a Coordination/Message it supports requestId, inResponseTo, threadId, and\nrecipientChannel. recipientChannel directs attention but does not make the\nMessage private. A Chat Message may comment on a Request but never fulfils it;\nonly a Coordination/Response answers a Request, and only concrete operation\ncontracts perform actions.\n',
   message: {
     description:
-      'Textual content of the message. Exact spelling, whitespace, and Unicode code points are part of the Blue value.\n',
+      'Textual content of the Message. Exact spelling, whitespace, and Unicode code\npoints are part of the Blue value.\n',
+    schema: {
+      required: true,
+    },
     type: {
       blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Chat Message',
-  replyTo: {
-    description:
-      'Optional timeline entry this chat message replies to or comments on. In concrete documents this may be represented\nby the full Timeline Entry object or by a BlueId reference to that entry.\n',
-    type: {
-      blueId: 'HtPs8QJAUfc25fKanzLFjAqjbbhyFjDErYxjKdTCwARV',
-    },
-  },
   type: {
-    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
+    blueId: '768MxgQEHnLSkedHWHtjj43mAjH361Zf6pKZgVxi5po3',
   },
 };
