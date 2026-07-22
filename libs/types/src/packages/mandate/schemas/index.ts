@@ -27,7 +27,7 @@ export const schemas: Record<string, ZodTypeAny> = {
   DgcgZoP3VEPpGGpUsFXHesdjA7yErSra447QaCkaRCgD: DocumentResponderMandateSchema,
   '47V2fyZMejS7LMCqJ66MvJ6v7VcmLL1zyxGQM44svV4H': MandateSchema,
   '3HtuEaYgkn8rV9xZf1x5uY2v7S9WXbVkcV3rj3Sy6arJ': MandateActivatedSchema,
-  Hus6vL2AqKcuG8YakBCoFknLig3Bbxgauir7wgKTrjzb: MandateAuthoritySchema,
+  AFmG8N66vjJCjfjpuvvowYeTpreb1GrdM8uHzEiDuWto: MandateAuthoritySchema,
   EbNsQWy645JPPuWhkDw3XcrQk1neH2Z8KBsTvUTCrrmk: MandateAuthorityConfirmedSchema,
   EcXZbNZ5BjMCBEwEaPExWjK6KLLrt3Aoxx5TNQiA5R1A: MandateTerminatedSchema,
   '333eCC8uWcMWgw8Ev2FfvZgJMUK9pw8LGUa1D1cYTSsQ': MandateValidationSchema,

@@ -2664,7 +2664,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
       },
     },
     type: {
-      blueId: '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt',
+      blueId: 'GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ',
     },
   },
   payNoteBootstrapRequest: {
@@ -2675,7 +2675,7 @@ export const PayNoteDelivery: Record<string, unknown> = {
       },
     },
     type: {
-      blueId: '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt',
+      blueId: 'GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ',
     },
   },
   transactionIdentificationStatus: {

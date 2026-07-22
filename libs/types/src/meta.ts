@@ -1,5 +1,5 @@
 export const name = 'Blue Repository' as const;
 export const repositoryVersions = [
-  '3iPVYhS7LbupV6295uDTMCkiLDEy2smZaJcFxS5vUXZT',
+  '6AA5VQDuC2EyvztDsto8hwmKqbhCkBGqDvDed6Avura8',
 ] as const;
 export default { name, repositoryVersions } as const;

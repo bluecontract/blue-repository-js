@@ -134,7 +134,7 @@ export const blueIds = {
   'PayNote/PayNote Cancelled': '29BnKeGGy1Z4ZQZk9tXccEtkjjjARP3xEw2sbxajtcn4',
   'PayNote/PayNote Client Decision Discarded':
     'FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE',
-  'PayNote/PayNote Delivery': 'DT1xSSmLNv2iJSYAUYSaLumD2JJH27WjWF6KRxa9zRW5',
+  'PayNote/PayNote Delivery': '9RAY5TFPvDLAei11QWyzSMGkp9HZtAjWVi3r2D7ocfrJ',
   'PayNote/PayNote Delivery Failed':
     'GJhhepPZcpJxJjNrFscPYJCaUQN8EgvXVZDobduzhSKy',
   'PayNote/PayNote Rejected': 'FJqmEa4mSV4FrJkeZn9KLbTZMBeULqaBkzEhceuoaLJG',

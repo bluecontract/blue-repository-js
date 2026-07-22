@@ -24,7 +24,7 @@ export const schemas: Record<string, ZodTypeAny> = {
   '9juepYbw4uwHiqDxcnjoJTn1Vv3TsDzPeSchpHUYRS3h': DocumentBootstrapFailedSchema,
   B6zgAWGB7543y6JcE2jjUKqLrVMEFWfu7NY7sLzfn8aR:
     DocumentBootstrapInProgressSchema,
-  '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt':
+  GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ:
     DocumentBootstrapRequestedSchema,
   HqeiZDQNRH4YUcB6ZLXUc4jdjEcVURhBAc3CsX5HGB7m: ParticipantMappingSchema,
 };

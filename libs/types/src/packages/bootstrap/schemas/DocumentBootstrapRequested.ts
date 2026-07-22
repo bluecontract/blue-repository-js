@@ -18,6 +18,7 @@ export const DocumentBootstrapRequestedSchema: any = withTypeBlueId(
     participantMappings: zod
       .array(zod.lazy(() => ParticipantMappingSchema))
       .optional(),
+    requesterChannel: zod.string().optional(),
   })
 );
 

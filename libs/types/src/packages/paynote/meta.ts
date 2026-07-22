@@ -806,13 +806,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    DT1xSSmLNv2iJSYAUYSaLumD2JJH27WjWF6KRxa9zRW5: {
+    '9RAY5TFPvDLAei11QWyzSMGkp9HZtAjWVi3r2D7ocfrJ': {
       status: 'dev',
       name: 'PayNote Delivery',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'DT1xSSmLNv2iJSYAUYSaLumD2JJH27WjWF6KRxa9zRW5',
+          typeBlueId: '9RAY5TFPvDLAei11QWyzSMGkp9HZtAjWVi3r2D7ocfrJ',
           attributesAdded: [],
         },
       ],

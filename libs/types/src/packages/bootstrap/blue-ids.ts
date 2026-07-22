@@ -10,7 +10,7 @@ export const blueIds = {
   'Bootstrap/Document Bootstrap In Progress':
     'B6zgAWGB7543y6JcE2jjUKqLrVMEFWfu7NY7sLzfn8aR',
   'Bootstrap/Document Bootstrap Requested':
-    '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt',
+    'GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ',
   'Bootstrap/Participant Mapping':
     'HqeiZDQNRH4YUcB6ZLXUc4jdjEcVURhBAc3CsX5HGB7m',
 } as const;

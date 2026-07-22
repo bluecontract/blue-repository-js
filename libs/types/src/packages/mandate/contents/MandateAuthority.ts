@@ -16,9 +16,6 @@ export const MandateAuthority: Record<string, unknown> = {
     schema: {
       required: true,
     },
-    type: {
-      blueId: '47V2fyZMejS7LMCqJ66MvJ6v7VcmLL1zyxGQM44svV4H',
-    },
   },
   name: 'Mandate Authority',
   type: {

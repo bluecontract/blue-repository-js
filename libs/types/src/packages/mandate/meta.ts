@@ -36,13 +36,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    Hus6vL2AqKcuG8YakBCoFknLig3Bbxgauir7wgKTrjzb: {
+    AFmG8N66vjJCjfjpuvvowYeTpreb1GrdM8uHzEiDuWto: {
       status: 'stable',
       name: 'Mandate Authority',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: 'Hus6vL2AqKcuG8YakBCoFknLig3Bbxgauir7wgKTrjzb',
+          typeBlueId: 'AFmG8N66vjJCjfjpuvvowYeTpreb1GrdM8uHzEiDuWto',
           attributesAdded: [],
         },
       ],

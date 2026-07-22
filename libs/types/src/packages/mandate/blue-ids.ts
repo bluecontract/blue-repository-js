@@ -3,7 +3,7 @@ export const blueIds = {
     'DgcgZoP3VEPpGGpUsFXHesdjA7yErSra447QaCkaRCgD',
   'Mandate/Mandate': '47V2fyZMejS7LMCqJ66MvJ6v7VcmLL1zyxGQM44svV4H',
   'Mandate/Mandate Activated': '3HtuEaYgkn8rV9xZf1x5uY2v7S9WXbVkcV3rj3Sy6arJ',
-  'Mandate/Mandate Authority': 'Hus6vL2AqKcuG8YakBCoFknLig3Bbxgauir7wgKTrjzb',
+  'Mandate/Mandate Authority': 'AFmG8N66vjJCjfjpuvvowYeTpreb1GrdM8uHzEiDuWto',
   'Mandate/Mandate Authority Confirmed':
     'EbNsQWy645JPPuWhkDw3XcrQk1neH2Z8KBsTvUTCrrmk',
   'Mandate/Mandate Terminated': 'EcXZbNZ5BjMCBEwEaPExWjK6KLLrt3Aoxx5TNQiA5R1A',

@@ -320,7 +320,7 @@ export const schemas: Record<string, ZodTypeAny> = {
   '29BnKeGGy1Z4ZQZk9tXccEtkjjjARP3xEw2sbxajtcn4': PayNoteCancelledSchema,
   FR7p4QLk7jBBdXGzTwYN2KAeBx6gVGf9kTyF4pn45wLE:
     PayNoteClientDecisionDiscardedSchema,
-  DT1xSSmLNv2iJSYAUYSaLumD2JJH27WjWF6KRxa9zRW5: PayNoteDeliverySchema,
+  '9RAY5TFPvDLAei11QWyzSMGkp9HZtAjWVi3r2D7ocfrJ': PayNoteDeliverySchema,
   GJhhepPZcpJxJjNrFscPYJCaUQN8EgvXVZDobduzhSKy: PayNoteDeliveryFailedSchema,
   FJqmEa4mSV4FrJkeZn9KLbTZMBeULqaBkzEhceuoaLJG: PayNoteRejectedSchema,
   '7jrHNe8HAs3LiLz5hmTZsAHCNwEaVNXQHf5ZomHVyVZC': PayNoteRejectedByClientSchema,

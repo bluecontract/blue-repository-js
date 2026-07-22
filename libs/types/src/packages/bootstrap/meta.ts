@@ -58,13 +58,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt': {
+    GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ: {
       status: 'stable',
       name: 'Document Bootstrap Requested',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '2a67bWEnUUaHNFM8MDaAKRCLnKQZKMcuifjT4mxAEnGt',
+          typeBlueId: 'GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ',
           attributesAdded: [],
         },
       ],
