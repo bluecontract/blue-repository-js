@@ -102,28 +102,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: {
-      status: 'stable',
-      name: 'Document Anchor',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF': {
-      status: 'stable',
-      name: 'Document Anchors',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF',
-          attributesAdded: [],
-        },
-      ],
-    },
     '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi': {
       status: 'stable',
       name: 'Document Initial Snapshot Requested',
@@ -157,28 +135,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh: {
-      status: 'stable',
-      name: 'Document Link',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh',
-          attributesAdded: [],
-        },
-      ],
-    },
-    HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX: {
-      status: 'stable',
-      name: 'Document Links',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX',
-          attributesAdded: [],
-        },
-      ],
-    },
     '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB': {
       status: 'stable',
       name: 'Document Session Bootstrap',
@@ -186,28 +142,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm': {
-      status: 'stable',
-      name: 'Document Type Link',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP': {
-      status: 'stable',
-      name: 'Link',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP',
           attributesAdded: [],
         },
       ],
@@ -362,17 +296,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         {
           repositoryVersionIndex: 0,
           typeBlueId: 'CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '8WDRmnnsa796qcz2VcYNiua5xdH8BFXbKq94NxUYviyE': {
-      status: 'stable',
-      name: 'MyOS Session Link',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '8WDRmnnsa796qcz2VcYNiua5xdH8BFXbKq94NxUYviyE',
           attributesAdded: [],
         },
       ],

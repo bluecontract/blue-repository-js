@@ -2,13 +2,11 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentSchema } from './Document';
-import { DocumentAnchorsSchema } from './DocumentAnchors';
 
 const zod = z as any;
 
 export const SpaceSchema: any = withTypeBlueId(blueIds['Common/Space'])(
   DocumentSchema.extend({
-    anchors: zod.lazy(() => DocumentAnchorsSchema).optional(),
     description: zod.string().optional(),
     name: zod.string().optional(),
     website: zod.string().optional(),

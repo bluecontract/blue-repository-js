@@ -8,16 +8,10 @@ import { CallOperationAcceptedSchema } from './CallOperationAccepted';
 import { CallOperationFailedSchema } from './CallOperationFailed';
 import { CallOperationRequestedSchema } from './CallOperationRequested';
 import { CallOperationRespondedSchema } from './CallOperationResponded';
-import { DocumentAnchorSchema } from './DocumentAnchor';
-import { DocumentAnchorsSchema } from './DocumentAnchors';
 import { DocumentInitialSnapshotRequestedSchema } from './DocumentInitialSnapshotRequested';
 import { DocumentInitialSnapshotResolvedSchema } from './DocumentInitialSnapshotResolved';
 import { DocumentInitialSnapshotUnresolvedSchema } from './DocumentInitialSnapshotUnresolved';
-import { DocumentLinkSchema } from './DocumentLink';
-import { DocumentLinksSchema } from './DocumentLinks';
 import { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
-import { DocumentTypeLinkSchema } from './DocumentTypeLink';
-import { LinkSchema } from './Link';
 import { LLMAgentSchema } from './LLMAgent';
 import { MyOSAdminActorSchema } from './MyOSAdminActor';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
@@ -32,7 +26,6 @@ import { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReferen
 import { MyOSOperationCallRequestedSchema } from './MyOSOperationCallRequested';
 import { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
 import { MyOSSessionInteractionSchema } from './MyOSSessionInteraction';
-import { MyOSSessionLinkSchema } from './MyOSSessionLink';
 import { MyOSSessionSubscriptionEndedSchema } from './MyOSSessionSubscriptionEnded';
 import { MyOSSessionSubscriptionFilterSchema } from './MyOSSessionSubscriptionFilter';
 import { MyOSSessionSubscriptionMandateSchema } from './MyOSSessionSubscriptionMandate';
@@ -74,16 +67,10 @@ export { CallOperationAcceptedSchema } from './CallOperationAccepted';
 export { CallOperationFailedSchema } from './CallOperationFailed';
 export { CallOperationRequestedSchema } from './CallOperationRequested';
 export { CallOperationRespondedSchema } from './CallOperationResponded';
-export { DocumentAnchorSchema } from './DocumentAnchor';
-export { DocumentAnchorsSchema } from './DocumentAnchors';
 export { DocumentInitialSnapshotRequestedSchema } from './DocumentInitialSnapshotRequested';
 export { DocumentInitialSnapshotResolvedSchema } from './DocumentInitialSnapshotResolved';
 export { DocumentInitialSnapshotUnresolvedSchema } from './DocumentInitialSnapshotUnresolved';
-export { DocumentLinkSchema } from './DocumentLink';
-export { DocumentLinksSchema } from './DocumentLinks';
 export { DocumentSessionBootstrapSchema } from './DocumentSessionBootstrap';
-export { DocumentTypeLinkSchema } from './DocumentTypeLink';
-export { LinkSchema } from './Link';
 export { LLMAgentSchema } from './LLMAgent';
 export { MyOSAdminActorSchema } from './MyOSAdminActor';
 export { MyOSAdminBaseSchema } from './MyOSAdminBase';
@@ -98,7 +85,6 @@ export { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReferen
 export { MyOSOperationCallRequestedSchema } from './MyOSOperationCallRequested';
 export { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
 export { MyOSSessionInteractionSchema } from './MyOSSessionInteraction';
-export { MyOSSessionLinkSchema } from './MyOSSessionLink';
 export { MyOSSessionSubscriptionEndedSchema } from './MyOSSessionSubscriptionEnded';
 export { MyOSSessionSubscriptionFilterSchema } from './MyOSSessionSubscriptionFilter';
 export { MyOSSessionSubscriptionMandateSchema } from './MyOSSessionSubscriptionMandate';
@@ -143,20 +129,14 @@ export const schemas: Record<string, ZodTypeAny> = {
   FFXVAea2mRHoJq3PRdmz5cXG8eETqx4yr5KCbeTxhEqB: CallOperationFailedSchema,
   '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo': CallOperationRequestedSchema,
   AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c: CallOperationRespondedSchema,
-  HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb: DocumentAnchorSchema,
-  '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF': DocumentAnchorsSchema,
   '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi':
     DocumentInitialSnapshotRequestedSchema,
   '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2':
     DocumentInitialSnapshotResolvedSchema,
   '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred':
     DocumentInitialSnapshotUnresolvedSchema,
-  CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh: DocumentLinkSchema,
-  HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX: DocumentLinksSchema,
   '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB':
     DocumentSessionBootstrapSchema,
-  '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm': DocumentTypeLinkSchema,
-  '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP': LinkSchema,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
   '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm': MyOSAdminActorSchema,
   '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq': MyOSAdminBaseSchema,
@@ -176,7 +156,6 @@ export const schemas: Record<string, ZodTypeAny> = {
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU':
     MyOSParticipantsOrchestrationSchema,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: MyOSSessionInteractionSchema,
-  '8WDRmnnsa796qcz2VcYNiua5xdH8BFXbKq94NxUYviyE': MyOSSessionLinkSchema,
   V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp:
     MyOSSessionSubscriptionEndedSchema,
   '6fj4VDzQZwkBBPsYP4DGeSPbnHCQmX11PG3Vtk9pLRMF':

@@ -22,12 +22,17 @@ export const blueIds = {
     '6C9hES9r92QmbLEgtk4yrgz54abzs7B8jqEaMgSVJv7m',
   'Coordination/Customer Consent Revoked':
     'BffmfCSM6r3GgrQU9XK3Qaj83gw4H8rfa1N7gXuab1ma',
+  'Coordination/Document Anchor': '7PxEJAVDRqGFU2t6TFeqimEKfddFVGN1mAWTAsWmXix',
+  'Coordination/Document Anchors':
+    'HhGmdUeYu4H3B4pfgTNkwweuUqQ1bJ4YPNdcjC42K6bw',
   'Coordination/Document Bootstrap Completed':
     '7caaA9fZUxooF7LW4drW97DuoJpu5fyEZKyrQttLaBmQ',
   'Coordination/Document Bootstrap Failed':
     '2D7DDoEJge1j3G4oXGhGzTQ9CxePKxxxTYhdtee5r7SV',
   'Coordination/Document Bootstrap Responded':
     '8HdfdnkeL2v31q56qsN6bAwUHtBYK5VseaMQ3owdWtuF',
+  'Coordination/Document Link': '4QgVHSQv1pyJAmEQBpuXFSVN7qdavdMDmdZXpkboNsc5',
+  'Coordination/Document Links': '8cREvDqGAGADf9NkWvwhENWnTf5qRAGasS5ihktdXiNX',
   'Coordination/Document Request':
     '8SXKDBF7Gmzcn9BwH3GxwUJMBCm8P7QJmXNyJpyreNUF',
   'Coordination/Document Status':

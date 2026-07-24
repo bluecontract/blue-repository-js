@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/types",
-  "version": "2.0.0-rc.4",
+  "version": "2.0.0-rc.5",
   "type": "module",
   "sideEffects": false,
   "repository": {
@@ -132,6 +132,6 @@
   },
   "blueType": {
     "moduleName": "Blue Repository",
-    "moduleBlueId": "6AA5VQDuC2EyvztDsto8hwmKqbhCkBGqDvDed6Avura8"
+    "moduleBlueId": "FG4LidzBiMCyVt53aP8kJXjcZXZ97mVfnv7N92zueGzr"
   }
 }

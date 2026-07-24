@@ -1,11 +1,4 @@
 export const Space: Record<string, unknown> = {
-  anchors: {
-    description:
-      'Optional named connection points where matching documents can link in.',
-    type: {
-      blueId: '5UhQNW5kxq9QrAkjnajrGV7B4nN5Cun6puDNkqUyxF4e',
-    },
-  },
   description:
     'Broad document family for a long-lived place in some reality.\nUse it directly as the document `type` and express business meaning through\nthe top-level `kind`, such as `Online Shop`, `Legal Office`, or `Research Lab`.\n',
   name: 'Space',

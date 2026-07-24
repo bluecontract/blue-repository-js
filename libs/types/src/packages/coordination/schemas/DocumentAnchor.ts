@@ -5,7 +5,7 @@ import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 const zod = z as any;
 
 export const DocumentAnchorSchema: any = withTypeBlueId(
-  blueIds['Common/Document Anchor']
+  blueIds['Coordination/Document Anchor']
 )(
   zod.object({
     description: zod.string().optional(),

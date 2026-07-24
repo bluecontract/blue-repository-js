@@ -14,9 +14,13 @@ import { ComputeDefinitionSchema } from './ComputeDefinition';
 import { CustomerActionRequestedSchema } from './CustomerActionRequested';
 import { CustomerActionRespondedSchema } from './CustomerActionResponded';
 import { CustomerConsentRevokedSchema } from './CustomerConsentRevoked';
+import { DocumentAnchorSchema } from './DocumentAnchor';
+import { DocumentAnchorsSchema } from './DocumentAnchors';
 import { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 import { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 import { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
+import { DocumentLinkSchema } from './DocumentLink';
+import { DocumentLinksSchema } from './DocumentLinks';
 import { DocumentRequestSchema } from './DocumentRequest';
 import { DocumentStatusSchema } from './DocumentStatus';
 import { EventSchema } from './Event';
@@ -63,9 +67,13 @@ export { ComputeDefinitionSchema } from './ComputeDefinition';
 export { CustomerActionRequestedSchema } from './CustomerActionRequested';
 export { CustomerActionRespondedSchema } from './CustomerActionResponded';
 export { CustomerConsentRevokedSchema } from './CustomerConsentRevoked';
+export { DocumentAnchorSchema } from './DocumentAnchor';
+export { DocumentAnchorsSchema } from './DocumentAnchors';
 export { DocumentBootstrapCompletedSchema } from './DocumentBootstrapCompleted';
 export { DocumentBootstrapFailedSchema } from './DocumentBootstrapFailed';
 export { DocumentBootstrapRespondedSchema } from './DocumentBootstrapResponded';
+export { DocumentLinkSchema } from './DocumentLink';
+export { DocumentLinksSchema } from './DocumentLinks';
 export { DocumentRequestSchema } from './DocumentRequest';
 export { DocumentStatusSchema } from './DocumentStatus';
 export { EventSchema } from './Event';
@@ -113,11 +121,15 @@ export const schemas: Record<string, ZodTypeAny> = {
   FuGWQ4hVCRPRxhZopsnBN78Q1DhRTsjjvn4HPvunf4vz: CustomerActionRequestedSchema,
   '6C9hES9r92QmbLEgtk4yrgz54abzs7B8jqEaMgSVJv7m': CustomerActionRespondedSchema,
   BffmfCSM6r3GgrQU9XK3Qaj83gw4H8rfa1N7gXuab1ma: CustomerConsentRevokedSchema,
+  '7PxEJAVDRqGFU2t6TFeqimEKfddFVGN1mAWTAsWmXix': DocumentAnchorSchema,
+  HhGmdUeYu4H3B4pfgTNkwweuUqQ1bJ4YPNdcjC42K6bw: DocumentAnchorsSchema,
   '7caaA9fZUxooF7LW4drW97DuoJpu5fyEZKyrQttLaBmQ':
     DocumentBootstrapCompletedSchema,
   '2D7DDoEJge1j3G4oXGhGzTQ9CxePKxxxTYhdtee5r7SV': DocumentBootstrapFailedSchema,
   '8HdfdnkeL2v31q56qsN6bAwUHtBYK5VseaMQ3owdWtuF':
     DocumentBootstrapRespondedSchema,
+  '4QgVHSQv1pyJAmEQBpuXFSVN7qdavdMDmdZXpkboNsc5': DocumentLinkSchema,
+  '8cREvDqGAGADf9NkWvwhENWnTf5qRAGasS5ihktdXiNX': DocumentLinksSchema,
   '8SXKDBF7Gmzcn9BwH3GxwUJMBCm8P7QJmXNyJpyreNUF': DocumentRequestSchema,
   '9Q7nZyiFKJyzxH6c6EWHsHsqQ8arUYtyrAUgwv9paoxe': DocumentStatusSchema,
   ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5: EventSchema,

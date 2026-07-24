@@ -4,6 +4,7 @@ import { StatusFailed } from './StatusFailed';
 import { BrowserSession } from './BrowserSession';
 import { StatusChange } from './StatusChange';
 import { Compute } from './Compute';
+import { DocumentLink } from './DocumentLink';
 import { Response } from './Response';
 import { Authority } from './Authority';
 import { APICall } from './APICall';
@@ -15,6 +16,8 @@ import { CustomerActionResponded } from './CustomerActionResponded';
 import { Request } from './Request';
 import { Message } from './Message';
 import { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
+import { DocumentAnchor } from './DocumentAnchor';
+import { DocumentLinks } from './DocumentLinks';
 import { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
 import { StatusCompleted } from './StatusCompleted';
 import { DocumentRequest } from './DocumentRequest';
@@ -41,6 +44,7 @@ import { PurposeStatement } from './PurposeStatement';
 import { StatusInProgress } from './StatusInProgress';
 import { Actor } from './Actor';
 import { Timeline } from './Timeline';
+import { DocumentAnchors } from './DocumentAnchors';
 import { ComputeDefinition } from './ComputeDefinition';
 import { AgentActor } from './AgentActor';
 import { ActorPolicy } from './ActorPolicy';
@@ -53,6 +57,7 @@ export { StatusFailed } from './StatusFailed';
 export { BrowserSession } from './BrowserSession';
 export { StatusChange } from './StatusChange';
 export { Compute } from './Compute';
+export { DocumentLink } from './DocumentLink';
 export { Response } from './Response';
 export { Authority } from './Authority';
 export { APICall } from './APICall';
@@ -64,6 +69,8 @@ export { CustomerActionResponded } from './CustomerActionResponded';
 export { Request } from './Request';
 export { Message } from './Message';
 export { DocumentBootstrapCompleted } from './DocumentBootstrapCompleted';
+export { DocumentAnchor } from './DocumentAnchor';
+export { DocumentLinks } from './DocumentLinks';
 export { DocumentBootstrapResponded } from './DocumentBootstrapResponded';
 export { StatusCompleted } from './StatusCompleted';
 export { DocumentRequest } from './DocumentRequest';
@@ -90,6 +97,7 @@ export { PurposeStatement } from './PurposeStatement';
 export { StatusInProgress } from './StatusInProgress';
 export { Actor } from './Actor';
 export { Timeline } from './Timeline';
+export { DocumentAnchors } from './DocumentAnchors';
 export { ComputeDefinition } from './ComputeDefinition';
 export { AgentActor } from './AgentActor';
 export { ActorPolicy } from './ActorPolicy';
@@ -103,6 +111,7 @@ export const contents: Record<string, unknown> = {
   '3Po1wgu2yeXWQGMncYqhDFAd39MkqQR5JG8sJqntzmoX': BrowserSession,
   '3wCtHNjVZc4JKbbbvfctdMYLB5VjMNEePgWLMLSdFbdv': StatusChange,
   '4qGDz5yJxXc9dr8bsBE1B2Tg4AWuR4qHPU9H6T29m3KZ': Compute,
+  '4QgVHSQv1pyJAmEQBpuXFSVN7qdavdMDmdZXpkboNsc5': DocumentLink,
   '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH': Response,
   '5BrNKcZDq6q4UY1jQpjyeFjbTV6rxVKM9qNL5xzGMZRW': Authority,
   '5tLUE25DSPGgtQtYVTYYskg3Ppz1DQwLqXqyedHebWvT': APICall,
@@ -114,6 +123,8 @@ export const contents: Record<string, unknown> = {
   '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU': Request,
   '768MxgQEHnLSkedHWHtjj43mAjH361Zf6pKZgVxi5po3': Message,
   '7caaA9fZUxooF7LW4drW97DuoJpu5fyEZKyrQttLaBmQ': DocumentBootstrapCompleted,
+  '7PxEJAVDRqGFU2t6TFeqimEKfddFVGN1mAWTAsWmXix': DocumentAnchor,
+  '8cREvDqGAGADf9NkWvwhENWnTf5qRAGasS5ihktdXiNX': DocumentLinks,
   '8HdfdnkeL2v31q56qsN6bAwUHtBYK5VseaMQ3owdWtuF': DocumentBootstrapResponded,
   '8LNqtg237MFe1zKdG3eWftMXtFTgVtyvrxgZkHcXYkC1': StatusCompleted,
   '8SXKDBF7Gmzcn9BwH3GxwUJMBCm8P7QJmXNyJpyreNUF': DocumentRequest,
@@ -140,6 +151,7 @@ export const contents: Record<string, unknown> = {
   G5KJnJLaUCSvz4BaZAMNJAgxtfxssb64oWWJXsDW3Uoy: StatusInProgress,
   GnMntk3hLvHEsZTBE8Gk7ytPBexj6jhBJHdaxnJYhEQ7: Actor,
   HAMjp2wA76Jhz8EGBDbfo9cqVyAq3vwVN4baKJBpj8KF: Timeline,
+  HhGmdUeYu4H3B4pfgTNkwweuUqQ1bJ4YPNdcjC42K6bw: DocumentAnchors,
   HifMgFGBgsqstDFZ2kXeQ45LVKXQMP52fV8TqeN6Z1j3: ComputeDefinition,
   HooLPpmtC3Rf6jJ2eGGr4SyBbi2XYPzYBm4UpuzYke6D: AgentActor,
   JCidqCzkd1o5aWkkDTzj6niugkn7oWxFUnSHaya4GbEj: ActorPolicy,

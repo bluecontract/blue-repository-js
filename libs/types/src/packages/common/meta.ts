@@ -36,28 +36,6 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo: {
-      status: 'dev',
-      name: 'Document Anchor',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo',
-          attributesAdded: [],
-        },
-      ],
-    },
-    '5UhQNW5kxq9QrAkjnajrGV7B4nN5Cun6puDNkqUyxF4e': {
-      status: 'dev',
-      name: 'Document Anchors',
-      versions: [
-        {
-          repositoryVersionIndex: 0,
-          typeBlueId: '5UhQNW5kxq9QrAkjnajrGV7B4nN5Cun6puDNkqUyxF4e',
-          attributesAdded: [],
-        },
-      ],
-    },
     AJXU1CbY6HmjCknkWm1ng2pGvStRPzhs3jq4WWLVwWLK: {
       status: 'dev',
       name: 'Named Event',
@@ -146,13 +124,13 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    '9NWJbMy2sRh6KdLQGhQqFx6Ta8LZen5NMcdg2vqeG9yC': {
+    BFrCmuWJzm3RYrg3AD9L1YYKV3oun4MA9gL74mDQKF1j: {
       status: 'dev',
       name: 'Space',
       versions: [
         {
           repositoryVersionIndex: 0,
-          typeBlueId: '9NWJbMy2sRh6KdLQGhQqFx6Ta8LZen5NMcdg2vqeG9yC',
+          typeBlueId: 'BFrCmuWJzm3RYrg3AD9L1YYKV3oun4MA9gL74mDQKF1j',
           attributesAdded: [],
         },
       ],

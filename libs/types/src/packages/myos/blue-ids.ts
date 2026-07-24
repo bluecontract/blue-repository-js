@@ -13,20 +13,14 @@ export const blueIds = {
     '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo',
   'MyOS/Call Operation Responded':
     'AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c',
-  'MyOS/Document Anchor': 'HS9yo34TGEAM2LGcNbLh7XPN4goPRhqdGZQkiyh473Wb',
-  'MyOS/Document Anchors': '6LzxLRpgV6a2HEZ98LXXF55BsfsTE8ChXghCZGBSJYSF',
   'MyOS/Document Initial Snapshot Requested':
     '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi',
   'MyOS/Document Initial Snapshot Resolved':
     '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2',
   'MyOS/Document Initial Snapshot Unresolved':
     '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred',
-  'MyOS/Document Link': 'CfdjCV1cjPJCd5sBHLMzNUx3EtkgrmBekLxB5c9Qw1Qh',
-  'MyOS/Document Links': 'HrFwCVPZz2sNinVETY4mk2sLLziGQWejTU2eWjxcUuuX',
   'MyOS/Document Session Bootstrap':
     '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB',
-  'MyOS/Document Type Link': '5z86Uk79T94VasXdy6RSWjZqVUmiEfwGVWrkGc9ZooLm',
-  'MyOS/Link': '6EvULvymCkDo8S9SjWgvzB24sbqZotJo5opNqH7dNThP',
   'MyOS/LLM Agent': 'DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf',
   'MyOS/MyOS Admin Actor': '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm',
   'MyOS/MyOS Admin Base': '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq',
@@ -47,7 +41,6 @@ export const blueIds = {
     '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU',
   'MyOS/MyOS Session Interaction':
     'CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H',
-  'MyOS/MyOS Session Link': '8WDRmnnsa796qcz2VcYNiua5xdH8BFXbKq94NxUYviyE',
   'MyOS/MyOS Session Subscription Ended':
     'V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp',
   'MyOS/MyOS Session Subscription Filter':
