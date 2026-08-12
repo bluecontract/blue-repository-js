@@ -1,49 +1,49 @@
-import { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
-import { ChangeRequest } from './ChangeRequest';
-import { ProposedChangeInvalid } from './ProposedChangeInvalid';
 import { ProposeChangeOperation } from './ProposeChangeOperation';
-import { DocumentSection } from './DocumentSection';
-import { DocumentSectionChanges } from './DocumentSectionChanges';
-import { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
-import { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
-import { RejectChangeWorkflow } from './RejectChangeWorkflow';
-import { CustomerConsent } from './CustomerConsent';
-import { ChangeOperation } from './ChangeOperation';
+import { ProposedChangeInvalid } from './ProposedChangeInvalid';
 import { AcceptChangeOperation } from './AcceptChangeOperation';
-import { ContractsChangePolicy } from './ContractsChangePolicy';
+import { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 import { RejectChangeOperation } from './RejectChangeOperation';
+import { DocumentSectionChanges } from './DocumentSectionChanges';
+import { CustomerConsent } from './CustomerConsent';
+import { ChangeRequest } from './ChangeRequest';
 import { ChangeWorkflow } from './ChangeWorkflow';
+import { DocumentSection } from './DocumentSection';
+import { RejectChangeWorkflow } from './RejectChangeWorkflow';
+import { ChangeOperation } from './ChangeOperation';
+import { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
+import { ContractsChangePolicy } from './ContractsChangePolicy';
+import { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 
-export { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
-export { ChangeRequest } from './ChangeRequest';
-export { ProposedChangeInvalid } from './ProposedChangeInvalid';
 export { ProposeChangeOperation } from './ProposeChangeOperation';
-export { DocumentSection } from './DocumentSection';
-export { DocumentSectionChanges } from './DocumentSectionChanges';
-export { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
-export { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
-export { RejectChangeWorkflow } from './RejectChangeWorkflow';
-export { CustomerConsent } from './CustomerConsent';
-export { ChangeOperation } from './ChangeOperation';
+export { ProposedChangeInvalid } from './ProposedChangeInvalid';
 export { AcceptChangeOperation } from './AcceptChangeOperation';
-export { ContractsChangePolicy } from './ContractsChangePolicy';
+export { ProposeChangeWorkflow } from './ProposeChangeWorkflow';
 export { RejectChangeOperation } from './RejectChangeOperation';
+export { DocumentSectionChanges } from './DocumentSectionChanges';
+export { CustomerConsent } from './CustomerConsent';
+export { ChangeRequest } from './ChangeRequest';
 export { ChangeWorkflow } from './ChangeWorkflow';
+export { DocumentSection } from './DocumentSection';
+export { RejectChangeWorkflow } from './RejectChangeWorkflow';
+export { ChangeOperation } from './ChangeOperation';
+export { DocumentSectionChangeEntry } from './DocumentSectionChangeEntry';
+export { ContractsChangePolicy } from './ContractsChangePolicy';
+export { AcceptChangeWorkflow } from './AcceptChangeWorkflow';
 
 export const contents: Record<string, unknown> = {
-  '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX': DocumentSectionChangeEntry,
-  '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU': ChangeRequest,
+  '3xA8aEEJKHC8JwXgd4QuoUYm7H4vMpdRfgbpyvhJfctV': ProposeChangeOperation,
   '6jcAKEeVpGCPenpSnfwwamL2iTHBACRXPFQjEDU5pX1y': ProposedChangeInvalid,
-  '6KfyYR3LoTKJLsgPkmYkXacY7JMPvTjJUeqtJXXfVHMr': ProposeChangeOperation,
-  '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy': DocumentSection,
-  '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc': DocumentSectionChanges,
-  '8vYuJh8cJGWzYHFG5z42LCpx219obwXWc2Z9D1CJ5bJa': ProposeChangeWorkflow,
-  '9Ke8Cm7sbxbdezqTBsHYAgKqsncGSsF1MQPhT8Lh7R4a': AcceptChangeWorkflow,
-  '9pyaCAF3GguLmRNGwhVLhXNqpvPsTtLpSdEuZCPpvRoT': RejectChangeWorkflow,
-  A3ARRUeBEDuZMTs7SN62agmNKd41i1ZZDRtsGWDhuSro: CustomerConsent,
-  AKkQ1Sq3MRCEoDNv4FjEpx3Dn72DuM4DTVJNCJsSs1Ai: ChangeOperation,
-  AQiBjYvNGNupbn8GoAVjJD3GytsuktbfUJ8EXxm24uiX: AcceptChangeOperation,
-  CECcZ2xesYWUD4qZNFzDWYjWoMU6W55jEEoJHK8MWZct: ContractsChangePolicy,
-  J3eHxcp4f3sKC2zohWMWLo5AvWAi2DJiNBPkExd1EhvU: RejectChangeOperation,
-  J4N7XgGHAwMZJGJ4SkWuUHmTfKvsSHvSsbAduEsriARk: ChangeWorkflow,
+  '7Dv66Ymipyi4znKm3ek5wc1xVA4Qy5agxb3LjbMxKv6p': AcceptChangeOperation,
+  '7QnVMqUQguxM3MxNqRYX4sVX9DWJPY3TE1SEagW6z371': ProposeChangeWorkflow,
+  '9dhHG1LpwkNSRrds8zMZquTEy4DV8UFkRVJRF5H15QYV': RejectChangeOperation,
+  '9MfTNhMnFbd6VkhaLLLEyv1SxwBzj9iJjfUNQV2toU9S': DocumentSectionChanges,
+  ATWLhHxoNDLzACS5XaADJWW3iaMDj1pesogCsxdez55w: CustomerConsent,
+  AVuAYKsZEMLjY3XwmKMe1LPrVAEo6R6FepDjPqgndF7J: ChangeRequest,
+  BwQFZSEaqWCnoQcVBvho2A1ig9Dz7yAgZkN4zzizjL88: ChangeWorkflow,
+  CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa: DocumentSection,
+  CrDGdNaZbF1XLkM1XY88c5mcHgPENYKgRTFtav8rHRU5: RejectChangeWorkflow,
+  CuFVdF9x8vra93EdgSK9pPq4iGsyc4LZWNDpxMjSXHnT: ChangeOperation,
+  DN9VhzcZvGNtMz2K3qVBQrVeYssBUqbewt2Cxi6CXS3R: DocumentSectionChangeEntry,
+  F2z5kuhjRCwngkuZAxfWyYrZNMM9PeumHLmPqT222RKa: ContractsChangePolicy,
+  FcqWLnwxGzMFR6vo3GnhEUmgbh9eGLTPGytYWmhdGrwT: AcceptChangeWorkflow,
 };

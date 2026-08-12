@@ -7,19 +7,19 @@ export const CdmObservableAssetValuationDates: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
+      blueId: 'BSEHE4W4SiFBFxz2pZFUYLZkWbx5TpsRfxn2aVJSizYd',
     },
   },
   initialValuationDate: {
     description: 'Specifies the initial valuation dates of the underlyer.',
     type: {
-      blueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
+      blueId: 'BSEHE4W4SiFBFxz2pZFUYLZkWbx5TpsRfxn2aVJSizYd',
     },
   },
   interimValuationDate: {
     description: 'Specifies the interim valuation dates of the underlyer.',
     type: {
-      blueId: 'BZobD5YfuAeLKVVVDLWAMyVf4sWsCqN3MMAc39mMQMHx',
+      blueId: 'BSEHE4W4SiFBFxz2pZFUYLZkWbx5TpsRfxn2aVJSizYd',
     },
   },
   name: 'cdm/observable/asset/ValuationDates',

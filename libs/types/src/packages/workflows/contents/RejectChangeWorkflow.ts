@@ -193,6 +193,6 @@ export const RejectChangeWorkflow: Record<string, unknown> = {
     ],
   },
   type: {
-    blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+    blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
   },
 };

@@ -12,7 +12,7 @@ export const CdmEventCommonBillingInstruction: Record<string, unknown> = {
     description:
       'Instructions for creating the billing records contained within the invoice',
     itemType: {
-      blueId: 'DsCUffxSDY6GA5gzndifSLMQRghvnkjFraENE8pUUmzA',
+      blueId: '6BEYjg3hgMPAoG6R5b4noEX1cgoYGnB5hP5TyUvAea9c',
     },
     schema: {
       minItems: 1,
@@ -33,7 +33,7 @@ export const CdmEventCommonBillingInstruction: Record<string, unknown> = {
   billingSummary: {
     description: 'The billing summaries contained within the invoice',
     itemType: {
-      blueId: 'GzR7cbwzNiQXhjYVBoCoZjjS5gQuW2pqty2pX2zHCkJ7',
+      blueId: 'CYWyA3J6C6K1kYmq7XS3yn53zSDpjC9s1btA4kqasv99',
     },
     schema: {
       minItems: 0,
@@ -51,7 +51,7 @@ export const CdmEventCommonBillingInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
   sendingParty: {
@@ -60,7 +60,7 @@ export const CdmEventCommonBillingInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
 };

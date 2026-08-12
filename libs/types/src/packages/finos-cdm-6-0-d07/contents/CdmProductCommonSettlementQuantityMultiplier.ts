@@ -8,7 +8,7 @@ export const CdmProductCommonSettlementQuantityMultiplier: Record<
     description:
       'Multiplier specified as an FX-linked schedule, e.g. for a resetting cross-currency swap..',
     type: {
-      blueId: 'BRCQiBi9STYfKiP9KdPDPjoyi46W34fzykNMzGBP1YFT',
+      blueId: 'C8dYtpaC5sApKFHdfeTUgJGSS65ZpXVFkVQe4mhNjoUi',
     },
   },
   multiplierValue: {

@@ -3,7 +3,7 @@ export const CdmBaseStaticdataAssetCommonLoan: Record<string, unknown> = {
     description:
       "Specifies the borrower. There can be more than one borrower. It is meant to be used in the event that there is no Bloomberg Id or the Secured List isn't applicable.\n",
     itemType: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
     schema: {
       minItems: 0,
@@ -25,21 +25,21 @@ export const CdmBaseStaticdataAssetCommonLoan: Record<string, unknown> = {
     description:
       'If the Asset is listed, defines the public exchange of the listing.',
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   facilityType: {
     description:
       'Specifies the type of loan facility (letter of credit, revolving, ...).',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   identifier: {
     description:
       'Asset Identifiers are used to uniquely identify an Asset, using a specified Asset Identifier Type.',
     itemType: {
-      blueId: 'B4oXDUH9jELDatvZSw3oWXtJefJ4ixYawEjxBMqSerth',
+      blueId: '4oFH9vehkWBHWWKWKPEPwytqoRKUA6mcVgrG7P1XtKRy',
     },
     schema: {
       minItems: 1,
@@ -52,7 +52,7 @@ export const CdmBaseStaticdataAssetCommonLoan: Record<string, unknown> = {
     description:
       'Identifies the type of an instrument using an enumerated list.',
     type: {
-      blueId: 'EmkPx4XLJeffJqq9EbwZicZCxqAhVBpDz1vu6eP1oTYj',
+      blueId: '3tHNfJC2pEoNbjbkmKcBDiJFzKcUCcyi6jtqtPntYyFw',
     },
   },
   isExchangeListed: {
@@ -64,14 +64,14 @@ export const CdmBaseStaticdataAssetCommonLoan: Record<string, unknown> = {
   lien: {
     description: 'Specifies the seniority level of the lien.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/base/staticdata/asset/common/Loan',
   relatedExchange: {
     description: 'Provides the related Exchanges, if applicable.',
     itemType: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
     schema: {
       minItems: 0,
@@ -84,7 +84,7 @@ export const CdmBaseStaticdataAssetCommonLoan: Record<string, unknown> = {
     description:
       'Defines the taxonomy of an object by combining a taxonomy source (i.e. the rules to classify the object) and a value (i.e. the output of those rules on the object.\n',
     itemType: {
-      blueId: '9MYk7MRYjbMWPHe7v3WexZqePowTL8eRrW8TmNNEtzQJ',
+      blueId: 'GXDxn2HwbWwWg9AFSHwfSi4zZ32a3uVojNQmBN96DUvU',
     },
     schema: {
       minItems: 0,
@@ -97,7 +97,7 @@ export const CdmBaseStaticdataAssetCommonLoan: Record<string, unknown> = {
     description:
       'Denotes the loan tranche that is subject to the derivative transaction. It will typically be referenced as the Bloomberg tranche number. ISDA Standards Terms Supplement term: Bloomberg Tranche Number.\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
 };

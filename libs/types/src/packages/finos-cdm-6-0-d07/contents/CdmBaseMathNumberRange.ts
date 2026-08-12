@@ -5,14 +5,14 @@ export const CdmBaseMathNumberRange: Record<string, unknown> = {
     description:
       'The lower bound of a number range, e.g. greater than or equal to 5.',
     type: {
-      blueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
+      blueId: 'GNwk3nidjLwe1LhWBtBPRxoTtHf6cFhxWBE77ggP8XnL',
     },
   },
   name: 'cdm/base/math/NumberRange',
   upperBound: {
     description: 'The upper bound of a number range, e.g. less than 10.',
     type: {
-      blueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
+      blueId: 'GNwk3nidjLwe1LhWBtBPRxoTtHf6cFhxWBE77ggP8XnL',
     },
   },
 };

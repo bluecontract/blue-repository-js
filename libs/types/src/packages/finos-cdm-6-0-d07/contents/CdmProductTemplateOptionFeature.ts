@@ -3,13 +3,13 @@ export const CdmProductTemplateOptionFeature: Record<string, unknown> = {
     description:
       'Defines an option feature in which an average market observation price is determined on valuation and compared to the strike to determine a settlement amount.\n',
     type: {
-      blueId: 'G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ',
+      blueId: 'Dm6X9rfSBnx7WqRtQ4eeZ3yyCpGqTHJWsE6vycZx4yix',
     },
   },
   barrier: {
     description: 'Specifies a barrier feature.',
     type: {
-      blueId: 'BY44nAmZ3yv6hAhiK1EG57TXEZNquFC8QoiMLUBELm2h',
+      blueId: 'CKW4kL4HmFUwvVHYa1fL21kzW7ALWAXnaHrVK5vXB2iM',
     },
   },
   description:
@@ -17,7 +17,7 @@ export const CdmProductTemplateOptionFeature: Record<string, unknown> = {
   fxFeature: {
     description: 'Describes a quanto or composite FX feature.',
     itemType: {
-      blueId: 'HPRsaReKQuhsZQyFweRGJshuiWo9hd1r6CsmkM6iPQnN',
+      blueId: '4Evx6ctCQA9KW4zWZBuRVzGni9eknk1oQDCWfhxNfdg9',
     },
     schema: {
       minItems: 0,
@@ -29,7 +29,7 @@ export const CdmProductTemplateOptionFeature: Record<string, unknown> = {
   knock: {
     description: 'Specifies a knock in or knock out feature.',
     type: {
-      blueId: '6BETyPG5V4U1TUp5rVWo3V4V47SDx9g18ekbAAYhpp4U',
+      blueId: '6eo2sKjpFosGead5TWCzCjjLBBK8ZkYk3NbSdBGcVdbZ',
     },
   },
   name: 'cdm/product/template/OptionFeature',
@@ -37,13 +37,13 @@ export const CdmProductTemplateOptionFeature: Record<string, unknown> = {
     description:
       'Specifies the rules for pass-through payments from the underlier, such as dividends.',
     type: {
-      blueId: '48DkPx7UNHrRug36JutQfuqHBiEgcCS2XZiEbFZ4xi4q',
+      blueId: 'BwWFicbdS15kQQwDYWi4dL1uT4UxHHhJiXdfZWBPB6hN',
     },
   },
   strategyFeature: {
     description: 'Defines a simple strategy feature.',
     type: {
-      blueId: '8Y5hzBqBHEUiwLTnEj3w34yWp3pZ7s2RiBzE2Mi9or3v',
+      blueId: '5FY1FUfgFT4nN3Byvi6mYwPrpJ6JFpsc6yBQVo6V5tb7',
     },
   },
 };

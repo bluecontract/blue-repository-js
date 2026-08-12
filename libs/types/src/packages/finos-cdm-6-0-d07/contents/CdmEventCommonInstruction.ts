@@ -13,7 +13,7 @@ export const CdmEventCommonInstruction: Record<string, unknown> = {
     description:
       'Specifies the primitive instructions that will be used to call primitive event functions.',
     type: {
-      blueId: '4rKQaktx1a1F9syFBAjRr1n7f9GXbzP5HKPdysPZGByq#0',
+      blueId: '4CbQ8TBSptAuoovUmWPoYLPUFd5YV6vbnByMeq8La9rw#2',
     },
   },
 };

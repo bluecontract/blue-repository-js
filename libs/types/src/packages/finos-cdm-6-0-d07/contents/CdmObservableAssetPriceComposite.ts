@@ -5,7 +5,7 @@ export const CdmObservableAssetPriceComposite: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8G8JMx9Qw4DFmuzKHtJVfUGbY57zaKc4EsT77wyLek9y',
+      blueId: '5LqvSmiKbHfda3hZ4PJPNrsBm6612qKucN15UXbStsiT',
     },
   },
   baseValue: {
@@ -35,7 +35,7 @@ export const CdmObservableAssetPriceComposite: Record<string, unknown> = {
     description:
       'Optionally qualifies the type of operand: e.g. accrued or forward point.\n',
     type: {
-      blueId: 'AYFWVGAm6RijsVmJ8UzknPTSr57LT6zv3HLbBwiqWeQn',
+      blueId: '75kbaKDVKCSKNUayDkubSxWEMjUUwzCQPSenfWfx8759',
     },
   },
 };

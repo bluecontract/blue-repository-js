@@ -4,7 +4,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Avs2j3Cu7pPm5XZLVwYQ6SAEzUqvm8fnxQ3NWGaneps6',
+      blueId: '7UPnxHK4wYWk3KMFvNiHvopsrFb2gEBSXMECGqASDCUx',
     },
   },
   buyr: {
@@ -12,7 +12,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'D47eyKS7yewPVC5jUEbouYutWpSrDF1kdJ1AVrcHsRd4',
+      blueId: '7NrzAhcZZPnPXcaoc6TAeiuUhNdx9QZKbNvQfWchAQCB',
     },
   },
   exctgPrsn: {
@@ -20,7 +20,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Tu5nRRqGCYvPv1JfDkUiceaDiRxNSCT7gT7SQx2GA5Z',
+      blueId: 'GsFjgJeyUw3xGYZTzAumXXcEU35cAZADYbx3i5Q6fzgk',
     },
   },
   exctgPty: {
@@ -36,7 +36,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HvRvtYT6FnHr42G7nsiDHeXpPGgvFLtoazqsLEYL5gNa',
+      blueId: 'JCRd3L6QAeLwgrfv7kRuGENGPRuufeLKZyiMQuazeMvu',
     },
   },
   invstmtDcsnPrsn: {
@@ -44,7 +44,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '9aWzcazT96cuBgu8aeqXmWbGmtbVKjeBYG4ZKYcd3zCS',
+      blueId: 'BazXu8fcC4SMrJz3j6VVr8B7Pj1RHtvuaFFJEGd3VMvv',
     },
   },
   invstmtPtyInd: {
@@ -61,7 +61,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'ih2SVSx6Uk2K2w79prjoTJxTTBVLXjU1jfZWiKtWVz4',
+      blueId: 'BNxwkALCq9ohknAYwcTpQ6QqvS11NejB3JmHqoMzmtDj',
     },
   },
   sellr: {
@@ -69,7 +69,7 @@ export const CdmRegulationNew: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BYr7BukA73s6xgYtaFZi9nyu9YegpSmpt2B825iLKpBm',
+      blueId: 'ABLakfG2pApNYjvYZ9eGZqBvQpEMyXy1HNYsWfAHSgbP',
     },
   },
   submitgPty: {

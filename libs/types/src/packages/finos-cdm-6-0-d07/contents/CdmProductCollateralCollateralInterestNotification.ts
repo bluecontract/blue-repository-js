@@ -11,7 +11,7 @@ export const CdmProductCollateralCollateralInterestNotification: Record<
       required: true,
     },
     type: {
-      blueId: 'EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq',
+      blueId: '7SsDfFvRbfxrm8vS98NZ5Vq9nqD3CFNGWsLr6dc738LJ',
     },
   },
   notificationTime: {

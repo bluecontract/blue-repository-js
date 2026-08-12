@@ -7,7 +7,7 @@ export const CdmProductAssetDiscountingMethod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'EbjHFpZTcuFSaUzQnoeLBnQ5parZksPwCnkTUkahrgmy',
+      blueId: 'Fgbg9CjXPCyJzkq8LibUz6aJ3yy8haVrpghSF2DD3qZM',
     },
   },
   discountRate: {
@@ -21,7 +21,7 @@ export const CdmProductAssetDiscountingMethod: Record<string, unknown> = {
     description:
       'A discount day count fraction to be used in the calculation of a discounted amount.',
     type: {
-      blueId: '587iDHMkRt71kZVCzE5o3zXzWprHzypcRd91TYbQnSpE',
+      blueId: 'HQvDRU2HRkECU2uHD3Ej7VhhyWVYzBxPs79CZfFYccWc',
     },
   },
   name: 'cdm/product/asset/DiscountingMethod',

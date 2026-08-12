@@ -8,7 +8,7 @@ export const CdmProductAssetDividendPaymentDate: Record<string, unknown> = {
   },
   dividendDateReference: {
     type: {
-      blueId: '27h9XhtCRRX1w8W56vcSY2T14PTbGigcrhbRWGDy7fKe',
+      blueId: 'GatRzqKjCBWstCxdhn6u3zrtE3Kqm4CX1WiAzn3Wzgau',
     },
   },
   name: 'cdm/product/asset/DividendPaymentDate',

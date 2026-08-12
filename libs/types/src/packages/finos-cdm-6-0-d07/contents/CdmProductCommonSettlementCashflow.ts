@@ -3,7 +3,7 @@ export const CdmProductCommonSettlementCashflow: Record<string, unknown> = {
     description:
       'Represents the object that is subject to the transfer, it could be an asset or a reference.',
     type: {
-      blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
+      blueId: '8CTGmD55ifZ1AAAr4uYZHw9mUCiZ7foMLqYSEUbPVz3Q',
     },
   },
   cashflowType: {
@@ -13,7 +13,7 @@ export const CdmProductCommonSettlementCashflow: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GArm2fDK1vopaSHjgRguRRS1k6GiHBGUifjuhdbJEfg',
+      blueId: '8Rk9dMMLbwctvUy8uebWcQUmWJNuVMGzc3W5A22AC1Mq',
     },
   },
   description:
@@ -26,27 +26,27 @@ export const CdmProductCommonSettlementCashflow: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
   paymentDiscounting: {
     description:
       'FpML specifies the FpML PaymentDiscounting.model group for representing the discounting elements that can be associated with a payment.\n',
     type: {
-      blueId: '9dkTzBV6xqQ9LmULZCPBAZi5Afj3tZytwUtqXc1iccwt',
+      blueId: 'AenWDxTzeQmT3js78fHeb2TnPgcgjQAJhaMcrbiorVwL',
     },
   },
   quantity: {
     description:
       'Represents the amount of the asset to be transferred. The cashflow amount is always a positive number, as the cashflow direction is implied by the payer/receiver attribute.\n',
     type: {
-      blueId: 'BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd',
+      blueId: '6jhJaMEanZrm8mpgb8YxWqCNs2c2UY9AoQigsG7hoNgw',
     },
   },
   settlementDate: {
     description: 'Represents the date on which the transfer to due.',
     type: {
-      blueId: '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF',
+      blueId: 'EsGmKpSwEv5rrzVy75nUtg6sXKYHCmZRDzkGMYyQ7zhX',
     },
   },
 };

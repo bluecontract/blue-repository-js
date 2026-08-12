@@ -22,7 +22,7 @@ export const DocumentBootstrapRequested: Record<string, unknown> = {
     description:
       'Optional participant resolution input for target channels whose actors are not already defined by the target document.\n',
     itemType: {
-      blueId: 'HqeiZDQNRH4YUcB6ZLXUc4jdjEcVURhBAc3CsX5HGB7m',
+      blueId: '2bpoRUwLybnKnNhCfmE28HEfh4JMTPBdCRr93G31goFW',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',

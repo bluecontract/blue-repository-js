@@ -3,7 +3,7 @@ export const CdmProductAssetVarianceCapFloor: Record<string, unknown> = {
     description:
       'Conditions which bound variance. The contract specifies one or more boundary levels. These levels are expressed as prices for confirmation purposes Underlyer price must be equal to or higher than Lower Barrier is known as Up Conditional Swap Underlyer price must be equal to or lower than Upper Barrier is known as Down Conditional Swap Underlyer price must be equal to or higher than Lower Barrier and must be equal to or lower than Upper Barrier is known as Barrier Conditional Swap.\n',
     type: {
-      blueId: 'DCKZsuug7AQ1eNWGKNHVPELUTjey85wne3B6xqsewUYF',
+      blueId: 'Cr1TGHAfZcJdkMYtdGpBo9J7Deosvd6UcRPugzuDFvvE',
     },
   },
   name: 'cdm/product/asset/VarianceCapFloor',

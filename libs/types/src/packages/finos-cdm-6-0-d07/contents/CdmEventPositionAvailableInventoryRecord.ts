@@ -4,7 +4,7 @@ export const CdmEventPositionAvailableInventoryRecord: Record<string, unknown> =
       description:
         'The type of collateral can often be required when determining if the piece of availability being described is suitable for a party.\n',
       itemType: {
-        blueId: 'EE9ddWepUCVpA88PcNq8buPwyuFbJawoqrJwAAwpCjcx',
+        blueId: '8hWgiVw3Z4pR86PBv9214e4QhrokD1GQkXWEKYdrQ7Xe',
       },
       schema: {
         minItems: 0,
@@ -26,14 +26,14 @@ export const CdmEventPositionAvailableInventoryRecord: Record<string, unknown> =
       description:
         'Unique identifier for this record. This can be used to uniquely identify a specific piece of inventory.',
       type: {
-        blueId: 'HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU',
+        blueId: 'FkMWf1pd7YUm7zUWH64xW6YKJEWnWCzUoCiDxJWMWd2U',
       },
     },
     interestRate: {
       description:
         'An optional element which can be used to hold a rate associated to this piece of availability.',
       type: {
-        blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+        blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
       },
     },
     name: 'cdm/event/position/AvailableInventoryRecord',
@@ -41,7 +41,7 @@ export const CdmEventPositionAvailableInventoryRecord: Record<string, unknown> =
       description:
         'An individual security may be held by several agents. Including the party role at this level allows us to reference the party holding this specific item.\n',
       itemType: {
-        blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+        blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
       },
       schema: {
         minItems: 0,
@@ -53,13 +53,13 @@ export const CdmEventPositionAvailableInventoryRecord: Record<string, unknown> =
     quantity: {
       description: 'The quantity of the security',
       type: {
-        blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+        blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
       },
     },
     security: {
       description: 'The security details.',
       type: {
-        blueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
+        blueId: 'GRccc39hoCxirVd5AgYHyNZT6TtiBJj8USkFUA6nQcfG',
       },
     },
   };

@@ -9,7 +9,7 @@ export const CdmProductTemplateMandatoryEarlyTermination: Record<
       required: true,
     },
     type: {
-      blueId: 'FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau',
+      blueId: 'BmkE3R86Mi5VSgGXWARzCmJ1FbnwnZDnHtccZ6MSGnRQ',
     },
   },
   cashSettlement: {
@@ -19,7 +19,7 @@ export const CdmProductTemplateMandatoryEarlyTermination: Record<
       required: true,
     },
     type: {
-      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
+      blueId: 'BRJ2J4zKmK8CLQta8gGcSboyer9Sby49nV8HopjaFM7g',
     },
   },
   description:
@@ -28,7 +28,7 @@ export const CdmProductTemplateMandatoryEarlyTermination: Record<
     description:
       'The adjusted dates associated with a mandatory early termination provision. These dates have been adjusted for any applicable business day convention.\n',
     type: {
-      blueId: 'ENSK1BSQZtUz73JC51Ww2axF9BMWqhkBEE9AzutJiqoH',
+      blueId: 'Acs6ukfV3eCU91sJGg35wtJYCmsZtHywzXgw7C4nVMV7',
     },
   },
   mandatoryEarlyTerminationDate: {
@@ -38,7 +38,7 @@ export const CdmProductTemplateMandatoryEarlyTermination: Record<
       required: true,
     },
     type: {
-      blueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
+      blueId: 'J1kGTdAb67L1bPgvuKZ86jTR9UZJomnkgA6hcnVfnwfD',
     },
   },
   name: 'cdm/product/template/MandatoryEarlyTermination',

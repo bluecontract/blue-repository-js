@@ -15,14 +15,14 @@ export const CdmProductCommonScheduleStubPeriod: Record<string, unknown> = {
     description:
       'Specifies how the final stub amount is calculated. A single floating rate tenor different to that used for the regular part of the calculation periods schedule may be specified, or two floating tenors may be specified. If two floating rate tenors are specified then Linear Interpolation (in accordance with the 2000 ISDA Definitions, Section 8.3. Interpolation) is assumed to apply. Alternatively, an actual known stub rate or stub amount may be specified.\n',
     type: {
-      blueId: '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij',
+      blueId: '7o95hvMNSpwvnwgXCRfRWhLQqFrrHpTPRvLZf1ZzTXWx',
     },
   },
   initialStub: {
     description:
       'Specifies how the initial stub amount is calculated. A single floating rate tenor different to that used for the regular part of the calculation periods schedule may be specified, or two floating tenors may be specified. If two floating rate tenors are specified then Linear Interpolation (in accordance with the 2000 ISDA Definitions, Section 8.3. Interpolation) is assumed to apply. Alternatively, an actual known stub rate or stub amount may be specified.\n',
     type: {
-      blueId: '9f7SedHY7MLNrDKoAPQVcQd1y4QsJTXjSzv9xZELhYij',
+      blueId: '7o95hvMNSpwvnwgXCRfRWhLQqFrrHpTPRvLZf1ZzTXWx',
     },
   },
   name: 'cdm/product/common/schedule/StubPeriod',

@@ -9,7 +9,7 @@ export const CdmEventCommonBillingSummaryInstruction: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'AnFR5nwdiQukWW9YeZRmgTparyPvgRKghypvgvUWqU1c',
+        blueId: '5pVuoN3kB2p1FWPd8ss7zpA872YxL81sDYtL3SKEx1x8',
       },
     },
   };

@@ -16,7 +16,7 @@ export const CdmBaseMathRounding: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '53mxbAPQ46Wh3prwQvdFjRpUKwN5aa2yN3YLYMRZotEK',
+      blueId: 'H4FAiqzdtZUhJfTdaLDLQxZR4hvCAduUrJec1nziCJCX',
     },
   },
 };

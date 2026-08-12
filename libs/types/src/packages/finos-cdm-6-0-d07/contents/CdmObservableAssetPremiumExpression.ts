@@ -12,14 +12,14 @@ export const CdmObservableAssetPremiumExpression: Record<string, unknown> = {
   premiumType: {
     description: 'Forward start premium type',
     type: {
-      blueId: 'HsnQM55utMJ2MK1JFiAmmg7CVx7NSKY33Ecru99LtN2H',
+      blueId: '4zdvvQF8ECdQJmJAhhdb1sXDKkrYAj8LiTRb9uofvFnD',
     },
   },
   pricePerOption: {
     description:
       'The amount of premium to be paid expressed as a function of the number of options.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
 };

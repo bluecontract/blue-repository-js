@@ -3,7 +3,7 @@ export const CdmProductTemplatePortfolioReturnTerms: Record<string, unknown> = {
     description:
       'Return terms based upon the observed correlation between the components of the underlying basket.',
     type: {
-      blueId: 'EwvxCeweE6NzDi8idFivNwZ9joYB35RKBbzvwypsqnAR',
+      blueId: 'BMNQDcRPQNEEWkrvZpkzRanWfemGtKAjs6LMhRrJfFTv',
     },
   },
   description:
@@ -12,7 +12,7 @@ export const CdmProductTemplatePortfolioReturnTerms: Record<string, unknown> = {
     description:
       'Return terms based upon dividend payments associated to the underlier.',
     type: {
-      blueId: 'J8EZbmYAMd5iEdiJDjh3B8Pk6R4eAXrQdryNuThytk1B',
+      blueId: 'm8Bj1PPr1ayweQMJ1XTSJLFPwYpd3HcwBL9Qixvds1T',
     },
   },
   finalValuationPrice: {
@@ -62,13 +62,13 @@ export const CdmProductTemplatePortfolioReturnTerms: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
   priceReturnTerms: {
     description: "Return terms based upon the underlier's observed price.",
     type: {
-      blueId: 'JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv',
+      blueId: 'AoPSpWFPQFM3y5utQVWc87pnUqdSxGdfQopZXvv1hzoB',
     },
   },
   quantity: {
@@ -92,14 +92,14 @@ export const CdmProductTemplatePortfolioReturnTerms: Record<string, unknown> = {
     description:
       "Return terms based upon the observed variance of the underlier's price.",
     type: {
-      blueId: '7mdyTJMV5CfZFGwVGuYsu7jWpiqsAjBJWPPuvhpsR7Lu',
+      blueId: '2ueL7HMXMciBNmYPVL1oTvUu988fWWURLxwhzzyDCvUG',
     },
   },
   volatilityReturnTerms: {
     description:
       "Return terms based upon the observed volatility of the underlier's price.",
     type: {
-      blueId: '3BXRxsxyT6CgqYyNVM6wZNBwCaCAARu7VCvmQoCkn18s',
+      blueId: 'GZ44neabTiXqC9Y2cR2Z5qRSeXvWtVZTVMTzc8gFcNkM',
     },
   },
 };

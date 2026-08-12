@@ -38,7 +38,7 @@ export const CdmProductAssetFloatingrateFloatingAmountCalculationDetails: Record
       required: true,
     },
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   description:
@@ -47,7 +47,7 @@ export const CdmProductAssetFloatingrateFloatingAmountCalculationDetails: Record
     description:
       'The details of the floating rate setting.  (If it is a calculated rate, details of that calculation will be inside that.\n',
     type: {
-      blueId: 'FQsK7NhvbG8qLJfMS4tZVLVuJeB4Le9vPFtixb7kDC47',
+      blueId: 'EJonoYUoi7VKe4AowYFBKKL6ZCn4FmgqpsuFaGQDoGux',
     },
   },
   name: 'cdm/product/asset/floatingrate/FloatingAmountCalculationDetails',
@@ -55,7 +55,7 @@ export const CdmProductAssetFloatingrateFloatingAmountCalculationDetails: Record
     description:
       'Details fo the floating rate treatment after the rate is observed or calculated.  This will include details of things like multipliers, spreads, caps and floors, and the raw and treated rates.\n',
     type: {
-      blueId: 'J69Sz4Uv6ctiB4mjnSwqhxeCfdaxH8nDcKbss99wExLC',
+      blueId: 'F43xUs35uiAv2MqzAfnxeuEJZqrrCnvJVmnRhFJnqtRh',
     },
   },
   spreadExclusiveCalculatedAMount: {

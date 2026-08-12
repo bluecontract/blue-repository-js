@@ -3,7 +3,7 @@ export const CdmBaseDatetimeBusinessCenters: Record<string, unknown> = {
     description:
       'A code identifying one or several business day calendar location(s). The set of business day calendar locations are specified by the business day calendar location enumeration which is maintained by the FpML standard.\n',
     itemType: {
-      blueId: 'EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy',
+      blueId: '5kncd2YXvmwkRzZPfFr5Ji5fZfkk9WoNmLNAkjcvS9cD',
     },
     schema: {
       minItems: 0,
@@ -21,7 +21,7 @@ export const CdmBaseDatetimeBusinessCenters: Record<string, unknown> = {
   },
   commodityBusinessCalendar: {
     itemType: {
-      blueId: '8TYiPxS12nea35y6YR9jrThpiNyYMJgNPgJCd6hF3T1i',
+      blueId: 'HLumy3ihw3YkMVGzNShUKY7ZWZCb7A9yMvGDoaLMqboa',
     },
     schema: {
       minItems: 0,

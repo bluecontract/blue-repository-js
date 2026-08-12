@@ -11,7 +11,7 @@ export const CdmEventCommonCreditEvent: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '5fy8DQMQDgMbPNnMB9zmKJVXYJWdVuBKFNuYz87LZ6S9',
+      blueId: 'FFZsUQAJXY5cKNYpscUwkrsBEYy2tgseBex1wqNcaERv',
     },
   },
   description: 'Specifies the relevant data regarding a credit event.',
@@ -28,7 +28,7 @@ export const CdmEventCommonCreditEvent: Record<string, unknown> = {
   finalPrice: {
     description: 'The final price resulting from the auction.',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
   name: 'cdm/event/common/CreditEvent',
@@ -36,7 +36,7 @@ export const CdmEventCommonCreditEvent: Record<string, unknown> = {
     description:
       'A public information source, e.g. a particular newspaper or electronic news service, that may publish relevant information used in the determination of whether or not a credit event has occurred.\n',
     itemType: {
-      blueId: '4anwVBorXr81GoC4Wkf4trYWror3mSXbzukXdYgwmG7N',
+      blueId: 'HmhKdAbT2MRZUsE7sCtNxWo8eestifsJAK5KCzFN5bn2',
     },
     schema: {
       minItems: 0,
@@ -59,7 +59,7 @@ export const CdmEventCommonCreditEvent: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f',
+      blueId: 'Aogoj2sCUGRvYLZhVJNntPd3rKjX5XU82C9NYKGNG6EH',
     },
   },
 };

@@ -4,13 +4,13 @@ export const CdmProductTemplateKnock: Record<string, unknown> = {
   knockIn: {
     description: 'The knock in.',
     type: {
-      blueId: 'GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC',
+      blueId: '2Aq53zeNMUtF5mQZiVzTDwoK4oiRWSX755VA3RHg5Gkt',
     },
   },
   knockOut: {
     description: 'The knock out.',
     type: {
-      blueId: 'GT5JdpPhpfWRiqpWewnjoM2tbwvGnNZDGUV3MrHoQ3pC',
+      blueId: '2Aq53zeNMUtF5mQZiVzTDwoK4oiRWSX755VA3RHg5Gkt',
     },
   },
   name: 'cdm/product/template/Knock',

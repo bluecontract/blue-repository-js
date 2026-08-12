@@ -4,13 +4,13 @@ export const CdmProductAssetFieldWithMetaIndexAnnexSourceEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/product/asset/FieldWithMetaIndexAnnexSourceEnum',
   val: {
     type: {
-      blueId: '2Ma1dyndNGQoSoTdwyFuZ8bbJcqQ1FbMXQMSHeWyjoao',
+      blueId: 'F3k29JJCLX7teCPaakQrX4PgmG2afxCdxy3DSmHDYtEk',
     },
   },
 };

@@ -5,7 +5,7 @@ export const CdmProductTemplateCalendarSpread: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   name: 'cdm/product/template/CalendarSpread',

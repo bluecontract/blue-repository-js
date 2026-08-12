@@ -42,11 +42,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'EWJLkS8q4TE5NWDh4qpQZMcbgGWdiePNkbZMCtGYVRAN',
+          blueId: '5YLDihBUWvCz7kpaJgmhorvo7b5sdPv2AENZE7TQ7vSC',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     acceptPayNoteImpl: {
@@ -85,13 +85,13 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark PayNote Accepted',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
             event: {
               type: {
-                blueId: 'EWJLkS8q4TE5NWDh4qpQZMcbgGWdiePNkbZMCtGYVRAN',
+                blueId: '5YLDihBUWvCz7kpaJgmhorvo7b5sdPv2AENZE7TQ7vSC',
               },
             },
             name: 'Emit PayNote Accepted',
@@ -102,7 +102,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     cancelBeforeCompletion: {
@@ -114,11 +114,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'BVVMg23GQoEyUwPxQj1uif1cxc1PgMd6reAdfkt1k77',
+          blueId: '9TqRBQi3CZa6npdsjk1xZmx3Fx8rNu3mLGdKRsUpPxyp',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     cancelBeforeCompletionImpl: {
@@ -157,13 +157,13 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Cancelled Before Completion',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
             event: {
               type: {
-                blueId: 'BVVMg23GQoEyUwPxQj1uif1cxc1PgMd6reAdfkt1k77',
+                blueId: '9TqRBQi3CZa6npdsjk1xZmx3Fx8rNu3mLGdKRsUpPxyp',
               },
             },
             name: 'Emit Payment Cancelled Before Completion',
@@ -174,7 +174,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     completePayment: {
@@ -186,11 +186,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'HRPugeYyuAMpDR4rKoDeDbJpewtFGgAPpFtwyw1T6Row',
+          blueId: 'A6ju5jCNdPU83nB2EJ19VE2r3d1XPgWQygPcohuRzxMa',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     completePaymentImpl: {
@@ -293,7 +293,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'HRPugeYyuAMpDR4rKoDeDbJpewtFGgAPpFtwyw1T6Row',
+                      blueId: 'A6ju5jCNdPU83nB2EJ19VE2r3d1XPgWQygPcohuRzxMa',
                     },
                   },
                 },
@@ -332,7 +332,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     confirmPayeeAssignment: {
@@ -344,11 +344,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '79ZV4j1dHpE5nt9nGN141Pte8hDbKgsxSavm9RV9wu1U',
+          blueId: '2k1DzCTuqeUdyjxgw2zJRaK8JjVK9b6af5mVVp9ncKtS',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     confirmPayeeAssignmentImpl: {
@@ -671,7 +671,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     confirmTransactionDetailsUpdated: {
@@ -683,11 +683,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '5B6omzwwUauNNbarndynuCMyMCqZVu6ikTqnLocXZyWA',
+          blueId: '2PvRXbCWSaToP2BiFrEQHdTZ8W1F5TzNeCsK1rbhd4iE',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     confirmTransactionDetailsUpdatedImpl: {
@@ -1035,7 +1035,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     declineCancelBeforeCompletion: {
@@ -1047,11 +1047,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'AygrNas7s1Gvg5zb7X1dVrufVNrGvUxPU7qgQHJ9QLzQ',
+          blueId: '3D5EMr4Yu2pD4z1CSUsj7kKPa28NGq6BDwU8jhFufZir',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     declineCancelBeforeCompletionImpl: {
@@ -1090,7 +1090,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Payment Cancellation Declined',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1108,7 +1108,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'AygrNas7s1Gvg5zb7X1dVrufVNrGvUxPU7qgQHJ9QLzQ',
+                      blueId: '3D5EMr4Yu2pD4z1CSUsj7kKPa28NGq6BDwU8jhFufZir',
                     },
                   },
                 },
@@ -1147,7 +1147,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     declineCompletePayment: {
@@ -1159,11 +1159,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'HV1cMM1SfwUna62hDFcwaHwMgDN3QVVSVWWMqmr3Y4jx',
+          blueId: 'Zi87ggCGvyvyC6BkE6fGfRApCKSEWvwZBzq6kr66Gxz',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     declineCompletePaymentImpl: {
@@ -1202,7 +1202,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Payment Completion Declined',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1220,7 +1220,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'HV1cMM1SfwUna62hDFcwaHwMgDN3QVVSVWWMqmr3Y4jx',
+                      blueId: 'Zi87ggCGvyvyC6BkE6fGfRApCKSEWvwZBzq6kr66Gxz',
                     },
                   },
                 },
@@ -1259,7 +1259,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     declineReverseAfterCompletion: {
@@ -1271,11 +1271,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '3zqCf4fDYcC5ETzvGZA8Jasf1LXdujZTZyL88zL3EDSF',
+          blueId: 'HBT721eA6MjEL4s9T3ZkmTR3GtSAMQ4yYpXQRt1v4Huh',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     declineReverseAfterCompletionImpl: {
@@ -1314,7 +1314,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Payment Reversal Declined',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1332,7 +1332,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '3zqCf4fDYcC5ETzvGZA8Jasf1LXdujZTZyL88zL3EDSF',
+                      blueId: 'HBT721eA6MjEL4s9T3ZkmTR3GtSAMQ4yYpXQRt1v4Huh',
                     },
                   },
                 },
@@ -1371,7 +1371,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     declineSecureFunds: {
@@ -1383,11 +1383,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '8x9kLwfX9bJdvChLgQjwhPBCAMDZrmRJPMdaWsKKkbjN',
+          blueId: 'CBGbBbRr8BXEZeWeTHtNucALN7jcjHBsHgV8wCkqzgFg',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     declineSecureFundsImpl: {
@@ -1426,7 +1426,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Funds Securing Declined',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1444,7 +1444,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '8x9kLwfX9bJdvChLgQjwhPBCAMDZrmRJPMdaWsKKkbjN',
+                      blueId: 'CBGbBbRr8BXEZeWeTHtNucALN7jcjHBsHgV8wCkqzgFg',
                     },
                   },
                 },
@@ -1483,7 +1483,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failCancelBeforeCompletion: {
@@ -1495,11 +1495,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'HpeKXtecYHLk8Mm787Pof8hYgQ92SjRQzTDcUdFwrhZV',
+          blueId: 'FzLb75BhpSDKvmnvLRp5VHC7WxszSJWhDUeLYFsG7kyK',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failCancelBeforeCompletionImpl: {
@@ -1538,7 +1538,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Payment Cancellation Failed',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1556,7 +1556,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'HpeKXtecYHLk8Mm787Pof8hYgQ92SjRQzTDcUdFwrhZV',
+                      blueId: 'FzLb75BhpSDKvmnvLRp5VHC7WxszSJWhDUeLYFsG7kyK',
                     },
                   },
                 },
@@ -1595,7 +1595,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failCompletePayment: {
@@ -1607,11 +1607,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '7nzmwZ5GYggD81cgK9aTduPVhznB8ay1k128CZA4nvzt',
+          blueId: 'Ex5Js1G5Q28DiqxHpMkcnPg69efQZWJqUZmTy6Rkenit',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failCompletePaymentImpl: {
@@ -1650,7 +1650,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Payment Completion Failed',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1668,7 +1668,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '7nzmwZ5GYggD81cgK9aTduPVhznB8ay1k128CZA4nvzt',
+                      blueId: 'Ex5Js1G5Q28DiqxHpMkcnPg69efQZWJqUZmTy6Rkenit',
                     },
                   },
                 },
@@ -1707,7 +1707,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failPaymentCompletionLockChange: {
@@ -1719,11 +1719,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '7A765v3durX3otiybhEomfPAqtztUSt9Ywqef2dsyvLx',
+          blueId: 'AUyPeDTYbjKsLYHVka8VzsH6mPR3wDDunfCFgzuimFTD',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failPaymentCompletionLockChangeImpl: {
@@ -1750,7 +1750,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '7A765v3durX3otiybhEomfPAqtztUSt9Ywqef2dsyvLx',
+                      blueId: 'AUyPeDTYbjKsLYHVka8VzsH6mPR3wDDunfCFgzuimFTD',
                     },
                   },
                 },
@@ -1789,7 +1789,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failPaymentReversalLockChange: {
@@ -1801,11 +1801,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '9wsCVU7Pw5BzQhN8RYZXJhiwJAEfBzCkLEWURkJymKsy',
+          blueId: 'FRi3kr6DcW6i7R65yh9YCDhVcU6mCyf2JkEVDkBkZsFa',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failPaymentReversalLockChangeImpl: {
@@ -1832,7 +1832,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '9wsCVU7Pw5BzQhN8RYZXJhiwJAEfBzCkLEWURkJymKsy',
+                      blueId: 'FRi3kr6DcW6i7R65yh9YCDhVcU6mCyf2JkEVDkBkZsFa',
                     },
                   },
                 },
@@ -1871,7 +1871,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failReverseAfterCompletion: {
@@ -1883,11 +1883,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'HgRjnfFyp9156xXVSeXhzKWuZFQE4jVuL1WYD3Gbm98T',
+          blueId: 'GodTmBkeiAhmTYR9gCF4zMnYYauDz2SgUFhwHGCFXRXU',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failReverseAfterCompletionImpl: {
@@ -1926,7 +1926,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Payment Reversal Failed',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -1944,7 +1944,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'HgRjnfFyp9156xXVSeXhzKWuZFQE4jVuL1WYD3Gbm98T',
+                      blueId: 'GodTmBkeiAhmTYR9gCF4zMnYYauDz2SgUFhwHGCFXRXU',
                     },
                   },
                 },
@@ -1983,7 +1983,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failSecureFunds: {
@@ -1995,11 +1995,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '5X9UpCYn4uR6vidaBwpsng98RsVMXjnweXeVgGPXkzQi',
+          blueId: 'AcV3s6B6heDQVQEMEA4xgtRY3VUtUxqKSVuioBt2pFLp',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failSecureFundsImpl: {
@@ -2038,7 +2038,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Funds Securing Failed',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -2056,7 +2056,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '5X9UpCYn4uR6vidaBwpsng98RsVMXjnweXeVgGPXkzQi',
+                      blueId: 'AcV3s6B6heDQVQEMEA4xgtRY3VUtUxqKSVuioBt2pFLp',
                     },
                   },
                 },
@@ -2095,7 +2095,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failTransactionDetailsUpdate: {
@@ -2107,11 +2107,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'DDuuaogLyNgVHbSoJxxQcX5iZqWy6U9DAxjgtdzWRnWB',
+          blueId: 'CLStrVwhFuEXAd4aurmgiHZgBH6RwzmGrN4VTkMA8t4U',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failTransactionDetailsUpdateImpl: {
@@ -2138,7 +2138,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'DDuuaogLyNgVHbSoJxxQcX5iZqWy6U9DAxjgtdzWRnWB',
+                      blueId: 'CLStrVwhFuEXAd4aurmgiHZgBH6RwzmGrN4VTkMA8t4U',
                     },
                   },
                 },
@@ -2177,7 +2177,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failTransactionDetailsUpdateLockChange: {
@@ -2189,11 +2189,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '369jQqbKxUNXz4yZHMgeomhtQUbAByuCCXCcXKaUSun9',
+          blueId: 'FdqDUfAWCuXX76FATG65canUKGYJChbbzhUfnx3U87eH',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     failTransactionDetailsUpdateLockChangeImpl: {
@@ -2220,7 +2220,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '369jQqbKxUNXz4yZHMgeomhtQUbAByuCCXCcXKaUSun9',
+                      blueId: 'FdqDUfAWCuXX76FATG65canUKGYJChbbzhUfnx3U87eH',
                     },
                   },
                 },
@@ -2259,12 +2259,12 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     guarantorChannel: {
       type: {
-        blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
+        blueId: 'CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR',
       },
     },
     initialize: {
@@ -2727,17 +2727,17 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     initLifecycleChannel: {
       event: {
         type: {
-          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
+          blueId: 'Gck5z8qnbcUvJNkawzKPghj14dJBw8GxkC9mh6cL5e5C',
         },
       },
       type: {
-        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
+        blueId: '2ukJitzzDKQWHJ5EVUtn3t4FXieGmNA1NdwFSqG8qcfo',
       },
     },
     lockPaymentCompletion: {
@@ -2749,11 +2749,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'GiarUWCiPuTZ2g7YfosXP17bTi1cH1ZqkguGcYKNqUvY',
+          blueId: '5ay51sajCxDRM5w88w7vKqaFPQN2yqok2wMmFQynLLn',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     lockPaymentCompletionImpl: {
@@ -2792,7 +2792,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Enable Completion Lock',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -2810,7 +2810,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'GiarUWCiPuTZ2g7YfosXP17bTi1cH1ZqkguGcYKNqUvY',
+                      blueId: '5ay51sajCxDRM5w88w7vKqaFPQN2yqok2wMmFQynLLn',
                     },
                   },
                 },
@@ -2849,7 +2849,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     lockPaymentReversal: {
@@ -2861,11 +2861,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '6qKyexNfVD2WhQQ5FGuCoPGQF89SAigGgwyzbKXsPMRP',
+          blueId: '7HHy9Zt3Ma5w7HRFHJRLK87L2F3zZsC8rWYXjWjcuzS7',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     lockPaymentReversalImpl: {
@@ -2904,7 +2904,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Enable Reversal Lock',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -2922,7 +2922,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '6qKyexNfVD2WhQQ5FGuCoPGQF89SAigGgwyzbKXsPMRP',
+                      blueId: '7HHy9Zt3Ma5w7HRFHJRLK87L2F3zZsC8rWYXjWjcuzS7',
                     },
                   },
                 },
@@ -2961,7 +2961,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     lockTransactionDetailsUpdate: {
@@ -2973,11 +2973,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '44MphyKwNYqXzF8aS5WTmXZMQ4x35PViXyoy2Ks14G1Z',
+          blueId: '7eWohnCAiaeDM9w3Ta53HFzNfZ632TRi1QvEC4CWq5dp',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     lockTransactionDetailsUpdateImpl: {
@@ -3016,7 +3016,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Enable Transaction Details Update Lock',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -3034,7 +3034,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '44MphyKwNYqXzF8aS5WTmXZMQ4x35PViXyoy2Ks14G1Z',
+                      blueId: '7eWohnCAiaeDM9w3Ta53HFzNfZ632TRi1QvEC4CWq5dp',
                     },
                   },
                 },
@@ -3073,17 +3073,17 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     payeeChannel: {
       type: {
-        blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
+        blueId: 'CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR',
       },
     },
     payerChannel: {
       type: {
-        blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
+        blueId: 'CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR',
       },
     },
     recordTransactionInitiated: {
@@ -3095,11 +3095,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '7WG5MSrMMCeAEYwavUJ2eZQhYdYn2xZv5T8ZYoFyFA4Z',
+          blueId: '3u8MNZmeGVfDWPSDAy4YKrLvjGrKixetC82z5VCj5Nxh',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     recordTransactionInitiatedImpl: {
@@ -3540,7 +3540,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     recordTransactionInitiationFailed: {
@@ -3552,11 +3552,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '4RWHs3KE6EL4cyMHvhrxR7pm6wQcgW5wGefM5t7p8jn2',
+          blueId: 'GuqdDWWRhjXQaHEk45Gdfgia1m6Dp5FS3bEaYXCDe16y',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     recordTransactionInitiationFailedImpl: {
@@ -3595,7 +3595,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Mark Initiation Failed',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -3613,7 +3613,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '4RWHs3KE6EL4cyMHvhrxR7pm6wQcgW5wGefM5t7p8jn2',
+                      blueId: 'GuqdDWWRhjXQaHEk45Gdfgia1m6Dp5FS3bEaYXCDe16y',
                     },
                   },
                 },
@@ -3652,7 +3652,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     rejectFinalAmountResolution: {
@@ -3664,11 +3664,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '4rw9kwJRP7P5opfxz1AFAX3mp1wmPNf3qKBz1om9gr8A',
+          blueId: '9Een3TcB61qehAjz4NcDdPeBGztoq78JGH6KuhfYjhsZ',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     rejectFinalAmountResolutionImpl: {
@@ -3695,7 +3695,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '4rw9kwJRP7P5opfxz1AFAX3mp1wmPNf3qKBz1om9gr8A',
+                      blueId: '9Een3TcB61qehAjz4NcDdPeBGztoq78JGH6KuhfYjhsZ',
                     },
                   },
                 },
@@ -3734,7 +3734,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     rejectPayeeAssignment: {
@@ -3746,11 +3746,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'EHxam7uVrzwbyKVGmHk4QcnKtcPaeM7JzZiiURXj7M33',
+          blueId: 'B9jHNiJW5Dm5vBR3mM9LDSeaYLGw67pKvwMVrrnrLUxq',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     rejectPayeeAssignmentImpl: {
@@ -3777,7 +3777,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'EHxam7uVrzwbyKVGmHk4QcnKtcPaeM7JzZiiURXj7M33',
+                      blueId: 'B9jHNiJW5Dm5vBR3mM9LDSeaYLGw67pKvwMVrrnrLUxq',
                     },
                   },
                 },
@@ -3816,7 +3816,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     rejectPayNote: {
@@ -3828,11 +3828,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'FJqmEa4mSV4FrJkeZn9KLbTZMBeULqaBkzEhceuoaLJG',
+          blueId: 'CoL6y3nodmB6mpWixGtNSiNCSQKQn7tJXouUE5Q9aaF',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     rejectPayNoteImpl: {
@@ -3965,7 +3965,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     rejectTransactionDetailsUpdate: {
@@ -3977,11 +3977,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '3iWy5uSeaCr149THj4x9sAeb2AhTtkHFY9yCuqeV7LCT',
+          blueId: 'J6Eku9sEFgBuG19nxYTWzvdyM9fDbxf59waQj5hz712H',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     rejectTransactionDetailsUpdateImpl: {
@@ -4008,7 +4008,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '3iWy5uSeaCr149THj4x9sAeb2AhTtkHFY9yCuqeV7LCT',
+                      blueId: 'J6Eku9sEFgBuG19nxYTWzvdyM9fDbxf59waQj5hz712H',
                     },
                   },
                 },
@@ -4047,7 +4047,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     resolveFinalAmount: {
@@ -4059,11 +4059,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'CDwF6APqf9NVAn49dBfJsJVQU1gB4Ah2gbxs3T7DT3Fc',
+          blueId: '6LmhFAV7hQwAAS1GFeDkuy6ZPhuSAedBoREUDiTLbS8M',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     resolveFinalAmountImpl: {
@@ -4144,7 +4144,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'CDwF6APqf9NVAn49dBfJsJVQU1gB4Ah2gbxs3T7DT3Fc',
+                      blueId: '6LmhFAV7hQwAAS1GFeDkuy6ZPhuSAedBoREUDiTLbS8M',
                     },
                   },
                 },
@@ -4183,7 +4183,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     reverseAfterCompletion: {
@@ -4195,11 +4195,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '42iMsNHFY4jUTy1yhZeEeZu9XZL4ZJqReRe191f1KHXf',
+          blueId: 'J3JY5m2ZQL6nJpeT1fvWxpUb4iuLzrh19fSY1zzbWesE',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     reverseAfterCompletionImpl: {
@@ -4302,7 +4302,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '42iMsNHFY4jUTy1yhZeEeZu9XZL4ZJqReRe191f1KHXf',
+                      blueId: 'J3JY5m2ZQL6nJpeT1fvWxpUb4iuLzrh19fSY1zzbWesE',
                     },
                   },
                 },
@@ -4341,7 +4341,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     search: {
@@ -4354,7 +4354,7 @@ export const PayNote: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'ACDXskXQ1cmM9uN8UCRKgH7fEHzqUW5XzyjKgsxgdujs',
+        blueId: 'DcMLEejNRRoP2vSHW66fdCnCRgnpt2y1f35rFfYk5koj',
       },
     },
     secureFunds: {
@@ -4366,11 +4366,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '3wSieJf5cYTa6o9CMcYAFNmVRS1mJe9wMeQ8Jmo3Xp3i',
+          blueId: 'D4GFzYxsfR62ScEkmAAfM5EbRRvZWT3Sw6HjUjLLDugu',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     secureFundsImpl: {
@@ -4473,7 +4473,7 @@ export const PayNote: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: '3wSieJf5cYTa6o9CMcYAFNmVRS1mJe9wMeQ8Jmo3Xp3i',
+                      blueId: 'D4GFzYxsfR62ScEkmAAfM5EbRRvZWT3Sw6HjUjLLDugu',
                     },
                   },
                 },
@@ -4512,7 +4512,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     unlockPaymentCompletion: {
@@ -4524,11 +4524,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '4qyUrMxKg5b3zPiB3kBwwy4Yh9fgD4DSqGeLTXh57b7i',
+          blueId: '3CvQdp7L5VYsjdP9Wj4tjaobejkpv6VQCry4LoT2vMYw',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     unlockPaymentCompletionImpl: {
@@ -4567,7 +4567,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Disable Completion Lock',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -4576,7 +4576,7 @@ export const PayNote: Record<string, unknown> = {
                 {
                   $appendEvent: {
                     type: {
-                      blueId: '4qyUrMxKg5b3zPiB3kBwwy4Yh9fgD4DSqGeLTXh57b7i',
+                      blueId: '3CvQdp7L5VYsjdP9Wj4tjaobejkpv6VQCry4LoT2vMYw',
                     },
                     unlockedAt: {
                       $event: {
@@ -4624,7 +4624,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     unlockPaymentReversal: {
@@ -4636,11 +4636,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'FVjUChq6akLbAux94Gs4Sv2VQ1JtQWqy1WekMUTyNXuv',
+          blueId: '2FrLTP891JHVyWKycAy5DkXS1VwAd8piEvX1vZvng2WF',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     unlockPaymentReversalImpl: {
@@ -4679,7 +4679,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Disable Reversal Lock',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -4688,7 +4688,7 @@ export const PayNote: Record<string, unknown> = {
                 {
                   $appendEvent: {
                     type: {
-                      blueId: 'FVjUChq6akLbAux94Gs4Sv2VQ1JtQWqy1WekMUTyNXuv',
+                      blueId: '2FrLTP891JHVyWKycAy5DkXS1VwAd8piEvX1vZvng2WF',
                     },
                     unlockedAt: {
                       $event: {
@@ -4736,7 +4736,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     unlockTransactionDetailsUpdate: {
@@ -4748,11 +4748,11 @@ export const PayNote: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'ASnHnJCtcbdEsWa5wcbRpmoUBnw9yajf9vLpsovXyTXg',
+          blueId: '9Ly4TDBSioFwQGRYZjXFrYToUKYmFsK935PRcVTFwkqA',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     unlockTransactionDetailsUpdateImpl: {
@@ -4791,7 +4791,7 @@ export const PayNote: Record<string, unknown> = {
             },
             name: 'Disable Transaction Details Update Lock',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
           {
@@ -4800,7 +4800,7 @@ export const PayNote: Record<string, unknown> = {
                 {
                   $appendEvent: {
                     type: {
-                      blueId: 'ASnHnJCtcbdEsWa5wcbRpmoUBnw9yajf9vLpsovXyTXg',
+                      blueId: '9Ly4TDBSioFwQGRYZjXFrYToUKYmFsK935PRcVTFwkqA',
                     },
                     unlockedAt: {
                       $event: {
@@ -4848,7 +4848,7 @@ export const PayNote: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
   },

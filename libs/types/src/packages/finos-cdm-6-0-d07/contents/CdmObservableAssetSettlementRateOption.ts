@@ -6,7 +6,7 @@ export const CdmObservableAssetSettlementRateOption: Record<string, unknown> = {
     description:
       'An attribute defining the parameters to get a new quote when a settlement rate option is disrupted.',
     type: {
-      blueId: '7B7UekmPAs7VxgX8jAooMTn1cRUmS94ja5eiFSvuGp8L',
+      blueId: 'Ejzy8x4kUUXVeFecVHZeysJJ1Ee9MSw5S7sEmoUEycjd',
     },
   },
   settlementRateOption: {
@@ -16,7 +16,7 @@ export const CdmObservableAssetSettlementRateOption: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8iH51R45gmWCtNjqrR63GErLSs4TeUXk51R7D4ky3NDz',
+      blueId: '5zMhYAXcxtwbFXQeEYr3vWu78daHfMbFUrFgair7M7sf',
     },
   },
 };

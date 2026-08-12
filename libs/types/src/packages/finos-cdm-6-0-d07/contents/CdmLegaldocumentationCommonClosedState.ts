@@ -33,7 +33,7 @@ export const CdmLegaldocumentationCommonClosedState: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'H4Q9vZBMs955sVKjew3tU5xKipMXrqJNyTf7MDqQvRjH',
+      blueId: 'Ej15A6QYaEe5eF2iMzop6CYV6MmMRd15DeZz5n9SNtqn',
     },
   },
 };

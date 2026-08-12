@@ -25,7 +25,7 @@ export const CdmLegaldocumentationCommonUmbrellaAgreement: Record<
   parties: {
     description: 'Underlying principals to the umbrella agreement.',
     itemType: {
-      blueId: '8i9Ncryq3v4GEFNYHazXRPvCCHC9DGTnoSc9f9vqJXoN',
+      blueId: '5ESTwQnVdcqtNiRWFUqxCTGYZMgBH6ebZjLM2Rsqy2PA',
     },
     schema: {
       minItems: 0,

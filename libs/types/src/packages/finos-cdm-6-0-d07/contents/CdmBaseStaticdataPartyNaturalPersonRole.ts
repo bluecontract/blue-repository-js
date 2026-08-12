@@ -17,7 +17,7 @@ export const CdmBaseStaticdataPartyNaturalPersonRole: Record<string, unknown> =
       description:
         'FpML specifies a person role that is distinct from the party role.',
       itemType: {
-        blueId: '9rvLaroTfdZSpfMcA8dBg3zpJu9MmRcN4mqeMUJpWPZB',
+        blueId: 'HcZAF2MZ9WCaRxSvbnwNrsUbjiQfnvheFFUVuxRyVqQG',
       },
       schema: {
         minItems: 0,

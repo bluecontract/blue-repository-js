@@ -11,7 +11,7 @@ export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018: Record
       required: true,
     },
     type: {
-      blueId: '23fb9HBYcZQ8enTm83iVQjixyTrHqNc5G1ANtAbB1ixz',
+      blueId: '53mGNaWEbqDyzs1WnqizJcci5WSeG5YDV6e97svgRLve',
     },
   },
   linearInterpolationElection: {
@@ -21,7 +21,7 @@ export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018: Record
       required: true,
     },
     type: {
-      blueId: '69SohrhYgsRTiHcPmh9GwadYoxt1kJgmJ3e2nrCajFHt',
+      blueId: '3h1NHQxSYTh9JS13UUBSTJesbdm5xcKkz7jHUTjG4s6f',
     },
   },
   name: 'cdm/legaldocumentation/master/EquitySwapMasterConfirmation2018',
@@ -32,7 +32,7 @@ export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018: Record
       required: true,
     },
     type: {
-      blueId: 'JAFJ1wyCKHfmK69wvo8tXGepwZYTJ4o37xsdPgsDstzv',
+      blueId: 'AoPSpWFPQFM3y5utQVWc87pnUqdSxGdfQopZXvv1hzoB',
     },
   },
   settlementTerms: {
@@ -42,7 +42,7 @@ export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018: Record
       required: true,
     },
     type: {
-      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
+      blueId: 'BRJ2J4zKmK8CLQta8gGcSboyer9Sby49nV8HopjaFM7g',
     },
   },
   typeOfSwapElection: {
@@ -52,7 +52,7 @@ export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018: Record
       required: true,
     },
     type: {
-      blueId: 'EvqKp8C4TsU58D4ZoFC8ba55Fdq8Qeka9NmEAAuioCk3',
+      blueId: '3fgHuNXJoi7veV1sJapyuahexc4gzfBdPJ5JVBdUSiHn',
     },
   },
   valuationDates: {
@@ -62,7 +62,7 @@ export const CdmLegaldocumentationMasterEquitySwapMasterConfirmation2018: Record
       required: true,
     },
     type: {
-      blueId: 'UcvnGWBznJQMKxTqZfWEzoJ4bovdXYkn8PTxfrA9Kxt',
+      blueId: '52VT1GJKNMa3wBqNqgE8GhUTMvm8KG1p7teYbHA7oz8D',
     },
   },
 };

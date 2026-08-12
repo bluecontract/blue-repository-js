@@ -5,7 +5,7 @@ export const CdmProductTemplateManualExercise: Record<string, unknown> = {
     description:
       'Definition of the party to whom notice of exercise should be given.',
     type: {
-      blueId: 'JC1AzddnU2E4ioTzwsgW9ohgnrfpQQusp6hRq412YjUZ',
+      blueId: '87nUue1ru1iHhXaB5EjL62TAsMV9t3vSvVB3X7XvwPH6',
     },
   },
   fallbackExercise: {

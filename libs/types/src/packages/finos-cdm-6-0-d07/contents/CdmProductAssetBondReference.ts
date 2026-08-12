@@ -5,7 +5,7 @@ export const CdmProductAssetBondReference: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
+      blueId: 'GRccc39hoCxirVd5AgYHyNZT6TtiBJj8USkFUA6nQcfG',
     },
   },
   conditionPrecedentBond: {
@@ -22,7 +22,7 @@ export const CdmProductAssetBondReference: Record<string, unknown> = {
     description:
       'Specifies the coupon rate (expressed in percentage) of a fixed income security or convertible bond.',
     type: {
-      blueId: '9svusKr6LvCBhk7gV6JsbPAwwXWASiSTahN4JPrDC5rH',
+      blueId: 'EGYqbJxyubwqpMiSD4GyaqjF8JLLc2R5X7drZoPxyc1k',
     },
   },
   description:

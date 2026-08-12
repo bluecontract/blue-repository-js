@@ -1,17 +1,17 @@
 export const blueIds = {
   'Bootstrap/Document Bootstrap':
-    'DWzwDRu5bJn25PNwudPyXhvQzWgWZv1THiNUmPhxZsAe',
+    'BLRL88h4zXdTMctheFyCQG4gk4qsDSp5EPgirRRkvdmc',
   'Bootstrap/Document Bootstrap Completed':
-    'EogcjRxna7zSMip2wSg53fdRtQG8apJL6JqHeh1egh9f',
+    '7hkTA9xEpQixBzjN2M2Uei8K1h2MvmpVLqhau53Cksg5',
   'Bootstrap/Document Bootstrap Declined':
-    '4HrRcHN229bzcHXvGsEnbron77kYiFzTFEEHDWup1xRC',
+    'HAbdpL4jP3EqXPiHBXddTXcdjiMRnxbkE6YnWkvbCMRa',
   'Bootstrap/Document Bootstrap Failed':
-    '9juepYbw4uwHiqDxcnjoJTn1Vv3TsDzPeSchpHUYRS3h',
+    'gACn7Kx4MP1u1hNiw5YuwHC6TEcCTLzyygc4YYN7Xmp',
   'Bootstrap/Document Bootstrap In Progress':
-    'B6zgAWGB7543y6JcE2jjUKqLrVMEFWfu7NY7sLzfn8aR',
+    '3bhU39YjdqxCGhSW6LodoaP3nTfnYTAB8PY8NaHSLkbt',
   'Bootstrap/Document Bootstrap Requested':
-    'GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ',
+    'GT7kXB7fBv9bKxn8ZM99E4XUaHecnGpMGZ5NMsB4ekDq',
   'Bootstrap/Participant Mapping':
-    'HqeiZDQNRH4YUcB6ZLXUc4jdjEcVURhBAc3CsX5HGB7m',
+    '2bpoRUwLybnKnNhCfmE28HEfh4JMTPBdCRr93G31goFW',
 } as const;
 export default blueIds;

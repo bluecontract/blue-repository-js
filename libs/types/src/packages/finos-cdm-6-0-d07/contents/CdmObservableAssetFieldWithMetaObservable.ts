@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaObservable: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaObservable',
   val: {
     type: {
-      blueId: 'xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS',
+      blueId: 'DXTyjwoR6uArYEUFJyE6a94sYYNV39vXWVYB7iLGSdv2',
     },
   },
 };

@@ -14,27 +14,27 @@ export const CdmProductCollateralCollateralInterestParameters: Record<
   interestCalculationFrequency: {
     description: 'Represents how often and when interest is calculated.',
     type: {
-      blueId: 'DgNkH6r165bjLKnYWiVE6o2FPj5mEztGpd21mfsiyDXA',
+      blueId: '4F94gXYj4FFU12dFg6mKFxiAkiH6xjK8Fidg91K3kXaS',
     },
   },
   interestCalculationParameters: {
     description: 'Represents the basic interest calculation parameters.',
     type: {
-      blueId: 'ATaY9YDiFkKfTkbxTfZ7LyFzaz3P294UgpPFzLNMMNhE',
+      blueId: '47uMoNppS2Hcq6BdaKkWyCoHHwjZx6ZeqqbRY2cgCi4r',
     },
   },
   interestHandlingParameters: {
     description:
       'Represents the parameters describing how and when interest transfer occurs.',
     type: {
-      blueId: 'EcvzpLymGTG2HkooovYn4sPFjmSFWGF1uM1CeM6FfNgz',
+      blueId: 'Bjr7Yos67MUWjEZWrkWS2tEvEBnExqpWmM5cjKov61uA',
     },
   },
   marginType: {
     description:
       'Specifies the type of margin for which interest is being calculated, if the parameters are different depending on type of margin (initial or variation).\n',
     type: {
-      blueId: '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ',
+      blueId: 'Ce3ciQcLKDEJNBNLKJ7ZQ1woFjqogy7nsbLP99TxETXf',
     },
   },
   name: 'cdm/product/collateral/CollateralInterestParameters',
@@ -42,7 +42,7 @@ export const CdmProductCollateralCollateralInterestParameters: Record<
     description:
       'Represents the party to which these parameters apply (the applicable party).  In other words, if the parameters are different depending on which party is posting/holding the collateral, for which party to the Collateral Agreement (Party 1 or Party 2) that is posting the collateral do these parameters apply?\n',
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
 };

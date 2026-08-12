@@ -3,7 +3,7 @@ export const CdmEventWorkflowMessageInformation: Record<string, unknown> = {
     description:
       'A unique identifier (within the specified coding scheme) giving the details of some party to whom a copy of this message will be sent for reference.\n',
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 0,
@@ -20,21 +20,21 @@ export const CdmEventWorkflowMessageInformation: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/event/workflow/MessageInformation',
   sentBy: {
     description: 'The identifier for the originator of a message instance.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   sentTo: {
     description:
       'The identifier(s) for the recipient(s) of a message instance.',
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 0,

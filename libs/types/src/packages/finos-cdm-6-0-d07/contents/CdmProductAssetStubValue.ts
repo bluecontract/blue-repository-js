@@ -5,7 +5,7 @@ export const CdmProductAssetStubValue: Record<string, unknown> = {
     description:
       'The rates to be applied to the initial or final stub may be the linear interpolation of two different rates. While the majority of the time, the rate indices will be the same as that specified in the stream and only the tenor itself will be different, it is possible to specift two different rates. For example, a 2 month stub period may use the linear interpolation of a 1 month and 3 month rate. The different rates would be specified in this component. Note that a maximum of two rates can be specified. If a stub period uses the same floating rate index, including tenor, as the regular calculation periods then this should not be specified again within this component, i.e. the stub calculation period amount component may not need to be specified even if there is an initial or final stub period. If a stub period uses a different floating rate index compared to the regular calculation periods then this should be specified within this component. If specified here, they are likely to have id attributes, allowing them to be referenced from within the cashflows component.\n',
     itemType: {
-      blueId: '822rbnqRheYsGdSxwqfBNQRrUQGbug5bDb8Kdoz9UbSH',
+      blueId: '7Ar7uLMsDiNfpvm4LtRZkHR6az1xRTBTzfMFzELcZCm',
     },
     schema: {
       maxItems: 2,
@@ -20,7 +20,7 @@ export const CdmProductAssetStubValue: Record<string, unknown> = {
     description:
       'An actual amount to apply for the initial or final stub period may have been agreed between the two parties. If an actual stub amount has been agreed then it would be included in this component.\n',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   stubRate: {

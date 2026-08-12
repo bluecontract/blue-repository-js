@@ -5,7 +5,7 @@ export const CdmObservableAssetCalculatedrateFloatingRateCalculationParameters: 
   applicableBusinessDays: {
     description: 'the business days that are applicable for the calculation.',
     type: {
-      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
+      blueId: 'Ds5a9bChKossVgHEM7Z2TQTCxDXdB2SZhtM9v9Y3mYmM',
     },
   },
   calculationMethod: {
@@ -14,7 +14,7 @@ export const CdmObservableAssetCalculatedrateFloatingRateCalculationParameters: 
       required: true,
     },
     type: {
-      blueId: '5noQvmG1G1xXrG8SxnbN37mhXkXDttDg7VNkk4vHoTMt',
+      blueId: '5nzvsPPTcW6Z9XmpJANrceGgKQMN13pFVPJdTyttSKyV',
     },
   },
   description:
@@ -42,7 +42,7 @@ export const CdmObservableAssetCalculatedrateFloatingRateCalculationParameters: 
   observationShiftCalculation: {
     description: 'any obervation shift parameters if applicable.',
     type: {
-      blueId: '5qPopZ2RMbhbDtd5XmtdT1QCkFussYRLiFeUPqAWCd9a',
+      blueId: '3Bf8GdUj3MKXvh7oTmRmwbssYTyx1Pm6fSQtDQa5uffh',
     },
   },
 };

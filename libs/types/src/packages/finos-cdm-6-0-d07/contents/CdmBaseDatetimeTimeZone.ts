@@ -5,7 +5,7 @@ export const CdmBaseDatetimeTimeZone: Record<string, unknown> = {
     description:
       'FpML specifies the timezoneLocationScheme by reference to the Time Zone Database (a.k.a. tz database) maintained by IANA, the Internet Assigned Numbers Authority.\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/base/datetime/TimeZone',

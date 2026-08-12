@@ -26,7 +26,7 @@ export const CdmObservableEventRestructuring: Record<string, unknown> = {
   restructuringType: {
     description: 'Specifies the type of restructuring that is applicable.',
     type: {
-      blueId: 'vFG54w9Xw7FthPkNNnfst9e9Nf2BmRqjAGcxUSz7WPS',
+      blueId: 'LZSk27kzemAmjXyZjWpvsokiL5oP2wCXZ937ZUYTfkq',
     },
   },
 };

@@ -4,13 +4,13 @@ export const CdmBaseDatetimeDaycountFieldWithMetaDayCountFractionEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/datetime/daycount/FieldWithMetaDayCountFractionEnum',
   val: {
     type: {
-      blueId: 'G5reDMTj2A64oDwXZBaNeRgFEhAtZMkWvkJcte51qHiJ',
+      blueId: '7rLpateRXSy3RdPsPEUcip227zNh4gMbVPQ1GuqDksDz',
     },
   },
 };

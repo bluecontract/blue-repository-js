@@ -9,7 +9,7 @@ export const CdmLegaldocumentationCommonLegalAgreementIdentification: Record<
       required: true,
     },
     type: {
-      blueId: 'BU5zwrVyY7wwfteRD7Vdaj9pWLX2CSnscAydsqWAUXjk',
+      blueId: 'GtNBAyAynbg5ak9tonuCZjYhuWCYH91kN9bCBbHYAsop',
     },
   },
   description:
@@ -18,14 +18,14 @@ export const CdmLegaldocumentationCommonLegalAgreementIdentification: Record<
     description:
       'The law governing the legal agreement, e.g. English Law, New York Law or Japanese Law.',
     type: {
-      blueId: 'F6XBKSmZ9oSyV7jNgy8VWvvVG1HtjMoByYPxs4837cbw',
+      blueId: 'z6SZamzZPBf7wahsobLBrx2goNesh7LuekmBpFBheXp',
     },
   },
   name: 'cdm/legaldocumentation/common/LegalAgreementIdentification',
   publisher: {
     description: 'The legal agreement publisher, e.g. ISDA.',
     type: {
-      blueId: 'HGBC71V1WUat7dy4BrSGTr2RgCAN75RmLY4EUC3WmHtm',
+      blueId: '4YBVwfSaipgM53DLC5BrRsQhmUunG6XGS2FG5U4dPwUk',
     },
   },
   vintage: {

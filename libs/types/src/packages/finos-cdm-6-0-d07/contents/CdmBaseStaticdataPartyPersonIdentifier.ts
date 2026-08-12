@@ -3,7 +3,7 @@ export const CdmBaseStaticdataPartyPersonIdentifier: Record<string, unknown> = {
     description:
       'The ISO 3166 standard code for the country issuing the identifier.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   description:
@@ -15,13 +15,13 @@ export const CdmBaseStaticdataPartyPersonIdentifier: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   identifierType: {
     description: 'Defines the source of the identifier.',
     type: {
-      blueId: '2DvCCVBpSHMw3EiuFp3MYB9YQpwrSYx4jvwkNtoq3jx9',
+      blueId: 'BEj7NeQ1KmrSoRpwdQvBz69ovp9genXGJ6mpLGXYYwHz',
     },
   },
   name: 'cdm/base/staticdata/party/PersonIdentifier',

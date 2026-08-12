@@ -9,7 +9,7 @@ export const CdmObservableAssetFxRate: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Fh47tZBtYn2vAYUQFPhW9yfe2PQ2jNgj4jqnT8kVqWGm',
+      blueId: 'GwrNf8idhCx9xLjesA5nE33grEpWocsCaZCwMSDYrZNB',
     },
   },
   rate: {

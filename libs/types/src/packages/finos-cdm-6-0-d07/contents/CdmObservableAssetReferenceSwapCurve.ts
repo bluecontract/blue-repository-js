@@ -5,7 +5,7 @@ export const CdmObservableAssetReferenceSwapCurve: Record<string, unknown> = {
     description:
       'Amount to be paid by the buyer of the option if the option is exercised prior to the Early Call Date. (The market practice in the convertible bond option space being that the buyer should be penalised if he/she exercises the option early on.)\n',
     type: {
-      blueId: '9cFYfvN7xbbc43QhKiCviJrNrMQbUP3XZPyc3x2B7CFB',
+      blueId: '6N1AurVNznLiPSNtTZrotPgf8jAaq1J95ySoT4Zutx4a',
     },
   },
   name: 'cdm/observable/asset/ReferenceSwapCurve',
@@ -14,7 +14,7 @@ export const CdmObservableAssetReferenceSwapCurve: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'TuUaQmwiwbNnpZ2No6iRHWhHTr63186fYNv8REBGMWB',
+      blueId: '2JLGXcZi3fP9Ln588TvZV6ae9QJRPFiYEWwPpva9UREc',
     },
   },
 };

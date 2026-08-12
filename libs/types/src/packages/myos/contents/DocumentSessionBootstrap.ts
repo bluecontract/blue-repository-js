@@ -40,7 +40,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
       blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
+      blueId: 'CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR',
     },
   },
   contracts: {
@@ -168,7 +168,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     handleParticipantResolved: {
@@ -347,7 +347,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     handleStatusChange: {
@@ -415,7 +415,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     handleTargetDocumentSessionStarted: {
@@ -542,7 +542,7 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     initHandler: {
@@ -580,28 +580,28 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
             },
             name: 'Initialize Bootstrap Status',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     lifecycle: {
       event: {
         type: {
-          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
+          blueId: 'Gck5z8qnbcUvJNkawzKPghj14dJBw8GxkC9mh6cL5e5C',
         },
       },
       type: {
-        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
+        blueId: '2ukJitzzDKQWHJ5EVUtn3t4FXieGmNA1NdwFSqG8qcfo',
       },
     },
     triggeredEventsChannel: {
       type: {
-        blueId: '5HwxfbwRBCxG8xYpowWkCPC9akqUSKV7So2M4QHEmLsZ',
+        blueId: 'DRxc8GkSGPbdENdB8ZK976i1Jzc6M1QdG8UsVMHcqQcf',
       },
     },
   },
@@ -655,6 +655,6 @@ export const DocumentSessionBootstrap: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq',
+    blueId: 'EhoCY9nyytXDfs6gqMXjGmRSczXQVUPdotxm2uE8us1M',
   },
 };

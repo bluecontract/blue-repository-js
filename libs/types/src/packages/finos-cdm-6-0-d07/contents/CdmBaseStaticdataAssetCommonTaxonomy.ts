@@ -6,14 +6,14 @@ export const CdmBaseStaticdataAssetCommonTaxonomy: Record<string, unknown> = {
     description:
       'The source of the taxonomy that defines the rules for classifying the object. The taxonomy source is taken from a enumerated list of taxonomy names. Optional as the taxonomy source may not be provided.\n',
     type: {
-      blueId: 'CUzMUxNcMqZb1GuDaw2n29RnNcaPce9HrpKAyz8gT2m8',
+      blueId: 'DG2puP5kaTQTAW5sZ3dgpiPgy8Kg3yzoTseUHSGxqXmF',
     },
   },
   val: {
     description:
       'The value according to that taxonomy. Optional as it may not be possible to classify the object in that taxonomy.\n',
     type: {
-      blueId: 'EnoVKrrGFyBuE513RQdZXz4EPFgLMoR13a5djKi32gB9',
+      blueId: 'MxGjg9eCvZAeeJuareEGCcaduKPsjTuJeLMxem8MMJv',
     },
   },
 };

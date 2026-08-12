@@ -4,13 +4,13 @@ export const CdmBaseStaticdataIdentifierFieldWithMetaIdentifier: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/staticdata/identifier/FieldWithMetaIdentifier',
   val: {
     type: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
   },
 };

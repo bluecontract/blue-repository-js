@@ -3,7 +3,7 @@ export const CdmEventCommonPrimitiveInstruction: Record<string, unknown> = {
     description:
       'Specifies instructions describing an contract formation primitive event.',
     type: {
-      blueId: 'DGsbtTnVqKahxQWYvWbmGWFYBqtFfWxbBr5DuADrAFqK',
+      blueId: '546aMZAyxXdgjEPuMu3YUsj7XmDoKWbTDSEY5u5p61ro',
     },
   },
   description:
@@ -12,82 +12,82 @@ export const CdmEventCommonPrimitiveInstruction: Record<string, unknown> = {
     description:
       'Specifies instructions describing an execution primitive event.',
     type: {
-      blueId: 'CBTSmXARftQib1Z7xkk5BvzFCwYNVs56io1CySzwVRv6',
+      blueId: 'iKWVhz4swWfyuK3k2MWZpyFFUMr2WXkRPbaa4LviTYT',
     },
   },
   exercise: {
     description:
       'Specifies instructions describing an exercise primitive event.',
     type: {
-      blueId: 'this#1',
+      blueId: 'this#0',
     },
   },
   indexTransition: {
     description:
       'Specifies inputs needed to process a Index Transition business event.',
     type: {
-      blueId: 'ESVYFHhwAEbDfHx7VpnDSeYjKbYM1yz22iidmSJwTbPR',
+      blueId: '4MJ3haV2vNrNghMTk6wPRL49xz75XJHepZqBRHzVHRZx',
     },
   },
   name: 'cdm/event/common/PrimitiveInstruction',
   observation: {
     description: 'Specifies inputs needed to process an observation.',
     type: {
-      blueId: '8UoUJDRFiVPok3ABp8K2j4QuwD6Mn5jbUhmPukGth8rV',
+      blueId: 'HAMRC4Nw3vdn47fsYmK7wavP6zQu6bq6YztAoBuuNL7z',
     },
   },
   partyChange: {
     description:
       'Specifies instructions describing a party change primitive event.',
     type: {
-      blueId: '23BvjXEenVrVtJqaEg2dcrfEDjwqbfn2AbohdEQC5q54',
+      blueId: '6rLC4Kg1B1NAVXYhtwyRkStugkMFAt3qt3WaxaoxMy2U',
     },
   },
   quantityChange: {
     description:
       'Specifies instructions describing an quantity change primitive event.',
     type: {
-      blueId: 'CGh8Ro5bj5zb6exK9S5PSK14D7LfDgmyq2CmshhZHCav',
+      blueId: '3TKRurdUV8Lf9MnJ7qZjMUiZVa82DcRUr4EJmTzuenv2',
     },
   },
   reset: {
     description: 'Specifies instructions describing a reset event.',
     type: {
-      blueId: '8yJJHXbkr87FPBmSyeeUAyCyN3LVuUaUmGL9rTQ9nzC8',
+      blueId: '3vdqYkcvrCgXLt39NjEJw6qi6PFvbPZ4Z866PwYkm9Rj',
     },
   },
   split: {
     description:
       'Specifies instructions to split a trade into multiple branches.',
     type: {
-      blueId: 'this#2',
+      blueId: 'this#1',
     },
   },
   stockSplit: {
     description:
       'Specifies inputs needed to process a Stock Split business event.',
     type: {
-      blueId: 'GAPYEKW715oyitUYJp6oG8TJQrZ3oHrfHbahRSWKXVAm',
+      blueId: '299jVUofgxbkqW1JY3zxHjc4ivtdUPsNns5ow8dT6prR',
     },
   },
   termsChange: {
     description:
       'Specifies instructions describing a terms change primitive event.',
     type: {
-      blueId: 'FF9Z3uZqajrrPRisojyAFgTfoSsZRLq3qzqR19xY3meW',
+      blueId: 'C8Sjni3j8bLknVwpMay25HnSbgy2TRcMj1Ahs4y7obpE',
     },
   },
   transfer: {
     description:
       'Specifies instructions describing a transfer primitive event.',
     type: {
-      blueId: 'EPw23JvyLZR41DTM3xD1zG4onVhCwLqBoQYZN27eS27R',
+      blueId: 'RDiRTVRojrnSyuHJ5j24eYYcyow8d9ujnENuJHacNVv',
     },
   },
   valuation: {
     description: 'Specifies inputs needed to process an update of a valuation.',
     type: {
-      blueId: 'EYHsr3QdfZNKZWjh2MH65Run9WHCSMwVoQabxHFou3oX',
+      blueId: '9r2SKBfR4oNaDaVTYrF4RsZHSG7Vq1LwHjBLEAQNfewc',
     },
   },
 };

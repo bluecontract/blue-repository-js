@@ -4,5 +4,5 @@ import { DocumentSessionReferenceSchema } from './DocumentSessionReference';
 export { DocumentSessionReferenceSchema } from './DocumentSessionReference';
 
 export const schemas: Record<string, ZodTypeAny> = {
-  FxcZycT49wFfrNAZpzquWVRw43epYQx5SkYXpdwx3c2Z: DocumentSessionReferenceSchema,
+  CitEEsPhrBya9i5PK18kP3V4snE1g79885geLZM2PidU: DocumentSessionReferenceSchema,
 };

@@ -4,7 +4,7 @@ export const CdmEventWorkflowWorkflow: Record<string, unknown> = {
   name: 'cdm/event/workflow/Workflow',
   steps: {
     itemType: {
-      blueId: 'DocYqREg9o4T2rhZSgBc4WNY8RpRSEM9zXWkDh65v5Z7',
+      blueId: 'Fhdc1fd8vMNRHxuQnBweJDNbCrJvLLEZV11VoTwDNDwy',
     },
     schema: {
       minItems: 1,

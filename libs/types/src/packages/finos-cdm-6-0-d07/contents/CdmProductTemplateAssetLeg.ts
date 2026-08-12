@@ -5,7 +5,7 @@ export const CdmProductTemplateAssetLeg: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6LWhigVjjAUUSFhmA6HbeNXAPPtSPD97nTeiyR7yRQCn',
+      blueId: '5iL9bNQZtovMdjf58xxBWQAkcVcWKsbnNommKPsLfwsZ',
     },
   },
   description: 'Defines each asset movement of an asset payout.',
@@ -17,7 +17,7 @@ export const CdmProductTemplateAssetLeg: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
 };

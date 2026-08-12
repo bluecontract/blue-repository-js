@@ -16,27 +16,27 @@ export const CdmProductCommonSettlementPrincipalPayment: Record<
     description:
       'Specifies the parties responsible for making and receiving payments defined by this structure.',
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
   presentValuePrincipalAmount: {
     description:
       'The amount representing the present value of the principal payment.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   principalAmount: {
     description:
       'When known at the time the transaction is made, the cash amount to be paid.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   principalPaymentDate: {
     description: 'The date where the PrincipalPayment shall be settled.',
     type: {
-      blueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
+      blueId: 'J1kGTdAb67L1bPgvuKZ86jTR9UZJomnkgA6hcnVfnwfD',
     },
   },
 };

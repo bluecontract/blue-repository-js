@@ -4,7 +4,7 @@ export const CdmBaseDatetimeAdjustableOrRelativeDate: Record<string, unknown> =
       description:
         'A date that shall be subject to adjustment if it would otherwise fall on a day that is not a business day in the specified business centers, together with the convention for adjusting the date.\n',
       type: {
-        blueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
+        blueId: 'J1kGTdAb67L1bPgvuKZ86jTR9UZJomnkgA6hcnVfnwfD',
       },
     },
     description:
@@ -14,7 +14,7 @@ export const CdmBaseDatetimeAdjustableOrRelativeDate: Record<string, unknown> =
       description:
         'A date specified as some offset to another date (the anchor date).',
       type: {
-        blueId: 'GagRkiFg7C2PG1ce2M6QYaKL99fY3TTLH3DBbZp4Fduc',
+        blueId: '3F5SJZugXTpBEsr5jpbKnam1yzQE7tb7m7ULNAqRK1TT',
       },
     },
   };

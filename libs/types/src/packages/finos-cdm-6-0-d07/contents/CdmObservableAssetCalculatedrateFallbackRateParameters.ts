@@ -6,7 +6,7 @@ export const CdmObservableAssetCalculatedrateFallbackRateParameters: Record<
     description:
       'Support for modular calculated rates, such such as lockout compound calculations.',
     type: {
-      blueId: 'BzAmRPH81HKGy6cSBQMksdVVxBpKtdVhJKSbFqKiErQP',
+      blueId: '3uTDiwVssb1uKdurixoF5csTPYjeU3mp49GD4wEFQudb',
     },
   },
   description:
@@ -24,7 +24,7 @@ export const CdmObservableAssetCalculatedrateFallbackRateParameters: Record<
       required: true,
     },
     type: {
-      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
+      blueId: 'vMjyu6sbtgT7FA6GScxrp32Njg3k9oW6KxuXLU9RYHx',
     },
   },
   name: 'cdm/observable/asset/calculatedrate/FallbackRateParameters',

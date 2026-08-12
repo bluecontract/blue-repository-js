@@ -5,7 +5,7 @@ export const CdmRegulationNm: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3iGK8rtshZDYPEKjPLJb7aYsVc2cBa7Pnkc4Nr1vLoZt',
+      blueId: '8YW6VUDPm2PADvh1mKtewrJwVec3547zdqj1nSK2M3vj',
     },
   },
   term: {
@@ -13,7 +13,7 @@ export const CdmRegulationNm: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BjVwAr1pYp3ZQh3wtJi2zXxjpqqqyBzNjp9m1ZpZVP15',
+      blueId: '9ydTVW4jBmxo9hRtFQ75CPbJBiCj9kUyNCm5QwHyFMjd',
     },
   },
 };

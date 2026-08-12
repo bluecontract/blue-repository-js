@@ -7,7 +7,7 @@ export const CdmProductTemplateStrikeSpread: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2dSkgwb8hLPVxQFwzcY81Rz3doMpbjGnxxouhx3k8wJ2',
+      blueId: '853fkTLxahq9EHHMikifwZEJBFuFzQ6cRXUnXBtQ6HPN',
     },
   },
   upperStrikeNumberOfOptions: {

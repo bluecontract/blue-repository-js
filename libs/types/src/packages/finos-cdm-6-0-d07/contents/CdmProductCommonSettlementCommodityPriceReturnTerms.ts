@@ -15,20 +15,20 @@ export const CdmProductCommonSettlementCommodityPriceReturnTerms: Record<
     description:
       'Used in conjunction with an exchange-based pricing source. Identifies a way in which the futures contracts referenced will roll between periods.\n',
     type: {
-      blueId: '8egmsgTVVkTcqNTDUm9EaLcKVzmRTw5uiK4S3zrc88BH',
+      blueId: 'E2qUUo8XnSB9mMMhWkXkxcQEwJHg3ZJeuWY3g9JvNh6F',
     },
   },
   rounding: {
     description:
       'Defines rounding rules and precision to be used in the rounding of a number.',
     type: {
-      blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
+      blueId: '7fpTDBDMKH4SNXoiKP77e98Hh5vZkbVGXSEenFEztVuv',
     },
   },
   spread: {
     description: 'Defines a spread value for one or more defined dates.',
     type: {
-      blueId: 'BbmQzuzA7aBEkeWMx9NniHvZEqR3bPsBJzX8iyyokN7A',
+      blueId: 'JBHbnTb3KK4imqfxRHkV1Hdv7p6d8fMSvkBKH5J4cQpv',
     },
   },
 };

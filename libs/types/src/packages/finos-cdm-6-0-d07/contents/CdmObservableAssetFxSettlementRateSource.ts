@@ -6,14 +6,14 @@ export const CdmObservableAssetFxSettlementRateSource: Record<string, unknown> =
       description:
         'Indicates that a non-standard rate source will be used for the fixing.',
       type: {
-        blueId: '8RaYn7dAapW3dFmuG6AwXr5mpv24qXUMLg5Y8yn3ULA4',
+        blueId: 'jS1Jdx4pXkwfPR4TmTt8UXGnbjdPbKw7KTpVK34od1f',
       },
     },
     settlementRateOption: {
       description:
         'Indicates that an officially defined rate settlement rate option will be the used for the fixing.',
       type: {
-        blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+        blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
       },
     },
   };

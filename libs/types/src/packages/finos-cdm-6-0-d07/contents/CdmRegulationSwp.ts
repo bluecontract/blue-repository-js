@@ -5,7 +5,7 @@ export const CdmRegulationSwp: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8wDzaj8nhdMn9sTJMrWq1siNiVWLq5NQ6cURKPYNN86F',
+      blueId: 'GwwpJdK3DDwf9FUVDdcC22vjoNtp2VtJ4ie8Jno7qTse',
     },
   },
   swpOut: {
@@ -13,7 +13,7 @@ export const CdmRegulationSwp: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Du8Dj1mUc32NnorgGE844tyffuiu6gfALcLKPPS9mZKL',
+      blueId: 'FPM2G7A95NYqpBbz5kCCRmh7qRnFM5SqwurTX74FLcCv',
     },
   },
 };

@@ -27,7 +27,7 @@ export const CdmObservableAssetTransactedPrice: Record<string, unknown> = {
     description:
       'An optional element that contains the up-front points expressed as a percentage of the notional. An initialPoints value of 5% would be represented as 0.05. The initialPoints element is an alternative to marketFixedRate in quoting the traded level of a trade. When initialPoints is used, the traded level is the sum of fixedRate and initialPoints. The initialPoints is one of the items that are factored into the initialPayment calculation and is payable by the Buyer to the Seller. Note that initialPoints and marketFixedRate may both be present in the same document when both implied values are desired.\n',
     type: {
-      blueId: 'VVDNkAFA8n1iP8XHiNgLYMtF7r3mfFkx4P4nqUhsDYH',
+      blueId: 'EKXd7uHTmxJwvv5NQiDPde4szje2XTaXMKc5Kaj4ekHU',
     },
   },
 };

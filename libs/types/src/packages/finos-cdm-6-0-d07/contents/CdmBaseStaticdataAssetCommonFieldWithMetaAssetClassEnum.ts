@@ -4,13 +4,13 @@ export const CdmBaseStaticdataAssetCommonFieldWithMetaAssetClassEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/staticdata/asset/common/FieldWithMetaAssetClassEnum',
   val: {
     type: {
-      blueId: '7TQnexn6ZGhptp1EP3RxiJM3434J7VHgDn7cvqXRvfvh',
+      blueId: '9yX6LE16R3vAK1CLiZg1CNCKs1R2z61AM6mkBEyi4wHf',
     },
   },
 };

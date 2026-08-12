@@ -5,7 +5,7 @@ export const CdmEventCommonCorporateAction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
+      blueId: '8CunnBK9d9T4uuangx5iLWyAisgbJvXeXi25J7Z91ZC8',
     },
   },
   description: 'Specifies the relevant data regarding a corporate action.',
@@ -36,7 +36,7 @@ export const CdmEventCommonCorporateAction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#3',
+      blueId: '52zbUBnH8375AE19gNSXRU7GgGs5tcoUhR84LVdMrBWi#2',
     },
   },
 };

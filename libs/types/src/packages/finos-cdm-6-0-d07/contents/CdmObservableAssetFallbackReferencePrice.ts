@@ -3,7 +3,7 @@ export const CdmObservableAssetFallbackReferencePrice: Record<string, unknown> =
     calculationAgentDetermination: {
       description: 'The calculation agent will decide the rate.',
       type: {
-        blueId: 'FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau',
+        blueId: 'BmkE3R86Mi5VSgGXWARzCmJ1FbnwnZDnHtccZ6MSGnRQ',
       },
     },
     description:
@@ -11,7 +11,7 @@ export const CdmObservableAssetFallbackReferencePrice: Record<string, unknown> =
     fallBackSettlementRateOption: {
       description: 'This settlement rate option will be used in its place.',
       itemType: {
-        blueId: '8iH51R45gmWCtNjqrR63GErLSs4TeUXk51R7D4ky3NDz',
+        blueId: '5zMhYAXcxtwbFXQeEYr3vWu78daHfMbFUrFgair7M7sf',
       },
       schema: {
         minItems: 0,
@@ -32,7 +32,7 @@ export const CdmObservableAssetFallbackReferencePrice: Record<string, unknown> =
       description:
         'Specifies how long to wait to get a quote from a settlement rate option upon a price source disruption.',
       type: {
-        blueId: 'FSNs7wPUozqjz5B6qRf7FwdstVC9R3vaMucjkk4PqKXW',
+        blueId: 'BbM2nqKiVihnZtKM1sJKM3HK23io3UM784GeaXFmEKiY',
       },
     },
   };

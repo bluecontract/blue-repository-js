@@ -9,7 +9,7 @@ export const CdmObservableAssetPriceSourceDisruption: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'FSP23sNY1FGeadmmkSZjmqWKdkoLdCoMqZ3eBePPS9N8',
+        blueId: 'PDQLcykvwiGmnD7jw1DPqfEPB4qb9uEDGcwWVZLf7vv',
       },
     },
     name: 'cdm/observable/asset/PriceSourceDisruption',

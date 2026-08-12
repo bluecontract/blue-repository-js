@@ -6,14 +6,14 @@ export const CdmLegaldocumentationCommonAgreementName: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '1xkXx62AuJPeBWbqXe9my7R6wp5KHPpRYMPgfh4Md8s',
+        blueId: 'G98oMcFFcwapftpN3NbSePJTeafVqJgbP2ZJKGAWijZE',
       },
     },
     contractualDefinitionsType: {
       description:
         'The definitions such as those published by ISDA that will define the terms of the trade.',
       itemType: {
-        blueId: 'CZWJZLLr3HQs8VCBUxDWXabvSf6Q3319JdxR7Apv4ijg',
+        blueId: 'CftZdiJyxaHVcunERbr8EtHErVHhgbCsTvUQH5YbLAXL',
       },
       schema: {
         minItems: 0,
@@ -26,7 +26,7 @@ export const CdmLegaldocumentationCommonAgreementName: Record<string, unknown> =
       description:
         'A reference to a contractual matrix of elected terms/values (such as those published by ISDA) that shall be deemed to apply to the trade. The applicable matrix is identified by reference to a name and optionally a publication date. Depending on the structure of the matrix, an additional term (specified in the matrixTerm element) may be required to further identify a subset of applicable terms/values within the matrix.\n',
       itemType: {
-        blueId: '6jcZ9zLDpCUUHnubcVFKvtCrbSEVir51vkUuHYoQEtTv',
+        blueId: 'CEyrkJUT8HLojysAQjUReMYLQCgHmBX4VUxU91TJu8uA',
       },
       schema: {
         minItems: 0,
@@ -39,7 +39,7 @@ export const CdmLegaldocumentationCommonAgreementName: Record<string, unknown> =
       description:
         'A contractual supplement (such as those published by ISDA) that will apply to the trade.',
       itemType: {
-        blueId: '3USYNWwBjwfneMFPfLEAygbecRdE9pmiE6VzumZMpdRQ',
+        blueId: 'GPjWcB5kAK6o6LyYVxoBgAHdEXtqLx1cmJPtvswu4BU9',
       },
       schema: {
         minItems: 0,
@@ -52,13 +52,13 @@ export const CdmLegaldocumentationCommonAgreementName: Record<string, unknown> =
       description:
         'specifies the type of margin for which a legal agreement is named.',
       type: {
-        blueId: '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ',
+        blueId: 'Ce3ciQcLKDEJNBNLKJ7ZQ1woFjqogy7nsbLP99TxETXf',
       },
     },
     creditSupportAgreementType: {
       description: 'Specification of the credit support agreement type.',
       type: {
-        blueId: '73DfnZhYH3dTmicn8zMHsthj9qQ6K9XEB5KLdtiJSK7u',
+        blueId: '4meuCktw1FU4RPxCQDZJiER7pwjt3F4qWFP4AeaGwPM2',
       },
     },
     description:
@@ -66,21 +66,21 @@ export const CdmLegaldocumentationCommonAgreementName: Record<string, unknown> =
     masterAgreementType: {
       description: 'Specification of the master agreement type.',
       type: {
-        blueId: 'DkpHjXSPYeeAymNJRnod9AFWqxCfj21de5396nJX3jb5',
+        blueId: 'AMab7AVqN4nc3s5D6FBKRbSLj8EYaF9ppAqRbTodszbt',
       },
     },
     masterConfirmationAnnexType: {
       description:
         'The type of master confirmation annex executed between the parties.',
       type: {
-        blueId: 'Et7RmFhXC1S5FYbAYAkgpkUfwspKqhDrsG1K89ev7DVu',
+        blueId: 'BpZYvuC7zpYyf3krdVjDee54WGnxCiGoGoGutTcy8rUj',
       },
     },
     masterConfirmationType: {
       description:
         'The type of master confirmation executed between the parties.',
       type: {
-        blueId: 'HaEz2HuxrPwUkAPyfLmet7k7WuJfH6KjErdWuSXuJE71',
+        blueId: 'EMyh5oCQ6YLTistdrYkpVkvDXxrQh4ahrj3UkbNde95t',
       },
     },
     name: 'cdm/legaldocumentation/common/AgreementName',

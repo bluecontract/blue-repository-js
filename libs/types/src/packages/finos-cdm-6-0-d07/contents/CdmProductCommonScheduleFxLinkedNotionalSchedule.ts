@@ -8,7 +8,7 @@ export const CdmProductCommonScheduleFxLinkedNotionalSchedule: Record<
     description:
       'The time at which the spot currency exchange rate will be observed. It is specified as a time in a business day calendar location, e.g. 11:00am London time.\n',
     type: {
-      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+      blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
     },
   },
   fxSpotRateSource: {
@@ -18,7 +18,7 @@ export const CdmProductCommonScheduleFxLinkedNotionalSchedule: Record<
       required: true,
     },
     type: {
-      blueId: 'AxAyn6UgyoJj9YDT4soz7eYpmhL8U6kEzFxGMonZgxcg',
+      blueId: '4Jbze8eVmcTD1NE4zxdWWA7NuWrvuqjSc5a68zCAQD7h',
     },
   },
   name: 'cdm/product/common/schedule/FxLinkedNotionalSchedule',
@@ -29,7 +29,7 @@ export const CdmProductCommonScheduleFxLinkedNotionalSchedule: Record<
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   varyingNotionalFixingDates: {
@@ -39,7 +39,7 @@ export const CdmProductCommonScheduleFxLinkedNotionalSchedule: Record<
       required: true,
     },
     type: {
-      blueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
+      blueId: '9fGwsBbeyL5rQuLRmwyBtyjMjAcmhWfHf4bmyqAXmWtD',
     },
   },
   varyingNotionalInterimExchangePaymentDates: {
@@ -49,7 +49,7 @@ export const CdmProductCommonScheduleFxLinkedNotionalSchedule: Record<
       required: true,
     },
     type: {
-      blueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
+      blueId: '9fGwsBbeyL5rQuLRmwyBtyjMjAcmhWfHf4bmyqAXmWtD',
     },
   },
 };

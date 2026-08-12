@@ -3,7 +3,7 @@ export const ChangeRequest: Record<string, unknown> = {
     description:
       'RFC 6902 patch entries outside /contracts (blocked by policy if it touches /contracts).',
     itemType: {
-      blueId: '61W96XosAp3DrEC7PuqLYtmF2A6ETpqH6qF2DgYwDq4c',
+      blueId: '5UihWoxkyiUbv9TZk7HcHsa82sz2R3ex1WifQQpKtHpP',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
@@ -16,7 +16,7 @@ export const ChangeRequest: Record<string, unknown> = {
     description:
       'Section-based /contracts mutations (required when Contracts Change Policy is enabled).',
     type: {
-      blueId: '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc',
+      blueId: '9MfTNhMnFbd6VkhaLLLEyv1SxwBzj9iJjfUNQV2toU9S',
     },
   },
   summary: {

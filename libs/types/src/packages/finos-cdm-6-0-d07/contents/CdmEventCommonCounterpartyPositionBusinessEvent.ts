@@ -5,7 +5,7 @@ export const CdmEventCommonCounterpartyPositionBusinessEvent: Record<
   after: {
     description: 'Specifies the after position state(s) created.',
     itemType: {
-      blueId: 'EEF9WbKw9D9wtisDhW8324FJ2E947ssWHTCgh83EtSwA',
+      blueId: '4tpXkdbpBbfUzL8toS39njzStjudoXZ7fjoQGSJyD2K9',
     },
     schema: {
       minItems: 0,
@@ -17,7 +17,7 @@ export const CdmEventCommonCounterpartyPositionBusinessEvent: Record<
   corporateActionIntent: {
     description: 'The intent of a corporate action on the position.',
     type: {
-      blueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
+      blueId: '8CunnBK9d9T4uuangx5iLWyAisgbJvXeXi25J7Z91ZC8',
     },
   },
   description:
@@ -43,7 +43,7 @@ export const CdmEventCommonCounterpartyPositionBusinessEvent: Record<
       required: true,
     },
     type: {
-      blueId: 'FurdrKKKE4EKbMMyMvsWgSGLYyqPxhjTKSZcJDKD777K',
+      blueId: 'Hkqj3rcbfbK4jQwci2R7M2K5pDfdcMMCxg52vHSp9dGx',
     },
   },
   name: 'cdm/event/common/CounterpartyPositionBusinessEvent',
@@ -51,7 +51,7 @@ export const CdmEventCommonCounterpartyPositionBusinessEvent: Record<
     description:
       'Specifies the package information in case the business event represents several trades executed as a package (hence this attribute is optional). The package information is only instantiated once at the business event level to preserve referential integrity, whereas individual trades make reference to it to identify that they are part of a package.\n',
     type: {
-      blueId: 'Dq7xVZaLz1ofmKsUodtSSbe6YGxaRdCtP5HM1pKU8RHF',
+      blueId: '9KV48b6Fb2r3WJ1DyeqrYTjD1WUuExEj2cDwLdCGQHmu',
     },
   },
 };

@@ -6,7 +6,7 @@ export const CdmBaseStaticdataAssetCommonTaxonomyValue: Record<
     description:
       'Specifies the taxonomy value as a set of class names and values for each class.',
     itemType: {
-      blueId: '4yg3H6YAUTCit6hxRnAEyVQGYTMFm4nGL1gMyQpvzmZ5',
+      blueId: '5c9nkt7FnTm6eNWkunPNWokAVLeHpwmv6jscyf5pZYh9',
     },
     schema: {
       minItems: 0,

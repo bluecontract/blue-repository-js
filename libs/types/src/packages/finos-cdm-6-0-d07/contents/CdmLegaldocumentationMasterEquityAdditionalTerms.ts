@@ -16,13 +16,13 @@ export const CdmLegaldocumentationMasterEquityAdditionalTerms: Record<
   },
   extraordinaryEvents: {
     type: {
-      blueId: '5TwYH1UDWUhzBQmxrWFhK5phemNwZXmScWVwCZNB72rU',
+      blueId: '8WNdwP7MjecdHrT3shTAYGh22xXfqp5tjwBVkVnp6Cef',
     },
   },
   name: 'cdm/legaldocumentation/master/EquityAdditionalTerms',
   substitutionProvision: {
     type: {
-      blueId: 'B7HxeT3Xft46tT5ze4mQnBq7hxyLkZUxSGkgRhMoPRuJ',
+      blueId: '7paSbRZjaHBJWw41SkMcrKGfqK7m3wPAdtZmg3wJXwrh',
     },
   },
 };

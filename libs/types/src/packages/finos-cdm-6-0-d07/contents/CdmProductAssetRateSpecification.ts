@@ -5,20 +5,20 @@ export const CdmProductAssetRateSpecification: Record<string, unknown> = {
     description:
       'The fixed rate or fixed rate specification expressed as explicit fixed rates and dates.',
     type: {
-      blueId: '9svusKr6LvCBhk7gV6JsbPAwwXWASiSTahN4JPrDC5rH',
+      blueId: 'EGYqbJxyubwqpMiSD4GyaqjF8JLLc2R5X7drZoPxyc1k',
     },
   },
   FloatingRateSpecification: {
     description:
       'The floating interest rate specification, which includes the definition of the floating rate index. the tenor, the initial value, and, when applicable, the spread, the rounding convention, the averaging method and the negative interest rate treatment.\n',
     type: {
-      blueId: '7Qg4XRChRagWG1WXXQ6SxKQFUAWi38ZztLZRLJigyUr8',
+      blueId: 'ANmCF3xmaUGNncVaDabTkkZxZmT5nvtE48NwyhYMN9Ev',
     },
   },
   InflationRateSpecification: {
     description: 'An inflation rate calculation definition.',
     type: {
-      blueId: 'FWV3Br4aKDWruqfn5vhLVt6xEv37srRU5k5YncDQvGnz',
+      blueId: 'HgvUazWUT3cYBnJe67N6uNczREHE3zyrajGM4ouhEa1L',
     },
   },
   name: 'cdm/product/asset/RateSpecification',

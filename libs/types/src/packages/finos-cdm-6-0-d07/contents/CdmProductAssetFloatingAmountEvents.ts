@@ -33,7 +33,7 @@ export const CdmProductAssetFloatingAmountEvents: Record<string, unknown> = {
     description:
       'A floating rate payment event. With respect to any Reference Obligation Payment Date, either (a) the non-payment of an Expected Interest Amount or (b) the payment of an Actual Interest Amount that is less than the Expected Interest Amount. ISDA 2003 Term: Interest Shortfall.\n',
     type: {
-      blueId: '5dGWGFZAUi1PKkhPU7YyqpjKufXV7BQNEntUPbgE8HZS',
+      blueId: 'CMFyKETF4AW2ABGpniMoaoAomexgwK1AFicxUhU1yef7',
     },
   },
   name: 'cdm/product/asset/FloatingAmountEvents',

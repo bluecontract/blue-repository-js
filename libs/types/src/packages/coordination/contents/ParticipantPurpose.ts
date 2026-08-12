@@ -14,7 +14,7 @@ export const ParticipantPurpose: Record<string, unknown> = {
   statements: {
     description: 'Ordered purpose statements declared by the participant.',
     itemType: {
-      blueId: 'FvGHnQXb72zffTbufdY8DSK1DWqtTGavSfHDcoeCLB7Y',
+      blueId: 'AXWMYkUJbn6Xay3iGrikuCSYyPoB7PBCZjFGtzotz4Xf',
     },
     schema: {
       required: true,

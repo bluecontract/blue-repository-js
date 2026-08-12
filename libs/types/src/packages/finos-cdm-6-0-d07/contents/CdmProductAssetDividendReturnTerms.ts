@@ -5,35 +5,35 @@ export const CdmProductAssetDividendReturnTerms: Record<string, unknown> = {
     description:
       'Specifies whether the dividend is paid with respect to the Dividend Period.',
     type: {
-      blueId: 'EPZXT4tSSu6F1Bgi8FKpq43oaSVqFr8Um1HXaoK25VVE',
+      blueId: 'BseM57TwJnsZJpg73zrJ7kGx8XvjH6ufZPiazs47DUTQ',
     },
   },
   dividendComposition: {
     description:
       'Specifies how the composition of Dividends is to be determined.',
     type: {
-      blueId: 'HN4sqTAXi2pGFVHbV6MLLdW3RgQ9Qq4thhJ9rWVsexks',
+      blueId: '3QHiAmrDLD9f7nbwCya9NpkEQw8ybmPNzHz8rZUYMgGX',
     },
   },
   dividendCurrency: {
     description:
       'Specifies the currency in which the dividend will be denominated, e.g. the dividend currency, or a specified currency. This class is not specified as such in FpML, which makes use of the CurrencyAndDeterminationMethod.model to specify such terms.\n',
     type: {
-      blueId: '6YjggFTd8yUypLgjeUwSiJGZvfraozN2PjZBK4Q8KLQ6',
+      blueId: '2cPndt4fpDpzVEUw3SaL2dat9i3qSRnuWwUjzfd7YEDX',
     },
   },
   dividendEntitlement: {
     description:
       'Defines the date on which the receiver of the equity return is entitled to the dividend.',
     type: {
-      blueId: '5A3hCLVC8huTr312Z9ddi2snvyWozZsHadHLetvYe31g',
+      blueId: 'CjxtggSJUeokfEBLy1LH5RuozcoZiFPdboPbkGnfaQ1L',
     },
   },
   dividendPayoutRatio: {
     description:
       'Specifies the dividend payout ratio associated with each underlier. In FpML 5.10 the payout is positioned at the underlier level, although there is an intent to reconsider this approach and position it at the leg level. This is approach adopted by the CDM.\n',
     itemType: {
-      blueId: 'CXNX5xUoDwJxfTwLJdwkuXkNThirm3BpXK2QCH6kBkeu',
+      blueId: 'G4dRtYHi6XSLg4caxcfJcag7cDcQqTHo18B5pymZAFSP',
     },
     schema: {
       minItems: 0,
@@ -46,7 +46,7 @@ export const CdmProductAssetDividendReturnTerms: Record<string, unknown> = {
     description:
       'One to many time bounded dividend payment periods, each with a dividend payment date per period.',
     itemType: {
-      blueId: 'EQ1DnA2mvWsTZJUqo9NJBj9AF7uJYZXPRwQw2ZUqpqQC',
+      blueId: '5GWb11CvK2e4hjYE5b3bbzLuVwDyWcC3natfgX4Ay43i',
     },
     schema: {
       minItems: 0,
@@ -65,21 +65,21 @@ export const CdmProductAssetDividendReturnTerms: Record<string, unknown> = {
   excessDividendAmount: {
     description: 'Determination of Gross Cash Dividend per Share.',
     type: {
-      blueId: 'EPZXT4tSSu6F1Bgi8FKpq43oaSVqFr8Um1HXaoK25VVE',
+      blueId: 'BseM57TwJnsZJpg73zrJ7kGx8XvjH6ufZPiazs47DUTQ',
     },
   },
   extraordinaryDividendsParty: {
     description:
       'Specifies the party which determines if dividends are extraordinary in relation to normal levels.',
     type: {
-      blueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
+      blueId: '5UenXSd178j4ogWvtPBmvmYtMB2vnBUbSZpAKNkbGcuf',
     },
   },
   firstOrSecondPeriod: {
     description:
       '2002 ISDA Equity Derivatives Definitions: Dividend Period as either the First Period or the Second Period. |\n',
     type: {
-      blueId: '4Dvzid1TBuLFxwiAp8Wd2pdhRLvMpCoGBe9D6fba8eVg',
+      blueId: 'B2dTvQ6nN6jhgZbrXxvHNDxu4jeZ9ixuiSyWScidvJYi',
     },
   },
   materialDividend: {
@@ -93,7 +93,7 @@ export const CdmProductAssetDividendReturnTerms: Record<string, unknown> = {
   nonCashDividendTreatment: {
     description: 'Specifies the treatment of Non-Cash Dividends.',
     type: {
-      blueId: '7X5DcG9JMYrcW7XQWvsmFc2zX3uk1rsikycU2gBnKSyV',
+      blueId: '6kffco33fj474CxLdCMkkTbajx4JJDtE7zJHkyQX9Bop',
     },
   },
   performance: {

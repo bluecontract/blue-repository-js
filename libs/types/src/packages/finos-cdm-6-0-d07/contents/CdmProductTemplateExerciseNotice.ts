@@ -6,7 +6,7 @@ export const CdmProductTemplateExerciseNotice: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy',
+      blueId: '5kncd2YXvmwkRzZPfFr5Ji5fZfkk9WoNmLNAkjcvS9cD',
     },
   },
   description:
@@ -18,14 +18,14 @@ export const CdmProductTemplateExerciseNotice: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'B1vhPUsx48HVhqzgCrbzrCdTrzUxEiaHYjyp5gsErLd9',
+      blueId: 'FFAF593QjAu1fL8t6QJivSADdNRq7UjN3Ftas33vBa9h',
     },
   },
   exerciseNoticeReceiver: {
     description:
       'Specifies the party to which notice of exercise should be given, e.g. by the buyer of the option. Although in many cases it is the buyer of the option who sends the exercise notice to the seller of the option, this component is reused, e.g. in case of OptionEarlyTermination, either or both parties have the right to exercise.\n',
     type: {
-      blueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
+      blueId: '5UenXSd178j4ogWvtPBmvmYtMB2vnBUbSZpAKNkbGcuf',
     },
   },
   name: 'cdm/product/template/ExerciseNotice',

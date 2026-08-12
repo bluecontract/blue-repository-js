@@ -19,7 +19,7 @@ export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
   alternativeToInterestAmount: {
     description: 'Specifies the alternative to interest amounts.',
     type: {
-      blueId: 'DpVYkkJKuVne3rcRtkfcsA1c5rBQibEFY4ujWCibD9jS',
+      blueId: '27kXvi2AJ8RczV2TDskdBvamTYjcpKsMvGaWEaK1MdzX',
     },
   },
   cutoffTime: {
@@ -45,7 +45,7 @@ export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
     description:
       'The application of Interest Amount with respect to the Delivery Amount and the Return Amount.',
     type: {
-      blueId: '7kes2FB65JuXjGdz6Lp6zhm95qL5DTCjDxCKwSm8USPV',
+      blueId: '8Gv1Qef23Mz4g1ohaQfw4qpqAEfyrSh8MP24i2eHPWCd',
     },
   },
   interestPaymentHandling: {
@@ -54,14 +54,14 @@ export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
       required: true,
     },
     type: {
-      blueId: 'sKqpZrkqt2VYmFSkbB7RRDetUKe7PJhYfsksQL6utY4',
+      blueId: 'EPzEEUE2z9dKyZzCmAW4y3RjMQoNyaTkCGiVYqTkpWfD',
     },
   },
   interestRolloverLimit: {
     description:
       'Specifies the level below which the interest will be rolled over.',
     type: {
-      blueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
+      blueId: 'GNwk3nidjLwe1LhWBtBPRxoTtHf6cFhxWBE77ggP8XnL',
     },
   },
   name: 'cdm/product/collateral/CollateralInterestHandlingParameters',
@@ -88,7 +88,7 @@ export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
   notification: {
     description: 'Specifies the terms describing notification requirements.',
     type: {
-      blueId: 'AYFPdhUATGeD5Kaw7pwDQbqnwnGZ2DyM7rk1rVn4M1uM',
+      blueId: '5Sp9FXHFVYw7frBuLN5R8FS9N9G51A8Qcr78z6DTZPnb',
     },
   },
   onFullReturn: {
@@ -114,7 +114,7 @@ export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
   paymentBusinessCenter: {
     description: 'Specifies applicable business centers for payments.',
     itemType: {
-      blueId: 'Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL',
+      blueId: 'Gpw3zDUDENr9thYruxb1S1firzfQSgHYJs5W3zaBbAzN',
     },
     schema: {
       minItems: 0,
@@ -127,7 +127,7 @@ export const CdmProductCollateralCollateralInterestHandlingParameters: Record<
     description:
       'Specifies the level below which the interest will be written off; if omitted write-off is not applicable.',
     type: {
-      blueId: 'CV1DAoEgGqnEeJtvUszvVHPatrrZQE6M5vVad2MX3ssq',
+      blueId: 'GNwk3nidjLwe1LhWBtBPRxoTtHf6cFhxWBE77ggP8XnL',
     },
   },
 };

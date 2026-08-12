@@ -8,7 +8,7 @@ export const CdmProductCommonSettlementResolvablePriceQuantity: Record<
     description:
       'The future value notional is specific to BRL CDI swaps, and is specified alongside the notional amount. The value is calculated as follows: Future Value Notional = Notional Amount * (1 + Fixed Rate) ^ (Fixed Rate Day Count Fraction). The currency should always match that expressed in the notional schedule. The value date should match the adjusted termination date.\n',
     type: {
-      blueId: '8KR7WNN1kPD6WbWLzqQ3tozV5eP1w3ioLjp9aTZLW14L',
+      blueId: 'FPVak4Fuks1N2ZZX56hibjsBpQ7f15tk5GEL4L4VYByZ',
     },
   },
   name: 'cdm/product/common/settlement/ResolvablePriceQuantity',
@@ -29,7 +29,7 @@ export const CdmProductCommonSettlementResolvablePriceQuantity: Record<
     description:
       'Quantity multiplier is specified on top of a reference quantity and is used as a multiplying factor when resolving the quantity. A quantity multiplier can only exist when the resolvable quantity specifies a reference quantity.\n',
     type: {
-      blueId: 'DJFB2Tj6nmeKEJudCnrcJLRjTfjdUDQDmosfijnNhHrg',
+      blueId: '5WCZDgKojV5T74sbEKYJkNxrtenFyXLvBbwicu8NTMvt',
     },
   },
   quantityReference: {
@@ -56,7 +56,7 @@ export const CdmProductCommonSettlementResolvablePriceQuantity: Record<
     description:
       "A product's quantity as a single, non-negative amount.  When specified as part of a product definition, this quantity attribute would not be set.  Instead it is specified on the quantity notation along with an asset identifier matching this payout's asset identifier.  This allows the quantity to be resolved for a payout leg, which can then be specified here for convenience during data processing.  There needs to be at least one resolvable quantity across payout legs of a product to define an anchor that other payout quantities can refer to.  This attribute is ignored when mapping existing FpML messages.\n",
     type: {
-      blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+      blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
     },
   },
 };

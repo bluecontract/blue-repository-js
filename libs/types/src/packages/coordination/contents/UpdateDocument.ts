@@ -3,7 +3,7 @@ export const UpdateDocument: Record<string, unknown> = {
     description:
       'Ordered list of patch entries to apply through the Blue Contracts processor. Each entry must be valid under the\nprocessor patch rules. The order is significant: each patch is applied, type-checked/generalized, and cascaded before\nthe next patch is considered.\n',
     itemType: {
-      blueId: '61W96XosAp3DrEC7PuqLYtmF2A6ETpqH6qF2DgYwDq4c',
+      blueId: '5UihWoxkyiUbv9TZk7HcHsa82sz2R3ex1WifQQpKtHpP',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',

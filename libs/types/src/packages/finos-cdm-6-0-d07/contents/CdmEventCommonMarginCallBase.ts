@@ -3,28 +3,28 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
     description:
       'Specifies the collateral legal agreement minimum transfer amount in base currency.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   agreementRounding: {
     description:
       'Specifies the collateral legal agreement rounding in base currency.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   agreementThreshold: {
     description:
       'Specifies the collateral legal agreement threshold amount in base currency.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   baseCurrencyExposure: {
     description:
       'Represents the current mark to market value or IM calculation value of the trade portfolio as recorded by the principle (in base currency), to be referenced in a margin call.\n',
     type: {
-      blueId: '8nEcYjH4ixVg7JfABg3dqYi9nqpHYwCrdcXfWzfmtnkd#0',
+      blueId: '8F5tzDJeHVMjn1AsyLLfL6a8zuQzwzNmqCwPSk6ympdk#0',
     },
   },
   callAgreementType: {
@@ -34,20 +34,20 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BU5zwrVyY7wwfteRD7Vdaj9pWLX2CSnscAydsqWAUXjk',
+      blueId: 'GtNBAyAynbg5ak9tonuCZjYhuWCYH91kN9bCBbHYAsop',
     },
   },
   callIdentifier: {
     description:
       'Represents a unique Identifier for a margin call message, that can be referenced throughout all points of the process.\n',
     type: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
   },
   clearingBroker: {
     description: 'Indicates the name of the Clearing Broker FCM/DCM.',
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
   collateralPortfolio: {
@@ -63,7 +63,7 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
     description:
       'Represents additional credit support amount over and above mark to market value.',
     type: {
-      blueId: '8nANyRzbRdjuTq7qNZchzDJ4XYqZ8HWYinBX4dWM6NAV',
+      blueId: 'EieQtheGsK5EDQsjN2wqUyWn5LaLYdtjXBotd8LVH7ZT',
     },
   },
   instructionType: {
@@ -73,7 +73,7 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '7LjiKLT6mqi1aN28PDZP7RC1BCddoDdaZRX5HQSggkHK',
+      blueId: 'BoD1aVcLzZLbF13ZcGFdGwQdbaBQxKHCXkwvjjecaGH6',
     },
   },
   name: 'cdm/event/common/MarginCallBase',
@@ -81,7 +81,7 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
     description:
       'Represents the parties to the margin call. The cardinality is optional to address the case where both parties of the event are specified and a third party if applicable.\n',
     itemType: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
     schema: {
       minItems: 0,
@@ -94,7 +94,7 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
     description:
       'Represents the role each specified party takes in the margin call. further to the principal roles, payer and receiver.\n',
     itemType: {
-      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+      blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
     },
     schema: {
       minItems: 0,
@@ -107,7 +107,7 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
     description:
       'Indicates the role of the party in an regulatory initial margin call instruction (i.e Pledgor party or Secured party).\n',
     type: {
-      blueId: 'DbDuU56mMCeHMmfAJPu7gVNzKPqsoCbfKMA4B2f7KJob',
+      blueId: '9zurDYn2PLmvAbQogpSypC9EdXX3kDMH8MEGkVW1iqFi',
     },
   },
   regMarginType: {
@@ -116,7 +116,7 @@ export const CdmEventCommonMarginCallBase: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'C9KJZWTduUXk4iocTB63NwBs7xirNjChn9pPZsyhbhHL',
+      blueId: 'Fec1mDF7uoGM3Kz9ebXHJbHx47s9ug8hXgjx2VcY5suN',
     },
   },
 };

@@ -24,14 +24,15 @@ export { StatusAuthorityConfirmedSchema } from './StatusAuthorityConfirmed';
 export { StatusTerminatedSchema } from './StatusTerminated';
 
 export const schemas: Record<string, ZodTypeAny> = {
-  DgcgZoP3VEPpGGpUsFXHesdjA7yErSra447QaCkaRCgD: DocumentResponderMandateSchema,
-  '47V2fyZMejS7LMCqJ66MvJ6v7VcmLL1zyxGQM44svV4H': MandateSchema,
+  '6FGzRQMZUyhSXUnrfVA16sc1mMwvGHtAxQizdJps46HB':
+    DocumentResponderMandateSchema,
+  G1G5Rp4bmcmvDrnM53JjXF3YXLwdBFqpqVZtXynrjZPC: MandateSchema,
   '3HtuEaYgkn8rV9xZf1x5uY2v7S9WXbVkcV3rj3Sy6arJ': MandateActivatedSchema,
-  AFmG8N66vjJCjfjpuvvowYeTpreb1GrdM8uHzEiDuWto: MandateAuthoritySchema,
-  EbNsQWy645JPPuWhkDw3XcrQk1neH2Z8KBsTvUTCrrmk: MandateAuthorityConfirmedSchema,
-  EcXZbNZ5BjMCBEwEaPExWjK6KLLrt3Aoxx5TNQiA5R1A: MandateTerminatedSchema,
+  '4EeyF2BwPQRnPnfoVnZmeii9Yg3vGJTmMHDk9F7QgkQn': MandateAuthoritySchema,
+  FrxKioNPTEtuWkvxdeFQ66SbPAEUFg19veQMG1J6xo9J: MandateAuthorityConfirmedSchema,
+  C3Y1zAyhCiu9wJ23gYg6vqFnVQyXKZeiHow9CzJ4W9t7: MandateTerminatedSchema,
   '333eCC8uWcMWgw8Ev2FfvZgJMUK9pw8LGUa1D1cYTSsQ': MandateValidationSchema,
-  '7i8qhMJFPdWvw8h71W8PztE6PNC1TDc1xUD8yvYGcp4R': OperationMandateSchema,
+  '2KjGsrrDZStp598xhisMdNskb6wdehS173WvZN3vhHAV': OperationMandateSchema,
   por6Zfmm5x6kxeeeoARgZRVLWrZaDkTU3Dybc2TncPx: StatusActiveSchema,
   '65Lj5NBD9BaeXbWq1qQYcCyxV3EoH7r3rj877KDzbWCP':
     StatusAuthorityConfirmedSchema,

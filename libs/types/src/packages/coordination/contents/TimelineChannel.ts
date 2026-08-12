@@ -19,10 +19,10 @@ export const TimelineChannel: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HAMjp2wA76Jhz8EGBDbfo9cqVyAq3vwVN4baKJBpj8KF',
+      blueId: 'BnChAigtmYAEzedCRsLwgtdwthJMiPQsQBpUXdtiRxe',
     },
   },
   type: {
-    blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
+    blueId: 'CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR',
   },
 };

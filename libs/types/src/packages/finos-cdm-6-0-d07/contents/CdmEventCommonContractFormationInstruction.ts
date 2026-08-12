@@ -8,7 +8,7 @@ export const CdmEventCommonContractFormationInstruction: Record<
     description:
       'Optional legal agreements associated to the contract being formed, for instance a master agreement.',
     itemType: {
-      blueId: '9LAToUm7ugSfrCZWL6KmTwi7jAEoXH8TcNNGxr34YvFc#0',
+      blueId: 'A6CipKeMXZr9PY1uT1iihJg8sjvn1z3pHUPLe9c2aP7a#0',
     },
     schema: {
       minItems: 0,

@@ -4,21 +4,21 @@ export const CdmProductCommonSettlementSettlementDate: Record<string, unknown> =
       description:
         "A series of dates that shall be subject to adjustment if they would otherwise fall on a day that is not a business day in the specified business centers, together with the convention for adjusting the date. This attributes was formerly part of 'CashSettlementPaymentDate' as included into 'OptionCashSettlement' (which is now merged into a unique 'CashSettlementTerms' data type.\n",
       type: {
-        blueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
+        blueId: 'ATwFe4A6KM2pwcq5ezVugmeREzNVytoPxpU4UgV8Nhdt',
       },
     },
     adjustableOrRelativeDate: {
       description:
         "A single settlement date subject to adjustment or specified as relative to another date (e.g. the trade date). This attribute was formerly part of 'SettlementTerms', which is now being harmonised to include a common 'SettlementDate', as inherited from 'SettlementBase'.\n",
       type: {
-        blueId: '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF',
+        blueId: 'EsGmKpSwEv5rrzVy75nUtg6sXKYHCmZRDzkGMYyQ7zhX',
       },
     },
     businessDateRange: {
       description:
         "A range of contiguous business days. This attribute is meant to be merged with the 'settlementDate' at some future point once we refactor 'Date' to use a single complex type across the model. This attributes was formerly part of 'CashSettlementPaymentDate', as included into 'OptionCashSettlement' (which is now merged into a unique 'CashSettlementTerms' data type.\n",
       type: {
-        blueId: 'HNjhMn7WT4JjM4LH3CAB6FzPpLMvur9mQW6knri1HnTg',
+        blueId: 'D1kyjGPDqfudDfHp8GJJEwf5zvF3oA4XbQZnkCU6zpTx',
       },
     },
     cashSettlementBusinessDays: {

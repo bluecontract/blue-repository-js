@@ -6,7 +6,7 @@ export const CdmEventPositionPortfolio: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2AjMswvvUFa65tb2E1fgtkxxgJ7ReLj17xorwjbb8wAb',
+      blueId: 'GJ4f9vYo1hSycBk9xvyg7fAsMA8mZQxW3u1uebj73PSw',
     },
   },
   description:
@@ -19,7 +19,7 @@ export const CdmEventPositionPortfolio: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '5rZCg68iGGiKxNzqKGrKhdGvwvL65GzoawTiePj97t9T',
+      blueId: 'HSQM32z7yP1fJEoHr1oCYrfR8RKsj68Qhp88YpeyYE1t',
     },
   },
 };

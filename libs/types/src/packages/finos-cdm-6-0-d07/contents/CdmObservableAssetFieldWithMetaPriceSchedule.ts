@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaPriceSchedule: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaPriceSchedule',
   val: {
     type: {
-      blueId: 'F7QahhLQE8sqX4t6NBvj5SDbcCWwr9pBdZDMZaqg7mSx',
+      blueId: '6TobEa5CPYK6vNs347sZcHg2ridoBfgzVkpUNrZrYmCt',
     },
   },
 };

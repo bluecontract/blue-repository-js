@@ -9,13 +9,13 @@ export const CdmObservableAssetMultipleCreditNotations: Record<
       required: true,
     },
     type: {
-      blueId: '5AmXPpNccrpoL5H4BBSk9y2QfnizHY6JKgXqaHJTHgvy',
+      blueId: '9rM943Zxj8XaBwwWtrihnmzqSxuoYsj5tqms4JHHt3AG',
     },
   },
   creditNotation: {
     description: 'At least two credit notations much be specified.',
     itemType: {
-      blueId: '3a31df2HdfB7EqRbM2D5wwBaTaVC1tUemQ66F91P16xS',
+      blueId: 'vj6R4UJLxafVvD4Kb6AZG34BntgoTm9445T8cscNBEE',
     },
     schema: {
       minItems: 2,
@@ -28,13 +28,13 @@ export const CdmObservableAssetMultipleCreditNotations: Record<
     "Represetns a class to specify multiple credit notations alongside a conditional 'any' or 'all' qualifier.",
   mismatchResolution: {
     type: {
-      blueId: 'DRzBA7DNKGx3x57DdS7v8C2BBHL55ia9a7Sqzx7r5Qr7',
+      blueId: '3xGR5MinWeBBiGacxvPvEYBQ4EV4NjiAp6xvgENeLDVe',
     },
   },
   name: 'cdm/observable/asset/MultipleCreditNotations',
   referenceAgency: {
     type: {
-      blueId: 'D1H3C3xAMJv2XQNBYfethSUKDH7kngUkefwbzLwVLW1i',
+      blueId: '21xGvoNnChKXaDXVNTEgYY1eJr849T5okU3aXsrCK2PB',
     },
   },
 };

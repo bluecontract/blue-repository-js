@@ -8,7 +8,7 @@ export const CdmProductCollateralDistributionAndInterestPayment: Record<
     description:
       'Represents the interest parameters for the various currencies, margin types, posting parties.',
     itemType: {
-      blueId: 'F248AjhdVnADUz9CQXosVKujLgoTFeRXayYnkVuaof5T',
+      blueId: 'GsFBjGKav7ci1HtW2ZbeCbtEmLmLbsoz9dFgitf5kTHJ',
     },
     schema: {
       minItems: 0,

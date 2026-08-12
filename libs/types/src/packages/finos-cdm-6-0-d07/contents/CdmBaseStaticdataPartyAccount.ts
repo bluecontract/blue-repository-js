@@ -8,7 +8,7 @@ export const CdmBaseStaticdataPartyAccount: Record<string, unknown> = {
   accountName: {
     description: 'The name by which the account is known.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   accountNumber: {
@@ -17,13 +17,13 @@ export const CdmBaseStaticdataPartyAccount: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   accountType: {
     description: 'The type of account, e.g. client, house.',
     type: {
-      blueId: '4ziQZYSMsRBGw2UcuWWBCV7f3BDZdr6LRtdVLEavoHaw',
+      blueId: '4y8bsqThvmVPYmjEC7ZEas42LGtsKtTBQvYdVYsdGGMB',
     },
   },
   description:

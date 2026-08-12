@@ -6,14 +6,14 @@ export const CdmProductCommonScheduleCalculationPeriodDates: Record<
     description:
       'The specification of the business day convention and financial business centers used for adjusting any calculation period date if it would otherwise fall on a day that is not a business day in the specified business center.\n',
     type: {
-      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
+      blueId: 'AKAczd79wtoD2Vt7VjdFdnWeacw86mQTVeLcyS9SWFZz',
     },
   },
   calculationPeriodFrequency: {
     description:
       'The frequency at which calculation period end dates occur with the regular part of the calculation period schedule and their roll date convention.\n',
     type: {
-      blueId: 'CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce',
+      blueId: '9F3YEUELa9MSY4ykUnh7PrK9r3EBLoFcHS5v18N9rRrb',
     },
   },
   description:
@@ -22,7 +22,7 @@ export const CdmProductCommonScheduleCalculationPeriodDates: Record<
     description:
       'The first day of the terms of the trade. This day may be subject to adjustment in accordance with a business day convention.\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   firstCompoundingPeriodEndDate: {
@@ -36,7 +36,7 @@ export const CdmProductCommonScheduleCalculationPeriodDates: Record<
     description:
       'The start date of the calculation period. FpML specifies that for interest rate swaps this date must only be specified if it is not equal to the effective date. It is always specified in the case of equity swaps and credit default swaps with periodic payments. This date may be subject to adjustment in accordance with a business day convention.\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   firstRegularPeriodStartDate: {
@@ -58,14 +58,14 @@ export const CdmProductCommonScheduleCalculationPeriodDates: Record<
     description:
       'Method to allocate any irregular period remaining after regular periods have been allocated between the effective and termination date.\n',
     type: {
-      blueId: 'HvTJUwtwoF7FUYtZGRhW3CHYRsrhurJcEfFY6YuH4Kaq',
+      blueId: 'Bd2wfrzKhpaf9nUMmBuPYnGMGoA62bhSG9dh2gRhGTsM',
     },
   },
   terminationDate: {
     description:
       'The last day of the terms of the trade. This date may be subject to adjustments in accordance with the business day convention. It can also be specified in relation to another scheduled date (e.g. the last payment date).\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
 };

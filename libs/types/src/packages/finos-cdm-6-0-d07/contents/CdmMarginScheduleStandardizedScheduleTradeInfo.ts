@@ -4,23 +4,23 @@ export const CdmMarginScheduleStandardizedScheduleTradeInfo: Record<
 > = {
   assetClass: {
     type: {
-      blueId: 'CDbwJvzYyrQ7afEJRFR8x1ii8sk11Es3z1e62dbNj2rU',
+      blueId: 'ByBDRUzLi5pkLk3nidrUfkkQWJWyeUm3SfxMqWecxpNx',
     },
   },
   grossInitialMargin: {
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   markToMarketValue: {
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   name: 'cdm/margin/schedule/StandardizedScheduleTradeInfo',
   productClass: {
     type: {
-      blueId: 'BwbqfunwwJxSMfQD4CEUJ2Ab4AqzjMTjpeSCF3E1NLYx',
+      blueId: '35Mio6Cn5LCV87BMNgBeT2ES36yc1gKxP2eUzWb8mNzP',
     },
   },
 };

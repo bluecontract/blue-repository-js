@@ -22,7 +22,7 @@ export const CdmBaseStaticdataPartyRelatedParty: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'H6gWEiw9pVTmNQVvvZzt7KcBJ1Ub6wMyaVh3zbM7qCkM',
+      blueId: 'GaVQx77bWVG9DoP6sEfKJFggBPtqn5A3tsZSpn3avRUv',
     },
   },
 };

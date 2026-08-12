@@ -3,14 +3,14 @@ export const CdmBaseStaticdataPartyParty: Record<string, unknown> = {
     description:
       'The account that might be associated with the party. At most one account can be specified, as it is expected that this information is used in the context of a contract or legal document where only one account per party can be associated with such object.\n',
     type: {
-      blueId: 'HCfJUUx9k8N8QqUgtRQZDaSkcsnmcWrN6CsVeT5ViMfM',
+      blueId: 'Ci7ty5zffGzjgsQdhnezMazESuasmjVRABXcDJanwgLf',
     },
   },
   businessUnit: {
     description:
       'Optional organization unit information used to describe the organization units (e.g. trading desks) involved in a transaction or business process, incl. the contact information (when relevant).\n',
     itemType: {
-      blueId: '6L9P51qVV3HH366DyCCXDxSEYLtr6zN1bAMebbiK5iW1',
+      blueId: 'EMjJhiDkKtnd6Xy5ATKZRxxn7miYV6i9qRKmbwi8PePK',
     },
     schema: {
       minItems: 0,
@@ -23,7 +23,7 @@ export const CdmBaseStaticdataPartyParty: Record<string, unknown> = {
     description:
       'The postal/street address, telephone number, email address and/or web page. If the contact information is specific to the associated business unit(s) or person (s), it should be associated with those.\n',
     type: {
-      blueId: '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A',
+      blueId: 'AWye6DehLS3vyWXet8adWpUZ8kLZYQCWMkCgEK9CoRSR',
     },
   },
   description:
@@ -33,7 +33,7 @@ export const CdmBaseStaticdataPartyParty: Record<string, unknown> = {
     description:
       'The identifier associated with a party, e.g. the 20 digits LEI code.',
     itemType: {
-      blueId: '9cfoNdV96xTzev5mSMGvEn7aYQWsjw2BsB7p8HG2KVYx',
+      blueId: 'AGa4xDzohuMeonuvvfPSohH7tmSdN59ng4Gm6V1AQJmm',
     },
     schema: {
       minItems: 1,
@@ -46,7 +46,7 @@ export const CdmBaseStaticdataPartyParty: Record<string, unknown> = {
     description:
       'The person(s) who might be associated with the party as part of the execution, contract or legal document.',
     itemType: {
-      blueId: 'Dz8x4hxN4LrnwACtSYMSryByQKNPMssYkK9899oiNbyh',
+      blueId: 'C3NyCURgLaHrTtjTpfDUYJnBfR1HhhpQmNSowonp7YHH',
     },
     schema: {
       minItems: 0,
@@ -58,7 +58,7 @@ export const CdmBaseStaticdataPartyParty: Record<string, unknown> = {
   personRole: {
     description: 'The role of the person(s)',
     itemType: {
-      blueId: '9jMFqKdmgCwgQBzfKNbUAGoTLobW3aCoWXv25TRM7oHp',
+      blueId: 'GZevPGzamzSxh8yoRnX4ADVPupYmtwh9tYQvwURzxjmZ',
     },
     schema: {
       minItems: 0,

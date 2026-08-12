@@ -1,37 +1,37 @@
+import { OperationMandate } from './OperationMandate';
 import { MandateValidation } from './MandateValidation';
 import { MandateActivated } from './MandateActivated';
-import { Mandate } from './Mandate';
-import { StatusAuthorityConfirmed } from './StatusAuthorityConfirmed';
-import { OperationMandate } from './OperationMandate';
 import { MandateAuthority } from './MandateAuthority';
-import { StatusTerminated } from './StatusTerminated';
+import { StatusAuthorityConfirmed } from './StatusAuthorityConfirmed';
 import { DocumentResponderMandate } from './DocumentResponderMandate';
-import { MandateAuthorityConfirmed } from './MandateAuthorityConfirmed';
 import { MandateTerminated } from './MandateTerminated';
+import { StatusTerminated } from './StatusTerminated';
+import { MandateAuthorityConfirmed } from './MandateAuthorityConfirmed';
+import { Mandate } from './Mandate';
 import { StatusActive } from './StatusActive';
 
+export { OperationMandate } from './OperationMandate';
 export { MandateValidation } from './MandateValidation';
 export { MandateActivated } from './MandateActivated';
-export { Mandate } from './Mandate';
-export { StatusAuthorityConfirmed } from './StatusAuthorityConfirmed';
-export { OperationMandate } from './OperationMandate';
 export { MandateAuthority } from './MandateAuthority';
-export { StatusTerminated } from './StatusTerminated';
+export { StatusAuthorityConfirmed } from './StatusAuthorityConfirmed';
 export { DocumentResponderMandate } from './DocumentResponderMandate';
-export { MandateAuthorityConfirmed } from './MandateAuthorityConfirmed';
 export { MandateTerminated } from './MandateTerminated';
+export { StatusTerminated } from './StatusTerminated';
+export { MandateAuthorityConfirmed } from './MandateAuthorityConfirmed';
+export { Mandate } from './Mandate';
 export { StatusActive } from './StatusActive';
 
 export const contents: Record<string, unknown> = {
+  '2KjGsrrDZStp598xhisMdNskb6wdehS173WvZN3vhHAV': OperationMandate,
   '333eCC8uWcMWgw8Ev2FfvZgJMUK9pw8LGUa1D1cYTSsQ': MandateValidation,
   '3HtuEaYgkn8rV9xZf1x5uY2v7S9WXbVkcV3rj3Sy6arJ': MandateActivated,
-  '47V2fyZMejS7LMCqJ66MvJ6v7VcmLL1zyxGQM44svV4H': Mandate,
+  '4EeyF2BwPQRnPnfoVnZmeii9Yg3vGJTmMHDk9F7QgkQn': MandateAuthority,
   '65Lj5NBD9BaeXbWq1qQYcCyxV3EoH7r3rj877KDzbWCP': StatusAuthorityConfirmed,
-  '7i8qhMJFPdWvw8h71W8PztE6PNC1TDc1xUD8yvYGcp4R': OperationMandate,
-  AFmG8N66vjJCjfjpuvvowYeTpreb1GrdM8uHzEiDuWto: MandateAuthority,
+  '6FGzRQMZUyhSXUnrfVA16sc1mMwvGHtAxQizdJps46HB': DocumentResponderMandate,
+  C3Y1zAyhCiu9wJ23gYg6vqFnVQyXKZeiHow9CzJ4W9t7: MandateTerminated,
   CMW7kGBbCw1uDmaV5ydLVnzRSo2iaBNDFTspMX9QdvZ2: StatusTerminated,
-  DgcgZoP3VEPpGGpUsFXHesdjA7yErSra447QaCkaRCgD: DocumentResponderMandate,
-  EbNsQWy645JPPuWhkDw3XcrQk1neH2Z8KBsTvUTCrrmk: MandateAuthorityConfirmed,
-  EcXZbNZ5BjMCBEwEaPExWjK6KLLrt3Aoxx5TNQiA5R1A: MandateTerminated,
+  FrxKioNPTEtuWkvxdeFQ66SbPAEUFg19veQMG1J6xo9J: MandateAuthorityConfirmed,
+  G1G5Rp4bmcmvDrnM53JjXF3YXLwdBFqpqVZtXynrjZPC: Mandate,
   por6Zfmm5x6kxeeeoARgZRVLWrZaDkTU3Dybc2TncPx: StatusActive,
 };

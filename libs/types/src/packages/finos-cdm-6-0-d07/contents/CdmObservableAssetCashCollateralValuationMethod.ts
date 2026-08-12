@@ -6,14 +6,14 @@ export const CdmObservableAssetCashCollateralValuationMethod: Record<
     description:
       'This may be used to indicate the discount rate to be used for cash collateral for cash settlement purposes.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   applicableCsa: {
     description:
       'This may be used to specify what type of CSA (credit support annex/agreement) is to be used for cash settlement purposes.\n',
     type: {
-      blueId: '6UyMCLhWc1ZAqEfpnAbByw5F6GWt5hg25X2o3HVmZfGn',
+      blueId: '6faGvMJmNJkEEBfWDqeXBsiAuAGT9TXjqMU7NnT55GD8',
     },
   },
   cashCollateralCurrency: {
@@ -27,7 +27,7 @@ export const CdmObservableAssetCashCollateralValuationMethod: Record<
     description:
       'This may be used to indicate the interest rate to be used for cash collateral for cash settlement purposes.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   description:
@@ -44,7 +44,7 @@ export const CdmObservableAssetCashCollateralValuationMethod: Record<
     description:
       'This may be used to specify which party is protected (e.g. under Replacement Value cash settlement methods).',
     itemType: {
-      blueId: 'GEZ4BVRUpw6ZgUyioiUUFgX7KRu1BLBoubvwFuS6XdFd',
+      blueId: 'EvKQ9LCRpPx5iXbQcQZv7T7vLFUBLS7RB9geFcYuGEw6',
     },
     schema: {
       maxItems: 2,

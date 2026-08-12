@@ -3,7 +3,7 @@ export const CdmProductAssetGeneralTerms: Record<string, unknown> = {
     description:
       'This attribute is used for representing information contained in the Additional Terms field of the 2003 Master Credit Derivatives confirm.\n',
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 0,
@@ -16,7 +16,7 @@ export const CdmProductAssetGeneralTerms: Record<string, unknown> = {
     description:
       'This attribute contains all the terms relevant to defining the Credit Default Swap Basket.',
     type: {
-      blueId: 'axuXmPNwYdajJqoyfRBqGLYdVR7pu272ceY2KqBq9nB',
+      blueId: 'FwJbaG1Nf59WekW7F1zPr4niKBtDp8hYgwiM6JE7zaDr',
     },
   },
   description:
@@ -25,7 +25,7 @@ export const CdmProductAssetGeneralTerms: Record<string, unknown> = {
     description:
       'This attribute contains all the terms relevant to the underlying Index.',
     type: {
-      blueId: 'EXhnZXqvEcgXZrY2VK9WqgZz87y5NwxZ4axscyrAeSBv',
+      blueId: 'B9M4cKALDcyfwfopEL2hETJTezx4P3PypYFiJT7oP8PX',
     },
   },
   modifiedEquityDelivery: {
@@ -40,7 +40,7 @@ export const CdmProductAssetGeneralTerms: Record<string, unknown> = {
     description:
       'This attribute contains all the terms relevant to defining the reference entity and reference obligation(s).',
     type: {
-      blueId: '3eDfhc11LMfKiQsRKqD5mkN3csaNKJ4Yay8qPTE3sM5f',
+      blueId: 'Aogoj2sCUGRvYLZhVJNntPd3rKjX5XU82C9NYKGNG6EH',
     },
   },
   substitution: {

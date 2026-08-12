@@ -18,7 +18,7 @@ export const CdmBaseDatetimePeriodBound: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
 };

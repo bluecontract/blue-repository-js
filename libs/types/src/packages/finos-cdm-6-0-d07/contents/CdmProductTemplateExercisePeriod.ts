@@ -8,14 +8,14 @@ export const CdmProductTemplateExercisePeriod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   exerciseFrequency: {
     description:
       'The frequency of subsequent exercise dates in the exercise period following the earliest exercise date. An interval of 1 day should be used to indicate an American style exercise period.\n',
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   name: 'cdm/product/template/ExercisePeriod',

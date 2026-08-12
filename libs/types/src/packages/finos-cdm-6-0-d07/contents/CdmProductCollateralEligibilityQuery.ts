@@ -6,7 +6,7 @@ export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU',
+      blueId: 'HecpRL1z9mNunKs8iVwbjdGKMKf8o5t6v16ewNozwrff',
     },
   },
   assetCountryOfOrigin: {
@@ -15,7 +15,7 @@ export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '9ppB13T87oA9HL9NWZr6pkLmcjb1HmUAgzVGS7yDyttw',
+      blueId: 'mfnU3a3EHham9Ji56wc4EzqkHqrWpTpWuwvp9bK3DJB',
     },
   },
   collateralAssetType: {
@@ -24,7 +24,7 @@ export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'AjHv57wVryq4YK8oodLNAT95JAYhuGRRiKk7hhX93LLi',
+      blueId: 'GYosLnxXxsEormFDHeohsEEMxPt7FWvEs89hCYk6UHXA',
     },
   },
   denominatedCurrency: {
@@ -33,7 +33,7 @@ export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Gb5ryH6JKgjNLySafKo7tXkb9PRgaQkWHcSibFZ96AbP',
+      blueId: 'FhPnZj2GHsVFKjpG7XMywvjaX6i39gczdhSKJsMHyiEJ',
     },
   },
   description: 'Query to check against an EligibleCollateralSpecification',
@@ -43,7 +43,7 @@ export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   issuerType: {
@@ -53,7 +53,7 @@ export const CdmProductCollateralEligibilityQuery: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GL9FygufGouoWPdbzaZ4SKyuRahWMAUxZ5q3bFMSWnRj',
+      blueId: '7NdxcUK32ve5yCHHJmMNTHsGHDYoGXvWiqPz9bQy5rbU',
     },
   },
   maturity: {

@@ -1,7 +1,7 @@
 export const CdmObservableEventTrigger: Record<string, unknown> = {
   creditEvents: {
     type: {
-      blueId: '3VWXt9VeCTwLSaTRa6KebXPdyz4Gy3Xwf33wBbvgbeqo',
+      blueId: 'BDbfoDhUgVvDXugqQogNj86MztLv2FPdJAEfSdztLvXw',
     },
   },
   creditEventsReference: {
@@ -13,7 +13,7 @@ export const CdmObservableEventTrigger: Record<string, unknown> = {
   level: {
     description: 'The trigger level.',
     itemType: {
-      blueId: 'F7QahhLQE8sqX4t6NBvj5SDbcCWwr9pBdZDMZaqg7mSx',
+      blueId: '6TobEa5CPYK6vNs347sZcHg2ridoBfgzVkpUNrZrYmCt',
     },
     schema: {
       maxItems: 2,
@@ -27,13 +27,13 @@ export const CdmObservableEventTrigger: Record<string, unknown> = {
   triggerTimeType: {
     description: 'The valuation time type of knock condition.',
     type: {
-      blueId: '9VsQvLxQQRJfFp1j9v2evTD4tnmTZzxJFZGRrDLRXRNj',
+      blueId: '5r7FDA2Kb2QKkU4GLbmZThWV6gdyN7veycRmqVrCxCdK',
     },
   },
   triggerType: {
     description: 'The Triggering condition.',
     type: {
-      blueId: 'Etd1jjtUSJfgtR9oe5rJxj387pjT2ZNMQG9kipLjW5hj',
+      blueId: '5w8FaDTzJmekrP4WjP5qSGJ3qtmH8XNuSzhwJRaebh17',
     },
   },
 };

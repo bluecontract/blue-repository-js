@@ -4,7 +4,7 @@ export const CdmProductTemplatePassThrough: Record<string, unknown> = {
   passThroughItem: {
     description: 'One to many pass through payment items.',
     itemType: {
-      blueId: '6NM4Yn28gaQ8DzULANDLBBiyvCGXsVB8yFf3ZfqfPgCJ',
+      blueId: 'FoDT7cNJEYDkT5SzaBjzFL5dzMuykqTbTUBrJeog8V9M',
     },
     schema: {
       minItems: 1,

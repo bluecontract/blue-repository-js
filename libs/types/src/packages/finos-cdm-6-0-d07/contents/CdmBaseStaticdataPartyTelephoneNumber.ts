@@ -14,7 +14,7 @@ export const CdmBaseStaticdataPartyTelephoneNumber: Record<string, unknown> = {
   telephoneNumberType: {
     description: 'The type of telephone number, e.g. work, mobile.',
     type: {
-      blueId: '7PAPLMPSmka7bG7227fzRv3qSgjt72t52HW5JbZddX1w',
+      blueId: 'Gjzzg7PBbugT3zqFsvPRRRJ46MBHxAm69jQ3KWMBySyg',
     },
   },
 };

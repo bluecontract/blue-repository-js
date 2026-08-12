@@ -32,7 +32,7 @@ export const CdmEventWorkflowWorkflowStepApproval: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'DSJDCMX9fWnAZqseXHzuc3NWEvtct9Ay1D8XqV7Cz8sb',
+      blueId: '93YHikoSQrMTBaKFsmqukjaePGjWoHkVZMZVW1k86M7d',
     },
   },
 };

@@ -42,7 +42,7 @@ export const PaymentInitiationRequested: Record<string, unknown> = {
         blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
       },
       valueType: {
-        blueId: '4FAZ94JPExNM4pn2ZhtdHa4CVP7uASmLNVrBy7aCG1p5',
+        blueId: 'CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR',
       },
     },
     description:

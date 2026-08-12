@@ -11,13 +11,17 @@ export const OperationMandateSchema: any = withTypeBlueId(
   MandateSchema.extend({
     description: zod.string().optional(),
     name: zod.string().optional(),
-    target: zod
-      .object({
-        channel: zod.string(),
-        initialDocument: blueNodeField(),
-        operation: zod.string(),
-      })
-      .optional(),
+    target: zod.object({
+      channel: zod.string(),
+      documentValidation: zod
+        .object({
+          description: zod.string().optional(),
+          document: blueNodeField().optional(),
+          function: blueNodeField().optional(),
+        })
+        .optional(),
+      operation: zod.string(),
+    }),
   })
 );
 

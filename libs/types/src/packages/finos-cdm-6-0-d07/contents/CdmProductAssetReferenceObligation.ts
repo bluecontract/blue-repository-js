@@ -5,7 +5,7 @@ export const CdmProductAssetReferenceObligation: Record<string, unknown> = {
     description:
       'The party that guarantees by way of a contractual arrangement to pay the debts of an obligor if the obligor is unable to make the required payments itself. ISDA 2003 Term: Guarantor.\n',
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   guarantorReference: {
@@ -18,7 +18,7 @@ export const CdmProductAssetReferenceObligation: Record<string, unknown> = {
   loan: {
     description: 'Identifies the underlying asset when it is a loan.',
     type: {
-      blueId: 'ByX5xzV8skV8bxwB7jTPa5FXEzKdm3SxrkmkC22W4nz5',
+      blueId: '7Zg8UpGuEWYf4C37rRkZ2wK1qdAiHaebivQNjduH4Qd2',
     },
   },
   name: 'cdm/product/asset/ReferenceObligation',
@@ -26,7 +26,7 @@ export const CdmProductAssetReferenceObligation: Record<string, unknown> = {
     description:
       'The entity primarily responsible for repaying debt to a creditor as a result of borrowing or issuing bonds. ISDA 2003 Term: Primary Obligor.\n',
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   primaryObligorReference: {
@@ -40,7 +40,7 @@ export const CdmProductAssetReferenceObligation: Record<string, unknown> = {
     description:
       'Identifies the underlying asset when it is a security, such as a bond or convertible bond. The security data type requires one or more productIdentifiers, specificaiton of the security type (e.g. debt), and includes optional attributes to specify a debt class, such as asset-backed, as well as seniority.\n',
     type: {
-      blueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
+      blueId: 'GRccc39hoCxirVd5AgYHyNZT6TtiBJj8USkFUA6nQcfG',
     },
   },
   standardReferenceObligation: {

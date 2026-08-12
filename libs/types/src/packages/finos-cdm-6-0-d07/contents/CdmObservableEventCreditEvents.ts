@@ -10,14 +10,14 @@ export const CdmObservableEventCreditEvents: Record<string, unknown> = {
     description:
       'A specified condition to settlement. An irrevocable written or verbal notice that describes a credit event that has occurred. The notice is sent from the notifying party (either the buyer or the seller) to the counterparty. It provides information relevant to determining that a credit event has occurred. This is typically accompanied by Publicly Available Information. ISDA 2003 Term: Credit Event Notice.\n',
     type: {
-      blueId: 'AWhnPfrvzFRQCvzfQY8CZB6Xp8Eknw8gcnAg53xtbBwj',
+      blueId: '8gygSAwRTVJtv5KcSysiUECATdqdehh19AhUuCLkXEP5',
     },
   },
   defaultRequirement: {
     description:
       'In relation to certain credit events, serves as a threshold for Obligation Acceleration, Obligation Default, Repudiation/Moratorium and Restructuring. Market standard is USD 10,000,000 (JPY 1,000,000,000 for all Japanese Yen trades). This is applied on an aggregate or total basis across all Obligations of the Reference Entity. Used to prevent technical/operational errors from triggering credit events. ISDA 2003 Term: Default Requirement.\n',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   description:
@@ -33,7 +33,7 @@ export const CdmObservableEventCreditEvents: Record<string, unknown> = {
     description:
       'A credit event. This credit event triggers, after the expiration of any applicable grace period, if the reference entity fails to make due payments in an aggregate amount of not less than the payment requirement on one or more obligations (e.g. a missed coupon payment). ISDA 2003 Term: Failure to Pay.\n',
     type: {
-      blueId: 'HTuXbgSEpM5XerhmFWMb4d5MBP6ixLzjeJKEuNq6pZ2n',
+      blueId: 'Gchi5o7iqfYk1zXWDFca15cfTM8j5r7UUYgvGEcwD2cA',
     },
   },
   failureToPayInterest: {
@@ -97,7 +97,7 @@ export const CdmObservableEventCreditEvents: Record<string, unknown> = {
     description:
       "A credit event. A restructuring is an event that materially impacts the reference entity's obligations, such as an interest rate reduction, principal reduction, deferral of interest or principal, change in priority ranking, or change in currency or composition of payment. ISDA 2003 Term: Restructuring.\n",
     type: {
-      blueId: 'CTdbPvJCySH7c1fo91jyuTmUVte9C47K3AKTScxXfHEe',
+      blueId: '8YohhEmMdUAeQpDyTwQSPKi5FjSCvkPLcAm1kNasqHGL',
     },
   },
   writedown: {

@@ -6,7 +6,7 @@ export const CdmObservableAssetInformationSource: Record<string, unknown> = {
     description:
       'A specific page for the source for obtaining a market data point. In FpML, this is specified as a scheme, rateSourcePageScheme, for which no coding Scheme or URI is specified.\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   sourcePageHeading: {
@@ -22,7 +22,7 @@ export const CdmObservableAssetInformationSource: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'JMdjF7BkL7hgbzHsPDqk4D7tgaZ98wirqwFPWCQBuvs',
+      blueId: 'GyHRCQjZiCev41ByZKVY3E3nnyf5EZ3DkPr6Fat2V2GL',
     },
   },
 };

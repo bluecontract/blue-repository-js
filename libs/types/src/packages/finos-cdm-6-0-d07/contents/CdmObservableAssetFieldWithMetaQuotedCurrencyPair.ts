@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaQuotedCurrencyPair: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaQuotedCurrencyPair',
   val: {
     type: {
-      blueId: 'Fh47tZBtYn2vAYUQFPhW9yfe2PQ2jNgj4jqnT8kVqWGm',
+      blueId: 'GwrNf8idhCx9xLjesA5nE33grEpWocsCaZCwMSDYrZNB',
     },
   },
 };

@@ -3,7 +3,7 @@ export const CdmEventWorkflowPartyCustomisedWorkflow: Record<string, unknown> =
     customisedWorkflow: {
       description: 'Non-standardized data in a generic form.',
       itemType: {
-        blueId: 'HZmoSFgPTJDpgvQbhrw415z735PsqkkNK7AhockdXE35',
+        blueId: '4uRB2tZknwRVbJXEHny1GtGnSb5f2xAvbYG4xErbRbqC',
       },
       schema: {
         minItems: 1,

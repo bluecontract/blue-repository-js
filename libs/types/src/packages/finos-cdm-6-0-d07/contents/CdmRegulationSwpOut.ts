@@ -5,7 +5,7 @@ export const CdmRegulationSwpOut: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HBLtWnWoBNq2J8Z6DEVz3GUac4po9oBJgoYmPZSkT27k',
+      blueId: '56QXk83sUzaPUrbrd3ueQnVzYeb64ibHKN6w7G3N2xxD',
     },
   },
 };

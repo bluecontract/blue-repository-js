@@ -13,7 +13,7 @@ export const CdmProductCommonSchedulePaymentCalculationPeriod: Record<
     description:
       'The parameters used in the calculation of a fixed or floating rate calculation period amount. A list of calculation period elements may be ordered in the document by ascending start date. An FpML document which contains an unordered list of calculation periods is still regarded as a conformant document.\n',
     itemType: {
-      blueId: 'BXpC64gmuFbvh5L5cvC2KjCgBSBYvePrnA5wcL1K4rFT',
+      blueId: '5iALuSYExmWtctSi7Hq5NapM77ZtzZ5nmkxPC22Cz4ZM',
     },
     schema: {
       minItems: 1,
@@ -34,14 +34,14 @@ export const CdmProductCommonSchedulePaymentCalculationPeriod: Record<
   fixedPaymentAmount: {
     description: 'A known fixed payment amount.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   forecastPaymentAmount: {
     description:
       'A monetary amount representing the forecast of the future value of the payment.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   name: 'cdm/product/common/schedule/PaymentCalculationPeriod',
@@ -49,7 +49,7 @@ export const CdmProductCommonSchedulePaymentCalculationPeriod: Record<
     description:
       'A monetary amount representing the present value of the forecast payment.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   unadjustedPaymentDate: {

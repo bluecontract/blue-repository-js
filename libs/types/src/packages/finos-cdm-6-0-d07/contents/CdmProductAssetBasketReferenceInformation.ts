@@ -5,7 +5,7 @@ export const CdmProductAssetBasketReferenceInformation: Record<
   basketId: {
     description: 'A CDS basket identifier.',
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 0,
@@ -18,7 +18,7 @@ export const CdmProductAssetBasketReferenceInformation: Record<
     description:
       'The name of the basket expressed as a free format string. FpML does not define usage rules for this element.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   description: 'CDS Basket Reference Information.',
@@ -43,13 +43,13 @@ export const CdmProductAssetBasketReferenceInformation: Record<
       required: true,
     },
     type: {
-      blueId: 'rgdUZuvv5BLqYZSUay5yfjqPvRRqkZ9bhihtJLpcBKN',
+      blueId: '3ovMWZG1vkBZmE3FHeEHCtXaBPGJ8RUhfdw6Jryv8j4H',
     },
   },
   tranche: {
     description: 'This element contains CDS tranche terms.',
     type: {
-      blueId: 'AhnjPV8YNPhbAjozktmjeX2wDwUvX9j1SLMv3rUYCvk3',
+      blueId: '2kqSEBf4QHUaZoidcqZix27rUgz9zA4zq7QJaUj5s5Mh',
     },
   },
 };

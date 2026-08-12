@@ -17,7 +17,7 @@ export const PurposeStatement: Record<string, unknown> = {
     description:
       'Optional operation selectors the participant may use in response.',
     itemType: {
-      blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+      blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',

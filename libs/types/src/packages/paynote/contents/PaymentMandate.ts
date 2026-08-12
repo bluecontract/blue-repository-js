@@ -222,7 +222,7 @@ export const PaymentMandate: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     authorizeSpendImpl: {
@@ -2065,7 +2065,7 @@ export const PaymentMandate: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'Cg8SSdLksJdyWoGcFvq4VvoGwMkcQY88rNdcA9qc734j',
+                      blueId: '3EntoP5XrNopV3NbvmE3G5JVTS2jEBJShutsCeFVpBqw',
                     },
                   },
                 },
@@ -2306,27 +2306,27 @@ export const PaymentMandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     granteeChannel: {
       description:
         'Grantee timeline channel (party allowed to use the mandate).',
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     granterChannel: {
       description: 'Granting party timeline channel.',
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     guarantorChannel: {
       description:
         'Bank/admin channel executing mandate checks and settlement updates.',
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     initialize: {
@@ -2359,23 +2359,23 @@ export const PaymentMandate: Record<string, unknown> = {
             },
             name: 'Initialize mandate runtime state',
             type: {
-              blueId: '6bU2jWm3F6GaCXSLpdxiNjRbf9XcQDzH1NUsroHz4x8U',
+              blueId: '8FyswTq5moAS2hexCNqdEVSfPbuwesexqrck7Up5gtxp',
             },
           },
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     initLifecycleChannel: {
       event: {
         type: {
-          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
+          blueId: 'Gck5z8qnbcUvJNkawzKPghj14dJBw8GxkC9mh6cL5e5C',
         },
       },
       type: {
-        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
+        blueId: '2ukJitzzDKQWHJ5EVUtn3t4FXieGmNA1NdwFSqG8qcfo',
       },
     },
     settleSpend: {
@@ -2389,11 +2389,11 @@ export const PaymentMandate: Record<string, unknown> = {
         'Apply final reserve/capture deltas for a previously authorized charge attempt.',
       request: {
         type: {
-          blueId: '12zhLzvXiUjVQsbNQGRRZk15M1fc2WcohZ8Nbz7Wmd1m',
+          blueId: 'ENBm1kYyC3HHvnA59LZ8X7UDdZpS7875SpHmj8zBs35d',
         },
       },
       type: {
-        blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+        blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
       },
     },
     settleSpendImpl: {
@@ -4559,7 +4559,7 @@ export const PaymentMandate: Record<string, unknown> = {
                       },
                     },
                     type: {
-                      blueId: 'AyxFRqp7CDgStXG1ATYUBmAVD62QAF3S3ZV867Q9iBAk',
+                      blueId: 'Fms2mDEn9zx1eQgPKmTKcfYejFZ9SZrgNqP7eWVmReDi',
                     },
                   },
                 },
@@ -4800,7 +4800,7 @@ export const PaymentMandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
   },

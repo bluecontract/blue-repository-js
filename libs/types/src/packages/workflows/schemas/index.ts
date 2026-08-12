@@ -32,20 +32,20 @@ export { RejectChangeOperationSchema } from './RejectChangeOperation';
 export { RejectChangeWorkflowSchema } from './RejectChangeWorkflow';
 
 export const schemas: Record<string, ZodTypeAny> = {
-  AQiBjYvNGNupbn8GoAVjJD3GytsuktbfUJ8EXxm24uiX: AcceptChangeOperationSchema,
-  '9Ke8Cm7sbxbdezqTBsHYAgKqsncGSsF1MQPhT8Lh7R4a': AcceptChangeWorkflowSchema,
-  AKkQ1Sq3MRCEoDNv4FjEpx3Dn72DuM4DTVJNCJsSs1Ai: ChangeOperationSchema,
-  '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU': ChangeRequestSchema,
-  J4N7XgGHAwMZJGJ4SkWuUHmTfKvsSHvSsbAduEsriARk: ChangeWorkflowSchema,
-  CECcZ2xesYWUD4qZNFzDWYjWoMU6W55jEEoJHK8MWZct: ContractsChangePolicySchema,
-  A3ARRUeBEDuZMTs7SN62agmNKd41i1ZZDRtsGWDhuSro: CustomerConsentSchema,
-  '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy': DocumentSectionSchema,
-  '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX':
+  '7Dv66Ymipyi4znKm3ek5wc1xVA4Qy5agxb3LjbMxKv6p': AcceptChangeOperationSchema,
+  FcqWLnwxGzMFR6vo3GnhEUmgbh9eGLTPGytYWmhdGrwT: AcceptChangeWorkflowSchema,
+  CuFVdF9x8vra93EdgSK9pPq4iGsyc4LZWNDpxMjSXHnT: ChangeOperationSchema,
+  AVuAYKsZEMLjY3XwmKMe1LPrVAEo6R6FepDjPqgndF7J: ChangeRequestSchema,
+  BwQFZSEaqWCnoQcVBvho2A1ig9Dz7yAgZkN4zzizjL88: ChangeWorkflowSchema,
+  F2z5kuhjRCwngkuZAxfWyYrZNMM9PeumHLmPqT222RKa: ContractsChangePolicySchema,
+  ATWLhHxoNDLzACS5XaADJWW3iaMDj1pesogCsxdez55w: CustomerConsentSchema,
+  CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa: DocumentSectionSchema,
+  DN9VhzcZvGNtMz2K3qVBQrVeYssBUqbewt2Cxi6CXS3R:
     DocumentSectionChangeEntrySchema,
-  '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc': DocumentSectionChangesSchema,
-  '6KfyYR3LoTKJLsgPkmYkXacY7JMPvTjJUeqtJXXfVHMr': ProposeChangeOperationSchema,
-  '8vYuJh8cJGWzYHFG5z42LCpx219obwXWc2Z9D1CJ5bJa': ProposeChangeWorkflowSchema,
+  '9MfTNhMnFbd6VkhaLLLEyv1SxwBzj9iJjfUNQV2toU9S': DocumentSectionChangesSchema,
+  '3xA8aEEJKHC8JwXgd4QuoUYm7H4vMpdRfgbpyvhJfctV': ProposeChangeOperationSchema,
+  '7QnVMqUQguxM3MxNqRYX4sVX9DWJPY3TE1SEagW6z371': ProposeChangeWorkflowSchema,
   '6jcAKEeVpGCPenpSnfwwamL2iTHBACRXPFQjEDU5pX1y': ProposedChangeInvalidSchema,
-  J3eHxcp4f3sKC2zohWMWLo5AvWAi2DJiNBPkExd1EhvU: RejectChangeOperationSchema,
-  '9pyaCAF3GguLmRNGwhVLhXNqpvPsTtLpSdEuZCPpvRoT': RejectChangeWorkflowSchema,
+  '9dhHG1LpwkNSRrds8zMZquTEy4DV8UFkRVJRF5H15QYV': RejectChangeOperationSchema,
+  CrDGdNaZbF1XLkM1XY88c5mcHgPENYKgRTFtav8rHRU5: RejectChangeWorkflowSchema,
 };

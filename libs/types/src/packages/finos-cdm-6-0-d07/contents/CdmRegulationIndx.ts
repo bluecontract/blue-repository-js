@@ -5,7 +5,7 @@ export const CdmRegulationIndx: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Bnyu2YsX3C75feLrApJur1wxc78rkg6UmHvj7zoZSsV8',
+      blueId: '9TKBcu8vKMFH94AHBDpED3r3pGsJDYH6jz91TtEmgw4P',
     },
   },
 };

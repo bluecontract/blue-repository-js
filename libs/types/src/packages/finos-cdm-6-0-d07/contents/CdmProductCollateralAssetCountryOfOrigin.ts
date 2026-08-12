@@ -7,7 +7,7 @@ export const CdmProductCollateralAssetCountryOfOrigin: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '9ppB13T87oA9HL9NWZr6pkLmcjb1HmUAgzVGS7yDyttw',
+        blueId: 'mfnU3a3EHham9Ji56wc4EzqkHqrWpTpWuwvp9bK3DJB',
       },
     },
     name: 'cdm/product/collateral/AssetCountryOfOrigin',

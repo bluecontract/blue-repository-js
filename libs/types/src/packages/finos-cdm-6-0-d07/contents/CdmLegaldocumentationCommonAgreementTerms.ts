@@ -9,7 +9,7 @@ export const CdmLegaldocumentationCommonAgreementTerms: Record<
       required: true,
     },
     type: {
-      blueId: '24XR8iGVZsSMcRtHNgWSpYEEza3KosniTayAxz2hnncm',
+      blueId: 'DTCMrR8qY9BpbXqsCRwfEYiDY2fo4LEFLGBGTPQSA38A',
     },
   },
   clauseLibrary: {
@@ -23,7 +23,7 @@ export const CdmLegaldocumentationCommonAgreementTerms: Record<
     description:
       'Specification of the roles of the counterparties to the agreement.',
     itemType: {
-      blueId: '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x',
+      blueId: '57Lwnif22McYRjgDzSyRZTsqY1Ac9LMSJcJ9KRXKiE6w',
     },
     schema: {
       maxItems: 2,

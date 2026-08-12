@@ -8,12 +8,12 @@ export const CdmProductCommonSchedulePaymentDateSchedule: Record<
     description:
       'The last payment when specified as an adjustable or relative date, as in the FpML total return construct.',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   interimPaymentDates: {
     itemType: {
-      blueId: '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg',
+      blueId: 'A5fbgqJ72K7pbNNCrmP9z1uJjRfJjx4z6Bav92ZY3iMs',
     },
     schema: {
       minItems: 0,

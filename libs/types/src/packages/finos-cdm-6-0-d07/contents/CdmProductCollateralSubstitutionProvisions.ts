@@ -14,7 +14,7 @@ export const CdmProductCollateralSubstitutionProvisions: Record<
   noticeDeadlinePeriod: {
     description: 'Defines the min period for notify of a substitution.',
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   numberOfSubstitutionsAllowed: {

@@ -13,6 +13,6 @@ export const SequentialWorkflow: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: '7X46P3Q6FJrogqKrBXTALpqzkieyyiQeatnqLvWzAPXE',
+    blueId: '2Ag2NfcWpCfPqBAR7bFAEL9L3roX3UWGUkDq7nN3D4gV',
   },
 };

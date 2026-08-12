@@ -16,15 +16,14 @@ export { DocumentBootstrapRequestedSchema } from './DocumentBootstrapRequested';
 export { ParticipantMappingSchema } from './ParticipantMapping';
 
 export const schemas: Record<string, ZodTypeAny> = {
-  DWzwDRu5bJn25PNwudPyXhvQzWgWZv1THiNUmPhxZsAe: DocumentBootstrapSchema,
-  EogcjRxna7zSMip2wSg53fdRtQG8apJL6JqHeh1egh9f:
+  BLRL88h4zXdTMctheFyCQG4gk4qsDSp5EPgirRRkvdmc: DocumentBootstrapSchema,
+  '7hkTA9xEpQixBzjN2M2Uei8K1h2MvmpVLqhau53Cksg5':
     DocumentBootstrapCompletedSchema,
-  '4HrRcHN229bzcHXvGsEnbron77kYiFzTFEEHDWup1xRC':
-    DocumentBootstrapDeclinedSchema,
-  '9juepYbw4uwHiqDxcnjoJTn1Vv3TsDzPeSchpHUYRS3h': DocumentBootstrapFailedSchema,
-  B6zgAWGB7543y6JcE2jjUKqLrVMEFWfu7NY7sLzfn8aR:
+  HAbdpL4jP3EqXPiHBXddTXcdjiMRnxbkE6YnWkvbCMRa: DocumentBootstrapDeclinedSchema,
+  gACn7Kx4MP1u1hNiw5YuwHC6TEcCTLzyygc4YYN7Xmp: DocumentBootstrapFailedSchema,
+  '3bhU39YjdqxCGhSW6LodoaP3nTfnYTAB8PY8NaHSLkbt':
     DocumentBootstrapInProgressSchema,
-  GtkzouXkHv2NByNsd8ciAGSpgaMcwr2LwL9Px7JLdrBJ:
+  GT7kXB7fBv9bKxn8ZM99E4XUaHecnGpMGZ5NMsB4ekDq:
     DocumentBootstrapRequestedSchema,
-  HqeiZDQNRH4YUcB6ZLXUc4jdjEcVURhBAc3CsX5HGB7m: ParticipantMappingSchema,
+  '2bpoRUwLybnKnNhCfmE28HEfh4JMTPBdCRr93G31goFW': ParticipantMappingSchema,
 };

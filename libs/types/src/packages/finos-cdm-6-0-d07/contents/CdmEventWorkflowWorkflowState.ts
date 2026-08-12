@@ -13,7 +13,7 @@ export const CdmEventWorkflowWorkflowState: Record<string, unknown> = {
     description:
       'Workflow data that is specific to certain market participants and is expressed as part of the CDM in a very generic manner, which can be party-specific. The initial use cases have been derived from the CME clearing and the DTCC TIW submissions.\n',
     itemType: {
-      blueId: 'HL2ZcMwczuHgPoUL75nm9XG9rZy6XeFMmzGuuWfqxkya',
+      blueId: 'CwZCsRkBByBtLTC63kaBcjcNDQKK1hV2Mnh42XUhafmm',
     },
     schema: {
       minItems: 0,
@@ -26,7 +26,7 @@ export const CdmEventWorkflowWorkflowState: Record<string, unknown> = {
     description:
       'The identity of the warehouse, if any, that is executing that workflow step.',
     type: {
-      blueId: '6exizYh6WdJdboTXU5vG7ZycT7oysGTNWCBaBzuWkBBs',
+      blueId: 'A1oVS1sh8n5WgZyH6sTQy19sNHZuLmWHHBGQLvN4s1Xq',
     },
   },
   workflowStatus: {
@@ -35,7 +35,7 @@ export const CdmEventWorkflowWorkflowState: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BvJRype2zWVijuwSinejW5FK4QMppv6EphZ6CPresR4s',
+      blueId: '5dZPU8bHyFfAju8bde9s3C64P7cYcu2c4awm2CKzJfmY',
     },
   },
 };

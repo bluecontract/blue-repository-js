@@ -4,13 +4,13 @@ export const CdmEventWorkflowFieldWithMetaLimitLevelEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/event/workflow/FieldWithMetaLimitLevelEnum',
   val: {
     type: {
-      blueId: 'EZdU7ZfikeT9jXmxHjC3ABGRtnYsqhzhoL58Cfo3ojj1',
+      blueId: '8fPa1iYkGnYHoDjTLuifMbshggJh9khUNhLy4N8UYPSe',
     },
   },
 };

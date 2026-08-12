@@ -2,7 +2,7 @@ export const CdmEventCommonBusinessEvent: Record<string, unknown> = {
   after: {
     description: 'Specifies the after trade state(s) created.',
     itemType: {
-      blueId: 'HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd',
+      blueId: '7FB6ca7DYRSDuwzXQm4kVBg9cea9CR3KuhT8hiffquh9',
     },
     schema: {
       minItems: 0,
@@ -13,7 +13,7 @@ export const CdmEventCommonBusinessEvent: Record<string, unknown> = {
   },
   corporateActionIntent: {
     type: {
-      blueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
+      blueId: '8CunnBK9d9T4uuangx5iLWyAisgbJvXeXi25J7Z91ZC8',
     },
   },
   description:
@@ -42,7 +42,7 @@ export const CdmEventCommonBusinessEvent: Record<string, unknown> = {
   instruction: {
     description: 'Specifies the instructions to create the Business Event.',
     itemType: {
-      blueId: 'GEHuJ1Fk1jSrDMfbynCACW1dsPVuMhSkjFbkitJU37Qp',
+      blueId: '2urM8YidHJgh8XiXzndxTChPWv9jF8cYEEK55a4K8jMH',
     },
     schema: {
       minItems: 0,
@@ -55,7 +55,7 @@ export const CdmEventCommonBusinessEvent: Record<string, unknown> = {
     description:
       'The intent attribute is meant to be specified when the event qualification cannot be programmatically inferred from the event features. As a result it is only associated with those primitives that can give way to such ambiguity, the quantityChange being one of those. An example of such is a reduction in the trade notional, which could be interpreted as either a trade correction (unless a maximum period of time post-event is specified as part of the qualification), a partial termination or a portfolio rebalancing in the case of an equity swap. On the other hand, an event such as the exercise is not expected to have an associated intent as there should not be ambiguity.\n',
     type: {
-      blueId: '3eSk21DN6a3UUApaPYyPtqi3HPeLX7zYga6PMuXULqNa',
+      blueId: 'EDVtfDGYSJkUsQf4rgXBS44jiKV8LX2FxQCPY4RReb2N',
     },
   },
   name: 'cdm/event/common/BusinessEvent',
@@ -63,7 +63,7 @@ export const CdmEventCommonBusinessEvent: Record<string, unknown> = {
     description:
       'Specifies the package information in case the business event represents several trades executed as a package (hence this attribute is optional). The package information is only instantiated once at the business event level to preserve referential integrity, whereas individual trades make reference to it to identify that they are part of a package.\n',
     type: {
-      blueId: 'Dq7xVZaLz1ofmKsUodtSSbe6YGxaRdCtP5HM1pKU8RHF',
+      blueId: '9KV48b6Fb2r3WJ1DyeqrYTjD1WUuExEj2cDwLdCGQHmu',
     },
   },
 };

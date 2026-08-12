@@ -13,7 +13,7 @@ export const CdmProductCommonSettlementPhysicalSettlementTerms: Record<
     description:
       'This element contains all the ISDA terms relevant to defining the deliverable obligations.',
     type: {
-      blueId: 'siew7R9pM49xxdDdrA2tnaBp8jSYtkNG6esorJcxELg',
+      blueId: 'FytyoK3ou5gtYSUvKB3BqJWUoTa8QTYTXXvUWzoS6mRJ',
     },
   },
   description:
@@ -37,7 +37,7 @@ export const CdmProductCommonSettlementPhysicalSettlementTerms: Record<
     description:
       'Specifies the clearing organization (CCP, DCO) to which the trade should be cleared.',
     type: {
-      blueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
+      blueId: '5UenXSd178j4ogWvtPBmvmYtMB2vnBUbSZpAKNkbGcuf',
     },
   },
   sixtyBusinessDaySettlementCap: {

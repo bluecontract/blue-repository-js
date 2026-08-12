@@ -4,13 +4,13 @@ export const CdmBaseStaticdataAssetRatesFieldWithMetaFloatingRateIndexEnum: Reco
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/staticdata/asset/rates/FieldWithMetaFloatingRateIndexEnum',
   val: {
     type: {
-      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
+      blueId: 'vMjyu6sbtgT7FA6GScxrp32Njg3k9oW6KxuXLU9RYHx',
     },
   },
 };

@@ -6,7 +6,7 @@ export const CdmProductAssetCalculationScheduleDeliveryPeriods: Record<
     description:
       'The number of units included in the transaction for each delivery interval',
     type: {
-      blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+      blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
     },
   },
   description: 'Period and time profile over which the delivery takes place.',
@@ -20,14 +20,14 @@ export const CdmProductAssetCalculationScheduleDeliveryPeriods: Record<
   priceTimeIntervalQuantity: {
     description: 'Price per quantity per delivery time interval.',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
   profile: {
     description:
       'Defines the delivery profile of the asset, including the load type and the delivery intervals.',
     itemType: {
-      blueId: 'E8QF9EBMdnTPHUuRgEqvQUvGm75ReZB3zjKJB7BSjt7z',
+      blueId: 'huDyD12ZoREuxfsApppfcWfJ4LddBpaDDswYuKpWtH5',
     },
     schema: {
       minItems: 0,

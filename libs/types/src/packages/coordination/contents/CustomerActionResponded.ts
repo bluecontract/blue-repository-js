@@ -21,6 +21,6 @@ export const CustomerActionResponded: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
 };

@@ -4,13 +4,13 @@ export const CdmLegaldocumentationMasterFieldWithMetaMasterConfirmationAnnexType
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/legaldocumentation/master/FieldWithMetaMasterConfirmationAnnexTypeEnum',
   val: {
     type: {
-      blueId: 'Ge5XthGPax9Pcox4Sg4TN3G8GY41YZjZQjFbGESHPqiV',
+      blueId: 'ExCSWGKawXjY953z2c2Ne9PYFrtJjRLNMkxwXA8PPtrv',
     },
   },
 };

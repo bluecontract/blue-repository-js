@@ -6,7 +6,7 @@ export const CdmBaseStaticdataPartyAncillaryParty: Record<string, unknown> = {
     description:
       'Optionally specifies the counterparty that the ancillary party is acting on behalf of.',
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
   partyReference: {
@@ -29,7 +29,7 @@ export const CdmBaseStaticdataPartyAncillaryParty: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
+      blueId: '5UenXSd178j4ogWvtPBmvmYtMB2vnBUbSZpAKNkbGcuf',
     },
   },
 };

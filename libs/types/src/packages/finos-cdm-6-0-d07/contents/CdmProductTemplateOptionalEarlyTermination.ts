@@ -6,14 +6,14 @@ export const CdmProductTemplateOptionalEarlyTermination: Record<
     description:
       'The ISDA Calculation Agent responsible for performing duties associated with an optional early termination.',
     type: {
-      blueId: 'FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau',
+      blueId: 'BmkE3R86Mi5VSgGXWARzCmJ1FbnwnZDnHtccZ6MSGnRQ',
     },
   },
   cashSettlement: {
     description:
       'If specified, this means that cash settlement is applicable to the transaction and defines the parameters associated with the cash settlement procedure. If not specified, then physical settlement is applicable.\n',
     type: {
-      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
+      blueId: 'BRJ2J4zKmK8CLQta8gGcSboyer9Sby49nV8HopjaFM7g',
     },
   },
   description:
@@ -22,7 +22,7 @@ export const CdmProductTemplateOptionalEarlyTermination: Record<
     description:
       'Definition of the party to whom notice of exercise should be given.',
     itemType: {
-      blueId: 'JC1AzddnU2E4ioTzwsgW9ohgnrfpQQusp6hRq412YjUZ',
+      blueId: '87nUue1ru1iHhXaB5EjL62TAsMV9t3vSvVB3X7XvwPH6',
     },
     schema: {
       minItems: 0,
@@ -38,7 +38,7 @@ export const CdmProductTemplateOptionalEarlyTermination: Record<
       required: true,
     },
     type: {
-      blueId: 'J1G2hQLDGZ1gu2re4Z6NCNRA3Ze9S9LM51pbnxyzozLq',
+      blueId: '5gJQwLbmDRFr1hrMPaZEsHFgWih7ce9ciXS2YMUGt55A',
     },
   },
   followUpConfirmation: {
@@ -60,14 +60,14 @@ export const CdmProductTemplateOptionalEarlyTermination: Record<
     description:
       'An early termination provision to terminate the trade at fair value where one or both parties have the right to decide on termination.\n',
     type: {
-      blueId: 'GjM8odwxuvdr9Y58M4jULKzxi93AmZuKSFfkTFsJ7cYx',
+      blueId: 'E9tgtxzW2aKM5cXBuZ4HZEsYRbKqjQQpVyxRWYXeF6UU',
     },
   },
   singlePartyOption: {
     description:
       'If optional early termination is not available to both parties then this component specifies the buyer and seller of the option. In FpML, this attribute is of type SinglePsrtyOption, which actually consists of the BuyerSeller.model.\n',
     type: {
-      blueId: 'HA8fmtXcNJxs3hXa88H9PHchDg6hgAFvto4VVdW1aZmf',
+      blueId: 'FJAP5z7vAscmEbjahmsTGxsBhr4mK2GAQkcC8bjM6AEf',
     },
   },
 };

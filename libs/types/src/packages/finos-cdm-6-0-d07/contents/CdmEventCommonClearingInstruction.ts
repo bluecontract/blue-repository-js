@@ -6,21 +6,21 @@ export const CdmEventCommonClearingInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd',
+      blueId: '7FB6ca7DYRSDuwzXQm4kVBg9cea9CR3KuhT8hiffquh9',
     },
   },
   clearerParty1: {
     description:
       'Optional party facing the CCP, acting as clearing member for party1.',
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
   clearerParty2: {
     description:
       'Optional party facing the CCP, acting as clearing member for party2.',
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
   clearingParty: {
@@ -30,7 +30,7 @@ export const CdmEventCommonClearingInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
   description:
@@ -49,7 +49,7 @@ export const CdmEventCommonClearingInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
   party2: {
@@ -59,7 +59,7 @@ export const CdmEventCommonClearingInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
   },
 };

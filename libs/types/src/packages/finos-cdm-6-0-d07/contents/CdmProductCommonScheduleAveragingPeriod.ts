@@ -4,13 +4,13 @@ export const CdmProductCommonScheduleAveragingPeriod: Record<string, unknown> =
       description:
         'An unweighted list of averaging observation date and times.',
       type: {
-        blueId: 'H5D8BrpdPx4G3A74ypfsUrC27hh6pjWVeJD3s6bkSu7e',
+        blueId: 'pyxT9DcFhciMsTbfdSBW4nzkWrgN85S2H95X4k21814',
       },
     },
     averagingObservations: {
       description: 'A weighted list of averaging observation date and times.',
       type: {
-        blueId: 'GVFbbaLLLxVnRS8pEFt4Pwr3VMsXjMm2nM6PdGfDenD3',
+        blueId: '9VuZT1q9y8HMV24KTiHrvnnkNBznHmHcHeoX9QgJSuw6',
       },
     },
     description: 'Period over which an average value is taken.',
@@ -18,14 +18,14 @@ export const CdmProductCommonScheduleAveragingPeriod: Record<string, unknown> =
       description:
         'The market disruption event as defined by ISDA 2002 Definitions.',
       type: {
-        blueId: 'FjySLYZUdztPrBskVvWtnCvGs6KZVkZWrLsrrLpotMYG',
+        blueId: '2mUG6yVN1o4wufU3eqD46MgJ7jFsjjB6XVZAGeFU8AAM',
       },
     },
     name: 'cdm/product/common/schedule/AveragingPeriod',
     schedule: {
       description: 'A schedule for generating averaging observation dates.',
       itemType: {
-        blueId: 'CR9L4SVmKAvSmKh2xUfY6RvyAg4XL3BwDYCeqWk8ejn8',
+        blueId: 'hjVS7GrE9QqNFk61XTvTkP6ktQxzv96UUaGK74mg9YK',
       },
       schema: {
         minItems: 0,

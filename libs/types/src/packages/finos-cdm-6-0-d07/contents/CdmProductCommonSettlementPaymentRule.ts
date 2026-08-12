@@ -6,7 +6,7 @@ export const CdmProductCommonSettlementPaymentRule: Record<string, unknown> = {
     description:
       'This attribute is not present as part of the FpML construct, as the payment rule is specialised by means of runtime type extension through the xsi:type.\n',
     type: {
-      blueId: 'GqKSKHCa6D8xbrMJnRibPtb1dXGasKD1awv2Ubini8GT',
+      blueId: 'mbg9RAjY9BfmAiTUiScZ7m8HbTNjePvoDuhN9R2AbhR',
     },
   },
 };

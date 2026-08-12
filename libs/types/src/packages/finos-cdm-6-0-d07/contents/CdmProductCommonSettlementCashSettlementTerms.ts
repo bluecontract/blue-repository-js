@@ -13,14 +13,14 @@ export const CdmProductCommonSettlementCashSettlementTerms: Record<
     description:
       'The amount paid by the seller to the buyer for cash settlement on the cash settlement date. If not otherwise specified, would typically be calculated as 100 (or the Reference Price) minus the price of the Reference Obligation (all expressed as a percentage) times Floating Rate Payer Calculation Amount. ISDA 2003 Term: Cash Settlement Amount.\n',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   cashSettlementMethod: {
     description:
       'Specifies the type of cash settlement method: cash price, yield curve etc.\n',
     type: {
-      blueId: 'BFK7Kwvvqbbpshj96TundhGbsBuspSgCDzv732RGP6aJ',
+      blueId: 'BKWi3mBkKXPeANP5a7z72MQ6X647gnjA4wfAV1LNodBP',
     },
   },
   description:
@@ -44,21 +44,21 @@ export const CdmProductCommonSettlementCashSettlementTerms: Record<
     description:
       'Defines the different methods to specify a valuation date, as used for cash settlement. The Single / Multiple ValuationDate is used for the determination of recovery in a credit event, the RelativeDateOffset is used for cash-settled option, and FxFixingDate is used for cross-currency settlement.\n',
     type: {
-      blueId: 'Ec6MmK2TGnYoMytTLHEDcnQGwA2y427JhgfBex5P61Ax',
+      blueId: '3CnBUXCMLZ1zVGpJX8yeib6jVzgKNxUzxvbt7Tjqhicb',
     },
   },
   valuationMethod: {
     description:
       'Specifies the parameters required to obtain a valuation, including the source, quotation method (bid, mid etc.) and any applicable quotation amount.\n',
     type: {
-      blueId: 'G6B4zpZqUNxW8aaqxnCjbpzHwcszJHv47qgoCSRLg9FS',
+      blueId: 'CMAHxJFY94A1pB2r5ssa156H4SY5d4BUskoSAJe3jKQY',
     },
   },
   valuationTime: {
     description:
       'The time of the cash settlement valuation date when the cash settlement amount will be determined according to the cash settlement method, if the parties have not otherwise been able to agree the cash settlement amount. When using quations, this is the time of day in the specified business center when the calculation agent seeks quotations for an amount of the reference obligation for purposes of cash settlement. ISDA 2003 Term: Valuation Time.\n',
     type: {
-      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+      blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
     },
   },
 };

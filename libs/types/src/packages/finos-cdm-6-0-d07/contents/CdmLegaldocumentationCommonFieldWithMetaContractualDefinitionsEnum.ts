@@ -4,13 +4,13 @@ export const CdmLegaldocumentationCommonFieldWithMetaContractualDefinitionsEnum:
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/legaldocumentation/common/FieldWithMetaContractualDefinitionsEnum',
   val: {
     type: {
-      blueId: 'CQzTbWm83XYnnNf8Z5x9G7WakNb7E4nLLZqNgDki1J2p',
+      blueId: '8cHgf44EBknKCh7X412Z4DMR3Y5zBFoZjQDmYRCJTzrQ',
     },
   },
 };

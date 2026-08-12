@@ -3,7 +3,7 @@ export const CdmProductAssetDividendCurrency: Record<string, unknown> = {
     description:
       'The currency in which the dividend is denominated. The list of valid currencies is not presently positioned as an enumeration as part of the CDM because that scope is limited to the values specified by ISDA and FpML. As a result, implementers have to make reference to the relevant standard, such as the ISO 4217 standard for currency codes.\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   currencyReference: {
@@ -18,7 +18,7 @@ export const CdmProductAssetDividendCurrency: Record<string, unknown> = {
     description:
       'Specifies the method according to which the dividend is determined, e.g. the dividend currency.',
     type: {
-      blueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
+      blueId: '5jqv11pA6a3Nrtm11SrFfbQvRZZ6ukyLt7PkNLq82wy1',
     },
   },
   name: 'cdm/product/asset/DividendCurrency',

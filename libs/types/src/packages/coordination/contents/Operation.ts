@@ -14,6 +14,6 @@ export const Operation: Record<string, unknown> = {
       'Expected request payload shape or description for this operation. Concrete operation runtimes may use this for event\nmatching, validation, or documentation.\n',
   },
   type: {
-    blueId: '7X46P3Q6FJrogqKrBXTALpqzkieyyiQeatnqLvWzAPXE',
+    blueId: '2Ag2NfcWpCfPqBAR7bFAEL9L3roX3UWGUkDq7nN3D4gV',
   },
 };

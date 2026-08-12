@@ -16,7 +16,7 @@ export const CdmProductAssetFloatingrateFloatingRateProcessingDetails: Record<
   },
   processingParameters: {
     type: {
-      blueId: '6xhUj24tdK3fZ5cyajqu3YGHmhotZzzXE5P1CxK4E7uu',
+      blueId: 'PFuvPDjyVXw6NBBWr4bCzfHdZAhzniSg3LE8zBNGqLW',
     },
   },
   rawRate: {

@@ -5,7 +5,7 @@ export const CdmEventCommonTransferInstruction: Record<string, unknown> = {
   transferState: {
     description: 'Specifies the terms and state of a transfers.',
     itemType: {
-      blueId: '9HPCH457X3P45F4b4BRLZZYtzUtV2TFY3DmCKNCJL7DZ',
+      blueId: '5DE1nk33eUe1qZRRMM5fGCsyGFrVj8JswsEvwtwzL2K9',
     },
     schema: {
       minItems: 0,

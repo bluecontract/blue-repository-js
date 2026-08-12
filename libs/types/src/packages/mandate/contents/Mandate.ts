@@ -58,7 +58,7 @@ export const Mandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     applyMandateTermination: {
@@ -72,7 +72,7 @@ export const Mandate: Record<string, unknown> = {
         'Sole authoritative mandate-termination implementation.\n\nIt accepts Mandate/Mandate Terminated emitted by an operation. On\nCoordination/Status Pending, Mandate/Status Authority Confirmed, or\nMandate/Status Active it changes status to Mandate/Status Terminated and\nrecords terminatedAt from the root causal Timeline Entry. The Message\nitself carries the required reason and correlation, does not supply the\ntimestamp, and is not emitted again. Its reason is propagated unchanged\nto the graceful processor termination request.\n\nThe Compute result requests graceful termination after its state changes\nand emitted events have been buffered. Coordination validates the complete\nresult before applying effects, then applies changes, emits events, and\nrequests graceful termination in that order.\n\nOn Mandate/Status Terminated or Coordination/Status Failed it performs no\nlifecycle mutation and does not replace terminatedAt. Receipt of the\ntermination Message still requests graceful processing termination, so a\nfailed mandate can be stopped without replacing its failure state.\n\nConcrete workflow steps and BEX implementation are defined in this base\ntype. No dedicated termination workflow-step type is required.\n',
       event: {
         type: {
-          blueId: 'EcXZbNZ5BjMCBEwEaPExWjK6KLLrt3Aoxx5TNQiA5R1A',
+          blueId: 'C3Y1zAyhCiu9wJ23gYg6vqFnVQyXKZeiHow9CzJ4W9t7',
         },
       },
       steps: {
@@ -98,7 +98,7 @@ export const Mandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     authorityHolderChannel: {
@@ -108,7 +108,7 @@ export const Mandate: Record<string, unknown> = {
         required: true,
       },
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     authorizedActorChannel: {
@@ -118,7 +118,7 @@ export const Mandate: Record<string, unknown> = {
         required: true,
       },
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     confirmMandateAuthority: {
@@ -153,7 +153,7 @@ export const Mandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     initializeMandate: {
@@ -167,7 +167,7 @@ export const Mandate: Record<string, unknown> = {
         'Inherited initialization implementation.\n\nNormal Blue type resolution and bootstrap validate required role-channel\nbindings and lifecycle configuration. When validation.function.entry is\npresent, this workflow verifies that validation.function.functions\ndeclares the selected local function.\n\nOn success it materializes activateOnAuthorityConfirmation as true when\nabsent and sets status to Coordination/Status Pending.\n\nOn failure it sets status to Coordination/Status Failed, stores the\nfirst deterministic failure in initializationError.\n\nInitialization does not write, clear, or normalize lifecycle timestamps.\n\nConcrete workflow steps and BEX implementation are defined in this base\ntype.\n',
       event: {
         type: {
-          blueId: 'Ht1o66MTLKf7JmnEiR27rRLSwdz8FUTgf2mGPNuLSDUL',
+          blueId: 'Gck5z8qnbcUvJNkawzKPghj14dJBw8GxkC9mh6cL5e5C',
         },
       },
       steps: {
@@ -193,14 +193,14 @@ export const Mandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'MyaXwTXty7ZujV89fT5STJvXpEr1W59puqdK2XM9ALv',
+        blueId: 'HGVWruAeRNXH8kjHbo7cW24PeJuD8hNZa8ZZBDqdVYaX',
       },
     },
     mandateActivatedChannel: {
       description:
         'Internal triggered-event channel routing Mandate/Mandate Activated\nMessages emitted by confirmation or specialized mandate operations.\nExternal Timeline Entries do not enter this channel directly.\n',
       type: {
-        blueId: '5HwxfbwRBCxG8xYpowWkCPC9akqUSKV7So2M4QHEmLsZ',
+        blueId: 'DRxc8GkSGPbdENdB8ZK976i1Jzc6M1QdG8UsVMHcqQcf',
       },
     },
     mandateGuarantorChannel: {
@@ -210,14 +210,14 @@ export const Mandate: Record<string, unknown> = {
         required: true,
       },
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     mandateLifecycleChannel: {
       description:
         'Processor-managed lifecycle channel used by the inherited initialization\nworkflow.\n',
       type: {
-        blueId: '2DXGQUiQBQ6CT89jwAsTAXaEPhLgiSXhKCGh9Q7Hv3MQ',
+        blueId: '2ukJitzzDKQWHJ5EVUtn3t4FXieGmNA1NdwFSqG8qcfo',
       },
     },
     mandateLifecycleDefinition: {
@@ -229,7 +229,7 @@ export const Mandate: Record<string, unknown> = {
         },
         authorityConfirmedMessageType: {
           type: {
-            blueId: 'EbNsQWy645JPPuWhkDw3XcrQk1neH2Z8KBsTvUTCrrmk',
+            blueId: 'FrxKioNPTEtuWkvxdeFQ66SbPAEUFg19veQMG1J6xo9J',
           },
         },
         statusActiveType: {
@@ -254,7 +254,7 @@ export const Mandate: Record<string, unknown> = {
         },
         terminatedMessageType: {
           type: {
-            blueId: 'EcXZbNZ5BjMCBEwEaPExWjK6KLLrt3Aoxx5TNQiA5R1A',
+            blueId: 'C3Y1zAyhCiu9wJ23gYg6vqFnVQyXKZeiHow9CzJ4W9t7',
           },
         },
       },
@@ -1719,14 +1719,14 @@ export const Mandate: Record<string, unknown> = {
         },
       },
       type: {
-        blueId: 'HifMgFGBgsqstDFZ2kXeQ45LVKXQMP52fV8TqeN6Z1j3',
+        blueId: 'H4tutBkZAgxJsEDyjDohkZk7dcGxXQqwHMEzVkyh3U9n',
       },
     },
     mandateTerminatedChannel: {
       description:
         'Internal triggered-event channel routing Mandate/Mandate Terminated\nMessages emitted by the standard termination operation or specialized\nmandate operations.\n',
       type: {
-        blueId: '5HwxfbwRBCxG8xYpowWkCPC9akqUSKV7So2M4QHEmLsZ',
+        blueId: 'DRxc8GkSGPbdENdB8ZK976i1Jzc6M1QdG8UsVMHcqQcf',
       },
     },
     mandateTerminationChannel: {
@@ -1749,7 +1749,7 @@ export const Mandate: Record<string, unknown> = {
       description:
         'Composite channel through which either the guarantor or authority holder\nmay invoke terminateMandate. When one entry is eligible through both\nmembers, the composite produces one logical delivery.\n',
       type: {
-        blueId: 'BTGajXc8tHeprxrQXRBDfkZxA5tmxo9BEkFoDGXds6yp',
+        blueId: '3Q53ttkVniDP3jYGstwhmX7Yu12qMqNaG1bfCYzcmg2Q',
       },
     },
     terminateMandate: {
@@ -1796,7 +1796,7 @@ export const Mandate: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
   },

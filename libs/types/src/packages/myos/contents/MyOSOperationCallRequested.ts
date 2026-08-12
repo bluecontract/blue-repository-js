@@ -1,6 +1,6 @@
 export const MyOSOperationCallRequested: Record<string, unknown> = {
   description:
-    'Request asking MyOS Admin to write an Operation Request into a target document. The request does not carry a mandate; MyOS Admin finds and verifies an active matching MyOS Document Operation Mandate.\n',
+    'Request asking MyOS Admin to prepare an Operation Request for a target document. This request is not authority. Before delegated execution, MyOS must select and verify one exact active MyOS Agent Operation Mandate, and the target Timeline Entry must carry the corresponding Mandate Authority.\n',
   name: 'MyOS Operation Call Requested',
   request: {
     description: 'Target operation payload.',

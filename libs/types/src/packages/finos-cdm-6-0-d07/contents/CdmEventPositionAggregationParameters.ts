@@ -28,13 +28,13 @@ export const CdmEventPositionAggregationParameters: Record<string, unknown> = {
     description:
       'To aggregate based on position status (EXECUTED, SETTLED etc)',
     type: {
-      blueId: 'CtjNKoKQ8S3xNPyMY6GXJKQAAfjxpTQmdDgLUNE3iAJM',
+      blueId: 'GumKrjeZLXBawN5df6PaCT5SfGKvBQmx12GKRoEcs9rV',
     },
   },
   product: {
     description: 'To aggregate based on a selection of products.',
     itemType: {
-      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4',
+      blueId: '52zbUBnH8375AE19gNSXRU7GgGs5tcoUhR84LVdMrBWi#5',
     },
     schema: {
       minItems: 0,

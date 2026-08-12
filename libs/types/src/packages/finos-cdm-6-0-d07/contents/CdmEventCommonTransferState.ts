@@ -9,13 +9,13 @@ export const CdmEventCommonTransferState: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Huf4W2NzpakJVTTdkhKJriEVabT1NBezmnyTJB9Wt2Vs',
+      blueId: 'D5TDQT9MAD6sFuVDC3EEoupfJghS4ZKw8J27kLnBJM3e',
     },
   },
   transferStatus: {
     description: 'Represents the State of the Transfer through its life-cycle.',
     type: {
-      blueId: 'CffZN3WjvV7L4yuq8gPxEorKZMGZzCxYzuaCyW5GRsfn',
+      blueId: 'Es9yBD5QerrdGCN3h3jDATJabhehNiQmwVoeCsKewSPe',
     },
   },
 };

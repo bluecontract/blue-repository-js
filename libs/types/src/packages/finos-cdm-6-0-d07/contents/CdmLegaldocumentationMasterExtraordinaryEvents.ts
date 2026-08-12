@@ -6,7 +6,7 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents: Record<
     description:
       'Where parties may optionnaly describe any extra bespoke agreements, in regards of the standardized Extraordinary Events.\n',
     itemType: {
-      blueId: 'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0',
+      blueId: 'GuFp1BJy74SUjnjVg7r3RwuRPXYUDKSUyEecdtsJ7QMX#0',
     },
     schema: {
       minItems: 0,
@@ -19,7 +19,7 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents: Record<
     description:
       'Per the 2002 ISDA Equity Derivatives Definitions | 2018 ISDA CDM Equity Confirmation for Security Equity Swaps',
     type: {
-      blueId: '9k6rT7iiYXbFohPsdojsVuAV5SSxQxhoLfFzFwh9CtQy',
+      blueId: 'BM4rGBdGf3cf5jwjqFsDtmczUu4GP1JoMjZyDxQkyssX',
     },
   },
   compositionOfCombinedConsideration: {
@@ -32,7 +32,7 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents: Record<
     description:
       'Per the 2002 ISDA Equity Derivatives Definitions | 2018 ISDA CDM Equity Confirmation for Security Equity Swap:',
     type: {
-      blueId: '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq',
+      blueId: 'AiTXG2uwwXyPSfFiDC4VTP7LSQHP46fQf8FCaFFh6jHJ',
     },
   },
   description:
@@ -62,7 +62,7 @@ export const CdmLegaldocumentationMasterExtraordinaryEvents: Record<
     description:
       'Per the 2002 ISDA Equity Derivatives Definitions | 2018 ISDA CDM Equity Confirmation for Security Equity Swap',
     type: {
-      blueId: '9yFNw68PR5uL5JLChMJozdWh7m979eeJVgEptMKh9oVq',
+      blueId: 'AiTXG2uwwXyPSfFiDC4VTP7LSQHP46fQf8FCaFFh6jHJ',
     },
   },
   representations: {

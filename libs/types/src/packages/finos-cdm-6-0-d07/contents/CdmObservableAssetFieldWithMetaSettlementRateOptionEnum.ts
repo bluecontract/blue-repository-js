@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaSettlementRateOptionEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaSettlementRateOptionEnum',
   val: {
     type: {
-      blueId: 'AC1Ks1QsNocGMbEcoyG6AAtphUMjU2nH9ByiwJVAPxWW',
+      blueId: 'EwUsZoM9DmKcQmfrnDG5YCv3bF338gxD6n6WWJmgGirC',
     },
   },
 };

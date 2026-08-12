@@ -9,7 +9,7 @@ export const CdmObservableEventObservation: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HsL4LyTBaWKTLfoBBFsckiquH2hkGP3QRC7x8z6S4s2L',
+      blueId: '9naeLEXLRWTumCrkSpeU3W9ou5dZxNFfPNSpUrCjWXbE',
     },
   },
   observedValue: {
@@ -18,7 +18,7 @@ export const CdmObservableEventObservation: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
 };

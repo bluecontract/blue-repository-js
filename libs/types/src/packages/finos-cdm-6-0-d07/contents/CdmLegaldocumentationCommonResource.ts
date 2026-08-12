@@ -12,21 +12,21 @@ export const CdmLegaldocumentationCommonResource: Record<string, unknown> = {
     description:
       'Indicates the language of the resource, described using the ISO 639-2/T Code.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   length: {
     description:
       'Indicates the length of the resource. For example, if the resource were a PDF file, the length would be in pages.\n',
     type: {
-      blueId: '3HwpSv5LnJqxEq379qzBShVAkqrJkDsW1ysGVeXzwd6B',
+      blueId: '774eqeqTPdD7YGYPSVTQQ7NNBf5v5z8n5MppuAhC84Ro',
     },
   },
   mimeType: {
     description:
       'Indicates the type of media used to store the content. mimeType is used to determine the software product(s) that can read the content. MIME Types are described in RFC 2046.\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/legaldocumentation/common/Resource',
@@ -37,14 +37,14 @@ export const CdmLegaldocumentationCommonResource: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   resourceType: {
     description:
       'A description of the type of the resource, e.g. a confirmation.',
     type: {
-      blueId: '8Wj1ScUWE2jG7vPb1vgp6xRgqJ4EbYyCS9n2CbaCYTSY',
+      blueId: '2csbatPyULPRBcWxMJBAqZeKStFUW9jtSY6H3Dew3EGE',
     },
   },
   sizeInBytes: {

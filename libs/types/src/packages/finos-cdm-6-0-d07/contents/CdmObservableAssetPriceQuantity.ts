@@ -5,7 +5,7 @@ export const CdmObservableAssetPriceQuantity: Record<string, unknown> = {
     description:
       'Specifies the date at which the price and quantity become effective. This day may be subject to adjustment in accordance with a business day convention, or could be specified as relative to a trade date, for instance. Optional cardinality, as the effective date is usually specified in the product definition, so it may only need to be specified as part of the PriceQuantity in an increase/decrease scenario for an existing trade.\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   name: 'cdm/observable/asset/PriceQuantity',
@@ -13,14 +13,14 @@ export const CdmObservableAssetPriceQuantity: Record<string, unknown> = {
     description:
       'Specifies the object to be observed for a price, it could be an asset or an index. The cardinality is optional as some quantity / price cases have no observable (e.g. a fixed rate in a given currency).\n',
     type: {
-      blueId: '356TLY4h2f86ko6g3UzBMXTWaCaZ9zdRXa3zrGiVTQrL',
+      blueId: 'F7sFzXWUzuCitCY1sux6JewiNm7FurU1UY6DDXgYdozC',
     },
   },
   price: {
     description:
       'Specifies a price to be used for trade amounts and other purposes.',
     itemType: {
-      blueId: '5P1iV2VHBfC9AHhxAxN9sAUaoXTBP5jKaV5KMwJEtLvz',
+      blueId: 'D56TQGXSu2P9sUf1weZUW49yhP5PW6GhYpB3gZeABsUn',
     },
     schema: {
       minItems: 0,
@@ -33,7 +33,7 @@ export const CdmObservableAssetPriceQuantity: Record<string, unknown> = {
     description:
       'Specifies a quantity to be associated with an event, for example a trade amount.',
     itemType: {
-      blueId: '4u9YFPkqCriFw9Nz1fytvh7d9BRSRKqqQKDjqfPsqaD5',
+      blueId: 'FCaGFiACv9gh7BbLiPZYLCDttHSuo2J6u9uyRkQbxeSw',
     },
     schema: {
       minItems: 0,

@@ -20,7 +20,7 @@ export const CdmProductCollateralIndependentAmount: Record<string, unknown> = {
     description:
       'An attribute that specifies a payment as the combination of a payment amount, a payment date and an associated payment calculation rule.\n',
     itemType: {
-      blueId: 'DekzGsQAbNvqbqgomWQkf83asiULvd7vJKgEzRsTBfFf',
+      blueId: '71KycHWxsPTM5KKe67Bja1yPxhGo1n6v5vLCiyhTcJLV',
     },
     schema: {
       minItems: 1,

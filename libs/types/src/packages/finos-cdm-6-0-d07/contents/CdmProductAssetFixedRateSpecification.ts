@@ -5,7 +5,7 @@ export const CdmProductAssetFixedRateSpecification: Record<string, unknown> = {
     description:
       'The fixed rate or fixed rate schedule expressed as explicit fixed rates and dates. In the case of a schedule, the step dates may be subject to adjustment in accordance with any adjustments specified in calculationPeriodDatesAdjustments.\n',
     type: {
-      blueId: '7EEvMt9emT8iceX5fpLkggKJmrok2qeWHbESwueZHstB',
+      blueId: '7phCnc6jaEQE2YU1kKRsCj2JBQMaraQWKWjXBrdBVpvE',
     },
   },
 };

@@ -3,7 +3,7 @@ export const CdmBaseDatetimeCalculationFrequency: Record<string, unknown> = {
     description:
       'Specifies the business center for adjustment of calculation period.',
     itemType: {
-      blueId: 'Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL',
+      blueId: 'Gpw3zDUDENr9thYruxb1S1firzfQSgHYJs5W3zaBbAzN',
     },
     schema: {
       minItems: 0,
@@ -18,7 +18,7 @@ export const CdmBaseDatetimeCalculationFrequency: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+      blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
     },
   },
   dayOfMonth: {
@@ -30,7 +30,7 @@ export const CdmBaseDatetimeCalculationFrequency: Record<string, unknown> = {
   dayOfWeek: {
     description: 'Specifies the day of the week if used.',
     type: {
-      blueId: 'AYNVNBQsDmS46NA7kfw7jh6eh8DBspyMyDd1bzyBmDG5',
+      blueId: 'DmhfCUUAaa5kZ8Qsom8VwEsMN3qmGWaJX1pGtUCfbqRQ',
     },
   },
   description:
@@ -59,7 +59,7 @@ export const CdmBaseDatetimeCalculationFrequency: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   weekOfMonth: {

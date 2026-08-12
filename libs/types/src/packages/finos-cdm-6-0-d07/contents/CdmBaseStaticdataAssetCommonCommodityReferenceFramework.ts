@@ -6,7 +6,7 @@ export const CdmBaseStaticdataAssetCommonCommodityReferenceFramework: Record<
     description:
       'Provides an enumerated value for a capacity unit, generally used in the context of defining quantities for commodities.\n',
     type: {
-      blueId: 'g4vkocaqQK6FYK1ys61BBsp11Y2Daj3aPCffWwm5Egq',
+      blueId: 'CWSVzp2Q44fquiPqREdwPG58ajzi9BWEUvtYAMNDyDaM',
     },
   },
   commodityName: {
@@ -25,7 +25,7 @@ export const CdmBaseStaticdataAssetCommonCommodityReferenceFramework: Record<
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   description: 'Specifies the type of commodity.',
@@ -34,7 +34,7 @@ export const CdmBaseStaticdataAssetCommonCommodityReferenceFramework: Record<
     description:
       'Provides an enumerated values for a weather unit, generally used in the context of defining quantities for commodities.\n',
     type: {
-      blueId: 'DePEyNHqpBtxPVrPYXSKuWt1ugb339xn92ZXP2uKKUgY',
+      blueId: '3RrCehQPhj94WCGJynzHZHuGPw5Vr6EeghnSE82NtFS6',
     },
   },
 };

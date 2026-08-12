@@ -3,7 +3,7 @@ export const CdmProductAssetAssetDeliveryProfileBlock: Record<string, unknown> =
     dayOfWeek: {
       description: 'The days of the week of the delivery.',
       itemType: {
-        blueId: 'AYNVNBQsDmS46NA7kfw7jh6eh8DBspyMyDd1bzyBmDG5',
+        blueId: 'DmhfCUUAaa5kZ8Qsom8VwEsMN3qmGWaJX1pGtUCfbqRQ',
       },
       schema: {
         maxItems: 7,
@@ -17,7 +17,7 @@ export const CdmProductAssetAssetDeliveryProfileBlock: Record<string, unknown> =
       description:
         'The number of units included in the transaction for each delivery interval',
       type: {
-        blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+        blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
       },
     },
     description:
@@ -33,7 +33,7 @@ export const CdmProductAssetAssetDeliveryProfileBlock: Record<string, unknown> =
     priceTimeIntervalQuantity: {
       description: 'Price per quantity per delivery time interval.',
       type: {
-        blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+        blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
       },
     },
     startTime: {

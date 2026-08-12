@@ -3,7 +3,7 @@ export const CdmEventCommonTransfer: Record<string, unknown> = {
     description:
       'Represents the object that is subject to the transfer, it could be an asset or a reference.',
     type: {
-      blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
+      blueId: '8CTGmD55ifZ1AAAr4uYZHw9mUCiZ7foMLqYSEUbPVz3Q',
     },
   },
   description:
@@ -11,7 +11,7 @@ export const CdmEventCommonTransfer: Record<string, unknown> = {
   identifier: {
     description: 'Represents a unique reference to the transfer.',
     itemType: {
-      blueId: '4PPUed4wa5yh6Po87HFZQNZmaedjsuVfFRs2XCHbzciY',
+      blueId: '6qRBmHGpanZLqon5ADoUepYe9Cb8ddGJqU4tQKaj2ugi',
     },
     schema: {
       minItems: 0,
@@ -27,27 +27,27 @@ export const CdmEventCommonTransfer: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs',
+      blueId: '63Bw1Ena6g9zgLcVwPkkpApxNVecQwz8Ygi9rZZFYMoB',
     },
   },
   quantity: {
     description:
       'Represents the amount of the asset to be transferred. The cashflow amount is always a positive number, as the cashflow direction is implied by the payer/receiver attribute.\n',
     type: {
-      blueId: 'BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd',
+      blueId: '6jhJaMEanZrm8mpgb8YxWqCNs2c2UY9AoQigsG7hoNgw',
     },
   },
   resetOrigin: {
     description:
       'Represents the reset and observation values that were used to determine the transfer amount.',
     type: {
-      blueId: 'C2cq6aR7yoFg7jn9vV3wrTukUrevaRzkBo4PeSWP5die',
+      blueId: '7vPrkkWh58nfDDkqkzYizHoGeQi5BC57ZpmFndxmft9R',
     },
   },
   settlementDate: {
     description: 'Represents the date on which the transfer to due.',
     type: {
-      blueId: '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF',
+      blueId: 'EsGmKpSwEv5rrzVy75nUtg6sXKYHCmZRDzkGMYyQ7zhX',
     },
   },
   settlementOrigin: {
@@ -64,7 +64,7 @@ export const CdmEventCommonTransfer: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '28K8jWekKx6AFsw5haFZg81uADTmzkkgCKQErSng8jXd',
+      blueId: '7yFSif63nzYVPnA288VLWxYHoa2GYMW8nXiAbUwJ6hpG',
     },
   },
 };

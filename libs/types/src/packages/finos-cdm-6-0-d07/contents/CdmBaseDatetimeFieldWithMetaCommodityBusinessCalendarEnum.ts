@@ -4,13 +4,13 @@ export const CdmBaseDatetimeFieldWithMetaCommodityBusinessCalendarEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/datetime/FieldWithMetaCommodityBusinessCalendarEnum',
   val: {
     type: {
-      blueId: '3nrMEw5ojL2L4nx9YC3c3c4ANcs6gAFKkas7RgDE5Ao2',
+      blueId: 'DcdNVPHaDXp3kB4voaW5oMavXyuKPnVfULcMDUkQXoZa',
     },
   },
 };

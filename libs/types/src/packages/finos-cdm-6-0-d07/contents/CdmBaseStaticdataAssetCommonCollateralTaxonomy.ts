@@ -11,7 +11,7 @@ export const CdmBaseStaticdataAssetCommonCollateralTaxonomy: Record<
       required: true,
     },
     type: {
-      blueId: 'CUzMUxNcMqZb1GuDaw2n29RnNcaPce9HrpKAyz8gT2m8',
+      blueId: 'DG2puP5kaTQTAW5sZ3dgpiPgy8Kg3yzoTseUHSGxqXmF',
     },
   },
   taxonomyValue: {
@@ -20,7 +20,7 @@ export const CdmBaseStaticdataAssetCommonCollateralTaxonomy: Record<
       required: true,
     },
     type: {
-      blueId: '46LCCSVXKexPjXtAyPSyNEvZuzGR66uVP8ccRPSrwJhs',
+      blueId: '3chJA3JUhKMfsju92nTnCs3wWtJd6BYH3uArkShihsPu',
     },
   },
 };

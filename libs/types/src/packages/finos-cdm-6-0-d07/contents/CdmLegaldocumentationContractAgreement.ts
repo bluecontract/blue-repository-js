@@ -17,7 +17,7 @@ export const CdmLegaldocumentationContractAgreement: Record<string, unknown> = {
   masterAgreementSchedule: {
     description: 'Elections to specify a Master Agreement Schedule.',
     type: {
-      blueId: 'GMD6WsoUkvr8UPZVAk2ciZmosp1rstjA8D6jSBTFkJzm',
+      blueId: 'ENFLSMRkvE9AvBTnEuLaUNaY2pqTgTWvtBVujNMBwwhs',
     },
   },
   name: 'cdm/legaldocumentation/contract/Agreement',
@@ -31,7 +31,7 @@ export const CdmLegaldocumentationContractAgreement: Record<string, unknown> = {
     description:
       'Any additional terms which mainly intend to specify the extraordinary events that may affect a trade and the related contractual rights and obligation of the parties when this happens\n',
     type: {
-      blueId: 'JBQsnuxVFxN3iNMcYdNDDrSvjPZ2uBGXmVMdq9rLwNYn',
+      blueId: 'BaxRmA6JfNi4Kj4ZH8YN67Yq9sBv9YKZbu3vfSQgsPzF',
     },
   },
 };

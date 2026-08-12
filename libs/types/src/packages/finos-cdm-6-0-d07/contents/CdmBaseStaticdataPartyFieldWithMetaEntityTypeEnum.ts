@@ -4,13 +4,13 @@ export const CdmBaseStaticdataPartyFieldWithMetaEntityTypeEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/staticdata/party/FieldWithMetaEntityTypeEnum',
   val: {
     type: {
-      blueId: 'HwqBkWFGaGHyDnDyqqp3Exgm9NRyzpNMvF1N6UtAJeGi',
+      blueId: '3fj5ZpreFrbsrc6yVWgKW85nno6XniWyJ3CkTfCoUEPk',
     },
   },
 };

@@ -4,7 +4,7 @@ export const CdmProductCollateralCollateralTreatment: Record<string, unknown> =
       description:
         'Specification of concentration limits applicable to the collateral criteria.',
       itemType: {
-        blueId: 'ADNePctyfUS9D2wfp8ho1wmncZkAMrobNLpZ1gcNK8Wt',
+        blueId: 'G115DdfxDj4CHzMSeZHcm923Rr9JELfKiG6pVf9ceVu6',
       },
       schema: {
         minItems: 0,

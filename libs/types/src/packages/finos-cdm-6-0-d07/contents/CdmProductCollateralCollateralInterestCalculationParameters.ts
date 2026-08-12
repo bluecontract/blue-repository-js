@@ -5,7 +5,7 @@ export const CdmProductCollateralCollateralInterestCalculationParameters: Record
   compoundingBusinessCenter: {
     description: 'Specifies the applicable business centers for compounding.',
     itemType: {
-      blueId: 'Ftpos6LCMk31PB3e4E1siiMshU1M88BMeTNK4yRypXyL',
+      blueId: 'Gpw3zDUDENr9thYruxb1S1firzfQSgHYJs5W3zaBbAzN',
     },
     schema: {
       minItems: 0,
@@ -18,7 +18,7 @@ export const CdmProductCollateralCollateralInterestCalculationParameters: Record
     description:
       'Specifies the type of compounding to be applied (None, Business, Calendar).',
     type: {
-      blueId: 'GvNXAYyGbJwhZ1D7jxhPLtLsKVTeAZor6SgFatG9UvMa',
+      blueId: 'AdYxmwMLQx4hWKa8Fggt5X4iX1ww5YD2xAy4ij5FccFt',
     },
   },
   dayCountFraction: {
@@ -27,7 +27,7 @@ export const CdmProductCollateralCollateralInterestCalculationParameters: Record
       required: true,
     },
     type: {
-      blueId: 'G5reDMTj2A64oDwXZBaNeRgFEhAtZMkWvkJcte51qHiJ',
+      blueId: '7rLpateRXSy3RdPsPEUcip227zNh4gMbVPQ1GuqDksDz',
     },
   },
   description:
@@ -41,7 +41,7 @@ export const CdmProductCollateralCollateralInterestCalculationParameters: Record
   floatingRate: {
     description: 'Specifies the floating interest rate to be used.',
     type: {
-      blueId: '9je4gdfYWh5s9PxZCf36xymmiBGd59PHPrBapq7pnGVf',
+      blueId: 'AbLoQQNACxdzPtEMoK5PXcunDMtaotFMqR1uTyZb3s8n',
     },
   },
   inBaseCurrency: {
@@ -58,13 +58,13 @@ export const CdmProductCollateralCollateralInterestCalculationParameters: Record
   rounding: {
     description: 'Specifies the rounding rules for settling in that currency.',
     type: {
-      blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
+      blueId: '7fpTDBDMKH4SNXoiKP77e98Hh5vZkbVGXSEenFEztVuv',
     },
   },
   roundingFrequency: {
     description: 'Specifies when/how often is rounding applied?',
     type: {
-      blueId: 'Fw3wLbrcadtqbe88BTTnN3TZSgcXPzyHjjPvsic6NY2P',
+      blueId: '5uKXCGmozs8beHQLK5giHsJTcGD627CoqZ66K9g4ovMs',
     },
   },
   withholdingTaxRate: {

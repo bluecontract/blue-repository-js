@@ -7,7 +7,7 @@ export const CdmObservableAssetFxRateSourceFixing: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GKy9ctegTJLwNAwxTMo1WX9xQCvWbzwntin4VStfEfDi',
+      blueId: 'J1kGTdAb67L1bPgvuKZ86jTR9UZJomnkgA6hcnVfnwfD',
     },
   },
   name: 'cdm/observable/asset/FxRateSourceFixing',
@@ -16,7 +16,7 @@ export const CdmObservableAssetFxRateSourceFixing: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GVLFiYcKvhpQsRySPjAnN9GhoocdasLdpFcxrHBBs3SB',
+      blueId: 'AFE5zRAhERAL2eMayj5EaEugVUL8M72A5RqLeabreFGf',
     },
   },
 };

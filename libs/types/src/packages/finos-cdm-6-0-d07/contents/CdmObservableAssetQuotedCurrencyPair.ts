@@ -6,7 +6,7 @@ export const CdmObservableAssetQuotedCurrencyPair: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   currency2: {
@@ -16,7 +16,7 @@ export const CdmObservableAssetQuotedCurrencyPair: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   description:
@@ -28,7 +28,7 @@ export const CdmObservableAssetQuotedCurrencyPair: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '38MJMyCWnyrfancwTmzba2YAVR4YfwGbKcnfueN32RCR',
+      blueId: '7noJvZuGSSZMHSRZXsAQU8dhSdJ1hDT7Mitbfx7oDwGW',
     },
   },
 };

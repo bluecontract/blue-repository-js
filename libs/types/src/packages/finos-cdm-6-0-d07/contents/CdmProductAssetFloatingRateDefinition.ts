@@ -10,7 +10,7 @@ export const CdmProductAssetFloatingRateDefinition: Record<string, unknown> = {
     description:
       'The cap rate, if any, which applies to the floating rate for the calculation period. The cap rate (strike) is only required where the floating rate on a swap stream is capped at a certain strike level. The cap rate is assumed to be exclusive of any spread and is a per annum rate, expressed as a decimal. A cap rate of 5% would be represented as 0.05.\n',
     itemType: {
-      blueId: 'H7eZouArq1oyXs52mV5ZcafixuEA7B8eTRVyaQZ6FDox',
+      blueId: 'BSGk6VR88TWV1Lsta4e7x1ijunhFoiqohwUuzLeS33vR',
     },
     schema: {
       minItems: 0,
@@ -32,7 +32,7 @@ export const CdmProductAssetFloatingRateDefinition: Record<string, unknown> = {
     description:
       'The floor rate, if any, which applies to the floating rate for the calculation period. The floor rate (strike) is only required where the floating rate on a swap stream is floored at a certain strike level. The floor rate is assumed to be exclusive of any spread and is a per annum rate, expressed as a decimal. The floor rate of 5% would be represented as 0.05.\n',
     itemType: {
-      blueId: 'H7eZouArq1oyXs52mV5ZcafixuEA7B8eTRVyaQZ6FDox',
+      blueId: 'BSGk6VR88TWV1Lsta4e7x1ijunhFoiqohwUuzLeS33vR',
     },
     schema: {
       minItems: 0,

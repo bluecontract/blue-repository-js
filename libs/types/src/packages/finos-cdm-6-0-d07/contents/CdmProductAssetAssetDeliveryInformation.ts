@@ -4,7 +4,7 @@ export const CdmProductAssetAssetDeliveryInformation: Record<string, unknown> =
       description:
         'The number of units included in the transaction for each delivery interval',
       type: {
-        blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+        blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
       },
     },
     description:
@@ -12,7 +12,7 @@ export const CdmProductAssetAssetDeliveryInformation: Record<string, unknown> =
     location: {
       description: 'Defines the location of the delivery of the commodity.',
       itemType: {
-        blueId: 'Cc6abtfBMYGmbDzKaDhnZfAxERd36qMiuHyDbE1wWuuQ',
+        blueId: '3ozegEWX22qBx9Ne96bvMirXcEA9bBRnr9EK6ibv7Jrf',
       },
       schema: {
         minItems: 0,
@@ -26,7 +26,7 @@ export const CdmProductAssetAssetDeliveryInformation: Record<string, unknown> =
       description:
         'Defines the periods of delivery, including the delivery profile.',
       type: {
-        blueId: '6ZsZcTEaVYcHQtEkhsQLm4rfmMsNHjFRR3oPX9j9T5rP',
+        blueId: '8x7QowfQAo9kcHdkjBakncAZtYoFpqZrpPVh9c8dqbrf',
       },
     },
   };

@@ -54,8 +54,7 @@ jobs:
 
       - name: Verify RC package version
         run: |
-          VERSION="$(node -p "require('./libs/types/package.json').version")"
-          test "$VERSION" = "2.0.0-rc.5"
+          node -e "const version = require('./libs/types/package.json').version; if (!/^\\d+\\.\\d+\\.\\d+-rc\\.\\d+$/.test(version)) { throw new Error('Expected an RC package version, found ' + version); }"
 
       - name: Publish RC packages
         run: npx nx release publish --projects=@blue-repository/types --tag next --first-release --verbose

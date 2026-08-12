@@ -13,7 +13,7 @@ export const CdmProductAssetDividendPeriod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
+      blueId: 'AKAczd79wtoD2Vt7VjdFdnWeacw86mQTVeLcyS9SWFZz',
     },
   },
   description:
@@ -25,26 +25,26 @@ export const CdmProductAssetDividendPeriod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
+      blueId: '25Xp4tJRaZyv2LV8rPbZoJ9iLwHnmizsWJiCcXHiLx75',
     },
   },
   dividendValuationDate: {
     description: 'Specifies the dividend valuation dates of the swap.',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   endDate: {
     description: 'Dividend period end date.',
     type: {
-      blueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
+      blueId: '25Xp4tJRaZyv2LV8rPbZoJ9iLwHnmizsWJiCcXHiLx75',
     },
   },
   name: 'cdm/product/asset/DividendPeriod',
   startDate: {
     description: 'Dividend period start date.',
     type: {
-      blueId: '555tJWt9LFti4PXtFTEEG8bsobDUDp2ySsgK7sB5kZZ7',
+      blueId: '25Xp4tJRaZyv2LV8rPbZoJ9iLwHnmizsWJiCcXHiLx75',
     },
   },
 };

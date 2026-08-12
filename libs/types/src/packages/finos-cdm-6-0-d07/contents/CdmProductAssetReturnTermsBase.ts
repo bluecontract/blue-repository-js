@@ -18,7 +18,7 @@ export const CdmProductAssetReturnTermsBase: Record<string, unknown> = {
     description:
       'Contains Equity Underlyer provisions regarding jurisdiction and fallbacks.',
     type: {
-      blueId: 'G2uPrFU4uNeXsrT1Qauu3GMgFXeHpGU8yyPtUKRD4kr3',
+      blueId: 'hBX9rQeKFtms3vxhq7NqDejchRZkpoUMqyHH7qF88rQ',
     },
   },
   expectedN: {
@@ -41,7 +41,7 @@ export const CdmProductAssetReturnTermsBase: Record<string, unknown> = {
     description:
       'In this context, this is AgreedInitialPrice - a specified Initial Index Level.',
     type: {
-      blueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
+      blueId: '5jqv11pA6a3Nrtm11SrFfbQvRZZ6ukyLt7PkNLq82wy1',
     },
   },
   meanAdjustment: {
@@ -72,7 +72,7 @@ export const CdmProductAssetReturnTermsBase: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3RVpuPyLZTsRz9wSfRCjDrY84adxxkZBQaYM8p28MYpK',
+      blueId: '3RV4JPXGMLbdEEtEMdNSG3rPva1V96fHc2XFGnK9o2r5',
     },
   },
 };

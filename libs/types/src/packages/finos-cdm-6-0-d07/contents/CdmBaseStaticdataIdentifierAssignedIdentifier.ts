@@ -10,7 +10,7 @@ export const CdmBaseStaticdataIdentifierAssignedIdentifier: Record<
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/base/staticdata/identifier/AssignedIdentifier',

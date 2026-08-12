@@ -4,7 +4,7 @@ export const CdmRegulationDocument: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'FGw3uzcfaLXE48TDaEuANFJZ3XL3kJ8QvApSUhqzHsXo',
+      blueId: '4HPj6MaC8kgBBn54CkFPdJX3Coniqirfzy54SdFqVcva',
     },
   },
   name: 'cdm/regulation/Document',

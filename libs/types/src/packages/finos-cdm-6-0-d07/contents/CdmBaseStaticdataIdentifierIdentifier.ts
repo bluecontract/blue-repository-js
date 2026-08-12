@@ -3,7 +3,7 @@ export const CdmBaseStaticdataIdentifierIdentifier: Record<string, unknown> = {
     description:
       'The identifier value. This level of indirection between the issuer and the identifier and its version provides the ability to associate multiple identifiers to one issuer, consistently with the FpML PartyTradeIdentifier.\n',
     itemType: {
-      blueId: 'HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU',
+      blueId: 'FkMWf1pd7YUm7zUWH64xW6YKJEWnWCzUoCiDxJWMWd2U',
     },
     schema: {
       minItems: 1,
@@ -18,7 +18,7 @@ export const CdmBaseStaticdataIdentifierIdentifier: Record<string, unknown> = {
     description:
       'The identifier issuer, when specified explicitly alongside the identifier value (instead of being specified by reference to a party).\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   issuerReference: {

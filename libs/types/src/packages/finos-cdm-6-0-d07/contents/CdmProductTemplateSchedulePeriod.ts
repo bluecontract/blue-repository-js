@@ -5,13 +5,13 @@ export const CdmProductTemplateSchedulePeriod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM',
+      blueId: 'd8TGYi33YeLUziE9B2VNLCjsoPfUQkCX35im7Ryuia9',
     },
   },
   deliveryPeriod: {
     description: 'Period and time profile over which the delivery takes place.',
     type: {
-      blueId: '4VSDgMR93vRjmusHhPRNXjdGuVnxrN3FBojT35y2b6cd',
+      blueId: 'A8EG82JMUV186kwffGxGSuuDgYzs9S5KTaEba1UmhTe1',
     },
   },
   description:
@@ -22,7 +22,7 @@ export const CdmProductTemplateSchedulePeriod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'ArGvahFJrYAsyvSVWtuLJVsoGkZsS1n9aTjxhikFUxJM',
+      blueId: 'd8TGYi33YeLUziE9B2VNLCjsoPfUQkCX35im7Ryuia9',
     },
   },
   name: 'cdm/product/template/SchedulePeriod',

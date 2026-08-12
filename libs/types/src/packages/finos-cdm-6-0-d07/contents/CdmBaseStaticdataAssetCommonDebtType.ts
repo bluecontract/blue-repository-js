@@ -2,13 +2,13 @@ export const CdmBaseStaticdataAssetCommonDebtType: Record<string, unknown> = {
   debtClass: {
     description: 'Specifies the characteristics of a debt instrument.',
     type: {
-      blueId: 'ASAPTC3f63jq934hhnLQ4c9BNLF9RtGVn3iLdv8L37LU',
+      blueId: '4VRXi2887ftZek9ZcqPyH1JmkREkDMm1UgMdE9Jghgur',
     },
   },
   debtEconomics: {
     description: 'Specifies selected financial terms of a debt instrument.',
     itemType: {
-      blueId: '7Lf9XXZdBaTwDFPQsXLZfcyiVkKhfJ2GJcKZFMkQ7mNX',
+      blueId: '7zaJEZ9NefFZk4CeyVPKCqRnx3UJruPMysi4hejrpUit',
     },
     schema: {
       minItems: 0,

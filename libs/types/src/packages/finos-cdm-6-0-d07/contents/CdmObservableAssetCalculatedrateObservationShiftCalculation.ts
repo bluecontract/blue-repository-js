@@ -5,14 +5,14 @@ export const CdmObservableAssetCalculatedrateObservationShiftCalculation: Record
   additionalBusinessDays: {
     description: 'Any additional business days that be applicable.',
     type: {
-      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
+      blueId: 'Ds5a9bChKossVgHEM7Z2TQTCxDXdB2SZhtM9v9Y3mYmM',
     },
   },
   calculationBase: {
     description:
       'Whether the rate is calculated in advance, in arrears, or relative to a reset date.',
     type: {
-      blueId: '2W3rHTz4L7GBmVkiESoY8puS9uU1rTGL2SfpTGJy2kse',
+      blueId: '3A76x7tYhpq8Af8NL5GDk9T6MBnu3QovLsjcNFgnYpMb',
     },
   },
   description:

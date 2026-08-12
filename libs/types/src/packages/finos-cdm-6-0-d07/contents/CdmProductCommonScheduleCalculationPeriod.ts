@@ -43,14 +43,14 @@ export const CdmProductCommonScheduleCalculationPeriod: Record<
     description:
       'The floating rate reset information for the calculation period.',
     type: {
-      blueId: '4oxb1sguUNq2AqF4ycCwRJPs6eJL47WfUqhjsxJXRZNa',
+      blueId: 'AdSenJuaemBCdgGKetnHtpKmpgrP6eZWt97RDfjjcp6a',
     },
   },
   forecastAmount: {
     description:
       'The amount representing the forecast of the accrued value of the calculation period. An intermediate value used to generate the forecastPaymentAmount in the PaymentCalculationPeriod.\n',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   forecastRate: {

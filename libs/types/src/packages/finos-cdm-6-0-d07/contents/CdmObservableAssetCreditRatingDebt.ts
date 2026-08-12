@@ -3,14 +3,14 @@ export const CdmObservableAssetCreditRatingDebt: Record<string, unknown> = {
     description:
       "Specifies when there is only one debt type. FpML doesn't specify values in relation to the associated scheme, which is hence not specified as an enumeration as part of the CDM.\n",
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   debtTypes: {
     description:
       "Specifies if there are several debt types, alongside an 'any' or 'all' or all condition. As an example, Baa1 rating is required for any long term debt and deposit.\n",
     type: {
-      blueId: 'ARtKwcQKppAKVf5WDJvuwGatLemZ18RcJsXU23W4RfH8',
+      blueId: 'AsVDMXdzj7YUDAbB74UjAitv1ft5nufzbBHu7aR8iHES',
     },
   },
   description:

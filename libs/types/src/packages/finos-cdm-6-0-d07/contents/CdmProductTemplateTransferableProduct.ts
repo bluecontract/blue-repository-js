@@ -3,14 +3,14 @@ export const CdmProductTemplateTransferableProduct: Record<string, unknown> = {
     description:
       'An Asset that consists solely of a monetary holding in a currency.',
     type: {
-      blueId: 'G6NQsm1Wur914oo6eCsazG77Y4gjnkMAZw1cSEieEBTV',
+      blueId: 'Fp8kieXrgB8GUChsCNFFLB9bbPSRfh2sua3aPiz8Zp5u',
     },
   },
   Commodity: {
     description:
       'An Asset comprised of raw or refined materials or agricultural products, eg gold, oil or wheat.',
     type: {
-      blueId: 'VrWJzqq3ogdc8MhQ87P7nugRkiYR7sK4XS7wQzTvce3',
+      blueId: 'EMvkMQtTjt6kMvmoGwHz3VA8mzvuVNoPmcesVmG15Bui',
     },
   },
   description:
@@ -19,7 +19,7 @@ export const CdmProductTemplateTransferableProduct: Record<string, unknown> = {
     description:
       'An Asset that exists only in digital form, eg Bitcoin or Ethereum; excludes the digital representation of other Assets.\n',
     type: {
-      blueId: '7rybfxmxNUFUfZGaK3oX9W3kqCWh8zNvXJgUAjrfayPZ',
+      blueId: '9EtbWfrbv5eGk2HbMkGnnhU42gPKFB8rYd5pZyt23UZQ',
     },
   },
   economicTerms: {
@@ -29,14 +29,14 @@ export const CdmProductTemplateTransferableProduct: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'this#6',
+      blueId: 'this#9',
     },
   },
   Instrument: {
     description:
       'An asset that is issued by one party to one or more others; Instrument is also a choice data type.',
     type: {
-      blueId: '6pomFByRysSRpLwQEWHeqiGU8sc3DrBMjCiuHEuQ1iPB',
+      blueId: 'C1eJzacRV3YdWTiLScoqLS2Uv4KC4MEWVfb1ux4P9CeV',
     },
   },
   name: 'cdm/product/template/TransferableProduct',

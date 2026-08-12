@@ -2,7 +2,7 @@ export const CdmEventPositionPosition: Record<string, unknown> = {
   cashBalance: {
     description: 'The aggregate cost of proceeds',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   description:
@@ -11,7 +11,7 @@ export const CdmEventPositionPosition: Record<string, unknown> = {
   priceQuantity: {
     description: 'Position with many price quantities.',
     itemType: {
-      blueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
+      blueId: '4XEYGgCSfXx2tFwmQjMsXhuwaCjsNZ42jtKAcr8itiqe',
     },
     schema: {
       minItems: 1,
@@ -26,7 +26,7 @@ export const CdmEventPositionPosition: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#0',
+      blueId: '52zbUBnH8375AE19gNSXRU7GgGs5tcoUhR84LVdMrBWi#0',
     },
   },
   tradeReference: {

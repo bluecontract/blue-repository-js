@@ -1,7 +1,7 @@
 export const CdmProductCommonSettlementFxFixingDate: Record<string, unknown> = {
   businessCenters: {
     type: {
-      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
+      blueId: 'Ds5a9bChKossVgHEM7Z2TQTCxDXdB2SZhtM9v9Y3mYmM',
     },
   },
   businessCentersReference: {
@@ -15,35 +15,35 @@ export const CdmProductCommonSettlementFxFixingDate: Record<string, unknown> = {
     description:
       'The convention for adjusting a date if it would otherwise fall on a day that is not a business day, as specified by an ISDA convention (e.g. Following, Precedent).\n',
     type: {
-      blueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
+      blueId: '4nDV142exufoEvXv8wAPT7GVTpvQw7t3yETBpT9G6aWX',
     },
   },
   dateRelativeToCalculationPeriodDates: {
     description:
       'The calculation period references on which settlements in non-deliverable currency are due and will then have to be converted according to the terms specified through the other parts of the nonDeliverableSettlement structure. Implemented for Brazilian-CDI swaps where it will refer to the termination date of the appropriate leg.\n',
     type: {
-      blueId: '8a1MTndCYSZYYLgqPZewqnR4VyMuKN2TSytKifycuYRQ',
+      blueId: 'ytstqNPphmXWb5ZTFeFxrGKxyp3SXuEhDFAEsbb8iLA',
     },
   },
   dateRelativeToPaymentDates: {
     description:
       'The payment date references on which settlements in non-deliverable currency are due and will then have to be converted according to the terms specified through the other parts of the nonDeliverableSettlement structure.\n',
     type: {
-      blueId: 'Cjg8S7jVCYAEjpd8qzXY28Qmn2YJWnHx1emVGo6DF4ro',
+      blueId: 'DW32pDb5aR7QPQPk2s5ybQJuzPvqzb6S2WMHyY7WLBP7',
     },
   },
   dateRelativeToValuationDates: {
     description:
       'The calculation period references on which settlements in non-deliverable currency are due and will then have to be converted according to the terms specified through the other parts of the nonDeliverableSettlement structure. Implemented for Brazilian-CDI swaps where it will refer to the termination date of the appropriate leg.\n',
     type: {
-      blueId: 'Amvx9G3h2wHURbQkfGuuEwHYch5CWjYiD1ooToEb9FAn',
+      blueId: 'HjRBL4m9mTkjZ84WwVn8hiQbhY7uJxxQbkJKf1V7Fqtj',
     },
   },
   dayType: {
     description:
       'In the case of an offset specified as a number of days, this element defines whether consideration is given as to whether a day is a good business day or not. If a day type of business days is specified then non-business days are ignored when calculating the offset. The financial business centers to use for determination of business days are implied by the context in which this element is used. This element must only be included when the offset is specified as a number of days. If the offset is zero days then the dayType element should not be included.\n',
     type: {
-      blueId: 'EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq',
+      blueId: '7SsDfFvRbfxrm8vS98NZ5Vq9nqD3CFNGWsLr6dc738LJ',
     },
   },
   description:
@@ -52,7 +52,7 @@ export const CdmProductCommonSettlementFxFixingDate: Record<string, unknown> = {
     description:
       "Describes the specific date when a non-deliverable forward or cash-settled option will 'fix' against a particular rate, which will be used to compute the ultimate cash settlement. This element should be omitted where a single, discrete fixing date cannot be identified e.g. on an american option, where fixing may occur at any date on a continuous range.  This attribute was formerly part of 'fxSettlementTerms', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   name: 'cdm/product/common/settlement/FxFixingDate',
@@ -60,7 +60,7 @@ export const CdmProductCommonSettlementFxFixingDate: Record<string, unknown> = {
     description:
       'A time period, e.g. a day, week, month or year of the stream. If the periodMultiplier value is 0 (zero) then period must contain the value D (day).\n',
     type: {
-      blueId: 'DLZBHc2QwPj4my2QeZffRBsJxbqMSJzN3PScqxr9C1Yj',
+      blueId: 'HfcnjKnwmrE8GwTjvmvtKtcYgCZHWwe9PpsaJ5Y38Y2F',
     },
   },
   periodMultiplier: {

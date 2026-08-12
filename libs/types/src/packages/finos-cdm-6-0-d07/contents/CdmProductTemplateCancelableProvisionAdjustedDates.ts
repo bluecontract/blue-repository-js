@@ -5,7 +5,7 @@ export const CdmProductTemplateCancelableProvisionAdjustedDates: Record<
   cancellationEvent: {
     description: 'The adjusted dates for an individual cancellation date.',
     itemType: {
-      blueId: 'GqYrmY5dMSWXRFKtVLctnrBGJy893E8Gbj3pe5kFN7w',
+      blueId: 'GL7kvfLULpeB9V9XXCdKe1UF2uxCtBADgHjSC5EXphAy',
     },
     schema: {
       minItems: 1,

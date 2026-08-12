@@ -14,7 +14,7 @@ export const CdmBaseStaticdataAssetCreditObligations: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '3kqHna3Z2FVYvPx85aDFr4WH2NPEmuQhrh8XXzbkQosH',
+        blueId: '479q1woparEWTtykQD81K2mKFboBtTz3iWRBsUyQNweX',
       },
     },
     continuity: {
@@ -37,7 +37,7 @@ export const CdmBaseStaticdataAssetCreditObligations: Record<string, unknown> =
       description:
         'Applies to Loan CDS, to indicate what lien level is appropriate for a deliverable obligation. Applies to European Loan CDS, to indicate the Ranking of the obligation. Example: a 2nd lien Loan CDS would imply that the deliverable obligations are 1st or 2nd lien loans.\n',
       type: {
-        blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+        blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
       },
     },
     excluded: {
@@ -80,7 +80,7 @@ export const CdmBaseStaticdataAssetCreditObligations: Record<string, unknown> =
       description:
         'An obligation and deliverable obligation characteristic. Any obligation that is payable in any currency other than the domestic currency. Domestic currency is either the currency so specified or, if no currency is specified, the currency of (a) the reference entity, if the reference entity is a sovereign, or (b) the jurisdiction in which the relevant reference entity is organised, if the reference entity is not a sovereign. ISDA 2003 Term: Not Domestic Currency.\n',
       type: {
-        blueId: 'GMpNRbtpXncDuLhyddMFw2W43rpm8H6AVYkoczBix3tG',
+        blueId: 'CfJhnmWCGJsuGKjrniD86MnqeEFDzMSQVu1kFMkHEggE',
       },
     },
     notDomesticIssuance: {
@@ -129,7 +129,7 @@ export const CdmBaseStaticdataAssetCreditObligations: Record<string, unknown> =
       description:
         'An obligation and deliverable obligation characteristic. The currency or currencies in which an obligation or deliverable obligation must be payable. ISDA 2003 Term: Specified Currency.\n',
       type: {
-        blueId: 'GgYvaTiQsh1xn3XTCrAaxQ7jizAVYyU7EnLPR5eZdVUp',
+        blueId: 'Hm8WzZ2vt1scZRpgZ9XjxKEcvsf2oXa8icw3PC9JPL2C',
       },
     },
   };

@@ -3,7 +3,7 @@ export const CdmBaseMathSchedule: Record<string, unknown> = {
     description:
       'The schedule of step date and value pairs. On each step date the associated step value becomes effective. A list of steps may be ordered in the document by ascending step date. An FpML document containing an unordered list of steps is still regarded as a conformant document.\n',
     itemType: {
-      blueId: '9zYcb3FcpfuBbxSMqUwSRoYJ3gPs7Nv1qeZUmFvVniPL',
+      blueId: '9QEEP3vJftxGgridJuAvcaKfZusGZVsywkfLzikwpM28',
     },
     schema: {
       minItems: 0,

@@ -6,14 +6,14 @@ export const CdmEventCommonCollateralBalance: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   collateralBalanceStatus: {
     description:
       'Defines the collateral balance breakdown of settlement status.',
     type: {
-      blueId: 'ScqKZW3m5Vk4Ht3xpASxxv9euZM32FQPYjE6PbCZEHc',
+      blueId: '6ctehAVhDiuTwXfG2zzPiqjPq4Chs91k7cZy6gJecUMe',
     },
   },
   description:
@@ -22,7 +22,7 @@ export const CdmEventCommonCollateralBalance: Record<string, unknown> = {
     description:
       'Indicates if the collateral balance amount is based on pre or post haircut, if a haircut is associated with the collateral asset\n',
     type: {
-      blueId: 'BhcAc9aom3oN5CJ2MVXmyyUEeSBLxX3PgyuKursXD5hQ',
+      blueId: '7jzEk39QMqbmzpmZF3CL3GVht2Z2MUCgbVA9Xjjcwirk',
     },
   },
   name: 'cdm/event/common/CollateralBalance',
@@ -33,7 +33,7 @@ export const CdmEventCommonCollateralBalance: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs',
+      blueId: '63Bw1Ena6g9zgLcVwPkkpApxNVecQwz8Ygi9rZZFYMoB',
     },
   },
 };

@@ -3,7 +3,7 @@ export const CdmBaseDatetimeBusinessDateRange: Record<string, unknown> = {
     description:
       'The business center(s), specified either explicitly or by reference to those specified somewhere else in the instance document.\n',
     type: {
-      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
+      blueId: 'Ds5a9bChKossVgHEM7Z2TQTCxDXdB2SZhtM9v9Y3mYmM',
     },
   },
   businessDayConvention: {
@@ -13,7 +13,7 @@ export const CdmBaseDatetimeBusinessDateRange: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
+      blueId: '4nDV142exufoEvXv8wAPT7GVTpvQw7t3yETBpT9G6aWX',
     },
   },
   description:

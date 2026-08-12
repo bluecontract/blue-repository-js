@@ -8,11 +8,11 @@ export const DocumentBootstrapCompleted: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'FxcZycT49wFfrNAZpzquWVRw43epYQx5SkYXpdwx3c2Z',
+      blueId: 'CitEEsPhrBya9i5PK18kP3V4snE1g79885geLZM2PidU',
     },
   },
   name: 'Document Bootstrap Completed',
   type: {
-    blueId: '4rExHc9dQ4h6gqTj343qg2teiFr8GDwWv1aDYPdV21QH',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
 };

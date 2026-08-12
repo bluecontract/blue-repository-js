@@ -5,7 +5,7 @@ export const CdmEventCommonTradePricingReport: Record<string, unknown> = {
     description:
       'It specifies the interest payable on collateral delivered under a CSA covering the trade.',
     type: {
-      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
+      blueId: 'vMjyu6sbtgT7FA6GScxrp32Njg3k9oW6KxuXLU9RYHx',
     },
   },
   name: 'cdm/event/common/TradePricingReport',
@@ -16,7 +16,7 @@ export const CdmEventCommonTradePricingReport: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92',
+      blueId: '3jiEy2e5MqwFVX3zkALqRNFaBpD4DawUCg1iYwfFzeca',
     },
   },
   trade: {
@@ -26,7 +26,7 @@ export const CdmEventCommonTradePricingReport: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GHKfcNGEW4jfWBhqCesd1ZbQ2ZJvDnS1YMm2UZ2ZZNZG',
+      blueId: 'Gm86NetLQn7WB75RP28UxDg7WZvhyUm1usBgfAPjFkdM',
     },
   },
 };

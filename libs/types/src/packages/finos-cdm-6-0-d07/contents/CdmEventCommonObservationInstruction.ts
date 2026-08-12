@@ -7,7 +7,7 @@ export const CdmEventCommonObservationInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '7UyroNcHi5ggaDeDqgACDvjixoTVqZyHPUiNuGcK3gXq',
+      blueId: '3WyHtwLZQPjVJB4zC26ena33X6r2fxTfkWVEiZi6eH1Q',
     },
   },
 };

@@ -21,7 +21,7 @@ export const CdmRegulationDerivInstrmAttrbts: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'FaYSdGaujuranVkQXU82UtdDR1Gfq9L7YpR3JXGx7dZt',
+      blueId: 'RGUPkLhQETHkMrFxMrruEoSnWtn6AdyUJivR8cJGtxF',
     },
   },
   xpryDt: {

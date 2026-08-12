@@ -21,7 +21,7 @@ export const CdmRegulationTx: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'AbfDrU3fgSd82Mgi4iEoZ41s3qXFqRnSTETansBbw9HF#0',
+      blueId: '6zfsssMXw4XRMC7TGyBpZY1DAwmAtJ1wrvviano3dUQb#0',
     },
   },
   qty: {
@@ -29,7 +29,7 @@ export const CdmRegulationTx: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6LfAdgL3H4Evj6cxAmHvohUbKGvi8hMjCW2VA7FCmp2f',
+      blueId: '3MKoSUmiANBqUyy2bWyGTScgLnZtgUUKbCbayp6zus4c',
     },
   },
   tradDt: {

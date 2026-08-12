@@ -13,7 +13,7 @@ export const CdmProductAssetSpreadSchedule: Record<string, unknown> = {
     description:
       'An element which purpose is to identify a long or short spread value.',
     type: {
-      blueId: '4buYFvhK8MygP1T8vKFuNofU4rApmaG5WxpnBQWE5LXs',
+      blueId: '5u2M6VmQEeVW4W5qGGcVQRB2Lud11XmPP89ZcRszZ524',
     },
   },
 };

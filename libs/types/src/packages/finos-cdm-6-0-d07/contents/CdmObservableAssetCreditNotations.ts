@@ -2,14 +2,14 @@ export const CdmObservableAssetCreditNotations: Record<string, unknown> = {
   creditNotation: {
     description: 'Specifies only one credit notation is determined.',
     type: {
-      blueId: 'EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1',
+      blueId: '6DvMxWSu8NPPjxcsnCkgPnNoAfxF9WCaA14A1Gd6fLG6',
     },
   },
   creditNotations: {
     description:
       "Specifies if several credit notations exist, alongside an 'any' or 'all' or all condition.",
     type: {
-      blueId: '8Zxjn3QHqYieQ4XTe55zZnRoVGJUea245LGooM18oqK2',
+      blueId: '92vLAqvfJgzjgsR54hnKrJVs7B3dGCXpuaqMhaL3J5vD',
     },
   },
   description:

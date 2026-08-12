@@ -5,13 +5,13 @@ export const CdmBaseStaticdataAssetCommonAssetType: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '7FL7vGvhvZLCWZZPR1Eyoc1iJ69A3jcSF95meBVxT4Qe',
+      blueId: '2ooSGfiQjuRvoogDtvMSjAoYBUtjFfAMekySyiXeH169',
     },
   },
   debtType: {
     description: 'Represents a filter based on the type of bond.',
     type: {
-      blueId: '9vqkkCNnmKd3FB5tMAKKYenwq2i3mYyHmgYdPKKqkZ8U',
+      blueId: '6unwaZ5oN6Bu5iNr9srEotBvRczagJYM6Dob6AfjsYhP',
     },
   },
   description:
@@ -19,13 +19,13 @@ export const CdmBaseStaticdataAssetCommonAssetType: Record<string, unknown> = {
   equityType: {
     description: 'Represents a filter based on the type of equity.',
     type: {
-      blueId: 'DZstXEXxF1iHJunLqdgbypWWK6H28QwVCtxJRbMUDpza',
+      blueId: 'HoXHzdjP8HF4D5i1bFfyUQk6jiaxNMCFBYEZfUuNdLR5',
     },
   },
   fundType: {
     description: 'Represents a filter based on the type of fund.',
     type: {
-      blueId: 'As4LSyzdsEDrcBhhNCQ78eXDcY41rjgBoZJZenTJ2J7F',
+      blueId: 'DSHVccfaB84HdmUWNumGMEdFG9xvr7m5qAJSTVv2R81X',
     },
   },
   name: 'cdm/base/staticdata/asset/common/AssetType',
@@ -44,7 +44,7 @@ export const CdmBaseStaticdataAssetCommonAssetType: Record<string, unknown> = {
   securityType: {
     description: 'Represents a filter based on the type of security.',
     type: {
-      blueId: 'EmkPx4XLJeffJqq9EbwZicZCxqAhVBpDz1vu6eP1oTYj',
+      blueId: '3tHNfJC2pEoNbjbkmKcBDiJFzKcUCcyi6jtqtPntYyFw',
     },
   },
 };

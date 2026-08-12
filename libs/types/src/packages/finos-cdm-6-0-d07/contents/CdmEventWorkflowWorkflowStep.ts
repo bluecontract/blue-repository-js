@@ -3,7 +3,7 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'Optional account information that could be associated to the event.',
     itemType: {
-      blueId: 'HCfJUUx9k8N8QqUgtRQZDaSkcsnmcWrN6CsVeT5ViMfM',
+      blueId: 'Ci7ty5zffGzjgsQdhnezMazESuasmjVRABXcDJanwgLf',
     },
     schema: {
       minItems: 0,
@@ -16,14 +16,14 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'Specifies whether the event is a new, a correction or a cancellation.',
     type: {
-      blueId: 'DW7rU2G1aVFJWe4AguEb2Usk8YfFAXvUzqiNDKzFurHz',
+      blueId: 'GfTPwAq9qf8LsrvvH2PED6R92Rtsa1SbCnqdxkjhMYFQ',
     },
   },
   approval: {
     description:
       'Optional party approvals for the current workflow step. A workflow step can have any number of parties associated to it, thus this object is represented as a list. All parties that are expected to provide approval should have an item in this list that references them.\n',
     itemType: {
-      blueId: '3hc2fs3hNHSJTJ1K3BXvZXCq4XHj7rRGhvfo62XddQin',
+      blueId: '9AHt7RbQJpPN29t7Dit6xemqAkC14HePBm5ayDJbHnqS',
     },
     schema: {
       minItems: 0,
@@ -36,18 +36,18 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'Life cycle event for the step. The businessEvent is optional when a proposedEvent or rejection are present.',
     type: {
-      blueId: 'EhgUPTjNky8ntLuNCUAumwbyM9VxFbf2HcZ4Pkp2cfsM',
+      blueId: '2mPyPCMLGUH8LTsXeCx7sE8MoUkyjXsN5wHNZkzNvgXC',
     },
   },
   counterpartyPositionBusinessEvent: {
     description: 'Documents the life cycle event for a position.',
     type: {
-      blueId: 'HmAtnSZuDe4ifp5cQh4JwWZmz7AEJjddmWkQ7QEmTjEv',
+      blueId: '6crPYSSUWEcDZ3RkdT8acaFQUW3W3Ly2kdiaX8dpynAw',
     },
   },
   creditLimitInformation: {
     type: {
-      blueId: '5MhstayLq1JLa2NHwkVTfhEPNG54pMxBdyN7fZ7dzvx6',
+      blueId: '9Lq4JKDRKKVSQeCRSYR1PvVRZ5HB3Cbqa1U5FKk7nBiV',
     },
   },
   description:
@@ -56,7 +56,7 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'The identifier(s) that uniquely identify a lifecycle event. The unbounded cardinality is meant to provide the ability to associate identifiers that are issued by distinct parties. As an example, each of the parties to the event may choose to associate their own identifiers to the event.\n',
     itemType: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
     schema: {
       minItems: 1,
@@ -69,14 +69,14 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'The lineage attribute provides a linkage among lifecycle events through the globalKey hash value. One example is when a given lifecycle event is being corrected or cancelled. In such case, each subsequent event will have lineage into the prior version of that event. The second broad use case is when an event has a dependency upon either another event (e.g. the regular payment associated with a fix/float swap will have a lineage into the reset event, which will in turn have a lineage into the observation event for the floating rate and the contract) or a contract (e.g. the exercise of an option has a lineage into that option).\n',
     type: {
-      blueId: 'AU5SZ3DHqRdpqT1JPJ9S96fTUWv7kU2ofDC4zNRK6quM',
+      blueId: '8F2a2dkMM98d7KGUagPkBdhXVErYpJBwveTH1UGZo57N',
     },
   },
   messageInformation: {
     description:
       'Contains all information pertaining the FpML messaging header',
     type: {
-      blueId: '98dPVuFQFzp6TPmhAh6zjz4zFp8sdg597uHrfF3ztLkP',
+      blueId: '22GjU2seJ6LjqoYyFFC6Wzrh5DA1XxUKBbuqNn2vnR3d',
     },
   },
   name: 'cdm/event/workflow/WorkflowStep',
@@ -84,14 +84,14 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'The intended next event can be specified, even if the instructions are not known yet.',
     type: {
-      blueId: 'A1jYzNcEp75NaNXNyvEb5S2noXSa3PnFck4qj5Cdvuvs',
+      blueId: '3Xoecxdbp2YNAeFqQmdNizAeci6amtY3kLG78kaWSD3a',
     },
   },
   party: {
     description:
       'The specification of the event parties. This attribute is optional, as not applicable to certain events (e.g. most of the observations).\n',
     itemType: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
     schema: {
       minItems: 0,
@@ -111,7 +111,7 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'The proposed event for a workflow step. The proposedEvent is optional when the businessEvent or rejection are present\n',
     type: {
-      blueId: 'A1jYzNcEp75NaNXNyvEb5S2noXSa3PnFck4qj5Cdvuvs',
+      blueId: '3Xoecxdbp2YNAeFqQmdNizAeci6amtY3kLG78kaWSD3a',
     },
   },
   rejected: {
@@ -124,7 +124,7 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'The set of timestamp(s) associated with the event as a collection of [dateTime, qualifier].',
     itemType: {
-      blueId: 'DSJDCMX9fWnAZqseXHzuc3NWEvtct9Ay1D8XqV7Cz8sb',
+      blueId: '93YHikoSQrMTBaKFsmqukjaePGjWoHkVZMZVW1k86M7d',
     },
     schema: {
       minItems: 1,
@@ -137,7 +137,7 @@ export const CdmEventWorkflowWorkflowStep: Record<string, unknown> = {
     description:
       'The event workflow information, i.e. the workflow status, the associated comment and the partyCustomisedWorkflow which purpose is to provide the ability to associate custom workflow information to the CDM.\n',
     type: {
-      blueId: 'GZHhbuAMJUxPqZ627VF6tcc7Jky7YaBT1ctEWpw3De4m',
+      blueId: '6FS5LVjRjPqcC9Jv5LTu4r3Wm7MAKikZPY2uJiM4t5eA',
     },
   },
 };

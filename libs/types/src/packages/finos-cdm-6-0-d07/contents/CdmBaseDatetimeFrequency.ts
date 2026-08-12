@@ -9,7 +9,7 @@ export const CdmBaseDatetimeFrequency: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BLwQ9sW7unThpYZC3TVs8YtMmiAoZ4NVGjVRppu4gm7x',
+      blueId: '8g5Z7Xf3wFDD2QY1rGqmTjeY7EvWWEsxUiKyX6UbH8kp',
     },
   },
   periodMultiplier: {

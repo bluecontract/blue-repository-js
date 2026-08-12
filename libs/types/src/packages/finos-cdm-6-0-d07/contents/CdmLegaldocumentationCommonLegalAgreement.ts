@@ -12,13 +12,13 @@ export const CdmLegaldocumentationCommonLegalAgreement: Record<
   agreementTerms: {
     description: 'Specification of the content of the legal agreement.',
     type: {
-      blueId: '4KjkUNqNW52EyuCcnzPCbMA8tfR6qRi9jXUsZ3s5vFTv',
+      blueId: '2Gh7VQwVWDZ4vcAdXjdgg5c5TrAaL5srKzUs1RZbDGyM',
     },
   },
   attachment: {
     description: 'A human readable document, for example a confirmation.',
     itemType: {
-      blueId: '4anwVBorXr81GoC4Wkf4trYWror3mSXbzukXdYgwmG7N',
+      blueId: 'HmhKdAbT2MRZUsE7sCtNxWo8eestifsJAK5KCzFN5bn2',
     },
     schema: {
       minItems: 0,
@@ -54,7 +54,7 @@ export const CdmLegaldocumentationCommonLegalAgreement: Record<
     description:
       'The legal agreement identifier. Several identifiers can be specified.',
     itemType: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
     schema: {
       minItems: 0,
@@ -67,7 +67,7 @@ export const CdmLegaldocumentationCommonLegalAgreement: Record<
     description:
       'The type of legal agreement, identified via a set of composable attributes: agreementName, publisher, governing law and version, e.g. ISDA 2013 Standard Credit Support Annex English Law.\n',
     type: {
-      blueId: '7p7rsMrLJRwnskaTsetTmKypk1jyyLVvR6JTdJNYeFNf',
+      blueId: 'HKkvs9CCvwZwQxeN8m2GUQG1TrC5hsgoLjuSf1ztDGxF',
     },
   },
   name: 'cdm/legaldocumentation/common/LegalAgreement',
@@ -75,7 +75,7 @@ export const CdmLegaldocumentationCommonLegalAgreement: Record<
     description:
       'The role(s) that other party(ies) may have in relation to the legal agreement, further to the contractual parties.\n',
     itemType: {
-      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+      blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
     },
     schema: {
       minItems: 0,
@@ -101,7 +101,7 @@ export const CdmLegaldocumentationCommonLegalAgreement: Record<
     description:
       'The determination of whether Umbrella Agreement terms are applicable (True) or Not Applicable (False).',
     type: {
-      blueId: '34yZnruVzk2TWwJj25VXtQ6vJsyoHWmMQdFWUBQGYp1x',
+      blueId: '4ZF1ACUpJC9QAXmiacFCvcxe9tNsuWiX2cTPFAExEmcz',
     },
   },
 };

@@ -7,7 +7,7 @@ export const CdmEventCommonMarginCallInstructionType: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'Fz4NTo1FbXH16J8EfuEn4VzfYkcagg6FsmDXL49ce7H',
+        blueId: 'D5Ppw22Ncf5BZ67R91WVaBbQk2BKWA17SAGFY3WkBuTu',
       },
     },
     description:

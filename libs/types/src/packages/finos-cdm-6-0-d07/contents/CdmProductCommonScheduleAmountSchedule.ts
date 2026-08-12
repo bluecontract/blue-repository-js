@@ -3,7 +3,7 @@ export const CdmProductCommonScheduleAmountSchedule: Record<string, unknown> = {
     description:
       'The currency in which the amount schedule is denominated. The currency is specified outside of the actual schedule in order to be applied uniformly to it. The list of valid currencies is not presently positioned as an enumeration as part of the CDM because that scope is limited to the values specified by ISDA and FpML. As a result, implementers have to make reference to the relevant standard, such as the ISO 4217 standard for currency codes.\n',
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 1,
@@ -16,7 +16,7 @@ export const CdmProductCommonScheduleAmountSchedule: Record<string, unknown> = {
     description:
       'The schedule of step date and value pairs. On each step date the associated step value becomes effective. A list of steps may be ordered in the document by ascending step date. An FpML document containing an unordered list of steps is still regarded as a conformant document.\n',
     itemType: {
-      blueId: '9zYcb3FcpfuBbxSMqUwSRoYJ3gPs7Nv1qeZUmFvVniPL',
+      blueId: '9QEEP3vJftxGgridJuAvcaKfZusGZVsywkfLzikwpM28',
     },
     schema: {
       minItems: 0,

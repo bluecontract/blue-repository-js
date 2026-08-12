@@ -3,18 +3,18 @@ export const MyOSAdminBase: Record<string, unknown> = {
     myOsAdminChannel: {
       actor: {
         type: {
-          blueId: '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm',
+          blueId: '1ev2FjQCVqxyynB7o27PJmQo8bQmf9ECvvF2z5ekV1L',
         },
       },
       description:
         'MyOS Admin channel for operational progress and decisions delivered through myOsAdminUpdate.',
       timeline: {
         type: {
-          blueId: '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3',
+          blueId: '5VAQp5thYLkzp3FbvYGmVvmdLqqu6pV5vhNgD14XJwpX',
         },
       },
       type: {
-        blueId: 'FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH',
+        blueId: '8dZK68CdFFjRKFf7dX9QDc55WUESNyeBsUSTF8tq8cki',
       },
     },
     myOsAdminUpdate: {
@@ -62,7 +62,7 @@ export const MyOSAdminBase: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
   },

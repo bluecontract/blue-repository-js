@@ -6,7 +6,7 @@ export const CdmProductCollateralCollateralCriteriaBase: Record<
     description:
       'Specifies which of the two counterparties the criteria applies to (either one or both counterparties). This attribute is optional, in case the applicable party is already specified elsewhere within a party election.\n',
     itemType: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
     schema: {
       maxItems: 2,
@@ -23,7 +23,7 @@ export const CdmProductCollateralCollateralCriteriaBase: Record<
       required: true,
     },
     type: {
-      blueId: 'HGtVL5zUGD9Z8S6VLuBSEyhaVDP2h8eWzt5te5sS8iTo#1',
+      blueId: '5WkYngyEgPaS9dUTxxGMq3Lc9q4xBSngbTULcPneCHJX#0',
     },
   },
   description:
@@ -33,14 +33,14 @@ export const CdmProductCollateralCollateralCriteriaBase: Record<
     description:
       'Denotes which Criteria has priority if more than one agency rating applies.',
     type: {
-      blueId: 'HN2xCyqgWdVYt6ta4R5o6we7NmT9i49Jn2V5R4V9BoCD',
+      blueId: 'AMBUQNHCXi6XdCd6ShsWvqydCwqyR1LjyMiUGZjzHvsu',
     },
   },
   restrictTo: {
     description:
       'Restrict the criteria to only apply to a specific type of margin, ie IM or VM.',
     type: {
-      blueId: '9z1L9Ava1wYq6jxK5Q25w3DTwEhKhZHbY9XE9NZCutvJ',
+      blueId: 'Ce3ciQcLKDEJNBNLKJ7ZQ1woFjqogy7nsbLP99TxETXf',
     },
   },
 };

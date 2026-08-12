@@ -5,7 +5,7 @@ export const CdmProductCollateralContactElection: Record<string, unknown> = {
   partyElection: {
     description: "The parties' contact information election.",
     itemType: {
-      blueId: '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR',
+      blueId: 'EdgTekD4DSaAbY5B22rL1ks9aiMeJD37ywSxekUgteNf',
     },
     schema: {
       maxItems: 2,

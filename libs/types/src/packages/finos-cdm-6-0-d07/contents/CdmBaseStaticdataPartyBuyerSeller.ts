@@ -6,7 +6,7 @@ export const CdmBaseStaticdataPartyBuyerSeller: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
   description:
@@ -19,7 +19,7 @@ export const CdmBaseStaticdataPartyBuyerSeller: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
 };

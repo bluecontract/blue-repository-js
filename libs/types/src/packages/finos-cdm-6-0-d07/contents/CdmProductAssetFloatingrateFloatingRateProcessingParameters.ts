@@ -19,7 +19,7 @@ export const CdmProductAssetFloatingrateFloatingRateProcessingParameters: Record
   initialRate: {
     description: 'The rate to be applied for the initial period.',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
   multiplier: {
@@ -32,13 +32,13 @@ export const CdmProductAssetFloatingrateFloatingRateProcessingParameters: Record
   negativeTreatment: {
     description: 'How to handle negative interest rates.',
     type: {
-      blueId: 'BsWNiWBWBcPvxq7gbRKXCVo4xpJ1fYXPvWNafB7Bvxzt',
+      blueId: '3S9wGcwziECfCYxsx3JEzQGyA8pisBmmGB1dLPaF4Uz2',
     },
   },
   rounding: {
     description: 'THe final rate rounding to be applied.',
     type: {
-      blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
+      blueId: '7fpTDBDMKH4SNXoiKP77e98Hh5vZkbVGXSEenFEztVuv',
     },
   },
   spread: {
@@ -51,7 +51,7 @@ export const CdmProductAssetFloatingrateFloatingRateProcessingParameters: Record
     description:
       'US rate treatment (Bond Equivalent Yield or Money Market Yield, if applicable.',
     type: {
-      blueId: '6vYpwpDGdaR6pbtzmJTTxmLwiWsbwBhhaiecmRbLMtix',
+      blueId: '4REjFYKmNm3htXXqQK6yYEKdqScJUTN8EYNZpDTYUzRp',
     },
   },
 };

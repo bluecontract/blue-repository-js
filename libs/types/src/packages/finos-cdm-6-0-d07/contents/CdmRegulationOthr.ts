@@ -4,7 +4,7 @@ export const CdmRegulationOthr: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'H4qXNCgRHrt2vNW5Ck9VynMAfvyCFYzUwMSSZWpuPRyL',
+      blueId: 'GX3jnfSNHL6BgdHRTTWZTg8N78Wrh9YMRRccSFcPAtz2',
     },
   },
   finInstrmGnlAttrbts: {
@@ -12,7 +12,7 @@ export const CdmRegulationOthr: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8VKLe5YFMNREPES73PCMyATqUbr8SexStcAoUJHdcGEE',
+      blueId: '4GeABE6e3Eg9DHMZqpnuZhJQuUZyMzsxrQ8mXyrUxrae',
     },
   },
   id: {
@@ -29,7 +29,7 @@ export const CdmRegulationOthr: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6sHTanKcHB14wiXCFtoehJEB7HWsy21ExqHEvQYtw7NP',
+      blueId: '74bi8PEa5JSJWCSqig3PgQCFyzt6AAucMkhZCq25K7gc',
     },
   },
 };

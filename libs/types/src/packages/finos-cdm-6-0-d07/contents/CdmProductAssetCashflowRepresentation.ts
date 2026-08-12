@@ -16,7 +16,7 @@ export const CdmProductAssetCashflowRepresentation: Record<string, unknown> = {
     description:
       'The adjusted payment date and associated calculation period parameters required to calculate the actual or projected payment amount. A list of payment calculation period elements may be ordered in the document by ascending adjusted payment date. An FpML document containing an unordered list of payment calculation periods is still regarded as a conformant document.\n',
     itemType: {
-      blueId: 'AGSb42ioNbHLTCP12AbmMbhsiH4CTHve73GmjTCTJtcR',
+      blueId: 'AmMckQK6D6qnYkcaZ6whw5wA5uRbeevDC2UYCXTM2aN2',
     },
     schema: {
       minItems: 0,

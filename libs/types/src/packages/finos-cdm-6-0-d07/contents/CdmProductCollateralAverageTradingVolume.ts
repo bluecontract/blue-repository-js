@@ -9,7 +9,7 @@ export const CdmProductCollateralAverageTradingVolume: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '9ievDTbZij3cJJ9jg1P1QCr6ezKnnV7LPCaYa9ghiPQK',
+        blueId: '7LAKR8WGxD9yDgWZLh76RT1z1M17gzWirhryZjYVaoMQ',
       },
     },
     name: 'cdm/product/collateral/AverageTradingVolume',
@@ -20,7 +20,7 @@ export const CdmProductCollateralAverageTradingVolume: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+        blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
       },
     },
   };

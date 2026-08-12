@@ -5,13 +5,13 @@ export const CdmProductTemplateQuanto: Record<string, unknown> = {
     description:
       'The time at which the spot currency exchange rate will be observed. It is specified as a time in a business day calendar location, e.g. 11:00am London time.\n',
     type: {
-      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+      blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
     },
   },
   fxRate: {
     description: 'Specifies a currency conversion rate.',
     itemType: {
-      blueId: '3j6sxnQ7QgWXvufbYN59akG5xPy8Sz1wg8Lr1nR32iFw',
+      blueId: 'DkWwEkbFzMyTZcRgCbTWe3F7HxMH94sf38iKhBV5S2rE',
     },
     schema: {
       minItems: 0,
@@ -24,7 +24,7 @@ export const CdmProductTemplateQuanto: Record<string, unknown> = {
     description:
       'Specifies the methodology (reference source and, optionally, fixing time) to be used for determining a currency conversion rate.\n',
     type: {
-      blueId: 'AxAyn6UgyoJj9YDT4soz7eYpmhL8U6kEzFxGMonZgxcg',
+      blueId: '4Jbze8eVmcTD1NE4zxdWWA7NuWrvuqjSc5a68zCAQD7h',
     },
   },
   name: 'cdm/product/template/Quanto',

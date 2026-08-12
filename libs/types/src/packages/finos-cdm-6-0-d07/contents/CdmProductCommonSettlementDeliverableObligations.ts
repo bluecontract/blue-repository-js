@@ -20,21 +20,21 @@ export const CdmProductCommonSettlementDeliverableObligations: Record<
     description:
       'A deliverable obligation characteristic. A loan that is freely assignable to a bank or financial institution without the consent of the Reference Entity or the guarantor, if any, of the loan (or the consent of the applicable borrower if a Reference Entity is guaranteeing the loan) or any agent. ISDA 2003 Term: Assignable Loan.\n',
     type: {
-      blueId: 'CfL1c8JN1WqjG49j7D1R5Sb4acqi6yrgcRdEo3jHGKMR',
+      blueId: 'u3kHHrzb2bwyGNqvzzSF451Viqd8Uo9SLDeWWJT67HB',
     },
   },
   category: {
     description:
       'Used in both obligations and deliverable obligations to represent a class or type of securities which apply. ISDA 2003 Term: Obligation Category/Deliverable Obligation Category.\n',
     type: {
-      blueId: '3kqHna3Z2FVYvPx85aDFr4WH2NPEmuQhrh8XXzbkQosH',
+      blueId: '479q1woparEWTtykQD81K2mKFboBtTz3iWRBsUyQNweX',
     },
   },
   consentRequiredLoan: {
     description:
       'A deliverable obligation characteristic. A loan that is capable of being assigned with the consent of the Reference Entity or the guarantor, if any, of the loan or any agent. ISDA 2003 Term: Consent Required Loan.\n',
     type: {
-      blueId: 'CfL1c8JN1WqjG49j7D1R5Sb4acqi6yrgcRdEo3jHGKMR',
+      blueId: 'u3kHHrzb2bwyGNqvzzSF451Viqd8Uo9SLDeWWJT67HB',
     },
   },
   description:
@@ -85,7 +85,7 @@ export const CdmProductCommonSettlementDeliverableObligations: Record<
     description:
       'A deliverable obligation characteristic. An obligation that has a remaining maturity from the Physical Settlement Date of not greater than the period specified. ISDA 2003 Term: Maximum Maturity.\n',
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   name: 'cdm/product/common/settlement/DeliverableObligations',
@@ -107,7 +107,7 @@ export const CdmProductCommonSettlementDeliverableObligations: Record<
     description:
       'An obligation and deliverable obligation characteristic. Any obligation that is payable in any currency other than the domestic currency. Domestic currency is either the currency so specified or, if no currency is specified, the currency of (a) the reference entity, if the reference entity is a sovereign, or (b) the jurisdiction in which the relevant reference entity is organised, if the reference entity is not a sovereign. ISDA 2003 Term: Not Domestic Currency.\n',
     type: {
-      blueId: 'GMpNRbtpXncDuLhyddMFw2W43rpm8H6AVYkoczBix3tG',
+      blueId: 'CfJhnmWCGJsuGKjrniD86MnqeEFDzMSQVu1kFMkHEggE',
     },
   },
   notDomesticIssuance: {
@@ -156,7 +156,7 @@ export const CdmProductCommonSettlementDeliverableObligations: Record<
     description:
       'An obligation and deliverable obligation characteristic. The currency or currencies in which an obligation or deliverable obligation must be payable. ISDA 2003 Term: Specified Currency.\n',
     type: {
-      blueId: 'GgYvaTiQsh1xn3XTCrAaxQ7jizAVYyU7EnLPR5eZdVUp',
+      blueId: 'Hm8WzZ2vt1scZRpgZ9XjxKEcvsf2oXa8icw3PC9JPL2C',
     },
   },
   transferable: {

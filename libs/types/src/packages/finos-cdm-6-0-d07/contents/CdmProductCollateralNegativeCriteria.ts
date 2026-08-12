@@ -7,7 +7,7 @@ export const CdmProductCollateralNegativeCriteria: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'this#1',
+      blueId: 'this#0',
     },
   },
 };

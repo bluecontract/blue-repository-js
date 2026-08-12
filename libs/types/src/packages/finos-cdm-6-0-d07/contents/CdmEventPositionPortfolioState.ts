@@ -8,7 +8,7 @@ export const CdmEventPositionPortfolioState: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'AU5SZ3DHqRdpqT1JPJ9S96fTUWv7kU2ofDC4zNRK6quM',
+      blueId: '8F2a2dkMM98d7KGUagPkBdhXVErYpJBwveTH1UGZo57N',
     },
   },
   name: 'cdm/event/position/PortfolioState',
@@ -16,7 +16,7 @@ export const CdmEventPositionPortfolioState: Record<string, unknown> = {
     description:
       'The list of positions, each containing a Quantity and a Product.',
     itemType: {
-      blueId: '22Lbahf1cGvTSTcW83aFHjBwGYU4D8XJ4Nmupa8TNRJH',
+      blueId: 'Fp7ngXaKudMmdfVjxEwdxVawRRc2E8bXhucLMMuNQyKs',
     },
     schema: {
       minItems: 0,

@@ -7,13 +7,13 @@ export const CdmProductCollateralEligibleCollateralSpecificationInstruction: Rec
       required: true,
     },
     type: {
-      blueId: '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6',
+      blueId: 'Dd4QK5kmBzsGcmhcqxkLLPiH2fBmE3acTHCBGWUW5Buq',
     },
   },
   name: 'cdm/product/collateral/EligibleCollateralSpecificationInstruction',
   variable: {
     itemType: {
-      blueId: '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6',
+      blueId: 'Dd4QK5kmBzsGcmhcqxkLLPiH2fBmE3acTHCBGWUW5Buq',
     },
     schema: {
       minItems: 1,

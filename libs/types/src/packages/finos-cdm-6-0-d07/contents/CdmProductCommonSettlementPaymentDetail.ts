@@ -4,12 +4,12 @@ export const CdmProductCommonSettlementPaymentDetail: Record<string, unknown> =
     paymentAmount: {
       description: 'A fixed payment amount.',
       type: {
-        blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+        blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
       },
     },
     paymentDate: {
       type: {
-        blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+        blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
       },
     },
     paymentRule: {
@@ -18,7 +18,7 @@ export const CdmProductCommonSettlementPaymentDetail: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '3YeAtbFamK5F5iKzyL3iNd6gFidd9BmNNPL6HqrJVqgu',
+        blueId: 'tgFBHmNbSSZ6ELyyAHYu8kZnc13EpuENqMFM5qRR7ti',
       },
     },
   };

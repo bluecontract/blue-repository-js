@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaInterpolationMethodEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaInterpolationMethodEnum',
   val: {
     type: {
-      blueId: '69SohrhYgsRTiHcPmh9GwadYoxt1kJgmJ3e2nrCajFHt',
+      blueId: '3h1NHQxSYTh9JS13UUBSTJesbdm5xcKkz7jHUTjG4s6f',
     },
   },
 };

@@ -5,7 +5,7 @@ export const CdmEventCommonContractDetails: Record<string, unknown> = {
     description:
       'Represents the legal document(s) that governs a trade and associated contractual product terms, either as a reference to such documents when specified as part of the CDM, or through identification of some of the key terms of those documents, such as the type of document, the document identifier, the publisher, the document vintage and the agreement date.\n',
     itemType: {
-      blueId: '9LAToUm7ugSfrCZWL6KmTwi7jAEoXH8TcNNGxr34YvFc#0',
+      blueId: 'A6CipKeMXZr9PY1uT1iihJg8sjvn1z3pHUPLe9c2aP7a#0',
     },
     schema: {
       minItems: 0,
@@ -18,7 +18,7 @@ export const CdmEventCommonContractDetails: Record<string, unknown> = {
     description:
       'Represents the law governing the trade and associated contractual product terms.',
     type: {
-      blueId: 'FPz2gxL3hhBbrKzsyDHCfd6NPDNRZN4HckQY4e1gj5u9',
+      blueId: 'ErxQstFSsMK3XKhLkUhVeRYxqEXmnjDnLu9oW144qji1',
     },
   },
   name: 'cdm/event/common/ContractDetails',

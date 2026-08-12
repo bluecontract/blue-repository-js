@@ -9,7 +9,7 @@ export const DocumentSectionChangeEntry: Record<string, unknown> = {
       blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
     },
     valueType: {
-      blueId: '6WrVQoSpKHUUg5HPrwjkVV6pxe4sdkyGnakMs8ayEGeF',
+      blueId: '4ugZ87HaumAJezmgvi2QoqfEdqfwpviQavmak8C8ewF4',
     },
   },
   description:
@@ -19,7 +19,7 @@ export const DocumentSectionChangeEntry: Record<string, unknown> = {
     description:
       'Document Section contract node; must include type Workflows/Document Section and relatedContracts should list keys in contracts.',
     type: {
-      blueId: '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy',
+      blueId: 'CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa',
     },
   },
   sectionKey: {

@@ -6,7 +6,7 @@ export const CdmBaseStaticdataPartyReferenceBanks: Record<string, unknown> = {
     description:
       'An institution (party) identified by means of a coding scheme and an optional name.',
     itemType: {
-      blueId: '9w3yZ13uv2onHnWSmTEKqfVrjkKHHBuryHdKhMswV6it',
+      blueId: 'HCxtaayTkzuVfS1fw2tUcTEYqdzrqTdQWWMc9HnnNmjF',
     },
     schema: {
       minItems: 1,

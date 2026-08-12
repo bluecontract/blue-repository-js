@@ -6,14 +6,14 @@ export const CdmProductCommonScheduleParametricDates: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
+        blueId: 'Ds5a9bChKossVgHEM7Z2TQTCxDXdB2SZhtM9v9Y3mYmM',
       },
     },
     dayDistribution: {
       description:
         'Denotes the method by which the pricing days are distributed across the pricing period.',
       type: {
-        blueId: '7aBrcowDER57iJ1dKZQ3YqngDZfz6eNHJExw8Egww997',
+        blueId: 'hQr5MwUS6CucReoCUdM1bToeUnZNuEiqWL4aadinx9h',
       },
     },
     dayFrequency: {
@@ -27,7 +27,7 @@ export const CdmProductCommonScheduleParametricDates: Record<string, unknown> =
       description:
         'Indicates the days of the week on which the price will be determined.',
       itemType: {
-        blueId: 'AYNVNBQsDmS46NA7kfw7jh6eh8DBspyMyDd1bzyBmDG5',
+        blueId: 'DmhfCUUAaa5kZ8Qsom8VwEsMN3qmGWaJX1pGtUCfbqRQ',
       },
       schema: {
         maxItems: 7,
@@ -44,7 +44,7 @@ export const CdmProductCommonScheduleParametricDates: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq',
+        blueId: '7SsDfFvRbfxrm8vS98NZ5Vq9nqD3CFNGWsLr6dc738LJ',
       },
     },
     description:
@@ -53,7 +53,7 @@ export const CdmProductCommonScheduleParametricDates: Record<string, unknown> =
       description:
         'The pricing period per calculation period if the pricing days do not wholly fall within the respective calculation period.\n',
       type: {
-        blueId: 'H52wAsRZktjp4tpCZgu6wnQMFaksvVT2T9gxSHdZjSbg',
+        blueId: '9dUxAKwefutKuBfGuYNrjooNVQNxzQHdyCXdCzhcU2fe',
       },
     },
     name: 'cdm/product/common/schedule/ParametricDates',

@@ -12,7 +12,7 @@ export const CdmBaseStaticdataPartyPartyContactInformation: Record<
     description:
       'Optional organization unit information used to describe the organization units (e.g. trading desks) involved in a transaction or business process, incl. the contact information (when relevant).\n',
     itemType: {
-      blueId: '6L9P51qVV3HH366DyCCXDxSEYLtr6zN1bAMebbiK5iW1',
+      blueId: 'EMjJhiDkKtnd6Xy5ATKZRxxn7miYV6i9qRKmbwi8PePK',
     },
     schema: {
       minItems: 0,
@@ -25,7 +25,7 @@ export const CdmBaseStaticdataPartyPartyContactInformation: Record<
     description:
       'The postal/street address, telephone number, email address and/or web page. If the contact information is specific to the associated business unit(s), it should be associated with those.\n',
     type: {
-      blueId: '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A',
+      blueId: 'AWye6DehLS3vyWXet8adWpUZ8kLZYQCWMkCgEK9CoRSR',
     },
   },
   description:
@@ -42,7 +42,7 @@ export const CdmBaseStaticdataPartyPartyContactInformation: Record<
     description:
       'Optional information about people involved in a transaction or business process. (These are employees of the party.)\n',
     itemType: {
-      blueId: 'Dz8x4hxN4LrnwACtSYMSryByQKNPMssYkK9899oiNbyh',
+      blueId: 'C3NyCURgLaHrTtjTpfDUYJnBfR1HhhpQmNSowonp7YHH',
     },
     schema: {
       minItems: 0,

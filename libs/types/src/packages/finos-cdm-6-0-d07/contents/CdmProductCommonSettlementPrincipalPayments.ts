@@ -39,7 +39,7 @@ export const CdmProductCommonSettlementPrincipalPayments: Record<
     description:
       'Describe dates schedules for Principal Exchanges and related role of the parties when known.',
     type: {
-      blueId: 'Esmmz6HUDCJAgn44LSSCvC1CCKuZW9U22nKNF4fXwkjv',
+      blueId: 'FTa2hjVcBewhuq9sdHydggSm1Sx6qSDWQcnLebVc6txc',
     },
   },
   varyingLegNotionalCurrency: {

@@ -8,13 +8,13 @@ export const CdmBaseStaticdataPartyPartyIdentifier: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   identifierType: {
     description: 'Defines the source of the identifier.',
     type: {
-      blueId: 'JCXuAtNHkVPfjzG8gXbgiwoAYAmMiB2EfaSy8qU3iqtz',
+      blueId: 'HF2iBeqVB9K52LiqMfKwUtdriqmD7BQiewBjXBWpF763',
     },
   },
   name: 'cdm/base/staticdata/party/PartyIdentifier',

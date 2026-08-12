@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaCommodityReferencePriceEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaCommodityReferencePriceEnum',
   val: {
     type: {
-      blueId: '4omrk7WjD1yjwjt3edKCzksnAKX38duEcsLE2esZpg6q',
+      blueId: 'DzpY5RUNUovhmzgtT5VaT1W4axHNNoTZ2da1YgZrdg6Z',
     },
   },
 };

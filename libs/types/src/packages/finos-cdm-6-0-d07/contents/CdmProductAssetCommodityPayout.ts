@@ -3,26 +3,26 @@ export const CdmProductAssetCommodityPayout: Record<string, unknown> = {
     description:
       'Indicates if the averaging calculation, when applicable, is weighted or unweighted.',
     type: {
-      blueId: 'G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ',
+      blueId: 'Dm6X9rfSBnx7WqRtQ4eeZ3yyCpGqTHJWsE6vycZx4yix',
     },
   },
   calculationPeriodDates: {
     description: 'Defines the calculation period dates schedule.',
     type: {
-      blueId: '7dK86pbyNfhuuigQR5bQueaqH68Sqze66Qwad2m64rxg',
+      blueId: 'DfcGaXUQetcXghmMMauh7ikEza42JbwqRdRdyWcm1C6N',
     },
   },
   commodityPriceReturnTerms: {
     description: 'Defines parameters in which the commodity price is assessed.',
     type: {
-      blueId: '14FV7tMj4HrFn5mGMxp1ip6AhhhvTsLR6FH1eXyL6Ts9',
+      blueId: 'E3H3DKjGJFhkYXRWqcd2cAUNArjh5GQ68X2os3cTkLHo',
     },
   },
   delivery: {
     description:
       'Contains the information relative to the delivery of the asset.',
     type: {
-      blueId: '78abSDet2v5nbbeXAmoFZG2ZcMhk4674b2vrAKGT3yiu',
+      blueId: 'ErtJ5jBytJJ7W2hSqXGSdmAd65mCExkRtBpifkecnhVT',
     },
   },
   description:
@@ -31,7 +31,7 @@ export const CdmProductAssetCommodityPayout: Record<string, unknown> = {
     description:
       'Defines quanto or composite FX features that are included in the swap leg.',
     type: {
-      blueId: 'HPRsaReKQuhsZQyFweRGJshuiWo9hd1r6CsmkM6iPQnN',
+      blueId: '4Evx6ctCQA9KW4zWZBuRVzGni9eknk1oQDCWfhxNfdg9',
     },
   },
   name: 'cdm/product/asset/CommodityPayout',
@@ -39,7 +39,7 @@ export const CdmProductAssetCommodityPayout: Record<string, unknown> = {
     description:
       'Canonical representation of the payer and receiver parties applicable to each payout leg.',
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
   paymentDates: {
@@ -49,14 +49,14 @@ export const CdmProductAssetCommodityPayout: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '23fb9HBYcZQ8enTm83iVQjixyTrHqNc5G1ANtAbB1ixz',
+      blueId: '53mGNaWEbqDyzs1WnqizJcci5WSeG5YDV6e97svgRLve',
     },
   },
   priceQuantity: {
     description:
       "Each payout leg must implement the quantity concept as a 'resolvable' type, which allows for different payout legs to be linked to each other (e.g. in the case of cross-curreny products).\n",
     type: {
-      blueId: '7nSxNdghnPkGBbyqzqUELC5UcBMNfLdrCr4oXbav2d3J',
+      blueId: '9H3s5nDTov6DTnnVBM5XaiAV2vZvPEep33DWccdc6mXq',
     },
   },
   pricingDates: {
@@ -66,28 +66,28 @@ export const CdmProductAssetCommodityPayout: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2MAF9GVz5RtZKjkk4so3hxRXrU2WZSs92BQ1bUeT9CDa',
+      blueId: '51vGBKkgLH3NUCqwFpjmFLCT15MZshriveqeJPUJvZVZ',
     },
   },
   principalPayment: {
     description:
       'The specification of the principal exchange. Optional as only applicable in the case of cross-currency or zero-coupon swaps with a final payment.\n',
     type: {
-      blueId: '8VsQE5PSzyWWApw5Ykfum97vLPNoa36BemLUMHimzMb5',
+      blueId: '6ZdgPDgDd1WfACEQNiQTurhX1xdBtsoPkMNjRhDD9Myo',
     },
   },
   schedule: {
     description:
       'Allows the full representation of a payout by defining a set of schedule periods. It supports standard schedule customization by expressing all the dates, quantities, and pricing data in a non-parametric way.\n',
     type: {
-      blueId: 'GbAmo8bxznHkBwFWFP6JMXCQEsWMyu9iKFV2KtBqH1rP',
+      blueId: 'D9dLMq3bj6XLYoxFZUFfChf74VUAg1Lso4BteJXuB47B',
     },
   },
   settlementTerms: {
     description:
       'Each payout leg must specifies its settlement terms, including the delivery type (i.e. cash vs physical, and their respective terms), the transfer type (DvP etc.) and settlement date, if any.\n',
     type: {
-      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
+      blueId: 'BRJ2J4zKmK8CLQta8gGcSboyer9Sby49nV8HopjaFM7g',
     },
   },
   underlier: {
@@ -97,7 +97,7 @@ export const CdmProductAssetCommodityPayout: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'this#3',
+      blueId: 'this#2',
     },
   },
 };

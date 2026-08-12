@@ -9,7 +9,7 @@ export const CdmProductCollateralInterestAmountApplication: Record<
       required: true,
     },
     type: {
-      blueId: 'HKVLiaT4w9torwoHkj96Mx7aKTg2Hav87Wintsd8TvXU',
+      blueId: '6r2vj9zxbYnH1oH2iVbRh9Svy77PVCBArmP4WEUVjekp',
     },
   },
   description:

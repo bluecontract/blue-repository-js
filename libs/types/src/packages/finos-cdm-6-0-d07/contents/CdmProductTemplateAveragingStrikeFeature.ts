@@ -7,7 +7,7 @@ export const CdmProductTemplateAveragingStrikeFeature: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ',
+        blueId: 'Dm6X9rfSBnx7WqRtQ4eeZ3yyCpGqTHJWsE6vycZx4yix',
       },
     },
     description:
@@ -20,7 +20,7 @@ export const CdmProductTemplateAveragingStrikeFeature: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '9pJEidhmAUQebdR3uTioauH2mNHR8RLS9r7xaB9vxpRd',
+        blueId: '5hoFwtCWywpjW2iVxqcevJ5qtXxE46qvSVAb8NxpJke',
       },
     },
   };

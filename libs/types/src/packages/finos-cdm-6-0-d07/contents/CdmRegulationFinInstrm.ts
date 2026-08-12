@@ -5,7 +5,7 @@ export const CdmRegulationFinInstrm: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2xwAHyjVuSzA57dVQJAEcfr7Eg6P3Ms4XxwPwQwPQsAK',
+      blueId: '5eTiWdFSftwxm1CSPDfGhxR6HweAMkRSoKmeKe44d7oX',
     },
   },
 };

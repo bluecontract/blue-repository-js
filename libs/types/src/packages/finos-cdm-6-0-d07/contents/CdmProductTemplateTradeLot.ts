@@ -4,7 +4,7 @@ export const CdmProductTemplateTradeLot: Record<string, unknown> = {
   lotIdentifier: {
     description: 'Specifies one or more identifiers for the lot, if any.',
     itemType: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
     schema: {
       minItems: 0,
@@ -18,7 +18,7 @@ export const CdmProductTemplateTradeLot: Record<string, unknown> = {
     description:
       'Specifies the settlement characteristics of a trade lot: price, quantity, observable (optionally) and the settlement terms. This attribute has a multiple cardinality to allow to specify the price, quantity and observable of different legs in a single, composite product (e.g. a Swap).\n',
     itemType: {
-      blueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
+      blueId: '4XEYGgCSfXx2tFwmQjMsXhuwaCjsNZ42jtKAcr8itiqe',
     },
     schema: {
       minItems: 1,

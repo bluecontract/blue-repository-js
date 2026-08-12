@@ -4,13 +4,13 @@ export const CdmLegaldocumentationCommonFieldWithMetaResourceTypeEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/legaldocumentation/common/FieldWithMetaResourceTypeEnum',
   val: {
     type: {
-      blueId: '6Eina6hrt9KKXg8ZTfhCSwwcHkxjXe8HVdHFo6X8toya',
+      blueId: '6Epbpb9tgsSZZ8TpGsBHH3Xn8a3t36wapYjuUY9fbz3o',
     },
   },
 };

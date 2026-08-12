@@ -12,7 +12,7 @@ export const CdmProductAssetAssetDeliveryPeriods: Record<string, unknown> = {
     description:
       'Defines the delivery profile of the asset, including the load type and the delivery intervals.',
     itemType: {
-      blueId: 'E8QF9EBMdnTPHUuRgEqvQUvGm75ReZB3zjKJB7BSjt7z',
+      blueId: 'huDyD12ZoREuxfsApppfcWfJ4LddBpaDDswYuKpWtH5',
     },
     schema: {
       minItems: 0,

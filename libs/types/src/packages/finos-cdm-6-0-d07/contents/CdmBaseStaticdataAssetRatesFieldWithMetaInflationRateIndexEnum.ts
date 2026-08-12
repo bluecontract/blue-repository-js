@@ -4,13 +4,13 @@ export const CdmBaseStaticdataAssetRatesFieldWithMetaInflationRateIndexEnum: Rec
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/staticdata/asset/rates/FieldWithMetaInflationRateIndexEnum',
   val: {
     type: {
-      blueId: '6DRWaqGdw8CTwRo3fMjKm3geyesH3QBat4P1SeqvgNLc',
+      blueId: 'CEwZn6n44gVtUvBiBySA3E3WEwtA9yRuhHubY2RHd8d9',
     },
   },
 };

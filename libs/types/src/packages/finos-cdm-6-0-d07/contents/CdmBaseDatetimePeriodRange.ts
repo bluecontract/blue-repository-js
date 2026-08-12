@@ -5,7 +5,7 @@ export const CdmBaseDatetimePeriodRange: Record<string, unknown> = {
     description:
       'Specifies the lower bound of a period range, e.g. greater than or equal to 5Y.',
     type: {
-      blueId: 'DtV3Ngp9MSk1v1Wcbq82ZaJHv5dkHz2XFfpccV8mzgXP',
+      blueId: 'HFJi2qNRTWh7ojwQLw3n3cdRMAvHwYP2Q9saLfzzYzDL',
     },
   },
   name: 'cdm/base/datetime/PeriodRange',
@@ -13,7 +13,7 @@ export const CdmBaseDatetimePeriodRange: Record<string, unknown> = {
     description:
       'Specifies the upper bound of a period range, e.g. less than to 10Y.',
     type: {
-      blueId: 'DtV3Ngp9MSk1v1Wcbq82ZaJHv5dkHz2XFfpccV8mzgXP',
+      blueId: 'HFJi2qNRTWh7ojwQLw3n3cdRMAvHwYP2Q9saLfzzYzDL',
     },
   },
 };

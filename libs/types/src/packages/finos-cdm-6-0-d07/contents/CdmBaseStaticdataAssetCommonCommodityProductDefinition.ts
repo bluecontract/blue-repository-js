@@ -6,7 +6,7 @@ export const CdmBaseStaticdataAssetCommonCommodityProductDefinition: Record<
     description:
       'Specifies the publication where the commodity prices can be found.',
     type: {
-      blueId: '2U5utSJ8k2ZUUAhQ55aoZL8AB4QWHroS2oQQx7uBhvdk',
+      blueId: '4e4FSGJ6asiKeNv6j7PQBXz5HJEsr8DyqodHRGy2WSYj',
     },
   },
   description:
@@ -18,7 +18,7 @@ export const CdmBaseStaticdataAssetCommonCommodityProductDefinition: Record<
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/base/staticdata/asset/common/CommodityProductDefinition',
@@ -26,7 +26,7 @@ export const CdmBaseStaticdataAssetCommonCommodityProductDefinition: Record<
     description:
       'Specifies a publication that provides the commodity price, including, where applicable the details of where in the publication the price is published.  Applicable when the commodity reference price is not a futures contract\n',
     type: {
-      blueId: 'HyV2GLWDgCxkJJ2KRpuvtTdGurQejk4MXEKSi2vu8aKN',
+      blueId: '6ndw1qraVosKGtrHUyCSNZ4yHpydKg4aKVNdbEEZfoMd',
     },
   },
   referenceFramework: {
@@ -35,7 +35,7 @@ export const CdmBaseStaticdataAssetCommonCommodityProductDefinition: Record<
       required: true,
     },
     type: {
-      blueId: '3Szwd2qmGpb984rriz5Yia1VSkVLPrvXGSTv9qhsFyQf',
+      blueId: 'AFMZa2hViXkmuEYd3tzHVx5sJAXHE2RH9Drcb1MV7xxa',
     },
   },
 };

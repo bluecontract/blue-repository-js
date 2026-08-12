@@ -11,7 +11,7 @@ export const CdmProductAssetEquityUnderlierProvisions: Record<string, unknown> =
       description:
         'The ISO 3166 standard code for the country within which the postal address is located.',
       type: {
-        blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+        blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
       },
     },
     multipleExchangeIndexAnnexFallback: {
@@ -26,7 +26,7 @@ export const CdmProductAssetEquityUnderlierProvisions: Record<string, unknown> =
       description:
         'The ISO 3166 standard code for the country within which the postal address is located.',
       type: {
-        blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+        blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
       },
     },
   };

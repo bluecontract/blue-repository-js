@@ -4,13 +4,13 @@ export const CdmBaseMathFieldWithMetaNonNegativeQuantitySchedule: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/math/FieldWithMetaNonNegativeQuantitySchedule',
   val: {
     type: {
-      blueId: 'FgPwQQd53zyxFZAVWWuQLMY8QcPYNzeupku9hKxvYNob',
+      blueId: 'DABeUA2VSfKoewn5RTb24nVAxHReN4yfRq2Ud8chTJq2',
     },
   },
 };

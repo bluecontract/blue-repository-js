@@ -3,7 +3,7 @@ export const CdmEventCommonCollateralPortfolio: Record<string, unknown> = {
     description:
       'Represents the populated or calculated collateral aggregate balance amount for the collateral portfolio.',
     itemType: {
-      blueId: '8nANyRzbRdjuTq7qNZchzDJ4XYqZ8HWYinBX4dWM6NAV',
+      blueId: 'EieQtheGsK5EDQsjN2wqUyWn5LaLYdtjXBotd8LVH7ZT',
     },
     schema: {
       minItems: 0,
@@ -16,7 +16,7 @@ export const CdmEventCommonCollateralPortfolio: Record<string, unknown> = {
     description:
       'Specifies the individual components of the collateral positions in the collateral portfolio.',
     itemType: {
-      blueId: '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT',
+      blueId: 'GtabA8b7typ1gjwtAYshA1eaECFCwLWHkBauTVQ8PMpV',
     },
     schema: {
       minItems: 0,
@@ -39,7 +39,7 @@ export const CdmEventCommonCollateralPortfolio: Record<string, unknown> = {
     description:
       'Specifies a unique identifier for a set of collateral positions in a portfolio.',
     type: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
   },
 };

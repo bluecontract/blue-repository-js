@@ -5,7 +5,7 @@ export const CdmEventCommonExerciseInstruction: Record<string, unknown> = {
     description:
       'Specifies the date on which an option contained within the financial product would be exercised. The date may be omitted if the contractual product allows for only a single date of exercise (European exercise).\n',
     type: {
-      blueId: 'CdgiECBjpwU7k35HhiQi9JBRDcAEBJDGnCGvMjE3KMxX',
+      blueId: '54eGVvFUpXJeDaqftgjfjb6rDLjcf7H3U88rMPXfzfQt',
     },
   },
   exerciseOption: {
@@ -21,14 +21,14 @@ export const CdmEventCommonExerciseInstruction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'this#0',
+      blueId: 'this#2',
     },
   },
   exerciseTime: {
     description:
       'Specifies the time at which an option contained within the financial product woulld be exercised. The time may be omitted if the contractual product allows for only a single time of exercise (European exercise).\n',
     type: {
-      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+      blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
     },
   },
   name: 'cdm/event/common/ExerciseInstruction',
@@ -36,7 +36,7 @@ export const CdmEventCommonExerciseInstruction: Record<string, unknown> = {
     description:
       'Specifies the trade identifier to apply to the replacement trade for physical exercise.',
     itemType: {
-      blueId: '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU',
+      blueId: 'FGujWvfXdExA7nDNwp6iHf3hWYRL3g9JS9EZfYhS7N2y',
     },
     schema: {
       minItems: 0,

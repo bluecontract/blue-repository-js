@@ -24,7 +24,7 @@ export const CdmProductAssetBoundedVariance: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6bttAkwgoE4wCcbzrxpxn9QC6RyNAX7D58kev7GDsGiS',
+      blueId: '8WUdqYEhbVAAmUh8SvvCpySEJZcWCkdb5xN8ZGfavwQW',
     },
   },
   upperBarrier: {

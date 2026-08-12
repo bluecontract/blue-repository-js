@@ -6,7 +6,7 @@ export const CdmBaseStaticdataIdentifierIdentifiedList: Record<
     description:
       'Identifiers for each component of the list. Since the data type is used to link multiple identified objects together, at least 2 components are required in the list. Creating an identified list with only 1 identified component has been deemed unnecessary, because it would just create a redundant identifier.\n',
     itemType: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
     schema: {
       minItems: 2,
@@ -24,14 +24,14 @@ export const CdmBaseStaticdataIdentifierIdentifiedList: Record<
       required: true,
     },
     type: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
   },
   name: 'cdm/base/staticdata/identifier/IdentifiedList',
   price: {
     description: 'The price of the package.',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
 };

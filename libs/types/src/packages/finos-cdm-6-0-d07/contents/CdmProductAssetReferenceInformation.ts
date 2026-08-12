@@ -23,14 +23,14 @@ export const CdmProductAssetReferenceInformation: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   referenceObligation: {
     description:
       'The Reference Obligation is a financial instrument that is either issued or guaranteed by the reference entity. It serves to clarify the precise reference entity protection is being offered upon, and its legal position with regard to other related firms (parents/subsidiaries). Furthermore the Reference Obligation is ALWAYS deliverable and establishes the Pari Passu ranking (as the deliverable bonds must rank equal to the reference obligation). ISDA 2003 Term: Reference Obligation.\n',
     itemType: {
-      blueId: 'Bv5sBf6gMTS32hBro1iBzhNmGnSuqD84Wfc4EqRV4Whg',
+      blueId: '9JVAArBi86NaGQD2GTdaCzekc6e3rKpVyMR9GwkaPmWP',
     },
     schema: {
       minItems: 0,
@@ -50,7 +50,7 @@ export const CdmProductAssetReferenceInformation: Record<string, unknown> = {
     description:
       'Used to determine (a) for physically settled trades, the Physical Settlement Amount, which equals the Floating Rate Payer Calculation Amount times the Reference Price and (b) for cash settled trades, the Cash Settlement Amount, which equals the greater of (i) the difference between the Reference Price and the Final Price and (ii) zero. ISDA 2003 Term: Reference Price.\n',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
   securedList: {

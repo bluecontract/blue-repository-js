@@ -5,7 +5,7 @@ export const CdmEventCommonValuation: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   delta: {
@@ -20,21 +20,21 @@ export const CdmEventCommonValuation: Record<string, unknown> = {
     description:
       'Method used for the valuation of the transaction by the valuation party.',
     type: {
-      blueId: 'HsG4xRp4HQZoXBBj6gQLY1cHS5gQpBY9GJeaUjGbd97Z',
+      blueId: 'AHvjpNMMjoT3rNUUPAq275wLaiz12u25bB1BzsfUpYCp',
     },
   },
   name: 'cdm/event/common/Valuation',
   priceComponent: {
     description: 'Denotes the price used to compute the valuation.',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
   source: {
     description:
       'Source of the valuation of the transaction by the valuation party.',
     type: {
-      blueId: 'GV6VzVBrD9mNeCdw21SuF8iXDvMQGY5KsZFTLB9dh5aZ',
+      blueId: '6oZQoXTPQoBnfn28CJnvScCWpoMnEBPDvuP7fYwouN3Q',
     },
   },
   timestamp: {
@@ -51,7 +51,7 @@ export const CdmEventCommonValuation: Record<string, unknown> = {
     description:
       'Denotes when the valuation was sourced during a business day.',
     type: {
-      blueId: 'AKxcCwdA28GyqV4bAANz5gwr1mkuBEft7TkK7FwJkEew',
+      blueId: '9m7oFgSnUtNdoF8hut9kaWRqoPdi8Vr1jH1stL2LEuNS',
     },
   },
 };

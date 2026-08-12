@@ -10,7 +10,7 @@ export const CdmProductCollateralSovereignAgencyRating: Record<
       required: true,
     },
     type: {
-      blueId: 'HWoMhvUF5jLNHYsFt98RcicKv9j3hQxYEeWQkzZHHMBU',
+      blueId: 'HecpRL1z9mNunKs8iVwbjdGKMKf8o5t6v16ewNozwrff',
     },
   },
 };

@@ -12,7 +12,7 @@ export const CdmProductCommonScheduleInitialFixingDate: Record<
   name: 'cdm/product/common/schedule/InitialFixingDate',
   relativeDateOffset: {
     type: {
-      blueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
+      blueId: '9fGwsBbeyL5rQuLRmwyBtyjMjAcmhWfHf4bmyqAXmWtD',
     },
   },
 };

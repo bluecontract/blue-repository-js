@@ -4,7 +4,7 @@ export const CdmRegulationAcctOwnr: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'G7k1Tk3cb59mR6bbpEGUCpLLZpWszEjL9odkebn25QBq',
+      blueId: '2r6PTV1nLw5QiudaGiKjZifJS6pf1AcgcybsBB63pHB9',
     },
   },
   name: 'cdm/regulation/AcctOwnr',

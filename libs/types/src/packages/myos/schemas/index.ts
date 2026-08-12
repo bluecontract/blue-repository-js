@@ -19,9 +19,10 @@ import { MyOSAgentSchema } from './MyOSAgent';
 import { MyOSAgentActorSchema } from './MyOSAgentActor';
 import { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 import { MyOSAgentEventSchema } from './MyOSAgentEvent';
+import { MyOSAgentOperationMandateSchema } from './MyOSAgentOperationMandate';
+import { MyOSAgentOperationRuleSchema } from './MyOSAgentOperationRule';
 import { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 import { MyOSDocumentBootstrapMandateSchema } from './MyOSDocumentBootstrapMandate';
-import { MyOSDocumentOperationMandateSchema } from './MyOSDocumentOperationMandate';
 import { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 import { MyOSOperationCallRequestedSchema } from './MyOSOperationCallRequested';
 import { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
@@ -78,9 +79,10 @@ export { MyOSAgentSchema } from './MyOSAgent';
 export { MyOSAgentActorSchema } from './MyOSAgentActor';
 export { MyOSAgentChannelSchema } from './MyOSAgentChannel';
 export { MyOSAgentEventSchema } from './MyOSAgentEvent';
+export { MyOSAgentOperationMandateSchema } from './MyOSAgentOperationMandate';
+export { MyOSAgentOperationRuleSchema } from './MyOSAgentOperationRule';
 export { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 export { MyOSDocumentBootstrapMandateSchema } from './MyOSDocumentBootstrapMandate';
-export { MyOSDocumentOperationMandateSchema } from './MyOSDocumentOperationMandate';
 export { MyOSDocumentSessionReferenceSchema } from './MyOSDocumentSessionReference';
 export { MyOSOperationCallRequestedSchema } from './MyOSOperationCallRequested';
 export { MyOSParticipantsOrchestrationSchema } from './MyOSParticipantsOrchestration';
@@ -120,86 +122,87 @@ export { TargetDocumentSessionStartedSchema } from './TargetDocumentSessionStart
 export const schemas: Record<string, ZodTypeAny> = {
   HEBuC9grhoHisjpjXHAgg2RZ494YHj4nKJWq7pQS6BxH:
     AddingParticipantRequestedSchema,
-  FoJDXJsUjhiDU8pVxF7TzxE3qh1EvLKyoHQG41WaTTGB:
-    AddingParticipantRespondedSchema,
+  tjcoZV6zPvpCGMFLgPM6wdgKgBvY2DW6oXhAxNAjvEX: AddingParticipantRespondedSchema,
   '8s2rAFDtiB6sCwqeURkT4Lq7fcc2FXBkmX9B9p7R4Boc': AgentSchema,
   BiV8zZSESjpgVqjsEXNYuzk54PUZYp69UtQhxrxK3vYC: AllParticipantsReadySchema,
   GiwuMm3gtbi79CVSUtHGZmpUnQma7EK6A17G9PRmh6jK: BootstrapFailedSchema,
-  GacCAN4FEa7u3e7Qmm9997PYHwHmkGDCnSdYEfAVcZxh: CallOperationAcceptedSchema,
-  FFXVAea2mRHoJq3PRdmz5cXG8eETqx4yr5KCbeTxhEqB: CallOperationFailedSchema,
+  Pgk2ebYYmfu3iz2BKqw62zPvfUSLjEKvkLRYV9f38h2: CallOperationAcceptedSchema,
+  BuXCotop9RSM1N15XeCm76Yow7hu8MJ193uR2S3qXo3Z: CallOperationFailedSchema,
   '5ch42xshMboo9SpPrrnAHgm7z9GogVwBDeZNQpiKiyBo': CallOperationRequestedSchema,
-  AnkvQ2ms9RnPXMfQUP37VP8Gs8MZsSiM72yjWv2DU38c: CallOperationRespondedSchema,
+  '33kWg4MtTrwrHaUoYsMYWzWohKRfsiUvJYqXRPxuvj3z': CallOperationRespondedSchema,
   '8mzqf9vHdE91umxWwnGEdrPwCQ7Swb1RW2M6Ja3AFJoi':
     DocumentInitialSnapshotRequestedSchema,
-  '3bWvNkMNpan2ofiptgtBQidFtwhUAjdZUx9Eo1Hns3u2':
+  CspZcgeRB4kocozD7VC7SJaB2JLosf9vuQZQwSDXeYdC:
     DocumentInitialSnapshotResolvedSchema,
-  '2oWDimMA574XdPA5QFDSPETcU8HzpycEKRseE6CUhred':
+  '4S8HwNpWsPK9fXA5yVw3k6VY2XstXAd3xwVyZhDxHeuq':
     DocumentInitialSnapshotUnresolvedSchema,
-  '5ZaWtZY29h6mm6KGKJsxcfDLF3TMS3XgFVJ7nxwZgDLB':
-    DocumentSessionBootstrapSchema,
+  u88wJk4nH1X1vHUSMVMiFAbXMFTBwM63zBkqKx4voem: DocumentSessionBootstrapSchema,
   DL73vQGQGdEFA53shnv58CkVJVVs5P5Hygc5qNghY5Zf: LLMAgentSchema,
-  '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm': MyOSAdminActorSchema,
-  '8ggQTWRSXKFTH3H8iqp4ff7NTFvFJn5ZNDWCHcxaxpbq': MyOSAdminBaseSchema,
+  '1ev2FjQCVqxyynB7o27PJmQo8bQmf9ECvvF2z5ekV1L': MyOSAdminActorSchema,
+  EhoCY9nyytXDfs6gqMXjGmRSczXQVUPdotxm2uE8us1M: MyOSAdminBaseSchema,
   '6Fxxx58U6WKzA4WQPCLPmMMCCEb9QLFYdb8yMLZDVdXL': MyOSAgentSchema,
   C2Fyt8obT6QR8WWFCPF5G36VXZLwzaM1SLtMKKAp4pwd: MyOSAgentActorSchema,
   '2YzZXsXxQSeCKZ4Qrptrdrf9gy4Hwrfdvh8gpakpnDBL': MyOSAgentChannelSchema,
   BsNKTXtCKag31WrdujJg7PSqD4rWg9b57DqHPq14Tpn7: MyOSAgentEventSchema,
+  '4gVHXg4Ab8bMvSVugpJDw5ewkbD8RZbiZriGFVVgAhGR':
+    MyOSAgentOperationMandateSchema,
+  '4GVCha7E7MKvusWcZ7K1K5yv8G4jdfE8eoD3nQ7FVuP8': MyOSAgentOperationRuleSchema,
   '9aVaJJvfRrGjLZ55HbKbrd4AUgA9RmjEUCxtfCtqodM9': MyOSBalanceAccountSchema,
-  JA8Yi7KW2jjDqqExAbWbCCfZw2mu8Q7VXwEvMHVezusF:
+  '2cPeR9aSap7oU5jRtc8EGFnZJNGd1yyzPaEvZqgvBweJ':
     MyOSDocumentBootstrapMandateSchema,
-  C7dtw8ZHpD93BBpL528WPq8W4xWvjnUisH9Ew8SQQ6fW:
-    MyOSDocumentOperationMandateSchema,
   '3FcyLzeWjTqmYYg1Tmqu2en4SKfYbCFn8Shf3gDxo9xK':
     MyOSDocumentSessionReferenceSchema,
-  '8fSvEL47NFBSYEFSRNfDpx6qWXHr1T6bNfimrcZ1JR9w':
+  '8i5HUmdgNR5LPEfyqrnMcu5DQG91zTtbaGWqDMbnjB6J':
     MyOSOperationCallRequestedSchema,
   '6tzp2YX1rei3aAXg22SqYbeiiteGthj1LesTNCWm7wbU':
     MyOSParticipantsOrchestrationSchema,
   CeWyRmXAMZqvWBvby2KbRUZWcS7Pdxs42vnMXgn9gg6H: MyOSSessionInteractionSchema,
-  V7YKW41NsJsw4oKxGvwzdkJXZg2wDjsKTFnF6L6GmEp:
+  DNCLa19AbeQGvLwDggSDbBKtUMiZ9AHbndAkXs3k4Bcg:
     MyOSSessionSubscriptionEndedSchema,
   '6fj4VDzQZwkBBPsYP4DGeSPbnHCQmX11PG3Vtk9pLRMF':
     MyOSSessionSubscriptionFilterSchema,
-  '4zjwHNN6UDSevHfuz264WsyWNSsRc2bC25KpXU4d988B':
+  BcEH2LbNNdXii9eunbyBeobQS5cHpqWgzt7uAHzy3nGf:
     MyOSSessionSubscriptionMandateSchema,
-  '1mEVkutZ851ZTcXPnhC44vg9cgzZj31NfU99KvbYq98':
+  '6t9DDsToShEmWq1bpN6VcFFDHa8AQ6pJDAQxhj4szk3p':
     MyOSSessionSubscriptionRequestedSchema,
-  BGhd3kZMEMd8Yv8nqnqfLngaUEAn5WkbPjPsS6o3U7mg:
+  '21S91PEGg8mtBot7cAgpaoihdgwDavqSeF4Lc7xsFumq':
     MyOSSessionSubscriptionStartedSchema,
-  EkNokZ4svfJ4Xhza5qNxm285pcRHXhZvA97KZKYf8cyb:
+  '7HbYbDiXDXFvmhVZQzMmJygV59L5JseQ5Cg7w3eTCBFR':
     MyOSSessionSubscriptionUpdateSchema,
-  '2kJTAf7L1FMGBqa7tez6qXw3kPfghbjwmiWzKWVCMYw3': MyOSTimelineSchema,
-  FS7n5P3nfsuB2TiKFaYRHPukiHGw1vxTPRwMfPZoNgvH: MyOSTimelineChannelSchema,
+  '5VAQp5thYLkzp3FbvYGmVvmdLqqu6pV5vhNgD14XJwpX': MyOSTimelineSchema,
+  '8dZK68CdFFjRKFf7dX9QDc55WUESNyeBsUSTF8tq8cki': MyOSTimelineChannelSchema,
   Cw952SXno2SWR9HL8EwUxWGeioRjxHjCd7G7uFAwC9kN: MyOSUserSchema,
   BDWxt7xTGsK2mZKinCxD4hENHUUfEtupZPtaYzwLmKJm: ParticipantSchema,
   AegvYi855FTYVE4WJ5pbUaF3LzNFsM71cpkwVbQ6yQYA: ParticipantActivatedSchema,
   ASa82RtPSXwdys7M5Xs5s3brTjYgJmQqJt2uyraQGrNA:
     ParticipantActivationStateSchema,
   '3cujh2pNfS1bvc1L5eWhLaaeBepXjByWZ75XF5erArKU': ParticipantResolvedSchema,
-  '2B5GfyYAMpB2qa9AebDQCyorMi311v8bZLjXn6fsDPPw': PaymentInitiatedSchema,
-  GLKfKi29WiEb2Hq87Zj6hfJXXV6TpDXtGprdpNbk2dxq: PaymentInitiationAcceptedSchema,
-  FLozmcCXEUsKNT86fixLbrdy9Dy4yn7jn6eftQuHpK8B: PaymentInitiationRejectedSchema,
-  GDdBCk7v1URZXU6fpno5UhKkLZQzniaQ3of83Wr5yQVM:
+  BXUSED76pd6jBpdsgDwu1VRhAC9nTUXWc1GNsTH34muM: PaymentInitiatedSchema,
+  '6z3QXWVP18NgmJuPuhLY7qYMZn1RdABuEMPJ9qWqwMdr':
+    PaymentInitiationAcceptedSchema,
+  '322SrnPM6fG8m2Rf2Erv7PV8uwt6VhmHHzfoUhn1XsAe':
+    PaymentInitiationRejectedSchema,
+  GKmknNqLyQJcYy3omn9kYVs5eYYDECTWJMWabYx1EkTm:
     PaymentInitiationRequestedSchema,
-  HKvJdxfZDY7agMAH8Z5pjhd4iB8mrTNRRhG1QEnEFRgd:
+  '4HE4xsY2dhPk8bqWmtN9BYt4ygT9SNqxytNwBSMqcPYt':
     PaymentTargetPreparationFailedSchema,
   '2WpHsa3QF9eZttnm7jb3k7t3CEbz7iJKYjCMS7h4Ps7Z':
     PaymentTargetPreparationRequestedSchema,
-  EZQPqDj5iDyHzM6DQE11Z2NwcPNSPx34v9SMyXsrwe6h: PaymentTargetPreparedSchema,
-  BeUkW9h7yKH5DBgzTjF52u4PwYu9J9EmLZ5WaYZWnZuB: PrincipalActorSchema,
+  '7YXuPuRXd5GWBiPUWqohtpCrtHf8UHuQESGspC4xZcCe': PaymentTargetPreparedSchema,
+  CtsH9hhbLAYcQYv5jYnNhaviKxkEdrwAg8b4KoxEU5Lw: PrincipalActorSchema,
   BcSFAt3ZtG3CdpNzKUKBodvz9cux8kwtbNNNPrrhYSja:
     RemovingParticipantRequestedSchema,
-  HV36fBXcdWce4WhfG6dxSZmtRMQoNaNLNpHgxc2PakuN:
+  '9RMo7whDiDzk2S1uJHCvyoWysg8iSTGgnTM1DT5bNzsH':
     RemovingParticipantRespondedSchema,
-  ACDXskXQ1cmM9uN8UCRKgH7fEHzqUW5XzyjKgsxgdujs: SearchContractSchema,
+  DcMLEejNRRoP2vSHW66fdCnCRgnpt2y1f35rFfYk5koj: SearchContractSchema,
   '7WJnGdq3txEhXb6P2vXLAMUhPBCWQzHsz416cDfKGcUm': SessionEpochAdvancedSchema,
   GjCreNEXcoBSwyXnWtXbtDMJdtm9nKo8MJeVpn3633WC:
     SubscribeToSessionRequestedSchema,
-  FqL1t69VjbKdAmffjxV5o1dAJooKyQ6vxdpsmbavFFia:
+  DrvBTSmmdE7QmmuNJTDxAqdEpgs5zHZy4RVEitWSF9ow:
     SubscriptionToSessionFailedSchema,
-  FdzN1H5Qe7CRbcXVeqD7PfJJ5TH6cxgHd3FRcNjvRJzk:
+  '2BZP7zM9d8smzypNvs83o1iSe6AVNgh6kxrXuXboJGqM':
     SubscriptionToSessionInitiatedSchema,
-  BzThvgTJD2zLX2wLFToLFRgs5KUvw7x3shCsmyxJ54pP:
+  AoNPGfTStLU8tBWb49HfXPAqXaLSzUKUsJwJkV9Yp3N9:
     SubscriptionToSessionRevokedSchema,
   '8afv356wxUZxou95jDEYEgp5dL6VmnpFmYUjx3aDuFXi': SubscriptionUpdateSchema,
   J9a8qD8javfYK6nRDq9YZRA8LDuzZzq7QS7DB73Pm4Lv:

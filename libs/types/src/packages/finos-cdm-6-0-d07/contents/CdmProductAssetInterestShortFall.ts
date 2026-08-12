@@ -16,14 +16,14 @@ export const CdmProductAssetInterestShortFall: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GtGzeeGr59oZMBK4qT628HxyPEj3ux2JxtFjbU8GTbuN',
+      blueId: '5aFwMNtcxHkvhXwyS7CEusCyu9yHY9hNFVSzLxj2oNEr',
     },
   },
   name: 'cdm/product/asset/InterestShortFall',
   rateSource: {
     description: 'The rate source in the case of a variable cap.',
     type: {
-      blueId: '2qVsAJiDNKtcYeoPmttQzFLH44MsczpvMvQ9ZQvwUW6Z',
+      blueId: '9MWTLbKLsUSiaShABSSuHxaeJZ2aErzYPTqc28XefGr3',
     },
   },
 };

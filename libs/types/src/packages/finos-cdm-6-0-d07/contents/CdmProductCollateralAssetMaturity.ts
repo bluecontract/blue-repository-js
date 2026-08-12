@@ -5,7 +5,7 @@ export const CdmProductCollateralAssetMaturity: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Gnv2JatHomC6ZL7YnSSsr5b8Qx1hWWGYFQocqArJgJCj',
+      blueId: 'EUV3MXvt1cQxvRAWp3LAhhkTsfKr9aw5WA86WgqgWQZZ',
     },
   },
   maturityType: {
@@ -15,7 +15,7 @@ export const CdmProductCollateralAssetMaturity: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '4M9RAThHXP4VWteUq2nq2RyirfHaGCinAVabk8gf2AYC',
+      blueId: 'CgKgs5vpdFaJFjy1u1TBDhrDdp4FwcSbgLFqy7arvU9d',
     },
   },
   name: 'cdm/product/collateral/AssetMaturity',

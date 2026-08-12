@@ -6,7 +6,7 @@ export const CdmEventCommonReturnInstruction: Record<string, unknown> = {
     description:
       'Specifies the quantity of shares and cash to be returned in a partial return event.',
     itemType: {
-      blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+      blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
     },
     schema: {
       minItems: 1,

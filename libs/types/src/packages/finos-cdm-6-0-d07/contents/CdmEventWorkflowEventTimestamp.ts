@@ -19,7 +19,7 @@ export const CdmEventWorkflowEventTimestamp: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '98uPvPckZ92oJWmjF6PjWKjL2AQpfcZkKBFUSXjnaWdu',
+      blueId: '6c8sFYVqrfeXJRDNBGbeaVtJN5wk6e2cvEc3xKCnPNhr',
     },
   },
 };

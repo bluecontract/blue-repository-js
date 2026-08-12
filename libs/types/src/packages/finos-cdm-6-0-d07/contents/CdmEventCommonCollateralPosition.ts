@@ -2,13 +2,13 @@ export const CdmEventCommonCollateralPosition: Record<string, unknown> = {
   cashBalance: {
     description: 'The aggregate cost of proceeds',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   collateralPositionStatus: {
     description: 'Indicates the collateral positions settlement status.',
     type: {
-      blueId: 'ScqKZW3m5Vk4Ht3xpASxxv9euZM32FQPYjE6PbCZEHc',
+      blueId: '6ctehAVhDiuTwXfG2zzPiqjPq4Chs91k7cZy6gJecUMe',
     },
   },
   description: 'Specifies the individual components of collateral positions.',
@@ -16,7 +16,7 @@ export const CdmEventCommonCollateralPosition: Record<string, unknown> = {
   priceQuantity: {
     description: 'Position with many price quantities.',
     itemType: {
-      blueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
+      blueId: '4XEYGgCSfXx2tFwmQjMsXhuwaCjsNZ42jtKAcr8itiqe',
     },
     schema: {
       minItems: 1,
@@ -28,7 +28,7 @@ export const CdmEventCommonCollateralPosition: Record<string, unknown> = {
   product: {
     description: 'The product underlying the position.',
     type: {
-      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#0',
+      blueId: '52zbUBnH8375AE19gNSXRU7GgGs5tcoUhR84LVdMrBWi#0',
     },
   },
   tradeReference: {
@@ -42,7 +42,7 @@ export const CdmEventCommonCollateralPosition: Record<string, unknown> = {
     description:
       'Specifies if there is any treatment to be applied to collateral, such as percentage discount which will impact collateral value.\n',
     type: {
-      blueId: '3J8QUqU5781wEZ91F9Y7a1CUz2EihFL2b3SWBCB1FBth',
+      blueId: 'DZVNm4GP1a1Vs3D9hXgk2tvtUToKxrwkmGmrJcM2kNK',
     },
   },
 };

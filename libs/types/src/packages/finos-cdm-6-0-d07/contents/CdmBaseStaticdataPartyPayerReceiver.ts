@@ -9,7 +9,7 @@ export const CdmBaseStaticdataPartyPayerReceiver: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
   receiver: {
@@ -19,7 +19,7 @@ export const CdmBaseStaticdataPartyPayerReceiver: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
 };

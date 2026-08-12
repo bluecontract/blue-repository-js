@@ -9,7 +9,7 @@ export const CdmProductCommonSettlementSettlementProvision: Record<
     description:
       "Defines the parameters that are necessary to 'shape' a settlement, i.e. break it down into smaller amounts.",
     type: {
-      blueId: '3fNfpR7yecM7ZSSL3mC6i4VWFehcFtvJ1FFQd1SsATpi',
+      blueId: 'Gb5tAySG6hzoMinsErBsQTK9xxg6QhvgCELNWqAdCNFf',
     },
   },
 };

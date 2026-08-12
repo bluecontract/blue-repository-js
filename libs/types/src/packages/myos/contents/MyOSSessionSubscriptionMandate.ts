@@ -3,14 +3,14 @@ export const MyOSSessionSubscriptionMandate: Record<string, unknown> = {
     authorizedActorChannel: {
       actor: {
         type: {
-          blueId: '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm',
+          blueId: '1ev2FjQCVqxyynB7o27PJmQo8bQmf9ECvvF2z5ekV1L',
         },
       },
     },
     mandateGuarantorChannel: {
       actor: {
         type: {
-          blueId: '4eDC5moi1FwZaHkkdXLF9he1SGz2gWWNJArNKGYreksm',
+          blueId: '1ev2FjQCVqxyynB7o27PJmQo8bQmf9ECvvF2z5ekV1L',
         },
       },
     },
@@ -44,6 +44,6 @@ export const MyOSSessionSubscriptionMandate: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: 'DgcgZoP3VEPpGGpUsFXHesdjA7yErSra447QaCkaRCgD',
+    blueId: '6FGzRQMZUyhSXUnrfVA16sc1mMwvGHtAxQizdJps46HB',
   },
 };

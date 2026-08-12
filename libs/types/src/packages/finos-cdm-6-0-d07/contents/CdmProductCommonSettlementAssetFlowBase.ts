@@ -7,7 +7,7 @@ export const CdmProductCommonSettlementAssetFlowBase: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
+        blueId: '8CTGmD55ifZ1AAAr4uYZHw9mUCiZ7foMLqYSEUbPVz3Q',
       },
     },
     description:
@@ -20,7 +20,7 @@ export const CdmProductCommonSettlementAssetFlowBase: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'BoLMyAuLAegX9RWR7trQbdmp7pB2tAfkPhDoTzbu8acd',
+        blueId: '6jhJaMEanZrm8mpgb8YxWqCNs2c2UY9AoQigsG7hoNgw',
       },
     },
     settlementDate: {
@@ -29,7 +29,7 @@ export const CdmProductCommonSettlementAssetFlowBase: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '8VijgDyT9t9CiNbNQYVbdE1whbL9Q9DTRMZpCocVhSxF',
+        blueId: 'EsGmKpSwEv5rrzVy75nUtg6sXKYHCmZRDzkGMYyQ7zhX',
       },
     },
   };

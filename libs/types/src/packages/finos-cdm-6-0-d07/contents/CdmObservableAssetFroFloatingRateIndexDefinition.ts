@@ -5,7 +5,7 @@ export const CdmObservableAssetFroFloatingRateIndexDefinition: Record<
   calculationDefaults: {
     description: 'Any calculation default values.',
     type: {
-      blueId: '9LjQgXLW5xCQTuGhVNkiuZsj7avYufhHx2dAav9z1WxS',
+      blueId: 'FwUNFKJeskQXFx2sCAnvYba91TV5N2jYMUyXNiL1eMc6',
     },
   },
   fro: {
@@ -14,7 +14,7 @@ export const CdmObservableAssetFroFloatingRateIndexDefinition: Record<
       required: true,
     },
     type: {
-      blueId: '2NHDTBFFfyusp7iNLi7PU4AMTA1BCZ8H6rJRL8xJboP9',
+      blueId: 'FyRHJZ4TAfL97VshvgV9YRobv2Tgbh9PCwiToNdxXrk2',
     },
   },
   name: 'cdm/observable/asset/fro/FloatingRateIndexDefinition',

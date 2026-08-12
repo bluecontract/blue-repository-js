@@ -4,7 +4,7 @@ export const ChangeWorkflow: Record<string, unknown> = {
   request: {
     description: 'Expected request payload for this workflow.',
     type: {
-      blueId: '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU',
+      blueId: 'AVuAYKsZEMLjY3XwmKMe1LPrVAEo6R6FepDjPqgndF7J',
     },
   },
   steps: {
@@ -929,7 +929,7 @@ export const ChangeWorkflow: Record<string, unknown> = {
                           },
                           type: {
                             blueId:
-                              '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy',
+                              'CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa',
                           },
                         },
                       ],
@@ -3933,6 +3933,6 @@ export const ChangeWorkflow: Record<string, unknown> = {
     ],
   },
   type: {
-    blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+    blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
   },
 };

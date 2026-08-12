@@ -9,14 +9,14 @@ export const CdmProductAssetValuationTerms: Record<string, unknown> = {
   dividendValuationDates: {
     description: 'Specifies the dividend valuation dates of the swap.',
     type: {
-      blueId: '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg',
+      blueId: 'A5fbgqJ72K7pbNNCrmP9z1uJjRfJjx4z6Bav92ZY3iMs',
     },
   },
   fPVFinalPriceElectionFallback: {
     description:
       'Specifies the fallback provisions for Hedging Party in the determination of the Final Price.',
     type: {
-      blueId: '6ddJUitXi5N7MkKNmyabHzuZ6qhZC3kt5EZJoEPpmr2P',
+      blueId: 'AuQKqiWFxbMadx1HuAtRv1MxjiieYjoPPB84CQEQoWNX',
     },
   },
   futuresPriceValuation: {

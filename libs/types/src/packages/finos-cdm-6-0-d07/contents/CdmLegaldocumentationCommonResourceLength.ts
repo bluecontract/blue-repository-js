@@ -10,7 +10,7 @@ export const CdmLegaldocumentationCommonResourceLength: Record<
       required: true,
     },
     type: {
-      blueId: '55gwzrtwt8NQXzuzesGej1NAFoZdqtmqMGguHuuJAZJN',
+      blueId: '6vcZYhvuXcMx67xRb2WKynrAR7WjtonaLWjGiAZbPD3D',
     },
   },
   lengthValue: {

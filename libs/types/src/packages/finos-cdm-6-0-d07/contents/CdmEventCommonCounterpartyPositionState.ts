@@ -7,7 +7,7 @@ export const CdmEventCommonCounterpartyPositionState: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'DhpZ3SZe34Pz3xJLcAS74rHhgZSez7ZvQx3yqmXcYA8r',
+        blueId: '9Scj1Dqa8srcxPcX2EXyAtivP7FtPptCYaromKVdSVAW',
       },
     },
     description:
@@ -17,7 +17,7 @@ export const CdmEventCommonCounterpartyPositionState: Record<string, unknown> =
       description:
         'Represents the observed events related to a particular product or process, such as credit events or corporate actions.\n',
       itemType: {
-        blueId: '7UyroNcHi5ggaDeDqgACDvjixoTVqZyHPUiNuGcK3gXq',
+        blueId: '3WyHtwLZQPjVJB4zC26ena33X6r2fxTfkWVEiZi6eH1Q',
       },
       schema: {
         minItems: 0,
@@ -30,12 +30,12 @@ export const CdmEventCommonCounterpartyPositionState: Record<string, unknown> =
       description:
         'Represents the State of the Position through its life-cycle.',
       type: {
-        blueId: 'HcvuPprC3CbAxkBiEwkiWsJzW5pVqZ7occ8cncqAtQR',
+        blueId: 'C63rgYVcyFKqAfdZwjLkhMUDs7CMMKgc5Zg92LyjVGu9',
       },
     },
     valuationHistory: {
       itemType: {
-        blueId: '35r3StzAH6Qus8FCSpiCqqUrKHx9d4SYBCL2gEecgCJq',
+        blueId: '7fUqjcMznRtsQXbh382nhVNPoG8pPi1kH6C6QRJ1NXii',
       },
       schema: {
         minItems: 0,

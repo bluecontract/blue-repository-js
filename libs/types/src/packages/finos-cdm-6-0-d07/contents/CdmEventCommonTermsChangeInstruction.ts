@@ -1,13 +1,13 @@
 export const CdmEventCommonTermsChangeInstruction: Record<string, unknown> = {
   adjustment: {
     type: {
-      blueId: 'Fu36EUGcA7u8BqhZftYyUEUqgrd4mi4LXffiZx7DXTvo',
+      blueId: 'JDTKqVSFgAW8D49b5dnvsCk1uam8HJqLTHTDgrFTMBA5',
     },
   },
   ancillaryParty: {
     description: 'ancillary party to be changed',
     itemType: {
-      blueId: '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4',
+      blueId: '4iPHY4aygMFyDNb5teEsJeb7EyeK3CitfuP7DqfgnT1w',
     },
     schema: {
       minItems: 0,
@@ -22,7 +22,7 @@ export const CdmEventCommonTermsChangeInstruction: Record<string, unknown> = {
   product: {
     description: 'product to be changed',
     type: {
-      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4',
+      blueId: '52zbUBnH8375AE19gNSXRU7GgGs5tcoUhR84LVdMrBWi#5',
     },
   },
 };

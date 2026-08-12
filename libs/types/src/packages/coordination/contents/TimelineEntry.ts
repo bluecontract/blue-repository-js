@@ -41,7 +41,7 @@ export const TimelineEntry: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HAMjp2wA76Jhz8EGBDbfo9cqVyAq3vwVN4baKJBpj8KF',
+      blueId: 'BnChAigtmYAEzedCRsLwgtdwthJMiPQsQBpUXdtiRxe',
     },
   },
   timestamp: {

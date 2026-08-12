@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaInterestRateIndex: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaInterestRateIndex',
   val: {
     type: {
-      blueId: 'ADajEoGA7ikQhVMsqRiRuiY11MeoVJc66Wkb2WYmzsr3',
+      blueId: 'Fs94iscB88dTVSWcfhZRhCCa1PFeQLHjBBJnddFAw14S',
     },
   },
 };

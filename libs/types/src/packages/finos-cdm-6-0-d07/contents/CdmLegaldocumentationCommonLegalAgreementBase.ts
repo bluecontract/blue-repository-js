@@ -12,7 +12,7 @@ export const CdmLegaldocumentationCommonLegalAgreementBase: Record<
   attachment: {
     description: 'A human readable document, for example a confirmation.',
     itemType: {
-      blueId: '4anwVBorXr81GoC4Wkf4trYWror3mSXbzukXdYgwmG7N',
+      blueId: 'HmhKdAbT2MRZUsE7sCtNxWo8eestifsJAK5KCzFN5bn2',
     },
     schema: {
       minItems: 0,
@@ -48,7 +48,7 @@ export const CdmLegaldocumentationCommonLegalAgreementBase: Record<
     description:
       'The legal agreement identifier. Several identifiers can be specified.',
     itemType: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
     schema: {
       minItems: 0,
@@ -64,7 +64,7 @@ export const CdmLegaldocumentationCommonLegalAgreementBase: Record<
       required: true,
     },
     type: {
-      blueId: '7p7rsMrLJRwnskaTsetTmKypk1jyyLVvR6JTdJNYeFNf',
+      blueId: 'HKkvs9CCvwZwQxeN8m2GUQG1TrC5hsgoLjuSf1ztDGxF',
     },
   },
   name: 'cdm/legaldocumentation/common/LegalAgreementBase',
@@ -72,7 +72,7 @@ export const CdmLegaldocumentationCommonLegalAgreementBase: Record<
     description:
       'The role(s) that other party(ies) may have in relation to the legal agreement, further to the contractual parties.\n',
     itemType: {
-      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+      blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
     },
     schema: {
       minItems: 0,

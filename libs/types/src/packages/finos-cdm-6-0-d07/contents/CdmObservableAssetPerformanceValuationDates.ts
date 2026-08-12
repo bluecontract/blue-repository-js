@@ -11,7 +11,7 @@ export const CdmObservableAssetPerformanceValuationDates: Record<
       required: true,
     },
     type: {
-      blueId: 'F2XKDuytcyrcyYVFazD7Tuqtk1J9p5rtwDxh9Y9PUUWH',
+      blueId: '5jqv11pA6a3Nrtm11SrFfbQvRZZ6ukyLt7PkNLq82wy1',
     },
   },
   name: 'cdm/observable/asset/PerformanceValuationDates',
@@ -19,28 +19,28 @@ export const CdmObservableAssetPerformanceValuationDates: Record<
     description:
       '2018 ISDA CDM Equity Confirmation for Security Equity Swap: Pricing Date\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   valuationDates: {
     description:
       '2018 ISDA CDM Equity Confirmation for Security Equity Swap: Pricing Date\n',
     type: {
-      blueId: '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg',
+      blueId: 'A5fbgqJ72K7pbNNCrmP9z1uJjRfJjx4z6Bav92ZY3iMs',
     },
   },
   valuationTime: {
     description:
       'The specific time of day at which the calculation agent values the underlying. The SpecificTime is the only case when the valuationTime (time + business center location  e.g. 10:00:00 USNY) should be provided. You should be able to provide just the valuationTime without valuationTimeType, which infer that this is a specific time.\n',
     type: {
-      blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+      blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
     },
   },
   valuationTimeType: {
     description:
       'The time of day at which the calculation agent values the underlying, for example the official closing time of the exchange.\n',
     type: {
-      blueId: '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv',
+      blueId: 'CPirifxyoZ3EheLcX6KW9muSEUsxpDaj7mJXu5zW6jsJ',
     },
   },
 };

@@ -32,7 +32,7 @@ export const CdmEventPositionCounterpartyPosition: Record<string, unknown> = {
     description:
       'The parties involved in the position, including the Clearing Organization.',
     itemType: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
     schema: {
       minItems: 0,
@@ -45,7 +45,7 @@ export const CdmEventPositionCounterpartyPosition: Record<string, unknown> = {
     description:
       'Represents the role each specified party takes in the position.',
     itemType: {
-      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+      blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
     },
     schema: {
       minItems: 0,
@@ -61,14 +61,14 @@ export const CdmEventPositionCounterpartyPosition: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '5L5ELtTjqEroydK4qXv9bitzL5wJ8yY6yjAhFum13A7U',
+      blueId: 'GuammqmN4E6JpuxqmjDrpM1br1oAyFEH8Lgq5JE5Xxub',
     },
   },
   positionIdentifier: {
     description:
       'Represents the identifier(s) that uniquely identify a position for an identity issuer. A position can include multiple identifiers, for example an internal position identifer and a UTI (Unique Trade Identifier).\n',
     itemType: {
-      blueId: '69nLFfiGcCWNuTn9H9eiEcBwsXuqgNxxqgB7X8X9XaSz',
+      blueId: '3tFbj3fEQ7MXfvPhMuM6yjwhCrfsiKyzSipmhQSwwNga',
     },
     schema: {
       minItems: 0,

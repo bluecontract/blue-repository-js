@@ -6,7 +6,7 @@ export const CdmLegaldocumentationCommonAddressForNotices: Record<
     description:
       'The optional specification of additional information when a party requires notices to be delivered to more than one address.\n',
     itemType: {
-      blueId: '8otMB7Qhn3fyzdqcuRMH14nKuDGiaWnjVXn45TJ7SBLR',
+      blueId: 'EdgTekD4DSaAbY5B22rL1ks9aiMeJD37ywSxekUgteNf',
     },
     schema: {
       minItems: 0,
@@ -23,7 +23,7 @@ export const CdmLegaldocumentationCommonAddressForNotices: Record<
       required: true,
     },
     type: {
-      blueId: '9TmPYroGmuj6v7x9aMMV97Hqg4a4xhW19VqhcavbmgRL',
+      blueId: '2G3a7NgdwHUsNXY8WY6afyVj2ex78kmSBZ7yfp58JGaA',
     },
   },
 };

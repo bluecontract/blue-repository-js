@@ -8,7 +8,7 @@ export const CdmBaseDatetimePeriod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'DLZBHc2QwPj4my2QeZffRBsJxbqMSJzN3PScqxr9C1Yj',
+      blueId: 'HfcnjKnwmrE8GwTjvmvtKtcYgCZHWwe9PpsaJ5Y38Y2F',
     },
   },
   periodMultiplier: {

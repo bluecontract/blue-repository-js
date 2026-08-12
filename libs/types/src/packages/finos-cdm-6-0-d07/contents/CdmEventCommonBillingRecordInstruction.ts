@@ -4,7 +4,7 @@ export const CdmEventCommonBillingRecordInstruction: Record<string, unknown> = {
   observation: {
     description: 'The observations used to calculate the billing amount.',
     itemType: {
-      blueId: 'C6Yp749VzC7SApKQGjPSUFxLD5E445bVciFGiaHHE4pi',
+      blueId: '8EUcPQTHo5mLovdtyBiABzvGTLiRKYmJopadhbWnbjyX',
     },
     schema: {
       minItems: 1,

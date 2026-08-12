@@ -18,7 +18,7 @@ export const CdmProductTemplatePerformancePayout: Record<string, unknown> = {
     description:
       'Defines quanto or composite FX features that are included in the swap leg.',
     itemType: {
-      blueId: 'HPRsaReKQuhsZQyFweRGJshuiWo9hd1r6CsmkM6iPQnN',
+      blueId: '4Evx6ctCQA9KW4zWZBuRVzGni9eknk1oQDCWfhxNfdg9',
     },
     schema: {
       minItems: 0,
@@ -58,14 +58,14 @@ export const CdmProductTemplatePerformancePayout: Record<string, unknown> = {
     description:
       'Defines how and when a performance type option or performance type swap is to be observed.',
     type: {
-      blueId: '9pJEidhmAUQebdR3uTioauH2mNHR8RLS9r7xaB9vxpRd',
+      blueId: '5hoFwtCWywpjW2iVxqcevJ5qtXxE46qvSVAb8NxpJke',
     },
   },
   payerReceiver: {
     description:
       'Canonical representation of the payer and receiver parties applicable to each payout leg.',
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
   paymentDates: {
@@ -75,14 +75,14 @@ export const CdmProductTemplatePerformancePayout: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '23fb9HBYcZQ8enTm83iVQjixyTrHqNc5G1ANtAbB1ixz',
+      blueId: '53mGNaWEbqDyzs1WnqizJcci5WSeG5YDV6e97svgRLve',
     },
   },
   portfolioReturnTerms: {
     description:
       'Specifies an individual type of return of a Performance Payout, when such individual return is part of an aggregation of multiple similar returns, at Performance Payout level\n',
     itemType: {
-      blueId: 'E51UFE2FEkY3QMB4wW2zNBSjHwzSoUThQsP37iRWRLuD',
+      blueId: '8YJvz5QvRRm82xb6wUCFzmm93hyr1TqxCZEbxmws5P2k',
     },
     schema: {
       minItems: 0,
@@ -95,34 +95,34 @@ export const CdmProductTemplatePerformancePayout: Record<string, unknown> = {
     description:
       "Each payout leg must implement the quantity concept as a 'resolvable' type, which allows for different payout legs to be linked to each other (e.g. in the case of cross-curreny products).\n",
     type: {
-      blueId: '7nSxNdghnPkGBbyqzqUELC5UcBMNfLdrCr4oXbav2d3J',
+      blueId: '9H3s5nDTov6DTnnVBM5XaiAV2vZvPEep33DWccdc6mXq',
     },
   },
   principalPayment: {
     description:
       'The specification of the principal exchange. Optional as only applicable in the case of cross-currency or zero-coupon swaps with a final payment.\n',
     type: {
-      blueId: '8VsQE5PSzyWWApw5Ykfum97vLPNoa36BemLUMHimzMb5',
+      blueId: '6ZdgPDgDd1WfACEQNiQTurhX1xdBtsoPkMNjRhDD9Myo',
     },
   },
   returnTerms: {
     description: 'Specifies the type of return of a performance payout.',
     type: {
-      blueId: '3pA66XRhiAooUuGarBuys5JR2iwpE3DN1FJh1ToZzDfu',
+      blueId: 'D3rQtJTo4bzbc48Z32EpDkkaMQ8P2EPJj4jYVkFW9mv4',
     },
   },
   settlementTerms: {
     description:
       'Each payout leg must specifies its settlement terms, including the delivery type (i.e. cash vs physical, and their respective terms), the transfer type (DvP etc.) and settlement date, if any.\n',
     type: {
-      blueId: '2qfdfn8VYJmiXxmTj9Vwfu1pB3jFJQK9WAShnf8n1r1m',
+      blueId: 'BRJ2J4zKmK8CLQta8gGcSboyer9Sby49nV8HopjaFM7g',
     },
   },
   underlier: {
     description:
       "Identifies the underlying product that is referenced for pricing of the applicable leg in a swap.  Referenced in the '2018 ISDA CDM Equity Confirmation for Security Equity Swap' as Security.\n",
     type: {
-      blueId: 'this#3',
+      blueId: 'this#2',
     },
   },
   valuationDates: {
@@ -132,7 +132,7 @@ export const CdmProductTemplatePerformancePayout: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'UcvnGWBznJQMKxTqZfWEzoJ4bovdXYkn8PTxfrA9Kxt',
+      blueId: '52VT1GJKNMa3wBqNqgE8GhUTMvm8KG1p7teYbHA7oz8D',
     },
   },
 };

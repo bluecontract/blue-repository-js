@@ -8,7 +8,7 @@ export const CdmObservableEventFeaturePayment: Record<string, unknown> = {
   currency: {
     description: 'The currency in which an amount is denominated.',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   description: 'Payment made following trigger occurrence.',
@@ -26,19 +26,19 @@ export const CdmObservableEventFeaturePayment: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2LmejohDGLXaXF2jDmkccaa7GSQbnbp8iBMKmrxifhWs',
+      blueId: '63Bw1Ena6g9zgLcVwPkkpApxNVecQwz8Ygi9rZZFYMoB',
     },
   },
   paymentDate: {
     description: 'The feature payment date.',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   time: {
     description: 'The feature payment time.',
     type: {
-      blueId: '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv',
+      blueId: 'CPirifxyoZ3EheLcX6KW9muSEUsxpDaj7mJXu5zW6jsJ',
     },
   },
 };

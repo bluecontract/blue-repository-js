@@ -4,7 +4,7 @@ export const CdmEventCommonBillingRecord: Record<string, unknown> = {
     description:
       'Indicates the minimum fee amount applied to the billing record, if any.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   name: 'cdm/event/common/BillingRecord',
@@ -32,7 +32,7 @@ export const CdmEventCommonBillingRecord: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Huf4W2NzpakJVTTdkhKJriEVabT1NBezmnyTJB9Wt2Vs',
+      blueId: 'D5TDQT9MAD6sFuVDC3EEoupfJghS4ZKw8J27kLnBJM3e',
     },
   },
   tradeState: {

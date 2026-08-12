@@ -18,7 +18,7 @@ export const CdmProductTemplatePassThroughItem: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
 };

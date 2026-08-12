@@ -3,7 +3,7 @@ export const DocumentSectionChanges: Record<string, unknown> = {
     description:
       'New sections to create with their Document Section and contracts.',
     itemType: {
-      blueId: '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX',
+      blueId: 'DN9VhzcZvGNtMz2K3qVBQrVeYssBUqbewt2Cxi6CXS3R',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
@@ -14,7 +14,7 @@ export const DocumentSectionChanges: Record<string, unknown> = {
   modify: {
     description: 'Existing sections to update with a full contracts map.',
     itemType: {
-      blueId: '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX',
+      blueId: 'DN9VhzcZvGNtMz2K3qVBQrVeYssBUqbewt2Cxi6CXS3R',
     },
     type: {
       blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',

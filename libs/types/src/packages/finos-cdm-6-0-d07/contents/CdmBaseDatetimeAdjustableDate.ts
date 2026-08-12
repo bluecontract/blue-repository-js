@@ -3,14 +3,14 @@ export const CdmBaseDatetimeAdjustableDate: Record<string, unknown> = {
     description:
       'The date once the adjustment has been performed. (Note that this date may change if the business center holidays change).\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   dateAdjustments: {
     description:
       'The business day convention and financial business centers used for adjusting the date if it would otherwise fall on a day that is not a business date in the specified business centers.\n',
     type: {
-      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
+      blueId: 'AKAczd79wtoD2Vt7VjdFdnWeacw86mQTVeLcyS9SWFZz',
     },
   },
   dateAdjustmentsReference: {

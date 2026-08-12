@@ -931,7 +931,7 @@ export const AcceptChangeWorkflow: Record<string, unknown> = {
                           },
                           type: {
                             blueId:
-                              '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy',
+                              'CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa',
                           },
                         },
                       ],
@@ -4000,6 +4000,6 @@ export const AcceptChangeWorkflow: Record<string, unknown> = {
     ],
   },
   type: {
-    blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+    blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
   },
 };

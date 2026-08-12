@@ -13,7 +13,7 @@ export const CdmObservableEventGracePeriodExtension: Record<string, unknown> = {
     description:
       'The number of calendar or business days after any due date that the reference entity has to fulfil its obligations before a failure to pay credit event is deemed to have occurred. ISDA 2003 Term: Grace Period.\n',
     type: {
-      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
+      blueId: 'GWTMGPw1zgQW3M9NUS6RxNtce5jWU9defVNkm7sV6b8L',
     },
   },
   name: 'cdm/observable/event/GracePeriodExtension',

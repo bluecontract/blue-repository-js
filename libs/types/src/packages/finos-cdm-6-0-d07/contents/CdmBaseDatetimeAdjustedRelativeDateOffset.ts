@@ -11,7 +11,7 @@ export const CdmBaseDatetimeAdjustedRelativeDateOffset: Record<
   },
   businessCenters: {
     type: {
-      blueId: 'H53mV1d8rMzhefLZH8WzGchozyQA28cbwNpBHGmVA9ti',
+      blueId: 'Ds5a9bChKossVgHEM7Z2TQTCxDXdB2SZhtM9v9Y3mYmM',
     },
   },
   businessCentersReference: {
@@ -25,7 +25,7 @@ export const CdmBaseDatetimeAdjustedRelativeDateOffset: Record<
     description:
       'The convention for adjusting a date if it would otherwise fall on a day that is not a business day, as specified by an ISDA convention (e.g. Following, Precedent).\n',
     type: {
-      blueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
+      blueId: '4nDV142exufoEvXv8wAPT7GVTpvQw7t3yETBpT9G6aWX',
     },
   },
   dateRelativeTo: {
@@ -39,7 +39,7 @@ export const CdmBaseDatetimeAdjustedRelativeDateOffset: Record<
     description:
       'In the case of an offset specified as a number of days, this element defines whether consideration is given as to whether a day is a good business day or not. If a day type of business days is specified then non-business days are ignored when calculating the offset. The financial business centers to use for determination of business days are implied by the context in which this element is used. This element must only be included when the offset is specified as a number of days. If the offset is zero days then the dayType element should not be included.\n',
     type: {
-      blueId: 'EPBWZ9jBx984Q99bnqB2NAqBTKrAr4mJWCYnwcFgnivq',
+      blueId: '7SsDfFvRbfxrm8vS98NZ5Vq9nqD3CFNGWsLr6dc738LJ',
     },
   },
   description:
@@ -49,7 +49,7 @@ export const CdmBaseDatetimeAdjustedRelativeDateOffset: Record<
     description:
       'A time period, e.g. a day, week, month or year of the stream. If the periodMultiplier value is 0 (zero) then period must contain the value D (day).\n',
     type: {
-      blueId: 'DLZBHc2QwPj4my2QeZffRBsJxbqMSJzN3PScqxr9C1Yj',
+      blueId: 'HfcnjKnwmrE8GwTjvmvtKtcYgCZHWwe9PpsaJ5Y38Y2F',
     },
   },
   periodMultiplier: {
@@ -63,7 +63,7 @@ export const CdmBaseDatetimeAdjustedRelativeDateOffset: Record<
     description:
       'The business day convention and financial business centers used for adjusting the relative date if it would otherwise fall on a day that is not a business date in the specified business centers.\n',
     type: {
-      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
+      blueId: 'AKAczd79wtoD2Vt7VjdFdnWeacw86mQTVeLcyS9SWFZz',
     },
   },
 };

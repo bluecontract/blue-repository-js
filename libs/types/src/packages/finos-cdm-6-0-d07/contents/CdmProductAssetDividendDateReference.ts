@@ -6,7 +6,7 @@ export const CdmProductAssetDividendDateReference: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Bh6NCuJAY3pXVNvSM2B31NzdPp9zCisTdM2dbrauJJw8',
+      blueId: '85WvV66mYWxg69UX3kQewRAfDtEk5A9K2hgNX4Dy6qoo',
     },
   },
   description:
@@ -16,7 +16,7 @@ export const CdmProductAssetDividendDateReference: Record<string, unknown> = {
     description:
       'Only to be used when SharePayment has been specified in the dividendDateReference element. The number of Currency Business Days following the day on which the Issuer of the Shares pays the relevant dividend to holders of record of the Shares.\n',
     type: {
-      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
+      blueId: 'GWTMGPw1zgQW3M9NUS6RxNtce5jWU9defVNkm7sV6b8L',
     },
   },
 };

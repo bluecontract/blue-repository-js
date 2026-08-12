@@ -4,7 +4,7 @@ export const CdmMarginScheduleStandardizedSchedule: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'CDbwJvzYyrQ7afEJRFR8x1ii8sk11Es3z1e62dbNj2rU',
+      blueId: 'ByBDRUzLi5pkLk3nidrUfkkQWJWyeUm3SfxMqWecxpNx',
     },
   },
   durationInYears: {
@@ -34,7 +34,7 @@ export const CdmMarginScheduleStandardizedSchedule: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BwbqfunwwJxSMfQD4CEUJ2Ab4AqzjMTjpeSCF3E1NLYx',
+      blueId: '35Mio6Cn5LCV87BMNgBeT2ES36yc1gKxP2eUzWb8mNzP',
     },
   },
 };

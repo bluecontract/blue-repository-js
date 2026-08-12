@@ -6,7 +6,7 @@ export const CdmLegaldocumentationMasterAdditionalDisruptionEvents: Record<
     description:
       'Where parties may optionnaly describe any extra bespoke agreements, in regards of the standardized Extraordinary Events.\n',
     itemType: {
-      blueId: 'Hn9xYtxdTe696TXzE5ge1KF3B3Ao26Z2er28HygKAoWi#0',
+      blueId: 'GuFp1BJy74SUjnjVg7r3RwuRPXYUDKSUyEecdtsJ7QMX#0',
     },
     schema: {
       minItems: 0,
@@ -26,7 +26,7 @@ export const CdmLegaldocumentationMasterAdditionalDisruptionEvents: Record<
     description:
       'Specifies the party which determines additional disruption events.',
     type: {
-      blueId: 'C2Ec7JF7c6QV6kD3Wb7Mtfg9NJ7aemu5KqHaafpZuEvN',
+      blueId: '5UenXSd178j4ogWvtPBmvmYtMB2vnBUbSZpAKNkbGcuf',
     },
   },
   failureToDeliver: {

@@ -8,12 +8,12 @@ export const CdmMarginScheduleStandardizedScheduleInitialMargin: Record<
       required: true,
     },
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   tradeInfo: {
     itemType: {
-      blueId: 'AyHS2v2wXHzgR4ASSkm7Ab98k8dMLwEZKWPPPTXGUcJB',
+      blueId: '23Qea3vj3Zh6n2825AYnEs1wHodd3QnXQYwShRghACMN',
     },
     schema: {
       minItems: 0,

@@ -3,7 +3,7 @@ export const CdmProductCommonSettlementRollFeature: Record<string, unknown> = {
     description:
       'Specifies, for a Commodity Transaction that references a delivery date for a listed future, the day on which the specified future will roll to the next nearby month prior to the expiration of the referenced future. If the future will not roll at all - i.e. the price will be taken from the expiring contract, 0 should be specified here. If the future will roll to the next nearby on the last trading day - i.e. the price will be taken from the next nearby on the last trading day, then 1 should be specified and so on.\n',
     type: {
-      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
+      blueId: 'GWTMGPw1zgQW3M9NUS6RxNtce5jWU9defVNkm7sV6b8L',
     },
   },
   description:
@@ -13,7 +13,7 @@ export const CdmProductCommonSettlementRollFeature: Record<string, unknown> = {
     description:
       'Used in conjunction with an exchange-based pricing source. Identifies a date source calendar from which the pricing dates and thus roll to the next contract will be based off (e.g. pricing is based on the NYMEX WTI First Nearby Futures Contract, if Future is chosen, the pricing will roll to the next futures contract on expiration, if ListedOption is chosen, the pricing will roll to the next futures contract on the Option expiration date which is three business days before the expiration of the NYMEX WTI futures contract.) Omitting this element will result in the default behavior expected with the pricing source described within the commodity element.\n',
     type: {
-      blueId: 'AdBXeocSsEm9rv2JA8A8svrtozRHrQt3xCeTWXxANydN',
+      blueId: '7SbZcAMcyVJPrUfsqoF84e9R2qMPoCzArYVjNiy2LjYX',
     },
   },
 };

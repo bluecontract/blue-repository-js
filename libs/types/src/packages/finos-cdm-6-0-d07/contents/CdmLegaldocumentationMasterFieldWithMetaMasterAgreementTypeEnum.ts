@@ -4,13 +4,13 @@ export const CdmLegaldocumentationMasterFieldWithMetaMasterAgreementTypeEnum: Re
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/legaldocumentation/master/FieldWithMetaMasterAgreementTypeEnum',
   val: {
     type: {
-      blueId: 'tC1wwJYkPfwpsdrur65zifZokmE1Kzb4gNtdNXBTLut',
+      blueId: '7vyQ6yvcGN1US8noTAiQvzzRziPs1uc7vWFdLXnayGSG',
     },
   },
 };

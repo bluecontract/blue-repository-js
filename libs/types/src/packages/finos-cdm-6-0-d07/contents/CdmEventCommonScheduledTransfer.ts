@@ -1,7 +1,7 @@
 export const CdmEventCommonScheduledTransfer: Record<string, unknown> = {
   corporateActionTransferType: {
     type: {
-      blueId: 'GFvEqH3FNnzTFFJAqMgygUiVX9vA45GDjiV95ZqP4qAR',
+      blueId: '8CunnBK9d9T4uuangx5iLWyAisgbJvXeXi25J7Z91ZC8',
     },
   },
   name: 'cdm/event/common/ScheduledTransfer',
@@ -12,7 +12,7 @@ export const CdmEventCommonScheduledTransfer: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '9k43VLjjoSJbXKM7aCSjBTinwWFf8sRDogVJbsM2JjjR',
+      blueId: 'BiaVgS99xqeuwyZZeCRHf5dGNhdfHon2on2Q5p8kTqMC',
     },
   },
 };

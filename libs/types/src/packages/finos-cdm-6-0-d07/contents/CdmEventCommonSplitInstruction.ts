@@ -3,7 +3,7 @@ export const CdmEventCommonSplitInstruction: Record<string, unknown> = {
     description:
       'Each split breakdown specifies the set of primitive instructions to be applied to a single branch of that split. N split breakdowns result in N output trades, which include the original trade. Instructions for how to handle the original trade (e.g. if it must be closed) must be specified in one of the breakdowns.\n',
     itemType: {
-      blueId: 'this#0',
+      blueId: 'this#2',
     },
     schema: {
       minItems: 1,

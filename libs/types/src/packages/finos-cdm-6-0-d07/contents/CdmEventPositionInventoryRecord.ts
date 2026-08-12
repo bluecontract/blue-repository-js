@@ -8,7 +8,7 @@ export const CdmEventPositionInventoryRecord: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HUSEHXgSpK91Brg3mku9fHTV4D8bnuM9D7uwKV2HynTU',
+      blueId: 'FkMWf1pd7YUm7zUWH64xW6YKJEWnWCzUoCiDxJWMWd2U',
     },
   },
   name: 'cdm/event/position/InventoryRecord',
@@ -18,7 +18,7 @@ export const CdmEventPositionInventoryRecord: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '5R9o4hMGFG6JsprSkPFoQuMmr2FvfKQchfGbxtSgy2JY',
+      blueId: 'GRccc39hoCxirVd5AgYHyNZT6TtiBJj8USkFUA6nQcfG',
     },
   },
 };

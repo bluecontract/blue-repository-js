@@ -8,7 +8,7 @@ export const CdmProductTemplateExtendibleProvisionAdjustedDates: Record<
     description:
       'The adjusted dates associated with a single extendible exercise date.',
     itemType: {
-      blueId: '7kPFEKFtejzTGGDA1frQXvH2u9EU6WsGUUqNESpNkKVH',
+      blueId: '6Lzj9eE9Tmo7CMs1xMEw6e6rKAJWDhGygS1DoW2zm8i3',
     },
     schema: {
       minItems: 1,

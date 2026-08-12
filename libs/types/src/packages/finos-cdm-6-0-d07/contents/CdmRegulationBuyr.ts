@@ -4,7 +4,7 @@ export const CdmRegulationBuyr: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'UtoHX84Jf14Vt8tqUwNyELWR28U4cEGWMm5MnHPKLpi',
+      blueId: '2HyPHLVaQkkbEk1nPSUWuHzcwUoHHaswZETTWEMqk667',
     },
   },
   name: 'cdm/regulation/Buyr',

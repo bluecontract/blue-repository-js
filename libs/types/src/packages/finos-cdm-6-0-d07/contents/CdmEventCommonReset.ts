@@ -3,7 +3,7 @@ export const CdmEventCommonReset: Record<string, unknown> = {
     description:
       'Identifies the aggregation method to use in the case where multiple observations are used to compute the reset value and the method is not defined in a payout.\n',
     type: {
-      blueId: 'G81eqYsDuMYSpYk1hESW7JLhMtsEbDs8dVTux7zmXLUZ',
+      blueId: 'Dm6X9rfSBnx7WqRtQ4eeZ3yyCpGqTHJWsE6vycZx4yix',
     },
   },
   description:
@@ -45,7 +45,7 @@ export const CdmEventCommonReset: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
 };

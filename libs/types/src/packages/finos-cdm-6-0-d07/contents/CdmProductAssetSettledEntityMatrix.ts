@@ -6,7 +6,7 @@ export const CdmProductAssetSettledEntityMatrix: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'BPH2yXsmaVJzV83dHZy9t4ZxLRN8JyMueAXWyLF15CnU',
+      blueId: 'HRm7JHUnU7f1WAdnj8igCiQMRxoyt5gyMtWJpJiRj1LE',
     },
   },
   name: 'cdm/product/asset/SettledEntityMatrix',

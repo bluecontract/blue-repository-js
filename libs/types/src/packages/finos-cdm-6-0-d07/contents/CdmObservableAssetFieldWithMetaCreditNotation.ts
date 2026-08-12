@@ -4,13 +4,13 @@ export const CdmObservableAssetFieldWithMetaCreditNotation: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/observable/asset/FieldWithMetaCreditNotation',
   val: {
     type: {
-      blueId: 'EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1',
+      blueId: '6DvMxWSu8NPPjxcsnCkgPnNoAfxF9WCaA14A1Gd6fLG6',
     },
   },
 };

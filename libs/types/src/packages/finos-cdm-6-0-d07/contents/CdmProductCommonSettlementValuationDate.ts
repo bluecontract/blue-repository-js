@@ -6,14 +6,14 @@ export const CdmProductCommonSettlementValuationDate: Record<string, unknown> =
       description:
         "The date on which the currency rate will be determined for the purpose of specifying the amount in deliverable currency. This attribute was formerly part of 'NonDeliverableSettlement', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
       type: {
-        blueId: 'GsdSDZrs9XevoM9WdLLncZ1DTMsjbcSjcPyPt8z2XBWj',
+        blueId: 'AYe9vJYb7zmVir5VZjyWNcw2oZjtbMSkbPB8y47sai6T',
       },
     },
     fxFixingSchedule: {
       description:
         "The date, when expressed as a schedule of date(s), on which the currency rate will be determined for the purpose of specifying the amount in deliverable currency. This attribute was formerly part of 'NonDeliverableSettlement', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
       type: {
-        blueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
+        blueId: 'ATwFe4A6KM2pwcq5ezVugmeREzNVytoPxpU4UgV8Nhdt',
       },
     },
     multipleValuationDates: {
@@ -35,7 +35,7 @@ export const CdmProductCommonSettlementValuationDate: Record<string, unknown> =
       description:
         "The date on which the cash settlement amount will be determined according to the cash settlement method if the parties have not otherwise been able to agree the cash settlement amount. This attribute was formerly part of 'OptionCashSettlement', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
       type: {
-        blueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
+        blueId: '9fGwsBbeyL5rQuLRmwyBtyjMjAcmhWfHf4bmyqAXmWtD',
       },
     },
   };

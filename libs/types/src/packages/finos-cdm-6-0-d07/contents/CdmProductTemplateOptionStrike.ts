@@ -3,7 +3,7 @@ export const CdmProductTemplateOptionStrike: Record<string, unknown> = {
     description:
       'Defines an  option strike that is calculated from an average of observed market prices.',
     type: {
-      blueId: 'HxYQ9z6xDVRw63wB5M3kiknebJ9fvTEFsXwtbJPtXRRD',
+      blueId: 'GYCi7D1mWinJfPvkAbuJK6RQVnMLU6jrdg2PwdjZVcJv',
     },
   },
   description: 'Defines the strike price of an option.',
@@ -12,14 +12,14 @@ export const CdmProductTemplateOptionStrike: Record<string, unknown> = {
     description:
       'Defines the strike of an option when expressed by reference to a swap curve (Typically the case for a convertible bond option).\n',
     type: {
-      blueId: '2sDB91wA63tF5EXtQR9UbQQnyGu7CqG5AHbYURVxLHNc',
+      blueId: '947EdsG5Yfi7yGhx14nJkswrhbRBAJfNPeedumoqx9JT',
     },
   },
   strikePrice: {
     description:
       'Defines the strike of an option in the form of a price that could be a cash price, interestRate, or other types.\n',
     type: {
-      blueId: 'GLmQaa2vVZKjaht1sNMcUL55xfAgWQxpj5ENxwvVRvsm',
+      blueId: 'D6pT9tDvB6nnaNaPVHodxcm2djqTNykgt6VJoD2uDq4M',
     },
   },
   strikeReference: {

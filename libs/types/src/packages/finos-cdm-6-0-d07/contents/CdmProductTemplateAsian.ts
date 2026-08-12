@@ -4,19 +4,19 @@ export const CdmProductTemplateAsian: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Bp5wh9hxR98RaErYfLT3GHtCA5Z4HjFmNg4EABQ26PAc',
+      blueId: 'A3QMV3prJLC67MCSDV7KidzgurN6ZWZbxnXMwku4vf8g',
     },
   },
   averagingPeriodIn: {
     description: 'The averaging in period.',
     type: {
-      blueId: 'GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9',
+      blueId: 'HXL6x5GboEmQeMmrmtmEQQdYkr271G2tDVBXpJxUZxmz',
     },
   },
   averagingPeriodOut: {
     description: 'The averaging out period.',
     type: {
-      blueId: 'GenPv6W1wQRbNKoBmS1tAQnF6TyrsyYYmxJJ2sufNNJ9',
+      blueId: 'HXL6x5GboEmQeMmrmtmEQQdYkr271G2tDVBXpJxUZxmz',
     },
   },
   description: 'As per ISDA 2002 Definitions.',

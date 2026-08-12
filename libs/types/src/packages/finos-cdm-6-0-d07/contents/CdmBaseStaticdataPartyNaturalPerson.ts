@@ -3,7 +3,7 @@ export const CdmBaseStaticdataPartyNaturalPerson: Record<string, unknown> = {
     description:
       'The contact information for such person, when different from the contact information associated with the party.\n',
     type: {
-      blueId: '2vquTQrHfbG8GVEjvB7SAZfAmxeyh1hxQeEN1wjro58A',
+      blueId: 'AWye6DehLS3vyWXet8adWpUZ8kLZYQCWMkCgEK9CoRSR',
     },
   },
   dateOfBirth: {
@@ -57,7 +57,7 @@ export const CdmBaseStaticdataPartyNaturalPerson: Record<string, unknown> = {
     description:
       'The identifier associated with a person, e.g. the internal identification code.',
     itemType: {
-      blueId: '3QYsrTuj8NArStHVg4Bkwnj3LgYz2Rd52Xq4psjQm74A',
+      blueId: 'AG9Tj8KSzAxFp8kXUogfAmWG8bandq6BE1o5iVxrvc3o',
     },
     schema: {
       minItems: 0,

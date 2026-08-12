@@ -8,7 +8,7 @@ export const CdmProductAssetForeignExchange: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3vRMCGh2M3Ggi4kWVbmZ85TLuo1A54NFwDCbhvAZt9XA',
+      blueId: '4avwUzMQg7QgQ85Cxki1idkaeph4h4ov71aawwtQYSUJ',
     },
   },
   exchangedCurrency2: {
@@ -18,7 +18,7 @@ export const CdmProductAssetForeignExchange: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '3vRMCGh2M3Ggi4kWVbmZ85TLuo1A54NFwDCbhvAZt9XA',
+      blueId: '4avwUzMQg7QgQ85Cxki1idkaeph4h4ov71aawwtQYSUJ',
     },
   },
   name: 'cdm/product/asset/ForeignExchange',
@@ -26,7 +26,7 @@ export const CdmProductAssetForeignExchange: Record<string, unknown> = {
     description:
       'A tenor expressed as a period type and multiplier (e.g. 1D, 1Y, etc.)',
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
 };

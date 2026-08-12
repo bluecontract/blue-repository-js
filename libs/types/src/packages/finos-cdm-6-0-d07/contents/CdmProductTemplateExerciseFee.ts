@@ -15,7 +15,7 @@ export const CdmProductTemplateExerciseFee: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '4JvKSv6NGWh8hqfN6miPYiWwfE3g61v9yBhQuXc8tB8z',
+      blueId: '9fGwsBbeyL5rQuLRmwyBtyjMjAcmhWfHf4bmyqAXmWtD',
     },
   },
   feeRate: {
@@ -40,14 +40,14 @@ export const CdmProductTemplateExerciseFee: Record<string, unknown> = {
     description:
       'Specifies the counterparty responsible for making the payments defined by this structure.  The party is one of the two principal parties to the transaction.\n',
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
   receiver: {
     description:
       'Specifies the party that receives the payments corresponding to this structure.  The party is one of the two counterparties to the transaction.\n',
     type: {
-      blueId: '6RRexSdxduLUUJjoAGhNuhXszw24mwyTFrHtwAqU2SDG',
+      blueId: '7qRfgFBAefYQ37ztmK2dW9i4twZzBjKcQiHPeHrcRtYw',
     },
   },
 };

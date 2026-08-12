@@ -5,7 +5,7 @@ export const CdmBaseStaticdataAssetCommonSpecialPurposeVehicleIssuerType: Record
   creditRisk: {
     description: 'Indicates tranched or untranched credit risk.',
     type: {
-      blueId: 'C86NQuRAaVy32AX779AyrsbMw7Q2wQQu35dN3MbdAtEL',
+      blueId: '6LHAyF8TNkRmDZfw7dYCYVqgav2Ayj1tgcMncSXLkzVE',
     },
   },
   description:

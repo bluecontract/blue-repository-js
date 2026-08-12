@@ -3,7 +3,7 @@ export const CdmProductAssetProtectionTerms: Record<string, unknown> = {
     description:
       'Specifies the applicable Credit Events that would trigger a settlement, as specified in the related Confirmation and defined in the ISDA 2014 Credit Definition article IV section 4.1.\n',
     type: {
-      blueId: '3VWXt9VeCTwLSaTRa6KebXPdyz4Gy3Xwf33wBbvgbeqo',
+      blueId: 'BDbfoDhUgVvDXugqQogNj86MztLv2FPdJAEfSdztLvXw',
     },
   },
   description:
@@ -12,7 +12,7 @@ export const CdmProductAssetProtectionTerms: Record<string, unknown> = {
     description:
       'This element contains the ISDA terms relating to the floating rate payment events and the implied additional fixed payments, applicable to the credit derivatives transactions on mortgage-backed securities with pay-as-you-go or physical settlement.\n',
     type: {
-      blueId: '5arWKUo6ZdrsnkGXoVp8CVH4YWcUpQsCZ1EdqkBn5py5',
+      blueId: '3Y6NLPePzX63tBUcDRcuZp6SmXT9ie8eJCCiFfHvSzUA',
     },
   },
   name: 'cdm/product/asset/ProtectionTerms',
@@ -20,7 +20,7 @@ export const CdmProductAssetProtectionTerms: Record<string, unknown> = {
     description:
       'The underlying obligations of the reference entity on which you are buying or selling protection. The credit events Failure to Pay, Obligation Acceleration, Obligation Default, Restructuring, Repudiation/Moratorium are defined with respect to these obligations.\n',
     type: {
-      blueId: '8hht48mGH2ZK8VFHr71MXDR5Mrge37JSMeCJn1DTKdxt',
+      blueId: 'Fhygqn6wLzFHq9CDFq6gXopxQmBTRFN6tmFdDsBn1Teg',
     },
   },
 };

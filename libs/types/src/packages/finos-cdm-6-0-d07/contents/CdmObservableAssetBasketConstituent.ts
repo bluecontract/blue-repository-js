@@ -3,14 +3,14 @@ export const CdmObservableAssetBasketConstituent: Record<string, unknown> = {
     description:
       'The object to be observed is an Asset, ie something that can be owned and transferred in the financial markets.\n',
     type: {
-      blueId: '5UGws2rghMXJPsBC2YMTqJQgztQ8nTZm1XTaGkvxheXo',
+      blueId: '8CTGmD55ifZ1AAAr4uYZHw9mUCiZ7foMLqYSEUbPVz3Q',
     },
   },
   Basket: {
     description:
       'The object to be observed is a Basket, ie a collection of Observables with an identifier and optional weightings.\n',
     type: {
-      blueId: 'this#0',
+      blueId: 'this#2',
     },
   },
   description: 'Identifies the constituents of the basket',
@@ -31,7 +31,7 @@ export const CdmObservableAssetBasketConstituent: Record<string, unknown> = {
     description:
       'The object to be observed is an Index, ie an observable computed on the prices, rates or valuations of a number of assets.\n',
     type: {
-      blueId: 'FtoRYZujAAg27pRyk4p13wRUXC9JWtWMkcjiAZULxMWP',
+      blueId: 'HPKV3jzahCUNNYc5hsHbEPeFhACtdGyBCmSNpJM4ioGi',
     },
   },
   initialValuationPrice: {

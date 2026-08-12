@@ -24,14 +24,14 @@ export const CdmEventWorkflowLimitApplicable: Record<string, unknown> = {
     description:
       'The currency in which the applicable limit is denominated. The list of valid currencies is not presently positioned as an enumeration as part of the CDM because that scope is limited to the values specified by ISDA and FpML. As a result, implementers have to make reference to the relevant standard, such as the ISO 4217 standard for currency codes.\n',
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   limitType: {
     description:
       'Standard code to indicate which type of credit line is being referred to - i.e. IM, DV01, PV01, CS01, Notional, Clip Size, Notional, maximumOrderQuantity.\n',
     type: {
-      blueId: 'BRdxjWnBGUSh37id1GM71wzr5JbVB7YUZknt2qh1GRd5',
+      blueId: 'XVxdSEMV4oFDKCQukLBfXD3FmtXm51L51G1CCF1mDiE',
     },
   },
   name: 'cdm/event/workflow/LimitApplicable',
@@ -42,7 +42,7 @@ export const CdmEventWorkflowLimitApplicable: Record<string, unknown> = {
   },
   velocity: {
     type: {
-      blueId: 'B2QkNd6opHqfsBrrTAsNeuzDJGQoGukZ6M3oQ254E6ag',
+      blueId: '9R7956BbBjP2muYFxR6YvMZ5XdcSzG8S47MN2Dmp2rkT',
     },
   },
 };

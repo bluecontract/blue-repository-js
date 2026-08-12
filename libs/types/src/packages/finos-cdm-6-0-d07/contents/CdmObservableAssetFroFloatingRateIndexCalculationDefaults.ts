@@ -5,7 +5,7 @@ export const CdmObservableAssetFroFloatingRateIndexCalculationDefaults: Record<
   category: {
     description: 'The ISDA FRO category (e.g. screen rate or calculated rate).',
     type: {
-      blueId: 'uyCbFUtyiur98B8jKgwwDdT7g5AQzSgfK77hjbHKgXm',
+      blueId: '4zB6e1AuSAmpxEYJVBg43uYddvMaX9bdWPpZJ5R2dR5b',
     },
   },
   description:
@@ -13,13 +13,13 @@ export const CdmObservableAssetFroFloatingRateIndexCalculationDefaults: Record<
   indexStyle: {
     description: 'The ISDA FRO style (e.g. term rate, swap rate, etc).',
     type: {
-      blueId: '98SyBWL9ENVd5hF1HHdCKz8RG35SmSdrNx9Dh2tPj9AK',
+      blueId: 'EHeB5nPPmZvVyFWfk53aC5LX5MjkebqhRqVH3VABHGcV',
     },
   },
   method: {
     description: 'The ISDA FRO calculation method (e.g. OIS Compounding).',
     type: {
-      blueId: 'Ef7JSbybnYTf6DGe3sD3EoBBngjeauFZcUey5CPfgotg',
+      blueId: '993FmQYp1qquePHed4gzqEGk6TiscurtZ7ryZqKvXoov',
     },
   },
   name: 'cdm/observable/asset/fro/FloatingRateIndexCalculationDefaults',

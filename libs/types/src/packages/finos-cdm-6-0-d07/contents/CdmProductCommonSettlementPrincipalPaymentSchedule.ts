@@ -7,20 +7,20 @@ export const CdmProductCommonSettlementPrincipalPaymentSchedule: Record<
   finalPrincipalPayment: {
     description: 'Principal Payment at Trade maturity',
     type: {
-      blueId: '9XUMDnSJjmK5Kqp5BL268vZoXGmEQAMCFTKbJVVwuPbB',
+      blueId: 'A6P3sUb9TyTHkzLFZSbiu6Ehk3sCead9tQVLZBqrBdAL',
     },
   },
   initialPrincipalPayment: {
     description: 'Principal Payment made at Trade inception.',
     type: {
-      blueId: '9XUMDnSJjmK5Kqp5BL268vZoXGmEQAMCFTKbJVVwuPbB',
+      blueId: 'A6P3sUb9TyTHkzLFZSbiu6Ehk3sCead9tQVLZBqrBdAL',
     },
   },
   intermediatePrincipalPayment: {
     description:
       'Principal Payment as part of the Trade lifecycle e.g. as part of notional reset adjustements in a Cross Currency Swap with a varying notional leg.\n',
     type: {
-      blueId: '4EkR94oSN87arjWhzEQUZELGM8at9SvDoSZ3LKbE12sg',
+      blueId: 'A5fbgqJ72K7pbNNCrmP9z1uJjRfJjx4z6Bav92ZY3iMs',
     },
   },
   name: 'cdm/product/common/settlement/PrincipalPaymentSchedule',

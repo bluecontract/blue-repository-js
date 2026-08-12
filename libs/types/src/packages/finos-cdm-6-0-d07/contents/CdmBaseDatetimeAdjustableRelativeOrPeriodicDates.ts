@@ -6,7 +6,7 @@ export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDates: Record<
     description:
       'A series of dates that shall be subject to adjustment if they would otherwise fall on a day that is not a business day in the specified business centers, together with the convention for adjusting the date.\n',
     type: {
-      blueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
+      blueId: 'ATwFe4A6KM2pwcq5ezVugmeREzNVytoPxpU4UgV8Nhdt',
     },
   },
   description:
@@ -15,14 +15,14 @@ export const CdmBaseDatetimeAdjustableRelativeOrPeriodicDates: Record<
   periodicDates: {
     description: 'A calculation period schedule.',
     type: {
-      blueId: 'JBENwei996PNTBkNZUR1ojomCwz48ULaZEJoeaXxukmT',
+      blueId: 'BzeLMQ2szfXctEZbXkHo6YK8X9oAyGG7RMSQ8DefBrFB',
     },
   },
   relativeDates: {
     description:
       'A series of dates specified as some offset to another series of dates (the anchor dates).',
     type: {
-      blueId: 'DXynKUQNFZU7oUmvsh7mUrjs7JL5RKXrrmkH9hZr99CL',
+      blueId: 'EKfLs9rHaB8brKCyK3GJJ921tVXYtjAM9Err32UYpwXp',
     },
   },
 };

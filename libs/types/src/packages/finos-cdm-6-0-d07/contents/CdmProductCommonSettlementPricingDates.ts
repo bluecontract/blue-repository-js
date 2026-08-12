@@ -6,14 +6,14 @@ export const CdmProductCommonSettlementPricingDates: Record<string, unknown> = {
     description:
       'Defines rules for the dates on which the price will be determined.',
     type: {
-      blueId: 'EYbEZSe5HQWGHhD1r1THTXaZHW6xpyBn5zsupY3usXJ4',
+      blueId: 'BZaLBY48LVb4VwEue2bkVqqdLay2ixteJueEiGUx4bWC',
     },
   },
   specifiedDates: {
     description:
       'Defines specified dates on which the price will be determined.',
     itemType: {
-      blueId: '5JcKEFUStAenXhdmeTHE6nvpuhEjPvsvuge4TX2AuQrA',
+      blueId: 'ATwFe4A6KM2pwcq5ezVugmeREzNVytoPxpU4UgV8Nhdt',
     },
     schema: {
       minItems: 0,

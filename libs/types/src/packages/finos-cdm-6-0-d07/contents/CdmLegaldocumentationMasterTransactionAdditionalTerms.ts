@@ -21,7 +21,7 @@ export const CdmLegaldocumentationMasterTransactionAdditionalTerms: Record<
   },
   equityAdditionalTerms: {
     type: {
-      blueId: '95T825bQFLe9KC4B7yuQzPWcdNpg4muWrPiQjsK914F3',
+      blueId: '8Rrcfh2Z8aE4ZAqfrkbLqgKH5vRuW7NKtqsxHbwvq219',
     },
   },
   foreignExchangeAdditionalTerms: {

@@ -5,7 +5,7 @@ export const CdmProductTemplateCalculationSchedule: Record<string, unknown> = {
   schedulePeriod: {
     description: 'Defines a period of a calculation schedule structure.',
     itemType: {
-      blueId: 'CAWuQnv8ErBNebNAhWCC5XXHxx49GA2Yi9eaWFTXcij1',
+      blueId: 'AKyQiSHvk3iKKhjrFNKn6eeQw1fNpNDUhvvdXjwEQgBa',
     },
     schema: {
       minItems: 1,

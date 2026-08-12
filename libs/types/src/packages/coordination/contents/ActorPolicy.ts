@@ -102,6 +102,6 @@ export const ActorPolicy: Record<string, unknown> = {
     },
   },
   type: {
-    blueId: '6zqbYGDGrMv5ReuEsjyzyyjjuqVnqDZxtY7RsPXdBTNy',
+    blueId: '8nWeksYEXxp5TBnRcYF5u3VsFHvMfxo4zjAFT6MLW8ZD',
   },
 };

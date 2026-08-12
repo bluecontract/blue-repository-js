@@ -4,13 +4,13 @@ export const CdmProductAssetFieldWithMetaSettledEntityMatrixSourceEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/product/asset/FieldWithMetaSettledEntityMatrixSourceEnum',
   val: {
     type: {
-      blueId: 'BMRn1GaLgfQuHBa1zsfT1sd7aCFhqKxoBzmieXMWqy17',
+      blueId: 'BhVU3KEW8a9LMCcnm8fr2HCBoKRaD9FgYgM66MQ1VNtX',
     },
   },
 };

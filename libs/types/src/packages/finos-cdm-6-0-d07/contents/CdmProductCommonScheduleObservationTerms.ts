@@ -4,7 +4,7 @@ export const CdmProductCommonScheduleObservationTerms: Record<string, unknown> =
       description:
         'Defines parameters used to generate the calculation period dates schedule, including the specification of any initial or final stub calculation periods. A calculation period schedule consists of an optional initial stub calculation period, one or more regular calculation periods and an optional final stub calculation period. In the absence of any initial or final stub calculation periods, the regular part of the calculation period schedule is assumed to be between the effective date and the termination date. No implicit stubs are allowed, i.e. stubs must be explicitly specified using an appropriate combination of firstPeriodStartDate, firstRegularPeriodStartDate and lastRegularPeriodEndDate.\n',
       type: {
-        blueId: '7dK86pbyNfhuuigQR5bQueaqH68Sqze66Qwad2m64rxg',
+        blueId: 'DfcGaXUQetcXghmMMauh7ikEza42JbwqRdRdyWcm1C6N',
       },
     },
     description:
@@ -13,7 +13,7 @@ export const CdmProductCommonScheduleObservationTerms: Record<string, unknown> =
       description:
         'The information source where a published or displayed market rate will be obtained, e.g. Telerate Page 3750.',
       type: {
-        blueId: 'AxAyn6UgyoJj9YDT4soz7eYpmhL8U6kEzFxGMonZgxcg',
+        blueId: '4Jbze8eVmcTD1NE4zxdWWA7NuWrvuqjSc5a68zCAQD7h',
       },
     },
     name: 'cdm/product/common/schedule/ObservationTerms',
@@ -31,28 +31,28 @@ export const CdmProductCommonScheduleObservationTerms: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '93jNg58r6VkSD6oX2SzTDJrVHFDWVgDA28zPR4rQJS4F',
+        blueId: 'G8BGDmT28hrybjeGtkHwYwXVcbPjYYasBgcNh8dzGSQ8',
       },
     },
     observationTime: {
       description:
         'Defines time in respect to a business calendar location that the price/benchmark/index is observed',
       type: {
-        blueId: '4Mi73c2rJbGTBeaTVi4xUgW33QBxsUyxSSV6ELoqnP4j',
+        blueId: '4muK6BKTZZzEij2eR3Dg7sQxj224LzRoyzr5n7UcAR3X',
       },
     },
     observationTimeType: {
       description:
         'The enumerated values to specify points in the day when option exercise and valuation can occur.',
       type: {
-        blueId: '4h5N1XJhikomVgESoUQkDUs2Qfx1RK39JWGgd8HQXgEv',
+        blueId: 'CPirifxyoZ3EheLcX6KW9muSEUsxpDaj7mJXu5zW6jsJ',
       },
     },
     precision: {
       description:
         'Defines rounding rules and precision to be used in the rounding of observations.',
       type: {
-        blueId: 'BYetgNwutc7xjHHx9g7ZhsdKgyGYMd1UR4jDoHHafJHj',
+        blueId: '7fpTDBDMKH4SNXoiKP77e98Hh5vZkbVGXSEenFEztVuv',
       },
     },
   };

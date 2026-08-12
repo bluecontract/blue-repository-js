@@ -9,6 +9,6 @@ export const DocumentLinks: Record<string, unknown> = {
     blueId: 'Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG',
   },
   valueType: {
-    blueId: '4QgVHSQv1pyJAmEQBpuXFSVN7qdavdMDmdZXpkboNsc5',
+    blueId: 'GiN4bMpY9GSFE75wq7GJ74UHKzNQNG1efjG4cEYgqDAc',
   },
 };

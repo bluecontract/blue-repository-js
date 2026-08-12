@@ -17,6 +17,6 @@ export const ComputeDefinition: Record<string, unknown> = {
   },
   name: 'Compute Definition',
   type: {
-    blueId: '6zqbYGDGrMv5ReuEsjyzyyjjuqVnqDZxtY7RsPXdBTNy',
+    blueId: '8nWeksYEXxp5TBnRcYF5u3VsFHvMfxo4zjAFT6MLW8ZD',
   },
 };

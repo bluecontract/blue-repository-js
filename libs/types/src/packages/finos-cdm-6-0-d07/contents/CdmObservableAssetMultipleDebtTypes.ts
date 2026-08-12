@@ -6,14 +6,14 @@ export const CdmObservableAssetMultipleDebtTypes: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '5AmXPpNccrpoL5H4BBSk9y2QfnizHY6JKgXqaHJTHgvy',
+      blueId: '9rM943Zxj8XaBwwWtrihnmzqSxuoYsj5tqms4JHHt3AG',
     },
   },
   debtType: {
     description:
       "The type of debt, e.g. long term debt, deposit, ... FpML doesn't specific a scheme value, hence no enumeration is specified as part of the CDM. At least two debt types much be specified.\n",
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 2,

@@ -6,7 +6,7 @@ export const CdmProductAssetFloatingrateFloatingRateSettingDetails: Record<
     description:
       'Calculated rate details (observation dates, values, and weights).',
     type: {
-      blueId: '3xtXK1YdVmKnwdTBo6WKzcZ4cthkLD6Cotrd9TGebUpn',
+      blueId: '6tV4tMzAYkzXchyzP7mTuV91NBEboWNA5hHCsyeTZd9i',
     },
   },
   description:

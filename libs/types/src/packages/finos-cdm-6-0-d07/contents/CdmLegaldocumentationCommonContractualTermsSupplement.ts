@@ -8,7 +8,7 @@ export const CdmLegaldocumentationCommonContractualTermsSupplement: Record<
       required: true,
     },
     type: {
-      blueId: 'HnmNxnPfmCYsrrcW4ZHfLPh81wfJNCf4xE2hqXeuzSgu',
+      blueId: 'DTifFxeQTfuFKdA6vk8vUgRXB6p5tSYi7f6BmAEGxMn2',
     },
   },
   description:

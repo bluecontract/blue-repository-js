@@ -28,7 +28,7 @@ export const CdmProductAssetFixedAmountCalculationDetails: Record<
       required: true,
     },
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
   description:

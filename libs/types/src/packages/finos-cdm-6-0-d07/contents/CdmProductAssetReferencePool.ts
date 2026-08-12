@@ -6,7 +6,7 @@ export const CdmProductAssetReferencePool: Record<string, unknown> = {
     description:
       'This type contains all the constituent weight and reference information.',
     itemType: {
-      blueId: 'AWwDERDMrCASiqr7n2YEUi5tSny4VTcu6gDZ7vYA6Mb',
+      blueId: 'AqGS2SguERoZQ12B22inuBpRxBEr8pgymQHLHSoWbCWo',
     },
     schema: {
       minItems: 1,

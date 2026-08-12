@@ -14,9 +14,16 @@ on:
         required: false
         type: string
         default: 'blue-preprocessor.yml'
+      base_branch:
+        description: 'Branch targeted by the generated-types pull request'
+        required: false
+        type: string
+        default: 'next'
 
 env:
-  BASE_BRANCH: main
+  # Stable repository dispatches omit base_branch and continue to target main.
+  # Manual prerelease generation explicitly targets next.
+  BASE_BRANCH: ${{ github.event.client_payload.base_branch || inputs.base_branch || 'main' }}
 
 jobs:
   ProcessArtifacts:
@@ -30,7 +37,7 @@ jobs:
       SOURCE_WORKFLOW: ${{ github.event.client_payload.workflow || inputs.source_workflow || 'blue-preprocessor.yml' }}
       ARTIFACT_NAME: blue-repository-definition
     steps:
-      - name: Checkout main repository
+      - name: Checkout target branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history
@@ -88,6 +95,7 @@ jobs:
             - Run ID: ${{ github.event.client_payload.run_id || inputs.run_id }}
             - Source workflow: ${{ env.SOURCE_WORKFLOW }}
             - Artifact: ${{ env.ARTIFACT_NAME }}
+            - Base branch: ${{ env.BASE_BRANCH }}
 
             ## Changes
             - Updated BlueRepository.blue

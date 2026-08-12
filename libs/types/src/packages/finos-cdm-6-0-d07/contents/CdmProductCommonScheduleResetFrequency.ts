@@ -6,7 +6,7 @@ export const CdmProductCommonScheduleResetFrequency: Record<string, unknown> = {
     description:
       'A time period, e.g. a day, week, month, year or term of the stream.',
     type: {
-      blueId: 'BLwQ9sW7unThpYZC3TVs8YtMmiAoZ4NVGjVRppu4gm7x',
+      blueId: '8g5Z7Xf3wFDD2QY1rGqmTjeY7EvWWEsxUiKyX6UbH8kp',
     },
   },
   periodMultiplier: {
@@ -20,7 +20,7 @@ export const CdmProductCommonScheduleResetFrequency: Record<string, unknown> = {
     description:
       'The day of the week on which a weekly reset date occurs. This element must be included if the reset frequency is defined as weekly and not otherwise.\n',
     type: {
-      blueId: '4X8F2gmBL4p3H4RQFALaRrLn3E4tnCr4a7kQgN7NmnWV',
+      blueId: 'mzi7BeQoxeMVQi6CStJ1R2tCdfMrbveHTkBHR5SwwV6',
     },
   },
 };

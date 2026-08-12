@@ -6,7 +6,7 @@ export const CdmBaseMathAveragingCalculationMethod: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'D8BAM3Ef8YgktLMNJZg82NyQjEWkwYXQ2pZYpzsXPtnQ',
+      blueId: '518mz1k7ayS8Y3S4y9HauLqAQMigdB4Vf2r7XcVSwyuJ',
     },
   },
   description:

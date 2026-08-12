@@ -6,7 +6,7 @@ export const CdmProductAssetReferencePair: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '8JiSzKwsUM83StApPmxZgggZyHQCSUvE6Fy23XWLQHUB',
+      blueId: 'wP5A25jxQQthEaNAwp6AqdinowuQfr7uwkkRPxUX9P9',
     },
   },
   name: 'cdm/product/asset/ReferencePair',
@@ -24,14 +24,14 @@ export const CdmProductAssetReferencePair: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   referenceObligation: {
     description:
       'The Reference Obligation is a financial instrument that is either issued or guaranteed by the reference entity. It serves to clarify the precise reference entity protection is being offered upon, and its legal position with regard to other related firms (parents/subsidiaries). Furthermore the Reference Obligation is ALWAYS deliverable and establishes the Pari Passu ranking (as the deliverable bonds must rank equal to the reference obligation). ISDA 2003 Term: Reference Obligation.\n',
     type: {
-      blueId: 'Bv5sBf6gMTS32hBro1iBzhNmGnSuqD84Wfc4EqRV4Whg',
+      blueId: '9JVAArBi86NaGQD2GTdaCzekc6e3rKpVyMR9GwkaPmWP',
     },
   },
 };

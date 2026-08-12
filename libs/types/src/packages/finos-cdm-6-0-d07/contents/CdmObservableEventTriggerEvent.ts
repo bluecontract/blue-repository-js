@@ -4,14 +4,14 @@ export const CdmObservableEventTriggerEvent: Record<string, unknown> = {
     description:
       'The feature payment, i.e. the payment made following trigger occurrence.',
     type: {
-      blueId: '658or3kYtUm56ELDk8VvoiAT7agLsP99UNrYUqXPMWyp',
+      blueId: 'CyNbsBbVvQtTXmUtC5VgfJRMfcxjpqRgWZb9o3728hUE',
     },
   },
   name: 'cdm/observable/event/TriggerEvent',
   schedule: {
     description: 'A derivative schedule.',
     itemType: {
-      blueId: 'CR9L4SVmKAvSmKh2xUfY6RvyAg4XL3BwDYCeqWk8ejn8',
+      blueId: 'hjVS7GrE9QqNFk61XTvTkP6ktQxzv96UUaGK74mg9YK',
     },
     schema: {
       minItems: 0,
@@ -26,13 +26,13 @@ export const CdmObservableEventTriggerEvent: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '21pozsBPMtA8xJQ77VahQiEpCbG8nV3ryR8r5xgX4sQP',
+      blueId: 'DPiz2W1ctMPUXHZwDNk33csZRvEzLLK98EDtC4S1MYYv',
     },
   },
   triggerDates: {
     description: 'The trigger Dates.',
     type: {
-      blueId: '75qSo7DxMh9MksCdoEnKxduHVLunj1pn42TvPFdxTgN8',
+      blueId: '7dJA2x6vQbptJj6JY19SNAepGDTYYauAobPJ5nGTi5GV',
     },
   },
 };

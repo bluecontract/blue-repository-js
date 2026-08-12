@@ -3,20 +3,20 @@ export const CdmProductTemplateEconomicTerms: Record<string, unknown> = {
     description:
       'The ISDA calculation agent responsible for performing duties as defined in the applicable product definitions.',
     type: {
-      blueId: 'FANsoqTgc5XxJH7orWbzRADwZ6drQjPzAbPN6YqvcYau',
+      blueId: 'BmkE3R86Mi5VSgGXWARzCmJ1FbnwnZDnHtccZ6MSGnRQ',
     },
   },
   collateral: {
     description: 'Represents the collateral obligations of a party.',
     type: {
-      blueId: '6jhHzxNcd11YEG9a9f1yBWhmm5qpzmbZ6E7JEqHpPj7r',
+      blueId: 'CMbZdR1wHnpwviTkU9fmf4tki9sWinxrSZWks1aEdhJu',
     },
   },
   dateAdjustments: {
     description:
       'The business day adjustment convention when it applies across all the payout components. This specification of the business day convention and financial business centers is used for adjusting any calculation period date if it would otherwise fall on a day that is not a business day in the specified business center.\n',
     type: {
-      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
+      blueId: 'AKAczd79wtoD2Vt7VjdFdnWeacw86mQTVeLcyS9SWFZz',
     },
   },
   description:
@@ -25,7 +25,7 @@ export const CdmProductTemplateEconomicTerms: Record<string, unknown> = {
     description:
       'The first day of the terms of the trade. This day may be subject to adjustment in accordance with a business day convention.\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   name: 'cdm/product/template/EconomicTerms',
@@ -40,7 +40,7 @@ export const CdmProductTemplateEconomicTerms: Record<string, unknown> = {
     description:
       'The payout specifies the future cashflow computation methodology which characterizes a financial product.',
     itemType: {
-      blueId: 'this#9',
+      blueId: 'this#8',
     },
     schema: {
       minItems: 1,
@@ -53,14 +53,14 @@ export const CdmProductTemplateEconomicTerms: Record<string, unknown> = {
     description:
       'The last day of the terms of the trade. This date may be subject to adjustments in accordance with the business day convention. It can also be specified in relation to another scheduled date (e.g. the last payment date).\n',
     type: {
-      blueId: '2Dr79mc7tDo84pCgLDhmSAuay1naC42UUovCTcaMjY5R',
+      blueId: 'GW4fUG5i4g68v2eQEznuefGCSUPiwaHXpoVmU4ASwx29',
     },
   },
   terminationProvision: {
     description:
       'Contains optional provisions pertaining to the termination characteristics of a contract.',
     type: {
-      blueId: 'FpTrBfyCdqmzaN9ByjGQj2bxPZQnpJ2hHCYSkTgoJhtF',
+      blueId: '3doqr3EiMTivS3UTJcEVyjxNAVfAULrMtrVVvpoMSQW6',
     },
   },
 };

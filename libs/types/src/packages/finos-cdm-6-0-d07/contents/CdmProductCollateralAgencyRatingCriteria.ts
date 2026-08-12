@@ -4,7 +4,7 @@ export const CdmProductCollateralAgencyRatingCriteria: Record<string, unknown> =
       description:
         'Indicates the boundary of a credit agency rating i.e minimum or maximum.',
       type: {
-        blueId: 'EGpvPDYUy6WpBH4kNy693iBCzvTxxufSoJNuPsWaeJnc',
+        blueId: 'D2oJ9QPeiZWktpNjjfSdXqVURAMCL8SdSfCjyMWBeTjs',
       },
     },
     creditNotation: {
@@ -14,7 +14,7 @@ export const CdmProductCollateralAgencyRatingCriteria: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'EQxsMYMc9VvECVVKm2ZJuGuMzgL8yDytdszpjwY14Yy1',
+        blueId: '6DvMxWSu8NPPjxcsnCkgPnNoAfxF9WCaA14A1Gd6fLG6',
       },
     },
     description: 'Represents a class to specify a credit notation.',
@@ -22,7 +22,7 @@ export const CdmProductCollateralAgencyRatingCriteria: Record<string, unknown> =
       description:
         'Indicator for options to be used if several agency ratings (>1) are specified and its necessary to identify specific charateristics. i.e (lowest or highest).\n',
       type: {
-        blueId: 'DRzBA7DNKGx3x57DdS7v8C2BBHL55ia9a7Sqzx7r5Qr7',
+        blueId: '3xGR5MinWeBBiGacxvPvEYBQ4EV4NjiAp6xvgENeLDVe',
       },
     },
     name: 'cdm/product/collateral/AgencyRatingCriteria',
@@ -30,7 +30,7 @@ export const CdmProductCollateralAgencyRatingCriteria: Record<string, unknown> =
       description:
         'identifies the dominant reference agency if there is a missmatch and several reference agencies exsist.',
       type: {
-        blueId: 'D1H3C3xAMJv2XQNBYfethSUKDH7kngUkefwbzLwVLW1i',
+        blueId: '21xGvoNnChKXaDXVNTEgYY1eJr849T5okU3aXsrCK2PB',
       },
     },
   };

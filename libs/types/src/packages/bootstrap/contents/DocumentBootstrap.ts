@@ -6,7 +6,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
         required: true,
       },
       type: {
-        blueId: 'BDP5DqtmUNtG2FE1hLe5n2n5h4JMJayXixeGzfM5uzrq',
+        blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
       },
     },
     completeBootstrap: {
@@ -18,7 +18,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'EogcjRxna7zSMip2wSg53fdRtQG8apJL6JqHeh1egh9f',
+          blueId: '7hkTA9xEpQixBzjN2M2Uei8K1h2MvmpVLqhau53Cksg5',
         },
       },
       steps: {
@@ -114,7 +114,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     declineBootstrap: {
@@ -126,7 +126,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '4HrRcHN229bzcHXvGsEnbron77kYiFzTFEEHDWup1xRC',
+          blueId: 'HAbdpL4jP3EqXPiHBXddTXcdjiMRnxbkE6YnWkvbCMRa',
         },
       },
       steps: {
@@ -243,7 +243,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     failBootstrap: {
@@ -255,7 +255,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: '9juepYbw4uwHiqDxcnjoJTn1Vv3TsDzPeSchpHUYRS3h',
+          blueId: 'gACn7Kx4MP1u1hNiw5YuwHC6TEcCTLzyygc4YYN7Xmp',
         },
       },
       steps: {
@@ -351,7 +351,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
     startBootstrap: {
@@ -363,7 +363,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
       },
       request: {
         type: {
-          blueId: 'B6zgAWGB7543y6JcE2jjUKqLrVMEFWfu7NY7sLzfn8aR',
+          blueId: '3bhU39YjdqxCGhSW6LodoaP3nTfnYTAB8PY8NaHSLkbt',
         },
       },
       steps: {
@@ -434,7 +434,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
         ],
       },
       type: {
-        blueId: 'B5eQ8GaYwECKEtduoWEv8Ri1FvWznuvb3ZXGKqeYUuy',
+        blueId: '6rnGvP1BUsBpbtvuvJ1vy6hS7psoUJVBEXXsFeRma82V',
       },
     },
   },
@@ -444,7 +444,7 @@ export const DocumentBootstrap: Record<string, unknown> = {
     description:
       'Running document session made available after successful bootstrap.',
     type: {
-      blueId: 'FxcZycT49wFfrNAZpzquWVRw43epYQx5SkYXpdwx3c2Z',
+      blueId: 'CitEEsPhrBya9i5PK18kP3V4snE1g79885geLZM2PidU',
     },
   },
   error: {

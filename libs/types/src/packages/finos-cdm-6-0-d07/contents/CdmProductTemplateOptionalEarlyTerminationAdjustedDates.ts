@@ -8,7 +8,7 @@ export const CdmProductTemplateOptionalEarlyTerminationAdjustedDates: Record<
     description:
       'The adjusted dates associated with an individual early termination date.',
     itemType: {
-      blueId: '3wSwzEEsW9wqLsvHavDA1EwFMzMefG38hhcM1BgdrLr9',
+      blueId: 'FwvvA4wHJfEtTVQrtYrZ9EdhXuVrvj2q9KzV3xAGqdSg',
     },
     schema: {
       minItems: 1,

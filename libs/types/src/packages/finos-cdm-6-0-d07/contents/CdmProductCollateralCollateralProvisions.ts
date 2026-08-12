@@ -7,7 +7,7 @@ export const CdmProductCollateralCollateralProvisions: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'HNcaEBRQkyoWFVGH1rA32NFXn4vu5wVaftRYmaKr4FMa',
+        blueId: 'GSjWmYnJWmuti33vdJxHGDSFHJugrsJ7cM3wCiay7Guc',
       },
     },
     description:
@@ -16,7 +16,7 @@ export const CdmProductCollateralCollateralProvisions: Record<string, unknown> =
       description:
         'The eligible collateral as specified in relation to the transaction.',
       itemType: {
-        blueId: '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6',
+        blueId: 'Dd4QK5kmBzsGcmhcqxkLLPiH2fBmE3acTHCBGWUW5Buq',
       },
       schema: {
         minItems: 0,
@@ -30,7 +30,7 @@ export const CdmProductCollateralCollateralProvisions: Record<string, unknown> =
       description:
         'The provisions for collateral substitutions such as how many and when they are allowed.',
       type: {
-        blueId: 'G6wTgdqazh3P4ppaphmfLKqmekudYnsS5TDSKnzhiCYi',
+        blueId: 'Dz3MiMnz2rTB4ZLx32vq9C8dXnxfvUTnX8brry1cDos8',
       },
     },
   };

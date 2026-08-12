@@ -11,7 +11,7 @@ export const CdmProductCollateralCheckEligibilityResult: Record<
       required: true,
     },
     type: {
-      blueId: 'EqeLySr1GukguPVVt5XqDUVQFVenWZYySiuo6qQbQ3pT',
+      blueId: '9RU1DVTrXXNj5z35ccGRApiUJ1pdKay2RnssWqbsa5qP',
     },
   },
   isEligible: {
@@ -28,7 +28,7 @@ export const CdmProductCollateralCheckEligibilityResult: Record<
     description:
       'if there was a match, this will be the one or more criteria that were supplied in the EligbilityCollateralSpecification which matched with the query input\n',
     itemType: {
-      blueId: '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6',
+      blueId: 'Dd4QK5kmBzsGcmhcqxkLLPiH2fBmE3acTHCBGWUW5Buq',
     },
     schema: {
       minItems: 0,
@@ -45,7 +45,7 @@ export const CdmProductCollateralCheckEligibilityResult: Record<
       required: true,
     },
     type: {
-      blueId: '95Kqzip4NxUfKxtGutCfDtBUDLMZhWmnm6jhQZJtfzXj',
+      blueId: '9fzErabMt8BTfWNrPwtuqQc2qNEWrLTRkNcRRhaQKdfL',
     },
   },
 };

@@ -4,7 +4,7 @@ export const CdmBaseStaticdataPartyLegalEntity: Record<string, unknown> = {
   entityId: {
     description: 'A legal entity identifier (e.g. RED entity code).',
     itemType: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
     schema: {
       minItems: 0,

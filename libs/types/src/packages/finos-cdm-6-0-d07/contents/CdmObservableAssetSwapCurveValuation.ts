@@ -6,21 +6,21 @@ export const CdmObservableAssetSwapCurveValuation: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'Ffp3NGGHva1Wh7c62eqGBrQTxEzCeASMFJ6PAmoSuCXF',
+      blueId: 'vMjyu6sbtgT7FA6GScxrp32Njg3k9oW6KxuXLU9RYHx',
     },
   },
   indexTenor: {
     description:
       'The ISDA Designated Maturity, i.e. the tenor of the floating rate.',
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   name: 'cdm/observable/asset/SwapCurveValuation',
   side: {
     description: 'The side (bid/mid/ask) of the measure.',
     type: {
-      blueId: 'AH1BY9EazwZmuZ6LcxCKPZSzsejRaRpRinAqLmVsFTgc',
+      blueId: '3dNvpLuUvkiJo6AQdCKYx1WFEVMKmojVB5NmUQQQmyDq',
     },
   },
   spread: {

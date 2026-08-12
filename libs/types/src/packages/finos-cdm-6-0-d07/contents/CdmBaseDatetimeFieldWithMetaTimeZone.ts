@@ -1,13 +1,13 @@
 export const CdmBaseDatetimeFieldWithMetaTimeZone: Record<string, unknown> = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/base/datetime/FieldWithMetaTimeZone',
   val: {
     type: {
-      blueId: 'A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92',
+      blueId: '3jiEy2e5MqwFVX3zkALqRNFaBpD4DawUCg1iYwfFzeca',
     },
   },
 };

@@ -35,7 +35,7 @@ export const CdmProductAssetReferencePoolItem: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6dgH4biBE9pfYSSx3pD7kWuYHhmxVmVGoHckDDNdqz85',
+      blueId: '87LG4kt3rUa8kL2JyAEodBk6JDJ9u7aJWgHnGQ4VpGa3',
     },
   },
 };

@@ -3,134 +3,134 @@ import blueIds from './blue-ids';
 const meta: { name: string; typesMeta: Record<string, unknown> } = {
   name: 'Workflows',
   typesMeta: {
-    AQiBjYvNGNupbn8GoAVjJD3GytsuktbfUJ8EXxm24uiX: {
+    '7Dv66Ymipyi4znKm3ek5wc1xVA4Qy5agxb3LjbMxKv6p': {
       status: 'dev',
       name: 'Accept Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'AQiBjYvNGNupbn8GoAVjJD3GytsuktbfUJ8EXxm24uiX',
+          repositoryVersionIndex: 1,
+          typeBlueId: '7Dv66Ymipyi4znKm3ek5wc1xVA4Qy5agxb3LjbMxKv6p',
           attributesAdded: [],
         },
       ],
     },
-    '9Ke8Cm7sbxbdezqTBsHYAgKqsncGSsF1MQPhT8Lh7R4a': {
+    FcqWLnwxGzMFR6vo3GnhEUmgbh9eGLTPGytYWmhdGrwT: {
       status: 'dev',
       name: 'Accept Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9Ke8Cm7sbxbdezqTBsHYAgKqsncGSsF1MQPhT8Lh7R4a',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'FcqWLnwxGzMFR6vo3GnhEUmgbh9eGLTPGytYWmhdGrwT',
           attributesAdded: [],
         },
       ],
     },
-    AKkQ1Sq3MRCEoDNv4FjEpx3Dn72DuM4DTVJNCJsSs1Ai: {
+    CuFVdF9x8vra93EdgSK9pPq4iGsyc4LZWNDpxMjSXHnT: {
       status: 'dev',
       name: 'Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'AKkQ1Sq3MRCEoDNv4FjEpx3Dn72DuM4DTVJNCJsSs1Ai',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'CuFVdF9x8vra93EdgSK9pPq4iGsyc4LZWNDpxMjSXHnT',
           attributesAdded: [],
         },
       ],
     },
-    '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU': {
+    AVuAYKsZEMLjY3XwmKMe1LPrVAEo6R6FepDjPqgndF7J: {
       status: 'dev',
       name: 'Change Request',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'AVuAYKsZEMLjY3XwmKMe1LPrVAEo6R6FepDjPqgndF7J',
           attributesAdded: [],
         },
       ],
     },
-    J4N7XgGHAwMZJGJ4SkWuUHmTfKvsSHvSsbAduEsriARk: {
+    BwQFZSEaqWCnoQcVBvho2A1ig9Dz7yAgZkN4zzizjL88: {
       status: 'dev',
       name: 'Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'J4N7XgGHAwMZJGJ4SkWuUHmTfKvsSHvSsbAduEsriARk',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'BwQFZSEaqWCnoQcVBvho2A1ig9Dz7yAgZkN4zzizjL88',
           attributesAdded: [],
         },
       ],
     },
-    CECcZ2xesYWUD4qZNFzDWYjWoMU6W55jEEoJHK8MWZct: {
+    F2z5kuhjRCwngkuZAxfWyYrZNMM9PeumHLmPqT222RKa: {
       status: 'dev',
       name: 'Contracts Change Policy',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'CECcZ2xesYWUD4qZNFzDWYjWoMU6W55jEEoJHK8MWZct',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'F2z5kuhjRCwngkuZAxfWyYrZNMM9PeumHLmPqT222RKa',
           attributesAdded: [],
         },
       ],
     },
-    A3ARRUeBEDuZMTs7SN62agmNKd41i1ZZDRtsGWDhuSro: {
+    ATWLhHxoNDLzACS5XaADJWW3iaMDj1pesogCsxdez55w: {
       status: 'dev',
       name: 'Customer Consent',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'A3ARRUeBEDuZMTs7SN62agmNKd41i1ZZDRtsGWDhuSro',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'ATWLhHxoNDLzACS5XaADJWW3iaMDj1pesogCsxdez55w',
           attributesAdded: [],
         },
       ],
     },
-    '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy': {
+    CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa: {
       status: 'dev',
       name: 'Document Section',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6R6asWqr9V6DAow5X6EjRRaABhM7xeT13UzcTegmhcjy',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'CJwAFnduHpubiXYhhgnrS272rM8qELbcfutiaAAWmRsa',
           attributesAdded: [],
         },
       ],
     },
-    '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX': {
+    DN9VhzcZvGNtMz2K3qVBQrVeYssBUqbewt2Cxi6CXS3R: {
       status: 'dev',
       name: 'Document Section Change Entry',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6bFMVH9pmLi52ygzapdZLYKoEhdjHJDiXELeEnyBPEiX',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'DN9VhzcZvGNtMz2K3qVBQrVeYssBUqbewt2Cxi6CXS3R',
           attributesAdded: [],
         },
       ],
     },
-    '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc': {
+    '9MfTNhMnFbd6VkhaLLLEyv1SxwBzj9iJjfUNQV2toU9S': {
       status: 'dev',
       name: 'Document Section Changes',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '8FdfJApa4H55iYGnn2BVZcAq7tKYB6GrtkcftMgo6fjc',
+          repositoryVersionIndex: 1,
+          typeBlueId: '9MfTNhMnFbd6VkhaLLLEyv1SxwBzj9iJjfUNQV2toU9S',
           attributesAdded: [],
         },
       ],
     },
-    '6KfyYR3LoTKJLsgPkmYkXacY7JMPvTjJUeqtJXXfVHMr': {
+    '3xA8aEEJKHC8JwXgd4QuoUYm7H4vMpdRfgbpyvhJfctV': {
       status: 'dev',
       name: 'Propose Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '6KfyYR3LoTKJLsgPkmYkXacY7JMPvTjJUeqtJXXfVHMr',
+          repositoryVersionIndex: 1,
+          typeBlueId: '3xA8aEEJKHC8JwXgd4QuoUYm7H4vMpdRfgbpyvhJfctV',
           attributesAdded: [],
         },
       ],
     },
-    '8vYuJh8cJGWzYHFG5z42LCpx219obwXWc2Z9D1CJ5bJa': {
+    '7QnVMqUQguxM3MxNqRYX4sVX9DWJPY3TE1SEagW6z371': {
       status: 'dev',
       name: 'Propose Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '8vYuJh8cJGWzYHFG5z42LCpx219obwXWc2Z9D1CJ5bJa',
+          repositoryVersionIndex: 1,
+          typeBlueId: '7QnVMqUQguxM3MxNqRYX4sVX9DWJPY3TE1SEagW6z371',
           attributesAdded: [],
         },
       ],
@@ -146,24 +146,24 @@ const meta: { name: string; typesMeta: Record<string, unknown> } = {
         },
       ],
     },
-    J3eHxcp4f3sKC2zohWMWLo5AvWAi2DJiNBPkExd1EhvU: {
+    '9dhHG1LpwkNSRrds8zMZquTEy4DV8UFkRVJRF5H15QYV': {
       status: 'dev',
       name: 'Reject Change Operation',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: 'J3eHxcp4f3sKC2zohWMWLo5AvWAi2DJiNBPkExd1EhvU',
+          repositoryVersionIndex: 1,
+          typeBlueId: '9dhHG1LpwkNSRrds8zMZquTEy4DV8UFkRVJRF5H15QYV',
           attributesAdded: [],
         },
       ],
     },
-    '9pyaCAF3GguLmRNGwhVLhXNqpvPsTtLpSdEuZCPpvRoT': {
+    CrDGdNaZbF1XLkM1XY88c5mcHgPENYKgRTFtav8rHRU5: {
       status: 'dev',
       name: 'Reject Change Workflow',
       versions: [
         {
-          repositoryVersionIndex: 0,
-          typeBlueId: '9pyaCAF3GguLmRNGwhVLhXNqpvPsTtLpSdEuZCPpvRoT',
+          repositoryVersionIndex: 1,
+          typeBlueId: 'CrDGdNaZbF1XLkM1XY88c5mcHgPENYKgRTFtav8rHRU5',
           attributesAdded: [],
         },
       ],

@@ -4,13 +4,13 @@ export const CdmProductAssetFieldWithMetaSpreadScheduleTypeEnum: Record<
 > = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'cdm/product/asset/FieldWithMetaSpreadScheduleTypeEnum',
   val: {
     type: {
-      blueId: 'EakZSquKh6nNrGeVqD4Jn7fEVe48f55oM2KdN21fjZhY',
+      blueId: 'HmnCfRUBwvV8xrKyQQ29sPpRqzYrLeCYBnm66yxQH6RF',
     },
   },
 };

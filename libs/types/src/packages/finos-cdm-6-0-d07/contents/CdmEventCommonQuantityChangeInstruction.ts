@@ -4,7 +4,7 @@ export const CdmEventCommonQuantityChangeInstruction: Record<string, unknown> =
       description:
         'Quantity by which the trade is being increased, decreased or replaced, and the price at which such quantity change is agreed. The quantity change should always be specified as a positive number, with the direction (increase/decrease/replacement) being specified by the direction enumeration. A fee can also be associated to the quantity change by specifying a Price component of type CashPrice, including the corresponding settlement date and direction.\n',
       itemType: {
-        blueId: '2C9DbWa8E4D3cXHSXuDyYmWwrs1ySFopMnyA3XWWesm8',
+        blueId: '4XEYGgCSfXx2tFwmQjMsXhuwaCjsNZ42jtKAcr8itiqe',
       },
       schema: {
         minItems: 1,
@@ -22,14 +22,14 @@ export const CdmEventCommonQuantityChangeInstruction: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: '3PEKcTxZjwjadkRHkdE5cLAN5jWQkiSt4SmaU1mwZbgZ',
+        blueId: '99pdBM1fnVJLa2mfpj5KYGRAJzC1KXhBkbDnVsRWsZyb',
       },
     },
     lotIdentifier: {
       description:
         'Identifier for the new lot (in case of increase) or for the existing lot to be changed(in case of decrease or replacement). This optional attribute is mandatory in case of a decrease or replacement if the initial trade state contains multiple trade lots.\n',
       itemType: {
-        blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+        blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
       },
       schema: {
         minItems: 0,

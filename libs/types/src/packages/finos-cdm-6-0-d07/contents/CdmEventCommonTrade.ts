@@ -3,7 +3,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       "Represents a party's granular account information, which may be used in subsequent internal processing.",
     itemType: {
-      blueId: 'HCfJUUx9k8N8QqUgtRQZDaSkcsnmcWrN6CsVeT5ViMfM',
+      blueId: 'Ci7ty5zffGzjgsQdhnezMazESuasmjVRABXcDJanwgLf',
     },
     schema: {
       minItems: 0,
@@ -16,14 +16,14 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'Specifies the conditions that govern the adjustment to the quantity of a product being traded: e.g. execution, portfolio rebalancing etc. It is typically used in the context of Equity Swaps.\n',
     type: {
-      blueId: 'Fu36EUGcA7u8BqhZftYyUEUqgrd4mi4LXffiZx7DXTvo',
+      blueId: 'JDTKqVSFgAW8D49b5dnvsCk1uam8HJqLTHTDgrFTMBA5',
     },
   },
   ancillaryParty: {
     description:
       'Specifies the parties with ancillary roles in the transaction. The product is agnostic to the actual parties involved in the transaction, with the party references abstracted away from the product definition and replaced by the AncillaryRoleEnum. The AncillaryRoleEnum can then be positioned in the product and this AncillaryParty type, which is positioned outside of the product definition, allows the AncillaryRoleEnum to be associated with an actual party reference.\n',
     itemType: {
-      blueId: '3FLaoJ8BXZUb3VpFoXQ7ACwUhTaDAZgwztubj17GegH4',
+      blueId: '4iPHY4aygMFyDNb5teEsJeb7EyeK3CitfuP7DqfgnT1w',
     },
     schema: {
       minItems: 0,
@@ -42,21 +42,21 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
   collateral: {
     description: 'Represents the collateral obligations of a party.',
     type: {
-      blueId: '6jhHzxNcd11YEG9a9f1yBWhmm5qpzmbZ6E7JEqHpPj7r',
+      blueId: 'CMbZdR1wHnpwviTkU9fmf4tki9sWinxrSZWks1aEdhJu',
     },
   },
   contractDetails: {
     description:
       'Represents information specific to trades involving contractual products.',
     type: {
-      blueId: 'G6a8EHMCBFTctoKK7wpHrSKyqmnPqZLuyEMGhXiaHYzB',
+      blueId: 'BXgG7tSKyVPTPd3ka1B5M5ZoyxvrmzK9sqFZJ5MXrvUk',
     },
   },
   counterparty: {
     description:
       'Specifies the parties which are the two counterparties to the transaction.  The product is agnostic to the actual parties to the transaction, with the party references abstracted away from the product definition and replaced by the counterparty enum (e.g. CounterpartyEnum values Party1 or Party2). The counterparty enum can then be positioned in the product (e.g. to specify which counterparty is the payer, receiver etc) and this counterparties attribute, which is positioned outside of the product definition, allows the counterparty enum to be associated with an actual party reference.\n',
     itemType: {
-      blueId: '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x',
+      blueId: '57Lwnif22McYRjgDzSyRZTsqY1Ac9LMSJcJ9KRXKiE6w',
     },
     schema: {
       maxItems: 2,
@@ -72,7 +72,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'Represents information specific to trades that arose from executions.',
     type: {
-      blueId: '34vDDjWK88raLcbwzsk1RG6XiYVNqS2twvW2mBVySxxe',
+      blueId: 'GXAR1SUGjpvZsUZvh3feCdkEXnfGS76pgRRAwtrV4BAA',
     },
   },
   name: 'cdm/event/common/Trade',
@@ -80,7 +80,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'Represents the parties to the trade. The cardinality is optional to address the case where the trade is defined within a BusinessEvent data type, in which case the party is specified in BusinessEvent.\n',
     itemType: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
     schema: {
       minItems: 0,
@@ -93,7 +93,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'Represents the role each specified party takes in the trade. further to the principal roles, payer and receiver.\n',
     itemType: {
-      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+      blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
     },
     schema: {
       minItems: 0,
@@ -106,7 +106,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'The underlying product to be included in a contract or execution.',
     type: {
-      blueId: '8uQuzNQKBLC5kpFy4UH3BU7PPtpbRZEfLQ2ftrsgLHbm#4',
+      blueId: '52zbUBnH8375AE19gNSXRU7GgGs5tcoUhR84LVdMrBWi#5',
     },
   },
   tradeDate: {
@@ -115,14 +115,14 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   tradeIdentifier: {
     description:
       'Represents the identifier(s) that uniquely identify a trade for an identity issuer. A trade can include multiple identifiers, for example a trade that is reportable to both the CFTC and ESMA, and then has an associated USI (Unique Swap Identifier) UTI (Unique Trade Identifier).\n',
     itemType: {
-      blueId: '6zgzXM8ryqdp6CFr8BH4PKyJcHZsjXogtRiA2DcyKgBU',
+      blueId: 'FGujWvfXdExA7nDNwp6iHf3hWYRL3g9JS9EZfYhS7N2y',
     },
     schema: {
       minItems: 1,
@@ -135,7 +135,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'Specifies the price, quantity and effective date of each trade lot, when the same product may be traded multiple times in different lots with the same counterparty. In a trade increase, a new trade lot is added to the list, with the corresponding effective date. In a trade decrease, the existing trade lot(s) are decreased of the corresponding quantity (and an unwind fee may have to be settled). The multiple cardinality and the ability to increase existing trades is used for Equity Swaps in particular.\n',
     itemType: {
-      blueId: 'BmdnVkDXfdg2N2r7qgbCGTcmvRVJJCeGYWgqPEVPtqns',
+      blueId: 'HwkEbgYkrYCDgT4YrxJHmaJVigftQBmkyttz9NLVtre6',
     },
     schema: {
       minItems: 1,
@@ -148,7 +148,7 @@ export const CdmEventCommonTrade: Record<string, unknown> = {
     description:
       'Denotes the trade time and timezone as agreed by the parties to the trade.',
     type: {
-      blueId: 'DuGS3hb9QASiMfVarVtXqrw8YdvHS99bzooo3dinungf',
+      blueId: '6XsZzNy8iHgmk7eDnmTPs7QFCthawsNg96517G4uThjP',
     },
   },
 };

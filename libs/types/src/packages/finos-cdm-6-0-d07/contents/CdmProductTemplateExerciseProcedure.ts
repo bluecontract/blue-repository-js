@@ -29,7 +29,7 @@ export const CdmProductTemplateExerciseProcedure: Record<string, unknown> = {
     description:
       "Specifies that the notice of exercise must be given by the buyer to the seller or seller's agent.",
     type: {
-      blueId: '2PgTgt4qH9bmia6Zfzyn13BPBa6T1NX5cpy1x7F86H9N',
+      blueId: 'J2rfZkkcmLdqaJVQuSM1CSyLgS3dHyc4H6odzzVhF4jw',
     },
   },
   name: 'cdm/product/template/ExerciseProcedure',

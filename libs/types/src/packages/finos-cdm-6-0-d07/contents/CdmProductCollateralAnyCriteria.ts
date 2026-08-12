@@ -1,7 +1,7 @@
 export const CdmProductCollateralAnyCriteria: Record<string, unknown> = {
   anyCriteria: {
     itemType: {
-      blueId: 'this#1',
+      blueId: 'this#0',
     },
     schema: {
       minItems: 2,

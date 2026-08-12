@@ -6,14 +6,14 @@ export const CdmObservableEventObservationIdentifier: Record<string, unknown> =
       description:
         'Specifies the method according to which an amount or a date is determined.',
       type: {
-        blueId: '4Gy7A4j9sYhPf8Eqd9dXLdUFBWPHMDXxiV4n5VNAsmQF',
+        blueId: 'Fhi93wJfXrWgPY9spj9SbzZzgnHf8qeKHwSrvxFtgrEU',
       },
     },
     informationSource: {
       description:
         'Represents where the market data published and should be observed.',
       type: {
-        blueId: '5x9dr8ixBaX8QXWdiNGeuyFn1GS9wN5xkpfrxHhKLC2y',
+        blueId: 'DBw7um9gNRcqAbnknhfeiUnCkzs6Q2yp3aFtBkKuZ8S5',
       },
     },
     name: 'cdm/observable/event/ObservationIdentifier',
@@ -24,7 +24,7 @@ export const CdmObservableEventObservationIdentifier: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'xQiQzMuZW6Q8gjgsvtqDYP1yE3C8KQUXtUp3fFAr7HS',
+        blueId: 'DXTyjwoR6uArYEUFJyE6a94sYYNV39vXWVYB7iLGSdv2',
       },
     },
     observationDate: {
@@ -40,7 +40,7 @@ export const CdmObservableEventObservationIdentifier: Record<string, unknown> =
     observationTime: {
       description: 'Represents the time and time-zone.',
       type: {
-        blueId: 'A5epowY7nXCnh1AWLF3H4Zv7YyXwwAFethePAEeyAQ92',
+        blueId: '3jiEy2e5MqwFVX3zkALqRNFaBpD4DawUCg1iYwfFzeca',
       },
     },
   };

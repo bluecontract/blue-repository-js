@@ -20,7 +20,7 @@ export const CdmProductAssetPriceReturnTerms: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'EvqKp8C4TsU58D4ZoFC8ba55Fdq8Qeka9NmEAAuioCk3',
+      blueId: '3fgHuNXJoi7veV1sJapyuahexc4gzfBdPJ5JVBdUSiHn',
     },
   },
 };

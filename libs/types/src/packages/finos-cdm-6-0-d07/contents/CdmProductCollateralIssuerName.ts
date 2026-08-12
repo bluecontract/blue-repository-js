@@ -5,7 +5,7 @@ export const CdmProductCollateralIssuerName: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '6LRw3aCeJHKD7qGzs2HvJDoQiMs8QddUf5wSr4oagtuS',
+      blueId: 'J5hsqA8x6vAprJRs7gFhvm5bsp5TZNBgEdhytAapat8y',
     },
   },
   name: 'cdm/product/collateral/IssuerName',

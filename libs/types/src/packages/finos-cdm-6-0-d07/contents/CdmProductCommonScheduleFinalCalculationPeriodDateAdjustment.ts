@@ -9,7 +9,7 @@ export const CdmProductCommonScheduleFinalCalculationPeriodDateAdjustment: Recor
       required: true,
     },
     type: {
-      blueId: 'UEYhmdmBmLhrdtL1ThGtACP6Ljtvao5EVBeQdbiB2XJ',
+      blueId: '4nDV142exufoEvXv8wAPT7GVTpvQw7t3yETBpT9G6aWX',
     },
   },
   description:

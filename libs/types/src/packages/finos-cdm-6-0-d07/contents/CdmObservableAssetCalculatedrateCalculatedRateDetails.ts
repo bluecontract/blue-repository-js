@@ -54,7 +54,7 @@ export const CdmObservableAssetCalculatedrateCalculatedRateDetails: Record<
   observations: {
     description: 'The observation dates and weights for each observation date.',
     type: {
-      blueId: '4A7KRZp8xfcHRGGZtVf7xSp75Hu97uNM4dk6MD5ezR9W',
+      blueId: '7Kqgo4RtJQZGhk5UdaMbXdKzqsfxFftZELqoLU9FoXyE',
     },
   },
   weightedRates: {

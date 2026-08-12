@@ -2,7 +2,7 @@ export const CdmEventCommonMarginCallResponseAction: Record<string, unknown> = {
   collateralPositionComponent: {
     description: 'Specifies the collateral to be moved and its direction.',
     itemType: {
-      blueId: '9Pn2rDgMph8R9xESVmd1HEN7zV1kPPCcUAMomnz2RDAT',
+      blueId: 'GtabA8b7typ1gjwtAYshA1eaECFCwLWHkBauTVQ8PMpV',
     },
     schema: {
       minItems: 1,
@@ -20,7 +20,7 @@ export const CdmEventCommonMarginCallResponseAction: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '9CwCB3Fnvz24SzGuu8TbsuxrVJz8FFCvQCzGsfUyEjHK',
+      blueId: 'Dy79m3owCNn7dpCvsFfY1sEPZJQ48TPExyAXJVFD8Wdf',
     },
   },
   name: 'cdm/event/common/MarginCallResponseAction',

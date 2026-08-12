@@ -6,7 +6,7 @@ export const CdmBaseDatetimeBusinessCenterTime: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'EtUp3RuaDWzJnGNfgdjWD82gBrcgUyd6KM7cMfBajMzy',
+      blueId: '5kncd2YXvmwkRzZPfFr5Ji5fZfkk9WoNmLNAkjcvS9cD',
     },
   },
   description:

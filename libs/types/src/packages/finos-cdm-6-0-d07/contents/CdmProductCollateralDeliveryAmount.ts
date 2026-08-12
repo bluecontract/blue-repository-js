@@ -12,7 +12,7 @@ export const CdmProductCollateralDeliveryAmount: Record<string, unknown> = {
   standardElection: {
     description: 'The standard election as specified by an enumeration.',
     type: {
-      blueId: 'ASFFM9ufg5x7Gsa379ue1XqS24UGxKLYAdFAPeQif8Zh',
+      blueId: 'Eq8n3kZZieduuUfLMpJqLPgN1h3SqM4UKTV9cdCD54Lb',
     },
   },
 };

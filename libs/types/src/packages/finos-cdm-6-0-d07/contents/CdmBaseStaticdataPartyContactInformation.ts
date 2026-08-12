@@ -3,7 +3,7 @@ export const CdmBaseStaticdataPartyContactInformation: Record<string, unknown> =
     address: {
       description: 'The street/postal address.',
       itemType: {
-        blueId: 'BMokXsNGeVbH3hGbewvBy1NG4V2DoVoJ7LRURPqGQ2Hz',
+        blueId: '8QX9Mbix2tC4kxbpLrBPKAiRT3VePTJKerY8aff9tAD7',
       },
       schema: {
         minItems: 0,
@@ -30,7 +30,7 @@ export const CdmBaseStaticdataPartyContactInformation: Record<string, unknown> =
     telephone: {
       description: 'The telephone number.',
       itemType: {
-        blueId: '7kBg2fFNHjAkhkMGJPiz8uovR4bTqF6RJzCUk6YKB2Aq',
+        blueId: 'CeKrYKeSQpN1Zz5XRY4kufruqx7W43H5TYXFKMsoKdig',
       },
       schema: {
         minItems: 0,

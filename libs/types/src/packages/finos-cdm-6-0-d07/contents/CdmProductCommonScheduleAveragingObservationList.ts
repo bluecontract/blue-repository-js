@@ -5,7 +5,7 @@ export const CdmProductCommonScheduleAveragingObservationList: Record<
   averagingObservation: {
     description: 'A single weighted averaging observation.',
     itemType: {
-      blueId: '6BCHpCe7FxvsdKprgbdq44ovxXH55YFYtLRFtqQ4KyeE',
+      blueId: '5jbrKEdeaZCSfkppBxBVvnHFdgPyL4zSPXtnrrWGT1RD',
     },
     schema: {
       minItems: 1,

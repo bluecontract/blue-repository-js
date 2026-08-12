@@ -5,7 +5,7 @@ export const CdmProductCommonScheduleLag: Record<string, unknown> = {
     description:
       'Defines the offset of the series of pricing dates relative to the calculation period.',
     type: {
-      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
+      blueId: 'GWTMGPw1zgQW3M9NUS6RxNtce5jWU9defVNkm7sV6b8L',
     },
   },
   lagDuration: {
@@ -15,7 +15,7 @@ export const CdmProductCommonScheduleLag: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
+      blueId: 'GWTMGPw1zgQW3M9NUS6RxNtce5jWU9defVNkm7sV6b8L',
     },
   },
   name: 'cdm/product/common/schedule/Lag',

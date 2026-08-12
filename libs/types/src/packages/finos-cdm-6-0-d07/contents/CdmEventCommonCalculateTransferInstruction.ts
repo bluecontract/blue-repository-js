@@ -12,7 +12,7 @@ export const CdmEventCommonCalculateTransferInstruction: Record<
   name: 'cdm/event/common/CalculateTransferInstruction',
   payerReceiver: {
     type: {
-      blueId: '3xPof2WJyFXisFtvaxpSGddTxHyGioazbsMJjuUucbzT',
+      blueId: 'JDAXkucJ2m4yHJZmHoTSjW5ZioDKLBu2dbM6gerfoyHn',
     },
   },
   payout: {
@@ -27,12 +27,12 @@ export const CdmEventCommonCalculateTransferInstruction: Record<
     description:
       'Specifies quantity amount returned if not the full amount from the TradeState, e.g. partial return',
     type: {
-      blueId: 'DGJZYRtm8AD2nG2o56eH5EDc8FujZiiXmBsuHgLf3UCR',
+      blueId: 'AdJnZG9c8KBZpbUXw47UmJ1yNJN4AK3q9P9aMJjaKanN',
     },
   },
   resets: {
     itemType: {
-      blueId: 'C2cq6aR7yoFg7jn9vV3wrTukUrevaRzkBo4PeSWP5die',
+      blueId: '7vPrkkWh58nfDDkqkzYizHoGeQi5BC57ZpmFndxmft9R',
     },
     schema: {
       minItems: 0,
@@ -46,7 +46,7 @@ export const CdmEventCommonCalculateTransferInstruction: Record<
       required: true,
     },
     type: {
-      blueId: 'HxxzM9rdFcBDqPQ5HzDD9UxLqocN3L7WNYNZvEdpnWJd',
+      blueId: '7FB6ca7DYRSDuwzXQm4kVBg9cea9CR3KuhT8hiffquh9',
     },
   },
 };

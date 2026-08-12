@@ -16,7 +16,7 @@ export const CdmProductCommonSettlementPaymentDiscounting: Record<
     description:
       'The amount representing the present value of the forecast payment.',
     type: {
-      blueId: '7eyr2kXubNSHtLXpHJ9G8NqtmDXLfmDmHQZSkLa9qkyy',
+      blueId: 'A6JZXX4Rug3aj7cJh48V6FeziSECwFQzyrJ1xUwd9kii',
     },
   },
 };

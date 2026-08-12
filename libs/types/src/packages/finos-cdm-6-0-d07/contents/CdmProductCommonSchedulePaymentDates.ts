@@ -20,35 +20,35 @@ export const CdmProductCommonSchedulePaymentDates: Record<string, unknown> = {
     description:
       'The definition of the business day convention and financial business centers used for adjusting the payment date if it would otherwise fall on a day that is not a business day in the specified business center.\n',
     type: {
-      blueId: '8ZhZC2EwhTqHnDvvcr2ZW4iwCBJM57NcLAqPCd8shypq',
+      blueId: 'AKAczd79wtoD2Vt7VjdFdnWeacw86mQTVeLcyS9SWFZz',
     },
   },
   paymentDateSchedule: {
     description:
       'The payment dates when specified as relative to a set of dates specified somewhere else in the instance document/transaction, e.g. the valuation dates as typically the case for equity swaps, or when specified as a calculation period schedule.\n',
     type: {
-      blueId: '21vD19q8M9BVLcNChK9mx3GcJ7VRagziHdvCXtj5AFCk',
+      blueId: '5ainWhfaXWmH8cuLAXt9iVt1xiJokPwZ2FBc2SYNGRMF',
     },
   },
   paymentDaysOffset: {
     description:
       'If early payment or delayed payment is required, specifies the number of days offset that the payment occurs relative to what would otherwise be the unadjusted payment date. The offset can be specified in terms of either calendar or business days. Even in the case of a calendar days offset, the resulting payment date, adjusted for the specified calendar days offset, will still be adjusted in accordance with the specified payment dates adjustments. This element should only be included if early or delayed payment is applicable, i.e. if the periodMultiplier element value is not equal to zero. An early payment would be indicated by a negative periodMultiplier element value and a delayed payment (or payment lag) would be indicated by a positive periodMultiplier element value.\n',
     type: {
-      blueId: 'GcgyRFiq68rKDTw1wtJsfsUpu4hBukUsv29vavmPQmrZ',
+      blueId: 'GWTMGPw1zgQW3M9NUS6RxNtce5jWU9defVNkm7sV6b8L',
     },
   },
   paymentFrequency: {
     description:
       'The frequency at which regular payment dates occur. If the payment frequency is equal to the frequency defined in the calculation period dates component then one calculation period contributes to each payment amount. If the payment frequency is less frequent than the frequency defined in the calculation period dates component then more than one calculation period will contribute to the payment amount. A payment frequency more frequent than the calculation period frequency or one that is not a multiple of the calculation period frequency is invalid. If the payment frequency is of value T (term), the period is defined by the effectiveDate and the terminationDate.\n',
     type: {
-      blueId: '66A3jW7LyiNtMy7z2YQQFpSs2dyBatQtY1MXhCSnvNPC',
+      blueId: '2DcHFUdmvnUmoKpU2Ams5asKp2FjTWgEDMMrEiZUL3Bi',
     },
   },
   payRelativeTo: {
     description:
       'Specifies whether the payments occur relative to each adjusted calculation period start date or end date, each reset date, valuation date or the last pricing date. Calculation period start date means relative to the start of the first calculation period contributing to a given payment. Similarly, calculation period end date means the end of the last calculation period contributing to a given payment. The valuation date is applicable for Brazilian-CDI and equity swaps.\n',
     type: {
-      blueId: '6w9Y1wNfyQCQMPw3tuPpDbjFcKki2M2zaFeTRXCgcGfF',
+      blueId: '4EzoEo3dUznVuJ5u3FRBicnYoijDtwyRj3XLQxEdE1Hn',
     },
   },
 };

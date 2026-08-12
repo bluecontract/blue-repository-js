@@ -8,14 +8,14 @@ export const CdmProductTemplateEarlyTerminationProvision: Record<
     description:
       'A mandatory early termination provision to terminate the swap at fair value.',
     type: {
-      blueId: 'C6BHM5uzagsmiKxWqshqYj8ZhE13jTZuXKcAaJG5Lbsh',
+      blueId: 'BV6rxiJFw1LMjpogdxDcwRjeUuJHDcR1ngiTtfUrN68U',
     },
   },
   mandatoryEarlyTerminationDateTenor: {
     description:
       'Period after trade date of the mandatory early termination date.',
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
   name: 'cdm/product/template/EarlyTerminationProvision',
@@ -23,14 +23,14 @@ export const CdmProductTemplateEarlyTerminationProvision: Record<
     description:
       'An option for either or both parties to terminate the swap at fair value.',
     type: {
-      blueId: '9qZESRoTw3JVrvChnNta2oj5TcTb7RV9ijcSRtnuCQvs',
+      blueId: '6C7tBK3FPYoExviSwCvn8xbhCtRb4ZzoCViwrkrmXHDm',
     },
   },
   optionalEarlyTerminationParameters: {
     description:
       'Definition of the first early termination date and the frequency of the termination dates subsequent to that. American exercise is defined by having a frequency of one day.\n',
     type: {
-      blueId: 'HUVjH3KGpFwoVaPyrgN35iMi95ckgPM1rjoMfUvcfmNe',
+      blueId: '5a1f8zsBnaT6JRJuJ3mwNA5EhwnrySGAijHK6TyE8NLv',
     },
   },
 };

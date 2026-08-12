@@ -1,7 +1,7 @@
 export const ComRosettaModelFieldWithMetaString: Record<string, unknown> = {
   meta: {
     type: {
-      blueId: '7r4cq2XeiqEimWoNu6KjYkx2StpkARD8adiXz8dSETZj',
+      blueId: 'DWEaxDaREtLrXbX5ueFbRfuQDdqm5uLR1YKxgfDm1Ehv',
     },
   },
   name: 'com/rosetta/model/FieldWithMetaString',

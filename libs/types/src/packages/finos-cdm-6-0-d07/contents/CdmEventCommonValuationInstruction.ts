@@ -14,7 +14,7 @@ export const CdmEventCommonValuationInstruction: Record<string, unknown> = {
   valuation: {
     description: 'Contains all information related to a valuation.',
     itemType: {
-      blueId: '35r3StzAH6Qus8FCSpiCqqUrKHx9d4SYBCL2gEecgCJq',
+      blueId: '7fUqjcMznRtsQXbh382nhVNPoG8pPi1kH6C6QRJ1NXii',
     },
     schema: {
       minItems: 1,

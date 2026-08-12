@@ -9,14 +9,14 @@ export const CdmProductTemplateNonTransferableProduct: Record<string, unknown> =
         required: true,
       },
       type: {
-        blueId: 'this#6',
+        blueId: 'this#9',
       },
     },
     identifier: {
       description:
         'Comprises a identifier and a source to uniquely identify the nonTransferableProduct.',
       itemType: {
-        blueId: 'GFVh22HvpZREhKsn8HDuBiUrwRScVzwx6ZnNNmZrisx9',
+        blueId: 'FnPPihH443SKbNrwapeK3w4TS3YG23ns1dkQMnVkD5fp',
       },
       schema: {
         minItems: 0,
@@ -30,7 +30,7 @@ export const CdmProductTemplateNonTransferableProduct: Record<string, unknown> =
       description:
         'Specifies the product taxonomy, which is composed of a taxonomy value and a taxonomy source.',
       itemType: {
-        blueId: '4Yp9gtVpX1NNhVLvRCpFGS3MvbUnmDXUmuAKSDYaTNWN',
+        blueId: 'zhu6Vg1U6muAYReiYsG2Xh1wrN4VDaeeREHBY7A8wtc',
       },
       schema: {
         minItems: 0,

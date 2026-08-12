@@ -11,7 +11,7 @@ export const CdmBaseStaticdataAssetCommonProductIdentifier: Record<
       required: true,
     },
     type: {
-      blueId: 'HTDqFgte5VF88dLHnCZMjvyetfxfTAKxf9r8ciErE7Vg',
+      blueId: 'HvrBWWRL9WzJPU9bs48T3Uf9CcUgCfqtEszZPN3tYS3n',
     },
   },
   name: 'cdm/base/staticdata/asset/common/ProductIdentifier',
@@ -21,7 +21,7 @@ export const CdmBaseStaticdataAssetCommonProductIdentifier: Record<
       required: true,
     },
     type: {
-      blueId: 'Eo87ZezRqLBDT3fRPNRexD992udkMVK8vj65DfWNoF4b',
+      blueId: 'HbfxwN6HWKa7Na2KKhwUNb3q2x3YJi6VaC29NcUEsdSB',
     },
   },
 };

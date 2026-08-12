@@ -16,7 +16,7 @@ export const CdmBaseDatetimeCalculationPeriodFrequency: Record<
     description:
       'A time period, e.g. a day, week, month, year or term of the stream.',
     type: {
-      blueId: 'BLwQ9sW7unThpYZC3TVs8YtMmiAoZ4NVGjVRppu4gm7x',
+      blueId: '8g5Z7Xf3wFDD2QY1rGqmTjeY7EvWWEsxUiKyX6UbH8kp',
     },
   },
   periodMultiplier: {
@@ -33,7 +33,7 @@ export const CdmBaseDatetimeCalculationPeriodFrequency: Record<
       required: true,
     },
     type: {
-      blueId: '5vi7aU3GvfLQ4xDo1Ud6tENVfH6eddFwtnAbqXHuxMfi',
+      blueId: 'GxfgSxqafB73DXXwjJx4sXU3P96NoGFSnDx7p4Z9L14d',
     },
   },
 };

@@ -6,7 +6,7 @@ export const CdmBaseDatetimeAveragingSchedule: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'CkosQzywFhAU6NAYFKUn1Q9gvuL9kvbk3rfWxAdrAsce',
+      blueId: '9F3YEUELa9MSY4ykUnh7PrK9r3EBLoFcHS5v18N9rRrb',
     },
   },
   description:

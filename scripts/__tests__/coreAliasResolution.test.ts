@@ -5,6 +5,10 @@ import type {
   BlueRepositoryMeta,
   BlueRepositoryPackage,
 } from '../lib/repositoryTypesBuilder';
+import {
+  BLUE_CONTRACTS_RUNTIME_REGISTRY_PACKAGE_IDENTITY,
+  CONTRACTS_RUNTIME_BLUE_IDS_BY_KEY,
+} from '../lib/registry/contractsRuntimeRegistry';
 
 describe('core primitive resolution', () => {
   it('uses language core ids without relying on aliases', () => {
@@ -92,5 +96,47 @@ describe('core primitive resolution', () => {
 
     expect(source).toContain('zod.object(');
     expect(source).toContain('policyChannel: blueNodeField().optional()');
+  });
+
+  it('accepts production runtime BlueIds from the verified Contracts registry', () => {
+    expect(BLUE_CONTRACTS_RUNTIME_REGISTRY_PACKAGE_IDENTITY).toBe(
+      'sha256:46a7744c1cbfa4b00e1d8a99f6ca3f0089ef697de968fee08547894ab02b0ca1'
+    );
+    expect(CONTRACTS_RUNTIME_BLUE_IDS_BY_KEY.size).toBe(24);
+
+    const markerId = CONTRACTS_RUNTIME_BLUE_IDS_BY_KEY.get('Marker');
+    const channelId = CONTRACTS_RUNTIME_BLUE_IDS_BY_KEY.get('Channel');
+    expect(markerId).toBe('8nWeksYEXxp5TBnRcYF5u3VsFHvMfxo4zjAFT6MLW8ZD');
+    expect(channelId).toBe('CaFMD5Tpz4LbGjJsftT3465hKBWa7Ti6dutYHnCSRQyR');
+
+    const meta: BlueRepositoryMeta = {
+      name: 'repo',
+      repositoryVersions: [],
+      version: '',
+      repoVersionIndexById: {},
+    };
+    const samplePackage: BlueRepositoryPackage = {
+      name: 'sample',
+      aliases: { 'sample/Actor Policy': 'ACTOR_POLICY' },
+      typesMeta: {
+        ACTOR_POLICY: {
+          status: 'stable',
+          name: 'Actor Policy',
+          versions: [],
+        },
+      },
+      contents: {
+        ACTOR_POLICY: {
+          name: 'Actor Policy',
+          type: { blueId: markerId },
+          policyChannel: { type: { blueId: channelId } },
+        },
+      },
+      schemas: {},
+    };
+
+    expect(() =>
+      compileValueSchemasFromRepository(meta, { sample: samplePackage })
+    ).not.toThrow();
   });
 });

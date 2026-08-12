@@ -4,10 +4,10 @@ export const ChangeOperation: Record<string, unknown> = {
   name: 'Change Operation',
   request: {
     type: {
-      blueId: '6DTYzUFXoVEV5WjVKmQveSztfXfVN5nr1bso3ygW9ocU',
+      blueId: 'AVuAYKsZEMLjY3XwmKMe1LPrVAEo6R6FepDjPqgndF7J',
     },
   },
   type: {
-    blueId: 'Be766kx7kqFYGf96VtAc8Weofb3xkCRUTxSDVd317S2G',
+    blueId: '7pZPbabkYt8GUuY8JnALqhJ7gqoChfZoE5tKmU3gBpFv',
   },
 };

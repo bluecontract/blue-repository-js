@@ -6,7 +6,7 @@ export const CdmProductCollateralEligibleCollateralSpecification: Record<
     description:
       'Specification of the roles of the counterparties to the specification.',
     itemType: {
-      blueId: '58TeStN7sJrzoG3o1U7FZq3fFkxbCXkvdWPYYZkf1r3x',
+      blueId: '57Lwnif22McYRjgDzSyRZTsqY1Ac9LMSJcJ9KRXKiE6w',
     },
     schema: {
       maxItems: 2,
@@ -20,7 +20,7 @@ export const CdmProductCollateralEligibleCollateralSpecification: Record<
     description:
       'Represents a set of criteria used to specify eligible collateral.',
     itemType: {
-      blueId: '3GcdhwSwCmcXjxmxraErSqcv6hktXM5krtm5PeusABq6',
+      blueId: 'Dd4QK5kmBzsGcmhcqxkLLPiH2fBmE3acTHCBGWUW5Buq',
     },
     schema: {
       minItems: 1,
@@ -35,7 +35,7 @@ export const CdmProductCollateralEligibleCollateralSpecification: Record<
     description:
       'Specifies the identifier(s) to uniquely identify eligible collateral or a set of eligible collateral, such as a schedule or equivalant for an identity issuer.\n',
     itemType: {
-      blueId: '9tpFoqFu1yX5LZEATGF8CYsE5VSXhkQua9LMXwLEX2Pv',
+      blueId: '2uYMDSb9jahYcE91VXzzWYsnUVct3k5thb1czx4jPYF7',
     },
     schema: {
       minItems: 0,
@@ -48,7 +48,7 @@ export const CdmProductCollateralEligibleCollateralSpecification: Record<
   party: {
     description: 'The parties associated with the specification.',
     itemType: {
-      blueId: '3skPfLDtYJ59SZAAdcu2JDHySdtCEVu8FzTnUX8D5mfy',
+      blueId: 'DqdehuAibH9Q4aC2zYPJp37ysFFDSYwuUYRNYQCeevFd',
     },
     schema: {
       maxItems: 2,
@@ -62,7 +62,7 @@ export const CdmProductCollateralEligibleCollateralSpecification: Record<
     description:
       'Specifies the role(s) that each of the party(s) is playing in the context of the specification, eg Payor or Receiver.\n',
     itemType: {
-      blueId: 'Hrt2EoYJokASG9J62NMKWt8UZbQN6BwtESp7hVDVQYvm',
+      blueId: '6DrJREpu1Ms3M4U1q7jqGjM46V1o8vxq4K1i3X4dwMvz',
     },
     schema: {
       minItems: 0,

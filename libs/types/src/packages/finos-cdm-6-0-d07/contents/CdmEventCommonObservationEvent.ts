@@ -3,14 +3,14 @@ export const CdmEventCommonObservationEvent: Record<string, unknown> = {
     description:
       'Specifies the necessary information to create a corporate action.',
     type: {
-      blueId: 'Cd5dfDZ2vya9EXadanoFVVizmTtXVyCD3eetnLfjKM7R',
+      blueId: '8rrtQ7ufVFwqvtNre8bZWFUCfVmJgwVYWwZNj5N1aetV',
     },
   },
   creditEvent: {
     description:
       'Specifies the necessary information to create a credit event.',
     type: {
-      blueId: 'AVPqeTe3UbwZW8Fbubbmr4aPptrhVekU6a5UqnSKNLfH',
+      blueId: 'FQXirnKbUqf5LGWer2bQPVsYT4EWyAvu51iBJLTDfVi4',
     },
   },
   description:

@@ -4,7 +4,7 @@ export const CdmObservableAssetInterestRateCurve: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: '2qVsAJiDNKtcYeoPmttQzFLH44MsczpvMvQ9ZQvwUW6Z',
+      blueId: '9MWTLbKLsUSiaShABSSuHxaeJZ2aErzYPTqc28XefGr3',
     },
   },
   name: 'cdm/observable/asset/InterestRateCurve',
@@ -13,7 +13,7 @@ export const CdmObservableAssetInterestRateCurve: Record<string, unknown> = {
       required: true,
     },
     type: {
-      blueId: 'G5BwzTWEaA14NoPKn8iSwCnmwnWuQegPHZwrpgagS6kY',
+      blueId: '2eRPMxKZ8upfUGCDqNY6xXko7GTGvozudp1i9wznQmXL',
     },
   },
 };
