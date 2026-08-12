@@ -1,4 +1,4 @@
-export const LinkedPayNoteStarted = {
+export const LinkedPayNoteStarted: Record<string, unknown> = {
   description:
     'Confirmation that linked PayNote startup was requested successfully.',
   name: 'Linked PayNote Started',
@@ -6,16 +6,16 @@ export const LinkedPayNoteStarted = {
     description:
       'Document id of the bootstrapped linked PayNote when available.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   payNoteSessionId: {
     description: 'Session id of the bootstrapped linked PayNote document.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

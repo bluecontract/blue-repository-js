@@ -1,13 +1,13 @@
-export const ParticipantActivated = {
+export const ParticipantActivated: Record<string, unknown> = {
   channelName: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'Participant Activated',
   participant: {
     type: {
-      blueId: 'phD9k4YTUgGjWeLPKqXNNn6S1PmqSeBJfVscAnUwFhQ',
+      blueId: 'BDWxt7xTGsK2mZKinCxD4hENHUUfEtupZPtaYzwLmKJm',
     },
   },
-} as const;
+};

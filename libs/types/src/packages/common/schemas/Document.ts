@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const DocumentSchema = withTypeBlueId(blueIds['Common/Document'])(
-  z.object({
-    description: z.string().optional(),
-    kind: z.string().optional(),
-    name: z.string().optional(),
+const zod = z as any;
+
+export const DocumentSchema: any = withTypeBlueId(blueIds['Common/Document'])(
+  zod.object({
+    description: zod.string().optional(),
+    kind: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

@@ -11,14 +11,22 @@ import type {
   RepoContext,
   TypeInfo,
 } from './types.js';
+import { CONTRACTS_RUNTIME_BLUE_IDS_BY_KEY } from '../registry/contractsRuntimeRegistry.js';
 
 function resolveCoreTypeMap(): Record<string, string> {
   return Properties.CORE_TYPE_NAME_TO_BLUE_ID_MAP as Record<string, string>;
 }
 
+function resolveRuntimeTypeMap(): Record<string, string> {
+  return Properties.BLUE_CONTRACTS_RUNTIME_TYPE_NAME_TO_BLUE_ID_MAP as Record<
+    string,
+    string
+  >;
+}
+
 export function buildRepoContext(
   meta: BlueRepositoryMeta,
-  packages: Record<string, BlueRepositoryPackage>,
+  packages: Record<string, BlueRepositoryPackage>
 ): RepoContext {
   const typeIndex = new Map<BlueId, TypeInfo>();
   const toCurrent = new Map<BlueId, BlueId>();
@@ -50,6 +58,10 @@ export function buildRepoContext(
   const coreTypeMap = resolveCoreTypeMap();
   const { primitiveKindByBlueId, collectionKindByBlueId } =
     deriveCoreKindMaps(coreTypeMap);
+  const runtimeTypeBlueIds = new Set<BlueId>([
+    ...Object.values(resolveRuntimeTypeMap()),
+    ...CONTRACTS_RUNTIME_BLUE_IDS_BY_KEY.values(),
+  ]);
 
   return {
     meta,
@@ -59,6 +71,7 @@ export function buildRepoContext(
     aliasToBlueId,
     primitiveKindByBlueId,
     collectionKindByBlueId,
+    runtimeTypeBlueIds,
   };
 }
 

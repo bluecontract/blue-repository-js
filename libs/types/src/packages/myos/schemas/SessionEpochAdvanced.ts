@@ -1,18 +1,20 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 
-export const SessionEpochAdvancedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SessionEpochAdvancedSchema: any = withTypeBlueId(
   blueIds['MyOS/Session Epoch Advanced']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
+    description: zod.string().optional(),
     document: blueNodeField().optional(),
-    epoch: z.number().optional(),
-    name: z.string().optional(),
-    sessionId: z.string().optional(),
-    timestamp: z.string().optional(),
+    epoch: zod.number().optional(),
+    name: zod.string().optional(),
+    sessionId: zod.string().optional(),
+    timestamp: zod.string().optional(),
   })
 );
 

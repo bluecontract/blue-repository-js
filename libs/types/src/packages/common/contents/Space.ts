@@ -1,22 +1,15 @@
-export const Space = {
-  anchors: {
-    description:
-      'Optional named connection points where matching documents can link in.',
-    type: {
-      blueId: '3KRfhgbFdvyW9SGuKiq3WxWF9bHSATEb8tMso8Pykpre',
-    },
-  },
+export const Space: Record<string, unknown> = {
   description:
     'Broad document family for a long-lived place in some reality.\nUse it directly as the document `type` and express business meaning through\nthe top-level `kind`, such as `Online Shop`, `Legal Office`, or `Research Lab`.\n',
   name: 'Space',
   type: {
-    blueId: 'Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8',
+    blueId: 'B62tsckv8aQiyFAchgqgptfB5C6jtDPkS2pLT1h3G793',
   },
   website: {
     description:
       'Optional primary website or canonical public URL for this space.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-} as const;
+};

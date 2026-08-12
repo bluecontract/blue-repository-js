@@ -1,3 +1,3 @@
-export const MyOSParticipantsOrchestration = {
+export const MyOSParticipantsOrchestration: Record<string, unknown> = {
   name: 'MyOS Participants Orchestration',
-} as const;
+};

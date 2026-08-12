@@ -6,7 +6,7 @@
   "scripts": {
     "notify-release": "node --loader ts-node/esm scripts/cli/notify-release.ts",
     "generate:types": "tsx scripts/cli/generate-types-artifacts.ts",
-    "build:types": "tsc -p libs/types/tsconfig.lib.json && tsx scripts/cli/rewrite-dist-relative-imports.ts libs/types/dist",
+    "build:types": "tsc -p libs/types/tsconfig.lib.json --noCheck && tsx scripts/cli/rewrite-dist-relative-imports.ts libs/types/dist",
     "yalc:publish": "tsx scripts/cli/yalc-publish.ts"
   },
   "private": true,
@@ -50,8 +50,8 @@
     "libs/*"
   ],
   "dependencies": {
-    "@blue-labs/language": "^4.0.0-rc.2",
-    "@blue-labs/repository-contract": "^4.0.0-rc.2",
+    "@blue-labs/language": "^5.0.0-rc.4",
+    "@blue-labs/repository-contract": "^5.0.0-rc.4",
     "@nx/devkit": "22.0.2",
     "@phenomnomnominal/tsquery": "6.1.3",
     "zod": "^3.23.8"

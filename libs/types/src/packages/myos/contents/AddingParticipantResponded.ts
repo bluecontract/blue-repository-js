@@ -1,16 +1,16 @@
-export const AddingParticipantResponded = {
+export const AddingParticipantResponded: Record<string, unknown> = {
   name: 'Adding Participant Responded',
   request: {
     type: {
-      blueId: '98JmkF189jZpQRyzaiQxLbc2rRUqnRy2o6bH2qCRaBg3',
+      blueId: 'HEBuC9grhoHisjpjXHAgg2RZ494YHj4nKJWq7pQS6BxH',
     },
   },
   status: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

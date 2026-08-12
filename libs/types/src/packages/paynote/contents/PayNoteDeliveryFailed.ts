@@ -1,13 +1,13 @@
-export const PayNoteDeliveryFailed = {
+export const PayNoteDeliveryFailed: Record<string, unknown> = {
   description: 'Delivery failed for a non-identification reason.',
   name: 'PayNote Delivery Failed',
   reason: {
     description: 'Failure reason.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

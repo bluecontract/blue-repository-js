@@ -48,6 +48,29 @@ describe('generated value schemas', () => {
     ).toThrow();
   });
 
+  it('aliases a same-named parent schema from another package', async () => {
+    const principalActor = await fixture.importFromTypesPackage(
+      '@blue-repository/types/packages/myos/schemas/PrincipalActor'
+    );
+    const schema = (principalActor as { PrincipalActorSchema: ZodTypeAny })
+      .PrincipalActorSchema;
+
+    expect(() =>
+      schema.parse({ displayName: 'Alice', accountId: 'account-1' })
+    ).not.toThrow();
+    expect(() =>
+      schema.parse({ displayName: 'Alice', accountId: 1 })
+    ).toThrow();
+
+    const source = fixture.readTypesSource(
+      'src/packages/myos/schemas/PrincipalActor.ts'
+    );
+    expect(source).toContain(
+      'import { PrincipalActorSchema as BasePrincipalActorSchema }'
+    );
+    expect(source).toContain('BasePrincipalActorSchema.extend({');
+  });
+
   it('emits clean schema source without legacy builders', () => {
     const chatMessageSource = fs.readFileSync(
       path.join(

@@ -1,15 +1,18 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
+import { EventSchema } from '../../coordination/schemas/Event';
 import { ParticipantSchema } from './Participant';
 
-export const ParticipantResolvedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const ParticipantResolvedSchema: any = withTypeBlueId(
   blueIds['MyOS/Participant Resolved']
 )(
-  z.object({
-    channelName: z.string().optional(),
-    name: z.string().optional(),
-    participant: ParticipantSchema.optional(),
+  EventSchema.extend({
+    channelName: zod.string().optional(),
+    name: zod.string().optional(),
+    participant: zod.lazy(() => ParticipantSchema).optional(),
   })
 );
 

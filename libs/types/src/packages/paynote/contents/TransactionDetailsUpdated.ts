@@ -1,4 +1,4 @@
-export const TransactionDetailsUpdated = {
+export const TransactionDetailsUpdated: Record<string, unknown> = {
   description:
     'The Guarantor accepted and recorded updated transaction details.',
   name: 'Transaction Details Updated',
@@ -7,6 +7,6 @@ export const TransactionDetailsUpdated = {
       'Opaque transaction details payload confirmed by the Guarantor.',
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

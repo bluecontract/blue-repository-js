@@ -1,27 +1,27 @@
-export const CardChargeResponded = {
+export const CardChargeResponded: Record<string, unknown> = {
   description: 'Decision response for a card charge request.',
   name: 'Card Charge Responded',
   paymentMandateDocumentId: {
     description:
       'Payment Mandate document id used for this charge decision when available.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   reason: {
     description: 'Optional explanation for rejected or pending decisions.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   status: {
     description:
       'Request decision status ("accepted" | "rejected" | "pending").',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

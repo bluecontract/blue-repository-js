@@ -44,4 +44,67 @@ describe('unknown type references', () => {
       UnknownTypeReferenceError
     );
   });
+
+  it('resolves this# placeholders inside cyclic type groups', () => {
+    const meta: BlueRepositoryMeta = {
+      name: 'repo',
+      repositoryVersions: ['v1'],
+      version: 'v1',
+      repoVersionIndexById: { v1: 0 },
+    };
+
+    const packages: Record<string, BlueRepositoryPackage> = {
+      sample: {
+        name: 'sample',
+        aliases: {},
+        typesMeta: {
+          'GROUP#0': {
+            status: 'stable',
+            name: 'Alpha',
+            versions: [
+              {
+                repositoryVersionIndex: 0,
+                typeBlueId: 'GROUP#0',
+                attributesAdded: [],
+              },
+            ],
+          },
+          'GROUP#1': {
+            status: 'stable',
+            name: 'Beta',
+            versions: [
+              {
+                repositoryVersionIndex: 0,
+                typeBlueId: 'GROUP#1',
+                attributesAdded: [],
+              },
+            ],
+          },
+        },
+        contents: {
+          'GROUP#0': {
+            name: 'Alpha',
+            next: {
+              type: { blueId: 'this#1' },
+            },
+          },
+          'GROUP#1': {
+            name: 'Beta',
+            previous: {
+              type: { blueId: 'this#0' },
+            },
+          },
+        },
+        schemas: {},
+      },
+    };
+
+    const { perPackage } = compileValueSchemasFromRepository(meta, packages);
+    const source = perPackage.sample.perTypeFiles['packages/sample/schemas/Alpha.ts'];
+
+    expect(source).toContain("import { BetaSchema } from './Beta';");
+    expect(source).toContain(
+      'next: zod.lazy((): z.ZodTypeAny => BetaSchema).optional()',
+    );
+  });
 });

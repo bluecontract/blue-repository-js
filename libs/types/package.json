@@ -1,6 +1,6 @@
 {
   "name": "@blue-repository/types",
-  "version": "1.0.0-rc.0",
+  "version": "2.0.0-rc.6",
   "type": "module",
   "sideEffects": false,
   "repository": {
@@ -49,6 +49,14 @@
       "types": "./dist/packages/*/meta.d.ts",
       "default": "./dist/packages/*/meta.js"
     },
+    "./packages/bootstrap/schemas/*": {
+      "types": "./dist/packages/bootstrap/schemas/*.d.ts",
+      "default": "./dist/packages/bootstrap/schemas/*.js"
+    },
+    "./packages/bootstrap/contents/*": {
+      "types": "./dist/packages/bootstrap/contents/*.d.ts",
+      "default": "./dist/packages/bootstrap/contents/*.js"
+    },
     "./packages/common/schemas/*": {
       "types": "./dist/packages/common/schemas/*.d.ts",
       "default": "./dist/packages/common/schemas/*.js"
@@ -57,21 +65,29 @@
       "types": "./dist/packages/common/contents/*.d.ts",
       "default": "./dist/packages/common/contents/*.js"
     },
-    "./packages/conversation/schemas/*": {
-      "types": "./dist/packages/conversation/schemas/*.d.ts",
-      "default": "./dist/packages/conversation/schemas/*.js"
+    "./packages/coordination/schemas/*": {
+      "types": "./dist/packages/coordination/schemas/*.d.ts",
+      "default": "./dist/packages/coordination/schemas/*.js"
     },
-    "./packages/conversation/contents/*": {
-      "types": "./dist/packages/conversation/contents/*.d.ts",
-      "default": "./dist/packages/conversation/contents/*.js"
+    "./packages/coordination/contents/*": {
+      "types": "./dist/packages/coordination/contents/*.d.ts",
+      "default": "./dist/packages/coordination/contents/*.js"
     },
-    "./packages/core/schemas/*": {
-      "types": "./dist/packages/core/schemas/*.d.ts",
-      "default": "./dist/packages/core/schemas/*.js"
+    "./packages/finos-cdm-6-0-d07/schemas/*": {
+      "types": "./dist/packages/finos-cdm-6-0-d07/schemas/*.d.ts",
+      "default": "./dist/packages/finos-cdm-6-0-d07/schemas/*.js"
     },
-    "./packages/core/contents/*": {
-      "types": "./dist/packages/core/contents/*.d.ts",
-      "default": "./dist/packages/core/contents/*.js"
+    "./packages/finos-cdm-6-0-d07/contents/*": {
+      "types": "./dist/packages/finos-cdm-6-0-d07/contents/*.d.ts",
+      "default": "./dist/packages/finos-cdm-6-0-d07/contents/*.js"
+    },
+    "./packages/mandate/schemas/*": {
+      "types": "./dist/packages/mandate/schemas/*.d.ts",
+      "default": "./dist/packages/mandate/schemas/*.js"
+    },
+    "./packages/mandate/contents/*": {
+      "types": "./dist/packages/mandate/contents/*.d.ts",
+      "default": "./dist/packages/mandate/contents/*.js"
     },
     "./packages/myos/schemas/*": {
       "types": "./dist/packages/myos/schemas/*.d.ts",
@@ -88,6 +104,22 @@
     "./packages/paynote/contents/*": {
       "types": "./dist/packages/paynote/contents/*.d.ts",
       "default": "./dist/packages/paynote/contents/*.js"
+    },
+    "./packages/sessioninteraction/schemas/*": {
+      "types": "./dist/packages/sessioninteraction/schemas/*.d.ts",
+      "default": "./dist/packages/sessioninteraction/schemas/*.js"
+    },
+    "./packages/sessioninteraction/contents/*": {
+      "types": "./dist/packages/sessioninteraction/contents/*.d.ts",
+      "default": "./dist/packages/sessioninteraction/contents/*.js"
+    },
+    "./packages/workflows/schemas/*": {
+      "types": "./dist/packages/workflows/schemas/*.d.ts",
+      "default": "./dist/packages/workflows/schemas/*.js"
+    },
+    "./packages/workflows/contents/*": {
+      "types": "./dist/packages/workflows/contents/*.d.ts",
+      "default": "./dist/packages/workflows/contents/*.js"
     }
   },
   "files": [
@@ -100,6 +132,6 @@
   },
   "blueType": {
     "moduleName": "Blue Repository",
-    "moduleBlueId": "4FHogwc97KKFnxHBD9xf9zYav3SVXL5Wjs6K5gKHCji2"
+    "moduleBlueId": "Cbe3cUvjRWo3xk5JNW76YE7FiMRfzDdayLyVmxpNKggU"
   }
 }

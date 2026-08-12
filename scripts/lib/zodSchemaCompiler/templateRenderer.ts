@@ -35,6 +35,7 @@ function loadTemplate(filePath: string, cache: string | null): string {
 
 export function renderSchemaFile(data: {
   schemaName: string;
+  schemaTypeAnnotation: string;
   blueIdsKey: string;
   usesBlueNode: boolean;
   schemaImports: Array<{ importPath: string; typeNames: string[] }>;

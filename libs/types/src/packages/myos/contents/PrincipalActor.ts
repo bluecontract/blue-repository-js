@@ -1,13 +1,17 @@
-export const PrincipalActor = {
+export const PrincipalActor: Record<string, unknown> = {
   accountId: {
     description: 'MyOS account ID of the principal.',
+    schema: {
+      required: true,
+    },
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
-  description: 'The base type for a direct action by the account owner.',
+  description:
+    'Actor representing an action attributed directly to a MyOS account principal.',
   name: 'Principal Actor',
   type: {
-    blueId: 'CN5efWVizJbRsMCw8YWRfT2q9vM9XfeGDN9wFvYcvMnQ',
+    blueId: '23cWKG6LF47H1G3EfhV5dmEYtxkNaqLWgFDxEurdc6Ef',
   },
-} as const;
+};

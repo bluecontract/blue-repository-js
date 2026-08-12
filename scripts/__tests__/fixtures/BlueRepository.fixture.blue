@@ -18,7 +18,7 @@ packages:
           name: Chat Message
           message:
             type:
-              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: conversation-chat-message-v0
@@ -28,13 +28,23 @@ packages:
           name: Composite Timeline Channel
           channels:
             type:
-              blueId: 6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY
+              blueId: 8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF
             itemType:
               type:
-                blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+                blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: conversation-composite-timeline-channel-v0
+            attributesAdded: []
+      - status: stable
+        content:
+          name: Principal Actor
+          displayName:
+            type:
+              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: conversation-principal-actor-v0
             attributesAdded: []
   - name: MyOS
     types:
@@ -45,13 +55,25 @@ packages:
             schema:
               required: true
             type:
-              blueId: G7fBT9PSod1RfHLHkpafAGBDVAJMrMhAMY51ERcyXNrj
+              blueId: Efkz9D1ARMM7rU43w3rDNVqat1naS6qXKCqP4eHin3yG
             valueType:
               type:
-                blueId: 4EzhSubEimSQD3zrYHRtobfPPWntUuhEz8YcdxHsi12u
+                blueId: AwvXD961fmnmqcSQhjMA7r15HpVh39cefb6ZTyUz2Fm2
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: myos-document-session-bootstrap-v0
+            attributesAdded: []
+      - status: stable
+        content:
+          name: Principal Actor
+          type:
+            blueId: conversation-principal-actor-v0
+          accountId:
+            type:
+              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
+        versions:
+          - repositoryVersionIndex: 0
+            typeBlueId: myos-principal-actor-v0
             attributesAdded: []
   - name: Super Cool Package
     types:
@@ -60,7 +82,7 @@ packages:
           name: Super Cool Type
           message:
             type:
-              blueId: DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K
+              blueId: GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC
         versions:
           - repositoryVersionIndex: 0
             typeBlueId: super-cool-package-super-cool-type-v0

@@ -3,14 +3,16 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { MyOSAgentSchema } from './MyOSAgent';
 
-export const MyOSAgentChannelSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSAgentChannelSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Agent Channel']
 )(
-  z.object({
-    agent: MyOSAgentSchema.optional(),
-    description: z.string().optional(),
+  zod.object({
+    agent: zod.lazy(() => MyOSAgentSchema).optional(),
+    description: zod.string().optional(),
     event: blueNodeField().optional(),
-    name: z.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

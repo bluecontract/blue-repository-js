@@ -1,19 +1,24 @@
-export const MyOSTimelineChannel = {
+export const MyOSTimelineChannel: Record<string, unknown> = {
   accountId: {
     description: 'Account identifier for the MyOS timeline',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description: 'MyOS-specific Timeline Channel',
   email: {
     description: 'Email address associated with the MyOS timeline',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   name: 'MyOS Timeline Channel',
-  type: {
-    blueId: 'EvuCWsG1E6WJQg8QXmk6rwMANYTZjoLWVZ1vYQWUwdTH',
+  timeline: {
+    type: {
+      blueId: '5VAQp5thYLkzp3FbvYGmVvmdLqqu6pV5vhNgD14XJwpX',
+    },
   },
-} as const;
+  type: {
+    blueId: '8aohWT7jcoaC1j2siQzBxoKM8HhQ4HF13BkZDNnq5UHf',
+  },
+};

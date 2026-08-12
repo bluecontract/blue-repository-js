@@ -1,18 +1,18 @@
-export const Service = {
+export const Service: Record<string, unknown> = {
   categories: {
     description:
       'Optional broad categories used to help humans discover the service.',
     itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
     },
   },
   description:
     'Broad document family for a document that is itself a service offering.\nUse the top-level `kind` to describe the specific offering,\nsuch as `Legal Service`, `Tutoring Service`, or `Analytics Service`.\n',
   name: 'Service',
   type: {
-    blueId: 'Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8',
+    blueId: 'B62tsckv8aQiyFAchgqgptfB5C6jtDPkS2pLT1h3G793',
   },
-} as const;
+};

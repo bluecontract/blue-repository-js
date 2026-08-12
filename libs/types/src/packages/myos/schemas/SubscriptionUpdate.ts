@@ -1,16 +1,18 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 
-export const SubscriptionUpdateSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SubscriptionUpdateSchema: any = withTypeBlueId(
   blueIds['MyOS/Subscription Update']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    subscriptionId: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    subscriptionId: zod.string().optional(),
+    targetSessionId: zod.string().optional(),
     update: blueNodeField().optional(),
   })
 );

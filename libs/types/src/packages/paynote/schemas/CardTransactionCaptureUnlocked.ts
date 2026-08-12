@@ -2,15 +2,17 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const CardTransactionCaptureUnlockedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionCaptureUnlockedSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction Capture Unlocked']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    unlockedAt: TimestampSchema.optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    unlockedAt: zod.lazy(() => TimestampSchema).optional(),
   })
 );
 

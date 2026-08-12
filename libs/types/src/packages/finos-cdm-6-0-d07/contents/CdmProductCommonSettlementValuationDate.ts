@@ -1,0 +1,41 @@
+export const CdmProductCommonSettlementValuationDate: Record<string, unknown> =
+  {
+    description:
+      'A single object that represents the different methods to specify a valuation date, as used for cash settlement. The Single / Multiple ValuationDate is used for the determination of recovery in a credit event, the RelativeDateOffset is used for cash-settled option, and FxFixingDate is used for cross-currency settlement.\n',
+    fxFixingDate: {
+      description:
+        "The date on which the currency rate will be determined for the purpose of specifying the amount in deliverable currency. This attribute was formerly part of 'NonDeliverableSettlement', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
+      type: {
+        blueId: 'AYe9vJYb7zmVir5VZjyWNcw2oZjtbMSkbPB8y47sai6T',
+      },
+    },
+    fxFixingSchedule: {
+      description:
+        "The date, when expressed as a schedule of date(s), on which the currency rate will be determined for the purpose of specifying the amount in deliverable currency. This attribute was formerly part of 'NonDeliverableSettlement', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
+      type: {
+        blueId: 'ATwFe4A6KM2pwcq5ezVugmeREzNVytoPxpU4UgV8Nhdt',
+      },
+    },
+    multipleValuationDates: {
+      description:
+        'Where multiple valuation dates are specified as being applicable for cash settlement, this element specifies (a) the number of applicable valuation dates, and (b) the number of business days after satisfaction of all conditions to settlement when the first such valuation date occurs, and (c) the number of business days thereafter of each successive valuation date. ISDA 2003 Term: Multiple Valuation Dates.\n',
+      type: {
+        blueId: 'HyKWLzqSMdXydTHsC9zJwdiVi6KcdZVngY9WJ5PV3xMR',
+      },
+    },
+    name: 'cdm/product/common/settlement/ValuationDate',
+    singleValuationDate: {
+      description:
+        'Where single valuation date is specified as being applicable for cash settlement, this element specifies the number of business days after satisfaction of all conditions to settlement when such valuation date occurs. ISDA 2003 Term: Single Valuation Date.\n',
+      type: {
+        blueId: '14czdjerkJ6X1HwgQE2RFvCte476RbB2aWmpUby9D7bG',
+      },
+    },
+    valuationDate: {
+      description:
+        "The date on which the cash settlement amount will be determined according to the cash settlement method if the parties have not otherwise been able to agree the cash settlement amount. This attribute was formerly part of 'OptionCashSettlement', which is now being harmonised into a common 'CashSettlementTerms' that includes a 'ValuationDate'.\n",
+      type: {
+        blueId: '9fGwsBbeyL5rQuLRmwyBtyjMjAcmhWfHf4bmyqAXmWtD',
+      },
+    },
+  };

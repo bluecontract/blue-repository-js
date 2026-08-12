@@ -1,4 +1,4 @@
-export const PayNoteCancellationRequested = {
+export const PayNoteCancellationRequested: Record<string, unknown> = {
   childPayNote: {
     description: 'Complete PayNote',
   },
@@ -6,6 +6,6 @@ export const PayNoteCancellationRequested = {
     'The Payer requests to cancel PayNote that is Approved but not yet\nReserved or Captured.\n',
   name: 'PayNote Cancellation Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
-} as const;
+};

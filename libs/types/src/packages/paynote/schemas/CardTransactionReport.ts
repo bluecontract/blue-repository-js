@@ -3,22 +3,26 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 
-export const CardTransactionReportSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionReportSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction Report']
 )(
   EventSchema.extend({
-    amountMinor: z.number().optional(),
-    cardTransactionDetails: CardTransactionDetailsSchema.optional(),
-    currency: CurrencySchema.optional(),
-    description: z.string().optional(),
-    merchantId: z.string().optional(),
-    name: z.string().optional(),
-    occurredAt: TimestampSchema.optional(),
-    status: z.string().optional(),
-    transactionId: z.string().optional(),
+    amountMinor: zod.number().optional(),
+    cardTransactionDetails: zod
+      .lazy(() => CardTransactionDetailsSchema)
+      .optional(),
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
+    merchantId: zod.string().optional(),
+    name: zod.string().optional(),
+    occurredAt: zod.lazy(() => TimestampSchema).optional(),
+    status: zod.string().optional(),
+    transactionId: zod.string().optional(),
   })
 );
 

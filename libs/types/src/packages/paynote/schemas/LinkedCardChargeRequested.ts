@@ -1,16 +1,18 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const LinkedCardChargeRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const LinkedCardChargeRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Linked Card Charge Requested']
 )(
   RequestSchema.extend({
-    amount: z.number().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paymentMandateDocumentId: z.string().optional(),
+    amount: zod.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentMandateDocumentId: zod.string().optional(),
     paynote: blueNodeField().optional(),
   })
 );

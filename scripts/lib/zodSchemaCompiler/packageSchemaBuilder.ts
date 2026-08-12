@@ -18,7 +18,19 @@ import {
 import type { RepoContext, TypeInfo } from './types.js';
 import { UnknownTypeReferenceError } from './types.js';
 
-type CompiledSchema = { expr: string; usesZ: boolean; usesBlueNode: boolean };
+type SchemaKind = 'array' | 'other';
+type CompiledSchema = {
+  expr: string;
+  usesZ: boolean;
+  usesBlueNode: boolean;
+  kind: SchemaKind;
+};
+type SchemaMetadata = {
+  required?: boolean;
+  enumValues?: unknown[];
+  minItems?: number;
+  maxItems?: number;
+};
 type CompiledFields = {
   shape: string;
   usesZ: boolean;
@@ -29,7 +41,14 @@ type ResolvedBase =
   | { kind: 'primitive'; blueId: string; primitive: string }
   | { kind: 'list'; blueId: string }
   | { kind: 'dictionary'; blueId: string }
-  | { kind: 'type'; blueId: string; safeName: string; importPath: string }
+  | {
+      kind: 'type';
+      blueId: string;
+      safeName: string;
+      schemaReference: string;
+      importPath: string;
+    }
+  | { kind: 'runtime'; blueId: string }
   | null;
 
 export class PackageSchemaBuilder {
@@ -86,6 +105,7 @@ export class PackageSchemaBuilder {
 
     return renderSchemaFile({
       schemaName: safeName,
+      schemaTypeAnnotation: ': any',
       blueIdsKey: this.aliasFor(info),
       usesBlueNode: schema.usesBlueNode,
       schemaImports: this.groupSchemaImports(depImports),
@@ -97,7 +117,12 @@ export class PackageSchemaBuilder {
     if (base?.kind !== 'type' || !base.importPath) {
       return;
     }
-    imports.add(`import { ${base.safeName}Schema } from '${base.importPath}';`);
+    const exportedSchema = `${base.safeName}Schema`;
+    const importedSchema =
+      base.schemaReference === exportedSchema
+        ? exportedSchema
+        : `${exportedSchema} as ${base.schemaReference}`;
+    imports.add(`import { ${importedSchema} } from '${base.importPath}';`);
   }
 
   private buildRootSchema(
@@ -108,8 +133,17 @@ export class PackageSchemaBuilder {
   ): { baseSchema: string; usesBlueNode: boolean; needsZodObjectCast: boolean } {
     if (base?.kind === 'primitive') {
       this.assertNoExtraFields(fieldResults, info, `primitive '${base.blueId}'`);
+      const rootSchema = this.applySchemaMetadata(
+        {
+          expr: this.primitiveSchema(base.primitive),
+          usesZ: true,
+          usesBlueNode: false,
+          kind: 'other',
+        },
+        this.extractSchemaMetadata(info.content),
+      );
       return {
-        baseSchema: this.primitiveSchema(base.primitive),
+        baseSchema: rootSchema.expr,
         usesBlueNode: false,
         needsZodObjectCast: true,
       };
@@ -118,9 +152,18 @@ export class PackageSchemaBuilder {
     if (base?.kind === 'list') {
       this.assertNoExtraFields(fieldResults, info, 'List');
       const itemSchema = this.compileRootListItemSchema(info, imports);
+      const rootSchema = this.applySchemaMetadata(
+        {
+          expr: `zod.array(${itemSchema.expr})`,
+          usesZ: true,
+          usesBlueNode: itemSchema.usesBlueNode,
+          kind: 'array',
+        },
+        this.extractSchemaMetadata(info.content),
+      );
       return {
-        baseSchema: `z.array(${itemSchema.expr})`,
-        usesBlueNode: fieldResults.usesBlueNode || itemSchema.usesBlueNode,
+        baseSchema: rootSchema.expr,
+        usesBlueNode: fieldResults.usesBlueNode || rootSchema.usesBlueNode,
         needsZodObjectCast: true,
       };
     }
@@ -128,24 +171,68 @@ export class PackageSchemaBuilder {
     if (base?.kind === 'dictionary') {
       this.assertNoExtraFields(fieldResults, info, 'Dictionary');
       const valueSchema = this.compileRootDictionaryValueSchema(info, imports);
+      const rootSchema = this.applySchemaMetadata(
+        {
+          expr: `zod.object({}).catchall(${valueSchema.expr})`,
+          usesZ: true,
+          usesBlueNode: valueSchema.usesBlueNode,
+          kind: 'other',
+        },
+        this.extractSchemaMetadata(info.content),
+      );
       return {
-        baseSchema: `z.object({}).catchall(${valueSchema.expr})`,
-        usesBlueNode: fieldResults.usesBlueNode || valueSchema.usesBlueNode,
+        baseSchema: rootSchema.expr,
+        usesBlueNode: fieldResults.usesBlueNode || rootSchema.usesBlueNode,
         needsZodObjectCast: false,
       };
     }
 
     if (base?.kind === 'type') {
+      const rootSchema = this.applySchemaMetadata(
+        {
+          expr: `${base.schemaReference}.extend(${fieldResults.shape})`,
+          usesZ: fieldResults.usesZ,
+          usesBlueNode: fieldResults.usesBlueNode,
+          kind: 'other',
+        },
+        this.extractSchemaMetadata(info.content),
+      );
       return {
-        baseSchema: `${base.safeName}Schema.extend(${fieldResults.shape})`,
-        usesBlueNode: fieldResults.usesBlueNode,
+        baseSchema: rootSchema.expr,
+        usesBlueNode: rootSchema.usesBlueNode,
         needsZodObjectCast: false,
       };
     }
 
+    if (base?.kind === 'runtime') {
+      const rootSchema = this.applySchemaMetadata(
+        {
+          expr: `zod.object(${fieldResults.shape})`,
+          usesZ: true,
+          usesBlueNode: fieldResults.usesBlueNode,
+          kind: 'other',
+        },
+        this.extractSchemaMetadata(info.content),
+      );
+      return {
+        baseSchema: rootSchema.expr,
+        usesBlueNode: rootSchema.usesBlueNode,
+        needsZodObjectCast: false,
+      };
+    }
+
+    const rootSchema = this.applySchemaMetadata(
+      {
+        expr: `zod.object(${fieldResults.shape})`,
+        usesZ: true,
+        usesBlueNode: fieldResults.usesBlueNode,
+        kind: 'other',
+      },
+      this.extractSchemaMetadata(info.content),
+    );
     return {
-      baseSchema: `z.object(${fieldResults.shape})`,
-      usesBlueNode: fieldResults.usesBlueNode,
+      baseSchema: rootSchema.expr,
+      usesBlueNode: rootSchema.usesBlueNode,
       needsZodObjectCast: false,
     };
   }
@@ -258,13 +345,13 @@ export class PackageSchemaBuilder {
     for (const key of sortedKeys) {
       const value = content[key];
       if (key === 'name' && typeof value === 'string') {
-        entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
+        entries.push(`${this.formatObjectKey(key)}: zod.string().optional()`);
         usesZ = true;
         continue;
       }
 
       if (key === 'description' && typeof value === 'string') {
-        entries.push(`${this.formatObjectKey(key)}: z.string().optional()`);
+        entries.push(`${this.formatObjectKey(key)}: zod.string().optional()`);
         usesZ = true;
         continue;
       }
@@ -306,11 +393,17 @@ export class PackageSchemaBuilder {
     path: string[],
     indent: number,
   ): CompiledSchema {
-    const compiled = this.compileFieldValue(def, imports, path, indent);
+    const schema = this.extractSchemaMetadata(def);
+    const compiled = this.applySchemaMetadata(
+      this.compileFieldValue(def, imports, path, indent),
+      schema,
+    );
+    const maybeOptional = schema.required ? compiled.expr : `${compiled.expr}.optional()`;
     return {
-      expr: `${compiled.expr}.optional()`,
+      expr: maybeOptional,
       usesZ: compiled.usesZ,
       usesBlueNode: compiled.usesBlueNode,
+      kind: 'other',
     };
   }
 
@@ -365,6 +458,9 @@ export class PackageSchemaBuilder {
     if (collection === 'dictionary') {
       return this.compileDictionarySchema(def, imports, path, indent);
     }
+    if (this.ctx.runtimeTypeBlueIds.has(resolved.refBlueId)) {
+      return this.blueNodeFallback();
+    }
 
     return this.compileTypeSchemaReference(
       resolved.refRaw,
@@ -375,7 +471,12 @@ export class PackageSchemaBuilder {
   }
 
   private compilePrimitiveSchema(kind: string): CompiledSchema {
-    return { expr: this.primitiveSchema(kind), usesZ: true, usesBlueNode: false };
+    return {
+      expr: this.primitiveSchema(kind),
+      usesZ: true,
+      usesBlueNode: false,
+      kind: 'other',
+    };
   }
 
   private compileListSchema(
@@ -394,9 +495,10 @@ export class PackageSchemaBuilder {
         )
       : this.blueNodeFallback();
     return {
-      expr: `z.array(${itemSchema.expr})`,
+      expr: `zod.array(${itemSchema.expr})`,
       usesZ: true,
       usesBlueNode: itemSchema.usesBlueNode,
+      kind: 'array',
     };
   }
 
@@ -416,9 +518,10 @@ export class PackageSchemaBuilder {
         )
       : this.blueNodeFallback();
     return {
-      expr: `z.record(z.string(), ${valueSchema.expr})`,
+      expr: `zod.record(zod.string(), ${valueSchema.expr})`,
       usesZ: true,
       usesBlueNode: valueSchema.usesBlueNode,
+      kind: 'other',
     };
   }
 
@@ -434,8 +537,19 @@ export class PackageSchemaBuilder {
     }
 
     const safe = toIdentifier(target.typeName, target.blueId);
-    imports.add(this.schemaImportFor(target.packageName, safe));
-    return { expr: `${safe}Schema`, usesZ: false, usesBlueNode: false };
+    if (target.blueId !== this.currentType?.blueId) {
+      imports.add(this.schemaImportFor(target.packageName, safe));
+    }
+    const lazyReturnType =
+      this.isCyclicBlueId(target.blueId) || this.isCyclicBlueId(this.currentType?.blueId)
+        ? ': z.ZodTypeAny'
+        : '';
+    return {
+      expr: `zod.lazy(()${lazyReturnType} => ${safe}Schema)`,
+      usesZ: true,
+      usesBlueNode: false,
+      kind: 'other',
+    };
   }
 
   private schemaImportFor(packageName: string, safeName: string): string {
@@ -453,26 +567,135 @@ export class PackageSchemaBuilder {
   ): CompiledSchema {
     const nested = this.compileFields(def as Record<string, unknown>, imports, path, indent + 2);
     return {
-      expr: `z.object(${nested.shape})`,
+      expr: `zod.object(${nested.shape})`,
       usesZ: true,
       usesBlueNode: nested.usesBlueNode,
+      kind: 'other',
     };
   }
 
   private blueNodeFallback(): CompiledSchema {
-    return { expr: 'blueNodeField()', usesZ: false, usesBlueNode: true };
+    return {
+      expr: 'blueNodeField()',
+      usesZ: false,
+      usesBlueNode: true,
+      kind: 'other',
+    };
+  }
+
+  private applySchemaMetadata(
+    compiled: CompiledSchema,
+    schema: SchemaMetadata,
+  ): CompiledSchema {
+    let expr = compiled.expr;
+    let usesZ = compiled.usesZ;
+    let kind: SchemaKind = compiled.kind ?? 'other';
+
+    if (schema.enumValues && schema.enumValues.length > 0) {
+      expr = this.enumSchemaExpression(schema.enumValues);
+      usesZ = true;
+      kind = 'other';
+    }
+
+    if (kind === 'array') {
+      if (typeof schema.minItems === 'number') {
+        expr = `${expr}.min(${schema.minItems})`;
+      }
+      if (typeof schema.maxItems === 'number') {
+        expr = `${expr}.max(${schema.maxItems})`;
+      }
+    }
+
+    return {
+      expr,
+      usesZ,
+      usesBlueNode: compiled.usesBlueNode,
+      kind,
+    };
+  }
+
+  private enumSchemaExpression(values: unknown[]): string {
+    const uniqueValues = values.filter(
+      (value, index, all) =>
+        all.findIndex((candidate) => Object.is(candidate, value)) === index,
+    );
+    if (uniqueValues.length === 1) {
+      return `zod.literal(${JSON.stringify(uniqueValues[0])})`;
+    }
+
+    if (uniqueValues.every((value) => typeof value === 'string')) {
+      return `zod.enum(${JSON.stringify(uniqueValues)} as [string, ...string[]])`;
+    }
+
+    return `zod.union([${uniqueValues
+      .map((value) => `zod.literal(${JSON.stringify(value)})`)
+      .join(', ')}])`;
+  }
+
+  private extractSchemaMetadata(def: Record<string, unknown>): SchemaMetadata {
+    const schemaNode = def.schema;
+    if (!schemaNode || typeof schemaNode !== 'object' || Array.isArray(schemaNode)) {
+      return {};
+    }
+
+    const schema = schemaNode as Record<string, unknown>;
+    return {
+      required: this.readBooleanSchemaValue(schema.required),
+      enumValues: this.readEnumSchemaValues(schema.enum),
+      minItems: this.readNumberSchemaValue(schema.minItems),
+      maxItems: this.readNumberSchemaValue(schema.maxItems),
+    };
+  }
+
+  private readBooleanSchemaValue(value: unknown): boolean | undefined {
+    const unwrapped = this.unwrapBlueValue(value);
+    return typeof unwrapped === 'boolean' ? unwrapped : undefined;
+  }
+
+  private readNumberSchemaValue(value: unknown): number | undefined {
+    const unwrapped = this.unwrapBlueValue(value);
+    return typeof unwrapped === 'number' && Number.isFinite(unwrapped)
+      ? unwrapped
+      : undefined;
+  }
+
+  private readEnumSchemaValues(value: unknown): unknown[] | undefined {
+    if (Array.isArray(value)) {
+      return value.map((item) => this.unwrapBlueValue(item));
+    }
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      const record = value as Record<string, unknown>;
+      if (Array.isArray(record.items)) {
+        return record.items.map((item) => this.unwrapBlueValue(item));
+      }
+      const unwrapped = this.unwrapBlueValue(record);
+      if (Array.isArray(unwrapped)) {
+        return unwrapped.map((item) => this.unwrapBlueValue(item));
+      }
+    }
+    return undefined;
+  }
+
+  private unwrapBlueValue(value: unknown): unknown {
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      const record = value as Record<string, unknown>;
+      if ('value' in record) {
+        return record.value;
+      }
+    }
+    return value;
   }
 
   private primitiveSchema(kind: string): string {
     switch (kind) {
       case 'text':
-        return 'z.string()';
+        return 'zod.string()';
       case 'integer':
-        return 'z.number()';
+        return 'zod.number()';
       case 'double':
-        return 'z.number()';
+        return 'zod.number()';
       case 'boolean':
-        return 'z.boolean()';
+        return 'zod.boolean()';
       default:
         return this.throwUnknownType(kind, []);
     }
@@ -511,20 +734,48 @@ export class PackageSchemaBuilder {
     if (collection === 'dictionary') {
       return { kind: 'dictionary', blueId: baseId };
     }
+    if (this.ctx.runtimeTypeBlueIds.has(baseId)) {
+      return { kind: 'runtime', blueId: baseId };
+    }
 
     const base = this.ctx.typeIndex.get(baseId);
     if (!base) {
       this.throwUnknownType(rawRef, ['type']);
     }
     const safe = toIdentifier(base.typeName, base.blueId);
+    const currentSafe = toIdentifier(info.typeName, info.blueId);
+    const schemaReference =
+      safe === currentSafe ? `Base${safe}Schema` : `${safe}Schema`;
     const importPath =
       base.packageName === this.packageName
         ? `./${safe}`
         : `../../${base.packageName}/schemas/${safe}`;
-    return { kind: 'type', blueId: baseId, safeName: safe, importPath };
+    return {
+      kind: 'type',
+      blueId: baseId,
+      safeName: safe,
+      schemaReference,
+      importPath,
+    };
   }
 
   private resolveBlueId(ref: string): string | undefined {
+    if (ref === 'this') {
+      return this.currentType?.blueId;
+    }
+
+    const cyclicPlaceholder = ref.match(/^this#(\d+)$/);
+    if (cyclicPlaceholder) {
+      const currentBlueId = this.currentType?.blueId;
+      const hashIndex = currentBlueId?.lastIndexOf('#') ?? -1;
+      if (!currentBlueId || hashIndex < 0) {
+        return undefined;
+      }
+      return this.normalizeBlueId(
+        `${currentBlueId.slice(0, hashIndex)}#${cyclicPlaceholder[1]}`,
+      );
+    }
+
     const aliasKey = normalizeAliasString(ref);
     const alias =
       this.ctx.aliasToBlueId.get(aliasKey) ?? this.ctx.aliasToBlueId.get(ref);
@@ -540,5 +791,9 @@ export class PackageSchemaBuilder {
 
   private normalizeBlueId(blueId: string): string {
     return this.ctx.toCurrent.get(blueId) ?? blueId;
+  }
+
+  private isCyclicBlueId(blueId: string | undefined): boolean {
+    return Boolean(blueId && /#\d+$/.test(blueId));
   }
 }

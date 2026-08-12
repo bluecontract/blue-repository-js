@@ -1,15 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const CancelBeforeCompletionRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CancelBeforeCompletionRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Cancel Before Completion Requested']
 )(
   RequestSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

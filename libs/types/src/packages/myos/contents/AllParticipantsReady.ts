@@ -1,3 +1,6 @@
-export const AllParticipantsReady = {
+export const AllParticipantsReady: Record<string, unknown> = {
   name: 'All Participants Ready',
-} as const;
+  type: {
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
+  },
+};

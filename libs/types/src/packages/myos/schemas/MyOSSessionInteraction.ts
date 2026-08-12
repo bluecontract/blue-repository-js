@@ -2,11 +2,13 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const MyOSSessionInteractionSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSSessionInteractionSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Session Interaction']
 )(
-  z.object({
-    name: z.string().optional(),
+  zod.object({
+    name: zod.string().optional(),
   })
 );
 

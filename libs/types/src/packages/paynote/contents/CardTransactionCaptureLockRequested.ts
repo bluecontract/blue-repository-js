@@ -1,13 +1,13 @@
-export const CardTransactionCaptureLockRequested = {
+export const CardTransactionCaptureLockRequested: Record<string, unknown> = {
   cardTransactionDetails: {
     type: {
-      blueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+      blueId: 'DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV',
     },
   },
   description:
     'Request to the card issuer to deny any following card transaction capture requests.',
   name: 'Card Transaction Capture Lock Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
-} as const;
+};

@@ -1,15 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const FundsReservedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const FundsReservedSchema: any = withTypeBlueId(
   blueIds['PayNote/Funds Reserved']
 )(
   ResponseSchema.extend({
-    amountReserved: z.number().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    amountReserved: zod.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

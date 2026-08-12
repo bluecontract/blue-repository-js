@@ -1,14 +1,16 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const RemovingParticipantRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const RemovingParticipantRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Removing Participant Requested']
 )(
   RequestSchema.extend({
-    channelName: z.string().optional(),
-    name: z.string().optional(),
+    channelName: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

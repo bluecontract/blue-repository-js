@@ -1,0 +1,24 @@
+import { z } from 'zod';
+import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-labs/language';
+import { ComRosettaModelLibMetaReferenceSchema } from './ComRosettaModelLibMetaReference';
+
+const zod = z as any;
+
+export const CdmObservableEventMetafieldsReferenceWithMetaObservationSchema: any =
+  withTypeBlueId(
+    blueIds[
+      'FINOS-CDM-6.0-d07/cdm/observable/event/metafields/ReferenceWithMetaObservation'
+    ]
+  )(
+    zod.object({
+      address: zod.lazy(() => ComRosettaModelLibMetaReferenceSchema).optional(),
+      externalReference: zod.string().optional(),
+      globalReference: zod.string().optional(),
+      name: zod.string().optional(),
+    })
+  );
+
+export type CdmObservableEventMetafieldsReferenceWithMetaObservation = z.infer<
+  typeof CdmObservableEventMetafieldsReferenceWithMetaObservationSchema
+>;

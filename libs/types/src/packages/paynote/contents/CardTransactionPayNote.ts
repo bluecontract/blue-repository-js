@@ -1,13 +1,13 @@
-export const CardTransactionPayNote = {
+export const CardTransactionPayNote: Record<string, unknown> = {
   cardTransactionDetails: {
     type: {
-      blueId: 'GZLRe2fEsvs1v7dVcg9kEnCrWEdM3cUZYhFH4XqN5jQT',
+      blueId: 'DVykYmmbhDsjsNQCjETGqumKJW5doNkkk6K6R4xeFWTV',
     },
   },
   description:
     'PayNote tied to a specific card transaction via ISO scheme identifiers.',
   name: 'Card Transaction PayNote',
   type: {
-    blueId: 'emSg8pWstEHBtnbUPNu7rmqMzWskDCUbyggteUdk32w',
+    blueId: 'DivLdwvVivwHNakzhjFjoG8bpwZLcyxFMinziyEkpWc8',
   },
-} as const;
+};

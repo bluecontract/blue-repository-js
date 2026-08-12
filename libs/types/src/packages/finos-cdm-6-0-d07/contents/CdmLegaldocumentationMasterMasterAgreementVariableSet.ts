@@ -1,0 +1,27 @@
+export const CdmLegaldocumentationMasterMasterAgreementVariableSet: Record<
+  string,
+  unknown
+> = {
+  description:
+    'Defines a type where additional variables associated to clauses and their variants can be described.',
+  name: 'cdm/legaldocumentation/master/MasterAgreementVariableSet',
+  val: {
+    description: 'The value for this variable',
+    type: {
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+    },
+  },
+  variableSet: {
+    description:
+      'For some variants a table of variables is required. To support this use case we need to be able to specify variables within variables. Including a variable set here gives us infinite nesting opportunities - realistically we are only ever expecting that a table would need to be defined for any particular clause, so we would expect two levels of nesting as a maximum i.e. variableSet->variableSet->name/value.\n',
+    itemType: {
+      blueId: 'this#0',
+    },
+    schema: {
+      minItems: 0,
+    },
+    type: {
+      blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
+    },
+  },
+};

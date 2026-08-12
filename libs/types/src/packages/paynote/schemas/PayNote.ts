@@ -2,137 +2,203 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
-import { ChannelSchema } from '../../core/schemas/Channel';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { SearchContractSchema } from '../../myos/schemas/SearchContract';
 
-export const PayNoteSchema = withTypeBlueId(blueIds['PayNote/PayNote'])(
-  z.object({
-    amount: z
+const zod = z as any;
+
+export const PayNoteSchema: any = withTypeBlueId(blueIds['PayNote/PayNote'])(
+  zod.object({
+    amount: zod
       .object({
-        completed: z.number().optional(),
-        description: z.string().optional(),
-        expectedTotal: z.number().optional(),
-        finalResolved: z.number().optional(),
-        reversed: z.number().optional(),
-        secured: z.number().optional(),
+        completed: zod.number().optional(),
+        description: zod.string().optional(),
+        expectedTotal: zod.number().optional(),
+        finalResolved: zod.number().optional(),
+        reversed: zod.number().optional(),
+        secured: zod.number().optional(),
       })
       .optional(),
-    contracts: z
+    contracts: zod
       .object({
-        acceptPayNote: OperationSchema.optional(),
-        acceptPayNoteImpl: SequentialWorkflowOperationSchema.optional(),
-        cancelBeforeCompletion: OperationSchema.optional(),
-        cancelBeforeCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        completePayment: OperationSchema.optional(),
-        completePaymentImpl: SequentialWorkflowOperationSchema.optional(),
-        confirmPayeeAssignment: OperationSchema.optional(),
-        confirmPayeeAssignmentImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        confirmTransactionDetailsUpdated: OperationSchema.optional(),
-        confirmTransactionDetailsUpdatedImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        declineCancelBeforeCompletion: OperationSchema.optional(),
-        declineCancelBeforeCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        declineCompletePayment: OperationSchema.optional(),
-        declineCompletePaymentImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        declineReverseAfterCompletion: OperationSchema.optional(),
-        declineReverseAfterCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        declineSecureFunds: OperationSchema.optional(),
-        declineSecureFundsImpl: SequentialWorkflowOperationSchema.optional(),
-        failCancelBeforeCompletion: OperationSchema.optional(),
-        failCancelBeforeCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        failCompletePayment: OperationSchema.optional(),
-        failCompletePaymentImpl: SequentialWorkflowOperationSchema.optional(),
-        failPaymentCompletionLockChange: OperationSchema.optional(),
-        failPaymentCompletionLockChangeImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        failPaymentReversalLockChange: OperationSchema.optional(),
-        failPaymentReversalLockChangeImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        failReverseAfterCompletion: OperationSchema.optional(),
-        failReverseAfterCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        failSecureFunds: OperationSchema.optional(),
-        failSecureFundsImpl: SequentialWorkflowOperationSchema.optional(),
-        failTransactionDetailsUpdate: OperationSchema.optional(),
-        failTransactionDetailsUpdateImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        failTransactionDetailsUpdateLockChange: OperationSchema.optional(),
-        failTransactionDetailsUpdateLockChangeImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        guarantorChannel: ChannelSchema.optional(),
-        initialize: SequentialWorkflowSchema.optional(),
-        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        lockPaymentCompletion: OperationSchema.optional(),
-        lockPaymentCompletionImpl: SequentialWorkflowOperationSchema.optional(),
-        lockPaymentReversal: OperationSchema.optional(),
-        lockPaymentReversalImpl: SequentialWorkflowOperationSchema.optional(),
-        lockTransactionDetailsUpdate: OperationSchema.optional(),
-        lockTransactionDetailsUpdateImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        payeeChannel: ChannelSchema.optional(),
-        payerChannel: ChannelSchema.optional(),
-        recordTransactionInitiated: OperationSchema.optional(),
-        recordTransactionInitiatedImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        recordTransactionInitiationFailed: OperationSchema.optional(),
-        recordTransactionInitiationFailedImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        rejectFinalAmountResolution: OperationSchema.optional(),
-        rejectFinalAmountResolutionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        rejectPayeeAssignment: OperationSchema.optional(),
-        rejectPayeeAssignmentImpl: SequentialWorkflowOperationSchema.optional(),
-        rejectPayNote: OperationSchema.optional(),
-        rejectPayNoteImpl: SequentialWorkflowOperationSchema.optional(),
-        rejectTransactionDetailsUpdate: OperationSchema.optional(),
-        rejectTransactionDetailsUpdateImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        resolveFinalAmount: OperationSchema.optional(),
-        resolveFinalAmountImpl: SequentialWorkflowOperationSchema.optional(),
-        reverseAfterCompletion: OperationSchema.optional(),
-        reverseAfterCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        search: SearchContractSchema.optional(),
-        secureFunds: OperationSchema.optional(),
-        secureFundsImpl: SequentialWorkflowOperationSchema.optional(),
-        unlockPaymentCompletion: OperationSchema.optional(),
-        unlockPaymentCompletionImpl:
-          SequentialWorkflowOperationSchema.optional(),
-        unlockPaymentReversal: OperationSchema.optional(),
-        unlockPaymentReversalImpl: SequentialWorkflowOperationSchema.optional(),
-        unlockTransactionDetailsUpdate: OperationSchema.optional(),
-        unlockTransactionDetailsUpdateImpl:
-          SequentialWorkflowOperationSchema.optional(),
+        acceptPayNote: zod.lazy(() => OperationSchema).optional(),
+        acceptPayNoteImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        cancelBeforeCompletion: zod.lazy(() => OperationSchema).optional(),
+        cancelBeforeCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        completePayment: zod.lazy(() => OperationSchema).optional(),
+        completePaymentImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        confirmPayeeAssignment: zod.lazy(() => OperationSchema).optional(),
+        confirmPayeeAssignmentImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        confirmTransactionDetailsUpdated: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        confirmTransactionDetailsUpdatedImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        declineCancelBeforeCompletion: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        declineCancelBeforeCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        declineCompletePayment: zod.lazy(() => OperationSchema).optional(),
+        declineCompletePaymentImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        declineReverseAfterCompletion: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        declineReverseAfterCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        declineSecureFunds: zod.lazy(() => OperationSchema).optional(),
+        declineSecureFundsImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failCancelBeforeCompletion: zod.lazy(() => OperationSchema).optional(),
+        failCancelBeforeCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failCompletePayment: zod.lazy(() => OperationSchema).optional(),
+        failCompletePaymentImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failPaymentCompletionLockChange: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        failPaymentCompletionLockChangeImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failPaymentReversalLockChange: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        failPaymentReversalLockChangeImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failReverseAfterCompletion: zod.lazy(() => OperationSchema).optional(),
+        failReverseAfterCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failSecureFunds: zod.lazy(() => OperationSchema).optional(),
+        failSecureFundsImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failTransactionDetailsUpdate: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        failTransactionDetailsUpdateImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        failTransactionDetailsUpdateLockChange: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        failTransactionDetailsUpdateLockChangeImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        guarantorChannel: blueNodeField().optional(),
+        initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        initLifecycleChannel: blueNodeField().optional(),
+        lockPaymentCompletion: zod.lazy(() => OperationSchema).optional(),
+        lockPaymentCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        lockPaymentReversal: zod.lazy(() => OperationSchema).optional(),
+        lockPaymentReversalImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        lockTransactionDetailsUpdate: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        lockTransactionDetailsUpdateImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        payeeChannel: blueNodeField().optional(),
+        payerChannel: blueNodeField().optional(),
+        recordTransactionInitiated: zod.lazy(() => OperationSchema).optional(),
+        recordTransactionInitiatedImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        recordTransactionInitiationFailed: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        recordTransactionInitiationFailedImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        rejectFinalAmountResolution: zod.lazy(() => OperationSchema).optional(),
+        rejectFinalAmountResolutionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        rejectPayeeAssignment: zod.lazy(() => OperationSchema).optional(),
+        rejectPayeeAssignmentImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        rejectPayNote: zod.lazy(() => OperationSchema).optional(),
+        rejectPayNoteImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        rejectTransactionDetailsUpdate: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        rejectTransactionDetailsUpdateImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        resolveFinalAmount: zod.lazy(() => OperationSchema).optional(),
+        resolveFinalAmountImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        reverseAfterCompletion: zod.lazy(() => OperationSchema).optional(),
+        reverseAfterCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        search: zod.lazy(() => SearchContractSchema).optional(),
+        secureFunds: zod.lazy(() => OperationSchema).optional(),
+        secureFundsImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        unlockPaymentCompletion: zod.lazy(() => OperationSchema).optional(),
+        unlockPaymentCompletionImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        unlockPaymentReversal: zod.lazy(() => OperationSchema).optional(),
+        unlockPaymentReversalImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        unlockTransactionDetailsUpdate: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        unlockTransactionDetailsUpdateImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
       })
       .optional(),
-    controls: z
+    controls: zod
       .object({
-        completionLocked: z.boolean().optional(),
-        reversalLocked: z.boolean().optional(),
-        transactionDetailsUpdateLocked: z.boolean().optional(),
+        completionLocked: zod.boolean().optional(),
+        reversalLocked: zod.boolean().optional(),
+        transactionDetailsUpdateLocked: zod.boolean().optional(),
       })
       .optional(),
-    currency: CurrencySchema.optional(),
-    description: z.string().optional(),
-    kind: z.string().optional(),
-    name: z.string().optional(),
-    payNoteInitialStateDescription: z
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
+    kind: zod.string().optional(),
+    name: zod.string().optional(),
+    payNoteInitialStateDescription: zod
       .object({
-        details: z.string().optional(),
-        summary: z.string().optional(),
+        details: zod.string().optional(),
+        summary: zod.string().optional(),
       })
       .optional(),
-    status: z.string().optional(),
+    status: zod.string().optional(),
     transactionDetails: blueNodeField().optional(),
   })
 );

@@ -1,3 +1,37 @@
+## 1.2.3 (2026-06-04)
+
+This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
+
+## 1.2.2 (2026-06-03)
+
+This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
+
+## 1.2.1 (2026-05-14)
+
+This was a version bump only for @blue-repository/types to align it with other projects, there were no code changes.
+
+## 1.2.0 (2026-05-06)
+
+### 🚀 Features
+
+- update BlueRepository.blue and regenerate types ([#133](https://github.com/bluecontract/blue-repository-js/pull/133))
+
+## 1.1.0 (2026-05-06)
+
+### 🚀 Features
+
+- update BlueRepository.blue and regenerate types ([#132](https://github.com/bluecontract/blue-repository-js/pull/132))
+
+# 1.0.0 (2026-04-30)
+
+### 🚀 Features
+
+- ⚠️  use Language v4 BlueId calculation for repository types ([b676e53](https://github.com/bluecontract/blue-repository-js/commit/b676e53))
+
+### ⚠️  Breaking Changes
+
+- Repository type BlueIds now use Language v4 calculation semantics. ([b676e53](https://github.com/bluecontract/blue-repository-js/commit/b676e53))
+
 ## 0.30.0 (2026-04-21)
 
 ### 🚀 Features

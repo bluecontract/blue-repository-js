@@ -1,14 +1,16 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 
-export const TransactionIdentifiedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const TransactionIdentifiedSchema: any = withTypeBlueId(
   blueIds['PayNote/Transaction Identified']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

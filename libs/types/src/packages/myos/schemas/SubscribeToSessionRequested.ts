@@ -1,21 +1,23 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const SubscribeToSessionRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const SubscribeToSessionRequestedSchema: any = withTypeBlueId(
   blueIds['MyOS/Subscribe to Session Requested']
 )(
   RequestSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    subscription: z
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    subscription: zod
       .object({
-        events: z.array(blueNodeField()).optional(),
-        id: z.string().optional(),
+        events: zod.array(blueNodeField()).optional(),
+        id: zod.string().optional(),
       })
       .optional(),
-    targetSessionId: z.string().optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

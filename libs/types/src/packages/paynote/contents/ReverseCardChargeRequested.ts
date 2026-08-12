@@ -1,8 +1,8 @@
-export const ReverseCardChargeRequested = {
+export const ReverseCardChargeRequested: Record<string, unknown> = {
   amount: {
     description: 'Charge amount in minor currency units.',
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   description:
@@ -12,7 +12,7 @@ export const ReverseCardChargeRequested = {
     description:
       'Optional Payment Mandate document id used to authorize charge execution.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   paynote: {
@@ -20,6 +20,6 @@ export const ReverseCardChargeRequested = {
       'Optional PayNote document to bootstrap for the created charge context.',
   },
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
-} as const;
+};

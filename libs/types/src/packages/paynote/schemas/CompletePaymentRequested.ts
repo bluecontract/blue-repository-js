@@ -1,15 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const CompletePaymentRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CompletePaymentRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/Complete Payment Requested']
 )(
   RequestSchema.extend({
-    amount: z.number().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    amount: zod.number().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

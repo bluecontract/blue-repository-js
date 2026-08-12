@@ -1,8 +1,8 @@
-export const MyOSAgentChannel = {
+export const MyOSAgentChannel: Record<string, unknown> = {
   agent: {
     description: 'Optional MyOS agent associated with this channel',
     type: {
-      blueId: '8DQrCT6Mf9wHQyRc4NdYhjFW4FbKi83no2QPe54UhdQ5',
+      blueId: '6Fxxx58U6WKzA4WQPCLPmMMCCEb9QLFYdb8yMLZDVdXL',
     },
   },
   description:
@@ -11,4 +11,4 @@ export const MyOSAgentChannel = {
     description: 'Optional event node reference',
   },
   name: 'MyOS Agent Channel',
-} as const;
+};

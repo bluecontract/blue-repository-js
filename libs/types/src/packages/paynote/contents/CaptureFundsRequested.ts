@@ -1,13 +1,13 @@
-export const CaptureFundsRequested = {
+export const CaptureFundsRequested: Record<string, unknown> = {
   amount: {
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   description:
     'A participant (usually the Payee) requests the final transfer of funds.',
   name: 'Capture Funds Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
-} as const;
+};

@@ -1,48 +1,64 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
-import { withTypeBlueId } from '@blue-labs/language';
+import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
+import { DocumentBootstrapRequestedSchema } from '../../bootstrap/schemas/DocumentBootstrapRequested';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { DocumentBootstrapRequestedSchema } from '../../conversation/schemas/DocumentBootstrapRequested';
-import { DocumentStatusSchema } from '../../conversation/schemas/DocumentStatus';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
-import { MyOSTimelineChannelSchema } from '../../myos/schemas/MyOSTimelineChannel';
+import { DocumentStatusSchema } from '../../coordination/schemas/DocumentStatus';
+import { OperationSchema } from '../../coordination/schemas/Operation';
+import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
+import { TimelineChannelSchema } from '../../coordination/schemas/TimelineChannel';
 import { CardTransactionDetailsSchema } from './CardTransactionDetails';
 
-export const PayNoteDeliverySchema = withTypeBlueId(
+const zod = z as any;
+
+export const PayNoteDeliverySchema: any = withTypeBlueId(
   blueIds['PayNote/PayNote Delivery']
 )(
-  z.object({
-    cardTransactionDetails: CardTransactionDetailsSchema.optional(),
-    clientAcceptedAt: TimestampSchema.optional(),
-    clientDecisionStatus: z.string().optional(),
-    clientRejectedAt: TimestampSchema.optional(),
-    contracts: z
+  zod.object({
+    cardTransactionDetails: zod
+      .lazy(() => CardTransactionDetailsSchema)
+      .optional(),
+    clientAcceptedAt: zod.lazy(() => TimestampSchema).optional(),
+    clientDecisionStatus: zod.string().optional(),
+    clientRejectedAt: zod.lazy(() => TimestampSchema).optional(),
+    contracts: zod
       .object({
-        acceptPayNote: OperationSchema.optional(),
-        acceptPayNoteImpl: SequentialWorkflowOperationSchema.optional(),
-        initialize: SequentialWorkflowSchema.optional(),
-        initLifecycleChannel: LifecycleEventChannelSchema.optional(),
-        payNoteDeliverer: MyOSTimelineChannelSchema.optional(),
-        payNoteSender: MyOSTimelineChannelSchema.optional(),
-        rejectPayNote: OperationSchema.optional(),
-        rejectPayNoteImpl: SequentialWorkflowOperationSchema.optional(),
-        reportDeliveryError: OperationSchema.optional(),
-        reportDeliveryErrorImpl: SequentialWorkflowOperationSchema.optional(),
-        updateTransactionIdentificationStatus: OperationSchema.optional(),
-        updateTransactionIdentificationStatusImpl:
-          SequentialWorkflowOperationSchema.optional(),
+        acceptPayNote: zod.lazy(() => OperationSchema).optional(),
+        acceptPayNoteImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        initialize: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        initLifecycleChannel: blueNodeField().optional(),
+        payNoteDeliverer: zod.lazy(() => TimelineChannelSchema).optional(),
+        payNoteSender: zod.lazy(() => TimelineChannelSchema).optional(),
+        rejectPayNote: zod.lazy(() => OperationSchema).optional(),
+        rejectPayNoteImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        reportDeliveryError: zod.lazy(() => OperationSchema).optional(),
+        reportDeliveryErrorImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
+        updateTransactionIdentificationStatus: zod
+          .lazy(() => OperationSchema)
+          .optional(),
+        updateTransactionIdentificationStatusImpl: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
       })
       .optional(),
-    deliveryError: z.string().optional(),
-    deliveryStatus: DocumentStatusSchema.optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    paymentMandateBootstrapRequest: DocumentBootstrapRequestedSchema.optional(),
-    payNoteBootstrapRequest: DocumentBootstrapRequestedSchema.optional(),
-    transactionIdentificationStatus: z.string().optional(),
+    deliveryError: zod.string().optional(),
+    deliveryStatus: zod.lazy(() => DocumentStatusSchema).optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    paymentMandateBootstrapRequest: zod
+      .lazy(() => DocumentBootstrapRequestedSchema)
+      .optional(),
+    payNoteBootstrapRequest: zod
+      .lazy(() => DocumentBootstrapRequestedSchema)
+      .optional(),
+    transactionIdentificationStatus: zod.string().optional(),
   })
 );
 

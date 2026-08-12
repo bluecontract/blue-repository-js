@@ -1,13 +1,13 @@
-export const TransactionDetailsUpdateFailed = {
+export const TransactionDetailsUpdateFailed: Record<string, unknown> = {
   description:
     'The Guarantor attempted to apply the transaction details update, but a technical or provider-level failure occurred.\n',
   name: 'Transaction Details Update Failed',
   reason: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

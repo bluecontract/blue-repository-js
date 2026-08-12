@@ -1,16 +1,18 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const CallOperationAcceptedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CallOperationAcceptedSchema: any = withTypeBlueId(
   blueIds['MyOS/Call Operation Accepted']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    operation: z.string().optional(),
-    targetSessionId: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    operation: zod.string().optional(),
+    targetSessionId: zod.string().optional(),
   })
 );
 

@@ -1,9 +1,9 @@
-export const PaymentInitiationRejected = {
+export const PaymentInitiationRejected: Record<string, unknown> = {
   code: {
     description:
       'Stable machine-readable rejection reason, for example:\ninvalid_request,\ntoken_not_found,\ntoken_expired,\ntoken_consumed,\npayer_not_allowed,\ncontext_mismatch,\namount_mismatch,\ncurrency_mismatch,\npaynote_mismatch,\ninsufficient_funds,\nidempotency_conflict.\n',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description:
@@ -12,10 +12,10 @@ export const PaymentInitiationRejected = {
   reason: {
     description: 'Human-readable explanation of rejection.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

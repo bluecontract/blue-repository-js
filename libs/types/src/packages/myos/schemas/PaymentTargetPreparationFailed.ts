@@ -1,16 +1,18 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const PaymentTargetPreparationFailedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentTargetPreparationFailedSchema: any = withTypeBlueId(
   blueIds['MyOS/Payment Target Preparation Failed']
 )(
   ResponseSchema.extend({
-    code: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
+    code: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
   })
 );
 

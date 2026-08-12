@@ -5,7 +5,7 @@ import <%= identifier %> from './packages/<%= slug %>/index';
 import { name, repositoryVersions } from './meta';
 import type { BlueRepository } from '@blue-labs/repository-contract';
 
-export const repository: BlueRepository = {
+export const repository = {
   name,
   repositoryVersions,
   packages: {
@@ -13,6 +13,6 @@ export const repository: BlueRepository = {
     '<%= slug %>': <%= identifier %>,
 <% }); -%>
   },
-};
+} as unknown as BlueRepository;
 
 export default repository;

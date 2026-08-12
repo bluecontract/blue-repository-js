@@ -1,16 +1,16 @@
-export const RemovingParticipantResponded = {
+export const RemovingParticipantResponded: Record<string, unknown> = {
   name: 'Removing Participant Responded',
   request: {
     type: {
-      blueId: '8PrHr6fcJ1xMyNFptEy2sksyYYuZ48Ypkcnjv4V2WcoD',
+      blueId: 'BcSFAt3ZtG3CdpNzKUKBodvz9cux8kwtbNNNPrrhYSja',
     },
   },
   status: {
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

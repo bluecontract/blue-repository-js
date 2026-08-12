@@ -2,16 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { TimestampSchema } from '../../common/schemas/Timestamp';
-import { EventSchema } from '../../conversation/schemas/Event';
+import { EventSchema } from '../../coordination/schemas/Event';
 
-export const PayNoteRejectedByClientSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PayNoteRejectedByClientSchema: any = withTypeBlueId(
   blueIds['PayNote/PayNote Rejected By Client']
 )(
   EventSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    rejectedAt: TimestampSchema.optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    reason: zod.string().optional(),
+    rejectedAt: zod.lazy(() => TimestampSchema).optional(),
   })
 );
 

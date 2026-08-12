@@ -2,16 +2,18 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 
-export const CardTransactionDetailsSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CardTransactionDetailsSchema: any = withTypeBlueId(
   blueIds['PayNote/Card Transaction Details']
 )(
-  z.object({
-    authorizationCode: z.string().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
-    retrievalReferenceNumber: z.string().optional(),
-    systemTraceAuditNumber: z.string().optional(),
-    transmissionDateTime: z.string().optional(),
+  zod.object({
+    authorizationCode: zod.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
+    retrievalReferenceNumber: zod.string().optional(),
+    systemTraceAuditNumber: zod.string().optional(),
+    transmissionDateTime: zod.string().optional(),
   })
 );
 

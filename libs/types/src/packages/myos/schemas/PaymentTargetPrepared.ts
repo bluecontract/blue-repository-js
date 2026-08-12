@@ -2,28 +2,30 @@ import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
 import { CurrencySchema } from '../../common/schemas/Currency';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 import { MyOSBalanceAccountSchema } from './MyOSBalanceAccount';
 import { MyOSUserSchema } from './MyOSUser';
 
-export const PaymentTargetPreparedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PaymentTargetPreparedSchema: any = withTypeBlueId(
   blueIds['MyOS/Payment Target Prepared']
 )(
   ResponseSchema.extend({
-    allowedPayer: MyOSUserSchema.optional(),
-    amount: z.number().optional(),
-    context: z
+    allowedPayer: zod.lazy(() => MyOSUserSchema).optional(),
+    amount: zod.number().optional(),
+    context: zod
       .object({
-        description: z.string().optional(),
-        documentId: z.string().optional(),
+        description: zod.string().optional(),
+        documentId: zod.string().optional(),
       })
       .optional(),
-    currency: CurrencySchema.optional(),
-    description: z.string().optional(),
+    currency: zod.lazy(() => CurrencySchema).optional(),
+    description: zod.string().optional(),
     expectedPaynote: blueNodeField().optional(),
-    expiresAt: z.string().optional(),
-    name: z.string().optional(),
-    recipient: MyOSBalanceAccountSchema.optional(),
+    expiresAt: zod.string().optional(),
+    name: zod.string().optional(),
+    recipient: zod.lazy(() => MyOSBalanceAccountSchema).optional(),
   })
 );
 

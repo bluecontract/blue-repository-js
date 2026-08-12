@@ -1,23 +1,25 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { OperationSchema } from '../../conversation/schemas/Operation';
-import { SequentialWorkflowOperationSchema } from '../../conversation/schemas/SequentialWorkflowOperation';
+import { SequentialWorkflowOperationSchema } from '../../coordination/schemas/SequentialWorkflowOperation';
 import { MyOSTimelineChannelSchema } from './MyOSTimelineChannel';
 
-export const MyOSAdminBaseSchema = withTypeBlueId(
+const zod = z as any;
+
+export const MyOSAdminBaseSchema: any = withTypeBlueId(
   blueIds['MyOS/MyOS Admin Base']
 )(
-  z.object({
-    contracts: z
+  zod.object({
+    contracts: zod
       .object({
-        myOsAdminChannel: MyOSTimelineChannelSchema.optional(),
-        myOsAdminUpdate: OperationSchema.optional(),
-        myOsAdminUpdateImpl: SequentialWorkflowOperationSchema.optional(),
+        myOsAdminChannel: zod.lazy(() => MyOSTimelineChannelSchema).optional(),
+        myOsAdminUpdate: zod
+          .lazy(() => SequentialWorkflowOperationSchema)
+          .optional(),
       })
       .optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

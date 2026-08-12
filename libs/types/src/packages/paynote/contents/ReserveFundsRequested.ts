@@ -1,13 +1,13 @@
-export const ReserveFundsRequested = {
+export const ReserveFundsRequested: Record<string, unknown> = {
   amount: {
     type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
+      blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
     },
   },
   description:
     'A participant requests the Guarantor to reserve (hold) a specific amount.',
   name: 'Reserve Funds Requested',
   type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
+    blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
   },
-} as const;
+};

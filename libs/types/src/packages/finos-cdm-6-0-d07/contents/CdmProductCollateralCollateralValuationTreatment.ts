@@ -1,0 +1,36 @@
+export const CdmProductCollateralCollateralValuationTreatment: Record<
+  string,
+  unknown
+> = {
+  additionalHaircutPercentage: {
+    description:
+      'Specifies a percentage value of any additional haircut to be applied to a collateral asset,the percentage value is expressed as the discount haircut to the value of the collateral- as an example a 5% haircut would be expressed as 0.05.\n',
+    type: {
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
+    },
+  },
+  description:
+    'Specification of the valuation treatment for the specified collateral.',
+  fxHaircutPercentage: {
+    description:
+      'Specifies an FX haircut applied to a specific asset which is agreed between the parties (for example, if pledgor eligible collateral is not denominated in the termination currency or under other specified cases in collateral support documents both for initial margin and variation margin).The percentage value is expressed as the discount haircut to the value of the collateral- as an example an 8% FX haircut would be expressed as 0.08.\n',
+    type: {
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
+    },
+  },
+  haircutPercentage: {
+    description:
+      'Specifies a haircut percentage to be applied to the value of asset and used as a discount factor to the value of the collateral asset,expressed as a percentage in decimal terms. As an example a 0.5% haircut would be represented as a decimal number 0.005.\n',
+    type: {
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
+    },
+  },
+  marginPercentage: {
+    description:
+      'Specifies a percentage value of transaction needing to be posted as collateral expressed as a valuation. As an example a 104% requirement would be represented as a decimal number 1.04.\n',
+    type: {
+      blueId: '9eWaHYz2vKrFofdHTHAizNNu8xP6QE3WQ5y7DGrGZvyJ',
+    },
+  },
+  name: 'cdm/product/collateral/CollateralValuationTreatment',
+};

@@ -1,8 +1,8 @@
-export const NamedEvent = {
+export const NamedEvent: Record<string, unknown> = {
   description:
-    'Lightweight conversation event identified by the instance `name` field.\nUse it to emit, forward, or match a well-known signal\nwithout introducing a dedicated repository event type.\n',
+    'Lightweight coordination event identified by the instance `name` field.\nUse it to emit, forward, or match a well-known signal\nwithout introducing a dedicated repository event type.\n',
   name: 'Named Event',
   type: {
-    blueId: '5Wz4G9qcnBJnntYRkz4dgLK5bSuoMpYJZj4j5M59z4we',
+    blueId: 'ENRQ621TbJpLg2cGyYkgTmPRLGKZkPqCzkBgm4yEXKF5',
   },
-} as const;
+};

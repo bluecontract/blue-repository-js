@@ -1,4 +1,4 @@
-export const ChildPayNoteIssued = {
+export const ChildPayNoteIssued: Record<string, unknown> = {
   childPayNote: {
     description: 'Content of the issued PayNote',
   },
@@ -6,6 +6,6 @@ export const ChildPayNoteIssued = {
     'The Guarantor confirms that a new Child PayNote has been issued against this parent.',
   name: 'Child PayNote Issued',
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

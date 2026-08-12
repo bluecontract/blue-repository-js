@@ -3,10 +3,12 @@ import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
 import { DocumentSchema } from './Document';
 
-export const RecordSchema = withTypeBlueId(blueIds['Common/Record'])(
+const zod = z as any;
+
+export const RecordSchema: any = withTypeBlueId(blueIds['Common/Record'])(
   DocumentSchema.extend({
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

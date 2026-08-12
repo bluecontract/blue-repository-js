@@ -49,22 +49,15 @@ jobs:
       - name: Print Environment Info
         run: npx nx report
 
-      - name: Generate types
-        run: npm run generate:types
-
       - name: Build types
         run: npm run build:types
 
-      - name: Configure Git
+      - name: Verify RC package version
         run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-
-      - name: Release RC
-        run: npx nx release --preid=rc --skip-publish --verbose
+          node -e "const version = require('./libs/types/package.json').version; if (!/^\\d+\\.\\d+\\.\\d+-rc\\.\\d+$/.test(version)) { throw new Error('Expected an RC package version, found ' + version); }"
 
       - name: Publish RC packages
-        run: npx nx release publish --tag next --first-release --verbose
+        run: npx nx release publish --projects=@blue-repository/types --tag next --first-release --verbose
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
           NPM_CONFIG_PROVENANCE: true

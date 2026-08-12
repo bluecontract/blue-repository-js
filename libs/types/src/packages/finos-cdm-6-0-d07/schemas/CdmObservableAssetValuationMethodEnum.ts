@@ -1,0 +1,24 @@
+import { z } from 'zod';
+import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-labs/language';
+
+const zod = z as any;
+
+export const CdmObservableAssetValuationMethodEnumSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/observable/asset/ValuationMethodEnum']
+)(
+  zod.enum([
+    'AverageBlendedHighest',
+    'AverageBlendedMarket',
+    'AverageHighest',
+    'AverageMarket',
+    'BlendedHighest',
+    'BlendedMarket',
+    'Highest',
+    'Market',
+  ] as [string, ...string[]]) as unknown as z.ZodObject<any>
+);
+
+export type CdmObservableAssetValuationMethodEnum = z.infer<
+  typeof CdmObservableAssetValuationMethodEnumSchema
+>;

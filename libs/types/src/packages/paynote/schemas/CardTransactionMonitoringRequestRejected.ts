@@ -1,20 +1,23 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const CardTransactionMonitoringRequestRejectedSchema = withTypeBlueId(
-  blueIds['PayNote/Card Transaction Monitoring Request Rejected']
-)(
-  ResponseSchema.extend({
-    description: z.string().optional(),
-    events: z.array(z.string()).optional(),
-    name: z.string().optional(),
-    reason: z.string().optional(),
-    rejectedAt: z.number().optional(),
-    targetMerchantId: z.string().optional(),
-  })
-);
+const zod = z as any;
+
+export const CardTransactionMonitoringRequestRejectedSchema: any =
+  withTypeBlueId(
+    blueIds['PayNote/Card Transaction Monitoring Request Rejected']
+  )(
+    ResponseSchema.extend({
+      description: zod.string().optional(),
+      events: zod.array(zod.string()).optional(),
+      name: zod.string().optional(),
+      reason: zod.string().optional(),
+      rejectedAt: zod.number().optional(),
+      targetMerchantId: zod.string().optional(),
+    })
+  );
 
 export type CardTransactionMonitoringRequestRejected = z.infer<
   typeof CardTransactionMonitoringRequestRejectedSchema

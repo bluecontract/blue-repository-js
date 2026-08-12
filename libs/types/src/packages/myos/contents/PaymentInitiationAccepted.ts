@@ -1,8 +1,8 @@
-export const PaymentInitiationAccepted = {
+export const PaymentInitiationAccepted: Record<string, unknown> = {
   description:
     'Result emitted after MyOS Admin accepts a payment initiation request.',
   name: 'Payment Initiation Accepted',
   type: {
-    blueId: '36epvrpVHZLjapbeZsNodz2NDnm7XZeNZcnkWHgkP1pp',
+    blueId: '283zu1pu97gXBs4mquE3MSjwRYTzZSXZhnRSemCH8mZr',
   },
-} as const;
+};

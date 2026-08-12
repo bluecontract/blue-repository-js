@@ -1,27 +1,30 @@
-export const StartCardTransactionMonitoringRequested = {
-  description: 'Request to start monitoring card events for a target merchant.',
-  events: {
-    description: 'Requested card event categories.\nFor now:\n- transaction\n',
-    itemType: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+export const StartCardTransactionMonitoringRequested: Record<string, unknown> =
+  {
+    description:
+      'Request to start monitoring card events for a target merchant.',
+    events: {
+      description:
+        'Requested card event categories.\nFor now:\n- transaction\n',
+      itemType: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
+      type: {
+        blueId: '8DSFoWG9MqRSUhStqoPLrwVQiYByRh18NWbDEarN8MKF',
+      },
+    },
+    name: 'Start Card Transaction Monitoring Requested',
+    requestedAt: {
+      description: 'Timestamp (microseconds since epoch).',
+      type: {
+        blueId: 'E2LM6qgzWG9ttagq2xTmiZkgYEAgkYedFCmU9v7NnVEq',
+      },
+    },
+    targetMerchantId: {
+      type: {
+        blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
+      },
     },
     type: {
-      blueId: '6aehfNAxHLC1PHHoDr3tYtFH3RWNbiWdFancJ1bypXEY',
+      blueId: '6XYXgjV6ja1oLqLCs3TWy4RP5UwmpPZKcppBfwwXcckU',
     },
-  },
-  name: 'Start Card Transaction Monitoring Requested',
-  requestedAt: {
-    description: 'Timestamp (microseconds since epoch).',
-    type: {
-      blueId: '5WNMiV9Knz63B4dVY5JtMyh3FB4FSGqv7ceScvuapdE1',
-    },
-  },
-  targetMerchantId: {
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
-  type: {
-    blueId: '8f9UhHMbRe62sFgzQVheToaJPYi7t7HPNVvpQTbqfL5n',
-  },
-} as const;
+  };

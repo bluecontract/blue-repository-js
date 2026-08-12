@@ -1,47 +1,55 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { DocumentStatusSchema } from '../../conversation/schemas/DocumentStatus';
-import { SequentialWorkflowSchema } from '../../conversation/schemas/SequentialWorkflow';
-import { ChannelSchema } from '../../core/schemas/Channel';
-import { LifecycleEventChannelSchema } from '../../core/schemas/LifecycleEventChannel';
-import { TriggeredEventChannelSchema } from '../../core/schemas/TriggeredEventChannel';
+import { DocumentStatusSchema } from '../../coordination/schemas/DocumentStatus';
+import { SequentialWorkflowSchema } from '../../coordination/schemas/SequentialWorkflow';
 import { MyOSAdminBaseSchema } from './MyOSAdminBase';
 import { ParticipantActivationStateSchema } from './ParticipantActivationState';
 
-export const DocumentSessionBootstrapSchema = withTypeBlueId(
+const zod = z as any;
+
+export const DocumentSessionBootstrapSchema: any = withTypeBlueId(
   blueIds['MyOS/Document Session Bootstrap']
 )(
   MyOSAdminBaseSchema.extend({
-    avatarUrl: z.string().optional(),
-    bootstrapError: z.string().optional(),
-    bootstrapStatus: DocumentStatusSchema.optional(),
-    capabilities: z.record(z.string(), z.boolean()).optional(),
-    channelBindings: z.record(z.string(), ChannelSchema).optional(),
-    contracts: z
+    avatarUrl: zod.string().optional(),
+    bootstrapError: zod.string().optional(),
+    bootstrapStatus: zod.lazy(() => DocumentStatusSchema).optional(),
+    capabilities: zod.record(zod.string(), zod.boolean()).optional(),
+    channelBindings: zod.record(zod.string(), blueNodeField()).optional(),
+    contracts: zod
       .object({
-        handleBootstrapFailed: SequentialWorkflowSchema.optional(),
-        handleParticipantResolved: SequentialWorkflowSchema.optional(),
-        handleStatusChange: SequentialWorkflowSchema.optional(),
-        handleTargetDocumentSessionStarted: SequentialWorkflowSchema.optional(),
-        initHandler: SequentialWorkflowSchema.optional(),
-        lifecycle: LifecycleEventChannelSchema.optional(),
-        triggeredEventsChannel: TriggeredEventChannelSchema.optional(),
+        handleBootstrapFailed: zod
+          .lazy(() => SequentialWorkflowSchema)
+          .optional(),
+        handleParticipantResolved: zod
+          .lazy(() => SequentialWorkflowSchema)
+          .optional(),
+        handleStatusChange: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        handleTargetDocumentSessionStarted: zod
+          .lazy(() => SequentialWorkflowSchema)
+          .optional(),
+        initHandler: zod.lazy(() => SequentialWorkflowSchema).optional(),
+        lifecycle: blueNodeField().optional(),
+        triggeredEventsChannel: blueNodeField().optional(),
       })
       .optional(),
-    description: z.string().optional(),
+    description: zod.string().optional(),
     document: blueNodeField().optional(),
-    initialMessages: z
+    initialMessages: zod
       .object({
-        defaultMessage: z.string().optional(),
-        description: z.string().optional(),
-        perChannel: z.record(z.string(), z.string()).optional(),
+        defaultMessage: zod.string().optional(),
+        description: zod.string().optional(),
+        perChannel: zod.record(zod.string(), zod.string()).optional(),
       })
       .optional(),
-    initiatorSessionIds: z.array(z.string()).optional(),
-    name: z.string().optional(),
-    participantsState: z
-      .record(z.string(), ParticipantActivationStateSchema)
+    initiatorSessionIds: zod.array(zod.string()).optional(),
+    name: zod.string().optional(),
+    participantsState: zod
+      .record(
+        zod.string(),
+        zod.lazy(() => ParticipantActivationStateSchema)
+      )
       .optional(),
   })
 );

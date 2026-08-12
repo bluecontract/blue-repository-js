@@ -1,0 +1,14 @@
+export const DocumentResponderMandate: Record<string, unknown> = {
+  authorizedInitialDocument: {
+    description: 'Initial document whose sessions may emit covered requests.',
+    schema: {
+      required: true,
+    },
+  },
+  description:
+    'Mandate authorizing the actor bound to authorizedActorChannel to respond to covered requests emitted by sessions of authorizedInitialDocument. The concrete request shape and additional conditions are defined through the inherited validation fields.\n',
+  name: 'Document Responder Mandate',
+  type: {
+    blueId: 'G1G5Rp4bmcmvDrnM53JjXF3YXLwdBFqpqVZtXynrjZPC',
+  },
+};

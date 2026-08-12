@@ -1,52 +1,46 @@
-import { Relationship } from './Relationship';
-import { DocumentAnchors } from './DocumentAnchors';
-import { Service } from './Service';
-import { Space } from './Space';
-import { DocumentAnchor } from './DocumentAnchor';
-import { Currency } from './Currency';
+import { Record } from './Record';
+import { Timestamp } from './Timestamp';
+import { CryptoEd25519Verify } from './CryptoEd25519Verify';
 import { Request } from './Request';
 import { Response } from './Response';
-import { Document } from './Document';
-import { Payment } from './Payment';
-import { PermissionGrant } from './PermissionGrant';
-import { Profile } from './Profile';
-import { Task } from './Task';
-import { Timestamp } from './Timestamp';
 import { NamedEvent } from './NamedEvent';
-import { Record } from './Record';
+import { Document } from './Document';
+import { Space } from './Space';
+import { Task } from './Task';
+import { Profile } from './Profile';
+import { Service } from './Service';
+import { Relationship } from './Relationship';
+import { Payment } from './Payment';
+import { Currency } from './Currency';
 
-export { Relationship } from './Relationship';
-export { DocumentAnchors } from './DocumentAnchors';
-export { Service } from './Service';
-export { Space } from './Space';
-export { DocumentAnchor } from './DocumentAnchor';
-export { Currency } from './Currency';
+export { Record } from './Record';
+export { Timestamp } from './Timestamp';
+export { CryptoEd25519Verify } from './CryptoEd25519Verify';
 export { Request } from './Request';
 export { Response } from './Response';
-export { Document } from './Document';
-export { Payment } from './Payment';
-export { PermissionGrant } from './PermissionGrant';
-export { Profile } from './Profile';
-export { Task } from './Task';
-export { Timestamp } from './Timestamp';
 export { NamedEvent } from './NamedEvent';
-export { Record } from './Record';
+export { Document } from './Document';
+export { Space } from './Space';
+export { Task } from './Task';
+export { Profile } from './Profile';
+export { Service } from './Service';
+export { Relationship } from './Relationship';
+export { Payment } from './Payment';
+export { Currency } from './Currency';
 
-export const contents = {
-  '29BmTvgmhh9x7t2tGd38GqTH3b9v9rgqsuE21K73i86g': Relationship,
-  '3KRfhgbFdvyW9SGuKiq3WxWF9bHSATEb8tMso8Pykpre': DocumentAnchors,
-  ALFnjBeqP1hupQrZGddqbi276GkwnuPtkQjiFLjU716A: Service,
-  Bdyasci5huobiunZqkShQUiWzCyHLhY4fpMkG4YF5BiS: Space,
-  Bu4KzxxpJuHvET1RTBzioDXpWcqmvYzmqGRiDKmktHUo: DocumentAnchor,
-  CBnZ7aaNetj9KEqXpUWj5jvjKbmviLivP98T2EiyxiYc: Currency,
-  Ccj91K18JfH77i8bawJzR9GpRWXYf598uPjggxZU7Shd: Request,
-  cLkohDeea8vefzVvUwsQ56BwUfedXpqeoD66PvRe7LB: Response,
-  Co5guWscbTav1tmXvQPb4k3wtrsQEdxjDaj6WPPWpPo8: Document,
-  DoDF7Hm2Ss7ikirPwXZ7KFiWNmdwtb53vHCSwYFbCdPk: Payment,
-  EHTR6jFrqbmjPf7dNSJUsGUJrgr5kLh62QiT2bxD6KRp: PermissionGrant,
-  EWfk8qkKZYqqTyeLs4wLJTfPCLufZBiNGFQY4M4PLv99: Profile,
-  FfJjBeSAe4JWfA5FVnPDgL9pzLPYELskQnBSanPC9E8L: Task,
-  GQaGqFxHDz64L1c9QkCbz52ths6bMVtpHnw4QDngzQYs: Timestamp,
-  GrD4wCAmKoK8rm8Pztmv9GkFBRwJy4zpDUzDWHtsEJCX: NamedEvent,
-  J18rFf6VX3ADe5gTnqmL4wXtivLkzrRXLPPhnoghnjzB: Record,
-} as const;
+export const contents: Record<string, unknown> = {
+  '3jiCk56nE5ULAqAWz6ANyVexCtr8PR54TEogRNECT61z': Record,
+  '47EN5A1B1ZXXdXMEoURVJquMSjdDuKFNDjMrkvVxoVJk': Timestamp,
+  '6P98bLNKcsNPUovBBsLu6W3BQnrg6F8TPjhbZhegrDSL': CryptoEd25519Verify,
+  '7SGwopxFbqfpY4pUVSVacVy17tPE1Tt2uxCumG3BoF27': Request,
+  '8T2FPZcsJdWFvThipSCbTEGQRdUhUrg3nfvYBA4TnKzy': Response,
+  AJXU1CbY6HmjCknkWm1ng2pGvStRPzhs3jq4WWLVwWLK: NamedEvent,
+  B62tsckv8aQiyFAchgqgptfB5C6jtDPkS2pLT1h3G793: Document,
+  BFrCmuWJzm3RYrg3AD9L1YYKV3oun4MA9gL74mDQKF1j: Space,
+  Bv2m44vKZdG4tekaEBmCTQTDAvhBjnojy8sbPKZYTe9V: Task,
+  DDAmA9UAt9mPSwLfBN95yLy3MPrvsC2tjGPcAYaxoWHc: Profile,
+  EC4hx8cFZ9JwWCnECdoPPatsHb4sAq6QEhDLcHCcAo3t: Service,
+  F7LgS1HLXL7CBP3D1LW8ncdfn1euZWBBbQ63pMbfFG1n: Relationship,
+  HSvngEMxS34qTVo3TNufgbR7pLcZY9gq94FNLdHeGKaZ: Payment,
+  rdiMJ9tNu3geCKLDwXxCCjVQzKvCyaFXHiZTFAkRsCJ: Currency,
+};

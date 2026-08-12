@@ -1,15 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId } from '@blue-labs/language';
-import { ResponseSchema } from '../../conversation/schemas/Response';
+import { ResponseSchema } from '../../coordination/schemas/Response';
 
-export const CallOperationRespondedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const CallOperationRespondedSchema: any = withTypeBlueId(
   blueIds['MyOS/Call Operation Responded']
 )(
   ResponseSchema.extend({
-    description: z.string().optional(),
-    events: z.array(ResponseSchema).optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    events: zod.array(zod.lazy(() => ResponseSchema)).optional(),
+    name: zod.string().optional(),
   })
 );
 

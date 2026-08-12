@@ -1,0 +1,82 @@
+import { z } from 'zod';
+import { blueIds } from '../blue-ids';
+import { withTypeBlueId } from '@blue-labs/language';
+
+const zod = z as any;
+
+export const CdmBaseMathCapacityUnitEnumSchema: any = withTypeBlueId(
+  blueIds['FINOS-CDM-6.0-d07/cdm/base/math/CapacityUnitEnum']
+)(
+  zod.enum([
+    'ALW',
+    'BBL',
+    'BCF',
+    'BDFT',
+    'CBM',
+    'CER',
+    'CRT',
+    'DAG',
+    'DAY',
+    'DMTU',
+    'ENVCRD',
+    'ENVOFST',
+    'FEU',
+    'G',
+    'GBBSH',
+    'GBBTU',
+    'GBCWT',
+    'GBGAL',
+    'GBMBTU',
+    'GBMMBTU',
+    'GBT',
+    'GBTHM',
+    'GJ',
+    'GW',
+    'GWH',
+    'HL',
+    'HOGB',
+    'ISOBTU',
+    'ISOMBTU',
+    'ISOMMBTU',
+    'ISOTHM',
+    'J',
+    'KG',
+    'KL',
+    'KW',
+    'KWD',
+    'KWH',
+    'KWM',
+    'KWMIN',
+    'KWY',
+    'L',
+    'LB',
+    'MB',
+    'MBF',
+    'MJ',
+    'MMBBL',
+    'MMBF',
+    'MSF',
+    'MT',
+    'MW',
+    'MWD',
+    'MWH',
+    'MWM',
+    'MWMIN',
+    'MWY',
+    'OZT',
+    'SGB',
+    'TEU',
+    'USBSH',
+    'USBTU',
+    'USCWT',
+    'USGAL',
+    'USMBTU',
+    'USMMBTU',
+    'UST',
+    'USTHM',
+  ] as [string, ...string[]]) as unknown as z.ZodObject<any>
+);
+
+export type CdmBaseMathCapacityUnitEnum = z.infer<
+  typeof CdmBaseMathCapacityUnitEnumSchema
+>;

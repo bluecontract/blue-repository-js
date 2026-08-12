@@ -1,15 +1,17 @@
 import { z } from 'zod';
 import { blueIds } from '../blue-ids';
 import { withTypeBlueId, blueNodeField } from '@blue-labs/language';
-import { RequestSchema } from '../../conversation/schemas/Request';
+import { RequestSchema } from '../../coordination/schemas/Request';
 
-export const PayNoteCancellationRequestedSchema = withTypeBlueId(
+const zod = z as any;
+
+export const PayNoteCancellationRequestedSchema: any = withTypeBlueId(
   blueIds['PayNote/PayNote Cancellation Requested']
 )(
   RequestSchema.extend({
     childPayNote: blueNodeField().optional(),
-    description: z.string().optional(),
-    name: z.string().optional(),
+    description: zod.string().optional(),
+    name: zod.string().optional(),
   })
 );
 

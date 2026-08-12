@@ -1,13 +1,13 @@
-export const MyOSAgentActor = {
+export const MyOSAgentActor: Record<string, unknown> = {
   accountId: {
     description: 'MyOS account ID of the agent.',
     type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
+      blueId: 'GX7CFUmSDrE2MzptunLCCdZwnuwwrenRQqEnHL4x3uoC',
     },
   },
   description: 'MyOS-specific agent actor specialization.',
   name: 'MyOS Agent Actor',
   type: {
-    blueId: 'FM1K89eMHRDN6vHtHfGwFNojmgvSnACuYdtc3qQ6qPYB',
+    blueId: 'HooLPpmtC3Rf6jJ2eGGr4SyBbi2XYPzYBm4UpuzYke6D',
   },
-} as const;
+};

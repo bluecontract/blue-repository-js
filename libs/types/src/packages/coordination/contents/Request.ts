@@ -1,0 +1,8 @@
+export const Request: Record<string, unknown> = {
+  description:
+    'A Message that solicits an answer. It establishes the expectation that the participant addressed by recipientChannel, or a suitable participant at the table when recipientChannel is absent, may eventually send a Response whose inResponseTo points to this Request. A Request may itself answer another Message, such as a counter-offer or clarifying question. Concrete request types define their payload and domain-specific recipient semantics.\n',
+  name: 'Request',
+  type: {
+    blueId: '768MxgQEHnLSkedHWHtjj43mAjH361Zf6pKZgVxi5po3',
+  },
+};

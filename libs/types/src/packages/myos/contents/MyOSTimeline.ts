@@ -1,15 +1,8 @@
-export const MyOSTimeline = {
-  accountId: {
-    description:
-      'Identifier for the MyOS account associated with this timeline',
-    type: {
-      blueId: 'DLRQwz7MQeCrzjy9bohPNwtCxKEBbKaMK65KBrwjfG6K',
-    },
-  },
+export const MyOSTimeline: Record<string, unknown> = {
   description:
-    'A managed timeline implementation providing convenient email-based authentication and extensive features. MyOS timelines are straightforward to set up and use, offering a balance of convenience and security through hash-chained, authenticated event sequences.',
+    'Timeline hosted by the MyOS Timeline Provider. MyOS determines append authorization, assigns timestamps, preserves the append-only history, and supplies completeness guarantees for this timeline.\n',
   name: 'MyOS Timeline',
   type: {
-    blueId: '3Ge54FsGJaaeZmm8nTKJdS6HVdYhiR3g18fDwg3Ev1Sa',
+    blueId: 'BnChAigtmYAEzedCRsLwgtdwthJMiPQsQBpUXdtiRxe',
   },
-} as const;
+};
